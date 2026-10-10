@@ -4,6 +4,7 @@ Each turn has its own durable thread. Business history remains in the session
 store; checkpoints record *execution progress*, not permission or idempotency.
 """
 import json
+import copy
 import re
 import time
 from typing import TypedDict
@@ -177,9 +178,15 @@ def initial_state(session, question, mode):
                 prompt_version=PROMPT_VERSION, graph_version=GRAPH_VERSION, started=time.time())
 
 
-def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None):
+def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None, *, route_policy=None, observe=None):
     """Dependencies are injected once; graph state never contains clients or secrets."""
+    # Optional evaluation seams. The API passes neither; policies never receive gold.
+    def emit(event):
+        if observe is not None:
+            observe(event)
+
     def prepare(state):
+        started = time.monotonic()
         session, question, release = state['session'], state['question'], state['release']
         cast = session['cast']
         intent = classify(question, state['mode'])
@@ -229,19 +236,27 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None):
         if intent == 'new_reading_request':
             update.update(next_step='finish', answer=new_question_answer())
             update['trace'].append(dict(step='handoff', status='ok', code='EXPLICIT_NEW_READING_REQUIRED'))
+        emit(dict(kind='prepare', evidence=evidence, scopeIds=scope, targets=targets,
+                  requireCitations=requires, nextStep=update['next_step'], intent=intent,
+                  durationMs=round((time.monotonic() - started) * 1000)))
         return update
 
     async def invoke(messages, state, tools=None):
         before = time.monotonic()
         result = await chat(messages, tools=tools)
-        usage = result.get('usage', {})
+        usage = result.get('usage') or {}
         event = dict(step='model', status='ok', durationMs=round((time.monotonic() - before) * 1000),
-                     promptTokens=usage.get('prompt_tokens', 0), completionTokens=usage.get('completion_tokens', 0),
-                     totalTokens=usage.get('total_tokens', 0))
+                     promptTokens=usage.get('prompt_tokens'), completionTokens=usage.get('completion_tokens'),
+                     totalTokens=usage.get('total_tokens'))
         return result['message'], state['trace'] + [event]
 
     async def route(state):
-        response, trace = await invoke(state['messages'], state, TOOLS)
+        if route_policy is None:
+            response, trace = await invoke(state['messages'], state, TOOLS)
+        else:
+            response = route_policy(copy.deepcopy(state))
+            trace = state['trace'] + [dict(step='route', status='ok', code='RULE_POLICY')]
+            emit(dict(kind='rule_decision', response=response))
         try:
             decision = json.loads(response.get('content') or '{}')
         except (ValueError, TypeError):
@@ -271,6 +286,9 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None):
         for call in state['response']['tool_calls']:
             name, args = call.get('function', {}).get('name', ''), None
             started = time.monotonic()
+            before_attempts = attempts
+            retrieved = None
+            emit(dict(kind='tool_request', request=call, attemptsBefore=attempts))
             try:
                 if attempts >= 3:
                     raise ValueError('TOOL_BUDGET_EXHAUSTED')
@@ -284,6 +302,8 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None):
                     raise ValueError('REPEATED_TOOL_CALL')
                 seen.append(signature)
                 result = execute_tool(name, args, state['release'], state['scope_ids'])
+                if observe is not None:
+                    retrieved = copy.deepcopy(result)
                 evidence, dropped = pack_evidence(evidence, result['evidence'])
                 accepted = {e['id'] for e in evidence}
                 result['evidence'] = [e for e in result['evidence'] if e['id'] in accepted]
@@ -297,6 +317,10 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None):
                 result = dict(error=code)
                 event = dict(step='tool', tool=name, status='error', code=code)
             event['durationMs'] = round((time.monotonic() - started) * 1000)
+            emit(dict(kind='tool_result', requestId=call['id'], tool=name, args=args,
+                      budgetCounted=attempts > before_attempts, attemptsAfter=attempts,
+                      executionStatus='rejected' if event['status'] == 'error' else event['status'],
+                      retrievedResult=retrieved, returnedResult=result, trace=event))
             trace.append(event)
             messages.append(dict(role='tool', tool_call_id=call['id'], content=dumps(result)))
         return dict(evidence=evidence, trace=trace, messages=messages, seen=seen, attempts=attempts,
@@ -347,6 +371,8 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None):
         except (ValueError, TypeError):
             value = None
         answer, errors = validate_answer(value, generation_evidence(state), state['targets'], state['require_citations'])
+        emit(dict(kind='validation', candidate=value, errors=errors, answer=answer,
+                  evidence=generation_evidence(state), repairNumber=state['repairs']))
         return dict(answer=answer, errors=errors, next_step='finish' if answer or state['repairs'] >= 1 else 'repair',
                     trace=state['trace'] + [dict(step='validate', status='failed' if errors else 'passed', code=','.join(errors))])
 

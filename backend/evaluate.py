@@ -22,27 +22,40 @@ from .prompts import PROMPT_VERSION
 
 
 class BudgetedChat:
-    def __init__(self, chat=deepseek_chat, max_calls=8, max_tokens=100000):
+    def __init__(self, chat=deepseek_chat, max_calls=8, max_tokens=100000, parent=None):
         self.chat, self.max_calls, self.max_tokens = chat, max_calls, max_tokens
+        self.parent = parent
         self.calls = self.reported = self.accounted = self.unknown = 0
 
-    async def __call__(self, messages, tools=None):
+    def reservation(self, messages, tools=None):
         reservation = len(json.dumps(dict(messages=messages, tools=tools), ensure_ascii=False).encode()) + MAX_COMPLETION_TOKENS + 1024
-        if self.calls >= self.max_calls or self.accounted + reservation > self.max_tokens:
-            raise ModelError('EVALUATION_BUDGET_EXHAUSTED')
-        self.calls += 1
-        self.accounted += reservation
-        try:
-            result = await self.chat(messages, tools=tools)
-        except Exception:
-            self.unknown += 1
-            raise
-        used = result.get('usage', {}).get('total_tokens')
-        if isinstance(used, int) and used >= 0:
+        for budget in [self] + ([self.parent] if self.parent else []):
+            if budget.calls >= budget.max_calls or budget.accounted + reservation > budget.max_tokens:
+                raise ModelError('EVALUATION_BUDGET_EXHAUSTED')
+        return reservation
+
+    def settle(self, usage, reservation):
+        used = (usage or {}).get('total_tokens')
+        if isinstance(used, int) and not isinstance(used, bool) and used >= 0:
             self.reported += used
             self.accounted += used - reservation
         else:
             self.unknown += 1
+
+    async def __call__(self, messages, tools=None):
+        reservation = self.reservation(messages, tools)
+        budgets = [self] + ([self.parent] if self.parent else [])
+        for budget in budgets:
+            budget.calls += 1
+            budget.accounted += reservation
+        try:
+            result = await self.chat(messages, tools=tools)
+        except BaseException as exc:
+            for budget in budgets:
+                budget.settle(getattr(exc, 'metadata', {}).get('usage'), reservation)
+            raise
+        for budget in budgets:
+            budget.settle(result.get('usage'), reservation)
         return result
 
     def summary(self):
@@ -93,12 +106,22 @@ async def live(args):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--live', action='store_true')
+    parser.add_argument('--paired', action='store_true', help='Phase-one fixed-input C/D development comparison')
+    parser.add_argument('--rescore', type=Path, help='Recompute a saved paired run without model calls')
+    parser.add_argument('--case-max-calls', type=int, default=6)
+    parser.add_argument('--case-max-tokens', type=int, default=100000)
     parser.add_argument('--max-calls', type=int, default=8)
     parser.add_argument('--max-tokens', type=int, default=100000)
     args = parser.parse_args()
-    if args.max_calls < 1 or args.max_tokens < 1:
+    if min(args.max_calls, args.max_tokens, args.case_max_calls, args.case_max_tokens) < 1:
         parser.error('budgets must be positive')
-    if args.live:
+    if args.rescore:
+        from evaluation.scoring import rescore
+        rescore(args.rescore)
+    elif args.paired:
+        from evaluation.paired import run
+        asyncio.run(run(args))
+    elif args.live:
         asyncio.run(live(args))
     else:
         for number in range(1, 65):
