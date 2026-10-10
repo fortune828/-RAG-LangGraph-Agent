@@ -1,0 +1,1498 @@
+[
+  {
+    "caseId": "continuous-1",
+    "arm": "candidate",
+    "stage": "continuous",
+    "config": "flash-low",
+    "graphVersion": "python-graph-v15",
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "恒卦卦辞说“亨，无咎，利贞，利有攸往”，这说明主动去谈是可行的，只要守住原则，不必把这次沟通想成撕破脸。搭档连续晚交，已经影响到你，谈本身就是维护合作。",
+          "citations": [
+            {
+              "evidenceId": "zy-32-judgment",
+              "quote": "亨，无咎，利贞，利有攸往。",
+              "claim": "主动去谈是可行的"
+            }
+          ]
+        },
+        {
+          "text": "“雷风，恒。君子以立不易方。”合作可以恒久，但你要有稳定底线：内部截止、合并时间、你愿意承担多少，不能每次都被动补位。先想清楚哪些可让、哪些不可让。",
+          "citations": [
+            {
+              "evidenceId": "zy-32-xiang",
+              "quote": "君子以立不易方。",
+              "claim": "你要有稳定底线"
+            }
+          ]
+        },
+        {
+          "text": "恒卦彖传说“恆，久也”，又说“觀其所恆，而天地萬物之情可見矣”。谈之前先看长期行为模式：他是偶发拖延，还是已经把晚交当成默认？如果是后者，谈话重点就不是道歉，而是重新定规则。",
+          "citations": [
+            {
+              "evidenceId": "zy-32-tuan",
+              "quote": "觀其所恆，而天地萬物之情可見矣！",
+              "claim": "看长期行为模式"
+            }
+          ]
+        },
+        {
+          "text": "彖传说“巽而動，剛柔皆應，恆”，沟通要温和而坚定：先问他遇到了什么困难，再陈述事实——两次晚交让你赶着合并，最后提出具体请求。不要用“你总是不负责”这种定性，用“这次我需要在几点前拿到”这种可执行的话。",
+          "citations": [
+            {
+              "evidenceId": "zy-32-tuan",
+              "quote": "巽而動，剛柔皆應，恆。",
+              "claim": "温和而坚定"
+            }
+          ]
+        },
+        {
+          "text": "“利有攸往，終則有始也”，所以主动谈，并建立新循环：把内部截止提前一天，留出缓冲；若超时，提前告知，你决定是否先合或后补；重要约定可以书面确认。这样你不是在追着他跑，而是在搭建可重复的流程。",
+          "citations": [
+            {
+              "evidenceId": "zy-32-tuan",
+              "quote": "利有攸往，終則有始也。",
+              "claim": "主动谈，并建立新循环"
+            }
+          ]
+        },
+        {
+          "text": "恒卦讲“利貞；久于其道也”，也讲“无咎”，守正的意思是：你可以体谅一次，但连续两次后要明确边界。若谈后仍不改，就调整分工、各自提交或告知老师，这不是报复，是让合作回到可持续。",
+          "citations": [
+            {
+              "evidenceId": "zy-32-tuan",
+              "quote": "利貞；久于其道也",
+              "claim": "守正"
+            }
+          ]
+        },
+        {
+          "text": "你可以这样开场：“我想跟你聊一下小组作业的合并流程。前两次你负责的部分都晚于我们约定的时间，我最后要赶着合并，压力很大。我想知道你那边的困难是什么？我们能不能把内部截止提前一天，如果超过某个时间，你提前告诉我，我先把能合的部分合了，你后续再补？如果再有下次，我可能就要调整分工或跟老师说明。”语气平静，重点放在流程和影响，不翻旧账。",
+          "citations": []
+        }
+      ],
+      "limitations": []
+    },
+    "errors": [],
+    "evidence": [
+      {
+        "id": "zy-32-judgment",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "judgment",
+        "line": null,
+        "text": "亨，无咎，利贞，利有攸往。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "恒·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:32:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "亨，无咎，利贞，利有攸往。"
+      },
+      {
+        "id": "zy-32-xiang",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "xiang",
+        "line": null,
+        "text": "雷风，恒。君子以立不易方。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "恒·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:32:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "雷风，恒。君子以立不易方。"
+      },
+      {
+        "id": "zy-32-tuan",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "tuan",
+        "line": null,
+        "text": "恆，久也。剛上而柔下，雷風相與，巽而動，剛柔皆應，恆。恆亨无咎，利貞；久于其道也，天地之道，恆久而不已也。利有攸往，終則有始也。日月得天，而能久照，四時變化，而能久成，聖人久于其道，而天下化成；觀其所恆，而天地萬物之情可見矣！",
+        "textOriginal": "恆，久也。剛上而柔下，雷風相與，巽而動，剛柔皆應，恆。恆亨无咎，利貞；久于其道也，天地之道，恆久而不已也。利有攸往，終則有始也。日月得天，而能久照，四時變化，而能久成，聖人久于其道，而天下化成；觀其所恆，而天地萬物之情可見矣！",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93/%E6%81%92&oldid=2530043",
+        "locator": "《周易》·恒·彖传",
+        "version": "ws-2530043",
+        "review": "机器按明确彖传边界提取；未人工校勘",
+        "reviewStatus": "machine_parsed",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "ws-2530043",
+        "editionId": "ws-zhouyi",
+        "editionLabel": "维基文库周易固定修订2530043",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:32:tuan"
+        ],
+        "commentsOn": [],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-2530043.wiki",
+          "startLine": 21,
+          "endLine": 21,
+          "pageLabels": []
+        }
+      }
+    ],
+    "trace": [
+      {
+        "step": "retrieve",
+        "status": "ok",
+        "channel": "fixed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "code": "explanation_followup",
+        "evidenceIds": [
+          "zy-32-judgment",
+          "zy-32-xiang",
+          "zy-32-tuan"
+        ],
+        "truncated": false,
+        "droppedEvidenceIds": []
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 22839,
+        "promptTokens": 765,
+        "completionTokens": 5167,
+        "totalTokens": 5932
+      },
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "sameCast": true,
+    "repairs": 0,
+    "toolAttempts": 0,
+    "durationMs": 22933,
+    "auto": {
+      "calls": 1,
+      "reportedTokens": 5932,
+      "unknownUsage": 0
+    }
+  },
+  {
+    "caseId": "continuous-2",
+    "arm": "candidate",
+    "stage": "continuous",
+    "config": "flash-low",
+    "graphVersion": "python-graph-v15",
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "主动开口仍是可行的，但这次开口的核心不是催他，而是先更正事实、再重建流程。恒卦卦辞说“亨，无咎，利贞，利有攸往”，说明谈本身可以无咎，但前提是守正：先把记录核对清楚，把归因放回准确的位置。",
+          "citations": [
+            {
+              "evidenceId": "zy-32-judgment",
+              "quote": "亨，无咎，利贞，利有攸往。",
+              "claim": "主动开口仍是可行的"
+            }
+          ]
+        },
+        {
+          "text": "你可以先私下说：“我想先更正一件事。刚核对了记录，前两次其实是我把基础数据给晚了，你后面一直在赶。我之前只注意到最后交稿的时间，把压力归到你那边，这对你不公平，也谢谢你补上。”这段话的关键是先更正事实，不辩解，也不把道歉变成表演。",
+          "citations": [
+            {
+              "evidenceId": "wang-bi@2404960:h32:line2:5b33f4c7f5",
+              "quote": "雖失其位，恒位於中，可以消悔也。",
+              "claim": "先更正事实"
+            },
+            {
+              "evidenceId": "zy-32-line-2",
+              "quote": "悔亡。",
+              "claim": "先更正事实"
+            }
+          ]
+        },
+        {
+          "text": "谈的时候不要从“你以后必须”开始，也不要立刻把全部责任揽到自己身上。恒卦九二“悔亡”，王弼注说“雖失其位，恒位於中，可以消悔也”，朱熹也解为“以其久中故得亡也”。所以你要守住中道：承认自己的延迟，也保留对合作压力的合理表达。",
+          "citations": [
+            {
+              "evidenceId": "zy-32-line-2",
+              "quote": "悔亡。",
+              "claim": "恒卦九二“悔亡”"
+            },
+            {
+              "evidenceId": "wang-bi@2404960:h32:line2:5b33f4c7f5",
+              "quote": "雖失其位，恒位於中，可以消悔也。",
+              "claim": "恒位於中，可以消悔也"
+            },
+            {
+              "evidenceId": "zhu-xi@737053:h32:line2:5f0a0b4c7f",
+              "quote": "以陽居隂本當有悔以其久中故得亡也",
+              "claim": "以其久中故得亡也"
+            }
+          ]
+        },
+        {
+          "text": "接下来把对话落到可执行约定，而不是停在情绪上。恒卦彖传说“巽而動，剛柔皆應，恆”，沟通要温和而坚定，让双方都能回应：你提出自己会在基础数据上设更早的内部截止；如果预判会晚，至少提前告知；合并留出缓冲；重要约定书面确认。",
+          "citations": [
+            {
+              "evidenceId": "zy-32-tuan",
+              "quote": "巽而動，剛柔皆應，恆",
+              "claim": "沟通要温和而坚定，让双方都能回应"
+            }
+          ]
+        },
+        {
+          "text": "“君子以立不易方”不是让你死守旧判断，而是守住尊重事实、平等合作的原则。你可以说：“以后基础数据我在X时间前发你；如果我做不到，我会提前说，不让你最后才发现。你也告诉我，你那边需要什么缓冲，我们怎么配合。”",
+          "citations": [
+            {
+              "evidenceId": "zy-32-xiang",
+              "quote": "雷风，恒。君子以立不易方。",
+              "claim": "君子以立不易方"
+            }
+          ]
+        },
+        {
+          "text": "要避免“振恒，凶”式的处理：突然大包大揽、反复道歉、情绪化推翻原来的分工，反而会让合作规则更乱。王弼注说“夫靜為躁君，安為動主”，先让自己稳下来，再谈具体安排。",
+          "citations": [
+            {
+              "evidenceId": "zy-32-line-6",
+              "quote": "振恒，凶。",
+              "claim": "振恒，凶"
+            },
+            {
+              "evidenceId": "wang-bi@2404960:h32:line6:ab4d239331",
+              "quote": "夫靜為躁君，安為動主。",
+              "claim": "夫靜為躁君，安為動主"
+            }
+          ]
+        },
+        {
+          "text": "如果对方也有晚交或沟通不及时，等你先承认自己的部分后再问：“你那边的困难是什么？我们怎么避免下次互相赶？”恒卦九三说“不恒其德，或承之羞；贞吝”，提醒你：只凭一时愧疚而不建立恒常规则，问题还会反复；但也不必用这句话去指责对方。",
+          "citations": [
+            {
+              "evidenceId": "zy-32-line-3",
+              "quote": "不恒其德，或承之羞；贞吝。",
+              "claim": "不恒其德，或承之羞；贞吝"
+            },
+            {
+              "evidenceId": "wang-bi@2404960:h32:line3:d1ff92b48b",
+              "quote": "德行無恒，自相違錯，不可致詰，故「或承之羞」也。",
+              "claim": "只凭一时愧疚而不建立恒常规则，问题还会反复"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "errors": [],
+    "evidence": [
+      {
+        "id": "zy-32-judgment",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "judgment",
+        "line": null,
+        "text": "亨，无咎，利贞，利有攸往。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "恒·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:32:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "亨，无咎，利贞，利有攸往。"
+      },
+      {
+        "id": "zy-32-xiang",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "xiang",
+        "line": null,
+        "text": "雷风，恒。君子以立不易方。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "恒·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:32:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "雷风，恒。君子以立不易方。"
+      },
+      {
+        "id": "zy-32-tuan",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "tuan",
+        "line": null,
+        "text": "恆，久也。剛上而柔下，雷風相與，巽而動，剛柔皆應，恆。恆亨无咎，利貞；久于其道也，天地之道，恆久而不已也。利有攸往，終則有始也。日月得天，而能久照，四時變化，而能久成，聖人久于其道，而天下化成；觀其所恆，而天地萬物之情可見矣！",
+        "textOriginal": "恆，久也。剛上而柔下，雷風相與，巽而動，剛柔皆應，恆。恆亨无咎，利貞；久于其道也，天地之道，恆久而不已也。利有攸往，終則有始也。日月得天，而能久照，四時變化，而能久成，聖人久于其道，而天下化成；觀其所恆，而天地萬物之情可見矣！",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93/%E6%81%92&oldid=2530043",
+        "locator": "《周易》·恒·彖传",
+        "version": "ws-2530043",
+        "review": "机器按明确彖传边界提取；未人工校勘",
+        "reviewStatus": "machine_parsed",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "ws-2530043",
+        "editionId": "ws-zhouyi",
+        "editionLabel": "维基文库周易固定修订2530043",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:32:tuan"
+        ],
+        "commentsOn": [],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-2530043.wiki",
+          "startLine": 21,
+          "endLine": 21,
+          "pageLabels": []
+        }
+      },
+      {
+        "id": "zy-32-line-2",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "line",
+        "line": 2,
+        "text": "悔亡。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "恒·九二",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:32:line:2"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "悔亡。"
+      },
+      {
+        "id": "zy-32-line-3",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "line",
+        "line": 3,
+        "text": "不恒其德，或承之羞；贞吝。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "恒·九三",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:32:line:3"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "不恒其德，或承之羞；贞吝。"
+      },
+      {
+        "id": "zy-32-line-6",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "line",
+        "line": 6,
+        "text": "振恒，凶。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "恒·上六",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:32:line:6"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "振恒，凶。"
+      },
+      {
+        "id": "wang-bi@2404960:h32:line2:5b33f4c7f5",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "line",
+        "line": 2,
+        "text": "雖失其位，恒位於中，可以消悔也。",
+        "textOriginal": "雖失其位，恒位於中，可以消悔也。",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E6%81%92&oldid=2404960",
+        "locator": "《周易正義》·恒·第2爻注",
+        "version": "ws-2404960",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "zhouyi-zhengyi",
+        "workTitle": "周易正義",
+        "sourceId": "ws-2404960",
+        "editionId": "ws-zhouyi-zhengyi",
+        "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+        "authorIds": [
+          "wang-bi"
+        ],
+        "authorNames": [
+          "王弼"
+        ],
+        "anchorIds": [
+          "zhouyi:32:line:2"
+        ],
+        "commentsOn": [
+          "zhouyi:32:line:2"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-2404960.wiki",
+          "startLine": 76,
+          "endLine": 76,
+          "pageLabels": []
+        }
+      },
+      {
+        "id": "wang-bi@2404960:h32:line3:d1ff92b48b",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "line",
+        "line": 3,
+        "text": "處三陽之中，居下體之上，處上體之下，上不全尊，下不全卑，中不在體，體在乎恒，而分無所定，無恒者也。德行無恒，自相違錯，不可致詰，故「或承之羞」也。施德於斯，物莫之納，鄙賤甚矣，故曰「貞吝」也。",
+        "textOriginal": "處三陽之中，居下體之上，處上體之下，上不至尊，下不至卑，中不在體，體在乎恒，而分無所定，無恒者也。德行無恒，自相違錯，不可致詰，故「或承之羞」也。施德於斯，物莫之納，鄙賤甚矣，故曰「貞吝」也。",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E6%81%92&oldid=2404960",
+        "locator": "《周易正義》·恒·第3爻注",
+        "version": "ws-2404960",
+        "review": "多源机器辅助核对后修订；采集原文及修改依据已保留，未经人工专家校勘。",
+        "reviewStatus": "machine_corrected",
+        "layer": "commentary",
+        "workId": "zhouyi-zhengyi",
+        "workTitle": "周易正義",
+        "sourceId": "ws-2404960",
+        "editionId": "ws-zhouyi-zhengyi",
+        "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+        "authorIds": [
+          "wang-bi"
+        ],
+        "authorNames": [
+          "王弼"
+        ],
+        "anchorIds": [
+          "zhouyi:32:line:3"
+        ],
+        "commentsOn": [
+          "zhouyi:32:line:3"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-2404960.wiki",
+          "startLine": 84,
+          "endLine": 84,
+          "pageLabels": []
+        },
+        "correctionHistory": [
+          {
+            "auditId": "crosscheck-20260926",
+            "parentReleaseId": "knowledge-v3-20260926",
+            "date": "2026-09-26",
+            "before": "上不至尊，下不至卑",
+            "after": "上不全尊，下不全卑",
+            "reason": "两处全误为至",
+            "sourceUrls": [
+              "https://github.com/kanripo/KR1a0007/blob/0fa05af11e9229b6cc6febe312d541fc6d4ec3bf/KR1a0007_022.txt",
+              "https://www.eee-learning.com/book/eee-jy32",
+              "https://www.eee-learning.com/eeebook/zenyi/389.gif"
+            ],
+            "reviewMethod": "machine_assisted",
+            "humanReviewed": false
+          }
+        ]
+      },
+      {
+        "id": "wang-bi@2404960:h32:line6:ab4d239331",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "line",
+        "line": 6,
+        "text": "夫靜為躁君，安為動主。故安者上之所處也，靜者可久之道也。處卦之上，居動之極，以此為恒，無施而得也。",
+        "textOriginal": "夫靜為躁君，安為動主。故安者上之所處也，靜者可久之道也。處卦之上，居動之極，以此為恒，無施而得也。",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E6%81%92&oldid=2404960",
+        "locator": "《周易正義》·恒·第6爻注",
+        "version": "ws-2404960",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "zhouyi-zhengyi",
+        "workTitle": "周易正義",
+        "sourceId": "ws-2404960",
+        "editionId": "ws-zhouyi-zhengyi",
+        "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+        "authorIds": [
+          "wang-bi"
+        ],
+        "authorNames": [
+          "王弼"
+        ],
+        "anchorIds": [
+          "zhouyi:32:line:6"
+        ],
+        "commentsOn": [
+          "zhouyi:32:line:6"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-2404960.wiki",
+          "startLine": 108,
+          "endLine": 108,
+          "pageLabels": []
+        }
+      },
+      {
+        "id": "zhu-xi@737053:h32:line2:5f0a0b4c7f",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "line",
+        "line": 2,
+        "text": "以陽居隂本當有悔以其久中故得亡也",
+        "textOriginal": "以陽居隂本當有悔以其久中故得亡也",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B72&oldid=737053",
+        "locator": "《周易本義》·恒·第2爻注",
+        "version": "ws-737053",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "zhouyi-benyi",
+        "workTitle": "周易本義",
+        "sourceId": "ws-737053",
+        "editionId": "ws-benyi-skqs",
+        "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+        "authorIds": [
+          "zhu-xi"
+        ],
+        "authorNames": [
+          "朱熹"
+        ],
+        "anchorIds": [
+          "zhouyi:32:line:2"
+        ],
+        "commentsOn": [
+          "zhouyi:32:line:2"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-737053.wiki",
+          "startLine": 12,
+          "endLine": 12,
+          "pageLabels": []
+        }
+      },
+      {
+        "id": "zhu-xi@737053:h32:line3:1d32da5da0",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "line",
+        "line": 3,
+        "text": "位雖得正然過剛不中志從於上不能久於其所故為不恒其徳或承之羞之象或者不知其何人之辭承奉也言人皆得奉而進之不知其所自來也貞吝者正而不恒為可羞吝申戒占者之辭",
+        "textOriginal": "位雖得正然過剛不中志從於上不能久於其所故為不恒其徳或承之羞之象或者不知其何人之辭承奉也言人皆得奉而進之不知其所自來也貞吝者正而不恒為可羞吝申戒占者之辭",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B72&oldid=737053",
+        "locator": "《周易本義》·恒·第3爻注",
+        "version": "ws-737053",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "zhouyi-benyi",
+        "workTitle": "周易本義",
+        "sourceId": "ws-737053",
+        "editionId": "ws-benyi-skqs",
+        "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+        "authorIds": [
+          "zhu-xi"
+        ],
+        "authorNames": [
+          "朱熹"
+        ],
+        "anchorIds": [
+          "zhouyi:32:line:3"
+        ],
+        "commentsOn": [
+          "zhouyi:32:line:3"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-737053.wiki",
+          "startLine": 12,
+          "endLine": 12,
+          "pageLabels": []
+        }
+      },
+      {
+        "id": "zhu-xi@737053:h32:line6:5310233565",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "line",
+        "line": 6,
+        "text": "振者動之速也上六居恒之極處震之終恒極則不常震終則過動又隂柔不能固守居上非其所安故有振恒之象而其占則凶也",
+        "textOriginal": "振者動之速也上六居恒之極處震之終恒極則不常震終則過動又隂柔不能固守居上非其所安故有振恒之象而其占則凶也",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B72&oldid=737053",
+        "locator": "《周易本義》·恒·第6爻注",
+        "version": "ws-737053",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "zhouyi-benyi",
+        "workTitle": "周易本義",
+        "sourceId": "ws-737053",
+        "editionId": "ws-benyi-skqs",
+        "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+        "authorIds": [
+          "zhu-xi"
+        ],
+        "authorNames": [
+          "朱熹"
+        ],
+        "anchorIds": [
+          "zhouyi:32:line:6"
+        ],
+        "commentsOn": [
+          "zhouyi:32:line:6"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-737053.wiki",
+          "startLine": 12,
+          "endLine": 12,
+          "pageLabels": []
+        }
+      }
+    ],
+    "trace": [
+      {
+        "step": "retrieve",
+        "status": "ok",
+        "channel": "fixed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "code": "situation_followup",
+        "evidenceIds": [
+          "zy-32-judgment",
+          "zy-32-xiang",
+          "zy-32-tuan"
+        ],
+        "truncated": false,
+        "droppedEvidenceIds": []
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 3550,
+        "promptTokens": 2994,
+        "completionTokens": 633,
+        "totalTokens": 3627
+      },
+      {
+        "step": "tool",
+        "tool": "get_passages",
+        "args": {
+          "layers": [
+            "classic",
+            "commentary"
+          ],
+          "hexagramId": 32,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            2,
+            3,
+            6
+          ]
+        },
+        "status": "ok",
+        "evidenceIds": [
+          "zy-32-line-2",
+          "zy-32-line-3",
+          "zy-32-line-6",
+          "wang-bi@2404960:h32:line2:5b33f4c7f5",
+          "wang-bi@2404960:h32:line3:d1ff92b48b",
+          "wang-bi@2404960:h32:line6:ab4d239331",
+          "zhu-xi@737053:h32:line2:5f0a0b4c7f",
+          "zhu-xi@737053:h32:line3:1d32da5da0",
+          "zhu-xi@737053:h32:line6:5310233565"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "hits": [
+          {
+            "passageId": "zy-32-line-2",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-32-line-3",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-32-line-6",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "wang-bi@2404960:h32:line2:5b33f4c7f5",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "wang-bi@2404960:h32:line3:d1ff92b48b",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "wang-bi@2404960:h32:line6:ab4d239331",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zhu-xi@737053:h32:line2:5f0a0b4c7f",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zhu-xi@737053:h32:line3:1d32da5da0",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zhu-xi@737053:h32:line6:5310233565",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          }
+        ],
+        "coverageStatus": "covered",
+        "truncated": false,
+        "durationMs": 2
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 1875,
+        "promptTokens": 5468,
+        "completionTokens": 213,
+        "totalTokens": 5681
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 26484,
+        "promptTokens": 2053,
+        "completionTokens": 6009,
+        "totalTokens": 8062
+      },
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "sameCast": true,
+    "repairs": 0,
+    "toolAttempts": 1,
+    "durationMs": 31971,
+    "auto": {
+      "calls": 3,
+      "reportedTokens": 17370,
+      "unknownUsage": 0
+    }
+  },
+  {
+    "caseId": "continuous-3",
+    "arm": "candidate",
+    "stage": "continuous",
+    "config": "flash-low",
+    "graphVersion": "python-graph-v15",
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "你问“我还要不要再道歉一次”，按恒卦看，我的判断是：不需要再郑重道歉一次。你已经把事实更正、对方接受、并定好交数据时间，这已经接近九二“悔亡”的位置。王弼注说“雖失其位，恒位於中，可以消悔也”，朱熹也解“以其久中故得亡也”；也就是说，守中、把事实和规则讲清楚，悔已经可消。若再反复道歉，反而像上六“振恒，凶”，把已经平息的波动重新搅动。",
+          "citations": [
+            {
+              "evidenceId": "zy-32-line-2",
+              "quote": "悔亡。",
+              "claim": "悔已经可消"
+            },
+            {
+              "evidenceId": "wang-bi@2404960:h32:line2:5b33f4c7f5",
+              "quote": "雖失其位，恒位於中，可以消悔也。",
+              "claim": "守中、把事实和规则讲清楚，悔已经可消"
+            },
+            {
+              "evidenceId": "zhu-xi@737053:h32:line2:5f0a0b4c7f",
+              "quote": "以其久中故得亡也",
+              "claim": "悔已经可消"
+            },
+            {
+              "evidenceId": "zy-32-line-6",
+              "quote": "振恒，凶。",
+              "claim": "若再反复道歉，反而像上六“振恒，凶”"
+            }
+          ]
+        },
+        {
+          "text": "更值得做的是把这次说开当作“終則有始”：旧循环是赶着合并，新循环是你按约定时间发数据、他按约定时间合并，留出缓冲。恒卦彖传说“利有攸往，終則有始也”，利有攸往不是继续追着道歉，而是往新的稳定安排走。你可以简短说一句：“上次的事我们已经说开了，谢谢你当时补上；接下来我按我们定的时间发数据。”这句话是确认和感谢，不是再次道歉。",
+          "citations": [
+            {
+              "evidenceId": "zy-32-tuan",
+              "quote": "利有攸往，終則有始也。",
+              "claim": "利有攸往不是继续追着道歉，而是往新的稳定安排走"
+            },
+            {
+              "evidenceId": "zy-32-judgment",
+              "quote": "亨，无咎，利贞，利有攸往。",
+              "claim": "这句话是确认和感谢，不是再次道歉"
+            },
+            {
+              "evidenceId": "zy-32-xiang",
+              "quote": "雷风，恒。君子以立不易方。",
+              "claim": "把这次说开当作“終則有始”"
+            }
+          ]
+        },
+        {
+          "text": "如果你当时是在公开场合说了重话，或者有别人在场，那么可以补一句简短的“上次那件事我说得急了，抱歉”，把歉意落在具体行为上；但不必再郑重道歉一次，也不必每次沟通都重提。上六“振恒，凶”，王弼注说“夫靜為躁君，安為動主。故安者上之所處也，靜者可久之道也”，朱熹也注“振者動之速也”。反复道歉、反复翻动情绪，就是“振恒”。",
+          "citations": [
+            {
+              "evidenceId": "zy-32-line-6",
+              "quote": "振恒，凶。",
+              "claim": "反复道歉、反复翻动情绪，就是“振恒”"
+            },
+            {
+              "evidenceId": "wang-bi@2404960:h32:line6:ab4d239331",
+              "quote": "夫靜為躁君，安為動主。故安者上之所處也，靜者可久之道也。",
+              "claim": "但不必再郑重道歉一次，也不必每次沟通都重提"
+            },
+            {
+              "evidenceId": "zhu-xi@737053:h32:line6:5310233565",
+              "quote": "振者動之速也",
+              "claim": "反复道歉、反复翻动情绪，就是“振恒”"
+            }
+          ]
+        },
+        {
+          "text": "恒卦九三说“不恒其德，或承之羞；贞吝”，王弼注说“德行無恒，自相違錯，不可致詰，故「或承之羞」也”。放到你们这件事上：只靠一次道歉、不靠稳定守约，问题还会反复。所以更有效的不是再道歉，而是把歉意转成行动——按你们定好的时间交数据；若预判会晚，提前告知；合并留出缓冲。彖传说“巽而動，剛柔皆應，恆”，沟通要保持温和而坚定，让双方都能回应。",
+          "citations": [
+            {
+              "evidenceId": "zy-32-line-3",
+              "quote": "不恒其德，或承之羞；贞吝。",
+              "claim": "只靠一次道歉、不靠稳定守约，问题还会反复"
+            },
+            {
+              "evidenceId": "wang-bi@2404960:h32:line3:d1ff92b48b",
+              "quote": "德行無恒，自相違錯，不可致詰，故「或承之羞」也。",
+              "claim": "更有效的不是再道歉，而是把歉意转成行动"
+            },
+            {
+              "evidenceId": "zy-32-tuan",
+              "quote": "巽而動，剛柔皆應，恆。",
+              "claim": "沟通要保持温和而坚定，让双方都能回应"
+            }
+          ]
+        },
+        {
+          "text": "最后提醒一点：如果你心里还是过不去，想再说一次，那也只需化为一句“这次是我数据晚了，给你添了麻烦”，说完就转入具体安排，不要再停留在情绪层面。恒卦讲“君子以立不易方”，立不易方不是不认错，而是认错之后守住尊重事实、平等合作的原则。",
+          "citations": [
+            {
+              "evidenceId": "zy-32-xiang",
+              "quote": "君子以立不易方。",
+              "claim": "立不易方不是不认错，而是认错之后守住尊重事实、平等合作的原则"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "errors": [],
+    "evidence": [
+      {
+        "id": "zy-32-judgment",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "judgment",
+        "line": null,
+        "text": "亨，无咎，利贞，利有攸往。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "恒·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:32:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "亨，无咎，利贞，利有攸往。"
+      },
+      {
+        "id": "zy-32-xiang",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "xiang",
+        "line": null,
+        "text": "雷风，恒。君子以立不易方。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "恒·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:32:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "雷风，恒。君子以立不易方。"
+      },
+      {
+        "id": "zy-32-tuan",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "tuan",
+        "line": null,
+        "text": "恆，久也。剛上而柔下，雷風相與，巽而動，剛柔皆應，恆。恆亨无咎，利貞；久于其道也，天地之道，恆久而不已也。利有攸往，終則有始也。日月得天，而能久照，四時變化，而能久成，聖人久于其道，而天下化成；觀其所恆，而天地萬物之情可見矣！",
+        "textOriginal": "恆，久也。剛上而柔下，雷風相與，巽而動，剛柔皆應，恆。恆亨无咎，利貞；久于其道也，天地之道，恆久而不已也。利有攸往，終則有始也。日月得天，而能久照，四時變化，而能久成，聖人久于其道，而天下化成；觀其所恆，而天地萬物之情可見矣！",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93/%E6%81%92&oldid=2530043",
+        "locator": "《周易》·恒·彖传",
+        "version": "ws-2530043",
+        "review": "机器按明确彖传边界提取；未人工校勘",
+        "reviewStatus": "machine_parsed",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "ws-2530043",
+        "editionId": "ws-zhouyi",
+        "editionLabel": "维基文库周易固定修订2530043",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:32:tuan"
+        ],
+        "commentsOn": [],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-2530043.wiki",
+          "startLine": 21,
+          "endLine": 21,
+          "pageLabels": []
+        }
+      },
+      {
+        "id": "zy-32-line-2",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "line",
+        "line": 2,
+        "text": "悔亡。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "恒·九二",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:32:line:2"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "悔亡。"
+      },
+      {
+        "id": "zy-32-line-3",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "line",
+        "line": 3,
+        "text": "不恒其德，或承之羞；贞吝。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "恒·九三",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:32:line:3"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "不恒其德，或承之羞；贞吝。"
+      },
+      {
+        "id": "zy-32-line-6",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "line",
+        "line": 6,
+        "text": "振恒，凶。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "恒·上六",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:32:line:6"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "振恒，凶。"
+      },
+      {
+        "id": "wang-bi@2404960:h32:line2:5b33f4c7f5",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "line",
+        "line": 2,
+        "text": "雖失其位，恒位於中，可以消悔也。",
+        "textOriginal": "雖失其位，恒位於中，可以消悔也。",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E6%81%92&oldid=2404960",
+        "locator": "《周易正義》·恒·第2爻注",
+        "version": "ws-2404960",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "zhouyi-zhengyi",
+        "workTitle": "周易正義",
+        "sourceId": "ws-2404960",
+        "editionId": "ws-zhouyi-zhengyi",
+        "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+        "authorIds": [
+          "wang-bi"
+        ],
+        "authorNames": [
+          "王弼"
+        ],
+        "anchorIds": [
+          "zhouyi:32:line:2"
+        ],
+        "commentsOn": [
+          "zhouyi:32:line:2"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-2404960.wiki",
+          "startLine": 76,
+          "endLine": 76,
+          "pageLabels": []
+        }
+      },
+      {
+        "id": "wang-bi@2404960:h32:line3:d1ff92b48b",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "line",
+        "line": 3,
+        "text": "處三陽之中，居下體之上，處上體之下，上不全尊，下不全卑，中不在體，體在乎恒，而分無所定，無恒者也。德行無恒，自相違錯，不可致詰，故「或承之羞」也。施德於斯，物莫之納，鄙賤甚矣，故曰「貞吝」也。",
+        "textOriginal": "處三陽之中，居下體之上，處上體之下，上不至尊，下不至卑，中不在體，體在乎恒，而分無所定，無恒者也。德行無恒，自相違錯，不可致詰，故「或承之羞」也。施德於斯，物莫之納，鄙賤甚矣，故曰「貞吝」也。",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E6%81%92&oldid=2404960",
+        "locator": "《周易正義》·恒·第3爻注",
+        "version": "ws-2404960",
+        "review": "多源机器辅助核对后修订；采集原文及修改依据已保留，未经人工专家校勘。",
+        "reviewStatus": "machine_corrected",
+        "layer": "commentary",
+        "workId": "zhouyi-zhengyi",
+        "workTitle": "周易正義",
+        "sourceId": "ws-2404960",
+        "editionId": "ws-zhouyi-zhengyi",
+        "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+        "authorIds": [
+          "wang-bi"
+        ],
+        "authorNames": [
+          "王弼"
+        ],
+        "anchorIds": [
+          "zhouyi:32:line:3"
+        ],
+        "commentsOn": [
+          "zhouyi:32:line:3"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-2404960.wiki",
+          "startLine": 84,
+          "endLine": 84,
+          "pageLabels": []
+        },
+        "correctionHistory": [
+          {
+            "auditId": "crosscheck-20260926",
+            "parentReleaseId": "knowledge-v3-20260926",
+            "date": "2026-09-26",
+            "before": "上不至尊，下不至卑",
+            "after": "上不全尊，下不全卑",
+            "reason": "两处全误为至",
+            "sourceUrls": [
+              "https://github.com/kanripo/KR1a0007/blob/0fa05af11e9229b6cc6febe312d541fc6d4ec3bf/KR1a0007_022.txt",
+              "https://www.eee-learning.com/book/eee-jy32",
+              "https://www.eee-learning.com/eeebook/zenyi/389.gif"
+            ],
+            "reviewMethod": "machine_assisted",
+            "humanReviewed": false
+          }
+        ]
+      },
+      {
+        "id": "wang-bi@2404960:h32:line6:ab4d239331",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "line",
+        "line": 6,
+        "text": "夫靜為躁君，安為動主。故安者上之所處也，靜者可久之道也。處卦之上，居動之極，以此為恒，無施而得也。",
+        "textOriginal": "夫靜為躁君，安為動主。故安者上之所處也，靜者可久之道也。處卦之上，居動之極，以此為恒，無施而得也。",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E6%81%92&oldid=2404960",
+        "locator": "《周易正義》·恒·第6爻注",
+        "version": "ws-2404960",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "zhouyi-zhengyi",
+        "workTitle": "周易正義",
+        "sourceId": "ws-2404960",
+        "editionId": "ws-zhouyi-zhengyi",
+        "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+        "authorIds": [
+          "wang-bi"
+        ],
+        "authorNames": [
+          "王弼"
+        ],
+        "anchorIds": [
+          "zhouyi:32:line:6"
+        ],
+        "commentsOn": [
+          "zhouyi:32:line:6"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-2404960.wiki",
+          "startLine": 108,
+          "endLine": 108,
+          "pageLabels": []
+        }
+      },
+      {
+        "id": "zhu-xi@737053:h32:line2:5f0a0b4c7f",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "line",
+        "line": 2,
+        "text": "以陽居隂本當有悔以其久中故得亡也",
+        "textOriginal": "以陽居隂本當有悔以其久中故得亡也",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B72&oldid=737053",
+        "locator": "《周易本義》·恒·第2爻注",
+        "version": "ws-737053",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "zhouyi-benyi",
+        "workTitle": "周易本義",
+        "sourceId": "ws-737053",
+        "editionId": "ws-benyi-skqs",
+        "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+        "authorIds": [
+          "zhu-xi"
+        ],
+        "authorNames": [
+          "朱熹"
+        ],
+        "anchorIds": [
+          "zhouyi:32:line:2"
+        ],
+        "commentsOn": [
+          "zhouyi:32:line:2"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-737053.wiki",
+          "startLine": 12,
+          "endLine": 12,
+          "pageLabels": []
+        }
+      },
+      {
+        "id": "zhu-xi@737053:h32:line3:1d32da5da0",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "line",
+        "line": 3,
+        "text": "位雖得正然過剛不中志從於上不能久於其所故為不恒其徳或承之羞之象或者不知其何人之辭承奉也言人皆得奉而進之不知其所自來也貞吝者正而不恒為可羞吝申戒占者之辭",
+        "textOriginal": "位雖得正然過剛不中志從於上不能久於其所故為不恒其徳或承之羞之象或者不知其何人之辭承奉也言人皆得奉而進之不知其所自來也貞吝者正而不恒為可羞吝申戒占者之辭",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B72&oldid=737053",
+        "locator": "《周易本義》·恒·第3爻注",
+        "version": "ws-737053",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "zhouyi-benyi",
+        "workTitle": "周易本義",
+        "sourceId": "ws-737053",
+        "editionId": "ws-benyi-skqs",
+        "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+        "authorIds": [
+          "zhu-xi"
+        ],
+        "authorNames": [
+          "朱熹"
+        ],
+        "anchorIds": [
+          "zhouyi:32:line:3"
+        ],
+        "commentsOn": [
+          "zhouyi:32:line:3"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-737053.wiki",
+          "startLine": 12,
+          "endLine": 12,
+          "pageLabels": []
+        }
+      },
+      {
+        "id": "zhu-xi@737053:h32:line6:5310233565",
+        "hexagramId": 32,
+        "name": "恒",
+        "section": "line",
+        "line": 6,
+        "text": "振者動之速也上六居恒之極處震之終恒極則不常震終則過動又隂柔不能固守居上非其所安故有振恒之象而其占則凶也",
+        "textOriginal": "振者動之速也上六居恒之極處震之終恒極則不常震終則過動又隂柔不能固守居上非其所安故有振恒之象而其占則凶也",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B72&oldid=737053",
+        "locator": "《周易本義》·恒·第6爻注",
+        "version": "ws-737053",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "zhouyi-benyi",
+        "workTitle": "周易本義",
+        "sourceId": "ws-737053",
+        "editionId": "ws-benyi-skqs",
+        "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+        "authorIds": [
+          "zhu-xi"
+        ],
+        "authorNames": [
+          "朱熹"
+        ],
+        "anchorIds": [
+          "zhouyi:32:line:6"
+        ],
+        "commentsOn": [
+          "zhouyi:32:line:6"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-737053.wiki",
+          "startLine": 12,
+          "endLine": 12,
+          "pageLabels": []
+        }
+      }
+    ],
+    "trace": [
+      {
+        "step": "retrieve",
+        "status": "ok",
+        "channel": "fixed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "code": "situation_followup",
+        "evidenceIds": [
+          "zy-32-judgment",
+          "zy-32-xiang",
+          "zy-32-tuan",
+          "zy-32-line-2",
+          "zy-32-line-3",
+          "zy-32-line-6",
+          "wang-bi@2404960:h32:line2:5b33f4c7f5",
+          "wang-bi@2404960:h32:line3:d1ff92b48b",
+          "wang-bi@2404960:h32:line6:ab4d239331",
+          "zhu-xi@737053:h32:line2:5f0a0b4c7f",
+          "zhu-xi@737053:h32:line3:1d32da5da0",
+          "zhu-xi@737053:h32:line6:5310233565"
+        ],
+        "truncated": false,
+        "droppedEvidenceIds": []
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 3570,
+        "promptTokens": 4968,
+        "completionTokens": 541,
+        "totalTokens": 5509
+      },
+      {
+        "step": "model",
+        "status": "error",
+        "code": "MODEL_INCOMPLETE_RESPONSE",
+        "phase": "generate",
+        "durationMs": 31238,
+        "promptTokens": 2575,
+        "completionTokens": 8192,
+        "totalTokens": 10767,
+        "usage": {
+          "prompt_tokens": 2575,
+          "completion_tokens": 8192,
+          "total_tokens": 10767,
+          "prompt_tokens_details": {
+            "cached_tokens": 256
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 7288
+          },
+          "prompt_cache_hit_tokens": 256,
+          "prompt_cache_miss_tokens": 2319
+        }
+      },
+      {
+        "step": "validate",
+        "status": "failed",
+        "code": "MODEL_INCOMPLETE_RESPONSE"
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 4738,
+        "promptTokens": 3508,
+        "completionTokens": 1222,
+        "totalTokens": 4730
+      },
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "sameCast": true,
+    "repairs": 1,
+    "toolAttempts": 0,
+    "durationMs": 39615,
+    "auto": {
+      "calls": 3,
+      "reportedTokens": 21006,
+      "unknownUsage": 0
+    }
+  }
+]

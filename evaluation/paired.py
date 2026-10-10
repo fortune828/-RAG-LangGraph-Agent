@@ -76,7 +76,8 @@ class RecordedChat:
 
     async def __call__(self, messages, tools=None):
         call_id = 1 + sum(e['kind'] == 'model_request' for e in self.recorder.events)
-        stage = 'route' if tools else 'repair' if len(messages) > 2 else 'generate'
+        phases = [e['phase'] for e in self.recorder.events if e['kind'] == 'model_phase']
+        stage = phases[-1] if phases else ('route' if tools else 'repair' if len(messages) > 2 else 'generate')
         payload = self.budget.request_payload(messages, tools)
         self.recorder(dict(kind='model_request', callId=call_id, stage=stage,
                            payload=payload, payloadSha256=sha(payload)))

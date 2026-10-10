@@ -139,11 +139,8 @@ async def test_graph_exact_tool_and_one_repair():
     async def model(messages, tools=None):
         nonlocal generation
         calls.append(bool(tools))
-        if len(calls) == 1:
-            return response(calls=[tool_call()])
-        if tools:
-            assert any(m['role'] == 'tool' and e['id'] in m['content'] for m in messages)
-            return response({'ready': True})
+        assert tools is None  # The program plans this exact target, then generates.
+        assert any(item['id'] == e['id'] for item in json.loads(messages[1]['content'])['参考原文'])
         generation += 1
         a = answer(e)
         if generation == 1:
@@ -154,10 +151,13 @@ async def test_graph_exact_tool_and_one_repair():
         return response(a)
     s = session()
     graph = build_graph(InMemorySaver(), model)
-    result = await graph.ainvoke(initial_state(s, '第二爻原文是什么？', 'followup'), {'configurable': {'thread_id': 'exact'}})
+    result = await graph.ainvoke(initial_state(s, '本卦第二爻原文是什么？', 'followup'), {'configurable': {'thread_id': 'exact'}})
     assert result['answer']['status'] == 'answered'
     assert result['session']['cast'] == s['cast']
     assert result['attempts'] == 1 and result['repairs'] == 1
+    assert calls == [False, False]
+    assert [event['evidenceIds'] for event in result['trace'] if event['step'] == 'tool'] == [[e['id']]]
+    assert any(m['role'] == 'tool' and e['id'] in m['content'] for m in result['messages'])
     assert [e['status'] for e in result['trace'] if e['step'] == 'validate'] == ['failed', 'passed']
 
 

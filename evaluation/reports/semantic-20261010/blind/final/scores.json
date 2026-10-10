@@ -1,0 +1,322 @@
+{
+  "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+  "scope": "依据本批实际问题、历史、卦象、匿名答案与随附原典／注家材料；未读取解盲键、源码或其他结果。获准 holdout.json 未含 semanticReference 字段，经任务方确认不再寻找其他标签，未将开发题参考强套到新题。",
+  "referenceLimit": "本批没有额外专家或语义 Gold；局部词义无法由随附材料确定时明确记录 unknown，不凭记忆补成专家结论。",
+  "rubric": {
+    "scale": {
+      "0": "明确失败",
+      "1": "混合或明显不足",
+      "2": "在可核对范围内充分做到",
+      "null": "无答案、无法判断或本题不适用，见理由"
+    },
+    "dimensions": {
+      "userFacts": "用户事实与最新纠正承接",
+      "classicalMeaning": "传统解释忠实程度",
+      "analogyFit": "现代类比贴切与推断边界",
+      "dialogueHelp": "自然交流与有用深度"
+    },
+    "principles": [
+      "明确现代类比不要求古文直接谈现代事件；类比牵强不自动同时判成传统含义错误。",
+      "准确引用不是全部语义，现代预测、事实和建议效果另行判断。",
+      "无答案四项 null；查询题无现代类比可以 analogyFit=null；未按字数或引文多少评分。"
+    ]
+  },
+  "summary": {
+    "total": 8,
+    "completedWithReadableAnswer": 8,
+    "candidateOnly": 0,
+    "noAnswerTechnicalFailure": 0,
+    "mechanicalNonCompletion": 0,
+    "lookupQuestions": 2,
+    "lookupAnswered": 2,
+    "means": {
+      "userFacts": {
+        "value": 2.0,
+        "n": 8
+      },
+      "classicalMeaning": {
+        "value": 2.0,
+        "n": 8
+      },
+      "analogyFit": {
+        "value": 1.0,
+        "n": 6
+      },
+      "dialogueHelp": {
+        "value": 1.75,
+        "n": 8
+      }
+    }
+  },
+  "results": [
+    {
+      "answerId": "F01",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "保留“最想保留唱歌”与每周行政任务的取舍，“若所有行政都压给你、无人分担”是条件，没有声称团队已拒绝分工。",
+        "classicalMeaning": "将“密云不雨”说明为云聚而未雨、“施未行”为尚未施行，并概括健而巽、上下响应，传统层面的主干与所给彖传相容；把文德联系唱歌属后续应用，不当成文德的字典释义。",
+        "analogyFit": "边界与小规模投入可以作启发，但“施未行提醒行政协调的成果会延迟、琐碎”从意象推出具体工作的成效和性质，团队请任也不足以证明“上下应之”。",
+        "dialogueHelp": "“轮值、分工、试用期或助手制度”加上行政时间上限和任期，给出可以先谈的条件，并在全包时保留婉拒选项。"
+      },
+      "comment": "职责协商有用，行政成效及团队响应被卦义说得过实。",
+      "flags": [
+        {
+          "type": "symbol_to_practical_outcome",
+          "quote": "“施未行”提醒行政协调的成果会延迟、琐碎",
+          "reason": "没有给定团队流程或难点，不能由未施之象推出行政成效迟延。",
+          "dimension": "analogyFit"
+        },
+        {
+          "type": "overdirect_analogy",
+          "quote": "团队请你，是“上下应之”",
+          "reason": "邀请可以表示意愿，但不等于所需分担与合作响应已经具备。",
+          "dimension": "analogyFit"
+        }
+      ],
+      "uncertainties": [
+        "“担任艺术指导”是新方案而非用户已具备相应专业能力的事实；是否可行仍需确认。"
+      ],
+      "lookupOutcome": null
+    },
+    {
+      "answerId": "F02",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": null,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "准确回应用户问“是不是必须当天做完”的文义疑问，没有补出用户正在赶某项任务或拖延。",
+        "classicalMeaning": "用朱熹“不俟終日而見凡事之幾微也”解释及早察觉，并保留“中正自守”“安静而坚确”的条件，未将“不终日”误作当天交付期限。",
+        "analogyFit": "N/A：只澄清判断及时与执行期限的区别，没有对某个现代事件作类比。",
+        "dialogueHelp": "直接说明“不是给行动规定事情必须当天做完”，再解释为何不是躁进，完成指定注家查询而非只抄引文。"
+      },
+      "comment": "完成朱熹六二文义核对，解释保留了条件。",
+      "flags": [],
+      "uncertainties": [],
+      "lookupOutcome": "answered"
+    },
+    {
+      "answerId": "F03",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "明确说旧方向的“前提不成立”，并重述楼上声音、室友不在家；没有把“未回复”说成室友已经生气或故意冷落。",
+        "classicalMeaning": "“需”取等待、守正与不贸然推进的方向，所用爻名和小象对应正确；现事套入“小有言”等属于现代应用，其问题不自动改记为引文或原义错误。",
+        "analogyFit": "发更正后给空间与等待有贴切联系，但“你现在正处在‘小有言’的阶段”及借上六说保持敬意“通常不至于大失”，把不同爻象用成当前阶段与关系结果的依据。",
+        "dialogueHelp": "可直接发送“我搞错了……刚才语气太重，对不起。你不用马上回”，同时不逼表态，实质完成澄清误会与修正旧建议。"
+      },
+      "comment": "接受最新纠正并给可用道歉，仍有象义套阶段与结果的越界。",
+      "flags": [
+        {
+          "type": "symbol_to_user_stage",
+          "quote": "你现在正处在“小有言”的阶段",
+          "reason": "重话可借作口舌比喻，但不能据九二确认现实事件处于某个爻位阶段。",
+          "dimension": "analogyFit"
+        },
+        {
+          "type": "unsupported_relationship_outcome",
+          "quote": "保持敬意和耐心，通常不至于大失",
+          "reason": "上六的占辞不能估计这位室友会如何反应；尊重有帮助也不等于结果可由经文推算。",
+          "dimension": "analogyFit"
+        }
+      ],
+      "uncertainties": [],
+      "lookupOutcome": null
+    },
+    {
+      "answerId": "F04",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "明确“你发重话是误判，不是他做了那件事”，以“可能不快”“若他冷淡”保留未知心理，没有沿用要求室友解释扰民的旧前提。",
+        "classicalMeaning": "把需的等待与初九“不犯难行”“未失常”联系，传统方向与材料一致；“道歉要短、具体”是作者给当前沟通的条件，不是所附小象已经写明的传统释义。",
+        "analogyFit": "等待回复、敬慎听取反应是可讨论应用，但“处理得敬慎……不会造成大失”越过了现实结果边界，末尾“不是保证；他仍可能介意”与前文的确定语气不一致。",
+        "dialogueHelp": "提供说明事实并道歉的短消息、避免连发追问、将后续噪声问题转回楼上等步骤，帮助用户把误会和真正噪音问题分开处理。"
+      },
+      "comment": "修复步骤明确且保留了他人心理未知，局部结果保证未被结尾限制完全消解。",
+      "flags": [
+        {
+          "type": "unsupported_sufficiency_claim",
+          "quote": "处理得敬慎，未必完美，但不会造成大失",
+          "reason": "敬慎不能保证特定关系结果，上六小象也没有确立现代道歉的充分条件。",
+          "dimension": "analogyFit"
+        },
+        {
+          "type": "unestablished_success_conditions",
+          "quote": "“终吉”有条件：道歉要短、具体、无防卫",
+          "reason": "这些可以作为沟通建议，但不能被当成已由爻辞证明的终吉条件。",
+          "dimension": "analogyFit"
+        }
+      ],
+      "uncertainties": [
+        "“几小时到一天”是自拟等待建议，不是卦爻给出的时限；对方方便与否仍未知。"
+      ],
+      "lookupOutcome": null
+    },
+    {
+      "answerId": "F05",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 1
+      },
+      "reasons": {
+        "userFacts": "保留已追三小时、明早七点出门与剩一集的事实；“若……必须看完的执念”是条件说法，没有明确诊断用户有成瘾或强迫问题。",
+        "classicalMeaning": "先解释苦节为把节制推到痛苦、穷尽而不可固守，符合卦辞与“其道穷也”的主要限制；后来把硬撑追剧称作“被结局节制的苦”是另起的现代比拟。",
+        "analogyFit": "按时间设限与“制数度”贴切，但“无动爻……说明此刻不需要冒险改变既定节奏”无现实依据，把继续追剧反称为苦节也混淆限制过度与继续放纵的结构。",
+        "dialogueHelp": "“选睡觉”给了方向，但没有用当前时点、片长估计可睡时间，“只看……关键片段，然后立刻睡”又增加继续观看的分支，未充分帮助执行这次收尾。"
+      },
+      "comment": "有保留睡眠的明确建议，静卦外推和苦节类比不当，收尾帮助混合。",
+      "flags": [
+        {
+          "type": "static_cast_to_advice",
+          "quote": "无动爻，也说明此刻不需要冒险改变既定节奏",
+          "reason": "无动爻只描述本次卦，不能说明用户现实有何既定节奏、改变是否冒险。",
+          "dimension": "analogyFit"
+        },
+        {
+          "type": "reversed_analogy",
+          "quote": "被结局节制的苦",
+          "reason": "追剧被吸引与因节制过度而受苦不是同一种限制关系；这是类比不足，非前文对苦节释义全错。",
+          "dimension": "analogyFit"
+        },
+        {
+          "type": "unclear_execution_branch",
+          "quote": "只看结局的文字梗概或几分钟关键片段，然后立刻睡",
+          "reason": "没有确认剩余时间，继续打开剧情材料是否能帮助立刻停止也未说明。",
+          "dimension": "dialogueHelp"
+        }
+      ],
+      "uncertainties": [
+        "题干未给当前时间、起床准备时长或单集长度，不能据此确定已欠多少睡眠；此处不作医学风险量化。"
+      ],
+      "lookupOutcome": null
+    },
+    {
+      "answerId": "F06",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "明确承认“不知道你的时间余裕、团队规模，以及有没有人愿意分担”，并以能否分工和保留唱歌为决策条件，没有预设对方必然支持或用户必然胜任。",
+        "classicalMeaning": "将“懿文德”解释为修美自身文德，保留健而巽、上下应的主干；“想唱歌的心志是刚中”属于作者对当前处境的对应，不据此认定传统刚中本义就是唱歌愿望。",
+        "analogyFit": "有限投入、先谈分工可以启发判断，但“接任……很可能是一段投入已经发生、成效却迟迟不显的时期”用密云不雨预判未发生的行政工作，结尾承认缺资料也未撤回该推断。",
+        "dialogueHelp": "建议时间上限、表格、轮值及不全包，并在现实条件不足时选择只帮忙不接名分，给出了可操作的条件判断。"
+      },
+      "comment": "现实取舍框架充分，未来成效仍被意象预判。",
+      "flags": [
+        {
+          "type": "symbol_to_future_outcome",
+          "quote": "接任负责人，很可能是一段投入已经发生、成效却迟迟不显的时期",
+          "reason": "没有团队运行数据，不能由云未雨推出接任后成果迟延的概率。",
+          "dimension": "analogyFit"
+        },
+        {
+          "type": "overdirect_analogy",
+          "quote": "你内里想唱歌的那份心志是“刚中”",
+          "reason": "个人偏好与传统刚中不是可由用户自述直接确证的同一属性；作为比拟应保持距离。",
+          "dimension": "analogyFit"
+        }
+      ],
+      "uncertainties": [
+        "仅凭所附彖传，无法充分核定“尚往”具体释为“气还在往上走”的训诂唯一性，标为局部 unknown，不擅判为错。",
+        "仅陈述无动爻或说没有转向信号，不自动等于推断现实稳定；本条没有因此另记静卦导致现实不变。"
+      ],
+      "lookupOutcome": null
+    },
+    {
+      "answerId": "F07",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 1
+      },
+      "reasons": {
+        "userFacts": "以“如果已经是深夜”“如果这一集不到四十分钟”提出分支，未假装知道现在几点、最后一集长度或明早具体安排。",
+        "classicalMeaning": "解释苦节不可贞为痛苦地固守限制不能作为长久准则，并以“制数度”说明设尺度，传统层面的解释与所给卦辞、大象相容。",
+        "analogyFit": "先算睡眠余裕与尺度有联系，但在继续看剧的情境写“不可贞提醒你，不必用硬撑来证明自律”，把苦节及自律套到硬撑追剧，关系含混而非贴切解释。",
+        "dialogueHelp": "“先算清……睡眠底线”是有用方向，但未给计算步骤，四十分钟阈值也无情境依据，最后“要么看完……要么……明晚”基本重述了原来的两选项。"
+      },
+      "comment": "保留未知条件，但类比转折含混，实际选择支持不足。",
+      "flags": [
+        {
+          "type": "strained_analogy",
+          "quote": "不必用硬撑来证明自律",
+          "reason": "用户问是否继续娱乐，没有说想靠追完证明自律，苦节与该选择的对应因此不清。",
+          "dimension": "analogyFit"
+        },
+        {
+          "type": "unsupported_decision_threshold",
+          "quote": "如果这一集不到四十分钟，且你能接受明早略困但关键事情不受影响",
+          "reason": "未将阈值与当前时间、准备时间或可睡时长相连，难以实际判断第二天只会略困且不受影响。",
+          "dimension": "dialogueHelp"
+        }
+      ],
+      "uncertainties": [],
+      "lookupOutcome": null
+    },
+    {
+      "answerId": "F08",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": null,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "直接回应“是不是说事情必须当天做完”，将这一理解作为待核对问题而非用户已经采取的行动，没有补写现实困境。",
+        "classicalMeaning": "将“不俟終日”解释为见几微的明审及时，并用“安静而坚确”“占者如是”保留朱熹的主体条件，未把吉或当天完成变成无条件承诺。",
+        "analogyFit": "N/A：说明见几与执行期限的差别，未对某个现代生活情境作类比。",
+        "dialogueHelp": "以“不是”给出结论，再解释朱熹为何重判断力与定力，查证对象、文本依据和语义区别都完成。"
+      },
+      "comment": "完成指定注家文义核对，没有把时间意象变成硬期限。",
+      "flags": [],
+      "uncertainties": [],
+      "lookupOutcome": "answered"
+    }
+  ]
+}

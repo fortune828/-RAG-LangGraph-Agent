@@ -1,0 +1,120 @@
+{
+  "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+  "scope": "仅本包问题、卦象、匿名回答和随附证据；未读 stage rows、解盲 key、源码或外部结论，未调用被测 API。",
+  "rubric": {
+    "dimensions": {
+      "userFacts": "用户事实与更正承接",
+      "classicalMeaning": "传统解释忠实程度",
+      "analogyFit": "现代类比贴切与推断边界",
+      "dialogueHelp": "自然交流与有用深度"
+    },
+    "scale": {
+      "0": "明确失败",
+      "1": "混合或明显不足",
+      "2": "可核对范围内充分做到",
+      "null": "无答案、不适用或无法判断"
+    },
+    "principles": [
+      "机械状态与语义评分分列，机械通过不提高语义分。",
+      "明确现代类比不要求古文谈现代生活；准确引文也不为现实推论自动背书。",
+      "不按字数、段数、引用数量评分。"
+    ]
+  },
+  "summary": {
+    "total": 2,
+    "completedWithReadableAnswer": 2,
+    "candidateOnly": 0,
+    "noAnswerTechnicalFailure": 0,
+    "mechanicalNonCompletion": 0,
+    "means": {
+      "userFacts": {
+        "value": 1.5,
+        "n": 2
+      },
+      "classicalMeaning": {
+        "value": 2.0,
+        "n": 2
+      },
+      "analogyFit": {
+        "value": 1.0,
+        "n": 2
+      },
+      "dialogueHelp": {
+        "value": 1.5,
+        "n": 2
+      }
+    }
+  },
+  "results": [
+    {
+      "answerId": "A01",
+      "scores": {
+        "userFacts": 1,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 1
+      },
+      "reasons": {
+        "userFacts": "“你已经讲过两次”把用户报告的两次做错改成两次讲解，教学次数并非已知事实。",
+        "classicalMeaning": "解释击蒙为去蒙昧，并保留朱熹“攻治太深……反为之害”与“惟捍其外诱”的条件，没有把严密理解成越严越好。",
+        "analogyFit": "防错与防护的对应可以成立，但用“初筮告，再三渎”规定第三次只能验证、不能重复讲解，将占问及诚敬语境过度转成教学次数规则。",
+        "dialogueHelp": "复述、演示、自查提供可执行检查，但“不重复讲解”预先排除了仍未理解、需要换种说明的可能，未先查明两次出错的具体原因。"
+      },
+      "comment": "王、朱解释的主要边界保留了，但用户事实和固定次数教学规则仍有问题。",
+      "flags": [
+        {
+          "type": "unprovided_training_history",
+          "quote": "你已经讲过两次",
+          "reason": "用户只说已讲过的步骤连续做错两次，不能确定讲解次数。",
+          "dimension": "userFacts"
+        },
+        {
+          "type": "overdirect_analogy",
+          "quote": "第三次若还只是重复讲，就接近卦辞说的“初筮告，再三渎，渎则不告”",
+          "reason": "不能由再三渎推出第三次说明本身不适宜；应判断是否理解及所需支持。",
+          "dimension": "analogyFit"
+        },
+        {
+          "type": "premature_instruction_rule",
+          "quote": "同一错误第三次出现时，不重复讲解",
+          "reason": "未经原因核实就排除再次或换方式讲解，可能减少必要教学支持。",
+          "dimension": "dialogueHelp"
+        }
+      ],
+      "uncertainties": [],
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true
+    },
+    {
+      "answerId": "A02",
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "围绕帮忙整天与预算有限提出量力选项，“朋友……看重的大概不是……”保留猜测性质，没有把朋友偏好伪称为已知。",
+        "classicalMeaning": "王弼“明信显著，不存外饰”、简朴器物和朱熹“薄礼益以诚心”的解释受随附注释支持，没有把纳约直接训为现代约定。",
+        "analogyFit": "借日常“窗口”寻找合适感谢方式可以成立，但“只要……就不会因为礼物薄而失礼”把终无咎转成现代充分条件，不能由注释保证。",
+        "dialogueHelp": "家常饭、手写卡片、实际帮忙与不作超预算承诺，使用户能在有限预算下选一种具体答谢方式。"
+      },
+      "comment": "传统说明与实际选项有帮助，薄礼不会失礼的确定结论仍越界。",
+      "flags": [
+        {
+          "type": "unsupported_sufficiency_claim",
+          "quote": "只要你的表达是真诚的、及时且量力而行的，就不会因为礼物薄而失礼",
+          "reason": "真诚与量力可以降低不适，却不能由终无咎保证特定朋友对具体方式的理解。",
+          "dimension": "analogyFit"
+        }
+      ],
+      "uncertainties": [
+        "朋友喜好、是否接受礼物及合适表达方式仍未知；材料不能证实朋友必定只在意心意。"
+      ],
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true
+    }
+  ]
+}

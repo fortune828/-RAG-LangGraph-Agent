@@ -1,0 +1,51 @@
+{
+  "stage": "continuous",
+  "createdAt": "2026-10-10T10:34:37.060854+00:00",
+  "commit": "f277be7f880c368cd549e0f956555be982975a34",
+  "graphVersion": "python-graph-v15",
+  "promptVersion": "evidence-agent-python-v16",
+  "releaseId": "knowledge-v3-20260926-r1",
+  "caseHash": "2b78ee5693b40658876517a156b6010d021d1b533f80168a2c4257ec8adb97b7",
+  "arms": [
+    "candidate"
+  ],
+  "configuration": {
+    "model": "deepseek-flash",
+    "messages": [],
+    "max_tokens": 8192,
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "low",
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "callCap": 90,
+  "tokenCap": 700000,
+  "files": {
+    "backend/__init__.py": "31035e9fa5d2ce31f46dba6f1b3492edf184befa6b9d447c506d6824c539f8f3",
+    "backend/citations.py": "8029e28ea4946ca8653be6b91157311fcbdcf0ce5b099c0843b7e5e45b11607a",
+    "backend/llm.py": "7f1ba810ca64291859446791230307d41d81c1860a17c03d0baf793769d50fd9",
+    "backend/app.py": "a88684e8202e88c690b64526e8daec32c136ebd719075faf48821722552f4aba",
+    "backend/knowledge.py": "b2e90b7994a2e394b90563f7585786b576eb7f433c0e6a3bc9c84b5d029f3ceb",
+    "backend/graph.py": "71f638a192a99e516ee6f7289e2c993cf473926dff084122951eff55b69b1e01",
+    "backend/__main__.py": "ac31e6560f567ee61fd9c6ff94d9596c0608557293f0c6cd6407f994970d672b",
+    "backend/validation.py": "4fd5266397f126759c427ac640e65679415b3f8633938e043dac09ff5c9c474b",
+    "backend/config.py": "35753bef9d7dc5b65c65e846e72b9610427afea8a9ad7011cab2df3c09cd8c5e",
+    "backend/store.py": "8e759718b5721ce4369d1f00c10ecf5a699503df075ca4bbd1920114ae49a465",
+    "backend/prompts.py": "4a4740e548773e8c011cbaee3e21a53196142bf11640669302d16c3478119207",
+    "backend/retrieval.py": "7552ccf60873a0e8d18c14b019e7d5588afb38dd6373674b9870c994d3ea88a7",
+    "backend/models.py": "ab0df5f73b2dbcefb79c75837f1efc6f94833a0ed44ebbd471d817414a284064",
+    "backend/evaluate.py": "50d16549eb4fe36076517b0ad09f492bdcfe67ca9522446fc1fe0a07d7b050c1",
+    "backend/domain.py": "01c1dcf5bde48957f5f7025f50f67acf967d9f7f8485fd2dec653bc923b2a265",
+    "evaluation/semantic.py": "ca48a22459f79071b8667981ddc947059185f9fef3834199716db395955e68f8",
+    "evaluation/paired.py": "769b1c93f407b8dffb5a7c5dc087dbf89aa842c8950156a24794b42cdf55a79f",
+    "evaluation/autonomous.py": "c98d17ac5a9ffafce04227084cd305490c4b8664007144dbbcbd549244b33dd9",
+    "requirements.txt": "04b3585561c260777a04094dfdaa17bbc4369b8471521c1775fcf612c915a322"
+  },
+  "design": "End-to-end graph with at most one repair; alternate arm order.",
+  "dirty": true,
+  "labels": "AI proposed semantic references never enter model messages; synthetic inputs only.",
+  "history": "Each completed preceding answer/evidence is carried forward; this is one genuine three-turn group, not three independent users."
+}

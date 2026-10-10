@@ -1,0 +1,208 @@
+[
+  {
+    "caseId": "semantic-responsibility",
+    "session": {
+      "id": "session-semantic-responsibility",
+      "question": "搭档连续两次晚交小组作业中他负责的部分，最后都要我赶着合并。怎么跟他谈这件事？",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          7,
+          7,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "011100",
+          "name": "雷风恒",
+          "number": 32,
+          "judgment": "亨，无咎，利贞，利有攸往。"
+        },
+        "changed": {
+          "binary": "011100",
+          "name": "雷风恒",
+          "number": 32,
+          "judgment": "亨，无咎，利贞，利有攸往。"
+        },
+        "originalBinary": "011100",
+        "changedBinary": "011100",
+        "changingIndices": [],
+        "id": "cast-semantic-responsibility",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [
+        {
+          "id": "fixture-0",
+          "question": "搭档连续两次晚交小组作业中他负责的部分，最后都要我赶着合并。怎么跟他谈这件事？",
+          "status": "completed",
+          "mode": "initial",
+          "answer": {
+            "status": "answered",
+            "paragraphs": [
+              {
+                "text": "他可能习惯了让你兜底。你可以明确告诉他，下次再晚交就由他自己承担后果。",
+                "citations": []
+              }
+            ],
+            "limitations": []
+          },
+          "evidence": []
+        }
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "我刚核对了记录，两次都是我把基础数据给晚了，他后面其实一直在赶。我之前只注意到最后交稿的时间。现在怎么开口比较好？",
+    "mode": "followup"
+  },
+  {
+    "caseId": "semantic-literal",
+    "session": {
+      "id": "session-semantic-literal",
+      "question": "我想了解本次坎卦的具体文义。",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          8,
+          8,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "010010",
+          "name": "坎为水",
+          "number": 29,
+          "judgment": "习坎，有孚，维心亨，行有尚。"
+        },
+        "changed": {
+          "binary": "010010",
+          "name": "坎为水",
+          "number": 29,
+          "judgment": "习坎，有孚，维心亨，行有尚。"
+        },
+        "originalBinary": "010010",
+        "changedBinary": "010010",
+        "changingIndices": [],
+        "id": "cast-semantic-literal",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "请查本卦九二的爻辞和小象，“求小得”是什么意思？",
+    "mode": "followup"
+  },
+  {
+    "caseId": "semantic-fuzzy",
+    "session": {
+      "id": "session-semantic-fuzzy",
+      "question": "我记得一段关于以诚意沟通的易学解释，想核对出处。",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "111111",
+          "name": "乾为天",
+          "number": 1,
+          "judgment": "元，亨，利，贞。"
+        },
+        "changed": {
+          "binary": "111111",
+          "name": "乾为天",
+          "number": 1,
+          "judgment": "元，亨，利，贞。"
+        },
+        "originalBinary": "111111",
+        "changedBinary": "111111",
+        "changingIndices": [],
+        "id": "cast-semantic-fuzzy",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "我记得朱熹似乎说过，大意是在险难的时候，礼物虽薄，也可以用诚心沟通。这句出自哪里？我想确认自己记得对不对。",
+    "mode": "followup"
+  },
+  {
+    "caseId": "dev-project-correction",
+    "session": {
+      "id": "session-dev-project-correction",
+      "question": "我的项目已经能演示，简历也写好了。离投递还有一周，我是继续加功能还是把现有功能测试扎实？",
+      "cast": {
+        "lines": [
+          7,
+          9,
+          7,
+          7,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "111111",
+          "name": "乾为天",
+          "number": 1,
+          "judgment": "元，亨，利，贞。"
+        },
+        "changed": {
+          "binary": "101111",
+          "name": "天火同人",
+          "number": 13,
+          "judgment": "同人于野，亨。利涉大川，利君子贞。"
+        },
+        "originalBinary": "111111",
+        "changedBinary": "101111",
+        "changingIndices": [
+          1
+        ],
+        "id": "cast-dev-project-correction",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [
+        {
+          "id": "fixture-0",
+          "question": "我的项目已经能演示，简历也写好了。离投递还有一周，我是继续加功能还是把现有功能测试扎实？",
+          "status": "completed",
+          "mode": "initial",
+          "answer": {
+            "status": "answered",
+            "paragraphs": [
+              {
+                "text": "你可能对现有成果还不太有信心。可以先暂停投递，多做几个功能，再考虑是否展示。",
+                "citations": []
+              }
+            ],
+            "limitations": []
+          },
+          "evidence": []
+        }
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "不是我没信心，我已经开始投递了。现在真正担心的是面试时解释不清检索为什么有效，继续加功能对这件事有没有帮助？",
+    "mode": "followup"
+  }
+]

@@ -1,0 +1,2506 @@
+{
+  "scoreType": "Existing independent AI subjective reviews; not human or expert scores. Original scores unchanged.",
+  "reviews": [
+    {
+      "review": "context",
+      "reviewer": "独立 AI 盲评；非专家、非真人评分、非人工 Gold",
+      "originalSummary": {
+        "total": 16,
+        "completedWithReadableAnswer": 14,
+        "candidateOnly": 1,
+        "noAnswerTechnicalFailure": 1,
+        "mechanicalNonCompletion": 2,
+        "means": {
+          "userFacts": {
+            "value": 1.6,
+            "n": 15
+          },
+          "classicalMeaning": {
+            "value": 1.8,
+            "n": 15
+          },
+          "analogyFit": {
+            "value": 1.267,
+            "n": 15
+          },
+          "dialogueHelp": {
+            "value": 1.733,
+            "n": 15
+          }
+        }
+      },
+      "scoreSha256": "95205f951537b0c992f15578ca312801bbf1aa973cc26d7d3d6b89dd0c93256c",
+      "keySha256": "bc0ebf94c6340ab699ce6db880caca39907defe67d14b076fdf5122096164412"
+    },
+    {
+      "review": "continuous",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "originalSummary": {
+        "total": 3,
+        "completedWithReadableAnswer": 3,
+        "candidateOnly": 0,
+        "noAnswerTechnicalFailure": 0,
+        "mechanicalNonCompletion": 0,
+        "means": {
+          "userFacts": {
+            "value": 1.333,
+            "n": 3
+          },
+          "classicalMeaning": {
+            "value": 1.667,
+            "n": 3
+          },
+          "analogyFit": {
+            "value": 1.0,
+            "n": 3
+          },
+          "dialogueHelp": {
+            "value": 1.667,
+            "n": 3
+          }
+        }
+      },
+      "scoreSha256": "f29a60dde42505f02cbe36631e08c086c46a7f79d33a5d95dd098b36499b81a3",
+      "keySha256": "c06f5c7cbf6f740516c94209a97acfaa25b8d8a7ebd3937b87fada07e7d1bc80"
+    },
+    {
+      "review": "final",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "originalSummary": {
+        "total": 8,
+        "completedWithReadableAnswer": 8,
+        "candidateOnly": 0,
+        "noAnswerTechnicalFailure": 0,
+        "mechanicalNonCompletion": 0,
+        "lookupQuestions": 2,
+        "lookupAnswered": 2,
+        "means": {
+          "userFacts": {
+            "value": 2.0,
+            "n": 8
+          },
+          "classicalMeaning": {
+            "value": 2.0,
+            "n": 8
+          },
+          "analogyFit": {
+            "value": 1.0,
+            "n": 6
+          },
+          "dialogueHelp": {
+            "value": 1.75,
+            "n": 8
+          }
+        }
+      },
+      "scoreSha256": "08754b89e26403f05bb732ba767848812f82c004e3a2aa407d4c60af7646d8d8",
+      "keySha256": "562aa0c4997d0ba57ed47fb8ddd23ae87cbc708142db34837cb2707b786b492a"
+    },
+    {
+      "review": "hybrid",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "originalSummary": {
+        "total": 12,
+        "completedWithReadableAnswer": 10,
+        "candidateOnly": 0,
+        "noAnswerTechnicalFailure": 2,
+        "mechanicalNonCompletion": 2,
+        "readableInsufficientAnswers": 0,
+        "lookupQuestions": 6,
+        "lookupAnswered": 5,
+        "lookupNoAnswer": 1,
+        "means": {
+          "userFacts": {
+            "value": 1.6,
+            "n": 10
+          },
+          "classicalMeaning": {
+            "value": 1.9,
+            "n": 10
+          },
+          "analogyFit": {
+            "value": 1.333,
+            "n": 6
+          },
+          "dialogueHelp": {
+            "value": 1.7,
+            "n": 10
+          }
+        }
+      },
+      "scoreSha256": "fbbe4cccf40c12b0fc334a063c51b4aeb66b9b5174988a3bd576bbdc523a3a2d",
+      "keySha256": "b8afdb4c4c02c893049cdd18c33bf39c8d651a19285caf841be69544a811e520"
+    },
+    {
+      "review": "knowledge",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "originalSummary": {
+        "total": 8,
+        "completedWithReadableAnswer": 6,
+        "candidateOnly": 1,
+        "noAnswerTechnicalFailure": 1,
+        "mechanicalNonCompletion": 2,
+        "means": {
+          "userFacts": {
+            "value": 1.714,
+            "n": 7
+          },
+          "classicalMeaning": {
+            "value": 1.571,
+            "n": 7
+          },
+          "analogyFit": {
+            "value": 1.429,
+            "n": 7
+          },
+          "dialogueHelp": {
+            "value": 1.857,
+            "n": 7
+          }
+        }
+      },
+      "scoreSha256": "5db122be15ab572ac62ac879f1bde80fe3a00825f0d6729eb6a8a2afa3c13b40",
+      "keySha256": "5daaf5aabc21094b8ea89398587d362331d3fb6b0a602c6a278524d399af240d"
+    },
+    {
+      "review": "rag-recovery",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "originalSummary": {
+        "total": 2,
+        "completedWithReadableAnswer": 2,
+        "candidateOnly": 0,
+        "noAnswerTechnicalFailure": 0,
+        "mechanicalNonCompletion": 0,
+        "means": {
+          "userFacts": {
+            "value": 1.5,
+            "n": 2
+          },
+          "classicalMeaning": {
+            "value": 2.0,
+            "n": 2
+          },
+          "analogyFit": {
+            "value": 1.0,
+            "n": 2
+          },
+          "dialogueHelp": {
+            "value": 1.5,
+            "n": 2
+          }
+        }
+      },
+      "scoreSha256": "a462798bcf211cf84f179f1fcee0f2f76a48747bfcb69718992a78e47762845b",
+      "keySha256": "8fe876d19ed93c4bbd829cab9d3d02eb5394782a3eaaa9eb0464449c81de0ea3"
+    },
+    {
+      "review": "stress",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "originalSummary": {
+        "total": 2,
+        "completedWithReadableResponse": 1,
+        "candidateOnly": 1,
+        "noAnswerTechnicalFailure": 0,
+        "mechanicalNonCompletion": 1,
+        "visibleVerificationFallback": 1,
+        "deliveredInsufficientAnswer": 1,
+        "candidateLookupAnswered": 1,
+        "deliveredLookupAnswered": 0,
+        "endToEndTaskCompleted": 0,
+        "means": {
+          "userFacts": {
+            "value": 1.5,
+            "n": 2
+          },
+          "classicalMeaning": {
+            "value": 1.5,
+            "n": 2
+          },
+          "analogyFit": {
+            "value": null,
+            "n": 0
+          },
+          "dialogueHelp": {
+            "value": 1.0,
+            "n": 2
+          }
+        }
+      },
+      "scoreSha256": "f6ee3c882bf24b7e5f7c5998e52b61757f4510805604be76ec7502f94389c880",
+      "keySha256": "17bde0079ac6f2d4f342df6f4ce4d12eb5c422f43c1fa899037e9f5accfab599"
+    }
+  ],
+  "results": [
+    {
+      "review": "context",
+      "reviewer": "独立 AI 盲评；非专家、非真人评分、非人工 Gold",
+      "scoreSource": "blind/context/scores.json",
+      "keySource": "context/review-key.json",
+      "stage": "context",
+      "caseId": "dev-project-correction",
+      "arm": "core",
+      "result": {
+        "answerId": "Q01",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 1,
+          "classicalMeaning": 2,
+          "analogyFit": 2,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "承接“你已开始投递”，没有再坚持用户缺乏信心；但“真正短板是面试时讲不清”把用户担心将来解释不清写成已确认的能力短板。",
+          "classicalMeaning": "“见龙在田，利见大人”“各正性命，保合太和，乃利贞”等引文与材料一致；“对应到项目”及结尾“以上是类比性判断”把项目解读标成应用，没有声称原典逐字谈检索。",
+          "analogyFit": "“新增功能能直接服务于验证机制或对比说明”与已能演示、需要对外说明的情境相接；“卦象是启发性视角，不决定面试结果”保留现实边界。元亨、贞与项目阶段的对应按现代比喻看，不当作原义证明。",
+          "dialogueHelp": "直接回答“帮助有限，除非……”，再给“无检索/有检索、不同策略、关键模块消融”及失败案例，能帮助用户说明有效性；深度服务于当前技术疑问。"
+        },
+        "comment": "实质建议贴题，主要不足是把担忧升级为已确定短板。",
+        "flags": [
+          {
+            "type": "uncertainty_promoted_to_fact",
+            "quote": "真正短板是面试时讲不清",
+            "reason": "用户说的是“担心”，没有报告已发生面试失败或已确认讲不清。",
+            "dimension": "userFacts"
+          }
+        ],
+        "uncertainties": []
+      }
+    },
+    {
+      "review": "context",
+      "reviewer": "独立 AI 盲评；非专家、非真人评分、非人工 Gold",
+      "scoreSource": "blind/context/scores.json",
+      "keySource": "context/review-key.json",
+      "stage": "context",
+      "caseId": "dev-lunch",
+      "arm": "baseline",
+      "result": {
+        "answerId": "Q02",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "保留“只有半小时”和两种餐；“若它已备好、可立即取餐”“若……排队超过十分钟”均为条件，并明确“你没给出两家的排队、出餐和口味偏好”。",
+          "classicalMeaning": "“夬，决也……决而和”、上六与小象引文匹配；以“放到……午饭上”引入应用，没有说上六原义就是午餐危险，也没有用乾保证精力。",
+          "analogyFit": "用“决而和”帮助尽快作选择贴切；但“吃完就走，正合……自强不息”只作词面联接，没有说明自我修养与赶紧吃完的相关结构，额外引文没有增进这项取舍。",
+          "dialogueHelp": "“能马上取餐者优先”给出现场可执行原则，并允许饭慢就换面。虽然关于更扛饿的比较缺少分量信息，最终选择仍以实际速度为准。"
+        },
+        "comment": "可执行的条件选择基本完成任务；乾的联系较装饰性。",
+        "flags": [
+          {
+            "type": "strained_analogy",
+            "quote": "吃完就走，正合“天行健，君子以自强不息”的乾卦精神",
+            "reason": "把及时离店直接对应自强，相关性弱；只扣类比，不据此判引文或传统释义错误。",
+            "dimension": "analogyFit"
+          }
+        ],
+        "uncertainties": [
+          "两份餐哪份更饱、吃得更快，缺少实际分量与制作信息，无法核实；不认定其中一种营养判断已被证明。"
+        ]
+      }
+    },
+    {
+      "review": "context",
+      "reviewer": "独立 AI 盲评；非专家、非真人评分、非人工 Gold",
+      "scoreSource": "blind/context/scores.json",
+      "keySource": "context/review-key.json",
+      "stage": "context",
+      "caseId": "dev-project",
+      "arm": "baseline",
+      "result": {
+        "answerId": "Q03",
+        "status": "failed",
+        "candidateOnly": false,
+        "semanticEvaluable": false,
+        "scores": {
+          "userFacts": null,
+          "classicalMeaning": null,
+          "analogyFit": null,
+          "dialogueHelp": null
+        },
+        "reasons": {
+          "userFacts": "无可读答案，技术失败，不评分。",
+          "classicalMeaning": "无可读答案，技术失败，不评分。",
+          "analogyFit": "无可读答案，技术失败，不评分。",
+          "dialogueHelp": "无可读答案，技术失败，不评分。"
+        },
+        "comment": "status=failed，answer=null。四维均为 N/A，不计作语义零分。",
+        "flags": [],
+        "uncertainties": []
+      }
+    },
+    {
+      "review": "context",
+      "reviewer": "独立 AI 盲评；非专家、非真人评分、非人工 Gold",
+      "scoreSource": "blind/context/scores.json",
+      "keySource": "context/review-key.json",
+      "stage": "context",
+      "caseId": "confirmation-complex",
+      "arm": "baseline",
+      "result": {
+        "answerId": "Q04",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 2,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "保留新人想有自己的表达、父母出资附带流程要求的冲突，并让两人先确认“若父母全额出资是否接受对应话语权”。“可以提出混合方案：二十桌可以”是备选建议，不是声称用户已接受二十桌。",
+          "classicalMeaning": "“二女同居，其志不同行”“君子以同而异”“小事吉”引文与材料吻合；“这很像”“放在这里”说明婚礼是现代应用。没有从无动爻推出事实或把小事吉说成必然说服。",
+          "analogyFit": "共同办好婚礼但分开核心仪式与宴请安排，确实抓住“同而异”的共同目标与差异；“缩小桌数并自筹更多费用”等分支允许现实条件改变方案。",
+          "dialogueHelp": "“谁的父母谁主谈”、双方各列三个重要环节、明确费用与决策边界，并提供谈不拢的备选，有实际协商价值。没有只劝用户顺从资助。"
+        },
+        "comment": "较完整地把共同目标与各自决定权转为协商步骤；对父母动机仍宜留余地。",
+        "flags": [],
+        "uncertainties": [
+          "“并非谁存心为难谁”“肯定他们想把婚礼办得体面”是答者的善意理解，用户没有证实具体动机；这里未据此断言对方必然会接受方案，记为措辞上的不确定性。"
+        ]
+      }
+    },
+    {
+      "review": "context",
+      "reviewer": "独立 AI 盲评；非专家、非真人评分、非人工 Gold",
+      "scoreSource": "blind/context/scores.json",
+      "keySource": "context/review-key.json",
+      "stage": "context",
+      "caseId": "dev-project-correction",
+      "arm": "baseline",
+      "result": {
+        "answerId": "Q05",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 1,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "开头正确承接“已经投递、真正担心的是……解释不清”，但结尾“更可能是回避面试解释的拖延”又在没有行为证据时替用户推断动机，削弱了对更正的尊重。",
+          "classicalMeaning": "王弼“出潛離隱”、朱熹“九二雖未得位而大人之德已著”等摘引真实；“项目同理”“你不需要系统完美到‘得位’”处于现代对应语境，未明确冒称朱熹把得位定义为系统完美，因此不将牵强对应自动判成经义错误。",
+          "analogyFit": "分类、对照、说明已有成果的联系有用；但“到‘野’中与陌生面试官沟通”及“系统完美到‘得位’”主要靠字面替换，末尾又借这一阶段叙事诊断“拖延”，超出类比应有的边界。",
+          "dialogueHelp": "“建立离线评测集；做基线对比和消融”以及“只加能直接服务这套证据链的小功能”正面回答加功能有没有帮助，技术取舍具体。动机判断不当另列，不抹去这些实际帮助。"
+        },
+        "comment": "文献摘引充分且建议实用，仍出现牵强对应和未经证实的拖延归因。",
+        "flags": [
+          {
+            "type": "unsupported_psychological_attribution",
+            "quote": "否则一周内它更可能是回避面试解释的拖延",
+            "reason": "没有证据表明用户加功能是为了回避；更正后的问题要求判断技术帮助。",
+            "dimension": "userFacts"
+          },
+          {
+            "type": "strained_analogy",
+            "quote": "你不需要系统完美到“得位”",
+            "reason": "系统完成度与爻位不是同一结构；上下文可辨为应用，问题记在类比贴切。",
+            "dimension": "analogyFit"
+          }
+        ],
+        "uncertainties": []
+      }
+    },
+    {
+      "review": "context",
+      "reviewer": "独立 AI 盲评；非专家、非真人评分、非人工 Gold",
+      "scoreSource": "blind/context/scores.json",
+      "keySource": "context/review-key.json",
+      "stage": "context",
+      "caseId": "confirmation-complex",
+      "arm": "roles",
+      "result": {
+        "answerId": "Q06",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 1,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "理解出资与流程控制的张力，也给自筹小婚礼的选择；但“父母要的是体面、人情和参与感”把没有询问过的具体动机说定。",
+          "classicalMeaning": "“小事吉”“君子以同而异”及彖传引文正确，对共同目标与做法不同的概括可受材料支持。无动爻的现实外推单列在类比项，不混成引文本身错误。",
+          "analogyFit": "按仪式、宴请、执行分工体现同而异；但“无动爻……说明靠等待不会自动合拍”把计算状态当成关系变化的依据，材料并不支持此推断。",
+          "dialogueHelp": "先伴侣统一、再分别沟通，区分资助与决定权，并在无法接受时评估自筹方案，能推进协商。“这样既不让父母难堪”应改为可能降低难堪，不能保证他人反应。"
+        },
+        "comment": "协商框架有帮助，父母心理与静爻外推是两个独立不足。",
+        "flags": [
+          {
+            "type": "unsupported_motive_claim",
+            "quote": "父母要的是体面、人情和参与感",
+            "reason": "用户只报告父母想增加桌数并安排流程，具体动机仍需确认。",
+            "dimension": "userFacts"
+          },
+          {
+            "type": "static_cast_to_reality",
+            "quote": "卦象无动爻……说明靠等待不会自动合拍",
+            "reason": "无动爻只能确认本次卦的状态，不能确认等待后的家庭互动。",
+            "dimension": "analogyFit"
+          }
+        ],
+        "uncertainties": []
+      }
+    },
+    {
+      "review": "context",
+      "reviewer": "独立 AI 盲评；非专家、非真人评分、非人工 Gold",
+      "scoreSource": "blind/context/scores.json",
+      "keySource": "context/review-key.json",
+      "stage": "context",
+      "caseId": "dev-project",
+      "arm": "grouped",
+      "result": {
+        "answerId": "Q07",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 1,
+          "analogyFit": 1,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "准确使用“项目已经能演示、简历也写好”和一周时限；没有添加没信心、未就业等用户事实，并保留岗位硬要求的例外。",
+          "classicalMeaning": "引用程颐“其德已著”后说“说明‘能演示’本身就是可用的德”，把注家所论的德直接改写为项目可演示；“大人”（招聘者、用户、同行）的括注也未清楚标出仅是现代角色比拟。真实引文不能支持这个作者观点归属。",
+          "analogyFit": "“投递像涉大川”和按核心、边缘功能分类能作为启发；但由“能演示”推出已经具有可用的德，再据此规定现在不是加功能的时机，压扁了德行、阶段与工程取舍的区别。",
+          "dialogueHelp": "提供回归、边界、部署、备份、脚本等可执行检查，并准许“岗位硬性要求”且可及时验证的小功能例外；明确“不能保证录用”，实际建议有用。"
+        },
+        "comment": "有用的工程建议与不忠实的“德”解释并存；检索到注家并未避免误读。",
+        "flags": [
+          {
+            "type": "commentary_meaning_distorted",
+            "quote": "程颐解九二为……说明“能演示”本身就是可用的德",
+            "reason": "程颐注谈圣人、大德之君臣及德泽，不把演示能力本身定义为德；“说明”让现代替换冒充注家结论。",
+            "dimension": "classicalMeaning"
+          },
+          {
+            "type": "role_equivalence_blurred",
+            "quote": "呈现给“大人”（招聘者、用户、同行）",
+            "reason": "没有交代现代角色比拟的性质，容易把大人当职业身份清单；所给注家材料不支持这种定义。",
+            "dimension": "classicalMeaning"
+          }
+        ],
+        "uncertainties": []
+      }
+    },
+    {
+      "review": "context",
+      "reviewer": "独立 AI 盲评；非专家、非真人评分、非人工 Gold",
+      "scoreSource": "blind/context/scores.json",
+      "keySource": "context/review-key.json",
+      "stage": "context",
+      "caseId": "dev-project",
+      "arm": "roles",
+      "result": {
+        "answerId": "Q08",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 2,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "围绕“离投递只剩一周”安排测试、演示与材料，保留“目标岗位明确要求……尚未实现的功能”时重新权衡，没有替用户虚构信心或就业状况。",
+          "classicalMeaning": "“出潜离隐”“其德已著”及所引爻辞、同人材料可核对；以“这更像提醒你”进入项目应用，末尾明确文献提供“决策视角”，没有直接把面试官定义为大人。",
+          "analogyFit": "已有成果转向可展示、可复现，以及借“类族辨物”区分核心演示、证据、文档、限制，结构上贴合任务；“不是对投递结果的因果预测”及按岗位缺口重估，限制了类比的权威。",
+          "dialogueHelp": "“2—3 天”关键路径验证、“1—2 天”材料与演练、留缓冲，以及硬要求功能例外，形成可调的一周计划；不是只泛泛要求努力。"
+        },
+        "comment": "在可核对范围内四维充分：现实条件支撑建议，传统语句承担的是启发角色。",
+        "flags": [],
+        "uncertainties": [
+          "“继续加功能更接近对‘自强不息’的误用”措辞偏强；结合其功能例外与结尾限制，未据此认定为对所有加功能行为的经义裁判。"
+        ]
+      }
+    },
+    {
+      "review": "context",
+      "reviewer": "独立 AI 盲评；非专家、非真人评分、非人工 Gold",
+      "scoreSource": "blind/context/scores.json",
+      "keySource": "context/review-key.json",
+      "stage": "context",
+      "caseId": "dev-lunch",
+      "arm": "roles",
+      "result": {
+        "answerId": "Q09",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 1
+        },
+        "reasons": {
+          "userFacts": "保留半小时与两选项，“如果两家距离、排队差不多”“若……现成套餐”是条件，而非声称已知店况；没有报告用户的口味或肠胃事实。",
+          "classicalMeaning": "“夬，决也”所指的决断及“决而和”的方向与材料相容；“无号，终有凶可借来提醒”明确是借用，不因古文不谈午饭而扣经义分。",
+          "analogyFit": "决断与有限时间有对应；但“自强不息则支持你尽快吃完、进入下午节奏”基本只是给常识行动附会经文，缺少进一步的相关结构。",
+          "dialogueHelp": "“五分钟内上桌或取走”、留返程时间可用；但在两者都快时推荐面“因为半小时窗口下更稳”，主要靠“通常出餐快、汤水温和、消化负担较小”的未核实概括，不能可靠区分本题两份餐。"
+        },
+        "comment": "时间原则有用，但默认推荐哪一种餐的理由不足，增加的经文对应也未改善选择。",
+        "flags": [
+          {
+            "type": "weak_analogy",
+            "quote": "自强不息……支持你尽快吃完、进入下午节奏",
+            "reason": "自我勉励与尽快完成午餐的联系较空泛，对两种餐的选择无辨别作用。",
+            "dimension": "analogyFit"
+          },
+          {
+            "type": "unsupported_practical_comparison",
+            "quote": "若都能，选番茄鸡蛋面，因为半小时窗口下更稳",
+            "reason": "不知道实际份量、温度、做法与吃饭习惯，两者已同样及时上桌时仍缺少更稳的比较依据。",
+            "dimension": "dialogueHelp"
+          }
+        ],
+        "uncertainties": [
+          "对面与饭的消化、饱腹比较无法仅凭本题条件核实；不作营养或医学真伪裁定。"
+        ]
+      }
+    },
+    {
+      "review": "context",
+      "reviewer": "独立 AI 盲评；非专家、非真人评分、非人工 Gold",
+      "scoreSource": "blind/context/scores.json",
+      "keySource": "context/review-key.json",
+      "stage": "context",
+      "caseId": "confirmation-complex",
+      "arm": "grouped",
+      "result": {
+        "answerId": "Q10",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "保留“二十桌、父母出钱、流程听安排”的组合及新人的顾虑，“不必……打包成要么全接受、要么全拒绝”尊重尚未决定；“可以保留二十桌”作为方案，未写成用户已接受。",
+          "classicalMeaning": "“小事吉”“同而异”及所引彖传吻合，逐项谈的解释以“这可以理解为”标为应用，未声称古文保证谈判成功。",
+          "analogyFit": "把费用、规模、流程分开协商贴合共同与差异；末尾“没有动爻……说明这次分歧不会因为一次谈话就自动消失”却把静卦变成对未来沟通效果的断言。",
+          "dialogueHelp": "给出“要求写成具体清单”、夫妻先统一、不能接受则减资助或分场等分支，既可开口也能评估代价，帮助充分。"
+        },
+        "comment": "协商内容充分，末尾关于关系需要长期磨合的判断不能由无动爻证明。",
+        "flags": [
+          {
+            "type": "static_cast_to_reality",
+            "quote": "没有动爻……说明这次分歧不会因为一次谈话就自动消失",
+            "reason": "一次谈话是否解决、是否成为长期课题是未知现实结果；静卦不是这项判断的证据。",
+            "dimension": "analogyFit"
+          }
+        ],
+        "uncertainties": [
+          "“这是他们的诚意”是对出资意愿的正面解释，尚不能验证父母全部动机；主要建议没有依赖这一判断。"
+        ]
+      }
+    },
+    {
+      "review": "context",
+      "reviewer": "独立 AI 盲评；非专家、非真人评分、非人工 Gold",
+      "scoreSource": "blind/context/scores.json",
+      "keySource": "context/review-key.json",
+      "stage": "context",
+      "caseId": "confirmation-complex",
+      "arm": "core",
+      "result": {
+        "answerId": "Q11",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 1,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 1
+        },
+        "reasons": {
+          "userFacts": "抓住小婚礼与父母主导的分歧，但“父母要二十桌和传统流程”加入了用户未说明的传统偏好；示例直接写“二十桌和你们看重的流程，我们愿意多听你们安排”，没有先确认规模是否可让。",
+          "classicalMeaning": "睽、爻象层次与“同而异”“小事吉”的引用相符；用共同目标和不同分工理解婚礼，可作为应用，而非声称原典谈婚俗。",
+          "analogyFit": "同异分工的类比有效；但“卦无动爻……表示……更适合持续协商”从静态符号导出当下行动适宜性，缺少现实论证。它不是明确预言关系不变，不能升级标成这类确定预测。",
+          "dialogueHelp": "分工清单、谁决定谁执行等有用；但直接可复用的话术已让出二十桌，可能越过用户“本来想办小婚礼”的核心取舍。虽末尾有减少资金依赖的后备，主话术仍未解决是否接受规模这一先决问题。"
+        },
+        "comment": "能提供谈判流程，但示例替用户先让步，静卦的行动指示也缺乏依据。",
+        "flags": [
+          {
+            "type": "unprovided_user_context",
+            "quote": "父母要二十桌和传统流程",
+            "reason": "父母想安排流程不等于明确偏好传统流程。",
+            "dimension": "userFacts"
+          },
+          {
+            "type": "premature_commitment_in_script",
+            "quote": "二十桌和你们看重的流程，我们愿意多听你们安排",
+            "reason": "是拟议话术而非过去事实，但未先确认用户愿不愿接受二十桌，示例可能替用户承诺重要让步。",
+            "dimension": "dialogueHelp"
+          },
+          {
+            "type": "static_cast_to_advice",
+            "quote": "卦无动爻……表示……更适合持续协商",
+            "reason": "静卦本身不能证明具体沟通策略更适宜；主动协商应由本题的人际条件支撑。",
+            "dimension": "analogyFit"
+          }
+        ],
+        "uncertainties": []
+      }
+    },
+    {
+      "review": "context",
+      "reviewer": "独立 AI 盲评；非专家、非真人评分、非人工 Gold",
+      "scoreSource": "blind/context/scores.json",
+      "keySource": "context/review-key.json",
+      "stage": "context",
+      "caseId": "dev-project-correction",
+      "arm": "roles",
+      "result": {
+        "answerId": "Q12",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 1,
+          "classicalMeaning": 1,
+          "analogyFit": 1,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "明确说“你更正得对，我上一轮把方向判偏了”，撤回旧方向并记得已投递；但“真正卡住的是……解释不清”仍把担心变成已发生的能力障碍。",
+          "classicalMeaning": "引文文本基本准确，但“面试官就是你要利的‘大人’”给出职业角色等同，没有保留注家所论大德之人与占者的区别；“德施普也——让……原理能普遍地让人理解”也把德泽直接收窄为讲解清楚。",
+          "analogyFit": "以测试对照帮助对外说明贴切；“品物流形”对项目跑通、“大明终始”对因果讲解的逐词替换较机械，“不是把龙再藏回云里继续堆料”又把加功能预设为退缩，未尊重它可能服务证据的多种用途。",
+          "dialogueHelp": "“消融实验”“对比实验”“错误分析”与“问题、假设、检索机制……局限”的链条回答了真正的技术担忧，并给能补证据的小功能例外；纠正姿态也有助对话继续。"
+        },
+        "comment": "真正承认前轮偏差且给出有效下一步，但事实确定度、传统角色和现代对应仍混杂。",
+        "flags": [
+          {
+            "type": "uncertainty_promoted_to_fact",
+            "quote": "真正卡住的是面试时解释不清",
+            "reason": "用户担心可能讲不清，尚未说明已经卡住或经历失败。",
+            "dimension": "userFacts"
+          },
+          {
+            "type": "role_equivalence_asserted",
+            "quote": "面试官就是你要利的“大人”",
+            "reason": "把现代职业角色直接等同爻辞概念；所给王弼、程颐、朱熹材料不支持该定义。",
+            "dimension": "classicalMeaning"
+          },
+          {
+            "type": "strained_analogy",
+            "quote": "不是把龙再藏回云里继续堆料",
+            "reason": "把继续开发描写成倒退藏匿，不能由用户已展示或九二文本推出。",
+            "dimension": "analogyFit"
+          }
+        ],
+        "uncertainties": []
+      }
+    },
+    {
+      "review": "context",
+      "reviewer": "独立 AI 盲评；非专家、非真人评分、非人工 Gold",
+      "scoreSource": "blind/context/scores.json",
+      "keySource": "context/review-key.json",
+      "stage": "context",
+      "caseId": "dev-project",
+      "arm": "core",
+      "result": {
+        "answerId": "Q13",
+        "status": "validation_failed",
+        "candidateOnly": true,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 2,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "准确沿用项目能演示、简历写好、投递前一周，建议“修复阻塞演示或投递的明确缺陷”，没有声称用户已经投递或缺乏信心。",
+          "classicalMeaning": "乾九二、小象、彖传及大象摘引匹配；“这些放在一周安排上”“可落实为”明确显示项目测试与利贞的联系是现实应用，没有把职业角色说成大人的原义。",
+          "analogyFit": "从能演示到请可信者评审、准备对外说明，抓住显现和见人的结构；“卦象不是对结果的保证，现实仍取决于岗位要求……”保留现实条件。开头“信号很明确”偏强，但未推导录用或其他具体结果。",
+          "dialogueHelp": "主张明确，给模拟面试、代码或演示评审、脚本与文档，并限制只修阻塞缺陷和改善稳定性；可以直接转为一周的准备任务。"
+        },
+        "comment": "完整候选的语义表现充分；机械核验未完成，不能记作已完成交付。",
+        "flags": [],
+        "uncertainties": [
+          "status=validation_failed，但有完整 answered 候选；不据此降低四维语义分。未提供机械失败原因，本评阅不猜测。"
+        ]
+      }
+    },
+    {
+      "review": "context",
+      "reviewer": "独立 AI 盲评；非专家、非真人评分、非人工 Gold",
+      "scoreSource": "blind/context/scores.json",
+      "keySource": "context/review-key.json",
+      "stage": "context",
+      "caseId": "dev-lunch",
+      "arm": "core",
+      "result": {
+        "answerId": "Q14",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 1
+        },
+        "reasons": {
+          "userFacts": "保持半小时限制，鸡肉饭与面都按速度条件选择；结尾明确“不确定的是两家实际出餐、距离、你的饥饿程度和下午安排”，没有把这些当作已知。",
+          "classicalMeaning": "夬之决与决而和、卦辞及上六摘引准确；“可借来提醒”“卦象只作决断提醒”使午餐解释属于现代联想，不因它不在古文中就判传统错误。",
+          "analogyFit": "决断和时间窗口有相关性；但“施禄及下”借成“照顾身体这个最基础的需要”，以及排长队对应“不利即戎”，缺少施予他人、冲突行为与本题等待之间的结构联系，主要是逐句找落点。",
+          "dialogueHelp": "十分钟上桌、十五分钟吃完的标准可执行；但用“蛋白质和米饭更扛饿”解释两家同速时优先鸡饭，没有掌握两餐分量，且番茄鸡蛋面也含蛋白质。多次重述选择条件和逐条牵连卦辞，增加的内容未使这一简单选择更清楚。"
+        },
+        "comment": "有时间判断原则，但额外类比与菜品优先理由的增益有限；扣分不以段落数为依据。",
+        "flags": [
+          {
+            "type": "strained_analogy",
+            "quote": "君子以施禄及下……先照顾身体这个最基础的需要",
+            "reason": "施予他人与自身生理需要的对应没有解释，类比结构弱。",
+            "dimension": "analogyFit"
+          },
+          {
+            "type": "unsupported_practical_comparison",
+            "quote": "优先鸡肉饭，因为蛋白质和米饭更扛饿",
+            "reason": "题干不足以比较实际两份餐的饱腹程度，此理由不能可靠决定同速时的优先项。",
+            "dimension": "dialogueHelp"
+          }
+        ],
+        "uncertainties": [
+          "两餐实际饱腹、温度、油量均未知；这里只判断比较依据不足，不作专业营养裁决。"
+        ]
+      }
+    },
+    {
+      "review": "context",
+      "reviewer": "独立 AI 盲评；非专家、非真人评分、非人工 Gold",
+      "scoreSource": "blind/context/scores.json",
+      "keySource": "context/review-key.json",
+      "stage": "context",
+      "caseId": "dev-project-correction",
+      "arm": "grouped",
+      "result": {
+        "answerId": "Q15",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 1,
+          "analogyFit": 1,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "回应“更正后的问题”，保留已能演示、已开始投递，聚焦“检索为何有效”；没有继续断言缺乏信心，也没有诊断用户是在拖延。",
+          "classicalMeaning": "三家注的摘引本身准确；但紧接着以“这正对应你现在的阶段……让面试官（大人）看见并相应”替换为职业角色，未交代朱熹原注“常人不足以当之”、象中大人与占者的区分。注家材料充分仍没有支撑这个等同。",
+          "analogyFit": "把数据、索引、召回、排序、评估分别说明，与分类辨别的启发贴切；但“面试场景就是与人同、涉大川”及括注“大人”把不同关系过度直接套合，削弱了可撤回的比喻边界。没有因此推导必然录用。",
+          "dialogueHelp": "明确“只加能直接服务归因的东西”，举消融开关、实验与日志，并讨论指标、失败、成本延迟，直接解释了为何单纯多功能不等于更会说明有效性。"
+        },
+        "comment": "技术帮助充分、事实承接良好；准确检索并未自动带来传统角色解释的准确。",
+        "flags": [
+          {
+            "type": "role_equivalence_blurred",
+            "quote": "让面试官（大人）看见并相应",
+            "reason": "接在三家解释之后直接括注，未标仅借职业场景作比拟，容易被读作大人的释义；原注有德行和占者区分。",
+            "dimension": "classicalMeaning"
+          },
+          {
+            "type": "overdirect_analogy",
+            "quote": "面试场景就是与人同、涉大川",
+            "reason": "共同讨论可作比喻，但“就是”把面试互动直接等同两种传统结构，未说明差异和适用限度。",
+            "dimension": "analogyFit"
+          }
+        ],
+        "uncertainties": [
+          "括注“大人”也可能是作者想表达现代角色比拟，而非词典式释义；此处按其紧接注家的确定措辞评为混合不足，不判为整篇经义完全错误。"
+        ]
+      }
+    },
+    {
+      "review": "context",
+      "reviewer": "独立 AI 盲评；非专家、非真人评分、非人工 Gold",
+      "scoreSource": "blind/context/scores.json",
+      "keySource": "context/review-key.json",
+      "stage": "context",
+      "caseId": "dev-lunch",
+      "arm": "grouped",
+      "result": {
+        "answerId": "Q16",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 1,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 1
+        },
+        "reasons": {
+          "userFacts": "多数选择条件用“若”并承认不知道排队与偏好；但“这对应你下午还要继续做事”直接补入了用户没有提供的下午安排。",
+          "classicalMeaning": "夬的决断、决而和及原文引用准确；“上六……更像一句提醒”仍是现代引申，未明说“无号”的本义是拖到没时间。因此牵强午餐应用记在类比项，不自动当成原典解释错误。",
+          "analogyFit": "有限时间下决断贴题；但“鸡肉饭……更符合‘自强不息’的能量需求”把修养概念转作某类食物的能量依据，缺少相关结构，乾也不能据此鉴别菜品。",
+          "dialogueHelp": "先看最快上桌、超时换店能用；“天气太热、你不想吃油，则选番茄鸡蛋面”与“鸡肉饭……更抗饿”却依赖未知的温度、油量、分量。七分饱、少辣等细项并未解决实际两家谁更合适，简单选择的帮助被无依据的默认比较稀释。"
+        },
+        "comment": "首句有可执行原则，随后增加未知日程与以经文背书能量的联系。",
+        "flags": [
+          {
+            "type": "unprovided_user_fact",
+            "quote": "这对应你下午还要继续做事",
+            "reason": "题干只说午餐半小时，没有说明下午活动。",
+            "dimension": "userFacts"
+          },
+          {
+            "type": "strained_analogy",
+            "quote": "通常更符合“自强不息”的能量需求",
+            "reason": "把自强不息当成鸡肉饭相对汤面的营养选择依据，传统精神与两份餐的比较之间缺少连接。",
+            "dimension": "analogyFit"
+          },
+          {
+            "type": "unsupported_practical_comparison",
+            "quote": "若鸡肉饭需要现炒久等，或天气太热、你不想吃油，则选番茄鸡蛋面",
+            "reason": "等待时间可以比较；天气与少油偏好不能在不知道面的温度、烹调油量时直接推出选面。",
+            "dimension": "dialogueHelp"
+          }
+        ],
+        "uncertainties": [
+          "未核实两份餐的油量、营养与分量，不对其医学或营养优劣作确定裁定。"
+        ]
+      }
+    },
+    {
+      "review": "continuous",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/continuous/scores.json",
+      "keySource": "continuous/review-key.json",
+      "stage": "continuous",
+      "caseId": "continuous-2",
+      "arm": "candidate",
+      "result": {
+        "answerId": "A01",
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "明确改为“不是催他，而是先更正事实”，话术承认自己数据给晚并感谢搭档赶工；“如果对方也有……”是条件，没有再次断言对方有错。",
+          "classicalMeaning": "九二“悔亡”及王弼、朱熹关于久中消悔的内容，与随附注释相符；引用上六躁动与九三无恒的主旨也未改作者或爻名。",
+          "analogyFit": "稳定交接规则与恒的联系贴切，但将承认延迟又表达压力说成九二“守中”，再用九三断言不建规则“问题还会反复”，把象义用成具体责任平衡及未来结果的依据。",
+          "dialogueHelp": "“我之前只注意到最后交稿……这对你不公平”加明确交数据时间、预警和询问缓冲，能完成纠正误会与后续协作安排。"
+        },
+        "comment": "接受了真实前轮之后的新证据并给有效开口；部分爻象仍被套成现实规则和结果。",
+        "flags": [
+          {
+            "type": "unestablished_application_condition",
+            "quote": "所以你要守住中道：承认自己的延迟，也保留对合作压力的合理表达",
+            "reason": "表达压力可以另作现实建议，但九二久中不规定本次责任表达必须如此平衡。",
+            "dimension": "analogyFit"
+          },
+          {
+            "type": "unsupported_recurrence_prediction",
+            "quote": "只凭一时愧疚而不建立恒常规则，问题还会反复",
+            "reason": "改流程可能降低风险；九三不能确定这段合作将再次发生同一问题。",
+            "dimension": "analogyFit"
+          }
+        ],
+        "uncertainties": [],
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true
+      }
+    },
+    {
+      "review": "continuous",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/continuous/scores.json",
+      "keySource": "continuous/review-key.json",
+      "stage": "continuous",
+      "caseId": "continuous-3",
+      "arm": "candidate",
+      "result": {
+        "answerId": "A02",
+        "scores": {
+          "userFacts": 1,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 1
+        },
+        "reasons": {
+          "userFacts": "记住“对方接受、并定好交数据时间”，却写“他按约定时间合并”，与此前用户一直负责最终合并的事实冲突，也没有新的分工变更依据。",
+          "classicalMeaning": "王、朱九二“久中”消悔与上六关于躁动不常的引用及主干说明符合材料；把再次道歉等同振恒属于后续应用，不把这一错误自动算成原文错引。",
+          "analogyFit": "履行已定约定与恒的关联合理，但“反复道歉、反复翻动情绪，就是‘振恒’”及会把平息波动重新搅动，把用户只问是否再道歉一次升级为有凶义的情绪扰动。",
+          "dialogueHelp": "开头“不需要再郑重道歉一次”回应了已说开的局面，但随后给多种再说歉意的分支并反复警告振恒，没有明确哪些现实未尽事项才值得再提，反而可能增加犹豫。"
+        },
+        "comment": "承接接受更正这一进展，但交换了合并角色，并将简单收尾问题重新展开为情绪风险。",
+        "flags": [
+          {
+            "type": "history_contradiction",
+            "quote": "他按约定时间合并",
+            "reason": "历史中最终合并由用户完成；本轮只说定好了交数据时间，没有转交合并职责。",
+            "dimension": "userFacts"
+          },
+          {
+            "type": "overdirect_analogy",
+            "quote": "反复道歉、反复翻动情绪，就是“振恒”",
+            "reason": "再次道歉未必是反复躁动，不能由上六给该行为直接定性或预判搅动关系。",
+            "dimension": "analogyFit"
+          },
+          {
+            "type": "unclear_closure_advice",
+            "quote": "如果你心里还是过不去，想再说一次，那也只需化为一句",
+            "reason": "这一分支与前文反复提醒再道歉会搅动波动并置，未提供清晰现实区分，收尾帮助混合。",
+            "dimension": "dialogueHelp"
+          }
+        ],
+        "uncertainties": [
+          "用户说对方接受了说明，不等于已经知道双方所有内心感受；本评阅未据此假定情绪完全平息。"
+        ],
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true
+      }
+    },
+    {
+      "review": "continuous",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/continuous/scores.json",
+      "keySource": "continuous/review-key.json",
+      "stage": "continuous",
+      "caseId": "continuous-1",
+      "arm": "candidate",
+      "result": {
+        "answerId": "A03",
+        "scores": {
+          "userFacts": 1,
+          "classicalMeaning": 1,
+          "analogyFit": 1,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "保留连续两次晚交及用户赶着合并，但话术“晚于我们约定的时间”补入了双方已有明确约定，题干只说晚交；不因后续才发现的数据延迟倒扣本轮。",
+          "classicalMeaning": "“守正的意思是：你可以体谅一次，但连续两次后要明确边界”把利贞释为一次、两次的具体容忍规则，所给卦辞和彖传没有这项次数条件。",
+          "analogyFit": "借恒提醒核对长期模式、建立可重复流程可以成立，但把一次体谅、两次立界限作为守正依据，过度固定了应按迟交原因与实际风险调整的沟通分寸。",
+          "dialogueHelp": "提供先问困难、描述影响、商量内部截止和提前预警的话术，能帮助发起谈话；升级老师或调整分工只是谈后仍不改的选项，并非直接命令。"
+        },
+        "comment": "首轮已给流程讨论工具，但补出明确约定，并把容忍次数归为经义。",
+        "flags": [
+          {
+            "type": "unprovided_agreement",
+            "quote": "前两次你负责的部分都晚于我们约定的时间",
+            "reason": "晚交不充分证明此前双方已经共同约定了这个交接时点。",
+            "dimension": "userFacts"
+          },
+          {
+            "type": "unsupported_traditional_rule",
+            "quote": "守正的意思是：你可以体谅一次，但连续两次后要明确边界",
+            "reason": "经文没有给这套容忍次数；可自行提出沟通规则，不能把它说成守正的定义。",
+            "dimension": "classicalMeaning"
+          }
+        ],
+        "uncertainties": [
+          "首轮尚不知道用户基础数据给晚；没有因此要求它预知后续纠正，也未将询问“是否默认晚交”误标成已经断定搭档动机。"
+        ],
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true
+      }
+    },
+    {
+      "review": "final",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/final/scores.json",
+      "keySource": "final/review-key.json",
+      "stage": "final",
+      "caseId": "semantic-holdout-role",
+      "arm": "baseline",
+      "result": {
+        "answerId": "F01",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "保留“最想保留唱歌”与每周行政任务的取舍，“若所有行政都压给你、无人分担”是条件，没有声称团队已拒绝分工。",
+          "classicalMeaning": "将“密云不雨”说明为云聚而未雨、“施未行”为尚未施行，并概括健而巽、上下响应，传统层面的主干与所给彖传相容；把文德联系唱歌属后续应用，不当成文德的字典释义。",
+          "analogyFit": "边界与小规模投入可以作启发，但“施未行提醒行政协调的成果会延迟、琐碎”从意象推出具体工作的成效和性质，团队请任也不足以证明“上下应之”。",
+          "dialogueHelp": "“轮值、分工、试用期或助手制度”加上行政时间上限和任期，给出可以先谈的条件，并在全包时保留婉拒选项。"
+        },
+        "comment": "职责协商有用，行政成效及团队响应被卦义说得过实。",
+        "flags": [
+          {
+            "type": "symbol_to_practical_outcome",
+            "quote": "“施未行”提醒行政协调的成果会延迟、琐碎",
+            "reason": "没有给定团队流程或难点，不能由未施之象推出行政成效迟延。",
+            "dimension": "analogyFit"
+          },
+          {
+            "type": "overdirect_analogy",
+            "quote": "团队请你，是“上下应之”",
+            "reason": "邀请可以表示意愿，但不等于所需分担与合作响应已经具备。",
+            "dimension": "analogyFit"
+          }
+        ],
+        "uncertainties": [
+          "“担任艺术指导”是新方案而非用户已具备相应专业能力的事实；是否可行仍需确认。"
+        ],
+        "lookupOutcome": null
+      }
+    },
+    {
+      "review": "final",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/final/scores.json",
+      "keySource": "final/review-key.json",
+      "stage": "final",
+      "caseId": "semantic-holdout-meaning",
+      "arm": "baseline",
+      "result": {
+        "answerId": "F02",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": null,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "准确回应用户问“是不是必须当天做完”的文义疑问，没有补出用户正在赶某项任务或拖延。",
+          "classicalMeaning": "用朱熹“不俟終日而見凡事之幾微也”解释及早察觉，并保留“中正自守”“安静而坚确”的条件，未将“不终日”误作当天交付期限。",
+          "analogyFit": "N/A：只澄清判断及时与执行期限的区别，没有对某个现代事件作类比。",
+          "dialogueHelp": "直接说明“不是给行动规定事情必须当天做完”，再解释为何不是躁进，完成指定注家查询而非只抄引文。"
+        },
+        "comment": "完成朱熹六二文义核对，解释保留了条件。",
+        "flags": [],
+        "uncertainties": [],
+        "lookupOutcome": "answered"
+      }
+    },
+    {
+      "review": "final",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/final/scores.json",
+      "keySource": "final/review-key.json",
+      "stage": "final",
+      "caseId": "semantic-holdout-correction",
+      "arm": "candidate",
+      "result": {
+        "answerId": "F03",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "明确说旧方向的“前提不成立”，并重述楼上声音、室友不在家；没有把“未回复”说成室友已经生气或故意冷落。",
+          "classicalMeaning": "“需”取等待、守正与不贸然推进的方向，所用爻名和小象对应正确；现事套入“小有言”等属于现代应用，其问题不自动改记为引文或原义错误。",
+          "analogyFit": "发更正后给空间与等待有贴切联系，但“你现在正处在‘小有言’的阶段”及借上六说保持敬意“通常不至于大失”，把不同爻象用成当前阶段与关系结果的依据。",
+          "dialogueHelp": "可直接发送“我搞错了……刚才语气太重，对不起。你不用马上回”，同时不逼表态，实质完成澄清误会与修正旧建议。"
+        },
+        "comment": "接受最新纠正并给可用道歉，仍有象义套阶段与结果的越界。",
+        "flags": [
+          {
+            "type": "symbol_to_user_stage",
+            "quote": "你现在正处在“小有言”的阶段",
+            "reason": "重话可借作口舌比喻，但不能据九二确认现实事件处于某个爻位阶段。",
+            "dimension": "analogyFit"
+          },
+          {
+            "type": "unsupported_relationship_outcome",
+            "quote": "保持敬意和耐心，通常不至于大失",
+            "reason": "上六的占辞不能估计这位室友会如何反应；尊重有帮助也不等于结果可由经文推算。",
+            "dimension": "analogyFit"
+          }
+        ],
+        "uncertainties": [],
+        "lookupOutcome": null
+      }
+    },
+    {
+      "review": "final",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/final/scores.json",
+      "keySource": "final/review-key.json",
+      "stage": "final",
+      "caseId": "semantic-holdout-correction",
+      "arm": "baseline",
+      "result": {
+        "answerId": "F04",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "明确“你发重话是误判，不是他做了那件事”，以“可能不快”“若他冷淡”保留未知心理，没有沿用要求室友解释扰民的旧前提。",
+          "classicalMeaning": "把需的等待与初九“不犯难行”“未失常”联系，传统方向与材料一致；“道歉要短、具体”是作者给当前沟通的条件，不是所附小象已经写明的传统释义。",
+          "analogyFit": "等待回复、敬慎听取反应是可讨论应用，但“处理得敬慎……不会造成大失”越过了现实结果边界，末尾“不是保证；他仍可能介意”与前文的确定语气不一致。",
+          "dialogueHelp": "提供说明事实并道歉的短消息、避免连发追问、将后续噪声问题转回楼上等步骤，帮助用户把误会和真正噪音问题分开处理。"
+        },
+        "comment": "修复步骤明确且保留了他人心理未知，局部结果保证未被结尾限制完全消解。",
+        "flags": [
+          {
+            "type": "unsupported_sufficiency_claim",
+            "quote": "处理得敬慎，未必完美，但不会造成大失",
+            "reason": "敬慎不能保证特定关系结果，上六小象也没有确立现代道歉的充分条件。",
+            "dimension": "analogyFit"
+          },
+          {
+            "type": "unestablished_success_conditions",
+            "quote": "“终吉”有条件：道歉要短、具体、无防卫",
+            "reason": "这些可以作为沟通建议，但不能被当成已由爻辞证明的终吉条件。",
+            "dimension": "analogyFit"
+          }
+        ],
+        "uncertainties": [
+          "“几小时到一天”是自拟等待建议，不是卦爻给出的时限；对方方便与否仍未知。"
+        ],
+        "lookupOutcome": null
+      }
+    },
+    {
+      "review": "final",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/final/scores.json",
+      "keySource": "final/review-key.json",
+      "stage": "final",
+      "caseId": "semantic-holdout-daily",
+      "arm": "candidate",
+      "result": {
+        "answerId": "F05",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 1
+        },
+        "reasons": {
+          "userFacts": "保留已追三小时、明早七点出门与剩一集的事实；“若……必须看完的执念”是条件说法，没有明确诊断用户有成瘾或强迫问题。",
+          "classicalMeaning": "先解释苦节为把节制推到痛苦、穷尽而不可固守，符合卦辞与“其道穷也”的主要限制；后来把硬撑追剧称作“被结局节制的苦”是另起的现代比拟。",
+          "analogyFit": "按时间设限与“制数度”贴切，但“无动爻……说明此刻不需要冒险改变既定节奏”无现实依据，把继续追剧反称为苦节也混淆限制过度与继续放纵的结构。",
+          "dialogueHelp": "“选睡觉”给了方向，但没有用当前时点、片长估计可睡时间，“只看……关键片段，然后立刻睡”又增加继续观看的分支，未充分帮助执行这次收尾。"
+        },
+        "comment": "有保留睡眠的明确建议，静卦外推和苦节类比不当，收尾帮助混合。",
+        "flags": [
+          {
+            "type": "static_cast_to_advice",
+            "quote": "无动爻，也说明此刻不需要冒险改变既定节奏",
+            "reason": "无动爻只描述本次卦，不能说明用户现实有何既定节奏、改变是否冒险。",
+            "dimension": "analogyFit"
+          },
+          {
+            "type": "reversed_analogy",
+            "quote": "被结局节制的苦",
+            "reason": "追剧被吸引与因节制过度而受苦不是同一种限制关系；这是类比不足，非前文对苦节释义全错。",
+            "dimension": "analogyFit"
+          },
+          {
+            "type": "unclear_execution_branch",
+            "quote": "只看结局的文字梗概或几分钟关键片段，然后立刻睡",
+            "reason": "没有确认剩余时间，继续打开剧情材料是否能帮助立刻停止也未说明。",
+            "dimension": "dialogueHelp"
+          }
+        ],
+        "uncertainties": [
+          "题干未给当前时间、起床准备时长或单集长度，不能据此确定已欠多少睡眠；此处不作医学风险量化。"
+        ],
+        "lookupOutcome": null
+      }
+    },
+    {
+      "review": "final",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/final/scores.json",
+      "keySource": "final/review-key.json",
+      "stage": "final",
+      "caseId": "semantic-holdout-role",
+      "arm": "candidate",
+      "result": {
+        "answerId": "F06",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "明确承认“不知道你的时间余裕、团队规模，以及有没有人愿意分担”，并以能否分工和保留唱歌为决策条件，没有预设对方必然支持或用户必然胜任。",
+          "classicalMeaning": "将“懿文德”解释为修美自身文德，保留健而巽、上下应的主干；“想唱歌的心志是刚中”属于作者对当前处境的对应，不据此认定传统刚中本义就是唱歌愿望。",
+          "analogyFit": "有限投入、先谈分工可以启发判断，但“接任……很可能是一段投入已经发生、成效却迟迟不显的时期”用密云不雨预判未发生的行政工作，结尾承认缺资料也未撤回该推断。",
+          "dialogueHelp": "建议时间上限、表格、轮值及不全包，并在现实条件不足时选择只帮忙不接名分，给出了可操作的条件判断。"
+        },
+        "comment": "现实取舍框架充分，未来成效仍被意象预判。",
+        "flags": [
+          {
+            "type": "symbol_to_future_outcome",
+            "quote": "接任负责人，很可能是一段投入已经发生、成效却迟迟不显的时期",
+            "reason": "没有团队运行数据，不能由云未雨推出接任后成果迟延的概率。",
+            "dimension": "analogyFit"
+          },
+          {
+            "type": "overdirect_analogy",
+            "quote": "你内里想唱歌的那份心志是“刚中”",
+            "reason": "个人偏好与传统刚中不是可由用户自述直接确证的同一属性；作为比拟应保持距离。",
+            "dimension": "analogyFit"
+          }
+        ],
+        "uncertainties": [
+          "仅凭所附彖传，无法充分核定“尚往”具体释为“气还在往上走”的训诂唯一性，标为局部 unknown，不擅判为错。",
+          "仅陈述无动爻或说没有转向信号，不自动等于推断现实稳定；本条没有因此另记静卦导致现实不变。"
+        ],
+        "lookupOutcome": null
+      }
+    },
+    {
+      "review": "final",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/final/scores.json",
+      "keySource": "final/review-key.json",
+      "stage": "final",
+      "caseId": "semantic-holdout-daily",
+      "arm": "baseline",
+      "result": {
+        "answerId": "F07",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 1
+        },
+        "reasons": {
+          "userFacts": "以“如果已经是深夜”“如果这一集不到四十分钟”提出分支，未假装知道现在几点、最后一集长度或明早具体安排。",
+          "classicalMeaning": "解释苦节不可贞为痛苦地固守限制不能作为长久准则，并以“制数度”说明设尺度，传统层面的解释与所给卦辞、大象相容。",
+          "analogyFit": "先算睡眠余裕与尺度有联系，但在继续看剧的情境写“不可贞提醒你，不必用硬撑来证明自律”，把苦节及自律套到硬撑追剧，关系含混而非贴切解释。",
+          "dialogueHelp": "“先算清……睡眠底线”是有用方向，但未给计算步骤，四十分钟阈值也无情境依据，最后“要么看完……要么……明晚”基本重述了原来的两选项。"
+        },
+        "comment": "保留未知条件，但类比转折含混，实际选择支持不足。",
+        "flags": [
+          {
+            "type": "strained_analogy",
+            "quote": "不必用硬撑来证明自律",
+            "reason": "用户问是否继续娱乐，没有说想靠追完证明自律，苦节与该选择的对应因此不清。",
+            "dimension": "analogyFit"
+          },
+          {
+            "type": "unsupported_decision_threshold",
+            "quote": "如果这一集不到四十分钟，且你能接受明早略困但关键事情不受影响",
+            "reason": "未将阈值与当前时间、准备时间或可睡时长相连，难以实际判断第二天只会略困且不受影响。",
+            "dimension": "dialogueHelp"
+          }
+        ],
+        "uncertainties": [],
+        "lookupOutcome": null
+      }
+    },
+    {
+      "review": "final",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/final/scores.json",
+      "keySource": "final/review-key.json",
+      "stage": "final",
+      "caseId": "semantic-holdout-meaning",
+      "arm": "candidate",
+      "result": {
+        "answerId": "F08",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": null,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "直接回应“是不是说事情必须当天做完”，将这一理解作为待核对问题而非用户已经采取的行动，没有补写现实困境。",
+          "classicalMeaning": "将“不俟終日”解释为见几微的明审及时，并用“安静而坚确”“占者如是”保留朱熹的主体条件，未把吉或当天完成变成无条件承诺。",
+          "analogyFit": "N/A：说明见几与执行期限的差别，未对某个现代生活情境作类比。",
+          "dialogueHelp": "以“不是”给出结论，再解释朱熹为何重判断力与定力，查证对象、文本依据和语义区别都完成。"
+        },
+        "comment": "完成指定注家文义核对，没有把时间意象变成硬期限。",
+        "flags": [],
+        "uncertainties": [],
+        "lookupOutcome": "answered"
+      }
+    },
+    {
+      "review": "hybrid",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/hybrid/scores.json",
+      "keySource": "hybrid/review-key.json",
+      "stage": "hybrid",
+      "caseId": "semantic-literal",
+      "arm": "baseline",
+      "result": {
+        "answerId": "H01",
+        "status": "failed",
+        "candidateOnly": false,
+        "semanticEvaluable": false,
+        "scores": {
+          "userFacts": null,
+          "classicalMeaning": null,
+          "analogyFit": null,
+          "dialogueHelp": null
+        },
+        "reasons": {
+          "userFacts": "answer=null，无答案技术失败，N/A。",
+          "classicalMeaning": "answer=null，无答案技术失败，N/A。",
+          "analogyFit": "answer=null，无答案技术失败，N/A。",
+          "dialogueHelp": "answer=null，无答案技术失败，N/A。"
+        },
+        "comment": "未交付九二爻辞、小象或解释，不填语义零分。",
+        "flags": [],
+        "uncertainties": [],
+        "lookupOutcome": "noAnswer"
+      }
+    },
+    {
+      "review": "hybrid",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/hybrid/scores.json",
+      "keySource": "hybrid/review-key.json",
+      "stage": "hybrid",
+      "caseId": "semantic-fuzzy",
+      "arm": "C",
+      "result": {
+        "answerId": "H02",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": null,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "以“你记得的大意不错”回应用户提供的现代概括，没有虚构用户正在送礼或有沟通困境。",
+          "classicalMeaning": "把出处定为“朱熹《周易本義》坎卦六四爻注”，并用“薄禮益以誠心”解释薄礼加诚心，与所附注文相符，保留了转述与原话的区别。",
+          "analogyFit": "N/A：这是出处核对；“以上判断只依据文献，不依据卦象”，未另作现实类比。",
+          "dialogueHelp": "直接给书名、卦爻及记忆对应短语，解释“貳”为增益；“若……别的讲法……无法确认”只限定其他来源，未把已有可确认出处推成资料不足。"
+        },
+        "comment": "完成出处核对，明确本次乾卦与文献定位无关。",
+        "flags": [],
+        "uncertainties": [],
+        "lookupOutcome": "answered"
+      }
+    },
+    {
+      "review": "hybrid",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/hybrid/scores.json",
+      "keySource": "hybrid/review-key.json",
+      "stage": "hybrid",
+      "caseId": "semantic-fuzzy",
+      "arm": "hybrid",
+      "result": {
+        "answerId": "H03",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 1,
+          "classicalMeaning": 2,
+          "analogyFit": null,
+          "dialogueHelp": 1
+        },
+        "reasons": {
+          "userFacts": "“不是你记忆里泛化的日常沟通建议”替用户补出未经陈述的泛化；用户原话已有“在险难的时候”，没有说任何时候都能用诚心代替厚礼。",
+          "classicalMeaning": "将“進結自牖”解释为六四近九五、险中以薄礼加诚心相结，并保留“牖非所由之正”的象意，出处和解释主体可由朱熹注文支持。",
+          "analogyFit": "N/A：只核对注文与记忆，并说明“无法用卦象印证这句话”，没有针对现代事件应用。",
+          "dialogueHelp": "已给出《周易本義》坎六四这一正确出处，但“有两处要校准”及“不是你记忆里……”把用户未犯的泛化当成错误纠正，使本已正确的大意显得有问题。"
+        },
+        "comment": "资料查证成功；交流中的错误归因与过度纠正另扣分。",
+        "flags": [
+          {
+            "type": "unprovided_user_belief",
+            "quote": "不是你记忆里泛化的日常沟通建议",
+            "reason": "用户已明确险难条件，只提供近似大意，并未声称普遍适用。",
+            "dimension": "userFacts"
+          }
+        ],
+        "uncertainties": [],
+        "lookupOutcome": "answered"
+      }
+    },
+    {
+      "review": "hybrid",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/hybrid/scores.json",
+      "keySource": "hybrid/review-key.json",
+      "stage": "hybrid",
+      "caseId": "dev-project-correction",
+      "arm": "baseline",
+      "result": {
+        "answerId": "H04",
+        "status": "failed",
+        "candidateOnly": false,
+        "semanticEvaluable": false,
+        "scores": {
+          "userFacts": null,
+          "classicalMeaning": null,
+          "analogyFit": null,
+          "dialogueHelp": null
+        },
+        "reasons": {
+          "userFacts": "answer=null，无答案技术失败，N/A。",
+          "classicalMeaning": "answer=null，无答案技术失败，N/A。",
+          "analogyFit": "answer=null，无答案技术失败，N/A。",
+          "dialogueHelp": "answer=null，无答案技术失败，N/A。"
+        },
+        "comment": "未回应用户对信心归因的更正，不填语义零分。",
+        "flags": [],
+        "uncertainties": [],
+        "lookupOutcome": null
+      }
+    },
+    {
+      "review": "hybrid",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/hybrid/scores.json",
+      "keySource": "hybrid/review-key.json",
+      "stage": "hybrid",
+      "caseId": "semantic-responsibility",
+      "arm": "C",
+      "result": {
+        "answerId": "H05",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 2,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "“之前‘他习惯让你兜底’的判断至少在这两次上不成立”撤回旧猜测，并以用户核对出的数据晚给为事实起点。",
+          "classicalMeaning": "以“久于其道也”说明持续协作所需的规则，所引恒卦、大象和彖传与材料吻合；“这里要立的‘方’”已进入具体应用，没有断言古文专讲作业交接。",
+          "analogyFit": "借“终则有始”把复盘接到下一轮，并建议双方确认交接节点，持续安排与恒的结构相关；没有用静卦预测对方性格或未来。",
+          "dialogueHelp": "话术“判断偏了……谢谢你后面一直在赶”先修复误会，再问对方通常需要多久，既能直接开口，也落实下一次缓冲。"
+        },
+        "comment": "正确承接新事实，恒的应用没有取代事实归因。",
+        "flags": [],
+        "uncertainties": [],
+        "lookupOutcome": null
+      }
+    },
+    {
+      "review": "hybrid",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/hybrid/scores.json",
+      "keySource": "hybrid/review-key.json",
+      "stage": "hybrid",
+      "caseId": "dev-project-correction",
+      "arm": "hybrid",
+      "result": {
+        "answerId": "H06",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 1,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "虽反对旧的暂停投递建议，却写“不是靠延长准备期换安全感”，在用户已否认没信心后仍暗示未经证实的心理动机；“上周那条”也没有历史时间依据。",
+          "classicalMeaning": "以“出潜离隐”解释见龙、引用三家所论“德已著”，符合所给文本；“放在你的项目上”后的工程对应属于应用，其越界另计类比，不把准确的传统说明一并判错。",
+          "analogyFit": "“卦象先把你的处境定下来”把九二当成现实处境证据，“加功能……只是把‘被看见’的时间往后推”又忽略已投递仍可开发；末尾不保证面试结果不能撤回这些当前事实断言。",
+          "dialogueHelp": "“把每个测试写成能对应一句‘为什么有效’的断言”、对照或消融、完整链路讲解，直接服务有效性说明，并给“直接充当某个机制的证据”的功能例外。"
+        },
+        "comment": "具体技术建议有帮助，但仍借卦象确定现实处境、补写心理。",
+        "flags": [
+          {
+            "type": "unsupported_psychological_attribution",
+            "quote": "靠延长准备期换安全感",
+            "reason": "用户否认缺乏信心，也没有说想延长准备期以获得安全感。",
+            "dimension": "userFacts"
+          },
+          {
+            "type": "unprovided_time_fact",
+            "quote": "上周那条",
+            "reason": "历史只提供前轮对话，没有“上周”的时间信息。",
+            "dimension": "userFacts"
+          },
+          {
+            "type": "symbol_to_user_state",
+            "quote": "卦象先把你的处境定下来",
+            "reason": "已投递是用户事实；卦象不能独立确认用户正处在哪种现实阶段。",
+            "dimension": "analogyFit"
+          },
+          {
+            "type": "citation_does_not_support_application",
+            "quote": "「利涉大川」也提醒，面试本身就是一次涉险，靠的是准备和沟通，不是体量",
+            "reason": "该现代主张的引证是程颐“君亦利見大德之臣，以共成其功”，既非利涉大川释义，也不能证明面试成败因素；不因引文真实就给应用背书。",
+            "dimension": "analogyFit"
+          }
+        ],
+        "uncertainties": [],
+        "lookupOutcome": null
+      }
+    },
+    {
+      "review": "hybrid",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/hybrid/scores.json",
+      "keySource": "hybrid/review-key.json",
+      "stage": "hybrid",
+      "caseId": "semantic-literal",
+      "arm": "C",
+      "result": {
+        "answerId": "H07",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": null,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "始终讨论“九二爻辞原文”“王弼注解此爻”，没有因用户问险中小得就断言用户现实正遭遇险境。",
+          "classicalMeaning": "解释“未出中也”为尚未出险，并将王弼“初三”展开为“初六、六三”，爻名正确；朱熹“刚而得中”与有限所得的关系也符合注文。",
+          "analogyFit": "N/A：“宜做小规模的、可守可退的……”仍是一般占义说明，没有针对用户的现代事件作类比，不强行要求另举现实例子。",
+          "dialogueHelp": "提供爻辞、小象关键句，再说明何以有险、何以仍可小得；“不是求大功、求出险”使有限进展与已经脱险的区别清楚。"
+        },
+        "comment": "完成指定爻文义查询，未出现初爻名称错误。",
+        "flags": [],
+        "uncertainties": [],
+        "lookupOutcome": "answered"
+      }
+    },
+    {
+      "review": "hybrid",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/hybrid/scores.json",
+      "keySource": "hybrid/review-key.json",
+      "stage": "hybrid",
+      "caseId": "semantic-fuzzy",
+      "arm": "baseline",
+      "result": {
+        "answerId": "H08",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": null,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "以“您所记的大意确有文献依据”承接近似记忆；“若记成乾卦……”是条件说明，没有把它写成用户已经记错。",
+          "classicalMeaning": "将“薄礼”与“益以诚心”放回朱熹坎六四、近九五和自牖的解释，且没有把用户现代概括当作朱熹逐字原话。",
+          "analogyFit": "N/A：明确“仅作文献出处核对，不以卦象推演现实因果”，没有另作现代生活应用。",
+          "dialogueHelp": "直接给“《周易本义·习坎》六四爻注”，并解释大意正确及其险难条件，所需查证已完成。"
+        },
+        "comment": "出处与解释均得到实际材料支持，未作资料不足拒答。",
+        "flags": [],
+        "uncertainties": [],
+        "lookupOutcome": "answered"
+      }
+    },
+    {
+      "review": "hybrid",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/hybrid/scores.json",
+      "keySource": "hybrid/review-key.json",
+      "stage": "hybrid",
+      "caseId": "dev-project-correction",
+      "arm": "C",
+      "result": {
+        "answerId": "H09",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 1,
+          "analogyFit": 1,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "保留“你已开始投递”并将问题定位为“能否把已有检索的有效性讲清楚”，没有重新断言缺乏信心；“能否”仍保留待验证性质。",
+          "classicalMeaning": "紧接程颐“其德已著”写“项目已经能演示、简历已写好，说明德已著”，把传统德行概念改作工程完成度，原注没有这个结论；准确引文不能修复解释混淆。",
+          "analogyFit": "分类、消融可借“类族辨物”启发，但“各正性命就是让检索、排序、评估、错误分析各归其位”及“已有德业”把工程对应说得过实，缺少比拟边界。",
+          "dialogueHelp": "“固定评估集、对比基线、做消融实验”与一页说明、白板稿，能帮助解释有效性；将可加内容限制为日志、指标、消融开关，回应了功能取舍。"
+        },
+        "comment": "工程建议实用，文献检索充分仍未避免“德”与项目属性的混淆。",
+        "flags": [
+          {
+            "type": "commentary_meaning_distorted",
+            "quote": "你的项目已经能演示、简历已写好，说明德已著",
+            "reason": "程颐注所论圣人及大德之君臣不能由演示和简历完成来证成。",
+            "dimension": "classicalMeaning"
+          },
+          {
+            "type": "overdirect_analogy",
+            "quote": "各正性命就是让检索、排序、评估、错误分析各归其位",
+            "reason": "现代模块分工可作启发，但直接“就是”的等同弱化了传统概念与工程安排的区别。",
+            "dimension": "analogyFit"
+          }
+        ],
+        "uncertainties": [
+          "“真正短板”仍略显确定，但本句保留“能否”，没有进一步声称用户已在面试中解释失败。"
+        ],
+        "lookupOutcome": null
+      }
+    },
+    {
+      "review": "hybrid",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/hybrid/scores.json",
+      "keySource": "hybrid/review-key.json",
+      "stage": "hybrid",
+      "caseId": "semantic-responsibility",
+      "arm": "baseline",
+      "result": {
+        "answerId": "H10",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 1,
+          "classicalMeaning": 2,
+          "analogyFit": 2,
+          "dialogueHelp": 1
+        },
+        "reasons": {
+          "userFacts": "虽承认“基础数据都是你给晚了”，却只称旧猜测“至少不完整”，随即强调“两端都出现了延迟”；没有明确撤回无证据的“习惯让你兜底”归因，容易把先后因果改写成双方责任对半。",
+          "classicalMeaning": "以“剛柔皆應，恆”说相互响应、以“立不易方”说稳定约定，属于文中明示“放在这里”的应用，没有添加注家身份或错误爻名。",
+          "analogyFit": "共同确认数据、返稿及合并缓冲，与持续配合的结构贴合；“你有新的事实依据”使推进沟通有现实理由，而非从静卦推出关系状态。",
+          "dialogueHelp": "时间节点可落实，但话术认责后立即接“但我发现最后合并时也挺赶”，未先澄清对搭档的误会或承认其赶工，可能把用户要修复归因的开口重新变成对等抱怨。"
+        },
+        "comment": "提出了可用节点，但撤回旧归因和开场修复仍不充分。",
+        "flags": [
+          {
+            "type": "incomplete_retraction",
+            "quote": "“他习惯让你兜底”这个判断至少不完整",
+            "reason": "新记录并不支持该心理归因，仅补成不完整仍保留猜测。",
+            "dimension": "userFacts"
+          },
+          {
+            "type": "repair_weakened_by_script",
+            "quote": "这块是我的问题，先跟你说清楚；但我发现最后合并时也挺赶",
+            "reason": "开口没有明确说明先前只看最后交稿的误判，“但”又引回自己的负担，修复误会不足。",
+            "dimension": "dialogueHelp"
+          }
+        ],
+        "uncertainties": [
+          "“两端都出现了延迟”作为交接时间描述可成立；不足在于它接在未撤回的心理猜测后，不能据此认定搭档也负有独立过错。"
+        ],
+        "lookupOutcome": null
+      }
+    },
+    {
+      "review": "hybrid",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/hybrid/scores.json",
+      "keySource": "hybrid/review-key.json",
+      "stage": "hybrid",
+      "caseId": "semantic-responsibility",
+      "arm": "hybrid",
+      "result": {
+        "answerId": "H11",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 1,
+          "classicalMeaning": 2,
+          "analogyFit": 0,
+          "dialogueHelp": 1
+        },
+        "reasons": {
+          "userFacts": "虽说旧前提“已经被推翻”，随后却把用户的合并描述为“人一直很累……劳而无获”，用户没有报告合并无成果，也未证实这些工作处于错误位置。",
+          "classicalMeaning": "“恆，久也”、初六“始求深”、九二“能久中”及王弼“恒於非位，雖勞無獲”所指可核对，初爻也正确写为初六；严重不足发生在将这些义理套成具体心理和结果。",
+          "analogyFit": "从“没有动爻”推出“下一轮大概率原样重演”，又据初六断言“对方接不住，你也拿不到想要的结果”，并把九四直指合并无获，多处把象义充当现实预测或诊断；结尾称义理引申未撤回这些断言。",
+          "dialogueHelp": "“两次其实都是我数据给晚了……是我之前只盯着最后的交稿时间”可直接修复误会，但围绕它叠加命定循环、无获与不能深谈的判断，会给普通合作谈话增加无根据的限制。"
+        },
+        "comment": "认错话术可用，整体应用却反复越过事实与预测边界；不因引文充分而判语义成功。",
+        "flags": [
+          {
+            "type": "static_cast_to_prediction",
+            "quote": "没有动爻，通常提示眼下的麻烦不是一次意外，而是一种会自我延续的惯性",
+            "reason": "静卦不是协作模式持续或下一轮重演的行为证据。",
+            "dimension": "analogyFit"
+          },
+          {
+            "type": "unsupported_reaction_prediction",
+            "quote": "对方接不住，你也拿不到想要的结果",
+            "reason": "初六及王弼注文不能确定这位搭档听到责任梳理时的反应或沟通结果。",
+            "dimension": "analogyFit"
+          },
+          {
+            "type": "unsupported_user_state",
+            "quote": "说的正是你反复兜底合并的那种状态",
+            "reason": "把九四劳而无获直接套为用户处境，忽略用户新证据确认先给数据晚，也没有证据说合并没有成果。",
+            "dimension": "userFacts"
+          }
+        ],
+        "uncertainties": [],
+        "lookupOutcome": null
+      }
+    },
+    {
+      "review": "hybrid",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/hybrid/scores.json",
+      "keySource": "hybrid/review-key.json",
+      "stage": "hybrid",
+      "caseId": "semantic-literal",
+      "arm": "hybrid",
+      "result": {
+        "answerId": "H12",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 2,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "围绕“本轮所问是坎卦九二”，文中险境主要指爻象；没有推断用户遇到某件现实困难。",
+          "classicalMeaning": "用“尚未出险”限制小得，并正确区分王弼的相邻“初六、六三”不足为援与朱熹的“刚而得中”，符合两家材料而非只复述引文。",
+          "analogyFit": "主动增加的“放回现实”只作一般有限进展的启发，“这还不是脱困本身”保留条件，没有保证用户将获援或断言其当前现实危险。",
+          "dialogueHelp": "完整回答爻辞、小象及“求小得”的限制，并说明“不是无险，也不是大通”；能帮助用户分清有限收获与彻底脱困。"
+        },
+        "comment": "文义解释完成；一般现实应用是可选补充，不要求其他查询答案也必须包含。",
+        "flags": [],
+        "uncertainties": [
+          "“须主动去求”是对“求”的解释性强调；材料不足以据此给所有情境规定唯一行动方式，本评阅不作训诂唯一性裁定。"
+        ],
+        "lookupOutcome": "answered"
+      }
+    },
+    {
+      "review": "knowledge",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/knowledge/scores.json",
+      "keySource": "knowledge-review-key.json",
+      "stage": "rag",
+      "caseId": "rag-thanks",
+      "arm": "classic",
+      "result": {
+        "answerId": "K01",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 1,
+          "analogyFit": 1,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "围绕“朋友帮了一整天”和“预算少”提供量力选择，没有声称知道朋友喜好；“若不方便请到家里”保留了条件。",
+          "classicalMeaning": "“一樽酒、两簋饭、瓦缶”可获王弼解释支持，但“从窗户把约定和心意递进去”把“约”说成约定，所给王弼、朱熹注均未支持这一明确词义。",
+          "analogyFit": "简朴而具体地答谢有贴切结构，但“预算少，像水流而不盈满”只是词面对应，结尾“终无咎正是给这种……答谢”又把爻辞直接授予现实方案。",
+          "dialogueHelp": "家常饭、实用小物、具体卡片及日后搭手提供可承担的表达方式，能回答预算有限时如何感谢。"
+        },
+        "comment": "实际谢礼建议可用，纳约词义及从经文到现实无咎的边界不够清楚。",
+        "traditionalChecks": [
+          {
+            "claim": "一樽酒、两簋饭、瓦缶是简朴礼仪器物",
+            "assessment": "supported",
+            "reason": "王弼明确有“一樽之酒，二簋之食，瓦缶之器”，并联系不存外饰。",
+            "referenceIds": [
+              "wang-bi@2404949:h29:line4:0fe747fe13"
+            ]
+          },
+          {
+            "claim": "纳约是把约定和心意递进去",
+            "assessment": "unsupported",
+            "reason": "王弼写“納此至約”、朱熹写薄礼益以诚心；材料没有将约直接训作现代约定。",
+            "referenceIds": [
+              "wang-bi@2404949:h29:line4:0fe747fe13",
+              "zhu-xi@528287:h29:line4:99879a18e8"
+            ]
+          }
+        ],
+        "flags": [
+          {
+            "type": "unsupported_gloss",
+            "quote": "把约定和心意递进去",
+            "reason": "没有说明这是现代转述，所给注释不足以支持“约定”这个字义。",
+            "dimension": "classicalMeaning"
+          },
+          {
+            "type": "strained_analogy",
+            "quote": "预算少，像水流而不盈满",
+            "reason": "把水象的盈与预算多少相接，缺少进一步结构解释。",
+            "dimension": "analogyFit"
+          }
+        ],
+        "uncertainties": [
+          "纳约有历史解释差异；本评阅只判本材料未支持该具体训释，不宣称已穷尽所有训诂。"
+        ]
+      }
+    },
+    {
+      "review": "knowledge",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/knowledge/scores.json",
+      "keySource": "knowledge-review-key.json",
+      "stage": "rag",
+      "caseId": "rag-mentoring",
+      "arm": "full",
+      "result": {
+        "answerId": "K02",
+        "status": "failed",
+        "candidateOnly": false,
+        "semanticEvaluable": false,
+        "scores": {
+          "userFacts": null,
+          "classicalMeaning": null,
+          "analogyFit": null,
+          "dialogueHelp": null
+        },
+        "reasons": {
+          "userFacts": "answer=null，无答案技术失败，N/A。",
+          "classicalMeaning": "answer=null，无答案技术失败，N/A。",
+          "analogyFit": "answer=null，无答案技术失败，N/A。",
+          "dialogueHelp": "answer=null，无答案技术失败，N/A。"
+        },
+        "comment": "无实质回答，不把空答案填成语义零分。",
+        "traditionalChecks": [],
+        "flags": [],
+        "uncertainties": []
+      }
+    },
+    {
+      "review": "knowledge",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/knowledge/scores.json",
+      "keySource": "knowledge-review-key.json",
+      "stage": "rag",
+      "caseId": "rag-mentoring",
+      "arm": "memory",
+      "result": {
+        "answerId": "K03",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 1,
+          "classicalMeaning": 2,
+          "analogyFit": 2,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "“可能是步骤记忆不清……”没有把原因说定，但示例“这个步骤我们讲过两次”把两次做错误写为已讲过两次，用户未提供教学次数。",
+          "classicalMeaning": "“纠正可以……不要……打击、羞辱”与保护而不侵犯的区分，符合王弼击去童蒙、捍御而非取之及朱熹防止攻治过深的主要边界，未附引用不使这一理解失效。",
+          "analogyFit": "以“盯流程中的风险点”对应防护，并区分高风险制止、可恢复错误练习，保留了御寇的条件性，没有把利御寇读成一切严格监管都正当。",
+          "dialogueHelp": "让新人复述、演示、检查关键节点并根据错误性质调整训练，能实际区分不理解、缺练习与流程问题。"
+        },
+        "comment": "无附引文仍能正确抓住防护与控制的区别；话术有一处教学次数的新增事实。",
+        "traditionalChecks": [
+          {
+            "claim": "击蒙可纠正，但不应变成侵犯或过度控制",
+            "assessment": "supported",
+            "reason": "王弼区分捍御与欲取，朱熹限制过刚、攻治太深，并非越严越好。",
+            "referenceIds": [
+              "wang-bi@2404940:h4:line6:2f60846301",
+              "zhu-xi@528287:h4:line6:af7dea8351"
+            ]
+          },
+          {
+            "claim": "蒙九二有包蒙、师有师出以律",
+            "assessment": "unknown",
+            "reason": "获准补充材料没有给这两处具体爻文，不能在本次有限材料内逐句核对；不因此推定错误。",
+            "referenceIds": []
+          }
+        ],
+        "flags": [
+          {
+            "type": "unprovided_training_history",
+            "quote": "这个步骤我们讲过两次",
+            "reason": "题干是做错两次，不等于已经讲解两次。",
+            "dimension": "userFacts"
+          }
+        ],
+        "uncertainties": []
+      }
+    },
+    {
+      "review": "knowledge",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/knowledge/scores.json",
+      "keySource": "knowledge-review-key.json",
+      "stage": "rag",
+      "caseId": "rag-thanks",
+      "arm": "memory",
+      "result": {
+        "answerId": "K04",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 1,
+          "analogyFit": 2,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "以“朋友出力整整一天……本月预算不多”为前提，“如果朋友不收礼”“如果当面……尴尬”均为可选情境，没有断言这些已发生。",
+          "classicalMeaning": "简朴与诚意的主题受王、朱注支持，但“走不了正门，只能从旁处相通”和“坦诚本身就是……约”都超出所给释义，程颐观点归属则缺少获准原文可核实。",
+          "analogyFit": "用“表达通道”比拟自牖、用具体感谢替代排场，是用户所求的现代启发，且明确“不是对未来结果的断言”，没有保证朋友必然接受。",
+          "dialogueHelp": "提供做饭、具体感谢信、换表达方式及量力安排，并提醒依关系与朋友性格取舍，能推进实际选择。"
+        },
+        "comment": "现代应用有用且有限制，传统词义表述与作者归属仍有核对缺口。",
+        "traditionalChecks": [
+          {
+            "claim": "重险中柔居柔、承九五，以诚意而非外饰相接",
+            "assessment": "supported",
+            "reason": "王弼直接说明爻位、相承和明信不存外饰，朱熹有薄礼益诚心。",
+            "referenceIds": [
+              "wang-bi@2404949:h29:line4:0fe747fe13",
+              "zhu-xi@528287:h29:line4:99879a18e8"
+            ]
+          },
+          {
+            "claim": "自牖表示正门走不了，只能走旁处",
+            "assessment": "unsupported",
+            "reason": "朱熹说牖非通常所由之正、是室受明处，没有证明正门被堵或只能从旁进入。",
+            "referenceIds": [
+              "zhu-xi@528287:h29:line4:99879a18e8"
+            ]
+          },
+          {
+            "claim": "坦诚本身就是六四的约",
+            "assessment": "unsupported",
+            "reason": "把诚意主题直接当作约的单字训释，所给注释没有这个等同。",
+            "referenceIds": [
+              "wang-bi@2404949:h29:line4:0fe747fe13",
+              "zhu-xi@528287:h29:line4:99879a18e8"
+            ]
+          },
+          {
+            "claim": "程颐将六四解释为险难不以礼文为责、以诚相结",
+            "assessment": "unknown",
+            "reason": "本批及获准参考没有程颐坎六四原注，不能确认作者归属，也不据此判为伪造。",
+            "referenceIds": []
+          }
+        ],
+        "flags": [
+          {
+            "type": "unsupported_historical_detail",
+            "quote": "走不了正门，只能从旁处相通",
+            "reason": "没有原文支持这个具体历史场景。",
+            "dimension": "classicalMeaning"
+          },
+          {
+            "type": "unsupported_gloss",
+            "quote": "这种坦诚本身就是六四所说的「约」",
+            "reason": "现代坦诚建议可以成立，却未证明该字的传统词义。",
+            "dimension": "classicalMeaning"
+          }
+        ],
+        "uncertainties": []
+      }
+    },
+    {
+      "review": "knowledge",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/knowledge/scores.json",
+      "keySource": "knowledge-review-key.json",
+      "stage": "rag",
+      "caseId": "rag-thanks",
+      "arm": "full",
+      "result": {
+        "answerId": "K05",
+        "status": "validation_failed",
+        "candidateOnly": true,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "保留预算限制，备选均不要求知道朋友具体偏好；“朋友……看重的大概不是……”是带不确定标记的猜测，没有伪称已知。",
+          "classicalMeaning": "王弼“明信显著，不存外饰”及一樽、二簋、瓦缶与朱熹薄礼益诚心均准确应用于简朴礼仪，没有把纳约直接解释成承诺或约定。",
+          "analogyFit": "借日常“窗口”考虑合适表达方式可以成立，但“只要……就不会因为礼物薄而失礼”把终无咎变为现实充分条件，忽略朋友意愿与互动情境。",
+          "dialogueHelp": "从家常饭、手写卡片到具体帮忙，配合当面感谢和不作超能力承诺，能帮助用户在预算内选择。"
+        },
+        "comment": "注释解释较有依据，现实结论仍过满；完整候选未完成机械核验。",
+        "traditionalChecks": [
+          {
+            "claim": "薄礼、简器也能表达明信而不依赖外饰",
+            "assessment": "supported",
+            "reason": "王弼的器物例子和朱熹薄礼益诚心与该解释相符。",
+            "referenceIds": [
+              "wang-bi@2404949:h29:line4:0fe747fe13",
+              "zhu-xi@528287:h29:line4:99879a18e8"
+            ]
+          },
+          {
+            "claim": "只要真诚、及时、量力，就不会因礼物薄失礼",
+            "assessment": "unsupported",
+            "reason": "传统注释解释特定爻位与礼仪之象，不足以保证现代朋友对所有具体答谢的理解。",
+            "referenceIds": [
+              "zy-29-line-4",
+              "wang-bi@2404949:h29:line4:0fe747fe13",
+              "zhu-xi@528287:h29:line4:99879a18e8"
+            ]
+          }
+        ],
+        "flags": [
+          {
+            "type": "unsupported_sufficiency_claim",
+            "quote": "只要你的表达是真诚的、及时且量力而行的，就不会因为礼物薄而失礼",
+            "reason": "这些是有价值的建议条件，却不能由终无咎推出不会失礼的保证。",
+            "dimension": "analogyFit"
+          }
+        ],
+        "uncertainties": [
+          "status=validation_failed，但有完整 answered 候选；语义照常评分，candidateOnly=true，不能算作已完成交付。"
+        ]
+      }
+    },
+    {
+      "review": "knowledge",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/knowledge/scores.json",
+      "keySource": "knowledge-review-key.json",
+      "stage": "rag",
+      "caseId": "rag-mentoring",
+      "arm": "classic",
+      "result": {
+        "answerId": "K06",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 1
+        },
+        "reasons": {
+          "userFacts": "“未知的是他的真实卡点，需先用复述和演示验证”保留原因不确定；“若……不认真”是条件，没有直接认定新人故意不学。",
+          "classicalMeaning": "“纠正不能变成攻击、羞辱和越界控制”保留不利为寇的约束，防错用途与王、朱注的防护方向相容；次数化教学规则应另看现代应用，不能由准确引文自动证成。",
+          "analogyFit": "从风险点设置检查较贴切，但将“初筮告，再三渎”安排成第一次讲、第二次复述、第三次升级，把占问及诚敬条件套成固定教学次数，现代规则缺少必要关联。",
+          "dialogueHelp": "复述、演示和分级检查有用，但“不主动确认，不再单独重复”与固定第三次升级的硬边界，未先解决不敢问或教学方式不适配的可能，容易过早减少支持。"
+        },
+        "comment": "未用利御寇批准羞辱，但另一处经文被过度转换成固定教学程序。",
+        "traditionalChecks": [
+          {
+            "claim": "纠正蒙昧与保护有边界，不能变成越界攻击",
+            "assessment": "supported",
+            "reason": "王弼有捍御与欲取的对照，朱熹特别限制攻治过深。",
+            "referenceIds": [
+              "wang-bi@2404940:h4:line6:2f60846301",
+              "zhu-xi@528287:h4:line6:af7dea8351"
+            ]
+          },
+          {
+            "claim": "上九提示用户带人已到最后阶段",
+            "assessment": "unsupported",
+            "reason": "爻处蒙终不能独立确认这位新人的实际培训阶段。",
+            "referenceIds": [
+              "zy-4-line-6",
+              "wang-bi@2404940:h4:line6:2f60846301"
+            ]
+          },
+          {
+            "claim": "初筮告支持固定的第一次讲解、第二次验证、第三次升级",
+            "assessment": "unsupported",
+            "reason": "材料有初筮、再三渎与志应等，未规定现代培训次数；作为自拟选项应依实际学习困难调整。",
+            "referenceIds": [
+              "zy-4-judgment",
+              "zy-4-tuan"
+            ]
+          }
+        ],
+        "flags": [
+          {
+            "type": "overdirect_analogy",
+            "quote": "第一次讲清；第二次要求复述和演示；第三次同类错误则正式反馈",
+            "reason": "把经文中次序当作固定教学分级，缺少学习阶段、风险与教学质量的现实论证。",
+            "dimension": "analogyFit"
+          },
+          {
+            "type": "premature_withdrawal_of_support",
+            "quote": "不主动确认，不再单独重复",
+            "reason": "没有先查清不求助的原因，可能将学习困难误处置为应减少支持。",
+            "dimension": "dialogueHelp"
+          }
+        ],
+        "uncertainties": []
+      }
+    },
+    {
+      "review": "knowledge",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/knowledge/scores.json",
+      "keySource": "knowledge-review-key.json",
+      "stage": "static",
+      "caseId": "static-word-overlap",
+      "arm": "word_overlap",
+      "result": {
+        "answerId": "K07",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 1,
+          "classicalMeaning": 1,
+          "analogyFit": 1,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "虽明确撤回“他习惯让你兜底”，却又断言“你会有想解释‘我不是推责，但对方也……’的冲动”，用户最新消息恰在主动承认责任，没有这个心理证据。",
+          "classicalMeaning": "程颐原注谈守常不度势、求望过深，回答把“责望故素”的意思直接归为“旧有的期待和旧账”，所给上下文不支持其中翻旧账的具体等同；其余王、朱摘引基本可核对。",
+          "analogyFit": "协作规则与恒的联系有用，但王弼六五的尊位制义被套成不要跟随搭档节奏、朱熹上六被套成愧疚过动，均缺少用户现实行为支点。",
+          "dialogueHelp": "“事实—影响—补救—新规则”及最后含明确道歉、时间节点、在原范围更正的具体话术，实质完成如何说明数据晚给的请求。"
+        },
+        "comment": "能纠正责任并给有效话术，却借新增注释重新补写用户心理和行为。",
+        "traditionalChecks": [
+          {
+            "claim": "王弼六五批评不能制义而从唱，朱熹上六说不常、过动",
+            "assessment": "supported",
+            "reason": "作者、爻位和主要文字与本条随附注释一致；这不证明用户正在被动跟随或过度愧疚。",
+            "referenceIds": [
+              "wang-bi@2404960:h32:line5:5cdd8ebbb7",
+              "zhu-xi@737053:h32:line6:5310233565"
+            ]
+          },
+          {
+            "claim": "程颐责望故素就是拿旧账责望别人",
+            "assessment": "unsupported",
+            "reason": "原注重在守常不度势、期待过深；其中没有把用户翻旧账或对冲责任写为具体解释。",
+            "referenceIds": [
+              "cheng-yi@1313743:h32:line1:0091fef850"
+            ]
+          },
+          {
+            "claim": "故素的全部历史词义及此注所有可能诠释",
+            "assessment": "unknown",
+            "reason": "本次材料不足以穷尽训诂；因此不把上述无支持直接升级为确定的经文矛盾。",
+            "referenceIds": []
+          }
+        ],
+        "flags": [
+          {
+            "type": "unsupported_psychological_attribution",
+            "quote": "你会有想解释“我不是推责，但对方也……”的冲动",
+            "reason": "用户已经说不能再把责任推给搭档，没有陈述这种冲动。",
+            "dimension": "userFacts"
+          },
+          {
+            "type": "unsupported_application_premise",
+            "quote": "不能只被动跟着对方的节奏走",
+            "reason": "负责基础数据不等于过去被动跟随搭档；不能由六五注推定合作中的角色行为。",
+            "dimension": "analogyFit"
+          }
+        ],
+        "uncertainties": []
+      }
+    },
+    {
+      "review": "knowledge",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/knowledge/scores.json",
+      "keySource": "knowledge-review-key.json",
+      "stage": "static",
+      "caseId": "static-word-overlap",
+      "arm": "anchored",
+      "result": {
+        "answerId": "K08",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 2,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "明确把重点改成“先把自己的迟交说明白”，并在话术中承认“我之前把晚交说成你的问题，不公平”，没有保留搭档应承担后果的旧归因。",
+          "classicalMeaning": "将“立不易方”“久于其道”理解为守承诺、持续修正，且用“放在这里”说明是协作应用，与恒的方向相容，没有添出注家结论。",
+          "analogyFit": "从持续守道联系到提前交数据、同步节点与缓冲机制，现实依据来自用户确认的两次迟交，没有用静卦预测关系或诊断人格。",
+          "dialogueHelp": "给出可直接说的道歉、原定与实际时间对照、先听对方补救需要的顺序，有助用户清楚说明并修复误会。"
+        },
+        "comment": "事实更正与开口帮助充分，现代协作建议保留了文义与事实的界线。",
+        "traditionalChecks": [
+          {
+            "claim": "恒可作为持续守原则、稳定协作规则的启发",
+            "assessment": "supported",
+            "reason": "彖传久于其道、终则有始与大象立不易方提供相关结构；具体同步时间是自拟方案。",
+            "referenceIds": [
+              "zy-32-tuan",
+              "zy-32-xiang"
+            ]
+          }
+        ],
+        "flags": [],
+        "uncertainties": [
+          "“如果我再晚，合并工作我来兜底”作为补救增量有限，因为历史里用户本来就负责合并；提前交付和预警才是本答案更有用的改动。"
+        ]
+      }
+    },
+    {
+      "review": "rag-recovery",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/rag-recovery/scores.json",
+      "keySource": "rag-recovery/review-key.json",
+      "stage": "rag-recovery",
+      "caseId": "rag-mentoring",
+      "arm": "repair",
+      "result": {
+        "answerId": "A01",
+        "scores": {
+          "userFacts": 1,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 1
+        },
+        "reasons": {
+          "userFacts": "“你已经讲过两次”把用户报告的两次做错改成两次讲解，教学次数并非已知事实。",
+          "classicalMeaning": "解释击蒙为去蒙昧，并保留朱熹“攻治太深……反为之害”与“惟捍其外诱”的条件，没有把严密理解成越严越好。",
+          "analogyFit": "防错与防护的对应可以成立，但用“初筮告，再三渎”规定第三次只能验证、不能重复讲解，将占问及诚敬语境过度转成教学次数规则。",
+          "dialogueHelp": "复述、演示、自查提供可执行检查，但“不重复讲解”预先排除了仍未理解、需要换种说明的可能，未先查明两次出错的具体原因。"
+        },
+        "comment": "王、朱解释的主要边界保留了，但用户事实和固定次数教学规则仍有问题。",
+        "flags": [
+          {
+            "type": "unprovided_training_history",
+            "quote": "你已经讲过两次",
+            "reason": "用户只说已讲过的步骤连续做错两次，不能确定讲解次数。",
+            "dimension": "userFacts"
+          },
+          {
+            "type": "overdirect_analogy",
+            "quote": "第三次若还只是重复讲，就接近卦辞说的“初筮告，再三渎，渎则不告”",
+            "reason": "不能由再三渎推出第三次说明本身不适宜；应判断是否理解及所需支持。",
+            "dimension": "analogyFit"
+          },
+          {
+            "type": "premature_instruction_rule",
+            "quote": "同一错误第三次出现时，不重复讲解",
+            "reason": "未经原因核实就排除再次或换方式讲解，可能减少必要教学支持。",
+            "dimension": "dialogueHelp"
+          }
+        ],
+        "uncertainties": [],
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true
+      }
+    },
+    {
+      "review": "rag-recovery",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/rag-recovery/scores.json",
+      "keySource": "rag-recovery/review-key.json",
+      "stage": "rag-recovery",
+      "caseId": "rag-thanks",
+      "arm": "repair",
+      "result": {
+        "answerId": "A02",
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": 1,
+          "dialogueHelp": 2
+        },
+        "reasons": {
+          "userFacts": "围绕帮忙整天与预算有限提出量力选项，“朋友……看重的大概不是……”保留猜测性质，没有把朋友偏好伪称为已知。",
+          "classicalMeaning": "王弼“明信显著，不存外饰”、简朴器物和朱熹“薄礼益以诚心”的解释受随附注释支持，没有把纳约直接训为现代约定。",
+          "analogyFit": "借日常“窗口”寻找合适感谢方式可以成立，但“只要……就不会因为礼物薄而失礼”把终无咎转成现代充分条件，不能由注释保证。",
+          "dialogueHelp": "家常饭、手写卡片、实际帮忙与不作超预算承诺，使用户能在有限预算下选一种具体答谢方式。"
+        },
+        "comment": "传统说明与实际选项有帮助，薄礼不会失礼的确定结论仍越界。",
+        "flags": [
+          {
+            "type": "unsupported_sufficiency_claim",
+            "quote": "只要你的表达是真诚的、及时且量力而行的，就不会因为礼物薄而失礼",
+            "reason": "真诚与量力可以降低不适，却不能由终无咎保证特定朋友对具体方式的理解。",
+            "dimension": "analogyFit"
+          }
+        ],
+        "uncertainties": [
+          "朋友喜好、是否接受礼物及合适表达方式仍未知；材料不能证实朋友必定只在意心意。"
+        ],
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true
+      }
+    },
+    {
+      "review": "stress",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/stress/scores.json",
+      "keySource": "stress/review-key.json",
+      "stage": "stress",
+      "caseId": "paraphrase-stress-2",
+      "arm": "D",
+      "result": {
+        "answerId": "A01",
+        "status": "validation_failed",
+        "candidateOnly": true,
+        "semanticEvaluable": true,
+        "delivered": false,
+        "endToEndTaskCompleted": false,
+        "lookupOutcome": "answeredInCandidateOnly",
+        "scores": {
+          "userFacts": 1,
+          "classicalMeaning": 1,
+          "analogyFit": null,
+          "dialogueHelp": 1
+        },
+        "reasons": {
+          "userFacts": "用户说“真实的心意比排场更重要”，回答却校准为“薄礼而非不要排场”，把比较重要性改写成用户否定所有排场，纠正了用户没有说的话。",
+          "classicalMeaning": "坎六四出处和原文正确，但“至于坎卦的整体处境，朱熹说……”所引实际是九二条注，把特定爻的“未能自出”扩成全卦解释，范围不忠实。",
+          "analogyFit": "N/A：纯出处与原文核对，没有现代事件类比；与查证无关的起卦要求另列疑点，不用类比项强行评分。",
+          "dialogueHelp": "候选确实给出《周易本義》坎六四及相关原文，但“需要另起对应之卦”增加无依据且与查证无关的要求，夹杂过度纠正，语义帮助混合；本项不因机械拒绝扣分。"
+        },
+        "comment": "可读候选找到了所问出处和原文，仍有用户转述、条注范围与无关起卦要求的问题；候选未交付。",
+        "flags": [
+          {
+            "type": "unprovided_user_claim",
+            "quote": "“薄礼”而非“不要排场”",
+            "reason": "用户没有把薄礼诚心解释成完全不要排场。",
+            "dimension": "userFacts"
+          },
+          {
+            "type": "commentary_scope_overgeneralization",
+            "quote": "至于坎卦的整体处境，朱熹说是“處重險之中未能自出故為有險之象”",
+            "reason": "该条 locator 为习坎第 2 爻注，不能把九二自身条件直接当作朱熹全卦总论。",
+            "dimension": "classicalMeaning"
+          },
+          {
+            "type": "unsupported_divination_requirement",
+            "quote": "若要就“难关中与上位者往来”起卦讨论，需要另起对应之卦",
+            "reason": "本题只问出处；所附材料不规定必须另起与题意对应的卦，更不能以当前乾卦决定文献查证方法。",
+            "dimension": "dialogueHelp"
+          }
+        ],
+        "uncertainties": [
+          "未推测候选被拒的具体原因；文本误释与核验失败没有被视为已证明的因果关系。"
+        ],
+        "visibleFallbackReview": {
+          "status": "insufficient",
+          "responseType": "readable_verification_failure_notice",
+          "text": "这次回答未能通过核验，本次卦象已保留。可以查看原文依据，或继续说明你的问题。",
+          "taskCompleted": false,
+          "scores": {
+            "userFacts": null,
+            "classicalMeaning": null,
+            "analogyFit": null,
+            "dialogueHelp": 0
+          },
+          "reasons": {
+            "userFacts": "提示未尝试理解或回答本题，N/A。",
+            "classicalMeaning": "提示没有原义或注家解释可评，N/A。",
+            "analogyFit": "提示没有现代类比，N/A。",
+            "dialogueHelp": "没有提供所问出处或原文；核验失败提示不是用户任务的完成。"
+          }
+        }
+      }
+    },
+    {
+      "review": "stress",
+      "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+      "scoreSource": "blind/stress/scores.json",
+      "keySource": "stress/review-key.json",
+      "stage": "stress",
+      "caseId": "paraphrase-stress-2",
+      "arm": "C",
+      "result": {
+        "answerId": "A02",
+        "status": "completed",
+        "candidateOnly": false,
+        "semanticEvaluable": true,
+        "delivered": true,
+        "endToEndTaskCompleted": false,
+        "lookupOutcome": "notCompleted_missingTargetEvidence",
+        "scores": {
+          "userFacts": 2,
+          "classicalMeaning": 2,
+          "analogyFit": null,
+          "dialogueHelp": 1
+        },
+        "reasons": {
+          "userFacts": "“与当前提供的朱熹原文并不吻合”限定于本条材料，没有直接宣布用户记忆错误；“如果你记忆的是……六四”保留了出处待核实状态。",
+          "classicalMeaning": "对所附坎六三注的阴柔不中正、来往皆险及“枕”为倚着未安的说明忠实，且本条确未附六四注，缺失说明成立。",
+          "analogyFit": "N/A：出处查证题，没有现代事件类比；当前乾卦不印证文献的说明没有变成现实预测。",
+          "dialogueHelp": "提出可能核对坎六四这一有用线索，但明确“不能确认……出处”且没有给用户所求六四原文，因此只有部分帮助，不能算完成查证或因诚实拒答给高分。"
+        },
+        "comment": "实际交付了资料不足回答；缺失说明符合本条证据范围，但没有完成出处及原文请求。",
+        "flags": [
+          {
+            "type": "lookup_incomplete",
+            "quote": "本轮没有提供该爻朱熹原文……也不能确认这就是你记忆中的出处",
+            "reason": "用户要出处与原文；指出检索缺口和可能方向尚未完成所问任务。",
+            "dimension": "dialogueHelp"
+          },
+          {
+            "type": "irrelevant_cast_discussion",
+            "quote": "起卦为乾为天……它不指向坎卦",
+            "reason": "与本次文献定位无直接作用；不因这段卦象描述准确就增加查证成功度。",
+            "dimension": "dialogueHelp"
+          }
+        ],
+        "uncertainties": [
+          "A01 与 A02 的随附证据不同；未把另一条匿名回答拿到的六四注反算成 A02 当时已获得的文献，也未推测检索或拒绝原因。"
+        ],
+        "evidenceAvailability": {
+          "targetCommentaryPresentInThisItem": false,
+          "availableZhuXiCommentary": "《周易本義》·习坎·第3爻注",
+          "targetLocatedAsHypothesis": "《周易本義》·习坎·六四爻注"
+        }
+      }
+    }
+  ]
+}

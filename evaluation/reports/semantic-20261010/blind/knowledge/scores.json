@@ -1,0 +1,448 @@
+{
+  "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+  "scope": "仅本批 materials.json、fixtures/reference.md 与 fixtures/rag-reference.md；未读取 key、配置、源码或其他结果，未调用被测 API。",
+  "rubric": {
+    "scale": {
+      "0": "明确失败",
+      "1": "混合或有明显不足",
+      "2": "在可核对范围内充分做到",
+      "null": "无答案 N/A 或无法判断，具体见理由"
+    },
+    "dimensions": {
+      "userFacts": "用户事实与更正承接",
+      "classicalMeaning": "传统解释是否忠实",
+      "analogyFit": "现代类比贴切与推断克制",
+      "dialogueHelp": "自然交流与有用深度"
+    },
+    "principles": [
+      "不计算缺少附文献样本的引用率，也不因没有 source 或引用形式扣质量分；据获准参考实际核对传统解释。",
+      "传统核对区分 supported、unsupported、contradicted、unknown；无支持不自动等于矛盾。",
+      "明确现代类比不要求古文直接讨论现代生活；不按长度或引文数量评分。",
+      "完整未核验候选继续评分并标 candidateOnly；无答案四项 null。"
+    ]
+  },
+  "summary": {
+    "total": 8,
+    "completedWithReadableAnswer": 6,
+    "candidateOnly": 1,
+    "noAnswerTechnicalFailure": 1,
+    "mechanicalNonCompletion": 2,
+    "means": {
+      "userFacts": {
+        "value": 1.714,
+        "n": 7
+      },
+      "classicalMeaning": {
+        "value": 1.571,
+        "n": 7
+      },
+      "analogyFit": {
+        "value": 1.429,
+        "n": 7
+      },
+      "dialogueHelp": {
+        "value": 1.857,
+        "n": 7
+      }
+    }
+  },
+  "results": [
+    {
+      "answerId": "K01",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 1,
+        "analogyFit": 1,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "围绕“朋友帮了一整天”和“预算少”提供量力选择，没有声称知道朋友喜好；“若不方便请到家里”保留了条件。",
+        "classicalMeaning": "“一樽酒、两簋饭、瓦缶”可获王弼解释支持，但“从窗户把约定和心意递进去”把“约”说成约定，所给王弼、朱熹注均未支持这一明确词义。",
+        "analogyFit": "简朴而具体地答谢有贴切结构，但“预算少，像水流而不盈满”只是词面对应，结尾“终无咎正是给这种……答谢”又把爻辞直接授予现实方案。",
+        "dialogueHelp": "家常饭、实用小物、具体卡片及日后搭手提供可承担的表达方式，能回答预算有限时如何感谢。"
+      },
+      "comment": "实际谢礼建议可用，纳约词义及从经文到现实无咎的边界不够清楚。",
+      "traditionalChecks": [
+        {
+          "claim": "一樽酒、两簋饭、瓦缶是简朴礼仪器物",
+          "assessment": "supported",
+          "reason": "王弼明确有“一樽之酒，二簋之食，瓦缶之器”，并联系不存外饰。",
+          "referenceIds": [
+            "wang-bi@2404949:h29:line4:0fe747fe13"
+          ]
+        },
+        {
+          "claim": "纳约是把约定和心意递进去",
+          "assessment": "unsupported",
+          "reason": "王弼写“納此至約”、朱熹写薄礼益以诚心；材料没有将约直接训作现代约定。",
+          "referenceIds": [
+            "wang-bi@2404949:h29:line4:0fe747fe13",
+            "zhu-xi@528287:h29:line4:99879a18e8"
+          ]
+        }
+      ],
+      "flags": [
+        {
+          "type": "unsupported_gloss",
+          "quote": "把约定和心意递进去",
+          "reason": "没有说明这是现代转述，所给注释不足以支持“约定”这个字义。",
+          "dimension": "classicalMeaning"
+        },
+        {
+          "type": "strained_analogy",
+          "quote": "预算少，像水流而不盈满",
+          "reason": "把水象的盈与预算多少相接，缺少进一步结构解释。",
+          "dimension": "analogyFit"
+        }
+      ],
+      "uncertainties": [
+        "纳约有历史解释差异；本评阅只判本材料未支持该具体训释，不宣称已穷尽所有训诂。"
+      ]
+    },
+    {
+      "answerId": "K02",
+      "status": "failed",
+      "candidateOnly": false,
+      "semanticEvaluable": false,
+      "scores": {
+        "userFacts": null,
+        "classicalMeaning": null,
+        "analogyFit": null,
+        "dialogueHelp": null
+      },
+      "reasons": {
+        "userFacts": "answer=null，无答案技术失败，N/A。",
+        "classicalMeaning": "answer=null，无答案技术失败，N/A。",
+        "analogyFit": "answer=null，无答案技术失败，N/A。",
+        "dialogueHelp": "answer=null，无答案技术失败，N/A。"
+      },
+      "comment": "无实质回答，不把空答案填成语义零分。",
+      "traditionalChecks": [],
+      "flags": [],
+      "uncertainties": []
+    },
+    {
+      "answerId": "K03",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 1,
+        "classicalMeaning": 2,
+        "analogyFit": 2,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "“可能是步骤记忆不清……”没有把原因说定，但示例“这个步骤我们讲过两次”把两次做错误写为已讲过两次，用户未提供教学次数。",
+        "classicalMeaning": "“纠正可以……不要……打击、羞辱”与保护而不侵犯的区分，符合王弼击去童蒙、捍御而非取之及朱熹防止攻治过深的主要边界，未附引用不使这一理解失效。",
+        "analogyFit": "以“盯流程中的风险点”对应防护，并区分高风险制止、可恢复错误练习，保留了御寇的条件性，没有把利御寇读成一切严格监管都正当。",
+        "dialogueHelp": "让新人复述、演示、检查关键节点并根据错误性质调整训练，能实际区分不理解、缺练习与流程问题。"
+      },
+      "comment": "无附引文仍能正确抓住防护与控制的区别；话术有一处教学次数的新增事实。",
+      "traditionalChecks": [
+        {
+          "claim": "击蒙可纠正，但不应变成侵犯或过度控制",
+          "assessment": "supported",
+          "reason": "王弼区分捍御与欲取，朱熹限制过刚、攻治太深，并非越严越好。",
+          "referenceIds": [
+            "wang-bi@2404940:h4:line6:2f60846301",
+            "zhu-xi@528287:h4:line6:af7dea8351"
+          ]
+        },
+        {
+          "claim": "蒙九二有包蒙、师有师出以律",
+          "assessment": "unknown",
+          "reason": "获准补充材料没有给这两处具体爻文，不能在本次有限材料内逐句核对；不因此推定错误。",
+          "referenceIds": []
+        }
+      ],
+      "flags": [
+        {
+          "type": "unprovided_training_history",
+          "quote": "这个步骤我们讲过两次",
+          "reason": "题干是做错两次，不等于已经讲解两次。",
+          "dimension": "userFacts"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "K04",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 1,
+        "analogyFit": 2,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "以“朋友出力整整一天……本月预算不多”为前提，“如果朋友不收礼”“如果当面……尴尬”均为可选情境，没有断言这些已发生。",
+        "classicalMeaning": "简朴与诚意的主题受王、朱注支持，但“走不了正门，只能从旁处相通”和“坦诚本身就是……约”都超出所给释义，程颐观点归属则缺少获准原文可核实。",
+        "analogyFit": "用“表达通道”比拟自牖、用具体感谢替代排场，是用户所求的现代启发，且明确“不是对未来结果的断言”，没有保证朋友必然接受。",
+        "dialogueHelp": "提供做饭、具体感谢信、换表达方式及量力安排，并提醒依关系与朋友性格取舍，能推进实际选择。"
+      },
+      "comment": "现代应用有用且有限制，传统词义表述与作者归属仍有核对缺口。",
+      "traditionalChecks": [
+        {
+          "claim": "重险中柔居柔、承九五，以诚意而非外饰相接",
+          "assessment": "supported",
+          "reason": "王弼直接说明爻位、相承和明信不存外饰，朱熹有薄礼益诚心。",
+          "referenceIds": [
+            "wang-bi@2404949:h29:line4:0fe747fe13",
+            "zhu-xi@528287:h29:line4:99879a18e8"
+          ]
+        },
+        {
+          "claim": "自牖表示正门走不了，只能走旁处",
+          "assessment": "unsupported",
+          "reason": "朱熹说牖非通常所由之正、是室受明处，没有证明正门被堵或只能从旁进入。",
+          "referenceIds": [
+            "zhu-xi@528287:h29:line4:99879a18e8"
+          ]
+        },
+        {
+          "claim": "坦诚本身就是六四的约",
+          "assessment": "unsupported",
+          "reason": "把诚意主题直接当作约的单字训释，所给注释没有这个等同。",
+          "referenceIds": [
+            "wang-bi@2404949:h29:line4:0fe747fe13",
+            "zhu-xi@528287:h29:line4:99879a18e8"
+          ]
+        },
+        {
+          "claim": "程颐将六四解释为险难不以礼文为责、以诚相结",
+          "assessment": "unknown",
+          "reason": "本批及获准参考没有程颐坎六四原注，不能确认作者归属，也不据此判为伪造。",
+          "referenceIds": []
+        }
+      ],
+      "flags": [
+        {
+          "type": "unsupported_historical_detail",
+          "quote": "走不了正门，只能从旁处相通",
+          "reason": "没有原文支持这个具体历史场景。",
+          "dimension": "classicalMeaning"
+        },
+        {
+          "type": "unsupported_gloss",
+          "quote": "这种坦诚本身就是六四所说的「约」",
+          "reason": "现代坦诚建议可以成立，却未证明该字的传统词义。",
+          "dimension": "classicalMeaning"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "K05",
+      "status": "validation_failed",
+      "candidateOnly": true,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "保留预算限制，备选均不要求知道朋友具体偏好；“朋友……看重的大概不是……”是带不确定标记的猜测，没有伪称已知。",
+        "classicalMeaning": "王弼“明信显著，不存外饰”及一樽、二簋、瓦缶与朱熹薄礼益诚心均准确应用于简朴礼仪，没有把纳约直接解释成承诺或约定。",
+        "analogyFit": "借日常“窗口”考虑合适表达方式可以成立，但“只要……就不会因为礼物薄而失礼”把终无咎变为现实充分条件，忽略朋友意愿与互动情境。",
+        "dialogueHelp": "从家常饭、手写卡片到具体帮忙，配合当面感谢和不作超能力承诺，能帮助用户在预算内选择。"
+      },
+      "comment": "注释解释较有依据，现实结论仍过满；完整候选未完成机械核验。",
+      "traditionalChecks": [
+        {
+          "claim": "薄礼、简器也能表达明信而不依赖外饰",
+          "assessment": "supported",
+          "reason": "王弼的器物例子和朱熹薄礼益诚心与该解释相符。",
+          "referenceIds": [
+            "wang-bi@2404949:h29:line4:0fe747fe13",
+            "zhu-xi@528287:h29:line4:99879a18e8"
+          ]
+        },
+        {
+          "claim": "只要真诚、及时、量力，就不会因礼物薄失礼",
+          "assessment": "unsupported",
+          "reason": "传统注释解释特定爻位与礼仪之象，不足以保证现代朋友对所有具体答谢的理解。",
+          "referenceIds": [
+            "zy-29-line-4",
+            "wang-bi@2404949:h29:line4:0fe747fe13",
+            "zhu-xi@528287:h29:line4:99879a18e8"
+          ]
+        }
+      ],
+      "flags": [
+        {
+          "type": "unsupported_sufficiency_claim",
+          "quote": "只要你的表达是真诚的、及时且量力而行的，就不会因为礼物薄而失礼",
+          "reason": "这些是有价值的建议条件，却不能由终无咎推出不会失礼的保证。",
+          "dimension": "analogyFit"
+        }
+      ],
+      "uncertainties": [
+        "status=validation_failed，但有完整 answered 候选；语义照常评分，candidateOnly=true，不能算作已完成交付。"
+      ]
+    },
+    {
+      "answerId": "K06",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 1
+      },
+      "reasons": {
+        "userFacts": "“未知的是他的真实卡点，需先用复述和演示验证”保留原因不确定；“若……不认真”是条件，没有直接认定新人故意不学。",
+        "classicalMeaning": "“纠正不能变成攻击、羞辱和越界控制”保留不利为寇的约束，防错用途与王、朱注的防护方向相容；次数化教学规则应另看现代应用，不能由准确引文自动证成。",
+        "analogyFit": "从风险点设置检查较贴切，但将“初筮告，再三渎”安排成第一次讲、第二次复述、第三次升级，把占问及诚敬条件套成固定教学次数，现代规则缺少必要关联。",
+        "dialogueHelp": "复述、演示和分级检查有用，但“不主动确认，不再单独重复”与固定第三次升级的硬边界，未先解决不敢问或教学方式不适配的可能，容易过早减少支持。"
+      },
+      "comment": "未用利御寇批准羞辱，但另一处经文被过度转换成固定教学程序。",
+      "traditionalChecks": [
+        {
+          "claim": "纠正蒙昧与保护有边界，不能变成越界攻击",
+          "assessment": "supported",
+          "reason": "王弼有捍御与欲取的对照，朱熹特别限制攻治过深。",
+          "referenceIds": [
+            "wang-bi@2404940:h4:line6:2f60846301",
+            "zhu-xi@528287:h4:line6:af7dea8351"
+          ]
+        },
+        {
+          "claim": "上九提示用户带人已到最后阶段",
+          "assessment": "unsupported",
+          "reason": "爻处蒙终不能独立确认这位新人的实际培训阶段。",
+          "referenceIds": [
+            "zy-4-line-6",
+            "wang-bi@2404940:h4:line6:2f60846301"
+          ]
+        },
+        {
+          "claim": "初筮告支持固定的第一次讲解、第二次验证、第三次升级",
+          "assessment": "unsupported",
+          "reason": "材料有初筮、再三渎与志应等，未规定现代培训次数；作为自拟选项应依实际学习困难调整。",
+          "referenceIds": [
+            "zy-4-judgment",
+            "zy-4-tuan"
+          ]
+        }
+      ],
+      "flags": [
+        {
+          "type": "overdirect_analogy",
+          "quote": "第一次讲清；第二次要求复述和演示；第三次同类错误则正式反馈",
+          "reason": "把经文中次序当作固定教学分级，缺少学习阶段、风险与教学质量的现实论证。",
+          "dimension": "analogyFit"
+        },
+        {
+          "type": "premature_withdrawal_of_support",
+          "quote": "不主动确认，不再单独重复",
+          "reason": "没有先查清不求助的原因，可能将学习困难误处置为应减少支持。",
+          "dimension": "dialogueHelp"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "K07",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 1,
+        "classicalMeaning": 1,
+        "analogyFit": 1,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "虽明确撤回“他习惯让你兜底”，却又断言“你会有想解释‘我不是推责，但对方也……’的冲动”，用户最新消息恰在主动承认责任，没有这个心理证据。",
+        "classicalMeaning": "程颐原注谈守常不度势、求望过深，回答把“责望故素”的意思直接归为“旧有的期待和旧账”，所给上下文不支持其中翻旧账的具体等同；其余王、朱摘引基本可核对。",
+        "analogyFit": "协作规则与恒的联系有用，但王弼六五的尊位制义被套成不要跟随搭档节奏、朱熹上六被套成愧疚过动，均缺少用户现实行为支点。",
+        "dialogueHelp": "“事实—影响—补救—新规则”及最后含明确道歉、时间节点、在原范围更正的具体话术，实质完成如何说明数据晚给的请求。"
+      },
+      "comment": "能纠正责任并给有效话术，却借新增注释重新补写用户心理和行为。",
+      "traditionalChecks": [
+        {
+          "claim": "王弼六五批评不能制义而从唱，朱熹上六说不常、过动",
+          "assessment": "supported",
+          "reason": "作者、爻位和主要文字与本条随附注释一致；这不证明用户正在被动跟随或过度愧疚。",
+          "referenceIds": [
+            "wang-bi@2404960:h32:line5:5cdd8ebbb7",
+            "zhu-xi@737053:h32:line6:5310233565"
+          ]
+        },
+        {
+          "claim": "程颐责望故素就是拿旧账责望别人",
+          "assessment": "unsupported",
+          "reason": "原注重在守常不度势、期待过深；其中没有把用户翻旧账或对冲责任写为具体解释。",
+          "referenceIds": [
+            "cheng-yi@1313743:h32:line1:0091fef850"
+          ]
+        },
+        {
+          "claim": "故素的全部历史词义及此注所有可能诠释",
+          "assessment": "unknown",
+          "reason": "本次材料不足以穷尽训诂；因此不把上述无支持直接升级为确定的经文矛盾。",
+          "referenceIds": []
+        }
+      ],
+      "flags": [
+        {
+          "type": "unsupported_psychological_attribution",
+          "quote": "你会有想解释“我不是推责，但对方也……”的冲动",
+          "reason": "用户已经说不能再把责任推给搭档，没有陈述这种冲动。",
+          "dimension": "userFacts"
+        },
+        {
+          "type": "unsupported_application_premise",
+          "quote": "不能只被动跟着对方的节奏走",
+          "reason": "负责基础数据不等于过去被动跟随搭档；不能由六五注推定合作中的角色行为。",
+          "dimension": "analogyFit"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "K08",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": 2,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "明确把重点改成“先把自己的迟交说明白”，并在话术中承认“我之前把晚交说成你的问题，不公平”，没有保留搭档应承担后果的旧归因。",
+        "classicalMeaning": "将“立不易方”“久于其道”理解为守承诺、持续修正，且用“放在这里”说明是协作应用，与恒的方向相容，没有添出注家结论。",
+        "analogyFit": "从持续守道联系到提前交数据、同步节点与缓冲机制，现实依据来自用户确认的两次迟交，没有用静卦预测关系或诊断人格。",
+        "dialogueHelp": "给出可直接说的道歉、原定与实际时间对照、先听对方补救需要的顺序，有助用户清楚说明并修复误会。"
+      },
+      "comment": "事实更正与开口帮助充分，现代协作建议保留了文义与事实的界线。",
+      "traditionalChecks": [
+        {
+          "claim": "恒可作为持续守原则、稳定协作规则的启发",
+          "assessment": "supported",
+          "reason": "彖传久于其道、终则有始与大象立不易方提供相关结构；具体同步时间是自拟方案。",
+          "referenceIds": [
+            "zy-32-tuan",
+            "zy-32-xiang"
+          ]
+        }
+      ],
+      "flags": [],
+      "uncertainties": [
+        "“如果我再晚，合并工作我来兜底”作为补救增量有限，因为历史里用户本来就负责合并；提前交付和预警才是本答案更有用的改动。"
+      ]
+    }
+  ]
+}

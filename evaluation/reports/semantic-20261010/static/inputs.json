@@ -1,0 +1,62 @@
+[
+  {
+    "caseId": "static-word-overlap",
+    "session": {
+      "id": "session-semantic-responsibility",
+      "question": "搭档连续两次晚交小组作业中他负责的部分，最后都要我赶着合并。怎么跟他谈这件事？",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          7,
+          7,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "011100",
+          "name": "雷风恒",
+          "number": 32,
+          "judgment": "亨，无咎，利贞，利有攸往。"
+        },
+        "changed": {
+          "binary": "011100",
+          "name": "雷风恒",
+          "number": 32,
+          "judgment": "亨，无咎，利贞，利有攸往。"
+        },
+        "originalBinary": "011100",
+        "changedBinary": "011100",
+        "changingIndices": [],
+        "id": "cast-semantic-responsibility",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [
+        {
+          "id": "fixture-0",
+          "question": "搭档连续两次晚交小组作业中他负责的部分，最后都要我赶着合并。怎么跟他谈这件事？",
+          "status": "completed",
+          "mode": "initial",
+          "answer": {
+            "status": "answered",
+            "paragraphs": [
+              {
+                "text": "他可能习惯了让你兜底。你可以明确告诉他，下次再晚交就由他自己承担后果。",
+                "citations": []
+              }
+            ],
+            "limitations": []
+          },
+          "evidence": []
+        }
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "我刚核对了记录，两次都是我把基础数据给晚了，他后面其实一直在赶。我不能再把责任推给搭档，怎么说明我的数据给晚了？",
+    "mode": "followup"
+  }
+]

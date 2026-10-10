@@ -1,0 +1,2676 @@
+[
+  {
+    "caseId": "semantic-holdout-daily",
+    "arm": "baseline",
+    "config": "flash-low",
+    "stage": "final",
+    "graphVersion": "python-graph-v13",
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "《节》卦的卦辞说「亨，苦节，不可贞」，意思是节制本身可以通达，但把节制苦守到极致，就不能作为长久坚持的准则。彖传进一步说明「其道穷也」——那种苦守的路走不通。这不是要你立刻硬断，也不是放任不管，而是看这个限制是否合于当下实情。",
+          "citations": [
+            {
+              "evidenceId": "zy-60-judgment",
+              "quote": "亨，苦节，不可贞",
+              "claim": "亨，苦节，不可贞"
+            },
+            {
+              "evidenceId": "zy-60-tuan",
+              "quote": "其道穷也",
+              "claim": "其道穷也"
+            }
+          ]
+        },
+        {
+          "text": "大象传说「君子以制数度，议德行」，意思是君子用制度和尺度来规范自己，权衡什么该做、什么不该做。放到今晚这件事上，关键是先算清明早七点出门所需的睡眠底线，再决定这一集值不值得占用它。",
+          "citations": [
+            {
+              "evidenceId": "zy-60-xiang",
+              "quote": "君子以制数度，议德行",
+              "claim": "君子以制数度，议德行"
+            }
+          ]
+        },
+        {
+          "text": "如果这一集不到四十分钟，且你能接受明早略困但关键事情不受影响，看完再睡未必是「苦节」；如果已经是深夜、明早有必须清醒应对的安排，那么「不可贞」正提醒你，不必用硬撑来证明自律。你可以定一个明确的止损点：要么看完立刻关屏，要么把结局留到明晚作为期待——留有余地，比一次耗尽更接近「节」的本意。",
+          "citations": []
+        }
+      ],
+      "limitations": []
+    },
+    "errors": [],
+    "evidence": [
+      {
+        "id": "zy-60-judgment",
+        "hexagramId": 60,
+        "name": "节",
+        "section": "judgment",
+        "line": null,
+        "text": "亨，苦节，不可贞。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "节·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:60:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "亨，苦节，不可贞。"
+      },
+      {
+        "id": "zy-60-tuan",
+        "hexagramId": 60,
+        "name": "节",
+        "section": "tuan",
+        "line": null,
+        "text": "“节，亨”，刚柔分而刚得中。“苦节，不可贞”，其道穷也。说以行险，当位以节，中正以通。天地节而四时成；节以制度，不伤财，不害民。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "节·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:60:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“节，亨”，刚柔分而刚得中。“苦节，不可贞”，其道穷也。说以行险，当位以节，中正以通。天地节而四时成；节以制度，不伤财，不害民。"
+      },
+      {
+        "id": "zy-60-xiang",
+        "hexagramId": 60,
+        "name": "节",
+        "section": "xiang",
+        "line": null,
+        "text": "泽上有水，节。君子以制数度，议德行。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "节·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:60:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "泽上有水，节。君子以制数度，议德行。"
+      }
+    ],
+    "trace": [
+      {
+        "step": "retrieve",
+        "status": "ok",
+        "channel": "fixed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "code": "explanation_followup",
+        "evidenceIds": [
+          "zy-60-judgment",
+          "zy-60-tuan",
+          "zy-60-xiang"
+        ],
+        "truncated": false,
+        "droppedEvidenceIds": []
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 10371,
+        "promptTokens": 697,
+        "completionTokens": 2107,
+        "totalTokens": 2804
+      },
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "repairs": 0,
+    "toolAttempts": 0,
+    "sameCast": true,
+    "initialEvidenceIds": [
+      "zy-60-judgment",
+      "zy-60-tuan",
+      "zy-60-xiang"
+    ],
+    "durationMs": 10472,
+    "auto": {
+      "calls": 1,
+      "reportedTokens": 2804,
+      "unknownUsage": 0
+    }
+  },
+  {
+    "caseId": "semantic-holdout-daily",
+    "arm": "candidate",
+    "config": "flash-low",
+    "stage": "final",
+    "graphVersion": "python-graph-v14",
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "你起得水泽节，本卦与变卦相同、无动爻，重点不在吉凶翻转，而在“节”字。《大象》说：“泽上有水，节。君子以制数度，议德行。” 对你今晚的处境，就是给追剧的时间、睡眠和明早出门设一个尺度，而不是被“还剩一集”牵着走。",
+          "citations": [
+            {
+              "evidenceId": "zy-60-xiang",
+              "quote": "泽上有水，节。君子以制数度，议德行。",
+              "claim": "泽上有水，节。君子以制数度，议德行。"
+            }
+          ]
+        },
+        {
+          "text": "节卦卦辞说“亨，苦节，不可贞”，彖传又解释“其道穷也”。节制本身能通，但把节制推到痛苦、穷尽的地步就不可固守；反过来说，若为了“必须看完结局”的执念硬撑到深夜，也是一种被结局节制的苦。你已追三小时，明早七点要出门，继续看很可能不是通达，而是耗损。",
+          "citations": [
+            {
+              "evidenceId": "zy-60-judgment",
+              "quote": "亨，苦节，不可贞。",
+              "claim": "亨，苦节，不可贞"
+            },
+            {
+              "evidenceId": "zy-60-tuan",
+              "quote": "其道穷也",
+              "claim": "其道穷也"
+            }
+          ]
+        },
+        {
+          "text": "从现实取舍看，睡眠应优先。彖传说“天地节而四时成；节以制度，不伤财，不害民”，把“节”落到制度上，是为了不伤不害。类比到你身上，就是别让一集结局伤到明早的精力、情绪和出行状态。水泽节无动爻，也说明此刻不需要冒险改变既定节奏：现在停在这里，比硬看完结局更合节。若实在不甘心，可只看结局的文字梗概或几分钟关键片段，然后立刻睡；完整结局留到明晚或周末。",
+          "citations": [
+            {
+              "evidenceId": "zy-60-tuan",
+              "quote": "天地节而四时成；节以制度，不伤财，不害民。",
+              "claim": "天地节而四时成；节以制度，不伤财，不害民"
+            }
+          ]
+        },
+        {
+          "text": "所以，更合卦象与现实的判断是：选睡觉。节卦讲“当位以节，中正以通”，不是一味禁止，也不是放任；在你明早七点要出门的条件下，中正的做法是设限——现在收尾、洗漱、睡下。结局不会因为你晚一天看而消失，但睡眠欠下的账，明早和明天都要还。",
+          "citations": [
+            {
+              "evidenceId": "zy-60-tuan",
+              "quote": "当位以节，中正以通。",
+              "claim": "当位以节，中正以通"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "errors": [],
+    "evidence": [
+      {
+        "id": "zy-60-judgment",
+        "hexagramId": 60,
+        "name": "节",
+        "section": "judgment",
+        "line": null,
+        "text": "亨，苦节，不可贞。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "节·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:60:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "亨，苦节，不可贞。"
+      },
+      {
+        "id": "zy-60-tuan",
+        "hexagramId": 60,
+        "name": "节",
+        "section": "tuan",
+        "line": null,
+        "text": "“节，亨”，刚柔分而刚得中。“苦节，不可贞”，其道穷也。说以行险，当位以节，中正以通。天地节而四时成；节以制度，不伤财，不害民。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "节·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:60:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“节，亨”，刚柔分而刚得中。“苦节，不可贞”，其道穷也。说以行险，当位以节，中正以通。天地节而四时成；节以制度，不伤财，不害民。"
+      },
+      {
+        "id": "zy-60-xiang",
+        "hexagramId": 60,
+        "name": "节",
+        "section": "xiang",
+        "line": null,
+        "text": "泽上有水，节。君子以制数度，议德行。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "节·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:60:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "泽上有水，节。君子以制数度，议德行。"
+      }
+    ],
+    "trace": [
+      {
+        "step": "retrieve",
+        "status": "ok",
+        "channel": "fixed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "code": "explanation_followup",
+        "evidenceIds": [
+          "zy-60-judgment",
+          "zy-60-tuan",
+          "zy-60-xiang"
+        ],
+        "truncated": false,
+        "droppedEvidenceIds": []
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 15711,
+        "promptTokens": 719,
+        "completionTokens": 3479,
+        "totalTokens": 4198
+      },
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "repairs": 0,
+    "toolAttempts": 0,
+    "sameCast": true,
+    "initialEvidenceIds": [
+      "zy-60-judgment",
+      "zy-60-tuan",
+      "zy-60-xiang"
+    ],
+    "durationMs": 15777,
+    "auto": {
+      "calls": 1,
+      "reportedTokens": 4198,
+      "unknownUsage": 0
+    }
+  },
+  {
+    "caseId": "semantic-holdout-role",
+    "arm": "candidate",
+    "config": "flash-low",
+    "stage": "final",
+    "graphVersion": "python-graph-v14",
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "小畜卦辞说“亨。密云不雨，自我西郊”，彖传解释“密云不雨，尚往也”“自我西郊，施未行也”——云聚得厚，雨却未下，是气还在往上走、恩泽尚未落地。这个意象对你先是一个提醒：接任负责人，很可能是一段投入已经发生、成效却迟迟不显的时期。报名、场地这类事不会因为你的热情就立刻理顺，你不必把它当成立刻要出成绩的大事业来扛。",
+          "citations": [
+            {
+              "evidenceId": "zy-9-judgment",
+              "quote": "密云不雨，自我西郊",
+              "claim": "小畜卦辞说“亨。密云不雨，自我西郊”"
+            },
+            {
+              "evidenceId": "zy-9-tuan",
+              "quote": "“密云不雨”，尚往也",
+              "claim": "彖传解释“密云不雨，尚往也”“自我西郊，施未行也”"
+            },
+            {
+              "evidenceId": "zy-9-tuan",
+              "quote": "“自我西郊”，施未行也",
+              "claim": "彖传解释“密云不雨，尚往也”“自我西郊，施未行也”"
+            }
+          ]
+        },
+        {
+          "text": "小畜六四一阴居位，是全卦主爻，彖传说“柔得位而上下应之，曰小畜”，又说“健而巽，刚中而志行，乃亨”。负责人这个位置，卦象给的做法恰是“柔”：把大家聚起来、让上下都愿意回应你，而不是靠头衔去推动。你内里想唱歌的那份心志是“刚中”，是你要守住的东西；对外用柔顺、去协调，才叫“健而巽”，这样才“亨”。“上下应之”还提示：团队未必坐等你一个人扛，能不能把报名和场地拆成几件小事、分给愿意出力的人，值得先谈清楚。",
+          "citations": [
+            {
+              "evidenceId": "zy-9-tuan",
+              "quote": "柔得位而上下应之，曰小畜",
+              "claim": "彖传说“柔得位而上下应之，曰小畜”"
+            },
+            {
+              "evidenceId": "zy-9-tuan",
+              "quote": "健而巽，刚中而志行，乃“亨”",
+              "claim": "又说“健而巽，刚中而志行，乃亨”"
+            }
+          ]
+        },
+        {
+          "text": "大象讲“风行天上，小畜。君子以懿文德”——风行天上而不成雨，君子处在这样的时机，先把工夫用在修美自身文德上，不急着发动大事。落到你的处境：如果接，就把负责人理解成一件轻量的、服务性的事，每周设一个明确的时间上限，把流程做成表格、轮流值班，让报名与协调不必都经过你，这样事务就不至于反噬你唱歌的那部分。若团队期待的是你全包，而你既无副手也划不出时间，那么这个“小畜”多半只会让你密云不雨、自己反而唱得不安心，那就该婉拒，或只答应帮忙而不接名分。",
+          "citations": [
+            {
+              "evidenceId": "zy-9-xiang",
+              "quote": "风行天上，小畜。君子以懿文德",
+              "claim": "大象讲“风行天上，小畜。君子以懿文德”"
+            }
+          ]
+        },
+        {
+          "text": "这次六个爻值没有动爻，本卦与变卦同为风天小畜，卦象没有给出一个非此即彼的转向信号——它不是在“接”和“唱”之间逼你二选一，而是把重心放在“以小畜大”：用有限的、柔的投入，去养住你真正看重的唱歌。需要说明的是，卦象不会告诉我你的时间余裕、团队规模，以及有没有人愿意分担报名与场地；这几件事才是真正决定答案的现实条件，适合你先去问清楚再定。如果连每周一两个小时都挤不出来，或团队只认“负责人包办”这一种做法，那么答案就偏向不接。",
+          "citations": []
+        }
+      ],
+      "limitations": [
+        "静卦无动爻，未提供现实条件数据；本判断基于用户自述“想保留唱歌本身”与每周事务负担的权衡，具体时间余裕与团队分工仍需用户自行核实。"
+      ]
+    },
+    "errors": [],
+    "evidence": [
+      {
+        "id": "zy-9-judgment",
+        "hexagramId": 9,
+        "name": "小畜",
+        "section": "judgment",
+        "line": null,
+        "text": "亨。密云不雨，自我西郊。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "小畜·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:09:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "亨。密云不雨，自我西郊。"
+      },
+      {
+        "id": "zy-9-tuan",
+        "hexagramId": 9,
+        "name": "小畜",
+        "section": "tuan",
+        "line": null,
+        "text": "“小畜”，柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。“密云不雨”，尚往也；“自我西郊”，施未行也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "小畜·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:09:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“小畜”，柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。“密云不雨”，尚往也；“自我西郊”，施未行也。"
+      },
+      {
+        "id": "zy-9-xiang",
+        "hexagramId": 9,
+        "name": "小畜",
+        "section": "xiang",
+        "line": null,
+        "text": "风行天上，小畜。君子以懿文德。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "小畜·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:09:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "风行天上，小畜。君子以懿文德。"
+      }
+    ],
+    "trace": [
+      {
+        "step": "retrieve",
+        "status": "ok",
+        "channel": "fixed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "code": "explanation_followup",
+        "evidenceIds": [
+          "zy-9-judgment",
+          "zy-9-tuan",
+          "zy-9-xiang"
+        ],
+        "truncated": false,
+        "droppedEvidenceIds": []
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 20822,
+        "promptTokens": 737,
+        "completionTokens": 4738,
+        "totalTokens": 5475
+      },
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "repairs": 0,
+    "toolAttempts": 0,
+    "sameCast": true,
+    "initialEvidenceIds": [
+      "zy-9-judgment",
+      "zy-9-tuan",
+      "zy-9-xiang"
+    ],
+    "durationMs": 20870,
+    "auto": {
+      "calls": 1,
+      "reportedTokens": 5475,
+      "unknownUsage": 0
+    }
+  },
+  {
+    "caseId": "semantic-holdout-role",
+    "arm": "baseline",
+    "config": "flash-low",
+    "stage": "final",
+    "graphVersion": "python-graph-v13",
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "以小畜卦看，这件事有“亨”的可能，但不是让你立刻把全副精力投进去。卦辞说“亨。密云不雨，自我西郊”，云已聚而雨未下，象征条件在酝酿、付出未必马上见效。对你而言，接任负责人不是不能，而是不宜以“全面承担、每周被报名和场地绑住”的方式接。",
+          "citations": [
+            {
+              "evidenceId": "zy-9-judgment",
+              "quote": "亨。密云不雨，自我西郊。",
+              "claim": "云已聚而雨未下，象征条件在酝酿、付出未必马上见效。"
+            }
+          ]
+        },
+        {
+          "text": "彖传说“柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃‘亨’。‘密云不雨’，尚往也；‘自我西郊’，施未行也”，这说明小畜之道在于柔顺居位、上下响应，内有健行而外能巽入。团队请你，是“上下应之”；但“施未行”提醒行政协调的成果会延迟、琐碎。你可以用柔性的方式接：只接有边界的职责，或先做过渡期共同负责。",
+          "citations": [
+            {
+              "evidenceId": "zy-9-tuan",
+              "quote": "柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。“密云不雨”，尚往也；“自我西郊”，施未行也。",
+              "claim": "这说明小畜之道在于柔顺居位、上下响应，内有健行而外能巽入。"
+            }
+          ]
+        },
+        {
+          "text": "大象说“风行天上，小畜。君子以懿文德”，这提示你：先守住你唱歌的快乐和艺术本分，在团队中发挥你擅长和喜欢的部分。风行天上，是力量在积蓄，不是马上成雨；若负责人角色会侵蚀你唱歌的核心，就不符合小畜之象。",
+          "citations": [
+            {
+              "evidenceId": "zy-9-xiang",
+              "quote": "风行天上，小畜。君子以懿文德。",
+              "claim": "先守住你唱歌的快乐和艺术本分，在团队中发挥你擅长和喜欢的部分。"
+            }
+          ]
+        },
+        {
+          "text": "所以我的建议是：不要一口答应“全面负责人”。你可以提出轮值、分工、试用期或助手制度，把报名和场地协调拆给小组；你担任艺术指导或协调人，并明确每周行政时间上限和任期。若团队愿意这样调整，接任可以“亨”；若所有行政都压给你、无人分担，婉拒更符合“施未行”时的自守。保留唱歌本身，应是你答应任何安排的前提。",
+          "citations": [
+            {
+              "evidenceId": "zy-9-tuan",
+              "quote": "施未行也",
+              "claim": "若所有行政都压给你、无人分担，婉拒更符合“施未行”时的自守。"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "errors": [],
+    "evidence": [
+      {
+        "id": "zy-9-judgment",
+        "hexagramId": 9,
+        "name": "小畜",
+        "section": "judgment",
+        "line": null,
+        "text": "亨。密云不雨，自我西郊。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "小畜·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:09:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "亨。密云不雨，自我西郊。"
+      },
+      {
+        "id": "zy-9-tuan",
+        "hexagramId": 9,
+        "name": "小畜",
+        "section": "tuan",
+        "line": null,
+        "text": "“小畜”，柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。“密云不雨”，尚往也；“自我西郊”，施未行也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "小畜·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:09:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“小畜”，柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。“密云不雨”，尚往也；“自我西郊”，施未行也。"
+      },
+      {
+        "id": "zy-9-xiang",
+        "hexagramId": 9,
+        "name": "小畜",
+        "section": "xiang",
+        "line": null,
+        "text": "风行天上，小畜。君子以懿文德。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "小畜·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:09:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "风行天上，小畜。君子以懿文德。"
+      }
+    ],
+    "trace": [
+      {
+        "step": "retrieve",
+        "status": "ok",
+        "channel": "fixed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "code": "explanation_followup",
+        "evidenceIds": [
+          "zy-9-judgment",
+          "zy-9-tuan",
+          "zy-9-xiang"
+        ],
+        "truncated": false,
+        "droppedEvidenceIds": []
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 22170,
+        "promptTokens": 715,
+        "completionTokens": 4896,
+        "totalTokens": 5611
+      },
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "repairs": 0,
+    "toolAttempts": 0,
+    "sameCast": true,
+    "initialEvidenceIds": [
+      "zy-9-judgment",
+      "zy-9-tuan",
+      "zy-9-xiang"
+    ],
+    "durationMs": 22217,
+    "auto": {
+      "calls": 1,
+      "reportedTokens": 5611,
+      "unknownUsage": 0
+    }
+  },
+  {
+    "caseId": "semantic-holdout-correction",
+    "arm": "baseline",
+    "config": "flash-low",
+    "stage": "final",
+    "graphVersion": "python-graph-v13",
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "你现在的关键不是继续争论谁吵，而是把误判造成的“小有言”收回来。需卦说“险在前也”，前面有室友可能不快的风险；但卦辞又讲“有孚，光亨，贞吉，利涉大川”，意思是带着诚信、守正去沟通，才有机会渡过这个误会。先把事实说清：声音来自楼上，室友当晚不在家，你发重话是误判，不是他做了那件事。",
+          "citations": [
+            {
+              "evidenceId": "zy-5-tuan",
+              "quote": "险在前也",
+              "claim": "险在前也"
+            },
+            {
+              "evidenceId": "zy-5-judgment",
+              "quote": "有孚，光亨，贞吉，利涉大川",
+              "claim": "有孚，光亨，贞吉，利涉大川"
+            }
+          ]
+        },
+        {
+          "text": "九二说“需于沙，小有言；终吉”，小象也解释“虽‘小有言’，以‘吉’‘终’也”。你那条重消息就是“小有言”，不是一定毁掉关系；但“终吉”有条件：道歉要短、具体、无防卫，不要用“我也被吵得没办法”把责任推回去。可发：“昨晚我误判了，以为是你外放音乐，发了很重的话，对不起。后来确认是楼上，你不在家。那条消息不该那样说，等你方便时我想当面说清。”",
+          "citations": [
+            {
+              "evidenceId": "zy-5-line-2",
+              "quote": "需于沙，小有言；终吉。",
+              "claim": "需于沙，小有言；终吉"
+            },
+            {
+              "evidenceId": "zy-5-line_xiang-2",
+              "quote": "虽“小有言”，以“吉”“终”也",
+              "claim": "虽‘小有言’，以‘吉’‘终’也"
+            }
+          ]
+        },
+        {
+          "text": "等待不是冷处理，而是需卦初九说的“需于郊，利用恒，无咎”：先在郊外等，不主动犯难，保持日常。小象说“不犯难行也”“未失常也”。所以对方未回复时，别连续追问、别在共同群里解释、别让第三方传话。给他几小时到一天，你自己也回到正常作息；若见面，照常打招呼。",
+          "citations": [
+            {
+              "evidenceId": "zy-5-line-1",
+              "quote": "需于郊，利用恒，无咎。",
+              "claim": "需于郊，利用恒，无咎"
+            },
+            {
+              "evidenceId": "zy-5-line_xiang-1",
+              "quote": "不犯难行也",
+              "claim": "不犯难行也"
+            },
+            {
+              "evidenceId": "zy-5-line_xiang-1",
+              "quote": "未失常也",
+              "claim": "未失常也"
+            }
+          ]
+        },
+        {
+          "text": "如果室友回复了，九五“需于酒食，贞吉”和大象“云上于天，需。君子以饮食宴乐”提示：用日常饮食、轻松场合来缓和，而不是在情绪里继续辩论。小象说“酒食，贞吉”，以中正也。可以约一杯饮料或一顿便饭，当面把事实和歉意讲完；重点不是请他原谅你，而是把误会放下，恢复日常相处的边界。",
+          "citations": [
+            {
+              "evidenceId": "zy-5-line-5",
+              "quote": "需于酒食，贞吉。",
+              "claim": "需于酒食，贞吉"
+            },
+            {
+              "evidenceId": "zy-5-xiang",
+              "quote": "云上于天，需。君子以饮食宴乐",
+              "claim": "云上于天，需。君子以饮食宴乐"
+            },
+            {
+              "evidenceId": "zy-5-line_xiang-5",
+              "quote": "“酒食，贞吉”，以中正也",
+              "claim": "“酒食，贞吉”，以中正也"
+            }
+          ]
+        },
+        {
+          "text": "若他冷淡、反问或暂时不回，上六“入于穴，有不速之客三人来；敬之，终吉”可作提醒：意外反应来了，先敬之、听完，不急着辩。小象说“虽不当位，未大失也”。也就是说，处理得敬慎，未必完美，但不会造成大失。九三“需于泥，致寇至”则警告：越描越黑、翻旧账、把矛头转向楼上或对方不回，都会把小事推大。",
+          "citations": [
+            {
+              "evidenceId": "zy-5-line-6",
+              "quote": "入于穴，有不速之客三人来；敬之，终吉。",
+              "claim": "入于穴，有不速之客三人来；敬之，终吉"
+            },
+            {
+              "evidenceId": "zy-5-line_xiang-6",
+              "quote": "虽不当位，未大失也",
+              "claim": "虽不当位，未大失也"
+            },
+            {
+              "evidenceId": "zy-5-line-3",
+              "quote": "需于泥，致寇至。",
+              "claim": "需于泥，致寇至"
+            }
+          ]
+        },
+        {
+          "text": "综合说：先发一条澄清道歉，然后等；他回复后，以“顺以听”为先，约轻松场合当面说清。之后噪音问题找楼上、物业或房东，不要再落到室友身上。需卦给的是条件和方向，不是保证；他仍可能介意，所以道歉要真诚，后续用稳定行动修复。",
+          "citations": [
+            {
+              "evidenceId": "zy-5-line_xiang-4",
+              "quote": "顺以听也",
+              "claim": "顺以听"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "errors": [],
+    "evidence": [
+      {
+        "id": "zy-5-judgment",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "judgment",
+        "line": null,
+        "text": "有孚，光亨，贞吉，利涉大川。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "需·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "有孚，光亨，贞吉，利涉大川。"
+      },
+      {
+        "id": "zy-5-tuan",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "tuan",
+        "line": null,
+        "text": "“需”，须也；险在前也。刚健而不陷，其义不困穷矣。“需，有孚，光亨，贞吉”，位乎天位，以正中也。“利涉大川”，往有功也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "需·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“需”，须也；险在前也。刚健而不陷，其义不困穷矣。“需，有孚，光亨，贞吉”，位乎天位，以正中也。“利涉大川”，往有功也。"
+      },
+      {
+        "id": "zy-5-xiang",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "xiang",
+        "line": null,
+        "text": "云上于天，需。君子以饮食宴乐。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "需·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "云上于天，需。君子以饮食宴乐。"
+      },
+      {
+        "id": "zy-5-line-1",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line",
+        "line": 1,
+        "text": "需于郊，利用恒，无咎。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "需·初九",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line:1"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "需于郊，利用恒，无咎。"
+      },
+      {
+        "id": "zy-5-line-2",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line",
+        "line": 2,
+        "text": "需于沙，小有言；终吉。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "需·九二",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line:2"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "需于沙，小有言；终吉。"
+      },
+      {
+        "id": "zy-5-line-3",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line",
+        "line": 3,
+        "text": "需于泥，致寇至。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "需·九三",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line:3"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "需于泥，致寇至。"
+      },
+      {
+        "id": "zy-5-line-4",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line",
+        "line": 4,
+        "text": "需于血，出自穴。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "需·六四",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line:4"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "需于血，出自穴。"
+      },
+      {
+        "id": "zy-5-line-5",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line",
+        "line": 5,
+        "text": "需于酒食，贞吉。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "需·九五",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line:5"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "需于酒食，贞吉。"
+      },
+      {
+        "id": "zy-5-line-6",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line",
+        "line": 6,
+        "text": "入于穴，有不速之客三人来；敬之，终吉。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "需·上六",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line:6"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "入于穴，有不速之客三人来；敬之，终吉。"
+      },
+      {
+        "id": "zy-5-line_xiang-1",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line_xiang",
+        "line": 1,
+        "text": "“需于郊”，不犯难行也；“利用恒，无咎”，未失常也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "需·初九小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line_xiang:1"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“需于郊”，不犯难行也；“利用恒，无咎”，未失常也。"
+      },
+      {
+        "id": "zy-5-line_xiang-2",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line_xiang",
+        "line": 2,
+        "text": "“需于沙”，衍在中也；虽“小有言”，以“吉”“终”也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "需·九二小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line_xiang:2"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“需于沙”，衍在中也；虽“小有言”，以“吉”“终”也。"
+      },
+      {
+        "id": "zy-5-line_xiang-3",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line_xiang",
+        "line": 3,
+        "text": "“需于泥”，灾在外也；自我“致寇”，敬慎不败也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "需·九三小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line_xiang:3"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“需于泥”，灾在外也；自我“致寇”，敬慎不败也。"
+      },
+      {
+        "id": "zy-5-line_xiang-4",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line_xiang",
+        "line": 4,
+        "text": "“需于血”，顺以听也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "需·六四小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line_xiang:4"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“需于血”，顺以听也。"
+      },
+      {
+        "id": "zy-5-line_xiang-5",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line_xiang",
+        "line": 5,
+        "text": "“酒食，贞吉”，以中正也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "需·九五小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line_xiang:5"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“酒食，贞吉”，以中正也。"
+      },
+      {
+        "id": "zy-5-line_xiang-6",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line_xiang",
+        "line": 6,
+        "text": "“不速之客”来，“敬之，终吉”，虽不当位，未大失也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "需·上六小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line_xiang:6"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“不速之客”来，“敬之，终吉”，虽不当位，未大失也。"
+      }
+    ],
+    "trace": [
+      {
+        "step": "retrieve",
+        "status": "ok",
+        "channel": "fixed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "code": "situation_followup",
+        "evidenceIds": [
+          "zy-5-judgment",
+          "zy-5-tuan",
+          "zy-5-xiang"
+        ],
+        "truncated": false,
+        "droppedEvidenceIds": []
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 3539,
+        "promptTokens": 2462,
+        "completionTokens": 590,
+        "totalTokens": 3052
+      },
+      {
+        "step": "tool",
+        "tool": "get_passages",
+        "args": {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 5,
+          "sections": [
+            "line",
+            "line_xiang"
+          ]
+        },
+        "status": "ok",
+        "evidenceIds": [
+          "zy-5-line-1",
+          "zy-5-line-2",
+          "zy-5-line-3",
+          "zy-5-line-4",
+          "zy-5-line-5",
+          "zy-5-line-6",
+          "zy-5-line_xiang-1",
+          "zy-5-line_xiang-2",
+          "zy-5-line_xiang-3",
+          "zy-5-line_xiang-4",
+          "zy-5-line_xiang-5",
+          "zy-5-line_xiang-6"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "hits": [
+          {
+            "passageId": "zy-5-line-1",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line-2",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line-3",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line-4",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line-5",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line-6",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line_xiang-1",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line_xiang-2",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line_xiang-3",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line_xiang-4",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line_xiang-5",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line_xiang-6",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          }
+        ],
+        "coverageStatus": "covered",
+        "truncated": false,
+        "durationMs": 2
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 1241,
+        "promptTokens": 4956,
+        "completionTokens": 62,
+        "totalTokens": 5018
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 32249,
+        "promptTokens": 1363,
+        "completionTokens": 7993,
+        "totalTokens": 9356
+      },
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "repairs": 0,
+    "toolAttempts": 1,
+    "sameCast": true,
+    "initialEvidenceIds": [
+      "zy-5-judgment",
+      "zy-5-tuan",
+      "zy-5-xiang"
+    ],
+    "durationMs": 37085,
+    "auto": {
+      "calls": 3,
+      "reportedTokens": 17426,
+      "unknownUsage": 0
+    }
+  },
+  {
+    "caseId": "semantic-holdout-correction",
+    "arm": "candidate",
+    "config": "flash-low",
+    "stage": "final",
+    "graphVersion": "python-graph-v14",
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "先分清：你之前听到的“他也许没有顾及你的感受，可以先坚持底线、让他解释”这类方向，是建立在“室友半夜外放”的误判上；现在事实已更正为声音来自楼上、室友昨晚不在家，那个前提不成立，不宜再按对抗姿态处理。水天需无动爻，重点在“等”与守正，而不是把冲突继续推高。卦辞讲“有孚，光亨，贞吉，利涉大川”，放在这里，修复关系靠的是诚信、坦诚和守正，不是继续证明自己占理。彖传说“险在前也”，说明前面有让人不舒服的风险，先承认它，再稳住自己。",
+          "citations": [
+            {
+              "evidenceId": "zy-5-judgment",
+              "quote": "有孚，光亨，贞吉，利涉大川。",
+              "claim": "有孚，光亨，贞吉，利涉大川"
+            },
+            {
+              "evidenceId": "zy-5-tuan",
+              "quote": "险在前也。",
+              "claim": "险在前也"
+            }
+          ]
+        },
+        {
+          "text": "接下来最稳妥的一步，是先发一条简短、明确的更正，然后给对方空间。九二说“需于沙，小有言；终吉”，小象说虽“小有言”，以“吉”“终”也。你现在正处在“小有言”的阶段：一条重话造成了口舌和误会，但事实已经清楚，仍可走向终吉。要避免升级成九三的“需于泥，致寇至”——若继续纠缠、反复自辩，或因为对方没回就再发一条更重的话，就会把小事拖进泥里。小象提醒“敬慎不败也”，所以语气要敬、要慎，不逼对方立刻表态。可以发类似：“我搞错了，声音是楼上，不是你在外放。刚才语气太重，对不起。你不用马上回，等你方便再说。”",
+          "citations": [
+            {
+              "evidenceId": "zy-5-line-2",
+              "quote": "需于沙，小有言；终吉。",
+              "claim": "需于沙，小有言；终吉"
+            },
+            {
+              "evidenceId": "zy-5-line_xiang-2",
+              "quote": "虽“小有言”，以“吉”“终”也。",
+              "claim": "虽“小有言”，以“吉”“终”也"
+            },
+            {
+              "evidenceId": "zy-5-line-3",
+              "quote": "需于泥，致寇至。",
+              "claim": "需于泥，致寇至"
+            },
+            {
+              "evidenceId": "zy-5-line_xiang-3",
+              "quote": "敬慎不败也",
+              "claim": "敬慎不败也"
+            }
+          ]
+        },
+        {
+          "text": "发完以后，不要盯着手机等回复。大象说“云上于天，需。君子以饮食宴乐”，九五说“需于酒食，贞吉”，都是提示：等待期间先安顿自己的日常，别把全部注意力压在对方什么时候回。上六说“入于穴，有不速之客三人来；敬之，终吉”，对方暂未回复、后续情况尚未到来时，保持敬意和耐心，通常不至于大失。等他回来或回复后，再用平静语气当面讲一次，先听他说，不补“你也有错”这类话；如果公开吐槽或继续追问，反而会让误会变成新的伤害。",
+          "citations": [
+            {
+              "evidenceId": "zy-5-xiang",
+              "quote": "云上于天，需。君子以饮食宴乐。",
+              "claim": "云上于天，需。君子以饮食宴乐"
+            },
+            {
+              "evidenceId": "zy-5-line-5",
+              "quote": "需于酒食，贞吉。",
+              "claim": "需于酒食，贞吉"
+            },
+            {
+              "evidenceId": "zy-5-line-6",
+              "quote": "入于穴，有不速之客三人来；敬之，终吉。",
+              "claim": "入于穴，有不速之客三人来；敬之，终吉"
+            },
+            {
+              "evidenceId": "zy-5-line_xiang-6",
+              "quote": "“不速之客”来，“敬之，终吉”，虽不当位，未大失也。",
+              "claim": "敬之，终吉"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "errors": [],
+    "evidence": [
+      {
+        "id": "zy-5-judgment",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "judgment",
+        "line": null,
+        "text": "有孚，光亨，贞吉，利涉大川。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "需·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "有孚，光亨，贞吉，利涉大川。"
+      },
+      {
+        "id": "zy-5-tuan",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "tuan",
+        "line": null,
+        "text": "“需”，须也；险在前也。刚健而不陷，其义不困穷矣。“需，有孚，光亨，贞吉”，位乎天位，以正中也。“利涉大川”，往有功也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "需·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“需”，须也；险在前也。刚健而不陷，其义不困穷矣。“需，有孚，光亨，贞吉”，位乎天位，以正中也。“利涉大川”，往有功也。"
+      },
+      {
+        "id": "zy-5-xiang",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "xiang",
+        "line": null,
+        "text": "云上于天，需。君子以饮食宴乐。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "需·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "云上于天，需。君子以饮食宴乐。"
+      },
+      {
+        "id": "zy-5-line-1",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line",
+        "line": 1,
+        "text": "需于郊，利用恒，无咎。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "需·初九",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line:1"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "需于郊，利用恒，无咎。"
+      },
+      {
+        "id": "zy-5-line-2",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line",
+        "line": 2,
+        "text": "需于沙，小有言；终吉。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "需·九二",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line:2"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "需于沙，小有言；终吉。"
+      },
+      {
+        "id": "zy-5-line-3",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line",
+        "line": 3,
+        "text": "需于泥，致寇至。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "需·九三",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line:3"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "需于泥，致寇至。"
+      },
+      {
+        "id": "zy-5-line-4",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line",
+        "line": 4,
+        "text": "需于血，出自穴。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "需·六四",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line:4"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "需于血，出自穴。"
+      },
+      {
+        "id": "zy-5-line-5",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line",
+        "line": 5,
+        "text": "需于酒食，贞吉。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "需·九五",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line:5"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "需于酒食，贞吉。"
+      },
+      {
+        "id": "zy-5-line-6",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line",
+        "line": 6,
+        "text": "入于穴，有不速之客三人来；敬之，终吉。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "需·上六",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line:6"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "入于穴，有不速之客三人来；敬之，终吉。"
+      },
+      {
+        "id": "zy-5-line_xiang-1",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line_xiang",
+        "line": 1,
+        "text": "“需于郊”，不犯难行也；“利用恒，无咎”，未失常也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "需·初九小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line_xiang:1"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“需于郊”，不犯难行也；“利用恒，无咎”，未失常也。"
+      },
+      {
+        "id": "zy-5-line_xiang-2",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line_xiang",
+        "line": 2,
+        "text": "“需于沙”，衍在中也；虽“小有言”，以“吉”“终”也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "需·九二小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line_xiang:2"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“需于沙”，衍在中也；虽“小有言”，以“吉”“终”也。"
+      },
+      {
+        "id": "zy-5-line_xiang-3",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line_xiang",
+        "line": 3,
+        "text": "“需于泥”，灾在外也；自我“致寇”，敬慎不败也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "需·九三小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line_xiang:3"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“需于泥”，灾在外也；自我“致寇”，敬慎不败也。"
+      },
+      {
+        "id": "zy-5-line_xiang-4",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line_xiang",
+        "line": 4,
+        "text": "“需于血”，顺以听也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "需·六四小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line_xiang:4"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“需于血”，顺以听也。"
+      },
+      {
+        "id": "zy-5-line_xiang-5",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line_xiang",
+        "line": 5,
+        "text": "“酒食，贞吉”，以中正也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "需·九五小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line_xiang:5"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“酒食，贞吉”，以中正也。"
+      },
+      {
+        "id": "zy-5-line_xiang-6",
+        "hexagramId": 5,
+        "name": "需",
+        "section": "line_xiang",
+        "line": 6,
+        "text": "“不速之客”来，“敬之，终吉”，虽不当位，未大失也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "需·上六小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:05:line_xiang:6"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“不速之客”来，“敬之，终吉”，虽不当位，未大失也。"
+      }
+    ],
+    "trace": [
+      {
+        "step": "retrieve",
+        "status": "ok",
+        "channel": "fixed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "code": "situation_followup",
+        "evidenceIds": [
+          "zy-5-judgment",
+          "zy-5-tuan",
+          "zy-5-xiang"
+        ],
+        "truncated": false,
+        "droppedEvidenceIds": []
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 2772,
+        "promptTokens": 2484,
+        "completionTokens": 444,
+        "totalTokens": 2928
+      },
+      {
+        "step": "tool",
+        "tool": "get_passages",
+        "args": {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 5,
+          "sections": [
+            "line",
+            "line_xiang"
+          ]
+        },
+        "status": "ok",
+        "evidenceIds": [
+          "zy-5-line-1",
+          "zy-5-line-2",
+          "zy-5-line-3",
+          "zy-5-line-4",
+          "zy-5-line-5",
+          "zy-5-line-6",
+          "zy-5-line_xiang-1",
+          "zy-5-line_xiang-2",
+          "zy-5-line_xiang-3",
+          "zy-5-line_xiang-4",
+          "zy-5-line_xiang-5",
+          "zy-5-line_xiang-6"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "hits": [
+          {
+            "passageId": "zy-5-line-1",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line-2",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line-3",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line-4",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line-5",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line-6",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line_xiang-1",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line_xiang-2",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line_xiang-3",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line_xiang-4",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line_xiang-5",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-5-line_xiang-6",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          }
+        ],
+        "coverageStatus": "covered",
+        "truncated": false,
+        "durationMs": 3
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 660,
+        "promptTokens": 4832,
+        "completionTokens": 19,
+        "totalTokens": 4851
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 25003,
+        "promptTokens": 1385,
+        "completionTokens": 5983,
+        "totalTokens": 7368
+      },
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "repairs": 0,
+    "toolAttempts": 1,
+    "sameCast": true,
+    "initialEvidenceIds": [
+      "zy-5-judgment",
+      "zy-5-tuan",
+      "zy-5-xiang"
+    ],
+    "durationMs": 28509,
+    "auto": {
+      "calls": 3,
+      "reportedTokens": 15147,
+      "unknownUsage": 0
+    }
+  },
+  {
+    "caseId": "semantic-holdout-meaning",
+    "arm": "candidate",
+    "config": "flash-low",
+    "stage": "final",
+    "graphVersion": "python-graph-v14",
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "不是。朱熹在《周易本义》豫卦六二注中说“不俟終日而見凡事之幾微也”，这里的“不俟终日”不是给事情定下“当天必须做完”的期限，而是说不用等到一整天才看清事情的几微、先兆；重点在“见几”的明审与及时，而不是要求把事办完的时限。因此，“不终日”若被理解成“事情必须当天完成”，是把时间意象过度坐实了。",
+          "citations": [
+            {
+              "evidenceId": "zhu-xi@528287:h16:line2:be436ee4ca",
+              "quote": "不俟終日而見凡事之幾微也",
+              "claim": "不是给事情定下“当天必须做完”的期限，而是说不用等到一整天才看清事情的几微、先兆"
+            }
+          ]
+        },
+        {
+          "text": "六二之所以能“不俟终日”，按朱熹的解释，是因为此爻“其介如石也其徳安靜而堅確故其思慮明審”。也就是说，在豫卦“上下皆溺於豫”的背景下，六二独能以中正自守，心志安静、坚固确实，所以思虑清明周密，能比别人更早看到事情的几微。这说明“不终日”首先是一种判断力和定力的结果，不是外在强制的完成期限。",
+          "citations": [
+            {
+              "evidenceId": "zhu-xi@528287:h16:line2:be436ee4ca",
+              "quote": "其介如石也其徳安靜而堅確故其思慮明審",
+              "claim": "六二独能以中正自守，心志安静、坚固确实，所以思虑清明周密，能比别人更早看到事情的几微"
+            }
+          ]
+        },
+        {
+          "text": "放到“及时行动”的问题上，朱熹此注支持的是一种“见几而作”的及时：先能明审几微，再决定行动，而不是鲁莽地要求当日毕事。他引《大学》“安而后能虑，虑而后能得”，并说“占者如是則正而吉矣”，也表明此爻的吉，来自安静坚确、思虑明审后的正当行动。若把“不终日”理解成“一天内必须完成”，反而会丢掉“见几微”这个核心。",
+          "citations": [
+            {
+              "evidenceId": "zhu-xi@528287:h16:line2:be436ee4ca",
+              "quote": "占者如是則正而吉矣",
+              "claim": "此爻的吉，来自安静坚确、思虑明审后的正当行动"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "errors": [],
+    "evidence": [
+      {
+        "id": "zy-16-judgment",
+        "hexagramId": 16,
+        "name": "豫",
+        "section": "judgment",
+        "line": null,
+        "text": "利建侯，行师。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "豫·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:16:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "利建侯，行师。"
+      },
+      {
+        "id": "zy-16-tuan",
+        "hexagramId": 16,
+        "name": "豫",
+        "section": "tuan",
+        "line": null,
+        "text": "豫，刚应而志行，顺以动，豫。豫顺以动，故天地如之，而况“建侯，行师”乎？天地以顺动，故日月不过，而四时不忒；圣人以顺动，则刑罚清而民服。豫之时义大矣哉！",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "豫·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:16:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "豫，刚应而志行，顺以动，豫。豫顺以动，故天地如之，而况“建侯，行师”乎？天地以顺动，故日月不过，而四时不忒；圣人以顺动，则刑罚清而民服。豫之时义大矣哉！"
+      },
+      {
+        "id": "zy-16-xiang",
+        "hexagramId": 16,
+        "name": "豫",
+        "section": "xiang",
+        "line": null,
+        "text": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "豫·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:16:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。"
+      },
+      {
+        "id": "zhu-xi@528287:h16:line2:be436ee4ca",
+        "hexagramId": 16,
+        "name": "豫",
+        "section": "line",
+        "line": 2,
+        "text": "豫雖主樂然易以溺人溺則反而憂矣卦獨此爻中而得正是上下皆溺於豫而獨能以中正自守其介如石也其徳安靜而堅確故其思慮明審不俟終日而見凡事之幾微也大學曰安而后能慮慮而后能得意正如此占者如是則正而吉矣",
+        "textOriginal": "豫雖主樂然易以溺人溺則反而憂矣卦獨此爻中而得正是上下皆溺於豫而獨能以中正自守其介如石也其徳安靜而堅確故其思慮明審不俟終日而見凡事之幾微也大學曰安而后能慮慮而后能得意正如此占者如是則正而吉矣",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+        "locator": "《周易本義》·豫·第2爻注",
+        "version": "ws-528287",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "zhouyi-benyi",
+        "workTitle": "周易本義",
+        "sourceId": "ws-528287",
+        "editionId": "ws-benyi-skqs",
+        "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+        "authorIds": [
+          "zhu-xi"
+        ],
+        "authorNames": [
+          "朱熹"
+        ],
+        "anchorIds": [
+          "zhouyi:16:line:2"
+        ],
+        "commentsOn": [
+          "zhouyi:16:line:2"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-528287.wiki",
+          "startLine": 40,
+          "endLine": 40,
+          "pageLabels": []
+        }
+      },
+      {
+        "id": "wang-bi@7904495:h16:line2:1e28cfee39",
+        "hexagramId": 16,
+        "name": "豫",
+        "section": "line",
+        "line": 2,
+        "text": "處豫之時，得位履中，安夫貞正，不求苟「豫」者也。順不苟從，豫不違中，是以上交不諂，下交不瀆。明禍福之所生，故不苟說；辯必然之理，故不改其操介如石焉。「不終日」明矣。",
+        "textOriginal": "處豫之時，得位履中，安夫貞正，不求苟「豫」者也。順不苟從，豫不違中，是以上交不諂，下交不瀆。明禍福之所生，故不苟說；辯必然之理，故不改其操介如石焉。「不終日」明矣。",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E8%B1%AB&oldid=7904495",
+        "locator": "《周易正義》·豫·第2爻注",
+        "version": "ws-7904495",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "zhouyi-zhengyi",
+        "workTitle": "周易正義",
+        "sourceId": "ws-7904495",
+        "editionId": "ws-zhouyi-zhengyi",
+        "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+        "authorIds": [
+          "wang-bi"
+        ],
+        "authorNames": [
+          "王弼"
+        ],
+        "anchorIds": [
+          "zhouyi:16:line:2"
+        ],
+        "commentsOn": [
+          "zhouyi:16:line:2"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-7904495.wiki",
+          "startLine": 34,
+          "endLine": 34,
+          "pageLabels": []
+        }
+      },
+      {
+        "id": "cheng-yi@1313743:h16:line2:c0b794c7e9",
+        "hexagramId": 16,
+        "name": "豫",
+        "section": "line",
+        "line": 2,
+        "text": "逸豫之道，放則失正，故豫之諸爻，多不得正，才與時合也。唯六二一爻處中正，又無應，為自守之象。當豫之時，獨能以中正自守，可謂特立之操，是其節介如石之堅也。介於石，其介如石也。人之於豫樂，心悅之，故遲遲遂至於耽戀不能已也。二以中正自守，其介如石，其去之速，不俟終日，故貞正而吉也。處豫不可安且久也，久則溺矣。如二，可謂見幾而作者也。夫子因二之見幾，而極言知幾之道，曰：「知幾其神乎！君子上交不諂，下交不瀆，其知幾乎！幾者動之微、吉之先見者也。君子見幾而作，不俟終日。《易》曰：『介於石，不終日，貞吉。』介如石焉，寧用終日，斷可識矣。君子知微知彰，知柔知剛，萬夫之望。」夫見事之幾微者，其神妙矣乎！君子上交不至於諂，下交不至於瀆者，蓋知幾也。不知幾，則至於過而不已。交於上以恭巽，故過則為諂；交於下以和易，故過則為瀆。君子見於幾微，故不至於過也。所謂幾者，始動之微也，吉凶之端可先見而未著者也。獨言吉者，見之於先，豈復至有凶也？君子明哲，見事之幾微，故能其介如石，其守既堅，則不惑而明，見幾而動，豈俟終日也？斷，別也。其判別可見矣。微與彰，柔與剛，相對者也。君子見微則知彰矣，見柔則知剛矣，知幾如是，眾所仰也，故讚之曰「萬夫之望」。",
+        "textOriginal": "逸豫之道，放則失正，故豫之諸爻，多不得正，才與時合也。唯六二一爻處中正，又無應，為自守之象。當豫之時，獨能以中正自守，可謂特立之操，是其節介如石之堅也。介於石，其介如石也。人之於豫樂，心悅之，故遲遲遂至於耽戀不能已也。二以中正自守，其介如石，其去之速，不俟終日，故貞正而吉也。處豫不可安且久也，久則溺矣。如二，可謂見幾而作者也。夫子因二之見幾，而極言知幾之道，曰：「知幾其神乎！君子上交不諂，下交不瀆，其知幾乎！幾者動之微、吉之先見者也。君子見幾而作，不俟終日。《易》曰：『介於石，不終日，貞吉。』介如石焉，寧用終日，斷可識矣。君子知微知彰，知柔知剛，萬夫之望。」夫見事之幾微者，其神妙矣乎！君子上交不至於諂，下交不至於瀆者，蓋知幾也。不知幾，則至於過而不已。交於上以恭巽，故過則為諂；交於下以和易，故過則為瀆。君子見於幾微，故不至於過也。所謂幾者，始動之微也，吉凶之端可先見而未著者也。獨言吉者，見之於先，豈復至有凶也？君子明哲，見事之幾微，故能其介如石，其守既堅，則不惑而明，見幾而動，豈俟終日也？斷，別也。其判別可見矣。微與彰，柔與剛，相對者也。君子見微則知彰矣，見柔則知剛矣，知幾如是，眾所仰也，故讚之曰「萬夫之望」。",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3&oldid=1313743",
+        "locator": "《伊川易傳》·豫·第2爻注",
+        "version": "ws-1313743",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "yichuan-yizhuan",
+        "workTitle": "伊川易傳",
+        "sourceId": "ws-1313743",
+        "editionId": "ws-yichuan-yizhuan",
+        "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+        "authorIds": [
+          "cheng-yi"
+        ],
+        "authorNames": [
+          "程颐"
+        ],
+        "anchorIds": [
+          "zhouyi:16:line:2"
+        ],
+        "commentsOn": [
+          "zhouyi:16:line:2"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-1313743.wiki",
+          "startLine": 421,
+          "endLine": 421,
+          "pageLabels": []
+        }
+      }
+    ],
+    "trace": [
+      {
+        "step": "retrieve",
+        "status": "ok",
+        "channel": "fixed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "code": "source_request",
+        "evidenceIds": [
+          "zy-16-judgment",
+          "zy-16-tuan",
+          "zy-16-xiang",
+          "zhu-xi@528287:h16:line2:be436ee4ca",
+          "wang-bi@7904495:h16:line2:1e28cfee39",
+          "cheng-yi@1313743:h16:line2:c0b794c7e9"
+        ],
+        "truncated": false,
+        "droppedEvidenceIds": []
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 1377,
+        "promptTokens": 3526,
+        "completionTokens": 135,
+        "totalTokens": 3661
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 6854,
+        "promptTokens": 654,
+        "completionTokens": 1211,
+        "totalTokens": 1865
+      },
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "repairs": 0,
+    "toolAttempts": 0,
+    "sameCast": true,
+    "initialEvidenceIds": [
+      "zy-16-judgment",
+      "zy-16-tuan",
+      "zy-16-xiang",
+      "zhu-xi@528287:h16:line2:be436ee4ca",
+      "wang-bi@7904495:h16:line2:1e28cfee39",
+      "cheng-yi@1313743:h16:line2:c0b794c7e9"
+    ],
+    "durationMs": 8315,
+    "auto": {
+      "calls": 2,
+      "reportedTokens": 5526,
+      "unknownUsage": 0
+    }
+  },
+  {
+    "caseId": "semantic-holdout-meaning",
+    "arm": "baseline",
+    "config": "flash-low",
+    "stage": "final",
+    "graphVersion": "python-graph-v13",
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "朱熹在《周易本义》豫卦六二注中说：“不俟終日而見凡事之幾微也。”这里的“不俟终日”是“不用等到一整天才见到”，重心在“见几微”：能及早看出事情的细小征兆，而不是给行动规定“事情必须当天做完”。朱注又把它放在“其介如石”“中正自守”的脉络里，并说“豫雖主樂然易以溺人溺則反而憂矣”，所以此爻的及时性，是在安乐中保持清醒、不被溺没，并迅速觉察偏向。",
+          "citations": [
+            {
+              "evidenceId": "zhu-xi@528287:h16:line2:be436ee4ca",
+              "quote": "不俟終日而見凡事之幾微也",
+              "claim": "不俟終日而見凡事之幾微也"
+            },
+            {
+              "evidenceId": "zhu-xi@528287:h16:line2:be436ee4ca",
+              "quote": "豫雖主樂然易以溺人溺則反而憂矣",
+              "claim": "豫雖主樂然易以溺人溺則反而憂矣"
+            }
+          ]
+        },
+        {
+          "text": "若把这一层落到“及时行动”，可理解为觉察要快、纠偏要早，但“快”的对象首先是判断和方向，不是所有执行都压缩到当天。朱注说“其徳安靜而堅確故其思慮明審”，可见并非催促躁进；安静坚确之后才有明审。占得此爻而能守正，朱子说“占者如是則正而吉矣”，关键仍在自守中正、见几而作，而非机械地要求当天完成。",
+          "citations": [
+            {
+              "evidenceId": "zhu-xi@528287:h16:line2:be436ee4ca",
+              "quote": "其徳安靜而堅確故其思慮明審",
+              "claim": "其徳安靜而堅確故其思慮明審"
+            },
+            {
+              "evidenceId": "zhu-xi@528287:h16:line2:be436ee4ca",
+              "quote": "占者如是則正而吉矣",
+              "claim": "占者如是則正而吉矣"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "errors": [],
+    "evidence": [
+      {
+        "id": "zy-16-judgment",
+        "hexagramId": 16,
+        "name": "豫",
+        "section": "judgment",
+        "line": null,
+        "text": "利建侯，行师。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "豫·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:16:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "利建侯，行师。"
+      },
+      {
+        "id": "zy-16-tuan",
+        "hexagramId": 16,
+        "name": "豫",
+        "section": "tuan",
+        "line": null,
+        "text": "豫，刚应而志行，顺以动，豫。豫顺以动，故天地如之，而况“建侯，行师”乎？天地以顺动，故日月不过，而四时不忒；圣人以顺动，则刑罚清而民服。豫之时义大矣哉！",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "豫·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:16:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "豫，刚应而志行，顺以动，豫。豫顺以动，故天地如之，而况“建侯，行师”乎？天地以顺动，故日月不过，而四时不忒；圣人以顺动，则刑罚清而民服。豫之时义大矣哉！"
+      },
+      {
+        "id": "zy-16-xiang",
+        "hexagramId": 16,
+        "name": "豫",
+        "section": "xiang",
+        "line": null,
+        "text": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "豫·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:16:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。"
+      },
+      {
+        "id": "zhu-xi@528287:h16:line2:be436ee4ca",
+        "hexagramId": 16,
+        "name": "豫",
+        "section": "line",
+        "line": 2,
+        "text": "豫雖主樂然易以溺人溺則反而憂矣卦獨此爻中而得正是上下皆溺於豫而獨能以中正自守其介如石也其徳安靜而堅確故其思慮明審不俟終日而見凡事之幾微也大學曰安而后能慮慮而后能得意正如此占者如是則正而吉矣",
+        "textOriginal": "豫雖主樂然易以溺人溺則反而憂矣卦獨此爻中而得正是上下皆溺於豫而獨能以中正自守其介如石也其徳安靜而堅確故其思慮明審不俟終日而見凡事之幾微也大學曰安而后能慮慮而后能得意正如此占者如是則正而吉矣",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+        "locator": "《周易本義》·豫·第2爻注",
+        "version": "ws-528287",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "zhouyi-benyi",
+        "workTitle": "周易本義",
+        "sourceId": "ws-528287",
+        "editionId": "ws-benyi-skqs",
+        "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+        "authorIds": [
+          "zhu-xi"
+        ],
+        "authorNames": [
+          "朱熹"
+        ],
+        "anchorIds": [
+          "zhouyi:16:line:2"
+        ],
+        "commentsOn": [
+          "zhouyi:16:line:2"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-528287.wiki",
+          "startLine": 40,
+          "endLine": 40,
+          "pageLabels": []
+        }
+      },
+      {
+        "id": "wang-bi@7904495:h16:line2:1e28cfee39",
+        "hexagramId": 16,
+        "name": "豫",
+        "section": "line",
+        "line": 2,
+        "text": "處豫之時，得位履中，安夫貞正，不求苟「豫」者也。順不苟從，豫不違中，是以上交不諂，下交不瀆。明禍福之所生，故不苟說；辯必然之理，故不改其操介如石焉。「不終日」明矣。",
+        "textOriginal": "處豫之時，得位履中，安夫貞正，不求苟「豫」者也。順不苟從，豫不違中，是以上交不諂，下交不瀆。明禍福之所生，故不苟說；辯必然之理，故不改其操介如石焉。「不終日」明矣。",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E8%B1%AB&oldid=7904495",
+        "locator": "《周易正義》·豫·第2爻注",
+        "version": "ws-7904495",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "zhouyi-zhengyi",
+        "workTitle": "周易正義",
+        "sourceId": "ws-7904495",
+        "editionId": "ws-zhouyi-zhengyi",
+        "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+        "authorIds": [
+          "wang-bi"
+        ],
+        "authorNames": [
+          "王弼"
+        ],
+        "anchorIds": [
+          "zhouyi:16:line:2"
+        ],
+        "commentsOn": [
+          "zhouyi:16:line:2"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-7904495.wiki",
+          "startLine": 34,
+          "endLine": 34,
+          "pageLabels": []
+        }
+      },
+      {
+        "id": "cheng-yi@1313743:h16:line2:c0b794c7e9",
+        "hexagramId": 16,
+        "name": "豫",
+        "section": "line",
+        "line": 2,
+        "text": "逸豫之道，放則失正，故豫之諸爻，多不得正，才與時合也。唯六二一爻處中正，又無應，為自守之象。當豫之時，獨能以中正自守，可謂特立之操，是其節介如石之堅也。介於石，其介如石也。人之於豫樂，心悅之，故遲遲遂至於耽戀不能已也。二以中正自守，其介如石，其去之速，不俟終日，故貞正而吉也。處豫不可安且久也，久則溺矣。如二，可謂見幾而作者也。夫子因二之見幾，而極言知幾之道，曰：「知幾其神乎！君子上交不諂，下交不瀆，其知幾乎！幾者動之微、吉之先見者也。君子見幾而作，不俟終日。《易》曰：『介於石，不終日，貞吉。』介如石焉，寧用終日，斷可識矣。君子知微知彰，知柔知剛，萬夫之望。」夫見事之幾微者，其神妙矣乎！君子上交不至於諂，下交不至於瀆者，蓋知幾也。不知幾，則至於過而不已。交於上以恭巽，故過則為諂；交於下以和易，故過則為瀆。君子見於幾微，故不至於過也。所謂幾者，始動之微也，吉凶之端可先見而未著者也。獨言吉者，見之於先，豈復至有凶也？君子明哲，見事之幾微，故能其介如石，其守既堅，則不惑而明，見幾而動，豈俟終日也？斷，別也。其判別可見矣。微與彰，柔與剛，相對者也。君子見微則知彰矣，見柔則知剛矣，知幾如是，眾所仰也，故讚之曰「萬夫之望」。",
+        "textOriginal": "逸豫之道，放則失正，故豫之諸爻，多不得正，才與時合也。唯六二一爻處中正，又無應，為自守之象。當豫之時，獨能以中正自守，可謂特立之操，是其節介如石之堅也。介於石，其介如石也。人之於豫樂，心悅之，故遲遲遂至於耽戀不能已也。二以中正自守，其介如石，其去之速，不俟終日，故貞正而吉也。處豫不可安且久也，久則溺矣。如二，可謂見幾而作者也。夫子因二之見幾，而極言知幾之道，曰：「知幾其神乎！君子上交不諂，下交不瀆，其知幾乎！幾者動之微、吉之先見者也。君子見幾而作，不俟終日。《易》曰：『介於石，不終日，貞吉。』介如石焉，寧用終日，斷可識矣。君子知微知彰，知柔知剛，萬夫之望。」夫見事之幾微者，其神妙矣乎！君子上交不至於諂，下交不至於瀆者，蓋知幾也。不知幾，則至於過而不已。交於上以恭巽，故過則為諂；交於下以和易，故過則為瀆。君子見於幾微，故不至於過也。所謂幾者，始動之微也，吉凶之端可先見而未著者也。獨言吉者，見之於先，豈復至有凶也？君子明哲，見事之幾微，故能其介如石，其守既堅，則不惑而明，見幾而動，豈俟終日也？斷，別也。其判別可見矣。微與彰，柔與剛，相對者也。君子見微則知彰矣，見柔則知剛矣，知幾如是，眾所仰也，故讚之曰「萬夫之望」。",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3&oldid=1313743",
+        "locator": "《伊川易傳》·豫·第2爻注",
+        "version": "ws-1313743",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "yichuan-yizhuan",
+        "workTitle": "伊川易傳",
+        "sourceId": "ws-1313743",
+        "editionId": "ws-yichuan-yizhuan",
+        "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+        "authorIds": [
+          "cheng-yi"
+        ],
+        "authorNames": [
+          "程颐"
+        ],
+        "anchorIds": [
+          "zhouyi:16:line:2"
+        ],
+        "commentsOn": [
+          "zhouyi:16:line:2"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-1313743.wiki",
+          "startLine": 421,
+          "endLine": 421,
+          "pageLabels": []
+        }
+      }
+    ],
+    "trace": [
+      {
+        "step": "retrieve",
+        "status": "ok",
+        "channel": "fixed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "code": "source_request",
+        "evidenceIds": [
+          "zy-16-judgment",
+          "zy-16-tuan",
+          "zy-16-xiang",
+          "zhu-xi@528287:h16:line2:be436ee4ca",
+          "wang-bi@7904495:h16:line2:1e28cfee39",
+          "cheng-yi@1313743:h16:line2:c0b794c7e9"
+        ],
+        "truncated": false,
+        "droppedEvidenceIds": []
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 1469,
+        "promptTokens": 3503,
+        "completionTokens": 150,
+        "totalTokens": 3653
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 15262,
+        "promptTokens": 631,
+        "completionTokens": 3141,
+        "totalTokens": 3772
+      },
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "repairs": 0,
+    "toolAttempts": 0,
+    "sameCast": true,
+    "initialEvidenceIds": [
+      "zy-16-judgment",
+      "zy-16-tuan",
+      "zy-16-xiang",
+      "zhu-xi@528287:h16:line2:be436ee4ca",
+      "wang-bi@7904495:h16:line2:1e28cfee39",
+      "cheng-yi@1313743:h16:line2:c0b794c7e9"
+    ],
+    "durationMs": 16810,
+    "auto": {
+      "calls": 2,
+      "reportedTokens": 7425,
+      "unknownUsage": 0
+    }
+  }
+]

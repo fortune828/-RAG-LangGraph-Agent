@@ -1,0 +1,188 @@
+[
+  {
+    "caseId": "semantic-holdout-daily",
+    "session": {
+      "id": "session-semantic-holdout-daily",
+      "question": "今晚已经追剧三小时，明早七点要出门。还剩一集结局，我该继续看还是睡觉？",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          8,
+          8,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "110010",
+          "name": "水泽节",
+          "number": 60,
+          "judgment": "亨。苦节不可贞。"
+        },
+        "changed": {
+          "binary": "110010",
+          "name": "水泽节",
+          "number": 60,
+          "judgment": "亨。苦节不可贞。"
+        },
+        "originalBinary": "110010",
+        "changedBinary": "110010",
+        "changingIndices": [],
+        "id": "cast-semantic-holdout-daily",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "今晚已经追剧三小时，明早七点要出门。还剩一集结局，我该继续看还是睡觉？",
+    "mode": "initial"
+  },
+  {
+    "caseId": "semantic-holdout-role",
+    "session": {
+      "id": "session-semantic-holdout-role",
+      "question": "市民合唱团请我接任负责人。团队给我很多快乐，我愿意帮忙，但负责人每周要处理报名和协调场地，我最想保留的是唱歌本身，该不该接？",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          7,
+          8,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "111011",
+          "name": "风天小畜",
+          "number": 9,
+          "judgment": "亨。密云不雨，自我西郊。"
+        },
+        "changed": {
+          "binary": "111011",
+          "name": "风天小畜",
+          "number": 9,
+          "judgment": "亨。密云不雨，自我西郊。"
+        },
+        "originalBinary": "111011",
+        "changedBinary": "111011",
+        "changingIndices": [],
+        "id": "cast-semantic-holdout-role",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "市民合唱团请我接任负责人。团队给我很多快乐，我愿意帮忙，但负责人每周要处理报名和协调场地，我最想保留的是唱歌本身，该不该接？",
+    "mode": "initial"
+  },
+  {
+    "caseId": "semantic-holdout-correction",
+    "session": {
+      "id": "session-semantic-holdout-correction",
+      "question": "我以为室友半夜外放音乐，刚才发了一条语气很重的消息，让他别再吵了。接下来怎么办？",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          7,
+          8,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "111010",
+          "name": "水天需",
+          "number": 5,
+          "judgment": "有孚，光亨，贞吉。利涉大川。"
+        },
+        "changed": {
+          "binary": "111010",
+          "name": "水天需",
+          "number": 5,
+          "judgment": "有孚，光亨，贞吉。利涉大川。"
+        },
+        "originalBinary": "111010",
+        "changedBinary": "111010",
+        "changingIndices": [],
+        "id": "cast-semantic-holdout-correction",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [
+        {
+          "id": "fixture-0",
+          "question": "我以为室友半夜外放音乐，刚才发了一条语气很重的消息，让他别再吵了。接下来怎么办？",
+          "status": "completed",
+          "mode": "initial",
+          "answer": {
+            "status": "answered",
+            "paragraphs": [
+              {
+                "text": "他也许没有顾及你的感受，可以先坚持自己的底线，让他解释为什么半夜扰民。",
+                "citations": []
+              }
+            ],
+            "limitations": []
+          },
+          "evidence": []
+        }
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "问清楚了，声音来自楼上，室友昨晚根本不在家。他还没回复我，我想把误会说清楚。",
+    "mode": "followup"
+  },
+  {
+    "caseId": "semantic-holdout-meaning",
+    "session": {
+      "id": "session-semantic-holdout-meaning",
+      "question": "我想了解豫卦里关于及时行动的说法。",
+      "cast": {
+        "lines": [
+          8,
+          8,
+          8,
+          7,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "000100",
+          "name": "雷地豫",
+          "number": 16,
+          "judgment": "利建侯行师。"
+        },
+        "changed": {
+          "binary": "000100",
+          "name": "雷地豫",
+          "number": 16,
+          "judgment": "利建侯行师。"
+        },
+        "originalBinary": "000100",
+        "changedBinary": "000100",
+        "changingIndices": [],
+        "id": "cast-semantic-holdout-meaning",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "请查朱熹对本卦六二的注解，“不终日”是不是说事情必须当天做完？",
+    "mode": "followup"
+  }
+]

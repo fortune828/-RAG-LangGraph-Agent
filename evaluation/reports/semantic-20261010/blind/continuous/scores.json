@@ -1,0 +1,167 @@
+{
+  "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+  "scope": "仅本包问题、所附证据及真实前序回答；未读外部结论、源码、stage 或 key。",
+  "conversationOrder": [
+    "A03",
+    "A01",
+    "A02"
+  ],
+  "rubric": {
+    "dimensions": {
+      "userFacts": "用户事实与更正承接",
+      "classicalMeaning": "传统解释忠实程度",
+      "analogyFit": "现代类比贴切与推断边界",
+      "dialogueHelp": "自然交流与有用深度"
+    },
+    "scale": {
+      "0": "明确失败",
+      "1": "混合或明显不足",
+      "2": "可核对范围内充分做到",
+      "null": "无答案、不适用或无法判断"
+    },
+    "principles": [
+      "按每轮当时可知事实判断，不用后续纠正倒扣首轮。",
+      "现代类比与传统释义分开；准确引文不保证应用正确。",
+      "不按字数、段数计分，机械通过不提高语义分。"
+    ]
+  },
+  "summary": {
+    "total": 3,
+    "completedWithReadableAnswer": 3,
+    "candidateOnly": 0,
+    "noAnswerTechnicalFailure": 0,
+    "mechanicalNonCompletion": 0,
+    "means": {
+      "userFacts": {
+        "value": 1.333,
+        "n": 3
+      },
+      "classicalMeaning": {
+        "value": 1.667,
+        "n": 3
+      },
+      "analogyFit": {
+        "value": 1.0,
+        "n": 3
+      },
+      "dialogueHelp": {
+        "value": 1.667,
+        "n": 3
+      }
+    }
+  },
+  "results": [
+    {
+      "answerId": "A01",
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "明确改为“不是催他，而是先更正事实”，话术承认自己数据给晚并感谢搭档赶工；“如果对方也有……”是条件，没有再次断言对方有错。",
+        "classicalMeaning": "九二“悔亡”及王弼、朱熹关于久中消悔的内容，与随附注释相符；引用上六躁动与九三无恒的主旨也未改作者或爻名。",
+        "analogyFit": "稳定交接规则与恒的联系贴切，但将承认延迟又表达压力说成九二“守中”，再用九三断言不建规则“问题还会反复”，把象义用成具体责任平衡及未来结果的依据。",
+        "dialogueHelp": "“我之前只注意到最后交稿……这对你不公平”加明确交数据时间、预警和询问缓冲，能完成纠正误会与后续协作安排。"
+      },
+      "comment": "接受了真实前轮之后的新证据并给有效开口；部分爻象仍被套成现实规则和结果。",
+      "flags": [
+        {
+          "type": "unestablished_application_condition",
+          "quote": "所以你要守住中道：承认自己的延迟，也保留对合作压力的合理表达",
+          "reason": "表达压力可以另作现实建议，但九二久中不规定本次责任表达必须如此平衡。",
+          "dimension": "analogyFit"
+        },
+        {
+          "type": "unsupported_recurrence_prediction",
+          "quote": "只凭一时愧疚而不建立恒常规则，问题还会反复",
+          "reason": "改流程可能降低风险；九三不能确定这段合作将再次发生同一问题。",
+          "dimension": "analogyFit"
+        }
+      ],
+      "uncertainties": [],
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true
+    },
+    {
+      "answerId": "A02",
+      "scores": {
+        "userFacts": 1,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 1
+      },
+      "reasons": {
+        "userFacts": "记住“对方接受、并定好交数据时间”，却写“他按约定时间合并”，与此前用户一直负责最终合并的事实冲突，也没有新的分工变更依据。",
+        "classicalMeaning": "王、朱九二“久中”消悔与上六关于躁动不常的引用及主干说明符合材料；把再次道歉等同振恒属于后续应用，不把这一错误自动算成原文错引。",
+        "analogyFit": "履行已定约定与恒的关联合理，但“反复道歉、反复翻动情绪，就是‘振恒’”及会把平息波动重新搅动，把用户只问是否再道歉一次升级为有凶义的情绪扰动。",
+        "dialogueHelp": "开头“不需要再郑重道歉一次”回应了已说开的局面，但随后给多种再说歉意的分支并反复警告振恒，没有明确哪些现实未尽事项才值得再提，反而可能增加犹豫。"
+      },
+      "comment": "承接接受更正这一进展，但交换了合并角色，并将简单收尾问题重新展开为情绪风险。",
+      "flags": [
+        {
+          "type": "history_contradiction",
+          "quote": "他按约定时间合并",
+          "reason": "历史中最终合并由用户完成；本轮只说定好了交数据时间，没有转交合并职责。",
+          "dimension": "userFacts"
+        },
+        {
+          "type": "overdirect_analogy",
+          "quote": "反复道歉、反复翻动情绪，就是“振恒”",
+          "reason": "再次道歉未必是反复躁动，不能由上六给该行为直接定性或预判搅动关系。",
+          "dimension": "analogyFit"
+        },
+        {
+          "type": "unclear_closure_advice",
+          "quote": "如果你心里还是过不去，想再说一次，那也只需化为一句",
+          "reason": "这一分支与前文反复提醒再道歉会搅动波动并置，未提供清晰现实区分，收尾帮助混合。",
+          "dimension": "dialogueHelp"
+        }
+      ],
+      "uncertainties": [
+        "用户说对方接受了说明，不等于已经知道双方所有内心感受；本评阅未据此假定情绪完全平息。"
+      ],
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true
+    },
+    {
+      "answerId": "A03",
+      "scores": {
+        "userFacts": 1,
+        "classicalMeaning": 1,
+        "analogyFit": 1,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "保留连续两次晚交及用户赶着合并，但话术“晚于我们约定的时间”补入了双方已有明确约定，题干只说晚交；不因后续才发现的数据延迟倒扣本轮。",
+        "classicalMeaning": "“守正的意思是：你可以体谅一次，但连续两次后要明确边界”把利贞释为一次、两次的具体容忍规则，所给卦辞和彖传没有这项次数条件。",
+        "analogyFit": "借恒提醒核对长期模式、建立可重复流程可以成立，但把一次体谅、两次立界限作为守正依据，过度固定了应按迟交原因与实际风险调整的沟通分寸。",
+        "dialogueHelp": "提供先问困难、描述影响、商量内部截止和提前预警的话术，能帮助发起谈话；升级老师或调整分工只是谈后仍不改的选项，并非直接命令。"
+      },
+      "comment": "首轮已给流程讨论工具，但补出明确约定，并把容忍次数归为经义。",
+      "flags": [
+        {
+          "type": "unprovided_agreement",
+          "quote": "前两次你负责的部分都晚于我们约定的时间",
+          "reason": "晚交不充分证明此前双方已经共同约定了这个交接时点。",
+          "dimension": "userFacts"
+        },
+        {
+          "type": "unsupported_traditional_rule",
+          "quote": "守正的意思是：你可以体谅一次，但连续两次后要明确边界",
+          "reason": "经文没有给这套容忍次数；可自行提出沟通规则，不能把它说成守正的定义。",
+          "dimension": "classicalMeaning"
+        }
+      ],
+      "uncertainties": [
+        "首轮尚不知道用户基础数据给晚；没有因此要求它预知后续纠正，也未将询问“是否默认晚交”误标成已经断定搭档动机。"
+      ],
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true
+    }
+  ]
+}

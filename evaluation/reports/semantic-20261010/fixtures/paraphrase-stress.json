@@ -1,0 +1,492 @@
+{
+  "schemaVersion": 1,
+  "split": "development_selected_stress",
+  "createdAt": "2026-10-10",
+  "knowledgeRelease": "knowledge-v3-20260926-r1",
+  "evidenceSha256": "4154d8c69d0fdf0e6eca3ff570f1c8a092528a6011099533b88f3863bf36ebd4",
+  "annotationOrigin": "AI checked local fixed source; not expert gold",
+  "caseCount": 1,
+  "independentGroupCount": 1,
+  "fieldsAllowedInModelInput": [
+    "question",
+    "currentQuestion",
+    "mode",
+    "lineValues",
+    "history"
+  ],
+  "labelHandling": "references, selection, candidates, expectedEvidenceGroups, reviewPoints, retrievalNecessity and initialEvidenceAudit are evaluation-only. fixture() only forwards allowed inputs; never supply labels to policy/model.",
+  "cases": [
+    {
+      "caseId": "paraphrase-stress-2",
+      "groupId": "paraphrase-stress-2",
+      "question": "我记得一段易学解释，想核对自己记忆中的含义和出处。",
+      "currentQuestion": "我记得朱熹好像讲过一种意思：身处难关时，与地位更高的人来往，表达真实的心意比排场更重要。这段解释出自哪里？能给我原文吗？",
+      "mode": "followup",
+      "lineValues": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "history": [],
+      "category": "selected_fuzzy_source_stress",
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v15",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 1,
+        "changedHexagram": 1,
+        "intent": "source_request",
+        "allowedHexagramIds": null,
+        "initialEvidenceIds": [
+          "zy-1-judgment",
+          "zy-1-tuan",
+          "zy-1-xiang"
+        ],
+        "requiredTargets": [
+          {
+            "hexagramId": null,
+            "layer": "commentary",
+            "authorId": "zhu-xi"
+          }
+        ],
+        "expectedGroupsPresent": [
+          false
+        ]
+      },
+      "expectedEvidenceGroups": [
+        [
+          "zhu-xi@528287:h29:line4:99879a18e8"
+        ]
+      ],
+      "retrievalNecessity": "necessary",
+      "reviewPoints": [
+        "区分原话、用户大意和注家上下文；目标记录确有相关含义，但不是用户现代措辞的逐字原话。",
+        "保留作者与卦爻归属；未定位到足够相关材料时承认尚不能确认。",
+        "观察改写查询是否改善实际证据和答案，不按工具次数奖励。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "empty_fixed_fixture",
+      "annotationOrigin": "AI checked local fixed source; not expert gold"
+    }
+  ],
+  "references": [
+    {
+      "caseId": "paraphrase-stress-2",
+      "evidenceId": "zhu-xi@528287:h29:line4:99879a18e8",
+      "text": "簋音軌缶俯九反○晁氏云先儒讀樽酒簋為一句貳用缶為一句今從之貳益之也周禮大祭三貳弟子職左執虛豆右執挾匕周旋而貳是也九五尊位六四近之在險之時剛柔相際故有但用薄禮益以誠心進結自牖之象牖非所由之正而室之所以受明也始雖艱阻終得无咎故其占如此",
+      "locator": "《周易本義》·习坎·第4爻注",
+      "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+      "authorNames": [
+        "朱熹"
+      ],
+      "workTitle": "周易本義",
+      "supportedMeaning": "九五尊位、六四近之；在险之时刚柔相际，但用薄礼益以诚心进结自牖。",
+      "paraphraseLimits": "现代转述，不是朱熹逐字原话。“比排场更重要”概括薄礼与诚心的关系；应核对原句和爻位语境，不冒充普遍送礼规则。",
+      "annotationOrigin": "AI source check, not expert judgment"
+    }
+  ],
+  "selection": {
+    "method": "Sequential manual paraphrases; maximum 3; stop at first actual C lexical miss without scope/parser confound",
+    "attemptedCandidates": 2,
+    "maximumCandidates": 3,
+    "selectedCandidateIndex": 2,
+    "selectedBecause": "Target exists but is absent initially; unchanged C source_query and author-filtered top4 do not retrieve it. Candidate 1 preserved but excluded because its actual C path never searched.",
+    "selectionBias": "Explicitly conditioned on offline C retrieval failure. Development stress case only; not holdout, representative sample or fair overall Agent-vs-Workflow estimate.",
+    "llmRunsAtCreation": 0,
+    "offlineOnly": true,
+    "productionChanges": false,
+    "comparisonInterpretation": "A later D success shows capability on this selected wording only. Preserve D failures and costs; no general superiority inference."
+  },
+  "candidates": [
+    {
+      "candidateIndex": 1,
+      "currentQuestion": "我记得朱熹好像讲过一种意思：身处难关时，与地位更高的人来往，表达真实的心意比排场更重要。这段解释出自哪一卦哪一爻？能给我原文吗？",
+      "sourceQuery": "我记得好像讲过一种意思：身处难关时，与地位更高的人来往，表达真实的心意比排场更重要。这段解释出自哪一卦哪一爻？能给我原文吗",
+      "directLexicalProbe": {
+        "canonicalArgs": {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "我记得好像讲过一种意思身处难关时与地位更高的人来往表达真实的心意比排场更重要这段解释出自哪一卦哪一爻能给我原文吗",
+          "topK": 4
+        },
+        "scopeIds": null,
+        "counterfactualToActualScope": true,
+        "result": {
+          "evidence": [
+            {
+              "id": "zhu-xi@528287:h29:line3:030c7ed64b",
+              "hexagramId": 29,
+              "name": "习坎",
+              "section": "line",
+              "line": 3,
+              "text": "枕針甚反○以隂柔不中正而履重險之間來往皆險前險而後枕其陷益深不可用也故其象占如此枕倚著未安之意",
+              "textOriginal": "枕針甚反○以隂柔不中正而履重險之間來往皆險前險而後枕其陷益深不可用也故其象占如此枕倚著未安之意",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+              "locator": "《周易本義》·习坎·第3爻注",
+              "version": "ws-528287",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "zhouyi-benyi",
+              "workTitle": "周易本義",
+              "sourceId": "ws-528287",
+              "editionId": "ws-benyi-skqs",
+              "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+              "authorIds": [
+                "zhu-xi"
+              ],
+              "authorNames": [
+                "朱熹"
+              ],
+              "anchorIds": [
+                "zhouyi:29:line:3"
+              ],
+              "commentsOn": [
+                "zhouyi:29:line:3"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-528287.wiki",
+                "startLine": 63,
+                "endLine": 63,
+                "pageLabels": []
+              }
+            },
+            {
+              "id": "zhu-xi@528287:h1:line6:90a3dde36f",
+              "hexagramId": 1,
+              "name": "乾",
+              "section": "line",
+              "line": 6,
+              "text": "亢苦浪反○上者最上一爻之名亢者過於上而不能下之意也陽極於上動必有悔故其象占如此",
+              "textOriginal": "亢苦浪反○上者最上一爻之名亢者過於上而不能下之意也陽極於上動必有悔故其象占如此",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+              "locator": "《周易本義》·乾·第6爻注",
+              "version": "ws-528287",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "zhouyi-benyi",
+              "workTitle": "周易本義",
+              "sourceId": "ws-528287",
+              "editionId": "ws-benyi-skqs",
+              "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+              "authorIds": [
+                "zhu-xi"
+              ],
+              "authorNames": [
+                "朱熹"
+              ],
+              "anchorIds": [
+                "zhouyi:01:line:6"
+              ],
+              "commentsOn": [
+                "zhouyi:01:line:6"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-528287.wiki",
+                "startLine": 11,
+                "endLine": 11,
+                "pageLabels": []
+              }
+            },
+            {
+              "id": "zhu-xi@528287:h1:line1:3b46192a2e",
+              "hexagramId": 1,
+              "name": "乾",
+              "section": "line",
+              "line": 1,
+              "text": "潛捷言反○初九者卦下陽爻之名凡畫卦者自下而上故以下爻為初陽數九為老七為少老變而少不變故謂陽爻為九潛龍勿用周公所繫之辭以㫁一爻之吉凶所謂爻辭者也潛藏也龍陽物也初陽在下未可施用故其象為潛龍其占曰勿用凡遇乾而此爻變者常觀此象而玩其占也餘爻放此",
+              "textOriginal": "潛捷言反○初九者卦下陽爻之名凡畫卦者自下而上故以下爻為初陽數九為老七為少老變而少不變故謂陽爻為九潛龍勿用周公所繫之辭以㫁一爻之吉凶所謂爻辭者也潛藏也龍陽物也初陽在下未可施用故其象為潛龍其占曰勿用凡遇乾而此爻變者常觀此象而玩其占也餘爻放此",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+              "locator": "《周易本義》·乾·第1爻注",
+              "version": "ws-528287",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "zhouyi-benyi",
+              "workTitle": "周易本義",
+              "sourceId": "ws-528287",
+              "editionId": "ws-benyi-skqs",
+              "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+              "authorIds": [
+                "zhu-xi"
+              ],
+              "authorNames": [
+                "朱熹"
+              ],
+              "anchorIds": [
+                "zhouyi:01:line:1"
+              ],
+              "commentsOn": [
+                "zhouyi:01:line:1"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-528287.wiki",
+                "startLine": 11,
+                "endLine": 11,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zhu-xi@528287:h29:line3:030c7ed64b",
+              "channel": "lexical",
+              "score": 4.085623149242305,
+              "matchReason": "Chinese bigram BM25 + phrase boost"
+            },
+            {
+              "passageId": "zhu-xi@528287:h1:line6:90a3dde36f",
+              "channel": "lexical",
+              "score": 3.9567342975835738,
+              "matchReason": "Chinese bigram BM25 + phrase boost"
+            },
+            {
+              "passageId": "zhu-xi@528287:h1:line1:3b46192a2e",
+              "channel": "lexical",
+              "score": 2.102110776934479,
+              "matchReason": "Chinese bigram BM25 + phrase boost"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "targetInTop4": false,
+        "sharedQueryBigramsWithTarget": []
+      },
+      "actualWorkflow": {
+        "initialEvidenceAudit": {
+          "graphVersion": "python-graph-v15",
+          "promptVersion": "evidence-agent-python-v16",
+          "originalHexagram": 1,
+          "changedHexagram": 1,
+          "intent": "source_request",
+          "allowedHexagramIds": [
+            1
+          ],
+          "initialEvidenceIds": [
+            "zy-1-judgment",
+            "zy-1-tuan",
+            "zy-1-xiang",
+            "zhu-xi@528287:h1:line1:3b46192a2e",
+            "cheng-yi@1313743:h1:line1:6f0ce8b27d"
+          ],
+          "requiredTargets": [
+            {
+              "hexagramId": 1,
+              "section": "line",
+              "line": 1,
+              "layer": "commentary",
+              "authorId": "zhu-xi"
+            }
+          ],
+          "expectedGroupsPresent": [
+            false
+          ]
+        },
+        "ruleDecisions": [
+          {
+            "role": "assistant",
+            "content": "{\"ready\":true}"
+          }
+        ],
+        "toolRequests": [],
+        "toolTrace": [],
+        "targetPresentFinally": false
+      },
+      "selectionStatus": "excluded_confound",
+      "selectionReason": "The older parser reads 哪一爻 as first line, locks scope to current hexagram and obtains that unrelated commentary initially. Actual C makes no search; not an isolated query-reformulation test."
+    },
+    {
+      "candidateIndex": 2,
+      "currentQuestion": "我记得朱熹好像讲过一种意思：身处难关时，与地位更高的人来往，表达真实的心意比排场更重要。这段解释出自哪里？能给我原文吗？",
+      "sourceQuery": "我记得好像讲过一种意思：身处难关时，与地位更高的人来往，表达真实的心意比排场更重要。这段解释？能给我原文吗",
+      "directLexicalProbe": {
+        "canonicalArgs": {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "我记得好像讲过一种意思身处难关时与地位更高的人来往表达真实的心意比排场更重要这段解释能给我原文吗",
+          "topK": 4
+        },
+        "scopeIds": null,
+        "counterfactualToActualScope": false,
+        "result": {
+          "evidence": [
+            {
+              "id": "zhu-xi@528287:h29:line3:030c7ed64b",
+              "hexagramId": 29,
+              "name": "习坎",
+              "section": "line",
+              "line": 3,
+              "text": "枕針甚反○以隂柔不中正而履重險之間來往皆險前險而後枕其陷益深不可用也故其象占如此枕倚著未安之意",
+              "textOriginal": "枕針甚反○以隂柔不中正而履重險之間來往皆險前險而後枕其陷益深不可用也故其象占如此枕倚著未安之意",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+              "locator": "《周易本義》·习坎·第3爻注",
+              "version": "ws-528287",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "zhouyi-benyi",
+              "workTitle": "周易本義",
+              "sourceId": "ws-528287",
+              "editionId": "ws-benyi-skqs",
+              "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+              "authorIds": [
+                "zhu-xi"
+              ],
+              "authorNames": [
+                "朱熹"
+              ],
+              "anchorIds": [
+                "zhouyi:29:line:3"
+              ],
+              "commentsOn": [
+                "zhouyi:29:line:3"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-528287.wiki",
+                "startLine": 63,
+                "endLine": 63,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zhu-xi@528287:h29:line3:030c7ed64b",
+              "channel": "lexical",
+              "score": 4.085623149242305,
+              "matchReason": "Chinese bigram BM25 + phrase boost"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "targetInTop4": false,
+        "sharedQueryBigramsWithTarget": []
+      },
+      "actualWorkflow": {
+        "initialEvidenceAudit": {
+          "graphVersion": "python-graph-v15",
+          "promptVersion": "evidence-agent-python-v16",
+          "originalHexagram": 1,
+          "changedHexagram": 1,
+          "intent": "source_request",
+          "allowedHexagramIds": null,
+          "initialEvidenceIds": [
+            "zy-1-judgment",
+            "zy-1-tuan",
+            "zy-1-xiang"
+          ],
+          "requiredTargets": [
+            {
+              "hexagramId": null,
+              "layer": "commentary",
+              "authorId": "zhu-xi"
+            }
+          ],
+          "expectedGroupsPresent": [
+            false
+          ]
+        },
+        "ruleDecisions": [
+          {
+            "role": "assistant",
+            "content": null,
+            "tool_calls": [
+              {
+                "id": "rule-1",
+                "type": "function",
+                "function": {
+                  "name": "search_knowledge",
+                  "arguments": "{\"query\": \"我记得好像讲过一种意思：身处难关时，与地位更高的人来往，表达真实的心意比排场更重要。这段解释？能给我原文吗\", \"topK\": 4, \"layers\": [\"commentary\"], \"authorIds\": [\"zhu-xi\"]}"
+                }
+              }
+            ]
+          },
+          {
+            "role": "assistant",
+            "content": "{\"ready\":true}"
+          }
+        ],
+        "toolRequests": [
+          {
+            "id": "rule-1",
+            "type": "function",
+            "function": {
+              "name": "search_knowledge",
+              "arguments": "{\"query\": \"我记得好像讲过一种意思：身处难关时，与地位更高的人来往，表达真实的心意比排场更重要。这段解释？能给我原文吗\", \"topK\": 4, \"layers\": [\"commentary\"], \"authorIds\": [\"zhu-xi\"]}"
+            }
+          }
+        ],
+        "toolTrace": [
+          {
+            "step": "tool",
+            "tool": "search_knowledge",
+            "args": {
+              "authorIds": [
+                "zhu-xi"
+              ],
+              "layers": [
+                "commentary"
+              ],
+              "query": "我记得好像讲过一种意思身处难关时与地位更高的人来往表达真实的心意比排场更重要这段解释能给我原文吗",
+              "topK": 4
+            },
+            "status": "ok",
+            "evidenceIds": [
+              "zhu-xi@528287:h29:line3:030c7ed64b"
+            ],
+            "releaseId": "knowledge-v3-20260926-r1",
+            "hits": [
+              {
+                "passageId": "zhu-xi@528287:h29:line3:030c7ed64b",
+                "channel": "lexical",
+                "score": 4.085623149242305,
+                "matchReason": "Chinese bigram BM25 + phrase boost"
+              }
+            ],
+            "coverageStatus": "covered",
+            "truncated": false,
+            "durationMs": 2
+          }
+        ],
+        "targetPresentFinally": false
+      },
+      "selectionStatus": "selected",
+      "selectionReason": "First candidate with an actual C lexical search under the intended global source-query scope and a missing target in top4."
+    }
+  ],
+  "reproduction": {
+    "graphVersion": "python-graph-v15",
+    "promptVersion": "evidence-agent-python-v16",
+    "policyVersion": "rules-c-v1",
+    "sourceHashes": {
+      "backend/graph.py": "71f638a192a99e516ee6f7289e2c993cf473926dff084122951eff55b69b1e01",
+      "backend/knowledge.py": "b2e90b7994a2e394b90563f7585786b576eb7f433c0e6a3bc9c84b5d029f3ceb",
+      "backend/retrieval.py": "7552ccf60873a0e8d18c14b019e7d5588afb38dd6373674b9870c994d3ea88a7",
+      "backend/validation.py": "4fd5266397f126759c427ac640e65679415b3f8633938e043dac09ff5c9c474b",
+      "evaluation/workflow.py": "e858339b029b4a1e939fa9a83aeb08278beafe3261ef9ba4d7123263b4ac79ab"
+    },
+    "toolPath": "source_query -> rule_route -> canonical_tool_args -> execute_tool(search_knowledge)",
+    "preparation": "Production graph with C policy and local smoke generation to capture initial state/actual C decisions; no transport/API. Smoke text/tokens are not real generation and are not saved/scored."
+  }
+}

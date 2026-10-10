@@ -1,0 +1,29 @@
+{
+  "immutableRawRecords": true,
+  "notes": [
+    {
+      "stage": "context",
+      "issue": "RecordedChat originally inferred repair from message count; roles/grouped/core are all single generation with no repairs. Their raw stage label is preserved; summaries must use effectiveStage=generate."
+    },
+    {
+      "stage": "hybrid",
+      "issue": "Original manifest design text accidentally says single generation/no repair. Actual code snapshot and requests are end-to-end graph, with one repair maximum per turn and disabled/8192 repair configuration. Raw requests are authoritative."
+    },
+    {
+      "stage": "recovery",
+      "issue": "Manifest common main configuration low describes shared default, but both actual diagnostic calls are disabled/8192; inspect per-request payload. These are one repair replay each, not new independent user trials."
+    },
+    {
+      "stage": "rag-recovery",
+      "issue": "Same diagnostic rule as recovery; original six RAG first-pass records stay unchanged. Two repair replays do not add independent RAG cases."
+    },
+    {
+      "stage": "final",
+      "issue": "Four paired cases frozen on v14; production v15 adds a conservative pure-source-query gate after independent code review, without using final outputs to tune language. Release and continuous record v15 separately."
+    },
+    {
+      "stage": "stress",
+      "issue": "Actual run remains v15 validation_failed. Final v16 distinguishes nominal 说法 from attribution verbs; offline same-candidate full-contract revalidation passes both candidates. No new live requests and no old success/score relabeling."
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+
+> yijing-evidence-agent@0.0.0 test
+> tsx --test tests/*.test.ts
+
+TAP version 13
+# Subtest: mixed prose places a citation after its supported claim, before practical advice
+ok 1 - mixed prose places a citation after its supported claim, before practical advice
+  ---
+  duration_ms: 10.285359
+  ...
+# Subtest: legacy summary, paragraphs and uncertainties remain visible as ordinary body text
+ok 2 - legacy summary, paragraphs and uncertainties remain visible as ordinary body text
+  ---
+  duration_ms: 1.660918
+  ...
+# Subtest: multiple citations retain distinct reference links at the same claim boundary
+ok 3 - multiple citations retain distinct reference links at the same claim boundary
+  ---
+  duration_ms: 1.045982
+  ...
+# Subtest: body and claim render as escaped text; unknown references do not create broken links
+ok 4 - body and claim render as escaped text; unknown references do not create broken links
+  ---
+  duration_ms: 0.907218
+  ...
+# Subtest: 4096 combinations preserve line order, parity, flips, and all 64 names
+ok 5 - 4096 combinations preserve line order, parity, flips, and all 64 names
+  ---
+  duration_ms: 31.871091
+  ...
+# Subtest: reject invalid cast inputs; no mutation
+ok 6 - reject invalid cast inputs; no mutation
+  ---
+  duration_ms: 0.329563
+  ...
+# Subtest: corpus has stable unique references, source pins, 64 judgments and 384 basic lines
+ok 7 - corpus has stable unique references, source pins, 64 judgments and 384 basic lines
+  ---
+  duration_ms: 9.209813
+  ...
+# Subtest: precision retrieval keeps selected line; keyword search has actual evidence
+ok 8 - precision retrieval keeps selected line; keyword search has actual evidence
+  ---
+  duration_ms: 36.269898
+  ...
+# Subtest: initial evidence covers every moving line without assuming a single divination school
+ok 9 - initial evidence covers every moving line without assuming a single divination school
+  ---
+  duration_ms: 2.774027
+  ...
+# Subtest: citation validation rejects fabricated sources, wrong quotes and vacuous answered content
+ok 10 - citation validation rejects fabricated sources, wrong quotes and vacuous answered content
+  ---
+  duration_ms: 2.880967
+  ...
+# Subtest: agent selects real tool then grounds answer, leaving cast unchanged
+ok 11 - agent selects real tool then grounds answer, leaving cast unchanged
+  ---
+  duration_ms: 5.390143
+  ...
+# Subtest: real but irrelevant citations cannot satisfy explicit line requests
+ok 12 - real but irrelevant citations cannot satisfy explicit line requests
+  ---
+  duration_ms: 0.946879
+  ...
+# Subtest: three tool attempts and duplicate detection bound the loop
+ok 13 - three tool attempts and duplicate detection bound the loop
+  ---
+  duration_ms: 2.27517
+  ...
+# Subtest: unknown computation tool is blocked; prompt cannot trigger a new cast
+ok 14 - unknown computation tool is blocked; prompt cannot trigger a new cast
+  ---
+  duration_ms: 2.703842
+  ...
+# Subtest: invalid answers repair once and fall back instead of displaying fabricated quotes
+ok 15 - invalid answers repair once and fall back instead of displaying fabricated quotes
+  ---
+  duration_ms: 0.964343
+  ...
+# Subtest: provider errors are sanitized and preserve evidence
+ok 16 - provider errors are sanitized and preserve evidence
+  ---
+  duration_ms: 0.795103
+  ...
+# Subtest: store persists, authorizes, rejects idempotency conflicts, and recovers interrupted turns
+ok 17 - store persists, authorizes, rejects idempotency conflicts, and recovers interrupted turns
+  ---
+  duration_ms: 2.906437
+  ...
+# Subtest: API create/read/turn/replay/delete, validation, and access isolation
+ok 18 - API create/read/turn/replay/delete, validation, and access isolation
+  ---
+  duration_ms: 85.371274
+  ...
+# Subtest: concurrent duplicate turn is not executed twice; other requests see session busy
+ok 19 - concurrent duplicate turn is not executed twice; other requests see session busy
+  ---
+  duration_ms: 20.242295
+  ...
+# Subtest: failed provider call can retry the same turn without recasting
+ok 20 - failed provider call can retry the same turn without recasting
+  ---
+  duration_ms: 13.64741
+  ...
+# Subtest: explicit evaluation budget blocks requests before API invocation and retains unknown usage
+ok 21 - explicit evaluation budget blocks requests before API invocation and retains unknown usage
+  ---
+  duration_ms: 3.803216
+  ...
+# Subtest: failed API requests consume call budget and retain reservation
+ok 22 - failed API requests consume call budget and retain reservation
+  ---
+  duration_ms: 0.565023
+  ...
+# Subtest: all 12 corrected passages are retrieved and cited in their own release, while old quotes remain reproducible
+ok 23 - all 12 corrected passages are retrieved and cited in their own release, while old quotes remain reproducible
+  ---
+  duration_ms: 41.845651
+  ...
+# Subtest: lexical search serves the corrected Wang Bi wording and pending edition differences stay unchanged
+ok 24 - lexical search serves the corrected Wang Bi wording and pending edition differences stay unchanged
+  ---
+  duration_ms: 75.603667
+  ...
+# Subtest: published parent corpus is byte-for-byte unchanged
+ok 25 - published parent corpus is byte-for-byte unchanged
+  ---
+  duration_ms: 4.195635
+  ...
+# Subtest: Wang Bi parser separates explicit line annotation from subcommentary and quoted authors
+ok 26 - Wang Bi parser separates explicit line annotation from subcommentary and quoted authors
+  ---
+  duration_ms: 3.440944
+  ...
+# Subtest: Cheng Yi parser respects balanced cross-line commentary and next hexagram boundary
+ok 27 - Cheng Yi parser respects balanced cross-line commentary and next hexagram boundary
+  ---
+  duration_ms: 0.999615
+  ...
+# Subtest: Zhu Xi parser isolates selected hexagram, preserves nested template boundaries and quarantines unresolved glyphs
+ok 28 - Zhu Xi parser isolates selected hexagram, preserves nested template boundaries and quarantines unresolved glyphs
+  ---
+  duration_ms: 1.088897
+  ...
+# Subtest: checked-in source snapshots match declared hashes and review offsets are honest machine records
+ok 29 - checked-in source snapshots match declared hashes and review offsets are honest machine records
+  ---
+  duration_ms: 66.793021
+  ...
+# Subtest: same anchor retrieves three distinct attributed commentaries without replacing original text
+ok 30 - same anchor retrieves three distinct attributed commentaries without replacing original text
+  ---
+  duration_ms: 8.651616
+  ...
+# Subtest: author filtering does not substitute another author and coverage differs from lexical no-hit
+ok 31 - author filtering does not substitute another author and coverage differs from lexical no-hit
+  ---
+  duration_ms: 37.841923
+  ...
+# Subtest: search folds simplified/traditional forms while quote checking preserves supplied text
+ok 32 - search folds simplified/traditional forms while quote checking preserves supplied text
+  ---
+  duration_ms: 6.019032
+  ...
+# Subtest: explicit named hexagram without a line binds annotation target to that hexagram
+ok 33 - explicit named hexagram without a line binds annotation target to that hexagram
+  ---
+  duration_ms: 2.347178
+  ...
+# Subtest: true quotation cannot disguise wrong attribution or wrong commentary target
+ok 34 - true quotation cannot disguise wrong attribution or wrong commentary target
+  ---
+  duration_ms: 1.862619
+  ...
+# Subtest: honest missing-author explanation is allowed without inventing a quotation
+ok 35 - honest missing-author explanation is allowed without inventing a quotation
+  ---
+  duration_ms: 0.473439
+  ...
+# Subtest: natural follow-up may choose a commentary tool; executed metadata and final citation survive loop
+ok 36 - natural follow-up may choose a commentary tool; executed metadata and final citation survive loop
+  ---
+  duration_ms: 6.195103
+  ...
+# Subtest: fixed and agent variants use the same answer repair validation; fixed variant cannot call tools
+ok 37 - fixed and agent variants use the same answer repair validation; fixed variant cannot call tools
+  ---
+  duration_ms: 7.217233
+  ...
+# Subtest: old sessions retain legacy release while newly created sessions use current release
+ok 38 - old sessions retain legacy release while newly created sessions use current release
+  ---
+  duration_ms: 16.338492
+  ...
+# Subtest: every possible cast preserves all moving-line originals within initial evidence budget
+ok 39 - every possible cast preserves all moving-line originals within initial evidence budget
+  ---
+  duration_ms: 1529.026287
+  ...
+# Subtest: ready with an available but unseen explicit target gets one router feedback opportunity
+ok 40 - ready with an available but unseen explicit target gets one router feedback opportunity
+  ---
+  duration_ms: 5.286616
+  ...
+# Subtest: router feedback is bounded and unavailable materials do not trigger retry loops
+ok 41 - router feedback is bounded and unavailable materials do not trigger retry loops
+  ---
+  duration_ms: 6.935153
+  ...
+1..41
+# tests 41
+# suites 0
+# pass 41
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2140.290705

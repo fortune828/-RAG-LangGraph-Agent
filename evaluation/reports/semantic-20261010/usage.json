@@ -1,0 +1,3837 @@
+{
+  "calls": [
+    {
+      "trace": "context/confirmation-complex-baseline.jsonl",
+      "callId": 1,
+      "stage": "context",
+      "arm": "baseline",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:06:00.829746+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 745,
+        "completion_tokens": 5236,
+        "total_tokens": 5981,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4375
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 233
+      },
+      "unknownReservation": null,
+      "durationMs": 24800,
+      "estimate": {
+        "usd": 0.0031780859999999997,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 1,
+      "resultEventId": 2
+    },
+    {
+      "trace": "context/confirmation-complex-core.jsonl",
+      "callId": 1,
+      "stage": "context",
+      "arm": "core",
+      "rawStage": "repair",
+      "rawResultStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2",
+      "requestTimestamp": "2026-10-10T10:04:46.384433+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 878,
+        "completion_tokens": 4515,
+        "total_tokens": 5393,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3610
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 750
+      },
+      "unknownReservation": null,
+      "durationMs": 23095,
+      "estimate": {
+        "usd": 0.002821884,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 1,
+      "resultEventId": 2
+    },
+    {
+      "trace": "context/confirmation-complex-grouped.jsonl",
+      "callId": 1,
+      "stage": "context",
+      "arm": "grouped",
+      "rawStage": "repair",
+      "rawResultStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2",
+      "requestTimestamp": "2026-10-10T10:05:09.505338+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 878,
+        "completion_tokens": 6091,
+        "total_tokens": 6969,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 5229
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 238
+      },
+      "unknownReservation": null,
+      "durationMs": 28418,
+      "estimate": {
+        "usd": 0.00369222,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 1,
+      "resultEventId": 2
+    },
+    {
+      "trace": "context/confirmation-complex-roles.jsonl",
+      "callId": 1,
+      "stage": "context",
+      "arm": "roles",
+      "rawStage": "repair",
+      "rawResultStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2",
+      "requestTimestamp": "2026-10-10T10:05:37.949611+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 782,
+        "completion_tokens": 4758,
+        "total_tokens": 5540,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3867
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 526
+      },
+      "unknownReservation": null,
+      "durationMs": 22858,
+      "estimate": {
+        "usd": 0.002934468,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 1,
+      "resultEventId": 2
+    },
+    {
+      "trace": "context/dev-lunch-baseline.jsonl",
+      "callId": 1,
+      "stage": "context",
+      "arm": "baseline",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T09:59:50.889971+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 891,
+        "completion_tokens": 3679,
+        "total_tokens": 4570,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2985
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 251
+      },
+      "unknownReservation": null,
+      "durationMs": 16260,
+      "estimate": {
+        "usd": 0.00224697,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 1,
+      "resultEventId": 2
+    },
+    {
+      "trace": "context/dev-lunch-core.jsonl",
+      "callId": 1,
+      "stage": "context",
+      "arm": "core",
+      "rawStage": "repair",
+      "rawResultStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2",
+      "requestTimestamp": "2026-10-10T10:00:51.674407+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1028,
+        "completion_tokens": 5856,
+        "total_tokens": 6884,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 5023
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 260
+      },
+      "unknownReservation": null,
+      "durationMs": 25814,
+      "estimate": {
+        "usd": 0.003554904,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 1,
+      "resultEventId": 2
+    },
+    {
+      "trace": "context/dev-lunch-grouped.jsonl",
+      "callId": 1,
+      "stage": "context",
+      "arm": "grouped",
+      "rawStage": "repair",
+      "rawResultStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2",
+      "requestTimestamp": "2026-10-10T10:00:25.772973+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1193,
+        "completion_tokens": 5403,
+        "total_tokens": 6596,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4769
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 937
+      },
+      "unknownReservation": null,
+      "durationMs": 25894,
+      "estimate": {
+        "usd": 0.0033831179999999996,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 1,
+      "resultEventId": 2
+    },
+    {
+      "trace": "context/dev-lunch-roles.jsonl",
+      "callId": 1,
+      "stage": "context",
+      "arm": "roles",
+      "rawStage": "repair",
+      "rawResultStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2",
+      "requestTimestamp": "2026-10-10T10:00:07.157677+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 966,
+        "completion_tokens": 3949,
+        "total_tokens": 4915,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3391
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 838
+      },
+      "unknownReservation": null,
+      "durationMs": 18502,
+      "estimate": {
+        "usd": 0.002495484,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 1,
+      "resultEventId": 2
+    },
+    {
+      "trace": "context/dev-project-baseline.jsonl",
+      "callId": 1,
+      "stage": "context",
+      "arm": "baseline",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:02:40.289161+00:00",
+      "status": "error",
+      "budgetCounted": true,
+      "error": "MODEL_INCOMPLETE_RESPONSE",
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1360,
+        "completion_tokens": 8192,
+        "total_tokens": 9552,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 7572
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 1104
+      },
+      "unknownReservation": null,
+      "durationMs": 35543,
+      "estimate": {
+        "usd": 0.005081568,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 1,
+      "resultEventId": 2
+    },
+    {
+      "trace": "context/dev-project-core.jsonl",
+      "callId": 1,
+      "stage": "context",
+      "arm": "core",
+      "rawStage": "repair",
+      "rawResultStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2",
+      "requestTimestamp": "2026-10-10T10:01:17.529231+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1014,
+        "completion_tokens": 3968,
+        "total_tokens": 4982,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3247
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 886
+      },
+      "unknownReservation": null,
+      "durationMs": 18372,
+      "estimate": {
+        "usd": 0.0025140839999999998,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 1,
+      "resultEventId": 2
+    },
+    {
+      "trace": "context/dev-project-correction-baseline.jsonl",
+      "callId": 1,
+      "stage": "context",
+      "arm": "baseline",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:03:15.913636+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1416,
+        "completion_tokens": 5460,
+        "total_tokens": 6876,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4225
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 136
+      },
+      "unknownReservation": null,
+      "durationMs": 23191,
+      "estimate": {
+        "usd": 0.00330024,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 1,
+      "resultEventId": 2
+    },
+    {
+      "trace": "context/dev-project-correction-core.jsonl",
+      "callId": 1,
+      "stage": "context",
+      "arm": "core",
+      "rawStage": "repair",
+      "rawResultStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2",
+      "requestTimestamp": "2026-10-10T10:04:29.368002+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1064,
+        "completion_tokens": 3729,
+        "total_tokens": 4793,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3119
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 168
+      },
+      "unknownReservation": null,
+      "durationMs": 16925,
+      "estimate": {
+        "usd": 0.002265288,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 1,
+      "resultEventId": 2
+    },
+    {
+      "trace": "context/dev-project-correction-grouped.jsonl",
+      "callId": 1,
+      "stage": "context",
+      "arm": "grouped",
+      "rawStage": "repair",
+      "rawResultStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2",
+      "requestTimestamp": "2026-10-10T10:04:09.413936+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1740,
+        "completion_tokens": 4405,
+        "total_tokens": 6145,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3300
+        },
+        "prompt_cache_hit_tokens": 1408,
+        "prompt_cache_miss_tokens": 332
+      },
+      "unknownReservation": null,
+      "durationMs": 19937,
+      "estimate": {
+        "usd": 0.0026970239999999997,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 1,
+      "resultEventId": 2
+    },
+    {
+      "trace": "context/dev-project-correction-roles.jsonl",
+      "callId": 1,
+      "stage": "context",
+      "arm": "roles",
+      "rawStage": "repair",
+      "rawResultStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2",
+      "requestTimestamp": "2026-10-10T10:03:39.122868+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1512,
+        "completion_tokens": 7203,
+        "total_tokens": 8715,
+        "prompt_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 6258
+        },
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 360
+      },
+      "unknownReservation": null,
+      "durationMs": 30271,
+      "estimate": {
+        "usd": 0.004379256000000001,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 1,
+      "resultEventId": 2
+    },
+    {
+      "trace": "context/dev-project-grouped.jsonl",
+      "callId": 1,
+      "stage": "context",
+      "arm": "grouped",
+      "rawStage": "repair",
+      "rawResultStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2",
+      "requestTimestamp": "2026-10-10T10:01:35.909552+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1690,
+        "completion_tokens": 7158,
+        "total_tokens": 8848,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 6342
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 1050
+      },
+      "unknownReservation": null,
+      "durationMs": 31160,
+      "estimate": {
+        "usd": 0.00445422,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 1,
+      "resultEventId": 2
+    },
+    {
+      "trace": "context/dev-project-roles.jsonl",
+      "callId": 1,
+      "stage": "context",
+      "arm": "roles",
+      "rawStage": "repair",
+      "rawResultStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2",
+      "requestTimestamp": "2026-10-10T10:02:07.083615+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1462,
+        "completion_tokens": 7520,
+        "total_tokens": 8982,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 6475
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 1206
+      },
+      "unknownReservation": null,
+      "durationMs": 33172,
+      "estimate": {
+        "usd": 0.004693668,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 1,
+      "resultEventId": 2
+    },
+    {
+      "trace": "continuous/continuous-1-candidate.jsonl",
+      "callId": 1,
+      "stage": "continuous",
+      "arm": "candidate",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:34:37.156335+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 765,
+        "completion_tokens": 5167,
+        "total_tokens": 5932,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4300
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 509
+      },
+      "unknownReservation": null,
+      "durationMs": 22837,
+      "estimate": {
+        "usd": 0.0031773179999999997,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 3,
+      "resultEventId": 4
+    },
+    {
+      "trace": "continuous/continuous-2-candidate.jsonl",
+      "callId": 1,
+      "stage": "continuous",
+      "arm": "candidate",
+      "rawStage": "route",
+      "rawResultStage": "route",
+      "effectiveStage": "route",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:35:00.048443+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2994,
+        "completion_tokens": 633,
+        "total_tokens": 3627,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 523
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 1714
+      },
+      "unknownReservation": null,
+      "durationMs": 3547,
+      "estimate": {
+        "usd": 0.00064074,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 3,
+      "resultEventId": 4
+    },
+    {
+      "trace": "continuous/continuous-2-candidate.jsonl",
+      "callId": 2,
+      "stage": "continuous",
+      "arm": "candidate",
+      "rawStage": "route",
+      "rawResultStage": "route",
+      "effectiveStage": "route",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:35:03.606818+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 5468,
+        "completion_tokens": 213,
+        "total_tokens": 5681,
+        "prompt_tokens_details": {
+          "cached_tokens": 3584
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 207
+        },
+        "prompt_cache_hit_tokens": 3584,
+        "prompt_cache_miss_tokens": 1884
+      },
+      "unknownReservation": null,
+      "durationMs": 1873,
+      "estimate": {
+        "usd": 0.000421152,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 8,
+      "resultEventId": 9
+    },
+    {
+      "trace": "continuous/continuous-2-candidate.jsonl",
+      "callId": 3,
+      "stage": "continuous",
+      "arm": "candidate",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:35:05.489872+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2053,
+        "completion_tokens": 6009,
+        "total_tokens": 8062,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4960
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 1797
+      },
+      "unknownReservation": null,
+      "durationMs": 26482,
+      "estimate": {
+        "usd": 0.003875718,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 11,
+      "resultEventId": 12
+    },
+    {
+      "trace": "continuous/continuous-3-candidate.jsonl",
+      "callId": 1,
+      "stage": "continuous",
+      "arm": "candidate",
+      "rawStage": "route",
+      "rawResultStage": "route",
+      "effectiveStage": "route",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:35:32.025045+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 4968,
+        "completion_tokens": 541,
+        "total_tokens": 5509,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 535
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 3688
+      },
+      "unknownReservation": null,
+      "durationMs": 3568,
+      "estimate": {
+        "usd": 0.0008816399999999998,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 3,
+      "resultEventId": 4
+    },
+    {
+      "trace": "continuous/continuous-3-candidate.jsonl",
+      "callId": 2,
+      "stage": "continuous",
+      "arm": "candidate",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:35:35.607108+00:00",
+      "status": "error",
+      "budgetCounted": true,
+      "error": "MODEL_INCOMPLETE_RESPONSE",
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2575,
+        "completion_tokens": 8192,
+        "total_tokens": 10767,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 7288
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 2319
+      },
+      "unknownReservation": null,
+      "durationMs": 31237,
+      "estimate": {
+        "usd": 0.005263817999999999,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 6,
+      "resultEventId": 7
+    },
+    {
+      "trace": "continuous/continuous-3-candidate.jsonl",
+      "callId": 3,
+      "stage": "continuous",
+      "arm": "candidate",
+      "rawStage": "repair",
+      "rawResultStage": "repair",
+      "effectiveStage": "repair",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:36:06.858594+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "disabled"
+        },
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 3508,
+        "completion_tokens": 1222,
+        "total_tokens": 4730,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 3380
+      },
+      "unknownReservation": null,
+      "durationMs": 4736,
+      "estimate": {
+        "usd": 0.0012405839999999999,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 10,
+      "resultEventId": 11
+    },
+    {
+      "trace": "final/semantic-holdout-correction-baseline.jsonl",
+      "callId": 1,
+      "stage": "final",
+      "arm": "baseline",
+      "rawStage": "route",
+      "rawResultStage": "route",
+      "effectiveStage": "route",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:22:45.405848+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2462,
+        "completion_tokens": 590,
+        "total_tokens": 3052,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 504
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 1182
+      },
+      "unknownReservation": null,
+      "durationMs": 3536,
+      "estimate": {
+        "usd": 0.00053514,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "final/semantic-holdout-correction-baseline.jsonl",
+      "callId": 2,
+      "stage": "final",
+      "arm": "baseline",
+      "rawStage": "route",
+      "rawResultStage": "route",
+      "effectiveStage": "route",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:22:48.951748+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 4956,
+        "completion_tokens": 62,
+        "total_tokens": 5018,
+        "prompt_tokens_details": {
+          "cached_tokens": 2944
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 56
+        },
+        "prompt_cache_hit_tokens": 2944,
+        "prompt_cache_miss_tokens": 2012
+      },
+      "unknownReservation": null,
+      "durationMs": 1239,
+      "estimate": {
+        "usd": 0.000347832,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 6,
+      "resultEventId": 7
+    },
+    {
+      "trace": "final/semantic-holdout-correction-baseline.jsonl",
+      "callId": 3,
+      "stage": "final",
+      "arm": "baseline",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:22:50.199938+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1363,
+        "completion_tokens": 7993,
+        "total_tokens": 9356,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 6828
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 1235
+      },
+      "unknownReservation": null,
+      "durationMs": 32246,
+      "estimate": {
+        "usd": 0.004981434,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 8,
+      "resultEventId": 9
+    },
+    {
+      "trace": "final/semantic-holdout-correction-candidate.jsonl",
+      "callId": 1,
+      "stage": "final",
+      "arm": "candidate",
+      "rawStage": "route",
+      "rawResultStage": "route",
+      "effectiveStage": "route",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:23:22.508223+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2484,
+        "completion_tokens": 444,
+        "total_tokens": 2928,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 358
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 1204
+      },
+      "unknownReservation": null,
+      "durationMs": 2769,
+      "estimate": {
+        "usd": 0.00045084,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 3,
+      "resultEventId": 4
+    },
+    {
+      "trace": "final/semantic-holdout-correction-candidate.jsonl",
+      "callId": 2,
+      "stage": "final",
+      "arm": "candidate",
+      "rawStage": "route",
+      "rawResultStage": "route",
+      "effectiveStage": "route",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:23:25.289590+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 4832,
+        "completion_tokens": 19,
+        "total_tokens": 4851,
+        "prompt_tokens_details": {
+          "cached_tokens": 2816
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 13
+        },
+        "prompt_cache_hit_tokens": 2816,
+        "prompt_cache_miss_tokens": 2016
+      },
+      "unknownReservation": null,
+      "durationMs": 657,
+      "estimate": {
+        "usd": 0.0003222479999999999,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 8,
+      "resultEventId": 9
+    },
+    {
+      "trace": "final/semantic-holdout-correction-candidate.jsonl",
+      "callId": 3,
+      "stage": "final",
+      "arm": "candidate",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:23:25.964540+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1385,
+        "completion_tokens": 5983,
+        "total_tokens": 7368,
+        "prompt_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 5092
+        },
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 233
+      },
+      "unknownReservation": null,
+      "durationMs": 25001,
+      "estimate": {
+        "usd": 0.0036282059999999997,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 11,
+      "resultEventId": 12
+    },
+    {
+      "trace": "final/semantic-holdout-daily-baseline.jsonl",
+      "callId": 1,
+      "stage": "final",
+      "arm": "baseline",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:21:36.118962+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 697,
+        "completion_tokens": 2107,
+        "total_tokens": 2804,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1677
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 569
+      },
+      "unknownReservation": null,
+      "durationMs": 10370,
+      "estimate": {
+        "usd": 0.001349934,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "final/semantic-holdout-daily-candidate.jsonl",
+      "callId": 1,
+      "stage": "final",
+      "arm": "candidate",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:21:46.556160+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 719,
+        "completion_tokens": 3479,
+        "total_tokens": 4198,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2862
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 207
+      },
+      "unknownReservation": null,
+      "durationMs": 15709,
+      "estimate": {
+        "usd": 0.002119986,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 3,
+      "resultEventId": 4
+    },
+    {
+      "trace": "final/semantic-holdout-meaning-baseline.jsonl",
+      "callId": 1,
+      "stage": "final",
+      "arm": "baseline",
+      "rawStage": "route",
+      "rawResultStage": "route",
+      "effectiveStage": "route",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:23:59.348743+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 3503,
+        "completion_tokens": 150,
+        "total_tokens": 3653,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 144
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 2223
+      },
+      "unknownReservation": null,
+      "durationMs": 1466,
+      "estimate": {
+        "usd": 0.00042729,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "final/semantic-holdout-meaning-baseline.jsonl",
+      "callId": 2,
+      "stage": "final",
+      "arm": "baseline",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:24:00.839301+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 631,
+        "completion_tokens": 3141,
+        "total_tokens": 3772,
+        "prompt_tokens_details": {
+          "cached_tokens": 384
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2669
+        },
+        "prompt_cache_hit_tokens": 384,
+        "prompt_cache_miss_tokens": 247
+      },
+      "unknownReservation": null,
+      "durationMs": 15260,
+      "estimate": {
+        "usd": 0.001922802,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 4,
+      "resultEventId": 5
+    },
+    {
+      "trace": "final/semantic-holdout-meaning-candidate.jsonl",
+      "callId": 1,
+      "stage": "final",
+      "arm": "candidate",
+      "rawStage": "route",
+      "rawResultStage": "route",
+      "effectiveStage": "route",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:23:51.024962+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 3526,
+        "completion_tokens": 135,
+        "total_tokens": 3661,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 129
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 2246
+      },
+      "unknownReservation": null,
+      "durationMs": 1374,
+      "estimate": {
+        "usd": 0.00042173999999999993,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 3,
+      "resultEventId": 4
+    },
+    {
+      "trace": "final/semantic-holdout-meaning-candidate.jsonl",
+      "callId": 2,
+      "stage": "final",
+      "arm": "candidate",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:23:52.424284+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 654,
+        "completion_tokens": 1211,
+        "total_tokens": 1865,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 655
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 526
+      },
+      "unknownReservation": null,
+      "durationMs": 6853,
+      "estimate": {
+        "usd": 0.000805884,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 6,
+      "resultEventId": 7
+    },
+    {
+      "trace": "final/semantic-holdout-role-baseline.jsonl",
+      "callId": 1,
+      "stage": "final",
+      "arm": "baseline",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:22:23.192760+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 715,
+        "completion_tokens": 4896,
+        "total_tokens": 5611,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4260
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 203
+      },
+      "unknownReservation": null,
+      "durationMs": 22168,
+      "estimate": {
+        "usd": 0.0029695859999999998,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "final/semantic-holdout-role-candidate.jsonl",
+      "callId": 1,
+      "stage": "final",
+      "arm": "candidate",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:22:02.318704+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 737,
+        "completion_tokens": 4738,
+        "total_tokens": 5475,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3817
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 609
+      },
+      "unknownReservation": null,
+      "durationMs": 20819,
+      "estimate": {
+        "usd": 0.0029345339999999995,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 3,
+      "resultEventId": 4
+    },
+    {
+      "trace": "hybrid/dev-project-correction-C.jsonl",
+      "callId": 1,
+      "stage": "hybrid",
+      "arm": "C",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:13:52.237994+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1438,
+        "completion_tokens": 6623,
+        "total_tokens": 8061,
+        "prompt_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 5538
+        },
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 286
+      },
+      "unknownReservation": null,
+      "durationMs": 26799,
+      "estimate": {
+        "usd": 0.0040201559999999996,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 4,
+      "resultEventId": 5
+    },
+    {
+      "trace": "hybrid/dev-project-correction-baseline.jsonl",
+      "callId": 1,
+      "stage": "hybrid",
+      "arm": "baseline",
+      "rawStage": "route",
+      "rawResultStage": "route",
+      "effectiveStage": "route",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:14:39.960468+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 3663,
+        "completion_tokens": 374,
+        "total_tokens": 4037,
+        "prompt_tokens_details": {
+          "cached_tokens": 3456
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 368
+        },
+        "prompt_cache_hit_tokens": 3456,
+        "prompt_cache_miss_tokens": 207
+      },
+      "unknownReservation": null,
+      "durationMs": 2622,
+      "estimate": {
+        "usd": 0.00026581799999999997,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "hybrid/dev-project-correction-baseline.jsonl",
+      "callId": 2,
+      "stage": "hybrid",
+      "arm": "baseline",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:14:42.592673+00:00",
+      "status": "error",
+      "budgetCounted": true,
+      "error": "MODEL_INCOMPLETE_RESPONSE",
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1416,
+        "completion_tokens": 8192,
+        "total_tokens": 9608,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 7382
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 136
+      },
+      "unknownReservation": null,
+      "durationMs": 32633,
+      "estimate": {
+        "usd": 0.00493944,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 4,
+      "resultEventId": 5
+    },
+    {
+      "trace": "hybrid/dev-project-correction-hybrid.jsonl",
+      "callId": 1,
+      "stage": "hybrid",
+      "arm": "hybrid",
+      "rawStage": "answer_or_tools",
+      "rawResultStage": "answer_or_tools",
+      "effectiveStage": "answer_or_tools",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:14:19.098815+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2657,
+        "completion_tokens": 4722,
+        "total_tokens": 7379,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3566
+        },
+        "prompt_cache_hit_tokens": 1408,
+        "prompt_cache_miss_tokens": 1249
+      },
+      "unknownReservation": null,
+      "durationMs": 20797,
+      "estimate": {
+        "usd": 0.003024774,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 3,
+      "resultEventId": 4
+    },
+    {
+      "trace": "hybrid/semantic-fuzzy-C.jsonl",
+      "callId": 1,
+      "stage": "hybrid",
+      "arm": "C",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:13:40.463638+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1184,
+        "completion_tokens": 2285,
+        "total_tokens": 3469,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1754
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 672
+      },
+      "unknownReservation": null,
+      "durationMs": 11684,
+      "estimate": {
+        "usd": 0.001473336,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 7,
+      "resultEventId": 8
+    },
+    {
+      "trace": "hybrid/semantic-fuzzy-baseline.jsonl",
+      "callId": 1,
+      "stage": "hybrid",
+      "arm": "baseline",
+      "rawStage": "route",
+      "rawResultStage": "route",
+      "effectiveStage": "route",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:13:03.945064+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2899,
+        "completion_tokens": 335,
+        "total_tokens": 3234,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 139
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 1619
+      },
+      "unknownReservation": null,
+      "durationMs": 2177,
+      "estimate": {
+        "usd": 0.00044769,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "hybrid/semantic-fuzzy-baseline.jsonl",
+      "callId": 2,
+      "stage": "hybrid",
+      "arm": "baseline",
+      "rawStage": "route",
+      "rawResultStage": "route",
+      "effectiveStage": "route",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:13:06.140541+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 3951,
+        "completion_tokens": 211,
+        "total_tokens": 4162,
+        "prompt_tokens_details": {
+          "cached_tokens": 3200
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 111
+        },
+        "prompt_cache_hit_tokens": 3200,
+        "prompt_cache_miss_tokens": 751
+      },
+      "unknownReservation": null,
+      "durationMs": 1386,
+      "estimate": {
+        "usd": 0.00024884999999999995,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 8,
+      "resultEventId": 9
+    },
+    {
+      "trace": "hybrid/semantic-fuzzy-baseline.jsonl",
+      "callId": 3,
+      "stage": "hybrid",
+      "arm": "baseline",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:13:07.540485+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 775,
+        "completion_tokens": 1290,
+        "total_tokens": 2065,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 624
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 647
+      },
+      "unknownReservation": null,
+      "durationMs": 10342,
+      "estimate": {
+        "usd": 0.0008714339999999999,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 12,
+      "resultEventId": 13
+    },
+    {
+      "trace": "hybrid/semantic-fuzzy-hybrid.jsonl",
+      "callId": 1,
+      "stage": "hybrid",
+      "arm": "hybrid",
+      "rawStage": "route",
+      "rawResultStage": "route",
+      "effectiveStage": "route",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:13:17.950842+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2921,
+        "completion_tokens": 342,
+        "total_tokens": 3263,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 181
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 1641
+      },
+      "unknownReservation": null,
+      "durationMs": 1943,
+      "estimate": {
+        "usd": 0.00045518999999999996,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 3,
+      "resultEventId": 4
+    },
+    {
+      "trace": "hybrid/semantic-fuzzy-hybrid.jsonl",
+      "callId": 2,
+      "stage": "hybrid",
+      "arm": "hybrid",
+      "rawStage": "route",
+      "rawResultStage": "route",
+      "effectiveStage": "route",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:13:19.913534+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 3691,
+        "completion_tokens": 512,
+        "total_tokens": 4203,
+        "prompt_tokens_details": {
+          "cached_tokens": 3200
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 100
+        },
+        "prompt_cache_hit_tokens": 3200,
+        "prompt_cache_miss_tokens": 491
+      },
+      "unknownReservation": null,
+      "durationMs": 3889,
+      "estimate": {
+        "usd": 0.00039045,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 10,
+      "resultEventId": 11
+    },
+    {
+      "trace": "hybrid/semantic-fuzzy-hybrid.jsonl",
+      "callId": 3,
+      "stage": "hybrid",
+      "arm": "hybrid",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:13:23.816821+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 797,
+        "completion_tokens": 3335,
+        "total_tokens": 4132,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2653
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 285
+      },
+      "unknownReservation": null,
+      "durationMs": 16511,
+      "estimate": {
+        "usd": 0.002045286,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 13,
+      "resultEventId": 14
+    },
+    {
+      "trace": "hybrid/semantic-literal-C.jsonl",
+      "callId": 1,
+      "stage": "hybrid",
+      "arm": "C",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:11:50.354267+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1020,
+        "completion_tokens": 4526,
+        "total_tokens": 5546,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3782
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 252
+      },
+      "unknownReservation": null,
+      "durationMs": 19555,
+      "estimate": {
+        "usd": 0.002755704,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 9,
+      "resultEventId": 10
+    },
+    {
+      "trace": "hybrid/semantic-literal-baseline.jsonl",
+      "callId": 1,
+      "stage": "hybrid",
+      "arm": "baseline",
+      "rawStage": "route",
+      "rawResultStage": "route",
+      "effectiveStage": "route",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:12:28.640870+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2861,
+        "completion_tokens": 216,
+        "total_tokens": 3077,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 110
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 1581
+      },
+      "unknownReservation": null,
+      "durationMs": 1612,
+      "estimate": {
+        "usd": 0.00037058999999999996,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "hybrid/semantic-literal-baseline.jsonl",
+      "callId": 2,
+      "stage": "hybrid",
+      "arm": "baseline",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:12:30.269061+00:00",
+      "status": "error",
+      "budgetCounted": true,
+      "error": "MODEL_INCOMPLETE_RESPONSE",
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 998,
+        "completion_tokens": 8192,
+        "total_tokens": 9190,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 7399
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 230
+      },
+      "unknownReservation": null,
+      "durationMs": 33614,
+      "estimate": {
+        "usd": 0.004952004,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 6,
+      "resultEventId": 7
+    },
+    {
+      "trace": "hybrid/semantic-literal-hybrid.jsonl",
+      "callId": 1,
+      "stage": "hybrid",
+      "arm": "hybrid",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:12:09.972660+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1020,
+        "completion_tokens": 3640,
+        "total_tokens": 4660,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2863
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 252
+      },
+      "unknownReservation": null,
+      "durationMs": 18624,
+      "estimate": {
+        "usd": 0.0022241039999999998,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 6,
+      "resultEventId": 7
+    },
+    {
+      "trace": "hybrid/semantic-responsibility-C.jsonl",
+      "callId": 1,
+      "stage": "hybrid",
+      "arm": "C",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:11:28.302186+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 822,
+        "completion_tokens": 4480,
+        "total_tokens": 5302,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3831
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 310
+      },
+      "unknownReservation": null,
+      "durationMs": 21887,
+      "estimate": {
+        "usd": 0.002736036,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 4,
+      "resultEventId": 5
+    },
+    {
+      "trace": "hybrid/semantic-responsibility-baseline.jsonl",
+      "callId": 1,
+      "stage": "hybrid",
+      "arm": "baseline",
+      "rawStage": "route",
+      "rawResultStage": "route",
+      "effectiveStage": "route",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:10:52.362232+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2517,
+        "completion_tokens": 626,
+        "total_tokens": 3143,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 620
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 1237
+      },
+      "unknownReservation": null,
+      "durationMs": 4285,
+      "estimate": {
+        "usd": 0.00056499,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "hybrid/semantic-responsibility-baseline.jsonl",
+      "callId": 2,
+      "stage": "hybrid",
+      "arm": "baseline",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:10:56.660179+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 799,
+        "completion_tokens": 929,
+        "total_tokens": 1728,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 466
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 287
+      },
+      "unknownReservation": null,
+      "durationMs": 5949,
+      "estimate": {
+        "usd": 0.000601986,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 4,
+      "resultEventId": 5
+    },
+    {
+      "trace": "hybrid/semantic-responsibility-hybrid.jsonl",
+      "callId": 1,
+      "stage": "hybrid",
+      "arm": "hybrid",
+      "rawStage": "answer_or_tools",
+      "rawResultStage": "answer_or_tools",
+      "effectiveStage": "answer_or_tools",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:11:02.669064+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2041,
+        "completion_tokens": 631,
+        "total_tokens": 2672,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 450
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 1913
+      },
+      "unknownReservation": null,
+      "durationMs": 3475,
+      "estimate": {
+        "usd": 0.000665934,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 3,
+      "resultEventId": 4
+    },
+    {
+      "trace": "hybrid/semantic-responsibility-hybrid.jsonl",
+      "callId": 2,
+      "stage": "hybrid",
+      "arm": "hybrid",
+      "rawStage": "answer_or_tools",
+      "rawResultStage": "answer_or_tools",
+      "effectiveStage": "answer_or_tools",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:11:06.163346+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 6158,
+        "completion_tokens": 3449,
+        "total_tokens": 9607,
+        "prompt_tokens_details": {
+          "cached_tokens": 2560
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1883
+        },
+        "prompt_cache_hit_tokens": 2560,
+        "prompt_cache_miss_tokens": 3598
+      },
+      "unknownReservation": null,
+      "durationMs": 16747,
+      "estimate": {
+        "usd": 0.0026167799999999995,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 10,
+      "resultEventId": 11
+    },
+    {
+      "trace": "hybrid/semantic-responsibility-hybrid.jsonl",
+      "callId": 3,
+      "stage": "hybrid",
+      "arm": "hybrid",
+      "rawStage": "repair",
+      "rawResultStage": "repair",
+      "effectiveStage": "repair",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:11:22.927147+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "disabled"
+        },
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 3413,
+        "completion_tokens": 1544,
+        "total_tokens": 4957,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 2901
+      },
+      "unknownReservation": null,
+      "durationMs": 5293,
+      "estimate": {
+        "usd": 0.0013630860000000001,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 14,
+      "resultEventId": 15
+    },
+    {
+      "trace": "rag/rag-mentoring-classic.jsonl",
+      "callId": 1,
+      "stage": "rag",
+      "arm": "classic",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:18:29.414837+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 993,
+        "completion_tokens": 4839,
+        "total_tokens": 5832,
+        "prompt_tokens_details": {
+          "cached_tokens": 640
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3941
+        },
+        "prompt_cache_hit_tokens": 640,
+        "prompt_cache_miss_tokens": 353
+      },
+      "unknownReservation": null,
+      "durationMs": 21810,
+      "estimate": {
+        "usd": 0.00295827,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "rag/rag-mentoring-full.jsonl",
+      "callId": 1,
+      "stage": "rag",
+      "arm": "full",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:17:53.499631+00:00",
+      "status": "error",
+      "budgetCounted": true,
+      "error": "MODEL_INCOMPLETE_RESPONSE",
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1263,
+        "completion_tokens": 8192,
+        "total_tokens": 9455,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 7731
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 1135
+      },
+      "unknownReservation": null,
+      "durationMs": 35909,
+      "estimate": {
+        "usd": 0.005085834,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "rag/rag-mentoring-memory.jsonl",
+      "callId": 1,
+      "stage": "rag",
+      "arm": "memory",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:18:51.234457+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 598,
+        "completion_tokens": 2734,
+        "total_tokens": 3332,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2064
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 470
+      },
+      "unknownReservation": null,
+      "durationMs": 17845,
+      "estimate": {
+        "usd": 0.001711284,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "rag/rag-thanks-classic.jsonl",
+      "callId": 1,
+      "stage": "rag",
+      "arm": "classic",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:16:50.554828+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1011,
+        "completion_tokens": 5826,
+        "total_tokens": 6837,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4821
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 883
+      },
+      "unknownReservation": null,
+      "durationMs": 30737,
+      "estimate": {
+        "usd": 0.003628434,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "rag/rag-thanks-full.jsonl",
+      "callId": 1,
+      "stage": "rag",
+      "arm": "full",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:17:21.302388+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1367,
+        "completion_tokens": 7730,
+        "total_tokens": 9097,
+        "prompt_tokens_details": {
+          "cached_tokens": 896
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 6298
+        },
+        "prompt_cache_hit_tokens": 896,
+        "prompt_cache_miss_tokens": 471
+      },
+      "unknownReservation": null,
+      "durationMs": 32140,
+      "estimate": {
+        "usd": 0.004711338,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "rag/rag-thanks-memory.jsonl",
+      "callId": 1,
+      "stage": "rag",
+      "arm": "memory",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:16:43.085409+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 607,
+        "completion_tokens": 1174,
+        "total_tokens": 1781,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 573
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 607
+      },
+      "unknownReservation": null,
+      "durationMs": 7465,
+      "estimate": {
+        "usd": 0.00079545,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "rag-recovery/rag-mentoring-repair.jsonl",
+      "callId": 1,
+      "stage": "rag-recovery",
+      "arm": "repair",
+      "rawStage": "repair",
+      "rawResultStage": "repair",
+      "effectiveStage": "repair",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:27:51.092853+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "disabled"
+        },
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1759,
+        "completion_tokens": 1000,
+        "total_tokens": 2759,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 1631
+      },
+      "unknownReservation": null,
+      "durationMs": 4449,
+      "estimate": {
+        "usd": 0.000845034,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "rag-recovery/rag-thanks-repair.jsonl",
+      "callId": 1,
+      "stage": "rag-recovery",
+      "arm": "repair",
+      "rawStage": "repair",
+      "rawResultStage": "repair",
+      "effectiveStage": "repair",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:27:46.257808+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "disabled"
+        },
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2832,
+        "completion_tokens": 1369,
+        "total_tokens": 4201,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2704
+      },
+      "unknownReservation": null,
+      "durationMs": 4823,
+      "estimate": {
+        "usd": 0.001227384,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "recovery/dev-project-repair.jsonl",
+      "callId": 1,
+      "stage": "recovery",
+      "arm": "repair",
+      "rawStage": "repair",
+      "rawResultStage": "repair",
+      "effectiveStage": "repair",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:21:02.193174+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "disabled"
+        },
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2015,
+        "completion_tokens": 1217,
+        "total_tokens": 3232,
+        "prompt_tokens_details": {
+          "cached_tokens": 1152
+        },
+        "prompt_cache_hit_tokens": 1152,
+        "prompt_cache_miss_tokens": 863
+      },
+      "unknownReservation": null,
+      "durationMs": 5315,
+      "estimate": {
+        "usd": 0.0008631059999999999,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "recovery/semantic-literal-repair.jsonl",
+      "callId": 1,
+      "stage": "recovery",
+      "arm": "repair",
+      "rawStage": "repair",
+      "rawResultStage": "repair",
+      "effectiveStage": "repair",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:21:07.522746+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "disabled"
+        },
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1826,
+        "completion_tokens": 857,
+        "total_tokens": 2683,
+        "prompt_tokens_details": {
+          "cached_tokens": 768
+        },
+        "prompt_cache_hit_tokens": 768,
+        "prompt_cache_miss_tokens": 1058
+      },
+      "unknownReservation": null,
+      "durationMs": 3261,
+      "estimate": {
+        "usd": 0.000675204,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "release/release-literal-candidate.jsonl",
+      "callId": 1,
+      "stage": "release",
+      "arm": "candidate",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:31:08.450415+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 599,
+        "completion_tokens": 1698,
+        "total_tokens": 2297,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 1540
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 471
+      },
+      "unknownReservation": null,
+      "durationMs": 7845,
+      "estimate": {
+        "usd": 0.0010898339999999998,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 6,
+      "resultEventId": 7
+    },
+    {
+      "trace": "release/release-topic-candidate.jsonl",
+      "callId": 1,
+      "stage": "release",
+      "arm": "candidate",
+      "rawStage": "route",
+      "rawResultStage": "route",
+      "effectiveStage": "route",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:31:16.351998+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2987,
+        "completion_tokens": 288,
+        "total_tokens": 3275,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 182
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 1707
+      },
+      "unknownReservation": null,
+      "durationMs": 2006,
+      "estimate": {
+        "usd": 0.00043268999999999995,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 3,
+      "resultEventId": 4
+    },
+    {
+      "trace": "release/release-topic-candidate.jsonl",
+      "callId": 2,
+      "stage": "release",
+      "arm": "candidate",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:31:18.388472+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1049,
+        "completion_tokens": 4019,
+        "total_tokens": 5068,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 3345
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 793
+      },
+      "unknownReservation": null,
+      "durationMs": 18384,
+      "estimate": {
+        "usd": 0.0025311179999999997,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 8,
+      "resultEventId": 9
+    },
+    {
+      "trace": "static/static-word-overlap-anchored.jsonl",
+      "callId": 1,
+      "stage": "static",
+      "arm": "anchored",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:20:27.053055+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 824,
+        "completion_tokens": 3403,
+        "total_tokens": 4227,
+        "prompt_tokens_details": {
+          "cached_tokens": 512
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2877
+        },
+        "prompt_cache_hit_tokens": 512,
+        "prompt_cache_miss_tokens": 312
+      },
+      "unknownReservation": null,
+      "durationMs": 16720,
+      "estimate": {
+        "usd": 0.002090136,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "static/static-word-overlap-word_overlap.jsonl",
+      "callId": 1,
+      "stage": "static",
+      "arm": "word_overlap",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:19:56.258830+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1279,
+        "completion_tokens": 6481,
+        "total_tokens": 7760,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 5391
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 1023
+      },
+      "unknownReservation": null,
+      "durationMs": 30784,
+      "estimate": {
+        "usd": 0.004042818,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 2,
+      "resultEventId": 3
+    },
+    {
+      "trace": "stress/paraphrase-stress-2-C.jsonl",
+      "callId": 1,
+      "stage": "stress",
+      "arm": "C",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:36:17.975508+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 635,
+        "completion_tokens": 5414,
+        "total_tokens": 6049,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 5040
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 507
+      },
+      "unknownReservation": null,
+      "durationMs": 25724,
+      "estimate": {
+        "usd": 0.0033248340000000005,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 7,
+      "resultEventId": 8
+    },
+    {
+      "trace": "stress/paraphrase-stress-2-D.jsonl",
+      "callId": 1,
+      "stage": "stress",
+      "arm": "D",
+      "rawStage": "route",
+      "rawResultStage": "route",
+      "effectiveStage": "route",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:36:43.760211+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2472,
+        "completion_tokens": 455,
+        "total_tokens": 2927,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 288
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 1192
+      },
+      "unknownReservation": null,
+      "durationMs": 2811,
+      "estimate": {
+        "usd": 0.00045564,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 3,
+      "resultEventId": 4
+    },
+    {
+      "trace": "stress/paraphrase-stress-2-D.jsonl",
+      "callId": 2,
+      "stage": "stress",
+      "arm": "D",
+      "rawStage": "route",
+      "rawResultStage": "route",
+      "effectiveStage": "route",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:36:46.599691+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low"
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 5005,
+        "completion_tokens": 495,
+        "total_tokens": 5500,
+        "prompt_tokens_details": {
+          "cached_tokens": 2816
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 369
+        },
+        "prompt_cache_hit_tokens": 2816,
+        "prompt_cache_miss_tokens": 2189
+      },
+      "unknownReservation": null,
+      "durationMs": 3128,
+      "estimate": {
+        "usd": 0.000633798,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 10,
+      "resultEventId": 11
+    },
+    {
+      "trace": "stress/paraphrase-stress-2-D.jsonl",
+      "callId": 3,
+      "stage": "stress",
+      "arm": "D",
+      "rawStage": "generate",
+      "rawResultStage": "generate",
+      "effectiveStage": "generate",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:36:49.754118+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "low",
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 1537,
+        "completion_tokens": 3053,
+        "total_tokens": 4590,
+        "prompt_tokens_details": {
+          "cached_tokens": 256
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 2385
+        },
+        "prompt_cache_hit_tokens": 256,
+        "prompt_cache_miss_tokens": 1281
+      },
+      "unknownReservation": null,
+      "durationMs": 14512,
+      "estimate": {
+        "usd": 0.002024718,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 15,
+      "resultEventId": 16
+    },
+    {
+      "trace": "stress/paraphrase-stress-2-D.jsonl",
+      "callId": 4,
+      "stage": "stress",
+      "arm": "D",
+      "rawStage": "repair",
+      "rawResultStage": "repair",
+      "effectiveStage": "repair",
+      "erratum": null,
+      "requestTimestamp": "2026-10-10T10:37:04.304045+00:00",
+      "status": "ok",
+      "budgetCounted": true,
+      "error": null,
+      "requestOptions": {
+        "model": "deepseek-flash",
+        "max_tokens": 8192,
+        "thinking": {
+          "type": "disabled"
+        },
+        "response_format": {
+          "type": "json_object"
+        }
+      },
+      "actualModel": "deepseek-flash",
+      "usage": {
+        "prompt_tokens": 2265,
+        "completion_tokens": 673,
+        "total_tokens": 2938,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 2137
+      },
+      "unknownReservation": null,
+      "durationMs": 3087,
+      "estimate": {
+        "usd": 0.000724734,
+        "currency": "USD",
+        "rate": "off_peak",
+        "requestDateUTC": "2026-10-10",
+        "reason": "Saturday/Sunday UTC; frozen same-day price table"
+      },
+      "requestEventId": 19,
+      "resultEventId": 20
+    }
+  ],
+  "usage": {
+    "total_tokens": {
+      "reportedSum": 410996,
+      "unknownCalls": 0,
+      "total": 410996
+    },
+    "prompt_tokens": {
+      "reportedSum": 149578,
+      "unknownCalls": 0,
+      "total": 149578
+    },
+    "completion_tokens": {
+      "reportedSum": 261418,
+      "unknownCalls": 0,
+      "total": 261418
+    },
+    "prompt_cache_hit_tokens": {
+      "reportedSum": 67968,
+      "unknownCalls": 0,
+      "total": 67968
+    },
+    "prompt_cache_miss_tokens": {
+      "reportedSum": 81610,
+      "unknownCalls": 0,
+      "total": 81610
+    }
+  }
+}

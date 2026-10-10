@@ -76,7 +76,7 @@ async def test_recording_distinguishes_rejection_execution_empty_and_budget(tmp_
         return await smoke_chat(messages,tools)
     events=[]
     await build_graph(InMemorySaver(),fake,observe=events.append).ainvoke(
-        initial_state(case['session'],case['question'],'followup'),{'configurable':{'thread_id':'tool-events'}})
+        initial_state(case['session'],'请查询当前卦有哪些原文资料。','followup'),{'configurable':{'thread_id':'tool-events'}})
     actual=[e for e in events if e['kind']=='tool_result']
     assert [e['executionStatus'] for e in actual]==['rejected','empty','ok','rejected']
     assert [e['budgetCounted'] for e in actual]==[True,True,True,False]

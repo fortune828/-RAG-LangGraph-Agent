@@ -13,11 +13,11 @@ from langgraph.graph import END, START, StateGraph
 
 from .knowledge import (TOOLS, coverage, execute_tool, initial_evidence, load_release,
                         normalize_search, canonical_tool_args)
-from .llm import deepseek_chat
+from .llm import ModelError, deepseek_chat
 from .prompts import PROMPT_VERSION, ROUTER, SYSTEM, RISK_SYSTEM
 from .validation import AUTHORS, WORKS, fallback, matches_target, named_hexagrams, requested_targets, validate_answer
 
-GRAPH_VERSION = 'python-graph-v13'
+GRAPH_VERSION = 'python-graph-v16'
 
 
 class AgentState(TypedDict, total=False):
@@ -44,10 +44,19 @@ class AgentState(TypedDict, total=False):
     prompt_version: str
     graph_version: str
     started: float
+    generation_error: str | None
 
 
 def dumps(value):
     return json.dumps(value, ensure_ascii=False, separators=(',', ':'))
+
+
+def line_names(lines):
+    names = []
+    for i, value in enumerate(lines):
+        polarity = '九' if value in (7, 9) else '六'
+        names.append('初' + polarity if i == 0 else '上' + polarity if i == 5 else polarity + '二三四五'[i - 1])
+    return names
 
 
 def routing_evidence(evidence):
@@ -219,13 +228,14 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None, *, rout
         cast = session['cast']
         intent = classify(question, state['mode'])
         scope = evidence_scope(question, cast, intent)
-        base = initial_evidence(cast, question, release)
-        previous = [e for t in [t for t in session['turns'] if t['status'] == 'completed'][-2:]
-                    for e in t['evidence'] if e.get('releaseId', e['version']) == release][-12:]
-        previous = [e for e in previous if scope is None or e['hexagramId'] in scope]
         targets = requested_targets(question, cast)
         if scope is None:
             targets = [dict(t, hexagramId=None) for t in targets]
+        explicit_lines = [t['line'] for t in targets if t.get('line') and t.get('hexagramId') == cast['original']['number']]
+        base = initial_evidence(cast, question, release, commentary_lines=explicit_lines)
+        previous = [e for t in [t for t in session['turns'] if t['status'] == 'completed'][-2:]
+                    for e in t['evidence'] if e.get('releaseId', e['version']) == release][-12:]
+        previous = [e for e in previous if scope is None or e['hexagramId'] in scope]
         extras = [e for e in base if e['layer'] != 'classic'] + previous
         extras.sort(key=lambda e: not any(matches_target(e, t) for t in targets))
         evidence, dropped = pack_evidence([e for e in base if e['layer'] == 'classic'], extras)
@@ -244,6 +254,7 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None, *, rout
         known_missing = bool(targets) and len(availability['unavailable']) == len(targets)
         context = dict(question=session['question'], currentQuestion=question,
                        cast={key: cast[key] for key in ('id', 'lines', 'changingIndices')} | {
+                           'lineNames': line_names(cast['lines']),
                            'lineTypes': [{6: '老阴', 7: '少阳', 8: '少阴', 9: '老阳'}[v] for v in cast['lines']],
                            'original': {k: cast['original'][k] for k in ('number', 'name')},
                            'changed': {k: cast['changed'][k] for k in ('number', 'name')}},
@@ -269,8 +280,9 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None, *, rout
                   durationMs=round((time.monotonic() - started) * 1000)))
         return update
 
-    async def invoke(messages, state, tools=None, *, model=None):
+    async def invoke(messages, state, tools=None, *, model=None, phase=None):
         before = time.monotonic()
+        emit(dict(kind='model_phase', phase=phase or ('route' if tools else 'generate')))
         result = await (model or chat)(messages, tools=tools)
         usage = result.get('usage') or {}
         event = dict(step='model', status='ok', durationMs=round((time.monotonic() - before) * 1000),
@@ -280,7 +292,13 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None, *, rout
 
     async def route(state):
         if route_policy is None:
-            response, trace = await invoke(state['messages'], state, TOOLS)
+            from .retrieval import exact_target_request
+            response = exact_target_request(state)
+            if response is None:
+                response, trace = await invoke(state['messages'], state, TOOLS)
+            else:
+                trace = state['trace'] + [dict(step='route', status='ok', code='EXACT_TARGET_POLICY')]
+                emit(dict(kind='rule_decision', response=response))
         else:
             response = route_policy(copy.deepcopy(state))
             trace = state['trace'] + [dict(step='route', status='ok', code='RULE_POLICY')]
@@ -387,7 +405,8 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None, *, rout
         if not risk:
             cast = state['session']['cast']
             context['卦象'] = {'本卦': cast['original']['name'], '变卦': cast['changed']['name'],
-                '六爻值': cast['lines'], '爻名': [{6: '老阴', 7: '少阳', 8: '少阴', 9: '老阳'}[v] for v in cast['lines']],
+                '六爻值': cast['lines'], '爻名': line_names(cast['lines']),
+                '爻性': [{6: '老阴', 7: '少阳', 8: '少阴', 9: '老阳'}[v] for v in cast['lines']],
                 '动爻位置': [i + 1 for i in cast['changingIndices']]}
         if not risk:
             context['本轮阶段'] = '首次回应' if state['mode'] == 'initial' else '同题追问'
@@ -398,30 +417,62 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None, *, rout
             context.pop('资料说明', None)
         return [dict(role='system', content=RISK_SYSTEM if risk else SYSTEM), dict(role='user', content=dumps(context))]
 
+    def incomplete_generation(exc, state, started, phase):
+        metadata = exc.metadata
+        usage = metadata.get('usage') or {}
+        message = metadata.get('message') or {}
+        # Only the visible partial answer belongs in the repair context. Never
+        # promote a truncated candidate (even parseable JSON) to a valid answer.
+        response = dict(role='assistant', content=message.get('content'))
+        event = dict(step='model', status='error', code='MODEL_INCOMPLETE_RESPONSE', phase=phase,
+                     durationMs=round((time.monotonic() - started) * 1000),
+                     promptTokens=usage.get('prompt_tokens'), completionTokens=usage.get('completion_tokens'),
+                     totalTokens=usage.get('total_tokens'), usage=copy.deepcopy(metadata.get('usage')))
+        return dict(response=response, trace=state['trace'] + [event], generation_error='MODEL_INCOMPLETE_RESPONSE')
+
     async def generate(state):
         messages = generation_messages(state)
-        response, trace = await invoke(messages, state)
-        return dict(response=response, trace=trace)
+        started = time.monotonic()
+        try:
+            response, trace = await invoke(messages, state)
+        except ModelError as exc:
+            if str(exc) != 'MODEL_INCOMPLETE_RESPONSE':
+                raise
+            return incomplete_generation(exc, state, started, 'generate')
+        return dict(response=response, trace=trace, generation_error=None)
 
     def validate(state):
         try:
             value = json.loads(state['response'].get('content') or '')
         except (ValueError, TypeError):
             value = None
-        issues = []
-        answer, errors = validate_answer(value, generation_evidence(state), state['targets'], state['require_citations'], issues=issues)
+        issues, resolutions = [], []
+        if state.get('generation_error'):
+            answer, errors = None, [state['generation_error']]
+            issues.append(dict(code=state['generation_error'], path=[], reason='响应因长度上限截断，需要完整 JSON。'))
+        else:
+            answer, errors = validate_answer(value, generation_evidence(state), state['targets'], state['require_citations'], issues=issues, quote_resolutions=resolutions)
         emit(dict(kind='validation', candidate=value, errors=errors, answer=answer,
-                  issues=issues, evidence=generation_evidence(state), repairNumber=state['repairs']))
+                  issues=issues, quoteResolutions=resolutions, evidence=generation_evidence(state), repairNumber=state['repairs'],
+                  **(dict(rawResponse=state['response'], generationError=state['generation_error']) if state.get('generation_error') else {})))
         return dict(answer=answer, errors=errors, validation_issues=issues,
                     next_step='finish' if answer or state['repairs'] >= 1 else 'repair',
                     trace=state['trace'] + [dict(step='validate', status='failed' if errors else 'passed', code=','.join(errors))])
 
     async def repair(state):
-        instruction = '根据下列校验错误修正回答，返回完整 JSON。'
-        messages = generation_messages(state) + [state['response'], dict(role='user', content=dumps(dict(
+        instruction = ('上一响应因长度上限截断，请返回完整 JSON。' if state.get('generation_error') else
+                       '根据下列校验错误修正回答，返回完整 JSON。')
+        previous = dict(role='assistant', content=state['response'].get('content'))
+        messages = generation_messages(state) + ([previous] if previous['content'] else []) + [dict(role='user', content=dumps(dict(
             instruction=instruction, errors=state.get('validation_issues') or state['errors'])))]
-        response, trace = await invoke(messages, state, model=getattr(chat, 'repair_chat', chat))
-        return dict(response=response, trace=trace, repairs=state['repairs'] + 1)
+        started = time.monotonic()
+        try:
+            response, trace = await invoke(messages, state, model=getattr(chat, 'repair_chat', chat), phase='repair')
+        except ModelError as exc:
+            if str(exc) != 'MODEL_INCOMPLETE_RESPONSE':
+                raise
+            return incomplete_generation(exc, state, started, 'repair') | dict(repairs=state['repairs'] + 1)
+        return dict(response=response, trace=trace, repairs=state['repairs'] + 1, generation_error=None)
 
     def finish(state):
         return dict(answer=state.get('answer') or fallback())

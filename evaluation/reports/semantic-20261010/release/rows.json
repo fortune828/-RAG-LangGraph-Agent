@@ -1,0 +1,746 @@
+[
+  {
+    "caseId": "release-literal",
+    "arm": "candidate",
+    "stage": "release",
+    "config": "flash-low",
+    "graphVersion": "python-graph-v15",
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "坎卦第二爻为九二。爻辞原文是：“坎有险，求小得。”小象原文是：“求小得”，未出中也。这两条分别对应《周易》习坎·九二与习坎·九二小象。",
+          "citations": [
+            {
+              "evidenceId": "zy-29-line-2",
+              "quote": "坎有险，求小得。",
+              "claim": "爻辞原文是：“坎有险，求小得。”"
+            },
+            {
+              "evidenceId": "zy-29-line_xiang-2",
+              "quote": "“求小得”，未出中也。",
+              "claim": "小象原文是：“求小得”，未出中也。"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "errors": [],
+    "evidence": [
+      {
+        "id": "zy-29-judgment",
+        "hexagramId": 29,
+        "name": "习坎",
+        "section": "judgment",
+        "line": null,
+        "text": "有孚，维心亨。行有尚。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "习坎·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:29:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "有孚，维心亨。行有尚。"
+      },
+      {
+        "id": "zy-29-tuan",
+        "hexagramId": 29,
+        "name": "习坎",
+        "section": "tuan",
+        "line": null,
+        "text": "“习坎”，重险也。水流而不盈，行险而不失其信。“维心亨”，乃以刚中也。“行有尚”，往有功也。天险，不可升也。地险，山川丘陵也。王公设险，以守其国。险之时用大矣哉！",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "习坎·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:29:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“习坎”，重险也。水流而不盈，行险而不失其信。“维心亨”，乃以刚中也。“行有尚”，往有功也。天险，不可升也。地险，山川丘陵也。王公设险，以守其国。险之时用大矣哉！"
+      },
+      {
+        "id": "zy-29-xiang",
+        "hexagramId": 29,
+        "name": "习坎",
+        "section": "xiang",
+        "line": null,
+        "text": "水洊至，习坎。君子以常德行，习教事。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "习坎·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:29:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "水洊至，习坎。君子以常德行，习教事。"
+      },
+      {
+        "id": "wang-bi@2404949:h29:line2:75b15f7dc9",
+        "hexagramId": 29,
+        "name": "习坎",
+        "section": "line",
+        "line": 2,
+        "text": "履失其位，故曰「坎」。上無應援，故曰「有險」。坎而有險，未能出險之中也。處中而與初三相得，故可以「求小得」也。初三未足以為援，故曰「小得」也。",
+        "textOriginal": "履失其位，故曰「坎」。上無應援，故曰「有險」。坎而有險，未能出險之中也。處中而與初三相得，故可以「求小得」也。初三未足以為援，故曰「小得」也。",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/03%E5%9D%8E&oldid=2404949",
+        "locator": "《周易正義》·习坎·第2爻注",
+        "version": "ws-2404949",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "zhouyi-zhengyi",
+        "workTitle": "周易正義",
+        "sourceId": "ws-2404949",
+        "editionId": "ws-zhouyi-zhengyi",
+        "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+        "authorIds": [
+          "wang-bi"
+        ],
+        "authorNames": [
+          "王弼"
+        ],
+        "anchorIds": [
+          "zhouyi:29:line:2"
+        ],
+        "commentsOn": [
+          "zhouyi:29:line:2"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-2404949.wiki",
+          "startLine": 67,
+          "endLine": 67,
+          "pageLabels": []
+        }
+      },
+      {
+        "id": "zhu-xi@528287:h29:line2:9d356a7715",
+        "hexagramId": 29,
+        "name": "习坎",
+        "section": "line",
+        "line": 2,
+        "text": "處重險之中未能自出故為有險之象然剛而得中故其占可以求小得也",
+        "textOriginal": "處重險之中未能自出故為有險之象然剛而得中故其占可以求小得也",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+        "locator": "《周易本義》·习坎·第2爻注",
+        "version": "ws-528287",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "zhouyi-benyi",
+        "workTitle": "周易本義",
+        "sourceId": "ws-528287",
+        "editionId": "ws-benyi-skqs",
+        "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+        "authorIds": [
+          "zhu-xi"
+        ],
+        "authorNames": [
+          "朱熹"
+        ],
+        "anchorIds": [
+          "zhouyi:29:line:2"
+        ],
+        "commentsOn": [
+          "zhouyi:29:line:2"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-528287.wiki",
+          "startLine": 63,
+          "endLine": 63,
+          "pageLabels": []
+        }
+      },
+      {
+        "id": "zy-29-line-2",
+        "hexagramId": 29,
+        "name": "习坎",
+        "section": "line",
+        "line": 2,
+        "text": "坎有险，求小得。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "习坎·九二",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:29:line:2"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "坎有险，求小得。"
+      },
+      {
+        "id": "zy-29-line_xiang-2",
+        "hexagramId": 29,
+        "name": "习坎",
+        "section": "line_xiang",
+        "line": 2,
+        "text": "“求小得”，未出中也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "习坎·九二小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:29:line_xiang:2"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“求小得”，未出中也。"
+      }
+    ],
+    "trace": [
+      {
+        "step": "retrieve",
+        "status": "ok",
+        "channel": "fixed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "code": "source_request",
+        "evidenceIds": [
+          "zy-29-judgment",
+          "zy-29-tuan",
+          "zy-29-xiang",
+          "wang-bi@2404949:h29:line2:75b15f7dc9",
+          "zhu-xi@528287:h29:line2:9d356a7715"
+        ],
+        "truncated": false,
+        "droppedEvidenceIds": []
+      },
+      {
+        "step": "route",
+        "status": "ok",
+        "code": "EXACT_TARGET_POLICY"
+      },
+      {
+        "step": "tool",
+        "tool": "get_passages",
+        "args": {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 29,
+          "sections": [
+            "line",
+            "line_xiang"
+          ],
+          "lineIndices": [
+            2
+          ]
+        },
+        "status": "ok",
+        "evidenceIds": [
+          "zy-29-line-2",
+          "zy-29-line_xiang-2"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "hits": [
+          {
+            "passageId": "zy-29-line-2",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-29-line_xiang-2",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          }
+        ],
+        "coverageStatus": "covered",
+        "truncated": false,
+        "durationMs": 1
+      },
+      {
+        "step": "route",
+        "status": "ok",
+        "code": "EXPLICIT_TARGETS_SATISFIED"
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 7847,
+        "promptTokens": 599,
+        "completionTokens": 1698,
+        "totalTokens": 2297
+      },
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "sameCast": true,
+    "repairs": 0,
+    "toolAttempts": 1,
+    "durationMs": 7959,
+    "auto": {
+      "calls": 1,
+      "reportedTokens": 2297,
+      "unknownUsage": 0
+    }
+  },
+  {
+    "caseId": "release-topic",
+    "arm": "candidate",
+    "stage": "release",
+    "config": "flash-low",
+    "graphVersion": "python-graph-v15",
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "你问夬卦第二爻对复合的启发：九二爻辞是“惕号，莫夜有戎，勿恤”，小象说“‘有戎’‘勿恤’，得中道也”。放在分手复合的处境里，这更像提醒：你可以对关系破裂保持警觉、把话说清楚（惕号），但不要把夜晚可能出现的情绪冲突或突然消息当成天塌下来，不必因恐惧而自乱。关键在“得中道也”——既不冲动追逼，也不完全逃避。",
+          "citations": [
+            {
+              "evidenceId": "zy-43-line-2",
+              "quote": "惕号，莫夜有戎，勿恤。",
+              "claim": "惕号，莫夜有戎，勿恤"
+            },
+            {
+              "evidenceId": "zy-43-line_xiang-2",
+              "quote": "“有戎”“勿恤”，得中道也。",
+              "claim": "得中道也"
+            }
+          ]
+        },
+        {
+          "text": "夬卦整体讲“决”，彖传说“决而和”，卦辞说“不利即戎，利有攸往”。若想复合，方向不是用争吵、逼迫或“即戎”的方式去征服对方，而是以决断心先把边界、原因和可行性谈清楚；该决断时决断，反而可能给关系留下“和”的空间。但“利有攸往”只表示可以前行，不等于必然复合。",
+          "citations": [
+            {
+              "evidenceId": "zy-43-tuan",
+              "quote": "决而和",
+              "claim": "决而和"
+            },
+            {
+              "evidenceId": "zy-43-judgment",
+              "quote": "不利即戎，利有攸往。",
+              "claim": "不利即戎，利有攸往"
+            }
+          ]
+        },
+        {
+          "text": "也要注意：本轮卦象的动爻是上六，不是九二。上六爻辞说“无号，终有凶”，小象说“‘无号’之‘凶’，终不可长也”。这提示若关系已经走到完全不回应、不呼号、不沟通的地步，强求拖延反而可能凶，旧模式也“终不可长”。变卦为乾，“天行健，君子以自强不息”，与其反复猜测复合，不如把重心放回自身恢复和成长。",
+          "citations": [
+            {
+              "evidenceId": "zy-43-line-6",
+              "quote": "无号，终有凶。",
+              "claim": "无号，终有凶"
+            },
+            {
+              "evidenceId": "zy-43-line_xiang-6",
+              "quote": "“无号”之“凶”，终不可长也。",
+              "claim": "终不可长也"
+            },
+            {
+              "evidenceId": "zy-1-xiang",
+              "quote": "天行健，君子以自强不息。",
+              "claim": "天行健，君子以自强不息"
+            }
+          ]
+        },
+        {
+          "text": "综合看，第二爻对复合的启发是“警觉而不过忧，走中道”：可以先做一次平静、清楚、不攻击的沟通，确认双方真实意愿；若对方已明确拒绝或持续无回应，就尊重边界，不把复合当成必须赢的仗。卦象只提供一个反思视角，不保证复合结果；现实还取决于双方意愿、分手原因和沟通安全。",
+          "citations": []
+        }
+      ],
+      "limitations": []
+    },
+    "errors": [],
+    "evidence": [
+      {
+        "id": "zy-43-judgment",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "judgment",
+        "line": null,
+        "text": "扬于王庭，孚号有厉；告自邑，不利即戎，利有攸往。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "夬·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "扬于王庭，孚号有厉；告自邑，不利即戎，利有攸往。"
+      },
+      {
+        "id": "zy-43-tuan",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "tuan",
+        "line": null,
+        "text": "夬，决也，刚决柔也；健而说，决而和。“扬于王庭”，柔乘五刚也；“孚号有厉”，其危乃光也；“告自邑，不利即戎”，所尚乃穷也；“利有攸往”，刚长乃终也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "夬·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "夬，决也，刚决柔也；健而说，决而和。“扬于王庭”，柔乘五刚也；“孚号有厉”，其危乃光也；“告自邑，不利即戎”，所尚乃穷也；“利有攸往”，刚长乃终也。"
+      },
+      {
+        "id": "zy-43-xiang",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "xiang",
+        "line": null,
+        "text": "泽上于天，夬。君子以施禄及下，居德则忌。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "夬·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "泽上于天，夬。君子以施禄及下，居德则忌。"
+      },
+      {
+        "id": "zy-43-line-6",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "line",
+        "line": 6,
+        "text": "无号，终有凶。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "夬·上六",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:line:6"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "无号，终有凶。"
+      },
+      {
+        "id": "zy-43-line_xiang-6",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "line_xiang",
+        "line": 6,
+        "text": "“无号”之“凶”，终不可长也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "夬·上六小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:line_xiang:6"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“无号”之“凶”，终不可长也。"
+      },
+      {
+        "id": "zy-1-judgment",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "judgment",
+        "line": null,
+        "text": "元亨利贞。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "乾·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:01:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "元亨利贞。"
+      },
+      {
+        "id": "zy-1-xiang",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "xiang",
+        "line": null,
+        "text": "天行健，君子以自强不息。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "乾·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:01:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "天行健，君子以自强不息。"
+      },
+      {
+        "id": "zy-43-line-2",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "line",
+        "line": 2,
+        "text": "惕号，莫夜有戎，勿恤。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "夬·九二",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:line:2"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "惕号，莫夜有戎，勿恤。"
+      },
+      {
+        "id": "zy-43-line_xiang-2",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "line_xiang",
+        "line": 2,
+        "text": "“有戎”“勿恤”，得中道也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "夬·九二小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:line_xiang:2"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“有戎”“勿恤”，得中道也。"
+      }
+    ],
+    "trace": [
+      {
+        "step": "retrieve",
+        "status": "ok",
+        "channel": "fixed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "code": "explanation_followup",
+        "evidenceIds": [
+          "zy-43-judgment",
+          "zy-43-tuan",
+          "zy-43-xiang",
+          "zy-43-line-6",
+          "zy-43-line_xiang-6",
+          "zy-1-judgment",
+          "zy-1-xiang"
+        ],
+        "truncated": false,
+        "droppedEvidenceIds": []
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 2009,
+        "promptTokens": 2987,
+        "completionTokens": 288,
+        "totalTokens": 3275
+      },
+      {
+        "step": "tool",
+        "tool": "get_passages",
+        "args": {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 43,
+          "sections": [
+            "line",
+            "line_xiang"
+          ],
+          "lineIndices": [
+            2
+          ]
+        },
+        "status": "ok",
+        "evidenceIds": [
+          "zy-43-line-2",
+          "zy-43-line_xiang-2"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "hits": [
+          {
+            "passageId": "zy-43-line-2",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          },
+          {
+            "passageId": "zy-43-line_xiang-2",
+            "channel": "exact",
+            "score": null,
+            "matchReason": "metadata exact match"
+          }
+        ],
+        "coverageStatus": "covered",
+        "truncated": false,
+        "durationMs": 4
+      },
+      {
+        "step": "route",
+        "status": "ok",
+        "code": "EXPLICIT_TARGETS_SATISFIED"
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 18386,
+        "promptTokens": 1049,
+        "completionTokens": 4019,
+        "totalTokens": 5068
+      },
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "sameCast": true,
+    "repairs": 0,
+    "toolAttempts": 1,
+    "durationMs": 20466,
+    "auto": {
+      "calls": 2,
+      "reportedTokens": 8343,
+      "unknownUsage": 0
+    }
+  }
+]

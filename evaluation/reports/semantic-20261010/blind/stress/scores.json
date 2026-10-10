@@ -1,0 +1,163 @@
+{
+  "reviewer": "独立 AI 盲评；非专家、非真人、非人工 Gold",
+  "scope": "只读本包 JSON 与随附证据；未读 stage、源码、key 或外部结论，未猜具体拒绝原因，未调用被测 API。",
+  "rubric": {
+    "dimensions": {
+      "userFacts": "用户事实与转述理解",
+      "classicalMeaning": "传统解释忠实程度",
+      "analogyFit": "现代类比贴切与推断边界",
+      "dialogueHelp": "自然交流与有用深度"
+    },
+    "scale": {
+      "0": "明确失败",
+      "1": "混合或明显不足",
+      "2": "可核对范围内充分做到",
+      "null": "无答案、不适用或无法判断"
+    },
+    "principles": [
+      "候选语义分与端到端交付分开；机械拒绝不自动降低候选语义分。",
+      "可读 insufficient 不是空答案，但未答出所问出处和原文就不算任务成功。",
+      "核验失败提示单列实际帮助 0，不能借候选内容为用户实际看到的提示计成功。",
+      "纯出处查询 analogyFit=N/A；不因字数、引用数量或机械状态给分。"
+    ]
+  },
+  "summary": {
+    "total": 2,
+    "completedWithReadableResponse": 1,
+    "candidateOnly": 1,
+    "noAnswerTechnicalFailure": 0,
+    "mechanicalNonCompletion": 1,
+    "visibleVerificationFallback": 1,
+    "deliveredInsufficientAnswer": 1,
+    "candidateLookupAnswered": 1,
+    "deliveredLookupAnswered": 0,
+    "endToEndTaskCompleted": 0,
+    "means": {
+      "userFacts": {
+        "value": 1.5,
+        "n": 2
+      },
+      "classicalMeaning": {
+        "value": 1.5,
+        "n": 2
+      },
+      "analogyFit": {
+        "value": null,
+        "n": 0
+      },
+      "dialogueHelp": {
+        "value": 1.0,
+        "n": 2
+      }
+    }
+  },
+  "results": [
+    {
+      "answerId": "A01",
+      "status": "validation_failed",
+      "candidateOnly": true,
+      "semanticEvaluable": true,
+      "delivered": false,
+      "endToEndTaskCompleted": false,
+      "lookupOutcome": "answeredInCandidateOnly",
+      "scores": {
+        "userFacts": 1,
+        "classicalMeaning": 1,
+        "analogyFit": null,
+        "dialogueHelp": 1
+      },
+      "reasons": {
+        "userFacts": "用户说“真实的心意比排场更重要”，回答却校准为“薄礼而非不要排场”，把比较重要性改写成用户否定所有排场，纠正了用户没有说的话。",
+        "classicalMeaning": "坎六四出处和原文正确，但“至于坎卦的整体处境，朱熹说……”所引实际是九二条注，把特定爻的“未能自出”扩成全卦解释，范围不忠实。",
+        "analogyFit": "N/A：纯出处与原文核对，没有现代事件类比；与查证无关的起卦要求另列疑点，不用类比项强行评分。",
+        "dialogueHelp": "候选确实给出《周易本義》坎六四及相关原文，但“需要另起对应之卦”增加无依据且与查证无关的要求，夹杂过度纠正，语义帮助混合；本项不因机械拒绝扣分。"
+      },
+      "comment": "可读候选找到了所问出处和原文，仍有用户转述、条注范围与无关起卦要求的问题；候选未交付。",
+      "flags": [
+        {
+          "type": "unprovided_user_claim",
+          "quote": "“薄礼”而非“不要排场”",
+          "reason": "用户没有把薄礼诚心解释成完全不要排场。",
+          "dimension": "userFacts"
+        },
+        {
+          "type": "commentary_scope_overgeneralization",
+          "quote": "至于坎卦的整体处境，朱熹说是“處重險之中未能自出故為有險之象”",
+          "reason": "该条 locator 为习坎第 2 爻注，不能把九二自身条件直接当作朱熹全卦总论。",
+          "dimension": "classicalMeaning"
+        },
+        {
+          "type": "unsupported_divination_requirement",
+          "quote": "若要就“难关中与上位者往来”起卦讨论，需要另起对应之卦",
+          "reason": "本题只问出处；所附材料不规定必须另起与题意对应的卦，更不能以当前乾卦决定文献查证方法。",
+          "dimension": "dialogueHelp"
+        }
+      ],
+      "uncertainties": [
+        "未推测候选被拒的具体原因；文本误释与核验失败没有被视为已证明的因果关系。"
+      ],
+      "visibleFallbackReview": {
+        "status": "insufficient",
+        "responseType": "readable_verification_failure_notice",
+        "text": "这次回答未能通过核验，本次卦象已保留。可以查看原文依据，或继续说明你的问题。",
+        "taskCompleted": false,
+        "scores": {
+          "userFacts": null,
+          "classicalMeaning": null,
+          "analogyFit": null,
+          "dialogueHelp": 0
+        },
+        "reasons": {
+          "userFacts": "提示未尝试理解或回答本题，N/A。",
+          "classicalMeaning": "提示没有原义或注家解释可评，N/A。",
+          "analogyFit": "提示没有现代类比，N/A。",
+          "dialogueHelp": "没有提供所问出处或原文；核验失败提示不是用户任务的完成。"
+        }
+      }
+    },
+    {
+      "answerId": "A02",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "delivered": true,
+      "endToEndTaskCompleted": false,
+      "lookupOutcome": "notCompleted_missingTargetEvidence",
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": null,
+        "dialogueHelp": 1
+      },
+      "reasons": {
+        "userFacts": "“与当前提供的朱熹原文并不吻合”限定于本条材料，没有直接宣布用户记忆错误；“如果你记忆的是……六四”保留了出处待核实状态。",
+        "classicalMeaning": "对所附坎六三注的阴柔不中正、来往皆险及“枕”为倚着未安的说明忠实，且本条确未附六四注，缺失说明成立。",
+        "analogyFit": "N/A：出处查证题，没有现代事件类比；当前乾卦不印证文献的说明没有变成现实预测。",
+        "dialogueHelp": "提出可能核对坎六四这一有用线索，但明确“不能确认……出处”且没有给用户所求六四原文，因此只有部分帮助，不能算完成查证或因诚实拒答给高分。"
+      },
+      "comment": "实际交付了资料不足回答；缺失说明符合本条证据范围，但没有完成出处及原文请求。",
+      "flags": [
+        {
+          "type": "lookup_incomplete",
+          "quote": "本轮没有提供该爻朱熹原文……也不能确认这就是你记忆中的出处",
+          "reason": "用户要出处与原文；指出检索缺口和可能方向尚未完成所问任务。",
+          "dimension": "dialogueHelp"
+        },
+        {
+          "type": "irrelevant_cast_discussion",
+          "quote": "起卦为乾为天……它不指向坎卦",
+          "reason": "与本次文献定位无直接作用；不因这段卦象描述准确就增加查证成功度。",
+          "dimension": "dialogueHelp"
+        }
+      ],
+      "uncertainties": [
+        "A01 与 A02 的随附证据不同；未把另一条匿名回答拿到的六四注反算成 A02 当时已获得的文献，也未推测检索或拒绝原因。"
+      ],
+      "evidenceAvailability": {
+        "targetCommentaryPresentInThisItem": false,
+        "availableZhuXiCommentary": "《周易本義》·习坎·第3爻注",
+        "targetLocatedAsHypothesis": "《周易本義》·习坎·六四爻注"
+      }
+    }
+  ]
+}

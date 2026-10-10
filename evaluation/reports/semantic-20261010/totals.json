@@ -1,0 +1,1223 @@
+{
+  "scope": "All experimental stages: accounting only; no pooled production success rate.",
+  "groups": [
+    {
+      "stage": "context",
+      "arm": "baseline",
+      "config": "flash-low",
+      "graphVersion": "python-graph-v13",
+      "n": 4,
+      "mechanicalCompleted": 3,
+      "failed": 1,
+      "technicalFailures": 1,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 4,
+      "modelRequests": 4,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 26979,
+      "unknownUsageCalls": 0,
+      "totalTokens": 26979,
+      "medianMs": 24000.5,
+      "latencyN": 4,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.013806863999999999,
+      "reportedEstimateUSD": 0.013806863999999999,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ]
+    },
+    {
+      "stage": "context",
+      "arm": "core",
+      "config": "flash-low",
+      "graphVersion": "python-graph-v13",
+      "n": 4,
+      "mechanicalCompleted": 3,
+      "failed": 1,
+      "technicalFailures": 0,
+      "validationFailed": 1,
+      "unfinished": 0,
+      "calls": 4,
+      "modelRequests": 4,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 22052,
+      "unknownUsageCalls": 0,
+      "totalTokens": 22052,
+      "medianMs": 20736.0,
+      "latencyN": 4,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.011156159999999998,
+      "reportedEstimateUSD": 0.011156159999999998,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ]
+    },
+    {
+      "stage": "context",
+      "arm": "grouped",
+      "config": "flash-low",
+      "graphVersion": "python-graph-v13",
+      "n": 4,
+      "mechanicalCompleted": 4,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 4,
+      "modelRequests": 4,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 28558,
+      "unknownUsageCalls": 0,
+      "totalTokens": 28558,
+      "medianMs": 27161.0,
+      "latencyN": 4,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.014226582,
+      "reportedEstimateUSD": 0.014226582,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ]
+    },
+    {
+      "stage": "context",
+      "arm": "roles",
+      "config": "flash-low",
+      "graphVersion": "python-graph-v13",
+      "n": 4,
+      "mechanicalCompleted": 4,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 4,
+      "modelRequests": 4,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 28152,
+      "unknownUsageCalls": 0,
+      "totalTokens": 28152,
+      "medianMs": 26570.0,
+      "latencyN": 4,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.014502876,
+      "reportedEstimateUSD": 0.014502876,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ]
+    },
+    {
+      "stage": "continuous",
+      "arm": "candidate",
+      "config": "flash-low",
+      "graphVersion": "python-graph-v15",
+      "n": 3,
+      "mechanicalCompleted": 3,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 7,
+      "modelRequests": 7,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 44308,
+      "unknownUsageCalls": 0,
+      "totalTokens": 44308,
+      "medianMs": 31971,
+      "latencyN": 3,
+      "toolRequests": 1,
+      "toolAttempts": 1,
+      "toolOk": 1,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 1,
+      "repairRequests": 1,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.015500969999999996,
+      "reportedEstimateUSD": 0.015500969999999996,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      ]
+    },
+    {
+      "stage": "final",
+      "arm": "baseline",
+      "config": "flash-low",
+      "graphVersion": "python-graph-v13",
+      "n": 4,
+      "mechanicalCompleted": 4,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 7,
+      "modelRequests": 7,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 33266,
+      "unknownUsageCalls": 0,
+      "totalTokens": 33266,
+      "medianMs": 19513.5,
+      "latencyN": 4,
+      "toolRequests": 1,
+      "toolAttempts": 1,
+      "toolOk": 1,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.012534018,
+      "reportedEstimateUSD": 0.012534018,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ]
+    },
+    {
+      "stage": "final",
+      "arm": "candidate",
+      "config": "flash-low",
+      "graphVersion": "python-graph-v14",
+      "n": 4,
+      "mechanicalCompleted": 4,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 7,
+      "modelRequests": 7,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 30346,
+      "unknownUsageCalls": 0,
+      "totalTokens": 30346,
+      "medianMs": 18323.5,
+      "latencyN": 4,
+      "toolRequests": 1,
+      "toolAttempts": 1,
+      "toolOk": 1,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.010683438,
+      "reportedEstimateUSD": 0.010683438,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ]
+    },
+    {
+      "stage": "hybrid",
+      "arm": "C",
+      "config": "flash-low",
+      "graphVersion": "python-graph-v14-candidate",
+      "n": 4,
+      "mechanicalCompleted": 4,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 4,
+      "modelRequests": 4,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 22378,
+      "unknownUsageCalls": 0,
+      "totalTokens": 22378,
+      "medianMs": 20836.5,
+      "latencyN": 4,
+      "toolRequests": 3,
+      "toolAttempts": 3,
+      "toolOk": 3,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 4,
+      "estimatedUSD": 0.010985231999999998,
+      "reportedEstimateUSD": 0.010985231999999998,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ]
+    },
+    {
+      "stage": "hybrid",
+      "arm": "baseline",
+      "config": "flash-low",
+      "graphVersion": "python-graph-v13",
+      "n": 4,
+      "mechanicalCompleted": 2,
+      "failed": 2,
+      "technicalFailures": 2,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 9,
+      "modelRequests": 9,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 40244,
+      "unknownUsageCalls": 0,
+      "totalTokens": 40244,
+      "medianMs": 24638.5,
+      "latencyN": 4,
+      "toolRequests": 4,
+      "toolAttempts": 4,
+      "toolOk": 4,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.013262802,
+      "reportedEstimateUSD": 0.013262802,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ]
+    },
+    {
+      "stage": "hybrid",
+      "arm": "hybrid",
+      "config": "flash-low",
+      "graphVersion": "python-graph-v14-candidate",
+      "n": 4,
+      "mechanicalCompleted": 4,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 8,
+      "modelRequests": 8,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 40873,
+      "unknownUsageCalls": 0,
+      "totalTokens": 40873,
+      "medianMs": 21642.0,
+      "latencyN": 4,
+      "toolRequests": 5,
+      "toolAttempts": 5,
+      "toolOk": 4,
+      "toolEmpty": 1,
+      "toolRejected": 0,
+      "repairs": 1,
+      "repairRequests": 1,
+      "quoteResolutions": 1,
+      "estimatedUSD": 0.012785603999999997,
+      "reportedEstimateUSD": 0.012785603999999997,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      ]
+    },
+    {
+      "stage": "rag",
+      "arm": "classic",
+      "config": "flash-low",
+      "graphVersion": "python-graph-v14-candidate",
+      "n": 2,
+      "mechanicalCompleted": 2,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 2,
+      "modelRequests": 2,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 12669,
+      "unknownUsageCalls": 0,
+      "totalTokens": 12669,
+      "medianMs": 26279.0,
+      "latencyN": 2,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.006586704,
+      "reportedEstimateUSD": 0.006586704,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ]
+    },
+    {
+      "stage": "rag",
+      "arm": "full",
+      "config": "flash-low",
+      "graphVersion": "python-graph-v14-candidate",
+      "n": 2,
+      "mechanicalCompleted": 0,
+      "failed": 2,
+      "technicalFailures": 1,
+      "validationFailed": 1,
+      "unfinished": 0,
+      "calls": 2,
+      "modelRequests": 2,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 18552,
+      "unknownUsageCalls": 0,
+      "totalTokens": 18552,
+      "medianMs": 34027.5,
+      "latencyN": 2,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.009797172,
+      "reportedEstimateUSD": 0.009797172,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ]
+    },
+    {
+      "stage": "rag",
+      "arm": "memory",
+      "config": "flash-low",
+      "graphVersion": "python-graph-v14-candidate",
+      "n": 2,
+      "mechanicalCompleted": 2,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 2,
+      "modelRequests": 2,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 5113,
+      "unknownUsageCalls": 0,
+      "totalTokens": 5113,
+      "medianMs": 12658.0,
+      "latencyN": 2,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.002506734,
+      "reportedEstimateUSD": 0.002506734,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ]
+    },
+    {
+      "stage": "rag-recovery",
+      "arm": "repair",
+      "config": "flash-off-8192",
+      "graphVersion": "python-graph-v14",
+      "n": 2,
+      "mechanicalCompleted": 2,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 2,
+      "modelRequests": 2,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 6960,
+      "unknownUsageCalls": 0,
+      "totalTokens": 6960,
+      "medianMs": 4643.0,
+      "latencyN": 2,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 2,
+      "repairRequests": 2,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.002072418,
+      "reportedEstimateUSD": 0.002072418,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      ]
+    },
+    {
+      "stage": "recovery",
+      "arm": "repair",
+      "config": "flash-off-8192",
+      "graphVersion": "python-graph-v14",
+      "n": 2,
+      "mechanicalCompleted": 1,
+      "failed": 1,
+      "technicalFailures": 0,
+      "validationFailed": 1,
+      "unfinished": 0,
+      "calls": 2,
+      "modelRequests": 2,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 5915,
+      "unknownUsageCalls": 0,
+      "totalTokens": 5915,
+      "medianMs": 4296.0,
+      "latencyN": 2,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 2,
+      "repairRequests": 2,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.0015383099999999998,
+      "reportedEstimateUSD": 0.0015383099999999998,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      ]
+    },
+    {
+      "stage": "release",
+      "arm": "candidate",
+      "config": "flash-low",
+      "graphVersion": "python-graph-v15",
+      "n": 2,
+      "mechanicalCompleted": 2,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 3,
+      "modelRequests": 3,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 10640,
+      "unknownUsageCalls": 0,
+      "totalTokens": 10640,
+      "medianMs": 14212.5,
+      "latencyN": 2,
+      "toolRequests": 2,
+      "toolAttempts": 2,
+      "toolOk": 2,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.004053642,
+      "reportedEstimateUSD": 0.004053642,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ]
+    },
+    {
+      "stage": "static",
+      "arm": "anchored",
+      "config": "flash-low",
+      "graphVersion": "python-graph-v14",
+      "n": 1,
+      "mechanicalCompleted": 1,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 1,
+      "modelRequests": 1,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 4227,
+      "unknownUsageCalls": 0,
+      "totalTokens": 4227,
+      "medianMs": 16723,
+      "latencyN": 1,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.002090136,
+      "reportedEstimateUSD": 0.002090136,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ]
+    },
+    {
+      "stage": "static",
+      "arm": "word_overlap",
+      "config": "flash-low",
+      "graphVersion": "python-graph-v14",
+      "n": 1,
+      "mechanicalCompleted": 1,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 1,
+      "modelRequests": 1,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 7760,
+      "unknownUsageCalls": 0,
+      "totalTokens": 7760,
+      "medianMs": 30791,
+      "latencyN": 1,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.004042818,
+      "reportedEstimateUSD": 0.004042818,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ]
+    },
+    {
+      "stage": "stress",
+      "arm": "C",
+      "config": "flash-low",
+      "graphVersion": "python-graph-v15",
+      "n": 1,
+      "mechanicalCompleted": 1,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 1,
+      "modelRequests": 1,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 6049,
+      "unknownUsageCalls": 0,
+      "totalTokens": 6049,
+      "medianMs": 25862,
+      "latencyN": 1,
+      "toolRequests": 1,
+      "toolAttempts": 1,
+      "toolOk": 1,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.0033248340000000005,
+      "reportedEstimateUSD": 0.0033248340000000005,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ]
+    },
+    {
+      "stage": "stress",
+      "arm": "D",
+      "config": "flash-low",
+      "graphVersion": "python-graph-v15",
+      "n": 1,
+      "mechanicalCompleted": 0,
+      "failed": 1,
+      "technicalFailures": 0,
+      "validationFailed": 1,
+      "unfinished": 0,
+      "calls": 4,
+      "modelRequests": 4,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 15955,
+      "unknownUsageCalls": 0,
+      "totalTokens": 15955,
+      "medianMs": 23698,
+      "latencyN": 1,
+      "toolRequests": 3,
+      "toolAttempts": 3,
+      "toolOk": 3,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 1,
+      "repairRequests": 1,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.0038388899999999998,
+      "reportedEstimateUSD": 0.0038388899999999998,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      ]
+    }
+  ],
+  "accounting": {
+    "calls": 78,
+    "reportedTokens": 410996,
+    "missingUsageCalls": 0,
+    "accountedTokens": 410996
+  },
+  "usage": {
+    "total_tokens": {
+      "reportedSum": 410996,
+      "unknownCalls": 0,
+      "total": 410996
+    },
+    "prompt_tokens": {
+      "reportedSum": 149578,
+      "unknownCalls": 0,
+      "total": 149578
+    },
+    "completion_tokens": {
+      "reportedSum": 261418,
+      "unknownCalls": 0,
+      "total": 261418
+    },
+    "prompt_cache_hit_tokens": {
+      "reportedSum": 67968,
+      "unknownCalls": 0,
+      "total": 67968
+    },
+    "prompt_cache_miss_tokens": {
+      "reportedSum": 81610,
+      "unknownCalls": 0,
+      "total": 81610
+    }
+  },
+  "cost": {
+    "currency": "USD",
+    "estimatedUSD": 0.1692962040000001,
+    "reportedEstimateUSD": 0.1692962040000001,
+    "unknownCalls": 0,
+    "priceTable": "evaluation/reports/autonomous-20261010/capabilities/price_table.json",
+    "priceTableSha256": "7f2ceb67ffc1a0f9c987657b1e185b25d263a2ddfffc3b3b9ad4c6bb8f9dd4a1",
+    "rule": "Monday-Friday UTC 01:00-04:00 and 06:00-10:00, excluding Chinese public holidays. Weekends are fully off-peak.",
+    "limitation": "Usage-based same-day off-peak list-price estimate, not an account bill; failure usage included; reasoning is already part of completion tokens."
+  },
+  "ledger": {
+    "recorded": {
+      "calls": 78,
+      "reportedTokens": 410996,
+      "accountedTokens": 410996,
+      "missingUsageCalls": 0,
+      "maxCalls": 90,
+      "maxTokens": 700000
+    },
+    "comparisons": {
+      "calls": {
+        "recorded": 78,
+        "recomputed": 78,
+        "match": true
+      },
+      "reportedTokens": {
+        "recorded": 410996,
+        "recomputed": 410996,
+        "match": true
+      },
+      "missingUsageCalls": {
+        "recorded": 0,
+        "recomputed": 0,
+        "match": true
+      },
+      "accountedTokens": {
+        "recorded": 410996,
+        "recomputed": 410996,
+        "match": true
+      }
+    },
+    "consistent": true
+  },
+  "labelAudit": {
+    "requestsChecked": 78,
+    "passed": true,
+    "violations": [],
+    "limitation": "Checks evaluation-only field names and distinctive exact label spans. This is not a proof against conceptual leakage or coincidental matching."
+  },
+  "errata": [
+    {
+      "trace": "context/confirmation-complex-core.jsonl",
+      "callId": 1,
+      "rawStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2"
+    },
+    {
+      "trace": "context/confirmation-complex-grouped.jsonl",
+      "callId": 1,
+      "rawStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2"
+    },
+    {
+      "trace": "context/confirmation-complex-roles.jsonl",
+      "callId": 1,
+      "rawStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2"
+    },
+    {
+      "trace": "context/dev-lunch-core.jsonl",
+      "callId": 1,
+      "rawStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2"
+    },
+    {
+      "trace": "context/dev-lunch-grouped.jsonl",
+      "callId": 1,
+      "rawStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2"
+    },
+    {
+      "trace": "context/dev-lunch-roles.jsonl",
+      "callId": 1,
+      "rawStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2"
+    },
+    {
+      "trace": "context/dev-project-core.jsonl",
+      "callId": 1,
+      "rawStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2"
+    },
+    {
+      "trace": "context/dev-project-correction-core.jsonl",
+      "callId": 1,
+      "rawStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2"
+    },
+    {
+      "trace": "context/dev-project-correction-grouped.jsonl",
+      "callId": 1,
+      "rawStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2"
+    },
+    {
+      "trace": "context/dev-project-correction-roles.jsonl",
+      "callId": 1,
+      "rawStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2"
+    },
+    {
+      "trace": "context/dev-project-grouped.jsonl",
+      "callId": 1,
+      "rawStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2"
+    },
+    {
+      "trace": "context/dev-project-roles.jsonl",
+      "callId": 1,
+      "rawStage": "repair",
+      "effectiveStage": "generate",
+      "erratum": "context single-generation experiment: legacy recorder inferred repair from messages length > 2"
+    }
+  ],
+  "unresolvedRequests": 0,
+  "rowsNotYetSaved": [],
+  "rawTraces": {
+    "context/confirmation-complex-baseline.jsonl": "987d7b996d75c5a64ddeedf445a7affc4ae4db9f80633db707b19bb53aa9d95d",
+    "context/confirmation-complex-core.jsonl": "16ad976f8bbab15691c5d9b6c6121d432de0ebe4f5f09f0c319291c970dcf382",
+    "context/confirmation-complex-grouped.jsonl": "1a54ee70ff158187e0ddb2f53e9cd05217dec7b10bfb8ce2f5049307425542eb",
+    "context/confirmation-complex-roles.jsonl": "6c72c537736880b582cdb8c89333f169a3d632367418f8f60378d9758c05b708",
+    "context/dev-lunch-baseline.jsonl": "022fee65344e59bbd0ecfc24db20622c78a2b831c63c4a86f6a602a4b5ea1d04",
+    "context/dev-lunch-core.jsonl": "249588883f950213df688726f183f342d2deb4e0fb0c8c5d013e4e8bcdbbc3e9",
+    "context/dev-lunch-grouped.jsonl": "d8cf85b7a63eb4163d887752c61f38d500212038bca6263a6cfa77a6eae7c0c4",
+    "context/dev-lunch-roles.jsonl": "865dd7077034c5102490eec05c29339738ff81370ff8b01777eaa18a7bec1231",
+    "context/dev-project-baseline.jsonl": "1a66ba6cc5531fe269767d8e77b6a4a490d7630e872e8193950dc8d59a1451e2",
+    "context/dev-project-core.jsonl": "ccaed2d4ae287ee763d303acdb41c114c05caafdb031b31bac61aa76f1a5332a",
+    "context/dev-project-correction-baseline.jsonl": "ccb5aaf68abbb1484d796bfab8cbe65016e8e1c15e1e3acff30bdfa5d4e4e7ee",
+    "context/dev-project-correction-core.jsonl": "eab0ddd8f6cf7ca9552c2bba0a11d81aee39e858b749bc6eef62991177d7d425",
+    "context/dev-project-correction-grouped.jsonl": "e8547eeb907477de1b2c83c3ed8a81167d4d4a9231d56404990b0d72a35c4570",
+    "context/dev-project-correction-roles.jsonl": "1164790224b6dbfb7dd17c12648037ca04bf604b3626fcb32b560cda4b5994e4",
+    "context/dev-project-grouped.jsonl": "b45ad71c59070dbaac14e1bc4bddeaa3fca14b6059e0eec5367bb2ffafa919de",
+    "context/dev-project-roles.jsonl": "4f91bd2f4e2b2f2d832530225eb9eac14d7e564586309cc3e4675970833ac545",
+    "continuous/continuous-1-candidate.jsonl": "2c6abfd057122fa132de4fbeb28e5b0153bab8cad1c20329f875fa3b284a3d58",
+    "continuous/continuous-2-candidate.jsonl": "5d51f42462e1c56330a9fbc39ef11c3a13b8986281fd62e3585629948e3f671d",
+    "continuous/continuous-3-candidate.jsonl": "8b99aa70e09992cd67f05ad4d941e5e779f88640f338b7d899d6cfc8fa0ddbc5",
+    "final/semantic-holdout-correction-baseline.jsonl": "ca0bf6f146f60db5c6dfa3ea94c2c9e980ccae076cdf0463d954656f6f4bcca0",
+    "final/semantic-holdout-correction-candidate.jsonl": "a02ac987a3bc86aa320dff978c91401d6d9c5abbd50c5f6a5cb968c4de8cf99c",
+    "final/semantic-holdout-daily-baseline.jsonl": "ec470e369fb765745527f7205e52ac140a5336df75ba54d3c788534052ee3943",
+    "final/semantic-holdout-daily-candidate.jsonl": "6f9ed029acda1d72fe969b06c94337f6a146d41598e1dd89f6273ab92a911c8d",
+    "final/semantic-holdout-meaning-baseline.jsonl": "3c260392408b985ac0369856e96ff987e162752e982b917e72f82eb095ea99e8",
+    "final/semantic-holdout-meaning-candidate.jsonl": "e406d096a21cb42387d09d468b4a73636e15b092dfd2f5bf4c368436cd300f71",
+    "final/semantic-holdout-role-baseline.jsonl": "63978fb5f90a8c64a0e5882f12acfb09df1d58668612621cb9b03cfce4bcfd41",
+    "final/semantic-holdout-role-candidate.jsonl": "303dc4d69d4a05e965d694ba20afa754a829b354ba8a96ce8523f2845b331e5c",
+    "hybrid/dev-project-correction-C.jsonl": "b2c3deec32355effc6262710b6e8642d7fbbf46abc4b5633eb6606465153c8d4",
+    "hybrid/dev-project-correction-baseline.jsonl": "cce94f6946045d0c1686bba1f7ec245d0ec62480613c40809a0d8eba4d2dc3ba",
+    "hybrid/dev-project-correction-hybrid.jsonl": "3c813c98bb98f5a17943353af4b24a87c45750d1f979ada8c7a66010ae854c74",
+    "hybrid/semantic-fuzzy-C.jsonl": "ea5bcbd29f3e2f2e9dc7e47de0e4a63f0d5336ee367f2ec83700ee3ee40a05b4",
+    "hybrid/semantic-fuzzy-baseline.jsonl": "4bcd43c603211a1abf61688440bc89c356dea8d87f42fcfe05190a29acaa781e",
+    "hybrid/semantic-fuzzy-hybrid.jsonl": "db0c59436b56ed8663a92f27c81d33ce592d03b754973e0f2019bc3979261d1c",
+    "hybrid/semantic-literal-C.jsonl": "0b42a1d055b5a99e7307e64628f688706c7f38ba0aac709651fdee8e7b2d2360",
+    "hybrid/semantic-literal-baseline.jsonl": "cc5e5fe245e783f1997aa9c350f360b75dc72a017436374e54933680b1232e51",
+    "hybrid/semantic-literal-hybrid.jsonl": "13d803aec7e9b66831a6b3d83d74e7410149e026502b381a8d096bc577021237",
+    "hybrid/semantic-responsibility-C.jsonl": "9871ed327019fbd2a86c00212a199c74842794e8e17afb4a992f54dda067e86e",
+    "hybrid/semantic-responsibility-baseline.jsonl": "991d4d055fd657f140181d867fc9672e6598c543f77f3c8680cbd7b72b6ff07f",
+    "hybrid/semantic-responsibility-hybrid.jsonl": "b51a49e774dcff0a175bd32cbcea6a45b04fd055aba7d600340859fc0f57a903",
+    "rag/rag-mentoring-classic.jsonl": "53513c33fd0f41448307c6cd6cadfed9bd86aa1e2f48e015ef897d11a7967e00",
+    "rag/rag-mentoring-full.jsonl": "1f75965173e84ed2763e59cd76813142228cb7c66e2671b947f0d1409ae588ef",
+    "rag/rag-mentoring-memory.jsonl": "e5de70244122bd5e0f8c05c8a0d9ee4cfeb3fd1d4c6561866c582407ef78737b",
+    "rag/rag-thanks-classic.jsonl": "fe5bee0b98a5f39a6fd57ae658873a02eed9303cf127afec0b342d0e2211cd4a",
+    "rag/rag-thanks-full.jsonl": "f23317c20eae8554f92e7d817c98e762d60c89aa3db6d843703aa8a77c060b11",
+    "rag/rag-thanks-memory.jsonl": "863519c85d32a6c7fb5f0c1fc30bdd13ced7944314470994a99efb6ddcde1732",
+    "rag-recovery/rag-mentoring-repair.jsonl": "ea3a8a73a6b64e0a3b8bc7c7fbdc25f7bc9213bcca7f5255e59147d8153ace22",
+    "rag-recovery/rag-thanks-repair.jsonl": "15c03c60832c2148b4abcd71e11f09e57dda3beb7c61dc585ca41a4e5201b16f",
+    "recovery/dev-project-repair.jsonl": "037ffd5e00c7d0a22dea947156aedc3b7e768f634a8a4bf5318ffe41a8d3d924",
+    "recovery/semantic-literal-repair.jsonl": "bcd2b0620e2651b7ef65fca24e5ff77be69a20cbd473cbbb63e92d51d02c8a2b",
+    "release/release-literal-candidate.jsonl": "b2f78c7102c0bad60a996d5ac4ad7d5530b5eb4804ca6e8abc3bd9618ad5a54a",
+    "release/release-topic-candidate.jsonl": "1a6a4e750e93d48eaa9e2b54eb3476101bfcce2d8bb7e28b9e3ae803fe5f6fc9",
+    "static/static-word-overlap-anchored.jsonl": "08702f52af5fe8c79ce2832465f90996951d03dbb4bfc41efa6115d8ae4567d9",
+    "static/static-word-overlap-word_overlap.jsonl": "92e5e92a9d123ac06e6ea77c2afe02e45f88826f1348ef0d5d00b8104edcbaa4",
+    "stress/paraphrase-stress-2-C.jsonl": "672cb7f58fb16655ba7db2cb82f63f0e83710ee1f3359fc95c11936ad450c426",
+    "stress/paraphrase-stress-2-D.jsonl": "f0e126294eb4ba238dd078377141f9057292066887f5c76537e48b494aa0f7cf"
+  },
+  "caveats": [
+    "Mechanical completion does not establish semantic quality.",
+    "Stages, arms, configurations and graph versions remain separate.",
+    "Unknown usage totals and costs remain null; reported sums are lower bounds when unknown calls exist.",
+    "Ledger mismatches can occur while an experiment is still writing; recompute after completion.",
+    "Unknown dispatch is reported separately and is never counted as zero-cost success."
+  ]
+}

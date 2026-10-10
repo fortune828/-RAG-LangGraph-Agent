@@ -1,0 +1,79 @@
+{
+  "scope": "Final engineering checks; v16 attribution fix is validated offline, not a new live generation batch.",
+  "graphVersion": "python-graph-v16",
+  "promptVersion": "evidence-agent-python-v16",
+  "releaseId": "knowledge-v3-20260926-r1",
+  "basisCommit": "f277be7f880c368cd549e0f956555be982975a34",
+  "checks": [
+    {
+      "command": ".venv/bin/python -m pytest -q tests_python",
+      "exitCode": 0,
+      "durationSeconds": 19.65,
+      "log": "verification-python.txt",
+      "testsPassed": 287
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "durationSeconds": 2.48,
+      "log": "verification-typescript.txt",
+      "testsPassed": 41
+    },
+    {
+      "command": "npm run lint",
+      "exitCode": 0,
+      "durationSeconds": 5.1,
+      "log": "verification-lint.txt"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "durationSeconds": 4.1,
+      "log": "verification-build.txt"
+    }
+  ],
+  "privacy": {
+    "scannedSyntheticReports": true,
+    "actualEnvSecretMatches": [],
+    "unredactedReasoningTraces": [],
+    "secretValuesChecked": 1,
+    "configurationFile": ".env.local (not included)"
+  },
+  "sourceSha256": {
+    "backend/__init__.py": "31035e9fa5d2ce31f46dba6f1b3492edf184befa6b9d447c506d6824c539f8f3",
+    "backend/citations.py": "8029e28ea4946ca8653be6b91157311fcbdcf0ce5b099c0843b7e5e45b11607a",
+    "backend/llm.py": "7f1ba810ca64291859446791230307d41d81c1860a17c03d0baf793769d50fd9",
+    "backend/app.py": "a88684e8202e88c690b64526e8daec32c136ebd719075faf48821722552f4aba",
+    "backend/knowledge.py": "b2e90b7994a2e394b90563f7585786b576eb7f433c0e6a3bc9c84b5d029f3ceb",
+    "backend/graph.py": "c67b9bd7bb9db711821e58a5bf2aa5b68a629686a3681b1455d34325b995a761",
+    "backend/__main__.py": "ac31e6560f567ee61fd9c6ff94d9596c0608557293f0c6cd6407f994970d672b",
+    "backend/validation.py": "cec0e7c257aeaeeaede4cd2210002bd3519c9f67120a3d6beb44f7a67536acea",
+    "backend/config.py": "35753bef9d7dc5b65c65e846e72b9610427afea8a9ad7011cab2df3c09cd8c5e",
+    "backend/store.py": "8e759718b5721ce4369d1f00c10ecf5a699503df075ca4bbd1920114ae49a465",
+    "backend/prompts.py": "4a4740e548773e8c011cbaee3e21a53196142bf11640669302d16c3478119207",
+    "backend/retrieval.py": "7552ccf60873a0e8d18c14b019e7d5588afb38dd6373674b9870c994d3ea88a7",
+    "backend/models.py": "ab0df5f73b2dbcefb79c75837f1efc6f94833a0ed44ebbd471d817414a284064",
+    "backend/evaluate.py": "50d16549eb4fe36076517b0ad09f492bdcfe67ca9522446fc1fe0a07d7b050c1",
+    "backend/domain.py": "01c1dcf5bde48957f5f7025f50f67acf967d9f7f8485fd2dec653bc923b2a265",
+    "evaluation/semantic.py": "ed498848394ec2af8ad1e0603f46def6957cff60ff171804230ecd0dcf9b6b92",
+    "evaluation/semantic_reports.py": "102b26227c05eb4865157b623955c76ce1810a0cf4e3bf1a0f38d96959920091",
+    "evaluation/paired.py": "769b1c93f407b8dffb5a7c5dc087dbf89aa842c8950156a24794b42cdf55a79f"
+  },
+  "diffCheckExitCode": 0,
+  "previousCheckFailure": {
+    "test": "test_graph_exact_tool_and_one_repair",
+    "reason": "v15 only automatically plans explicit 本卦/当前卦 requests; test still omitted that scope. Input updated to 本卦第二爻原文是什么？, retaining one-repair, evidence, cast and error-path assertions."
+  },
+  "liveVersions": "final=v14; release/continuous/stress=v15; no relabeling as v16.",
+  "runtimeConfiguration": {
+    "model": "deepseek-flash",
+    "thinking": "enabled",
+    "reasoning_effort": "low",
+    "max_tokens": 8192
+  },
+  "reportLineEndingCheck": {
+    "change": "CSV uses LF; reports/terminal captures normalized only at EOF. Raw JSONL unchanged.",
+    "test": "tests_python/test_semantic_reports.py",
+    "passed": 7
+  }
+}

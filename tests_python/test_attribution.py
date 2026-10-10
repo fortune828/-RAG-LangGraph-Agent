@@ -18,6 +18,16 @@ from backend.validation import AUTHORS, WORKS, asserted_names, requested_targets
     '不能断言王弼认为应当行动，但王弼强调应立刻辞职。',
     '无法预测王弼认为可以立即辞职。',
     '王弼认为目前无法判断、不能决定结果。',
+    '王弼说应当行动。',
+    '王弼說應當行動。',
+    '王弼的说法是应当行动。',
+    '王弼的说法为应当行动。',
+    '王弼的說法為應當行動。',
+    '王弼的说法即应当行动。',
+    '王弼的说法：应当行动。',
+    '王弼的说法:应当行动。',
+    '资料不足以核对王弼等说法，但王弼说应当行动。',
+    '无法确认王弼的说法是应当行动。王弼的说法是应当行动。',
 ])
 def test_positive_claim_still_requires_author_evidence(text):
     assert asserted_names(text, AUTHORS) == ['wang-bi']
@@ -33,6 +43,9 @@ def test_positive_claim_still_requires_author_evidence(text):
     '本库尚无王弼对该爻的解释。',
     '王弼的解释尚未收录。',
     '现有材料只包括朱熹，不能冒充王弼的观点。',
+    '若你记得的版本还包括二程、王弼等说法，本轮资料不足以核对。',
+    '尚未核对王弼的說法。',
+    '无法确认王弼的说法是应当行动。',
 ])
 def test_refusal_or_missing_material_is_not_a_positive_claim(text):
     assert asserted_names(text, AUTHORS) == []
@@ -76,6 +89,21 @@ def test_work_attribution_uses_the_same_local_rules():
     assert asserted_names('无法确认《周易正义》中认为应该行动。', WORKS) == []
     value = answer('资料不足，但《周易正义》指出应立刻行动。', e)
     assert 'WORK_ATTRIBUTION_MISMATCH:zhouyi-zhengyi' in validate_answer(value, [e])[1]
+
+
+def test_noun_sayings_does_not_exempt_nearby_positive_author_or_work_claims():
+    e = commentary('zhu-xi')
+    missing = '若你记得的版本还包括二程、王弼等说法，本轮资料不足以核对。'
+    assert validate_answer(answer(missing, status='insufficient'), [e])[0]
+    for positive in ('王弼说应当行动。', '王弼的说法是应当行动。'):
+        value = answer(missing + positive, e)
+        errors = validate_answer(value, [e])[1]
+        assert 'CLAIM_AUTHOR_ATTRIBUTION_MISMATCH:wang-bi' in errors
+        assert 'AUTHOR_ATTRIBUTION_MISMATCH:wang-bi' in errors
+    value = answer('本轮资料不足。《周易正义》的说法是应当行动。', e)
+    errors = validate_answer(value, [e])[1]
+    assert 'CLAIM_WORK_ATTRIBUTION_MISMATCH:zhouyi-zhengyi' in errors
+    assert 'WORK_ATTRIBUTION_MISMATCH:zhouyi-zhengyi' in errors
 
 
 async def test_wrong_attribution_is_repaired_into_honest_missing_answer():

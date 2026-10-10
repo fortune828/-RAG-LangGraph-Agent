@@ -3,15 +3,16 @@ import re
 
 from pydantic import ValidationError
 
+from .citations import locate_original_quote
 from .domain import HEXAGRAMS
 from .knowledge import normalize
-from .models import Answer
+from .models import Answer, Citation
 
 AUTHORS = {'wang-bi': ['王弼'], 'cheng-yi': ['程颐', '程頤', '伊川'], 'zhu-xi': ['朱熹'],
            'kong-yingda': ['孔颖达', '孔穎達'], 'han-kangbo': ['韩康伯', '韓康伯'], 'jiao-xun': ['焦循']}
 WORKS = {'zhouyi-zhengyi': ['周易正义', '周易正義'], 'yichuan-yizhuan': ['伊川易传', '伊川易傳'],
          'zhouyi-benyi': ['周易本义', '周易本義']}
-ATTRIBUTION_VERBS = r'认为|認為|强调|強調|指出|主张|主張|解释|解釋|说|說|曰|看来|看來|写道|寫道'
+ATTRIBUTION_VERBS = r'认为|認為|强调|強調|指出|主张|主張|解释|解釋|[说說]法\s*(?:是|为|為|即|[:：])|[说說](?!法)|曰|看来|看來|写道|寫道'
 # Negation must govern this attribution, not merely occur elsewhere in its sentence.
 ATTRIBUTION_REFUSAL = re.compile(
     r'(?:无法|無法|不能|不应|不應|不会|不會|不可|不宜|不代表|并非|並非|不是)'
@@ -99,7 +100,7 @@ def asserted_names(text, catalog):
     return result
 
 
-def validate_answer(value, evidence, targets=(), require_citations=True, *, issues=None):
+def validate_answer(value, evidence, targets=(), require_citations=True, *, issues=None, quote_resolutions=None):
     try:
         answer = Answer.model_validate(value).model_dump()
     except ValidationError as exc:
@@ -139,7 +140,24 @@ def validate_answer(value, evidence, targets=(), require_citations=True, *, issu
             if not e:
                 add('UNKNOWN_EVIDENCE:' + c['evidenceId'], path + ('evidenceId',))
             elif len(normalize(c['quote'])) < 2 or normalize(c['quote']) not in normalize(e['text']):
-                add('QUOTE_MISMATCH:' + c['evidenceId'], path + ('quote',))
+                located = locate_original_quote(e['text'], c['quote'])
+                if located is not None:
+                    try:
+                        # The source span can contain more punctuation than the
+                        # requested quote. It must still fit the public schema.
+                        Citation.model_validate(dict(c, quote=located['quote']))
+                    except ValidationError:
+                        located = None
+                if (located is not None and len(normalize(located['quote'])) >= 2
+                        and normalize(located['quote']) in normalize(e['text'])):
+                    requested = c['quote']
+                    c['quote'] = located['quote']
+                    if quote_resolutions is not None:
+                        quote_resolutions.append(dict(method='unique_source_span', path=list(path + ('quote',)),
+                            evidenceId=c['evidenceId'], requestedQuote=requested, sourceQuote=c['quote'],
+                            start=located['start'], end=located['end']))
+                else:
+                    add('QUOTE_MISMATCH:' + c['evidenceId'], path + ('quote',))
             if e:
                 for author in asserted_names(c['claim'], AUTHORS):
                     if author not in e.get('authorIds', []):

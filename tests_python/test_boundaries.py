@@ -80,10 +80,9 @@ async def test_retrieved_instructions_stay_in_tool_data(monkeypatch):
     async def model(messages, tools=None):
         nonlocal count
         count += 1
+        assert tools is None  # The explicit target was retrieved by the program.
         assert [m for m in messages if m['role'] == 'system'] == [
-            dict(role='system', content=ROUTER if tools else SYSTEM)]
-        if count == 1:
-            return response(calls=[call('get_passages', dict(hexagramId=1, sections=['line'], lineIndices=[2]))])
+            dict(role='system', content=SYSTEM)]
         assert not any(m['role'] == 'tool' for m in messages)
         evidence = json.loads(messages[1]['content'])['参考原文']
         poisoned = [e for e in evidence if injected in e['text']]
@@ -94,7 +93,7 @@ async def test_retrieved_instructions_stay_in_tool_data(monkeypatch):
     result = await build_graph(InMemorySaver(), model).ainvoke(
         initial_state(s, '本卦第二爻原文是什么？', 'followup'),
         {'configurable': {'thread_id': 'retrieval-injection'}})
-    assert count == 2  # Exact targets are satisfied without another ready request.
+    assert count == 1 and result['repairs'] == 0
     material = next(m for m in result['messages'] if m['role'] == 'tool')
     assert injected in json.loads(material['content'])['evidence'][0]['text']
     assert result['answer']['status'] == 'answered'
@@ -155,7 +154,7 @@ async def test_incompatible_checkpoint_preserves_history_and_allows_new_turn(tmp
     ('private-test-path/config INTERNAL_TEST_SECRET', 'AGENT_EXECUTION_FAILED'),
 ])
 async def test_corpus_failure_codes_are_clear_and_unknown_details_are_private(tmp_path, monkeypatch, error, expected):
-    def broken_evidence(*_args):
+    def broken_evidence(*_args, **_kwargs):
         raise ValueError(error)
 
     async def model(*_args, **_kwargs):

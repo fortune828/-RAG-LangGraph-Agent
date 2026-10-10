@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "split": "rag_development",
+  "createdAt": "2026-10-10",
+  "basisCommit": "f277be7f880c368cd549e0f956555be982975a34",
+  "knowledgeRelease": "knowledge-v3-20260926-r1",
+  "evidenceSha256": "4154d8c69d0fdf0e6eca3ff570f1c8a092528a6011099533b88f3863bf36ebd4",
+  "annotationOrigin": "AI checked against pinned local corpus; not expert or human gold",
+  "caseCount": 2,
+  "independentGroupCount": 2,
+  "fieldsAllowedInModelInput": [
+    "question",
+    "currentQuestion",
+    "mode",
+    "lineValues",
+    "history"
+  ],
+  "labelHandling": "semanticReference, reviewPoints, expectedEvidenceGroups, retrievalNecessity and initialEvidenceAudit are evaluation-only; do not pass them to models or routing policy.",
+  "cases": [
+    {
+      "caseId": "rag-thanks",
+      "groupId": "rag-thanks",
+      "question": "朋友帮我搬家忙了整整一天，我想好好感谢他，但这个月能拿出的预算不多。这次是坎卦六四动，“樽酒，簋贰，用缶，纳约自牖”怎么理解？它对我准备谢礼有什么启发？",
+      "currentQuestion": "朋友帮我搬家忙了整整一天，我想好好感谢他，但这个月能拿出的预算不多。这次是坎卦六四动，“樽酒，簋贰，用缶，纳约自牖”怎么理解？它对我准备谢礼有什么启发？",
+      "mode": "initial",
+      "lineValues": [
+        8,
+        7,
+        8,
+        6,
+        7,
+        8
+      ],
+      "history": [],
+      "category": "life_with_explicit_line",
+      "expectedEvidenceGroups": [
+        [
+          "zy-29-line-4"
+        ]
+      ],
+      "retrievalNecessity": "unnecessary",
+      "reviewPoints": [
+        "用户事实、传统含义、类比贴切、交流帮助分别评；注释更多不自动更好。"
+      ],
+      "semanticReference": {
+        "userFacts": [
+          "朋友帮搬家一整天。",
+          "用户想感谢，当前预算不多，没有金额或对方喜好信息。"
+        ],
+        "directSupport": [
+          {
+            "evidenceIds": [
+              "zy-29-line-4",
+              "zy-29-line_xiang-4"
+            ],
+            "claim": "爻辞列樽酒、簋贰、用缶、纳约自牖、终无咎；小象称刚柔际，没有现代谢礼规则。"
+          }
+        ],
+        "commentarySupport": [
+          {
+            "evidenceIds": [
+              "wang-bi@2404949:h29:line4:0fe747fe13"
+            ],
+            "claim": "王弼谈明信显著、不存外饰，并说一樽之酒、二簋之食、瓦缶之器也可用于礼仪；这是他解释的爻位关系及相接。"
+          },
+          {
+            "evidenceIds": [
+              "zhu-xi@528287:h29:line4:99879a18e8"
+            ],
+            "claim": "朱熹说但用薄礼益以诚心进结自牖，并记句读及牖为室受明处；不是现代人的固定送礼清单。"
+          }
+        ],
+        "modernAnalogy": [
+          "可借诚意与外在形式的关系，考虑实际承担得起、表达具体感谢的方式。",
+          "类比不能保证朋友接受任何选择；对方喜好与意愿仍有待了解。"
+        ],
+        "unsupportedInferences": [
+          "非送酒或两碗食物不可，否则违背爻辞。",
+          "礼越少必然越真诚，或朋友一定不在乎礼物。",
+          "终无咎保证谢礼绝不会引起误会。"
+        ],
+        "verbatimEvidence": [
+          {
+            "evidenceId": "zy-29-line-4",
+            "text": "樽酒，簋贰，用缶，纳约自牖，终无咎。",
+            "locator": "习坎·六四",
+            "layer": "classic",
+            "authorNames": [],
+            "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json"
+          },
+          {
+            "evidenceId": "zy-29-line_xiang-4",
+            "text": "“樽酒，簋贰”，刚柔际也。",
+            "locator": "习坎·六四小象",
+            "layer": "classic",
+            "authorNames": [],
+            "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json"
+          },
+          {
+            "evidenceId": "wang-bi@2404949:h29:line4:0fe747fe13",
+            "text": "處重險而履正，以柔居柔，履得其位，以承於五，五亦得位，剛柔各得其所，不相犯位，皆無餘應以相承比，明信顯著，不存外飾，處「坎」以斯，雖復一樽之酒，二簋之食，瓦缶之器，納此至約，自進於牖，乃可羞之於王公，薦之於宗廟，故「終無咎」也。",
+            "locator": "《周易正義》·习坎·第4爻注",
+            "layer": "commentary",
+            "authorNames": [
+              "王弼"
+            ],
+            "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/03%E5%9D%8E&oldid=2404949"
+          },
+          {
+            "evidenceId": "zhu-xi@528287:h29:line4:99879a18e8",
+            "text": "簋音軌缶俯九反○晁氏云先儒讀樽酒簋為一句貳用缶為一句今從之貳益之也周禮大祭三貳弟子職左執虛豆右執挾匕周旋而貳是也九五尊位六四近之在險之時剛柔相際故有但用薄禮益以誠心進結自牖之象牖非所由之正而室之所以受明也始雖艱阻終得无咎故其占如此",
+            "locator": "《周易本義》·习坎·第4爻注",
+            "layer": "commentary",
+            "authorNames": [
+              "朱熹"
+            ],
+            "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287"
+          }
+        ]
+      },
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "empty_fixed_fixture",
+      "annotationOrigin": "AI checked against pinned local corpus; not expert or human gold",
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v14-candidate",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 29,
+        "changedHexagram": 47,
+        "intent": "explanation_followup",
+        "allowedHexagramIds": [
+          29,
+          47
+        ],
+        "initialEvidenceIds": [
+          "zy-29-judgment",
+          "zy-29-tuan",
+          "zy-29-xiang",
+          "zy-29-line-4",
+          "zy-29-line_xiang-4",
+          "zy-47-judgment",
+          "zy-47-xiang",
+          "zhu-xi@528287:h29:line4:99879a18e8",
+          "wang-bi@2404949:h29:line4:0fe747fe13"
+        ],
+        "requiredTargets": [
+          {
+            "hexagramId": 29,
+            "section": "line",
+            "line": 4,
+            "layer": "classic"
+          }
+        ],
+        "retrievableMissingTargets": [],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [
+          true
+        ],
+        "droppedEvidenceIds": []
+      }
+    },
+    {
+      "caseId": "rag-mentoring",
+      "groupId": "rag-mentoring",
+      "question": "有个新人连续两次把已经讲过的步骤做错。我担心过于宽松会让他学不会，又怕自己盯得太细。这次是蒙卦上九动，“击蒙，不利为寇，利御寇”对带人有什么启发？",
+      "currentQuestion": "有个新人连续两次把已经讲过的步骤做错。我担心过于宽松会让他学不会，又怕自己盯得太细。这次是蒙卦上九动，“击蒙，不利为寇，利御寇”对带人有什么启发？",
+      "mode": "initial",
+      "lineValues": [
+        8,
+        7,
+        8,
+        8,
+        8,
+        9
+      ],
+      "history": [],
+      "category": "life_with_explicit_line",
+      "expectedEvidenceGroups": [
+        [
+          "zy-4-line-6"
+        ]
+      ],
+      "retrievalNecessity": "unnecessary",
+      "reviewPoints": [
+        "用户事实、传统含义、类比贴切、交流帮助分别评；注释更多不自动更好。"
+      ],
+      "semanticReference": {
+        "userFacts": [
+          "新人两次把已讲步骤做错。",
+          "用户担忧宽松与盯太细两端，未说明失误后果、培训方式或新人意图。"
+        ],
+        "directSupport": [
+          {
+            "evidenceIds": [
+              "zy-4-line-6",
+              "zy-4-line_xiang-6"
+            ],
+            "claim": "爻辞同时说击蒙、不利为寇、利御寇；小象说利御寇，上下顺也，不能只取击字支持严罚。"
+          }
+        ],
+        "commentarySupport": [
+          {
+            "evidenceIds": [
+              "wang-bi@2404940:h4:line6:2f60846301"
+            ],
+            "claim": "王弼解释击去童蒙以发其昧，区别为之捍御则附与欲取之则叛，不能缩成主管发威。"
+          },
+          {
+            "evidenceIds": [
+              "zhu-xi@528287:h4:line6:af7dea8351"
+            ],
+            "claim": "朱熹说治蒙过刚、攻治太深反为害；捍其外诱以全其真纯时，虽过于严密才为得宜。这是条件性边界，不是越严越好。"
+          }
+        ],
+        "modernAnalogy": [
+          "可思考培训是在排除误解和提供防错条件，还是以控制替代理解，这是工作类比。",
+          "询问错误原因、让新人复述关键步骤或约定必要检查均可作为选项，不能预设措施必然奏效。"
+        ],
+        "unsupportedInferences": [
+          "击蒙意味着可以羞辱或严罚新人。",
+          "重复出错证明故意不听或懒惰。",
+          "所问爻允许严格，所以用户现在所有监管手段都正当。"
+        ],
+        "verbatimEvidence": [
+          {
+            "evidenceId": "zy-4-line-6",
+            "text": "击蒙；不利为寇，利御寇。",
+            "locator": "蒙·上九",
+            "layer": "classic",
+            "authorNames": [],
+            "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json"
+          },
+          {
+            "evidenceId": "zy-4-line_xiang-6",
+            "text": "“利”用“御寇”，上下顺也。",
+            "locator": "蒙·上九小象",
+            "layer": "classic",
+            "authorNames": [],
+            "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json"
+          },
+          {
+            "evidenceId": "wang-bi@2404940:h4:line6:2f60846301",
+            "text": "處蒙之終，以剛居上，能擊去童蒙，以發其昧者也，故曰「擊蒙」也。童蒙願發而已能擊去之，合上下之願，故莫不順也。為之捍禦，則物咸附之。若欲取之，則物咸叛矣，故「不利為寇，利禦寇」也。",
+            "locator": "《周易正義》·蒙·第6爻注",
+            "layer": "commentary",
+            "authorNames": [
+              "王弼"
+            ],
+            "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/01%E8%92%99&oldid=2404940"
+          },
+          {
+            "evidenceId": "zhu-xi@528287:h4:line6:af7dea8351",
+            "text": "以剛居上治䝉過剛故為擊䝉之象然取必太過攻治太深則必反為之害惟捍其外誘以全其真純則雖過於嚴密乃為得宜故戒占者如此凡事皆然不止為誨人也",
+            "locator": "《周易本義》·蒙·第6爻注",
+            "layer": "commentary",
+            "authorNames": [
+              "朱熹"
+            ],
+            "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287"
+          }
+        ]
+      },
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "empty_fixed_fixture",
+      "annotationOrigin": "AI checked against pinned local corpus; not expert or human gold",
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v14-candidate",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 4,
+        "changedHexagram": 7,
+        "intent": "explanation_followup",
+        "allowedHexagramIds": [
+          4,
+          7
+        ],
+        "initialEvidenceIds": [
+          "zy-4-judgment",
+          "zy-4-tuan",
+          "zy-4-xiang",
+          "zy-4-line-6",
+          "zy-4-line_xiang-6",
+          "zy-7-judgment",
+          "zy-7-xiang",
+          "wang-bi@2404940:h4:line6:2f60846301",
+          "zhu-xi@528287:h4:line6:af7dea8351"
+        ],
+        "requiredTargets": [
+          {
+            "hexagramId": 4,
+            "section": "line",
+            "line": 6,
+            "layer": "classic"
+          }
+        ],
+        "retrievableMissingTargets": [],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [
+          true
+        ],
+        "droppedEvidenceIds": []
+      }
+    }
+  ]
+}

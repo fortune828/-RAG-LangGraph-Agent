@@ -1,0 +1,623 @@
+{
+  "schemaVersion": 1,
+  "split": "development",
+  "createdAt": "2026-10-10",
+  "knowledgeRelease": "knowledge-v3-20260926-r1",
+  "evidenceSha256": "4154d8c69d0fdf0e6eca3ff570f1c8a092528a6011099533b88f3863bf36ebd4",
+  "annotationOrigin": "AI checked against pinned local corpus; not expert or human gold",
+  "caseCount": 6,
+  "independentGroupCount": 6,
+  "fieldsAllowedInModelInput": [
+    "question",
+    "currentQuestion",
+    "mode",
+    "lineValues",
+    "history"
+  ],
+  "labelHandling": "semanticReference, expectedEvidenceGroups, reviewPoints, retrievalNecessity, sourceFixture and initialEvidenceAudit are evaluation reference/labels and must never be included in model messages or rule-policy input.",
+  "cases": [
+    {
+      "caseId": "semantic-lunch",
+      "groupId": "semantic-lunch",
+      "question": "我今天中午只有半小时，附近有番茄鸡蛋面和鸡肉饭，吃哪个比较好？",
+      "currentQuestion": "我今天中午只有半小时，附近有番茄鸡蛋面和鸡肉饭，吃哪个比较好？",
+      "mode": "initial",
+      "lineValues": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        6
+      ],
+      "history": [],
+      "category": "daily_small",
+      "expectedEvidenceGroups": [
+        [
+          "zy-43-tuan"
+        ]
+      ],
+      "retrievalNecessity": "unnecessary",
+      "reviewPoints": [
+        "回应现成两个选项与半小时条件。",
+        "夬的决断意涵可轻度参与；不得由上六凶辞推断食物或现实危险。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI checked against pinned local corpus; not expert or human gold",
+      "sourceFixture": "dev-lunch",
+      "semanticReference": {
+        "userFacts": [
+          "只有半小时吃午饭。",
+          "附近明确有番茄鸡蛋面和鸡肉饭两个选项。"
+        ],
+        "directSupport": [
+          {
+            "evidenceIds": [
+              "zy-43-tuan"
+            ],
+            "claim": "彖传直接释夬为决，并有决而和的措辞。"
+          },
+          {
+            "evidenceIds": [
+              "zy-43-line-6",
+              "zy-43-line_xiang-6"
+            ],
+            "claim": "上六文本包含终有凶与终不可长；其中没有饮食、取餐或午休的具体所指。"
+          }
+        ],
+        "commentarySupport": [],
+        "modernAnalogy": [
+          "可借决断视角帮助选餐；菜品建议来自用户提供的选项和现实判断。",
+          "决定何种餐更方便需要就近条件、出餐速度等；未知时只能提出选择或条件，不能伪称已知。"
+        ],
+        "unsupportedInferences": [
+          "夬卦指定某一道菜，或者上六凶意味着午饭危险。",
+          "以居德则忌解释忌口、过敏或胃口。",
+          "以变卦乾保证饭后精力、要求散步。"
+        ]
+      },
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v13",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 43,
+        "changedHexagram": 1,
+        "intent": "explanation_followup",
+        "allowedHexagramIds": [
+          1,
+          43
+        ],
+        "initialEvidenceIds": [
+          "zy-43-judgment",
+          "zy-43-tuan",
+          "zy-43-xiang",
+          "zy-43-line-6",
+          "zy-43-line_xiang-6",
+          "zy-1-judgment",
+          "zy-1-xiang"
+        ],
+        "requiredTargets": [],
+        "retrievableMissingTargets": [],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [
+          true
+        ],
+        "droppedEvidenceIds": []
+      }
+    },
+    {
+      "caseId": "semantic-project",
+      "groupId": "semantic-project",
+      "question": "我的项目已经能演示，简历也写好了。离投递还有一周，我是继续加功能还是把现有功能测试扎实？",
+      "currentQuestion": "我的项目已经能演示，简历也写好了。离投递还有一周，我是继续加功能还是把现有功能测试扎实？",
+      "mode": "initial",
+      "lineValues": [
+        7,
+        9,
+        7,
+        7,
+        7,
+        7
+      ],
+      "history": [],
+      "category": "complex_tradeoff",
+      "expectedEvidenceGroups": [
+        [
+          "zy-1-line-2",
+          "zy-1-tuan",
+          "zy-1-xiang"
+        ]
+      ],
+      "retrievalNecessity": "unnecessary",
+      "reviewPoints": [
+        "分析已有可演示成果、投递期限和新增功能/测试投入的取舍。",
+        "九二与注家对见龙、利见大人的解释可提供联系现实的视角，但不能由此断定面试官或他人意图、保证获得录用。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI checked against pinned local corpus; not expert or human gold",
+      "sourceFixture": "dev-project",
+      "semanticReference": {
+        "userFacts": [
+          "项目已能演示，简历已写好。",
+          "离投递还有一周。",
+          "正在权衡新增功能与测试现有功能。"
+        ],
+        "directSupport": [
+          {
+            "evidenceIds": [
+              "zy-1-line-2",
+              "zy-1-line_xiang-2"
+            ],
+            "claim": "九二是见龙在田，利见大人；小象解释为德施普。"
+          },
+          {
+            "evidenceIds": [
+              "zy-13-judgment",
+              "zy-13-xiang"
+            ],
+            "claim": "变卦材料包含同人于野、利君子贞及类族辨物。"
+          }
+        ],
+        "commentarySupport": [
+          {
+            "evidenceIds": [
+              "wang-bi@2676007:h1:line2:156a776063"
+            ],
+            "claim": "王弼以出潜离隐解释见龙，并强调居中不偏、虽非君位而有君德。"
+          },
+          {
+            "evidenceIds": [
+              "cheng-yi@1313743:h1:line2:1ac147277e"
+            ],
+            "claim": "程颐讨论大德之君、大德之臣及天下利见大德之人；这是注家的君臣与德泽解释。"
+          },
+          {
+            "evidenceIds": [
+              "zhu-xi@528287:h1:line2:9c12de10ea"
+            ],
+            "claim": "朱熹区分九二所象的大人和占者，明确说常人不足以当之；不能自动把用户认作此龙或大人。"
+          }
+        ],
+        "modernAnalogy": [
+          "展示已完成成果、寻求有经验者反馈可作为现代思考视角。",
+          "将准备时间分给测试还是新功能，是根据期限、可演示成果及功能实际价值作出的现实取舍。"
+        ],
+        "unsupportedInferences": [
+          "大人的字面意思就是面试官，或同人于野就是面试现场。",
+          "凡问项目者就已具有见龙之德，必然处于对应人生阶段。",
+          "加功能等于把龙按回水里，或面试官一定能看出问题。",
+          "用户还没拿到职位、用户缺乏信心、未来一定露怯。"
+        ]
+      },
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v13",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 1,
+        "changedHexagram": 13,
+        "intent": "explanation_followup",
+        "allowedHexagramIds": [
+          1,
+          13
+        ],
+        "initialEvidenceIds": [
+          "zy-1-judgment",
+          "zy-1-tuan",
+          "zy-1-xiang",
+          "zy-1-line-2",
+          "zy-1-line_xiang-2",
+          "zy-13-judgment",
+          "zy-13-xiang",
+          "wang-bi@2676007:h1:line2:156a776063",
+          "cheng-yi@1313743:h1:line2:1ac147277e",
+          "zhu-xi@528287:h1:line2:9c12de10ea"
+        ],
+        "requiredTargets": [],
+        "retrievableMissingTargets": [],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [
+          true
+        ],
+        "droppedEvidenceIds": []
+      }
+    },
+    {
+      "caseId": "semantic-responsibility",
+      "groupId": "semantic-responsibility",
+      "question": "搭档连续两次晚交小组作业中他负责的部分，最后都要我赶着合并。怎么跟他谈这件事？",
+      "currentQuestion": "我刚核对了记录，两次都是我把基础数据给晚了，他后面其实一直在赶。我之前只注意到最后交稿的时间。现在怎么开口比较好？",
+      "mode": "followup",
+      "lineValues": [
+        8,
+        7,
+        7,
+        7,
+        8,
+        8
+      ],
+      "history": [
+        {
+          "user": "搭档连续两次晚交小组作业中他负责的部分，最后都要我赶着合并。怎么跟他谈这件事？",
+          "assistant": "他可能习惯了让你兜底。你可以明确告诉他，下次再晚交就由他自己承担后果。"
+        }
+      ],
+      "category": "same_topic_correction",
+      "expectedEvidenceGroups": [],
+      "retrievalNecessity": "unnecessary",
+      "reviewPoints": [
+        "接受用户发现的上游延迟事实，修正之前对搭档习惯甩责的无据推测。",
+        "帮助用户说明核对结果和调整协作安排，不继续重复追责搭档的旧建议。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI checked against pinned local corpus; not expert or human gold",
+      "sourceFixture": "confirmation-correction",
+      "semanticReference": {
+        "userFacts": [
+          "原先只注意搭档最后交稿时间，两次都晚交。",
+          "用户已核对：两次都是自己先把基础数据给晚，搭档后面一直在赶。",
+          "此前习惯让你兜底是助手猜测，用户的新事实不支持这一归因。"
+        ],
+        "directSupport": [
+          {
+            "evidenceIds": [
+              "zy-32-judgment",
+              "zy-32-tuan",
+              "zy-32-xiang"
+            ],
+            "claim": "恒的材料含久于其道、利贞、终则有始和立不易方；不是证明某人性格一贯如何的行为证据。"
+          }
+        ],
+        "commentarySupport": [],
+        "modernAnalogy": [
+          "可用持续协作与稳定安排的视角，讨论承认数据延迟、说明误会、调整交接。",
+          "修正归因主要由用户的记录支持，不需要从恒卦重新推断责任。"
+        ],
+        "unsupportedInferences": [
+          "继续认为搭档不负责任、故意让用户兜底。",
+          "把无动爻解释为协作关系现实上不会变化。",
+          "把古文中的恒德直接诊断为用户或搭档的人格。"
+        ]
+      },
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v13",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 32,
+        "changedHexagram": 32,
+        "intent": "situation_followup",
+        "allowedHexagramIds": [
+          32
+        ],
+        "initialEvidenceIds": [
+          "zy-32-judgment",
+          "zy-32-xiang",
+          "zy-32-tuan"
+        ],
+        "requiredTargets": [],
+        "retrievableMissingTargets": [],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [],
+        "droppedEvidenceIds": []
+      }
+    },
+    {
+      "caseId": "semantic-wedding",
+      "groupId": "semantic-wedding",
+      "question": "我和伴侣本来想办小婚礼，双方父母提出加到二十桌，费用他们愿意出，但希望流程听他们安排。我们担心婚礼失去自己的意思，又不想让父母难堪，怎么商量？",
+      "currentQuestion": "我和伴侣本来想办小婚礼，双方父母提出加到二十桌，费用他们愿意出，但希望流程听他们安排。我们担心婚礼失去自己的意思，又不想让父母难堪，怎么商量？",
+      "mode": "initial",
+      "lineValues": [
+        7,
+        7,
+        8,
+        7,
+        8,
+        7
+      ],
+      "history": [],
+      "category": "complex_tradeoff",
+      "expectedEvidenceGroups": [
+        [
+          "zy-38-judgment",
+          "zy-38-tuan",
+          "zy-38-xiang"
+        ]
+      ],
+      "retrievalNecessity": "unnecessary",
+      "reviewPoints": [
+        "讨论费用支持、流程决定权、双方意愿及父母感受的具体取舍。",
+        "不能将父母愿意出钱直接判定为操控动机，或把卦象差异说成感情必然破裂。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI checked against pinned local corpus; not expert or human gold",
+      "sourceFixture": "confirmation-complex",
+      "semanticReference": {
+        "userFacts": [
+          "用户和伴侣原本想办小婚礼。",
+          "双方父母提议二十桌并愿意出钱，但希望流程按他们安排。",
+          "用户担心失去自己的意思，又不想父母难堪；没有同意二十桌，也没有声称父母恶意控制。"
+        ],
+        "directSupport": [
+          {
+            "evidenceIds": [
+              "zy-38-judgment"
+            ],
+            "claim": "睽卦辞为小事吉，共三个汉字。"
+          },
+          {
+            "evidenceIds": [
+              "zy-38-tuan"
+            ],
+            "claim": "彖传同时描述方向或志意有异，以及天地睽而其事同、男女睽而其志通。"
+          },
+          {
+            "evidenceIds": [
+              "zy-38-xiang"
+            ],
+            "claim": "大象为君子以同而异，容许讨论共同与差异的关系。"
+          }
+        ],
+        "commentarySupport": [],
+        "modernAnalogy": [
+          "可以借同而异的视角讨论哪些事项共有、哪些保留给新人决定。",
+          "出资与决策权如何协商、是否接受桌数，是现代家庭谈判，不由卦辞决定。"
+        ],
+        "unsupportedInferences": [
+          "没有动爻所以局面暂定、改变不会发生或无需预留变化。",
+          "小事吉保证先谈小事就能说服父母。",
+          "示例直接替用户承诺二十桌我们接受。",
+          "把父母意见不合推成控制欲或把分歧预言成婚姻不和。"
+        ]
+      },
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v13",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 38,
+        "changedHexagram": 38,
+        "intent": "explanation_followup",
+        "allowedHexagramIds": [
+          38
+        ],
+        "initialEvidenceIds": [
+          "zy-38-judgment",
+          "zy-38-tuan",
+          "zy-38-xiang"
+        ],
+        "requiredTargets": [],
+        "retrievableMissingTargets": [],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [
+          true
+        ],
+        "droppedEvidenceIds": []
+      }
+    },
+    {
+      "caseId": "semantic-literal",
+      "groupId": "semantic-literal",
+      "question": "我想了解本次坎卦的具体文义。",
+      "currentQuestion": "请查本卦九二的爻辞和小象，“求小得”是什么意思？",
+      "mode": "followup",
+      "lineValues": [
+        8,
+        7,
+        8,
+        8,
+        7,
+        8
+      ],
+      "history": [],
+      "category": "exact_evidence_gap",
+      "expectedEvidenceGroups": [
+        [
+          "zy-29-line-2"
+        ],
+        [
+          "zy-29-line_xiang-2"
+        ]
+      ],
+      "retrievalNecessity": "required",
+      "reviewPoints": [
+        "初始可能已有九二注解，但没有非动爻的爻辞及小象，两项明确文献目标均需补齐。",
+        "爻辞坎有险求小得与小象未出中也不能解释为已经脱险或能取得大成。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI checked against pinned local corpus; not expert or human gold",
+      "sourceFixture": "dev-exact-gap",
+      "semanticReference": {
+        "userFacts": [
+          "用户要查本卦九二爻辞、小象并理解求小得。",
+          "这是静态坎卦的指定爻文义查询，不是请求现实预测。"
+        ],
+        "directSupport": [
+          {
+            "evidenceIds": [
+              "zy-29-line-2",
+              "zy-29-line_xiang-2"
+            ],
+            "claim": "九二爻辞坎有险，求小得；小象求小得，未出中也。"
+          },
+          {
+            "evidenceIds": [
+              "zy-29-line-1",
+              "zy-29-line-3"
+            ],
+            "claim": "本卦第一爻是初六，第三爻是六三；不是初九。"
+          }
+        ],
+        "commentarySupport": [
+          {
+            "evidenceIds": [
+              "wang-bi@2404949:h29:line2:75b15f7dc9"
+            ],
+            "claim": "王弼明确说未能出险之中，初三未足以为援；他写的是初三，并未写初九。"
+          },
+          {
+            "evidenceIds": [
+              "zhu-xi@528287:h29:line2:9d356a7715"
+            ],
+            "claim": "朱熹解释为处重险中未能自出，刚而得中，所以可以求小得。"
+          }
+        ],
+        "modernAnalogy": [
+          "若需要现实应用，可以把有限进展、未脱约束作为比喻性视角；本题没有提供现实事件，宜先完成文义查证。"
+        ],
+        "unsupportedInferences": [
+          "九二已成功脱险、必然获得大的成就。",
+          "将王弼初三展开为初九、六三。",
+          "无动爻意味着用户现实稳定。"
+        ]
+      },
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v13",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 29,
+        "changedHexagram": 29,
+        "intent": "explanation_followup",
+        "allowedHexagramIds": [
+          29
+        ],
+        "initialEvidenceIds": [
+          "zy-29-judgment",
+          "zy-29-tuan",
+          "zy-29-xiang",
+          "wang-bi@2404949:h29:line2:75b15f7dc9",
+          "zhu-xi@528287:h29:line2:9d356a7715"
+        ],
+        "requiredTargets": [
+          {
+            "hexagramId": 29,
+            "section": "line",
+            "line": 2,
+            "layer": "classic"
+          },
+          {
+            "hexagramId": 29,
+            "section": "line_xiang",
+            "line": 2,
+            "layer": "classic"
+          }
+        ],
+        "retrievableMissingTargets": [
+          {
+            "hexagramId": 29,
+            "section": "line",
+            "line": 2,
+            "layer": "classic"
+          },
+          {
+            "hexagramId": 29,
+            "section": "line_xiang",
+            "line": 2,
+            "layer": "classic"
+          }
+        ],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [
+          false,
+          false
+        ],
+        "droppedEvidenceIds": []
+      }
+    },
+    {
+      "caseId": "semantic-fuzzy",
+      "groupId": "semantic-fuzzy",
+      "question": "我记得一段关于以诚意沟通的易学解释，想核对出处。",
+      "currentQuestion": "我记得朱熹似乎说过，大意是在险难的时候，礼物虽薄，也可以用诚心沟通。这句出自哪里？我想确认自己记得对不对。",
+      "mode": "followup",
+      "lineValues": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "history": [],
+      "category": "fuzzy_commentary_gap",
+      "expectedEvidenceGroups": [
+        [
+          "zhu-xi@528287:h29:line4:99879a18e8"
+        ]
+      ],
+      "retrievalNecessity": "required",
+      "reviewPoints": [
+        "目标是朱熹对习坎六四的注解，措辞为现代概括，不当作逐字引文。",
+        "未知出处允许全库检索；乾卦已有朱熹注释不能替代所问出处。",
+        "这一资料具有薄礼益以诚心的语义近似，并不证明任何具体沟通一定成功。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI checked against pinned local corpus; not expert or human gold",
+      "sourceFixture": "dev-fuzzy-source",
+      "semanticReference": {
+        "userFacts": [
+          "用户不确定记忆中的朱熹解释，提供的是现代大意。",
+          "用户只是查证出处，没有陈述正在送礼或求助某人。"
+        ],
+        "directSupport": [
+          {
+            "evidenceIds": [
+              "zy-29-line-4",
+              "zy-29-line_xiang-4"
+            ],
+            "claim": "坎六四爻辞有樽酒、簋贰、用缶、纳约自牖、终无咎；小象称刚柔际。"
+          }
+        ],
+        "commentarySupport": [
+          {
+            "evidenceIds": [
+              "zhu-xi@528287:h29:line4:99879a18e8"
+            ],
+            "claim": "朱熹六四注实际包含在险之时刚柔相际、但用薄礼益以诚心进结自牖之象。"
+          }
+        ],
+        "modernAnalogy": [
+          "用户的薄礼诚心沟通概括，与这条注释语义相近，可以指出对应出处和概括性质。"
+        ],
+        "unsupportedInferences": [
+          "把用户的现代概括加引号当朱熹逐字原话。",
+          "把王弼的相关六四说明归给朱熹。",
+          "由终无咎保证当代赠礼或沟通一定成功，或凭题目补出用户人际困境。"
+        ]
+      },
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v13",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 1,
+        "changedHexagram": 1,
+        "intent": "source_request",
+        "allowedHexagramIds": null,
+        "initialEvidenceIds": [
+          "zy-1-judgment",
+          "zy-1-tuan",
+          "zy-1-xiang",
+          "zhu-xi@528287:h1:line6:90a3dde36f",
+          "wang-bi@2676007:h1:line3:77e8edd366"
+        ],
+        "requiredTargets": [
+          {
+            "hexagramId": null,
+            "layer": "commentary",
+            "authorId": "zhu-xi"
+          }
+        ],
+        "retrievableMissingTargets": [],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [
+          false
+        ],
+        "droppedEvidenceIds": []
+      }
+    }
+  ]
+}

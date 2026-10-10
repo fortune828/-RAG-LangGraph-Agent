@@ -1,0 +1,106 @@
+[
+  {
+    "caseId": "release-literal",
+    "session": {
+      "id": "session-release-literal",
+      "question": "我想了解本次坎卦的具体文义。",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          8,
+          8,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "010010",
+          "name": "坎为水",
+          "number": 29,
+          "judgment": "习坎，有孚，维心亨，行有尚。"
+        },
+        "changed": {
+          "binary": "010010",
+          "name": "坎为水",
+          "number": 29,
+          "judgment": "习坎，有孚，维心亨，行有尚。"
+        },
+        "originalBinary": "010010",
+        "changedBinary": "010010",
+        "changingIndices": [],
+        "id": "cast-release-literal",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "请给出本卦第二爻爻辞和小象原文。",
+    "mode": "followup"
+  },
+  {
+    "caseId": "release-topic",
+    "session": {
+      "id": "session-release-topic",
+      "question": "我今天中午只有半小时，附近有番茄鸡蛋面和鸡肉饭，吃哪个比较好？",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          6
+        ],
+        "original": {
+          "binary": "111110",
+          "name": "泽天夬",
+          "number": 43,
+          "judgment": "扬于王庭，孚号，有厉，告自邑，不利即戎，利有攸往。"
+        },
+        "changed": {
+          "binary": "111111",
+          "name": "乾为天",
+          "number": 1,
+          "judgment": "元，亨，利，贞。"
+        },
+        "originalBinary": "111110",
+        "changedBinary": "111111",
+        "changingIndices": [
+          5
+        ],
+        "id": "cast-release-topic",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [
+        {
+          "id": "fixture-0",
+          "question": "我今天中午只有半小时，附近有番茄鸡蛋面和鸡肉饭，吃哪个比较好？",
+          "status": "completed",
+          "mode": "initial",
+          "answer": {
+            "status": "answered",
+            "paragraphs": [
+              {
+                "text": "午饭选一份你喜欢而且来得及吃的就好。",
+                "citations": []
+              }
+            ],
+            "limitations": []
+          },
+          "evidence": []
+        }
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "我和对象分手了，本卦第二爻对复合这件事有什么启发？",
+    "mode": "followup"
+  }
+]

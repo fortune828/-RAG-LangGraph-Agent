@@ -1,0 +1,88 @@
+[
+  {
+    "caseId": "dev-project",
+    "session": {
+      "id": "session-dev-project",
+      "question": "我的项目已经能演示，简历也写好了。离投递还有一周，我是继续加功能还是把现有功能测试扎实？",
+      "cast": {
+        "lines": [
+          7,
+          9,
+          7,
+          7,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "111111",
+          "name": "乾为天",
+          "number": 1,
+          "judgment": "元，亨，利，贞。"
+        },
+        "changed": {
+          "binary": "101111",
+          "name": "天火同人",
+          "number": 13,
+          "judgment": "同人于野，亨。利涉大川，利君子贞。"
+        },
+        "originalBinary": "111111",
+        "changedBinary": "101111",
+        "changingIndices": [
+          1
+        ],
+        "id": "cast-dev-project",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "我的项目已经能演示，简历也写好了。离投递还有一周，我是继续加功能还是把现有功能测试扎实？",
+    "mode": "initial"
+  },
+  {
+    "caseId": "semantic-literal",
+    "session": {
+      "id": "session-semantic-literal",
+      "question": "我想了解本次坎卦的具体文义。",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          8,
+          8,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "010010",
+          "name": "坎为水",
+          "number": 29,
+          "judgment": "习坎，有孚，维心亨，行有尚。"
+        },
+        "changed": {
+          "binary": "010010",
+          "name": "坎为水",
+          "number": 29,
+          "judgment": "习坎，有孚，维心亨，行有尚。"
+        },
+        "originalBinary": "010010",
+        "changedBinary": "010010",
+        "changingIndices": [],
+        "id": "cast-semantic-literal",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "请查本卦九二的爻辞和小象，“求小得”是什么意思？",
+    "mode": "followup"
+  }
+]

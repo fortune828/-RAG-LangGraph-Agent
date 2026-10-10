@@ -141,20 +141,29 @@ def retrieve_lexical(raw, release=CURRENT_RELEASE, scope_ids=None):
     return retrieval_result(args, scope, rank_lexical(args['query'], scope, release), release, 'lexical', args['topK'])
 
 
-def initial_evidence(cast, question='', release=CURRENT_RELEASE):
+def initial_evidence(cast, question='', release=CURRENT_RELEASE, *, commentary_lines=()):
+    """Prepare classics plus comments anchored to moving or explicitly asked lines.
+
+    The caller supplies explicit line targets for the original hexagram. Modern
+    question vocabulary alone is not evidence that an arbitrary line is relevant.
+    """
     original = cast['original']['number']
     def get(h, sections, **kw):
         return retrieve_exact(dict(hexagramId=h, sections=sections, **kw), release)['evidence']
     records = get(original, ['judgment', 'xiang', 'tuan'])
     moving = [i + 1 for i in cast['changingIndices']]
+    explicit = tuple(commentary_lines)
+    if any(type(line) is not int or not 1 <= line <= 7 for line in explicit):
+        raise ValueError('INVALID_COMMENTARY_LINES')
+    relevant_lines = set(moving) | set(explicit)
     if moving:
         records += get(original, ['line', 'line_xiang'], lineIndices=moving)
     if cast['changed']['number'] != original:
         records += get(cast['changed']['number'], ['judgment', 'xiang'])
     pool = [e for e in load_release(release)[0] if e['layer'] == 'commentary' and e['hexagramId'] == original
-            and 20 < len(e['text']) <= 1200 and (not moving or e['line'] in moving)]
+            and 20 < len(e['text']) <= 1200 and e['line'] in relevant_lines]
     ranked = rank_lexical(question[:160], pool, release) if question else []
-    candidates = [e for e, _ in ranked] if ranked else pool if moving else []
+    candidates = [e for e, _ in ranked] if ranked else pool
     authors, budget = set(), 1800
     for e in candidates:
         author = tuple(e.get('authorIds', []))

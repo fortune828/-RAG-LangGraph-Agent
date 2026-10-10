@@ -1,0 +1,36 @@
+{
+  "kind": "offline_full_contract_revalidation",
+  "graphVersion": "python-graph-v16",
+  "trace": "evaluation/reports/semantic-20261010/stress/paraphrase-stress-2-D.jsonl",
+  "traceSha256": "f0e126294eb4ba238dd078377141f9057292066887f5c76537e48b494aa0f7cf",
+  "validatorSha256": "cec0e7c257aeaeeaede4cd2210002bd3519c9f67120a3d6beb44f7a67536acea",
+  "targets": [
+    {
+      "hexagramId": null,
+      "layer": "commentary",
+      "authorId": "zhu-xi"
+    }
+  ],
+  "requireCitations": true,
+  "results": [
+    {
+      "eventId": 17,
+      "repairNumber": 0,
+      "oldErrors": [
+        "AUTHOR_ATTRIBUTION_MISMATCH:wang-bi"
+      ],
+      "newErrors": [],
+      "mechanicalValid": true
+    },
+    {
+      "eventId": 21,
+      "repairNumber": 1,
+      "oldErrors": [
+        "AUTHOR_ATTRIBUTION_MISMATCH:wang-bi"
+      ],
+      "newErrors": [],
+      "mechanicalValid": true
+    }
+  ],
+  "boundary": "Same recorded candidates/evidence/targets; no new model requests, no end-to-end rerun, no semantic certification."
+}

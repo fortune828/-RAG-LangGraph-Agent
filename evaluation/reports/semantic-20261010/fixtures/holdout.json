@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "split": "holdout",
+  "createdAt": "2026-10-10",
+  "knowledgeRelease": "knowledge-v3-20260926-r1",
+  "evidenceSha256": "4154d8c69d0fdf0e6eca3ff570f1c8a092528a6011099533b88f3863bf36ebd4",
+  "annotationOrigin": "AI checked against pinned local corpus; not expert or human gold",
+  "caseCount": 4,
+  "independentGroupCount": 4,
+  "fieldsAllowedInModelInput": [
+    "question",
+    "currentQuestion",
+    "mode",
+    "lineValues",
+    "history"
+  ],
+  "labelHandling": "semanticReference, expectedEvidenceGroups, reviewPoints, retrievalNecessity, sourceFixture and initialEvidenceAudit are evaluation reference/labels and must never be included in model messages or rule-policy input.",
+  "cases": [
+    {
+      "caseId": "semantic-holdout-daily",
+      "groupId": "semantic-holdout-daily",
+      "question": "今晚已经追剧三小时，明早七点要出门。还剩一集结局，我该继续看还是睡觉？",
+      "currentQuestion": "今晚已经追剧三小时，明早七点要出门。还剩一集结局，我该继续看还是睡觉？",
+      "mode": "initial",
+      "lineValues": [
+        7,
+        7,
+        8,
+        8,
+        7,
+        8
+      ],
+      "history": [],
+      "category": "daily_small",
+      "expectedEvidenceGroups": [
+        [
+          "zy-60-judgment",
+          "zy-60-tuan",
+          "zy-60-xiang"
+        ]
+      ],
+      "retrievalNecessity": "unnecessary",
+      "reviewPoints": [
+        "承接三小时、明早七点出门及结局诱惑；不编造睡眠疾病或精确身体后果。",
+        "节制可作生活视角，不能把卦象解释为剧情会怎样或保证睡眠结果。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI checked against pinned local corpus; not expert or human gold",
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v13",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 60,
+        "changedHexagram": 60,
+        "intent": "explanation_followup",
+        "allowedHexagramIds": [
+          60
+        ],
+        "initialEvidenceIds": [
+          "zy-60-judgment",
+          "zy-60-tuan",
+          "zy-60-xiang"
+        ],
+        "requiredTargets": [],
+        "retrievableMissingTargets": [],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [
+          true
+        ],
+        "droppedEvidenceIds": []
+      }
+    },
+    {
+      "caseId": "semantic-holdout-role",
+      "groupId": "semantic-holdout-role",
+      "question": "市民合唱团请我接任负责人。团队给我很多快乐，我愿意帮忙，但负责人每周要处理报名和协调场地，我最想保留的是唱歌本身，该不该接？",
+      "currentQuestion": "市民合唱团请我接任负责人。团队给我很多快乐，我愿意帮忙，但负责人每周要处理报名和协调场地，我最想保留的是唱歌本身，该不该接？",
+      "mode": "initial",
+      "lineValues": [
+        7,
+        7,
+        7,
+        8,
+        7,
+        7
+      ],
+      "history": [],
+      "category": "complex_tradeoff",
+      "expectedEvidenceGroups": [
+        [
+          "zy-9-judgment",
+          "zy-9-tuan",
+          "zy-9-xiang"
+        ]
+      ],
+      "retrievalNecessity": "unnecessary",
+      "reviewPoints": [
+        "讨论参与喜好与行政责任的差别、可否分担和试行，不把被邀请当必须接任。",
+        "不能推断其他团员故意甩锅、保证任职能提升威望或无动爻就工作稳定。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI checked against pinned local corpus; not expert or human gold",
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v13",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 9,
+        "changedHexagram": 9,
+        "intent": "explanation_followup",
+        "allowedHexagramIds": [
+          9
+        ],
+        "initialEvidenceIds": [
+          "zy-9-judgment",
+          "zy-9-tuan",
+          "zy-9-xiang"
+        ],
+        "requiredTargets": [],
+        "retrievableMissingTargets": [],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [
+          true
+        ],
+        "droppedEvidenceIds": []
+      }
+    },
+    {
+      "caseId": "semantic-holdout-correction",
+      "groupId": "semantic-holdout-correction",
+      "question": "我以为室友半夜外放音乐，刚才发了一条语气很重的消息，让他别再吵了。接下来怎么办？",
+      "currentQuestion": "问清楚了，声音来自楼上，室友昨晚根本不在家。他还没回复我，我想把误会说清楚。",
+      "mode": "followup",
+      "lineValues": [
+        7,
+        7,
+        7,
+        8,
+        7,
+        8
+      ],
+      "history": [
+        {
+          "user": "我以为室友半夜外放音乐，刚才发了一条语气很重的消息，让他别再吵了。接下来怎么办？",
+          "assistant": "他也许没有顾及你的感受，可以先坚持自己的底线，让他解释为什么半夜扰民。"
+        }
+      ],
+      "category": "same_topic_correction",
+      "expectedEvidenceGroups": [],
+      "retrievalNecessity": "unnecessary",
+      "reviewPoints": [
+        "采用噪音来自楼上、室友不在的事实，撤回对室友扰民的指控。",
+        "未回复不证明生气、心虚或关系将破裂；帮助表达核实后的道歉或澄清。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI checked against pinned local corpus; not expert or human gold",
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v13",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 5,
+        "changedHexagram": 5,
+        "intent": "situation_followup",
+        "allowedHexagramIds": [
+          5
+        ],
+        "initialEvidenceIds": [
+          "zy-5-judgment",
+          "zy-5-tuan",
+          "zy-5-xiang"
+        ],
+        "requiredTargets": [],
+        "retrievableMissingTargets": [],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [],
+        "droppedEvidenceIds": []
+      }
+    },
+    {
+      "caseId": "semantic-holdout-meaning",
+      "groupId": "semantic-holdout-meaning",
+      "question": "我想了解豫卦里关于及时行动的说法。",
+      "currentQuestion": "请查朱熹对本卦六二的注解，“不终日”是不是说事情必须当天做完？",
+      "mode": "followup",
+      "lineValues": [
+        8,
+        8,
+        8,
+        7,
+        8,
+        8
+      ],
+      "history": [],
+      "category": "literal_meaning",
+      "expectedEvidenceGroups": [
+        [
+          "zhu-xi@528287:h16:line2:be436ee4ca"
+        ]
+      ],
+      "retrievalNecessity": "available_or_retrievable",
+      "reviewPoints": [
+        "朱熹说思虑明审、不俟终日而见事之几微，重点是识微，不是所有事情必须当天完成。",
+        "注释是朱熹之说，其他注家不得混归；不假定用户有拖延症或待完成工作。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI checked against pinned local corpus; not expert or human gold",
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v13",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 16,
+        "changedHexagram": 16,
+        "intent": "source_request",
+        "allowedHexagramIds": [
+          16
+        ],
+        "initialEvidenceIds": [
+          "zy-16-judgment",
+          "zy-16-tuan",
+          "zy-16-xiang",
+          "zhu-xi@528287:h16:line2:be436ee4ca",
+          "wang-bi@7904495:h16:line2:1e28cfee39",
+          "cheng-yi@1313743:h16:line2:c0b794c7e9"
+        ],
+        "requiredTargets": [
+          {
+            "hexagramId": 16,
+            "section": "line",
+            "line": 2,
+            "layer": "commentary",
+            "authorId": "zhu-xi"
+          }
+        ],
+        "retrievableMissingTargets": [],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [
+          true
+        ],
+        "droppedEvidenceIds": []
+      }
+    }
+  ]
+}

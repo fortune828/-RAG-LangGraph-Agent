@@ -1,0 +1,561 @@
+{
+  "reviewer": "独立 AI 盲评；非专家、非真人评分、非人工 Gold",
+  "scope": "仅材料内用户问题、历史、卦象、匿名答案、随附引文与获准 reference.md；未读取解盲键、其他结果、源码或配置，未调用被测 API。",
+  "rubric": {
+    "scale": {
+      "0": "明确失败",
+      "1": "混合或有明显不足",
+      "2": "在可核对范围内充分做到",
+      "null": "无答案 N/A，或明确无法判断；理由单列"
+    },
+    "dimensions": {
+      "userFacts": "用户事实、条件与最新更正的理解承接",
+      "classicalMeaning": "原典、注家观点、爻名和传统解释的忠实程度",
+      "analogyFit": "现代联系的结构贴切性与事实、因果、预测边界",
+      "dialogueHelp": "自然交流、问题所需的适度深度与实际帮助"
+    },
+    "principles": [
+      "明确现代比喻不要求古文逐字谈现代事情；类比牵强不自动同时判成传统含义错误。",
+      "引用准确、检索充分不保证同段释义或现实推论正确；不按引文数量、字数、段落数打分。",
+      "用户担忧不自动变成既定事实；建议或条件方案不自动算用户已经决定。",
+      "技术空答案四维 null；完整未完成候选继续评分并标 candidateOnly，不把语义质量当成交付完成。"
+    ]
+  },
+  "summary": {
+    "total": 16,
+    "completedWithReadableAnswer": 14,
+    "candidateOnly": 1,
+    "noAnswerTechnicalFailure": 1,
+    "mechanicalNonCompletion": 2,
+    "means": {
+      "userFacts": {
+        "value": 1.6,
+        "n": 15
+      },
+      "classicalMeaning": {
+        "value": 1.8,
+        "n": 15
+      },
+      "analogyFit": {
+        "value": 1.267,
+        "n": 15
+      },
+      "dialogueHelp": {
+        "value": 1.733,
+        "n": 15
+      }
+    }
+  },
+  "results": [
+    {
+      "answerId": "Q01",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 1,
+        "classicalMeaning": 2,
+        "analogyFit": 2,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "承接“你已开始投递”，没有再坚持用户缺乏信心；但“真正短板是面试时讲不清”把用户担心将来解释不清写成已确认的能力短板。",
+        "classicalMeaning": "“见龙在田，利见大人”“各正性命，保合太和，乃利贞”等引文与材料一致；“对应到项目”及结尾“以上是类比性判断”把项目解读标成应用，没有声称原典逐字谈检索。",
+        "analogyFit": "“新增功能能直接服务于验证机制或对比说明”与已能演示、需要对外说明的情境相接；“卦象是启发性视角，不决定面试结果”保留现实边界。元亨、贞与项目阶段的对应按现代比喻看，不当作原义证明。",
+        "dialogueHelp": "直接回答“帮助有限，除非……”，再给“无检索/有检索、不同策略、关键模块消融”及失败案例，能帮助用户说明有效性；深度服务于当前技术疑问。"
+      },
+      "comment": "实质建议贴题，主要不足是把担忧升级为已确定短板。",
+      "flags": [
+        {
+          "type": "uncertainty_promoted_to_fact",
+          "quote": "真正短板是面试时讲不清",
+          "reason": "用户说的是“担心”，没有报告已发生面试失败或已确认讲不清。",
+          "dimension": "userFacts"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "Q02",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "保留“只有半小时”和两种餐；“若它已备好、可立即取餐”“若……排队超过十分钟”均为条件，并明确“你没给出两家的排队、出餐和口味偏好”。",
+        "classicalMeaning": "“夬，决也……决而和”、上六与小象引文匹配；以“放到……午饭上”引入应用，没有说上六原义就是午餐危险，也没有用乾保证精力。",
+        "analogyFit": "用“决而和”帮助尽快作选择贴切；但“吃完就走，正合……自强不息”只作词面联接，没有说明自我修养与赶紧吃完的相关结构，额外引文没有增进这项取舍。",
+        "dialogueHelp": "“能马上取餐者优先”给出现场可执行原则，并允许饭慢就换面。虽然关于更扛饿的比较缺少分量信息，最终选择仍以实际速度为准。"
+      },
+      "comment": "可执行的条件选择基本完成任务；乾的联系较装饰性。",
+      "flags": [
+        {
+          "type": "strained_analogy",
+          "quote": "吃完就走，正合“天行健，君子以自强不息”的乾卦精神",
+          "reason": "把及时离店直接对应自强，相关性弱；只扣类比，不据此判引文或传统释义错误。",
+          "dimension": "analogyFit"
+        }
+      ],
+      "uncertainties": [
+        "两份餐哪份更饱、吃得更快，缺少实际分量与制作信息，无法核实；不认定其中一种营养判断已被证明。"
+      ]
+    },
+    {
+      "answerId": "Q03",
+      "status": "failed",
+      "candidateOnly": false,
+      "semanticEvaluable": false,
+      "scores": {
+        "userFacts": null,
+        "classicalMeaning": null,
+        "analogyFit": null,
+        "dialogueHelp": null
+      },
+      "reasons": {
+        "userFacts": "无可读答案，技术失败，不评分。",
+        "classicalMeaning": "无可读答案，技术失败，不评分。",
+        "analogyFit": "无可读答案，技术失败，不评分。",
+        "dialogueHelp": "无可读答案，技术失败，不评分。"
+      },
+      "comment": "status=failed，answer=null。四维均为 N/A，不计作语义零分。",
+      "flags": [],
+      "uncertainties": []
+    },
+    {
+      "answerId": "Q04",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": 2,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "保留新人想有自己的表达、父母出资附带流程要求的冲突，并让两人先确认“若父母全额出资是否接受对应话语权”。“可以提出混合方案：二十桌可以”是备选建议，不是声称用户已接受二十桌。",
+        "classicalMeaning": "“二女同居，其志不同行”“君子以同而异”“小事吉”引文与材料吻合；“这很像”“放在这里”说明婚礼是现代应用。没有从无动爻推出事实或把小事吉说成必然说服。",
+        "analogyFit": "共同办好婚礼但分开核心仪式与宴请安排，确实抓住“同而异”的共同目标与差异；“缩小桌数并自筹更多费用”等分支允许现实条件改变方案。",
+        "dialogueHelp": "“谁的父母谁主谈”、双方各列三个重要环节、明确费用与决策边界，并提供谈不拢的备选，有实际协商价值。没有只劝用户顺从资助。"
+      },
+      "comment": "较完整地把共同目标与各自决定权转为协商步骤；对父母动机仍宜留余地。",
+      "flags": [],
+      "uncertainties": [
+        "“并非谁存心为难谁”“肯定他们想把婚礼办得体面”是答者的善意理解，用户没有证实具体动机；这里未据此断言对方必然会接受方案，记为措辞上的不确定性。"
+      ]
+    },
+    {
+      "answerId": "Q05",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 1,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "开头正确承接“已经投递、真正担心的是……解释不清”，但结尾“更可能是回避面试解释的拖延”又在没有行为证据时替用户推断动机，削弱了对更正的尊重。",
+        "classicalMeaning": "王弼“出潛離隱”、朱熹“九二雖未得位而大人之德已著”等摘引真实；“项目同理”“你不需要系统完美到‘得位’”处于现代对应语境，未明确冒称朱熹把得位定义为系统完美，因此不将牵强对应自动判成经义错误。",
+        "analogyFit": "分类、对照、说明已有成果的联系有用；但“到‘野’中与陌生面试官沟通”及“系统完美到‘得位’”主要靠字面替换，末尾又借这一阶段叙事诊断“拖延”，超出类比应有的边界。",
+        "dialogueHelp": "“建立离线评测集；做基线对比和消融”以及“只加能直接服务这套证据链的小功能”正面回答加功能有没有帮助，技术取舍具体。动机判断不当另列，不抹去这些实际帮助。"
+      },
+      "comment": "文献摘引充分且建议实用，仍出现牵强对应和未经证实的拖延归因。",
+      "flags": [
+        {
+          "type": "unsupported_psychological_attribution",
+          "quote": "否则一周内它更可能是回避面试解释的拖延",
+          "reason": "没有证据表明用户加功能是为了回避；更正后的问题要求判断技术帮助。",
+          "dimension": "userFacts"
+        },
+        {
+          "type": "strained_analogy",
+          "quote": "你不需要系统完美到“得位”",
+          "reason": "系统完成度与爻位不是同一结构；上下文可辨为应用，问题记在类比贴切。",
+          "dimension": "analogyFit"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "Q06",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 1,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "理解出资与流程控制的张力，也给自筹小婚礼的选择；但“父母要的是体面、人情和参与感”把没有询问过的具体动机说定。",
+        "classicalMeaning": "“小事吉”“君子以同而异”及彖传引文正确，对共同目标与做法不同的概括可受材料支持。无动爻的现实外推单列在类比项，不混成引文本身错误。",
+        "analogyFit": "按仪式、宴请、执行分工体现同而异；但“无动爻……说明靠等待不会自动合拍”把计算状态当成关系变化的依据，材料并不支持此推断。",
+        "dialogueHelp": "先伴侣统一、再分别沟通，区分资助与决定权，并在无法接受时评估自筹方案，能推进协商。“这样既不让父母难堪”应改为可能降低难堪，不能保证他人反应。"
+      },
+      "comment": "协商框架有帮助，父母心理与静爻外推是两个独立不足。",
+      "flags": [
+        {
+          "type": "unsupported_motive_claim",
+          "quote": "父母要的是体面、人情和参与感",
+          "reason": "用户只报告父母想增加桌数并安排流程，具体动机仍需确认。",
+          "dimension": "userFacts"
+        },
+        {
+          "type": "static_cast_to_reality",
+          "quote": "卦象无动爻……说明靠等待不会自动合拍",
+          "reason": "无动爻只能确认本次卦的状态，不能确认等待后的家庭互动。",
+          "dimension": "analogyFit"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "Q07",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 1,
+        "analogyFit": 1,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "准确使用“项目已经能演示、简历也写好”和一周时限；没有添加没信心、未就业等用户事实，并保留岗位硬要求的例外。",
+        "classicalMeaning": "引用程颐“其德已著”后说“说明‘能演示’本身就是可用的德”，把注家所论的德直接改写为项目可演示；“大人”（招聘者、用户、同行）的括注也未清楚标出仅是现代角色比拟。真实引文不能支持这个作者观点归属。",
+        "analogyFit": "“投递像涉大川”和按核心、边缘功能分类能作为启发；但由“能演示”推出已经具有可用的德，再据此规定现在不是加功能的时机，压扁了德行、阶段与工程取舍的区别。",
+        "dialogueHelp": "提供回归、边界、部署、备份、脚本等可执行检查，并准许“岗位硬性要求”且可及时验证的小功能例外；明确“不能保证录用”，实际建议有用。"
+      },
+      "comment": "有用的工程建议与不忠实的“德”解释并存；检索到注家并未避免误读。",
+      "flags": [
+        {
+          "type": "commentary_meaning_distorted",
+          "quote": "程颐解九二为……说明“能演示”本身就是可用的德",
+          "reason": "程颐注谈圣人、大德之君臣及德泽，不把演示能力本身定义为德；“说明”让现代替换冒充注家结论。",
+          "dimension": "classicalMeaning"
+        },
+        {
+          "type": "role_equivalence_blurred",
+          "quote": "呈现给“大人”（招聘者、用户、同行）",
+          "reason": "没有交代现代角色比拟的性质，容易把大人当职业身份清单；所给注家材料不支持这种定义。",
+          "dimension": "classicalMeaning"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "Q08",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": 2,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "围绕“离投递只剩一周”安排测试、演示与材料，保留“目标岗位明确要求……尚未实现的功能”时重新权衡，没有替用户虚构信心或就业状况。",
+        "classicalMeaning": "“出潜离隐”“其德已著”及所引爻辞、同人材料可核对；以“这更像提醒你”进入项目应用，末尾明确文献提供“决策视角”，没有直接把面试官定义为大人。",
+        "analogyFit": "已有成果转向可展示、可复现，以及借“类族辨物”区分核心演示、证据、文档、限制，结构上贴合任务；“不是对投递结果的因果预测”及按岗位缺口重估，限制了类比的权威。",
+        "dialogueHelp": "“2—3 天”关键路径验证、“1—2 天”材料与演练、留缓冲，以及硬要求功能例外，形成可调的一周计划；不是只泛泛要求努力。"
+      },
+      "comment": "在可核对范围内四维充分：现实条件支撑建议，传统语句承担的是启发角色。",
+      "flags": [],
+      "uncertainties": [
+        "“继续加功能更接近对‘自强不息’的误用”措辞偏强；结合其功能例外与结尾限制，未据此认定为对所有加功能行为的经义裁判。"
+      ]
+    },
+    {
+      "answerId": "Q09",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 1
+      },
+      "reasons": {
+        "userFacts": "保留半小时与两选项，“如果两家距离、排队差不多”“若……现成套餐”是条件，而非声称已知店况；没有报告用户的口味或肠胃事实。",
+        "classicalMeaning": "“夬，决也”所指的决断及“决而和”的方向与材料相容；“无号，终有凶可借来提醒”明确是借用，不因古文不谈午饭而扣经义分。",
+        "analogyFit": "决断与有限时间有对应；但“自强不息则支持你尽快吃完、进入下午节奏”基本只是给常识行动附会经文，缺少进一步的相关结构。",
+        "dialogueHelp": "“五分钟内上桌或取走”、留返程时间可用；但在两者都快时推荐面“因为半小时窗口下更稳”，主要靠“通常出餐快、汤水温和、消化负担较小”的未核实概括，不能可靠区分本题两份餐。"
+      },
+      "comment": "时间原则有用，但默认推荐哪一种餐的理由不足，增加的经文对应也未改善选择。",
+      "flags": [
+        {
+          "type": "weak_analogy",
+          "quote": "自强不息……支持你尽快吃完、进入下午节奏",
+          "reason": "自我勉励与尽快完成午餐的联系较空泛，对两种餐的选择无辨别作用。",
+          "dimension": "analogyFit"
+        },
+        {
+          "type": "unsupported_practical_comparison",
+          "quote": "若都能，选番茄鸡蛋面，因为半小时窗口下更稳",
+          "reason": "不知道实际份量、温度、做法与吃饭习惯，两者已同样及时上桌时仍缺少更稳的比较依据。",
+          "dimension": "dialogueHelp"
+        }
+      ],
+      "uncertainties": [
+        "对面与饭的消化、饱腹比较无法仅凭本题条件核实；不作营养或医学真伪裁定。"
+      ]
+    },
+    {
+      "answerId": "Q10",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "保留“二十桌、父母出钱、流程听安排”的组合及新人的顾虑，“不必……打包成要么全接受、要么全拒绝”尊重尚未决定；“可以保留二十桌”作为方案，未写成用户已接受。",
+        "classicalMeaning": "“小事吉”“同而异”及所引彖传吻合，逐项谈的解释以“这可以理解为”标为应用，未声称古文保证谈判成功。",
+        "analogyFit": "把费用、规模、流程分开协商贴合共同与差异；末尾“没有动爻……说明这次分歧不会因为一次谈话就自动消失”却把静卦变成对未来沟通效果的断言。",
+        "dialogueHelp": "给出“要求写成具体清单”、夫妻先统一、不能接受则减资助或分场等分支，既可开口也能评估代价，帮助充分。"
+      },
+      "comment": "协商内容充分，末尾关于关系需要长期磨合的判断不能由无动爻证明。",
+      "flags": [
+        {
+          "type": "static_cast_to_reality",
+          "quote": "没有动爻……说明这次分歧不会因为一次谈话就自动消失",
+          "reason": "一次谈话是否解决、是否成为长期课题是未知现实结果；静卦不是这项判断的证据。",
+          "dimension": "analogyFit"
+        }
+      ],
+      "uncertainties": [
+        "“这是他们的诚意”是对出资意愿的正面解释，尚不能验证父母全部动机；主要建议没有依赖这一判断。"
+      ]
+    },
+    {
+      "answerId": "Q11",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 1,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 1
+      },
+      "reasons": {
+        "userFacts": "抓住小婚礼与父母主导的分歧，但“父母要二十桌和传统流程”加入了用户未说明的传统偏好；示例直接写“二十桌和你们看重的流程，我们愿意多听你们安排”，没有先确认规模是否可让。",
+        "classicalMeaning": "睽、爻象层次与“同而异”“小事吉”的引用相符；用共同目标和不同分工理解婚礼，可作为应用，而非声称原典谈婚俗。",
+        "analogyFit": "同异分工的类比有效；但“卦无动爻……表示……更适合持续协商”从静态符号导出当下行动适宜性，缺少现实论证。它不是明确预言关系不变，不能升级标成这类确定预测。",
+        "dialogueHelp": "分工清单、谁决定谁执行等有用；但直接可复用的话术已让出二十桌，可能越过用户“本来想办小婚礼”的核心取舍。虽末尾有减少资金依赖的后备，主话术仍未解决是否接受规模这一先决问题。"
+      },
+      "comment": "能提供谈判流程，但示例替用户先让步，静卦的行动指示也缺乏依据。",
+      "flags": [
+        {
+          "type": "unprovided_user_context",
+          "quote": "父母要二十桌和传统流程",
+          "reason": "父母想安排流程不等于明确偏好传统流程。",
+          "dimension": "userFacts"
+        },
+        {
+          "type": "premature_commitment_in_script",
+          "quote": "二十桌和你们看重的流程，我们愿意多听你们安排",
+          "reason": "是拟议话术而非过去事实，但未先确认用户愿不愿接受二十桌，示例可能替用户承诺重要让步。",
+          "dimension": "dialogueHelp"
+        },
+        {
+          "type": "static_cast_to_advice",
+          "quote": "卦无动爻……表示……更适合持续协商",
+          "reason": "静卦本身不能证明具体沟通策略更适宜；主动协商应由本题的人际条件支撑。",
+          "dimension": "analogyFit"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "Q12",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 1,
+        "classicalMeaning": 1,
+        "analogyFit": 1,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "明确说“你更正得对，我上一轮把方向判偏了”，撤回旧方向并记得已投递；但“真正卡住的是……解释不清”仍把担心变成已发生的能力障碍。",
+        "classicalMeaning": "引文文本基本准确，但“面试官就是你要利的‘大人’”给出职业角色等同，没有保留注家所论大德之人与占者的区别；“德施普也——让……原理能普遍地让人理解”也把德泽直接收窄为讲解清楚。",
+        "analogyFit": "以测试对照帮助对外说明贴切；“品物流形”对项目跑通、“大明终始”对因果讲解的逐词替换较机械，“不是把龙再藏回云里继续堆料”又把加功能预设为退缩，未尊重它可能服务证据的多种用途。",
+        "dialogueHelp": "“消融实验”“对比实验”“错误分析”与“问题、假设、检索机制……局限”的链条回答了真正的技术担忧，并给能补证据的小功能例外；纠正姿态也有助对话继续。"
+      },
+      "comment": "真正承认前轮偏差且给出有效下一步，但事实确定度、传统角色和现代对应仍混杂。",
+      "flags": [
+        {
+          "type": "uncertainty_promoted_to_fact",
+          "quote": "真正卡住的是面试时解释不清",
+          "reason": "用户担心可能讲不清，尚未说明已经卡住或经历失败。",
+          "dimension": "userFacts"
+        },
+        {
+          "type": "role_equivalence_asserted",
+          "quote": "面试官就是你要利的“大人”",
+          "reason": "把现代职业角色直接等同爻辞概念；所给王弼、程颐、朱熹材料不支持该定义。",
+          "dimension": "classicalMeaning"
+        },
+        {
+          "type": "strained_analogy",
+          "quote": "不是把龙再藏回云里继续堆料",
+          "reason": "把继续开发描写成倒退藏匿，不能由用户已展示或九二文本推出。",
+          "dimension": "analogyFit"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "Q13",
+      "status": "validation_failed",
+      "candidateOnly": true,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": 2,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "准确沿用项目能演示、简历写好、投递前一周，建议“修复阻塞演示或投递的明确缺陷”，没有声称用户已经投递或缺乏信心。",
+        "classicalMeaning": "乾九二、小象、彖传及大象摘引匹配；“这些放在一周安排上”“可落实为”明确显示项目测试与利贞的联系是现实应用，没有把职业角色说成大人的原义。",
+        "analogyFit": "从能演示到请可信者评审、准备对外说明，抓住显现和见人的结构；“卦象不是对结果的保证，现实仍取决于岗位要求……”保留现实条件。开头“信号很明确”偏强，但未推导录用或其他具体结果。",
+        "dialogueHelp": "主张明确，给模拟面试、代码或演示评审、脚本与文档，并限制只修阻塞缺陷和改善稳定性；可以直接转为一周的准备任务。"
+      },
+      "comment": "完整候选的语义表现充分；机械核验未完成，不能记作已完成交付。",
+      "flags": [],
+      "uncertainties": [
+        "status=validation_failed，但有完整 answered 候选；不据此降低四维语义分。未提供机械失败原因，本评阅不猜测。"
+      ]
+    },
+    {
+      "answerId": "Q14",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 1
+      },
+      "reasons": {
+        "userFacts": "保持半小时限制，鸡肉饭与面都按速度条件选择；结尾明确“不确定的是两家实际出餐、距离、你的饥饿程度和下午安排”，没有把这些当作已知。",
+        "classicalMeaning": "夬之决与决而和、卦辞及上六摘引准确；“可借来提醒”“卦象只作决断提醒”使午餐解释属于现代联想，不因它不在古文中就判传统错误。",
+        "analogyFit": "决断和时间窗口有相关性；但“施禄及下”借成“照顾身体这个最基础的需要”，以及排长队对应“不利即戎”，缺少施予他人、冲突行为与本题等待之间的结构联系，主要是逐句找落点。",
+        "dialogueHelp": "十分钟上桌、十五分钟吃完的标准可执行；但用“蛋白质和米饭更扛饿”解释两家同速时优先鸡饭，没有掌握两餐分量，且番茄鸡蛋面也含蛋白质。多次重述选择条件和逐条牵连卦辞，增加的内容未使这一简单选择更清楚。"
+      },
+      "comment": "有时间判断原则，但额外类比与菜品优先理由的增益有限；扣分不以段落数为依据。",
+      "flags": [
+        {
+          "type": "strained_analogy",
+          "quote": "君子以施禄及下……先照顾身体这个最基础的需要",
+          "reason": "施予他人与自身生理需要的对应没有解释，类比结构弱。",
+          "dimension": "analogyFit"
+        },
+        {
+          "type": "unsupported_practical_comparison",
+          "quote": "优先鸡肉饭，因为蛋白质和米饭更扛饿",
+          "reason": "题干不足以比较实际两份餐的饱腹程度，此理由不能可靠决定同速时的优先项。",
+          "dimension": "dialogueHelp"
+        }
+      ],
+      "uncertainties": [
+        "两餐实际饱腹、温度、油量均未知；这里只判断比较依据不足，不作专业营养裁决。"
+      ]
+    },
+    {
+      "answerId": "Q15",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 2,
+        "classicalMeaning": 1,
+        "analogyFit": 1,
+        "dialogueHelp": 2
+      },
+      "reasons": {
+        "userFacts": "回应“更正后的问题”，保留已能演示、已开始投递，聚焦“检索为何有效”；没有继续断言缺乏信心，也没有诊断用户是在拖延。",
+        "classicalMeaning": "三家注的摘引本身准确；但紧接着以“这正对应你现在的阶段……让面试官（大人）看见并相应”替换为职业角色，未交代朱熹原注“常人不足以当之”、象中大人与占者的区分。注家材料充分仍没有支撑这个等同。",
+        "analogyFit": "把数据、索引、召回、排序、评估分别说明，与分类辨别的启发贴切；但“面试场景就是与人同、涉大川”及括注“大人”把不同关系过度直接套合，削弱了可撤回的比喻边界。没有因此推导必然录用。",
+        "dialogueHelp": "明确“只加能直接服务归因的东西”，举消融开关、实验与日志，并讨论指标、失败、成本延迟，直接解释了为何单纯多功能不等于更会说明有效性。"
+      },
+      "comment": "技术帮助充分、事实承接良好；准确检索并未自动带来传统角色解释的准确。",
+      "flags": [
+        {
+          "type": "role_equivalence_blurred",
+          "quote": "让面试官（大人）看见并相应",
+          "reason": "接在三家解释之后直接括注，未标仅借职业场景作比拟，容易被读作大人的释义；原注有德行和占者区分。",
+          "dimension": "classicalMeaning"
+        },
+        {
+          "type": "overdirect_analogy",
+          "quote": "面试场景就是与人同、涉大川",
+          "reason": "共同讨论可作比喻，但“就是”把面试互动直接等同两种传统结构，未说明差异和适用限度。",
+          "dimension": "analogyFit"
+        }
+      ],
+      "uncertainties": [
+        "括注“大人”也可能是作者想表达现代角色比拟，而非词典式释义；此处按其紧接注家的确定措辞评为混合不足，不判为整篇经义完全错误。"
+      ]
+    },
+    {
+      "answerId": "Q16",
+      "status": "completed",
+      "candidateOnly": false,
+      "semanticEvaluable": true,
+      "scores": {
+        "userFacts": 1,
+        "classicalMeaning": 2,
+        "analogyFit": 1,
+        "dialogueHelp": 1
+      },
+      "reasons": {
+        "userFacts": "多数选择条件用“若”并承认不知道排队与偏好；但“这对应你下午还要继续做事”直接补入了用户没有提供的下午安排。",
+        "classicalMeaning": "夬的决断、决而和及原文引用准确；“上六……更像一句提醒”仍是现代引申，未明说“无号”的本义是拖到没时间。因此牵强午餐应用记在类比项，不自动当成原典解释错误。",
+        "analogyFit": "有限时间下决断贴题；但“鸡肉饭……更符合‘自强不息’的能量需求”把修养概念转作某类食物的能量依据，缺少相关结构，乾也不能据此鉴别菜品。",
+        "dialogueHelp": "先看最快上桌、超时换店能用；“天气太热、你不想吃油，则选番茄鸡蛋面”与“鸡肉饭……更抗饿”却依赖未知的温度、油量、分量。七分饱、少辣等细项并未解决实际两家谁更合适，简单选择的帮助被无依据的默认比较稀释。"
+      },
+      "comment": "首句有可执行原则，随后增加未知日程与以经文背书能量的联系。",
+      "flags": [
+        {
+          "type": "unprovided_user_fact",
+          "quote": "这对应你下午还要继续做事",
+          "reason": "题干只说午餐半小时，没有说明下午活动。",
+          "dimension": "userFacts"
+        },
+        {
+          "type": "strained_analogy",
+          "quote": "通常更符合“自强不息”的能量需求",
+          "reason": "把自强不息当成鸡肉饭相对汤面的营养选择依据，传统精神与两份餐的比较之间缺少连接。",
+          "dimension": "analogyFit"
+        },
+        {
+          "type": "unsupported_practical_comparison",
+          "quote": "若鸡肉饭需要现炒久等，或天气太热、你不想吃油，则选番茄鸡蛋面",
+          "reason": "等待时间可以比较；天气与少油偏好不能在不知道面的温度、烹调油量时直接推出选面。",
+          "dimension": "dialogueHelp"
+        }
+      ],
+      "uncertainties": [
+        "未核实两份餐的油量、营养与分量，不对其医学或营养优劣作确定裁定。"
+      ]
+    }
+  ]
+}

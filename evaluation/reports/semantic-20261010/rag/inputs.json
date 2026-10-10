@@ -1,0 +1,90 @@
+[
+  {
+    "caseId": "rag-thanks",
+    "session": {
+      "id": "session-rag-thanks",
+      "question": "朋友帮我搬家忙了整整一天，我想好好感谢他，但这个月能拿出的预算不多。这次是坎卦六四动，“樽酒，簋贰，用缶，纳约自牖”怎么理解？它对我准备谢礼有什么启发？",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          8,
+          6,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "010010",
+          "name": "坎为水",
+          "number": 29,
+          "judgment": "习坎，有孚，维心亨，行有尚。"
+        },
+        "changed": {
+          "binary": "010110",
+          "name": "泽水困",
+          "number": 47,
+          "judgment": "亨，贞，大人吉，无咎，有言不信。"
+        },
+        "originalBinary": "010010",
+        "changedBinary": "010110",
+        "changingIndices": [
+          3
+        ],
+        "id": "cast-rag-thanks",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "朋友帮我搬家忙了整整一天，我想好好感谢他，但这个月能拿出的预算不多。这次是坎卦六四动，“樽酒，簋贰，用缶，纳约自牖”怎么理解？它对我准备谢礼有什么启发？",
+    "mode": "initial"
+  },
+  {
+    "caseId": "rag-mentoring",
+    "session": {
+      "id": "session-rag-mentoring",
+      "question": "有个新人连续两次把已经讲过的步骤做错。我担心过于宽松会让他学不会，又怕自己盯得太细。这次是蒙卦上九动，“击蒙，不利为寇，利御寇”对带人有什么启发？",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          8,
+          8,
+          8,
+          9
+        ],
+        "original": {
+          "binary": "010001",
+          "name": "山水蒙",
+          "number": 4,
+          "judgment": "亨。匪我求童蒙，童蒙求我。初筮告，再三渎，渎则不告。利贞。"
+        },
+        "changed": {
+          "binary": "010000",
+          "name": "地水师",
+          "number": 7,
+          "judgment": "贞，丈人，吉无咎。"
+        },
+        "originalBinary": "010001",
+        "changedBinary": "010000",
+        "changingIndices": [
+          5
+        ],
+        "id": "cast-rag-mentoring",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "有个新人连续两次把已经讲过的步骤做错。我担心过于宽松会让他学不会，又怕自己盯得太细。这次是蒙卦上九动，“击蒙，不利为寇，利御寇”对带人有什么启发？",
+    "mode": "initial"
+  }
+]

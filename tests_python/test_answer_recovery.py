@@ -54,7 +54,8 @@ def test_mixed_paragraphs_and_scoped_citations_preserve_source_checks():
 async def test_initial_graph_allows_separate_practical_paragraph():
     async def model(messages, tools=None):
         context = json.loads(messages[1]['content'])
-        assert context['卦象']['爻名'] == ['少阳'] * 6
+        assert context['卦象']['爻名'] == ['初九', '九二', '九三', '九四', '九五', '上九']
+        assert context['卦象']['爻性'] == ['少阳'] * 6
         result = answer(context['参考原文'][0])
         result['paragraphs'].append(dict(text='先核实你的现金储备与工作条件。', citations=[]))
         return response(result)

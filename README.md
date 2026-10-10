@@ -1,6 +1,6 @@
 # 见素问微 · Python / LangGraph 周易情境解读 Agent
 
-自主实验修订（2026-10-10）：当前 graph v13 / prompt v16；主回答采用 Flash enabled / low / 8192，校验修复使用同模型 disabled / 8192 并提供错误位置及原因；非思考候选经盲评后未替换质量默认配置。路由只传所需证据字段，明确授权文献目标取齐后直接生成；完整来源、权限与校验保留。模型筛选、RAG 消融、B/C/D、图版本对照和隔离小留出均单列，见[结果与局限](evaluation/autonomous-optimization-20261010.md)。这些实验不代表人工对话质量验收。
+语义与可靠性修订（2026-10-10）：当前 **graph v16 / prompt v16**，仍使用 Flash low / 8192 主调用与同模型非思考一次修复。默认爻注限实际动爻或明确所问爻位；纯文献精确请求由程序取证，其他问题保留模型路由；提供真实爻名，唯一原文定位处理繁简差异，主生成截断可进入原有一次修复。四题隔离确认冻结在 v14，v15 另收紧自动取证以保留换题识别，版本不混算；v16 另修正“说法”名词被当作观点动词的误拒，只离线重校验旧候选。结果、负面实验及完整回答见[本轮报告](evaluation/semantic-optimization-20261010.md)。语义质量仍待用户验收。
 
 上一轮提示词减法修订（2026-10-10）：当时为 graph v10 / prompt v16，保留普通段落与 claim 引用契约。清理 SYSTEM、ROUTER、RISK_SYSTEM、动态指令、repair 和工具描述；技术约束继续由程序保障。生成机制、Schema、校验器和前端保持，表达质量以真实回答复核，见[本轮完整提示词、删减与对照](evaluation/prompt-subtraction-20261010.md)。
 
@@ -8,7 +8,7 @@
 
 **当前状态（2026-10-08）**：核心运行后端已迁移为 Python + FastAPI + LangGraph，现有 React 前端保留。迁移目标是让只掌握 Python 的开发者学习、调试并解释 Agent 核心；前端开发不作为学习前置条件。产品质量完善与冻结留出评测仍在进行，历史 TypeScript 后端保留作对照和回滚。
 
-当前为 graph v13 / prompt v16、Flash low 思考模式。新回答仅包含 status、普通 paragraphs（text 与 citations）及可选内部 limitations；不再生成 summary 或段落 kind。引用用 claim 定位本段受支持的文字；前端在该处显示引用标记。旧会话的摘要、正文和限制完整展示为普通正文。质量与验证记录见 [本轮回答体验验证](evaluation/natural-dialogue-20261010.md) 和 [任务状态](tasklist.md)。
+当前为 graph v16 / prompt v16、Flash low 思考模式。新回答仅包含 status、普通 paragraphs（text 与 citations）及可选内部 limitations；不再生成 summary 或段落 kind。引用用 claim 定位本段受支持的文字；前端在该处显示引用标记。旧会话的摘要、正文和限制完整展示为普通正文。质量与验证记录见 [本轮回答体验验证](evaluation/natural-dialogue-20261010.md) 和 [任务状态](tasklist.md)。
 
 ## 启动
 
