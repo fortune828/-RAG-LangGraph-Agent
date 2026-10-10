@@ -8,8 +8,8 @@ from evaluation.development_checks import CASES, session_for
 
 
 def choice():
-    return dict(status='answered', summary='今天就吃一份热汤面吧。',
-        paragraphs=[dict(kind='reflection', text='配一份青菜，简单吃好这一顿。', citations=[])], limitations=[])
+    return dict(status='answered',
+        paragraphs=[dict(text='今天就吃一份热汤面吧，配一份青菜，简单吃好这一顿。', citations=[])], limitations=[])
 
 
 @pytest.mark.parametrize('question', ['我今天中午吃啥好', '头发长了，今天要不要去理发？'])
@@ -29,7 +29,9 @@ async def test_small_first_reading_accepts_short_meaning_and_practical_advice():
         assert tools is None
         context = json.loads(messages[1]['content'])
         value = choice()
-        value['paragraphs'].insert(0, answer(context['参考原文'][0])['paragraphs'][0])
+        grounded = answer(context['参考原文'][0])['paragraphs'][0]
+        value['paragraphs'][0]['text'] += grounded['text']
+        value['paragraphs'][0]['citations'] = grounded['citations']
         return response(value)
     result = await build_graph(InMemorySaver(), model).ainvoke(
         initial_state(session(), '我今天中午吃啥好', 'initial'),
@@ -81,13 +83,13 @@ def test_user_failure_fixtures_preserve_question_and_cast(case_id,original,chang
     assert s['cast']['changed']['number'] == changed
 
 
-def test_empty_list_defaults_preserve_evidence_and_insufficient_checks():
+def test_empty_list_defaults_do_not_require_report_tail_but_require_body():
     from backend.validation import validate_answer
-    value = dict(status='answered', summary='给一个具体选择。',
-        paragraphs=[dict(kind='reflection', text='吃一份你平时接受的热汤面。')])
+    value = dict(status='answered', paragraphs=[dict(text='吃一份你平时接受的热汤面。')])
     normalized, errors = validate_answer(value, [], require_citations=False)
     assert not errors and normalized['paragraphs'][0]['citations'] == [] and normalized['limitations'] == []
-    value['paragraphs'][0]['kind'] = 'interpretation'
-    assert validate_answer(value, [], require_citations=False)[1]
     value['status'] = 'insufficient'
-    assert 'MISSING_LIMITATION' in validate_answer(value, [], require_citations=False)[1]
+    value['paragraphs'][0]['text'] = '我还没有找到你所问的原文，暂时无法确认。'
+    assert validate_answer(value, [], require_citations=False)[0]
+    value['paragraphs'] = []
+    assert validate_answer(value, [], require_citations=False)[0] is None

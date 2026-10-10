@@ -1,0 +1,44 @@
+{
+  "mode": "real_model",
+  "generationOnly": true,
+  "versions": [
+    "evidence-agent-python-v14",
+    "evidence-agent-python-v15"
+  ],
+  "graphVersion": "python-graph-v10",
+  "releaseId": "knowledge-v3-20260926-r1",
+  "model": "deepseek-flash",
+  "modelOptions": {
+    "model": "deepseek-flash",
+    "messages": [],
+    "max_tokens": 8192,
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "commit": "50c17043dfbfe6e1d4760c3b90c2a87d44a54f65",
+  "dirty": true,
+  "sourceHashes": {
+    "backend/__init__.py": "31035e9fa5d2ce31f46dba6f1b3492edf184befa6b9d447c506d6824c539f8f3",
+    "backend/llm.py": "1f795b1125926255acedd277cb5cd06675b6bc136ae61b9e85a8908bb4480c0d",
+    "backend/app.py": "a88684e8202e88c690b64526e8daec32c136ebd719075faf48821722552f4aba",
+    "backend/knowledge.py": "6cbce14f7a0c1ea971f0390a596d85ddde65282a18478fb3c79cee35a29b172d",
+    "backend/graph.py": "a3aa4ed1907686f4368604e0457aadce16d4790ecff77ab5ecb9ece7b191972b",
+    "backend/__main__.py": "ac31e6560f567ee61fd9c6ff94d9596c0608557293f0c6cd6407f994970d672b",
+    "backend/validation.py": "0935c848ad4b77e04e02d6007eeb4c596428b5def7b681190d8faa85614fd111",
+    "backend/config.py": "10c487a61bfce3ed5f5af3f2ae71ee8f7add1c82f5e958a790c93c1810700661",
+    "backend/store.py": "8e759718b5721ce4369d1f00c10ecf5a699503df075ca4bbd1920114ae49a465",
+    "backend/prompts.py": "e481afbc8b94ad650dd5149feb01e3ce0694ed86b1ce2b705ea7357d5e141bff",
+    "backend/models.py": "ab0df5f73b2dbcefb79c75837f1efc6f94833a0ed44ebbd471d817414a284064",
+    "backend/evaluate.py": "07bad55ec40c32cb0103379c0ecfc663373ed1732d2d2a799e1e8e280cc3cceb",
+    "backend/domain.py": "01c1dcf5bde48957f5f7025f50f67acf967d9f7f8485fd2dec653bc923b2a265",
+    "evaluation/natural_dialogue.py": "637a2cde115a1affcf8ca5554ebf443029f1677b0dcd20bdcab790e5ce51ee8f"
+  },
+  "inputSha256": "3e6be5519b49924c561ddba88eb14f5de2657e4e0c06e879580e7735d697087a",
+  "note": "Six development pairs, same user messages/evidence/history. Alternating order. One generation per arm; no repair or best-of selection. Alias drift and sampling noise remain. Not held-out or expert scores.",
+  "snapshotNote": "source 是运行开始时的源码；后续只补文献背景判定、历史预算优先级和 claim 局部归属边界。生成对照仅调用模型，未运行这些图变更；真实对话与最终代码回放另存。"
+}

@@ -1,0 +1,35 @@
+{
+  "comparison": {
+    "requests": 12,
+    "confirmedCalls": 12,
+    "errors": [],
+    "repairs": 0,
+    "reportedTokens": 39064,
+    "unknownUsageCalls": 0,
+    "totalTokens": 39064,
+    "callLatencyMedianMs": 7313.0
+  },
+  "conversations": {
+    "requests": 10,
+    "confirmedCalls": 10,
+    "errors": [],
+    "repairs": 0,
+    "reportedTokens": 48539,
+    "unknownUsageCalls": 0,
+    "totalTokens": 48539,
+    "callLatencyMedianMs": 7409.0
+  },
+  "independent": {
+    "requests": 28,
+    "confirmedCalls": 28,
+    "errors": [
+      "MODEL_INCOMPLETE_RESPONSE"
+    ],
+    "repairs": 0,
+    "reportedTokens": 171296,
+    "unknownUsageCalls": 0,
+    "totalTokens": 171296,
+    "callLatencyMedianMs": 20870.0
+  },
+  "note": "Recorded calls, including failures; no prices or semantic pass rates. Comparison is isolated generation, others use the production graph. Do not pool these scenarios into a quality score."
+}

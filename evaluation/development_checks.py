@@ -170,10 +170,9 @@ async def scripted_chat(messages, tools=None):
         evidence = context.get('参考原文', [])
         target = next((e for e in evidence if e['id'] == case.get('targetId')), evidence[0] if evidence else None)
         missing = case['id'] in ('source-missing', 'partial-source-life')
-        value = dict(status='insufficient' if missing else 'answered', summary='模拟回答，仅验证执行契约。',
-            paragraphs=[dict(kind='reflection' if missing or target is None else 'interpretation',
-                text='本库未收录该材料。' if missing else '这是模拟回答，不用于质量判断。',
-                citations=[] if missing or target is None else [dict(evidenceId=target['id'], quote=target['text'][:12])])],
+        value = dict(status='insufficient' if missing else 'answered',
+            paragraphs=[dict(text='本库未收录该材料。' if missing else '这是模拟回答，不用于质量判断。',
+                citations=[] if missing or target is None else [dict(evidenceId=target['id'], quote=target['text'][:12], claim='这是模拟回答，不用于质量判断。')])],
             limitations=['仅用于离线执行验证。'])
         message['content'] = json.dumps(value, ensure_ascii=False)
     return dict(message=message, usage=dict(total_tokens=10), model='scripted-development')

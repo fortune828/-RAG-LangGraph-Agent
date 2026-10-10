@@ -118,35 +118,32 @@ def validate_answer(value, evidence, targets=(), require_citations=True):
         for t in targets:
             if not any(e['id'] in cited and matches_target(e, t) for e in evidence):
                 errors.append(f'REQUIRED_TARGET_NOT_CITED:{t}')
-    elif not answer['limitations']:
-        errors.append('MISSING_LIMITATION')
     for i, p in enumerate(answer['paragraphs']):
-        if p['kind'] == 'interpretation' and not p['citations']:
-            errors.append(f'paragraphs.{i}: INTERPRETATION_REQUIRES_CITATION')
-        if p['kind'] == 'reflection' and p['citations']:
-            errors.append(f'paragraphs.{i}: REFLECTION_MUST_NOT_CITE')
         for c in p['citations']:
+            if c['claim'] not in p['text']:
+                errors.append('CLAIM_NOT_IN_PARAGRAPH:' + c['evidenceId'])
             e = by_id.get(c['evidenceId'])
             if not e:
                 errors.append('UNKNOWN_EVIDENCE:' + c['evidenceId'])
             elif len(normalize(c['quote'])) < 2 or normalize(c['quote']) not in normalize(e['text']):
                 errors.append('QUOTE_MISMATCH:' + c['evidenceId'])
+            if e:
+                for author in asserted_names(c['claim'], AUTHORS):
+                    if author not in e.get('authorIds', []):
+                        errors.append('CLAIM_AUTHOR_ATTRIBUTION_MISMATCH:' + author)
+                for work in asserted_names(c['claim'], WORKS):
+                    if work != e.get('workId'):
+                        errors.append('CLAIM_WORK_ATTRIBUTION_MISMATCH:' + work)
         for author in asserted_names(p['text'], AUTHORS):
             if not any(author in by_id.get(c['evidenceId'], {}).get('authorIds', []) for c in p['citations']):
                 errors.append('AUTHOR_ATTRIBUTION_MISMATCH:' + author)
         for work in asserted_names(p['text'], WORKS):
             if not any(work == by_id.get(c['evidenceId'], {}).get('workId') for c in p['citations']):
                 errors.append('WORK_ATTRIBUTION_MISMATCH:' + work)
-    for author in asserted_names(answer['summary'], AUTHORS):
-        if not any(author in by_id.get(eid, {}).get('authorIds', []) for eid in cited):
-            errors.append('SUMMARY_AUTHOR_ATTRIBUTION_MISMATCH:' + author)
-    for work in asserted_names(answer['summary'], WORKS):
-        if not any(work == by_id.get(eid, {}).get('workId') for eid in cited):
-            errors.append('SUMMARY_WORK_ATTRIBUTION_MISMATCH:' + work)
     return (None if errors else answer), list(dict.fromkeys(errors))
 
 
 def fallback():
-    return dict(status='insufficient', summary='这次未能生成通过核验的完整解读。',
-                paragraphs=[dict(kind='reflection', text='本次卦象已保留。可以查看原文依据，或继续说明你的问题。', citations=[])],
-                limitations=['结构或引用校验修复一次后仍未通过。', '引文匹配不代表语义解释已经人工审核。'])
+    return dict(status='insufficient',
+                paragraphs=[dict(text='这次回答未能通过核验，本次卦象已保留。可以查看原文依据，或继续说明你的问题。', citations=[])],
+                limitations=['结构或引用校验修复一次后仍未通过。'])

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { BookOpen, ArrowUpRight, RotateCcw, Sparkles, Plus, LoaderCircle, Trash2, Mountain } from 'lucide-react';
 import { Hexagram } from './components/Hexagram';
+import { AnswerBody } from './components/AnswerBody';
 import type { Session, Turn, Evidence } from '../shared/types';
 
 type Access = { id: string; token: string; question: string };
@@ -56,27 +57,7 @@ function TurnCard({ turn, onRetry, busy }: { turn: Turn; onRetry: () => void; bu
       {turn.error === 'CHECKPOINT_VERSION_MISMATCH' || turn.error === 'REQUIRED_EVIDENCE_BUDGET_EXCEEDED'
         ? <a href="#followup" className="text-button" onClick={event => { event.preventDefault(); document.getElementById('followup')?.focus(); }}>沿用本卦重新提问</a>
         : <button onClick={onRetry} disabled={busy} className="text-button"><RotateCcw size={15}/>保留卦象，重试解释</button>}</div>}
-    {answer && <>
-      <div className="answer-summary">{answer.summary}</div>
-      {answer.status === 'insufficient' && <span className="badge">可用材料不足</span>}
-      {answer.paragraphs.map((p, i) => <section key={i} className="answer-paragraph"><p>{p.text}
-        {[...new Set(p.citations.map(c => c.evidenceId))].map(id => {
-          const number = referenceNumbers.get(id);
-          return number ? <sup key={id} className="reference-marker"><a href={`#${referenceId(number)}`}
-            aria-label={`查看参考文献 ${number}`} onClick={event => {
-              event.preventDefault();
-              const reference = document.getElementById(referenceId(number)) as HTMLDetailsElement | null;
-              if (reference) {
-                const referencesPanel = reference.closest('.answer-references') as HTMLDetailsElement | null;
-                if (referencesPanel) referencesPanel.open = true;
-                reference.open = true;
-                reference.querySelector('summary')?.focus({ preventScroll: true });
-                reference.scrollIntoView({ block: 'nearest' });
-              }
-            }}>[{number}]</a></sup> : null;
-        })}</p></section>)}
-      {!!answer.limitations.length && <aside className="limitations">{answer.limitations.map((s, i) => <p key={i}>{s}</p>)}</aside>}
-    </>}
+    {answer && <AnswerBody answer={answer} referenceNumbers={referenceNumbers} referenceId={referenceId}/>}
     {!!turn.trace.length && <details className="trace"><summary>查看执行记录{turn.durationMs ? ` · ${(turn.durationMs / 1000).toFixed(1)} 秒` : ''}</summary>
       <p>模型 {turn.model} · {tokens} tokens · 工具调用 {turn.trace.filter(t => t.step === 'tool').length} 次</p>
       {turn.releaseId && <p>知识版本 {turn.releaseId}</p>}

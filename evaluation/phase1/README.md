@@ -1,10 +1,12 @@
-# 第一阶段：固定开发输入 C/D 配对
+# 历史第一阶段：固定开发输入 C/D 配对（v9/v14）
 
-只比较 14 个固定开发轮次。B（仅初始证据）保留后续正式范围；C/W1 是规则补检索，D/W2 是生产 Agent；W3 仅为以后按需诊断。不加载 gold，不建设 R1/R2/R3 或留出集。
+本目录保留旧 v9/v14 协议和案例；原 14 份匿名评分已暂停，不再填写原 scores.csv，也不作为正式评分。当前产品为 v10/v15，不能在新源码上重跑旧 --paired；行为哈希不一致应拒绝，不能覆盖旧基线。新自然对话记录见[本轮验证](../natural-dialogue-20261010.md)。
+
+旧阶段只比较 14 个固定开发轮次。B（仅初始证据）保留后续正式范围；C/W1 是规则补检索，D/W2 是生产 Agent；W3 仅为以后按需诊断。不加载 gold，不建设 R1/R2/R3 或留出集。
 
 ## 执行
 
-在项目根目录，使用既有 `.venv` 和后端密钥配置：
+以下 --paired 命令仅适用于还原冻结 v9/v14 的独立 checkout；当前源码应拒绝。--rescore 可在当前源码使用冻结历史 Schema 重算旧统计。不要覆盖已经保存的原始回答或分数：
 
 ```bash
 # 无 API 消费：检查真实图、规则工具及完整采集
@@ -25,7 +27,7 @@
 
 `../baselines/phase1-v1.json` 冻结 graph v9 / prompt v14、模型、知识库、Git 及行为文件哈希。执行器拒绝提示词、知识库、领域规则或校验文件与冻结值不一致；新行为需要另建版本和报告，不能改过代码后冒充同一基线。
 
-评测增量只有图的可选 route_policy / observe 参数、模型响应的非敏感元数据，以及预算/记录器。生产 API 不传评测参数、不读取实验输入、不产生完整对话采集。图版本仍是行为基线 v9；代码修订和实验协议 paired-phase1-v1 另记。默认 D 与冻结源码的模型请求及结果对照由 `test_paired_evaluation.py` 覆盖；unknown 用量在 trace 中改为 null，不改变模型请求。
+评测增量只有图的可选 route_policy / observe 参数、模型响应的非敏感元数据，以及预算/记录器。生产 API 不传评测参数、不读取实验输入、不产生完整对话采集。当时图版本为行为基线 v9；代码修订和实验协议 paired-phase1-v1 另记。当时默认 D 与冻结源码的请求及结果对照已归档；当前测试检查冻结入口拒绝新行为，不能要求 v15 输出与 v14 一致。unknown 用量在 trace 中为 null。
 
 ## 产物和口径
 
@@ -33,7 +35,7 @@
 - inputs.json：完整固定输入；rows.json：最终状态、初始证据、路由最终证据及生成/校验实际可见证据。
 - traces/*.jsonl：模型请求/响应、规则决策、工具请求/结果、预算是否计数、修复前后候选、节点更新、错误与时间。真实密钥/HTTP 认证头不采集；内部 reasoning_content 不导出，仅存存在标记、长度与哈希，运行时协议仍原样传递。这里的可复现指配置、输入、输出和统计可追溯，不是 API 输出字节级确定。
 - metrics.json / comparison.csv / report.md / scoring-source.py：逐题、总体和分场景的机械与用量数据，可用 --rescore 重算。Schema 首次、最终机械校验与逐引用匹配分开；reportedSum 是已知部分，unknownCalls > 0 时完整总量为 null。离线统计版本 paired-metrics-v2 还识别请求无响应的硬中断：unresolvedModelRequests 单列，执行/计费未知，modelCalls 只计已确认，modelCallsTotal 为 null；不猜测请求是否付费。评分器源码哈希与快照独立于运行 manifest 保存。
-- review/：14 份预选匿名输出、空白 scores.csv、rubric。review-key 文件单独保存，评分前不要打开；不会自动填真人评分。未足够完成时会标记 INCOMPLETE，不伪造缺失材料。
+- review/：14 份旧预选匿名输出、原 scores.csv、rubric 均保留；评分已暂停，见 PAUSED.md。不会自动填真人评分。新核心对话体验移出 fuzzy-author/source-two-lines；相关独立检索与引用回归继续保留。
 
 工具请求和预算尝试分开：非法/重复/越界尝试可能消耗一次预算，但没有成功执行；超预算请求不再增加尝试。ok/empty 为实际检索结果，rejected 为程序拒绝；prepare 固定读取另记，不能把工具 0 次说成没有检索。
 

@@ -16,31 +16,18 @@ from evaluation.scoring import score_row, aggregate
 from evaluation.workflow import rule_route
 
 
-async def test_default_graph_matches_frozen_v9_for_all_phase_one_inputs():
-    baseline=json.loads(BASELINE_PATH.read_text())
-    source=subprocess.check_output(['git','show',baseline['sourceCommit']+':backend/graph.py'],cwd=ROOT).decode()
-    old=types.ModuleType('backend.frozen_graph')
-    exec(compile(source,'frozen_graph.py','exec'),old.__dict__)
+def test_old_baseline_refuses_new_behavior(tmp_path):
+    from evaluation.paired import manifest
+    with pytest.raises(ValueError, match='FROZEN_BEHAVIOR_CHANGED'):
+        manifest(types.SimpleNamespace(live=False), tmp_path)
 
-    def stable(value):
-        if isinstance(value,dict):
-            return {k:stable(v) for k,v in value.items() if k not in ('durationMs','started')}
-        if isinstance(value,list): return [stable(v) for v in value]
-        return value
 
-    for case in load_cases()['cases']:
-        results, payloads=[],[]
-        for builder in (old.build_graph,build_graph):
-            requests=[]
-            async def fake(messages,tools=None):
-                requests.append(copy.deepcopy(dict(messages=messages,tools=tools)))
-                return await smoke_chat(messages,tools)
-            result=await builder(InMemorySaver(),fake).ainvoke(
-                initial_state(copy.deepcopy(case['session']),case['question'],case['mode']),
-                {'configurable':{'thread_id':case['caseId']}})
-            results.append(stable(result)); payloads.append(requests)
-        assert payloads[0]==payloads[1],case['caseId']
-        assert results[0]==results[1],case['caseId']
+def test_archived_schema_stays_separate_from_new_generation():
+    from evaluation.scoring import schema_valid
+    old = json.dumps(dict(status='answered', summary='旧答案', paragraphs=[dict(
+        kind='reflection', text='旧正文', citations=[])], limitations=[]))
+    assert schema_valid(old, legacy=True)
+    assert not schema_valid(old)
 
 
 @pytest.mark.parametrize('question,ids',[

@@ -27,8 +27,8 @@ async def test_practical_routes_do_not_receive_classical_evidence(question):
         assert all('user' in turn and 'assistant' in turn for turn in context['近期对话'])
         assert context['当前问题'] == question
         assert context['近期对话'][0]['assistant'].endswith('旧经文解释')
-        return response(dict(status='answered', summary='请按现实条件行动。',
-                             paragraphs=[dict(kind='reflection', text='此处是无需经典解释的现实支持。', citations=[])], limitations=[]))
+        return response(dict(status='answered',
+                             paragraphs=[dict(text='此处是无需经典解释的现实支持。', citations=[])], limitations=[]))
 
     s = session()
     s['turns'] = [dict(status='completed', question='之前的问题', evidence=[],
@@ -50,4 +50,4 @@ async def test_new_reading_request_returns_operation_guidance_without_model():
     assert result['answer']['status'] == 'answered' and not result['errors']
     assert result['session']['cast'] == s['cast']
     assert not result['evidence'] and result['attempts'] == 0
-    assert all(p['kind'] == 'reflection' and not p['citations'] for p in result['answer']['paragraphs'])
+    assert all('kind' not in p and not p['citations'] for p in result['answer']['paragraphs'])

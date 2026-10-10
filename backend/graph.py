@@ -17,7 +17,7 @@ from .llm import deepseek_chat
 from .prompts import PROMPT_VERSION, ROUTER, SYSTEM, RISK_SYSTEM
 from .validation import AUTHORS, WORKS, fallback, matches_target, named_hexagrams, requested_targets, validate_answer
 
-GRAPH_VERSION = 'python-graph-v9'
+GRAPH_VERSION = 'python-graph-v10'
 
 
 class AgentState(TypedDict, total=False):
@@ -68,12 +68,13 @@ def pack_evidence(required, optional, max_chars=16000):
 
 
 def classify(question, mode):
-    if re.search(r'自杀|自殺|轻生|不想活|自残|服药|用药|停药|诊断|诊療|医疗|治病|急救|投资|股票|诉讼|法律', question):
+    risk_question = re.sub(r'投资(?:时间|精力|心血)', '', question)
+    if re.search(r'自杀|自殺|轻生|不想活|自残|服药|用药|停药|诊断|诊療|医疗|治病|急救|投资|股票|诉讼|法律', risk_question):
         return 'out_of_scope_or_risk'
     if re.search(r'重新起卦|再起一卦|再.*随机.*卦|新建起卦', question) or (
             mode != 'initial' and re.search(r'换个话题|换一个话题|先不谈.+(?:改问|问)|不说.+(?:改问|问)', question)):
         return 'new_reading_request'
-    if re.search(r'出处|出自|原文|逐字|哪一卦|哪一爻|《|王弼|程颐|朱熹|焦循', question):
+    if re.search(r'出处|出自|原文|逐字|哪一卦|哪一爻|(?:王弼|程颐|朱熹|焦循).*(?:说过|解|认为|观点|怎么说)|(?:注解|解释).*(?:王弼|程颐|朱熹|焦循)', question):
         return 'source_request'
     if mode == 'initial' or re.search(r'卦|爻|彖|象传|象傳|古文|注解', question):
         return 'explanation_followup'
@@ -95,7 +96,7 @@ def target_availability(state):
     recognized author absent from this release is still a definite coverage gap.
     """
     corpus = load_release(state['release'])[0]
-    books = re.findall(r'《([^》]{1,80})》', state['question'])
+    books = re.findall(r'《([^》]{1,80})》', state['question']) if state.get('intent', 'source_request') == 'source_request' else []
     known = {normalize_search(e.get('workTitle', '周易')) for e in corpus}
     known.update(normalize_search(n) for names in WORKS.values() for n in names)
     result = dict(available=[], retrievable=[], unavailable=[], unresolvedBooks=[b for b in books if normalize_search(b) not in known])
@@ -145,30 +146,43 @@ def target_label(target):
 
 
 def history(session):
-    """Bound the actual user/assistant text used by both routing and generation.
+    """Keep recent user corrections before spending the budget on assistant prose.
 
-    Keep chronological, contiguous recent turns. Very long assistant replies are
-    excerpts, never model-generated summaries or evidence for a fresh citation.
+    Excerpts preserve both ends, including legacy limitations; they are not
+    summaries or user facts. Information outside the six-turn window is unknown.
     """
-    selected, size = [], 2
-    for t in reversed([t for t in session['turns'] if t['status'] == 'completed'][-6:]):
-        answer = t.get('answer') or {}
+    def excerpt(text, limit):
+        if len(text) <= limit:
+            return text
+        marker = '\n（中间内容省略）\n'
+        room = max(0, limit - len(marker))
+        head = room * 3 // 5
+        tail = room - head
+        return text[:head] + marker + (text[-tail:] if tail else '')
+
+    turns = [t for t in session['turns'] if t['status'] == 'completed'][-6:]
+    texts, selected = [], []
+    for turn in turns:
+        answer = turn.get('answer') or {}
         text = '\n'.join([answer.get('summary', '')] +
-                         [p['text'] for p in answer.get('paragraphs', [])])
-        item = dict(user=t['question'][:2000], assistant=text[:1800])
-        if len(text) > 1800:
-            item['assistant'] += '（此前回答节选）'
-        length = len(dumps(item)) + 1
-        if size + length > 6000:
-            break
-        size += length
-        selected.append(item)
-    return list(reversed(selected))
+                         [p['text'] for p in answer.get('paragraphs', [])] + answer.get('limitations', []))
+        texts.append(text)
+        selected.append(dict(user=turn['question'][:2000], assistant=excerpt(text, 4000)))
+    # Only assistant excerpts shrink. Recent user corrections never disappear
+    # because an older assistant happened to write a long answer.
+    while selected and len(dumps(selected)) > 16000:
+        index = max(range(len(selected)), key=lambda i: len(selected[i]['assistant']))
+        length = len(selected[index]['assistant'])
+        if length <= 100:
+            break  # Escaped user text may exceed this soft budget; preserve it.
+            # Six turns and the API text limit still bound the input size.
+        selected[index]['assistant'] = excerpt(texts[index], max(100, length // 2))
+    return selected
 
 
 def new_question_answer():
-    return dict(status='answered', summary='一个聊天只讨论一个核心问题；新的问题需要新建聊天并重新起卦。',
-        paragraphs=[dict(kind='reflection', text='请点击“新建起卦”，围绕新的核心问题重新发问。本次卦象不改变，新聊天不会沿用这里的对话。', citations=[])],
+    return dict(status='answered',
+        paragraphs=[dict(text='请点击“新建起卦”，围绕新的核心问题重新发问。本次卦象不改变，新聊天不会沿用这里的对话。', citations=[])],
         limitations=[])
 
 
@@ -379,9 +393,9 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None, *, rout
     async def repair(state):
         # Field paths and actual limits let the model repair the observed 6/5
         # citation failure instead of blindly repeating INVALID_ANSWER_SCHEMA.
-        instruction = ('修复以下 JSON 错误。本轮仅提供现实安全支持：kind 为 reflection，citations 为空数组；不新增传统解释或原文缺失说明。'
+        instruction = ('修复以下 JSON 错误。本轮仅提供现实安全支持：citations 为空数组；不新增传统解释或原文缺失说明。'
                        if state['intent'] == 'out_of_scope_or_risk' else
-                       '修复下列具体契约错误，同时保留对用户问题的直接回答。引文须在本轮证据中；明确文献目标未完成则说明不足，不用无关原文凑引用。传统释义和现实建议自然分段，勿把修复变成资料汇报。')
+                       '修复下列具体契约错误，同时保留对用户问题的直接回答。引文须在本轮证据中；明确文献目标未完成则说明不足，不用无关原文凑引用。保持正文连贯，允许同段讨论卦义与现实；claim 定位本段受证据支持的连续文字，不把建议当成引文证明。')
         messages = generation_messages(state) + [state['response'], dict(role='user', content=dumps(dict(
             instruction=instruction, errors=state['errors'])))]
         response, trace = await invoke(messages, state)

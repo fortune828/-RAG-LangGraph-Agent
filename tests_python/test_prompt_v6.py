@@ -24,8 +24,8 @@ def test_fuzzy_source_scope_is_server_controlled():
 
 def test_partial_answer_does_not_waive_source_requirements():
     target = dict(hexagramId=1, layer='commentary', authorId='jiao-xun')
-    value = dict(status='insufficient', summary='无法确认指定注解，但可讨论现实条件。',
-                 paragraphs=[dict(kind='reflection', text='可先核对录用条件和必要支出。', citations=[])],
+    value = dict(status='insufficient',
+                 paragraphs=[dict(text='可先核对录用条件和必要支出。', citations=[])],
                  limitations=['未收录所问作者注解。'])
     assert validate_answer(value, [], [target], True)[0]
     value['status'] = 'answered'
@@ -53,7 +53,7 @@ async def test_fuzzy_author_target_is_not_silently_bound_to_current_hexagram():
             assert context['allowedHexagramIds'] is None
             assert all(t['hexagramId'] is None for t in context['requiredEvidenceTargetsForAnswered'])
             return response({'ready': True})
-        return response(dict(status='insufficient', summary='无法确认所问观点。', paragraphs=[], limitations=['未查得对应原文。']))
+        return response(dict(status='insufficient', paragraphs=[dict(text='无法确认所问观点。', citations=[])], limitations=['未查得对应原文。']))
     result = await build_graph(InMemorySaver(), model).ainvoke(
         initial_state(session(), '朱熹是不是说过，大意是困境时不要急着行动？', 'followup'),
         {'configurable': {'thread_id': 'fuzzy-author'}})

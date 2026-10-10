@@ -30,8 +30,9 @@ def session(lines=(7, 7, 7, 7, 7, 7)):
 
 
 def answer(e):
-    return dict(status='answered', summary='结合现有条件思考。', paragraphs=[dict(
-        kind='interpretation', text='这里的材料是一种文化反思角度。', citations=[dict(evidenceId=e['id'], quote=e['text'][:8])])],
+    return dict(status='answered', paragraphs=[dict(
+        text='材料写道：' + e['text'][:8] + '。这可以作为思考的一个角度。', citations=[dict(
+            evidenceId=e['id'], quote=e['text'][:8], claim=e['text'][:8])])],
         limitations=['不代表现实预测。'])
 
 
@@ -119,8 +120,8 @@ def test_validation_repair_paths_and_attribution():
     a['paragraphs'][0]['citations'] *= 6
     errors = validate_answer(a, [e])[1]
     assert any('paragraphs.0.citations' in error and '5' in error for error in errors)
-    missing = dict(status='insufficient', summary='本库未收录焦循《易章句》。', paragraphs=[dict(
-        kind='reflection', text='本库有王弼、程颐、朱熹的部分注解，不能冒充焦循的观点。', citations=[])], limitations=['未收录。'])
+    missing = dict(status='insufficient', paragraphs=[dict(
+        text='本库有王弼、程颐、朱熹的部分注解，不能冒充焦循的观点。', citations=[])], limitations=['未收录。'])
     assert validate_answer(missing, [])[0]
     missing['paragraphs'][0]['text'] = '焦循认为你应立即行动。'
     assert 'AUTHOR_ATTRIBUTION_MISMATCH:jiao-xun' in validate_answer(missing, [])[1]
@@ -163,8 +164,8 @@ async def test_graph_can_answer_without_tool_or_citation_for_situation():
     async def model(messages, tools=None):
         if tools:
             return response({'ready': True})
-        return response(dict(status='answered', summary='先看你明确提到的收入约束。',
-                             paragraphs=[dict(kind='reflection', text='可以先核实现金储备和答复期限。', citations=[])], limitations=[]))
+        return response(dict(status='answered',
+                             paragraphs=[dict(text='可以先核实现金储备和答复期限。', citations=[])], limitations=[]))
     graph = build_graph(InMemorySaver(), model)
     r = await graph.ainvoke(initial_state(session(), '我担心收入不稳定，如何考虑？', 'followup'),
                            {'configurable': {'thread_id': 'no-tool'}})
@@ -194,7 +195,7 @@ async def test_duplicate_and_invalid_tools_are_bounded():
     async def model(messages, tools=None):
         if tools:
             return response(calls=[tool_call(h=2)])
-        return response(dict(status='insufficient', summary='未取得资料。', paragraphs=[], limitations=['没有证据。']))
+        return response(dict(status='insufficient', paragraphs=[dict(text='未取得资料。', citations=[])], limitations=['没有证据。']))
     graph = build_graph(InMemorySaver(), model)
     r = await graph.ainvoke(initial_state(session(), '补充解释当前卦象', 'followup'),
                            {'configurable': {'thread_id': 'bounded'}})

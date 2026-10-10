@@ -10,8 +10,8 @@ from tests_python.test_migration import response, session, tool_call
 
 
 def missing_answer():
-    return dict(status='insufficient', summary='当前资料不足以提供所问原文。',
-                paragraphs=[dict(kind='reflection', text='未取得对应材料，不能用他人注解代替。', citations=[])],
+    return dict(status='insufficient',
+                paragraphs=[dict(text='未取得对应材料，不能用他人注解代替。', citations=[])],
                 limitations=['所问材料未取得。'])
 
 
@@ -90,8 +90,7 @@ async def test_final_context_has_roles_and_no_routing_state():
         for internal in ['recentHistory', 'allowedHexagramIds',
                          'retrievableMissingTargets', 'coverageStatus', 'knowledgeCoverage']:
             assert internal not in messages[1]['content']
-        return response(dict(status='answered', summary='先核算必要支出。', paragraphs=[dict(
-            kind='reflection', text='一个月积蓄需要优先保留必要生活费用。', citations=[])], limitations=[]))
+        return response(dict(status='answered', paragraphs=[dict(text='一个月积蓄需要优先保留必要生活费用。', citations=[])], limitations=[]))
 
     result = await build_graph(InMemorySaver(), model).ainvoke(
         initial_state(s, '房租也要付，下一步怎么考虑？', 'followup'),
@@ -109,8 +108,8 @@ async def test_irrelevant_author_is_rejected_even_if_present_in_router_context()
         generations += 1
         if generations == 1:
             value = missing_answer()
-            value['paragraphs'] = [dict(kind='interpretation', text='朱熹的另一段注解。',
-                citations=[dict(evidenceId=e['id'], quote=e['text'][:8])])]
+            value['paragraphs'] = [dict(text='朱熹的另一段注解。',
+                citations=[dict(evidenceId=e['id'], quote=e['text'][:8], claim='朱熹的另一段注解。')])]
             return response(value)
         assert 'UNKNOWN_EVIDENCE' in messages[-1]['content']
         return response(missing_answer())

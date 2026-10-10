@@ -47,16 +47,15 @@ class SearchArgs(Filters):
 class Citation(StrictModel):
     evidenceId: str
     quote: str = Field(min_length=2, max_length=600)
+    claim: str = Field(min_length=1, max_length=8000)
 
 
 class Paragraph(StrictModel):
-    kind: Literal['interpretation', 'reflection']
-    text: str = Field(min_length=1, max_length=2000)
+    text: str = Field(min_length=1, max_length=16000)
     citations: list[Citation] = Field(default_factory=list, max_length=5)
 
 
 class Answer(StrictModel):
     status: Literal['answered', 'insufficient']
-    summary: str = Field(min_length=1, max_length=600)
-    paragraphs: list[Paragraph] = Field(max_length=6)
-    limitations: list[Annotated[str, Field(max_length=600)]] = Field(default_factory=list, max_length=8)
+    paragraphs: list[Paragraph] = Field(min_length=1)
+    limitations: list[Annotated[str, Field(max_length=2000)]] = Field(default_factory=list, max_length=8)

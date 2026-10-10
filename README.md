@@ -1,12 +1,12 @@
 # 见素问微 · Python / LangGraph 周易情境解读 Agent
 
-回答目标修订（2026-10-10）：所有普通解卦都从本次卦象出发，现实条件决定建议的分寸；小事轻解、大事深谈。首次解读包含简短有据的卦意，追问可自然承接，不堆原文、不以吉凶保证或否定日常行动。当前 graph v9 / prompt v14，保留单核心问题、真实引用与风险支持边界。见 [本轮验收](evaluation/cast-grounded-20261010.md)。
+自然对话修订（2026-10-10）：当前 graph v10 / prompt v15。约束事实与安全，不规定写作顺序、段落类型或问题应有几句话。所有普通解卦仍从本次卦象出发，小事轻解、大事深谈；卦义与现实可以在同段自然讨论，追问承接实际上下文。保留确定性起卦、单核心问题、工具权限、真实引文及风险支持边界。工程通过不等于表达质量改善，见 [本轮验证与完整回答](evaluation/natural-dialogue-20261010.md)。
 
 面向现实困惑的占卜对话应用：程序起卦，以真实材料理解卦象，用隐喻帮助看清处境、取舍与下一步。回答追求沉稳、通透、具体，不以资料汇报代替解卦，也不宣称掌握确定的未来。
 
 **当前状态（2026-10-08）**：核心运行后端已迁移为 Python + FastAPI + LangGraph，现有 React 前端保留。迁移目标是让只掌握 Python 的开发者学习、调试并解释 Agent 核心；前端开发不作为学习前置条件。产品质量完善与冻结留出评测仍在进行，历史 TypeScript 后端保留作对照和回滚。
 
-当前为 graph v9 / prompt v14、Flash 思考模式。单核心问题会话、角色明确的近期对话、引用校验和同轮恢复已实现；111 项 Python 回归通过，真实回答仍有语义验收缺口。最新结果及版本差异见 [本轮回答体验验收](evaluation/cast-grounded-20261010.md) 和 [任务状态](tasklist.md)。
+当前为 graph v10 / prompt v15、Flash 思考模式。新回答仅包含 status、普通 paragraphs（text 与 citations）及可选内部 limitations；不再生成 summary 或段落 kind。引用用 claim 定位本段受支持的文字；前端在该处显示引用标记。旧会话的摘要、正文和限制完整展示为普通正文。质量与验证记录见 [本轮回答体验验证](evaluation/natural-dialogue-20261010.md) 和 [任务状态](tasklist.md)。
 
 ## 启动
 
@@ -52,8 +52,8 @@ React → FastAPI → 服务端起卦并保存会话
 - 起卦采用三枚硬币六次投掷；Python `secrets.randbelow` 抽样，纯函数计算卦象。新会话额外保存每枚硬币结果与规则版本。
 - 精确检索提供本卦、动爻和必要变卦材料；BM25 补充词面检索，搜索时简繁归一，引文校验不替换简繁。
 - 工具只有 `get_passages`、`search_knowledge`。参数由 Pydantic 校验，服务端约束卦象范围；明确未知出处查询可按受控策略搜索全库。
-- 每轮最多三次工具尝试、一次缺口反馈、一次输出修复。新生成段落必须声明 kind：interpretation 必须引用，reflection 禁止引用；传统解释和现实建议分段。未实现完整语义蕴涵验证。
-- 最终生成接收核心问题、当前问题、有限近期用户／助手对话、相关原文和自然语言限制，不接收原始工具日志。对话至多六轮、6000 字符，单轮过长回答保留标记节选，预算按实际传入内容计算；旧助手意见不是用户事实或可直接引用的证据。按元数据区分资料未收录与尚未取得；未知书名和搜索零结果不直接证明全库缺失。
+- 每轮最多三次工具尝试、一次缺口反馈、一次输出修复。普通段落允许混合卦义与现实分析，引用 claim 必须逐字出现在正文中，quote 必须匹配本轮证据；明确作者、作品及卦爻目标仍校验。位置与原文匹配不能证明解释语义或现实建议正确。
+- 最终生成接收核心问题、当前问题、有限近期用户／助手对话、相关原文和自然语言限制，不接收原始工具日志。对话至多六轮；以序列化后 16000 字符为助手摘录压缩目标，优先保留这六轮的用户原话（大量转义字符可使用户文本自身超出此目标）；单轮助手正文连同旧摘要与内部限制超过 4000 字符时保留首尾并标记中间省略，预算按实际传入内容计算；旧助手意见不是用户事实或可直接引用的证据。按元数据区分资料未收录与尚未取得；未知书名和搜索零结果不直接证明全库缺失。
 - 风险支持及要求重起卦时不提供古文证据，不进入工具循环；重起卦必须由用户显式操作。规则识别仍有限，不是完整风险分类器。
 - StateGraph 使用 SQLite 持久 checkpoint，**每个 turn 一个 thread**。最近至多六轮业务历史作为新轮上下文；失败轮按原 thread 恢复。已完成节点不必重跑，正在进行且尚未保存结果的模型请求仍可能重放，不宣称外部 API 恰好调用一次。
 - 结构／引用修复耗尽属于技术失败，页面不展示无效正文；即使图已结束，重试也会在原 thread 从生成节点重新执行，保留证据而不重跑工具。真正的资料不足仍是正常业务回答。旧 checkpoint 版本不兼容时保留历史，改用同卦新追问，不强行迁移状态。
@@ -74,21 +74,23 @@ React → FastAPI → 服务端起卦并保存会话
 
 ## 验证与评测
 
-已按批准的[审计提案](evaluation/evaluation-audit-20261010.md)建设第一阶段 C/W1 与 D/W2 评测：14 条固定开发输入、完整可见调用记录、可重算统计和 14 份匿名人工试评材料。见[第一阶段验收](evaluation/phase1-acceptance-20261010.md)与[运行说明](evaluation/phase1/README.md)。这是开发对照，语义评分待真人填写；B、检索层对照及 40+40 冻结集尚未实施。
+已按批准的[审计提案](evaluation/evaluation-audit-20261010.md)建设第一阶段 C/W1 与 D/W2 评测：14 条固定开发输入、完整可见调用记录、可重算统计和 14 份匿名人工试评材料。见[第一阶段验收](evaluation/phase1-acceptance-20261010.md)与[运行说明](evaluation/phase1/README.md)。这是历史 graph v9 / prompt v14 开发对照。旧 14 份匿名评分已暂停，不再填写原 scores.csv，也不作为正式评分；原回答、Trace 和统计保留。当前重构独立记录生成对照、连续追问与独立 AI 体验，不冒称真人评分。B、检索层对照及 40+40 冻结集尚未实施。
 
 ```bash
 npm run test:python                   # Python、API、真实 StateGraph 与跨进程恢复；mock 模型
 .venv/bin/python -m backend.evaluate  # 64 项精确检索契约，不请求模型
 npm run lint                         # 保留前端/历史 TS 类型检查
-npm test                             # 历史 TS 37 项基线
+npm test                             # TS 基线与新旧回答渲染回归
 npm run build
 npm run knowledge:audit              # 保留的数据来源/修订审计，不请求模型
 
 # 显式执行才消耗模型额度，固定合成开发样例；不是生产随机起卦或留出评测
 .venv/bin/python -m backend.evaluate --live --max-calls 8 --max-tokens 100000
 
-# 14 条固定输入 × C/D；先离线验证，添加 --live 才产生模型费用
-.venv/bin/python -m backend.evaluate --paired --max-calls 100 --max-tokens 600000
+# 旧 C/D 的 --paired 冻结 v9/v14；在当前新版代码上会拒绝执行，不得更新旧哈希冒充同一基线
+# 新版六对生成对照：相同模型、卦象、证据、历史；仅比较 v14/v15 生成契约，不是整图 C/D
+# --live 消耗模型额度；output 必须为尚不存在的全新目录
+.venv/bin/python -m evaluation.natural_dialogue --live --output evaluation/results/natural-dialogue-new-run
 # 已保存的完整真实结果可离线重算
 .venv/bin/python -m backend.evaluate --rescore evaluation/reports/phase1-20261010/complete
 
@@ -107,7 +109,7 @@ npm run knowledge:audit              # 保留的数据来源/修订审计，不�
 
 迁移报告：[真实模型原始记录](evaluation/results/python-live-20261008-070030-561f7e/report.json)、[浏览器记录](evaluation/results/python-browser-1791442819647485130/report.json)。results 是本地忽略目录，公开展示时须另整理可分发证据。
 
-Python evaluator 已支持有预算的固定输入 C/D 配对与离线重算；旧 `npm run eval:live` 仍运行 TypeScript 基线，两者不得混算。新版 40+40、完整 B/C/D 与真人评分仍待后续验收，不填未经测量的质量提升百分比。
+Python evaluator 保留旧冻结 C/D 的离线重算，历史 Schema 由 evaluation/legacy_schema.py 独立校验，不套用 v15 契约；当前源码不能直接重跑旧冻结 --paired。旧 `npm run eval:live` 仍运行 TypeScript 基线，各版本不得混算。新版 40+40、完整 B/C/D 与真人评分仍待后续验收，不填未经测量的质量提升百分比。
 
 ## 数据、兼容与回滚
 

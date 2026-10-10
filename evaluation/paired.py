@@ -99,9 +99,9 @@ async def smoke_chat(messages, tools=None):
         context = json.loads(messages[1]['content'])
         evidence = context.get('参考原文', [])
         missing = any('未收录' in note or '书名尚未确认' in note for note in context.get('资料说明', []))
-        answer = dict(status='insufficient' if missing else 'answered', summary='模拟输出，只验证采集。',
-            paragraphs=[dict(kind='interpretation' if evidence and not missing else 'reflection', text='模拟内容。',
-                citations=[dict(evidenceId=e['id'], quote=e['text'][:10]) for e in evidence[:5]] if evidence and not missing else [])],
+        answer = dict(status='insufficient' if missing else 'answered',
+            paragraphs=[dict(text='模拟内容。',
+                citations=[dict(evidenceId=e['id'], quote=e['text'][:10], claim='模拟内容。') for e in evidence[:5]] if evidence and not missing else [])],
             limitations=['模拟资料不足。'] if missing else [])
         message = dict(role='assistant', content=json.dumps(answer, ensure_ascii=False))
     return dict(message=message, usage={'prompt_tokens': 8, 'completion_tokens': 2, 'total_tokens': 10},

@@ -5,6 +5,7 @@ import json
 from uuid import uuid4
 
 import httpx
+import pytest
 from langgraph.checkpoint.memory import InMemorySaver
 
 from backend.app import create_app
@@ -14,24 +15,38 @@ from backend.validation import requested_targets, validate_answer
 from tests_python.test_migration import answer, generic_chat, response, session
 
 
-def test_practical_paragraphs_need_no_decorative_citation():
+def test_mixed_paragraphs_and_scoped_citations_preserve_source_checks():
     e = retrieve_exact(dict(hexagramId=1, sections=['xiang']))['evidence'][0]
     result = answer(e)
-    result['paragraphs'].append(dict(kind='reflection', text='先确认现金储备和录用条件，再比较选择。', citations=[]))
+    # The same paragraph may cite a classical claim and discuss a real decision.
+    result['paragraphs'][0]['text'] += '先确认现金储备和录用条件，再比较选择。'
     assert validate_answer(result, [e], require_citations=True)[0]
+    claim = result['paragraphs'][0]['citations'][0]['claim']
+    assert '现金储备' not in claim
     no_sources = copy.deepcopy(result)
     no_sources['paragraphs'][0]['citations'] = []
     assert validate_answer(no_sources, [e], require_citations=True)[0] is None
-    assert validate_answer(no_sources, [e], require_citations=False)[0] is None
-    reflection = copy.deepcopy(result)
-    reflection['paragraphs'][0]['kind'] = 'reflection'
-    assert validate_answer(reflection, [e])[0] is None
-    legacy = copy.deepcopy(result)
-    legacy['paragraphs'][0].pop('kind')
-    assert validate_answer(legacy, [e])[0] is None
+    # The validator cannot infer which uncited sentences are traditional claims.
+    assert validate_answer(no_sources, [e], require_citations=False)[0]
+    for old_field in ('kind', 'summary'):
+        legacy = copy.deepcopy(result)
+        if old_field == 'kind':
+            legacy['paragraphs'][0]['kind'] = 'reflection'
+        else:
+            legacy['summary'] = '旧结论'
+        assert validate_answer(legacy, [e])[0] is None
     forged = copy.deepcopy(result)
     forged['paragraphs'][0]['citations'][0]['quote'] = '这不是所引原文'
     assert validate_answer(forged, [e])[0] is None
+    unanchored = copy.deepcopy(result)
+    unanchored['paragraphs'][0]['citations'][0]['claim'] = '正文没有这句话'
+    assert validate_answer(unanchored, [e])[0] is None
+    missing_claim = copy.deepcopy(result)
+    del missing_claim['paragraphs'][0]['citations'][0]['claim']
+    assert validate_answer(missing_claim, [e])[0] is None
+    unknown = copy.deepcopy(result)
+    unknown['paragraphs'][0]['citations'][0]['evidenceId'] = 'made-up'
+    assert validate_answer(unknown, [e])[0] is None
     targets = requested_targets('本卦第二爻原文', session()['cast'])
     assert validate_answer(result, [e], targets)[0] is None
 
@@ -41,7 +56,7 @@ async def test_initial_graph_allows_separate_practical_paragraph():
         context = json.loads(messages[1]['content'])
         assert context['卦象']['爻名'] == ['少阳'] * 6
         result = answer(context['参考原文'][0])
-        result['paragraphs'].append(dict(kind='reflection', text='先核实你的现金储备与工作条件。', citations=[]))
+        result['paragraphs'].append(dict(text='先核实你的现金储备与工作条件。', citations=[]))
         return response(result)
     graph = build_graph(InMemorySaver(), model)
     s = session()
@@ -122,8 +137,8 @@ async def test_business_insufficient_is_completed_and_does_not_regenerate(tmp_pa
     async def model(messages, tools=None):
         nonlocal calls
         calls += 1
-        return response(dict(status='insufficient', summary='本库未收录指定作者的注解。',
-                             paragraphs=[], limitations=['缺少该作者材料。']))
+        return response(dict(status='insufficient',
+                             paragraphs=[dict(text='本库未收录指定作者的注解。', citations=[])], limitations=['缺少该作者材料。']))
 
     app = create_app(tmp_path, model)
     sid, tid, token = [str(uuid4()) for _ in range(3)]
@@ -140,7 +155,8 @@ async def test_business_insufficient_is_completed_and_does_not_regenerate(tmp_pa
             assert calls == 1
 
 
-async def test_saved_legacy_answer_without_kind_is_read_unchanged(tmp_path):
+@pytest.mark.parametrize('legacy_kind', [None, 'reflection'])
+async def test_saved_legacy_answer_is_read_unchanged(tmp_path, legacy_kind):
     """The new generation schema must not invalidate already saved sessions."""
     from backend.store import Store
 
@@ -149,6 +165,8 @@ async def test_saved_legacy_answer_without_kind_is_read_unchanged(tmp_path):
     saved = store.create(sid, token, '旧会话')
     legacy = dict(status='answered', summary='以前的回答。',
                   paragraphs=[dict(text='请根据现实条件考虑。', citations=[])], limitations=[])
+    if legacy_kind:
+        legacy['paragraphs'][0]['kind'] = legacy_kind
     saved['turns'] = [dict(id=tid, status='completed', question='旧会话', answer=legacy,
                           evidence=[], trace=[])]
     store.save(saved)

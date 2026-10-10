@@ -10,7 +10,7 @@ from pathlib import Path
 from backend.models import Answer
 from backend.knowledge import normalize
 
-SCORING_VERSION = 'paired-metrics-v2'
+SCORING_VERSION = 'paired-metrics-v3'
 
 
 def number(value):
@@ -29,15 +29,16 @@ def distribution(values):
                 raw=values, method='median / nearest-rank p95; small development sample')
 
 
-def schema_valid(content):
+def schema_valid(content, legacy=False):
     try:
-        Answer.model_validate(json.loads(content))
+        from evaluation.legacy_schema import Answer as LegacyAnswer
+        (LegacyAnswer if legacy else Answer).model_validate(json.loads(content))
         return True
     except (ValueError, TypeError):
         return False
 
 
-def score_row(row, events):
+def score_row(row, events, legacy=False):
     calls = [e for e in events if e['kind'] == 'model_result' and e['budgetCounted']]
     responded = {e['callId'] for e in events if e['kind'] == 'model_result'}
     unresolved = [e for e in events if e['kind'] == 'model_request' and e['callId'] not in responded]
@@ -62,7 +63,7 @@ def score_row(row, events):
                 quote = normalize(citation['quote'])
                 citations.append(bool(e and len(quote) >= 2 and quote in normalize(e['text'])))
     first_message = generations[0].get('response', {}).get('message') if generations else None
-    first_schema = schema_valid(first_message.get('content')) if isinstance(first_message, dict) else None
+    first_schema = schema_valid(first_message.get('content'), legacy=legacy) if isinstance(first_message, dict) else None
     return dict(caseId=row['caseId'], variant=row['variant'], scenario=row['scenario'], status=row['status'],
         completed=row['status']=='completed', businessStatus=(row.get('answer') or {}).get('status') if row['status']=='completed' else None,
         durationMs=row.get('durationMs'), modelRequests=len([e for e in events if e['kind']=='model_request']),
@@ -104,11 +105,14 @@ def aggregate(rows):
 def rescore(directory):
     directory = Path(directory)
     rows = json.loads((directory / 'rows.json').read_text())
+    manifest_path = directory / 'manifest.json'
+    manifest = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
+    legacy = manifest.get('baseline', {}).get('promptVersion') == 'evidence-agent-python-v14'
     scores = []
     for row in rows:
         path = directory / row.get('traceFile','missing')
         events = [json.loads(line) for line in path.read_text().splitlines()] if path.is_file() else []
-        scores.append(score_row(row, events))
+        scores.append(score_row(row, events, legacy=legacy))
     pairs = []
     for case_id in dict.fromkeys(r['caseId'] for r in rows):
         c,d = [next(r for r in rows if r['caseId']==case_id and r['variant']==v) for v in ('C','D')]
@@ -123,6 +127,11 @@ def rescore(directory):
         byScenario={s:{v:aggregate([r for r in scores if r['variant']==v and r['scenario']==s]) for v in ('C','D')} for s in sorted({r['scenario'] for r in scores})})
     (directory / 'metrics.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
     (directory / 'scoring-source.py').write_bytes(source)
+    # A v14 archive must remain recomputable even after the live schema evolves.
+    schema_source = (Path(__file__).with_name('legacy_schema.py') if legacy else Path(__file__).parents[1] / 'backend/models.py').read_bytes()
+    (directory / 'scoring-schema-source.py').write_bytes(schema_source)
+    result['schemaSha256'] = hashlib.sha256(schema_source).hexdigest()
+    (directory / 'metrics.json').write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
     fields=['caseId','scenario','variant','status','businessStatus','modelCalls','modelCallsTotal','unresolvedModelRequests','failedModelCalls','toolRequests','toolBudgetAttempts','toolSucceeded','toolEmpty','toolRejected','repairs','reportedTokens','unknownUsageCalls','durationMs','firstSchemaValid','finalMechanicalValid','semanticReview']
     with (directory / 'comparison.csv').open('w') as stream:
         writer=csv.DictWriter(stream,fieldnames=fields); writer.writeheader()
@@ -141,10 +150,13 @@ def rescore(directory):
 
 def make_review_pack(directory):
     directory = Path(directory)
-    target=directory/'review'; target.mkdir(exist_ok=True)
+    target=directory/'review'
+    if (target / 'PAUSED.md').exists():
+        raise ValueError('REVIEW_PAUSED: preserve archived answers; create a new review run')
+    target.mkdir(exist_ok=True)
     rows=json.loads((directory/'rows.json').read_text())
     cases={c['caseId']:c for c in json.loads((directory/'inputs.json').read_text())['cases']}
-    selected={'lunch-choice','haircut-tai','haircut-kan','project-decision','life-correction','source-two-lines','fuzzy-author'}
+    selected={'lunch-choice','haircut-tai','haircut-kan','project-decision','life-correction'}
     items=[r for r in rows if r['caseId'] in selected and r['status']=='completed']
     random.Random(20261010).shuffle(items)
     materials, key = [], []

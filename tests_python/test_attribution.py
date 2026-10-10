@@ -44,8 +44,8 @@ def commentary(author):
 
 
 def answer(text, evidence=None, *, status='answered'):
-    return dict(status=status, summary='说明现有材料的范围。', paragraphs=[dict(kind='interpretation' if evidence else 'reflection', text=text, citations=(
-        [dict(evidenceId=evidence['id'], quote=evidence['text'][:8])] if evidence else []))],
+    return dict(status=status, paragraphs=[dict(text=text, citations=(
+        [dict(evidenceId=evidence['id'], quote=evidence['text'][:8], claim=text)] if evidence else []))],
         limitations=['本库未收录所问作者材料。'] if status == 'insufficient' else [])
 
 
@@ -105,3 +105,26 @@ async def test_wrong_attribution_is_repaired_into_honest_missing_answer():
     assert result['answer']['status'] == 'insufficient'
     assert '本库没有焦循' in result['answer']['paragraphs'][0]['text']
     assert result['session']['cast'] == session['cast']
+
+
+def test_unrelated_citation_cannot_launder_another_claims_author_or_work():
+    wang, zhu = commentary('wang-bi'), commentary('zhu-xi')
+    author_claim = '王弼解释了这一爻的含义。'
+    other_claim = '这里还保留另一条参考材料。'
+    value = answer(author_claim, zhu)
+    value['paragraphs'][0]['text'] += other_claim
+    value['paragraphs'][0]['citations'].append(dict(
+        evidenceId=wang['id'], quote=wang['text'][:8], claim=other_claim))
+    errors = validate_answer(value, [wang, zhu])[1]
+    assert 'CLAIM_AUTHOR_ATTRIBUTION_MISMATCH:wang-bi' in errors
+    # A same-paragraph Wang Bi citation cannot bless a claim anchored to Zhu Xi.
+    value['paragraphs'][0]['citations'][0]['evidenceId'] = wang['id']
+    value['paragraphs'][0]['citations'][0]['quote'] = wang['text'][:8]
+    assert validate_answer(value, [wang, zhu])[0]
+
+    work_claim = '《周易正义》中解释了这句经文。'
+    value = answer(work_claim, zhu)
+    value['paragraphs'][0]['text'] += other_claim
+    value['paragraphs'][0]['citations'].append(dict(
+        evidenceId=wang['id'], quote=wang['text'][:8], claim=other_claim))
+    assert 'CLAIM_WORK_ATTRIBUTION_MISMATCH:zhouyi-zhengyi' in validate_answer(value, [wang, zhu])[1]

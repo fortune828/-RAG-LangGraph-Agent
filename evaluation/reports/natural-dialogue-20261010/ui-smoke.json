@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "mode": "mock_api_ui_only",
+  "baseUrl": "http://127.0.0.1:5178",
+  "outputDir": "evaluation/results/natural-dialogue-ui-smoke",
+  "consoleErrors": [],
+  "turns": [
+    {
+      "status": "completed",
+      "toolCalls": 0,
+      "validation": [
+        "passed"
+      ]
+    },
+    {
+      "status": "completed",
+      "toolCalls": 0,
+      "validation": [
+        "passed"
+      ]
+    }
+  ],
+  "castPreserved": true,
+  "restoredAfterReload": true,
+  "mobileOverflow": false,
+  "castDisplay": [
+    {
+      "kind": "no-moving",
+      "width": 1360,
+      "passed": true
+    },
+    {
+      "kind": "no-moving",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "kind": "moving",
+      "width": 1360,
+      "passed": true
+    },
+    {
+      "kind": "moving",
+      "width": 390,
+      "passed": true
+    },
+    {
+      "kind": "legacy",
+      "width": 1360,
+      "passed": true
+    },
+    {
+      "kind": "legacy",
+      "width": 390,
+      "passed": true
+    }
+  ],
+  "errorChecks": [
+    {
+      "code": "MODEL_TIMEOUT_OR_NETWORK",
+      "message": "模型请求超时或网络中断，当前卦象已保留。\n\n保留卦象，重试解释",
+      "nextActionPassed": true
+    },
+    {
+      "code": "RATE_LIMITED",
+      "message": "请求过于频繁，请稍后重试。\n\n保留卦象，重试解释",
+      "nextActionPassed": true
+    },
+    {
+      "code": "SESSION_BUSY",
+      "message": "当前会话还在生成，请稍候。\n\n保留卦象，重试解释",
+      "nextActionPassed": true
+    },
+    {
+      "code": "SERVER_BUSY",
+      "message": "服务正在处理其他请求，请稍后重试。\n\n保留卦象，重试解释",
+      "nextActionPassed": true
+    },
+    {
+      "code": "RELEASE_UNAVAILABLE",
+      "message": "当前会话使用的知识版本暂时不可用，历史回答和卦象已保留。请恢复相应知识版本后重试。\n\n保留卦象，重试解释",
+      "nextActionPassed": true
+    },
+    {
+      "code": "CORPUS_HASH_MISMATCH",
+      "message": "资料文件校验失败，已停止解读。历史回答和卦象已保留，请恢复未损坏的资料后重试。\n\n保留卦象，重试解释",
+      "nextActionPassed": true
+    },
+    {
+      "code": "ANSWER_VALIDATION_FAILED",
+      "message": "回答未通过核验，已停止展示。可以保留本卦重试解释。\n\n保留卦象，重试解释",
+      "nextActionPassed": true
+    },
+    {
+      "code": "CHECKPOINT_VERSION_MISMATCH",
+      "message": "服务已更新，这轮中断的解读无法直接续跑。原卦和已有回答仍保留，请在下方沿用本卦重新提问。\n\n沿用本卦重新提问",
+      "nextActionPassed": true
+    }
+  ],
+  "errorCheckNote": "UI fixtures verify messages and actions; backend retry semantics require Python integration tests. Source restoration and rate/busy recovery are simulated.",
+  "deleted": true
+}

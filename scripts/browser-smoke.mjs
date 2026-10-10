@@ -33,7 +33,9 @@ if (!live) {
     } else if (path.endsWith('/turns') && payload && state) {
       const initial = !state.turns.length, evidence = initial ? baseEvidence : [...lineEvidence, ...annotation];
       const turn = { id: payload.requestId, question: payload.question, mode: initial ? 'initial' : 'followup', status: 'completed', createdAt: 'ui-mock', model: 'ui-fixture-no-model-call', evidence,
-        answer: { status: 'answered', summary: '浏览器测试固定样例（不是实时模型回答）。', paragraphs: evidence.map(e => ({ text: '仅用于验证原文与注家引用卡展示。', citations: [{ evidenceId: e.id, quote: e.text.slice(0, 8) }] })), limitations: ['UI fixture，不作为模型质量证据。'] },
+        answer: initial
+          ? { status: 'answered', summary: '旧版浏览器测试固定样例（不是实时模型回答）。', paragraphs: evidence.map(e => ({ text: '旧版引用展示。', citations: [{ evidenceId: e.id, quote: e.text.slice(0, 8) }] })), limitations: ['旧版尚未核实的条件应完整保留。'] }
+          : { status: 'answered', paragraphs: evidence.map(e => ({ text: '仅用于验证原文与注家引用卡展示。这部分模拟同段现实建议。', citations: [{ evidenceId: e.id, quote: e.text.slice(0, 8), claim: '仅用于验证原文与注家引用卡展示。' }] })), limitations: ['内部备注不重复显示。'] },
         trace: [{ step: 'validate', status: 'passed' }] };
       if (payload.retry) state.turns = state.turns.map(t => t.id === payload.requestId ? turn : t);
       else state.turns.push(turn);
@@ -48,13 +50,15 @@ try {
   await page.screenshot({path:`${outputDir}/home.png`,fullPage:true});
   await page.getByLabel('此刻，你想探讨什么？').fill('面对工作变化，我该如何思考进退与合作？');
   await page.getByRole('button',{name:'起卦并解读'}).click();
-  await page.locator('.turn-card .answer-summary').waitFor({timeout:180000});
+  await page.locator('.turn-card .answer-body').waitFor({timeout:180000});
   const before=await page.locator('.cast-values').innerText();
   assert.equal(await page.locator('.error-box').count(),0);
   assert.equal(await page.locator('.answer-references[open]').count(),0);
   assert.equal(await page.locator('.trace[open]').count(),0);
   if (!live) {
     assert.equal(await page.locator('.cast-grid > div').count(),1);
+    assert.ok((await page.locator('.answer-body').innerText()).includes('旧版尚未核实的条件应完整保留。'));
+    assert.equal(await page.locator('.answer-summary').count(),0);
     await page.locator('.cast-method > summary').click();
     const rows = await page.locator('.cast-method li').allTextContents();
     assert.equal(rows.length,6);
@@ -63,7 +67,7 @@ try {
   }
   await page.getByLabel('沿用当前卦象，继续追问').fill('请查出本卦第二爻的原文，并说明出处。');
   await page.getByRole('button',{name:'继续探讨'}).click();
-  await page.locator('.turn-card').nth(1).locator('.answer-summary').waitFor({timeout:180000});
+  await page.locator('.turn-card').nth(1).locator('.answer-body').waitFor({timeout:180000});
   assert.equal(await page.locator('.cast-values').innerText(),before);
   const last=responses.at(-1);
   assert.equal(last.turns.length,2);
@@ -74,6 +78,9 @@ try {
   assert.equal(await page.locator('.turn-card').nth(1).locator('.answer-references').getAttribute('open'),'');
   assert.equal(await page.locator('.turn-card').nth(1).locator('.citation').first().getAttribute('open'),'');
   if (!live) {
+    const body = page.locator('.turn-card').nth(1).locator('.answer-body');
+    assert.ok(!(await body.innerText()).includes('内部备注'));
+    assert.ok(await body.locator('.reference-marker').first().evaluate(el => el.nextSibling?.textContent?.startsWith('这部分模拟同段现实建议。')));
     const annotationCard = page.locator('.turn-card').nth(1).locator('.citation').last();
     await annotationCard.locator('summary').click();
     assert.ok((await annotationCard.innerText()).includes('朱熹'));
@@ -86,7 +93,7 @@ try {
   await page.getByLabel('沿用当前卦象，继续追问').fill('我只有三个月积蓄，可以先做什么准备？');
   if (!live) {
     await page.getByRole('button',{name:'继续探讨'}).click();
-    await page.locator('.turn-card').nth(2).locator('.answer-summary').waitFor();
+    await page.locator('.turn-card').nth(2).locator('.answer-body').waitFor();
     assert.equal(await page.locator('.cast-values').innerText(),before);
   }
   await page.setViewportSize({width:390,height:844});
@@ -132,11 +139,11 @@ try {
         assert.equal(await page.locator('#followup').evaluate(el=>el===document.activeElement),true);
         await page.locator('#followup').fill('沿用原卦重新整理我的顾虑');
         await page.getByRole('button',{name:'继续探讨'}).click();
-        await page.locator('.turn-card').last().locator('.answer-summary').waitFor();
+        await page.locator('.turn-card').last().locator('.answer-body').waitFor();
         assert.equal(fixtureState.turns.length,count+1);
       } else {
         await failed.getByRole('button',{name:'保留卦象，重试解释'}).click();
-        await failed.locator('.answer-summary').waitFor();
+        await failed.locator('.answer-body').waitFor();
         assert.equal(fixtureState.turns.length,count);
         assert.equal(fixtureState.turns.at(-1).id,id);
       }

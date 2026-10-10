@@ -45,7 +45,6 @@ textarea::placeholder { color: #99a092; }
 .text-button { border: 0; background: none; color: #49664e; padding: 7px 0; font-size: 11px; display: inline-flex; gap: 5px; align-items: center; }
 .conversation { display: flex; flex-direction: column; gap: 20px; min-width: 0; }
 .question-title { font-family: var(--font-serif); font-size: 21px; margin: 15px 0 22px; padding-bottom: 22px; border-bottom: 1px solid #e8ebdf; line-height: 1.6; overflow-wrap: anywhere; }
-.answer-summary { font-weight: 500; line-height: 1.9; margin-bottom: 20px; }
 .answer-paragraph { margin: 22px 0; }
 .answer-paragraph > p { font-size: 14px; line-height: 2; color: #515d4f; white-space: pre-wrap; overflow-wrap: anywhere; }
 .reference-marker { margin-left: 4px; font-size: 10px; color: #69805f; white-space: nowrap; }
@@ -64,8 +63,6 @@ textarea::placeholder { color: #99a092; }
 .citation a { display: flex; gap: 5px; align-items: center; font-size: 11px; color: #65785e; }
 .source-text { color: #7c8775; font-size: 12px; line-height: 1.9; }
 .source-meta { color: #6c7665; font-size: 11px; line-height: 1.7; overflow-wrap: anywhere; }
-.limitations { border-top: 1px solid #e8ebdf; margin-top: 22px; padding-top: 12px; font-size: 11px; color: #8a8f80; line-height: 1.9; }
-.badge { display: inline-block; background: #f3ecdb; color: #8c7140; font-size: 11px; padding: 4px 8px; border-radius: 4px; }
 .trace { border-top: 1px solid #e8ebdf; padding-top: 14px; margin-top: 16px; font-size: 11px; color: #899080; }
 .trace summary { cursor: pointer; }
 .trace { line-height: 1.9; }

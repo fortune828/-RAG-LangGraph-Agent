@@ -34,9 +34,9 @@ def call(name, args):
 
 def answer(evidence):
     e = evidence[0]
-    return dict(status='answered', summary='依据现有材料回应。', paragraphs=[dict(
-        kind='interpretation', text='这段材料提供了理解传统意象的文化背景。',
-        citations=[dict(evidenceId=e['id'], quote=e['text'][:8])])], limitations=[])
+    return dict(status='answered', paragraphs=[dict(
+        text='参考材料：' + e['text'][:8],
+        citations=[dict(evidenceId=e['id'], quote=e['text'][:8], claim=e['text'][:8])])], limitations=[])
 
 
 async def test_user_injection_cannot_grant_tools_or_expand_scope():

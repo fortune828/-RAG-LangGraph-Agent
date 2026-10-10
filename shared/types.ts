@@ -19,9 +19,12 @@ export interface Evidence {
   rawLocator?: { file: string; startLine: number; endLine: number; pageLabels: string[] };
 }
 export interface Answer {
-  status: 'answered' | 'insufficient'; summary: string;
-  paragraphs: { kind?: 'interpretation' | 'reflection'; text: string; citations: { evidenceId: string; quote: string }[] }[];
-  limitations: string[];
+  status: 'answered' | 'insufficient';
+  // summary and kind are read-only compatibility fields for stored legacy answers.
+  summary?: string;
+  paragraphs: { kind?: 'interpretation' | 'reflection'; text: string;
+    citations: { evidenceId: string; quote: string; claim?: string }[] }[];
+  limitations?: string[];
 }
 export interface TraceEvent {
   step: string; status: string; durationMs?: number; tool?: string;

@@ -41,24 +41,25 @@ def test_history_window_cannot_leak_evicted_savings_from_root():
 
 
 @pytest.mark.asyncio
-async def test_scripted_generation_uses_final_evidence_and_paragraph_kind():
+async def test_scripted_generation_uses_final_evidence_and_scoped_citation():
     case = next(c for c in CASES if c['id'] == 'source-line')
     evidence = dict(id='zy-1-line-2', text='见龙在田，利见大人。')
     messages = [dict(role='system', content='test'), dict(role='user', content=json.dumps(
         {'当前问题': case['question'], '参考原文': [evidence]}, ensure_ascii=False))]
     result = await scripted_chat(messages)
     paragraph = json.loads(result['message']['content'])['paragraphs'][0]
-    assert paragraph['kind'] == 'interpretation'
+    assert 'kind' not in paragraph
+    assert paragraph['citations'][0]['claim'] in paragraph['text']
     assert paragraph['citations'][0]['evidenceId'] == evidence['id']
 
 
 @pytest.mark.asyncio
-async def test_scripted_missing_material_is_uncited_reflection():
+async def test_scripted_missing_material_is_uncited_body():
     case = next(c for c in CASES if c['id'] == 'source-missing')
     messages = [dict(role='system', content='test'), dict(role='user', content=json.dumps(
         {'当前问题': case['question'], '参考原文': []}, ensure_ascii=False))]
     result = await scripted_chat(messages)
     answer = json.loads(result['message']['content'])
     assert answer['status'] == 'insufficient'
-    assert answer['paragraphs'][0]['kind'] == 'reflection'
+    assert 'kind' not in answer['paragraphs'][0] and answer['paragraphs'][0]['text']
     assert answer['paragraphs'][0]['citations'] == []
