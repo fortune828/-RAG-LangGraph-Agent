@@ -74,6 +74,8 @@ React → FastAPI → 服务端起卦并保存会话
 
 ## 验证与评测
 
+[评测系统审计与最小实施提案（2026-10-10）](evaluation/evaluation-audit-20261010.md)已完成；正式对照、数据标注和采集扩展等待确认。以下现有命令仍属于工程契约或开发验证，不代表冻结留出评测。
+
 ```bash
 npm run test:python                   # Python、API、真实 StateGraph 与跨进程恢复；mock 模型
 .venv/bin/python -m backend.evaluate  # 64 项精确检索契约，不请求模型
