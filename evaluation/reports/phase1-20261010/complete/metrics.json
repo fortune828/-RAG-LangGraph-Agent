@@ -1,0 +1,2825 @@
+{
+  "metricsVersion": "paired-metrics-v2",
+  "scorerSha256": "4991472752585c3fe1f35fe2e5d53805b090579bd226e7ec9875cef65f681538",
+  "note": "Mechanical checks and recorded usage only. Semantic scores pending; no gold-based retrieval metrics or price estimates. Unresolved requests have unknown execution and usage; modelCalls is the confirmed count, modelCallsTotal is null if unresolved.",
+  "rows": [
+    {
+      "caseId": "lunch-choice",
+      "variant": "C",
+      "scenario": "daily",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 4327,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 2094,
+          "unknownCalls": 0,
+          "total": 2094
+        },
+        "completion_tokens": {
+          "reportedSum": 478,
+          "unknownCalls": 0,
+          "total": 478
+        },
+        "total_tokens": {
+          "reportedSum": 2572,
+          "unknownCalls": 0,
+          "total": 2572
+        }
+      },
+      "toolRequests": 0,
+      "toolBudgetAttempts": 0,
+      "toolSucceeded": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "lunch-choice",
+      "variant": "D",
+      "scenario": "daily",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 5341,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 2094,
+          "unknownCalls": 0,
+          "total": 2094
+        },
+        "completion_tokens": {
+          "reportedSum": 558,
+          "unknownCalls": 0,
+          "total": 558
+        },
+        "total_tokens": {
+          "reportedSum": 2652,
+          "unknownCalls": 0,
+          "total": 2652
+        }
+      },
+      "toolRequests": 0,
+      "toolBudgetAttempts": 0,
+      "toolSucceeded": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "lunch-specific",
+      "variant": "C",
+      "scenario": "daily",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 3178,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 2110,
+          "unknownCalls": 0,
+          "total": 2110
+        },
+        "completion_tokens": {
+          "reportedSum": 422,
+          "unknownCalls": 0,
+          "total": 422
+        },
+        "total_tokens": {
+          "reportedSum": 2532,
+          "unknownCalls": 0,
+          "total": 2532
+        }
+      },
+      "toolRequests": 0,
+      "toolBudgetAttempts": 0,
+      "toolSucceeded": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "lunch-specific",
+      "variant": "D",
+      "scenario": "daily",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 4314,
+      "modelRequests": 2,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 2,
+      "modelCalls": 2,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 7400,
+          "unknownCalls": 0,
+          "total": 7400
+        },
+        "completion_tokens": {
+          "reportedSum": 420,
+          "unknownCalls": 0,
+          "total": 420
+        },
+        "total_tokens": {
+          "reportedSum": 7820,
+          "unknownCalls": 0,
+          "total": 7820
+        }
+      },
+      "toolRequests": 0,
+      "toolBudgetAttempts": 0,
+      "toolSucceeded": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "haircut-tai",
+      "variant": "C",
+      "scenario": "daily",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 2806,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 1899,
+          "unknownCalls": 0,
+          "total": 1899
+        },
+        "completion_tokens": {
+          "reportedSum": 341,
+          "unknownCalls": 0,
+          "total": 341
+        },
+        "total_tokens": {
+          "reportedSum": 2240,
+          "unknownCalls": 0,
+          "total": 2240
+        }
+      },
+      "toolRequests": 0,
+      "toolBudgetAttempts": 0,
+      "toolSucceeded": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "haircut-tai",
+      "variant": "D",
+      "scenario": "daily",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 3868,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 1899,
+          "unknownCalls": 0,
+          "total": 1899
+        },
+        "completion_tokens": {
+          "reportedSum": 523,
+          "unknownCalls": 0,
+          "total": 523
+        },
+        "total_tokens": {
+          "reportedSum": 2422,
+          "unknownCalls": 0,
+          "total": 2422
+        }
+      },
+      "toolRequests": 0,
+      "toolBudgetAttempts": 0,
+      "toolSucceeded": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "haircut-kan",
+      "variant": "C",
+      "scenario": "daily",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 4450,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 1914,
+          "unknownCalls": 0,
+          "total": 1914
+        },
+        "completion_tokens": {
+          "reportedSum": 612,
+          "unknownCalls": 0,
+          "total": 612
+        },
+        "total_tokens": {
+          "reportedSum": 2526,
+          "unknownCalls": 0,
+          "total": 2526
+        }
+      },
+      "toolRequests": 0,
+      "toolBudgetAttempts": 0,
+      "toolSucceeded": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "haircut-kan",
+      "variant": "D",
+      "scenario": "daily",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 3206,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 1914,
+          "unknownCalls": 0,
+          "total": 1914
+        },
+        "completion_tokens": {
+          "reportedSum": 367,
+          "unknownCalls": 0,
+          "total": 367
+        },
+        "total_tokens": {
+          "reportedSum": 2281,
+          "unknownCalls": 0,
+          "total": 2281
+        }
+      },
+      "toolRequests": 0,
+      "toolBudgetAttempts": 0,
+      "toolSucceeded": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "project-decision",
+      "variant": "C",
+      "scenario": "complex_choice",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 9117,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 2122,
+          "unknownCalls": 0,
+          "total": 2122
+        },
+        "completion_tokens": {
+          "reportedSum": 1400,
+          "unknownCalls": 0,
+          "total": 1400
+        },
+        "total_tokens": {
+          "reportedSum": 3522,
+          "unknownCalls": 0,
+          "total": 3522
+        }
+      },
+      "toolRequests": 0,
+      "toolBudgetAttempts": 0,
+      "toolSucceeded": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "project-decision",
+      "variant": "D",
+      "scenario": "complex_choice",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 10079,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 2122,
+          "unknownCalls": 0,
+          "total": 2122
+        },
+        "completion_tokens": {
+          "reportedSum": 1533,
+          "unknownCalls": 0,
+          "total": 1533
+        },
+        "total_tokens": {
+          "reportedSum": 3655,
+          "unknownCalls": 0,
+          "total": 3655
+        }
+      },
+      "toolRequests": 0,
+      "toolBudgetAttempts": 0,
+      "toolSucceeded": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "life-correction",
+      "variant": "C",
+      "scenario": "followup",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 8500,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 1915,
+          "unknownCalls": 0,
+          "total": 1915
+        },
+        "completion_tokens": {
+          "reportedSum": 1323,
+          "unknownCalls": 0,
+          "total": 1323
+        },
+        "total_tokens": {
+          "reportedSum": 3238,
+          "unknownCalls": 0,
+          "total": 3238
+        }
+      },
+      "toolRequests": 0,
+      "toolBudgetAttempts": 0,
+      "toolSucceeded": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "life-correction",
+      "variant": "D",
+      "scenario": "followup",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 11727,
+      "modelRequests": 2,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 2,
+      "modelCalls": 2,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 6093,
+          "unknownCalls": 0,
+          "total": 6093
+        },
+        "completion_tokens": {
+          "reportedSum": 1760,
+          "unknownCalls": 0,
+          "total": 1760
+        },
+        "total_tokens": {
+          "reportedSum": 7853,
+          "unknownCalls": 0,
+          "total": 7853
+        }
+      },
+      "toolRequests": 0,
+      "toolBudgetAttempts": 0,
+      "toolSucceeded": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "evidence-present",
+      "variant": "C",
+      "scenario": "sufficient_evidence",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 8256,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 2238,
+          "unknownCalls": 0,
+          "total": 2238
+        },
+        "completion_tokens": {
+          "reportedSum": 1552,
+          "unknownCalls": 0,
+          "total": 1552
+        },
+        "total_tokens": {
+          "reportedSum": 3790,
+          "unknownCalls": 0,
+          "total": 3790
+        }
+      },
+      "toolRequests": 0,
+      "toolBudgetAttempts": 0,
+      "toolSucceeded": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "evidence-present",
+      "variant": "D",
+      "scenario": "sufficient_evidence",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 10844,
+      "modelRequests": 3,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 3,
+      "modelCalls": 3,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 15830,
+          "unknownCalls": 0,
+          "total": 15830
+        },
+        "completion_tokens": {
+          "reportedSum": 1686,
+          "unknownCalls": 0,
+          "total": 1686
+        },
+        "total_tokens": {
+          "reportedSum": 17516,
+          "unknownCalls": 0,
+          "total": 17516
+        }
+      },
+      "toolRequests": 2,
+      "toolBudgetAttempts": 2,
+      "toolSucceeded": 2,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "source-line",
+      "variant": "C",
+      "scenario": "required_lookup",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 1618,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 1746,
+          "unknownCalls": 0,
+          "total": 1746
+        },
+        "completion_tokens": {
+          "reportedSum": 152,
+          "unknownCalls": 0,
+          "total": 152
+        },
+        "total_tokens": {
+          "reportedSum": 1898,
+          "unknownCalls": 0,
+          "total": 1898
+        }
+      },
+      "toolRequests": 1,
+      "toolBudgetAttempts": 1,
+      "toolSucceeded": 1,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "source-line",
+      "variant": "D",
+      "scenario": "required_lookup",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 5715,
+      "modelRequests": 3,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 3,
+      "modelCalls": 3,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 11768,
+          "unknownCalls": 0,
+          "total": 11768
+        },
+        "completion_tokens": {
+          "reportedSum": 675,
+          "unknownCalls": 0,
+          "total": 675
+        },
+        "total_tokens": {
+          "reportedSum": 12443,
+          "unknownCalls": 0,
+          "total": 12443
+        }
+      },
+      "toolRequests": 1,
+      "toolBudgetAttempts": 1,
+      "toolSucceeded": 1,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "source-two-lines",
+      "variant": "C",
+      "scenario": "required_lookup",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 2861,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 1802,
+          "unknownCalls": 0,
+          "total": 1802
+        },
+        "completion_tokens": {
+          "reportedSum": 350,
+          "unknownCalls": 0,
+          "total": 350
+        },
+        "total_tokens": {
+          "reportedSum": 2152,
+          "unknownCalls": 0,
+          "total": 2152
+        }
+      },
+      "toolRequests": 2,
+      "toolBudgetAttempts": 2,
+      "toolSucceeded": 2,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "source-two-lines",
+      "variant": "D",
+      "scenario": "required_lookup",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 4951,
+      "modelRequests": 3,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 3,
+      "modelCalls": 3,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 11040,
+          "unknownCalls": 0,
+          "total": 11040
+        },
+        "completion_tokens": {
+          "reportedSum": 656,
+          "unknownCalls": 0,
+          "total": 656
+        },
+        "total_tokens": {
+          "reportedSum": 11696,
+          "unknownCalls": 0,
+          "total": 11696
+        }
+      },
+      "toolRequests": 1,
+      "toolBudgetAttempts": 1,
+      "toolSucceeded": 1,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "source-global",
+      "variant": "C",
+      "scenario": "unknown_source",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 3126,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 1822,
+          "unknownCalls": 0,
+          "total": 1822
+        },
+        "completion_tokens": {
+          "reportedSum": 378,
+          "unknownCalls": 0,
+          "total": 378
+        },
+        "total_tokens": {
+          "reportedSum": 2200,
+          "unknownCalls": 0,
+          "total": 2200
+        }
+      },
+      "toolRequests": 1,
+      "toolBudgetAttempts": 1,
+      "toolSucceeded": 1,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "source-global",
+      "variant": "D",
+      "scenario": "unknown_source",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 7148,
+      "modelRequests": 4,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 4,
+      "modelCalls": 4,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 14285,
+          "unknownCalls": 0,
+          "total": 14285
+        },
+        "completion_tokens": {
+          "reportedSum": 1023,
+          "unknownCalls": 0,
+          "total": 1023
+        },
+        "total_tokens": {
+          "reportedSum": 15308,
+          "unknownCalls": 0,
+          "total": 15308
+        }
+      },
+      "toolRequests": 2,
+      "toolBudgetAttempts": 2,
+      "toolSucceeded": 2,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 1,
+      "firstSchemaValid": false,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 2,
+        "denominator": 2,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "fuzzy-author",
+      "variant": "C",
+      "scenario": "unknown_source",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "insufficient",
+      "durationMs": 4880,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 1805,
+          "unknownCalls": 0,
+          "total": 1805
+        },
+        "completion_tokens": {
+          "reportedSum": 661,
+          "unknownCalls": 0,
+          "total": 661
+        },
+        "total_tokens": {
+          "reportedSum": 2466,
+          "unknownCalls": 0,
+          "total": 2466
+        }
+      },
+      "toolRequests": 1,
+      "toolBudgetAttempts": 1,
+      "toolSucceeded": 0,
+      "toolEmpty": 1,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 1,
+        "denominator": 1,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "fuzzy-author",
+      "variant": "D",
+      "scenario": "unknown_source",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 11831,
+      "modelRequests": 3,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 3,
+      "modelCalls": 3,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 14932,
+          "unknownCalls": 0,
+          "total": 14932
+        },
+        "completion_tokens": {
+          "reportedSum": 1992,
+          "unknownCalls": 0,
+          "total": 1992
+        },
+        "total_tokens": {
+          "reportedSum": 16924,
+          "unknownCalls": 0,
+          "total": 16924
+        }
+      },
+      "toolRequests": 4,
+      "toolBudgetAttempts": 3,
+      "toolSucceeded": 3,
+      "toolEmpty": 0,
+      "toolRejected": 1,
+      "toolErrors": [
+        "TOOL_BUDGET_EXHAUSTED"
+      ],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 3,
+        "denominator": 3,
+        "rate": 1.0
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "source-missing",
+      "variant": "C",
+      "scenario": "missing_source",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "insufficient",
+      "durationMs": 2527,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 1753,
+          "unknownCalls": 0,
+          "total": 1753
+        },
+        "completion_tokens": {
+          "reportedSum": 295,
+          "unknownCalls": 0,
+          "total": 295
+        },
+        "total_tokens": {
+          "reportedSum": 2048,
+          "unknownCalls": 0,
+          "total": 2048
+        }
+      },
+      "toolRequests": 0,
+      "toolBudgetAttempts": 0,
+      "toolSucceeded": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "source-missing",
+      "variant": "D",
+      "scenario": "missing_source",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "insufficient",
+      "durationMs": 3035,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 1753,
+          "unknownCalls": 0,
+          "total": 1753
+        },
+        "completion_tokens": {
+          "reportedSum": 378,
+          "unknownCalls": 0,
+          "total": 378
+        },
+        "total_tokens": {
+          "reportedSum": 2131,
+          "unknownCalls": 0,
+          "total": 2131
+        }
+      },
+      "toolRequests": 0,
+      "toolBudgetAttempts": 0,
+      "toolSucceeded": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "risk-medical",
+      "variant": "C",
+      "scenario": "risk",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 5816,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 361,
+          "unknownCalls": 0,
+          "total": 361
+        },
+        "completion_tokens": {
+          "reportedSum": 931,
+          "unknownCalls": 0,
+          "total": 931
+        },
+        "total_tokens": {
+          "reportedSum": 1292,
+          "unknownCalls": 0,
+          "total": 1292
+        }
+      },
+      "toolRequests": 0,
+      "toolBudgetAttempts": 0,
+      "toolSucceeded": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "risk-medical",
+      "variant": "D",
+      "scenario": "risk",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 3169,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 361,
+          "unknownCalls": 0,
+          "total": 361
+        },
+        "completion_tokens": {
+          "reportedSum": 409,
+          "unknownCalls": 0,
+          "total": 409
+        },
+        "total_tokens": {
+          "reportedSum": 770,
+          "unknownCalls": 0,
+          "total": 770
+        }
+      },
+      "toolRequests": 0,
+      "toolBudgetAttempts": 0,
+      "toolSucceeded": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "risk-crisis",
+      "variant": "C",
+      "scenario": "risk",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 2542,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 366,
+          "unknownCalls": 0,
+          "total": 366
+        },
+        "completion_tokens": {
+          "reportedSum": 303,
+          "unknownCalls": 0,
+          "total": 303
+        },
+        "total_tokens": {
+          "reportedSum": 669,
+          "unknownCalls": 0,
+          "total": 669
+        }
+      },
+      "toolRequests": 0,
+      "toolBudgetAttempts": 0,
+      "toolSucceeded": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    },
+    {
+      "caseId": "risk-crisis",
+      "variant": "D",
+      "scenario": "risk",
+      "status": "completed",
+      "completed": true,
+      "businessStatus": "answered",
+      "durationMs": 3844,
+      "modelRequests": 1,
+      "unresolvedModelRequests": 0,
+      "modelCallsTotal": 1,
+      "modelCalls": 1,
+      "failedModelCalls": 0,
+      "budgetRejectedRequests": 0,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 366,
+          "unknownCalls": 0,
+          "total": 366
+        },
+        "completion_tokens": {
+          "reportedSum": 507,
+          "unknownCalls": 0,
+          "total": 507
+        },
+        "total_tokens": {
+          "reportedSum": 873,
+          "unknownCalls": 0,
+          "total": 873
+        }
+      },
+      "toolRequests": 0,
+      "toolBudgetAttempts": 0,
+      "toolSucceeded": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "toolErrors": [],
+      "repairs": 0,
+      "firstSchemaValid": true,
+      "finalMechanicalValid": true,
+      "citationValidity": {
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null
+      },
+      "sameCast": true,
+      "semanticReview": "pending",
+      "estimatedCost": null
+    }
+  ],
+  "pairs": [
+    {
+      "caseId": "lunch-choice",
+      "inputIdentical": true,
+      "initialEvidenceIdentical": true
+    },
+    {
+      "caseId": "lunch-specific",
+      "inputIdentical": true,
+      "initialEvidenceIdentical": true
+    },
+    {
+      "caseId": "haircut-tai",
+      "inputIdentical": true,
+      "initialEvidenceIdentical": true
+    },
+    {
+      "caseId": "haircut-kan",
+      "inputIdentical": true,
+      "initialEvidenceIdentical": true
+    },
+    {
+      "caseId": "project-decision",
+      "inputIdentical": true,
+      "initialEvidenceIdentical": true
+    },
+    {
+      "caseId": "life-correction",
+      "inputIdentical": true,
+      "initialEvidenceIdentical": true
+    },
+    {
+      "caseId": "evidence-present",
+      "inputIdentical": true,
+      "initialEvidenceIdentical": true
+    },
+    {
+      "caseId": "source-line",
+      "inputIdentical": true,
+      "initialEvidenceIdentical": true
+    },
+    {
+      "caseId": "source-two-lines",
+      "inputIdentical": true,
+      "initialEvidenceIdentical": true
+    },
+    {
+      "caseId": "source-global",
+      "inputIdentical": true,
+      "initialEvidenceIdentical": true
+    },
+    {
+      "caseId": "fuzzy-author",
+      "inputIdentical": true,
+      "initialEvidenceIdentical": true
+    },
+    {
+      "caseId": "source-missing",
+      "inputIdentical": true,
+      "initialEvidenceIdentical": true
+    },
+    {
+      "caseId": "risk-medical",
+      "inputIdentical": true,
+      "initialEvidenceIdentical": true
+    },
+    {
+      "caseId": "risk-crisis",
+      "inputIdentical": true,
+      "initialEvidenceIdentical": true
+    }
+  ],
+  "overall": {
+    "C": {
+      "planned": 14,
+      "attempted": 14,
+      "statuses": {
+        "completed": 14,
+        "failed": 0,
+        "budget_stopped": 0,
+        "not_run": 0,
+        "running": 0
+      },
+      "firstSchemaValidity": {
+        "numerator": 14,
+        "denominator": 14,
+        "rate": 1.0
+      },
+      "finalMechanicalValidity": {
+        "numerator": 14,
+        "denominator": 14,
+        "rate": 1.0
+      },
+      "mechanicalCompletion": {
+        "numerator": 14,
+        "denominator": 14,
+        "rate": 1.0
+      },
+      "citationValidity": {
+        "numerator": 14,
+        "denominator": 14,
+        "rate": 1.0
+      },
+      "totals": {
+        "modelRequests": 14,
+        "modelCalls": 14,
+        "unresolvedModelRequests": 0,
+        "failedModelCalls": 0,
+        "budgetRejectedRequests": 0,
+        "toolRequests": 5,
+        "toolBudgetAttempts": 5,
+        "toolSucceeded": 4,
+        "toolEmpty": 1,
+        "toolRejected": 0,
+        "repairs": 0
+      },
+      "modelCallsTotal": 14,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 23947,
+          "unknownCalls": 0,
+          "total": 23947
+        },
+        "completion_tokens": {
+          "reportedSum": 9198,
+          "unknownCalls": 0,
+          "total": 9198
+        },
+        "total_tokens": {
+          "reportedSum": 33145,
+          "unknownCalls": 0,
+          "total": 33145
+        }
+      },
+      "latencyMs": {
+        "n": 14,
+        "p50": 3752.5,
+        "p95": 9117,
+        "raw": [
+          1618,
+          2527,
+          2542,
+          2806,
+          2861,
+          3126,
+          3178,
+          4327,
+          4450,
+          4880,
+          5816,
+          8256,
+          8500,
+          9117
+        ],
+        "method": "median / nearest-rank p95; small development sample"
+      },
+      "semanticTaskSuccess": null,
+      "estimatedCost": null
+    },
+    "D": {
+      "planned": 14,
+      "attempted": 14,
+      "statuses": {
+        "completed": 14,
+        "failed": 0,
+        "budget_stopped": 0,
+        "not_run": 0,
+        "running": 0
+      },
+      "firstSchemaValidity": {
+        "numerator": 13,
+        "denominator": 14,
+        "rate": 0.9285714285714286
+      },
+      "finalMechanicalValidity": {
+        "numerator": 14,
+        "denominator": 14,
+        "rate": 1.0
+      },
+      "mechanicalCompletion": {
+        "numerator": 14,
+        "denominator": 14,
+        "rate": 1.0
+      },
+      "citationValidity": {
+        "numerator": 16,
+        "denominator": 16,
+        "rate": 1.0
+      },
+      "totals": {
+        "modelRequests": 27,
+        "modelCalls": 27,
+        "unresolvedModelRequests": 0,
+        "failedModelCalls": 0,
+        "budgetRejectedRequests": 0,
+        "toolRequests": 10,
+        "toolBudgetAttempts": 9,
+        "toolSucceeded": 9,
+        "toolEmpty": 0,
+        "toolRejected": 1,
+        "repairs": 1
+      },
+      "modelCallsTotal": 27,
+      "usage": {
+        "prompt_tokens": {
+          "reportedSum": 91857,
+          "unknownCalls": 0,
+          "total": 91857
+        },
+        "completion_tokens": {
+          "reportedSum": 12487,
+          "unknownCalls": 0,
+          "total": 12487
+        },
+        "total_tokens": {
+          "reportedSum": 104344,
+          "unknownCalls": 0,
+          "total": 104344
+        }
+      },
+      "latencyMs": {
+        "n": 14,
+        "p50": 5146.0,
+        "p95": 11831,
+        "raw": [
+          3035,
+          3169,
+          3206,
+          3844,
+          3868,
+          4314,
+          4951,
+          5341,
+          5715,
+          7148,
+          10079,
+          10844,
+          11727,
+          11831
+        ],
+        "method": "median / nearest-rank p95; small development sample"
+      },
+      "semanticTaskSuccess": null,
+      "estimatedCost": null
+    }
+  },
+  "byScenario": {
+    "complex_choice": {
+      "C": {
+        "planned": 1,
+        "attempted": 1,
+        "statuses": {
+          "completed": 1,
+          "failed": 0,
+          "budget_stopped": 0,
+          "not_run": 0,
+          "running": 0
+        },
+        "firstSchemaValidity": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "finalMechanicalValidity": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "mechanicalCompletion": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "citationValidity": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "totals": {
+          "modelRequests": 1,
+          "modelCalls": 1,
+          "unresolvedModelRequests": 0,
+          "failedModelCalls": 0,
+          "budgetRejectedRequests": 0,
+          "toolRequests": 0,
+          "toolBudgetAttempts": 0,
+          "toolSucceeded": 0,
+          "toolEmpty": 0,
+          "toolRejected": 0,
+          "repairs": 0
+        },
+        "modelCallsTotal": 1,
+        "usage": {
+          "prompt_tokens": {
+            "reportedSum": 2122,
+            "unknownCalls": 0,
+            "total": 2122
+          },
+          "completion_tokens": {
+            "reportedSum": 1400,
+            "unknownCalls": 0,
+            "total": 1400
+          },
+          "total_tokens": {
+            "reportedSum": 3522,
+            "unknownCalls": 0,
+            "total": 3522
+          }
+        },
+        "latencyMs": {
+          "n": 1,
+          "p50": 9117,
+          "p95": 9117,
+          "raw": [
+            9117
+          ],
+          "method": "median / nearest-rank p95; small development sample"
+        },
+        "semanticTaskSuccess": null,
+        "estimatedCost": null
+      },
+      "D": {
+        "planned": 1,
+        "attempted": 1,
+        "statuses": {
+          "completed": 1,
+          "failed": 0,
+          "budget_stopped": 0,
+          "not_run": 0,
+          "running": 0
+        },
+        "firstSchemaValidity": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "finalMechanicalValidity": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "mechanicalCompletion": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "citationValidity": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "totals": {
+          "modelRequests": 1,
+          "modelCalls": 1,
+          "unresolvedModelRequests": 0,
+          "failedModelCalls": 0,
+          "budgetRejectedRequests": 0,
+          "toolRequests": 0,
+          "toolBudgetAttempts": 0,
+          "toolSucceeded": 0,
+          "toolEmpty": 0,
+          "toolRejected": 0,
+          "repairs": 0
+        },
+        "modelCallsTotal": 1,
+        "usage": {
+          "prompt_tokens": {
+            "reportedSum": 2122,
+            "unknownCalls": 0,
+            "total": 2122
+          },
+          "completion_tokens": {
+            "reportedSum": 1533,
+            "unknownCalls": 0,
+            "total": 1533
+          },
+          "total_tokens": {
+            "reportedSum": 3655,
+            "unknownCalls": 0,
+            "total": 3655
+          }
+        },
+        "latencyMs": {
+          "n": 1,
+          "p50": 10079,
+          "p95": 10079,
+          "raw": [
+            10079
+          ],
+          "method": "median / nearest-rank p95; small development sample"
+        },
+        "semanticTaskSuccess": null,
+        "estimatedCost": null
+      }
+    },
+    "daily": {
+      "C": {
+        "planned": 4,
+        "attempted": 4,
+        "statuses": {
+          "completed": 4,
+          "failed": 0,
+          "budget_stopped": 0,
+          "not_run": 0,
+          "running": 0
+        },
+        "firstSchemaValidity": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "finalMechanicalValidity": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "mechanicalCompletion": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "citationValidity": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "totals": {
+          "modelRequests": 4,
+          "modelCalls": 4,
+          "unresolvedModelRequests": 0,
+          "failedModelCalls": 0,
+          "budgetRejectedRequests": 0,
+          "toolRequests": 0,
+          "toolBudgetAttempts": 0,
+          "toolSucceeded": 0,
+          "toolEmpty": 0,
+          "toolRejected": 0,
+          "repairs": 0
+        },
+        "modelCallsTotal": 4,
+        "usage": {
+          "prompt_tokens": {
+            "reportedSum": 8017,
+            "unknownCalls": 0,
+            "total": 8017
+          },
+          "completion_tokens": {
+            "reportedSum": 1853,
+            "unknownCalls": 0,
+            "total": 1853
+          },
+          "total_tokens": {
+            "reportedSum": 9870,
+            "unknownCalls": 0,
+            "total": 9870
+          }
+        },
+        "latencyMs": {
+          "n": 4,
+          "p50": 3752.5,
+          "p95": 4450,
+          "raw": [
+            2806,
+            3178,
+            4327,
+            4450
+          ],
+          "method": "median / nearest-rank p95; small development sample"
+        },
+        "semanticTaskSuccess": null,
+        "estimatedCost": null
+      },
+      "D": {
+        "planned": 4,
+        "attempted": 4,
+        "statuses": {
+          "completed": 4,
+          "failed": 0,
+          "budget_stopped": 0,
+          "not_run": 0,
+          "running": 0
+        },
+        "firstSchemaValidity": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "finalMechanicalValidity": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "mechanicalCompletion": {
+          "numerator": 4,
+          "denominator": 4,
+          "rate": 1.0
+        },
+        "citationValidity": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "totals": {
+          "modelRequests": 5,
+          "modelCalls": 5,
+          "unresolvedModelRequests": 0,
+          "failedModelCalls": 0,
+          "budgetRejectedRequests": 0,
+          "toolRequests": 0,
+          "toolBudgetAttempts": 0,
+          "toolSucceeded": 0,
+          "toolEmpty": 0,
+          "toolRejected": 0,
+          "repairs": 0
+        },
+        "modelCallsTotal": 5,
+        "usage": {
+          "prompt_tokens": {
+            "reportedSum": 13307,
+            "unknownCalls": 0,
+            "total": 13307
+          },
+          "completion_tokens": {
+            "reportedSum": 1868,
+            "unknownCalls": 0,
+            "total": 1868
+          },
+          "total_tokens": {
+            "reportedSum": 15175,
+            "unknownCalls": 0,
+            "total": 15175
+          }
+        },
+        "latencyMs": {
+          "n": 4,
+          "p50": 4091.0,
+          "p95": 5341,
+          "raw": [
+            3206,
+            3868,
+            4314,
+            5341
+          ],
+          "method": "median / nearest-rank p95; small development sample"
+        },
+        "semanticTaskSuccess": null,
+        "estimatedCost": null
+      }
+    },
+    "followup": {
+      "C": {
+        "planned": 1,
+        "attempted": 1,
+        "statuses": {
+          "completed": 1,
+          "failed": 0,
+          "budget_stopped": 0,
+          "not_run": 0,
+          "running": 0
+        },
+        "firstSchemaValidity": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "finalMechanicalValidity": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "mechanicalCompletion": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "citationValidity": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "totals": {
+          "modelRequests": 1,
+          "modelCalls": 1,
+          "unresolvedModelRequests": 0,
+          "failedModelCalls": 0,
+          "budgetRejectedRequests": 0,
+          "toolRequests": 0,
+          "toolBudgetAttempts": 0,
+          "toolSucceeded": 0,
+          "toolEmpty": 0,
+          "toolRejected": 0,
+          "repairs": 0
+        },
+        "modelCallsTotal": 1,
+        "usage": {
+          "prompt_tokens": {
+            "reportedSum": 1915,
+            "unknownCalls": 0,
+            "total": 1915
+          },
+          "completion_tokens": {
+            "reportedSum": 1323,
+            "unknownCalls": 0,
+            "total": 1323
+          },
+          "total_tokens": {
+            "reportedSum": 3238,
+            "unknownCalls": 0,
+            "total": 3238
+          }
+        },
+        "latencyMs": {
+          "n": 1,
+          "p50": 8500,
+          "p95": 8500,
+          "raw": [
+            8500
+          ],
+          "method": "median / nearest-rank p95; small development sample"
+        },
+        "semanticTaskSuccess": null,
+        "estimatedCost": null
+      },
+      "D": {
+        "planned": 1,
+        "attempted": 1,
+        "statuses": {
+          "completed": 1,
+          "failed": 0,
+          "budget_stopped": 0,
+          "not_run": 0,
+          "running": 0
+        },
+        "firstSchemaValidity": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "finalMechanicalValidity": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "mechanicalCompletion": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "citationValidity": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "totals": {
+          "modelRequests": 2,
+          "modelCalls": 2,
+          "unresolvedModelRequests": 0,
+          "failedModelCalls": 0,
+          "budgetRejectedRequests": 0,
+          "toolRequests": 0,
+          "toolBudgetAttempts": 0,
+          "toolSucceeded": 0,
+          "toolEmpty": 0,
+          "toolRejected": 0,
+          "repairs": 0
+        },
+        "modelCallsTotal": 2,
+        "usage": {
+          "prompt_tokens": {
+            "reportedSum": 6093,
+            "unknownCalls": 0,
+            "total": 6093
+          },
+          "completion_tokens": {
+            "reportedSum": 1760,
+            "unknownCalls": 0,
+            "total": 1760
+          },
+          "total_tokens": {
+            "reportedSum": 7853,
+            "unknownCalls": 0,
+            "total": 7853
+          }
+        },
+        "latencyMs": {
+          "n": 1,
+          "p50": 11727,
+          "p95": 11727,
+          "raw": [
+            11727
+          ],
+          "method": "median / nearest-rank p95; small development sample"
+        },
+        "semanticTaskSuccess": null,
+        "estimatedCost": null
+      }
+    },
+    "missing_source": {
+      "C": {
+        "planned": 1,
+        "attempted": 1,
+        "statuses": {
+          "completed": 1,
+          "failed": 0,
+          "budget_stopped": 0,
+          "not_run": 0,
+          "running": 0
+        },
+        "firstSchemaValidity": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "finalMechanicalValidity": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "mechanicalCompletion": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "citationValidity": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "totals": {
+          "modelRequests": 1,
+          "modelCalls": 1,
+          "unresolvedModelRequests": 0,
+          "failedModelCalls": 0,
+          "budgetRejectedRequests": 0,
+          "toolRequests": 0,
+          "toolBudgetAttempts": 0,
+          "toolSucceeded": 0,
+          "toolEmpty": 0,
+          "toolRejected": 0,
+          "repairs": 0
+        },
+        "modelCallsTotal": 1,
+        "usage": {
+          "prompt_tokens": {
+            "reportedSum": 1753,
+            "unknownCalls": 0,
+            "total": 1753
+          },
+          "completion_tokens": {
+            "reportedSum": 295,
+            "unknownCalls": 0,
+            "total": 295
+          },
+          "total_tokens": {
+            "reportedSum": 2048,
+            "unknownCalls": 0,
+            "total": 2048
+          }
+        },
+        "latencyMs": {
+          "n": 1,
+          "p50": 2527,
+          "p95": 2527,
+          "raw": [
+            2527
+          ],
+          "method": "median / nearest-rank p95; small development sample"
+        },
+        "semanticTaskSuccess": null,
+        "estimatedCost": null
+      },
+      "D": {
+        "planned": 1,
+        "attempted": 1,
+        "statuses": {
+          "completed": 1,
+          "failed": 0,
+          "budget_stopped": 0,
+          "not_run": 0,
+          "running": 0
+        },
+        "firstSchemaValidity": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "finalMechanicalValidity": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "mechanicalCompletion": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "citationValidity": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "totals": {
+          "modelRequests": 1,
+          "modelCalls": 1,
+          "unresolvedModelRequests": 0,
+          "failedModelCalls": 0,
+          "budgetRejectedRequests": 0,
+          "toolRequests": 0,
+          "toolBudgetAttempts": 0,
+          "toolSucceeded": 0,
+          "toolEmpty": 0,
+          "toolRejected": 0,
+          "repairs": 0
+        },
+        "modelCallsTotal": 1,
+        "usage": {
+          "prompt_tokens": {
+            "reportedSum": 1753,
+            "unknownCalls": 0,
+            "total": 1753
+          },
+          "completion_tokens": {
+            "reportedSum": 378,
+            "unknownCalls": 0,
+            "total": 378
+          },
+          "total_tokens": {
+            "reportedSum": 2131,
+            "unknownCalls": 0,
+            "total": 2131
+          }
+        },
+        "latencyMs": {
+          "n": 1,
+          "p50": 3035,
+          "p95": 3035,
+          "raw": [
+            3035
+          ],
+          "method": "median / nearest-rank p95; small development sample"
+        },
+        "semanticTaskSuccess": null,
+        "estimatedCost": null
+      }
+    },
+    "required_lookup": {
+      "C": {
+        "planned": 2,
+        "attempted": 2,
+        "statuses": {
+          "completed": 2,
+          "failed": 0,
+          "budget_stopped": 0,
+          "not_run": 0,
+          "running": 0
+        },
+        "firstSchemaValidity": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "finalMechanicalValidity": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "mechanicalCompletion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "citationValidity": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "totals": {
+          "modelRequests": 2,
+          "modelCalls": 2,
+          "unresolvedModelRequests": 0,
+          "failedModelCalls": 0,
+          "budgetRejectedRequests": 0,
+          "toolRequests": 3,
+          "toolBudgetAttempts": 3,
+          "toolSucceeded": 3,
+          "toolEmpty": 0,
+          "toolRejected": 0,
+          "repairs": 0
+        },
+        "modelCallsTotal": 2,
+        "usage": {
+          "prompt_tokens": {
+            "reportedSum": 3548,
+            "unknownCalls": 0,
+            "total": 3548
+          },
+          "completion_tokens": {
+            "reportedSum": 502,
+            "unknownCalls": 0,
+            "total": 502
+          },
+          "total_tokens": {
+            "reportedSum": 4050,
+            "unknownCalls": 0,
+            "total": 4050
+          }
+        },
+        "latencyMs": {
+          "n": 2,
+          "p50": 2239.5,
+          "p95": 2861,
+          "raw": [
+            1618,
+            2861
+          ],
+          "method": "median / nearest-rank p95; small development sample"
+        },
+        "semanticTaskSuccess": null,
+        "estimatedCost": null
+      },
+      "D": {
+        "planned": 2,
+        "attempted": 2,
+        "statuses": {
+          "completed": 2,
+          "failed": 0,
+          "budget_stopped": 0,
+          "not_run": 0,
+          "running": 0
+        },
+        "firstSchemaValidity": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "finalMechanicalValidity": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "mechanicalCompletion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "citationValidity": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "totals": {
+          "modelRequests": 6,
+          "modelCalls": 6,
+          "unresolvedModelRequests": 0,
+          "failedModelCalls": 0,
+          "budgetRejectedRequests": 0,
+          "toolRequests": 2,
+          "toolBudgetAttempts": 2,
+          "toolSucceeded": 2,
+          "toolEmpty": 0,
+          "toolRejected": 0,
+          "repairs": 0
+        },
+        "modelCallsTotal": 6,
+        "usage": {
+          "prompt_tokens": {
+            "reportedSum": 22808,
+            "unknownCalls": 0,
+            "total": 22808
+          },
+          "completion_tokens": {
+            "reportedSum": 1331,
+            "unknownCalls": 0,
+            "total": 1331
+          },
+          "total_tokens": {
+            "reportedSum": 24139,
+            "unknownCalls": 0,
+            "total": 24139
+          }
+        },
+        "latencyMs": {
+          "n": 2,
+          "p50": 5333.0,
+          "p95": 5715,
+          "raw": [
+            4951,
+            5715
+          ],
+          "method": "median / nearest-rank p95; small development sample"
+        },
+        "semanticTaskSuccess": null,
+        "estimatedCost": null
+      }
+    },
+    "risk": {
+      "C": {
+        "planned": 2,
+        "attempted": 2,
+        "statuses": {
+          "completed": 2,
+          "failed": 0,
+          "budget_stopped": 0,
+          "not_run": 0,
+          "running": 0
+        },
+        "firstSchemaValidity": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "finalMechanicalValidity": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "mechanicalCompletion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "citationValidity": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "totals": {
+          "modelRequests": 2,
+          "modelCalls": 2,
+          "unresolvedModelRequests": 0,
+          "failedModelCalls": 0,
+          "budgetRejectedRequests": 0,
+          "toolRequests": 0,
+          "toolBudgetAttempts": 0,
+          "toolSucceeded": 0,
+          "toolEmpty": 0,
+          "toolRejected": 0,
+          "repairs": 0
+        },
+        "modelCallsTotal": 2,
+        "usage": {
+          "prompt_tokens": {
+            "reportedSum": 727,
+            "unknownCalls": 0,
+            "total": 727
+          },
+          "completion_tokens": {
+            "reportedSum": 1234,
+            "unknownCalls": 0,
+            "total": 1234
+          },
+          "total_tokens": {
+            "reportedSum": 1961,
+            "unknownCalls": 0,
+            "total": 1961
+          }
+        },
+        "latencyMs": {
+          "n": 2,
+          "p50": 4179.0,
+          "p95": 5816,
+          "raw": [
+            2542,
+            5816
+          ],
+          "method": "median / nearest-rank p95; small development sample"
+        },
+        "semanticTaskSuccess": null,
+        "estimatedCost": null
+      },
+      "D": {
+        "planned": 2,
+        "attempted": 2,
+        "statuses": {
+          "completed": 2,
+          "failed": 0,
+          "budget_stopped": 0,
+          "not_run": 0,
+          "running": 0
+        },
+        "firstSchemaValidity": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "finalMechanicalValidity": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "mechanicalCompletion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "citationValidity": {
+          "numerator": 0,
+          "denominator": 0,
+          "rate": null
+        },
+        "totals": {
+          "modelRequests": 2,
+          "modelCalls": 2,
+          "unresolvedModelRequests": 0,
+          "failedModelCalls": 0,
+          "budgetRejectedRequests": 0,
+          "toolRequests": 0,
+          "toolBudgetAttempts": 0,
+          "toolSucceeded": 0,
+          "toolEmpty": 0,
+          "toolRejected": 0,
+          "repairs": 0
+        },
+        "modelCallsTotal": 2,
+        "usage": {
+          "prompt_tokens": {
+            "reportedSum": 727,
+            "unknownCalls": 0,
+            "total": 727
+          },
+          "completion_tokens": {
+            "reportedSum": 916,
+            "unknownCalls": 0,
+            "total": 916
+          },
+          "total_tokens": {
+            "reportedSum": 1643,
+            "unknownCalls": 0,
+            "total": 1643
+          }
+        },
+        "latencyMs": {
+          "n": 2,
+          "p50": 3506.5,
+          "p95": 3844,
+          "raw": [
+            3169,
+            3844
+          ],
+          "method": "median / nearest-rank p95; small development sample"
+        },
+        "semanticTaskSuccess": null,
+        "estimatedCost": null
+      }
+    },
+    "sufficient_evidence": {
+      "C": {
+        "planned": 1,
+        "attempted": 1,
+        "statuses": {
+          "completed": 1,
+          "failed": 0,
+          "budget_stopped": 0,
+          "not_run": 0,
+          "running": 0
+        },
+        "firstSchemaValidity": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "finalMechanicalValidity": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "mechanicalCompletion": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "citationValidity": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "totals": {
+          "modelRequests": 1,
+          "modelCalls": 1,
+          "unresolvedModelRequests": 0,
+          "failedModelCalls": 0,
+          "budgetRejectedRequests": 0,
+          "toolRequests": 0,
+          "toolBudgetAttempts": 0,
+          "toolSucceeded": 0,
+          "toolEmpty": 0,
+          "toolRejected": 0,
+          "repairs": 0
+        },
+        "modelCallsTotal": 1,
+        "usage": {
+          "prompt_tokens": {
+            "reportedSum": 2238,
+            "unknownCalls": 0,
+            "total": 2238
+          },
+          "completion_tokens": {
+            "reportedSum": 1552,
+            "unknownCalls": 0,
+            "total": 1552
+          },
+          "total_tokens": {
+            "reportedSum": 3790,
+            "unknownCalls": 0,
+            "total": 3790
+          }
+        },
+        "latencyMs": {
+          "n": 1,
+          "p50": 8256,
+          "p95": 8256,
+          "raw": [
+            8256
+          ],
+          "method": "median / nearest-rank p95; small development sample"
+        },
+        "semanticTaskSuccess": null,
+        "estimatedCost": null
+      },
+      "D": {
+        "planned": 1,
+        "attempted": 1,
+        "statuses": {
+          "completed": 1,
+          "failed": 0,
+          "budget_stopped": 0,
+          "not_run": 0,
+          "running": 0
+        },
+        "firstSchemaValidity": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "finalMechanicalValidity": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "mechanicalCompletion": {
+          "numerator": 1,
+          "denominator": 1,
+          "rate": 1.0
+        },
+        "citationValidity": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "totals": {
+          "modelRequests": 3,
+          "modelCalls": 3,
+          "unresolvedModelRequests": 0,
+          "failedModelCalls": 0,
+          "budgetRejectedRequests": 0,
+          "toolRequests": 2,
+          "toolBudgetAttempts": 2,
+          "toolSucceeded": 2,
+          "toolEmpty": 0,
+          "toolRejected": 0,
+          "repairs": 0
+        },
+        "modelCallsTotal": 3,
+        "usage": {
+          "prompt_tokens": {
+            "reportedSum": 15830,
+            "unknownCalls": 0,
+            "total": 15830
+          },
+          "completion_tokens": {
+            "reportedSum": 1686,
+            "unknownCalls": 0,
+            "total": 1686
+          },
+          "total_tokens": {
+            "reportedSum": 17516,
+            "unknownCalls": 0,
+            "total": 17516
+          }
+        },
+        "latencyMs": {
+          "n": 1,
+          "p50": 10844,
+          "p95": 10844,
+          "raw": [
+            10844
+          ],
+          "method": "median / nearest-rank p95; small development sample"
+        },
+        "semanticTaskSuccess": null,
+        "estimatedCost": null
+      }
+    },
+    "unknown_source": {
+      "C": {
+        "planned": 2,
+        "attempted": 2,
+        "statuses": {
+          "completed": 2,
+          "failed": 0,
+          "budget_stopped": 0,
+          "not_run": 0,
+          "running": 0
+        },
+        "firstSchemaValidity": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "finalMechanicalValidity": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "mechanicalCompletion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "citationValidity": {
+          "numerator": 3,
+          "denominator": 3,
+          "rate": 1.0
+        },
+        "totals": {
+          "modelRequests": 2,
+          "modelCalls": 2,
+          "unresolvedModelRequests": 0,
+          "failedModelCalls": 0,
+          "budgetRejectedRequests": 0,
+          "toolRequests": 2,
+          "toolBudgetAttempts": 2,
+          "toolSucceeded": 1,
+          "toolEmpty": 1,
+          "toolRejected": 0,
+          "repairs": 0
+        },
+        "modelCallsTotal": 2,
+        "usage": {
+          "prompt_tokens": {
+            "reportedSum": 3627,
+            "unknownCalls": 0,
+            "total": 3627
+          },
+          "completion_tokens": {
+            "reportedSum": 1039,
+            "unknownCalls": 0,
+            "total": 1039
+          },
+          "total_tokens": {
+            "reportedSum": 4666,
+            "unknownCalls": 0,
+            "total": 4666
+          }
+        },
+        "latencyMs": {
+          "n": 2,
+          "p50": 4003.0,
+          "p95": 4880,
+          "raw": [
+            3126,
+            4880
+          ],
+          "method": "median / nearest-rank p95; small development sample"
+        },
+        "semanticTaskSuccess": null,
+        "estimatedCost": null
+      },
+      "D": {
+        "planned": 2,
+        "attempted": 2,
+        "statuses": {
+          "completed": 2,
+          "failed": 0,
+          "budget_stopped": 0,
+          "not_run": 0,
+          "running": 0
+        },
+        "firstSchemaValidity": {
+          "numerator": 1,
+          "denominator": 2,
+          "rate": 0.5
+        },
+        "finalMechanicalValidity": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "mechanicalCompletion": {
+          "numerator": 2,
+          "denominator": 2,
+          "rate": 1.0
+        },
+        "citationValidity": {
+          "numerator": 5,
+          "denominator": 5,
+          "rate": 1.0
+        },
+        "totals": {
+          "modelRequests": 7,
+          "modelCalls": 7,
+          "unresolvedModelRequests": 0,
+          "failedModelCalls": 0,
+          "budgetRejectedRequests": 0,
+          "toolRequests": 6,
+          "toolBudgetAttempts": 5,
+          "toolSucceeded": 5,
+          "toolEmpty": 0,
+          "toolRejected": 1,
+          "repairs": 1
+        },
+        "modelCallsTotal": 7,
+        "usage": {
+          "prompt_tokens": {
+            "reportedSum": 29217,
+            "unknownCalls": 0,
+            "total": 29217
+          },
+          "completion_tokens": {
+            "reportedSum": 3015,
+            "unknownCalls": 0,
+            "total": 3015
+          },
+          "total_tokens": {
+            "reportedSum": 32232,
+            "unknownCalls": 0,
+            "total": 32232
+          }
+        },
+        "latencyMs": {
+          "n": 2,
+          "p50": 9489.5,
+          "p95": 11831,
+          "raw": [
+            7148,
+            11831
+          ],
+          "method": "median / nearest-rank p95; small development sample"
+        },
+        "semanticTaskSuccess": null,
+        "estimatedCost": null
+      }
+    }
+  }
+}

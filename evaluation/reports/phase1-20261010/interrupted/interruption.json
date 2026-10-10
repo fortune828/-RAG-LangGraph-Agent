@@ -1,0 +1,22 @@
+{
+  "status": "externally_interrupted",
+  "recordedAfterInterruption": "2026-10-10T04:23:25.703464+00:00",
+  "originalRowsPreserved": true,
+  "completedRows": 14,
+  "pendingRow": "source-line/D",
+  "notRunRows": 13,
+  "completedModelResponses": 21,
+  "reportedTokens": 78210,
+  "unmatchedRequests": [
+    {
+      "trace": "traces/source-line-D.jsonl",
+      "eventId": 12,
+      "callId": 3,
+      "stage": "generate",
+      "usage": null,
+      "actualExecution": "unknown"
+    }
+  ],
+  "totalTokens": null,
+  "note": "Original rows/budget are last persisted snapshots. Subsequent responses exist in trace. The final request has no response: actual dispatch/charge is unknown, never zero. Excluded from complete experiment metrics; retained without choosing outputs or merging runs."
+}

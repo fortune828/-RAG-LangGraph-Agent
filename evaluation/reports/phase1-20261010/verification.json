@@ -1,0 +1,36 @@
+{
+  "recordedAt": "2026-10-10T04:29:24.336421+00:00",
+  "runnerCommit": "e97503d04b819104a329aaff49f35c58e59ad54f",
+  "metricsVersion": "paired-metrics-v2",
+  "scorerSha256": "4991472752585c3fe1f35fe2e5d53805b090579bd226e7ec9875cef65f681538",
+  "tests": {
+    "command": ".venv/bin/python -m pytest -q tests_python",
+    "passed": 111,
+    "seconds": 17.56,
+    "log": "python-tests.txt"
+  },
+  "checks": {
+    "sameInputAndInitialEvidencePairs": 14,
+    "sameCastRows": 28,
+    "completedRows": 28,
+    "matchedRequestResponses": 41,
+    "completeReportedTokens": 137489,
+    "allRowAndGlobalBudgetSumsMatch": true,
+    "limitsRespected": true,
+    "sourceHashesMatch": true,
+    "rescoreByteStable": [
+      "metrics.json",
+      "comparison.csv",
+      "report.md"
+    ],
+    "completeV2NumbersEqualV1": true,
+    "interruptedUnresolvedRequests": 1,
+    "interruptedReportedLowerBound": 78210,
+    "interruptedTotalUsage": null,
+    "blankHumanReviewRows": 14,
+    "credentialsAbsent": true,
+    "internalReasoningContentAbsent": true
+  },
+  "scope": "Engineering and capture verification only; semantic scores pending. No production conversations or checkpoints exported.",
+  "scoringCommit": "c838e60"
+}

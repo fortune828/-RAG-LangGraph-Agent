@@ -1,0 +1,93 @@
+{
+  "protocol": "paired-phase1-v1",
+  "runId": "paired-real-20261010-041852-84fa72",
+  "createdAt": "2026-10-10T04:18:52.899804+00:00",
+  "mode": "real_model_development",
+  "split": "development",
+  "baseline": {
+    "baselineId": "phase1-v1",
+    "sourceCommit": "0d63995c4c1cb2605e7db1a041710f3ec3029b49",
+    "graphVersion": "python-graph-v9",
+    "promptVersion": "evidence-agent-python-v14",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "files": {
+      "backend/graph.py": "2fe80c1ff5c9a7f02c00b66a74cf90b691083bf13e0550afcfc92964c665aebc",
+      "backend/prompts.py": "fd2b05ec2ff1289cffc9acf086e7b89153b10db0bfe1a300cd989c8fbb6ed161",
+      "backend/llm.py": "73dd1548996607eb28a218073bcffac44cb24afe3a91edca3fbe5b470d7817e8",
+      "backend/domain.py": "01c1dcf5bde48957f5f7025f50f67acf967d9f7f8485fd2dec653bc923b2a265",
+      "backend/knowledge.py": "6cbce14f7a0c1ea971f0390a596d85ddde65282a18478fb3c79cee35a29b172d",
+      "backend/validation.py": "b98770d71b6aa488b27e7cf181197d43ba882f9ef3fd2c27dfe1017892e80833",
+      "backend/models.py": "6a5b83619a75d3680f089634784f74a3a94026e29289f3165e1c01cf7a95b618",
+      "backend/config.py": "10c487a61bfce3ed5f5af3f2ae71ee8f7add1c82f5e958a790c93c1810700661",
+      "requirements.txt": "04b3585561c260777a04094dfdaa17bbc4369b8471521c1775fcf612c915a322"
+    },
+    "corpusManifestSha256": "a35a2235434446ca728e7c6e54dec4268c59a68ad7b862d8f45da52e9a35a24d",
+    "modelOptions": {
+      "thinking": {
+        "type": "enabled"
+      },
+      "reasoning_effort": "high",
+      "max_tokens": 8192,
+      "temperature": "not_sent",
+      "seed": "not_sent"
+    },
+    "note": "Frozen before evaluation instrumentation. Production prompt, generation context, retrieval and validation behavior must remain unchanged; C is a separately identified rule policy.",
+    "modelId": "deepseek-flash"
+  },
+  "runtimeCommit": "e97503d04b819104a329aaff49f35c58e59ad54f",
+  "dirty": false,
+  "codeHashes": {
+    "backend/__init__.py": "31035e9fa5d2ce31f46dba6f1b3492edf184befa6b9d447c506d6824c539f8f3",
+    "backend/__main__.py": "ac31e6560f567ee61fd9c6ff94d9596c0608557293f0c6cd6407f994970d672b",
+    "backend/app.py": "a88684e8202e88c690b64526e8daec32c136ebd719075faf48821722552f4aba",
+    "backend/config.py": "10c487a61bfce3ed5f5af3f2ae71ee8f7add1c82f5e958a790c93c1810700661",
+    "backend/domain.py": "01c1dcf5bde48957f5f7025f50f67acf967d9f7f8485fd2dec653bc923b2a265",
+    "backend/evaluate.py": "07bad55ec40c32cb0103379c0ecfc663373ed1732d2d2a799e1e8e280cc3cceb",
+    "backend/graph.py": "944e6e27f0eb5f9e5622ef2b9815c4b1d845c96125978530c75fb287ead36428",
+    "backend/knowledge.py": "6cbce14f7a0c1ea971f0390a596d85ddde65282a18478fb3c79cee35a29b172d",
+    "backend/llm.py": "1f795b1125926255acedd277cb5cd06675b6bc136ae61b9e85a8908bb4480c0d",
+    "backend/models.py": "6a5b83619a75d3680f089634784f74a3a94026e29289f3165e1c01cf7a95b618",
+    "backend/prompts.py": "fd2b05ec2ff1289cffc9acf086e7b89153b10db0bfe1a300cd989c8fbb6ed161",
+    "backend/store.py": "8e759718b5721ce4369d1f00c10ecf5a699503df075ca4bbd1920114ae49a465",
+    "backend/validation.py": "b98770d71b6aa488b27e7cf181197d43ba882f9ef3fd2c27dfe1017892e80833",
+    "evaluation/development_checks.py": "7ee8c937876a875fac50b7e2f8ecfed2085cb51552a1ffe0ef89730d045217b1",
+    "evaluation/paired.py": "4e88d4b812c74c1a1055ccf521f0e02efeaaef64c86eec66c816b3ef659e0a57",
+    "evaluation/scoring.py": "4425e90473e3ff64163ed417b88c48bf78b859599b8333078060e0bee87c7991",
+    "evaluation/workflow.py": "e858339b029b4a1e939fa9a83aeb08278beafe3261ef9ba4d7123263b4ac79ab",
+    "requirements.txt": "04b3585561c260777a04094dfdaa17bbc4369b8471521c1775fcf612c915a322",
+    "evaluation/phase1/cases.json": "177719a477fd843242c28105c4b8607e675d8c5cf6a46e789ed1402137b4cdfd",
+    "evaluation/baselines/phase1-v1.json": "2e4ebbdb2223aa86c5324d6cbd1828031a6e94c0fb96a00dde647d0b7c2fdbe1"
+  },
+  "python": "3.10.12",
+  "model": "deepseek-flash",
+  "modelOptions": {
+    "model": "deepseek-flash",
+    "max_tokens": 8192,
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "temperature": "not_sent",
+  "seed": "not_sent",
+  "policies": {
+    "C": "rules-c-v1",
+    "D": "production-v9-model-route"
+  },
+  "limits": {
+    "perCaseCalls": 6,
+    "perCaseTokens": 100000,
+    "globalCalls": 100,
+    "globalTokens": 600000,
+    "toolAttempts": 3,
+    "repairs": 1,
+    "timeoutSeconds": 150
+  },
+  "order": "alternate C,D / D,C by fixed case index; serial execution",
+  "cache": "corpus and lexical index prewarmed outside timed turns; provider cache usage retained when reported",
+  "capture": "synthetic fixtures only; no credentials, runtime sessions or model-internal reasoning text; omitted reasoning hashed",
+  "semanticScoring": "pending human review; no gold or expected-answer data loaded by runner or policies"
+}

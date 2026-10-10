@@ -1,0 +1,30 @@
+{
+  "baselineId": "phase1-v1",
+  "sourceCommit": "0d63995c4c1cb2605e7db1a041710f3ec3029b49",
+  "graphVersion": "python-graph-v9",
+  "promptVersion": "evidence-agent-python-v14",
+  "releaseId": "knowledge-v3-20260926-r1",
+  "files": {
+    "backend/graph.py": "2fe80c1ff5c9a7f02c00b66a74cf90b691083bf13e0550afcfc92964c665aebc",
+    "backend/prompts.py": "fd2b05ec2ff1289cffc9acf086e7b89153b10db0bfe1a300cd989c8fbb6ed161",
+    "backend/llm.py": "73dd1548996607eb28a218073bcffac44cb24afe3a91edca3fbe5b470d7817e8",
+    "backend/domain.py": "01c1dcf5bde48957f5f7025f50f67acf967d9f7f8485fd2dec653bc923b2a265",
+    "backend/knowledge.py": "6cbce14f7a0c1ea971f0390a596d85ddde65282a18478fb3c79cee35a29b172d",
+    "backend/validation.py": "b98770d71b6aa488b27e7cf181197d43ba882f9ef3fd2c27dfe1017892e80833",
+    "backend/models.py": "6a5b83619a75d3680f089634784f74a3a94026e29289f3165e1c01cf7a95b618",
+    "backend/config.py": "10c487a61bfce3ed5f5af3f2ae71ee8f7add1c82f5e958a790c93c1810700661",
+    "requirements.txt": "04b3585561c260777a04094dfdaa17bbc4369b8471521c1775fcf612c915a322"
+  },
+  "corpusManifestSha256": "a35a2235434446ca728e7c6e54dec4268c59a68ad7b862d8f45da52e9a35a24d",
+  "modelOptions": {
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "high",
+    "max_tokens": 8192,
+    "temperature": "not_sent",
+    "seed": "not_sent"
+  },
+  "note": "Frozen before evaluation instrumentation. Production prompt, generation context, retrieval and validation behavior must remain unchanged; C is a separately identified rule policy.",
+  "modelId": "deepseek-flash"
+}

@@ -6,7 +6,7 @@
 
 **当前状态（2026-10-08）**：核心运行后端已迁移为 Python + FastAPI + LangGraph，现有 React 前端保留。迁移目标是让只掌握 Python 的开发者学习、调试并解释 Agent 核心；前端开发不作为学习前置条件。产品质量完善与冻结留出评测仍在进行，历史 TypeScript 后端保留作对照和回滚。
 
-当前为 graph v9 / prompt v14、Flash 思考模式。单核心问题会话、角色明确的近期对话、引用校验和同轮恢复已实现；101 项 Python 回归通过，真实回答仍有语义验收缺口。最新结果及版本差异见 [本轮回答体验验收](evaluation/cast-grounded-20261010.md) 和 [任务状态](tasklist.md)。
+当前为 graph v9 / prompt v14、Flash 思考模式。单核心问题会话、角色明确的近期对话、引用校验和同轮恢复已实现；111 项 Python 回归通过，真实回答仍有语义验收缺口。最新结果及版本差异见 [本轮回答体验验收](evaluation/cast-grounded-20261010.md) 和 [任务状态](tasklist.md)。
 
 ## 启动
 
@@ -74,7 +74,7 @@ React → FastAPI → 服务端起卦并保存会话
 
 ## 验证与评测
 
-[评测系统审计与最小实施提案（2026-10-10）](evaluation/evaluation-audit-20261010.md)已完成；正式对照、数据标注和采集扩展等待确认。以下现有命令仍属于工程契约或开发验证，不代表冻结留出评测。
+已按批准的[审计提案](evaluation/evaluation-audit-20261010.md)建设第一阶段 C/W1 与 D/W2 评测：14 条固定开发输入、完整可见调用记录、可重算统计和 14 份匿名人工试评材料。见[第一阶段验收](evaluation/phase1-acceptance-20261010.md)与[运行说明](evaluation/phase1/README.md)。这是开发对照，语义评分待真人填写；B、检索层对照及 40+40 冻结集尚未实施。
 
 ```bash
 npm run test:python                   # Python、API、真实 StateGraph 与跨进程恢复；mock 模型
@@ -86,6 +86,11 @@ npm run knowledge:audit              # 保留的数据来源/修订审计，不�
 
 # 显式执行才消耗模型额度，固定合成开发样例；不是生产随机起卦或留出评测
 .venv/bin/python -m backend.evaluate --live --max-calls 8 --max-tokens 100000
+
+# 14 条固定输入 × C/D；先离线验证，添加 --live 才产生模型费用
+.venv/bin/python -m backend.evaluate --paired --max-calls 100 --max-tokens 600000
+# 已保存的完整真实结果可离线重算
+.venv/bin/python -m backend.evaluate --rescore evaluation/reports/phase1-20261010/complete
 
 # 25 个合成开发场景：先离线；--live 才请求真实模型，仍不是正式留出评测
 .venv/bin/python -m evaluation.development_checks
@@ -102,7 +107,7 @@ npm run knowledge:audit              # 保留的数据来源/修订审计，不�
 
 迁移报告：[真实模型原始记录](evaluation/results/python-live-20261008-070030-561f7e/report.json)、[浏览器记录](evaluation/results/python-browser-1791442819647485130/report.json)。results 是本地忽略目录，公开展示时须另整理可分发证据。
 
-当前 Python evaluator 是有费用预算的开发冒烟；旧 `npm run eval:live` 仍运行 TypeScript 基线。两者不得混算。新版 40+40 生活化留出集、B/C/D 对照、人工评分尚未完成，不填未经测量的质量提升百分比。
+Python evaluator 已支持有预算的固定输入 C/D 配对与离线重算；旧 `npm run eval:live` 仍运行 TypeScript 基线，两者不得混算。新版 40+40、完整 B/C/D 与真人评分仍待后续验收，不填未经测量的质量提升百分比。
 
 ## 数据、兼容与回滚
 
