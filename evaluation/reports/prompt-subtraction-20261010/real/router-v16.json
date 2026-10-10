@@ -1,0 +1,39 @@
+{
+  "usage": {
+    "prompt_tokens": 4525,
+    "completion_tokens": 196,
+    "total_tokens": 4721,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 96
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 4525
+  },
+  "model": "deepseek-flash",
+  "id": "8125678d-9c57-40c5-8d7c-0840175c2d0a",
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669",
+  "httpStatus": 200,
+  "message": {
+    "role": "assistant",
+    "content": "",
+    "tool_calls": [
+      {
+        "index": 0,
+        "id": "call_00_WqJWdQGIjOVRl7s9ZOvK0393",
+        "type": "function",
+        "function": {
+          "name": "get_passages",
+          "arguments": "{\"hexagramId\": 1, \"sections\": [\"line\"], \"lineIndices\": [2], \"layers\": [\"classic\"]}"
+        }
+      }
+    ],
+    "reasoningOmitted": {
+      "sha256": "1474afce03c192f170f0d81ab568c4111f8f41645b93bece43f5be58db51a967",
+      "characters": 387
+    }
+  },
+  "finishReason": "tool_calls"
+}

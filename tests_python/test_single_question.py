@@ -79,8 +79,11 @@ async def test_risk_repair_does_not_request_traditional_explanation():
             return response(dict(status='answered',
                 paragraphs=[dict(kind='insufficient', text='没有原文。', citations=[])], limitations=[]))
         instruction = json.loads(messages[-1]['content'])['instruction']
-        assert '本轮仅提供现实安全支持' in instruction
-        assert '根据已有原文补充' not in instruction
+        from backend.prompts import RISK_SYSTEM
+        assert instruction and messages[0]['content'] == RISK_SYSTEM
+        context = json.loads(messages[1]['content'])
+        assert '卦象' not in context and '参考原文' not in context
+        assert json.loads(messages[-1]['content'])['errors']
         return response(dict(status='answered',
             paragraphs=[dict(text='不要依据卦象停药，请联系开药医生或药师。', citations=[])], limitations=[]))
     result = await build_graph(InMemorySaver(), model).ainvoke(

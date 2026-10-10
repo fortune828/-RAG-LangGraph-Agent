@@ -37,6 +37,8 @@ def inputs():
 
 
 async def run(output, live):
+    if PROMPT_VERSION != 'evidence-agent-python-v15':
+        raise ValueError('FROZEN_PROMPT_CHANGED: v14/v15 comparison requires the v15 checkout')
     output.mkdir(parents=True, exist_ok=False)
     cases = inputs()
     write_json(output / 'inputs.json', cases)

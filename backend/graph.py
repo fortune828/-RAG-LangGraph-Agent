@@ -141,7 +141,7 @@ def target_label(target):
         parts.append({'line': '爻辞', 'line_xiang': '小象', 'judgment': '卦辞',
                       'xiang': '大象', 'tuan': '彖传', 'special': '用九或用六'}[target['section']])
     if target.get('layer') == 'commentary':
-        parts.append('注解材料（不是经典爻辞）')
+        parts.append('注解材料')
     return ' / '.join(parts)
 
 
@@ -288,7 +288,7 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None, *, rout
         source_gap = state['intent'] == 'source_request' and state['scope_ids'] is None and state['attempts'] == 0
         if (gaps or source_gap) and state['replans'] < 1 and state['attempts'] < 3:
             messages.append(dict(role='user', content=dumps(dict(
-                instruction='本轮明确查询新出处或缺失对象。上下文缺失不等于全库缺失，请重新判断并调用工具；此次反馈仅一次。',
+                instruction='请检索所问出处或以下尚未取得的材料。',
                 retrievableMissingTargets=gaps))))
             return dict(response=response, messages=messages, trace=trace + [dict(step='replan', status='requested', code='MISSING_RETRIEVABLE_TARGET')],
                         replans=state['replans'] + 1, next_step='route')
@@ -347,27 +347,23 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None, *, rout
         notes = []
         notes += ['当前资料库未收录：' + target_label(t) for t in availability['unavailable']]
         if not availability['unavailable']:
-            notes += ['书名尚未确认：' + b + '；不能仅据名称未匹配就断言全库未收录。' for b in availability['unresolvedBooks']]
+            notes += ['书名尚未确认：' + b for b in availability['unresolvedBooks']]
         notes += ['本轮尚未取得所问材料：' + target_label(t) for t in availability['retrievable']]
         if state['require_citations']:
-            notes.append('首次解读或所问传统内容须有简短依据；如有明确文献目标，引用须对应所问对象。')
+            notes.append('本轮须引用对应资料。')
         risk = state['intent'] == 'out_of_scope_or_risk'
         context = {'核心问题': state['session']['question'], '当前问题': state['question'],
                    '近期对话': history(state['session']),
                    '参考原文': [{k: e.get(k) for k in ('id', 'text', 'locator', 'workTitle', 'authorNames', 'layer')}
                              for e in generation_evidence(state)], '资料说明': notes}
-        if risk:
-            context['回答要求'] = '回应当前风险；只使用直接相关的用户陈述，优先必要的安全支持。'
-        else:
+        if not risk:
             cast = state['session']['cast']
             context['卦象'] = {'本卦': cast['original']['name'], '变卦': cast['changed']['name'],
                 '六爻值': cast['lines'], '爻名': [{6: '老阴', 7: '少阳', 8: '少阴', 9: '老阳'}[v] for v in cast['lines']],
                 '动爻位置': [i + 1 for i in cast['changingIndices']]}
         if not risk:
             context['本轮阶段'] = '首次回应' if state['mode'] == 'initial' else '同题追问'
-            context['回答要求'] = ('按所问文献目标查证；资料缺失就简短交代，不因缺失另加解卦或未经证据支持的文献知识。'
-                if state['intent'] == 'source_request' else
-                '从当前卦意回应本轮真正要解决的事，小事轻解、大事深谈；参考材料不是待讲解清单。')
+
         if risk:
             context.pop('核心问题', None)
             context.pop('参考原文', None)
@@ -391,11 +387,7 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None, *, rout
                     trace=state['trace'] + [dict(step='validate', status='failed' if errors else 'passed', code=','.join(errors))])
 
     async def repair(state):
-        # Field paths and actual limits let the model repair the observed 6/5
-        # citation failure instead of blindly repeating INVALID_ANSWER_SCHEMA.
-        instruction = ('修复以下 JSON 错误。本轮仅提供现实安全支持：citations 为空数组；不新增传统解释或原文缺失说明。'
-                       if state['intent'] == 'out_of_scope_or_risk' else
-                       '修复下列具体契约错误，同时保留对用户问题的直接回答。引文须在本轮证据中；明确文献目标未完成则说明不足，不用无关原文凑引用。保持正文连贯，允许同段讨论卦义与现实；claim 定位本段受证据支持的连续文字，不把建议当成引文证明。')
+        instruction = '根据下列校验错误修正回答，返回完整 JSON。'
         messages = generation_messages(state) + [state['response'], dict(role='user', content=dumps(dict(
             instruction=instruction, errors=state['errors'])))]
         response, trace = await invoke(messages, state)

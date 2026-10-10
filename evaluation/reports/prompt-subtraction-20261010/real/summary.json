@@ -1,0 +1,74 @@
+{
+  "v15": {
+    "generationCalls": 6,
+    "completed": 6,
+    "mechanicalValid": 6,
+    "latencyMedianMs": 7558.5,
+    "usage": {
+      "prompt_tokens": {
+        "reportedSum": 6320,
+        "unknownCalls": 0,
+        "total": 6320
+      },
+      "completion_tokens": {
+        "reportedSum": 11073,
+        "unknownCalls": 0,
+        "total": 11073
+      },
+      "total_tokens": {
+        "reportedSum": 17393,
+        "unknownCalls": 0,
+        "total": 17393
+      }
+    },
+    "errors": [],
+    "routerCalls": 1,
+    "routerOfflineChecks": [
+      {
+        "tool": "get_passages",
+        "status": "ok",
+        "evidenceIds": [
+          "zy-1-line-2"
+        ]
+      }
+    ]
+  },
+  "v16": {
+    "generationCalls": 6,
+    "completed": 5,
+    "mechanicalValid": 5,
+    "latencyMedianMs": 22050.5,
+    "usage": {
+      "prompt_tokens": {
+        "reportedSum": 3936,
+        "unknownCalls": 0,
+        "total": 3936
+      },
+      "completion_tokens": {
+        "reportedSum": 24414,
+        "unknownCalls": 0,
+        "total": 24414
+      },
+      "total_tokens": {
+        "reportedSum": 28350,
+        "unknownCalls": 0,
+        "total": 28350
+      }
+    },
+    "errors": [
+      "MODEL_INCOMPLETE_RESPONSE"
+    ],
+    "routerCalls": 1,
+    "routerOfflineChecks": [
+      {
+        "tool": "get_passages",
+        "status": "ok",
+        "evidenceIds": [
+          "zy-1-line-2"
+        ]
+      }
+    ]
+  },
+  "sameFactHashes": true,
+  "note": "Generation usage includes incomplete responses; router calls separate. Mechanical validity is not semantic truth. Six single-sample development pairs, two of them boundary checks. No repair, no discarded failures."
+}

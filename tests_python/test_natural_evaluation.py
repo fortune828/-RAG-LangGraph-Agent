@@ -24,3 +24,11 @@ def test_paused_review_cannot_be_overwritten(tmp_path):
     with pytest.raises(ValueError, match='REVIEW_PAUSED'):
         make_review_pack(tmp_path)
     assert (review / 'scores.csv').read_text() == 'original scores'
+
+
+async def test_old_generation_runner_refuses_to_mislabel_new_prompt(tmp_path, monkeypatch):
+    from evaluation import natural_dialogue
+    monkeypatch.setattr(natural_dialogue, 'PROMPT_VERSION', 'evidence-agent-python-v16')
+    with pytest.raises(ValueError, match='FROZEN_PROMPT_CHANGED'):
+        await natural_dialogue.run(tmp_path / 'must-not-create', live=True)
+    assert not (tmp_path / 'must-not-create').exists()

@@ -202,5 +202,5 @@ def tool_schema(model):
 
 TOOLS = [dict(type='function', function=dict(name=name, description=description, parameters=tool_schema(model)))
          for name, model, description in [
-             ('get_passages', PassageArgs, '按卦爻章节精确读取本地证据。注解须 layers=[commentary]。遵守服务端 allowedHexagramIds；返回覆盖、来源和截断。'),
-             ('search_knowledge', SearchArgs, '中文简繁归一 BM25 词面检索。未知出处用原句搜索；生活追问限当前本卦及变卦。作者缺失不以别人替代。')]]
+             ('get_passages', PassageArgs, '按卦号、章节和爻位读取原文或注解。注解使用 layers=[commentary]，可指定作者和作品。'),
+             ('search_knowledge', SearchArgs, '按关键词、短句或主题进行中文词面检索，可用卦号、作者、作品等元数据筛选。')]]

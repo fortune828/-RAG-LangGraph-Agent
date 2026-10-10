@@ -1,12 +1,12 @@
 # 见素问微 · Python / LangGraph 周易情境解读 Agent
 
-自然对话修订（2026-10-10）：当前 graph v10 / prompt v15。约束事实与安全，不规定写作顺序、段落类型或问题应有几句话。所有普通解卦仍从本次卦象出发，小事轻解、大事深谈；卦义与现实可以在同段自然讨论，追问承接实际上下文。保留确定性起卦、单核心问题、工具权限、真实引文及风险支持边界。工程通过不等于表达质量改善，见 [本轮验证与完整回答](evaluation/natural-dialogue-20261010.md)。
+提示词减法修订（2026-10-10）：当前 graph v10 / prompt v16，保留普通段落与 claim 引用契约。清理 SYSTEM、ROUTER、RISK_SYSTEM、动态指令、repair 和工具描述；技术约束继续由程序保障。生成机制、Schema、校验器和前端保持，表达质量以真实回答复核，见[本轮完整提示词、删减与对照](evaluation/prompt-subtraction-20261010.md)。
 
 面向现实困惑的占卜对话应用：程序起卦，以真实材料理解卦象，用隐喻帮助看清处境、取舍与下一步。回答追求沉稳、通透、具体，不以资料汇报代替解卦，也不宣称掌握确定的未来。
 
 **当前状态（2026-10-08）**：核心运行后端已迁移为 Python + FastAPI + LangGraph，现有 React 前端保留。迁移目标是让只掌握 Python 的开发者学习、调试并解释 Agent 核心；前端开发不作为学习前置条件。产品质量完善与冻结留出评测仍在进行，历史 TypeScript 后端保留作对照和回滚。
 
-当前为 graph v10 / prompt v15、Flash 思考模式。新回答仅包含 status、普通 paragraphs（text 与 citations）及可选内部 limitations；不再生成 summary 或段落 kind。引用用 claim 定位本段受支持的文字；前端在该处显示引用标记。旧会话的摘要、正文和限制完整展示为普通正文。质量与验证记录见 [本轮回答体验验证](evaluation/natural-dialogue-20261010.md) 和 [任务状态](tasklist.md)。
+当前为 graph v10 / prompt v16、Flash 思考模式。新回答仅包含 status、普通 paragraphs（text 与 citations）及可选内部 limitations；不再生成 summary 或段落 kind。引用用 claim 定位本段受支持的文字；前端在该处显示引用标记。旧会话的摘要、正文和限制完整展示为普通正文。质量与验证记录见 [本轮回答体验验证](evaluation/natural-dialogue-20261010.md) 和 [任务状态](tasklist.md)。
 
 ## 启动
 
@@ -88,7 +88,7 @@ npm run knowledge:audit              # 保留的数据来源/修订审计，不�
 .venv/bin/python -m backend.evaluate --live --max-calls 8 --max-tokens 100000
 
 # 旧 C/D 的 --paired 冻结 v9/v14；在当前新版代码上会拒绝执行，不得更新旧哈希冒充同一基线
-# 新版六对生成对照：相同模型、卦象、证据、历史；仅比较 v14/v15 生成契约，不是整图 C/D
+# 历史 v14/v15 对照须使用 2456f97 版本；当前源码会拒绝，防止结果错标
 # --live 消耗模型额度；output 必须为尚不存在的全新目录
 .venv/bin/python -m evaluation.natural_dialogue --live --output evaluation/results/natural-dialogue-new-run
 # 已保存的完整真实结果可离线重算
@@ -109,7 +109,7 @@ npm run knowledge:audit              # 保留的数据来源/修订审计，不�
 
 迁移报告：[真实模型原始记录](evaluation/results/python-live-20261008-070030-561f7e/report.json)、[浏览器记录](evaluation/results/python-browser-1791442819647485130/report.json)。results 是本地忽略目录，公开展示时须另整理可分发证据。
 
-Python evaluator 保留旧冻结 C/D 的离线重算，历史 Schema 由 evaluation/legacy_schema.py 独立校验，不套用 v15 契约；当前源码不能直接重跑旧冻结 --paired。旧 `npm run eval:live` 仍运行 TypeScript 基线，各版本不得混算。新版 40+40、完整 B/C/D 与真人评分仍待后续验收，不填未经测量的质量提升百分比。
+Python evaluator 保留旧冻结 C/D 的离线重算，历史 Schema 由 evaluation/legacy_schema.py 独立校验，不套用 v15 起的普通段落契约；当前源码不能直接重跑旧冻结 --paired。旧 `npm run eval:live` 仍运行 TypeScript 基线，各版本不得混算。新版 40+40、完整 B/C/D 与真人评分仍待后续验收，不填未经测量的质量提升百分比。
 
 ## 数据、兼容与回滚
 
@@ -133,3 +133,11 @@ npm run start:legacy
 引用校验仍是有限机械规则；作者覆盖说明已与正向观点断言作初步区分，但复杂转引、委婉归属与语义支持仍需人工评测。近期版本重点是能演示、能解释、能亲自修改的 Agent 工程闭环，持续投递不必等所有扩展完成。
 
 规划以 [SPEC.md](SPEC.md) 和 [architect.md](architect.md) 为准，docs 中 9 月文档保留历史事实。LangGraph checkpoint 设计参考[官方 Python 持久化文档](https://docs.langchain.com/oss/python/langgraph/persistence)。
+
+当前 v15/v16 提示词对照（真实 API，使用全新输出目录）：
+
+```bash
+.venv/bin/python evaluation/reports/prompt-subtraction-20261010/run.py --live --output evaluation/results/new-prompt-comparison
+```
+
+四组对话与两组边界输入固定卦象、证据和历史；另比较一次检索路由决策。无改写 Schema、无生成后润色。历史结果保留，新旧版本不混算。

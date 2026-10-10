@@ -21,7 +21,7 @@ async def run(out):
   case=next(c for c in cases if c['caseId']==('life-correction' if gi==0 else 'lunch-choice'))
   session=copy.deepcopy(case['session']);session['turns']=[];session['question']=qs[0]
   for ti,q in enumerate(qs):
-   rid=f'{gi+1}-{ti+1}';rec=Recorder(out/f'{rid}.jsonl',rid,'D-v15');started=time.monotonic();row=dict(id=rid,question=q,input=copy.deepcopy(session))
+   rid=f'{gi+1}-{ti+1}';rec=Recorder(out/f'{rid}.jsonl',rid,'D-'+PROMPT_VERSION.rsplit('-',1)[-1]);started=time.monotonic();row=dict(id=rid,question=q,input=copy.deepcopy(session))
    try:
     result=await build_graph(InMemorySaver(),RecordedChat(budget,rec),observe=rec).ainvoke(initial_state(session,q,'initial' if ti==0 else 'followup'),{'configurable':{'thread_id':rid}})
     turn=dict(id=rid,status='failed' if result['errors'] else 'completed',question=q,answer=result['answer'],evidence=result['evidence'],trace=result['trace'])

@@ -94,7 +94,7 @@ async def test_life_context_receives_cast_without_irrelevant_source_or_risk_note
         context = json.loads(messages[1]['content'])
         assert context['卦象'] and context['参考原文']
         assert not any('书名尚未确认' in note or '未收录' in note for note in context['资料说明'])
-        assert '文献目标查证' not in context['回答要求']
+        assert '回答要求' not in context
         return response(answer(context['参考原文'][0]))
 
     result = await build_graph(InMemorySaver(), model).ainvoke(
