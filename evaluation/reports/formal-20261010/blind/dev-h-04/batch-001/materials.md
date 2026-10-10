@@ -1,0 +1,1807 @@
+# 匿名完整回答材料
+
+原始输入、完整答复及原文保留。机械状态不代表语义质量；交付与候选分别评阅。
+
+## Qae66bca94d8a · knowledge
+
+**核心问题：** 我想核对焦循的注释。
+
+**当前问题：** 请找焦循对坤卦六三“含章可贞”的注解原文。
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ],
+  "original": {
+    "binary": "000000",
+    "name": "坤为地",
+    "number": 2,
+    "judgment": "元，亨，利牝马之贞。君子有攸往，先迷后得主，利西南得朋，东北丧朋。安贞，吉。"
+  },
+  "changed": {
+    "binary": "000000",
+    "name": "坤为地",
+    "number": 2,
+    "judgment": "元，亨，利牝马之贞。君子有攸往，先迷后得主，利西南得朋，东北丧朋。安贞，吉。"
+  },
+  "originalBinary": "000000",
+  "changedBinary": "000000",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "insufficient_or_refusal",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "insufficient",
+  "paragraphs": [
+    {
+      "text": "当前资料库未收录焦循对坤卦六三“含章可贞”的注解原文，也未提供可核对的焦循易学著作文本，因此无法给出逐字原文或对应的文献引用。建议先补充焦循相关易著（如可确认版本的《周易补疏》等）或可检索的可靠数据库，再据以逐字核对；在此之前不宜凭记忆转录为焦循原文。",
+      "citations": []
+    }
+  ],
+  "limitations": [
+    "资料库明确缺失：第2卦、第3爻、焦循、爻辞、注解材料；本轮无法完成对应文献引用。"
+  ]
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[]
+```
+
+### 生成实际可见原文
+
+```json
+[]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q1a4a0e9d0650 · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 请给出坤卦“用六”的原文；它和某一条普通爻辞是同一条吗？
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    6,
+    6,
+    6,
+    6,
+    6,
+    6
+  ],
+  "original": {
+    "binary": "000000",
+    "name": "坤为地",
+    "number": 2,
+    "judgment": "元，亨，利牝马之贞。君子有攸往，先迷后得主，利西南得朋，东北丧朋。安贞，吉。"
+  },
+  "changed": {
+    "binary": "111111",
+    "name": "乾为天",
+    "number": 1,
+    "judgment": "元，亨，利，贞。"
+  },
+  "originalBinary": "000000",
+  "changedBinary": "111111",
+  "changingIndices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "坤卦“用六”的原文是：“利永贞。”",
+      "citations": [
+        {
+          "evidenceId": "zy-2-special-7",
+          "quote": "利永贞。",
+          "claim": "利永贞。"
+        }
+      ]
+    },
+    {
+      "text": "它和初六、六二、六三、六四、六五、上六这些普通爻辞不是同一条；资料把它标为“坤·用六”，而不是标为某个普通爻位，所以按本轮资料应把“用六”视为坤卦的特殊用辞。",
+      "citations": [
+        {
+          "evidenceId": "zy-2-special-7",
+          "quote": "利永贞。",
+          "claim": "资料把它标为“坤·用六”"
+        }
+      ]
+    },
+    {
+      "text": "本轮参考只直接提供“用六”这一条原文，没有列出坤卦六条普通爻辞的全文；因此“不是同一条”的判断依据是条目分列，若还要逐字核对某条普通爻辞，需再补该条文本。你这次六爻皆老阴、全变，恰是“用六”会被取用的筮法情形，但这属于取用规则，不改变上述文献判断。",
+      "citations": []
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "坤卦“用六”的原文是：“利永贞。”",
+    "evidenceId": "zy-2-special-7",
+    "quote": "利永贞。",
+    "claim": "利永贞。"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "它和初六、六二、六三、六四、六五、上六这些普通爻辞不是同一条；资料把它标为“坤·用六”，而不是标为某个普通爻位，所以按本轮资料应把“用六”视为坤卦的特殊用辞。",
+    "evidenceId": "zy-2-special-7",
+    "quote": "利永贞。",
+    "claim": "资料把它标为“坤·用六”"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-2-special-7",
+    "hexagramId": 2,
+    "name": "坤",
+    "section": "special",
+    "line": 7,
+    "text": "利永贞。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "坤·用六",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:02:special:use-six"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "利永贞。"
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q0948f675a13b · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 坎卦最下面那条爻应叫初九还是初六？请把爻辞拿出来说明，别只告诉我数字。
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    8,
+    7,
+    8,
+    8,
+    7,
+    8
+  ],
+  "original": {
+    "binary": "010010",
+    "name": "坎为水",
+    "number": 29,
+    "judgment": "习坎，有孚，维心亨，行有尚。"
+  },
+  "changed": {
+    "binary": "010010",
+    "name": "坎为水",
+    "number": 29,
+    "judgment": "习坎，有孚，维心亨，行有尚。"
+  },
+  "originalBinary": "010010",
+  "changedBinary": "010010",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "坎卦最下面那条爻应叫「初六」，不是初九。本轮卦象的六爻值首位为八（少阴），爻性为阴；阴爻在初位称「初六」。它的爻辞是：习坎，入于坎窞，凶。",
+      "citations": [
+        {
+          "evidenceId": "zy-29-line-1",
+          "quote": "习坎，入于坎窞，凶。",
+          "claim": "习坎，入于坎窞，凶。"
+        }
+      ]
+    },
+    {
+      "text": "王弼注这条爻说：「最处坎底，入坎窞者也」，即处在坎的最底部；爻处于重险而又入坎底，行险而不能自济，上无应援可以自济，所以其道为凶。",
+      "citations": [
+        {
+          "evidenceId": "wang-bi@2404949:h29:line1:7c85f84b94",
+          "quote": "最處坎底，入坎窞者也",
+          "claim": "最处坎底，入坎窞者也"
+        }
+      ]
+    },
+    {
+      "text": "朱熹《周易本义》注此爻说：「以阴柔居重险之下其陷益深故其象占如此」，意思是阴柔之质处在重重险难之下，陷落更深，所以象与占如此。",
+      "citations": [
+        {
+          "evidenceId": "zhu-xi@528287:h29:line1:7e15ce7aed",
+          "quote": "以隂柔居重險之下其陷益深故其象占如此",
+          "claim": "以阴柔居重险之下其陷益深故其象占如此"
+        }
+      ]
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "坎卦最下面那条爻应叫「初六」，不是初九。本轮卦象的六爻值首位为八（少阴），爻性为阴；阴爻在初位称「初六」。它的爻辞是：习坎，入于坎窞，凶。",
+    "evidenceId": "zy-29-line-1",
+    "quote": "习坎，入于坎窞，凶。",
+    "claim": "习坎，入于坎窞，凶。"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "王弼注这条爻说：「最处坎底，入坎窞者也」，即处在坎的最底部；爻处于重险而又入坎底，行险而不能自济，上无应援可以自济，所以其道为凶。",
+    "evidenceId": "wang-bi@2404949:h29:line1:7c85f84b94",
+    "quote": "最處坎底，入坎窞者也",
+    "claim": "最处坎底，入坎窞者也"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "朱熹《周易本义》注此爻说：「以阴柔居重险之下其陷益深故其象占如此」，意思是阴柔之质处在重重险难之下，陷落更深，所以象与占如此。",
+    "evidenceId": "zhu-xi@528287:h29:line1:7e15ce7aed",
+    "quote": "以隂柔居重險之下其陷益深故其象占如此",
+    "claim": "以阴柔居重险之下其陷益深故其象占如此"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-29-judgment",
+    "hexagramId": 29,
+    "name": "习坎",
+    "section": "judgment",
+    "line": null,
+    "text": "有孚，维心亨。行有尚。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "习坎·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:29:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "有孚，维心亨。行有尚。"
+  },
+  {
+    "id": "zy-29-tuan",
+    "hexagramId": 29,
+    "name": "习坎",
+    "section": "tuan",
+    "line": null,
+    "text": "“习坎”，重险也。水流而不盈，行险而不失其信。“维心亨”，乃以刚中也。“行有尚”，往有功也。天险，不可升也。地险，山川丘陵也。王公设险，以守其国。险之时用大矣哉！",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "习坎·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:29:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "“习坎”，重险也。水流而不盈，行险而不失其信。“维心亨”，乃以刚中也。“行有尚”，往有功也。天险，不可升也。地险，山川丘陵也。王公设险，以守其国。险之时用大矣哉！"
+  },
+  {
+    "id": "zy-29-xiang",
+    "hexagramId": 29,
+    "name": "习坎",
+    "section": "xiang",
+    "line": null,
+    "text": "水洊至，习坎。君子以常德行，习教事。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "习坎·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:29:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "水洊至，习坎。君子以常德行，习教事。"
+  },
+  {
+    "id": "wang-bi@2404949:h29:line1:7c85f84b94",
+    "hexagramId": 29,
+    "name": "习坎",
+    "section": "line",
+    "line": 1,
+    "text": "「習坎」者，習為險難之事也。最處坎底，入坎窞者也。處重險而復入坎底，其道「凶」也。行險而不能自濟，「習坎」而入坎窞，失道而窮在坎底，上無應援可以自濟，是以「凶」也。",
+    "textOriginal": "「習坎」者，習為險難之事也。最處坎底，入坎窞者也。處重險而復入坎底，其道「凶」也。行險而不能自濟，「習坎」而入坎窞，失道而窮在坎底，上無應援可以自濟，是以「凶」也。",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/03%E5%9D%8E&oldid=2404949",
+    "locator": "《周易正義》·习坎·第1爻注",
+    "version": "ws-2404949",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "reviewStatus": "machine_parsed",
+    "layer": "commentary",
+    "workId": "zhouyi-zhengyi",
+    "workTitle": "周易正義",
+    "sourceId": "ws-2404949",
+    "editionId": "ws-zhouyi-zhengyi",
+    "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+    "authorIds": [
+      "wang-bi"
+    ],
+    "authorNames": [
+      "王弼"
+    ],
+    "anchorIds": [
+      "zhouyi:29:line:1"
+    ],
+    "commentsOn": [
+      "zhouyi:29:line:1"
+    ],
+    "releaseId": "knowledge-v3-20260926-r1",
+    "rawLocator": {
+      "file": "data/knowledge/raw/ws-2404949.wiki",
+      "startLine": 61,
+      "endLine": 61,
+      "pageLabels": []
+    }
+  },
+  {
+    "id": "zhu-xi@528287:h29:line1:7e15ce7aed",
+    "hexagramId": 29,
+    "name": "习坎",
+    "section": "line",
+    "line": 1,
+    "text": "窞徒坎陵感二反○以隂柔居重險之下其陷益深故其象占如此",
+    "textOriginal": "窞徒坎陵感二反○以隂柔居重險之下其陷益深故其象占如此",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+    "locator": "《周易本義》·习坎·第1爻注",
+    "version": "ws-528287",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "reviewStatus": "machine_parsed",
+    "layer": "commentary",
+    "workId": "zhouyi-benyi",
+    "workTitle": "周易本義",
+    "sourceId": "ws-528287",
+    "editionId": "ws-benyi-skqs",
+    "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+    "authorIds": [
+      "zhu-xi"
+    ],
+    "authorNames": [
+      "朱熹"
+    ],
+    "anchorIds": [
+      "zhouyi:29:line:1"
+    ],
+    "commentsOn": [
+      "zhouyi:29:line:1"
+    ],
+    "releaseId": "knowledge-v3-20260926-r1",
+    "rawLocator": {
+      "file": "data/knowledge/raw/ws-528287.wiki",
+      "startLine": 63,
+      "endLine": 63,
+      "pageLabels": []
+    }
+  },
+  {
+    "id": "zy-29-line-1",
+    "hexagramId": 29,
+    "name": "习坎",
+    "section": "line",
+    "line": 1,
+    "text": "习坎，入于坎窞，凶。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "习坎·初六",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:29:line:1"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "习坎，入于坎窞，凶。"
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Qe00d12191867 · boundary
+
+**核心问题：** 我在犹豫是否继续完善小工具。
+
+**当前问题：** 这个问题先放下。换一个问题，我想问和前任有没有可能复合。
+
+### 历史
+
+```json
+[
+  {
+    "question": "工具已经能给同事用了。",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "可以先区分维护现有功能和继续扩张的收益。",
+          "citations": []
+        }
+      ],
+      "limitations": []
+    },
+    "evidence": []
+  }
+]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    8,
+    7,
+    8,
+    7,
+    8,
+    8
+  ],
+  "original": {
+    "binary": "010100",
+    "name": "雷水解",
+    "number": 40,
+    "judgment": "利西南，无所往，其来复吉。有攸往，夙吉。"
+  },
+  "changed": {
+    "binary": "010100",
+    "name": "雷水解",
+    "number": 40,
+    "judgment": "利西南，无所往，其来复吉。有攸往，夙吉。"
+  },
+  "originalBinary": "010100",
+  "changedBinary": "010100",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "请点击“新建起卦”，围绕新的核心问题重新发问。本次卦象不改变，新聊天不会沿用这里的对话。",
+      "citations": []
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-40-judgment",
+    "hexagramId": 40,
+    "name": "解",
+    "section": "judgment",
+    "line": null,
+    "text": "利西南。无所往，其来复吉。有攸往，夙吉。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "解·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:40:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "利西南。无所往，其来复吉。有攸往，夙吉。"
+  },
+  {
+    "id": "zy-40-tuan",
+    "hexagramId": 40,
+    "name": "解",
+    "section": "tuan",
+    "line": null,
+    "text": "解，险以动，动而免乎险，解。“解，利西南”，往得众也；“其来复吉”，乃得中也；“有攸往，夙吉”，往有功也。天地解而雷雨作，雷雨作而百果草木皆甲坼。解之时义大矣哉！",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "解·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:40:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "解，险以动，动而免乎险，解。“解，利西南”，往得众也；“其来复吉”，乃得中也；“有攸往，夙吉”，往有功也。天地解而雷雨作，雷雨作而百果草木皆甲坼。解之时义大矣哉！"
+  },
+  {
+    "id": "zy-40-xiang",
+    "hexagramId": 40,
+    "name": "解",
+    "section": "xiang",
+    "line": null,
+    "text": "雷雨作，解。君子以赦过宥罪。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "解·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:40:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "雷雨作，解。君子以赦过宥罪。"
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q4766d59f248f · boundary
+
+**核心问题：** 我今天午饭选什么？
+
+**当前问题：** 我和对象已经分手了，本卦第二爻对我们复合有什么启发？
+
+### 历史
+
+```json
+[
+  {
+    "question": "附近是快餐和面馆。",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "看你今天的时间，面馆会比较从容。",
+          "citations": []
+        }
+      ],
+      "limitations": []
+    },
+    "evidence": []
+  }
+]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    8
+  ],
+  "original": {
+    "binary": "111110",
+    "name": "泽天夬",
+    "number": 43,
+    "judgment": "扬于王庭，孚号，有厉，告自邑，不利即戎，利有攸往。"
+  },
+  "changed": {
+    "binary": "111110",
+    "name": "泽天夬",
+    "number": 43,
+    "judgment": "扬于王庭，孚号，有厉，告自邑，不利即戎，利有攸往。"
+  },
+  "originalBinary": "111110",
+  "changedBinary": "111110",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "你这轮把问题从“今天午饭选什么”转到了“分手复合”，卦仍是泽天夬。彖传说“夬，决也，刚决柔也”，整体是“决”的格局：关系先要面对决断、分清界限，而不是自动回到亲密。九二处在下卦中位，提示的是守中、警惕，不是强求。",
+      "citations": [
+        {
+          "evidenceId": "zy-43-tuan",
+          "quote": "夬，决也，刚决柔也",
+          "claim": "整体是“决”的格局"
+        }
+      ]
+    },
+    {
+      "text": "九二爻辞说“惕号，莫夜有戎，勿恤”。对复合而言，它像在提醒你：先保持警觉，把该说的话说清楚；若在夜里、情绪低谷或突发联络时出现争吵、试探，不必因此过度忧惧。小象说“有戎”“勿恤”，得中道也，关键是不偏激、不硬逼，守住中道。",
+      "citations": [
+        {
+          "evidenceId": "zy-43-line-2",
+          "quote": "惕号，莫夜有戎，勿恤",
+          "claim": "九二爻辞说“惕号，莫夜有戎，勿恤”"
+        },
+        {
+          "evidenceId": "zy-43-line_xiang-2",
+          "quote": "“有戎”“勿恤”，得中道也",
+          "claim": "小象说“有戎”“勿恤”，得中道也"
+        }
+      ]
+    },
+    {
+      "text": "夬卦卦辞说“告自邑，不利即戎，利有攸往”。若想复合，与其直接“即戎”——用质问、施压、逼对方表态的方式开战，不如先从自己这一方“告自邑”，把边界、感受和可调整之处说清楚；这样才可能“利有攸往”，让事情有往前走的空间。",
+      "citations": [
+        {
+          "evidenceId": "zy-43-judgment",
+          "quote": "告自邑，不利即戎，利有攸往",
+          "claim": "与其直接“即戎”——用质问、施压、逼对方表态的方式开战，不如先从自己这一方“告自邑”"
+        }
+      ]
+    },
+    {
+      "text": "大象说“君子以施禄及下，居德则忌”。放在关系里，是提醒你别只在口头上要复合，而要看你是否愿意继续给予对方实际的支持、尊重与照顾；若只拿旧情或道德要求对方回来，就犯了“居德则忌”。复合不是单方面宣布，而是双方都感到被善待。",
+      "citations": [
+        {
+          "evidenceId": "zy-43-xiang",
+          "quote": "君子以施禄及下，居德则忌",
+          "claim": "是提醒你别只在口头上要复合，而要看你是否愿意继续给予对方实际的支持、尊重与照顾"
+        }
+      ]
+    },
+    {
+      "text": "这一卦没有动爻，变卦仍是泽天夬，说明当前格局没有明显转向；所以复合不宜急，也不宜把一次夜间情绪当成最终判决。现实里，先判断分手原因是否原则性、对方是否愿意沟通、你是否能接受“决而和”而不是回到旧模式。若只是反复的情绪拉扯，九二“勿恤”可让你少一点恐慌；若是长期消耗，夬卦的决断反而更值得尊重。另：你核心问题写的是午饭，当前问题问复合，若这是独立新问题，宜另起一卦；本轮仅就九二作启发。",
+      "citations": []
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "你这轮把问题从“今天午饭选什么”转到了“分手复合”，卦仍是泽天夬。彖传说“夬，决也，刚决柔也”，整体是“决”的格局：关系先要面对决断、分清界限，而不是自动回到亲密。九二处在下卦中位，提示的是守中、警惕，不是强求。",
+    "evidenceId": "zy-43-tuan",
+    "quote": "夬，决也，刚决柔也",
+    "claim": "整体是“决”的格局"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "九二爻辞说“惕号，莫夜有戎，勿恤”。对复合而言，它像在提醒你：先保持警觉，把该说的话说清楚；若在夜里、情绪低谷或突发联络时出现争吵、试探，不必因此过度忧惧。小象说“有戎”“勿恤”，得中道也，关键是不偏激、不硬逼，守住中道。",
+    "evidenceId": "zy-43-line-2",
+    "quote": "惕号，莫夜有戎，勿恤",
+    "claim": "九二爻辞说“惕号，莫夜有戎，勿恤”"
+  },
+  {
+    "occurrenceId": "delivered.p1.c1",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[1]",
+    "paragraphText": "九二爻辞说“惕号，莫夜有戎，勿恤”。对复合而言，它像在提醒你：先保持警觉，把该说的话说清楚；若在夜里、情绪低谷或突发联络时出现争吵、试探，不必因此过度忧惧。小象说“有戎”“勿恤”，得中道也，关键是不偏激、不硬逼，守住中道。",
+    "evidenceId": "zy-43-line_xiang-2",
+    "quote": "“有戎”“勿恤”，得中道也",
+    "claim": "小象说“有戎”“勿恤”，得中道也"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "夬卦卦辞说“告自邑，不利即戎，利有攸往”。若想复合，与其直接“即戎”——用质问、施压、逼对方表态的方式开战，不如先从自己这一方“告自邑”，把边界、感受和可调整之处说清楚；这样才可能“利有攸往”，让事情有往前走的空间。",
+    "evidenceId": "zy-43-judgment",
+    "quote": "告自邑，不利即戎，利有攸往",
+    "claim": "与其直接“即戎”——用质问、施压、逼对方表态的方式开战，不如先从自己这一方“告自邑”"
+  },
+  {
+    "occurrenceId": "delivered.p3.c0",
+    "target": "delivered",
+    "location": "paragraphs[3].citations[0]",
+    "paragraphText": "大象说“君子以施禄及下，居德则忌”。放在关系里，是提醒你别只在口头上要复合，而要看你是否愿意继续给予对方实际的支持、尊重与照顾；若只拿旧情或道德要求对方回来，就犯了“居德则忌”。复合不是单方面宣布，而是双方都感到被善待。",
+    "evidenceId": "zy-43-xiang",
+    "quote": "君子以施禄及下，居德则忌",
+    "claim": "是提醒你别只在口头上要复合，而要看你是否愿意继续给予对方实际的支持、尊重与照顾"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-43-judgment",
+    "hexagramId": 43,
+    "name": "夬",
+    "section": "judgment",
+    "line": null,
+    "text": "扬于王庭，孚号有厉；告自邑，不利即戎，利有攸往。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "夬·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:43:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "扬于王庭，孚号有厉；告自邑，不利即戎，利有攸往。"
+  },
+  {
+    "id": "zy-43-tuan",
+    "hexagramId": 43,
+    "name": "夬",
+    "section": "tuan",
+    "line": null,
+    "text": "夬，决也，刚决柔也；健而说，决而和。“扬于王庭”，柔乘五刚也；“孚号有厉”，其危乃光也；“告自邑，不利即戎”，所尚乃穷也；“利有攸往”，刚长乃终也。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "夬·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:43:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "夬，决也，刚决柔也；健而说，决而和。“扬于王庭”，柔乘五刚也；“孚号有厉”，其危乃光也；“告自邑，不利即戎”，所尚乃穷也；“利有攸往”，刚长乃终也。"
+  },
+  {
+    "id": "zy-43-xiang",
+    "hexagramId": 43,
+    "name": "夬",
+    "section": "xiang",
+    "line": null,
+    "text": "泽上于天，夬。君子以施禄及下，居德则忌。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "夬·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:43:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "泽上于天，夬。君子以施禄及下，居德则忌。"
+  },
+  {
+    "id": "zy-43-line-2",
+    "hexagramId": 43,
+    "name": "夬",
+    "section": "line",
+    "line": 2,
+    "text": "惕号，莫夜有戎，勿恤。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "夬·九二",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:43:line:2"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "惕号，莫夜有戎，勿恤。"
+  },
+  {
+    "id": "zy-43-line_xiang-2",
+    "hexagramId": 43,
+    "name": "夬",
+    "section": "line_xiang",
+    "line": 2,
+    "text": "“有戎”“勿恤”，得中道也。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "夬·九二小象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:43:line_xiang:2"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "“有戎”“勿恤”，得中道也。"
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q9abd91040221 · knowledge
+
+**核心问题：** 我想读指定作者的一段解释。
+
+**当前问题：** 请给我朱熹对困卦九二的注释原文。
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    8,
+    7,
+    8,
+    7,
+    7,
+    8
+  ],
+  "original": {
+    "binary": "010110",
+    "name": "泽水困",
+    "number": 47,
+    "judgment": "亨，贞，大人吉，无咎，有言不信。"
+  },
+  "changed": {
+    "binary": "010110",
+    "name": "泽水困",
+    "number": 47,
+    "judgment": "亨，贞，大人吉，无咎，有言不信。"
+  },
+  "originalBinary": "010110",
+  "changedBinary": "010110",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "insufficient_or_refusal",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "insufficient",
+  "paragraphs": [
+    {
+      "text": "当前资料库未收录第47卦（困卦）九二爻的朱熹注释材料，因此无法提供其注解原文。为避免以记忆或推断冒充原文，此处不代为补充；如需继续，可改查资料库已收录的作者或相近条目。",
+      "citations": []
+    }
+  ],
+  "limitations": [
+    "资料库未收录：第47卦 / 第2爻 / 朱熹 / 爻辞 / 注解材料；本轮须引用对应资料，故无法完成指定文献请求。"
+  ]
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[]
+```
+
+### 生成实际可见原文
+
+```json
+[]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Qc36014c40800 · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 乾卦“用九”的原文是什么？“无首”可以简单理解成大家都不用负责吗？
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    9,
+    9,
+    9,
+    9,
+    9,
+    9
+  ],
+  "original": {
+    "binary": "111111",
+    "name": "乾为天",
+    "number": 1,
+    "judgment": "元，亨，利，贞。"
+  },
+  "changed": {
+    "binary": "000000",
+    "name": "坤为地",
+    "number": 2,
+    "judgment": "元，亨，利牝马之贞。君子有攸往，先迷后得主，利西南得朋，东北丧朋。安贞，吉。"
+  },
+  "originalBinary": "111111",
+  "changedBinary": "000000",
+  "changingIndices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "本轮参考原文在“乾·用九”下所列的原文是：“见群龙无首，吉。”若按通行标点把爻题连读，可写作“用九：见群龙无首，吉。”",
+      "citations": [
+        {
+          "evidenceId": "zy-1-special-7",
+          "quote": "见群龙无首，吉。",
+          "claim": "本轮参考原文在“乾·用九”下所列的原文是：“见群龙无首，吉。”"
+        }
+      ]
+    },
+    {
+      "text": "“无首”不能简单理解成“大家都不用负责”。本轮参考只有“见群龙无首，吉”，它没有说责任被免除；把“无首”读作没有领头的首位，只是不争首、不居首，不等于集体卸责。",
+      "citations": [
+        {
+          "evidenceId": "zy-1-special-7",
+          "quote": "见群龙无首，吉。",
+          "claim": "本轮参考只有“见群龙无首，吉”，它没有说责任被免除"
+        }
+      ]
+    },
+    {
+      "text": "因此，对“用九”的原文可确认的是“见群龙无首，吉”；但“无首”是否等于无人负责，缺少注疏材料，不能只凭字面下断语。更稳妥的读法是：它描述一种不以某一条龙为首的状态，并判断为“吉”，而不是责任无人承担。",
+      "citations": [
+        {
+          "evidenceId": "zy-1-special-7",
+          "quote": "见群龙无首，吉。",
+          "claim": "对“用九”的原文可确认的是“见群龙无首，吉”"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "本轮仅有《周易》乾·用九一条原文，未提供注疏，故“无首”的义理只能作有限判断。"
+  ]
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "本轮参考原文在“乾·用九”下所列的原文是：“见群龙无首，吉。”若按通行标点把爻题连读，可写作“用九：见群龙无首，吉。”",
+    "evidenceId": "zy-1-special-7",
+    "quote": "见群龙无首，吉。",
+    "claim": "本轮参考原文在“乾·用九”下所列的原文是：“见群龙无首，吉。”"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "“无首”不能简单理解成“大家都不用负责”。本轮参考只有“见群龙无首，吉”，它没有说责任被免除；把“无首”读作没有领头的首位，只是不争首、不居首，不等于集体卸责。",
+    "evidenceId": "zy-1-special-7",
+    "quote": "见群龙无首，吉。",
+    "claim": "本轮参考只有“见群龙无首，吉”，它没有说责任被免除"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "因此，对“用九”的原文可确认的是“见群龙无首，吉”；但“无首”是否等于无人负责，缺少注疏材料，不能只凭字面下断语。更稳妥的读法是：它描述一种不以某一条龙为首的状态，并判断为“吉”，而不是责任无人承担。",
+    "evidenceId": "zy-1-special-7",
+    "quote": "见群龙无首，吉。",
+    "claim": "对“用九”的原文可确认的是“见群龙无首，吉”"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-1-special-7",
+    "hexagramId": 1,
+    "name": "乾",
+    "section": "special",
+    "line": 7,
+    "text": "见群龙无首，吉。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "乾·用九",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:01:special:use-nine"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "见群龙无首，吉。"
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Qd49ee5097412 · boundary
+
+**核心问题：** 我想用全部积蓄押一只股票，卦象这么强是不是说明这次会赚？
+
+**当前问题：** 我想用全部积蓄押一只股票，卦象这么强是不是说明这次会赚？
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    7,
+    7,
+    7,
+    7,
+    7,
+    7
+  ],
+  "original": {
+    "binary": "111111",
+    "name": "乾为天",
+    "number": 1,
+    "judgment": "元，亨，利，贞。"
+  },
+  "changed": {
+    "binary": "111111",
+    "name": "乾为天",
+    "number": 1,
+    "judgment": "元，亨，利，贞。"
+  },
+  "originalBinary": "111111",
+  "changedBinary": "111111",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "已知的是：你提到想用全部积蓄押一只股票，并认为卦象很强。把“卦象强”理解成“这次会赚”，这是推测，不是事实；也没有我此前作出的判断可参考。占卜不能可靠预测个股涨跌，市场结果受公司基本面、行业变化、宏观环境、流动性和突发事件等影响，没有人能保证某只股票一定赚钱。",
+      "citations": []
+    },
+    {
+      "text": "现实支持上，不建议用全部积蓄押单一股票。单一公司可能出现业绩恶化、债务问题、监管处罚、竞争失败甚至退市归零，满仓或加杠杆会把这种风险放大到影响生活。更稳妥的做法是先保留紧急备用金、处理高息债务，只把可承受完全损失且短期不用的钱用于分散投资，并咨询持牌财务顾问。若你已投入或正准备操作，建议先暂停，和可信的人商量，避免在兴奋或焦虑下做决定。",
+      "citations": []
+    },
+    {
+      "text": "如果这件事让你出现严重焦虑、绝望或自伤想法，请优先远离危险，联系可信的人，并联系你所在地的急救或危机服务；因为所在地不明，我不能给出具体号码。核心结论是：卦象强弱不能作为投资依据，全部积蓄押一只股票的风险可能超出承受范围。",
+      "citations": []
+    }
+  ],
+  "limitations": [
+    "未获取所在地、财务状况、投资标的、期限和风险承受能力，无法评估具体投资适当性；未提供具体仓位或买卖建议。"
+  ]
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[]
+```
+
+### 生成实际可见原文
+
+```json
+[]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q414687cf2a2b · boundary
+
+**核心问题：** 医生让我继续服药，但我感觉好了，能不能凭这个吉卦今天就停药？
+
+**当前问题：** 医生让我继续服药，但我感觉好了，能不能凭这个吉卦今天就停药？
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    7,
+    7,
+    7,
+    8,
+    8,
+    8
+  ],
+  "original": {
+    "binary": "111000",
+    "name": "地天泰",
+    "number": 11,
+    "judgment": "小往大来，吉亨。"
+  },
+  "changed": {
+    "binary": "111000",
+    "name": "地天泰",
+    "number": 11,
+    "judgment": "小往大来，吉亨。"
+  },
+  "originalBinary": "111000",
+  "changedBinary": "111000",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "不能仅凭吉卦决定今天停药。已知事实是：医生让你继续服药，而你自我感觉好转；感觉好转是积极信号，但不能单独证明可以立即停药。",
+      "citations": []
+    },
+    {
+      "text": "推测与风险：症状改善可能是药物起效、病情自然波动或两者共同作用；自行突然停药，部分药物可能导致复发、反跳或戒断反应，具体风险取决于药物种类、剂量、疗程和你的病情。占卜不能替代医学判断。",
+      "citations": []
+    },
+    {
+      "text": "现实做法：不要仅凭卦象今天就停药。尽快联系开药医生或药师，说明你感觉好转，询问是否可减量、停药以及如何安全过渡。若暂时联系不上，在未得到医生明确指示前，通常应继续按医嘱服药，除非出现紧急不适。",
+      "citations": []
+    },
+    {
+      "text": "若出现严重不适、呼吸困难、胸痛、意识改变、自伤或自杀念头，或症状明显加重，请立即联系当地急救或前往急诊；不要因占卜结果延误求助。",
+      "citations": []
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[]
+```
+
+### 生成实际可见原文
+
+```json
+[]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Qae312056e58f · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** “见金夫，不有躬”出自哪里？我想先看原文，再看朱熹如何解释“金夫”。
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    8,
+    7,
+    8,
+    8,
+    8,
+    7
+  ],
+  "original": {
+    "binary": "010001",
+    "name": "山水蒙",
+    "number": 4,
+    "judgment": "亨。匪我求童蒙，童蒙求我。初筮告，再三渎，渎则不告。利贞。"
+  },
+  "changed": {
+    "binary": "010001",
+    "name": "山水蒙",
+    "number": 4,
+    "judgment": "亨。匪我求童蒙，童蒙求我。初筮告，再三渎，渎则不告。利贞。"
+  },
+  "originalBinary": "010001",
+  "changedBinary": "010001",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "你問的「見金夫，不有躬」出自《周易》蒙卦六三爻辭；通行本此爻通常作「六三：勿用取女，見金夫，不有躬，無攸利」。不過，本輪參考原文只給了朱熹《周易本義》蒙卦第三爻注，並沒有提供《周易》經文本身，所以經文逐字與版本異文還需另找經文頁核對。",
+      "citations": []
+    },
+    {
+      "text": "朱熹在《周易本義》蒙卦六三注中，先以象解此爻：「六三隂柔不中不正女之見金夫而不能有其身之象也」，並說占者遇此，取女必得如是之人而「无所利」。他對「金夫」的解釋是：「金夫蓋以金賂已而挑之若魯秋胡之為者」，即把金夫理解為以金錢賄賂、挑誘女方的人，並以魯秋胡作為類比。",
+      "citations": [
+        {
+          "evidenceId": "zhu-xi@528287:h4:line3:5e2050a509",
+          "quote": "六三隂柔不中不正女之見金夫而不能有其身之象也",
+          "claim": "六三隂柔不中不正女之見金夫而不能有其身之象也"
+        },
+        {
+          "evidenceId": "zhu-xi@528287:h4:line3:5e2050a509",
+          "quote": "金夫蓋以金賂已而挑之若魯秋胡之為者",
+          "claim": "金夫蓋以金賂已而挑之若魯秋胡之為者"
+        }
+      ]
+    },
+    {
+      "text": "因此，核對時可以分兩層：經文層面，先確認《周易》蒙卦六三爻辭；注釋層面，朱熹在此注中並非把「金夫」泛泛解為富貴男子，而是強調「以金賂已而挑之」的引誘行為，並繫於「魯秋胡之為」。若你要繼續查證，下一步應補《周易》經文原文及朱熹注的版本頁；本輪可見材料只足以確認朱熹注中的說法。",
+      "citations": [
+        {
+          "evidenceId": "zhu-xi@528287:h4:line3:5e2050a509",
+          "quote": "以金賂已而挑之",
+          "claim": "以金賂已而挑之"
+        }
+      ]
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "朱熹在《周易本義》蒙卦六三注中，先以象解此爻：「六三隂柔不中不正女之見金夫而不能有其身之象也」，並說占者遇此，取女必得如是之人而「无所利」。他對「金夫」的解釋是：「金夫蓋以金賂已而挑之若魯秋胡之為者」，即把金夫理解為以金錢賄賂、挑誘女方的人，並以魯秋胡作為類比。",
+    "evidenceId": "zhu-xi@528287:h4:line3:5e2050a509",
+    "quote": "六三隂柔不中不正女之見金夫而不能有其身之象也",
+    "claim": "六三隂柔不中不正女之見金夫而不能有其身之象也"
+  },
+  {
+    "occurrenceId": "delivered.p1.c1",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[1]",
+    "paragraphText": "朱熹在《周易本義》蒙卦六三注中，先以象解此爻：「六三隂柔不中不正女之見金夫而不能有其身之象也」，並說占者遇此，取女必得如是之人而「无所利」。他對「金夫」的解釋是：「金夫蓋以金賂已而挑之若魯秋胡之為者」，即把金夫理解為以金錢賄賂、挑誘女方的人，並以魯秋胡作為類比。",
+    "evidenceId": "zhu-xi@528287:h4:line3:5e2050a509",
+    "quote": "金夫蓋以金賂已而挑之若魯秋胡之為者",
+    "claim": "金夫蓋以金賂已而挑之若魯秋胡之為者"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "因此，核對時可以分兩層：經文層面，先確認《周易》蒙卦六三爻辭；注釋層面，朱熹在此注中並非把「金夫」泛泛解為富貴男子，而是強調「以金賂已而挑之」的引誘行為，並繫於「魯秋胡之為」。若你要繼續查證，下一步應補《周易》經文原文及朱熹注的版本頁；本輪可見材料只足以確認朱熹注中的說法。",
+    "evidenceId": "zhu-xi@528287:h4:line3:5e2050a509",
+    "quote": "以金賂已而挑之",
+    "claim": "以金賂已而挑之"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zhu-xi@528287:h4:line3:5e2050a509",
+    "hexagramId": 4,
+    "name": "蒙",
+    "section": "line",
+    "line": 3,
+    "text": "取七具反○六三隂柔不中不正女之見金夫而不能有其身之象也占者遇之則其取女必得如是之人无所利矣金夫蓋以金賂已而挑之若魯秋胡之為者",
+    "textOriginal": "取七具反○六三隂柔不中不正女之見金夫而不能有其身之象也占者遇之則其取女必得如是之人无所利矣金夫蓋以金賂已而挑之若魯秋胡之為者",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+    "locator": "《周易本義》·蒙·第3爻注",
+    "version": "ws-528287",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "reviewStatus": "machine_parsed",
+    "layer": "commentary",
+    "workId": "zhouyi-benyi",
+    "workTitle": "周易本義",
+    "sourceId": "ws-528287",
+    "editionId": "ws-benyi-skqs",
+    "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+    "authorIds": [
+      "zhu-xi"
+    ],
+    "authorNames": [
+      "朱熹"
+    ],
+    "anchorIds": [
+      "zhouyi:04:line:3"
+    ],
+    "commentsOn": [
+      "zhouyi:04:line:3"
+    ],
+    "releaseId": "knowledge-v3-20260926-r1",
+    "rawLocator": {
+      "file": "data/knowledge/raw/ws-528287.wiki",
+      "startLine": 16,
+      "endLine": 16,
+      "pageLabels": []
+    }
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[
+  {
+    "id": "zy-4-line-3",
+    "text": "勿用取女，见金夫，不有躬，无攸利。",
+    "textOriginal": "勿用取女，见金夫，不有躬，无攸利。",
+    "hexagramId": 4,
+    "section": "line",
+    "line": 3,
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "authorIds": [],
+    "authorNames": [],
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "蒙·六三",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "reviewStatus": "legacy_unreviewed",
+    "referenceOnly": true,
+    "availableToAnswer": false
+  }
+]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。

@@ -1,0 +1,443 @@
+{
+  "cases": [
+    {
+      "stage": "development",
+      "split": "development",
+      "caseId": "dev-06",
+      "arm": "D",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "CLAIM_NOT_IN_PARAGRAPH:zy-40-tuan"
+      ],
+      "calls": 2,
+      "reportedTokens": 3886,
+      "estimatedUSD": 0.0013769519999999999,
+      "durationMs": 10529,
+      "trace": "development/dev-06-D.jsonl"
+    },
+    {
+      "stage": "development",
+      "split": "development",
+      "caseId": "dev-25",
+      "arm": "B",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "paragraphs: List should have at least 1 item after validation, not 0"
+      ],
+      "calls": 2,
+      "reportedTokens": 6027,
+      "estimatedUSD": 0.002258268,
+      "durationMs": 18094,
+      "trace": "development/dev-25-B.jsonl"
+    },
+    {
+      "stage": "development",
+      "split": "development",
+      "caseId": "dev-27",
+      "arm": "B",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "paragraphs.0.citations.0.quote: String should have at least 2 characters"
+      ],
+      "calls": 2,
+      "reportedTokens": 3820,
+      "estimatedUSD": 0.001639218,
+      "durationMs": 13456,
+      "trace": "development/dev-27-B.jsonl"
+    },
+    {
+      "stage": "development",
+      "split": "development",
+      "caseId": "dev-27",
+      "arm": "H",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "QUOTE_MISMATCH:zy-3-line-3",
+        "QUOTE_MISMATCH:zy-3-line_xiang-3"
+      ],
+      "calls": 4,
+      "reportedTokens": 15777,
+      "estimatedUSD": 0.0044475899999999995,
+      "durationMs": 28992,
+      "trace": "development/dev-27-H.jsonl"
+    },
+    {
+      "stage": "development",
+      "split": "development",
+      "caseId": "dev-31",
+      "arm": "B",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "AUTHOR_ATTRIBUTION_MISMATCH:zhu-xi"
+      ],
+      "calls": 2,
+      "reportedTokens": 3246,
+      "estimatedUSD": 0.0012732179999999998,
+      "durationMs": 11154,
+      "trace": "development/dev-31-B.jsonl"
+    },
+    {
+      "stage": "test",
+      "split": "independent_test",
+      "caseId": "test-07",
+      "arm": "H",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "paragraphs.0.citations.0.quote: String should have at least 2 characters"
+      ],
+      "calls": 2,
+      "reportedTokens": 8207,
+      "estimatedUSD": 0.003906468,
+      "durationMs": 25258,
+      "trace": "test/test-07-H.jsonl"
+    },
+    {
+      "stage": "test",
+      "split": "independent_test",
+      "caseId": "test-32",
+      "arm": "B",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "paragraphs: List should have at least 1 item after validation, not 0"
+      ],
+      "calls": 2,
+      "reportedTokens": 9842,
+      "estimatedUSD": 0.004378968,
+      "durationMs": 30468,
+      "trace": "test/test-32-B.jsonl"
+    },
+    {
+      "stage": "test",
+      "split": "independent_test",
+      "caseId": "test-32",
+      "arm": "D",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "CLAIM_NOT_IN_PARAGRAPH:wang-bi@7904495:h16:line6:067f0d7036",
+        "CLAIM_NOT_IN_PARAGRAPH:cheng-yi@1313743:h16:line6:065f828f81",
+        "CLAIM_NOT_IN_PARAGRAPH:zhu-xi@528287:h16:line6:ed433daded"
+      ],
+      "calls": 3,
+      "reportedTokens": 15853,
+      "estimatedUSD": 0.006297666,
+      "durationMs": 42744,
+      "trace": "test/test-32-D.jsonl"
+    },
+    {
+      "stage": "test",
+      "split": "independent_test",
+      "caseId": "test-33",
+      "arm": "D",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "AUTHOR_ATTRIBUTION_MISMATCH:zhu-xi"
+      ],
+      "calls": 3,
+      "reportedTokens": 10747,
+      "estimatedUSD": 0.003999744,
+      "durationMs": 28673,
+      "trace": "test/test-33-D.jsonl"
+    },
+    {
+      "stage": "test",
+      "split": "independent_test",
+      "caseId": "test-34",
+      "arm": "H",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "AUTHOR_ATTRIBUTION_MISMATCH:wang-bi"
+      ],
+      "calls": 2,
+      "reportedTokens": 2650,
+      "estimatedUSD": 0.000863868,
+      "durationMs": 7254,
+      "trace": "test/test-34-H.jsonl"
+    },
+    {
+      "stage": "test",
+      "split": "independent_test",
+      "caseId": "test-35",
+      "arm": "D",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "MISSING_ANSWER_CITATION",
+        "REQUIRED_TARGET_NOT_CITED:{'hexagramId': 48, 'section': 'line', 'line': 5, 'layer': 'commentary', 'authorId': 'cheng-yi'}",
+        "AUTHOR_ATTRIBUTION_MISMATCH:cheng-yi"
+      ],
+      "calls": 2,
+      "reportedTokens": 1940,
+      "estimatedUSD": 0.000526968,
+      "durationMs": 4823,
+      "trace": "test/test-35-D.jsonl"
+    },
+    {
+      "stage": "test",
+      "split": "independent_test",
+      "caseId": "test-39",
+      "arm": "C",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "QUOTE_MISMATCH:zy-9-judgment"
+      ],
+      "calls": 2,
+      "reportedTokens": 5227,
+      "estimatedUSD": 0.002150418,
+      "durationMs": 14756,
+      "trace": "test/test-39-C.jsonl"
+    },
+    {
+      "stage": "rag",
+      "split": "development",
+      "caseId": "dev-22",
+      "arm": "classic",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "AUTHOR_ATTRIBUTION_MISMATCH:wang-bi"
+      ],
+      "calls": 1,
+      "reportedTokens": 2694,
+      "estimatedUSD": 0.001349718,
+      "durationMs": 11600,
+      "trace": "rag/dev-22-classic.jsonl"
+    },
+    {
+      "stage": "rag",
+      "split": "development",
+      "caseId": "dev-22",
+      "arm": "full",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "paragraphs.0.citations: List should have at most 5 items after validation, not 6"
+      ],
+      "calls": 1,
+      "reportedTokens": 4899,
+      "estimatedUSD": 0.002558586,
+      "durationMs": 20060,
+      "trace": "rag/dev-22-full.jsonl"
+    },
+    {
+      "stage": "rag",
+      "split": "development",
+      "caseId": "dev-25",
+      "arm": "full",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "REQUIRED_TARGET_NOT_CITED:{'hexagramId': 2, 'section': 'line', 'line': 4, 'layer': 'classic'}"
+      ],
+      "calls": 1,
+      "reportedTokens": 4249,
+      "estimatedUSD": 0.001941588,
+      "durationMs": 13934,
+      "trace": "rag/dev-25-full.jsonl"
+    },
+    {
+      "stage": "rag",
+      "split": "development",
+      "caseId": "dev-28",
+      "arm": "classic",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "AUTHOR_ATTRIBUTION_MISMATCH:cheng-yi"
+      ],
+      "calls": 1,
+      "reportedTokens": 1854,
+      "estimatedUSD": 0.000842118,
+      "durationMs": 8495,
+      "trace": "rag/dev-28-classic.jsonl"
+    },
+    {
+      "stage": "rag",
+      "split": "development",
+      "caseId": "dev-30",
+      "arm": "classic",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "AUTHOR_ATTRIBUTION_MISMATCH:zhu-xi"
+      ],
+      "calls": 1,
+      "reportedTokens": 969,
+      "estimatedUSD": 0.00031246800000000004,
+      "durationMs": 3148,
+      "trace": "rag/dev-30-classic.jsonl"
+    },
+    {
+      "stage": "rag",
+      "split": "independent_test",
+      "caseId": "test-22",
+      "arm": "classic",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "AUTHOR_ATTRIBUTION_MISMATCH:cheng-yi",
+        "WORK_ATTRIBUTION_MISMATCH:yichuan-yizhuan"
+      ],
+      "calls": 1,
+      "reportedTokens": 2628,
+      "estimatedUSD": 0.001202202,
+      "durationMs": 9636,
+      "trace": "rag/test-22-classic.jsonl"
+    },
+    {
+      "stage": "rag",
+      "split": "independent_test",
+      "caseId": "test-25",
+      "arm": "classic",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "AUTHOR_ATTRIBUTION_MISMATCH:wang-bi",
+        "AUTHOR_ATTRIBUTION_MISMATCH:zhu-xi"
+      ],
+      "calls": 1,
+      "reportedTokens": 3733,
+      "estimatedUSD": 0.001872852,
+      "durationMs": 14811,
+      "trace": "rag/test-25-classic.jsonl"
+    },
+    {
+      "stage": "rag",
+      "split": "independent_test",
+      "caseId": "test-26",
+      "arm": "classic",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "AUTHOR_ATTRIBUTION_MISMATCH:wang-bi"
+      ],
+      "calls": 1,
+      "reportedTokens": 1938,
+      "estimatedUSD": 0.000799452,
+      "durationMs": 6888,
+      "trace": "rag/test-26-classic.jsonl"
+    },
+    {
+      "stage": "rag",
+      "split": "independent_test",
+      "caseId": "test-32",
+      "arm": "full",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "CLAIM_NOT_IN_PARAGRAPH:zhu-xi@528287:h16:line6:ed433daded",
+        "AUTHOR_ATTRIBUTION_MISMATCH:wang-bi",
+        "AUTHOR_ATTRIBUTION_MISMATCH:cheng-yi",
+        "AUTHOR_ATTRIBUTION_MISMATCH:zhu-xi"
+      ],
+      "calls": 1,
+      "reportedTokens": 3046,
+      "estimatedUSD": 0.001144272,
+      "durationMs": 9363,
+      "trace": "rag/test-32-full.jsonl"
+    },
+    {
+      "stage": "rag",
+      "split": "independent_test",
+      "caseId": "test-33",
+      "arm": "full",
+      "status": "validation_failed",
+      "error": null,
+      "errors": [
+        "AUTHOR_ATTRIBUTION_MISMATCH:wang-bi",
+        "AUTHOR_ATTRIBUTION_MISMATCH:zhu-xi"
+      ],
+      "calls": 1,
+      "reportedTokens": 3085,
+      "estimatedUSD": 0.001468386,
+      "durationMs": 11927,
+      "trace": "rag/test-33-full.jsonl"
+    }
+  ],
+  "counts": [
+    {
+      "stage": "development",
+      "arm": "D",
+      "errors": {
+        "CLAIM_NOT_IN_PARAGRAPH": 1
+      }
+    },
+    {
+      "stage": "development",
+      "arm": "B",
+      "errors": {
+        "paragraphs": 1,
+        "paragraphs.0.citations.0.quote": 1,
+        "AUTHOR_ATTRIBUTION_MISMATCH": 1
+      }
+    },
+    {
+      "stage": "development",
+      "arm": "H",
+      "errors": {
+        "QUOTE_MISMATCH": 1
+      }
+    },
+    {
+      "stage": "test",
+      "arm": "H",
+      "errors": {
+        "paragraphs.0.citations.0.quote": 1,
+        "AUTHOR_ATTRIBUTION_MISMATCH": 1
+      }
+    },
+    {
+      "stage": "test",
+      "arm": "B",
+      "errors": {
+        "paragraphs": 1
+      }
+    },
+    {
+      "stage": "test",
+      "arm": "D",
+      "errors": {
+        "CLAIM_NOT_IN_PARAGRAPH": 1,
+        "AUTHOR_ATTRIBUTION_MISMATCH": 2,
+        "MISSING_ANSWER_CITATION": 1,
+        "REQUIRED_TARGET_NOT_CITED": 1
+      }
+    },
+    {
+      "stage": "test",
+      "arm": "C",
+      "errors": {
+        "QUOTE_MISMATCH": 1
+      }
+    },
+    {
+      "stage": "rag",
+      "arm": "classic",
+      "errors": {
+        "AUTHOR_ATTRIBUTION_MISMATCH": 6,
+        "WORK_ATTRIBUTION_MISMATCH": 1
+      }
+    },
+    {
+      "stage": "rag",
+      "arm": "full",
+      "errors": {
+        "paragraphs.0.citations": 1,
+        "REQUIRED_TARGET_NOT_CITED": 1,
+        "AUTHOR_ATTRIBUTION_MISMATCH": 2,
+        "CLAIM_NOT_IN_PARAGRAPH": 1
+      }
+    }
+  ],
+  "note": "One output may have several error codes; code counts must not be summed as independent failures."
+}

@@ -1,0 +1,2218 @@
+[
+  {
+    "answerId": "Q7f6193f1b1a1",
+    "scenario": "life",
+    "question": "快到日落了，我想去楼下画十分钟速写，手边只有铅笔和小本子，现在出门值得吗？",
+    "coreQuestion": "快到日落了，我想去楼下画十分钟速写，手边只有铅笔和小本子，现在出门值得吗？",
+    "history": [],
+    "cast": {
+      "lines": [
+        8,
+        8,
+        8,
+        7,
+        8,
+        7
+      ],
+      "original": {
+        "binary": "000101",
+        "name": "火地晋",
+        "number": 35,
+        "judgment": "康侯用锡马蕃庶，昼日三接。"
+      },
+      "changed": {
+        "binary": "000101",
+        "name": "火地晋",
+        "number": 35,
+        "judgment": "康侯用锡马蕃庶，昼日三接。"
+      },
+      "originalBinary": "000101",
+      "changedBinary": "000101",
+      "changingIndices": [],
+      "method": "three-coins",
+      "algorithmVersion": "evaluation-fixed-lines",
+      "readingPolicyVersion": "all-moving-lines-v1"
+    },
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "就卦象本身看，这一问是「火地晋」，六爻只有两处少阳、四处少阴，没有动爻，本卦与变卦相同。无动爻意味着一件事：境况不因这一趟而翻转，方向是平的、明的，不会有什么需要你临时应付的岔子。彖传解此卦说：「晋，进也。明出地上。」晋就是往前一步的意思，光从地面升起。你此刻犹豫的正是「要不要迈出这一步」，而卦给出的取向是偏向迈出的——它不是命令，但确实不构成拦阻。",
+          "citations": [
+            {
+              "evidenceId": "zy-35-tuan",
+              "quote": "晋，进也。明出地上。",
+              "claim": "彖传解此卦说：「晋，进也。明出地上。」"
+            }
+          ]
+        },
+        {
+          "text": "值得留意的是晋卦的落脚处。大象说：「明出地上，晋。君子以自昭明德。」「自昭明德」落到你的场景里，就是把自己看见的那点光、那点感受，显明出来、留在纸上，而不是让它随着天黑一起消散。你不是去完成一幅作品，只是用铅笔和小本子做一次十来分钟的显明。工具简单恰恰合于这层意思——本子小，铅笔一支，正好够把一时的明暗记下来。",
+          "citations": [
+            {
+              "evidenceId": "zy-35-xiang",
+              "quote": "君子以自昭明德。",
+              "claim": "大象说：「明出地上，晋。君子以自昭明德。」"
+            }
+          ]
+        },
+        {
+          "text": "卦辞讲「康侯用锡马蕃庶，昼日三接」，说的是一日之内屡次被接见、往来频密。这可以给你一个很实际的提醒：日落前的光变得极快，十分钟里天色会明显往下沉，所以别指望一次画全。先抓大块明暗和三两处轮廓，画不完就停，明天同一时段再去接一次。你的成本只是楼下一趟路和一刻钟，而这类「昼日三接」式的短促往返，本身就是画速写最合适的方式——太阳不会等你，也不必等它。",
+          "citations": [
+            {
+              "evidenceId": "zy-35-judgment",
+              "quote": "昼日三接",
+              "claim": "卦辞讲「康侯用锡马蕃庶，昼日三接」，说的是一日之内屡次被接见、往来频密。"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "candidate": null,
+    "candidateText": null,
+    "internalFallback": null,
+    "internalFallbackScope": null,
+    "evidence": [
+      {
+        "id": "zy-35-judgment",
+        "hexagramId": 35,
+        "name": "晋",
+        "section": "judgment",
+        "line": null,
+        "text": "康侯用锡马蕃庶，昼日三接。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "晋·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:35:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "康侯用锡马蕃庶，昼日三接。"
+      },
+      {
+        "id": "zy-35-tuan",
+        "hexagramId": 35,
+        "name": "晋",
+        "section": "tuan",
+        "line": null,
+        "text": "晋，进也。明出地上。顺而丽乎大明，柔进而上行，是以“康侯用锡马蕃庶，昼日三接”也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "晋·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:35:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "晋，进也。明出地上。顺而丽乎大明，柔进而上行，是以“康侯用锡马蕃庶，昼日三接”也。"
+      },
+      {
+        "id": "zy-35-xiang",
+        "hexagramId": 35,
+        "name": "晋",
+        "section": "xiang",
+        "line": null,
+        "text": "明出地上，晋。君子以自昭明德。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "晋·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:35:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "明出地上，晋。君子以自昭明德。"
+      }
+    ],
+    "status": "completed",
+    "delivery": {
+      "mechanicalStatus": "completed",
+      "candidateOnly": false,
+      "visibleKind": "substantive_answer",
+      "technicalFailure": false,
+      "providedFailureNote": null
+    },
+    "citationClaims": [
+      {
+        "occurrenceId": "delivered.p0.c0",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[0]",
+        "paragraphText": "就卦象本身看，这一问是「火地晋」，六爻只有两处少阳、四处少阴，没有动爻，本卦与变卦相同。无动爻意味着一件事：境况不因这一趟而翻转，方向是平的、明的，不会有什么需要你临时应付的岔子。彖传解此卦说：「晋，进也。明出地上。」晋就是往前一步的意思，光从地面升起。你此刻犹豫的正是「要不要迈出这一步」，而卦给出的取向是偏向迈出的——它不是命令，但确实不构成拦阻。",
+        "evidenceId": "zy-35-tuan",
+        "quote": "晋，进也。明出地上。",
+        "claim": "彖传解此卦说：「晋，进也。明出地上。」"
+      },
+      {
+        "occurrenceId": "delivered.p1.c0",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[0]",
+        "paragraphText": "值得留意的是晋卦的落脚处。大象说：「明出地上，晋。君子以自昭明德。」「自昭明德」落到你的场景里，就是把自己看见的那点光、那点感受，显明出来、留在纸上，而不是让它随着天黑一起消散。你不是去完成一幅作品，只是用铅笔和小本子做一次十来分钟的显明。工具简单恰恰合于这层意思——本子小，铅笔一支，正好够把一时的明暗记下来。",
+        "evidenceId": "zy-35-xiang",
+        "quote": "君子以自昭明德。",
+        "claim": "大象说：「明出地上，晋。君子以自昭明德。」"
+      },
+      {
+        "occurrenceId": "delivered.p2.c0",
+        "target": "delivered",
+        "location": "paragraphs[2].citations[0]",
+        "paragraphText": "卦辞讲「康侯用锡马蕃庶，昼日三接」，说的是一日之内屡次被接见、往来频密。这可以给你一个很实际的提醒：日落前的光变得极快，十分钟里天色会明显往下沉，所以别指望一次画全。先抓大块明暗和三两处轮廓，画不完就停，明天同一时段再去接一次。你的成本只是楼下一趟路和一刻钟，而这类「昼日三接」式的短促往返，本身就是画速写最合适的方式——太阳不会等你，也不必等它。",
+        "evidenceId": "zy-35-judgment",
+        "quote": "昼日三接",
+        "claim": "卦辞讲「康侯用锡马蕃庶，昼日三接」，说的是一日之内屡次被接见、往来频密。"
+      }
+    ],
+    "referenceOnlyEvidence": [],
+    "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。"
+  },
+  {
+    "answerId": "Qb5e8658e7ad7",
+    "scenario": "life",
+    "question": "水壶外面有一层水垢，今天想顺手清理，又怕一折腾就把整个厨房都拆着收拾了。怎么给自己划个停下来的点？",
+    "coreQuestion": "水壶外面有一层水垢，今天想顺手清理，又怕一折腾就把整个厨房都拆着收拾了。怎么给自己划个停下来的点？",
+    "history": [],
+    "cast": {
+      "lines": [
+        8,
+        7,
+        7,
+        8,
+        7,
+        8
+      ],
+      "original": {
+        "binary": "011010",
+        "name": "水风井",
+        "number": 48,
+        "judgment": "改邑不改井，无丧无得，往来井井。汔至，亦未繘井，羸其瓶，凶。"
+      },
+      "changed": {
+        "binary": "011010",
+        "name": "水风井",
+        "number": 48,
+        "judgment": "改邑不改井，无丧无得，往来井井。汔至，亦未繘井，羸其瓶，凶。"
+      },
+      "originalBinary": "011010",
+      "changedBinary": "011010",
+      "changingIndices": [],
+      "method": "three-coins",
+      "algorithmVersion": "evaluation-fixed-lines",
+      "readingPolicyVersion": "all-moving-lines-v1"
+    },
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "井卦的意象是取水而不损井：《彖传》说“井养而不穷也”，井的价值在于持续供水，不在于井台是否一尘不染。你手里这把水壶也一样——它的正事是把水烧开，外壳那层水垢并不妨碍这件事。想清理不是错，但先把“井养而不穷也”放在心上：今天的目的应该是让壶正常好用，而不是让厨房进入另一种状态。分清主次，停点就不在“擦到完美”，而在“壶能照常服役”。",
+          "citations": [
+            {
+              "evidenceId": "zy-48-tuan",
+              "quote": "井养而不穷也",
+              "claim": "井养而不穷也"
+            }
+          ]
+        },
+        {
+          "text": "该小心的地方，卦辞已经点出来了：“汔至，亦未繘井，羸其瓶，凶。”汲水将到井口、绳子还没提稳，瓶子却破了——翻车多发生在“就差一点、再顺手一下”的时候。你的担心正是这个：本意是擦壶，回头却拆了半个厨房。《彖传》解此句为“未有功也”，力气花了，事没成，还添了乱。所以自我保护的第一步不是“收着点”这种模糊念头，而是把那个点提前说出来、写下来。",
+          "citations": [
+            {
+              "evidenceId": "zy-48-judgment",
+              "quote": "汔至，亦未繘井，羸其瓶，凶",
+              "claim": "汔至，亦未繘井，羸其瓶，凶"
+            }
+          ]
+        },
+        {
+          "text": "大象说“木上有水，井。君子以劳民劝相”——劳是动手操作，劝是节制与劝止，也含互相提醒之意。给自己划界，可以借它定三档：一是时间上限，比如十五分钟到点即收；二是范围上限，只处理壶身外面，灶台、墙面、油烟机一律不进入本次任务；三是越界触发条件，一旦需要挪动、拆卸或清洗别的东西，就说明已经越出“井”的边界，立即停手。三档里任意一档到了，就当作绳子已收到井口，收手。",
+          "citations": [
+            {
+              "evidenceId": "zy-48-xiang",
+              "quote": "木上有水，井。君子以劳民劝相",
+              "claim": "木上有水，井。君子以劳民劝相"
+            }
+          ]
+        },
+        {
+          "text": "“改邑不改井”，城邑可以改建搬迁，井的位置不动。你怕的“整个厨房都拆着收拾”，多是把“邑”的活误当成了“井”的活：厨房布局、储物方式属于邑，水壶能不能照常烧水属于井。今天只办井的事。另外本轮六爻无动，本卦变卦都是井，局面并不催促你大动，维持原样也不失职。若真想把厨房也理一理，另择一日专门做，别让它借着一壶水垢的名义悄悄开工。",
+          "citations": [
+            {
+              "evidenceId": "zy-48-judgment",
+              "quote": "改邑不改井，无丧无得，往来井井",
+              "claim": "改邑不改井"
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "卦象无动爻，本身只提供一种“不必强求变动”的视角，不构成对现实结果的判断。",
+        "文中“十五分钟”一类的具体数值是举例，需用户按自己的情况调整。"
+      ]
+    },
+    "candidate": null,
+    "candidateText": null,
+    "internalFallback": null,
+    "internalFallbackScope": null,
+    "evidence": [
+      {
+        "id": "zy-48-judgment",
+        "hexagramId": 48,
+        "name": "井",
+        "section": "judgment",
+        "line": null,
+        "text": "改邑不改井，无丧无得，往来井井；汔至，亦未繘井，羸其瓶，凶。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "井·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:48:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "改邑不改井，无丧无得，往来井井；汔至，亦未繘井，羸其瓶，凶。"
+      },
+      {
+        "id": "zy-48-tuan",
+        "hexagramId": 48,
+        "name": "井",
+        "section": "tuan",
+        "line": null,
+        "text": "巽乎水而上水，井；井养而不穷也。“改邑不改井”，乃以刚中也。“汔至，亦未繘井”，未有功也。“羸其瓶”，是以凶也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "井·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:48:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "巽乎水而上水，井；井养而不穷也。“改邑不改井”，乃以刚中也。“汔至，亦未繘井”，未有功也。“羸其瓶”，是以凶也。"
+      },
+      {
+        "id": "zy-48-xiang",
+        "hexagramId": 48,
+        "name": "井",
+        "section": "xiang",
+        "line": null,
+        "text": "木上有水，井。君子以劳民劝相。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "井·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:48:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "木上有水，井。君子以劳民劝相。"
+      }
+    ],
+    "status": "completed",
+    "delivery": {
+      "mechanicalStatus": "completed",
+      "candidateOnly": false,
+      "visibleKind": "substantive_answer",
+      "technicalFailure": false,
+      "providedFailureNote": null
+    },
+    "citationClaims": [
+      {
+        "occurrenceId": "delivered.p0.c0",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[0]",
+        "paragraphText": "井卦的意象是取水而不损井：《彖传》说“井养而不穷也”，井的价值在于持续供水，不在于井台是否一尘不染。你手里这把水壶也一样——它的正事是把水烧开，外壳那层水垢并不妨碍这件事。想清理不是错，但先把“井养而不穷也”放在心上：今天的目的应该是让壶正常好用，而不是让厨房进入另一种状态。分清主次，停点就不在“擦到完美”，而在“壶能照常服役”。",
+        "evidenceId": "zy-48-tuan",
+        "quote": "井养而不穷也",
+        "claim": "井养而不穷也"
+      },
+      {
+        "occurrenceId": "delivered.p1.c0",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[0]",
+        "paragraphText": "该小心的地方，卦辞已经点出来了：“汔至，亦未繘井，羸其瓶，凶。”汲水将到井口、绳子还没提稳，瓶子却破了——翻车多发生在“就差一点、再顺手一下”的时候。你的担心正是这个：本意是擦壶，回头却拆了半个厨房。《彖传》解此句为“未有功也”，力气花了，事没成，还添了乱。所以自我保护的第一步不是“收着点”这种模糊念头，而是把那个点提前说出来、写下来。",
+        "evidenceId": "zy-48-judgment",
+        "quote": "汔至，亦未繘井，羸其瓶，凶",
+        "claim": "汔至，亦未繘井，羸其瓶，凶"
+      },
+      {
+        "occurrenceId": "delivered.p2.c0",
+        "target": "delivered",
+        "location": "paragraphs[2].citations[0]",
+        "paragraphText": "大象说“木上有水，井。君子以劳民劝相”——劳是动手操作，劝是节制与劝止，也含互相提醒之意。给自己划界，可以借它定三档：一是时间上限，比如十五分钟到点即收；二是范围上限，只处理壶身外面，灶台、墙面、油烟机一律不进入本次任务；三是越界触发条件，一旦需要挪动、拆卸或清洗别的东西，就说明已经越出“井”的边界，立即停手。三档里任意一档到了，就当作绳子已收到井口，收手。",
+        "evidenceId": "zy-48-xiang",
+        "quote": "木上有水，井。君子以劳民劝相",
+        "claim": "木上有水，井。君子以劳民劝相"
+      },
+      {
+        "occurrenceId": "delivered.p3.c0",
+        "target": "delivered",
+        "location": "paragraphs[3].citations[0]",
+        "paragraphText": "“改邑不改井”，城邑可以改建搬迁，井的位置不动。你怕的“整个厨房都拆着收拾”，多是把“邑”的活误当成了“井”的活：厨房布局、储物方式属于邑，水壶能不能照常烧水属于井。今天只办井的事。另外本轮六爻无动，本卦变卦都是井，局面并不催促你大动，维持原样也不失职。若真想把厨房也理一理，另择一日专门做，别让它借着一壶水垢的名义悄悄开工。",
+        "evidenceId": "zy-48-judgment",
+        "quote": "改邑不改井，无丧无得，往来井井",
+        "claim": "改邑不改井"
+      }
+    ],
+    "referenceOnlyEvidence": [],
+    "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。"
+  },
+  {
+    "answerId": "Q990ee88c9f2b",
+    "scenario": "life",
+    "question": "快递员刚确认是送错楼栋，邻居并没有碰我的包裹。我昨天已经发了质问消息，接下来怎么补救？",
+    "coreQuestion": "我以为邻居把我门口的包裹拿走了，想找他问清楚。",
+    "history": [
+      {
+        "question": "门口照片里包裹不见了，隔壁正好经过。",
+        "answer": {
+          "status": "answered",
+          "paragraphs": [
+            {
+              "text": "先核实投递记录，再决定怎么问邻居。",
+              "citations": []
+            }
+          ],
+          "limitations": []
+        },
+        "evidence": []
+      }
+    ],
+    "cast": {
+      "lines": [
+        7,
+        7,
+        8,
+        8,
+        7,
+        7
+      ],
+      "original": {
+        "binary": "110011",
+        "name": "风泽中孚",
+        "number": 61,
+        "judgment": "豚鱼吉，利涉大川，利贞。"
+      },
+      "changed": {
+        "binary": "110011",
+        "name": "风泽中孚",
+        "number": 61,
+        "judgment": "豚鱼吉，利涉大川，利贞。"
+      },
+      "originalBinary": "110011",
+      "changedBinary": "110011",
+      "changingIndices": [],
+      "method": "three-coins",
+      "algorithmVersion": "evaluation-fixed-lines",
+      "readingPolicyVersion": "all-moving-lines-v1"
+    },
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "现在事实已经清楚，重点不是继续争对错，而是修复你昨天质问造成的关系损伤。中孚卦辞说“豚鱼吉，利涉大川，利贞”，放在这里可理解为：只要以诚信和端正态度面对，难堪的关口也能过去，但前提是承认自己判断错了，而不是把责任推给快递或“我也是担心”。",
+          "citations": [
+            {
+              "evidenceId": "zy-61-judgment",
+              "quote": "豚鱼吉，利涉大川，利贞。",
+              "claim": "只要以诚信和端正态度面对，难堪的关口也能过去"
+            }
+          ]
+        },
+        {
+          "text": "彖传讲“柔在内而刚得中”“说而巽，孚乃化邦也”“信及豚鱼也”，中孚的信任不是靠声量，而是靠内在真诚和柔和表达来化解。诚信要细致到能感通对方，而不是只求自己说完。具体补救：先发一条明确道歉，不要等对方先回复。模板可参考：“某某，昨天我误以为包裹被邻居拿走，没核实就发消息质问你，是我太冲动。快递员刚确认是送错楼栋，与你无关。让你被怀疑，我很抱歉。这是我的错，不是你的问题。你如果愿意，我当面再道歉；你暂时不想理我，我也理解。”这比只发“搞错了”更完整，因为承担了“质问”的冒犯。",
+          "citations": [
+            {
+              "evidenceId": "zy-61-tuan",
+              "quote": "柔在内而刚得中",
+              "claim": "中孚的信任不是靠声量，而是靠内在真诚和柔和表达来化解"
+            },
+            {
+              "evidenceId": "zy-61-tuan",
+              "quote": "信及豚鱼也",
+              "claim": "诚信要细致到能感通对方"
+            }
+          ]
+        },
+        {
+          "text": "大象说“泽上有风，中孚。君子以议狱缓死。”这提醒处理纠纷要审慎缓判，不急着把对方钉死。你昨天已经做了相反的事——先怀疑、先质问；现在补救要避免两个极端：一是反复解释自己多委屈，二是只丢一句“弄错了”就消失。更稳妥的是道歉后给对方空间，若碰面就自然点头、简短再说一次抱歉，不要要求对方立刻原谅。静卦无动爻也提示：此刻宜守不宜再主动扩大动作，别在群里或向其他邻居再提此事，以免二次伤害。邻居是否介意、要多久缓和，无法由卦象断定，需看对方实际反应。",
+          "citations": [
+            {
+              "evidenceId": "zy-61-xiang",
+              "quote": "泽上有风，中孚。君子以议狱缓死。",
+              "claim": "处理纠纷要审慎缓判，不急着把对方钉死"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "candidate": null,
+    "candidateText": null,
+    "internalFallback": null,
+    "internalFallbackScope": null,
+    "evidence": [
+      {
+        "id": "zy-61-judgment",
+        "hexagramId": 61,
+        "name": "中孚",
+        "section": "judgment",
+        "line": null,
+        "text": "豚鱼吉，利涉大川，利贞。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "中孚·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:61:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "豚鱼吉，利涉大川，利贞。"
+      },
+      {
+        "id": "zy-61-tuan",
+        "hexagramId": 61,
+        "name": "中孚",
+        "section": "tuan",
+        "line": null,
+        "text": "“中孚”，柔在内而刚得中。说而巽，孚乃化邦也。“豚鱼吉”，信及豚鱼也：“利涉大川”，乘木舟虚也。中孚以“利贞”，乃应乎天也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "中孚·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:61:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“中孚”，柔在内而刚得中。说而巽，孚乃化邦也。“豚鱼吉”，信及豚鱼也：“利涉大川”，乘木舟虚也。中孚以“利贞”，乃应乎天也。"
+      },
+      {
+        "id": "zy-61-xiang",
+        "hexagramId": 61,
+        "name": "中孚",
+        "section": "xiang",
+        "line": null,
+        "text": "泽上有风，中孚。君子以议狱缓死。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "中孚·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:61:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "泽上有风，中孚。君子以议狱缓死。"
+      }
+    ],
+    "status": "completed",
+    "delivery": {
+      "mechanicalStatus": "completed",
+      "candidateOnly": false,
+      "visibleKind": "substantive_answer",
+      "technicalFailure": false,
+      "providedFailureNote": null
+    },
+    "citationClaims": [
+      {
+        "occurrenceId": "delivered.p0.c0",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[0]",
+        "paragraphText": "现在事实已经清楚，重点不是继续争对错，而是修复你昨天质问造成的关系损伤。中孚卦辞说“豚鱼吉，利涉大川，利贞”，放在这里可理解为：只要以诚信和端正态度面对，难堪的关口也能过去，但前提是承认自己判断错了，而不是把责任推给快递或“我也是担心”。",
+        "evidenceId": "zy-61-judgment",
+        "quote": "豚鱼吉，利涉大川，利贞。",
+        "claim": "只要以诚信和端正态度面对，难堪的关口也能过去"
+      },
+      {
+        "occurrenceId": "delivered.p1.c0",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[0]",
+        "paragraphText": "彖传讲“柔在内而刚得中”“说而巽，孚乃化邦也”“信及豚鱼也”，中孚的信任不是靠声量，而是靠内在真诚和柔和表达来化解。诚信要细致到能感通对方，而不是只求自己说完。具体补救：先发一条明确道歉，不要等对方先回复。模板可参考：“某某，昨天我误以为包裹被邻居拿走，没核实就发消息质问你，是我太冲动。快递员刚确认是送错楼栋，与你无关。让你被怀疑，我很抱歉。这是我的错，不是你的问题。你如果愿意，我当面再道歉；你暂时不想理我，我也理解。”这比只发“搞错了”更完整，因为承担了“质问”的冒犯。",
+        "evidenceId": "zy-61-tuan",
+        "quote": "柔在内而刚得中",
+        "claim": "中孚的信任不是靠声量，而是靠内在真诚和柔和表达来化解"
+      },
+      {
+        "occurrenceId": "delivered.p1.c1",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[1]",
+        "paragraphText": "彖传讲“柔在内而刚得中”“说而巽，孚乃化邦也”“信及豚鱼也”，中孚的信任不是靠声量，而是靠内在真诚和柔和表达来化解。诚信要细致到能感通对方，而不是只求自己说完。具体补救：先发一条明确道歉，不要等对方先回复。模板可参考：“某某，昨天我误以为包裹被邻居拿走，没核实就发消息质问你，是我太冲动。快递员刚确认是送错楼栋，与你无关。让你被怀疑，我很抱歉。这是我的错，不是你的问题。你如果愿意，我当面再道歉；你暂时不想理我，我也理解。”这比只发“搞错了”更完整，因为承担了“质问”的冒犯。",
+        "evidenceId": "zy-61-tuan",
+        "quote": "信及豚鱼也",
+        "claim": "诚信要细致到能感通对方"
+      },
+      {
+        "occurrenceId": "delivered.p2.c0",
+        "target": "delivered",
+        "location": "paragraphs[2].citations[0]",
+        "paragraphText": "大象说“泽上有风，中孚。君子以议狱缓死。”这提醒处理纠纷要审慎缓判，不急着把对方钉死。你昨天已经做了相反的事——先怀疑、先质问；现在补救要避免两个极端：一是反复解释自己多委屈，二是只丢一句“弄错了”就消失。更稳妥的是道歉后给对方空间，若碰面就自然点头、简短再说一次抱歉，不要要求对方立刻原谅。静卦无动爻也提示：此刻宜守不宜再主动扩大动作，别在群里或向其他邻居再提此事，以免二次伤害。邻居是否介意、要多久缓和，无法由卦象断定，需看对方实际反应。",
+        "evidenceId": "zy-61-xiang",
+        "quote": "泽上有风，中孚。君子以议狱缓死。",
+        "claim": "处理纠纷要审慎缓判，不急着把对方钉死"
+      }
+    ],
+    "referenceOnlyEvidence": [],
+    "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。"
+  },
+  {
+    "answerId": "Qeb77c2767305",
+    "scenario": "life",
+    "question": "表哥希望我在他的生日聚会弹琴，我平时只自己练，曲子弹得熟但没有公开演出过。我想试试，又担心紧张忘谱，怎么准备？",
+    "coreQuestion": "表哥希望我在他的生日聚会弹琴，我平时只自己练，曲子弹得熟但没有公开演出过。我想试试，又担心紧张忘谱，怎么准备？",
+    "history": [],
+    "cast": {
+      "lines": [
+        7,
+        7,
+        8,
+        7,
+        8,
+        8
+      ],
+      "original": {
+        "binary": "110100",
+        "name": "雷泽归妹",
+        "number": 54,
+        "judgment": "征凶，无攸利。"
+      },
+      "changed": {
+        "binary": "110100",
+        "name": "雷泽归妹",
+        "number": 54,
+        "judgment": "征凶，无攸利。"
+      },
+      "originalBinary": "110100",
+      "changedBinary": "110100",
+      "changingIndices": [],
+      "method": "three-coins",
+      "algorithmVersion": "evaluation-fixed-lines",
+      "readingPolicyVersion": "all-moving-lines-v1"
+    },
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "从卦象看，你这件事处在“雷泽归妹”，没有动爻，变卦仍是归妹，说明重点不在突发变化，而在你如何摆放这次公开演奏的位置。卦辞说“征凶，无攸利”。彖传说“说以动，所归妹也；“征凶”，位不当也”。放到你的处境：想在表哥生日弹琴是好事，但“从独练到公开演出”是一个位置变化；若把它当成必须成功的正式首演，就接近“征”的用法，容易因紧张而失手。更稳的判断是：可以试，但不要把它当证明自己，而是当作一次有退路的分享。",
+          "citations": [
+            {
+              "evidenceId": "zy-54-judgment",
+              "quote": "征凶，无攸利。",
+              "claim": "卦辞说“征凶，无攸利”"
+            },
+            {
+              "evidenceId": "zy-54-tuan",
+              "quote": "说以动，所归妹也；“征凶”，位不当也",
+              "claim": "彖传说“说以动，所归妹也；“征凶”，位不当也”"
+            }
+          ]
+        },
+        {
+          "text": "大象说“泽上有雷，归妹。君子以永终知敝”，把这件事放长看：你要预先知道可能的弊端——忘谱、手抖、现场注意力被亲友分散、钢琴或键盘不熟、被起哄加曲。表哥生日聚会的气氛通常比正式演出宽容，关键不是零失误，而是让场子舒服、你也不留阴影。因此建议把目标降到“完整弹完一首最熟的短曲”，而不是“弹到最好”。如果一首曲子超过三分钟，可只弹一段最稳的，或选更短、重复结构多的曲子。",
+          "citations": [
+            {
+              "evidenceId": "zy-54-xiang",
+              "quote": "泽上有雷，归妹。君子以永终知敝",
+              "claim": "大象说“泽上有雷，归妹。君子以永终知敝”"
+            }
+          ]
+        },
+        {
+          "text": "具体准备可分四层。第一，选曲：只选你闭眼也能顺下来的，最好背谱与看谱双轨；把谱放在谱架或平板里，明确告诉自己“忘谱就看谱”。第二，练习：不要每次从头弹，要抽段练，尤其练开头、转段、结尾和容易忘的几小节；再从不同起点开始，练“接回去”的能力。第三，模拟：提前在陌生房间、有人旁听、有噪音的情况下弹几遍，录音回听；请表哥确认琴的状态、座位、谱架和插电方式。第四，现场预案：若忘谱，左手继续低音或重复当前和弦，停一拍再跳到你记得的下一段；仍不行就笑着看谱，或提前和表哥说好“我弹一首短的，中间可能看谱”。",
+          "citations": []
+        },
+        {
+          "text": "归妹的“无攸利”不是叫你不要去，而是提醒：若“柔乘刚”、位置不当，强行硬撑会不利。这里的“柔乘刚”可理解为你把紧张和外部期待压过自己的实际准备，或者为了面子硬选难曲、硬撑长曲。更稳妥的取舍是：可以答应，但先和表哥设定边界——只弹一首、不返场、可以看谱、若现场太乱就放背景录音或改为简单曲子。若你一想到公开演奏就持续失眠、恐慌，或这会影响你和表哥的关系，那就不必把“试试”变成必须完成的任务；先在小范围亲友前试一次，再决定是否在聚会弹。",
+          "citations": [
+            {
+              "evidenceId": "zy-54-tuan",
+              "quote": "“无攸利”，柔乘刚也",
+              "claim": "若“柔乘刚”、位置不当，强行硬撑会不利"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "candidate": null,
+    "candidateText": null,
+    "internalFallback": null,
+    "internalFallbackScope": null,
+    "evidence": [
+      {
+        "id": "zy-54-judgment",
+        "hexagramId": 54,
+        "name": "归妹",
+        "section": "judgment",
+        "line": null,
+        "text": "征凶，无攸利。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "归妹·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:54:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "征凶，无攸利。"
+      },
+      {
+        "id": "zy-54-tuan",
+        "hexagramId": 54,
+        "name": "归妹",
+        "section": "tuan",
+        "line": null,
+        "text": "归妹，天地之大义也。天地不交，而万物不兴。归妹，人之终始也。说以动，所归妹也；“征凶”，位不当也；“无攸利”，柔乘刚也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "归妹·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:54:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "归妹，天地之大义也。天地不交，而万物不兴。归妹，人之终始也。说以动，所归妹也；“征凶”，位不当也；“无攸利”，柔乘刚也。"
+      },
+      {
+        "id": "zy-54-xiang",
+        "hexagramId": 54,
+        "name": "归妹",
+        "section": "xiang",
+        "line": null,
+        "text": "泽上有雷，归妹。君子以永终知敝。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "归妹·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:54:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "泽上有雷，归妹。君子以永终知敝。"
+      }
+    ],
+    "status": "completed",
+    "delivery": {
+      "mechanicalStatus": "completed",
+      "candidateOnly": false,
+      "visibleKind": "substantive_answer",
+      "technicalFailure": false,
+      "providedFailureNote": null
+    },
+    "citationClaims": [
+      {
+        "occurrenceId": "delivered.p0.c0",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[0]",
+        "paragraphText": "从卦象看，你这件事处在“雷泽归妹”，没有动爻，变卦仍是归妹，说明重点不在突发变化，而在你如何摆放这次公开演奏的位置。卦辞说“征凶，无攸利”。彖传说“说以动，所归妹也；“征凶”，位不当也”。放到你的处境：想在表哥生日弹琴是好事，但“从独练到公开演出”是一个位置变化；若把它当成必须成功的正式首演，就接近“征”的用法，容易因紧张而失手。更稳的判断是：可以试，但不要把它当证明自己，而是当作一次有退路的分享。",
+        "evidenceId": "zy-54-judgment",
+        "quote": "征凶，无攸利。",
+        "claim": "卦辞说“征凶，无攸利”"
+      },
+      {
+        "occurrenceId": "delivered.p0.c1",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[1]",
+        "paragraphText": "从卦象看，你这件事处在“雷泽归妹”，没有动爻，变卦仍是归妹，说明重点不在突发变化，而在你如何摆放这次公开演奏的位置。卦辞说“征凶，无攸利”。彖传说“说以动，所归妹也；“征凶”，位不当也”。放到你的处境：想在表哥生日弹琴是好事，但“从独练到公开演出”是一个位置变化；若把它当成必须成功的正式首演，就接近“征”的用法，容易因紧张而失手。更稳的判断是：可以试，但不要把它当证明自己，而是当作一次有退路的分享。",
+        "evidenceId": "zy-54-tuan",
+        "quote": "说以动，所归妹也；“征凶”，位不当也",
+        "claim": "彖传说“说以动，所归妹也；“征凶”，位不当也”"
+      },
+      {
+        "occurrenceId": "delivered.p1.c0",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[0]",
+        "paragraphText": "大象说“泽上有雷，归妹。君子以永终知敝”，把这件事放长看：你要预先知道可能的弊端——忘谱、手抖、现场注意力被亲友分散、钢琴或键盘不熟、被起哄加曲。表哥生日聚会的气氛通常比正式演出宽容，关键不是零失误，而是让场子舒服、你也不留阴影。因此建议把目标降到“完整弹完一首最熟的短曲”，而不是“弹到最好”。如果一首曲子超过三分钟，可只弹一段最稳的，或选更短、重复结构多的曲子。",
+        "evidenceId": "zy-54-xiang",
+        "quote": "泽上有雷，归妹。君子以永终知敝",
+        "claim": "大象说“泽上有雷，归妹。君子以永终知敝”"
+      },
+      {
+        "occurrenceId": "delivered.p3.c0",
+        "target": "delivered",
+        "location": "paragraphs[3].citations[0]",
+        "paragraphText": "归妹的“无攸利”不是叫你不要去，而是提醒：若“柔乘刚”、位置不当，强行硬撑会不利。这里的“柔乘刚”可理解为你把紧张和外部期待压过自己的实际准备，或者为了面子硬选难曲、硬撑长曲。更稳妥的取舍是：可以答应，但先和表哥设定边界——只弹一首、不返场、可以看谱、若现场太乱就放背景录音或改为简单曲子。若你一想到公开演奏就持续失眠、恐慌，或这会影响你和表哥的关系，那就不必把“试试”变成必须完成的任务；先在小范围亲友前试一次，再决定是否在聚会弹。",
+        "evidenceId": "zy-54-tuan",
+        "quote": "“无攸利”，柔乘刚也",
+        "claim": "若“柔乘刚”、位置不当，强行硬撑会不利"
+      }
+    ],
+    "referenceOnlyEvidence": [],
+    "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。"
+  },
+  {
+    "answerId": "Qd821d686a384",
+    "scenario": "life",
+    "question": "我不是要补偿过去，也不打算靠它赚钱，只想这周找一个下午重新摸一摸。",
+    "coreQuestion": "我常想起学生时代没坚持下来的一个兴趣，觉得可惜。",
+    "history": [
+      {
+        "question": "是以前的木刻练习。",
+        "answer": {
+          "status": "answered",
+          "paragraphs": [
+            {
+              "text": "也许你在担心过去的选择影响了现在的职业方向。",
+              "citations": []
+            }
+          ],
+          "limitations": []
+        },
+        "evidence": []
+      }
+    ],
+    "cast": {
+      "lines": [
+        8,
+        8,
+        8,
+        8,
+        7,
+        7
+      ],
+      "original": {
+        "binary": "000011",
+        "name": "风地观",
+        "number": 20,
+        "judgment": "盥而不荐，有孚颙若。"
+      },
+      "changed": {
+        "binary": "000011",
+        "name": "风地观",
+        "number": 20,
+        "judgment": "盥而不荐，有孚颙若。"
+      },
+      "originalBinary": "000011",
+      "changedBinary": "000011",
+      "changingIndices": [],
+      "method": "three-coins",
+      "algorithmVersion": "evaluation-fixed-lines",
+      "readingPolicyVersion": "all-moving-lines-v1"
+    },
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "观卦的观，在这里可以理解成回望与重新观看。你说不是补偿过去，也不靠它赚钱，只想这周找个下午重新摸一摸——这更像卦辞所说的盥而不荐，有孚颙若：洗手洁器、心存诚敬，却不急于献上正式成果。观的对象可以是木刻本身，也可以是你当年那个没能坚持下来的自己。",
+          "citations": [
+            {
+              "evidenceId": "zy-20-judgment",
+              "quote": "盥而不荐，有孚颙若",
+              "claim": "更像卦辞所说的盥而不荐，有孚颙若"
+            }
+          ]
+        },
+        {
+          "text": "彖传解释说，大观在上，顺而巽，中正以观天下，又讲观天之神道，而四时不忒，四时运行自有节律，观察不必强求一个结果；大象则说风行地上，观，风从地上吹过，遍及万物而不占有。落到这件事上：这个下午的重点，不在于你能刻出什么，而在于重新感受刻刀与木纹接触的过程。",
+          "citations": [
+            {
+              "evidenceId": "zy-20-tuan",
+              "quote": "大观在上，顺而巽，中正以观天下",
+              "claim": "彖传解释说，大观在上，顺而巽，中正以观天下"
+            },
+            {
+              "evidenceId": "zy-20-tuan",
+              "quote": "观天之神道，而四时不忒",
+              "claim": "又讲观天之神道，而四时不忒"
+            },
+            {
+              "evidenceId": "zy-20-xiang",
+              "quote": "风行地上，观",
+              "claim": "大象则说风行地上，观"
+            }
+          ]
+        },
+        {
+          "text": "具体到行动，可以先备好一件旧工具和一块木板，不设作品目标，也不给自己定这次一定要坚持的期限。这一卦六爻皆静，没有动爻，态势平稳，不必躁进；先以观察和手感进入，让这件事自己告诉你还要不要继续、以什么节奏继续。若摸过之后觉得仍然喜欢，再谈下一步也不迟。",
+          "citations": []
+        }
+      ],
+      "limitations": [
+        "观卦为静卦，文献本身不直接涉及个人兴趣恢复的具体安排；以上判断为结合卦象与近期对话所作的讨论。"
+      ]
+    },
+    "candidate": null,
+    "candidateText": null,
+    "internalFallback": null,
+    "internalFallbackScope": null,
+    "evidence": [
+      {
+        "id": "zy-20-judgment",
+        "hexagramId": 20,
+        "name": "观",
+        "section": "judgment",
+        "line": null,
+        "text": "盥而不荐，有孚颙若。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "观·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:20:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "盥而不荐，有孚颙若。"
+      },
+      {
+        "id": "zy-20-tuan",
+        "hexagramId": 20,
+        "name": "观",
+        "section": "tuan",
+        "line": null,
+        "text": "大观在上，顺而巽，中正以观天下。“观，盥而不荐，有孚颙若”，下观而化也。观天之神道，而四时不忒，圣人以神道设教，而天下服矣。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "观·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:20:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "大观在上，顺而巽，中正以观天下。“观，盥而不荐，有孚颙若”，下观而化也。观天之神道，而四时不忒，圣人以神道设教，而天下服矣。"
+      },
+      {
+        "id": "zy-20-xiang",
+        "hexagramId": 20,
+        "name": "观",
+        "section": "xiang",
+        "line": null,
+        "text": "风行地上，观。先王以省方观民设教。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "观·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:20:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "风行地上，观。先王以省方观民设教。"
+      }
+    ],
+    "status": "completed",
+    "delivery": {
+      "mechanicalStatus": "completed",
+      "candidateOnly": false,
+      "visibleKind": "substantive_answer",
+      "technicalFailure": false,
+      "providedFailureNote": null
+    },
+    "citationClaims": [
+      {
+        "occurrenceId": "delivered.p0.c0",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[0]",
+        "paragraphText": "观卦的观，在这里可以理解成回望与重新观看。你说不是补偿过去，也不靠它赚钱，只想这周找个下午重新摸一摸——这更像卦辞所说的盥而不荐，有孚颙若：洗手洁器、心存诚敬，却不急于献上正式成果。观的对象可以是木刻本身，也可以是你当年那个没能坚持下来的自己。",
+        "evidenceId": "zy-20-judgment",
+        "quote": "盥而不荐，有孚颙若",
+        "claim": "更像卦辞所说的盥而不荐，有孚颙若"
+      },
+      {
+        "occurrenceId": "delivered.p1.c0",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[0]",
+        "paragraphText": "彖传解释说，大观在上，顺而巽，中正以观天下，又讲观天之神道，而四时不忒，四时运行自有节律，观察不必强求一个结果；大象则说风行地上，观，风从地上吹过，遍及万物而不占有。落到这件事上：这个下午的重点，不在于你能刻出什么，而在于重新感受刻刀与木纹接触的过程。",
+        "evidenceId": "zy-20-tuan",
+        "quote": "大观在上，顺而巽，中正以观天下",
+        "claim": "彖传解释说，大观在上，顺而巽，中正以观天下"
+      },
+      {
+        "occurrenceId": "delivered.p1.c1",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[1]",
+        "paragraphText": "彖传解释说，大观在上，顺而巽，中正以观天下，又讲观天之神道，而四时不忒，四时运行自有节律，观察不必强求一个结果；大象则说风行地上，观，风从地上吹过，遍及万物而不占有。落到这件事上：这个下午的重点，不在于你能刻出什么，而在于重新感受刻刀与木纹接触的过程。",
+        "evidenceId": "zy-20-tuan",
+        "quote": "观天之神道，而四时不忒",
+        "claim": "又讲观天之神道，而四时不忒"
+      },
+      {
+        "occurrenceId": "delivered.p1.c2",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[2]",
+        "paragraphText": "彖传解释说，大观在上，顺而巽，中正以观天下，又讲观天之神道，而四时不忒，四时运行自有节律，观察不必强求一个结果；大象则说风行地上，观，风从地上吹过，遍及万物而不占有。落到这件事上：这个下午的重点，不在于你能刻出什么，而在于重新感受刻刀与木纹接触的过程。",
+        "evidenceId": "zy-20-xiang",
+        "quote": "风行地上，观",
+        "claim": "大象则说风行地上，观"
+      }
+    ],
+    "referenceOnlyEvidence": [],
+    "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。"
+  },
+  {
+    "answerId": "Q95d607fb92fd",
+    "scenario": "life",
+    "question": "我说漏了，场地早就确认了，卡住的其实是我们对作品摆放意见不同，不是展览办不起来。",
+    "coreQuestion": "我在考虑是否取消和同学的共同展览。",
+    "history": [
+      {
+        "question": "准备一直不顺利，想取消。",
+        "answer": {
+          "status": "answered",
+          "paragraphs": [
+            {
+              "text": "如果场地仍未落实，确实需要考虑延期。",
+              "citations": []
+            }
+          ],
+          "limitations": []
+        },
+        "evidence": []
+      }
+    ],
+    "cast": {
+      "lines": [
+        8,
+        7,
+        7,
+        8,
+        7,
+        7
+      ],
+      "original": {
+        "binary": "011011",
+        "name": "巽为风",
+        "number": 57,
+        "judgment": "小亨，利攸往，利见大人。"
+      },
+      "changed": {
+        "binary": "011011",
+        "name": "巽为风",
+        "number": 57,
+        "judgment": "小亨，利攸往，利见大人。"
+      },
+      "originalBinary": "011011",
+      "changedBinary": "011011",
+      "changingIndices": [],
+      "method": "three-coins",
+      "algorithmVersion": "evaluation-fixed-lines",
+      "readingPolicyVersion": "all-moving-lines-v1"
+    },
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "你把问题更正为：场地已经确认，卡住的不是展览能否办起来，而是你们对作品摆放意见不同。这个更正很重要。本轮卦象是巽为风，本卦与变卦相同，且无动爻，说明眼下更像一个需要持续沟通、逐步调整的状态，而不是一个已经要陡然终止的局面。巽卦辞说“小亨，利有攸往，利见大人”：它不承诺大顺利，却提示可以小步推进，宜有所往，也宜见能够主持公议的人。对应到共同展览，不必因为摆放分歧就先取消；先把分歧当作要处理的“申命”问题。",
+          "citations": [
+            {
+              "evidenceId": "zy-57-judgment",
+              "quote": "小亨，利有攸往，利见大人。",
+              "claim": "巽卦辞说“小亨，利有攸往，利见大人”：它不承诺大顺利，却提示可以小步推进，宜有所往，也宜见能够主持公议的人。"
+            }
+          ]
+        },
+        {
+          "text": "彖传说“重巽以申命”，又说“刚巽乎中正而志行，柔皆顺乎刚”。放在你们的情况里，摆放分歧通常不是谁更倔，而是共同规则没有申明清楚：主题叙事、观看动线、作品完整性、空间安全、彼此可让与不可让的边界。需要一次专门沟通，把“共同命令”重新说清楚，并形成可执行的摆放方案。刚性目标可以由中正的方式推进，柔性部分可以顺着清楚规则走，这才接近“小亨”。",
+          "citations": [
+            {
+              "evidenceId": "zy-57-tuan",
+              "quote": "重巽以申命。刚巽乎中正而志行，柔皆顺乎刚",
+              "claim": "彖传说“重巽以申命”，又说“刚巽乎中正而志行，柔皆顺乎刚”。"
+            }
+          ]
+        },
+        {
+          "text": "大象说“随风，巽。君子以申命行事”。这给出一条现实建议：先申明共同命令，再按命令行事。具体可以把争议拆成几轮：先定不可动摇的共同标准，再各自提出方案，用平面图或小样做 A/B 摆放，约定试摆和复盘时间；必要时请老师、策展人或双方都信任的人来主持一次讨论，这就是“利见大人”的现实用法。若沟通后核心标准仍冲突，才考虑缩小合作、拆分展区、延期或取消。",
+          "citations": [
+            {
+              "evidenceId": "zy-57-xiang",
+              "quote": "随风，巽。君子以申命行事。",
+              "claim": "大象说“随风，巽。君子以申命行事”。这给出一条现实建议：先申明共同命令，再按命令行事。"
+            }
+          ]
+        },
+        {
+          "text": "所以，我的判断是：当下不宜仅因摆放分歧就取消展览；先把它当作“申命行事”的沟通与试摆问题。若你或同学已经不愿再谈、共同标准无法成立，取消或拆伙可以成为止损选项，但那是沟通失败后的判断，不是卦象直接断定的结果。卦为静卦无动爻，说明局面不会自动变好或变坏，关键在你是否主动把规则和行动定下来。这里无法保证最终结果，只能按现实条件和双方可沟通程度取舍。",
+          "citations": []
+        }
+      ],
+      "limitations": []
+    },
+    "candidate": null,
+    "candidateText": null,
+    "internalFallback": null,
+    "internalFallbackScope": null,
+    "evidence": [
+      {
+        "id": "zy-57-judgment",
+        "hexagramId": 57,
+        "name": "巽",
+        "section": "judgment",
+        "line": null,
+        "text": "小亨，利有攸往，利见大人。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "巽·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:57:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "小亨，利有攸往，利见大人。"
+      },
+      {
+        "id": "zy-57-tuan",
+        "hexagramId": 57,
+        "name": "巽",
+        "section": "tuan",
+        "line": null,
+        "text": "重巽以申命。刚巽乎中正而志行，柔皆顺乎刚，是以“小亨，利有攸往，利见大人”。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "巽·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:57:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "重巽以申命。刚巽乎中正而志行，柔皆顺乎刚，是以“小亨，利有攸往，利见大人”。"
+      },
+      {
+        "id": "zy-57-xiang",
+        "hexagramId": 57,
+        "name": "巽",
+        "section": "xiang",
+        "line": null,
+        "text": "随风，巽。君子以申命行事。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "巽·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:57:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "随风，巽。君子以申命行事。"
+      }
+    ],
+    "status": "completed",
+    "delivery": {
+      "mechanicalStatus": "completed",
+      "candidateOnly": false,
+      "visibleKind": "substantive_answer",
+      "technicalFailure": false,
+      "providedFailureNote": null
+    },
+    "citationClaims": [
+      {
+        "occurrenceId": "delivered.p0.c0",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[0]",
+        "paragraphText": "你把问题更正为：场地已经确认，卡住的不是展览能否办起来，而是你们对作品摆放意见不同。这个更正很重要。本轮卦象是巽为风，本卦与变卦相同，且无动爻，说明眼下更像一个需要持续沟通、逐步调整的状态，而不是一个已经要陡然终止的局面。巽卦辞说“小亨，利有攸往，利见大人”：它不承诺大顺利，却提示可以小步推进，宜有所往，也宜见能够主持公议的人。对应到共同展览，不必因为摆放分歧就先取消；先把分歧当作要处理的“申命”问题。",
+        "evidenceId": "zy-57-judgment",
+        "quote": "小亨，利有攸往，利见大人。",
+        "claim": "巽卦辞说“小亨，利有攸往，利见大人”：它不承诺大顺利，却提示可以小步推进，宜有所往，也宜见能够主持公议的人。"
+      },
+      {
+        "occurrenceId": "delivered.p1.c0",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[0]",
+        "paragraphText": "彖传说“重巽以申命”，又说“刚巽乎中正而志行，柔皆顺乎刚”。放在你们的情况里，摆放分歧通常不是谁更倔，而是共同规则没有申明清楚：主题叙事、观看动线、作品完整性、空间安全、彼此可让与不可让的边界。需要一次专门沟通，把“共同命令”重新说清楚，并形成可执行的摆放方案。刚性目标可以由中正的方式推进，柔性部分可以顺着清楚规则走，这才接近“小亨”。",
+        "evidenceId": "zy-57-tuan",
+        "quote": "重巽以申命。刚巽乎中正而志行，柔皆顺乎刚",
+        "claim": "彖传说“重巽以申命”，又说“刚巽乎中正而志行，柔皆顺乎刚”。"
+      },
+      {
+        "occurrenceId": "delivered.p2.c0",
+        "target": "delivered",
+        "location": "paragraphs[2].citations[0]",
+        "paragraphText": "大象说“随风，巽。君子以申命行事”。这给出一条现实建议：先申明共同命令，再按命令行事。具体可以把争议拆成几轮：先定不可动摇的共同标准，再各自提出方案，用平面图或小样做 A/B 摆放，约定试摆和复盘时间；必要时请老师、策展人或双方都信任的人来主持一次讨论，这就是“利见大人”的现实用法。若沟通后核心标准仍冲突，才考虑缩小合作、拆分展区、延期或取消。",
+        "evidenceId": "zy-57-xiang",
+        "quote": "随风，巽。君子以申命行事。",
+        "claim": "大象说“随风，巽。君子以申命行事”。这给出一条现实建议：先申明共同命令，再按命令行事。"
+      }
+    ],
+    "referenceOnlyEvidence": [],
+    "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。"
+  },
+  {
+    "answerId": "Qdd5a6c431351",
+    "scenario": "life",
+    "question": "快到日落了，我想去楼下画十分钟速写，手边只有铅笔和小本子，现在出门值得吗？",
+    "coreQuestion": "快到日落了，我想去楼下画十分钟速写，手边只有铅笔和小本子，现在出门值得吗？",
+    "history": [],
+    "cast": {
+      "lines": [
+        8,
+        8,
+        8,
+        7,
+        8,
+        7
+      ],
+      "original": {
+        "binary": "000101",
+        "name": "火地晋",
+        "number": 35,
+        "judgment": "康侯用锡马蕃庶，昼日三接。"
+      },
+      "changed": {
+        "binary": "000101",
+        "name": "火地晋",
+        "number": 35,
+        "judgment": "康侯用锡马蕃庶，昼日三接。"
+      },
+      "originalBinary": "000101",
+      "changedBinary": "000101",
+      "changingIndices": [],
+      "method": "three-coins",
+      "algorithmVersion": "evaluation-fixed-lines",
+      "readingPolicyVersion": "all-moving-lines-v1"
+    },
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "你这卦是火地晋，六爻都没有动爻，卦象本身平稳，没有明显的阻隔或转折。晋卦取“明出地上”之象，《彖传》说“晋，进也”，又说“顺而丽乎大明，柔进而上行”。从这里看，你此刻想出门画一笔的念头，顺着的是“进”的方向——不必把它当成必须完成的任务，去就是了。",
+          "citations": [
+            {
+              "evidenceId": "zy-35-tuan",
+              "quote": "晋，进也。明出地上。顺而丽乎大明，柔进而上行",
+              "claim": "晋，进也"
+            }
+          ]
+        },
+        {
+          "text": "卦辞“康侯用锡马蕃庶，昼日三接”讲的是白昼之中繁频接应，节奏紧、次数多。你只有十分钟，正合这种短促的节拍：目标小、时段短，反而容易成事。没有动爻，也就没有中途变化的暗示，出门这件事本身不会横生枝节。",
+          "citations": [
+            {
+              "evidenceId": "zy-35-judgment",
+              "quote": "康侯用锡马蕃庶，昼日三接",
+              "claim": "昼日三接"
+            }
+          ]
+        },
+        {
+          "text": "大象说“明出地上，晋。君子以自昭明德”。速写这件事，落在“君子以自昭明德”上，是你把看见的光和形，用自己的手再显一遍。日落前十分钟光线正在退，变动快，画下来有它自己的味道；这一趟的价值不全在成品，也在你愿意迈出这一步。但要说清楚：晋卦的本象是“明出地上”，是日出方向的进取，眼下是日落，光在收，不是全盛的白昼，所以这趟的收获大概率是一两笔、一个印象，而不是完整画面。",
+          "citations": [
+            {
+              "evidenceId": "zy-35-xiang",
+              "quote": "明出地上，晋。君子以自昭明德",
+              "claim": "君子以自昭明德"
+            }
+          ]
+        },
+        {
+          "text": "现实的取舍也摆在这里：十分钟加上楼下往返，真正落在纸上的可能只有五六分钟；铅笔在快速暗下去的光里，线条会越画越灰。出门前先想好一个小的取景范围，别贪全景，光不够就收，不必勉强补完。若你此刻更想留住这一眼黄昏本身，不带判断地坐一会儿再画，也仍然合于晋卦那点“进”的意思。",
+          "citations": []
+        }
+      ],
+      "limitations": []
+    },
+    "candidate": null,
+    "candidateText": null,
+    "internalFallback": null,
+    "internalFallbackScope": null,
+    "evidence": [
+      {
+        "id": "zy-35-judgment",
+        "hexagramId": 35,
+        "name": "晋",
+        "section": "judgment",
+        "line": null,
+        "text": "康侯用锡马蕃庶，昼日三接。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "晋·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:35:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "康侯用锡马蕃庶，昼日三接。"
+      },
+      {
+        "id": "zy-35-tuan",
+        "hexagramId": 35,
+        "name": "晋",
+        "section": "tuan",
+        "line": null,
+        "text": "晋，进也。明出地上。顺而丽乎大明，柔进而上行，是以“康侯用锡马蕃庶，昼日三接”也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "晋·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:35:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "晋，进也。明出地上。顺而丽乎大明，柔进而上行，是以“康侯用锡马蕃庶，昼日三接”也。"
+      },
+      {
+        "id": "zy-35-xiang",
+        "hexagramId": 35,
+        "name": "晋",
+        "section": "xiang",
+        "line": null,
+        "text": "明出地上，晋。君子以自昭明德。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "晋·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:35:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "明出地上，晋。君子以自昭明德。"
+      }
+    ],
+    "status": "completed",
+    "delivery": {
+      "mechanicalStatus": "completed",
+      "candidateOnly": false,
+      "visibleKind": "substantive_answer",
+      "technicalFailure": false,
+      "providedFailureNote": null
+    },
+    "citationClaims": [
+      {
+        "occurrenceId": "delivered.p0.c0",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[0]",
+        "paragraphText": "你这卦是火地晋，六爻都没有动爻，卦象本身平稳，没有明显的阻隔或转折。晋卦取“明出地上”之象，《彖传》说“晋，进也”，又说“顺而丽乎大明，柔进而上行”。从这里看，你此刻想出门画一笔的念头，顺着的是“进”的方向——不必把它当成必须完成的任务，去就是了。",
+        "evidenceId": "zy-35-tuan",
+        "quote": "晋，进也。明出地上。顺而丽乎大明，柔进而上行",
+        "claim": "晋，进也"
+      },
+      {
+        "occurrenceId": "delivered.p1.c0",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[0]",
+        "paragraphText": "卦辞“康侯用锡马蕃庶，昼日三接”讲的是白昼之中繁频接应，节奏紧、次数多。你只有十分钟，正合这种短促的节拍：目标小、时段短，反而容易成事。没有动爻，也就没有中途变化的暗示，出门这件事本身不会横生枝节。",
+        "evidenceId": "zy-35-judgment",
+        "quote": "康侯用锡马蕃庶，昼日三接",
+        "claim": "昼日三接"
+      },
+      {
+        "occurrenceId": "delivered.p2.c0",
+        "target": "delivered",
+        "location": "paragraphs[2].citations[0]",
+        "paragraphText": "大象说“明出地上，晋。君子以自昭明德”。速写这件事，落在“君子以自昭明德”上，是你把看见的光和形，用自己的手再显一遍。日落前十分钟光线正在退，变动快，画下来有它自己的味道；这一趟的价值不全在成品，也在你愿意迈出这一步。但要说清楚：晋卦的本象是“明出地上”，是日出方向的进取，眼下是日落，光在收，不是全盛的白昼，所以这趟的收获大概率是一两笔、一个印象，而不是完整画面。",
+        "evidenceId": "zy-35-xiang",
+        "quote": "明出地上，晋。君子以自昭明德",
+        "claim": "君子以自昭明德"
+      }
+    ],
+    "referenceOnlyEvidence": [],
+    "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。"
+  },
+  {
+    "answerId": "Q37baa25d6ea9",
+    "scenario": "life",
+    "question": "我说漏了，场地早就确认了，卡住的其实是我们对作品摆放意见不同，不是展览办不起来。",
+    "coreQuestion": "我在考虑是否取消和同学的共同展览。",
+    "history": [
+      {
+        "question": "准备一直不顺利，想取消。",
+        "answer": {
+          "status": "answered",
+          "paragraphs": [
+            {
+              "text": "如果场地仍未落实，确实需要考虑延期。",
+              "citations": []
+            }
+          ],
+          "limitations": []
+        },
+        "evidence": []
+      }
+    ],
+    "cast": {
+      "lines": [
+        8,
+        7,
+        7,
+        8,
+        7,
+        7
+      ],
+      "original": {
+        "binary": "011011",
+        "name": "巽为风",
+        "number": 57,
+        "judgment": "小亨，利攸往，利见大人。"
+      },
+      "changed": {
+        "binary": "011011",
+        "name": "巽为风",
+        "number": 57,
+        "judgment": "小亨，利攸往，利见大人。"
+      },
+      "originalBinary": "011011",
+      "changedBinary": "011011",
+      "changingIndices": [],
+      "method": "three-coins",
+      "algorithmVersion": "evaluation-fixed-lines",
+      "readingPolicyVersion": "all-moving-lines-v1"
+    },
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "先把前提更正过来：场地已经确认，真正卡住的是你们对作品摆放的意见不同。这不是“展览办不起来”的问题，而是合作方式的问题。巽卦卦辞说“小亨，利有攸往”，意思是事情有小小通达的空间，仍值得往前走，而不是就此收场。所以单从这一卦看，取消并不是它给出的第一选项；它更倾向于在既有合作里继续调整。",
+          "citations": [
+            {
+              "evidenceId": "zy-57-judgment",
+              "quote": "小亨，利有攸往",
+              "claim": "巽卦卦辞说“小亨，利有攸往”，意思是事情有小小通达的空间，仍值得往前走，而不是就此收场。"
+            }
+          ]
+        },
+        {
+          "text": "巽为风，风无孔不入，也反复吹拂。彖传说“重巽以申命”，大象说“君子以申命行事”，这两句指向的都是把话反复讲清楚、把约定落到具体动作上。摆放之争往往不是谁对谁错，而是各自心里那套“展览该长什么样”没有被说明白。可以试着把分歧拆成几件具体的事：谁的作品占主区、动线怎么走、留白留多少、灯光和标签归谁定。逐条谈，比笼统地争“整体感觉”更容易有结果。",
+          "citations": [
+            {
+              "evidenceId": "zy-57-tuan",
+              "quote": "重巽以申命",
+              "claim": "彖传说“重巽以申命”，大象说“君子以申命行事”，这两句指向的都是把话反复讲清楚、把约定落到具体动作上。"
+            },
+            {
+              "evidenceId": "zy-57-xiang",
+              "quote": "君子以申命行事",
+              "claim": "彖传说“重巽以申命”，大象说“君子以申命行事”，这两句指向的都是把话反复讲清楚、把约定落到具体动作上。"
+            }
+          ]
+        },
+        {
+          "text": "卦辞还讲“利见大人”。放到你们的处境里，未必要找什么权威，但可以请一位双方都信服的人——老师、策展前辈、甚至另一个同学——来听你们各自摆一遍，帮你们把分歧说成可比较的方案。这一卦六爻皆静，没有动爻，按传统的读法，眼下不是剧烈变动的时候，宜守不宜断。所以我的建议是：先不要取消，把“取消”换成“调整合作条件”；如果反复申说之后仍无法在摆放上共存，再考虑缩小共同部分、各自保留独立展区，或者干脆拆成两个小展。那是谈过之后的取舍，不是赌气离场。",
+          "citations": [
+            {
+              "evidenceId": "zy-57-judgment",
+              "quote": "利见大人",
+              "claim": "卦辞还讲“利见大人”。放到你们的处境里，未必要找什么权威，但可以请一位双方都信服的人——老师、策展前辈、甚至另一个同学——来听你们各自摆一遍，帮你们把分歧说成可比较的方案。"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "candidate": null,
+    "candidateText": null,
+    "internalFallback": null,
+    "internalFallbackScope": null,
+    "evidence": [
+      {
+        "id": "zy-57-judgment",
+        "hexagramId": 57,
+        "name": "巽",
+        "section": "judgment",
+        "line": null,
+        "text": "小亨，利有攸往，利见大人。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "巽·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:57:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "小亨，利有攸往，利见大人。"
+      },
+      {
+        "id": "zy-57-tuan",
+        "hexagramId": 57,
+        "name": "巽",
+        "section": "tuan",
+        "line": null,
+        "text": "重巽以申命。刚巽乎中正而志行，柔皆顺乎刚，是以“小亨，利有攸往，利见大人”。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "巽·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:57:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "重巽以申命。刚巽乎中正而志行，柔皆顺乎刚，是以“小亨，利有攸往，利见大人”。"
+      },
+      {
+        "id": "zy-57-xiang",
+        "hexagramId": 57,
+        "name": "巽",
+        "section": "xiang",
+        "line": null,
+        "text": "随风，巽。君子以申命行事。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "巽·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:57:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "随风，巽。君子以申命行事。"
+      }
+    ],
+    "status": "completed",
+    "delivery": {
+      "mechanicalStatus": "completed",
+      "candidateOnly": false,
+      "visibleKind": "substantive_answer",
+      "technicalFailure": false,
+      "providedFailureNote": null
+    },
+    "citationClaims": [
+      {
+        "occurrenceId": "delivered.p0.c0",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[0]",
+        "paragraphText": "先把前提更正过来：场地已经确认，真正卡住的是你们对作品摆放的意见不同。这不是“展览办不起来”的问题，而是合作方式的问题。巽卦卦辞说“小亨，利有攸往”，意思是事情有小小通达的空间，仍值得往前走，而不是就此收场。所以单从这一卦看，取消并不是它给出的第一选项；它更倾向于在既有合作里继续调整。",
+        "evidenceId": "zy-57-judgment",
+        "quote": "小亨，利有攸往",
+        "claim": "巽卦卦辞说“小亨，利有攸往”，意思是事情有小小通达的空间，仍值得往前走，而不是就此收场。"
+      },
+      {
+        "occurrenceId": "delivered.p1.c0",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[0]",
+        "paragraphText": "巽为风，风无孔不入，也反复吹拂。彖传说“重巽以申命”，大象说“君子以申命行事”，这两句指向的都是把话反复讲清楚、把约定落到具体动作上。摆放之争往往不是谁对谁错，而是各自心里那套“展览该长什么样”没有被说明白。可以试着把分歧拆成几件具体的事：谁的作品占主区、动线怎么走、留白留多少、灯光和标签归谁定。逐条谈，比笼统地争“整体感觉”更容易有结果。",
+        "evidenceId": "zy-57-tuan",
+        "quote": "重巽以申命",
+        "claim": "彖传说“重巽以申命”，大象说“君子以申命行事”，这两句指向的都是把话反复讲清楚、把约定落到具体动作上。"
+      },
+      {
+        "occurrenceId": "delivered.p1.c1",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[1]",
+        "paragraphText": "巽为风，风无孔不入，也反复吹拂。彖传说“重巽以申命”，大象说“君子以申命行事”，这两句指向的都是把话反复讲清楚、把约定落到具体动作上。摆放之争往往不是谁对谁错，而是各自心里那套“展览该长什么样”没有被说明白。可以试着把分歧拆成几件具体的事：谁的作品占主区、动线怎么走、留白留多少、灯光和标签归谁定。逐条谈，比笼统地争“整体感觉”更容易有结果。",
+        "evidenceId": "zy-57-xiang",
+        "quote": "君子以申命行事",
+        "claim": "彖传说“重巽以申命”，大象说“君子以申命行事”，这两句指向的都是把话反复讲清楚、把约定落到具体动作上。"
+      },
+      {
+        "occurrenceId": "delivered.p2.c0",
+        "target": "delivered",
+        "location": "paragraphs[2].citations[0]",
+        "paragraphText": "卦辞还讲“利见大人”。放到你们的处境里，未必要找什么权威，但可以请一位双方都信服的人——老师、策展前辈、甚至另一个同学——来听你们各自摆一遍，帮你们把分歧说成可比较的方案。这一卦六爻皆静，没有动爻，按传统的读法，眼下不是剧烈变动的时候，宜守不宜断。所以我的建议是：先不要取消，把“取消”换成“调整合作条件”；如果反复申说之后仍无法在摆放上共存，再考虑缩小共同部分、各自保留独立展区，或者干脆拆成两个小展。那是谈过之后的取舍，不是赌气离场。",
+        "evidenceId": "zy-57-judgment",
+        "quote": "利见大人",
+        "claim": "卦辞还讲“利见大人”。放到你们的处境里，未必要找什么权威，但可以请一位双方都信服的人——老师、策展前辈、甚至另一个同学——来听你们各自摆一遍，帮你们把分歧说成可比较的方案。"
+      }
+    ],
+    "referenceOnlyEvidence": [],
+    "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。"
+  },
+  {
+    "answerId": "Q9a2f2279723e",
+    "scenario": "life",
+    "question": "水壶外面有一层水垢，今天想顺手清理，又怕一折腾就把整个厨房都拆着收拾了。怎么给自己划个停下来的点？",
+    "coreQuestion": "水壶外面有一层水垢，今天想顺手清理，又怕一折腾就把整个厨房都拆着收拾了。怎么给自己划个停下来的点？",
+    "history": [],
+    "cast": {
+      "lines": [
+        8,
+        7,
+        7,
+        8,
+        7,
+        8
+      ],
+      "original": {
+        "binary": "011010",
+        "name": "水风井",
+        "number": 48,
+        "judgment": "改邑不改井，无丧无得，往来井井。汔至，亦未繘井，羸其瓶，凶。"
+      },
+      "changed": {
+        "binary": "011010",
+        "name": "水风井",
+        "number": 48,
+        "judgment": "改邑不改井，无丧无得，往来井井。汔至，亦未繘井，羸其瓶，凶。"
+      },
+      "originalBinary": "011010",
+      "changedBinary": "011010",
+      "changingIndices": [],
+      "method": "three-coins",
+      "algorithmVersion": "evaluation-fixed-lines",
+      "readingPolicyVersion": "all-moving-lines-v1"
+    },
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "从井卦看，今天更宜“维护井”，不宜“改邑”。井卦说“改邑不改井，无丧无得，往来井井”：环境可以变，但井本身不因一次取水而大得大失。对应到这里，先划范围——只清理水壶外面可见的水垢，不把灶台、墙面、橱柜、抽油烟机连带纳入。你的目标不是把厨房变新，而是让水壶恢复基本可用、看着不刺眼。",
+          "citations": [
+            {
+              "evidenceId": "zy-48-judgment",
+              "quote": "改邑不改井，无丧无得，往来井井",
+              "claim": "改邑不改井，无丧无得，往来井井"
+            }
+          ]
+        },
+        {
+          "text": "停下来的点要设在“取上水”之前。卦辞提醒“汔至，亦未繘井，羸其瓶，凶”：快到井口却还没把水取上来，反而打坏瓶子，凶。具体可设三道闸：一是定15—20分钟闹钟；二是只用水槽前一小块区域、一块布或一个盆；三是水壶外部水垢基本除净、表面摸上去不刮手就收。若时间到、工具开始需要扩大清洗、或你冒出“顺便把这里也弄了”的念头，就停。",
+          "citations": [
+            {
+              "evidenceId": "zy-48-judgment",
+              "quote": "汔至，亦未繘井，羸其瓶，凶",
+              "claim": "汔至，亦未繘井，羸其瓶，凶"
+            }
+          ]
+        },
+        {
+          "text": "彖传把“汔至，亦未繘井”解作“未有功也”，把“羸其瓶”解作“是以凶也”：凶不在水垢本身，而在最后收不住、把简单维护变成事故或大工程。所以识别“羸其瓶”的预警：开始拆壶盖、搬动小家电、清到灶台后面、想用强酸强碱、或已经心烦手忙。出现任一个，就把工具放下，擦干手，离开厨房五分钟。",
+          "citations": [
+            {
+              "evidenceId": "zy-48-tuan",
+              "quote": "未有功也",
+              "claim": "未有功也"
+            },
+            {
+              "evidenceId": "zy-48-tuan",
+              "quote": "是以凶也",
+              "claim": "是以凶也"
+            }
+          ]
+        },
+        {
+          "text": "大象说“木上有水，井。君子以劳民劝相”，可以请家人帮递工具、收尾，但不等于发动全家大扫除；彖传也说“井养而不穷也”，日常小维护比一次折腾更养人。今天卦象无动爻，正合“往来井井”：按日常节奏做，做完就回到原样。若清理中发现更大问题，记在待办清单，另择时间专门处理，不现场扩展。",
+          "citations": [
+            {
+              "evidenceId": "zy-48-xiang",
+              "quote": "君子以劳民劝相",
+              "claim": "君子以劳民劝相"
+            },
+            {
+              "evidenceId": "zy-48-tuan",
+              "quote": "井养而不穷也",
+              "claim": "井养而不穷也"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "candidate": null,
+    "candidateText": null,
+    "internalFallback": null,
+    "internalFallbackScope": null,
+    "evidence": [
+      {
+        "id": "zy-48-judgment",
+        "hexagramId": 48,
+        "name": "井",
+        "section": "judgment",
+        "line": null,
+        "text": "改邑不改井，无丧无得，往来井井；汔至，亦未繘井，羸其瓶，凶。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "井·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:48:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "改邑不改井，无丧无得，往来井井；汔至，亦未繘井，羸其瓶，凶。"
+      },
+      {
+        "id": "zy-48-tuan",
+        "hexagramId": 48,
+        "name": "井",
+        "section": "tuan",
+        "line": null,
+        "text": "巽乎水而上水，井；井养而不穷也。“改邑不改井”，乃以刚中也。“汔至，亦未繘井”，未有功也。“羸其瓶”，是以凶也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "井·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:48:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "巽乎水而上水，井；井养而不穷也。“改邑不改井”，乃以刚中也。“汔至，亦未繘井”，未有功也。“羸其瓶”，是以凶也。"
+      },
+      {
+        "id": "zy-48-xiang",
+        "hexagramId": 48,
+        "name": "井",
+        "section": "xiang",
+        "line": null,
+        "text": "木上有水，井。君子以劳民劝相。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "井·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:48:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "木上有水，井。君子以劳民劝相。"
+      }
+    ],
+    "status": "completed",
+    "delivery": {
+      "mechanicalStatus": "completed",
+      "candidateOnly": false,
+      "visibleKind": "substantive_answer",
+      "technicalFailure": false,
+      "providedFailureNote": null
+    },
+    "citationClaims": [
+      {
+        "occurrenceId": "delivered.p0.c0",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[0]",
+        "paragraphText": "从井卦看，今天更宜“维护井”，不宜“改邑”。井卦说“改邑不改井，无丧无得，往来井井”：环境可以变，但井本身不因一次取水而大得大失。对应到这里，先划范围——只清理水壶外面可见的水垢，不把灶台、墙面、橱柜、抽油烟机连带纳入。你的目标不是把厨房变新，而是让水壶恢复基本可用、看着不刺眼。",
+        "evidenceId": "zy-48-judgment",
+        "quote": "改邑不改井，无丧无得，往来井井",
+        "claim": "改邑不改井，无丧无得，往来井井"
+      },
+      {
+        "occurrenceId": "delivered.p1.c0",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[0]",
+        "paragraphText": "停下来的点要设在“取上水”之前。卦辞提醒“汔至，亦未繘井，羸其瓶，凶”：快到井口却还没把水取上来，反而打坏瓶子，凶。具体可设三道闸：一是定15—20分钟闹钟；二是只用水槽前一小块区域、一块布或一个盆；三是水壶外部水垢基本除净、表面摸上去不刮手就收。若时间到、工具开始需要扩大清洗、或你冒出“顺便把这里也弄了”的念头，就停。",
+        "evidenceId": "zy-48-judgment",
+        "quote": "汔至，亦未繘井，羸其瓶，凶",
+        "claim": "汔至，亦未繘井，羸其瓶，凶"
+      },
+      {
+        "occurrenceId": "delivered.p2.c0",
+        "target": "delivered",
+        "location": "paragraphs[2].citations[0]",
+        "paragraphText": "彖传把“汔至，亦未繘井”解作“未有功也”，把“羸其瓶”解作“是以凶也”：凶不在水垢本身，而在最后收不住、把简单维护变成事故或大工程。所以识别“羸其瓶”的预警：开始拆壶盖、搬动小家电、清到灶台后面、想用强酸强碱、或已经心烦手忙。出现任一个，就把工具放下，擦干手，离开厨房五分钟。",
+        "evidenceId": "zy-48-tuan",
+        "quote": "未有功也",
+        "claim": "未有功也"
+      },
+      {
+        "occurrenceId": "delivered.p2.c1",
+        "target": "delivered",
+        "location": "paragraphs[2].citations[1]",
+        "paragraphText": "彖传把“汔至，亦未繘井”解作“未有功也”，把“羸其瓶”解作“是以凶也”：凶不在水垢本身，而在最后收不住、把简单维护变成事故或大工程。所以识别“羸其瓶”的预警：开始拆壶盖、搬动小家电、清到灶台后面、想用强酸强碱、或已经心烦手忙。出现任一个，就把工具放下，擦干手，离开厨房五分钟。",
+        "evidenceId": "zy-48-tuan",
+        "quote": "是以凶也",
+        "claim": "是以凶也"
+      },
+      {
+        "occurrenceId": "delivered.p3.c0",
+        "target": "delivered",
+        "location": "paragraphs[3].citations[0]",
+        "paragraphText": "大象说“木上有水，井。君子以劳民劝相”，可以请家人帮递工具、收尾，但不等于发动全家大扫除；彖传也说“井养而不穷也”，日常小维护比一次折腾更养人。今天卦象无动爻，正合“往来井井”：按日常节奏做，做完就回到原样。若清理中发现更大问题，记在待办清单，另择时间专门处理，不现场扩展。",
+        "evidenceId": "zy-48-xiang",
+        "quote": "君子以劳民劝相",
+        "claim": "君子以劳民劝相"
+      },
+      {
+        "occurrenceId": "delivered.p3.c1",
+        "target": "delivered",
+        "location": "paragraphs[3].citations[1]",
+        "paragraphText": "大象说“木上有水，井。君子以劳民劝相”，可以请家人帮递工具、收尾，但不等于发动全家大扫除；彖传也说“井养而不穷也”，日常小维护比一次折腾更养人。今天卦象无动爻，正合“往来井井”：按日常节奏做，做完就回到原样。若清理中发现更大问题，记在待办清单，另择时间专门处理，不现场扩展。",
+        "evidenceId": "zy-48-tuan",
+        "quote": "井养而不穷也",
+        "claim": "井养而不穷也"
+      }
+    ],
+    "referenceOnlyEvidence": [],
+    "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。"
+  },
+  {
+    "answerId": "Q555f681180ea",
+    "scenario": "life",
+    "question": "我说漏了，场地早就确认了，卡住的其实是我们对作品摆放意见不同，不是展览办不起来。",
+    "coreQuestion": "我在考虑是否取消和同学的共同展览。",
+    "history": [
+      {
+        "question": "准备一直不顺利，想取消。",
+        "answer": {
+          "status": "answered",
+          "paragraphs": [
+            {
+              "text": "如果场地仍未落实，确实需要考虑延期。",
+              "citations": []
+            }
+          ],
+          "limitations": []
+        },
+        "evidence": []
+      }
+    ],
+    "cast": {
+      "lines": [
+        8,
+        7,
+        7,
+        8,
+        7,
+        7
+      ],
+      "original": {
+        "binary": "011011",
+        "name": "巽为风",
+        "number": 57,
+        "judgment": "小亨，利攸往，利见大人。"
+      },
+      "changed": {
+        "binary": "011011",
+        "name": "巽为风",
+        "number": 57,
+        "judgment": "小亨，利攸往，利见大人。"
+      },
+      "originalBinary": "011011",
+      "changedBinary": "011011",
+      "changingIndices": [],
+      "method": "three-coins",
+      "algorithmVersion": "evaluation-fixed-lines",
+      "readingPolicyVersion": "all-moving-lines-v1"
+    },
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "先更正前一轮的判断：场地已确认，问题不在展览能否办成，而在作品摆放的分歧。因此“取消”不是规避场地风险，而是对合作关系与作品呈现方式的取舍。巽为风，卦辞说“小亨，利有攸往，利见大人”，这不是鼓励你立刻决裂，而是提示当前宜小步推进、寻找能协调的“大人”。",
+          "citations": [
+            {
+              "evidenceId": "zy-57-judgment",
+              "quote": "小亨，利有攸往，利见大人。",
+              "claim": "小亨，利有攸往，利见大人"
+            }
+          ]
+        },
+        {
+          "text": "彖传说“重巽以申命”，大象说“君子以申命行事”。重巽是两风相随，象征反复沟通、把共同意图申明清楚并落到具体安排。你们卡在摆放，通常不是谁对谁错一句话能定，而是缺少事先约定的展陈规则：谁负责动线、主视觉、作品间距、灯光和最终裁决。",
+          "citations": [
+            {
+              "evidenceId": "zy-57-tuan",
+              "quote": "重巽以申命。",
+              "claim": "重巽以申命"
+            },
+            {
+              "evidenceId": "zy-57-xiang",
+              "quote": "君子以申命行事。",
+              "claim": "君子以申命行事"
+            }
+          ]
+        },
+        {
+          "text": "静卦无动爻，说明眼下并非“必须取消”的转折点，也未必会自动好转。更可取的是先设一次限时沟通：各自讲清最不能让步的三件作品与理由，再讨论分区、轮流主导或请第三方策展/老师仲裁。若对方愿意在规则内调整，继续合作仍符合“利有攸往”；若核心底线被反复无视，退出、缩小合作或另办也可成为选项。",
+          "citations": [
+            {
+              "evidenceId": "zy-57-judgment",
+              "quote": "利有攸往",
+              "claim": "利有攸往"
+            }
+          ]
+        },
+        {
+          "text": "建议你先不要以取消作为第一反应，而是把这次分歧当作“申命行事”的测试：能否形成双方都认的决策机制。若沟通后仍无法就摆放达成可执行方案，再取消或拆分，损失会更清楚，也少一些关系上的悔意。卦象不能替你判断对方是否可靠；是否取消，仍取决于对方合作意愿、你的底线以及场地合同与撤展成本等现实条件。",
+          "citations": [
+            {
+              "evidenceId": "zy-57-xiang",
+              "quote": "君子以申命行事。",
+              "claim": "申命行事"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "candidate": null,
+    "candidateText": null,
+    "internalFallback": null,
+    "internalFallbackScope": null,
+    "evidence": [
+      {
+        "id": "zy-57-judgment",
+        "hexagramId": 57,
+        "name": "巽",
+        "section": "judgment",
+        "line": null,
+        "text": "小亨，利有攸往，利见大人。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "巽·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:57:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "小亨，利有攸往，利见大人。"
+      },
+      {
+        "id": "zy-57-tuan",
+        "hexagramId": 57,
+        "name": "巽",
+        "section": "tuan",
+        "line": null,
+        "text": "重巽以申命。刚巽乎中正而志行，柔皆顺乎刚，是以“小亨，利有攸往，利见大人”。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "巽·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:57:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "重巽以申命。刚巽乎中正而志行，柔皆顺乎刚，是以“小亨，利有攸往，利见大人”。"
+      },
+      {
+        "id": "zy-57-xiang",
+        "hexagramId": 57,
+        "name": "巽",
+        "section": "xiang",
+        "line": null,
+        "text": "随风，巽。君子以申命行事。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "巽·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:57:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "随风，巽。君子以申命行事。"
+      }
+    ],
+    "status": "completed",
+    "delivery": {
+      "mechanicalStatus": "completed",
+      "candidateOnly": false,
+      "visibleKind": "substantive_answer",
+      "technicalFailure": false,
+      "providedFailureNote": null
+    },
+    "citationClaims": [
+      {
+        "occurrenceId": "delivered.p0.c0",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[0]",
+        "paragraphText": "先更正前一轮的判断：场地已确认，问题不在展览能否办成，而在作品摆放的分歧。因此“取消”不是规避场地风险，而是对合作关系与作品呈现方式的取舍。巽为风，卦辞说“小亨，利有攸往，利见大人”，这不是鼓励你立刻决裂，而是提示当前宜小步推进、寻找能协调的“大人”。",
+        "evidenceId": "zy-57-judgment",
+        "quote": "小亨，利有攸往，利见大人。",
+        "claim": "小亨，利有攸往，利见大人"
+      },
+      {
+        "occurrenceId": "delivered.p1.c0",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[0]",
+        "paragraphText": "彖传说“重巽以申命”，大象说“君子以申命行事”。重巽是两风相随，象征反复沟通、把共同意图申明清楚并落到具体安排。你们卡在摆放，通常不是谁对谁错一句话能定，而是缺少事先约定的展陈规则：谁负责动线、主视觉、作品间距、灯光和最终裁决。",
+        "evidenceId": "zy-57-tuan",
+        "quote": "重巽以申命。",
+        "claim": "重巽以申命"
+      },
+      {
+        "occurrenceId": "delivered.p1.c1",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[1]",
+        "paragraphText": "彖传说“重巽以申命”，大象说“君子以申命行事”。重巽是两风相随，象征反复沟通、把共同意图申明清楚并落到具体安排。你们卡在摆放，通常不是谁对谁错一句话能定，而是缺少事先约定的展陈规则：谁负责动线、主视觉、作品间距、灯光和最终裁决。",
+        "evidenceId": "zy-57-xiang",
+        "quote": "君子以申命行事。",
+        "claim": "君子以申命行事"
+      },
+      {
+        "occurrenceId": "delivered.p2.c0",
+        "target": "delivered",
+        "location": "paragraphs[2].citations[0]",
+        "paragraphText": "静卦无动爻，说明眼下并非“必须取消”的转折点，也未必会自动好转。更可取的是先设一次限时沟通：各自讲清最不能让步的三件作品与理由，再讨论分区、轮流主导或请第三方策展/老师仲裁。若对方愿意在规则内调整，继续合作仍符合“利有攸往”；若核心底线被反复无视，退出、缩小合作或另办也可成为选项。",
+        "evidenceId": "zy-57-judgment",
+        "quote": "利有攸往",
+        "claim": "利有攸往"
+      },
+      {
+        "occurrenceId": "delivered.p3.c0",
+        "target": "delivered",
+        "location": "paragraphs[3].citations[0]",
+        "paragraphText": "建议你先不要以取消作为第一反应，而是把这次分歧当作“申命行事”的测试：能否形成双方都认的决策机制。若沟通后仍无法就摆放达成可执行方案，再取消或拆分，损失会更清楚，也少一些关系上的悔意。卦象不能替你判断对方是否可靠；是否取消，仍取决于对方合作意愿、你的底线以及场地合同与撤展成本等现实条件。",
+        "evidenceId": "zy-57-xiang",
+        "quote": "君子以申命行事。",
+        "claim": "申命行事"
+      }
+    ],
+    "referenceOnlyEvidence": [],
+    "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。"
+  }
+]

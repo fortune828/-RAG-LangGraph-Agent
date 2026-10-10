@@ -1,0 +1,920 @@
+[
+  {
+    "stage": "development",
+    "split": "development",
+    "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+    "graphVersion": "python-graph-v16",
+    "promptVersion": "evidence-agent-python-v16",
+    "left": "B",
+    "right": "C",
+    "n": 40,
+    "independentGroups": 33,
+    "rightWins": 3,
+    "leftWins": 0,
+    "ties": 37,
+    "mechanicalRateDifference": 0.075,
+    "mechanicalClusterCI": {
+      "n": 40,
+      "groups": 33,
+      "estimate": 0.075,
+      "low": 0.0,
+      "high": 0.16666666666666666,
+      "seed": 1729,
+      "iterations": 2000,
+      "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+    },
+    "differences": {
+      "calls": {
+        "n": 40,
+        "mean": -0.05,
+        "median": 0.0
+      },
+      "totalTokens": {
+        "n": 40,
+        "mean": 335,
+        "median": 430.0
+      },
+      "durationMs": {
+        "n": 40,
+        "mean": 1202.925,
+        "median": 2025.5
+      },
+      "estimatedUSD": {
+        "n": 40,
+        "mean": 0.00022074239999999996,
+        "median": 0.00025169999999999983
+      }
+    },
+    "missingLeft": [],
+    "missingRight": [],
+    "incompatibleInputs": [],
+    "pendingCases": []
+  },
+  {
+    "stage": "development",
+    "split": "development",
+    "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+    "graphVersion": "python-graph-v16",
+    "promptVersion": "evidence-agent-python-v16",
+    "left": "B",
+    "right": "D",
+    "n": 40,
+    "independentGroups": 33,
+    "rightWins": 3,
+    "leftWins": 1,
+    "ties": 36,
+    "mechanicalRateDifference": 0.05,
+    "mechanicalClusterCI": {
+      "n": 40,
+      "groups": 33,
+      "estimate": 0.05,
+      "low": -0.044444444444444446,
+      "high": 0.15789473684210525,
+      "seed": 1729,
+      "iterations": 2000,
+      "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+    },
+    "differences": {
+      "calls": {
+        "n": 40,
+        "mean": 0.6,
+        "median": 0.5
+      },
+      "totalTokens": {
+        "n": 40,
+        "mean": 2378.775,
+        "median": 1653.5
+      },
+      "durationMs": {
+        "n": 40,
+        "mean": 1865.05,
+        "median": 1321.0
+      },
+      "estimatedUSD": {
+        "n": 40,
+        "mean": 0.000351028725,
+        "median": 0.0001604460000000001
+      }
+    },
+    "missingLeft": [],
+    "missingRight": [],
+    "incompatibleInputs": [],
+    "pendingCases": []
+  },
+  {
+    "stage": "development",
+    "split": "development",
+    "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+    "graphVersion": "python-graph-v16",
+    "promptVersion": "evidence-agent-python-v16",
+    "left": "B",
+    "right": "H",
+    "n": 40,
+    "independentGroups": 33,
+    "rightWins": 2,
+    "leftWins": 0,
+    "ties": 38,
+    "mechanicalRateDifference": 0.05,
+    "mechanicalClusterCI": {
+      "n": 40,
+      "groups": 33,
+      "estimate": 0.05,
+      "low": 0.0,
+      "high": 0.13157894736842105,
+      "seed": 1729,
+      "iterations": 2000,
+      "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+    },
+    "differences": {
+      "calls": {
+        "n": 40,
+        "mean": 0.65,
+        "median": 1.0
+      },
+      "totalTokens": {
+        "n": 40,
+        "mean": 2805.525,
+        "median": 1595.0
+      },
+      "durationMs": {
+        "n": 40,
+        "mean": 2795.65,
+        "median": 2319.5
+      },
+      "estimatedUSD": {
+        "n": 40,
+        "mean": 0.0005268470249999999,
+        "median": 0.0003944999999999999
+      }
+    },
+    "missingLeft": [],
+    "missingRight": [],
+    "incompatibleInputs": [],
+    "pendingCases": []
+  },
+  {
+    "stage": "development",
+    "split": "development",
+    "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+    "graphVersion": "python-graph-v16",
+    "promptVersion": "evidence-agent-python-v16",
+    "left": "C",
+    "right": "D",
+    "n": 40,
+    "independentGroups": 33,
+    "rightWins": 0,
+    "leftWins": 1,
+    "ties": 39,
+    "mechanicalRateDifference": -0.025,
+    "mechanicalClusterCI": {
+      "n": 40,
+      "groups": 33,
+      "estimate": -0.025,
+      "low": -0.07317073170731707,
+      "high": 0.0,
+      "seed": 1729,
+      "iterations": 2000,
+      "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+    },
+    "differences": {
+      "calls": {
+        "n": 40,
+        "mean": 0.65,
+        "median": 1.0
+      },
+      "totalTokens": {
+        "n": 40,
+        "mean": 2043.775,
+        "median": 1212.0
+      },
+      "durationMs": {
+        "n": 40,
+        "mean": 662.125,
+        "median": 2013.5
+      },
+      "estimatedUSD": {
+        "n": 40,
+        "mean": 0.00013028632500000008,
+        "median": 0.00030592200000000014
+      }
+    },
+    "missingLeft": [],
+    "missingRight": [],
+    "incompatibleInputs": [],
+    "pendingCases": []
+  },
+  {
+    "stage": "development",
+    "split": "development",
+    "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+    "graphVersion": "python-graph-v16",
+    "promptVersion": "evidence-agent-python-v16",
+    "left": "C",
+    "right": "H",
+    "n": 40,
+    "independentGroups": 33,
+    "rightWins": 0,
+    "leftWins": 1,
+    "ties": 39,
+    "mechanicalRateDifference": -0.025,
+    "mechanicalClusterCI": {
+      "n": 40,
+      "groups": 33,
+      "estimate": -0.025,
+      "low": -0.08108108108108109,
+      "high": 0.0,
+      "seed": 1729,
+      "iterations": 2000,
+      "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+    },
+    "differences": {
+      "calls": {
+        "n": 40,
+        "mean": 0.7,
+        "median": 0.5
+      },
+      "totalTokens": {
+        "n": 40,
+        "mean": 2470.525,
+        "median": 1193.5
+      },
+      "durationMs": {
+        "n": 40,
+        "mean": 1592.725,
+        "median": 2576.5
+      },
+      "estimatedUSD": {
+        "n": 40,
+        "mean": 0.00030610462499999996,
+        "median": 0.0004003709999999999
+      }
+    },
+    "missingLeft": [],
+    "missingRight": [],
+    "incompatibleInputs": [],
+    "pendingCases": []
+  },
+  {
+    "stage": "development",
+    "split": "development",
+    "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+    "graphVersion": "python-graph-v16",
+    "promptVersion": "evidence-agent-python-v16",
+    "left": "D",
+    "right": "H",
+    "n": 40,
+    "independentGroups": 33,
+    "rightWins": 1,
+    "leftWins": 1,
+    "ties": 38,
+    "mechanicalRateDifference": 0.0,
+    "mechanicalClusterCI": {
+      "n": 40,
+      "groups": 33,
+      "estimate": 0,
+      "low": -0.075,
+      "high": 0.06666666666666667,
+      "seed": 1729,
+      "iterations": 2000,
+      "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+    },
+    "differences": {
+      "calls": {
+        "n": 40,
+        "mean": 0.05,
+        "median": 0.0
+      },
+      "totalTokens": {
+        "n": 40,
+        "mean": 426.75,
+        "median": 260.5
+      },
+      "durationMs": {
+        "n": 40,
+        "mean": 930.6,
+        "median": -586.5
+      },
+      "estimatedUSD": {
+        "n": 40,
+        "mean": 0.0001758182999999999,
+        "median": -2.311799999999987e-05
+      }
+    },
+    "missingLeft": [],
+    "missingRight": [],
+    "incompatibleInputs": [],
+    "pendingCases": []
+  },
+  {
+    "stage": "rag",
+    "split": "development",
+    "configKey": "f18be4380736a7085665d82429d6a8f0fc2b8606dbcfb513d7d24c2fa5351339",
+    "graphVersion": "python-graph-v16",
+    "promptVersion": "evidence-agent-python-v16",
+    "left": "classic",
+    "right": "full",
+    "n": 6,
+    "independentGroups": 6,
+    "rightWins": 2,
+    "leftWins": 1,
+    "ties": 3,
+    "mechanicalRateDifference": 0.16666666666666666,
+    "mechanicalClusterCI": {
+      "n": 6,
+      "groups": 6,
+      "estimate": 0.16666666666666666,
+      "low": -0.3333333333333333,
+      "high": 0.6666666666666666,
+      "seed": 1729,
+      "iterations": 2000,
+      "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+    },
+    "differences": {
+      "calls": {
+        "n": 6,
+        "mean": 0,
+        "median": 0.0
+      },
+      "totalTokens": {
+        "n": 6,
+        "mean": 2367.3333333333335,
+        "median": 2047.0
+      },
+      "durationMs": {
+        "n": 6,
+        "mean": 7900,
+        "median": 7041.5
+      },
+      "estimatedUSD": {
+        "n": 6,
+        "mean": 0.0012539254999999999,
+        "median": 0.0010725269999999998
+      }
+    },
+    "missingLeft": [],
+    "missingRight": [],
+    "incompatibleInputs": [],
+    "pendingCases": []
+  },
+  {
+    "stage": "rag",
+    "split": "development",
+    "configKey": "f18be4380736a7085665d82429d6a8f0fc2b8606dbcfb513d7d24c2fa5351339",
+    "graphVersion": "python-graph-v16",
+    "promptVersion": "evidence-agent-python-v16",
+    "left": "classic",
+    "right": "memory",
+    "n": 6,
+    "independentGroups": 6,
+    "rightWins": 3,
+    "leftWins": 0,
+    "ties": 3,
+    "mechanicalRateDifference": 0.5,
+    "mechanicalClusterCI": {
+      "n": 6,
+      "groups": 6,
+      "estimate": 0.5,
+      "low": 0.16666666666666666,
+      "high": 0.8333333333333334,
+      "seed": 1729,
+      "iterations": 2000,
+      "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+    },
+    "differences": {
+      "calls": {
+        "n": 6,
+        "mean": 0,
+        "median": 0.0
+      },
+      "totalTokens": {
+        "n": 6,
+        "mean": 228.66666666666666,
+        "median": -220.5
+      },
+      "durationMs": {
+        "n": 6,
+        "mean": 3113,
+        "median": 1462.0
+      },
+      "estimatedUSD": {
+        "n": 6,
+        "mean": 0.0002046299999999999,
+        "median": -1.425900000000019e-05
+      }
+    },
+    "missingLeft": [],
+    "missingRight": [],
+    "incompatibleInputs": [],
+    "pendingCases": []
+  },
+  {
+    "stage": "rag",
+    "split": "development",
+    "configKey": "f18be4380736a7085665d82429d6a8f0fc2b8606dbcfb513d7d24c2fa5351339",
+    "graphVersion": "python-graph-v16",
+    "promptVersion": "evidence-agent-python-v16",
+    "left": "full",
+    "right": "memory",
+    "n": 6,
+    "independentGroups": 6,
+    "rightWins": 2,
+    "leftWins": 0,
+    "ties": 4,
+    "mechanicalRateDifference": 0.3333333333333333,
+    "mechanicalClusterCI": {
+      "n": 6,
+      "groups": 6,
+      "estimate": 0.3333333333333333,
+      "low": 0.0,
+      "high": 0.6666666666666666,
+      "seed": 1729,
+      "iterations": 2000,
+      "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+    },
+    "differences": {
+      "calls": {
+        "n": 6,
+        "mean": 0,
+        "median": 0.0
+      },
+      "totalTokens": {
+        "n": 6,
+        "mean": -2138.6666666666665,
+        "median": -2562.5
+      },
+      "durationMs": {
+        "n": 6,
+        "mean": -4787,
+        "median": -6224.5
+      },
+      "estimatedUSD": {
+        "n": 6,
+        "mean": -0.0010492955,
+        "median": -0.0012343950000000001
+      }
+    },
+    "missingLeft": [],
+    "missingRight": [],
+    "incompatibleInputs": [],
+    "pendingCases": []
+  },
+  {
+    "stage": "rag",
+    "split": "independent_test",
+    "configKey": "f18be4380736a7085665d82429d6a8f0fc2b8606dbcfb513d7d24c2fa5351339",
+    "graphVersion": "python-graph-v16",
+    "promptVersion": "evidence-agent-python-v16",
+    "left": "classic",
+    "right": "full",
+    "n": 6,
+    "independentGroups": 6,
+    "rightWins": 3,
+    "leftWins": 2,
+    "ties": 1,
+    "mechanicalRateDifference": 0.16666666666666666,
+    "mechanicalClusterCI": {
+      "n": 6,
+      "groups": 6,
+      "estimate": 0.16666666666666666,
+      "low": -0.5,
+      "high": 0.8333333333333334,
+      "seed": 1729,
+      "iterations": 2000,
+      "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+    },
+    "differences": {
+      "calls": {
+        "n": 6,
+        "mean": 0,
+        "median": 0.0
+      },
+      "totalTokens": {
+        "n": 6,
+        "mean": 2192.3333333333335,
+        "median": 2849.5
+      },
+      "durationMs": {
+        "n": 6,
+        "mean": 7108.833333333333,
+        "median": 9292.0
+      },
+      "estimatedUSD": {
+        "n": 6,
+        "mean": 0.001132516,
+        "median": 0.001536702
+      }
+    },
+    "missingLeft": [],
+    "missingRight": [],
+    "incompatibleInputs": [],
+    "pendingCases": []
+  },
+  {
+    "stage": "rag",
+    "split": "independent_test",
+    "configKey": "f18be4380736a7085665d82429d6a8f0fc2b8606dbcfb513d7d24c2fa5351339",
+    "graphVersion": "python-graph-v16",
+    "promptVersion": "evidence-agent-python-v16",
+    "left": "classic",
+    "right": "memory",
+    "n": 6,
+    "independentGroups": 6,
+    "rightWins": 3,
+    "leftWins": 0,
+    "ties": 3,
+    "mechanicalRateDifference": 0.5,
+    "mechanicalClusterCI": {
+      "n": 6,
+      "groups": 6,
+      "estimate": 0.5,
+      "low": 0.16666666666666666,
+      "high": 0.8333333333333334,
+      "seed": 1729,
+      "iterations": 2000,
+      "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+    },
+    "differences": {
+      "calls": {
+        "n": 6,
+        "mean": 0,
+        "median": 0.0
+      },
+      "totalTokens": {
+        "n": 6,
+        "mean": -37.166666666666664,
+        "median": -159.0
+      },
+      "durationMs": {
+        "n": 6,
+        "mean": 2516,
+        "median": 302.5
+      },
+      "estimatedUSD": {
+        "n": 6,
+        "mean": 4.4393999999999934e-05,
+        "median": -5.2241999999999924e-05
+      }
+    },
+    "missingLeft": [],
+    "missingRight": [],
+    "incompatibleInputs": [],
+    "pendingCases": []
+  },
+  {
+    "stage": "rag",
+    "split": "independent_test",
+    "configKey": "f18be4380736a7085665d82429d6a8f0fc2b8606dbcfb513d7d24c2fa5351339",
+    "graphVersion": "python-graph-v16",
+    "promptVersion": "evidence-agent-python-v16",
+    "left": "full",
+    "right": "memory",
+    "n": 6,
+    "independentGroups": 6,
+    "rightWins": 2,
+    "leftWins": 0,
+    "ties": 4,
+    "mechanicalRateDifference": 0.3333333333333333,
+    "mechanicalClusterCI": {
+      "n": 6,
+      "groups": 6,
+      "estimate": 0.3333333333333333,
+      "low": 0.0,
+      "high": 0.6666666666666666,
+      "seed": 1729,
+      "iterations": 2000,
+      "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+    },
+    "differences": {
+      "calls": {
+        "n": 6,
+        "mean": 0,
+        "median": 0.0
+      },
+      "totalTokens": {
+        "n": 6,
+        "mean": -2229.5,
+        "median": -2241.5
+      },
+      "durationMs": {
+        "n": 6,
+        "mean": -4592.833333333333,
+        "median": -6922.5
+      },
+      "estimatedUSD": {
+        "n": 6,
+        "mean": -0.001088122,
+        "median": -0.0012143429999999999
+      }
+    },
+    "missingLeft": [],
+    "missingRight": [],
+    "incompatibleInputs": [],
+    "pendingCases": []
+  },
+  {
+    "stage": "test",
+    "split": "independent_test",
+    "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+    "graphVersion": "python-graph-v16",
+    "promptVersion": "evidence-agent-python-v16",
+    "left": "B",
+    "right": "C",
+    "n": 40,
+    "independentGroups": 34,
+    "rightWins": 1,
+    "leftWins": 1,
+    "ties": 38,
+    "mechanicalRateDifference": 0.0,
+    "mechanicalClusterCI": {
+      "n": 40,
+      "groups": 34,
+      "estimate": 0,
+      "low": -0.06670454545454545,
+      "high": 0.07894736842105263,
+      "seed": 1729,
+      "iterations": 2000,
+      "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+    },
+    "differences": {
+      "calls": {
+        "n": 40,
+        "mean": -0.05,
+        "median": 0.0
+      },
+      "totalTokens": {
+        "n": 40,
+        "mean": -278.75,
+        "median": 65.5
+      },
+      "durationMs": {
+        "n": 40,
+        "mean": -1222.725,
+        "median": 72.5
+      },
+      "estimatedUSD": {
+        "n": 40,
+        "mean": -0.00013813919999999997,
+        "median": -1.2900000000000043e-05
+      }
+    },
+    "missingLeft": [],
+    "missingRight": [],
+    "incompatibleInputs": [],
+    "pendingCases": []
+  },
+  {
+    "stage": "test",
+    "split": "independent_test",
+    "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+    "graphVersion": "python-graph-v16",
+    "promptVersion": "evidence-agent-python-v16",
+    "left": "B",
+    "right": "D",
+    "n": 40,
+    "independentGroups": 34,
+    "rightWins": 0,
+    "leftWins": 2,
+    "ties": 38,
+    "mechanicalRateDifference": -0.05,
+    "mechanicalClusterCI": {
+      "n": 40,
+      "groups": 34,
+      "estimate": -0.05,
+      "low": -0.13166785206258888,
+      "high": 0.0,
+      "seed": 1729,
+      "iterations": 2000,
+      "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+    },
+    "differences": {
+      "calls": {
+        "n": 40,
+        "mean": 0.625,
+        "median": 0.0
+      },
+      "totalTokens": {
+        "n": 40,
+        "mean": 2291.725,
+        "median": 1725.0
+      },
+      "durationMs": {
+        "n": 40,
+        "mean": 1165.6,
+        "median": 2719.0
+      },
+      "estimatedUSD": {
+        "n": 40,
+        "mean": 0.000296517825,
+        "median": 0.0004836959999999998
+      }
+    },
+    "missingLeft": [],
+    "missingRight": [],
+    "incompatibleInputs": [],
+    "pendingCases": []
+  },
+  {
+    "stage": "test",
+    "split": "independent_test",
+    "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+    "graphVersion": "python-graph-v16",
+    "promptVersion": "evidence-agent-python-v16",
+    "left": "B",
+    "right": "H",
+    "n": 40,
+    "independentGroups": 34,
+    "rightWins": 1,
+    "leftWins": 2,
+    "ties": 37,
+    "mechanicalRateDifference": -0.025,
+    "mechanicalClusterCI": {
+      "n": 40,
+      "groups": 34,
+      "estimate": -0.025,
+      "low": -0.10869565217391304,
+      "high": 0.05555555555555555,
+      "seed": 1729,
+      "iterations": 2000,
+      "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+    },
+    "differences": {
+      "calls": {
+        "n": 40,
+        "mean": 0.525,
+        "median": 0.0
+      },
+      "totalTokens": {
+        "n": 40,
+        "mean": 1570.175,
+        "median": 1619.5
+      },
+      "durationMs": {
+        "n": 40,
+        "mean": -616.05,
+        "median": 60.5
+      },
+      "estimatedUSD": {
+        "n": 40,
+        "mean": 2.848102499999999e-05,
+        "median": -8.489999999999998e-05
+      }
+    },
+    "missingLeft": [],
+    "missingRight": [],
+    "incompatibleInputs": [],
+    "pendingCases": []
+  },
+  {
+    "stage": "test",
+    "split": "independent_test",
+    "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+    "graphVersion": "python-graph-v16",
+    "promptVersion": "evidence-agent-python-v16",
+    "left": "C",
+    "right": "D",
+    "n": 40,
+    "independentGroups": 34,
+    "rightWins": 1,
+    "leftWins": 3,
+    "ties": 36,
+    "mechanicalRateDifference": -0.05,
+    "mechanicalClusterCI": {
+      "n": 40,
+      "groups": 34,
+      "estimate": -0.05,
+      "low": -0.15789473684210525,
+      "high": 0.044444444444444446,
+      "seed": 1729,
+      "iterations": 2000,
+      "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+    },
+    "differences": {
+      "calls": {
+        "n": 40,
+        "mean": 0.675,
+        "median": 0.5
+      },
+      "totalTokens": {
+        "n": 40,
+        "mean": 2570.475,
+        "median": 1661.5
+      },
+      "durationMs": {
+        "n": 40,
+        "mean": 2388.325,
+        "median": 1388.5
+      },
+      "estimatedUSD": {
+        "n": 40,
+        "mean": 0.000434657025,
+        "median": 0.00019922399999999977
+      }
+    },
+    "missingLeft": [],
+    "missingRight": [],
+    "incompatibleInputs": [],
+    "pendingCases": []
+  },
+  {
+    "stage": "test",
+    "split": "independent_test",
+    "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+    "graphVersion": "python-graph-v16",
+    "promptVersion": "evidence-agent-python-v16",
+    "left": "C",
+    "right": "H",
+    "n": 40,
+    "independentGroups": 34,
+    "rightWins": 1,
+    "leftWins": 2,
+    "ties": 37,
+    "mechanicalRateDifference": -0.025,
+    "mechanicalClusterCI": {
+      "n": 40,
+      "groups": 34,
+      "estimate": -0.025,
+      "low": -0.08333333333333333,
+      "high": 0.0,
+      "seed": 1729,
+      "iterations": 2000,
+      "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+    },
+    "differences": {
+      "calls": {
+        "n": 40,
+        "mean": 0.575,
+        "median": 0.0
+      },
+      "totalTokens": {
+        "n": 40,
+        "mean": 1848.925,
+        "median": 1877.0
+      },
+      "durationMs": {
+        "n": 40,
+        "mean": 606.675,
+        "median": 604.5
+      },
+      "estimatedUSD": {
+        "n": 40,
+        "mean": 0.00016662022499999997,
+        "median": 6.79350000000003e-05
+      }
+    },
+    "missingLeft": [],
+    "missingRight": [],
+    "incompatibleInputs": [],
+    "pendingCases": []
+  },
+  {
+    "stage": "test",
+    "split": "independent_test",
+    "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+    "graphVersion": "python-graph-v16",
+    "promptVersion": "evidence-agent-python-v16",
+    "left": "D",
+    "right": "H",
+    "n": 40,
+    "independentGroups": 34,
+    "rightWins": 3,
+    "leftWins": 2,
+    "ties": 35,
+    "mechanicalRateDifference": 0.025,
+    "mechanicalClusterCI": {
+      "n": 40,
+      "groups": 34,
+      "estimate": 0.025,
+      "low": -0.07900071123755334,
+      "high": 0.1388888888888889,
+      "seed": 1729,
+      "iterations": 2000,
+      "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+    },
+    "differences": {
+      "calls": {
+        "n": 40,
+        "mean": -0.1,
+        "median": 0.0
+      },
+      "totalTokens": {
+        "n": 40,
+        "mean": -721.55,
+        "median": -242.5
+      },
+      "durationMs": {
+        "n": 40,
+        "mean": -1781.65,
+        "median": -168.5
+      },
+      "estimatedUSD": {
+        "n": 40,
+        "mean": -0.0002680368,
+        "median": -4.949999999999985e-05
+      }
+    },
+    "missingLeft": [],
+    "missingRight": [],
+    "incompatibleInputs": [],
+    "pendingCases": []
+  }
+]

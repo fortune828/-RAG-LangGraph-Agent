@@ -1,0 +1,18 @@
+{
+  "sourceRows": "evaluation/reports/formal-20261010/retrieval/rows.json",
+  "sourceRowsSha256": "4e7c9908f7c88b1cbbec8300f0a3506c6bfccd44f6ca4bd769016d3bf26f07ee",
+  "sourceExactSha256": "13c98671627946fc9dfc5f3f1baa6031eabd222aaeddf2901db1fa1cf35386d4",
+  "runnerSha256": "017a5f91dfa92fe35fe5f76c0fe30488f5c5d5bffd3746a405a18e1a4c5d3e23",
+  "datasetHashes": {
+    "data.json": "402f639cee901060fe4bf053ef428260619d93ad83b754079f53738a0567bff3",
+    "labels.json": "329482c961c02b0565e7a3475569fdfff412d6a3e23dee7559905b41c3ec8d7a",
+    "continuous.json": "056f8dbdab1d881521e7fa67a145abc4acab643251a8cdae0473c134ecb350fe"
+  },
+  "relevanceFile": null,
+  "relevanceSha256": null,
+  "changed": "Scoring only. Original retrieval IDs, scores, queries, scope and timings preserved.",
+  "requestedTargetRecall": "Explicit requested-object AI reference set only. Each alternative is a relevant object; all-alternative recall is distinct from sufficient any-of evidence-group coverage.",
+  "semanticRecall": "Open semantic relevance remains non-exhaustive. Do not call requested-target recall general semantic recall.",
+  "precisionAtK": "Denominator is K, including unfilled slots. Unjudged or conflicting records yield unknown and bounds, not false negatives.",
+  "conflicts": "Authored positive vs independent irrelevant is preserved in conflicts.json and scored unknown. No forced agreement."
+}

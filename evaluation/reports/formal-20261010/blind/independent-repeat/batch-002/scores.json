@@ -1,0 +1,2335 @@
+{
+  "reviewer": {
+    "reviewerId": "formal-reviewer-c",
+    "kind": "AI",
+    "expertStatus": "non_expert",
+    "blind": true,
+    "independent": true
+  },
+  "reviewScope": {
+    "rubricVersion": "1.0",
+    "identityLimit": "独立 AI 非专家评阅，不是人工评分或专家 Gold。",
+    "limitations": [
+      "仅使用本批获授权材料；未进行外部训诂、版本或现实天气/修鞋工艺核验。",
+      "文义无法由包内证据核定时保留 unknown；现代类比不纳入传统支持分母。",
+      "本批均为单轮生活问题，无用户后续纠正可评；无技术无答案或 candidateOnly 样本。",
+      "未读取其他评阅，不以评阅一致性为目标；五维不求总分。"
+    ]
+  },
+  "results": [
+    {
+      "answerId": "Qf9c95fa552cc",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "已给出可用的条件分支：安全夹牢可阳台，易吹落/飘雨则室内；末尾额外流程使帮助不足，但核心比较已经回答。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "以“如果…没有雨”“若…会吹落”等条件判断阳台，并采用用户在家事实，没有把阳台遮挡、湿度说定。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "“与渐进、守正相联”及“止而巽”借作止与顺的大意可接受；引用篇目正确，未把生长比喻冒作注家原话。"
+            },
+            "integration": {
+              "value": 1,
+              "rationale": "树不是一天长成与床单慢干的对应较弱，不能推出“不追求一次到位反而少焦虑”；现实风、固定条件的比较则贴题。"
+            },
+            "conversation": {
+              "value": 1,
+              "rationale": "先说条件合适阳台更省心，末尾又提供“先室内再阳台；或者反过来”，主选变成互逆流程，削弱收尾。"
+            },
+            "helpfulness": {
+              "value": 1,
+              "rationale": "有用地比较通风与固定风险，但“最省心的折中方案”包含两种来回搬运顺序，未收敛为省心的默认行动。"
+            }
+          },
+          "errors": [
+            {
+              "type": "strained_analogy",
+              "quote": "山上的树不是一天长成，晾床单也顺着条件慢慢干，不追求一次到位，反而少焦虑",
+              "location": "paragraphs[2].text",
+              "reason": "树木生长与干衣效率只有泛泛时间关联，不能因此推出多阶段干燥更好或必然少焦虑。",
+              "dimensions": [
+                "integration"
+              ],
+              "certainty": "confirmed",
+              "severity": "minor"
+            },
+            {
+              "type": "unhelpful_expansion",
+              "quote": "先在室内晾衣架把床单大致沥水、摊开，等不滴水后，再拿到阳台借大风短时吹；或者反过来",
+              "location": "paragraphs[2].text",
+              "reason": "给出相反搬运流程而未说明选择标准，与用户求省心和前文“不来回折腾”有张力。",
+              "dimensions": [
+                "conversation",
+                "helpfulness"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence 与 cast；本批没有 referenceOnlyEvidence；未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 3,
+              "citationClaimOccurrencesReviewed": 3,
+              "traditionalAssertionsIdentified": 5,
+              "traditionalAssertionsReviewed": 5,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 5,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "渐·卦辞含所列引文",
+                "quote": "女归吉，利贞。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "女归吉，利贞。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "渐·彖传含所列引文",
+                "quote": "止而巽，动不穷也。",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "渐·大象含所列引文",
+                "quote": "山上有木，渐",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "山上有木，渐。君子以居贤德善俗。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "用来理解眼前的事，就是按部就班、守正而办，比来回折腾更省心",
+                "quote": "用来理解眼前的事，就是按部就班、守正而办，比来回折腾更省心",
+                "location": "paragraphs[0].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-judgment"
+                ],
+                "supportLabel": null,
+                "rationale": "明确标为眼前事务的应用；不要求女归原文直接讲晾晒，是否省心仍看流程。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "女归吉，利贞。"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "止而巽包含知止、顺应而动不穷的概括",
+                "quote": "可以理解成该停就停、顺势而为，别和天气硬顶，动作才不穷尽",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "“止”“巽”“动不穷”支持知止、顺应而能持续行动的概括；同句天气应用已另列现代类比，不纳入此传统命题。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "别和天气硬顶",
+                "quote": "别和天气硬顶",
+                "location": "paragraphs[1].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "这是按实际风雨调整晾晒的建议，所引只作宽泛知止、顺应的启发。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "山上的树不是一天长成，晾床单也顺着条件慢慢干，不追求一次到位，反而少焦虑",
+                "quote": "山上的树不是一天长成，晾床单也顺着条件慢慢干，不追求一次到位，反而少焦虑",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "树木生长与干燥过程只共享需时间，不能单独支持多阶段操作或心理效果。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "山上有木，渐。君子以居贤德善俗。"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [],
+                "assertion": "风山渐，本卦变卦都是渐，没有动爻",
+                "quote": "风山渐，本卦变卦都是渐，没有动爻",
+                "location": "paragraphs[0].text",
+                "layer": "attribution",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "supported",
+                "rationale": "与给定 cast 相符。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "provided_cast"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [],
+                "assertion": "像是提醒这件事宜“渐”不宜“急”",
+                "quote": "像是提醒这件事宜“渐”不宜“急”",
+                "location": "paragraphs[0].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [],
+                "supportLabel": null,
+                "rationale": "“像是提醒”表明启发，不是宣告静爻证明现实稳定。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Qd90e2d419cb5",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "基于局部损坏和快速可修给出先修主选，保留质量/安全例外；静爻推断不作为已验证现实依据。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "采用“只是开胶、其他地方还好、半小时能修”，换新例外使用“若”而未说用户鞋已整体老化。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "“与时偕行”释顺应时机、“利有攸往”释行动有利基本忠实；改过与修补在本段是现代借喻而非古词定义。"
+            },
+            "integration": {
+              "value": 1,
+              "rationale": "修补保留可用物的启发合理，但末段“无动爻，局面没有强烈变动信号”拿占象判现实，是局部越界。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "先修结论明确，末段用牢固与走路安全作例外，能自然收尾，不要求用户处理额外问题。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "给出今天先修及不牢固、影响安全则换的实用条件，回应了当天二选一。"
+            }
+          },
+          "errors": [
+            {
+              "type": "unsupported_prediction",
+              "quote": "益卦无动爻，局面没有强烈变动信号",
+              "location": "paragraphs[3].text",
+              "reason": "无动爻只描述起卦状态，不能证明鞋况或选择局面不会明显变化。",
+              "dimensions": [
+                "integration"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence 与 cast；本批没有 referenceOnlyEvidence；未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 3,
+              "citationClaimOccurrencesReviewed": 3,
+              "traditionalAssertionsIdentified": 7,
+              "traditionalAssertionsReviewed": 7,
+              "uncitedTraditionalAssertionsIdentified": 2,
+              "uncitedTraditionalAssertionsReviewed": 2,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 6,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 1
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "益·卦辞含所列引文",
+                "quote": "利有攸往，利涉大川。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-42-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "利有攸往，利涉大川。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "益·彖传含所列引文",
+                "quote": "凡益之道，与时偕行。",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-42-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "益，损上益下，民说无疆；自上下下，其道大光。“利有攸往”，中正有庆；“利涉大川”，木道乃行。益动而巽，日进无疆。天施地生，其益无方。凡益之道，与时偕行。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "益·大象含所列引文",
+                "quote": "君子以见善则迁，有过则改。",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-42-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "风雷，益。君子以见善则迁，有过则改。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "先修是可行且有益的选择",
+                "quote": "先修是可行且有益的选择",
+                "location": "paragraphs[0].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-42-judgment"
+                ],
+                "supportLabel": null,
+                "rationale": "来自鞋其他部位尚好和可快速修的现实取舍；古文可启发行事，不能独立保证维修效果。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "利有攸往，利涉大川。"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "益卦辞有利行动、涉大川之意",
+                "quote": "有行动有利、可涉险前行的意味",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-42-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "利有攸往、利涉大川支持方向性概括，回答随后按修复可靠性设条件。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "利有攸往，利涉大川。"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "与时偕行是增益随时而行",
+                "quote": "意思是增益要顺应时机",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-42-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附彖传直接相符。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "益，损上益下，民说无疆；自上下下，其道大光。“利有攸往”，中正有庆；“利涉大川”，木道乃行。益动而巽，日进无疆。天施地生，其益无方。凡益之道，与时偕行。"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "花半小时修补是“与时偕行”的增益",
+                "quote": "花半小时修补是“与时偕行”的增益",
+                "location": "paragraphs[1].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-42-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "属把握当下可修条件的现代启发，并非原典的修鞋结论。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "益，损上益下，民说无疆；自上下下，其道大光。“利有攸往”，中正有庆；“利涉大川”，木道乃行。益动而巽，日进无疆。天施地生，其益无方。凡益之道，与时偕行。"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "及时修补就是改过",
+                "quote": "及时修补就是改过",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-42-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "将改善自身缺点借为修物的日常类比，措辞略等同，但没有冒称原典对象是鞋。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "风雷，益。君子以见善则迁，有过则改。"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [],
+                "assertion": "益卦无动爻",
+                "quote": "益卦无动爻",
+                "location": "paragraphs[3].text",
+                "layer": "attribution",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "supported",
+                "rationale": "与 cast 相符。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "provided_cast"
+              },
+              {
+                "claimId": "C10",
+                "occurrenceIds": [],
+                "assertion": "静爻表示现实没有强烈变动信号",
+                "quote": "局面没有强烈变动信号",
+                "location": "paragraphs[3].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "包内没有此静爻占法的文献依据。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "insufficient_reference"
+              },
+              {
+                "claimId": "C11",
+                "occurrenceIds": [],
+                "assertion": "局面没有强烈变动信号，你可以先修，再根据修后情况决定是否换新",
+                "quote": "局面没有强烈变动信号，你可以先修，再根据修后情况决定是否换新",
+                "location": "paragraphs[3].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [],
+                "supportLabel": null,
+                "rationale": "先修再观察可由事实决定，不能让静爻为现实不变背书。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Qb45707bde773",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "给出室内默认倾向、阳台安全条件和通风措施，已回答基本取舍；并列收尾仍使实际帮助不充分。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "“如果…没有雨…牢固夹子”与“室内若闷湿”均保留条件，准确承接用户在家且求省心。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "“渐之进也”概括循序、引用止而巽及大象均可核对；“这里可引申”把日常应用与原典区分开。"
+            },
+            "integration": {
+              "value": 1,
+              "rationale": "“进得位”配床单位置、“止而巽”配止住不稳再顺风通风，逐字联想偏装饰；“无动爻宜守常”缺独立根据。"
+            },
+            "conversation": {
+              "value": 1,
+              "rationale": "末段“且阳台不飘雨、夹子牢固”后仍说“优先室内，或阳台内侧”，把推荐并列且反复论证，收尾不够明确。"
+            },
+            "helpfulness": {
+              "value": 1,
+              "rationale": "固定、展开、通风建议可执行，但用户要省心选择，最终仍给室内或阳台并列，未说明已安全阳台与室内如何择一。"
+            }
+          },
+          "errors": [
+            {
+              "type": "strained_analogy",
+              "quote": "先止住不稳，再顺风通风，才不折腾",
+              "location": "paragraphs[2].text",
+              "reason": "把止、巽拆配成衣架稳定与风，属于文字对应，所引未提供晾晒步骤的具体依据。",
+              "dimensions": [
+                "integration"
+              ],
+              "certainty": "confirmed",
+              "severity": "minor"
+            },
+            {
+              "type": "unhelpful_expansion",
+              "quote": "优先室内晾衣架，或阳台内侧有顶、避风、能夹牢的位置",
+              "location": "paragraphs[2].text",
+              "reason": "在已列出阳台安全条件后仍并列两处，没有补充选择标准，削弱“省心”问题所需的明确收尾。",
+              "dimensions": [
+                "conversation",
+                "helpfulness"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence 与 cast；本批没有 referenceOnlyEvidence；未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 4,
+              "citationClaimOccurrencesReviewed": 4,
+              "traditionalAssertionsIdentified": 7,
+              "traditionalAssertionsReviewed": 7,
+              "uncitedTraditionalAssertionsIdentified": 2,
+              "uncitedTraditionalAssertionsReviewed": 2,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 6,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 1
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "渐·卦辞含所列引文",
+                "quote": "女归吉，利贞。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "女归吉，利贞。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "渐·彖传含所列引文",
+                "quote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。",
+                "location": "paragraphs[0].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "渐·大象含所列引文",
+                "quote": "山上有木，渐。君子以居贤德善俗。",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "山上有木，渐。君子以居贤德善俗。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "渐·彖传含所列引文",
+                "quote": "止而巽，动不穷也。",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "渐有渐进之意",
+                "quote": "彖传也把“渐之进也”讲成循序而进",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "渐之进也、进以正与止而巽支持渐进、守正的方向性概括。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "放到晾晒上，就是先把位置选对、固定好，再让风慢慢带走水分",
+                "quote": "放到晾晒上，就是先把位置选对、固定好，再让风慢慢带走水分",
+                "location": "paragraphs[0].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "明确现代应用；固定通风靠现实原理，进得位与床单位置的对应较弱。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "这里可引申为：把日常安排得安稳、有序，比一味求快更符合“渐”的意思",
+                "quote": "这里可引申为：把日常安排得安稳、有序，比一味求快更符合“渐”的意思",
+                "location": "paragraphs[1].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "“可引申”已表明借喻，不能因原典谈德俗不谈床单就直接判文义错。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "山上有木，渐。君子以居贤德善俗。"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "先止住不稳，再顺风通风，才不折腾",
+                "quote": "先止住不稳，再顺风通风，才不折腾",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "现代逐字对应较牵强，不能把止而巽当成固定后通风的原始规定。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [],
+                "assertion": "渐卦无动爻",
+                "quote": "渐卦无动爻",
+                "location": "paragraphs[2].text",
+                "layer": "attribution",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "supported",
+                "rationale": "与给定 cast 相符。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "provided_cast"
+              },
+              {
+                "claimId": "C10",
+                "occurrenceIds": [],
+                "assertion": "静爻宜守常渐进",
+                "quote": "渐卦无动爻，宜守常、渐进",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "渐进有卦名和彖传背景，但无动爻必宜守常的额外占法无本包依据。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "insufficient_reference"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Qeebe2ad4007d",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "先修及验收/换新条件足以回应当前需要；预设低费用的局部事实缺陷另记，不视作已确定性价比。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 1,
+              "rationale": "正确采用局部开胶与半小时，却直接写“师傅能半小时修好、费用不高”，用户没有报价信息。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "卦辞、大象与“凡益之道，与时偕行”引用正确，现代“小投入持续用”未被冒称特定注家训释。"
+            },
+            "integration": {
+              "value": 1,
+              "rationale": "由益借维修改善有相关结构，也说耐用性无法由卦象保证；但小投入和“费用不高”让实际比较超出已知条件。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "结论、检查、复发时更换顺次展开，观察期标“比如”，并非强制日数，语气适度。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "建议先修、检查平整和弯折牢靠、出现复发或安全问题换新，给出有效下一步。"
+            }
+          },
+          "errors": [
+            {
+              "type": "fabricated_fact",
+              "quote": "师傅能半小时修好、费用不高",
+              "location": "paragraphs[1].text",
+              "reason": "只给出了工时，未给维修费；低费用不得当作用户已知事实。",
+              "dimensions": [
+                "understanding",
+                "integration"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence 与 cast；本批没有 referenceOnlyEvidence；未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 3,
+              "citationClaimOccurrencesReviewed": 3,
+              "traditionalAssertionsIdentified": 5,
+              "traditionalAssertionsReviewed": 5,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 5,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "益·卦辞含所列引文",
+                "quote": "利有攸往，利涉大川。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-42-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "利有攸往，利涉大川。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "益·大象含所列引文",
+                "quote": "君子以见善则迁，有过则改。",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-42-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "风雷，益。君子以见善则迁，有过则改。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "益·彖传含所列引文",
+                "quote": "凡益之道，与时偕行。",
+                "location": "paragraphs[1].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-42-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "益，损上益下，民说无疆；自上下下，其道大光。“利有攸往”，中正有庆；“利涉大川”，木道乃行。益动而巽，日进无疆。天施地生，其益无方。凡益之道，与时偕行。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "整体偏向“以较小投入换回持续使用”",
+                "quote": "整体偏向“以较小投入换回持续使用”",
+                "location": "paragraphs[0].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-42-judgment"
+                ],
+                "supportLabel": null,
+                "rationale": "属于益卦的现代维修视角，不是卦名本身足以确定小投入或持续耐用。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "利有攸往，利涉大川。"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "今天先修更合算，也符合增益而非轻易弃置的思路",
+                "quote": "今天先修更合算，也符合增益而非轻易弃置的思路",
+                "location": "paragraphs[0].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-42-judgment"
+                ],
+                "supportLabel": null,
+                "rationale": "局部可修支持先考虑维修，是否更合算还要费用；所引不直接比较买鞋与修鞋。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "利有攸往，利涉大川。"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "开胶是已经显现的小问题，及时修补可避免扩大",
+                "quote": "开胶是已经显现的小问题，及时修补可避免扩大",
+                "location": "paragraphs[1].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-42-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "把见善改过借为及时处理小毛病，是合理启发，非古文关于鞋胶的经验断言。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "风雷，益。君子以见善则迁，有过则改。"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "与时偕行强调按时机条件判断",
+                "quote": "所以判断还要看时机和实际寿命",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-42-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与时相应有彖传依据，鞋的实际寿命属现代判断对象，不说经典已测得寿命。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "益，损上益下，民说无疆；自上下下，其道大光。“利有攸往”，中正有庆；“利涉大川”，木道乃行。益动而巽，日进无疆。天施地生，其益无方。凡益之道，与时偕行。"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [],
+                "assertion": "这次卦象是风雷益，无动爻，本变皆为益",
+                "quote": "这次卦象是风雷益，无动爻，本变皆为益",
+                "location": "paragraphs[0].text",
+                "layer": "attribution",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "supported",
+                "rationale": "与本答 cast 相符；此项不延伸为现实稳定或修后必耐用。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "provided_cast"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Qde299dea7575",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": false,
+      "taskSuccessReason": "核心比较被“换新反而扩大险”、师傅承诺不能全信及未给定小成本支撑，虽有验收建议，修换判断仍有决定性根据缺口。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 1,
+              "rationale": "准确识别局部开胶，但“用很小的代价”“先花小钱”预设维修价低，且“把险扩大”给换新添加未提供的后果。"
+            },
+            "knowledge": {
+              "value": 1,
+              "rationale": "刚掩释阳刚被掩、困中不失亨大体相符；“有言不信”变为不轻信他人，“困卦不妄动不浪费”缺依据。"
+            },
+            "integration": {
+              "value": 0,
+              "rationale": "开胶对应刚掩，又说换新是“把险扩大”、师傅的话“不能全信”，占象主导了无事实支撑的诊断与信任判断。"
+            },
+            "conversation": {
+              "value": 1,
+              "rationale": "反复渲染师傅承诺不可全信、是否随便粘，不是用户已有顾虑；“不贵也不便宜”又增加不清楚的筛选条件。"
+            },
+            "helpfulness": {
+              "value": 1,
+              "rationale": "先修、观察牢固与安全有用，但关键依据是低价假设和换新扩大风险的断言，无法可靠完成取舍。"
+            }
+          },
+          "errors": [
+            {
+              "type": "wrong_classical_meaning",
+              "quote": "而不轻信空言",
+              "location": "paragraphs[0].text",
+              "reason": "所附彖传以尚口释有言不信，不直接等于对他人空言的警惕；此处随后用来质疑师傅。",
+              "dimensions": [
+                "knowledge"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            },
+            {
+              "type": "scope_overgeneralization",
+              "quote": "符合困卦“不妄动、不浪费”的取向",
+              "location": "paragraphs[0].text",
+              "reason": "所附困卦原文没有把不浪费、避免换物规定为总体取向。",
+              "dimensions": [
+                "knowledge"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            },
+            {
+              "type": "fabricated_fact",
+              "quote": "用很小的代价就能让常穿的鞋恢复功能",
+              "location": "paragraphs[0].text",
+              "reason": "只有半小时工时与可修说法，未给报价及实际修后效果。",
+              "dimensions": [
+                "understanding"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            },
+            {
+              "type": "strained_analogy",
+              "quote": "若因为一处开胶就整双换掉，反而是把“险”扩大了",
+              "location": "paragraphs[1].text",
+              "reason": "用卦内险替换新赋予更大风险，未比较费用、安全和寿命，属于强配象。",
+              "dimensions": [
+                "integration",
+                "helpfulness"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            },
+            {
+              "type": "unhelpful_expansion",
+              "quote": "这句话本身不能全信，你得看实际",
+              "location": "paragraphs[2].text",
+              "reason": "核实效果合理，但将师傅普通工时说明先定为不能全信，使简单决策偏向无根据的信任问题。",
+              "dimensions": [
+                "conversation"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence 与 cast；本批没有 referenceOnlyEvidence；未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 3,
+              "citationClaimOccurrencesReviewed": 3,
+              "traditionalAssertionsIdentified": 7,
+              "traditionalAssertionsReviewed": 7,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 4,
+              "partial": 2,
+              "unsupported": 1,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "困·卦辞含所列引文",
+                "quote": "亨。贞，大人吉，无咎；有言不信。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-47-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "亨。贞，大人吉，无咎；有言不信。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "困·彖传含所列引文",
+                "quote": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-47-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "困·大象含所列引文",
+                "quote": "泽无水，困。君子以致命遂志。",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-47-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "泽无水，困。君子以致命遂志。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "困中守正可亨，且有言不信意为不轻信他人空言",
+                "quote": "意思是困境中仍有通达的可能，关键在于守正、做恰当的判断，而不轻信空言",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-47-judgment",
+                  "zy-47-tuan"
+                ],
+                "supportLabel": "partial",
+                "rationale": "困中可亨、贞有依据；有言不信与尚口乃穷未直接支持“不要相信别人”的转义。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "亨。贞，大人吉，无咎；有言不信。 / 困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "刚掩为阳刚受掩，险以说而困不失亨",
+                "quote": "说的是阳刚被掩蔽，身处险境仍能保持和悦、不丢掉内在的通达，这才算有智慧",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-47-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "刚掩、险以说、困不失亨与其唯君子乎支持此通俗概括，“有智慧”为宽泛转述。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "致命遂志是资源紧张时优先分配力气",
+                "quote": "资源紧张时要把力气用在真正重要的目标上",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-47-xiang"
+                ],
+                "supportLabel": "partial",
+                "rationale": "遂志支持守住目标，但原文没有资源紧张时优先级分配的直接说明；致命细义无注家参考。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "泽无水，困。君子以致命遂志。"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [],
+                "assertion": "困卦总体主张不妄动不浪费",
+                "quote": "困卦“不妄动、不浪费”的取向",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-47-judgment",
+                  "zy-47-tuan",
+                  "zy-47-xiang"
+                ],
+                "supportLabel": "unsupported",
+                "rationale": "本包卦辞、彖传讲困亨、贞、尚口；大象讲致命遂志，没有不浪费或不换物之义。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "亨。贞，大人吉，无咎；有言不信。 / 困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。 / 泽无水，困。君子以致命遂志。"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "你的鞋开胶，像是“刚掩”——鞋底和鞋面的连接被局部破坏了，但主体没坏",
+                "quote": "你的鞋开胶，像是“刚掩”——鞋底和鞋面的连接被局部破坏了，但主体没坏",
+                "location": "paragraphs[1].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-47-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "“像是”是比喻，不按古文没有鞋而扣分；但掩蔽与连接脱胶结构相似性弱。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "若因为一处开胶就整双换掉，反而是把“险”扩大了",
+                "quote": "若因为一处开胶就整双换掉，反而是把“险”扩大了",
+                "location": "paragraphs[1].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-47-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "不是已知现实后果；用象义认定换新更险，不能支持取舍。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。"
+              },
+              {
+                "claimId": "C10",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "师傅说半小时能修，这句话本身不能全信",
+                "quote": "师傅说半小时能修，这句话本身不能全信",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-47-judgment"
+                ],
+                "supportLabel": null,
+                "rationale": "有言不信不能证明师傅话的可信度；应据工艺或实际行为判断。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "亨。贞，大人吉，无咎；有言不信。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q926c31e5dd51",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "给出室内主选和通风操作，可满足基本安排；空间假设、词义与类比不足保留为评分缺陷。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 1,
+              "rationale": "“下午你一直在屋”承接已知事实，但“室内晾衣架虽然空间有限”把未给定的室内空间说定。"
+            },
+            "knowledge": {
+              "value": 1,
+              "rationale": "渐进守正概括可由彖传辅助核对；把“居贤德善俗”解释为“把东西安顿在稳妥的位置”偏离德与俗的对象。"
+            },
+            "integration": {
+              "value": 1,
+              "rationale": "以渐进启发不急可理解，但由德俗转物件安放和半干后搬阳台的对应不足，并未说明这些步骤实际更省心。"
+            },
+            "conversation": {
+              "value": 1,
+              "rationale": "先连续解释象义再给场景选择，且另加半干搬动，实际推进被弱相关解释和额外流程分散。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "最终明确室内、展开与通风，阳台只是夹牢后的可选辅助，核心可执行建议已有。"
+            }
+          },
+          "errors": [
+            {
+              "type": "fabricated_fact",
+              "quote": "室内晾衣架虽然空间有限",
+              "location": "paragraphs[3].text",
+              "reason": "用户只说有晾衣架，没有提供大小或室内空间限制。",
+              "dimensions": [
+                "understanding"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            },
+            {
+              "type": "wrong_classical_meaning",
+              "quote": "这里可以理解为把东西安顿在稳妥的位置，慢慢养成好习惯",
+              "location": "paragraphs[2].text",
+              "reason": "大象以贤德和风俗为对象，不能把居直接释为摆放东西；好习惯只与德俗方向部分相关。",
+              "dimensions": [
+                "knowledge"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            },
+            {
+              "type": "strained_analogy",
+              "quote": "把东西安顿在稳妥的位置",
+              "location": "paragraphs[2].text",
+              "reason": "德俗修养到床单物理位置主要由“居”逐字配对，缺少贴切结构。",
+              "dimensions": [
+                "integration"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            },
+            {
+              "type": "unhelpful_expansion",
+              "quote": "可等室内晾到半干，再用夹子固定到阳台短时吹风",
+              "location": "paragraphs[4].text",
+              "reason": "未说明为何必须先等半干；对只求省心的选择增加搬运与巡视。",
+              "dimensions": [
+                "conversation"
+              ],
+              "certainty": "confirmed",
+              "severity": "minor"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence 与 cast；本批没有 referenceOnlyEvidence；未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 4,
+              "citationClaimOccurrencesReviewed": 4,
+              "traditionalAssertionsIdentified": 7,
+              "traditionalAssertionsReviewed": 7,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 5,
+              "partial": 2,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "渐·卦辞含所列引文",
+                "quote": "女归吉，利贞。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "女归吉，利贞。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "渐·彖传含所列引文",
+                "quote": "进得位，往有功也；进以正，可以正邦也。",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "渐·大象含所列引文",
+                "quote": "山上有木，渐。君子以居贤德善俗。",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "山上有木，渐。君子以居贤德善俗。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p4.c0"
+                ],
+                "assertion": "渐·彖传含所列引文",
+                "quote": "止而巽，动不穷也。",
+                "location": "paragraphs[4].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "渐卦有渐进、守正之意",
+                "quote": "渐卦讲的是循序渐进、守正而行",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-judgment",
+                  "zy-53-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所引卦辞含利贞，完整渐进解释还由本答实际获得的彖传“渐之进也”“进以正”辅助支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "女归吉，利贞。 / 渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "放在晾床单这件事上，就是选择合乎条件、按部就班的方式，往往比硬求快更有效",
+                "quote": "放在晾床单这件事上，就是选择合乎条件、按部就班的方式，往往比硬求快更有效",
+                "location": "paragraphs[1].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "明确为现代引申，可提醒看条件；不以正邦文义直接证明干衣效率。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "居贤德善俗意为安顿东西、养成好习惯",
+                "quote": "这里可以理解为把东西安顿在稳妥的位置，慢慢养成好习惯",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-xiang"
+                ],
+                "supportLabel": "partial",
+                "rationale": "养成良好德俗可与好习惯部分相通，但所引没有安顿物品位置的含义。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "山上有木，渐。君子以居贤德善俗。"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "而不是任由风势摆布",
+                "quote": "而不是任由风势摆布",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "是晾晒控制风险的现代建议，不属于原典关于风势的断言。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "山上有木，渐。君子以居贤德善俗。"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [
+                  "delivered.p4.c0"
+                ],
+                "assertion": "止而巽、动不穷意味着有止有顺能免出岔子",
+                "quote": "有止有顺，才不容易出岔子",
+                "location": "paragraphs[4].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": "partial",
+                "rationale": "止顺与动能持续有原文依据，但“不出岔子”并不等于动不穷，属于较宽的安全化概括。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q83ed017c324b",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": false,
+      "taskSuccessReason": "核心鞋况和修复价值判断用了卦象及受力位置作确定依据，未给定合脚也被当事实，虽提供检查项目仍不足以可靠完成判断。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 1,
+              "rationale": "承接其他部位还好，却写“既然…常穿、合脚”，用户未确认合脚；不能因“能想到先修”证明鞋体状态。"
+            },
+            "knowledge": {
+              "value": 1,
+              "rationale": "引用可核对，但“贞、大人吉”被简化为只要稳妥就无咎；静卦指局部困境而非整体崩坏缺本包占法支持。"
+            },
+            "integration": {
+              "value": 0,
+              "rationale": "“刚掩”被等同开胶且确认结构未瓦解，最后又断言弯折点修理只是延后，象义和未检验的鞋况主导结论。"
+            },
+            "conversation": {
+              "value": 1,
+              "rationale": "验收建议能承接，但“不是同时惦记着要不要换新”把用户正常比较说成需止住的分心，展开带规训意味。"
+            },
+            "helpfulness": {
+              "value": 1,
+              "rationale": "修后弯折牢固、接缝老化检查有用；然而“只要在反复受力点，这次修只是延后”过早否定修复耐用性，影响关键判断。"
+            }
+          },
+          "errors": [
+            {
+              "type": "fabricated_fact",
+              "quote": "既然这双鞋你常穿、合脚",
+              "location": "paragraphs[3].text",
+              "reason": "常穿已知，合脚没有提供，不应并列为既定前提。",
+              "dimensions": [
+                "understanding"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            },
+            {
+              "type": "strained_analogy",
+              "quote": "正合开胶这种情形：关键处被掩盖、卡住，但底下结构并未瓦解",
+              "location": "paragraphs[0].text",
+              "reason": "刚掩不能充当鞋体结构诊断；脱胶与掩蔽也缺少精确对应。",
+              "dimensions": [
+                "integration"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            },
+            {
+              "type": "wrong_classical_meaning",
+              "quote": "守着稳妥、守正的做法就能无咎",
+              "location": "paragraphs[1].text",
+              "reason": "引用有“大人吉”，彖传以刚中、君子立条件，不能把一般稳妥做法说成足够保证。",
+              "dimensions": [
+                "knowledge"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            },
+            {
+              "type": "unsupported_prediction",
+              "quote": "或开胶处本就是反复受力的弯折点，那这次修只是延后",
+              "location": "paragraphs[4].text",
+              "reason": "未给胶材、工艺、老化资料，受力位置本身不能确定维修只能拖延。",
+              "dimensions": [
+                "integration",
+                "helpfulness"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            },
+            {
+              "type": "unhelpful_expansion",
+              "quote": "而不是同时惦记着要不要换新",
+              "location": "paragraphs[3].text",
+              "reason": "用户正在做合理修换比较，没有证据表明需要以守志为由压下比较。",
+              "dimensions": [
+                "conversation"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence 与 cast；本批没有 referenceOnlyEvidence；未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 6,
+              "citationClaimOccurrencesReviewed": 6,
+              "traditionalAssertionsIdentified": 10,
+              "traditionalAssertionsReviewed": 10,
+              "uncitedTraditionalAssertionsIdentified": 3,
+              "uncitedTraditionalAssertionsReviewed": 3,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 8,
+              "partial": 1,
+              "unsupported": 0,
+              "unknown": 1
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "困·彖传含所列引文",
+                "quote": "困，刚掩也。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-47-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p1.c0",
+                  "delivered.p4.c0"
+                ],
+                "assertion": "困·彖传含所列引文",
+                "quote": "困而不失其所亨",
+                "location": "paragraphs[1].citations[0].quote; paragraphs[4].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-47-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "normalized",
+                "evidenceQuote": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "困·卦辞含所列引文",
+                "quote": "贞，大人吉，无咎",
+                "location": "paragraphs[1].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-47-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "亨。贞，大人吉，无咎；有言不信。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "困·卦辞含所列引文",
+                "quote": "有言不信",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-47-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "亨。贞，大人吉，无咎；有言不信。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p3.c0"
+                ],
+                "assertion": "困·大象含所列引文",
+                "quote": "泽无水，困。君子以致命遂志。",
+                "location": "paragraphs[3].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-47-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "泽无水，困。君子以致命遂志。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "正合开胶这种情形：关键处被掩盖、卡住，但底下结构并未瓦解",
+                "quote": "正合开胶这种情形：关键处被掩盖、卡住，但底下结构并未瓦解",
+                "location": "paragraphs[0].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-47-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "这是鞋况与刚掩的现代等同，引用不能核定实际结构未坏；用户只说其余地方尚好。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "你能想到先修，正说明这双鞋主体还在",
+                "quote": "你能想到先修，正说明这双鞋主体还在",
+                "location": "paragraphs[1].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-47-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "“想到先修”并不是物理状态的证据；鞋体其他处尚好的用户陈述才是有限依据。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "一般稳妥守正就足以无咎",
+                "quote": "意思是守着稳妥、守正的做法就能无咎",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-47-judgment",
+                  "zy-47-tuan"
+                ],
+                "supportLabel": "partial",
+                "rationale": "守正有文据，但大人吉/以刚中/其唯君子乎的条件未被保留，且不能提供现代结果保证。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "亨。贞，大人吉，无咎；有言不信。 / 困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "不必因为一处开胶就把整双鞋判死刑",
+                "quote": "不必因为一处开胶就把整双鞋判死刑",
+                "location": "paragraphs[1].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-47-judgment"
+                ],
+                "supportLabel": null,
+                "rationale": "作为保留修复选项的建议有现实根据，但不是爻辞对鞋寿命的结论。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "亨。贞，大人吉，无咎；有言不信。"
+              },
+              {
+                "claimId": "C10",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "师傅说的半小时是口头承诺，要看实际",
+                "quote": "师傅说的半小时是口头承诺，要看实际",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-47-judgment"
+                ],
+                "supportLabel": null,
+                "rationale": "核实维修效果本身合理；所引有言不信不能证明师傅承诺真伪。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "亨。贞，大人吉，无咎；有言不信。"
+              },
+              {
+                "claimId": "C11",
+                "occurrenceIds": [
+                  "delivered.p3.c0"
+                ],
+                "assertion": "用在你这件小事上，我取它的意思是：既然这双鞋你常穿、合脚，就集中把眼下这处开胶解决掉，而不是同时惦记着要不要换新",
+                "quote": "用在你这件小事上，我取它的意思是：既然这双鞋你常穿、合脚，就集中把眼下这处开胶解决掉，而不是同时惦记着要不要换新",
+                "location": "paragraphs[3].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-47-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "“我取它的意思”表明选取现代启发，不将集中修鞋算作致命原义；不过合脚未知，也不宜禁止正常比较。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "泽无水，困。君子以致命遂志。"
+              },
+              {
+                "claimId": "C12",
+                "occurrenceIds": [
+                  "delivered.p4.c0"
+                ],
+                "assertion": "我倾向今天先修",
+                "quote": "我倾向今天先修",
+                "location": "paragraphs[4].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-47-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "推荐须依鞋况、费用和工艺，而困不失亨只可作有困难仍可处理的宽泛启发。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。"
+              },
+              {
+                "claimId": "C13",
+                "occurrenceIds": [],
+                "assertion": "困彖传以尚口乃穷释有言不信",
+                "quote": "彖传也解释说「尚口乃穷也」",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-47-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "实际 evidence 中有对应原句，虽此处没有独立 citationClaims 条目仍核对。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。"
+              },
+              {
+                "claimId": "C14",
+                "occurrenceIds": [
+                  "delivered.p3.c0"
+                ],
+                "assertion": "泽无水表现枯竭受困之象",
+                "quote": "泽里没水，是资源看似枯竭的象",
+                "location": "paragraphs[3].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-47-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "泽无水、困支持枯竭困乏的宽泛概括，不等于用户经济匮乏。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "泽无水，困。君子以致命遂志。"
+              },
+              {
+                "claimId": "C15",
+                "occurrenceIds": [],
+                "assertion": "卦象为泽水困，静卦无动爻",
+                "quote": "卦象为泽水困，静卦无动爻",
+                "location": "paragraphs[0].text",
+                "layer": "attribution",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "supported",
+                "rationale": "与 cast 中困、changingIndices 为空相符。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "provided_cast"
+              },
+              {
+                "claimId": "C16",
+                "occurrenceIds": [],
+                "assertion": "困静卦能够区分局部问题与整体崩坏",
+                "quote": "静卦无动爻，指向的是一种被局部问题困住的处境，而非整体崩坏",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "包内未提供这种静卦判断范围或程度的传统规则。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "insufficient_reference"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q6bb9d0d191d7",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "先修主选基于局部损坏与可快速修复，附现实效果边界和换新条件；当天有空的轻微推定单列。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 1,
+              "rationale": "其他部位尚好、半小时可修均承接，但“今天师傅有空”由修理时长推成了当天档期，原问未明确。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "“利于有所行动”“增益之道要顺应时机”与卦辞彖传相符，篇目和引文均正确。"
+            },
+            "integration": {
+              "value": 2,
+              "rationale": "以小修保留可用物、把改过借作处理毛病，是可理解的改善类比；limitations 明说不替代质量与安全判断。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "先给“今天先修”，再说明时机和复发例外，最后划清卦象作用，能自然完成简单选择。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "明确先修，复发或安全有问题再换，同时尊重用户若本想换新的偏好，提供足够实用判断。"
+            }
+          },
+          "errors": [
+            {
+              "type": "fabricated_fact",
+              "quote": "今天师傅有空",
+              "location": "paragraphs[1].text",
+              "reason": "半小时能修说明工时，不必然说明今天有接单空档；题目虽倾向当天决策，仍不宜说成已确认事实。",
+              "dimensions": [
+                "understanding"
+              ],
+              "certainty": "suspected",
+              "severity": "minor"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence 与 cast；本批没有 referenceOnlyEvidence；未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 3,
+              "citationClaimOccurrencesReviewed": 3,
+              "traditionalAssertionsIdentified": 5,
+              "traditionalAssertionsReviewed": 5,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 5,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "益·卦辞含所列引文",
+                "quote": "利有攸往，利涉大川。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-42-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "利有攸往，利涉大川。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "益·彖传含所列引文",
+                "quote": "凡益之道，与时偕行。",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-42-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "益，损上益下，民说无疆；自上下下，其道大光。“利有攸往”，中正有庆；“利涉大川”，木道乃行。益动而巽，日进无疆。天施地生，其益无方。凡益之道，与时偕行。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "益·大象含所列引文",
+                "quote": "君子以见善则迁，有过则改。",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-42-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "风雷，益。君子以见善则迁，有过则改。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "益卦辞利于有所往、涉大川",
+                "quote": "利于有所行动，也利于渡过大川、做该做的事",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-42-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "利有攸往、利涉大川与概括相符，“做该做的事”为宽泛解释而非新增强制程序。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "利有攸往，利涉大川。"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "与时偕行即应时而行",
+                "quote": "增益之道要顺应时机",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-42-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与实际彖传“凡益之道，与时偕行”一致。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "益，损上益下，民说无疆；自上下下，其道大光。“利有攸往”，中正有庆；“利涉大川”，木道乃行。益动而巽，日进无疆。天施地生，其益无方。凡益之道，与时偕行。"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "开胶是小毛病，及时送去修补，正是改过迁善的日常实践",
+                "quote": "开胶是小毛病，及时送去修补，正是改过迁善的日常实践",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-42-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "现代类比借改善缺点启发维护物品，未声称古文原义是修鞋；其质量由实际维修判断。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "风雷，益。君子以见善则迁，有过则改。"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

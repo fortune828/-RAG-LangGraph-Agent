@@ -1,0 +1,2290 @@
+# 匿名完整回答材料
+
+原始输入、完整答复及原文保留。机械状态不代表语义质量；交付与候选分别评阅。
+
+## Qcdd0da716341 · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 我在读屯卦九五，王弼为什么把“屯其膏”和不能广泛施予联系起来？
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    7,
+    8,
+    8,
+    8,
+    7,
+    8
+  ],
+  "original": {
+    "binary": "100010",
+    "name": "水雷屯",
+    "number": 3,
+    "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+  },
+  "changed": {
+    "binary": "100010",
+    "name": "水雷屯",
+    "number": 3,
+    "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+  },
+  "originalBinary": "100010",
+  "changedBinary": "100010",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "本轮没有提供可核验的文献原文，所以无法做逐字校对；以下依据的是通行理解，具体王弼注文的字句和句读仍需以纸本或数据库为准。王弼把「屯其膏」与「不能广泛施予」联系起来，关键在他对「膏」的解释：膏指膏泽、恩泽。「屯其膏」就是恩泽屯聚、蓄积而不能下施及物。",
+      "citations": []
+    },
+    {
+      "text": "这一联系不是单就字面训诂，而是王弼以时位解《易》的典型思路。屯卦整体是屯难之世，下坎上坎，险阻重叠；九五虽然居尊位，但处在屯难之时，位高而时不利，所以虽有膏泽，也不能像平常那样广泛施予。王弼注屯卦九五，大意即落在「处屯之世，膏泽不能及物」这一层。",
+      "citations": []
+    },
+    {
+      "text": "爻辞后半「小贞吉，大贞凶」也支持这种读法：在屯难中，小范围守正尚可获吉，大规模施为则凶。这正说明九五的施予能力受到时势限制，不能广施。王弼把「屯其膏」解为恩泽不能广泛施予，是与整爻的凶吉判断相贯通的。",
+      "citations": []
+    },
+    {
+      "text": "如果你要核对文献，建议直接查王弼《周易注》屯卦九五注，或楼宇烈《王弼集校释》中的对应部分，也可对照《周易王韩注》的版本。不同版本在「膏」字后是否断句、是否补「也」字上可能有差异，这会影响对注文语气的理解。本轮未提供这些文本，因此我不能给出逐字引文；在查到原文前，上述解释应视为基于通行理解的判断，而非对王弼原文的精确复述。",
+      "citations": []
+    }
+  ],
+  "limitations": [
+    "本轮未提供可核验文献，无法给出逐字引文与版本校勘。",
+    "王弼注文的具体字句、句读需以《周易注》或《王弼集校释》纸本/数据库核对。"
+  ]
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[]
+```
+
+### 生成实际可见原文
+
+```json
+[]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[
+  {
+    "id": "wang-bi@2689596:h3:line5:e8af156c25",
+    "text": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+    "textOriginal": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "line",
+    "line": 5,
+    "layer": "commentary",
+    "workId": "zhouyi-zhengyi",
+    "workTitle": "周易正義",
+    "authorIds": [
+      "wang-bi"
+    ],
+    "authorNames": [
+      "王弼"
+    ],
+    "editionId": "ws-zhouyi-zhengyi",
+    "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+    "sourceId": "ws-2689596",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/01%E5%B1%AF&oldid=2689596",
+    "locator": "《周易正義》·屯·第5爻注",
+    "version": "ws-2689596",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "anchorIds": [
+      "zhouyi:03:line:5"
+    ],
+    "reviewStatus": "machine_parsed",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "commentsOn": [
+      "zhouyi:03:line:5"
+    ],
+    "referenceOnly": true,
+    "availableToAnswer": false
+  },
+  {
+    "id": "zy-3-judgment",
+    "text": "元亨，利贞；勿用有攸往，利建侯。",
+    "textOriginal": "元亨，利贞；勿用有攸往，利建侯。",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "judgment",
+    "line": null,
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "authorIds": [],
+    "authorNames": [],
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "屯·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "anchorIds": [
+      "zhouyi:03:judgment"
+    ],
+    "reviewStatus": "legacy_unreviewed",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "commentsOn": [],
+    "referenceOnly": true,
+    "availableToAnswer": false
+  },
+  {
+    "id": "zy-3-tuan",
+    "text": "屯，刚柔始交而难生。动乎险中，大亨贞。雷雨之动满盈，天造草昧，宜建侯而不宁。",
+    "textOriginal": "屯，刚柔始交而难生。动乎险中，大亨贞。雷雨之动满盈，天造草昧，宜建侯而不宁。",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "tuan",
+    "line": null,
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "authorIds": [],
+    "authorNames": [],
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "屯·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "anchorIds": [
+      "zhouyi:03:tuan"
+    ],
+    "reviewStatus": "legacy_unreviewed",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "commentsOn": [],
+    "referenceOnly": true,
+    "availableToAnswer": false
+  },
+  {
+    "id": "zy-3-xiang",
+    "text": "云雷，屯。君子以经纶。",
+    "textOriginal": "云雷，屯。君子以经纶。",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "xiang",
+    "line": null,
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "authorIds": [],
+    "authorNames": [],
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "屯·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "anchorIds": [
+      "zhouyi:03:xiang"
+    ],
+    "reviewStatus": "legacy_unreviewed",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "commentsOn": [],
+    "referenceOnly": true,
+    "availableToAnswer": false
+  },
+  {
+    "id": "zhu-xi@528287:h3:line5:97a131e15c",
+    "text": "九五雖以陽剛中正居尊位然當屯之時陷於險中雖有六二正應而隂柔才弱不足以濟初九得民於下衆皆歸之九五坎體有膏潤而不得施為屯其膏之象占者以處小事則守正猶可獲吉以處大事則雖正而不免於凶",
+    "textOriginal": "九五雖以陽剛中正居尊位然當屯之時陷於險中雖有六二正應而隂柔才弱不足以濟初九得民於下衆皆歸之九五坎體有膏潤而不得施為屯其膏之象占者以處小事則守正猶可獲吉以處大事則雖正而不免於凶",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "line",
+    "line": 5,
+    "layer": "commentary",
+    "workId": "zhouyi-benyi",
+    "workTitle": "周易本義",
+    "authorIds": [
+      "zhu-xi"
+    ],
+    "authorNames": [
+      "朱熹"
+    ],
+    "editionId": "ws-benyi-skqs",
+    "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+    "sourceId": "ws-528287",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+    "locator": "《周易本義》·屯·第5爻注",
+    "version": "ws-528287",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "anchorIds": [
+      "zhouyi:03:line:5"
+    ],
+    "reviewStatus": "machine_parsed",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "commentsOn": [
+      "zhouyi:03:line:5"
+    ],
+    "referenceOnly": true,
+    "availableToAnswer": false
+  }
+]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Qdf92cb303641 · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 我在读屯卦九五，王弼为什么把“屯其膏”和不能广泛施予联系起来？
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    7,
+    8,
+    8,
+    8,
+    7,
+    8
+  ],
+  "original": {
+    "binary": "100010",
+    "name": "水雷屯",
+    "number": 3,
+    "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+  },
+  "changed": {
+    "binary": "100010",
+    "name": "水雷屯",
+    "number": 3,
+    "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+  },
+  "originalBinary": "100010",
+  "changedBinary": "100010",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "validation_failed",
+  "candidateOnly": true,
+  "visibleKind": "none",
+  "technicalFailure": true,
+  "providedFailureNote": "未完成可交付回答；内部候选不是实际交付。"
+}
+```
+
+### 未交付候选
+
+```json
+{
+  "status": "insufficient",
+  "paragraphs": [
+    {
+      "text": "目前无法核对王弼为何把“屯其膏”与“不能广泛施予”联系起来：本轮提供的参考材料只有屯卦卦辞、彖传和大象，未包含屯卦九五爻辞，也未包含王弼《周易注》对九五“屯其膏”的注文。因此，不能以现有证据确证王弼的原话、论证步骤或“膏”在此处的具体训释。若要继续核对，需要补入王弼《周易注》屯卦九五条，以及《周易》屯九五爻辞“屯其膏，小贞吉，大贞凶”的原文；在未确认这些文本前，任何关于王弼为何如此联系的解释都只能算推测，不宜当作文献结论。",
+      "citations": []
+    }
+  ],
+  "limitations": [
+    "本轮参考原文缺失屯九五爻辞和王弼注，无法完成指定文献核对。"
+  ]
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-3-judgment",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "judgment",
+    "line": null,
+    "text": "元亨，利贞；勿用有攸往，利建侯。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "屯·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:03:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "元亨，利贞；勿用有攸往，利建侯。"
+  },
+  {
+    "id": "zy-3-tuan",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "tuan",
+    "line": null,
+    "text": "屯，刚柔始交而难生。动乎险中，大亨贞。雷雨之动满盈，天造草昧，宜建侯而不宁。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "屯·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:03:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "屯，刚柔始交而难生。动乎险中，大亨贞。雷雨之动满盈，天造草昧，宜建侯而不宁。"
+  },
+  {
+    "id": "zy-3-xiang",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "xiang",
+    "line": null,
+    "text": "云雷，屯。君子以经纶。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "屯·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:03:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "云雷，屯。君子以经纶。"
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[
+  {
+    "id": "wang-bi@2689596:h3:line5:e8af156c25",
+    "text": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+    "textOriginal": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "line",
+    "line": 5,
+    "layer": "commentary",
+    "workId": "zhouyi-zhengyi",
+    "workTitle": "周易正義",
+    "authorIds": [
+      "wang-bi"
+    ],
+    "authorNames": [
+      "王弼"
+    ],
+    "editionId": "ws-zhouyi-zhengyi",
+    "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+    "sourceId": "ws-2689596",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/01%E5%B1%AF&oldid=2689596",
+    "locator": "《周易正義》·屯·第5爻注",
+    "version": "ws-2689596",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "anchorIds": [
+      "zhouyi:03:line:5"
+    ],
+    "reviewStatus": "machine_parsed",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "commentsOn": [
+      "zhouyi:03:line:5"
+    ],
+    "referenceOnly": true,
+    "availableToAnswer": false
+  },
+  {
+    "id": "zhu-xi@528287:h3:line5:97a131e15c",
+    "text": "九五雖以陽剛中正居尊位然當屯之時陷於險中雖有六二正應而隂柔才弱不足以濟初九得民於下衆皆歸之九五坎體有膏潤而不得施為屯其膏之象占者以處小事則守正猶可獲吉以處大事則雖正而不免於凶",
+    "textOriginal": "九五雖以陽剛中正居尊位然當屯之時陷於險中雖有六二正應而隂柔才弱不足以濟初九得民於下衆皆歸之九五坎體有膏潤而不得施為屯其膏之象占者以處小事則守正猶可獲吉以處大事則雖正而不免於凶",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "line",
+    "line": 5,
+    "layer": "commentary",
+    "workId": "zhouyi-benyi",
+    "workTitle": "周易本義",
+    "authorIds": [
+      "zhu-xi"
+    ],
+    "authorNames": [
+      "朱熹"
+    ],
+    "editionId": "ws-benyi-skqs",
+    "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+    "sourceId": "ws-528287",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+    "locator": "《周易本義》·屯·第5爻注",
+    "version": "ws-528287",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "anchorIds": [
+      "zhouyi:03:line:5"
+    ],
+    "reviewStatus": "machine_parsed",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "commentsOn": [
+      "zhouyi:03:line:5"
+    ],
+    "referenceOnly": true,
+    "availableToAnswer": false
+  }
+]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q49d89354b755 · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 豫卦上六“冥豫，成有渝”是什么意思？能找一位注家的原话说明，为什么到最后还说无咎？
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    8,
+    8,
+    8,
+    7,
+    8,
+    8
+  ],
+  "original": {
+    "binary": "000100",
+    "name": "雷地豫",
+    "number": 16,
+    "judgment": "利建侯行师。"
+  },
+  "changed": {
+    "binary": "000100",
+    "name": "雷地豫",
+    "number": 16,
+    "judgment": "利建侯行师。"
+  },
+  "originalBinary": "000100",
+  "changedBinary": "000100",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "insufficient_or_refusal",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "insufficient",
+  "paragraphs": [
+    {
+      "text": "您问的是豫卦上六“冥豫，成有渝，无咎。”本轮可核对的参考原文只有《周易》的卦辞、彖传、大象和上六爻辞，没有任何注家原话。因此，“找一位注家的原话说明”这一文献目标无法按现有材料完成；不能把经文原文冒充注家解释。",
+      "citations": [
+        {
+          "evidenceId": "zy-16-line-6",
+          "quote": "冥豫，成有渝，无咎。",
+          "claim": "冥豫，成有渝，无咎。"
+        }
+      ]
+    },
+    {
+      "text": "就经文本身，只能确认爻辞如此。豫卦卦辞作“利建侯，行师”，彖传说“豫，刚应而志行，顺以动，豫”“豫之时义大矣哉！”，大象说“雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。”这些给出豫卦整体“顺动”“作乐崇德”的语境，但并未逐字解释上六为何“无咎”。",
+      "citations": [
+        {
+          "evidenceId": "zy-16-judgment",
+          "quote": "利建侯，行师。",
+          "claim": "利建侯，行师"
+        },
+        {
+          "evidenceId": "zy-16-tuan",
+          "quote": "豫，刚应而志行，顺以动，豫",
+          "claim": "豫，刚应而志行，顺以动，豫"
+        },
+        {
+          "evidenceId": "zy-16-tuan",
+          "quote": "豫之时义大矣哉！",
+          "claim": "豫之时义大矣哉！"
+        },
+        {
+          "evidenceId": "zy-16-xiang",
+          "quote": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。",
+          "claim": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。"
+        }
+      ]
+    },
+    {
+      "text": "按文义读法（不是注家原话），爻辞原文只作“冥豫，成有渝，无咎。”“冥豫”可指昏冥地耽溺于豫乐；“成有渝”可指在既成或终极处发生变改；“无咎”之所以可能，不是因为昏冥本身可取，而是因为最后有“渝”这一变改。但“为什么到最后还说无咎”的严格论证，在本轮材料中缺失注家原话，无法确认。若您提供王弼《周易注》、程颐《伊川易传》或朱熹《周易本义》相应条目，我可以再逐字核对其解释。",
+      "citations": [
+        {
+          "evidenceId": "zy-16-line-6",
+          "quote": "冥豫，成有渝，无咎。",
+          "claim": "冥豫，成有渝，无咎。"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "本轮参考原文未包含任何注家文本，故无法提供注家原话，只能说明经文本身的可用信息。"
+  ]
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "您问的是豫卦上六“冥豫，成有渝，无咎。”本轮可核对的参考原文只有《周易》的卦辞、彖传、大象和上六爻辞，没有任何注家原话。因此，“找一位注家的原话说明”这一文献目标无法按现有材料完成；不能把经文原文冒充注家解释。",
+    "evidenceId": "zy-16-line-6",
+    "quote": "冥豫，成有渝，无咎。",
+    "claim": "冥豫，成有渝，无咎。"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "就经文本身，只能确认爻辞如此。豫卦卦辞作“利建侯，行师”，彖传说“豫，刚应而志行，顺以动，豫”“豫之时义大矣哉！”，大象说“雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。”这些给出豫卦整体“顺动”“作乐崇德”的语境，但并未逐字解释上六为何“无咎”。",
+    "evidenceId": "zy-16-judgment",
+    "quote": "利建侯，行师。",
+    "claim": "利建侯，行师"
+  },
+  {
+    "occurrenceId": "delivered.p1.c1",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[1]",
+    "paragraphText": "就经文本身，只能确认爻辞如此。豫卦卦辞作“利建侯，行师”，彖传说“豫，刚应而志行，顺以动，豫”“豫之时义大矣哉！”，大象说“雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。”这些给出豫卦整体“顺动”“作乐崇德”的语境，但并未逐字解释上六为何“无咎”。",
+    "evidenceId": "zy-16-tuan",
+    "quote": "豫，刚应而志行，顺以动，豫",
+    "claim": "豫，刚应而志行，顺以动，豫"
+  },
+  {
+    "occurrenceId": "delivered.p1.c2",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[2]",
+    "paragraphText": "就经文本身，只能确认爻辞如此。豫卦卦辞作“利建侯，行师”，彖传说“豫，刚应而志行，顺以动，豫”“豫之时义大矣哉！”，大象说“雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。”这些给出豫卦整体“顺动”“作乐崇德”的语境，但并未逐字解释上六为何“无咎”。",
+    "evidenceId": "zy-16-tuan",
+    "quote": "豫之时义大矣哉！",
+    "claim": "豫之时义大矣哉！"
+  },
+  {
+    "occurrenceId": "delivered.p1.c3",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[3]",
+    "paragraphText": "就经文本身，只能确认爻辞如此。豫卦卦辞作“利建侯，行师”，彖传说“豫，刚应而志行，顺以动，豫”“豫之时义大矣哉！”，大象说“雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。”这些给出豫卦整体“顺动”“作乐崇德”的语境，但并未逐字解释上六为何“无咎”。",
+    "evidenceId": "zy-16-xiang",
+    "quote": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。",
+    "claim": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "按文义读法（不是注家原话），爻辞原文只作“冥豫，成有渝，无咎。”“冥豫”可指昏冥地耽溺于豫乐；“成有渝”可指在既成或终极处发生变改；“无咎”之所以可能，不是因为昏冥本身可取，而是因为最后有“渝”这一变改。但“为什么到最后还说无咎”的严格论证，在本轮材料中缺失注家原话，无法确认。若您提供王弼《周易注》、程颐《伊川易传》或朱熹《周易本义》相应条目，我可以再逐字核对其解释。",
+    "evidenceId": "zy-16-line-6",
+    "quote": "冥豫，成有渝，无咎。",
+    "claim": "冥豫，成有渝，无咎。"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-16-judgment",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "judgment",
+    "line": null,
+    "text": "利建侯，行师。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "豫·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:16:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "利建侯，行师。"
+  },
+  {
+    "id": "zy-16-tuan",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "tuan",
+    "line": null,
+    "text": "豫，刚应而志行，顺以动，豫。豫顺以动，故天地如之，而况“建侯，行师”乎？天地以顺动，故日月不过，而四时不忒；圣人以顺动，则刑罚清而民服。豫之时义大矣哉！",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "豫·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:16:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "豫，刚应而志行，顺以动，豫。豫顺以动，故天地如之，而况“建侯，行师”乎？天地以顺动，故日月不过，而四时不忒；圣人以顺动，则刑罚清而民服。豫之时义大矣哉！"
+  },
+  {
+    "id": "zy-16-xiang",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "xiang",
+    "line": null,
+    "text": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "豫·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:16:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。"
+  },
+  {
+    "id": "zy-16-line-6",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "line",
+    "line": 6,
+    "text": "冥豫，成有渝，无咎。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "豫·上六",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:16:line:6"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "冥豫，成有渝，无咎。"
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[
+  {
+    "id": "cheng-yi@1313743:h16:line6:065f828f81",
+    "text": "上六陰柔，非有中正之德，以陰居上，不正也。而當豫極之時，以君子居斯時，亦當戒懼，況陰柔乎？乃耽肆於豫，昏迷不知反者也。在豫之終，故為昏冥已成也。若能有渝變，則可以無咎矣。在豫之終，有變之義。人之失，苟能自變，皆可以無咎，故冥豫雖已成，能變則善也。聖人發此義，所以勸遷善也，故更不言冥之凶，專言渝之無咎。",
+    "textOriginal": "上六陰柔，非有中正之德，以陰居上，不正也。而當豫極之時，以君子居斯時，亦當戒懼，況陰柔乎？乃耽肆於豫，昏迷不知反者也。在豫之終，故為昏冥已成也。若能有渝變，則可以無咎矣。在豫之終，有變之義。人之失，苟能自變，皆可以無咎，故冥豫雖已成，能變則善也。聖人發此義，所以勸遷善也，故更不言冥之凶，專言渝之無咎。",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "line",
+    "line": 6,
+    "layer": "commentary",
+    "workId": "yichuan-yizhuan",
+    "workTitle": "伊川易傳",
+    "authorIds": [
+      "cheng-yi"
+    ],
+    "authorNames": [
+      "程颐"
+    ],
+    "editionId": "ws-yichuan-yizhuan",
+    "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+    "sourceId": "ws-1313743",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3&oldid=1313743",
+    "locator": "《伊川易傳》·豫·第6爻注",
+    "version": "ws-1313743",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "anchorIds": [
+      "zhouyi:16:line:6"
+    ],
+    "reviewStatus": "machine_parsed",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "commentsOn": [
+      "zhouyi:16:line:6"
+    ],
+    "referenceOnly": true,
+    "availableToAnswer": false
+  },
+  {
+    "id": "wang-bi@7904495:h16:line6:067f0d7036",
+    "text": "處「動豫」之極，極豫盡樂，故至於「冥豫成」也。過豫不巳，何可長乎？故必渝變然後無咎。",
+    "textOriginal": "處「動豫」之極，極豫盡樂，故至於「冥豫成」也。過豫不巳，何可長乎？故必渝變然後無咎。",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "line",
+    "line": 6,
+    "layer": "commentary",
+    "workId": "zhouyi-zhengyi",
+    "workTitle": "周易正義",
+    "authorIds": [
+      "wang-bi"
+    ],
+    "authorNames": [
+      "王弼"
+    ],
+    "editionId": "ws-zhouyi-zhengyi",
+    "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+    "sourceId": "ws-7904495",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E8%B1%AB&oldid=7904495",
+    "locator": "《周易正義》·豫·第6爻注",
+    "version": "ws-7904495",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "anchorIds": [
+      "zhouyi:16:line:6"
+    ],
+    "reviewStatus": "machine_parsed",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "commentsOn": [
+      "zhouyi:16:line:6"
+    ],
+    "referenceOnly": true,
+    "availableToAnswer": false
+  },
+  {
+    "id": "zhu-xi@528287:h16:line6:ed433daded",
+    "text": "渝以朱反○以隂柔居豫極為昏冥於豫之象以其動體故又為其事雖成而能有渝之象戒占者如是則能補過而无咎所以廣遷善之門也",
+    "textOriginal": "渝以朱反○以隂柔居豫極為昏冥於豫之象以其動體故又為其事雖成而能有渝之象戒占者如是則能補過而无咎所以廣遷善之門也",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "line",
+    "line": 6,
+    "layer": "commentary",
+    "workId": "zhouyi-benyi",
+    "workTitle": "周易本義",
+    "authorIds": [
+      "zhu-xi"
+    ],
+    "authorNames": [
+      "朱熹"
+    ],
+    "editionId": "ws-benyi-skqs",
+    "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+    "sourceId": "ws-528287",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+    "locator": "《周易本義》·豫·第6爻注",
+    "version": "ws-528287",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "anchorIds": [
+      "zhouyi:16:line:6"
+    ],
+    "reviewStatus": "machine_parsed",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "commentsOn": [
+      "zhouyi:16:line:6"
+    ],
+    "referenceOnly": true,
+    "availableToAnswer": false
+  }
+]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Qc54030c77fb9 · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 朱熹解释屯卦初九时，为什么“磐桓”之后仍有“利建侯”？这算纯粹叫人拖着吗？
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    7,
+    8,
+    8,
+    8,
+    7,
+    8
+  ],
+  "original": {
+    "binary": "100010",
+    "name": "水雷屯",
+    "number": 3,
+    "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+  },
+  "changed": {
+    "binary": "100010",
+    "name": "水雷屯",
+    "number": 3,
+    "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+  },
+  "originalBinary": "100010",
+  "changedBinary": "100010",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "insufficient_or_refusal",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "insufficient",
+  "paragraphs": [
+    {
+      "text": "本轮参考原文为空，未提供朱熹《周易本义》屯卦初九的注文或相关文献，因此无法逐字核对“磐桓”与“利建侯”的解释关系，也不能据此判断朱熹是否在“纯粹叫人拖着”。卦象虽显示本卦水雷屯、初九为少阳不动，但卦象本身不足以替代朱熹注文。按资料说明，须引用对应资料；目前资料缺失，只能指出这一文献核对尚不能完成。",
+      "citations": []
+    }
+  ],
+  "limitations": [
+    "缺少朱熹《周易本义》屯卦初九及相关注疏的原文证据。"
+  ]
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[]
+```
+
+### 生成实际可见原文
+
+```json
+[]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[
+  {
+    "id": "zhu-xi@528287:h3:line1:d71107df76",
+    "text": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也",
+    "textOriginal": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "line",
+    "line": 1,
+    "layer": "commentary",
+    "workId": "zhouyi-benyi",
+    "workTitle": "周易本義",
+    "authorIds": [
+      "zhu-xi"
+    ],
+    "authorNames": [
+      "朱熹"
+    ],
+    "editionId": "ws-benyi-skqs",
+    "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+    "sourceId": "ws-528287",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+    "locator": "《周易本義》·屯·第1爻注",
+    "version": "ws-528287",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "anchorIds": [
+      "zhouyi:03:line:1"
+    ],
+    "reviewStatus": "machine_parsed",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "commentsOn": [
+      "zhouyi:03:line:1"
+    ],
+    "referenceOnly": true,
+    "availableToAnswer": false
+  }
+]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Qeca81227ac3b · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 屯卦六二“十年乃字”，王弼和朱熹怎样说明这个十年？我能据此断言一桩事情十年后一定成吗？
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    7,
+    8,
+    8,
+    8,
+    7,
+    8
+  ],
+  "original": {
+    "binary": "100010",
+    "name": "水雷屯",
+    "number": 3,
+    "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+  },
+  "changed": {
+    "binary": "100010",
+    "name": "水雷屯",
+    "number": 3,
+    "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+  },
+  "originalBinary": "100010",
+  "changedBinary": "100010",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "王弼注屯六二说：“志在乎「五」，不從於初……屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。” 他并没有把“十年”讲成一个可单独抽出的固定应期，而是把它放在屯难之世、正道未通、六二困于初九侵害的处境里：这种艰难局势有其限度，十年后反常复位，六二原本志在九五的婚配才可能实现。",
+      "citations": [
+        {
+          "evidenceId": "wang-bi@2689596:h3:line2:2dfb3b12e9",
+          "quote": "屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。",
+          "claim": "他并没有把“十年”讲成一个可单独抽出的固定应期，而是把它放在屯难之世、正道未通、六二困于初九侵害的处境里：这种艰难局势有其限度，十年后反常复位，六二原本志在九五的婚配才可能实现。"
+        }
+      ]
+    },
+    {
+      "text": "朱熹《本义》则说：“至於十年數窮理極則妄求者去正應者合而可許矣”；又交代“爻有此象故因以戒占者”。 这表示“十年”是数穷理极、妄求者去而正应者合的条件性说法，是对占者的警戒，而非保证某个现实事项满十年必成。",
+      "citations": [
+        {
+          "evidenceId": "zhu-xi@528287:h3:line2:5f4cc5b0f3",
+          "quote": "至於十年數窮理極則妄求者去正應者合而可許矣",
+          "claim": "这表示“十年”是数穷理极、妄求者去而正应者合的条件性说法"
+        },
+        {
+          "evidenceId": "zhu-xi@528287:h3:line2:5f4cc5b0f3",
+          "quote": "爻有此象故因以戒占者",
+          "claim": "是对占者的警戒，而非保证某个现实事项满十年必成。"
+        }
+      ]
+    },
+    {
+      "text": "因此，不能据此断言一桩事情十年后一定成。王弼和朱熹都是在解释爻象与爻辞的条件：王弼讲“势不过十年”“十年则反常”，朱熹讲“数穷理极”“因以戒占者”；它们说明艰难处境有转机和正应相合的可能，但并非给定日历式的必然结果。何况本轮卦象六爻无动爻，六二为静爻，若所问事项并未以六二为动爻，更不宜把“十年乃字”直接当成该事项的应期。",
+      "citations": [
+        {
+          "evidenceId": "wang-bi@2689596:h3:line2:2dfb3b12e9",
+          "quote": "屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。",
+          "claim": "王弼讲“势不过十年”“十年则反常”"
+        },
+        {
+          "evidenceId": "zhu-xi@528287:h3:line2:5f4cc5b0f3",
+          "quote": "至於十年數窮理極則妄求者去正應者合而可許矣",
+          "claim": "朱熹讲“数穷理极”"
+        },
+        {
+          "evidenceId": "zhu-xi@528287:h3:line2:5f4cc5b0f3",
+          "quote": "爻有此象故因以戒占者",
+          "claim": "“因以戒占者”"
+        }
+      ]
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "王弼注屯六二说：“志在乎「五」，不從於初……屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。” 他并没有把“十年”讲成一个可单独抽出的固定应期，而是把它放在屯难之世、正道未通、六二困于初九侵害的处境里：这种艰难局势有其限度，十年后反常复位，六二原本志在九五的婚配才可能实现。",
+    "evidenceId": "wang-bi@2689596:h3:line2:2dfb3b12e9",
+    "quote": "屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。",
+    "claim": "他并没有把“十年”讲成一个可单独抽出的固定应期，而是把它放在屯难之世、正道未通、六二困于初九侵害的处境里：这种艰难局势有其限度，十年后反常复位，六二原本志在九五的婚配才可能实现。"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "朱熹《本义》则说：“至於十年數窮理極則妄求者去正應者合而可許矣”；又交代“爻有此象故因以戒占者”。 这表示“十年”是数穷理极、妄求者去而正应者合的条件性说法，是对占者的警戒，而非保证某个现实事项满十年必成。",
+    "evidenceId": "zhu-xi@528287:h3:line2:5f4cc5b0f3",
+    "quote": "至於十年數窮理極則妄求者去正應者合而可許矣",
+    "claim": "这表示“十年”是数穷理极、妄求者去而正应者合的条件性说法"
+  },
+  {
+    "occurrenceId": "delivered.p1.c1",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[1]",
+    "paragraphText": "朱熹《本义》则说：“至於十年數窮理極則妄求者去正應者合而可許矣”；又交代“爻有此象故因以戒占者”。 这表示“十年”是数穷理极、妄求者去而正应者合的条件性说法，是对占者的警戒，而非保证某个现实事项满十年必成。",
+    "evidenceId": "zhu-xi@528287:h3:line2:5f4cc5b0f3",
+    "quote": "爻有此象故因以戒占者",
+    "claim": "是对占者的警戒，而非保证某个现实事项满十年必成。"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "因此，不能据此断言一桩事情十年后一定成。王弼和朱熹都是在解释爻象与爻辞的条件：王弼讲“势不过十年”“十年则反常”，朱熹讲“数穷理极”“因以戒占者”；它们说明艰难处境有转机和正应相合的可能，但并非给定日历式的必然结果。何况本轮卦象六爻无动爻，六二为静爻，若所问事项并未以六二为动爻，更不宜把“十年乃字”直接当成该事项的应期。",
+    "evidenceId": "wang-bi@2689596:h3:line2:2dfb3b12e9",
+    "quote": "屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。",
+    "claim": "王弼讲“势不过十年”“十年则反常”"
+  },
+  {
+    "occurrenceId": "delivered.p2.c1",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[1]",
+    "paragraphText": "因此，不能据此断言一桩事情十年后一定成。王弼和朱熹都是在解释爻象与爻辞的条件：王弼讲“势不过十年”“十年则反常”，朱熹讲“数穷理极”“因以戒占者”；它们说明艰难处境有转机和正应相合的可能，但并非给定日历式的必然结果。何况本轮卦象六爻无动爻，六二为静爻，若所问事项并未以六二为动爻，更不宜把“十年乃字”直接当成该事项的应期。",
+    "evidenceId": "zhu-xi@528287:h3:line2:5f4cc5b0f3",
+    "quote": "至於十年數窮理極則妄求者去正應者合而可許矣",
+    "claim": "朱熹讲“数穷理极”"
+  },
+  {
+    "occurrenceId": "delivered.p2.c2",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[2]",
+    "paragraphText": "因此，不能据此断言一桩事情十年后一定成。王弼和朱熹都是在解释爻象与爻辞的条件：王弼讲“势不过十年”“十年则反常”，朱熹讲“数穷理极”“因以戒占者”；它们说明艰难处境有转机和正应相合的可能，但并非给定日历式的必然结果。何况本轮卦象六爻无动爻，六二为静爻，若所问事项并未以六二为动爻，更不宜把“十年乃字”直接当成该事项的应期。",
+    "evidenceId": "zhu-xi@528287:h3:line2:5f4cc5b0f3",
+    "quote": "爻有此象故因以戒占者",
+    "claim": "“因以戒占者”"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-3-judgment",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "judgment",
+    "line": null,
+    "text": "元亨，利贞；勿用有攸往，利建侯。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "屯·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:03:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "元亨，利贞；勿用有攸往，利建侯。"
+  },
+  {
+    "id": "zy-3-tuan",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "tuan",
+    "line": null,
+    "text": "屯，刚柔始交而难生。动乎险中，大亨贞。雷雨之动满盈，天造草昧，宜建侯而不宁。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "屯·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:03:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "屯，刚柔始交而难生。动乎险中，大亨贞。雷雨之动满盈，天造草昧，宜建侯而不宁。"
+  },
+  {
+    "id": "zy-3-xiang",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "xiang",
+    "line": null,
+    "text": "云雷，屯。君子以经纶。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "屯·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:03:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "云雷，屯。君子以经纶。"
+  },
+  {
+    "id": "wang-bi@2689596:h3:line2:2dfb3b12e9",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "line",
+    "line": 2,
+    "text": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。",
+    "textOriginal": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅。「屯」時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/01%E5%B1%AF&oldid=2689596",
+    "locator": "《周易正義》·屯·第2爻注",
+    "version": "ws-2689596",
+    "review": "多源机器辅助核对后修订；采集原文及修改依据已保留，未经人工专家校勘。",
+    "reviewStatus": "machine_corrected",
+    "layer": "commentary",
+    "workId": "zhouyi-zhengyi",
+    "workTitle": "周易正義",
+    "sourceId": "ws-2689596",
+    "editionId": "ws-zhouyi-zhengyi",
+    "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+    "authorIds": [
+      "wang-bi"
+    ],
+    "authorNames": [
+      "王弼"
+    ],
+    "anchorIds": [
+      "zhouyi:03:line:2"
+    ],
+    "commentsOn": [
+      "zhouyi:03:line:2"
+    ],
+    "releaseId": "knowledge-v3-20260926-r1",
+    "rawLocator": {
+      "file": "data/knowledge/raw/ws-2689596.wiki",
+      "startLine": 49,
+      "endLine": 49,
+      "pageLabels": []
+    },
+    "correctionHistory": [
+      {
+        "auditId": "crosscheck-20260926",
+        "parentReleaseId": "knowledge-v3-20260926",
+        "date": "2026-09-26",
+        "before": "故屯邅。「屯」時方屯難",
+        "after": "故屯邅也。時方屯難",
+        "reason": "也误作屯，导致错误断句",
+        "sourceUrls": [
+          "https://github.com/kanripo/KR1a0007/blob/0fa05af11e9229b6cc6febe312d541fc6d4ec3bf/KR1a0007_014.txt",
+          "https://www.eee-learning.com/book/eee-jy3",
+          "https://www.eee-learning.com/eeebook/zenyi/136.gif"
+        ],
+        "reviewMethod": "machine_assisted",
+        "humanReviewed": false
+      }
+    ]
+  },
+  {
+    "id": "zhu-xi@528287:h3:line2:5f4cc5b0f3",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "line",
+    "line": 2,
+    "text": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者",
+    "textOriginal": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+    "locator": "《周易本義》·屯·第2爻注",
+    "version": "ws-528287",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "reviewStatus": "machine_parsed",
+    "layer": "commentary",
+    "workId": "zhouyi-benyi",
+    "workTitle": "周易本義",
+    "sourceId": "ws-528287",
+    "editionId": "ws-benyi-skqs",
+    "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+    "authorIds": [
+      "zhu-xi"
+    ],
+    "authorNames": [
+      "朱熹"
+    ],
+    "anchorIds": [
+      "zhouyi:03:line:2"
+    ],
+    "commentsOn": [
+      "zhouyi:03:line:2"
+    ],
+    "releaseId": "knowledge-v3-20260926-r1",
+    "rawLocator": {
+      "file": "data/knowledge/raw/ws-528287.wiki",
+      "startLine": 14,
+      "endLine": 14,
+      "pageLabels": []
+    }
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q40823b54b317 · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 屯卦六二“十年乃字”，王弼和朱熹怎样说明这个十年？我能据此断言一桩事情十年后一定成吗？
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    7,
+    8,
+    8,
+    8,
+    7,
+    8
+  ],
+  "original": {
+    "binary": "100010",
+    "name": "水雷屯",
+    "number": 3,
+    "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+  },
+  "changed": {
+    "binary": "100010",
+    "name": "水雷屯",
+    "number": 3,
+    "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+  },
+  "originalBinary": "100010",
+  "changedBinary": "100010",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "validation_failed",
+  "candidateOnly": true,
+  "visibleKind": "none",
+  "technicalFailure": true,
+  "providedFailureNote": "未完成可交付回答；内部候选不是实际交付。"
+}
+```
+
+### 未交付候选
+
+```json
+{
+  "status": "insufficient",
+  "paragraphs": [
+    {
+      "text": "本轮参考原文并未收录屯卦六二爻辞“十年乃字”，也没有王弼《周易注》或朱熹《周易本义》关于该爻的注文。因此，我无法在此轮准确核对王弼、朱熹各自怎样说明“十年”；若你要核对，需要补充这两家注疏的原文或可靠版本页码。",
+      "citations": []
+    },
+    {
+      "text": "可核对的本轮经文只到屯卦卦辞、彖传、大象：卦辞说“勿用有攸往，利建侯”，彖传说“屯，刚柔始交而难生……宜建侯而不宁”，大象说“云雷，屯。君子以经纶”。这支持屯为艰难初生、宜经营待时、不宜急于有往的理解，但并不直接解释“十年”，也不能替代王弼、朱熹的注。",
+      "citations": [
+        {
+          "evidenceId": "zy-3-judgment",
+          "quote": "勿用有攸往，利建侯",
+          "claim": "勿用有攸往，利建侯"
+        },
+        {
+          "evidenceId": "zy-3-tuan",
+          "quote": "屯，刚柔始交而难生",
+          "claim": "屯，刚柔始交而难生"
+        },
+        {
+          "evidenceId": "zy-3-xiang",
+          "quote": "云雷，屯。君子以经纶",
+          "claim": "云雷，屯。君子以经纶"
+        }
+      ]
+    },
+    {
+      "text": "所以，不能据“十年乃字”或任何“十年”注解断言一桩具体事情十年后一定成。即使某些注家把“十年”解为久待、数极或待正应，那也在解释爻辞的象数义理，不等于现实事件的定时保证；现实判断仍要回到具体条件、可验证进展与专业意见。",
+      "citations": []
+    }
+  ],
+  "limitations": [
+    "缺少屯卦六二爻辞及王弼、朱熹注疏原文，无法完成指定文献核对。"
+  ]
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "candidate.p1.c0",
+    "target": "candidate",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "可核对的本轮经文只到屯卦卦辞、彖传、大象：卦辞说“勿用有攸往，利建侯”，彖传说“屯，刚柔始交而难生……宜建侯而不宁”，大象说“云雷，屯。君子以经纶”。这支持屯为艰难初生、宜经营待时、不宜急于有往的理解，但并不直接解释“十年”，也不能替代王弼、朱熹的注。",
+    "evidenceId": "zy-3-judgment",
+    "quote": "勿用有攸往，利建侯",
+    "claim": "勿用有攸往，利建侯"
+  },
+  {
+    "occurrenceId": "candidate.p1.c1",
+    "target": "candidate",
+    "location": "paragraphs[1].citations[1]",
+    "paragraphText": "可核对的本轮经文只到屯卦卦辞、彖传、大象：卦辞说“勿用有攸往，利建侯”，彖传说“屯，刚柔始交而难生……宜建侯而不宁”，大象说“云雷，屯。君子以经纶”。这支持屯为艰难初生、宜经营待时、不宜急于有往的理解，但并不直接解释“十年”，也不能替代王弼、朱熹的注。",
+    "evidenceId": "zy-3-tuan",
+    "quote": "屯，刚柔始交而难生",
+    "claim": "屯，刚柔始交而难生"
+  },
+  {
+    "occurrenceId": "candidate.p1.c2",
+    "target": "candidate",
+    "location": "paragraphs[1].citations[2]",
+    "paragraphText": "可核对的本轮经文只到屯卦卦辞、彖传、大象：卦辞说“勿用有攸往，利建侯”，彖传说“屯，刚柔始交而难生……宜建侯而不宁”，大象说“云雷，屯。君子以经纶”。这支持屯为艰难初生、宜经营待时、不宜急于有往的理解，但并不直接解释“十年”，也不能替代王弼、朱熹的注。",
+    "evidenceId": "zy-3-xiang",
+    "quote": "云雷，屯。君子以经纶",
+    "claim": "云雷，屯。君子以经纶"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-3-judgment",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "judgment",
+    "line": null,
+    "text": "元亨，利贞；勿用有攸往，利建侯。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "屯·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:03:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "元亨，利贞；勿用有攸往，利建侯。"
+  },
+  {
+    "id": "zy-3-tuan",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "tuan",
+    "line": null,
+    "text": "屯，刚柔始交而难生。动乎险中，大亨贞。雷雨之动满盈，天造草昧，宜建侯而不宁。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "屯·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:03:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "屯，刚柔始交而难生。动乎险中，大亨贞。雷雨之动满盈，天造草昧，宜建侯而不宁。"
+  },
+  {
+    "id": "zy-3-xiang",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "xiang",
+    "line": null,
+    "text": "云雷，屯。君子以经纶。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "屯·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:03:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "云雷，屯。君子以经纶。"
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[
+  {
+    "id": "wang-bi@2689596:h3:line2:2dfb3b12e9",
+    "text": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。",
+    "textOriginal": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅。「屯」時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "line",
+    "line": 2,
+    "layer": "commentary",
+    "workId": "zhouyi-zhengyi",
+    "workTitle": "周易正義",
+    "authorIds": [
+      "wang-bi"
+    ],
+    "authorNames": [
+      "王弼"
+    ],
+    "editionId": "ws-zhouyi-zhengyi",
+    "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+    "sourceId": "ws-2689596",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/01%E5%B1%AF&oldid=2689596",
+    "locator": "《周易正義》·屯·第2爻注",
+    "version": "ws-2689596",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "anchorIds": [
+      "zhouyi:03:line:2"
+    ],
+    "reviewStatus": "machine_corrected",
+    "review": "多源机器辅助核对后修订；采集原文及修改依据已保留，未经人工专家校勘。",
+    "commentsOn": [
+      "zhouyi:03:line:2"
+    ],
+    "referenceOnly": true,
+    "availableToAnswer": false
+  },
+  {
+    "id": "zhu-xi@528287:h3:line2:5f4cc5b0f3",
+    "text": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者",
+    "textOriginal": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "line",
+    "line": 2,
+    "layer": "commentary",
+    "workId": "zhouyi-benyi",
+    "workTitle": "周易本義",
+    "authorIds": [
+      "zhu-xi"
+    ],
+    "authorNames": [
+      "朱熹"
+    ],
+    "editionId": "ws-benyi-skqs",
+    "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+    "sourceId": "ws-528287",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+    "locator": "《周易本義》·屯·第2爻注",
+    "version": "ws-528287",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "anchorIds": [
+      "zhouyi:03:line:2"
+    ],
+    "reviewStatus": "machine_parsed",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "commentsOn": [
+      "zhouyi:03:line:2"
+    ],
+    "referenceOnly": true,
+    "availableToAnswer": false
+  }
+]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q021f1a88d06f · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 恒卦九四的“田无禽”只是打猎没打到吗？请对照王弼或朱熹的注释，讲清楚它们解释到哪一层。
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    8,
+    7,
+    7,
+    7,
+    8,
+    8
+  ],
+  "original": {
+    "binary": "011100",
+    "name": "雷风恒",
+    "number": 32,
+    "judgment": "亨，无咎，利贞，利有攸往。"
+  },
+  "changed": {
+    "binary": "011100",
+    "name": "雷风恒",
+    "number": 32,
+    "judgment": "亨，无咎，利贞，利有攸往。"
+  },
+  "originalBinary": "011100",
+  "changedBinary": "011100",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "不是“只是打猎没打到”这么简单。恒卦九四爻辞“田无禽”，字面确实是田猎没有猎获，但王弼、朱熹这类注家都不会停在字面，而把它读成一个关于“所处之位”和“所恒之道”的象：久处不当，所以无获。",
+      "citations": []
+    },
+    {
+      "text": "王弼《周易注》解释九四，重心在“非其位”。九四以阳爻居阴位，位不当；恒卦讲的是长久，而九四的毛病不是不能久，是久在一个不对的位置上。因此“田无禽”不是偶然一次打猎落空，而是说：条件、位置、方法都不对，纵然持久劳作，也不会有收获。王弼的层次偏向义理与玄学化的“失位则无功”，不是单纯记事。",
+      "citations": []
+    },
+    {
+      "text": "朱熹《周易本义》的解释更贴象数结构：九四“以阳居阴，久非其位”，所以有“田无禽”之象。朱熹同样把“无禽”归因于“位不当”，再由象数落到义理：恒久必须建立在当位、合宜的基础上，否则长久只是空耗。他的解释层次是：先取象，再取义，不停在猎事本身。",
+      "citations": []
+    },
+    {
+      "text": "所以“田无禽”至少可以分三层看：第一层是字面的田猎无获；第二层是象数上的九四阳居阴位、久非其位；第三层是义理上的“所恒非其道，虽久无功”。再往现实引申，就是方向、位置、关系或方法不对时，持续投入并不自动带来结果，反而可能把错误固定下来。",
+      "citations": []
+    },
+    {
+      "text": "结合恒卦整体看，这一点更清楚。恒卦讲恒久，但九四给出的是一个反例：不是“不恒”，而是“恒于非位”。所以“田无禽”不是问“这次为什么没打到”，而是提醒：如果所守的位置和方式本身就不对，那么“久”不但不是美德，还可能变成无效的重复。",
+      "citations": []
+    },
+    {
+      "text": "需要说明的是，本轮没有提供可核验的文献原文，我无法给出王弼、朱熹的逐字引文；上面讲的是两家注的义旨概述，不是逐字对照。若要精确到“他们各自讲到哪一句、哪一层”，需要查《周易注》和《周易本义》恒卦九四的原文，再逐句核对。",
+      "citations": []
+    }
+  ],
+  "limitations": [
+    "本轮未提供可核验文献，未给出王弼、朱熹逐字引文；相关解释为义旨概述，精确引文需查原书。"
+  ]
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[]
+```
+
+### 生成实际可见原文
+
+```json
+[]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[
+  {
+    "id": "wang-bi@2404960:h32:line4:082ae569fb",
+    "text": "恒於非位，雖勞無獲也。",
+    "textOriginal": "恒於非位，雖勞無獲也。",
+    "hexagramId": 32,
+    "name": "恒",
+    "section": "line",
+    "line": 4,
+    "layer": "commentary",
+    "workId": "zhouyi-zhengyi",
+    "workTitle": "周易正義",
+    "authorIds": [
+      "wang-bi"
+    ],
+    "authorNames": [
+      "王弼"
+    ],
+    "editionId": "ws-zhouyi-zhengyi",
+    "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+    "sourceId": "ws-2404960",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E6%81%92&oldid=2404960",
+    "locator": "《周易正義》·恒·第4爻注",
+    "version": "ws-2404960",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "anchorIds": [
+      "zhouyi:32:line:4"
+    ],
+    "reviewStatus": "machine_parsed",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "commentsOn": [
+      "zhouyi:32:line:4"
+    ],
+    "referenceOnly": true,
+    "availableToAnswer": false
+  },
+  {
+    "id": "zhu-xi@737053:h32:line4:0f4238b3b2",
+    "text": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也",
+    "textOriginal": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也",
+    "hexagramId": 32,
+    "name": "恒",
+    "section": "line",
+    "line": 4,
+    "layer": "commentary",
+    "workId": "zhouyi-benyi",
+    "workTitle": "周易本義",
+    "authorIds": [
+      "zhu-xi"
+    ],
+    "authorNames": [
+      "朱熹"
+    ],
+    "editionId": "ws-benyi-skqs",
+    "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+    "sourceId": "ws-737053",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B72&oldid=737053",
+    "locator": "《周易本義》·恒·第4爻注",
+    "version": "ws-737053",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "anchorIds": [
+      "zhouyi:32:line:4"
+    ],
+    "reviewStatus": "machine_parsed",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "commentsOn": [
+      "zhouyi:32:line:4"
+    ],
+    "referenceOnly": true,
+    "availableToAnswer": false
+  },
+  {
+    "id": "zy-32-line-4",
+    "text": "田无禽。",
+    "textOriginal": "田无禽。",
+    "hexagramId": 32,
+    "section": "line",
+    "line": 4,
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "authorIds": [],
+    "authorNames": [],
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "恒·九四",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "reviewStatus": "legacy_unreviewed",
+    "referenceOnly": true,
+    "availableToAnswer": false
+  }
+]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Qce11cd5ac8ea · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 恒卦九四的“田无禽”只是打猎没打到吗？请对照王弼或朱熹的注释，讲清楚它们解释到哪一层。
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    8,
+    7,
+    7,
+    7,
+    8,
+    8
+  ],
+  "original": {
+    "binary": "011100",
+    "name": "雷风恒",
+    "number": 32,
+    "judgment": "亨，无咎，利贞，利有攸往。"
+  },
+  "changed": {
+    "binary": "011100",
+    "name": "雷风恒",
+    "number": 32,
+    "judgment": "亨，无咎，利贞，利有攸往。"
+  },
+  "originalBinary": "011100",
+  "changedBinary": "011100",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "validation_failed",
+  "candidateOnly": true,
+  "visibleKind": "none",
+  "technicalFailure": true,
+  "providedFailureNote": "未完成可交付回答；内部候选不是实际交付。"
+}
+```
+
+### 未交付候选
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "先看王弼。《周易正義》这条注文只有“恒於非位，雖勞無獲也。”它把九四的问题落在“非位”上：阳爻居阴位，久而不当位，所以“雖勞無獲”。这里没有只说狩猎；它把“田无禽”所象的无获，收束为在不当之位上的徒劳。不过，王弼也没有进一步点明“凡事”的范围，这一层要等朱熹来展开。",
+      "citations": [
+        {
+          "evidenceId": "wang-bi@2404960:h32:line4:082ae569fb",
+          "quote": "恒於非位，雖勞無獲也。",
+          "claim": "恒於非位，雖勞無獲也"
+        }
+      ]
+    },
+    {
+      "text": "再看朱熹。《周易本義》说：“以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也。”这句至少解释到两层：第一层是象的成因——“以陽居隂久非其位”，与王弼的“非位”一致；第二层是占断的推展——“占者田无所獲而凡事亦不得其所求也”。因此，“田无禽”在朱熹这里不只是打猎没打到；田猎无获只是占辞的入口，后面明确推到“凡事亦不得其所求”。",
+      "citations": [
+        {
+          "evidenceId": "zhu-xi@737053:h32:line4:0f4238b3b2",
+          "quote": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也",
+          "claim": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也"
+        }
+      ]
+    },
+    {
+      "text": "合起来看，王弼与朱熹都解释到“非位—无获—所求不得”这一层，而不是停留在打猎结果上。区别在于：王弼只说到“恒於非位，雖勞無獲也”，语气更概括；朱熹则把“田无所獲”与“凡事亦不得其所求”并列写出，明确把具体占辞扩展到处事求索。若只据这两条注文，能确认的是这种“由象到占、由田猎到凡事”的解释路径；至于九四具体对应什么历史事件或更细的吉凶期限，本轮资料没有提供，不宜再往外推。",
+      "citations": []
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "candidate.p0.c0",
+    "target": "candidate",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "先看王弼。《周易正義》这条注文只有“恒於非位，雖勞無獲也。”它把九四的问题落在“非位”上：阳爻居阴位，久而不当位，所以“雖勞無獲”。这里没有只说狩猎；它把“田无禽”所象的无获，收束为在不当之位上的徒劳。不过，王弼也没有进一步点明“凡事”的范围，这一层要等朱熹来展开。",
+    "evidenceId": "wang-bi@2404960:h32:line4:082ae569fb",
+    "quote": "恒於非位，雖勞無獲也。",
+    "claim": "恒於非位，雖勞無獲也"
+  },
+  {
+    "occurrenceId": "candidate.p1.c0",
+    "target": "candidate",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "再看朱熹。《周易本義》说：“以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也。”这句至少解释到两层：第一层是象的成因——“以陽居隂久非其位”，与王弼的“非位”一致；第二层是占断的推展——“占者田无所獲而凡事亦不得其所求也”。因此，“田无禽”在朱熹这里不只是打猎没打到；田猎无获只是占辞的入口，后面明确推到“凡事亦不得其所求”。",
+    "evidenceId": "zhu-xi@737053:h32:line4:0f4238b3b2",
+    "quote": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也",
+    "claim": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zhu-xi@737053:h32:line4:0f4238b3b2",
+    "hexagramId": 32,
+    "name": "恒",
+    "section": "line",
+    "line": 4,
+    "text": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也",
+    "textOriginal": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B72&oldid=737053",
+    "locator": "《周易本義》·恒·第4爻注",
+    "version": "ws-737053",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "reviewStatus": "machine_parsed",
+    "layer": "commentary",
+    "workId": "zhouyi-benyi",
+    "workTitle": "周易本義",
+    "sourceId": "ws-737053",
+    "editionId": "ws-benyi-skqs",
+    "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+    "authorIds": [
+      "zhu-xi"
+    ],
+    "authorNames": [
+      "朱熹"
+    ],
+    "anchorIds": [
+      "zhouyi:32:line:4"
+    ],
+    "commentsOn": [
+      "zhouyi:32:line:4"
+    ],
+    "releaseId": "knowledge-v3-20260926-r1",
+    "rawLocator": {
+      "file": "data/knowledge/raw/ws-737053.wiki",
+      "startLine": 12,
+      "endLine": 12,
+      "pageLabels": []
+    }
+  },
+  {
+    "id": "wang-bi@2404960:h32:line4:082ae569fb",
+    "hexagramId": 32,
+    "name": "恒",
+    "section": "line",
+    "line": 4,
+    "text": "恒於非位，雖勞無獲也。",
+    "textOriginal": "恒於非位，雖勞無獲也。",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E6%81%92&oldid=2404960",
+    "locator": "《周易正義》·恒·第4爻注",
+    "version": "ws-2404960",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "reviewStatus": "machine_parsed",
+    "layer": "commentary",
+    "workId": "zhouyi-zhengyi",
+    "workTitle": "周易正義",
+    "sourceId": "ws-2404960",
+    "editionId": "ws-zhouyi-zhengyi",
+    "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+    "authorIds": [
+      "wang-bi"
+    ],
+    "authorNames": [
+      "王弼"
+    ],
+    "anchorIds": [
+      "zhouyi:32:line:4"
+    ],
+    "commentsOn": [
+      "zhouyi:32:line:4"
+    ],
+    "releaseId": "knowledge-v3-20260926-r1",
+    "rawLocator": {
+      "file": "data/knowledge/raw/ws-2404960.wiki",
+      "startLine": 92,
+      "endLine": 92,
+      "pageLabels": []
+    }
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[
+  {
+    "id": "zy-32-line-4",
+    "text": "田无禽。",
+    "textOriginal": "田无禽。",
+    "hexagramId": 32,
+    "section": "line",
+    "line": 4,
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "authorIds": [],
+    "authorNames": [],
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "恒·九四",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "reviewStatus": "legacy_unreviewed",
+    "referenceOnly": true,
+    "availableToAnswer": false
+  }
+]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q21e62773d8ef · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 朱熹解释屯卦初九时，为什么“磐桓”之后仍有“利建侯”？这算纯粹叫人拖着吗？
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    7,
+    8,
+    8,
+    8,
+    7,
+    8
+  ],
+  "original": {
+    "binary": "100010",
+    "name": "水雷屯",
+    "number": 3,
+    "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+  },
+  "changed": {
+    "binary": "100010",
+    "name": "水雷屯",
+    "number": 3,
+    "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+  },
+  "originalBinary": "100010",
+  "changedBinary": "100010",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "你问的是文献核对：朱熹解释屯卦初九时，“磐桓”之后为什么还跟“利建侯”，以及这是否等于叫人一味拖延。本轮没有提供可核验的《周易本义》原文或相关注疏，所以下面只能依据通行传本中朱熹注的常见理解来讨论，具体字句仍需你以手边版本核对。",
+      "citations": []
+    },
+    {
+      "text": "在屯卦初九“磐桓，利居贞，利建侯”这一爻里，“磐桓”通常被解为徘徊、盘桓不进之象。朱熹的理解要点在于：初九以阳爻居屯难之始、又在动体之下，动而遇险，所以不能躁进。但“磐桓”不是孤立的，它紧接“利居贞”，说明这种徘徊是守正待时，是在条件不成熟时审慎自处，而不是消极地无所作为。",
+      "citations": []
+    },
+    {
+      "text": "“利建侯”则给出了行动方向。屯难之世，秩序未立，需要能济屯的领导核心；初九阳刚有才，或说可被立为侯，或说宜建侯以统治之。无论取哪一种读法，朱熹都不是只讲“拖着”，而是把“磐桓”与“建侯”放在同一个处境里：正因时势艰难、不可遽进，才更需要确立可靠的君长与秩序。",
+      "citations": []
+    },
+    {
+      "text": "所以，若问这是否纯粹叫人拖着，答案是否定的。在朱熹的解释框架中，“磐桓”是面对屯难时的审慎与守正，“利建侯”是在同一处境中应当着力的方向；两者合起来是“守正待时”与“积极立事”的统一。不过古今注家对“建侯”的主体与侧重有不同说法，朱熹本义与程颐《易传》、王弼注之间也存在差异，核对时宜区分版本与注家，不宜把某一家的引申当作朱熹原意。",
+      "citations": []
+    }
+  ],
+  "limitations": [
+    "未提供《周易本义》原文及注疏可核验，具体引文与归属需用户核对版本。"
+  ]
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[]
+```
+
+### 生成实际可见原文
+
+```json
+[]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[
+  {
+    "id": "zhu-xi@528287:h3:line1:d71107df76",
+    "text": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也",
+    "textOriginal": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "line",
+    "line": 1,
+    "layer": "commentary",
+    "workId": "zhouyi-benyi",
+    "workTitle": "周易本義",
+    "authorIds": [
+      "zhu-xi"
+    ],
+    "authorNames": [
+      "朱熹"
+    ],
+    "editionId": "ws-benyi-skqs",
+    "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+    "sourceId": "ws-528287",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+    "locator": "《周易本義》·屯·第1爻注",
+    "version": "ws-528287",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "anchorIds": [
+      "zhouyi:03:line:1"
+    ],
+    "reviewStatus": "machine_parsed",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "commentsOn": [
+      "zhouyi:03:line:1"
+    ],
+    "referenceOnly": true,
+    "availableToAnswer": false
+  }
+]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。

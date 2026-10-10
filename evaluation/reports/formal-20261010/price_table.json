@@ -1,0 +1,43 @@
+{
+  "currency": "USD",
+  "unit": "per_1000000_tokens",
+  "observedDate": "2026-10-10",
+  "source": "https://api-docs.deepseek.com/quick_start/pricing/",
+  "sourceRetrieval": "Official pricing page opened successfully on 2026-10-10 during this formal evaluation; Flash rates match prior snapshot.",
+  "peakRule": "Monday-Friday UTC 01:00-04:00 and 06:00-10:00, excluding Chinese public holidays. Weekends are fully off-peak.",
+  "experimentDateRate": "off_peak",
+  "experimentDateRateReason": "2026-10-10 is Saturday",
+  "models": {
+    "deepseek-flash": {
+      "off_peak": {
+        "input_cache_hit": 0.003,
+        "input_cache_miss": 0.15,
+        "output": 0.6
+      },
+      "peak": {
+        "input_cache_hit": 0.006,
+        "input_cache_miss": 0.3,
+        "output": 1.2
+      }
+    },
+    "deepseek-v4-pro": {
+      "off_peak": {
+        "input_cache_hit": 0.022,
+        "input_cache_miss": 0.66,
+        "output": 1.98
+      },
+      "peak": {
+        "input_cache_hit": 0.044,
+        "input_cache_miss": 1.32,
+        "output": 3.96
+      }
+    }
+  },
+  "limitations": [
+    "Usage-based list-price estimate is not an account billing reconciliation.",
+    "Completion tokens include reasoning tokens; do not charge reasoning tokens a second time.",
+    "Missing usage components must remain unknown rather than defaulting to zero.",
+    "Re-evaluate rates for requests on another date or in another time interval."
+  ],
+  "servedAliasNote": "Official table identifies deepseek-flash as DeepSeek-V4.1-Flash. Provider alias may update; actual returned model is recorded for each request."
+}

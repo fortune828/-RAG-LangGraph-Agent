@@ -1,0 +1,68 @@
+[
+  {
+    "split": "development",
+    "arm": "R1",
+    "cases": 14,
+    "returned": 51,
+    "knownRelevant": 35,
+    "unknown": 1,
+    "precisionReturnedLower": 0.6862745098039216,
+    "precisionReturnedUpper": 0.7058823529411765,
+    "posthoc": "Diagnostic supplement: actual-returned purity, not replacement for preregistered Precision@5 (denominator 5 per query)."
+  },
+  {
+    "split": "development",
+    "arm": "R2",
+    "cases": 14,
+    "returned": 51,
+    "knownRelevant": 33,
+    "unknown": 1,
+    "precisionReturnedLower": 0.6470588235294118,
+    "precisionReturnedUpper": 0.6666666666666666,
+    "posthoc": "Diagnostic supplement: actual-returned purity, not replacement for preregistered Precision@5 (denominator 5 per query)."
+  },
+  {
+    "split": "development",
+    "arm": "R3",
+    "cases": 14,
+    "returned": 18,
+    "knownRelevant": 13,
+    "unknown": 1,
+    "precisionReturnedLower": 0.7222222222222222,
+    "precisionReturnedUpper": 0.7777777777777778,
+    "posthoc": "Diagnostic supplement: actual-returned purity, not replacement for preregistered Precision@5 (denominator 5 per query)."
+  },
+  {
+    "split": "independent_test",
+    "arm": "R1",
+    "cases": 14,
+    "returned": 46,
+    "knownRelevant": 25,
+    "unknown": 2,
+    "precisionReturnedLower": 0.5434782608695652,
+    "precisionReturnedUpper": 0.5869565217391305,
+    "posthoc": "Diagnostic supplement: actual-returned purity, not replacement for preregistered Precision@5 (denominator 5 per query)."
+  },
+  {
+    "split": "independent_test",
+    "arm": "R2",
+    "cases": 14,
+    "returned": 46,
+    "knownRelevant": 25,
+    "unknown": 2,
+    "precisionReturnedLower": 0.5434782608695652,
+    "precisionReturnedUpper": 0.5869565217391305,
+    "posthoc": "Diagnostic supplement: actual-returned purity, not replacement for preregistered Precision@5 (denominator 5 per query)."
+  },
+  {
+    "split": "independent_test",
+    "arm": "R3",
+    "cases": 14,
+    "returned": 13,
+    "knownRelevant": 12,
+    "unknown": 1,
+    "precisionReturnedLower": 0.9230769230769231,
+    "precisionReturnedUpper": 1.0,
+    "posthoc": "Diagnostic supplement: actual-returned purity, not replacement for preregistered Precision@5 (denominator 5 per query)."
+  }
+]

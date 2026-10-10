@@ -1,0 +1,1813 @@
+{
+  "reviewer": {
+    "reviewerId": "formal-reviewer-b",
+    "kind": "AI",
+    "expertStatus": "non_expert",
+    "blind": true,
+    "independent": true
+  },
+  "results": [
+    {
+      "answerId": "Q826d3dcbcf2f",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "insufficient_or_refusal",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": false,
+      "taskSuccessReason": "指定程颐注释没有交付，只有待补版本路径。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "insufficient_or_refusal",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p0准确锁定程颐井九五原文，无证据时未编段落。"
+            },
+            "knowledge": {
+              "value": null,
+              "rationale": "只提出程颐著作题名，无文献支持可核，未解释井九五。",
+              "naReason": "insufficient_basis"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "提出可概括可能方向但未实际展开类比。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "p0解释缺料与版本风险、如何补版本，语气清楚。"
+            },
+            "helpfulness": {
+              "value": 1,
+              "rationale": "提供卷次、出版或影印版本的补料路径，但所需注原文仍空缺。"
+            }
+          },
+          "errors": [
+            {
+              "type": "task_not_answered",
+              "quote": "无法按本轮参考原文为你逐字给出那段文字",
+              "location": "p0",
+              "reason": "原文是核心要求，未完成。",
+              "dimensions": [
+                "helpfulness"
+              ],
+              "severity": "material",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [
+              {
+                "claimId": "Q826d3dcbcf2f.c01",
+                "occurrenceIds": [],
+                "assertion": "周易程氏传属程颐",
+                "quote": "程颐（《周易程氏传》）",
+                "location": "p0",
+                "layer": "attribution",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "本样本证据与参考空，无法独立核定题名归属。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 1,
+              "traditionalAssertionsReviewed": 1,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {\"unknown\": 1}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Qb8cc08879026",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "正确回答程颐并非永生，并以权失位存为据；性命犹在的扩大不改变核心否定。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p0直接回答不是永生，围绕程颐注所说失权存位，没有错答别的爻。"
+            },
+            "knowledge": {
+              "value": 1,
+              "rationale": "“名位未亡、性命犹在”前半受支持，后半把位未亡扩大成人身性命结论；主要政治解释正确。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "只解释注家政治语境，没有现代类比。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "以失权未失位贯穿，引用与结论衔接顺畅。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "给关键原句及沉溺不能自立条件，足以否定永生误读。"
+            }
+          },
+          "errors": [
+            {
+              "type": "scope_overgeneralization",
+              "quote": "性命犹在",
+              "location": "p0",
+              "reason": "程颐用君位未亡解释恒不死，没有额外给个人性命的解释。",
+              "dimensions": [
+                "knowledge"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [
+              {
+                "claimId": "Qb8cc08879026.c01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "他解“貞疾恒不死”为“言貞而有疾，常疾而不死，如漢、魏末世之君也”",
+                "quote": "言貞而有疾，常疾而不死，如漢、魏末世之君也",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h16:line5:63c2243e84"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "六五以陰柔居君位，當豫之時，沉溺於豫，不能自立者也。權之所主，眾之所歸，皆在於四。四之陽剛得眾，非耽惑柔弱之君所能製也，乃柔弱不能自立之君，受制於專權之臣也，居得君位貞也，受制於下有疾苦也。六居尊位，權雖失而位未亡也，故云貞疾恒不死，言貞而有疾，常疾而不死，如漢、魏末世之君也。人君致危亡之道非一，而以豫為多。在四不言失正，而於五乃見其強逼者，四本無失，故於四言大臣任天下之事之義，於五則言柔弱居尊，不能自立，威權去己之義，各據爻以取義，故不同也。若五不失君道，而四主於豫，乃是任得其人安享其功，如太甲、成王也。《蒙》亦以陰居尊位，二以陽為蒙之主，然彼吉而此疾者，時不同也。童蒙而資之於人，宜也；耽豫而失之於人，危亡之道也。故蒙相應，則倚任者也；《豫》相逼，則失權者也。又上下之心專歸於四也。"
+              },
+              {
+                "claimId": "Qb8cc08879026.c02",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "但“權雖失而位未亡也”，仍居尊位，所以称作“貞疾恒不死”",
+                "quote": "但“權雖失而位未亡也”，仍居尊位，所以称作“貞疾恒不死”",
+                "location": "paragraphs[0].citations[1]",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h16:line5:63c2243e84"
+                ],
+                "supportLabel": "supported",
+                "rationale": "位未亡仍居尊位的解释与条注相符。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "六五以陰柔居君位，當豫之時，沉溺於豫，不能自立者也。權之所主，眾之所歸，皆在於四。四之陽剛得眾，非耽惑柔弱之君所能製也，乃柔弱不能自立之君，受制於專權之臣也，居得君位貞也，受制於下有疾苦也。六居尊位，權雖失而位未亡也，故云貞疾恒不死，言貞而有疾，常疾而不死，如漢、魏末世之君也。人君致危亡之道非一，而以豫為多。在四不言失正，而於五乃見其強逼者，四本無失，故於四言大臣任天下之事之義，於五則言柔弱居尊，不能自立，威權去己之義，各據爻以取義，故不同也。若五不失君道，而四主於豫，乃是任得其人安享其功，如太甲、成王也。《蒙》亦以陰居尊位，二以陽為蒙之主，然彼吉而此疾者，時不同也。童蒙而資之於人，宜也；耽豫而失之於人，危亡之道也。故蒙相應，則倚任者也；《豫》相逼，則失權者也。又上下之心專歸於四也。"
+              },
+              {
+                "claimId": "Qb8cc08879026.c03",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "權雖失而位未亡也",
+                "quote": "權雖失而位未亡也",
+                "location": "paragraphs[0].citations[1]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h16:line5:63c2243e84"
+                ],
+                "supportLabel": "supported",
+                "rationale": "另核引文字面与经传对象，不能由字面匹配担保整段应用。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "六五以陰柔居君位，當豫之時，沉溺於豫，不能自立者也。權之所主，眾之所歸，皆在於四。四之陽剛得眾，非耽惑柔弱之君所能製也，乃柔弱不能自立之君，受制於專權之臣也，居得君位貞也，受制於下有疾苦也。六居尊位，權雖失而位未亡也，故云貞疾恒不死，言貞而有疾，常疾而不死，如漢、魏末世之君也。人君致危亡之道非一，而以豫為多。在四不言失正，而於五乃見其強逼者，四本無失，故於四言大臣任天下之事之義，於五則言柔弱居尊，不能自立，威權去己之義，各據爻以取義，故不同也。若五不失君道，而四主於豫，乃是任得其人安享其功，如太甲、成王也。《蒙》亦以陰居尊位，二以陽為蒙之主，然彼吉而此疾者，時不同也。童蒙而資之於人，宜也；耽豫而失之於人，危亡之道也。故蒙相應，則倚任者也；《豫》相逼，則失權者也。又上下之心專歸於四也。"
+              },
+              {
+                "claimId": "Qb8cc08879026.c04",
+                "occurrenceIds": [],
+                "assertion": "程颐不死既指君位也指性命犹存",
+                "quote": "名位未亡、性命犹在",
+                "location": "p0",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "cheng-yi@1313743:h16:line5:63c2243e84"
+                ],
+                "supportLabel": "partial",
+                "rationale": "条注明说位未亡，并未将它额外解释为个人性命状态。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "六五以陰柔居君位，當豫之時，沉溺於豫，不能自立者也。權之所主，眾之所歸，皆在於四。四之陽剛得眾，非耽惑柔弱之君所能製也，乃柔弱不能自立之君，受制於專權之臣也，居得君位貞也，受制於下有疾苦也。六居尊位，權雖失而位未亡也，故云貞疾恒不死，言貞而有疾，常疾而不死，如漢、魏末世之君也。人君致危亡之道非一，而以豫為多。在四不言失正，而於五乃見其強逼者，四本無失，故於四言大臣任天下之事之義，於五則言柔弱居尊，不能自立，威權去己之義，各據爻以取義，故不同也。若五不失君道，而四主於豫，乃是任得其人安享其功，如太甲、成王也。《蒙》亦以陰居尊位，二以陽為蒙之主，然彼吉而此疾者，時不同也。童蒙而資之於人，宜也；耽豫而失之於人，危亡之道也。故蒙相應，則倚任者也；《豫》相逼，則失權者也。又上下之心專歸於四也。"
+              },
+              {
+                "claimId": "Qb8cc08879026.c05",
+                "occurrenceIds": [],
+                "assertion": "程颐六五沉溺失权前提",
+                "quote": "六五以陰柔居君位，當豫之時，沉溺於豫，不能自立者也",
+                "location": "p0",
+                "layer": "quotation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "cheng-yi@1313743:h16:line5:63c2243e84"
+                ],
+                "supportLabel": "supported",
+                "rationale": "正文引句超过短citation claim，核对一致。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "六五以陰柔居君位，當豫之時，沉溺於豫，不能自立者也。權之所主，眾之所歸，皆在於四。四之陽剛得眾，非耽惑柔弱之君所能製也，乃柔弱不能自立之君，受制於專權之臣也，居得君位貞也，受制於下有疾苦也。六居尊位，權雖失而位未亡也，故云貞疾恒不死，言貞而有疾，常疾而不死，如漢、魏末世之君也。人君致危亡之道非一，而以豫為多。在四不言失正，而於五乃見其強逼者，四本無失，故於四言大臣任天下之事之義，於五則言柔弱居尊，不能自立，威權去己之義，各據爻以取義，故不同也。若五不失君道，而四主於豫，乃是任得其人安享其功，如太甲、成王也。《蒙》亦以陰居尊位，二以陽為蒙之主，然彼吉而此疾者，時不同也。童蒙而資之於人，宜也；耽豫而失之於人，危亡之道也。故蒙相應，則倚任者也；《豫》相逼，則失權者也。又上下之心專歸於四也。"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 2,
+              "citationClaimOccurrencesReviewed": 2,
+              "traditionalAssertionsIdentified": 5,
+              "traditionalAssertionsReviewed": 5,
+              "uncitedTraditionalAssertionsIdentified": 2,
+              "uncitedTraditionalAssertionsReviewed": 2,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {\"supported\": 4, \"partial\": 1}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q4bcbb34ce002",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "validation_failed",
+        "candidateOnly": true,
+        "visibleKind": "none",
+        "technicalFailure": true,
+        "providedFailureNote": "未完成可交付回答；内部候选不是实际交付。"
+      },
+      "taskSuccess": false,
+      "taskSuccessReason": "技术核验失败，无实际可见回答；内部候选单独评，不算已交付。",
+      "candidateTaskSuccess": false,
+      "candidateTaskSuccessReason": "候选未回答出处，老子相近说法不足以完成王弼爻注定位；实际未交付另算失败。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "no_answer",
+          "dimensions": {
+            "understanding": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "无实际交付文本；技术核验失败，不能由内部候选替代评分。"
+            },
+            "knowledge": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "无实际交付文本；技术核验失败，不能由内部候选替代评分。"
+            },
+            "integration": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "无实际交付文本；技术核验失败，不能由内部候选替代评分。"
+            },
+            "conversation": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "无实际交付文本；技术核验失败，不能由内部候选替代评分。"
+            },
+            "helpfulness": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "无实际交付文本；技术核验失败，不能由内部候选替代评分。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "无实际交付文本；不将内部fallback视为可见。",
+            "claims": [],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 0,
+              "traditionalAssertionsReviewed": 0,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "无可见回答，候选引用在candidate evaluation另核。"
+            }
+          }
+        },
+        {
+          "target": "candidate",
+          "responseKind": "insufficient_or_refusal",
+          "dimensions": {
+            "understanding": {
+              "value": 1,
+              "rationale": "候选反复聚焦巽初六，用户并未指定该爻；正确承认无法从当前卦反推出处。"
+            },
+            "knowledge": {
+              "value": null,
+              "rationale": "候选关于老子二十六章出处没有该文献，且未给王弼恒上六定位，主出处无法从候选所用资料判断。",
+              "naReason": "insufficient_basis"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "没有现代应用，只是文献和补料讨论。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 1,
+              "rationale": "候选p2“另起一卦专门问文献出处”加入对核对原文无帮助的分支。"
+            },
+            "helpfulness": {
+              "value": 0,
+              "rationale": "候选没有找出所问哪一爻，也未给正确恒上六的核实路径。"
+            }
+          },
+          "errors": [
+            {
+              "type": "task_not_answered",
+              "quote": "无法确认对应初六、九二或其他爻位",
+              "location": "p1",
+              "reason": "用户核心哪一爻未得到回答。",
+              "dimensions": [
+                "helpfulness"
+              ],
+              "severity": "material",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "unhelpful_expansion",
+              "quote": "也可另起一卦专门问文献出处",
+              "location": "p2",
+              "reason": "文献定位需原文，另起卦不能补充证据。",
+              "dimensions": [
+                "conversation"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [
+              {
+                "claimId": "Q4bcbb34ce002.c01",
+                "occurrenceIds": [],
+                "assertion": "老子二十六章有静为躁君相近说法",
+                "quote": "这类意思在《老子》第二十六章中有相近表达",
+                "location": "p1",
+                "layer": "attribution",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "本样本未提供老子原文，补充仅为王弼恒注，不能核这条归属。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable"
+              },
+              {
+                "claimId": "Q4bcbb34ce002.c02",
+                "occurrenceIds": [],
+                "assertion": "本次巽初爻少阴",
+                "quote": "初六为少阴",
+                "location": "p2",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "supported",
+                "rationale": "题给cast首爻8可核少阴，不能据此定位所问引文。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 2,
+              "traditionalAssertionsReviewed": 2,
+              "uncitedTraditionalAssertionsIdentified": 2,
+              "uncitedTraditionalAssertionsReviewed": 2,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {\"unknown\": 1, \"supported\": 1}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Qe1a772872bf8",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "insufficient_or_refusal",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": false,
+      "taskSuccessReason": "所需原文未交付，后续可核路径不等于已完成。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "insufficient_or_refusal",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "明确是程颐井九五指定原文，p0未将义理替代当作所问文本。"
+            },
+            "knowledge": {
+              "value": null,
+              "rationale": "《周易程氏传》《伊川易传》题名关系无本样本文献可核，正文没有释义。",
+              "naReason": "insufficient_basis"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "只说可以另谈义理，未作现代应用。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "“那不等于程颐原文”清楚设限，补影印或页码的说明易懂。"
+            },
+            "helpfulness": {
+              "value": 1,
+              "rationale": "有书名页码或影印核对路径，但原文、准确卷次均未给。"
+            }
+          },
+          "errors": [
+            {
+              "type": "task_not_answered",
+              "quote": "无法从本轮资料中给出可靠、逐字的程颐原文",
+              "location": "p0",
+              "reason": "核心文献内容缺失。",
+              "dimensions": [
+                "helpfulness"
+              ],
+              "severity": "material",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [
+              {
+                "claimId": "Qe1a772872bf8.c01",
+                "occurrenceIds": [],
+                "assertion": "程颐著作的两题名相同",
+                "quote": "程颐《周易程氏传》（《伊川易传》）",
+                "location": "p0",
+                "layer": "attribution",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "无实际或补充来源核定书名及别称。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 1,
+              "traditionalAssertionsReviewed": 1,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {\"unknown\": 1}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q2112d35d0dda",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "拒绝凭卦缺席并给程序核实路径，实际帮助充分。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p0准确识别不能用卦决定缺席，代理、缺席后果均交给法律与案情核实。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "讼不可成、尚中正与作事谋始的主要解释与给定原文相容；大人职权细节另记未知。"
+            },
+            "integration": {
+              "value": 1,
+              "rationale": "p4“讼卦更支持你…应诉”仍让象义替法律行动背书，尽管前后反复声明不能替代。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "开头明确不能，末尾对实际困难提供正规解决方向，表达连贯。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "建议律师/法院核实应诉、整理证据、代理延期，足以支持安全决策。"
+            }
+          },
+          "errors": [
+            {
+              "type": "citation_mismatch",
+              "quote": "讼卦更支持你谨慎应诉、寻求中正的裁断",
+              "location": "p4",
+              "reason": "现实应诉要求应由法律确认，不能由卦决定，即使实际建议合理。",
+              "dimensions": [
+                "integration"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [
+              {
+                "claimId": "Q2112d35d0dda.c01",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "有孚，窒惕，中吉；终凶。利见大人，不利涉大川",
+                "quote": "有孚，窒惕，中吉；终凶。利见大人，不利涉大川。",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-6-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "有孚，窒惕，中吉；终凶。利见大人，不利涉大川。"
+              },
+              {
+                "claimId": "Q2112d35d0dda.c02",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "讼不可成也",
+                "quote": "讼不可成也",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-6-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "讼，上刚下险，险而健，讼。“讼：有孚，窒惕，中吉”，刚来而得中也。“终凶”，讼不可成也。“利见大人”，尚中正也。“不利涉大川”，入于渊也。"
+              },
+              {
+                "claimId": "Q2112d35d0dda.c03",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "尚中正也",
+                "quote": "尚中正也",
+                "location": "paragraphs[2].citations[1]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-6-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "讼，上刚下险，险而健，讼。“讼：有孚，窒惕，中吉”，刚来而得中也。“终凶”，讼不可成也。“利见大人”，尚中正也。“不利涉大川”，入于渊也。"
+              },
+              {
+                "claimId": "Q2112d35d0dda.c04",
+                "occurrenceIds": [
+                  "delivered.p3.c0"
+                ],
+                "assertion": "君子以作事谋始",
+                "quote": "君子以作事谋始",
+                "location": "paragraphs[3].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-6-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "天与水违行，讼。君子以作事谋始。"
+              },
+              {
+                "claimId": "Q2112d35d0dda.c05",
+                "occurrenceIds": [],
+                "assertion": "终凶与讼不可成的释义",
+                "quote": "终凶”是在说争讼不宜一味缠斗到底",
+                "location": "p1",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-6-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "彖传直接以讼不可成解释终凶，有限主旨相符。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "讼，上刚下险，险而健，讼。“讼：有孚，窒惕，中吉”，刚来而得中也。“终凶”，讼不可成也。“利见大人”，尚中正也。“不利涉大川”，入于渊也。"
+              },
+              {
+                "claimId": "Q2112d35d0dda.c06",
+                "occurrenceIds": [],
+                "assertion": "大人为公正有裁断权者",
+                "quote": "利于去见公正、有裁断权的人",
+                "location": "p1",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-6-tuan"
+                ],
+                "supportLabel": "unknown",
+                "rationale": "尚中正支持中正部分，未提供职权训释材料。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable"
+              },
+              {
+                "claimId": "Q2112d35d0dda.c07",
+                "occurrenceIds": [],
+                "assertion": "天水违行启发相违之讼",
+                "quote": "天与水背道而驰，象征彼此立场相违而成讼",
+                "location": "p3",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-6-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "大象天与水违行讼支持主旨。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "天与水违行，讼。君子以作事谋始。"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 4,
+              "citationClaimOccurrencesReviewed": 4,
+              "traditionalAssertionsIdentified": 7,
+              "traditionalAssertionsReviewed": 7,
+              "uncitedTraditionalAssertionsIdentified": 3,
+              "uncitedTraditionalAssertionsReviewed": 3,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {\"supported\": 6, \"unknown\": 1}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q9a1856f8f241",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "validation_failed",
+        "candidateOnly": true,
+        "visibleKind": "none",
+        "technicalFailure": true,
+        "providedFailureNote": "未完成可交付回答；内部候选不是实际交付。"
+      },
+      "taskSuccess": false,
+      "taskSuccessReason": "技术核验失败，无实际可见回答；内部候选单独评，不算已交付。",
+      "candidateTaskSuccess": false,
+      "candidateTaskSuccessReason": "候选仅limitations、没有任何注家解释；经典条目确缺，但可见注释已足够回答无咎条件，不算成功。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "no_answer",
+          "dimensions": {
+            "understanding": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "无实际交付文本；技术核验失败，不能由内部候选替代评分。"
+            },
+            "knowledge": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "无实际交付文本；技术核验失败，不能由内部候选替代评分。"
+            },
+            "integration": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "无实际交付文本；技术核验失败，不能由内部候选替代评分。"
+            },
+            "conversation": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "无实际交付文本；技术核验失败，不能由内部候选替代评分。"
+            },
+            "helpfulness": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "无实际交付文本；技术核验失败，不能由内部候选替代评分。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "无实际交付文本；不将内部fallback视为可见。",
+            "claims": [],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 0,
+              "traditionalAssertionsReviewed": 0,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "无可见回答，候选引用在candidate evaluation另核。"
+            }
+          }
+        },
+        {
+          "target": "candidate",
+          "responseKind": "insufficient_or_refusal",
+          "dimensions": {
+            "understanding": {
+              "value": 1,
+              "rationale": "候选limitations承认缺经典经文，但用户核心要求一位注家解释，实际已有三家足够资料，未采用可用支持。"
+            },
+            "knowledge": {
+              "value": null,
+              "rationale": "候选仅缺料理由，无传统含义断言可评。",
+              "naReason": "not_applicable"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "纯文献请求，无现代应用。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 1,
+              "rationale": "候选只有任务相关不足说明，没有解释已具备的注家资料能回答什么，交流推进不足。"
+            },
+            "helpfulness": {
+              "value": 0,
+              "rationale": "“故不能完成核对”未提供已有王弼等释义，实际可做的核心工作未做。"
+            }
+          },
+          "errors": [
+            {
+              "type": "task_not_answered",
+              "quote": "故不能完成核对",
+              "location": "limitations[0]",
+              "reason": "用户求注家原话，实际有王弼必渝变及程朱注可用，却没有作答；不把参考经文算生成已见。",
+              "dimensions": [
+                "understanding",
+                "helpfulness"
+              ],
+              "severity": "material",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 0,
+              "traditionalAssertionsReviewed": 0,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q170dbe2049a1",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": false,
+      "taskSuccessReason": "具体家庭沟通请求未实质回答，仅提供重开操作。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 1,
+              "rationale": "识别换题却未承接父母卖房的舍不得和沟通诉求，只让重问。"
+            },
+            "knowledge": {
+              "value": null,
+              "rationale": "“新建起卦”操作说明没有传统断言。",
+              "naReason": "not_applicable"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "未拿旧益卦解释卖房，也没有类比。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 1,
+              "rationale": "对明显情感诉求只给机械入口，语气虽礼貌但缺乏承接。"
+            },
+            "helpfulness": {
+              "value": 1,
+              "rationale": "能指导换会话，不能帮助这一轮怎么和父母谈。"
+            }
+          },
+          "errors": [
+            {
+              "type": "task_not_answered",
+              "quote": "围绕新的核心问题重新发问",
+              "location": "p0",
+              "reason": "用户已提出具体新问题，未给谈话支持。",
+              "dimensions": [
+                "helpfulness"
+              ],
+              "severity": "material",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 0,
+              "traditionalAssertionsReviewed": 0,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Qeb4c53166041",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "validation_failed",
+        "candidateOnly": true,
+        "visibleKind": "none",
+        "technicalFailure": true,
+        "providedFailureNote": "未完成可交付回答；内部候选不是实际交付。"
+      },
+      "taskSuccess": false,
+      "taskSuccessReason": "技术核验失败，无实际可见回答；内部候选单独评，不算已交付。",
+      "candidateTaskSuccess": true,
+      "candidateTaskSuccessReason": "候选充分解释有条件无咎且原话可核；实际技术失败仍不算交付成功。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "no_answer",
+          "dimensions": {
+            "understanding": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "无实际交付文本；技术核验失败，不能由内部候选替代评分。"
+            },
+            "knowledge": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "无实际交付文本；技术核验失败，不能由内部候选替代评分。"
+            },
+            "integration": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "无实际交付文本；技术核验失败，不能由内部候选替代评分。"
+            },
+            "conversation": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "无实际交付文本；技术核验失败，不能由内部候选替代评分。"
+            },
+            "helpfulness": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "无实际交付文本；技术核验失败，不能由内部候选替代评分。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "无实际交付文本；不将内部fallback视为可见。",
+            "claims": [],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 0,
+              "traditionalAssertionsReviewed": 0,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "无可见回答，候选引用在candidate evaluation另核。"
+            }
+          }
+        },
+        {
+          "target": "candidate",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "候选p0拆解冥豫成有渝，准确回应为何仍无咎。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "候选保留王弼极豫须变、程颐豫终能变、朱熹动体和迁善目的，均符合材料。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "纯经典解释及注家比较，未作现代应用。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "候选按三家各自视角展开并归结“钥匙在渝”，逻辑自然。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "候选给完整爻辞和多位注家原话，必要对象、内容与条件俱全。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [
+              {
+                "claimId": "Qeb4c53166041.c01",
+                "occurrenceIds": [
+                  "candidate.p0.c0"
+                ],
+                "assertion": "冥豫，成有渝，无咎",
+                "quote": "冥豫，成有渝，无咎。",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-16-line-6"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "冥豫，成有渝，无咎。"
+              },
+              {
+                "claimId": "Qeb4c53166041.c02",
+                "occurrenceIds": [
+                  "candidate.p1.c0"
+                ],
+                "assertion": "故必渝變然後無咎",
+                "quote": "故必渝變然後無咎",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line6:067f0d7036"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處「動豫」之極，極豫盡樂，故至於「冥豫成」也。過豫不巳，何可長乎？故必渝變然後無咎。"
+              },
+              {
+                "claimId": "Qeb4c53166041.c03",
+                "occurrenceIds": [
+                  "candidate.p1.c1"
+                ],
+                "assertion": "過豫不巳，何可長乎？",
+                "quote": "過豫不巳，何可長乎？",
+                "location": "paragraphs[1].citations[1]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line6:067f0d7036"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處「動豫」之極，極豫盡樂，故至於「冥豫成」也。過豫不巳，何可長乎？故必渝變然後無咎。"
+              },
+              {
+                "claimId": "Qeb4c53166041.c04",
+                "occurrenceIds": [
+                  "candidate.p2.c0"
+                ],
+                "assertion": "若能有渝變，則可以無咎矣",
+                "quote": "若能有渝變，則可以無咎矣。",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h16:line6:065f828f81"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "上六陰柔，非有中正之德，以陰居上，不正也。而當豫極之時，以君子居斯時，亦當戒懼，況陰柔乎？乃耽肆於豫，昏迷不知反者也。在豫之終，故為昏冥已成也。若能有渝變，則可以無咎矣。在豫之終，有變之義。人之失，苟能自變，皆可以無咎，故冥豫雖已成，能變則善也。聖人發此義，所以勸遷善也，故更不言冥之凶，專言渝之無咎。"
+              },
+              {
+                "claimId": "Qeb4c53166041.c05",
+                "occurrenceIds": [
+                  "candidate.p2.c1"
+                ],
+                "assertion": "人之失，苟能自變，皆可以無咎",
+                "quote": "人之失，苟能自變，皆可以無咎",
+                "location": "paragraphs[2].citations[1]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h16:line6:065f828f81"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "上六陰柔，非有中正之德，以陰居上，不正也。而當豫極之時，以君子居斯時，亦當戒懼，況陰柔乎？乃耽肆於豫，昏迷不知反者也。在豫之終，故為昏冥已成也。若能有渝變，則可以無咎矣。在豫之終，有變之義。人之失，苟能自變，皆可以無咎，故冥豫雖已成，能變則善也。聖人發此義，所以勸遷善也，故更不言冥之凶，專言渝之無咎。"
+              },
+              {
+                "claimId": "Qeb4c53166041.c06",
+                "occurrenceIds": [
+                  "candidate.p2.c2"
+                ],
+                "assertion": "故更不言冥之凶，專言渝之無咎",
+                "quote": "故更不言冥之凶，專言渝之無咎",
+                "location": "paragraphs[2].citations[2]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h16:line6:065f828f81"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "上六陰柔，非有中正之德，以陰居上，不正也。而當豫極之時，以君子居斯時，亦當戒懼，況陰柔乎？乃耽肆於豫，昏迷不知反者也。在豫之終，故為昏冥已成也。若能有渝變，則可以無咎矣。在豫之終，有變之義。人之失，苟能自變，皆可以無咎，故冥豫雖已成，能變則善也。聖人發此義，所以勸遷善也，故更不言冥之凶，專言渝之無咎。"
+              },
+              {
+                "claimId": "Qeb4c53166041.c07",
+                "occurrenceIds": [
+                  "candidate.p3.c0"
+                ],
+                "assertion": "以隂柔居豫極為昏冥於豫之象",
+                "quote": "以隂柔居豫極為昏冥於豫之象",
+                "location": "paragraphs[3].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line6:ed433daded"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "渝以朱反○以隂柔居豫極為昏冥於豫之象以其動體故又為其事雖成而能有渝之象戒占者如是則能補過而无咎所以廣遷善之門也"
+              },
+              {
+                "claimId": "Qeb4c53166041.c08",
+                "occurrenceIds": [
+                  "candidate.p3.c1"
+                ],
+                "assertion": "則能補過而无咎",
+                "quote": "則能補過而无咎",
+                "location": "paragraphs[3].citations[1]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line6:ed433daded"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "渝以朱反○以隂柔居豫極為昏冥於豫之象以其動體故又為其事雖成而能有渝之象戒占者如是則能補過而无咎所以廣遷善之門也"
+              },
+              {
+                "claimId": "Qeb4c53166041.c09",
+                "occurrenceIds": [
+                  "candidate.p3.c2"
+                ],
+                "assertion": "所以廣遷善之門也",
+                "quote": "所以廣遷善之門也",
+                "location": "paragraphs[3].citations[2]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line6:ed433daded"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "渝以朱反○以隂柔居豫極為昏冥於豫之象以其動體故又為其事雖成而能有渝之象戒占者如是則能補過而无咎所以廣遷善之門也"
+              },
+              {
+                "claimId": "Qeb4c53166041.c10",
+                "occurrenceIds": [
+                  "candidate.p4.c0"
+                ],
+                "assertion": "故必渝變然後無咎",
+                "quote": "故必渝變然後無咎",
+                "location": "paragraphs[4].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line6:067f0d7036"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處「動豫」之極，極豫盡樂，故至於「冥豫成」也。過豫不巳，何可長乎？故必渝變然後無咎。"
+              },
+              {
+                "claimId": "Qeb4c53166041.c11",
+                "occurrenceIds": [
+                  "candidate.p4.c1"
+                ],
+                "assertion": "能變則善也",
+                "quote": "能變則善也",
+                "location": "paragraphs[4].citations[1]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h16:line6:065f828f81"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "上六陰柔，非有中正之德，以陰居上，不正也。而當豫極之時，以君子居斯時，亦當戒懼，況陰柔乎？乃耽肆於豫，昏迷不知反者也。在豫之終，故為昏冥已成也。若能有渝變，則可以無咎矣。在豫之終，有變之義。人之失，苟能自變，皆可以無咎，故冥豫雖已成，能變則善也。聖人發此義，所以勸遷善也，故更不言冥之凶，專言渝之無咎。"
+              },
+              {
+                "claimId": "Qeb4c53166041.c12",
+                "occurrenceIds": [
+                  "candidate.p4.c2"
+                ],
+                "assertion": "則能補過而无咎",
+                "quote": "則能補過而无咎",
+                "location": "paragraphs[4].citations[2]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line6:ed433daded"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "渝以朱反○以隂柔居豫極為昏冥於豫之象以其動體故又為其事雖成而能有渝之象戒占者如是則能補過而无咎所以廣遷善之門也"
+              },
+              {
+                "claimId": "Qeb4c53166041.c13",
+                "occurrenceIds": [],
+                "assertion": "冥豫为上六极豫昏冥",
+                "quote": "“冥豫”，指处在豫卦上爻、安乐之极而昏冥沉溺于豫",
+                "location": "p0",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line6:067f0d7036",
+                  "cheng-yi@1313743:h16:line6:065f828f81"
+                ],
+                "supportLabel": "supported",
+                "rationale": "三家释义直接支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "處「動豫」之極，極豫盡樂，故至於「冥豫成」也。過豫不巳，何可長乎？故必渝變然後無咎。 / 上六陰柔，非有中正之德，以陰居上，不正也。而當豫極之時，以君子居斯時，亦當戒懼，況陰柔乎？乃耽肆於豫，昏迷不知反者也。在豫之終，故為昏冥已成也。若能有渝變，則可以無咎矣。在豫之終，有變之義。人之失，苟能自變，皆可以無咎，故冥豫雖已成，能變則善也。聖人發此義，所以勸遷善也，故更不言冥之凶，專言渝之無咎。"
+              },
+              {
+                "claimId": "Qeb4c53166041.c14",
+                "occurrenceIds": [],
+                "assertion": "成有渝为已成能变",
+                "quote": "这种局面虽已形成，仍有渝变、悔改之义",
+                "location": "p0",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line6:ed433daded",
+                  "cheng-yi@1313743:h16:line6:065f828f81"
+                ],
+                "supportLabel": "supported",
+                "rationale": "朱熹其事虽成能有渝及程颐能变则善支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "渝以朱反○以隂柔居豫極為昏冥於豫之象以其動體故又為其事雖成而能有渝之象戒占者如是則能補過而无咎所以廣遷善之門也 / 上六陰柔，非有中正之德，以陰居上，不正也。而當豫極之時，以君子居斯時，亦當戒懼，況陰柔乎？乃耽肆於豫，昏迷不知反者也。在豫之終，故為昏冥已成也。若能有渝變，則可以無咎矣。在豫之終，有變之義。人之失，苟能自變，皆可以無咎，故冥豫雖已成，能變則善也。聖人發此義，所以勸遷善也，故更不言冥之凶，專言渝之無咎。"
+              },
+              {
+                "claimId": "Qeb4c53166041.c15",
+                "occurrenceIds": [],
+                "assertion": "朱熹以动体说明能变",
+                "quote": "又因其为动体，所以“又為其事雖成而能有渝之象”",
+                "location": "p3",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line6:ed433daded"
+                ],
+                "supportLabel": "supported",
+                "rationale": "朱注明确以其动体故又为能有渝之象。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "渝以朱反○以隂柔居豫極為昏冥於豫之象以其動體故又為其事雖成而能有渝之象戒占者如是則能補過而无咎所以廣遷善之門也"
+              },
+              {
+                "claimId": "Qeb4c53166041.c16",
+                "occurrenceIds": [],
+                "assertion": "程颐上六阴柔不正判断",
+                "quote": "上六“陰柔，非有中正之德，以陰居上，不正也”",
+                "location": "p2",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "cheng-yi@1313743:h16:line6:065f828f81"
+                ],
+                "supportLabel": "supported",
+                "rationale": "逐字核对程注，不另以一般爻位学说代替作者自己的说法。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "上六陰柔，非有中正之德，以陰居上，不正也。而當豫極之時，以君子居斯時，亦當戒懼，況陰柔乎？乃耽肆於豫，昏迷不知反者也。在豫之終，故為昏冥已成也。若能有渝變，則可以無咎矣。在豫之終，有變之義。人之失，苟能自變，皆可以無咎，故冥豫雖已成，能變則善也。聖人發此義，所以勸遷善也，故更不言冥之凶，專言渝之無咎。"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 12,
+              "citationClaimOccurrencesReviewed": 12,
+              "traditionalAssertionsIdentified": 16,
+              "traditionalAssertionsReviewed": 16,
+              "uncitedTraditionalAssertionsIdentified": 4,
+              "uncitedTraditionalAssertionsReviewed": 4,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {\"supported\": 16}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Qc6b8744b8e0d",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "原文、作者、爻位和象占范围均正确，充分完成。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p0准确回应不只田猎，p1另给王弼，将所问层次摆清楚。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "王弼恒于非位虽劳无获、朱熹阳居阴及凡事所求的对象条件均忠实。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "没有从占辞给现实生活预测，只在文献层面解释占义。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "按象因、占断与两家对照组织，虽有复述但服务层次区分，不按重复数量扣分。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "两家原话齐备且解释各自层次，满足文献对照需求。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [
+              {
+                "claimId": "Qc6b8744b8e0d.c01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "以陽居隂久非其位故為此象",
+                "quote": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@737053:h32:line4:0f4238b3b2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也"
+              },
+              {
+                "claimId": "Qc6b8744b8e0d.c02",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "占者田无所獲而凡事亦不得其所求也",
+                "quote": "占者田无所獲而凡事亦不得其所求也",
+                "location": "paragraphs[0].citations[1]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@737053:h32:line4:0f4238b3b2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也"
+              },
+              {
+                "claimId": "Qc6b8744b8e0d.c03",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "恒於非位，雖勞無獲也。",
+                "quote": "恒於非位，雖勞無獲也。",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2404960:h32:line4:082ae569fb"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "恒於非位，雖勞無獲也。"
+              },
+              {
+                "claimId": "Qc6b8744b8e0d.c04",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "恒於非位，雖勞無獲也",
+                "quote": "恒於非位，雖勞無獲也。",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2404960:h32:line4:082ae569fb"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "恒於非位，雖勞無獲也。"
+              },
+              {
+                "claimId": "Qc6b8744b8e0d.c05",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "以陽居隂久非其位故為此象",
+                "quote": "以陽居隂久非其位故為此象",
+                "location": "paragraphs[2].citations[1]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@737053:h32:line4:0f4238b3b2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也"
+              },
+              {
+                "claimId": "Qc6b8744b8e0d.c06",
+                "occurrenceIds": [
+                  "delivered.p2.c2"
+                ],
+                "assertion": "占者田无所獲而凡事亦不得其所求也",
+                "quote": "占者田无所獲而凡事亦不得其所求也",
+                "location": "paragraphs[2].citations[2]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@737053:h32:line4:0f4238b3b2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也"
+              },
+              {
+                "claimId": "Qc6b8744b8e0d.c07",
+                "occurrenceIds": [
+                  "delivered.p3.c0"
+                ],
+                "assertion": "恒於非位，雖勞無獲也",
+                "quote": "恒於非位，雖勞無獲也。",
+                "location": "paragraphs[3].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2404960:h32:line4:082ae569fb"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "恒於非位，雖勞無獲也。"
+              },
+              {
+                "claimId": "Qc6b8744b8e0d.c08",
+                "occurrenceIds": [
+                  "delivered.p3.c1"
+                ],
+                "assertion": "以陽居隂久非其位故為此象",
+                "quote": "以陽居隂久非其位故為此象",
+                "location": "paragraphs[3].citations[1]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@737053:h32:line4:0f4238b3b2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也"
+              },
+              {
+                "claimId": "Qc6b8744b8e0d.c09",
+                "occurrenceIds": [
+                  "delivered.p3.c2"
+                ],
+                "assertion": "占者田无所獲而凡事亦不得其所求也",
+                "quote": "占者田无所獲而凡事亦不得其所求也",
+                "location": "paragraphs[3].citations[2]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@737053:h32:line4:0f4238b3b2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也"
+              },
+              {
+                "claimId": "Qc6b8744b8e0d.c10",
+                "occurrenceIds": [],
+                "assertion": "田无禽属恒九四",
+                "quote": "恒卦九四的“田无禽”",
+                "location": "p0",
+                "layer": "attribution",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-32-line-4"
+                ],
+                "supportLabel": "supported",
+                "rationale": "评阅补充经文locator核定位；生成已见的是两家注而非独立经文条目。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "田无禽。",
+                "supportEvidenceScope": "reference_only"
+              },
+              {
+                "claimId": "Qc6b8744b8e0d.c11",
+                "occurrenceIds": [],
+                "assertion": "王弼非位恒久故劳而无获",
+                "quote": "位置不对却长久如此，所以虽劳而无获",
+                "location": "p1",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@2404960:h32:line4:082ae569fb"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王弼短注明示此关系。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "恒於非位，雖勞無獲也。"
+              },
+              {
+                "claimId": "Qc6b8744b8e0d.c12",
+                "occurrenceIds": [],
+                "assertion": "朱熹先象因后占者及泛事",
+                "quote": "朱熹则兼及象与占",
+                "location": "p2",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zhu-xi@737053:h32:line4:0f4238b3b2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "原注为此象接占者田无获而凡事不得，层次明确。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 9,
+              "citationClaimOccurrencesReviewed": 9,
+              "traditionalAssertionsIdentified": 12,
+              "traditionalAssertionsReviewed": 12,
+              "uncitedTraditionalAssertionsIdentified": 3,
+              "uncitedTraditionalAssertionsReviewed": 3,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {\"supported\": 12}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Qcd1b2f499f89",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "正确阻止凭卦缺席并给现实程序路径，局部强行象义对应不改变核心法律边界。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p3明确法律后果依案件类型法院要求诉讼地位，未把未知管辖固定。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "经典引句正确，讼不可成与中正主旨可核，具体法院场合属于现代应用。"
+            },
+            "integration": {
+              "value": 1,
+              "rationale": "p1“开庭正是…见大人”、p2缺席更像不利涉大川，用象义正反为法律行为背书偏强。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "开头不能，后面解释再回到现实法律核实，条理清楚。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "告知缺席可能后果及咨询律师、证据答辩准备，明确决策依据应为法律。"
+            }
+          },
+          "errors": [
+            {
+              "type": "strained_analogy",
+              "quote": "反而更像卦辞所警戒的“不利涉大川”",
+              "location": "p2",
+              "reason": "以另一个卦句给缺席风险加背书，实际后果需法律而非象义。",
+              "dimensions": [
+                "integration"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [
+              {
+                "claimId": "Qcd1b2f499f89.c01",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《周易》讼卦卦辞说：“有孚，窒惕，中吉；终凶。利见大人，不利涉大川。”",
+                "quote": "有孚，窒惕，中吉；终凶。利见大人，不利涉大川。",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-6-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "有孚，窒惕，中吉；终凶。利见大人，不利涉大川。"
+              },
+              {
+                "claimId": "Qcd1b2f499f89.c02",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "彖传解释为“尚中正也”",
+                "quote": "尚中正也",
+                "location": "paragraphs[1].citations[1]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-6-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "讼，上刚下险，险而健，讼。“讼：有孚，窒惕，中吉”，刚来而得中也。“终凶”，讼不可成也。“利见大人”，尚中正也。“不利涉大川”，入于渊也。"
+              },
+              {
+                "claimId": "Qcd1b2f499f89.c03",
+                "occurrenceIds": [
+                  "delivered.p1.c2"
+                ],
+                "assertion": "彖传点明“讼不可成也”",
+                "quote": "讼不可成也",
+                "location": "paragraphs[1].citations[2]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-6-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "讼，上刚下险，险而健，讼。“讼：有孚，窒惕，中吉”，刚来而得中也。“终凶”，讼不可成也。“利见大人”，尚中正也。“不利涉大川”，入于渊也。"
+              },
+              {
+                "claimId": "Qcd1b2f499f89.c04",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "“天与水违行，讼。君子以作事谋始。”",
+                "quote": "天与水违行，讼。君子以作事谋始。",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-6-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "天与水违行，讼。君子以作事谋始。"
+              },
+              {
+                "claimId": "Qcd1b2f499f89.c05",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "“不利涉大川”",
+                "quote": "不利涉大川",
+                "location": "paragraphs[2].citations[1]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-6-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "有孚，窒惕，中吉；终凶。利见大人，不利涉大川。"
+              },
+              {
+                "claimId": "Qcd1b2f499f89.c06",
+                "occurrenceIds": [],
+                "assertion": "终凶讼不可成的主旨",
+                "quote": "争讼不宜一味缠斗到不可收拾",
+                "location": "p1",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-6-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "彖传终凶讼不可成支持有限解释。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "讼，上刚下险，险而健，讼。“讼：有孚，窒惕，中吉”，刚来而得中也。“终凶”，讼不可成也。“利见大人”，尚中正也。“不利涉大川”，入于渊也。"
+              },
+              {
+                "claimId": "Qcd1b2f499f89.c07",
+                "occurrenceIds": [],
+                "assertion": "开庭类比利见大人",
+                "quote": "开庭正是这样一个“见大人”的场合",
+                "location": "p1",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-6-judgment"
+                ],
+                "supportLabel": null,
+                "rationale": "现代制度类比不是古文直指现行法院。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代联系/现实判断不作为传统命题支持分母，合理性另评。"
+              },
+              {
+                "claimId": "Qcd1b2f499f89.c08",
+                "occurrenceIds": [],
+                "assertion": "缺席类比不利涉大川",
+                "quote": "反而更像卦辞所警戒的“不利涉大川”",
+                "location": "p2",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-6-judgment"
+                ],
+                "supportLabel": null,
+                "rationale": "现代风险比喻，不能证明法律缺席后果。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代联系/现实判断不作为传统命题支持分母，合理性另评。"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 5,
+              "citationClaimOccurrencesReviewed": 5,
+              "traditionalAssertionsIdentified": 6,
+              "traditionalAssertionsReviewed": 6,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {\"supported\": 6}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

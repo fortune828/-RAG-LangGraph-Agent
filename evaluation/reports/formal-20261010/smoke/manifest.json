@@ -1,0 +1,47 @@
+{
+  "stage": "smoke",
+  "createdAt": "2026-10-10T11:14:37.186106+00:00",
+  "graphVersion": "python-graph-v16",
+  "promptVersion": "evidence-agent-python-v16",
+  "releaseId": "knowledge-v3-20260926-r1",
+  "arms": [
+    "H"
+  ],
+  "caseHash": "9ccfd7dfaf21d14c472d40db692c367b54c3276e5f162057a9da14832f243b17",
+  "configuration": {
+    "model": "deepseek-flash",
+    "messages": [],
+    "max_tokens": 8192,
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "low",
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "repairConfiguration": {
+    "model": "deepseek-flash",
+    "messages": [],
+    "max_tokens": 8192,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "codeHash": "d1f70216140d60886021e31079590b46efedd3058a02de236e80ceecd7f9469b",
+  "freezeSha256": null,
+  "design": "One run per cell; complete graph, at most one repair. rag is one fixed generation without repair.",
+  "limits": {
+    "calls": 800,
+    "tokens": 5000000,
+    "perCellCalls": 8,
+    "perCellTokens": 100000
+  },
+  "seed": "not_sent",
+  "temperature": "not_sent",
+  "cache": "local corpus/index prewarmed; actual provider cache usage captured",
+  "httpSmoke": "Isolated temporary storage; real FastAPI handlers, cast creation, model and persisted turn. Auth secret not recorded."
+}

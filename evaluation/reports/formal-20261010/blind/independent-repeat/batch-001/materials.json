@@ -1,0 +1,1762 @@
+[
+  {
+    "answerId": "Qfecaa1a87307",
+    "scenario": "life",
+    "question": "今天洗了床单，阳台风大但天阴，屋里有晾衣架。我下午一直在家，晾哪里省心？",
+    "coreQuestion": "今天洗了床单，阳台风大但天阴，屋里有晾衣架。我下午一直在家，晾哪里省心？",
+    "history": [],
+    "cast": {
+      "lines": [
+        7,
+        8,
+        8,
+        7,
+        8,
+        8
+      ],
+      "original": {
+        "binary": "100100",
+        "name": "震为雷",
+        "number": 51,
+        "judgment": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。"
+      },
+      "changed": {
+        "binary": "100100",
+        "name": "震为雷",
+        "number": 51,
+        "judgment": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。"
+      },
+      "originalBinary": "100100",
+      "changedBinary": "100100",
+      "changingIndices": [],
+      "method": "three-coins",
+      "algorithmVersion": "evaluation-fixed-lines",
+      "readingPolicyVersion": "all-moving-lines-v1"
+    },
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "从震卦看，阳台风大正合“洊雷，震”之象，动势明显；但卦辞说“震来虩虩，笑言哑哑”，先惊后安，重点不在迎着风动，而在稳住。因此若只求省心，屋内晾衣架更合适：下午你在家，可以随时调整，不必担心床单被阵风吹落、沾灰或突然下雨。",
+          "citations": [
+            {
+              "evidenceId": "zy-51-xiang",
+              "quote": "洊雷，震。",
+              "claim": "阳台风大正合“洊雷，震”之象，动势明显"
+            },
+            {
+              "evidenceId": "zy-51-judgment",
+              "quote": "震来虩虩，笑言哑哑",
+              "claim": "卦辞说“震来虩虩，笑言哑哑”，先惊后安"
+            }
+          ]
+        },
+        {
+          "text": "彖传讲“恐致福也”“后有则也”，意思是先看见风险、有所戒惧，反而能把事情办稳，并形成适合当下的做法。晾床单也一样：天阴没有日晒，单靠阳台大风可能外干内潮，还容易吹落。比较省心的方案是室内晾衣架为主，开风扇或除湿机促进空气流动，把床单展开、翻面；若想借风，可以等室内晾到半干后，再拿到阳台有遮挡、固定牢的位置短时吹风，而且下午你在家时看着。",
+          "citations": [
+            {
+              "evidenceId": "zy-51-tuan",
+              "quote": "恐致福也",
+              "claim": "彖传讲“恐致福也”"
+            },
+            {
+              "evidenceId": "zy-51-tuan",
+              "quote": "后有则也",
+              "claim": "“后有则也”"
+            }
+          ]
+        },
+        {
+          "text": "大象说“君子以恐惧修省”，落到今天的安排，就是别跟大风较劲，把省心放在第一位：能固定、能照看、能随时收的地方最稳。若室内通风一般，就用电扇低速对着床单附近吹，保持间距，别贴墙；若室内太潮，再考虑把阳台作为短时辅助。综合来看，我建议晾在屋内晾衣架，阳台只作辅助，不必来回纠结。",
+          "citations": [
+            {
+              "evidenceId": "zy-51-xiang",
+              "quote": "君子以恐惧修省",
+              "claim": "大象说“君子以恐惧修省”"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "candidate": null,
+    "candidateText": null,
+    "internalFallback": null,
+    "internalFallbackScope": null,
+    "evidence": [
+      {
+        "id": "zy-51-judgment",
+        "hexagramId": 51,
+        "name": "震",
+        "section": "judgment",
+        "line": null,
+        "text": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "震·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:51:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。"
+      },
+      {
+        "id": "zy-51-tuan",
+        "hexagramId": 51,
+        "name": "震",
+        "section": "tuan",
+        "line": null,
+        "text": "震，亨。“震来虩虩”，恐致福也；“笑言哑哑”，后有则也。“震惊百里”，惊远而惧迩也；出可以守宗庙社稷，以为祭主也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "震·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:51:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "震，亨。“震来虩虩”，恐致福也；“笑言哑哑”，后有则也。“震惊百里”，惊远而惧迩也；出可以守宗庙社稷，以为祭主也。"
+      },
+      {
+        "id": "zy-51-xiang",
+        "hexagramId": 51,
+        "name": "震",
+        "section": "xiang",
+        "line": null,
+        "text": "洊雷，震。君子以恐惧修省。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "震·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:51:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "洊雷，震。君子以恐惧修省。"
+      }
+    ],
+    "status": "completed",
+    "delivery": {
+      "mechanicalStatus": "completed",
+      "candidateOnly": false,
+      "visibleKind": "substantive_answer",
+      "technicalFailure": false,
+      "providedFailureNote": null
+    },
+    "citationClaims": [
+      {
+        "occurrenceId": "delivered.p0.c0",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[0]",
+        "paragraphText": "从震卦看，阳台风大正合“洊雷，震”之象，动势明显；但卦辞说“震来虩虩，笑言哑哑”，先惊后安，重点不在迎着风动，而在稳住。因此若只求省心，屋内晾衣架更合适：下午你在家，可以随时调整，不必担心床单被阵风吹落、沾灰或突然下雨。",
+        "evidenceId": "zy-51-xiang",
+        "quote": "洊雷，震。",
+        "claim": "阳台风大正合“洊雷，震”之象，动势明显"
+      },
+      {
+        "occurrenceId": "delivered.p0.c1",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[1]",
+        "paragraphText": "从震卦看，阳台风大正合“洊雷，震”之象，动势明显；但卦辞说“震来虩虩，笑言哑哑”，先惊后安，重点不在迎着风动，而在稳住。因此若只求省心，屋内晾衣架更合适：下午你在家，可以随时调整，不必担心床单被阵风吹落、沾灰或突然下雨。",
+        "evidenceId": "zy-51-judgment",
+        "quote": "震来虩虩，笑言哑哑",
+        "claim": "卦辞说“震来虩虩，笑言哑哑”，先惊后安"
+      },
+      {
+        "occurrenceId": "delivered.p1.c0",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[0]",
+        "paragraphText": "彖传讲“恐致福也”“后有则也”，意思是先看见风险、有所戒惧，反而能把事情办稳，并形成适合当下的做法。晾床单也一样：天阴没有日晒，单靠阳台大风可能外干内潮，还容易吹落。比较省心的方案是室内晾衣架为主，开风扇或除湿机促进空气流动，把床单展开、翻面；若想借风，可以等室内晾到半干后，再拿到阳台有遮挡、固定牢的位置短时吹风，而且下午你在家时看着。",
+        "evidenceId": "zy-51-tuan",
+        "quote": "恐致福也",
+        "claim": "彖传讲“恐致福也”"
+      },
+      {
+        "occurrenceId": "delivered.p1.c1",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[1]",
+        "paragraphText": "彖传讲“恐致福也”“后有则也”，意思是先看见风险、有所戒惧，反而能把事情办稳，并形成适合当下的做法。晾床单也一样：天阴没有日晒，单靠阳台大风可能外干内潮，还容易吹落。比较省心的方案是室内晾衣架为主，开风扇或除湿机促进空气流动，把床单展开、翻面；若想借风，可以等室内晾到半干后，再拿到阳台有遮挡、固定牢的位置短时吹风，而且下午你在家时看着。",
+        "evidenceId": "zy-51-tuan",
+        "quote": "后有则也",
+        "claim": "“后有则也”"
+      },
+      {
+        "occurrenceId": "delivered.p2.c0",
+        "target": "delivered",
+        "location": "paragraphs[2].citations[0]",
+        "paragraphText": "大象说“君子以恐惧修省”，落到今天的安排，就是别跟大风较劲，把省心放在第一位：能固定、能照看、能随时收的地方最稳。若室内通风一般，就用电扇低速对着床单附近吹，保持间距，别贴墙；若室内太潮，再考虑把阳台作为短时辅助。综合来看，我建议晾在屋内晾衣架，阳台只作辅助，不必来回纠结。",
+        "evidenceId": "zy-51-xiang",
+        "quote": "君子以恐惧修省",
+        "claim": "大象说“君子以恐惧修省”"
+      }
+    ],
+    "referenceOnlyEvidence": [],
+    "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。"
+  },
+  {
+    "answerId": "Q586c74f7d746",
+    "scenario": "life",
+    "question": "常穿的鞋开胶了，鞋面和鞋底其他地方还好，附近师傅说半小时能修。今天先修还是直接换双新的？",
+    "coreQuestion": "常穿的鞋开胶了，鞋面和鞋底其他地方还好，附近师傅说半小时能修。今天先修还是直接换双新的？",
+    "history": [],
+    "cast": {
+      "lines": [
+        7,
+        8,
+        8,
+        8,
+        7,
+        7
+      ],
+      "original": {
+        "binary": "100011",
+        "name": "风雷益",
+        "number": 42,
+        "judgment": "利有攸往，利涉大川。"
+      },
+      "changed": {
+        "binary": "100011",
+        "name": "风雷益",
+        "number": 42,
+        "judgment": "利有攸往，利涉大川。"
+      },
+      "originalBinary": "100011",
+      "changedBinary": "100011",
+      "changingIndices": [],
+      "method": "three-coins",
+      "algorithmVersion": "evaluation-fixed-lines",
+      "readingPolicyVersion": "all-moving-lines-v1"
+    },
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "就你描述的情况，今天先修更合宜。卦象为风雷益，且没有动爻，本卦与变卦相同，整体偏向平稳增益，不必马上大动干戈去换新。卦辞说“利有攸往，利涉大川”，这支持你今天先采取行动去修，而不是急着整体换新。",
+          "citations": [
+            {
+              "evidenceId": "zy-42-judgment",
+              "quote": "利有攸往，利涉大川。",
+              "claim": "这支持你今天先采取行动去修"
+            }
+          ]
+        },
+        {
+          "text": "彖传讲“凡益之道，与时偕行”，关键要看时机和实际条件：师傅半小时能修、鞋面鞋底其他地方还好，说明修补的性价比和时间条件都具备。若开胶只在局部、不涉及关键受力点，修完能恢复常穿，就优先修；若开胶在承重弯折处、旧胶老化严重，或修费接近新鞋价格，换新也合理。",
+          "citations": [
+            {
+              "evidenceId": "zy-42-tuan",
+              "quote": "凡益之道，与时偕行。",
+              "claim": "关键要看时机和实际条件"
+            }
+          ]
+        },
+        {
+          "text": "大象说“君子以见善则迁，有过则改”，小问题及时修补，比拖到整双报废更符合益卦之意。彖传还说“益，损上益下”，以较小代价换取整体继续可用，正合局部修鞋的思路。修完最好当场检查粘合是否牢固、走几步试受力，若仍不放心，再换也不迟。",
+          "citations": [
+            {
+              "evidenceId": "zy-42-xiang",
+              "quote": "君子以见善则迁，有过则改。",
+              "claim": "小问题及时修补"
+            },
+            {
+              "evidenceId": "zy-42-tuan",
+              "quote": "益，损上益下",
+              "claim": "以较小代价换取整体继续可用"
+            }
+          ]
+        },
+        {
+          "text": "现实取舍上，如果维修费明显低于新鞋价格（比如低于三成），且修后不影响走路安全，今天先修是更务实的选择；如果这双鞋已经多次开胶、修后仍可能绊脚，或你近期有重要场合需要可靠鞋履，那就直接换新。卦象只作视角，不能替你断言修后一定不再开胶；关键还是看开胶位置、师傅手艺和你的穿着需求。",
+          "citations": []
+        }
+      ],
+      "limitations": []
+    },
+    "candidate": null,
+    "candidateText": null,
+    "internalFallback": null,
+    "internalFallbackScope": null,
+    "evidence": [
+      {
+        "id": "zy-42-judgment",
+        "hexagramId": 42,
+        "name": "益",
+        "section": "judgment",
+        "line": null,
+        "text": "利有攸往，利涉大川。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "益·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:42:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "利有攸往，利涉大川。"
+      },
+      {
+        "id": "zy-42-tuan",
+        "hexagramId": 42,
+        "name": "益",
+        "section": "tuan",
+        "line": null,
+        "text": "益，损上益下，民说无疆；自上下下，其道大光。“利有攸往”，中正有庆；“利涉大川”，木道乃行。益动而巽，日进无疆。天施地生，其益无方。凡益之道，与时偕行。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "益·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:42:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "益，损上益下，民说无疆；自上下下，其道大光。“利有攸往”，中正有庆；“利涉大川”，木道乃行。益动而巽，日进无疆。天施地生，其益无方。凡益之道，与时偕行。"
+      },
+      {
+        "id": "zy-42-xiang",
+        "hexagramId": 42,
+        "name": "益",
+        "section": "xiang",
+        "line": null,
+        "text": "风雷，益。君子以见善则迁，有过则改。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "益·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:42:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "风雷，益。君子以见善则迁，有过则改。"
+      }
+    ],
+    "status": "completed",
+    "delivery": {
+      "mechanicalStatus": "completed",
+      "candidateOnly": false,
+      "visibleKind": "substantive_answer",
+      "technicalFailure": false,
+      "providedFailureNote": null
+    },
+    "citationClaims": [
+      {
+        "occurrenceId": "delivered.p0.c0",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[0]",
+        "paragraphText": "就你描述的情况，今天先修更合宜。卦象为风雷益，且没有动爻，本卦与变卦相同，整体偏向平稳增益，不必马上大动干戈去换新。卦辞说“利有攸往，利涉大川”，这支持你今天先采取行动去修，而不是急着整体换新。",
+        "evidenceId": "zy-42-judgment",
+        "quote": "利有攸往，利涉大川。",
+        "claim": "这支持你今天先采取行动去修"
+      },
+      {
+        "occurrenceId": "delivered.p1.c0",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[0]",
+        "paragraphText": "彖传讲“凡益之道，与时偕行”，关键要看时机和实际条件：师傅半小时能修、鞋面鞋底其他地方还好，说明修补的性价比和时间条件都具备。若开胶只在局部、不涉及关键受力点，修完能恢复常穿，就优先修；若开胶在承重弯折处、旧胶老化严重，或修费接近新鞋价格，换新也合理。",
+        "evidenceId": "zy-42-tuan",
+        "quote": "凡益之道，与时偕行。",
+        "claim": "关键要看时机和实际条件"
+      },
+      {
+        "occurrenceId": "delivered.p2.c0",
+        "target": "delivered",
+        "location": "paragraphs[2].citations[0]",
+        "paragraphText": "大象说“君子以见善则迁，有过则改”，小问题及时修补，比拖到整双报废更符合益卦之意。彖传还说“益，损上益下”，以较小代价换取整体继续可用，正合局部修鞋的思路。修完最好当场检查粘合是否牢固、走几步试受力，若仍不放心，再换也不迟。",
+        "evidenceId": "zy-42-xiang",
+        "quote": "君子以见善则迁，有过则改。",
+        "claim": "小问题及时修补"
+      },
+      {
+        "occurrenceId": "delivered.p2.c1",
+        "target": "delivered",
+        "location": "paragraphs[2].citations[1]",
+        "paragraphText": "大象说“君子以见善则迁，有过则改”，小问题及时修补，比拖到整双报废更符合益卦之意。彖传还说“益，损上益下”，以较小代价换取整体继续可用，正合局部修鞋的思路。修完最好当场检查粘合是否牢固、走几步试受力，若仍不放心，再换也不迟。",
+        "evidenceId": "zy-42-tuan",
+        "quote": "益，损上益下",
+        "claim": "以较小代价换取整体继续可用"
+      }
+    ],
+    "referenceOnlyEvidence": [],
+    "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。"
+  },
+  {
+    "answerId": "Q8fc83e5b35ca",
+    "scenario": "life",
+    "question": "今天洗了床单，阳台风大但天阴，屋里有晾衣架。我下午一直在家，晾哪里省心？",
+    "coreQuestion": "今天洗了床单，阳台风大但天阴，屋里有晾衣架。我下午一直在家，晾哪里省心？",
+    "history": [],
+    "cast": {
+      "lines": [
+        8,
+        8,
+        7,
+        8,
+        7,
+        7
+      ],
+      "original": {
+        "binary": "001011",
+        "name": "风山渐",
+        "number": 53,
+        "judgment": "女归吉，利贞。"
+      },
+      "changed": {
+        "binary": "001011",
+        "name": "风山渐",
+        "number": 53,
+        "judgment": "女归吉，利贞。"
+      },
+      "originalBinary": "001011",
+      "changedBinary": "001011",
+      "changingIndices": [],
+      "method": "three-coins",
+      "algorithmVersion": "evaluation-fixed-lines",
+      "readingPolicyVersion": "all-moving-lines-v1"
+    },
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "按渐卦看，这事宜“渐”不宜“急”：先把床单在屋内晾衣架展开，开电扇或除湿机、窗留缝，让它慢慢去水；等不滴水、半干后，若阳台有顶棚、无雨且能夹牢，再拿出去借风收尾。渐卦说“渐之进也”，卦辞说“女归吉，利贞”，彖传又讲“进得位，往有功也；进以正，可以正邦也”，放在晾晒上就是按稳妥、守正的方式推进，步骤放对、位置放对，比一上来就硬挂大风处更稳。",
+          "citations": [
+            {
+              "evidenceId": "zy-53-tuan",
+              "quote": "渐之进也",
+              "claim": "宜“渐”不宜“急”"
+            },
+            {
+              "evidenceId": "zy-53-judgment",
+              "quote": "女归吉，利贞。",
+              "claim": "按稳妥、守正的方式推进"
+            },
+            {
+              "evidenceId": "zy-53-tuan",
+              "quote": "进得位，往有功也；进以正，可以正邦也",
+              "claim": "步骤放对、位置放对"
+            }
+          ]
+        },
+        {
+          "text": "若只选一处，屋内晾衣架更省心：不怕风大吹落、沾灰或突然下雨，你下午在家也能翻面、调风扇。缺点是干得慢、屋里湿度会升，最好开窗或开门缝、用电扇朝床单吹，别把湿气闷在房间。阳台风大其实利于蒸发，但天阴没有日晒，强风容易让床单缠绕、滑落或蹭脏；若阳台有顶棚、固定牢、且确认无雨，可以短时挂出去，下午在家看着收。渐卦大象说“山上有木，渐。君子以居贤德善俗”，重点也在安住其位、按部就班，而不是贪快冒风险。",
+          "citations": [
+            {
+              "evidenceId": "zy-53-xiang",
+              "quote": "山上有木，渐。君子以居贤德善俗。",
+              "claim": "重点也在安住其位、按部就班，而不是贪快冒风险"
+            }
+          ]
+        },
+        {
+          "text": "你未说明阳台是否有顶棚、是否可能下雨、室内能否通风或除湿；若这些不明，想要省心就按“屋内为主、阳台短时辅助”处理：先室内脱水与吹风，阳台只在不淋雨、能夹牢时用来加速。",
+          "citations": []
+        }
+      ],
+      "limitations": []
+    },
+    "candidate": null,
+    "candidateText": null,
+    "internalFallback": null,
+    "internalFallbackScope": null,
+    "evidence": [
+      {
+        "id": "zy-53-judgment",
+        "hexagramId": 53,
+        "name": "渐",
+        "section": "judgment",
+        "line": null,
+        "text": "女归吉，利贞。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "渐·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:53:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "女归吉，利贞。"
+      },
+      {
+        "id": "zy-53-tuan",
+        "hexagramId": 53,
+        "name": "渐",
+        "section": "tuan",
+        "line": null,
+        "text": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "渐·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:53:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+      },
+      {
+        "id": "zy-53-xiang",
+        "hexagramId": 53,
+        "name": "渐",
+        "section": "xiang",
+        "line": null,
+        "text": "山上有木，渐。君子以居贤德善俗。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "渐·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:53:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "山上有木，渐。君子以居贤德善俗。"
+      }
+    ],
+    "status": "completed",
+    "delivery": {
+      "mechanicalStatus": "completed",
+      "candidateOnly": false,
+      "visibleKind": "substantive_answer",
+      "technicalFailure": false,
+      "providedFailureNote": null
+    },
+    "citationClaims": [
+      {
+        "occurrenceId": "delivered.p0.c0",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[0]",
+        "paragraphText": "按渐卦看，这事宜“渐”不宜“急”：先把床单在屋内晾衣架展开，开电扇或除湿机、窗留缝，让它慢慢去水；等不滴水、半干后，若阳台有顶棚、无雨且能夹牢，再拿出去借风收尾。渐卦说“渐之进也”，卦辞说“女归吉，利贞”，彖传又讲“进得位，往有功也；进以正，可以正邦也”，放在晾晒上就是按稳妥、守正的方式推进，步骤放对、位置放对，比一上来就硬挂大风处更稳。",
+        "evidenceId": "zy-53-tuan",
+        "quote": "渐之进也",
+        "claim": "宜“渐”不宜“急”"
+      },
+      {
+        "occurrenceId": "delivered.p0.c1",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[1]",
+        "paragraphText": "按渐卦看，这事宜“渐”不宜“急”：先把床单在屋内晾衣架展开，开电扇或除湿机、窗留缝，让它慢慢去水；等不滴水、半干后，若阳台有顶棚、无雨且能夹牢，再拿出去借风收尾。渐卦说“渐之进也”，卦辞说“女归吉，利贞”，彖传又讲“进得位，往有功也；进以正，可以正邦也”，放在晾晒上就是按稳妥、守正的方式推进，步骤放对、位置放对，比一上来就硬挂大风处更稳。",
+        "evidenceId": "zy-53-judgment",
+        "quote": "女归吉，利贞。",
+        "claim": "按稳妥、守正的方式推进"
+      },
+      {
+        "occurrenceId": "delivered.p0.c2",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[2]",
+        "paragraphText": "按渐卦看，这事宜“渐”不宜“急”：先把床单在屋内晾衣架展开，开电扇或除湿机、窗留缝，让它慢慢去水；等不滴水、半干后，若阳台有顶棚、无雨且能夹牢，再拿出去借风收尾。渐卦说“渐之进也”，卦辞说“女归吉，利贞”，彖传又讲“进得位，往有功也；进以正，可以正邦也”，放在晾晒上就是按稳妥、守正的方式推进，步骤放对、位置放对，比一上来就硬挂大风处更稳。",
+        "evidenceId": "zy-53-tuan",
+        "quote": "进得位，往有功也；进以正，可以正邦也",
+        "claim": "步骤放对、位置放对"
+      },
+      {
+        "occurrenceId": "delivered.p1.c0",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[0]",
+        "paragraphText": "若只选一处，屋内晾衣架更省心：不怕风大吹落、沾灰或突然下雨，你下午在家也能翻面、调风扇。缺点是干得慢、屋里湿度会升，最好开窗或开门缝、用电扇朝床单吹，别把湿气闷在房间。阳台风大其实利于蒸发，但天阴没有日晒，强风容易让床单缠绕、滑落或蹭脏；若阳台有顶棚、固定牢、且确认无雨，可以短时挂出去，下午在家看着收。渐卦大象说“山上有木，渐。君子以居贤德善俗”，重点也在安住其位、按部就班，而不是贪快冒风险。",
+        "evidenceId": "zy-53-xiang",
+        "quote": "山上有木，渐。君子以居贤德善俗。",
+        "claim": "重点也在安住其位、按部就班，而不是贪快冒风险"
+      }
+    ],
+    "referenceOnlyEvidence": [],
+    "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。"
+  },
+  {
+    "answerId": "Q324ccfed0857",
+    "scenario": "life",
+    "question": "今天洗了床单，阳台风大但天阴，屋里有晾衣架。我下午一直在家，晾哪里省心？",
+    "coreQuestion": "今天洗了床单，阳台风大但天阴，屋里有晾衣架。我下午一直在家，晾哪里省心？",
+    "history": [],
+    "cast": {
+      "lines": [
+        7,
+        8,
+        8,
+        7,
+        8,
+        8
+      ],
+      "original": {
+        "binary": "100100",
+        "name": "震为雷",
+        "number": 51,
+        "judgment": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。"
+      },
+      "changed": {
+        "binary": "100100",
+        "name": "震为雷",
+        "number": 51,
+        "judgment": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。"
+      },
+      "originalBinary": "100100",
+      "changedBinary": "100100",
+      "changingIndices": [],
+      "method": "three-coins",
+      "algorithmVersion": "evaluation-fixed-lines",
+      "readingPolicyVersion": "all-moving-lines-v1"
+    },
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "卦象是震为雷，大象说“君子以恐惧修省”，这不是天气预报，而是提醒你对今天风大、天阴可能带来的突变先有防备：比如阵风把床单吹落、天阴转雨、返潮。",
+          "citations": [
+            {
+              "evidenceId": "zy-51-xiang",
+              "quote": "君子以恐惧修省",
+              "claim": "提醒你对今天风大、天阴可能带来的突变先有防备"
+            }
+          ]
+        },
+        {
+          "text": "震卦说“震来虩虩，笑言哑哑”，先经一阵戒惧，随后才安笑；晾晒也宜先防突发，再求省心。所以更省心的选择是：以室内晾衣架为主，放在通风处，开窗或用电扇、空调除湿让空气流动，床单尽量展开、不重叠；这样不怕吹落，也不怕天阴转雨。",
+          "citations": [
+            {
+              "evidenceId": "zy-51-judgment",
+              "quote": "震来虩虩，笑言哑哑",
+              "claim": "先防突发，再求省心"
+            }
+          ]
+        },
+        {
+          "text": "若阳台有顶棚、能避雨且晾杆能夹牢，下午你又一直在家，可以等风稍稳时把床单移出去吹一两小时，再收回室内；这正合“恐致福也”“后有则也”的意思：先有防备，后来就有章法。若只是露天阳台、天阴风大，优先室内，省心得多。",
+          "citations": [
+            {
+              "evidenceId": "zy-51-tuan",
+              "quote": "恐致福也",
+              "claim": "先有防备"
+            },
+            {
+              "evidenceId": "zy-51-tuan",
+              "quote": "后有则也",
+              "claim": "后来就有章法"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "candidate": null,
+    "candidateText": null,
+    "internalFallback": null,
+    "internalFallbackScope": null,
+    "evidence": [
+      {
+        "id": "zy-51-judgment",
+        "hexagramId": 51,
+        "name": "震",
+        "section": "judgment",
+        "line": null,
+        "text": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "震·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:51:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。"
+      },
+      {
+        "id": "zy-51-tuan",
+        "hexagramId": 51,
+        "name": "震",
+        "section": "tuan",
+        "line": null,
+        "text": "震，亨。“震来虩虩”，恐致福也；“笑言哑哑”，后有则也。“震惊百里”，惊远而惧迩也；出可以守宗庙社稷，以为祭主也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "震·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:51:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "震，亨。“震来虩虩”，恐致福也；“笑言哑哑”，后有则也。“震惊百里”，惊远而惧迩也；出可以守宗庙社稷，以为祭主也。"
+      },
+      {
+        "id": "zy-51-xiang",
+        "hexagramId": 51,
+        "name": "震",
+        "section": "xiang",
+        "line": null,
+        "text": "洊雷，震。君子以恐惧修省。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "震·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:51:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "洊雷，震。君子以恐惧修省。"
+      }
+    ],
+    "status": "completed",
+    "delivery": {
+      "mechanicalStatus": "completed",
+      "candidateOnly": false,
+      "visibleKind": "substantive_answer",
+      "technicalFailure": false,
+      "providedFailureNote": null
+    },
+    "citationClaims": [
+      {
+        "occurrenceId": "delivered.p0.c0",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[0]",
+        "paragraphText": "卦象是震为雷，大象说“君子以恐惧修省”，这不是天气预报，而是提醒你对今天风大、天阴可能带来的突变先有防备：比如阵风把床单吹落、天阴转雨、返潮。",
+        "evidenceId": "zy-51-xiang",
+        "quote": "君子以恐惧修省",
+        "claim": "提醒你对今天风大、天阴可能带来的突变先有防备"
+      },
+      {
+        "occurrenceId": "delivered.p1.c0",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[0]",
+        "paragraphText": "震卦说“震来虩虩，笑言哑哑”，先经一阵戒惧，随后才安笑；晾晒也宜先防突发，再求省心。所以更省心的选择是：以室内晾衣架为主，放在通风处，开窗或用电扇、空调除湿让空气流动，床单尽量展开、不重叠；这样不怕吹落，也不怕天阴转雨。",
+        "evidenceId": "zy-51-judgment",
+        "quote": "震来虩虩，笑言哑哑",
+        "claim": "先防突发，再求省心"
+      },
+      {
+        "occurrenceId": "delivered.p2.c0",
+        "target": "delivered",
+        "location": "paragraphs[2].citations[0]",
+        "paragraphText": "若阳台有顶棚、能避雨且晾杆能夹牢，下午你又一直在家，可以等风稍稳时把床单移出去吹一两小时，再收回室内；这正合“恐致福也”“后有则也”的意思：先有防备，后来就有章法。若只是露天阳台、天阴风大，优先室内，省心得多。",
+        "evidenceId": "zy-51-tuan",
+        "quote": "恐致福也",
+        "claim": "先有防备"
+      },
+      {
+        "occurrenceId": "delivered.p2.c1",
+        "target": "delivered",
+        "location": "paragraphs[2].citations[1]",
+        "paragraphText": "若阳台有顶棚、能避雨且晾杆能夹牢，下午你又一直在家，可以等风稍稳时把床单移出去吹一两小时，再收回室内；这正合“恐致福也”“后有则也”的意思：先有防备，后来就有章法。若只是露天阳台、天阴风大，优先室内，省心得多。",
+        "evidenceId": "zy-51-tuan",
+        "quote": "后有则也",
+        "claim": "后来就有章法"
+      }
+    ],
+    "referenceOnlyEvidence": [],
+    "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。"
+  },
+  {
+    "answerId": "Q647f5f9912fd",
+    "scenario": "life",
+    "question": "常穿的鞋开胶了，鞋面和鞋底其他地方还好，附近师傅说半小时能修。今天先修还是直接换双新的？",
+    "coreQuestion": "常穿的鞋开胶了，鞋面和鞋底其他地方还好，附近师傅说半小时能修。今天先修还是直接换双新的？",
+    "history": [],
+    "cast": {
+      "lines": [
+        8,
+        7,
+        8,
+        7,
+        7,
+        8
+      ],
+      "original": {
+        "binary": "010110",
+        "name": "泽水困",
+        "number": 47,
+        "judgment": "亨，贞，大人吉，无咎，有言不信。"
+      },
+      "changed": {
+        "binary": "010110",
+        "name": "泽水困",
+        "number": 47,
+        "judgment": "亨，贞，大人吉，无咎，有言不信。"
+      },
+      "originalBinary": "010110",
+      "changedBinary": "010110",
+      "changingIndices": [],
+      "method": "three-coins",
+      "algorithmVersion": "evaluation-fixed-lines",
+      "readingPolicyVersion": "all-moving-lines-v1"
+    },
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "你问的是先修还是直接换新。从困卦来看，这个处境本身不算大问题，但卦辞说“亨。贞，大人吉，无咎；有言不信”，意思是困顿之中守正就能通，但光靠嘴说、光凭承诺是靠不住的。修鞋师傅说半小时能修好，这正对应“有言不信”——话可以说得很好，实际效果要修完才知道。",
+          "citations": [
+            {
+              "evidenceId": "zy-47-judgment",
+              "quote": "亨。贞，大人吉，无咎；有言不信。",
+              "claim": "从困卦来看，这个处境本身不算大问题，但卦辞说“亨。贞，大人吉，无咎；有言不信”，意思是困顿之中守正就能通，但光靠嘴说、光凭承诺是靠不住的。"
+            }
+          ]
+        },
+        {
+          "text": "彖传进一步说“困，刚掩也。险以说，困而不失其所‘亨’，其唯君子乎”，鞋子开胶是“刚掩”——只是一处小毛病把整体可用的东西暂时掩住了，不是整双鞋都坏了。鞋面和鞋底其他地方还好，说明这双鞋的核心结构还在，没有到必须抛弃的地步。",
+          "citations": [
+            {
+              "evidenceId": "zy-47-tuan",
+              "quote": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！",
+              "claim": "鞋子开胶是“刚掩”——只是一处小毛病把整体可用的东西暂时掩住了，不是整双鞋都坏了。"
+            }
+          ]
+        },
+        {
+          "text": "大象说“泽无水，困。君子以致命遂志”，泽中无水是困，但君子的态度是把力气用在关键处、不轻易放弃。放在你这件小事上，我倾向于：今天先修。理由是——其他地方都好，修的成本只是半小时，而换新要重新挑、重新磨合，代价反而更大。但修完要当场检查，看粘合是否牢固、走线是否复位，不能只听师傅一句“好了”。如果修完确实稳固，就继续穿；如果修了两次还是同一位置开胶，那才是“尚口乃穷”，说明这双鞋的结构确实到头了，再考虑换新也不迟。",
+          "citations": [
+            {
+              "evidenceId": "zy-47-xiang",
+              "quote": "泽无水，困。君子以致命遂志。",
+              "claim": "大象说“泽无水，困。君子以致命遂志”，泽中无水是困，但君子的态度是把力气用在关键处、不轻易放弃。"
+            },
+            {
+              "evidenceId": "zy-47-tuan",
+              "quote": "尚口乃穷也",
+              "claim": "如果修了两次还是同一位置开胶，那才是“尚口乃穷”，说明这双鞋的结构确实到头了，再考虑换新也不迟。"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "candidate": null,
+    "candidateText": null,
+    "internalFallback": null,
+    "internalFallbackScope": null,
+    "evidence": [
+      {
+        "id": "zy-47-judgment",
+        "hexagramId": 47,
+        "name": "困",
+        "section": "judgment",
+        "line": null,
+        "text": "亨。贞，大人吉，无咎；有言不信。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "困·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:47:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "亨。贞，大人吉，无咎；有言不信。"
+      },
+      {
+        "id": "zy-47-tuan",
+        "hexagramId": 47,
+        "name": "困",
+        "section": "tuan",
+        "line": null,
+        "text": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "困·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:47:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。"
+      },
+      {
+        "id": "zy-47-xiang",
+        "hexagramId": 47,
+        "name": "困",
+        "section": "xiang",
+        "line": null,
+        "text": "泽无水，困。君子以致命遂志。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "困·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:47:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "泽无水，困。君子以致命遂志。"
+      }
+    ],
+    "status": "completed",
+    "delivery": {
+      "mechanicalStatus": "completed",
+      "candidateOnly": false,
+      "visibleKind": "substantive_answer",
+      "technicalFailure": false,
+      "providedFailureNote": null
+    },
+    "citationClaims": [
+      {
+        "occurrenceId": "delivered.p0.c0",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[0]",
+        "paragraphText": "你问的是先修还是直接换新。从困卦来看，这个处境本身不算大问题，但卦辞说“亨。贞，大人吉，无咎；有言不信”，意思是困顿之中守正就能通，但光靠嘴说、光凭承诺是靠不住的。修鞋师傅说半小时能修好，这正对应“有言不信”——话可以说得很好，实际效果要修完才知道。",
+        "evidenceId": "zy-47-judgment",
+        "quote": "亨。贞，大人吉，无咎；有言不信。",
+        "claim": "从困卦来看，这个处境本身不算大问题，但卦辞说“亨。贞，大人吉，无咎；有言不信”，意思是困顿之中守正就能通，但光靠嘴说、光凭承诺是靠不住的。"
+      },
+      {
+        "occurrenceId": "delivered.p1.c0",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[0]",
+        "paragraphText": "彖传进一步说“困，刚掩也。险以说，困而不失其所‘亨’，其唯君子乎”，鞋子开胶是“刚掩”——只是一处小毛病把整体可用的东西暂时掩住了，不是整双鞋都坏了。鞋面和鞋底其他地方还好，说明这双鞋的核心结构还在，没有到必须抛弃的地步。",
+        "evidenceId": "zy-47-tuan",
+        "quote": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！",
+        "claim": "鞋子开胶是“刚掩”——只是一处小毛病把整体可用的东西暂时掩住了，不是整双鞋都坏了。"
+      },
+      {
+        "occurrenceId": "delivered.p2.c0",
+        "target": "delivered",
+        "location": "paragraphs[2].citations[0]",
+        "paragraphText": "大象说“泽无水，困。君子以致命遂志”，泽中无水是困，但君子的态度是把力气用在关键处、不轻易放弃。放在你这件小事上，我倾向于：今天先修。理由是——其他地方都好，修的成本只是半小时，而换新要重新挑、重新磨合，代价反而更大。但修完要当场检查，看粘合是否牢固、走线是否复位，不能只听师傅一句“好了”。如果修完确实稳固，就继续穿；如果修了两次还是同一位置开胶，那才是“尚口乃穷”，说明这双鞋的结构确实到头了，再考虑换新也不迟。",
+        "evidenceId": "zy-47-xiang",
+        "quote": "泽无水，困。君子以致命遂志。",
+        "claim": "大象说“泽无水，困。君子以致命遂志”，泽中无水是困，但君子的态度是把力气用在关键处、不轻易放弃。"
+      },
+      {
+        "occurrenceId": "delivered.p2.c1",
+        "target": "delivered",
+        "location": "paragraphs[2].citations[1]",
+        "paragraphText": "大象说“泽无水，困。君子以致命遂志”，泽中无水是困，但君子的态度是把力气用在关键处、不轻易放弃。放在你这件小事上，我倾向于：今天先修。理由是——其他地方都好，修的成本只是半小时，而换新要重新挑、重新磨合，代价反而更大。但修完要当场检查，看粘合是否牢固、走线是否复位，不能只听师傅一句“好了”。如果修完确实稳固，就继续穿；如果修了两次还是同一位置开胶，那才是“尚口乃穷”，说明这双鞋的结构确实到头了，再考虑换新也不迟。",
+        "evidenceId": "zy-47-tuan",
+        "quote": "尚口乃穷也",
+        "claim": "如果修了两次还是同一位置开胶，那才是“尚口乃穷”，说明这双鞋的结构确实到头了，再考虑换新也不迟。"
+      }
+    ],
+    "referenceOnlyEvidence": [],
+    "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。"
+  },
+  {
+    "answerId": "Q6928549ba785",
+    "scenario": "life",
+    "question": "今天洗了床单，阳台风大但天阴，屋里有晾衣架。我下午一直在家，晾哪里省心？",
+    "coreQuestion": "今天洗了床单，阳台风大但天阴，屋里有晾衣架。我下午一直在家，晾哪里省心？",
+    "history": [],
+    "cast": {
+      "lines": [
+        7,
+        8,
+        8,
+        7,
+        8,
+        8
+      ],
+      "original": {
+        "binary": "100100",
+        "name": "震为雷",
+        "number": 51,
+        "judgment": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。"
+      },
+      "changed": {
+        "binary": "100100",
+        "name": "震为雷",
+        "number": 51,
+        "judgment": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。"
+      },
+      "originalBinary": "100100",
+      "changedBinary": "100100",
+      "changingIndices": [],
+      "method": "three-coins",
+      "algorithmVersion": "evaluation-fixed-lines",
+      "readingPolicyVersion": "all-moving-lines-v1"
+    },
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "这事的核心其实不在“阳台风大”，而在“天阴”这两个字。风大顶多把床单吹得鼓起来，但阴天意味着随时可能转成阵雨，尤其在这种有风的日子里，云走得快，雨说来就来。你下午一直在家，这是最有利的条件：不必赌天气，可以主动控制。所以先把结论给你——以室内晾衣架为主，阳台最多作为“有人在、随时能收”的辅助位。",
+          "citations": []
+        },
+        {
+          "text": "本轮卦象是震为雷，六爻都不动，是个安静的震卦。震卦讲的是雷动、风起、突发之事，和“阳台风大”的景象很贴合。《周易》震卦卦辞说“震来虩虩，笑言哑哑”，意思是震动袭来时先要戒惧警惕，但心里有数之后，仍能从容谈笑。彖传进一步点明“恐致福也”，又说“后有则也”——先有畏惧之心，反而能得福；先有预案，之后才有章法。换句话说，眼下这点阴沉和大风，你若先当回事，就省心；若不当回事，真下起雨来，抱着湿床单往里跑的就是你。",
+          "citations": [
+            {
+              "evidenceId": "zy-51-judgment",
+              "quote": "震来虩虩，笑言哑哑",
+              "claim": "《周易》震卦卦辞说“震来虩虩，笑言哑哑”，意思是震动袭来时先要戒惧警惕，但心里有数之后，仍能从容谈笑。"
+            },
+            {
+              "evidenceId": "zy-51-tuan",
+              "quote": "恐致福也",
+              "claim": "彖传进一步点明“恐致福也”，又说“后有则也”——先有畏惧之心，反而能得福；先有预案，之后才有章法。"
+            },
+            {
+              "evidenceId": "zy-51-tuan",
+              "quote": "后有则也",
+              "claim": "彖传进一步点明“恐致福也”，又说“后有则也”——先有畏惧之心，反而能得福；先有预案，之后才有章法。"
+            }
+          ]
+        },
+        {
+          "text": "大象传讲“洊雷，震。君子以恐惧修省”，连番雷声震动，君子借此戒惧、修正自己的做法。落到床单上，就是先想坏情况：万一午后转雨，阳台上那床单会不会被浇透、被风吹落、吹到楼下别人家？屋里晾衣架虽然干得慢一点，但床单不会被风扯变形，也不会忽然淋雨。你若实在想借阳台的大风加快干燥，可以只把阳台当“短时强风区”，挂上去后每半小时看一眼天色，一旦云压得更低或起风带湿气，立刻收回屋里。但这样来回搬运，本身就不省心。真正省心的做法，是直接挂在屋里通风处，把门窗留一条缝让空气流动，下午在家还能用风扇或空调吹一吹，比在外面提心吊胆强。震卦无动爻，说明事情本身并不复杂，关键在你愿不愿意先退一步、守稳一点。",
+          "citations": [
+            {
+              "evidenceId": "zy-51-xiang",
+              "quote": "洊雷，震。君子以恐惧修省",
+              "claim": "大象传讲“洊雷，震。君子以恐惧修省”，连番雷声震动，君子借此戒惧、修正自己的做法。"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "candidate": null,
+    "candidateText": null,
+    "internalFallback": null,
+    "internalFallbackScope": null,
+    "evidence": [
+      {
+        "id": "zy-51-judgment",
+        "hexagramId": 51,
+        "name": "震",
+        "section": "judgment",
+        "line": null,
+        "text": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "震·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:51:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。"
+      },
+      {
+        "id": "zy-51-tuan",
+        "hexagramId": 51,
+        "name": "震",
+        "section": "tuan",
+        "line": null,
+        "text": "震，亨。“震来虩虩”，恐致福也；“笑言哑哑”，后有则也。“震惊百里”，惊远而惧迩也；出可以守宗庙社稷，以为祭主也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "震·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:51:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "震，亨。“震来虩虩”，恐致福也；“笑言哑哑”，后有则也。“震惊百里”，惊远而惧迩也；出可以守宗庙社稷，以为祭主也。"
+      },
+      {
+        "id": "zy-51-xiang",
+        "hexagramId": 51,
+        "name": "震",
+        "section": "xiang",
+        "line": null,
+        "text": "洊雷，震。君子以恐惧修省。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "震·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:51:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "洊雷，震。君子以恐惧修省。"
+      }
+    ],
+    "status": "completed",
+    "delivery": {
+      "mechanicalStatus": "completed",
+      "candidateOnly": false,
+      "visibleKind": "substantive_answer",
+      "technicalFailure": false,
+      "providedFailureNote": null
+    },
+    "citationClaims": [
+      {
+        "occurrenceId": "delivered.p1.c0",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[0]",
+        "paragraphText": "本轮卦象是震为雷，六爻都不动，是个安静的震卦。震卦讲的是雷动、风起、突发之事，和“阳台风大”的景象很贴合。《周易》震卦卦辞说“震来虩虩，笑言哑哑”，意思是震动袭来时先要戒惧警惕，但心里有数之后，仍能从容谈笑。彖传进一步点明“恐致福也”，又说“后有则也”——先有畏惧之心，反而能得福；先有预案，之后才有章法。换句话说，眼下这点阴沉和大风，你若先当回事，就省心；若不当回事，真下起雨来，抱着湿床单往里跑的就是你。",
+        "evidenceId": "zy-51-judgment",
+        "quote": "震来虩虩，笑言哑哑",
+        "claim": "《周易》震卦卦辞说“震来虩虩，笑言哑哑”，意思是震动袭来时先要戒惧警惕，但心里有数之后，仍能从容谈笑。"
+      },
+      {
+        "occurrenceId": "delivered.p1.c1",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[1]",
+        "paragraphText": "本轮卦象是震为雷，六爻都不动，是个安静的震卦。震卦讲的是雷动、风起、突发之事，和“阳台风大”的景象很贴合。《周易》震卦卦辞说“震来虩虩，笑言哑哑”，意思是震动袭来时先要戒惧警惕，但心里有数之后，仍能从容谈笑。彖传进一步点明“恐致福也”，又说“后有则也”——先有畏惧之心，反而能得福；先有预案，之后才有章法。换句话说，眼下这点阴沉和大风，你若先当回事，就省心；若不当回事，真下起雨来，抱着湿床单往里跑的就是你。",
+        "evidenceId": "zy-51-tuan",
+        "quote": "恐致福也",
+        "claim": "彖传进一步点明“恐致福也”，又说“后有则也”——先有畏惧之心，反而能得福；先有预案，之后才有章法。"
+      },
+      {
+        "occurrenceId": "delivered.p1.c2",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[2]",
+        "paragraphText": "本轮卦象是震为雷，六爻都不动，是个安静的震卦。震卦讲的是雷动、风起、突发之事，和“阳台风大”的景象很贴合。《周易》震卦卦辞说“震来虩虩，笑言哑哑”，意思是震动袭来时先要戒惧警惕，但心里有数之后，仍能从容谈笑。彖传进一步点明“恐致福也”，又说“后有则也”——先有畏惧之心，反而能得福；先有预案，之后才有章法。换句话说，眼下这点阴沉和大风，你若先当回事，就省心；若不当回事，真下起雨来，抱着湿床单往里跑的就是你。",
+        "evidenceId": "zy-51-tuan",
+        "quote": "后有则也",
+        "claim": "彖传进一步点明“恐致福也”，又说“后有则也”——先有畏惧之心，反而能得福；先有预案，之后才有章法。"
+      },
+      {
+        "occurrenceId": "delivered.p2.c0",
+        "target": "delivered",
+        "location": "paragraphs[2].citations[0]",
+        "paragraphText": "大象传讲“洊雷，震。君子以恐惧修省”，连番雷声震动，君子借此戒惧、修正自己的做法。落到床单上，就是先想坏情况：万一午后转雨，阳台上那床单会不会被浇透、被风吹落、吹到楼下别人家？屋里晾衣架虽然干得慢一点，但床单不会被风扯变形，也不会忽然淋雨。你若实在想借阳台的大风加快干燥，可以只把阳台当“短时强风区”，挂上去后每半小时看一眼天色，一旦云压得更低或起风带湿气，立刻收回屋里。但这样来回搬运，本身就不省心。真正省心的做法，是直接挂在屋里通风处，把门窗留一条缝让空气流动，下午在家还能用风扇或空调吹一吹，比在外面提心吊胆强。震卦无动爻，说明事情本身并不复杂，关键在你愿不愿意先退一步、守稳一点。",
+        "evidenceId": "zy-51-xiang",
+        "quote": "洊雷，震。君子以恐惧修省",
+        "claim": "大象传讲“洊雷，震。君子以恐惧修省”，连番雷声震动，君子借此戒惧、修正自己的做法。"
+      }
+    ],
+    "referenceOnlyEvidence": [],
+    "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。"
+  },
+  {
+    "answerId": "Q34db92a5fa4c",
+    "scenario": "life",
+    "question": "今天洗了床单，阳台风大但天阴，屋里有晾衣架。我下午一直在家，晾哪里省心？",
+    "coreQuestion": "今天洗了床单，阳台风大但天阴，屋里有晾衣架。我下午一直在家，晾哪里省心？",
+    "history": [],
+    "cast": {
+      "lines": [
+        7,
+        8,
+        8,
+        7,
+        8,
+        8
+      ],
+      "original": {
+        "binary": "100100",
+        "name": "震为雷",
+        "number": 51,
+        "judgment": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。"
+      },
+      "changed": {
+        "binary": "100100",
+        "name": "震为雷",
+        "number": 51,
+        "judgment": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。"
+      },
+      "originalBinary": "100100",
+      "changedBinary": "100100",
+      "changingIndices": [],
+      "method": "three-coins",
+      "algorithmVersion": "evaluation-fixed-lines",
+      "readingPolicyVersion": "all-moving-lines-v1"
+    },
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "今天这个情形，我倾向把“省心”排在“最快干”前面。震为雷，卦辞说“震来虩虩，笑言哑哑”，先有惊动和警惕，之后才谈得上安笑；阳台风大正是那个“虩虩”的变量。床单面积大，天阴本就不易干，风一大又容易翻卷、碰墙、沾灰甚至吹落。若你下午一直在家，最省心的做法是：以室内晾衣架为主，利用人在家定时翻面、开风扇或除湿；阳台只作辅助，不要一开始就晾在最外沿。",
+          "citations": [
+            {
+              "evidenceId": "zy-51-judgment",
+              "quote": "震来虩虩，笑言哑哑",
+              "claim": "震来虩虩，笑言哑哑"
+            }
+          ]
+        },
+        {
+          "text": "如果室内晾衣架够稳、能展开床单，就选室内；没有除湿设备时，阴干容易返潮有味道，可以在半干后移到阳台内侧吹一阵，但要用夹子夹牢、人在家看着，风稍大就收回。彖传解释震卦说“恐致福也”，又说“后有则也”，意思是先因警惕而得益，随后形成规则；晾晒也一样，与其赌风会不会停，不如定好“夹牢、限时、勤看、及时收”的规矩，这样反而更省心。",
+          "citations": [
+            {
+              "evidenceId": "zy-51-tuan",
+              "quote": "恐致福也",
+              "claim": "恐致福也"
+            },
+            {
+              "evidenceId": "zy-51-tuan",
+              "quote": "后有则也",
+              "claim": "后有则也"
+            }
+          ]
+        },
+        {
+          "text": "若阳台是封闭式、晾杆固定，且你能把床单夹得很稳，晾在阳台靠内一侧也可以，但不要占外沿或让床单垂得太低。大象说“洊雷，震。君子以恐惧修省”，接连雷声提醒人反复检省；今天风可能一阵一阵，所以无论晾哪里，都建议隔一段时间看一次。综合你的条件，最省心排序是：室内晾衣架（配风扇或除湿）＞阳台封闭内侧（夹牢并有人看）＞阳台开放风口。我没有你阳台是否封闭、室内湿度和除湿设备的信息，所以上面的排序需要按这些条件调整。",
+          "citations": [
+            {
+              "evidenceId": "zy-51-xiang",
+              "quote": "洊雷，震。君子以恐惧修省。",
+              "claim": "君子以恐惧修省"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "candidate": null,
+    "candidateText": null,
+    "internalFallback": null,
+    "internalFallbackScope": null,
+    "evidence": [
+      {
+        "id": "zy-51-judgment",
+        "hexagramId": 51,
+        "name": "震",
+        "section": "judgment",
+        "line": null,
+        "text": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "震·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:51:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。"
+      },
+      {
+        "id": "zy-51-tuan",
+        "hexagramId": 51,
+        "name": "震",
+        "section": "tuan",
+        "line": null,
+        "text": "震，亨。“震来虩虩”，恐致福也；“笑言哑哑”，后有则也。“震惊百里”，惊远而惧迩也；出可以守宗庙社稷，以为祭主也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "震·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:51:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "震，亨。“震来虩虩”，恐致福也；“笑言哑哑”，后有则也。“震惊百里”，惊远而惧迩也；出可以守宗庙社稷，以为祭主也。"
+      },
+      {
+        "id": "zy-51-xiang",
+        "hexagramId": 51,
+        "name": "震",
+        "section": "xiang",
+        "line": null,
+        "text": "洊雷，震。君子以恐惧修省。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "震·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:51:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "洊雷，震。君子以恐惧修省。"
+      }
+    ],
+    "status": "completed",
+    "delivery": {
+      "mechanicalStatus": "completed",
+      "candidateOnly": false,
+      "visibleKind": "substantive_answer",
+      "technicalFailure": false,
+      "providedFailureNote": null
+    },
+    "citationClaims": [
+      {
+        "occurrenceId": "delivered.p0.c0",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[0]",
+        "paragraphText": "今天这个情形，我倾向把“省心”排在“最快干”前面。震为雷，卦辞说“震来虩虩，笑言哑哑”，先有惊动和警惕，之后才谈得上安笑；阳台风大正是那个“虩虩”的变量。床单面积大，天阴本就不易干，风一大又容易翻卷、碰墙、沾灰甚至吹落。若你下午一直在家，最省心的做法是：以室内晾衣架为主，利用人在家定时翻面、开风扇或除湿；阳台只作辅助，不要一开始就晾在最外沿。",
+        "evidenceId": "zy-51-judgment",
+        "quote": "震来虩虩，笑言哑哑",
+        "claim": "震来虩虩，笑言哑哑"
+      },
+      {
+        "occurrenceId": "delivered.p1.c0",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[0]",
+        "paragraphText": "如果室内晾衣架够稳、能展开床单，就选室内；没有除湿设备时，阴干容易返潮有味道，可以在半干后移到阳台内侧吹一阵，但要用夹子夹牢、人在家看着，风稍大就收回。彖传解释震卦说“恐致福也”，又说“后有则也”，意思是先因警惕而得益，随后形成规则；晾晒也一样，与其赌风会不会停，不如定好“夹牢、限时、勤看、及时收”的规矩，这样反而更省心。",
+        "evidenceId": "zy-51-tuan",
+        "quote": "恐致福也",
+        "claim": "恐致福也"
+      },
+      {
+        "occurrenceId": "delivered.p1.c1",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[1]",
+        "paragraphText": "如果室内晾衣架够稳、能展开床单，就选室内；没有除湿设备时，阴干容易返潮有味道，可以在半干后移到阳台内侧吹一阵，但要用夹子夹牢、人在家看着，风稍大就收回。彖传解释震卦说“恐致福也”，又说“后有则也”，意思是先因警惕而得益，随后形成规则；晾晒也一样，与其赌风会不会停，不如定好“夹牢、限时、勤看、及时收”的规矩，这样反而更省心。",
+        "evidenceId": "zy-51-tuan",
+        "quote": "后有则也",
+        "claim": "后有则也"
+      },
+      {
+        "occurrenceId": "delivered.p2.c0",
+        "target": "delivered",
+        "location": "paragraphs[2].citations[0]",
+        "paragraphText": "若阳台是封闭式、晾杆固定，且你能把床单夹得很稳，晾在阳台靠内一侧也可以，但不要占外沿或让床单垂得太低。大象说“洊雷，震。君子以恐惧修省”，接连雷声提醒人反复检省；今天风可能一阵一阵，所以无论晾哪里，都建议隔一段时间看一次。综合你的条件，最省心排序是：室内晾衣架（配风扇或除湿）＞阳台封闭内侧（夹牢并有人看）＞阳台开放风口。我没有你阳台是否封闭、室内湿度和除湿设备的信息，所以上面的排序需要按这些条件调整。",
+        "evidenceId": "zy-51-xiang",
+        "quote": "洊雷，震。君子以恐惧修省。",
+        "claim": "君子以恐惧修省"
+      }
+    ],
+    "referenceOnlyEvidence": [],
+    "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。"
+  },
+  {
+    "answerId": "Q57891c7b9e1e",
+    "scenario": "life",
+    "question": "常穿的鞋开胶了，鞋面和鞋底其他地方还好，附近师傅说半小时能修。今天先修还是直接换双新的？",
+    "coreQuestion": "常穿的鞋开胶了，鞋面和鞋底其他地方还好，附近师傅说半小时能修。今天先修还是直接换双新的？",
+    "history": [],
+    "cast": {
+      "lines": [
+        8,
+        7,
+        8,
+        7,
+        7,
+        8
+      ],
+      "original": {
+        "binary": "010110",
+        "name": "泽水困",
+        "number": 47,
+        "judgment": "亨，贞，大人吉，无咎，有言不信。"
+      },
+      "changed": {
+        "binary": "010110",
+        "name": "泽水困",
+        "number": 47,
+        "judgment": "亨，贞，大人吉，无咎，有言不信。"
+      },
+      "originalBinary": "010110",
+      "changedBinary": "010110",
+      "changingIndices": [],
+      "method": "three-coins",
+      "algorithmVersion": "evaluation-fixed-lines",
+      "readingPolicyVersion": "all-moving-lines-v1"
+    },
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "以困卦看，鞋开胶是眼前小困：鞋面鞋底还好，师傅说半小时能修，先修比直接换新更贴合困而不失其所“亨”的处境。困卦卦辞说‘贞，大人吉，无咎；有言不信’，意思是受困时守正、做稳妥选择才吉；但‘有言不信’也提醒你，半小时维修是口头承诺，先问清修复方式、保修和多久能穿，别只凭一句话就完全放心。因此我倾向今天先修，而不是立刻换新。",
+          "citations": [
+            {
+              "evidenceId": "zy-47-tuan",
+              "quote": "困而不失其所“亨”",
+              "claim": "困而不失其所“亨”"
+            },
+            {
+              "evidenceId": "zy-47-judgment",
+              "quote": "贞，大人吉，无咎；有言不信。",
+              "claim": "贞，大人吉，无咎；有言不信"
+            },
+            {
+              "evidenceId": "zy-47-judgment",
+              "quote": "有言不信",
+              "claim": "有言不信"
+            }
+          ]
+        },
+        {
+          "text": "彖传说困是“刚掩也”，但困而不失其所“亨”，其唯君子乎；又说尚口乃穷也。放在修鞋上，就是别让口头承诺代替实际判断。本卦变卦皆为困且无动爻，局面没有明显转向，宜守成、修复，不宜因小开胶就大动作。大象说“泽无水，困。君子以致命遂志”，可理解为资源有限时仍要完成该做的事：若这双鞋合脚、常穿，花半小时和少量费用让它继续服役，通常比直接换新更合算。建议今天先修，修完确认粘合牢固、走路不硌脚。",
+          "citations": [
+            {
+              "evidenceId": "zy-47-tuan",
+              "quote": "刚掩也",
+              "claim": "刚掩也"
+            },
+            {
+              "evidenceId": "zy-47-tuan",
+              "quote": "其唯君子乎",
+              "claim": "其唯君子乎"
+            },
+            {
+              "evidenceId": "zy-47-tuan",
+              "quote": "尚口乃穷也",
+              "claim": "尚口乃穷也"
+            },
+            {
+              "evidenceId": "zy-47-xiang",
+              "quote": "君子以致命遂志",
+              "claim": "君子以致命遂志"
+            }
+          ]
+        },
+        {
+          "text": "取舍上，若鞋底磨损严重、鞋面老化将连带开裂、修费接近新鞋、师傅无法保证基本效果，或你近期有重要场合需要绝对可靠，那么换新更理性。困卦不是硬撑到底，而是“贞，大人吉，无咎”：在守正前提下做无咎的选择。若修后仍不放心，再换也不迟；今天先修，等于用最小代价保留换新的选项。",
+          "citations": [
+            {
+              "evidenceId": "zy-47-judgment",
+              "quote": "贞，大人吉，无咎",
+              "claim": "贞，大人吉，无咎"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "candidate": null,
+    "candidateText": null,
+    "internalFallback": null,
+    "internalFallbackScope": null,
+    "evidence": [
+      {
+        "id": "zy-47-judgment",
+        "hexagramId": 47,
+        "name": "困",
+        "section": "judgment",
+        "line": null,
+        "text": "亨。贞，大人吉，无咎；有言不信。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "困·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:47:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "亨。贞，大人吉，无咎；有言不信。"
+      },
+      {
+        "id": "zy-47-tuan",
+        "hexagramId": 47,
+        "name": "困",
+        "section": "tuan",
+        "line": null,
+        "text": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "困·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:47:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。"
+      },
+      {
+        "id": "zy-47-xiang",
+        "hexagramId": 47,
+        "name": "困",
+        "section": "xiang",
+        "line": null,
+        "text": "泽无水，困。君子以致命遂志。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "困·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:47:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "泽无水，困。君子以致命遂志。"
+      }
+    ],
+    "status": "completed",
+    "delivery": {
+      "mechanicalStatus": "completed",
+      "candidateOnly": false,
+      "visibleKind": "substantive_answer",
+      "technicalFailure": false,
+      "providedFailureNote": null
+    },
+    "citationClaims": [
+      {
+        "occurrenceId": "delivered.p0.c0",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[0]",
+        "paragraphText": "以困卦看，鞋开胶是眼前小困：鞋面鞋底还好，师傅说半小时能修，先修比直接换新更贴合困而不失其所“亨”的处境。困卦卦辞说‘贞，大人吉，无咎；有言不信’，意思是受困时守正、做稳妥选择才吉；但‘有言不信’也提醒你，半小时维修是口头承诺，先问清修复方式、保修和多久能穿，别只凭一句话就完全放心。因此我倾向今天先修，而不是立刻换新。",
+        "evidenceId": "zy-47-tuan",
+        "quote": "困而不失其所“亨”",
+        "claim": "困而不失其所“亨”"
+      },
+      {
+        "occurrenceId": "delivered.p0.c1",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[1]",
+        "paragraphText": "以困卦看，鞋开胶是眼前小困：鞋面鞋底还好，师傅说半小时能修，先修比直接换新更贴合困而不失其所“亨”的处境。困卦卦辞说‘贞，大人吉，无咎；有言不信’，意思是受困时守正、做稳妥选择才吉；但‘有言不信’也提醒你，半小时维修是口头承诺，先问清修复方式、保修和多久能穿，别只凭一句话就完全放心。因此我倾向今天先修，而不是立刻换新。",
+        "evidenceId": "zy-47-judgment",
+        "quote": "贞，大人吉，无咎；有言不信。",
+        "claim": "贞，大人吉，无咎；有言不信"
+      },
+      {
+        "occurrenceId": "delivered.p0.c2",
+        "target": "delivered",
+        "location": "paragraphs[0].citations[2]",
+        "paragraphText": "以困卦看，鞋开胶是眼前小困：鞋面鞋底还好，师傅说半小时能修，先修比直接换新更贴合困而不失其所“亨”的处境。困卦卦辞说‘贞，大人吉，无咎；有言不信’，意思是受困时守正、做稳妥选择才吉；但‘有言不信’也提醒你，半小时维修是口头承诺，先问清修复方式、保修和多久能穿，别只凭一句话就完全放心。因此我倾向今天先修，而不是立刻换新。",
+        "evidenceId": "zy-47-judgment",
+        "quote": "有言不信",
+        "claim": "有言不信"
+      },
+      {
+        "occurrenceId": "delivered.p1.c0",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[0]",
+        "paragraphText": "彖传说困是“刚掩也”，但困而不失其所“亨”，其唯君子乎；又说尚口乃穷也。放在修鞋上，就是别让口头承诺代替实际判断。本卦变卦皆为困且无动爻，局面没有明显转向，宜守成、修复，不宜因小开胶就大动作。大象说“泽无水，困。君子以致命遂志”，可理解为资源有限时仍要完成该做的事：若这双鞋合脚、常穿，花半小时和少量费用让它继续服役，通常比直接换新更合算。建议今天先修，修完确认粘合牢固、走路不硌脚。",
+        "evidenceId": "zy-47-tuan",
+        "quote": "刚掩也",
+        "claim": "刚掩也"
+      },
+      {
+        "occurrenceId": "delivered.p1.c1",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[1]",
+        "paragraphText": "彖传说困是“刚掩也”，但困而不失其所“亨”，其唯君子乎；又说尚口乃穷也。放在修鞋上，就是别让口头承诺代替实际判断。本卦变卦皆为困且无动爻，局面没有明显转向，宜守成、修复，不宜因小开胶就大动作。大象说“泽无水，困。君子以致命遂志”，可理解为资源有限时仍要完成该做的事：若这双鞋合脚、常穿，花半小时和少量费用让它继续服役，通常比直接换新更合算。建议今天先修，修完确认粘合牢固、走路不硌脚。",
+        "evidenceId": "zy-47-tuan",
+        "quote": "其唯君子乎",
+        "claim": "其唯君子乎"
+      },
+      {
+        "occurrenceId": "delivered.p1.c2",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[2]",
+        "paragraphText": "彖传说困是“刚掩也”，但困而不失其所“亨”，其唯君子乎；又说尚口乃穷也。放在修鞋上，就是别让口头承诺代替实际判断。本卦变卦皆为困且无动爻，局面没有明显转向，宜守成、修复，不宜因小开胶就大动作。大象说“泽无水，困。君子以致命遂志”，可理解为资源有限时仍要完成该做的事：若这双鞋合脚、常穿，花半小时和少量费用让它继续服役，通常比直接换新更合算。建议今天先修，修完确认粘合牢固、走路不硌脚。",
+        "evidenceId": "zy-47-tuan",
+        "quote": "尚口乃穷也",
+        "claim": "尚口乃穷也"
+      },
+      {
+        "occurrenceId": "delivered.p1.c3",
+        "target": "delivered",
+        "location": "paragraphs[1].citations[3]",
+        "paragraphText": "彖传说困是“刚掩也”，但困而不失其所“亨”，其唯君子乎；又说尚口乃穷也。放在修鞋上，就是别让口头承诺代替实际判断。本卦变卦皆为困且无动爻，局面没有明显转向，宜守成、修复，不宜因小开胶就大动作。大象说“泽无水，困。君子以致命遂志”，可理解为资源有限时仍要完成该做的事：若这双鞋合脚、常穿，花半小时和少量费用让它继续服役，通常比直接换新更合算。建议今天先修，修完确认粘合牢固、走路不硌脚。",
+        "evidenceId": "zy-47-xiang",
+        "quote": "君子以致命遂志",
+        "claim": "君子以致命遂志"
+      },
+      {
+        "occurrenceId": "delivered.p2.c0",
+        "target": "delivered",
+        "location": "paragraphs[2].citations[0]",
+        "paragraphText": "取舍上，若鞋底磨损严重、鞋面老化将连带开裂、修费接近新鞋、师傅无法保证基本效果，或你近期有重要场合需要绝对可靠，那么换新更理性。困卦不是硬撑到底，而是“贞，大人吉，无咎”：在守正前提下做无咎的选择。若修后仍不放心，再换也不迟；今天先修，等于用最小代价保留换新的选项。",
+        "evidenceId": "zy-47-judgment",
+        "quote": "贞，大人吉，无咎",
+        "claim": "贞，大人吉，无咎"
+      }
+    ],
+    "referenceOnlyEvidence": [],
+    "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。"
+  }
+]

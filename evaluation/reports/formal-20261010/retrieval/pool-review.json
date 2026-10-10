@@ -1,0 +1,719 @@
+{
+  "reviewer": "独立 AI 评阅员（非专家、非真人评分、非专家 Gold）",
+  "scope": {
+    "input": "blind-pool.json",
+    "queryCount": 32,
+    "reviewedPairCount": 115,
+    "method": "逐对判断是否直接支持实际请求的出处、作者、爻位、词义或明确子问题；有直接意义的上下文可部分相关，仅词语或主题相近不算。",
+    "metricBoundary": "仅为提供池化 Precision 所需的相关性判断；不代表完整语料库相关文献已被发现，不能声称全库 Recall。",
+    "verificationBoundary": "只读取匿名包中的问题、历史、卦象、文档原文及出处元数据；未外查版本真伪或推断未给出的训诂。"
+  },
+  "decisionNotes": [
+    "relevant 包含直接相关但只能回答部分请求的材料，不能当成整题资料充分或任务成功。",
+    "指定作者的注释不得用其他注家替代；同一词在其他爻中的出现不能自动代替指定爻。",
+    "原典与小象只在增加直接文义或请求内容时标部分相关，理由明确其不证明指定注家的说法；仅重复题中词句不自动相关。",
+    "unknown 用于无法判断相关性的材料；本池未遇到必须先裁定未知训诂才能判断相关性的文档，因此没有为填充类别制造 unknown。",
+    "Q002、Q019 没有候选文档，保留为空查询，不虚构文献对，也不据此推断全库没有答案。"
+  ],
+  "counts": {
+    "relevant": 60,
+    "irrelevant": 55,
+    "unknown": 0
+  },
+  "emptyQueryIds": [
+    "Q002",
+    "Q019"
+  ],
+  "judgments": [
+    {
+      "queryId": "Q001",
+      "documentId": "D001",
+      "judgment": "irrelevant",
+      "reason": "只有“亢龙有悔”本句，重复题中引文，没有程颐对“亢”的解释。"
+    },
+    {
+      "queryId": "Q001",
+      "documentId": "D002",
+      "judgment": "relevant",
+      "reason": "程颐本爻注以“过此则亢”“上九至于亢极”“有过则有悔”直接说明所问词义。"
+    },
+    {
+      "queryId": "Q001",
+      "documentId": "D003",
+      "judgment": "irrelevant",
+      "reason": "“过于上而不能下”是朱熹本义的解释，不能作为用户指定的程颐说法。"
+    },
+    {
+      "queryId": "Q001",
+      "documentId": "D004",
+      "judgment": "relevant",
+      "reason": "同爻小象“盈不可久”直接提供亢与盈极的文义背景；只属部分支持，不能据此归为程颐原话。"
+    },
+    {
+      "queryId": "Q001",
+      "documentId": "D005",
+      "judgment": "irrelevant",
+      "reason": "这是王弼乾九三注，虽提到上九之亢，却不提供指定的程颐上九解释。"
+    },
+    {
+      "queryId": "Q003",
+      "documentId": "D001",
+      "judgment": "irrelevant",
+      "reason": "这是睽六五爻辞，不是用户要求的焦循注解原文。"
+    },
+    {
+      "queryId": "Q003",
+      "documentId": "D002",
+      "judgment": "irrelevant",
+      "reason": "这是睽六五小象，不能替代焦循的注解及其原文。"
+    },
+    {
+      "queryId": "Q003",
+      "documentId": "D003",
+      "judgment": "irrelevant",
+      "reason": "“小事吉”是睽卦卦辞，既非六五注解，也非焦循原文。"
+    },
+    {
+      "queryId": "Q004",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "程颐本爻注明确“权虽失而位未亡”，并以汉魏末世之君说明“不死”，直接回答是否永生。"
+    },
+    {
+      "queryId": "Q004",
+      "documentId": "D002",
+      "judgment": "irrelevant",
+      "reason": "这是朱熹以“得中”解释“不死”，不能代替题目限定的程颐原文。"
+    },
+    {
+      "queryId": "Q004",
+      "documentId": "D003",
+      "judgment": "irrelevant",
+      "reason": "只有题中“贞疾，恒不死”爻辞，未增加所求程颐解释或“不死”的含义。"
+    },
+    {
+      "queryId": "Q004",
+      "documentId": "D004",
+      "judgment": "irrelevant",
+      "reason": "“居中处尊，未可得亡”是王弼注，不能冒充程颐对本爻的解释。"
+    },
+    {
+      "queryId": "Q004",
+      "documentId": "D005",
+      "judgment": "relevant",
+      "reason": "小象把“恒不死”连到“中未亡”，可提供本爻语境；不能单独证明程颐怎样解释，更不能据此认定永生。"
+    },
+    {
+      "queryId": "Q005",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "完整爻辞在“或跃在渊”后说“无咎”，对“是否一定不好”有直接的部分支持；不提供王弼的解释。"
+    },
+    {
+      "queryId": "Q005",
+      "documentId": "D002",
+      "judgment": "irrelevant",
+      "reason": "虽直接解释“或”为疑而未定，但作者是朱熹，不是用户要求核对的王弼。"
+    },
+    {
+      "queryId": "Q005",
+      "documentId": "D003",
+      "judgment": "relevant",
+      "reason": "同爻小象“进无咎”直接关联吉凶评价，可作部分语境支持；不能代替王弼对犹疑的说明。"
+    },
+    {
+      "queryId": "Q005",
+      "documentId": "D004",
+      "judgment": "irrelevant",
+      "reason": "这是王弼九二“见龙在田”注，只顺带列“四则或跃”，没有解释九四的犹疑或其评价。"
+    },
+    {
+      "queryId": "Q006",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "正文“利永贞”及“坤·用六”“special”定位直接提供所求原文，并有助区分用六与普通爻。"
+    },
+    {
+      "queryId": "Q006",
+      "documentId": "D002",
+      "judgment": "relevant",
+      "reason": "“用六”小象的单独定位可辅助确认它另有对应解释；但不能代替用六爻文或完整说明其性质。"
+    },
+    {
+      "queryId": "Q007",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "同爻小象“施未光”直接把“屯其膏”连到施予未广，是解释的原典背景；未单独给出王弼论证。"
+    },
+    {
+      "queryId": "Q007",
+      "documentId": "D002",
+      "judgment": "irrelevant",
+      "reason": "文本解释九五不得施，但出自朱熹；不能当成所求王弼为何这样解释的依据。"
+    },
+    {
+      "queryId": "Q007",
+      "documentId": "D003",
+      "judgment": "irrelevant",
+      "reason": "王弼上六注借“五屯其膏”解释上六无援，主旨并非九五不能博施的原因，其他爻不能替代。"
+    },
+    {
+      "queryId": "Q007",
+      "documentId": "D004",
+      "judgment": "relevant",
+      "reason": "王弼九五注直接说“不能恢弘博施”“系应在二”“非能光其施”，给出所问联系及理由。"
+    },
+    {
+      "queryId": "Q007",
+      "documentId": "D005",
+      "judgment": "irrelevant",
+      "reason": "爻辞没有解释膏与施予的关系，也未提供王弼的说明；仅同爻原句不足以回答该问题。"
+    },
+    {
+      "queryId": "Q008",
+      "documentId": "D001",
+      "judgment": "irrelevant",
+      "reason": "仅重复“田无禽”，没有用户要核对的王弼或朱熹解释层次。"
+    },
+    {
+      "queryId": "Q008",
+      "documentId": "D002",
+      "judgment": "relevant",
+      "reason": "朱熹从“以阳居阴久非其位”说到“凡事亦不得其所求”，直接显示从田猎到一般占义的解释层次。"
+    },
+    {
+      "queryId": "Q009",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "朱熹以昏冥于豫、事成能渝及“补过而无咎”说明词义和无咎的条件。"
+    },
+    {
+      "queryId": "Q009",
+      "documentId": "D002",
+      "judgment": "relevant",
+      "reason": "程颐明确“若能有渝变，则可以无咎”，并解释冥豫已成、迁善，直接回答为何末尾无咎。"
+    },
+    {
+      "queryId": "Q009",
+      "documentId": "D003",
+      "judgment": "relevant",
+      "reason": "王弼从“极豫尽乐”解释冥豫，并说“必渝变然后无咎”，正是所求的一位注家原话。"
+    },
+    {
+      "queryId": "Q009",
+      "documentId": "D004",
+      "judgment": "relevant",
+      "reason": "“何可长也”直接为冥豫不可持续提供原典解释背景；仍需注家材料说明改过与无咎的关系。"
+    },
+    {
+      "queryId": "Q009",
+      "documentId": "D005",
+      "judgment": "irrelevant",
+      "reason": "完整爻辞仅重述题中已知的冥豫、有渝、无咎，没有所求含义或注家解释。"
+    },
+    {
+      "queryId": "Q010",
+      "documentId": "D001",
+      "judgment": "irrelevant",
+      "reason": "这是坎卦卦辞，不是最下面一爻，不能提供用户要求的初爻原文。"
+    },
+    {
+      "queryId": "Q010",
+      "documentId": "D002",
+      "judgment": "relevant",
+      "reason": "定位为“习坎·初六小象”，能辅助确认初六及对应内容；但它是小象，不能代替题目要求的爻辞。"
+    },
+    {
+      "queryId": "Q010",
+      "documentId": "D003",
+      "judgment": "relevant",
+      "reason": "定位明确为习坎初六，且给出“习坎，入于坎窞，凶”爻辞，直接满足名称与原文核对。"
+    },
+    {
+      "queryId": "Q011",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "六二小象“中心得也”直接提供鸣谦与内在所得相联的语境，对夸耀疑问有部分帮助；不足以比较王、程两家。"
+    },
+    {
+      "queryId": "Q011",
+      "documentId": "D002",
+      "judgment": "irrelevant",
+      "reason": "这是上六的鸣谦小象，“志未得”对应另一爻，不能拿来解释所问六二。"
+    },
+    {
+      "queryId": "Q011",
+      "documentId": "D003",
+      "judgment": "irrelevant",
+      "reason": "仅重复六二“鸣谦，贞吉”，没有解释“鸣”或提供两家差异。"
+    },
+    {
+      "queryId": "Q011",
+      "documentId": "D004",
+      "judgment": "irrelevant",
+      "reason": "程颐此段解释上六的“鸣谦”和行师，爻位与六二不同，不能混用。"
+    },
+    {
+      "queryId": "Q011",
+      "documentId": "D005",
+      "judgment": "irrelevant",
+      "reason": "这是上六爻辞，尽管同有“鸣谦”，仍不是用户限定的六二。"
+    },
+    {
+      "queryId": "Q011",
+      "documentId": "D006",
+      "judgment": "relevant",
+      "reason": "程颐六二注以“谦德充积于中，故发于外”说明鸣谦，直接回答程颐一方及是否夸耀；王弼一方仍缺。"
+    },
+    {
+      "queryId": "Q012",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "完整爻辞补出“利居贞”，有助识别磐桓之外还有守正、建侯的要求；不等于朱熹的解释。"
+    },
+    {
+      "queryId": "Q012",
+      "documentId": "D002",
+      "judgment": "relevant",
+      "reason": "朱熹直接解释难进之象、居正及“以阳下阴为民所归”的侯象，回应为何磐桓仍利建侯。"
+    },
+    {
+      "queryId": "Q012",
+      "documentId": "D003",
+      "judgment": "irrelevant",
+      "reason": "这段虽解释磐桓和建侯，却是王弼，不是用户指定的朱熹说法。"
+    },
+    {
+      "queryId": "Q012",
+      "documentId": "D004",
+      "judgment": "relevant",
+      "reason": "同爻小象“志行正”“以贵下贱，大得民”直接提供磐桓与得民并存的语境；只能部分辅助核对朱熹。"
+    },
+    {
+      "queryId": "Q013",
+      "documentId": "D001",
+      "judgment": "irrelevant",
+      "reason": "只有“朋盍簪”所在爻辞，没有“簪”的释义，也没有王弼或朱熹各自说法。"
+    },
+    {
+      "queryId": "Q014",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "王弼把“涉大川”解释为“涉大难”，并以能体谦谦为前提，可直接检验是否字面保证过河安全。"
+    },
+    {
+      "queryId": "Q014",
+      "documentId": "D002",
+      "judgment": "relevant",
+      "reason": "程颐说明至谦、众所共与及涉险难的条件，直接提供一位注家的解释；不可把文中无患害升级为现实安全保证。"
+    },
+    {
+      "queryId": "Q014",
+      "documentId": "D003",
+      "judgment": "relevant",
+      "reason": "完整原文补出“谦谦君子”的主体与条件，帮助限定“用涉大川，吉”；仍不能独自完成注家解释。"
+    },
+    {
+      "queryId": "Q015",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "正是用户明确要求的屯上六小象“泣血涟如，何可长也”。"
+    },
+    {
+      "queryId": "Q015",
+      "documentId": "D002",
+      "judgment": "relevant",
+      "reason": "正是用户明确要求的屯上六爻辞“乘马班如，泣血涟如”。"
+    },
+    {
+      "queryId": "Q015",
+      "documentId": "D003",
+      "judgment": "relevant",
+      "reason": "王弼本爻注将泣血解释为处险难、无援、无所适，有助核对它是否直接宣告马上丧事。"
+    },
+    {
+      "queryId": "Q016",
+      "documentId": "D001",
+      "judgment": "irrelevant",
+      "reason": "这是题中已给出的井九五爻辞，不是程颐注解原文。"
+    },
+    {
+      "queryId": "Q016",
+      "documentId": "D002",
+      "judgment": "irrelevant",
+      "reason": "这是井九五小象，虽同爻，却不能满足指定程颐原文的查询。"
+    },
+    {
+      "queryId": "Q017",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "同爻小象以“征不服”限定侵伐对象，对谦与侵伐的关系提供直接背景；不代替两位注家的原话。"
+    },
+    {
+      "queryId": "Q017",
+      "documentId": "D002",
+      "judgment": "irrelevant",
+      "reason": "这是谦上六“利用行师，征邑国”，不是所问六五“利用侵伐”，不可因都涉用兵而混同。"
+    },
+    {
+      "queryId": "Q017",
+      "documentId": "D003",
+      "judgment": "relevant",
+      "reason": "程颐六五注明确君道不可专尚谦柔、须威武相济，直接解释谦与侵伐为何并存。"
+    },
+    {
+      "queryId": "Q017",
+      "documentId": "D004",
+      "judgment": "irrelevant",
+      "reason": "六五爻辞本身未解释谦与侵伐为何并存，也没有王弼或程颐的观点。"
+    },
+    {
+      "queryId": "Q017",
+      "documentId": "D005",
+      "judgment": "relevant",
+      "reason": "王弼六五注说“以谦顺而侵伐，所伐皆骄逆”，直接提供另一家的解释。"
+    },
+    {
+      "queryId": "Q018",
+      "documentId": "D001",
+      "judgment": "irrelevant",
+      "reason": "这是困九二小象，不是指定的朱熹注释原文。"
+    },
+    {
+      "queryId": "Q018",
+      "documentId": "D002",
+      "judgment": "irrelevant",
+      "reason": "这是困卦卦辞，作者和对象均不满足朱熹九二注原文的请求。"
+    },
+    {
+      "queryId": "Q018",
+      "documentId": "D003",
+      "judgment": "irrelevant",
+      "reason": "这是困九二爻辞，不能替代朱熹的注释原文。"
+    },
+    {
+      "queryId": "Q020",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "本卦为乾，此朱熹九三注以“忧惧”说明乾乾惕厉，直接帮助解释“惕”；不能代替小象全文。"
+    },
+    {
+      "queryId": "Q020",
+      "documentId": "D002",
+      "judgment": "relevant",
+      "reason": "王弼乾九三注“因时而惕”“不失其几”提供警惕语境，可回答词义部分。"
+    },
+    {
+      "queryId": "Q020",
+      "documentId": "D003",
+      "judgment": "relevant",
+      "reason": "正是本卦乾九三爻辞，包含“夕惕若”，直接满足原文部分。"
+    },
+    {
+      "queryId": "Q020",
+      "documentId": "D004",
+      "judgment": "relevant",
+      "reason": "程颐乾九三注“日夕不懈而兢惕”“戒”直接帮助读懂“惕”，但仍不提供所求小象。"
+    },
+    {
+      "queryId": "Q021",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "程颐本爻注先说有功劳而持谦，继说须有终，并以谦顺久而不变解释条件，直接回答两者关系。"
+    },
+    {
+      "queryId": "Q021",
+      "documentId": "D002",
+      "judgment": "irrelevant",
+      "reason": "只有题中已知的劳谦、有终爻辞，没有程颐为何相联的说明。"
+    },
+    {
+      "queryId": "Q021",
+      "documentId": "D003",
+      "judgment": "irrelevant",
+      "reason": "“万民服”解释劳谦君子的效果，未解释程颐所说有功仍须有终的理由。"
+    },
+    {
+      "queryId": "Q021",
+      "documentId": "D004",
+      "judgment": "irrelevant",
+      "reason": "虽有“劳谦匪解”，却是王弼解释，不可作为用户指定的程颐原话。"
+    },
+    {
+      "queryId": "Q021",
+      "documentId": "D005",
+      "judgment": "irrelevant",
+      "reason": "这是程颐六四注，借九三功德说明六四须撝谦，不是九三为何必须有终的解释。"
+    },
+    {
+      "queryId": "Q022",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "朱熹屯六三注包含逐鹿无虞、陷林、不如舍的相同情节，并提供准确爻位；可作定位支持，非爻辞全文。"
+    },
+    {
+      "queryId": "Q022",
+      "documentId": "D002",
+      "judgment": "irrelevant",
+      "reason": "需六四“需于血，出自穴”没有无虞逐鹿与舍弃的情节。"
+    },
+    {
+      "queryId": "Q022",
+      "documentId": "D003",
+      "judgment": "relevant",
+      "reason": "屯六三完整爻辞与用户记忆逐一对应，并给出所求出处和原文。"
+    },
+    {
+      "queryId": "Q022",
+      "documentId": "D004",
+      "judgment": "irrelevant",
+      "reason": "此为坎六四薄礼、纳约自牖的注释，不解释无向导追猎或不如舍。"
+    },
+    {
+      "queryId": "Q022",
+      "documentId": "D005",
+      "judgment": "relevant",
+      "reason": "王弼屯六三注有“无虞以从禽”“徒入于林中”“不如舍”，直接支持记忆对应和出处核对。"
+    },
+    {
+      "queryId": "Q022",
+      "documentId": "D006",
+      "judgment": "irrelevant",
+      "reason": "既济九五谈杀牛与禴祭，虽有“不如”，但不是用户记得的追猎故事。"
+    },
+    {
+      "queryId": "Q022",
+      "documentId": "D007",
+      "judgment": "irrelevant",
+      "reason": "复大象谈至日闭关与不省方，不包含无虞追猎或舍去的内容。"
+    },
+    {
+      "queryId": "Q022",
+      "documentId": "D008",
+      "judgment": "irrelevant",
+      "reason": "归妹六五谈衣袂与月几望，仅有“不如”等词相近，与追猎请求无关。"
+    },
+    {
+      "queryId": "Q023",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "六三小象明确“以从禽”，直接限定此处为追猎语境；可部分助读，但未明训“虞”的身份。"
+    },
+    {
+      "queryId": "Q023",
+      "documentId": "D002",
+      "judgment": "relevant",
+      "reason": "朱熹本爻注把无虞放进逐鹿、陷林、妄行取困的解释，符合找现有注解助读；未直接定义“虞”。"
+    },
+    {
+      "queryId": "Q023",
+      "documentId": "D003",
+      "judgment": "relevant",
+      "reason": "完整爻辞补出“惟入于林中”“不如舍”，提供理解无虞的直接上下文；不能独自落实词义。"
+    },
+    {
+      "queryId": "Q023",
+      "documentId": "D004",
+      "judgment": "relevant",
+      "reason": "王弼以“虽见其禽而无其虞，徒入于林中”说明追猎失据，直接提供相关注解；“虞”的精确定义仍未明说。"
+    },
+    {
+      "queryId": "Q024",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "朱熹以“始虽无成而后必有终”解释本爻，直接提供两家比较中的朱熹一方。"
+    },
+    {
+      "queryId": "Q024",
+      "documentId": "D002",
+      "judgment": "relevant",
+      "reason": "完整爻辞把无成有终放在“或从王事”之后，提供比较解释所需的语境；不能代替两家注释。"
+    },
+    {
+      "queryId": "Q024",
+      "documentId": "D003",
+      "judgment": "relevant",
+      "reason": "王弼明确“不为事主，顺命而终”，直接提供与朱熹分开核对的另一方解释。"
+    },
+    {
+      "queryId": "Q025",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "程颐本爻注明说“邑国，己之私有”“征邑国，谓自治其私”，并以刚柔相济、过谦解释其理由。"
+    },
+    {
+      "queryId": "Q025",
+      "documentId": "D002",
+      "judgment": "irrelevant",
+      "reason": "朱熹以质柔无位限制征己邑国，虽同题词义相近，却非所问程颐“自治其私”的论证。"
+    },
+    {
+      "queryId": "Q025",
+      "documentId": "D003",
+      "judgment": "irrelevant",
+      "reason": "本爻原文未解释邑国或自治其私，不能回答指定程颐解释的理由。"
+    },
+    {
+      "queryId": "Q025",
+      "documentId": "D004",
+      "judgment": "irrelevant",
+      "reason": "小象主要解释鸣谦志未得，末段重提行师征邑国，没有所问“自治其私”的说明。"
+    },
+    {
+      "queryId": "Q025",
+      "documentId": "D005",
+      "judgment": "irrelevant",
+      "reason": "王弼从居外不与内政解释征邑国，不能替代程颐的刚柔相济与自治其私说。"
+    },
+    {
+      "queryId": "Q026",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "完整爻辞明确女子、婚媾与许字的具体语境，有助防止将“十年”直接推广为任一事件必成；不含两家解释。"
+    },
+    {
+      "queryId": "Q026",
+      "documentId": "D002",
+      "judgment": "relevant",
+      "reason": "朱熹将十年解释为“数穷理极”、妄求者去正应者合，直接提供所问解释及其适用条件。"
+    },
+    {
+      "queryId": "Q026",
+      "documentId": "D003",
+      "judgment": "relevant",
+      "reason": "王弼以“屯难之世”“十年则反常”“本志斯获”解释十年，直接可核对，不能脱离语境外推现实保证。"
+    },
+    {
+      "queryId": "Q026",
+      "documentId": "D004",
+      "judgment": "relevant",
+      "reason": "同爻小象“十年乃字，反常也”直接解释十年后的状态，为两家解释提供部分原典背景。"
+    },
+    {
+      "queryId": "Q027",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "蒙六三完整爻辞包含所引“见金夫，不有躬”，直接满足先找出处与原文的要求。"
+    },
+    {
+      "queryId": "Q027",
+      "documentId": "D002",
+      "judgment": "irrelevant",
+      "reason": "这是王弼以“刚夫”等解释蒙六三，作者不符；用户要看的是朱熹对金夫的解释。"
+    },
+    {
+      "queryId": "Q027",
+      "documentId": "D003",
+      "judgment": "relevant",
+      "reason": "朱熹直接释“金夫”为以金贿而挑之者，并举秋胡，正是所求作者与词义。"
+    },
+    {
+      "queryId": "Q027",
+      "documentId": "D004",
+      "judgment": "irrelevant",
+      "reason": "这是王弼豫九四释“盍”“簪”，与蒙六三金夫的出处和朱熹解释无关。"
+    },
+    {
+      "queryId": "Q028",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "朱熹明确“或事当谨密或时当隐遁”，直接给出时事条件，可检验是否永远不开口。"
+    },
+    {
+      "queryId": "Q028",
+      "documentId": "D002",
+      "judgment": "relevant",
+      "reason": "程颐将括囊置于上下闭隔、危疑之地的情境，直接提供一位注家关于条件的解释。"
+    },
+    {
+      "queryId": "Q028",
+      "documentId": "D003",
+      "judgment": "relevant",
+      "reason": "同爻小象“慎不害也”直接说明谨慎避害的旨意，可作部分释义背景，但未独自给出时限或注家解释。"
+    },
+    {
+      "queryId": "Q028",
+      "documentId": "D004",
+      "judgment": "irrelevant",
+      "reason": "仅重复题中“括囊，无咎无誉”，没有解释条件，不能帮助判定是否永远不开口。"
+    },
+    {
+      "queryId": "Q029",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "正是乾用九“见群龙无首，吉”的原文与定位，直接满足第一部分请求。"
+    },
+    {
+      "queryId": "Q029",
+      "documentId": "D002",
+      "judgment": "relevant",
+      "reason": "用九小象“天德不可为首”直接为无首提供解释语境，有助区分为首与现代责任概念；不等于完整责任论证。"
+    },
+    {
+      "queryId": "Q030",
+      "documentId": "D001",
+      "judgment": "relevant",
+      "reason": "王弼以远阳、处两阴和不能比贤发志解释困蒙，直接提供所问一家的处境论述，未说天生学不会。"
+    },
+    {
+      "queryId": "Q030",
+      "documentId": "D002",
+      "judgment": "irrelevant",
+      "reason": "“困蒙，吝”只重复被问的爻辞，没有两家解释或先天能力含义的依据。"
+    },
+    {
+      "queryId": "Q030",
+      "documentId": "D003",
+      "judgment": "relevant",
+      "reason": "六四小象“独远实也”提供困蒙缘于关系位置的原典语境；只能部分辅助，不能代替王弼和朱熹两家注释。"
+    },
+    {
+      "queryId": "Q031",
+      "documentId": "D001",
+      "judgment": "irrelevant",
+      "reason": "这是坤六三爻辞，不是焦循对“含章可贞”的注解原文。"
+    },
+    {
+      "queryId": "Q031",
+      "documentId": "D002",
+      "judgment": "irrelevant",
+      "reason": "这是坤六三小象，不能作为焦循的注解原文。"
+    },
+    {
+      "queryId": "Q031",
+      "documentId": "D003",
+      "judgment": "irrelevant",
+      "reason": "这是王弼坤六四注，作者与爻位都不符；提到含章也不能替代。"
+    },
+    {
+      "queryId": "Q031",
+      "documentId": "D004",
+      "judgment": "irrelevant",
+      "reason": "这是程颐坤六三注，虽直接解释含章，仍不满足指定焦循原文。"
+    },
+    {
+      "queryId": "Q031",
+      "documentId": "D005",
+      "judgment": "irrelevant",
+      "reason": "这是王弼坤六三注，不能因同爻同句而归为焦循。"
+    },
+    {
+      "queryId": "Q031",
+      "documentId": "D006",
+      "judgment": "irrelevant",
+      "reason": "这是朱熹坤六三注，不是焦循的注解原文。"
+    },
+    {
+      "queryId": "Q032",
+      "documentId": "D001",
+      "judgment": "irrelevant",
+      "reason": "只重复题中“盱豫”“迟有悔”，未提供朱熹解释或“迟”的条件和范围。"
+    },
+    {
+      "queryId": "Q032",
+      "documentId": "D002",
+      "judgment": "irrelevant",
+      "reason": "小象以位不当解释盱豫有悔，未解释所问“迟”的范围，也不能提供朱熹的词义说明。"
+    }
+  ]
+}

@@ -1,0 +1,5658 @@
+[
+  {
+    "caseId": "dev-21",
+    "groupId": "dev-group-21",
+    "split": "development",
+    "context": {
+      "question": "请把本卦九三的爻辞和小象一起给我看，里面的“惕”大致指什么？",
+      "query": "惕",
+      "normalizedQuery": "惕",
+      "intent": "explanation_followup",
+      "scopeIds": [
+        1
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 1,
+          "section": "line",
+          "line": 3,
+          "layer": "classic"
+        },
+        {
+          "hexagramId": 1,
+          "section": "line_xiang",
+          "line": 3,
+          "layer": "classic"
+        }
+      ],
+      "businessScopes": [
+        {
+          "anchorIds": [
+            "zhouyi:01:line:3"
+          ],
+          "layers": [
+            "classic"
+          ],
+          "query": "惕",
+          "hexagramId": 1,
+          "topK": 5
+        },
+        {
+          "anchorIds": [
+            "zhouyi:01:line_xiang:3"
+          ],
+          "layers": [
+            "classic"
+          ],
+          "query": "惕",
+          "hexagramId": 1,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 1,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            3
+          ]
+        },
+        {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 1,
+          "sections": [
+            "line_xiang"
+          ],
+          "lineIndices": [
+            3
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 1,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            3
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "zy-1-line-3",
+              "hexagramId": 1,
+              "name": "乾",
+              "section": "line",
+              "line": 3,
+              "text": "君子终日乾乾，夕惕若，厉无咎。",
+              "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+              "locator": "乾·九三",
+              "version": "open-iching-4c5f00f8cb62-v2",
+              "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+              "layer": "classic",
+              "workId": "zhouyi",
+              "workTitle": "周易",
+              "sourceId": "open-iching-4c5f00f8cb62",
+              "editionId": "open-iching-v2",
+              "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+              "authorIds": [],
+              "authorNames": [],
+              "anchorIds": [
+                "zhouyi:01:line:3"
+              ],
+              "commentsOn": [],
+              "reviewStatus": "legacy_unreviewed",
+              "releaseId": "knowledge-v3-20260926-r1",
+              "textOriginal": "君子终日乾乾，夕惕若，厉无咎。"
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zy-1-line-3",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.293949618935585
+      },
+      {
+        "args": {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 1,
+          "sections": [
+            "line_xiang"
+          ],
+          "lineIndices": [
+            3
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "zy-1-line_xiang-3",
+              "hexagramId": 1,
+              "name": "乾",
+              "section": "line_xiang",
+              "line": 3,
+              "text": "“终日乾乾”，反复道也。",
+              "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+              "locator": "乾·九三小象",
+              "version": "open-iching-4c5f00f8cb62-v2",
+              "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+              "layer": "classic",
+              "workId": "zhouyi",
+              "workTitle": "周易",
+              "sourceId": "open-iching-4c5f00f8cb62",
+              "editionId": "open-iching-v2",
+              "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+              "authorIds": [],
+              "authorNames": [],
+              "anchorIds": [
+                "zhouyi:01:line_xiang:3"
+              ],
+              "commentsOn": [],
+              "reviewStatus": "legacy_unreviewed",
+              "releaseId": "knowledge-v3-20260926-r1",
+              "textOriginal": "“终日乾乾”，反复道也。"
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zy-1-line_xiang-3",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.2692360430955887
+      }
+    ],
+    "resultEvidenceIds": [
+      "zy-1-line-3",
+      "zy-1-line_xiang-3"
+    ],
+    "score": {
+      "k": 2,
+      "returned": 2,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "allGroupsCovered": true,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 2,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "dev-22",
+    "groupId": "dev-group-22",
+    "split": "development",
+    "context": {
+      "question": "王弼怎样解释乾卦九四的“或跃在渊”？犹豫在这里是不是一定不好？",
+      "query": "或跃在渊",
+      "normalizedQuery": "或跃在渊",
+      "intent": "source_request",
+      "scopeIds": [
+        1
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 1,
+          "section": "line",
+          "line": 4,
+          "layer": "commentary",
+          "authorId": "wang-bi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "anchorIds": [
+            "zhouyi:01:line:4"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "或跃在渊",
+          "hexagramId": 1,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 1,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            4
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 1,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            4
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "wang-bi@2676007:h1:line4:06f1680099",
+              "hexagramId": 1,
+              "name": "乾",
+              "section": "line",
+              "line": 4,
+              "text": "去下體之極，居上體之下，乾道革之時也。上不在天，下不在田，中不在人，履重剛之險，而無定位所處，斯誠進退無常之時也。近乎尊位，欲進其道，迫乎在下，非躍所及。欲靜其居，居非所安，持疑猶豫未敢決志。用心存公，進不在私，疑以為慮，不謬於果，故「無咎」也。",
+              "textOriginal": "去下體之極，居上體之下，乾道革之時也。上不在天，下不在田，中不在人，履重剛之險，而無定位所處，斯誠進退無常之時也。近乎尊位，欲進其道，迫乎在下，非躍所及。欲靜其居，居非所安，持疑猶豫未敢決志。用心存公，進不在私，疑以為慮，不謬於果，故「無咎」也。",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/01%E4%B9%BE&oldid=2676007",
+              "locator": "《周易正義》·乾·第4爻注",
+              "version": "ws-2676007",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "zhouyi-zhengyi",
+              "workTitle": "周易正義",
+              "sourceId": "ws-2676007",
+              "editionId": "ws-zhouyi-zhengyi",
+              "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+              "authorIds": [
+                "wang-bi"
+              ],
+              "authorNames": [
+                "王弼"
+              ],
+              "anchorIds": [
+                "zhouyi:01:line:4"
+              ],
+              "commentsOn": [
+                "zhouyi:01:line:4"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-2676007.wiki",
+                "startLine": 30,
+                "endLine": 30,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "wang-bi@2676007:h1:line4:06f1680099",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.29942020773887634
+      }
+    ],
+    "resultEvidenceIds": [
+      "wang-bi@2676007:h1:line4:06f1680099"
+    ],
+    "score": {
+      "k": 1,
+      "returned": 1,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "allGroupsCovered": true,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 1,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "dev-23",
+    "groupId": "dev-group-23",
+    "split": "development",
+    "context": {
+      "question": "程颐对乾卦上九的“亢龙有悔”怎么解释？我只想弄清“亢”，不用给我人生建议。",
+      "query": "亢龙有悔",
+      "normalizedQuery": "亢龙有悔",
+      "intent": "source_request",
+      "scopeIds": [
+        1
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 1,
+          "section": "line",
+          "line": 6,
+          "layer": "commentary",
+          "authorId": "cheng-yi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "anchorIds": [
+            "zhouyi:01:line:6"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "亢龙有悔",
+          "hexagramId": 1,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 1,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            6
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 1,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            6
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "cheng-yi@1313743:h1:line6:5b87252c28",
+              "hexagramId": 1,
+              "name": "乾",
+              "section": "line",
+              "line": 6,
+              "text": "九五者，位之極中正者。得時之極，過此則亢矣。上九至於亢極，故有悔也。有過則有悔。唯聖人知進退存亡而無過，則不至於悔也。",
+              "textOriginal": "九五者，位之極中正者。得時之極，過此則亢矣。上九至於亢極，故有悔也。有過則有悔。唯聖人知進退存亡而無過，則不至於悔也。",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3&oldid=1313743",
+              "locator": "《伊川易傳》·乾·第6爻注",
+              "version": "ws-1313743",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "yichuan-yizhuan",
+              "workTitle": "伊川易傳",
+              "sourceId": "ws-1313743",
+              "editionId": "ws-yichuan-yizhuan",
+              "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+              "authorIds": [
+                "cheng-yi"
+              ],
+              "authorNames": [
+                "程颐"
+              ],
+              "anchorIds": [
+                "zhouyi:01:line:6"
+              ],
+              "commentsOn": [
+                "zhouyi:01:line:6"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-1313743.wiki",
+                "startLine": 32,
+                "endLine": 32,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "cheng-yi@1313743:h1:line6:5b87252c28",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.29182806611061096
+      }
+    ],
+    "resultEvidenceIds": [
+      "cheng-yi@1313743:h1:line6:5b87252c28"
+    ],
+    "score": {
+      "k": 1,
+      "returned": 1,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "allGroupsCovered": true,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 1,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "dev-24",
+    "groupId": "dev-group-24",
+    "split": "development",
+    "context": {
+      "question": "请比较王弼和朱熹对坤卦六三的“无成有终”如何理解，不要把两家混在一起。",
+      "query": "无成有终",
+      "normalizedQuery": "无成有终",
+      "intent": "source_request",
+      "scopeIds": [
+        2
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 2,
+          "section": "line",
+          "line": 3,
+          "layer": "commentary",
+          "authorId": "wang-bi"
+        },
+        {
+          "hexagramId": 2,
+          "section": "line",
+          "line": 3,
+          "layer": "commentary",
+          "authorId": "zhu-xi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "anchorIds": [
+            "zhouyi:02:line:3"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "无成有终",
+          "hexagramId": 2,
+          "topK": 5
+        },
+        {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "anchorIds": [
+            "zhouyi:02:line:3"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "无成有终",
+          "hexagramId": 2,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 2,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            3
+          ]
+        },
+        {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 2,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            3
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 2,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            3
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "wang-bi@2404938:h2:line3:16cb175f78",
+              "hexagramId": 2,
+              "name": "坤",
+              "section": "line",
+              "line": 3,
+              "text": "三處下卦之極，而不疑於陽，應斯義者也。不為事始，須唱乃應，待命乃發，含美而可正者也，故曰「含章可貞」也。有事則從，不敢為首，故曰「或從王事」也。不為事主，順命而終，故曰「無成有終」也。",
+              "textOriginal": "三處下卦之極，而不疑於陽，應斯義者也。不為事始，須唱乃應，待命乃發，含美而可正者也，故曰「含章可貞」也。有事則從，不敢為首，故曰「或從王事」也。不為事主，順命而終，故曰「無成有終」也。",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/01%E5%9D%A4&oldid=2404938",
+              "locator": "《周易正義》·坤·第3爻注",
+              "version": "ws-2404938",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "zhouyi-zhengyi",
+              "workTitle": "周易正義",
+              "sourceId": "ws-2404938",
+              "editionId": "ws-zhouyi-zhengyi",
+              "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+              "authorIds": [
+                "wang-bi"
+              ],
+              "authorNames": [
+                "王弼"
+              ],
+              "anchorIds": [
+                "zhouyi:02:line:3"
+              ],
+              "commentsOn": [
+                "zhouyi:02:line:3"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-2404938.wiki",
+                "startLine": 57,
+                "endLine": 57,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "wang-bi@2404938:h2:line3:16cb175f78",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.28713978826999664
+      },
+      {
+        "args": {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 2,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            3
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "zhu-xi@528287:h2:line3:3036f51286",
+              "hexagramId": 2,
+              "name": "坤",
+              "section": "line",
+              "line": 3,
+              "text": "六隂三陽内含章美可貞以守然居下之上不終含藏故或時出而從上之事則始雖无成而後必有終爻有此象故戒占者有此德則如此占也",
+              "textOriginal": "六隂三陽内含章美可貞以守然居下之上不終含藏故或時出而從上之事則始雖无成而後必有終爻有此象故戒占者有此德則如此占也",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+              "locator": "《周易本義》·坤·第3爻注",
+              "version": "ws-528287",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "zhouyi-benyi",
+              "workTitle": "周易本義",
+              "sourceId": "ws-528287",
+              "editionId": "ws-benyi-skqs",
+              "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+              "authorIds": [
+                "zhu-xi"
+              ],
+              "authorNames": [
+                "朱熹"
+              ],
+              "anchorIds": [
+                "zhouyi:02:line:3"
+              ],
+              "commentsOn": [
+                "zhouyi:02:line:3"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-528287.wiki",
+                "startLine": 13,
+                "endLine": 13,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zhu-xi@528287:h2:line3:3036f51286",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.27760397642850876
+      }
+    ],
+    "resultEvidenceIds": [
+      "wang-bi@2404938:h2:line3:16cb175f78",
+      "zhu-xi@528287:h2:line3:3036f51286"
+    ],
+    "score": {
+      "k": 2,
+      "returned": 2,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "allGroupsCovered": true,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 2,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "dev-25",
+    "groupId": "dev-group-25",
+    "split": "development",
+    "context": {
+      "question": "坤卦六四“括囊，无咎无誉”是不是教人永远不开口？请结合一位注家的解释。",
+      "query": "括囊，无咎无誉",
+      "normalizedQuery": "括囊无咎无誉",
+      "intent": "explanation_followup",
+      "scopeIds": [
+        2
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 2,
+          "section": "line",
+          "line": 4,
+          "layer": "classic"
+        }
+      ],
+      "businessScopes": [
+        {
+          "anchorIds": [
+            "zhouyi:02:line:4"
+          ],
+          "layers": [
+            "classic"
+          ],
+          "query": "括囊无咎无誉",
+          "hexagramId": 2,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 2,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            4
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 2,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            4
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "zy-2-line-4",
+              "hexagramId": 2,
+              "name": "坤",
+              "section": "line",
+              "line": 4,
+              "text": "括囊，无咎无誉。",
+              "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+              "locator": "坤·六四",
+              "version": "open-iching-4c5f00f8cb62-v2",
+              "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+              "layer": "classic",
+              "workId": "zhouyi",
+              "workTitle": "周易",
+              "sourceId": "open-iching-4c5f00f8cb62",
+              "editionId": "open-iching-v2",
+              "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+              "authorIds": [],
+              "authorNames": [],
+              "anchorIds": [
+                "zhouyi:02:line:4"
+              ],
+              "commentsOn": [],
+              "reviewStatus": "legacy_unreviewed",
+              "releaseId": "knowledge-v3-20260926-r1",
+              "textOriginal": "括囊，无咎无誉。"
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zy-2-line-4",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.29247161000967026
+      }
+    ],
+    "resultEvidenceIds": [
+      "zy-2-line-4"
+    ],
+    "score": {
+      "k": 1,
+      "returned": 1,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 1,
+        "denominator": 2,
+        "value": 0.5
+      },
+      "allGroupsCovered": false,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 1,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "dev-26",
+    "groupId": "dev-tun-three",
+    "split": "development",
+    "context": {
+      "question": "屯卦六三的“即鹿无虞”中，“虞”是什么意思？找一段现有注解帮助我读懂。",
+      "query": "即鹿无虞",
+      "normalizedQuery": "即鹿无虞",
+      "intent": "explanation_followup",
+      "scopeIds": [
+        3
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 3,
+          "section": "line",
+          "line": 3,
+          "layer": "classic"
+        }
+      ],
+      "businessScopes": [
+        {
+          "anchorIds": [
+            "zhouyi:03:line:3"
+          ],
+          "layers": [
+            "classic"
+          ],
+          "query": "即鹿无虞",
+          "hexagramId": 3,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 3,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            3
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 3,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            3
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "zy-3-line-3",
+              "hexagramId": 3,
+              "name": "屯",
+              "section": "line",
+              "line": 3,
+              "text": "即鹿无虞，惟入于林中，君子几，不如舍，往吝。",
+              "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+              "locator": "屯·六三",
+              "version": "open-iching-4c5f00f8cb62-v2",
+              "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+              "layer": "classic",
+              "workId": "zhouyi",
+              "workTitle": "周易",
+              "sourceId": "open-iching-4c5f00f8cb62",
+              "editionId": "open-iching-v2",
+              "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+              "authorIds": [],
+              "authorNames": [],
+              "anchorIds": [
+                "zhouyi:03:line:3"
+              ],
+              "commentsOn": [],
+              "reviewStatus": "legacy_unreviewed",
+              "releaseId": "knowledge-v3-20260926-r1",
+              "textOriginal": "即鹿无虞，惟入于林中，君子几，不如舍，往吝。"
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zy-3-line-3",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.33431220799684525
+      }
+    ],
+    "resultEvidenceIds": [
+      "zy-3-line-3"
+    ],
+    "score": {
+      "k": 1,
+      "returned": 1,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 1,
+        "denominator": 2,
+        "value": 0.5
+      },
+      "allGroupsCovered": false,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 1,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "dev-27",
+    "groupId": "dev-tun-three",
+    "split": "development",
+    "context": {
+      "question": "我只记得一句大意：没有熟悉山林的人带着就去追猎物，最后不如放下。它出自《周易》哪里，原文是什么？",
+      "query": "我只记得一句大意：没有熟悉山林的人带着就去追猎物，最后不如放下。它出自哪里，原文是什么",
+      "normalizedQuery": "我只记得一句大意没有熟悉山林的人带着就去追猎物最后不如放下它出自哪里原文是什么",
+      "intent": "source_request",
+      "scopeIds": null,
+      "parsedTargets": [],
+      "businessScopes": [],
+      "exactRequests": []
+    },
+    "eligible": false,
+    "requests": [],
+    "resultEvidenceIds": [],
+    "score": {
+      "k": 1,
+      "returned": 0,
+      "eligible": true,
+      "hit": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "groupCoverage": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "allGroupsCovered": false,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "precisionBounds": {
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      "knownRelevant": 0,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "dev-28",
+    "groupId": "dev-group-28",
+    "split": "development",
+    "context": {
+      "question": "程颐解释谦卦九三“劳谦”时，为什么既说有功劳，又强调有终？",
+      "query": "劳谦",
+      "normalizedQuery": "劳谦",
+      "intent": "source_request",
+      "scopeIds": [
+        15
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 15,
+          "section": "line",
+          "line": 3,
+          "layer": "commentary",
+          "authorId": "cheng-yi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "anchorIds": [
+            "zhouyi:15:line:3"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "劳谦",
+          "hexagramId": 15,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 15,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            3
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 15,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            3
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "cheng-yi@1313743:h15:line3:3d9184f339",
+              "hexagramId": 15,
+              "name": "谦",
+              "section": "line",
+              "line": 3,
+              "text": "三以陽剛之德而居下體，為眾陰所宗，履得其位，為下之上，是上為君所任，下為眾所從，有功勞而持謙德者也，故曰勞謙。古之人有當之者，周公是也。身當天下之大任，上奉幼弱之主，謙恭自牧，夔夔如畏然，可謂有勞而能謙矣。既能勞謙，又須君子行之有終，則吉。夫樂高喜勝，人之常情。平時能謙，固已鮮矣，況有功勞可尊乎？雖使知謙之善，勉而為之，若矜負之心不忘，則不能常久，欲其有終，不可得也。唯君子安履謙順，乃其常行，故久而不變，乃所謂有終，有終則吉也。九三以剛居正，能終者也。此爻之德最盛，故象辭特重。",
+              "textOriginal": "三以陽剛之德而居下體，為眾陰所宗，履得其位，為下之上，是上為君所任，下為眾所從，有功勞而持謙德者也，故曰勞謙。古之人有當之者，周公是也。身當天下之大任，上奉幼弱之主，謙恭自牧，夔夔如畏然，可謂有勞而能謙矣。既能勞謙，又須君子行之有終，則吉。夫樂高喜勝，人之常情。平時能謙，固已鮮矣，況有功勞可尊乎？雖使知謙之善，勉而為之，若矜負之心不忘，則不能常久，欲其有終，不可得也。唯君子安履謙順，乃其常行，故久而不變，乃所謂有終，有終則吉也。九三以剛居正，能終者也。此爻之德最盛，故象辭特重。",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3&oldid=1313743",
+              "locator": "《伊川易傳》·谦·第3爻注",
+              "version": "ws-1313743",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "yichuan-yizhuan",
+              "workTitle": "伊川易傳",
+              "sourceId": "ws-1313743",
+              "editionId": "ws-yichuan-yizhuan",
+              "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+              "authorIds": [
+                "cheng-yi"
+              ],
+              "authorNames": [
+                "程颐"
+              ],
+              "anchorIds": [
+                "zhouyi:15:line:3"
+              ],
+              "commentsOn": [
+                "zhouyi:15:line:3"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-1313743.wiki",
+                "startLine": 355,
+                "endLine": 355,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "cheng-yi@1313743:h15:line3:3d9184f339",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.3049364313483238
+      }
+    ],
+    "resultEvidenceIds": [
+      "cheng-yi@1313743:h15:line3:3d9184f339"
+    ],
+    "score": {
+      "k": 1,
+      "returned": 1,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "allGroupsCovered": true,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 1,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "dev-29",
+    "groupId": "dev-group-29",
+    "split": "development",
+    "context": {
+      "question": "谦卦初六说“用涉大川，吉”，请结合一位注家的解释，这就是现实里过河肯定安全吗？",
+      "query": "用涉大川，吉",
+      "normalizedQuery": "用涉大川吉",
+      "intent": "explanation_followup",
+      "scopeIds": [
+        15
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 15,
+          "section": "line",
+          "line": 1,
+          "layer": "classic"
+        }
+      ],
+      "businessScopes": [
+        {
+          "anchorIds": [
+            "zhouyi:15:line:1"
+          ],
+          "layers": [
+            "classic"
+          ],
+          "query": "用涉大川吉",
+          "hexagramId": 15,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 15,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            1
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 15,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            1
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "zy-15-line-1",
+              "hexagramId": 15,
+              "name": "谦",
+              "section": "line",
+              "line": 1,
+              "text": "谦谦君子，用涉大川，吉。",
+              "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+              "locator": "谦·初六",
+              "version": "open-iching-4c5f00f8cb62-v2",
+              "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+              "layer": "classic",
+              "workId": "zhouyi",
+              "workTitle": "周易",
+              "sourceId": "open-iching-4c5f00f8cb62",
+              "editionId": "open-iching-v2",
+              "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+              "authorIds": [],
+              "authorNames": [],
+              "anchorIds": [
+                "zhouyi:15:line:1"
+              ],
+              "commentsOn": [],
+              "reviewStatus": "legacy_unreviewed",
+              "releaseId": "knowledge-v3-20260926-r1",
+              "textOriginal": "谦谦君子，用涉大川，吉。"
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zy-15-line-1",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.766838900744915
+      }
+    ],
+    "resultEvidenceIds": [
+      "zy-15-line-1"
+    ],
+    "score": {
+      "k": 1,
+      "returned": 1,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 1,
+        "denominator": 2,
+        "value": 0.5
+      },
+      "allGroupsCovered": false,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 1,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "dev-30",
+    "groupId": "dev-group-30",
+    "split": "development",
+    "context": {
+      "question": "王弼和朱熹如何解释蒙卦六四的“困蒙”？这是说一个人天生学不会吗？",
+      "query": "困蒙",
+      "normalizedQuery": "困蒙",
+      "intent": "source_request",
+      "scopeIds": [
+        4
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 4,
+          "section": "line",
+          "line": 4,
+          "layer": "commentary",
+          "authorId": "wang-bi"
+        },
+        {
+          "hexagramId": 4,
+          "section": "line",
+          "line": 4,
+          "layer": "commentary",
+          "authorId": "zhu-xi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "anchorIds": [
+            "zhouyi:04:line:4"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "困蒙",
+          "hexagramId": 4,
+          "topK": 5
+        },
+        {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "anchorIds": [
+            "zhouyi:04:line:4"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "困蒙",
+          "hexagramId": 4,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 4,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            4
+          ]
+        },
+        {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 4,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            4
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 4,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            4
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "wang-bi@2404940:h4:line4:262bd9d53b",
+              "hexagramId": 4,
+              "name": "蒙",
+              "section": "line",
+              "line": 4,
+              "text": "獨遠於陽，處兩陰之中，闇莫之發，故曰「困蒙」也。困於蒙昧，不能比賢以發其志，亦以鄙矣，故曰「吝」也。",
+              "textOriginal": "獨遠於陽，處兩陰之中，闇莫之發，故曰「困蒙」也。困於蒙昧，不能比賢以發其志，亦以鄙矣，故曰「吝」也。",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/01%E8%92%99&oldid=2404940",
+              "locator": "《周易正義》·蒙·第4爻注",
+              "version": "ws-2404940",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "zhouyi-zhengyi",
+              "workTitle": "周易正義",
+              "sourceId": "ws-2404940",
+              "editionId": "ws-zhouyi-zhengyi",
+              "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+              "authorIds": [
+                "wang-bi"
+              ],
+              "authorNames": [
+                "王弼"
+              ],
+              "anchorIds": [
+                "zhouyi:04:line:4"
+              ],
+              "commentsOn": [
+                "zhouyi:04:line:4"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-2404940.wiki",
+                "startLine": 72,
+                "endLine": 72,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "wang-bi@2404940:h4:line4:262bd9d53b",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.27319788932800293
+      },
+      {
+        "args": {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 4,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            4
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "zhu-xi@528287:h4:line4:0ded86be84",
+              "hexagramId": 4,
+              "name": "蒙",
+              "section": "line",
+              "line": 4,
+              "text": "既逺於陽又无正應為困於䝉之象占者如是可羞吝也能求剛明之徳而親近之則可免矣",
+              "textOriginal": "既逺於陽又无正應為困於䝉之象占者如是可羞吝也能求剛明之徳而親近之則可免矣",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+              "locator": "《周易本義》·蒙·第4爻注",
+              "version": "ws-528287",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "zhouyi-benyi",
+              "workTitle": "周易本義",
+              "sourceId": "ws-528287",
+              "editionId": "ws-benyi-skqs",
+              "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+              "authorIds": [
+                "zhu-xi"
+              ],
+              "authorNames": [
+                "朱熹"
+              ],
+              "anchorIds": [
+                "zhouyi:04:line:4"
+              ],
+              "commentsOn": [
+                "zhouyi:04:line:4"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-528287.wiki",
+                "startLine": 16,
+                "endLine": 16,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zhu-xi@528287:h4:line4:0ded86be84",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.2619149163365364
+      }
+    ],
+    "resultEvidenceIds": [
+      "wang-bi@2404940:h4:line4:262bd9d53b",
+      "zhu-xi@528287:h4:line4:0ded86be84"
+    ],
+    "score": {
+      "k": 2,
+      "returned": 2,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "allGroupsCovered": true,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 2,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "dev-31",
+    "groupId": "dev-group-31",
+    "split": "development",
+    "context": {
+      "question": "“见金夫，不有躬”出自哪里？我想先看原文，再看朱熹如何解释“金夫”。",
+      "query": "见金夫，不有躬",
+      "normalizedQuery": "见金夫不有躬",
+      "intent": "source_request",
+      "scopeIds": null,
+      "parsedTargets": [
+        {
+          "hexagramId": null,
+          "layer": "commentary",
+          "authorId": "zhu-xi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "见金夫不有躬",
+          "topK": 5
+        }
+      ],
+      "exactRequests": []
+    },
+    "eligible": false,
+    "requests": [],
+    "resultEvidenceIds": [],
+    "score": {
+      "k": 1,
+      "returned": 0,
+      "eligible": true,
+      "hit": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "groupCoverage": {
+        "numerator": 0,
+        "denominator": 2,
+        "value": 0.0
+      },
+      "allGroupsCovered": false,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "precisionBounds": {
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      "knownRelevant": 0,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "dev-32",
+    "groupId": "dev-group-32",
+    "split": "development",
+    "context": {
+      "question": "乾卦“用九”的原文是什么？“无首”可以简单理解成大家都不用负责吗？",
+      "query": "用九",
+      "normalizedQuery": "用九",
+      "intent": "source_request",
+      "scopeIds": [
+        1,
+        2
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 1,
+          "section": "special",
+          "line": 7,
+          "layer": "classic"
+        }
+      ],
+      "businessScopes": [
+        {
+          "anchorIds": [
+            "zhouyi:01:special:use-nine"
+          ],
+          "layers": [
+            "classic"
+          ],
+          "query": "用九",
+          "hexagramId": 1,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 1,
+          "sections": [
+            "special"
+          ],
+          "lineIndices": [
+            7
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 1,
+          "sections": [
+            "special"
+          ],
+          "lineIndices": [
+            7
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "zy-1-special-7",
+              "hexagramId": 1,
+              "name": "乾",
+              "section": "special",
+              "line": 7,
+              "text": "见群龙无首，吉。",
+              "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+              "locator": "乾·用九",
+              "version": "open-iching-4c5f00f8cb62-v2",
+              "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+              "layer": "classic",
+              "workId": "zhouyi",
+              "workTitle": "周易",
+              "sourceId": "open-iching-4c5f00f8cb62",
+              "editionId": "open-iching-v2",
+              "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+              "authorIds": [],
+              "authorNames": [],
+              "anchorIds": [
+                "zhouyi:01:special:use-nine"
+              ],
+              "commentsOn": [],
+              "reviewStatus": "legacy_unreviewed",
+              "releaseId": "knowledge-v3-20260926-r1",
+              "textOriginal": "见群龙无首，吉。"
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zy-1-special-7",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.6755879148840904
+      }
+    ],
+    "resultEvidenceIds": [
+      "zy-1-special-7"
+    ],
+    "score": {
+      "k": 1,
+      "returned": 1,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "allGroupsCovered": true,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 1,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "dev-33",
+    "groupId": "dev-group-33",
+    "split": "development",
+    "context": {
+      "question": "请给出坤卦“用六”的原文；它和某一条普通爻辞是同一条吗？",
+      "query": "用六",
+      "normalizedQuery": "用六",
+      "intent": "source_request",
+      "scopeIds": [
+        1,
+        2
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 2,
+          "section": "special",
+          "line": 7,
+          "layer": "classic"
+        }
+      ],
+      "businessScopes": [
+        {
+          "anchorIds": [
+            "zhouyi:02:special:use-six"
+          ],
+          "layers": [
+            "classic"
+          ],
+          "query": "用六",
+          "hexagramId": 2,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 2,
+          "sections": [
+            "special"
+          ],
+          "lineIndices": [
+            7
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 2,
+          "sections": [
+            "special"
+          ],
+          "lineIndices": [
+            7
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "zy-2-special-7",
+              "hexagramId": 2,
+              "name": "坤",
+              "section": "special",
+              "line": 7,
+              "text": "利永贞。",
+              "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+              "locator": "坤·用六",
+              "version": "open-iching-4c5f00f8cb62-v2",
+              "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+              "layer": "classic",
+              "workId": "zhouyi",
+              "workTitle": "周易",
+              "sourceId": "open-iching-4c5f00f8cb62",
+              "editionId": "open-iching-v2",
+              "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+              "authorIds": [],
+              "authorNames": [],
+              "anchorIds": [
+                "zhouyi:02:special:use-six"
+              ],
+              "commentsOn": [],
+              "reviewStatus": "legacy_unreviewed",
+              "releaseId": "knowledge-v3-20260926-r1",
+              "textOriginal": "利永贞。"
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zy-2-special-7",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.28257351368665695
+      }
+    ],
+    "resultEvidenceIds": [
+      "zy-2-special-7"
+    ],
+    "score": {
+      "k": 1,
+      "returned": 1,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "allGroupsCovered": true,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 1,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "dev-34",
+    "groupId": "dev-group-34",
+    "split": "development",
+    "context": {
+      "question": "坎卦最下面那条爻应叫初九还是初六？请把爻辞拿出来说明，别只告诉我数字。",
+      "query": "坎卦最下面那条爻应叫初九还是初六？把爻辞拿出来说明，别只告诉我数字",
+      "normalizedQuery": "坎卦最下面那条爻应叫初九还是初六把爻辞拿出来说明别只告诉我数字",
+      "intent": "explanation_followup",
+      "scopeIds": [
+        29
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 29,
+          "section": "line",
+          "line": 1,
+          "layer": "classic"
+        }
+      ],
+      "businessScopes": [
+        {
+          "anchorIds": [
+            "zhouyi:29:line:1"
+          ],
+          "layers": [
+            "classic"
+          ],
+          "query": "坎卦最下面那条爻应叫初九还是初六把爻辞拿出来说明别只告诉我数字",
+          "hexagramId": 29,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 29,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            1
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 29,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            1
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "zy-29-line-1",
+              "hexagramId": 29,
+              "name": "习坎",
+              "section": "line",
+              "line": 1,
+              "text": "习坎，入于坎窞，凶。",
+              "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+              "locator": "习坎·初六",
+              "version": "open-iching-4c5f00f8cb62-v2",
+              "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+              "layer": "classic",
+              "workId": "zhouyi",
+              "workTitle": "周易",
+              "sourceId": "open-iching-4c5f00f8cb62",
+              "editionId": "open-iching-v2",
+              "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+              "authorIds": [],
+              "authorNames": [],
+              "anchorIds": [
+                "zhouyi:29:line:1"
+              ],
+              "commentsOn": [],
+              "reviewStatus": "legacy_unreviewed",
+              "releaseId": "knowledge-v3-20260926-r1",
+              "textOriginal": "习坎，入于坎窞，凶。"
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zy-29-line-1",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.2846270799636841
+      }
+    ],
+    "resultEvidenceIds": [
+      "zy-29-line-1"
+    ],
+    "score": {
+      "k": 1,
+      "returned": 1,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "allGroupsCovered": true,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 1,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "dev-35",
+    "groupId": "dev-group-35",
+    "split": "development",
+    "context": {
+      "question": "请找焦循对坤卦六三“含章可贞”的注解原文。",
+      "query": "含章可贞",
+      "normalizedQuery": "含章可贞",
+      "intent": "source_request",
+      "scopeIds": [
+        2
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 2,
+          "section": "line",
+          "line": 3,
+          "layer": "commentary",
+          "authorId": "jiao-xun"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "jiao-xun"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "含章可贞",
+          "hexagramId": 2,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "jiao-xun"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 2,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            3
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "jiao-xun"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 2,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            3
+          ]
+        },
+        "status": "empty",
+        "result": {
+          "evidence": [],
+          "hits": [],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "not_ingested",
+          "missingTargets": [
+            "2:line:3|author:jiao-xun",
+            "authorIds:jiao-xun"
+          ],
+          "truncated": false,
+          "noHitReason": "filtered_out"
+        },
+        "durationMs": 0.28730183839797974
+      }
+    ],
+    "resultEvidenceIds": [],
+    "score": {
+      "k": 1,
+      "returned": 0,
+      "eligible": false,
+      "hit": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No nonempty evidence reference; absence cases are excluded from recall/hit denominators."
+      },
+      "groupCoverage": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No nonempty evidence reference; absence cases are excluded from recall/hit denominators."
+      },
+      "allGroupsCovered": null,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No nonempty evidence reference; absence cases are excluded from recall/hit denominators."
+      },
+      "precisionAtK": {
+        "numerator": null,
+        "denominator": 1,
+        "value": null,
+        "reason": "No nonempty evidence reference; absence cases are excluded from recall/hit denominators."
+      },
+      "precisionBounds": null,
+      "knownRelevant": 0,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "dev-36",
+    "groupId": "dev-group-36",
+    "split": "development",
+    "context": {
+      "question": "请给我朱熹对困卦九二的注释原文。",
+      "query": "给我对困卦九二的注释原文",
+      "normalizedQuery": "给我对困卦九二的注释原文",
+      "intent": "source_request",
+      "scopeIds": [
+        47
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 47,
+          "section": "line",
+          "line": 2,
+          "layer": "commentary",
+          "authorId": "zhu-xi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "给我对困卦九二的注释原文",
+          "hexagramId": 47,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 47,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            2
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 47,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            2
+          ]
+        },
+        "status": "empty",
+        "result": {
+          "evidence": [],
+          "hits": [],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "not_ingested",
+          "missingTargets": [
+            "47:line:2|author:zhu-xi",
+            "authorIds:zhu-xi"
+          ],
+          "truncated": false,
+          "noHitReason": "filtered_out"
+        },
+        "durationMs": 0.26033632457256317
+      }
+    ],
+    "resultEvidenceIds": [],
+    "score": {
+      "k": 1,
+      "returned": 0,
+      "eligible": false,
+      "hit": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No nonempty evidence reference; absence cases are excluded from recall/hit denominators."
+      },
+      "groupCoverage": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No nonempty evidence reference; absence cases are excluded from recall/hit denominators."
+      },
+      "allGroupsCovered": null,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No nonempty evidence reference; absence cases are excluded from recall/hit denominators."
+      },
+      "precisionAtK": {
+        "numerator": null,
+        "denominator": 1,
+        "value": null,
+        "reason": "No nonempty evidence reference; absence cases are excluded from recall/hit denominators."
+      },
+      "precisionBounds": null,
+      "knownRelevant": 0,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "test-21",
+    "groupId": "test-group-21",
+    "split": "independent_test",
+    "context": {
+      "question": "王弼和程颐对谦卦六二“鸣谦”的解释有什么区别？“鸣”是在夸耀自己吗？",
+      "query": "鸣谦",
+      "normalizedQuery": "鸣谦",
+      "intent": "source_request",
+      "scopeIds": [
+        15
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 15,
+          "section": "line",
+          "line": 2,
+          "layer": "commentary",
+          "authorId": "wang-bi"
+        },
+        {
+          "hexagramId": 15,
+          "section": "line",
+          "line": 2,
+          "layer": "commentary",
+          "authorId": "cheng-yi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "anchorIds": [
+            "zhouyi:15:line:2"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "鸣谦",
+          "hexagramId": 15,
+          "topK": 5
+        },
+        {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "anchorIds": [
+            "zhouyi:15:line:2"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "鸣谦",
+          "hexagramId": 15,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 15,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            2
+          ]
+        },
+        {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 15,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            2
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 15,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            2
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "wang-bi@2000726:h15:line2:95530cdcb2",
+              "hexagramId": 15,
+              "name": "谦",
+              "section": "line",
+              "line": 2,
+              "text": "鳴者，聲名聞之謂也。得位居中，謙而正焉。",
+              "textOriginal": "鳴者，聲名聞之謂也。得位居中，謙而正焉。",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E8%AC%99&oldid=2000726",
+              "locator": "《周易正義》·谦·第2爻注",
+              "version": "ws-2000726",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "zhouyi-zhengyi",
+              "workTitle": "周易正義",
+              "sourceId": "ws-2000726",
+              "editionId": "ws-zhouyi-zhengyi",
+              "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+              "authorIds": [
+                "wang-bi"
+              ],
+              "authorNames": [
+                "王弼"
+              ],
+              "anchorIds": [
+                "zhouyi:15:line:2"
+              ],
+              "commentsOn": [
+                "zhouyi:15:line:2"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-2000726.wiki",
+                "startLine": 35,
+                "endLine": 35,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "wang-bi@2000726:h15:line2:95530cdcb2",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.2887500450015068
+      },
+      {
+        "args": {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 15,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            2
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "cheng-yi@1313743:h15:line2:8513e9d757",
+              "hexagramId": 15,
+              "name": "谦",
+              "section": "line",
+              "line": 2,
+              "text": "二以柔順居中，是為謙德積於中。謙德充積於中，故發於外，見於聲音顏色，故曰鳴謙。居中得正，有中正之德也，故云貞吉。凡貞吉，有為貞且吉者，有為得貞則吉者，六二之貞吉，所自有也。",
+              "textOriginal": "二以柔順居中，是為謙德積於中。謙德充積於中，故發於外，見於聲音顏色，故曰鳴謙。居中得正，有中正之德也，故云貞吉。凡貞吉，有為貞且吉者，有為得貞則吉者，六二之貞吉，所自有也。",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3&oldid=1313743",
+              "locator": "《伊川易傳》·谦·第2爻注",
+              "version": "ws-1313743",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "yichuan-yizhuan",
+              "workTitle": "伊川易傳",
+              "sourceId": "ws-1313743",
+              "editionId": "ws-yichuan-yizhuan",
+              "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+              "authorIds": [
+                "cheng-yi"
+              ],
+              "authorNames": [
+                "程颐"
+              ],
+              "anchorIds": [
+                "zhouyi:15:line:2"
+              ],
+              "commentsOn": [
+                "zhouyi:15:line:2"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-1313743.wiki",
+                "startLine": 347,
+                "endLine": 347,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "cheng-yi@1313743:h15:line2:8513e9d757",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.2778787165880203
+      }
+    ],
+    "resultEvidenceIds": [
+      "wang-bi@2000726:h15:line2:95530cdcb2",
+      "cheng-yi@1313743:h15:line2:8513e9d757"
+    ],
+    "score": {
+      "k": 2,
+      "returned": 2,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "allGroupsCovered": true,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 2,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "test-22",
+    "groupId": "test-group-22",
+    "split": "independent_test",
+    "context": {
+      "question": "谦卦六五一面说谦，一面又说“利用侵伐”，王弼和程颐各怎样讲？",
+      "query": "利用侵伐",
+      "normalizedQuery": "利用侵伐",
+      "intent": "explanation_followup",
+      "scopeIds": [
+        15
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 15,
+          "section": "line",
+          "line": 5,
+          "layer": "commentary",
+          "authorId": "wang-bi"
+        },
+        {
+          "hexagramId": 15,
+          "section": "line",
+          "line": 5,
+          "layer": "commentary",
+          "authorId": "cheng-yi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "anchorIds": [
+            "zhouyi:15:line:5"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "利用侵伐",
+          "hexagramId": 15,
+          "topK": 5
+        },
+        {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "anchorIds": [
+            "zhouyi:15:line:5"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "利用侵伐",
+          "hexagramId": 15,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 15,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            5
+          ]
+        },
+        {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 15,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            5
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 15,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            5
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "wang-bi@2000726:h15:line5:64744d05e6",
+              "hexagramId": 15,
+              "name": "谦",
+              "section": "line",
+              "line": 5,
+              "text": "居於尊位，用謙與順，故能不富而用其鄰也。以謙順而侵伐，所伐皆驕逆也。",
+              "textOriginal": "居於尊位，用謙與順，故能不富而用其鄰也。以謙順而侵伐，所伐皆驕逆也。",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E8%AC%99&oldid=2000726",
+              "locator": "《周易正義》·谦·第5爻注",
+              "version": "ws-2000726",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "zhouyi-zhengyi",
+              "workTitle": "周易正義",
+              "sourceId": "ws-2000726",
+              "editionId": "ws-zhouyi-zhengyi",
+              "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+              "authorIds": [
+                "wang-bi"
+              ],
+              "authorNames": [
+                "王弼"
+              ],
+              "anchorIds": [
+                "zhouyi:15:line:5"
+              ],
+              "commentsOn": [
+                "zhouyi:15:line:5"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-2000726.wiki",
+                "startLine": 59,
+                "endLine": 59,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "wang-bi@2000726:h15:line5:64744d05e6",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.292009674012661
+      },
+      {
+        "args": {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 15,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            5
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "cheng-yi@1313743:h15:line5:5f89e7b763",
+              "hexagramId": 15,
+              "name": "谦",
+              "section": "line",
+              "line": 5,
+              "text": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。",
+              "textOriginal": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3&oldid=1313743",
+              "locator": "《伊川易傳》·谦·第5爻注",
+              "version": "ws-1313743",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "yichuan-yizhuan",
+              "workTitle": "伊川易傳",
+              "sourceId": "ws-1313743",
+              "editionId": "ws-yichuan-yizhuan",
+              "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+              "authorIds": [
+                "cheng-yi"
+              ],
+              "authorNames": [
+                "程颐"
+              ],
+              "anchorIds": [
+                "zhouyi:15:line:5"
+              ],
+              "commentsOn": [
+                "zhouyi:15:line:5"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-1313743.wiki",
+                "startLine": 371,
+                "endLine": 371,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "cheng-yi@1313743:h15:line5:5f89e7b763",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.27258601039648056
+      }
+    ],
+    "resultEvidenceIds": [
+      "wang-bi@2000726:h15:line5:64744d05e6",
+      "cheng-yi@1313743:h15:line5:5f89e7b763"
+    ],
+    "score": {
+      "k": 2,
+      "returned": 2,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "allGroupsCovered": true,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 2,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "test-23",
+    "groupId": "test-group-23",
+    "split": "independent_test",
+    "context": {
+      "question": "请解释程颐谦卦上六注里“征邑国”的意思，他为什么把它说到“自治其私”？",
+      "query": "征邑国",
+      "normalizedQuery": "征邑国",
+      "intent": "source_request",
+      "scopeIds": [
+        15
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 15,
+          "section": "line",
+          "line": 6,
+          "layer": "commentary",
+          "authorId": "cheng-yi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "anchorIds": [
+            "zhouyi:15:line:6"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "征邑国",
+          "hexagramId": 15,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 15,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            6
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 15,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            6
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "cheng-yi@1313743:h15:line6:4aea04eede",
+              "hexagramId": 15,
+              "name": "谦",
+              "section": "line",
+              "line": 6,
+              "text": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。",
+              "textOriginal": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3&oldid=1313743",
+              "locator": "《伊川易傳》·谦·第6爻注",
+              "version": "ws-1313743",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "yichuan-yizhuan",
+              "workTitle": "伊川易傳",
+              "sourceId": "ws-1313743",
+              "editionId": "ws-yichuan-yizhuan",
+              "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+              "authorIds": [
+                "cheng-yi"
+              ],
+              "authorNames": [
+                "程颐"
+              ],
+              "anchorIds": [
+                "zhouyi:15:line:6"
+              ],
+              "commentsOn": [
+                "zhouyi:15:line:6"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-1313743.wiki",
+                "startLine": 379,
+                "endLine": 379,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "cheng-yi@1313743:h15:line6:4aea04eede",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.2823062241077423
+      }
+    ],
+    "resultEvidenceIds": [
+      "cheng-yi@1313743:h15:line6:4aea04eede"
+    ],
+    "score": {
+      "k": 1,
+      "returned": 1,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "allGroupsCovered": true,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 1,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "test-24",
+    "groupId": "test-group-24",
+    "split": "independent_test",
+    "context": {
+      "question": "朱熹解释屯卦初九时，为什么“磐桓”之后仍有“利建侯”？这算纯粹叫人拖着吗？",
+      "query": "磐桓",
+      "normalizedQuery": "磐桓",
+      "intent": "source_request",
+      "scopeIds": [
+        3
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 3,
+          "section": "line",
+          "line": 1,
+          "layer": "commentary",
+          "authorId": "zhu-xi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "anchorIds": [
+            "zhouyi:03:line:1"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "磐桓",
+          "hexagramId": 3,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 3,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            1
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 3,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            1
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "zhu-xi@528287:h3:line1:d71107df76",
+              "hexagramId": 3,
+              "name": "屯",
+              "section": "line",
+              "line": 1,
+              "text": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也",
+              "textOriginal": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+              "locator": "《周易本義》·屯·第1爻注",
+              "version": "ws-528287",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "zhouyi-benyi",
+              "workTitle": "周易本義",
+              "sourceId": "ws-528287",
+              "editionId": "ws-benyi-skqs",
+              "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+              "authorIds": [
+                "zhu-xi"
+              ],
+              "authorNames": [
+                "朱熹"
+              ],
+              "anchorIds": [
+                "zhouyi:03:line:1"
+              ],
+              "commentsOn": [
+                "zhouyi:03:line:1"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-528287.wiki",
+                "startLine": 14,
+                "endLine": 14,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zhu-xi@528287:h3:line1:d71107df76",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.2838457003235817
+      }
+    ],
+    "resultEvidenceIds": [
+      "zhu-xi@528287:h3:line1:d71107df76"
+    ],
+    "score": {
+      "k": 1,
+      "returned": 1,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "allGroupsCovered": true,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 1,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "test-25",
+    "groupId": "test-group-25",
+    "split": "independent_test",
+    "context": {
+      "question": "屯卦六二“十年乃字”，王弼和朱熹怎样说明这个十年？我能据此断言一桩事情十年后一定成吗？",
+      "query": "十年乃字",
+      "normalizedQuery": "十年乃字",
+      "intent": "explanation_followup",
+      "scopeIds": [
+        3
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 3,
+          "section": "line",
+          "line": 2,
+          "layer": "commentary",
+          "authorId": "wang-bi"
+        },
+        {
+          "hexagramId": 3,
+          "section": "line",
+          "line": 2,
+          "layer": "commentary",
+          "authorId": "zhu-xi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "anchorIds": [
+            "zhouyi:03:line:2"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "十年乃字",
+          "hexagramId": 3,
+          "topK": 5
+        },
+        {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "anchorIds": [
+            "zhouyi:03:line:2"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "十年乃字",
+          "hexagramId": 3,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 3,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            2
+          ]
+        },
+        {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 3,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            2
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 3,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            2
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "wang-bi@2689596:h3:line2:2dfb3b12e9",
+              "hexagramId": 3,
+              "name": "屯",
+              "section": "line",
+              "line": 2,
+              "text": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。",
+              "textOriginal": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅。「屯」時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/01%E5%B1%AF&oldid=2689596",
+              "locator": "《周易正義》·屯·第2爻注",
+              "version": "ws-2689596",
+              "review": "多源机器辅助核对后修订；采集原文及修改依据已保留，未经人工专家校勘。",
+              "reviewStatus": "machine_corrected",
+              "layer": "commentary",
+              "workId": "zhouyi-zhengyi",
+              "workTitle": "周易正義",
+              "sourceId": "ws-2689596",
+              "editionId": "ws-zhouyi-zhengyi",
+              "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+              "authorIds": [
+                "wang-bi"
+              ],
+              "authorNames": [
+                "王弼"
+              ],
+              "anchorIds": [
+                "zhouyi:03:line:2"
+              ],
+              "commentsOn": [
+                "zhouyi:03:line:2"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-2689596.wiki",
+                "startLine": 49,
+                "endLine": 49,
+                "pageLabels": []
+              },
+              "correctionHistory": [
+                {
+                  "auditId": "crosscheck-20260926",
+                  "parentReleaseId": "knowledge-v3-20260926",
+                  "date": "2026-09-26",
+                  "before": "故屯邅。「屯」時方屯難",
+                  "after": "故屯邅也。時方屯難",
+                  "reason": "也误作屯，导致错误断句",
+                  "sourceUrls": [
+                    "https://github.com/kanripo/KR1a0007/blob/0fa05af11e9229b6cc6febe312d541fc6d4ec3bf/KR1a0007_014.txt",
+                    "https://www.eee-learning.com/book/eee-jy3",
+                    "https://www.eee-learning.com/eeebook/zenyi/136.gif"
+                  ],
+                  "reviewMethod": "machine_assisted",
+                  "humanReviewed": false
+                }
+              ]
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "wang-bi@2689596:h3:line2:2dfb3b12e9",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.284695066511631
+      },
+      {
+        "args": {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 3,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            2
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "zhu-xi@528287:h3:line2:5f4cc5b0f3",
+              "hexagramId": 3,
+              "name": "屯",
+              "section": "line",
+              "line": 2,
+              "text": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者",
+              "textOriginal": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+              "locator": "《周易本義》·屯·第2爻注",
+              "version": "ws-528287",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "zhouyi-benyi",
+              "workTitle": "周易本義",
+              "sourceId": "ws-528287",
+              "editionId": "ws-benyi-skqs",
+              "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+              "authorIds": [
+                "zhu-xi"
+              ],
+              "authorNames": [
+                "朱熹"
+              ],
+              "anchorIds": [
+                "zhouyi:03:line:2"
+              ],
+              "commentsOn": [
+                "zhouyi:03:line:2"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-528287.wiki",
+                "startLine": 14,
+                "endLine": 14,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zhu-xi@528287:h3:line2:5f4cc5b0f3",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.27082860469818115
+      }
+    ],
+    "resultEvidenceIds": [
+      "wang-bi@2689596:h3:line2:2dfb3b12e9",
+      "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+    ],
+    "score": {
+      "k": 2,
+      "returned": 2,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "allGroupsCovered": true,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 2,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "test-26",
+    "groupId": "test-group-26",
+    "split": "independent_test",
+    "context": {
+      "question": "我在读屯卦九五，王弼为什么把“屯其膏”和不能广泛施予联系起来？",
+      "query": "屯其膏",
+      "normalizedQuery": "屯其膏",
+      "intent": "explanation_followup",
+      "scopeIds": [
+        3
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 3,
+          "section": "line",
+          "line": 5,
+          "layer": "commentary",
+          "authorId": "wang-bi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "anchorIds": [
+            "zhouyi:03:line:5"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "屯其膏",
+          "hexagramId": 3,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 3,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            5
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 3,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            5
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "wang-bi@2689596:h3:line5:e8af156c25",
+              "hexagramId": 3,
+              "name": "屯",
+              "section": "line",
+              "line": 5,
+              "text": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+              "textOriginal": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/01%E5%B1%AF&oldid=2689596",
+              "locator": "《周易正義》·屯·第5爻注",
+              "version": "ws-2689596",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "zhouyi-zhengyi",
+              "workTitle": "周易正義",
+              "sourceId": "ws-2689596",
+              "editionId": "ws-zhouyi-zhengyi",
+              "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+              "authorIds": [
+                "wang-bi"
+              ],
+              "authorNames": [
+                "王弼"
+              ],
+              "anchorIds": [
+                "zhouyi:03:line:5"
+              ],
+              "commentsOn": [
+                "zhouyi:03:line:5"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-2689596.wiki",
+                "startLine": 73,
+                "endLine": 73,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "wang-bi@2689596:h3:line5:e8af156c25",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.27602631598711014
+      }
+    ],
+    "resultEvidenceIds": [
+      "wang-bi@2689596:h3:line5:e8af156c25"
+    ],
+    "score": {
+      "k": 1,
+      "returned": 1,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "allGroupsCovered": true,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 1,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "test-27",
+    "groupId": "test-group-27",
+    "split": "independent_test",
+    "context": {
+      "question": "请给出屯卦上六的爻辞和小象，“泣血涟如”是在断言问卦的人马上会遭遇丧事吗？",
+      "query": "泣血涟如",
+      "normalizedQuery": "泣血涟如",
+      "intent": "explanation_followup",
+      "scopeIds": [
+        3
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 3,
+          "section": "line",
+          "line": 6,
+          "layer": "classic"
+        },
+        {
+          "hexagramId": 3,
+          "section": "line_xiang",
+          "line": 6,
+          "layer": "classic"
+        }
+      ],
+      "businessScopes": [
+        {
+          "anchorIds": [
+            "zhouyi:03:line:6"
+          ],
+          "layers": [
+            "classic"
+          ],
+          "query": "泣血涟如",
+          "hexagramId": 3,
+          "topK": 5
+        },
+        {
+          "anchorIds": [
+            "zhouyi:03:line_xiang:6"
+          ],
+          "layers": [
+            "classic"
+          ],
+          "query": "泣血涟如",
+          "hexagramId": 3,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 3,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            6
+          ]
+        },
+        {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 3,
+          "sections": [
+            "line_xiang"
+          ],
+          "lineIndices": [
+            6
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 3,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            6
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "zy-3-line-6",
+              "hexagramId": 3,
+              "name": "屯",
+              "section": "line",
+              "line": 6,
+              "text": "乘马班如，泣血涟如。",
+              "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+              "locator": "屯·上六",
+              "version": "open-iching-4c5f00f8cb62-v2",
+              "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+              "layer": "classic",
+              "workId": "zhouyi",
+              "workTitle": "周易",
+              "sourceId": "open-iching-4c5f00f8cb62",
+              "editionId": "open-iching-v2",
+              "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+              "authorIds": [],
+              "authorNames": [],
+              "anchorIds": [
+                "zhouyi:03:line:6"
+              ],
+              "commentsOn": [],
+              "reviewStatus": "legacy_unreviewed",
+              "releaseId": "knowledge-v3-20260926-r1",
+              "textOriginal": "乘马班如，泣血涟如。"
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zy-3-line-6",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.2868715673685074
+      },
+      {
+        "args": {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 3,
+          "sections": [
+            "line_xiang"
+          ],
+          "lineIndices": [
+            6
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "zy-3-line_xiang-6",
+              "hexagramId": 3,
+              "name": "屯",
+              "section": "line_xiang",
+              "line": 6,
+              "text": "“泣血涟如”，何可长也？",
+              "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+              "locator": "屯·上六小象",
+              "version": "open-iching-4c5f00f8cb62-v2",
+              "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+              "layer": "classic",
+              "workId": "zhouyi",
+              "workTitle": "周易",
+              "sourceId": "open-iching-4c5f00f8cb62",
+              "editionId": "open-iching-v2",
+              "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+              "authorIds": [],
+              "authorNames": [],
+              "anchorIds": [
+                "zhouyi:03:line_xiang:6"
+              ],
+              "commentsOn": [],
+              "reviewStatus": "legacy_unreviewed",
+              "releaseId": "knowledge-v3-20260926-r1",
+              "textOriginal": "“泣血涟如”，何可长也？"
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zy-3-line_xiang-6",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.26976875960826874
+      }
+    ],
+    "resultEvidenceIds": [
+      "zy-3-line-6",
+      "zy-3-line_xiang-6"
+    ],
+    "score": {
+      "k": 2,
+      "returned": 2,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "allGroupsCovered": true,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 2,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "test-28",
+    "groupId": "test-group-28",
+    "split": "independent_test",
+    "context": {
+      "question": "我记得朱熹有一段解释，把一起快乐和自己沉醉区分开，说同一个卦里有一条爻例外。这出自哪里？我记得对吗？",
+      "query": "我记得有一段解释，把一起快乐和自己沉醉区分开，说同一个卦里有一条爻例外。这？我记得对吗",
+      "normalizedQuery": "我记得有一段解释把一起快乐和自己沉醉区分开说同一个卦里有一条爻例外这我记得对吗",
+      "intent": "source_request",
+      "scopeIds": null,
+      "parsedTargets": [
+        {
+          "hexagramId": null,
+          "layer": "commentary",
+          "authorId": "zhu-xi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "我记得有一段解释把一起快乐和自己沉醉区分开说同一个卦里有一条爻例外这我记得对吗",
+          "topK": 5
+        }
+      ],
+      "exactRequests": []
+    },
+    "eligible": false,
+    "requests": [],
+    "resultEvidenceIds": [],
+    "score": {
+      "k": 1,
+      "returned": 0,
+      "eligible": true,
+      "hit": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "groupCoverage": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "allGroupsCovered": false,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "precisionBounds": {
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      "knownRelevant": 0,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "test-29",
+    "groupId": "test-group-29",
+    "split": "independent_test",
+    "context": {
+      "question": "朱熹怎样解释豫卦六三的“盱豫”？“迟有悔”里的迟，是在说所有事都越快越好吗？",
+      "query": "盱豫",
+      "normalizedQuery": "盱豫",
+      "intent": "source_request",
+      "scopeIds": [
+        16
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 16,
+          "section": "line",
+          "line": 3,
+          "layer": "commentary",
+          "authorId": "zhu-xi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "anchorIds": [
+            "zhouyi:16:line:3"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "盱豫",
+          "hexagramId": 16,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 16,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            3
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 16,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            3
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "zhu-xi@528287:h16:line3:8edb84722b",
+              "hexagramId": 16,
+              "name": "豫",
+              "section": "line",
+              "line": 3,
+              "text": "盱況于反○盱上視也隂不中正而近於四四為卦主故六三上視於四而下溺於豫宜有悔者也故其象如此而其占為事當速悔若悔之遲則必有悔也",
+              "textOriginal": "盱況于反○盱上視也隂不中正而近於四四為卦主故六三上視於四而下溺於豫宜有悔者也故其象如此而其占為事當速悔若悔之遲則必有悔也",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+              "locator": "《周易本義》·豫·第3爻注",
+              "version": "ws-528287",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "zhouyi-benyi",
+              "workTitle": "周易本義",
+              "sourceId": "ws-528287",
+              "editionId": "ws-benyi-skqs",
+              "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+              "authorIds": [
+                "zhu-xi"
+              ],
+              "authorNames": [
+                "朱熹"
+              ],
+              "anchorIds": [
+                "zhouyi:16:line:3"
+              ],
+              "commentsOn": [
+                "zhouyi:16:line:3"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-528287.wiki",
+                "startLine": 40,
+                "endLine": 40,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zhu-xi@528287:h16:line3:8edb84722b",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.29426347464323044
+      }
+    ],
+    "resultEvidenceIds": [
+      "zhu-xi@528287:h16:line3:8edb84722b"
+    ],
+    "score": {
+      "k": 1,
+      "returned": 1,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "allGroupsCovered": true,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 1,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "test-30",
+    "groupId": "test-group-30",
+    "split": "independent_test",
+    "context": {
+      "question": "豫卦九四的“朋盍簪”里，簪就是发簪吗？想看王弼和朱熹各自的说法。",
+      "query": "朋盍簪",
+      "normalizedQuery": "朋盍簪",
+      "intent": "explanation_followup",
+      "scopeIds": [
+        16
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 16,
+          "section": "line",
+          "line": 4,
+          "layer": "commentary",
+          "authorId": "wang-bi"
+        },
+        {
+          "hexagramId": 16,
+          "section": "line",
+          "line": 4,
+          "layer": "commentary",
+          "authorId": "zhu-xi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "anchorIds": [
+            "zhouyi:16:line:4"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "朋盍簪",
+          "hexagramId": 16,
+          "topK": 5
+        },
+        {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "anchorIds": [
+            "zhouyi:16:line:4"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "朋盍簪",
+          "hexagramId": 16,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 16,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            4
+          ]
+        },
+        {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 16,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            4
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 16,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            4
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "wang-bi@7904495:h16:line4:5d368cfa9e",
+              "hexagramId": 16,
+              "name": "豫",
+              "section": "line",
+              "line": 4,
+              "text": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+              "textOriginal": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E8%B1%AB&oldid=7904495",
+              "locator": "《周易正義》·豫·第4爻注",
+              "version": "ws-7904495",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "zhouyi-zhengyi",
+              "workTitle": "周易正義",
+              "sourceId": "ws-7904495",
+              "editionId": "ws-zhouyi-zhengyi",
+              "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+              "authorIds": [
+                "wang-bi"
+              ],
+              "authorNames": [
+                "王弼"
+              ],
+              "anchorIds": [
+                "zhouyi:16:line:4"
+              ],
+              "commentsOn": [
+                "zhouyi:16:line:4"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-7904495.wiki",
+                "startLine": 50,
+                "endLine": 50,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.30191708356142044
+      },
+      {
+        "args": {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 16,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            4
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "zhu-xi@528287:h16:line4:5d751e0ddf",
+              "hexagramId": 16,
+              "name": "豫",
+              "section": "line",
+              "line": 4,
+              "text": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也",
+              "textOriginal": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+              "locator": "《周易本義》·豫·第4爻注",
+              "version": "ws-528287",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "zhouyi-benyi",
+              "workTitle": "周易本義",
+              "sourceId": "ws-528287",
+              "editionId": "ws-benyi-skqs",
+              "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+              "authorIds": [
+                "zhu-xi"
+              ],
+              "authorNames": [
+                "朱熹"
+              ],
+              "anchorIds": [
+                "zhouyi:16:line:4"
+              ],
+              "commentsOn": [
+                "zhouyi:16:line:4"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-528287.wiki",
+                "startLine": 40,
+                "endLine": 40,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.2736244350671768
+      }
+    ],
+    "resultEvidenceIds": [
+      "wang-bi@7904495:h16:line4:5d368cfa9e",
+      "zhu-xi@528287:h16:line4:5d751e0ddf"
+    ],
+    "score": {
+      "k": 2,
+      "returned": 2,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "allGroupsCovered": true,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 2,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "test-31",
+    "groupId": "test-group-31",
+    "split": "independent_test",
+    "context": {
+      "question": "程颐对豫卦六五“贞疾，恒不死”的解释，是把“不死”当成永生吗？请按他的原文说。",
+      "query": "贞疾，恒不死",
+      "normalizedQuery": "贞疾恒不死",
+      "intent": "source_request",
+      "scopeIds": [
+        16
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 16,
+          "section": "line",
+          "line": 5,
+          "layer": "commentary",
+          "authorId": "cheng-yi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "anchorIds": [
+            "zhouyi:16:line:5"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "贞疾恒不死",
+          "hexagramId": 16,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 16,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            5
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 16,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            5
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "cheng-yi@1313743:h16:line5:63c2243e84",
+              "hexagramId": 16,
+              "name": "豫",
+              "section": "line",
+              "line": 5,
+              "text": "六五以陰柔居君位，當豫之時，沉溺於豫，不能自立者也。權之所主，眾之所歸，皆在於四。四之陽剛得眾，非耽惑柔弱之君所能製也，乃柔弱不能自立之君，受制於專權之臣也，居得君位貞也，受制於下有疾苦也。六居尊位，權雖失而位未亡也，故云貞疾恒不死，言貞而有疾，常疾而不死，如漢、魏末世之君也。人君致危亡之道非一，而以豫為多。在四不言失正，而於五乃見其強逼者，四本無失，故於四言大臣任天下之事之義，於五則言柔弱居尊，不能自立，威權去己之義，各據爻以取義，故不同也。若五不失君道，而四主於豫，乃是任得其人安享其功，如太甲、成王也。《蒙》亦以陰居尊位，二以陽為蒙之主，然彼吉而此疾者，時不同也。童蒙而資之於人，宜也；耽豫而失之於人，危亡之道也。故蒙相應，則倚任者也；《豫》相逼，則失權者也。又上下之心專歸於四也。",
+              "textOriginal": "六五以陰柔居君位，當豫之時，沉溺於豫，不能自立者也。權之所主，眾之所歸，皆在於四。四之陽剛得眾，非耽惑柔弱之君所能製也，乃柔弱不能自立之君，受制於專權之臣也，居得君位貞也，受制於下有疾苦也。六居尊位，權雖失而位未亡也，故云貞疾恒不死，言貞而有疾，常疾而不死，如漢、魏末世之君也。人君致危亡之道非一，而以豫為多。在四不言失正，而於五乃見其強逼者，四本無失，故於四言大臣任天下之事之義，於五則言柔弱居尊，不能自立，威權去己之義，各據爻以取義，故不同也。若五不失君道，而四主於豫，乃是任得其人安享其功，如太甲、成王也。《蒙》亦以陰居尊位，二以陽為蒙之主，然彼吉而此疾者，時不同也。童蒙而資之於人，宜也；耽豫而失之於人，危亡之道也。故蒙相應，則倚任者也；《豫》相逼，則失權者也。又上下之心專歸於四也。",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3&oldid=1313743",
+              "locator": "《伊川易傳》·豫·第5爻注",
+              "version": "ws-1313743",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "yichuan-yizhuan",
+              "workTitle": "伊川易傳",
+              "sourceId": "ws-1313743",
+              "editionId": "ws-yichuan-yizhuan",
+              "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+              "authorIds": [
+                "cheng-yi"
+              ],
+              "authorNames": [
+                "程颐"
+              ],
+              "anchorIds": [
+                "zhouyi:16:line:5"
+              ],
+              "commentsOn": [
+                "zhouyi:16:line:5"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-1313743.wiki",
+                "startLine": 437,
+                "endLine": 437,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "cheng-yi@1313743:h16:line5:63c2243e84",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.2835327759385109
+      }
+    ],
+    "resultEvidenceIds": [
+      "cheng-yi@1313743:h16:line5:63c2243e84"
+    ],
+    "score": {
+      "k": 1,
+      "returned": 1,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "allGroupsCovered": true,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 1,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "test-32",
+    "groupId": "test-group-32",
+    "split": "independent_test",
+    "context": {
+      "question": "豫卦上六“冥豫，成有渝”是什么意思？能找一位注家的原话说明，为什么到最后还说无咎？",
+      "query": "冥豫，成有渝",
+      "normalizedQuery": "冥豫成有渝",
+      "intent": "explanation_followup",
+      "scopeIds": [
+        16
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 16,
+          "section": "line",
+          "line": 6,
+          "layer": "classic"
+        }
+      ],
+      "businessScopes": [
+        {
+          "anchorIds": [
+            "zhouyi:16:line:6"
+          ],
+          "layers": [
+            "classic"
+          ],
+          "query": "冥豫成有渝",
+          "hexagramId": 16,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 16,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            6
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "layers": [
+            "classic"
+          ],
+          "hexagramId": 16,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            6
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "zy-16-line-6",
+              "hexagramId": 16,
+              "name": "豫",
+              "section": "line",
+              "line": 6,
+              "text": "冥豫，成有渝，无咎。",
+              "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+              "locator": "豫·上六",
+              "version": "open-iching-4c5f00f8cb62-v2",
+              "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+              "layer": "classic",
+              "workId": "zhouyi",
+              "workTitle": "周易",
+              "sourceId": "open-iching-4c5f00f8cb62",
+              "editionId": "open-iching-v2",
+              "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+              "authorIds": [],
+              "authorNames": [],
+              "anchorIds": [
+                "zhouyi:16:line:6"
+              ],
+              "commentsOn": [],
+              "reviewStatus": "legacy_unreviewed",
+              "releaseId": "knowledge-v3-20260926-r1",
+              "textOriginal": "冥豫，成有渝，无咎。"
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zy-16-line-6",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.28378237038850784
+      }
+    ],
+    "resultEvidenceIds": [
+      "zy-16-line-6"
+    ],
+    "score": {
+      "k": 1,
+      "returned": 1,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 1,
+        "denominator": 2,
+        "value": 0.5
+      },
+      "allGroupsCovered": false,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 1,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "test-33",
+    "groupId": "test-group-33",
+    "split": "independent_test",
+    "context": {
+      "question": "恒卦九四的“田无禽”只是打猎没打到吗？请对照王弼或朱熹的注释，讲清楚它们解释到哪一层。",
+      "query": "田无禽",
+      "normalizedQuery": "田无禽",
+      "intent": "source_request",
+      "scopeIds": [
+        32
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 32,
+          "section": "line",
+          "line": 4,
+          "layer": "commentary",
+          "authorId": "wang-bi"
+        },
+        {
+          "hexagramId": 32,
+          "section": "line",
+          "line": 4,
+          "layer": "commentary",
+          "authorId": "zhu-xi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "anchorIds": [
+            "zhouyi:32:line:4"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "田无禽",
+          "hexagramId": 32,
+          "topK": 5
+        },
+        {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "anchorIds": [
+            "zhouyi:32:line:4"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "田无禽",
+          "hexagramId": 32,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 32,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            4
+          ]
+        },
+        {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 32,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            4
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 32,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            4
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "wang-bi@2404960:h32:line4:082ae569fb",
+              "hexagramId": 32,
+              "name": "恒",
+              "section": "line",
+              "line": 4,
+              "text": "恒於非位，雖勞無獲也。",
+              "textOriginal": "恒於非位，雖勞無獲也。",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E6%81%92&oldid=2404960",
+              "locator": "《周易正義》·恒·第4爻注",
+              "version": "ws-2404960",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "zhouyi-zhengyi",
+              "workTitle": "周易正義",
+              "sourceId": "ws-2404960",
+              "editionId": "ws-zhouyi-zhengyi",
+              "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+              "authorIds": [
+                "wang-bi"
+              ],
+              "authorNames": [
+                "王弼"
+              ],
+              "anchorIds": [
+                "zhouyi:32:line:4"
+              ],
+              "commentsOn": [
+                "zhouyi:32:line:4"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-2404960.wiki",
+                "startLine": 92,
+                "endLine": 92,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "wang-bi@2404960:h32:line4:082ae569fb",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.2867868170142174
+      },
+      {
+        "args": {
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 32,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            4
+          ]
+        },
+        "status": "ok",
+        "result": {
+          "evidence": [
+            {
+              "id": "zhu-xi@737053:h32:line4:0f4238b3b2",
+              "hexagramId": 32,
+              "name": "恒",
+              "section": "line",
+              "line": 4,
+              "text": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也",
+              "textOriginal": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也",
+              "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B72&oldid=737053",
+              "locator": "《周易本義》·恒·第4爻注",
+              "version": "ws-737053",
+              "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+              "reviewStatus": "machine_parsed",
+              "layer": "commentary",
+              "workId": "zhouyi-benyi",
+              "workTitle": "周易本義",
+              "sourceId": "ws-737053",
+              "editionId": "ws-benyi-skqs",
+              "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+              "authorIds": [
+                "zhu-xi"
+              ],
+              "authorNames": [
+                "朱熹"
+              ],
+              "anchorIds": [
+                "zhouyi:32:line:4"
+              ],
+              "commentsOn": [
+                "zhouyi:32:line:4"
+              ],
+              "releaseId": "knowledge-v3-20260926-r1",
+              "rawLocator": {
+                "file": "data/knowledge/raw/ws-737053.wiki",
+                "startLine": 12,
+                "endLine": 12,
+                "pageLabels": []
+              }
+            }
+          ],
+          "hits": [
+            {
+              "passageId": "zhu-xi@737053:h32:line4:0f4238b3b2",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "covered",
+          "missingTargets": [],
+          "truncated": false
+        },
+        "durationMs": 0.2679973840713501
+      }
+    ],
+    "resultEvidenceIds": [
+      "wang-bi@2404960:h32:line4:082ae569fb",
+      "zhu-xi@737053:h32:line4:0f4238b3b2"
+    ],
+    "score": {
+      "k": 2,
+      "returned": 2,
+      "eligible": true,
+      "hit": {
+        "numerator": 1,
+        "denominator": 1,
+        "value": 1.0
+      },
+      "groupCoverage": {
+        "numerator": 1,
+        "denominator": 2,
+        "value": 0.5
+      },
+      "allGroupsCovered": false,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 2,
+        "denominator": 2,
+        "value": 1.0
+      },
+      "precisionBounds": {
+        "lower": 1.0,
+        "upper": 1.0
+      },
+      "knownRelevant": 2,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "test-34",
+    "groupId": "test-group-34",
+    "split": "independent_test",
+    "context": {
+      "question": "我记得王弼说过大意是安静能做躁动的主导，安定能做行动的依凭。这是在解释哪一爻？请帮我核对出处。",
+      "query": "安静能做躁动的主导，安定能做行动的依凭。这是在解释哪一爻？帮我核对出处",
+      "normalizedQuery": "安静能做躁动的主导安定能做行动的依凭这是在解释哪一爻帮我核对出处",
+      "intent": "source_request",
+      "scopeIds": [
+        57
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 57,
+          "section": "line",
+          "line": 1,
+          "layer": "commentary",
+          "authorId": "wang-bi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "安静能做躁动的主导安定能做行动的依凭这是在解释哪一爻帮我核对出处",
+          "hexagramId": 57,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 57,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            1
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "wang-bi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 57,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            1
+          ]
+        },
+        "status": "empty",
+        "result": {
+          "evidence": [],
+          "hits": [],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "not_ingested",
+          "missingTargets": [
+            "57:line:1|author:wang-bi",
+            "authorIds:wang-bi"
+          ],
+          "truncated": false,
+          "noHitReason": "filtered_out"
+        },
+        "durationMs": 0.2598520368337631
+      }
+    ],
+    "resultEvidenceIds": [],
+    "score": {
+      "k": 1,
+      "returned": 0,
+      "eligible": true,
+      "hit": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "groupCoverage": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "allGroupsCovered": false,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "Semantic relevance set is not exhaustive; use labelled group coverage."
+      },
+      "precisionAtK": {
+        "numerator": 0,
+        "denominator": 1,
+        "value": 0.0
+      },
+      "precisionBounds": {
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      "knownRelevant": 0,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "test-35",
+    "groupId": "test-group-35",
+    "split": "independent_test",
+    "context": {
+      "question": "请给出程颐解释井卦九五“井冽，寒泉食”的那段原文。",
+      "query": "井冽，寒泉食",
+      "normalizedQuery": "井冽寒泉食",
+      "intent": "source_request",
+      "scopeIds": [
+        48
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 48,
+          "section": "line",
+          "line": 5,
+          "layer": "commentary",
+          "authorId": "cheng-yi"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "井冽寒泉食",
+          "hexagramId": 48,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 48,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            5
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 48,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            5
+          ]
+        },
+        "status": "empty",
+        "result": {
+          "evidence": [],
+          "hits": [],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "not_ingested",
+          "missingTargets": [
+            "48:line:5|author:cheng-yi",
+            "authorIds:cheng-yi"
+          ],
+          "truncated": false,
+          "noHitReason": "filtered_out"
+        },
+        "durationMs": 0.25931745767593384
+      }
+    ],
+    "resultEvidenceIds": [],
+    "score": {
+      "k": 1,
+      "returned": 0,
+      "eligible": false,
+      "hit": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No nonempty evidence reference; absence cases are excluded from recall/hit denominators."
+      },
+      "groupCoverage": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No nonempty evidence reference; absence cases are excluded from recall/hit denominators."
+      },
+      "allGroupsCovered": null,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No nonempty evidence reference; absence cases are excluded from recall/hit denominators."
+      },
+      "precisionAtK": {
+        "numerator": null,
+        "denominator": 1,
+        "value": null,
+        "reason": "No nonempty evidence reference; absence cases are excluded from recall/hit denominators."
+      },
+      "precisionBounds": null,
+      "knownRelevant": 0,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  },
+  {
+    "caseId": "test-36",
+    "groupId": "test-group-36",
+    "split": "independent_test",
+    "context": {
+      "question": "焦循怎样注解睽卦六五？请给出他的原文。",
+      "query": "怎样注解睽卦六五？他的原文",
+      "normalizedQuery": "怎样注解睽卦六五他的原文",
+      "intent": "source_request",
+      "scopeIds": [
+        38
+      ],
+      "parsedTargets": [
+        {
+          "hexagramId": 38,
+          "section": "line",
+          "line": 5,
+          "layer": "commentary",
+          "authorId": "jiao-xun"
+        }
+      ],
+      "businessScopes": [
+        {
+          "authorIds": [
+            "jiao-xun"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "query": "怎样注解睽卦六五他的原文",
+          "hexagramId": 38,
+          "topK": 5
+        }
+      ],
+      "exactRequests": [
+        {
+          "authorIds": [
+            "jiao-xun"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 38,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            5
+          ]
+        }
+      ]
+    },
+    "eligible": true,
+    "requests": [
+      {
+        "args": {
+          "authorIds": [
+            "jiao-xun"
+          ],
+          "layers": [
+            "commentary"
+          ],
+          "hexagramId": 38,
+          "sections": [
+            "line"
+          ],
+          "lineIndices": [
+            5
+          ]
+        },
+        "status": "empty",
+        "result": {
+          "evidence": [],
+          "hits": [],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "coverageStatus": "not_ingested",
+          "missingTargets": [
+            "38:line:5|author:jiao-xun",
+            "authorIds:jiao-xun"
+          ],
+          "truncated": false,
+          "noHitReason": "filtered_out"
+        },
+        "durationMs": 0.2653207629919052
+      }
+    ],
+    "resultEvidenceIds": [],
+    "score": {
+      "k": 1,
+      "returned": 0,
+      "eligible": false,
+      "hit": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No nonempty evidence reference; absence cases are excluded from recall/hit denominators."
+      },
+      "groupCoverage": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No nonempty evidence reference; absence cases are excluded from recall/hit denominators."
+      },
+      "allGroupsCovered": null,
+      "recall": {
+        "numerator": null,
+        "denominator": null,
+        "value": null,
+        "reason": "No nonempty evidence reference; absence cases are excluded from recall/hit denominators."
+      },
+      "precisionAtK": {
+        "numerator": null,
+        "denominator": 1,
+        "value": null,
+        "reason": "No nonempty evidence reference; absence cases are excluded from recall/hit denominators."
+      },
+      "precisionBounds": null,
+      "knownRelevant": 0,
+      "unknownRelevance": 0
+    },
+    "metricScope": "Unranked complete exact results, not BM25 or Recall@5."
+  }
+]

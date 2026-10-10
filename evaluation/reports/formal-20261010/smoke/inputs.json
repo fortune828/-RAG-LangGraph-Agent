@@ -1,0 +1,217 @@
+[
+  {
+    "caseId": "smoke-1",
+    "session": {
+      "id": "session-release-literal",
+      "question": "我想了解本次坎卦的具体文义。",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          8,
+          8,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "010010",
+          "name": "坎为水",
+          "number": 29,
+          "judgment": "习坎，有孚，维心亨，行有尚。"
+        },
+        "changed": {
+          "binary": "010010",
+          "name": "坎为水",
+          "number": 29,
+          "judgment": "习坎，有孚，维心亨，行有尚。"
+        },
+        "originalBinary": "010010",
+        "changedBinary": "010010",
+        "changingIndices": [],
+        "id": "cast-release-literal",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "请给出本卦第二爻爻辞和小象原文。",
+    "mode": "followup",
+    "groupId": "smoke-1",
+    "split": "smoke_seen",
+    "category": "smoke"
+  },
+  {
+    "caseId": "smoke-2",
+    "session": {
+      "id": "session-paraphrase-stress-2",
+      "question": "我记得一段易学解释，想核对自己记忆中的含义和出处。",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "111111",
+          "name": "乾为天",
+          "number": 1,
+          "judgment": "元，亨，利，贞。"
+        },
+        "changed": {
+          "binary": "111111",
+          "name": "乾为天",
+          "number": 1,
+          "judgment": "元，亨，利，贞。"
+        },
+        "originalBinary": "111111",
+        "changedBinary": "111111",
+        "changingIndices": [],
+        "id": "cast-paraphrase-stress-2",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "我记得朱熹好像讲过一种意思：身处难关时，与地位更高的人来往，表达真实的心意比排场更重要。这段解释出自哪里？能给我原文吗？",
+    "mode": "followup",
+    "groupId": "smoke-2",
+    "split": "smoke_seen",
+    "category": "smoke"
+  },
+  {
+    "caseId": "smoke-3",
+    "session": {
+      "id": "session-semantic-holdout-daily",
+      "question": "今晚已经追剧三小时，明早七点要出门。还剩一集结局，我该继续看还是睡觉？",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          8,
+          8,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "110010",
+          "name": "水泽节",
+          "number": 60,
+          "judgment": "亨。苦节不可贞。"
+        },
+        "changed": {
+          "binary": "110010",
+          "name": "水泽节",
+          "number": 60,
+          "judgment": "亨。苦节不可贞。"
+        },
+        "originalBinary": "110010",
+        "changedBinary": "110010",
+        "changingIndices": [],
+        "id": "cast-semantic-holdout-daily",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "今晚已经追剧三小时，明早七点要出门。还剩一集结局，我该继续看还是睡觉？",
+    "mode": "initial",
+    "groupId": "smoke-3",
+    "split": "smoke_seen",
+    "category": "smoke"
+  },
+  {
+    "caseId": "smoke-http",
+    "groupId": "smoke-http",
+    "split": "smoke_new",
+    "category": "api_smoke",
+    "session": {
+      "id": "4e8b5d27-6243-4c20-b7c0-a70a5bdcc325",
+      "question": "明晚老同学约吃饭，我这周有些累，但也想见见他们，怎么安排比较好？",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          6,
+          8,
+          7,
+          6
+        ],
+        "original": {
+          "binary": "010010",
+          "name": "坎为水",
+          "number": 29,
+          "judgment": "习坎，有孚，维心亨，行有尚。"
+        },
+        "changed": {
+          "binary": "011011",
+          "name": "巽为风",
+          "number": 57,
+          "judgment": "小亨，利攸往，利见大人。"
+        },
+        "originalBinary": "010010",
+        "changedBinary": "011011",
+        "changingIndices": [
+          2,
+          5
+        ],
+        "id": "6d803f86-31b8-4acf-ba05-18c30f8092d3",
+        "method": "three-coins",
+        "algorithmVersion": "coins-py-v1",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "coins": [
+          [
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "createdAt": "2026-10-10T11:16:07.756865+00:00"
+      },
+      "turns": [],
+      "createdAt": "2026-10-10T11:16:07.756879+00:00",
+      "releaseId": "knowledge-v3-20260926-r1"
+    },
+    "question": "明晚老同学约吃饭，我这周有些累，但也想见见他们，怎么安排比较好？",
+    "mode": "initial"
+  }
+]

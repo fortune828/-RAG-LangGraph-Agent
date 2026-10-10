@@ -1,0 +1,1273 @@
+{
+  "protocolId": "formal-anonymous-dialogue-review",
+  "version": "1.0",
+  "preparedOn": "2026-10-10",
+  "freeze": {
+    "state": "prepared_for_freeze",
+    "frozenAt": null,
+    "authority": "主评测流程宣布冻结后生效；本文件准备不等于已开始读取正式输出。",
+    "rule": "冻结后不得按正式 development/test 答案、组别结果或期望结论修改维度、锚点、缺失处理、任务成功或引用覆盖口径。",
+    "correctionPolicy": "仅允许不改变含义的格式/错字修正并留记录；实质变更必须形成新版本并另立评测，原记录和旧标准保留。"
+  },
+  "reviewerIdentity": "AI 独立非专家评阅；不是人工评分或专家 Gold。",
+  "plannedDesign": {
+    "anonymousConditions": 4,
+    "developmentPerCondition": 40,
+    "testPerCondition": 40,
+    "expectedAnswerUnits": 320,
+    "role": "仅规划计数，不是已完成结果。评阅包只带匿名 answerId 及必要材料；具体条件名称、映射和策略不交给评阅员。"
+  },
+  "isolation": {
+    "allowed": [
+      "匿名当前问题、用户条件、该轮之前的真实历史",
+      "本次卦象等题目必要输入",
+      "该回答实际附带的证据与明确授权的参考资料",
+      "机械状态、是否候选、实际可见答复及明示失败信息"
+    ],
+    "forbidden": [
+      "生产源码、策略、提示词配置、条件映射、解盲键",
+      "stage rows、先前组别结论或为比较优劣而提供的结果",
+      "独立提交前查看另一评阅员的分数或理由",
+      "调用被测 API、重新生成答案、Git 操作"
+    ],
+    "rules": [
+      "每轮只用当时已知事实，不用后续纠正倒扣前轮。",
+      "样本证据不足与语料其他位置存在材料分别判断；不得把另一样本拿到的证据反算为本样本已取得。",
+      "未授权外部查证时不扩展查证；不熟悉的训诂、版本、学派差异明确记 unknown。",
+      "不得预设任何匿名条件应当更好；未发现问题不为填表造错。"
+    ]
+  },
+  "scoring": {
+    "scale": {
+      "0": "明确失败",
+      "1": "混合或明显不足",
+      "2": "在可核对范围内充分做到",
+      "null": "N/A 或无法判断；必须附独立原因"
+    },
+    "dimensions": {
+      "understanding": {
+        "name": "用户事实与最新更正",
+        "question": "是否准确理解本轮目标、已知条件、真实历史和最新纠正，并保留未知事项的未知性质？",
+        "anchors": {
+          "2": "目标和关键事实准确；最新纠正被实际采用；没有把假设、担忧、建议或旧助手推断当成既定事实。",
+          "1": "大体理解，但遗漏一项有影响的条件、更正不充分，或加入局部未给定事实；仍能辨认用户真正所问。",
+          "0": "主要目标、责任、角色或最新纠正被忽略、颠倒，回答实质建立在错误前提上。"
+        },
+        "na": "没有可评的实质回答，或确实无法判断；须记明原因，不能以 N/A 掩盖明确的事实错误。"
+      },
+      "knowledge": {
+        "name": "经典解释准确性",
+        "question": "原典词义、爻名、作者归属、注家观点及适用条件是否忠实，而不只是引文字面相同？",
+        "anchors": {
+          "2": "在可核对范围内，主要传统断言、解释和条件准确，作者及对象不混淆。",
+          "1": "正确与明显不足并存，例如局部误释、条注范围扩大、漏掉影响解释的条件或归属含混。",
+          "0": "核心文义、所问对象或作者归属错误；主要解释与可核对材料冲突，或将无依据解释冒作核心传统结论。"
+        },
+        "na": "本题及回答没有传统知识断言，或主要文义确无足够材料判断；拒答未作知识断言时可 N/A，但不得因此计任务成功。"
+      },
+      "integration": {
+        "name": "现代类比合理性",
+        "question": "现代联系是否有相关结构、回应实际条件，并清楚区分文化启发与事实、心理、因果或结果判断？",
+        "anchors": {
+          "2": "类比结构贴切、能帮助理解取舍，适用边界清楚，现实判断由现实事实支撑。",
+          "1": "有合理联系，但部分装饰性、牵强、等同过强，或局部用象义替现实事实与条件背书。",
+          "0": "核心应用主要依赖强行对应、占象确认事实或心理、无依据预测与保证，导致明显失当的判断；或明确要求应用而实质完全未回应。"
+        },
+        "na": "纯出处或文义查询没有现代应用，或本题不需要且回答未作类比；若回答主动加入现代应用，仍评该应用。"
+      },
+      "conversation": {
+        "name": "自然连贯与分寸",
+        "question": "回答是否自然承接当前对话，让用户容易理解；展开程度、语气和后续方向是否符合当下需要？",
+        "anchors": {
+          "2": "连贯、明确、尊重，复杂问题有适当展开，简单或已收尾问题也能清楚推进或结束。",
+          "1": "基本可交流，但有明显跳接、过度纠正、机械铺陈、无益重开已解决事项或语气与情境不匹配。",
+          "0": "明显不连贯、难以理解，持续无视当前对话方向，或以指责、强行心理归因等方式严重阻碍交流。"
+        },
+        "na": "没有可评的任务对话内容，例如完全空答案或仅机械核验失败提示。"
+      },
+      "helpfulness": {
+        "name": "实际帮助与判断深度",
+        "question": "是否完成用户实际需要的查证、判断或下一步，并提供所需的依据、取舍或可执行支持？",
+        "anchors": {
+          "2": "核心需求得到充分帮助；查证给出所需对象与证据，建议基于实际条件，决策有清楚的理由、取舍或有效下一步。",
+          "1": "有实用部分或可信线索，但仍缺关键步骤、条件、依据或收尾判断；需要明显补充才能完成所问。",
+          "0": "没有实质帮助，方向主要错误，或只有泛化核验失败/无关内容；诚实承认不足本身不足以获得高分。"
+        },
+        "na": "没有任何可见回答的技术失败，或无法判断；有可见无帮助的失败提示应为 0，而不是 N/A。"
+      }
+    },
+    "rules": [
+      "五维分别评分，不以错误条数机械相减。",
+      "同一句可拆成用户事实、传统解释、现代应用分别判断；不得因一个类比牵强自动把 knowledge 也判错。",
+      "引文字面正确不自动使解释、用户心理或现实预测正确。",
+      "合理且明示的现代比喻不要求古文逐字谈现代事情。",
+      "条件提案不是用户已经决定的事实；明确的不确定推测也不是既定心理。",
+      "没有统一字数、段落数、引文数、固定话术或追问数门槛。",
+      "每维至少一句具体依据；有实质文本时给原句或准确短摘和位置，无答案则写明无文本。",
+      "缺少本来适用的核心任务内容不能伪装成成功；在 understanding/helpfulness/taskSuccess 中记录遗漏，即使 knowledge 无断言可评而 N/A。"
+    ]
+  },
+  "naAndDelivery": {
+    "no_visible_answer": {
+      "dimensionValues": {
+        "understanding": null,
+        "knowledge": null,
+        "integration": null,
+        "conversation": null,
+        "helpfulness": null
+      },
+      "naReason": "technical_no_answer",
+      "taskSuccess": false,
+      "note": "无答案技术失败另列，不给五项伪零分。"
+    },
+    "candidate_only": {
+      "rule": "候选实质文本照常评分，target=candidate；candidateTaskSuccess 独立记录。实际未交付则 taskSuccess=false，另评真实可见 fallback（若有）。"
+    },
+    "verification_failure_notice": {
+      "dimensionValues": {
+        "understanding": null,
+        "knowledge": null,
+        "integration": null,
+        "conversation": null,
+        "helpfulness": 0
+      },
+      "naReason": "no_substantive_content",
+      "taskSuccess": false,
+      "note": "仅通用核验失败提示没有任务内容；帮助 0 不是把候选质量记 0。"
+    },
+    "readable_insufficient_or_refusal": {
+      "rule": "不是空答案；评其实际理解、缺失说明和有用线索。未回答所需出处/原文/判断则 taskSuccess=false；knowledge 没有断言可 N/A，不能因没说错而给高分。"
+    },
+    "no_modern_application": {
+      "rule": "本题无需且回答未作现代应用时 integration=null/not_applicable；用户明确要求现实启发而回答没有回应，不用此例外。"
+    },
+    "uncertain_knowledge": {
+      "rule": "无法判断不等于错误或正确；主知识判断无材料可定时 knowledge=null/insufficient_basis。局部未知可与已知判断并列，不得将未知部分计作已支持。"
+    },
+    "missing_human_review": {
+      "rule": "未收集的人工评价不是 0，也不是某个人评了 N/A；保持空白并标记未收集。"
+    }
+  },
+  "taskSuccess": {
+    "type": "true | false | unknown",
+    "target": "只针对用户实际得到的答复；候选另记 candidateTaskSuccess。",
+    "true": "用户本轮核心要求已实质完成，必要事实和所问对象正确，没有改变结论的关键缺口；不要求用户已在现实中执行或结果保证。",
+    "false": "未交付、只有失败提示、核心所问未完成、关键纠正被忽视，或决定性错误使任务没有完成。",
+    "unknown": "缺少关键核验依据或交付信息，无法负责地判断完成；必须说明缺口。",
+    "rules": [
+      "不是机械 completed 的同义词，也不由五维总分自动阈值化。",
+      "纯出处任务须按用户所问核对作者、书/篇/卦爻、原文和含义；需要原文却只给可能线索是未完成。",
+      "真实证据不足时诚实拒绝可以避免幻觉，但不能冒充已查证成功。",
+      "局部无关错误不必自动否定已完成的核心任务，仍记录五维与错误；关键误释或错误来源则不能忽略。"
+    ]
+  },
+  "errors": {
+    "requiredEvidence": [
+      "逐条原句或短摘",
+      "段落/句子/引用位置",
+      "具体理由及所对照的用户事实或文献",
+      "受影响维度",
+      "严重度与确定度"
+    ],
+    "types": {
+      "fabricated_fact": "将用户未提供且无法据材料确认的事实说定，含角色、时点、次数、分工和既有承诺；该名称不推断模型有意欺骗。",
+      "unsupported_psychology": "把自己或他人的动机、情绪、性格、意图说成已知，而无足够行为证据。",
+      "missed_correction": "忽略或未实际采用用户最新纠正，继续沿用已失去依据的旧前提。",
+      "history_contradiction": "与该轮之前已明确提供的事实、角色或决定相矛盾。",
+      "wrong_attribution": "作者、书名、篇章、卦爻或观点归属错误。",
+      "wrong_classical_meaning": "词义、原义、占义或注家条件被误释；须区别文义错误和现代类比不足。",
+      "scope_overgeneralization": "将一爻、某注家的条件解释扩大为全卦、所有注家或普遍现实规律。",
+      "citation_mismatch": "引文改义、指向不相干对象，或引用所支持的内容与声称的传统观点不匹配。",
+      "strained_analogy": "现代联系缺少相关结构，主要逐词配对，或把启发过度等同为事实定义。",
+      "unsupported_prediction": "借经典或卦象对未知现实结果、因果、关系走势作无依据断言或保证。",
+      "unsupported_requirement": "添加经典或任务均未要求的必做步骤、次数规则、另起卦等硬条件。",
+      "unhelpful_expansion": "扩展内容没有解决当前需要，反而制造新顾虑、重复已解决问题或增加无益选择负担。",
+      "task_not_answered": "未给出所问对象、解释、原文或必要判断；与技术失败、诚实缺失说明分别记录。",
+      "misleading_missingness": "声称相关材料缺失，但该答实际获准证据中已有足够材料；不得用别的样本所获资料反判本答。"
+    },
+    "rules": [
+      "只标实际出现的问题；有疑义记 suspected/unknown，不能冒称确定错误。",
+      "unknown 不是已证实错误，不据此自动给 0；confirmed/suspected 也不直接换算固定扣分。",
+      "合理可撤回的比喻和条件方案不因含某个词就触发错误标签。"
+    ]
+  },
+  "faithfulness": {
+    "independent": true,
+    "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+    "unit": "将每个 citation.claim 按可判断命题拆开，保留原位置；另补明显未引用的传统词义、作者归属、爻名、范围、条件和占法断言。",
+    "labels": {
+      "supported": "所列实际证据支持该传统断言的对象、内容、条件和范围。",
+      "partial": "关键部分受支持，但还包含未被支持的限制、省略或扩大；说明哪一部分支持、哪一部分不足。",
+      "unsupported": "相关证据可核对却不支持该断言，或与之矛盾/范围不符；直接矛盾另记 contradiction=true。",
+      "unknown": "没有可用相关材料、版本/归属/训诂不能负责核定；不把缺证据直接当作已证实为假。"
+    },
+    "procedure": [
+      "先分类 quotation/classical_interpretation/attribution/modern_analogy/empirical_claim/prediction；混合句拆开，不用准确引文覆盖整段。",
+      "每个 citation claim occurrence 均登记审阅，重复出现保留位置；相同传统命题可去重为一条 claim 并列位置，不能用重复引用抬高质量。",
+      "明显未引证传统断言也登记；未引证不自动 unsupported，更不将缺 source 的样本引用率算成 0。",
+      "只核对明示授权的证据范围，并记哪些来源实际可用；未另行查证的作者归属或学派解释保留 unknown。",
+      "逐字匹配单列 quotationMatch，允许不改义的标点/空格/繁简规范化；匹配不是完整语义支持。",
+      "现代类比本身不进入传统命题支持分母；若引文只作为明示启发，supportLabel=null 并记排除原因，不因古文没有现代生活场景就判 unsupported。",
+      "现代句若冒称原义，拆出该传统断言评支持；若借文献证明现实事实/预测，另在 integration、错误表中判断。",
+      "记录所有引用 claim 审阅覆盖，以及识别到的未引传统断言覆盖；后者只承诺明显断言检查，不冒称穷尽全文全部隐含断言。"
+    ],
+    "coverageFields": [
+      "citationClaimOccurrencesTotal",
+      "citationClaimOccurrencesReviewed",
+      "traditionalAssertionsIdentified",
+      "traditionalAssertionsReviewed",
+      "uncitedTraditionalAssertionsIdentified",
+      "uncitedTraditionalAssertionsReviewed",
+      "uncitedDiscoveryExhaustive=false",
+      "notes"
+    ],
+    "reporting": [
+      "分别报告 supported/partial/unsupported/unknown 数量及适用分母，不把 partial 任意折算成 0.5。",
+      "若计算已知支持率，分母只含 supported+partial+unsupported，同时必须并报 unknown 数量和占全部传统命题的比例。",
+      "无传统命题或无相关来源时不伪报 0% 或 100%；报告 N/A 和覆盖局限。",
+      "支持率不是 knowledge 或总质量的替代；句义、条件和核心错误仍需维度理由。"
+    ]
+  },
+  "independentReview": {
+    "rule": "初评与独立复评使用同一冻结版本，独立完成后才比较；保留两份原始记录。",
+    "disagreement": "先列具体原句、事实和证据差异；复核无法解决时保留分歧或 unknown，不为一致性强改，也不参照条件身份。",
+    "adjudication": "如另设裁决，标清 AI/人工身份、依据、版本和变更记录；不得覆盖原始分数，AI 裁决不是人工 Gold。"
+  },
+  "humanCsv": {
+    "initialState": "header_only_no_data_rows",
+    "defaultHumanValue": "",
+    "columns": [
+      "answerId",
+      "target",
+      "reviewerId",
+      "rubricVersion",
+      "understanding",
+      "understandingNAReason",
+      "understandingReason",
+      "knowledge",
+      "knowledgeNAReason",
+      "knowledgeReason",
+      "integration",
+      "integrationNAReason",
+      "integrationReason",
+      "conversation",
+      "conversationNAReason",
+      "conversationReason",
+      "helpfulness",
+      "helpfulnessNAReason",
+      "helpfulnessReason",
+      "taskSuccess",
+      "taskSuccessReason",
+      "errorsJson",
+      "claimChecksJson",
+      "notes",
+      "reviewedAt"
+    ],
+    "rules": [
+      "未有真人提交时不生成虚构人工评分行，不把 AI 分数复制进人工字段。",
+      "如为匹配样本生成占位行，身份和全部人工评分/理由/结论列必须空白。",
+      "真人实际评为不适用时才写 N/A 并附原因；实际 0 写 0；未收集继续留空。",
+      "所有人类汇总只用真实提交，空白不参与均值，不声称已有人审。"
+    ]
+  },
+  "aggregation": {
+    "rules": [
+      "默认分别报告五维分布/均值及各自有效 n，另列 N/A、unknown、失败和候选数。",
+      "taskSuccess 与交付状态单列；候选不混入已交付成功率。",
+      "同题多条件与连续轮次有依赖，不能宣称每条都是独立样本。",
+      "不默认把五维求总分排名；如预注册加权或比较规则，须在看正式输出前另冻结。",
+      "不得依据组别结果挑选引用覆盖口径、评分锚点或删除不利样本。"
+    ]
+  },
+  "reviewRecordSchema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Formal anonymous AI review record v1.0",
+    "type": "object",
+    "required": [
+      "answerId",
+      "rubricVersion",
+      "reviewer",
+      "delivery",
+      "evaluations",
+      "taskSuccess",
+      "taskSuccessReason",
+      "candidateTaskSuccess",
+      "candidateTaskSuccessReason"
+    ],
+    "properties": {
+      "answerId": {
+        "type": "string"
+      },
+      "rubricVersion": {
+        "const": "1.0"
+      },
+      "reviewer": {
+        "type": "object",
+        "required": [
+          "reviewerId",
+          "kind",
+          "expertStatus",
+          "blind",
+          "independent"
+        ],
+        "properties": {
+          "reviewerId": {
+            "type": "string"
+          },
+          "kind": {
+            "const": "AI"
+          },
+          "expertStatus": {
+            "const": "non_expert"
+          },
+          "blind": {
+            "const": true
+          },
+          "independent": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "delivery": {
+        "type": "object",
+        "required": [
+          "mechanicalStatus",
+          "candidateOnly",
+          "visibleKind",
+          "technicalFailure"
+        ],
+        "properties": {
+          "mechanicalStatus": {
+            "enum": [
+              "completed",
+              "failed",
+              "validation_failed",
+              "unknown"
+            ]
+          },
+          "candidateOnly": {
+            "type": "boolean"
+          },
+          "visibleKind": {
+            "enum": [
+              "substantive_answer",
+              "insufficient_or_refusal",
+              "verification_failure_notice",
+              "none",
+              "unknown"
+            ]
+          },
+          "technicalFailure": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "providedFailureNote": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      },
+      "evaluations": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "required": [
+            "target",
+            "responseKind",
+            "dimensions",
+            "errors",
+            "faithfulness"
+          ],
+          "properties": {
+            "target": {
+              "enum": [
+                "delivered",
+                "candidate"
+              ]
+            },
+            "responseKind": {
+              "enum": [
+                "substantive_answer",
+                "insufficient_or_refusal",
+                "verification_failure_notice",
+                "no_answer"
+              ]
+            },
+            "dimensions": {
+              "type": "object",
+              "required": [
+                "understanding",
+                "knowledge",
+                "integration",
+                "conversation",
+                "helpfulness"
+              ],
+              "properties": {
+                "understanding": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "naReason",
+                    "rationale",
+                    "evidence"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "enum": [
+                        0,
+                        1,
+                        2,
+                        null
+                      ]
+                    },
+                    "naReason": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "enum": [
+                        null,
+                        "not_applicable",
+                        "insufficient_basis",
+                        "technical_no_answer",
+                        "no_substantive_content"
+                      ]
+                    },
+                    "rationale": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "quote",
+                          "location",
+                          "reason"
+                        ],
+                        "properties": {
+                          "quote": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "location": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "reason": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "referenceIds": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "if": {
+                        "properties": {
+                          "value": {
+                            "type": "null"
+                          }
+                        }
+                      },
+                      "then": {
+                        "properties": {
+                          "naReason": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "else": {
+                        "properties": {
+                          "naReason": {
+                            "type": "null"
+                          },
+                          "evidence": {
+                            "minItems": 1
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "additionalProperties": false
+                },
+                "knowledge": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "naReason",
+                    "rationale",
+                    "evidence"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "enum": [
+                        0,
+                        1,
+                        2,
+                        null
+                      ]
+                    },
+                    "naReason": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "enum": [
+                        null,
+                        "not_applicable",
+                        "insufficient_basis",
+                        "technical_no_answer",
+                        "no_substantive_content"
+                      ]
+                    },
+                    "rationale": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "quote",
+                          "location",
+                          "reason"
+                        ],
+                        "properties": {
+                          "quote": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "location": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "reason": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "referenceIds": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "if": {
+                        "properties": {
+                          "value": {
+                            "type": "null"
+                          }
+                        }
+                      },
+                      "then": {
+                        "properties": {
+                          "naReason": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "else": {
+                        "properties": {
+                          "naReason": {
+                            "type": "null"
+                          },
+                          "evidence": {
+                            "minItems": 1
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "additionalProperties": false
+                },
+                "integration": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "naReason",
+                    "rationale",
+                    "evidence"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "enum": [
+                        0,
+                        1,
+                        2,
+                        null
+                      ]
+                    },
+                    "naReason": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "enum": [
+                        null,
+                        "not_applicable",
+                        "insufficient_basis",
+                        "technical_no_answer",
+                        "no_substantive_content"
+                      ]
+                    },
+                    "rationale": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "quote",
+                          "location",
+                          "reason"
+                        ],
+                        "properties": {
+                          "quote": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "location": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "reason": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "referenceIds": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "if": {
+                        "properties": {
+                          "value": {
+                            "type": "null"
+                          }
+                        }
+                      },
+                      "then": {
+                        "properties": {
+                          "naReason": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "else": {
+                        "properties": {
+                          "naReason": {
+                            "type": "null"
+                          },
+                          "evidence": {
+                            "minItems": 1
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "additionalProperties": false
+                },
+                "conversation": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "naReason",
+                    "rationale",
+                    "evidence"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "enum": [
+                        0,
+                        1,
+                        2,
+                        null
+                      ]
+                    },
+                    "naReason": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "enum": [
+                        null,
+                        "not_applicable",
+                        "insufficient_basis",
+                        "technical_no_answer",
+                        "no_substantive_content"
+                      ]
+                    },
+                    "rationale": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "quote",
+                          "location",
+                          "reason"
+                        ],
+                        "properties": {
+                          "quote": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "location": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "reason": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "referenceIds": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "if": {
+                        "properties": {
+                          "value": {
+                            "type": "null"
+                          }
+                        }
+                      },
+                      "then": {
+                        "properties": {
+                          "naReason": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "else": {
+                        "properties": {
+                          "naReason": {
+                            "type": "null"
+                          },
+                          "evidence": {
+                            "minItems": 1
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "additionalProperties": false
+                },
+                "helpfulness": {
+                  "type": "object",
+                  "required": [
+                    "value",
+                    "naReason",
+                    "rationale",
+                    "evidence"
+                  ],
+                  "properties": {
+                    "value": {
+                      "type": [
+                        "integer",
+                        "null"
+                      ],
+                      "enum": [
+                        0,
+                        1,
+                        2,
+                        null
+                      ]
+                    },
+                    "naReason": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "enum": [
+                        null,
+                        "not_applicable",
+                        "insufficient_basis",
+                        "technical_no_answer",
+                        "no_substantive_content"
+                      ]
+                    },
+                    "rationale": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "evidence": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "quote",
+                          "location",
+                          "reason"
+                        ],
+                        "properties": {
+                          "quote": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "location": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "reason": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "referenceIds": {
+                            "type": "array",
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "allOf": [
+                    {
+                      "if": {
+                        "properties": {
+                          "value": {
+                            "type": "null"
+                          }
+                        }
+                      },
+                      "then": {
+                        "properties": {
+                          "naReason": {
+                            "type": "string"
+                          }
+                        }
+                      },
+                      "else": {
+                        "properties": {
+                          "naReason": {
+                            "type": "null"
+                          },
+                          "evidence": {
+                            "minItems": 1
+                          }
+                        }
+                      }
+                    }
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "additionalProperties": false
+            },
+            "errors": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "type",
+                  "quote",
+                  "location",
+                  "reason",
+                  "dimensions",
+                  "severity",
+                  "certainty"
+                ],
+                "properties": {
+                  "type": {
+                    "enum": [
+                      "fabricated_fact",
+                      "unsupported_psychology",
+                      "missed_correction",
+                      "history_contradiction",
+                      "wrong_attribution",
+                      "wrong_classical_meaning",
+                      "scope_overgeneralization",
+                      "citation_mismatch",
+                      "strained_analogy",
+                      "unsupported_prediction",
+                      "unsupported_requirement",
+                      "unhelpful_expansion",
+                      "task_not_answered",
+                      "misleading_missingness"
+                    ]
+                  },
+                  "quote": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "location": {
+                    "type": "string"
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "dimensions": {
+                    "type": "array",
+                    "minItems": 1,
+                    "uniqueItems": true,
+                    "items": {
+                      "enum": [
+                        "understanding",
+                        "knowledge",
+                        "integration",
+                        "conversation",
+                        "helpfulness"
+                      ]
+                    }
+                  },
+                  "severity": {
+                    "enum": [
+                      "minor",
+                      "material",
+                      "critical"
+                    ]
+                  },
+                  "certainty": {
+                    "enum": [
+                      "confirmed",
+                      "suspected",
+                      "unknown"
+                    ]
+                  },
+                  "referenceIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "faithfulness": {
+              "type": "object",
+              "required": [
+                "method",
+                "evidenceScope",
+                "coverage",
+                "claims"
+              ],
+              "properties": {
+                "method": {
+                  "const": "all_citation_claims_plus_obvious_uncited_traditional_assertions"
+                },
+                "evidenceScope": {
+                  "type": "string"
+                },
+                "coverage": {
+                  "type": "object",
+                  "required": [
+                    "citationClaimOccurrencesTotal",
+                    "citationClaimOccurrencesReviewed",
+                    "traditionalAssertionsIdentified",
+                    "traditionalAssertionsReviewed",
+                    "uncitedTraditionalAssertionsIdentified",
+                    "uncitedTraditionalAssertionsReviewed",
+                    "uncitedDiscoveryExhaustive",
+                    "notes"
+                  ],
+                  "properties": {
+                    "citationClaimOccurrencesTotal": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "citationClaimOccurrencesReviewed": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "traditionalAssertionsIdentified": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "traditionalAssertionsReviewed": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "uncitedTraditionalAssertionsIdentified": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "uncitedTraditionalAssertionsReviewed": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "uncitedDiscoveryExhaustive": {
+                      "const": false
+                    },
+                    "notes": {
+                      "type": "string"
+                    }
+                  },
+                  "additionalProperties": false
+                },
+                "claims": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "claimId",
+                      "assertion",
+                      "quote",
+                      "location",
+                      "layer",
+                      "origin",
+                      "sourceIds",
+                      "supportLabel",
+                      "rationale",
+                      "contradiction",
+                      "quotationMatch"
+                    ],
+                    "properties": {
+                      "claimId": {
+                        "type": "string"
+                      },
+                      "assertion": {
+                        "type": "string"
+                      },
+                      "location": {
+                        "type": "string"
+                      },
+                      "layer": {
+                        "enum": [
+                          "quotation",
+                          "classical_interpretation",
+                          "attribution",
+                          "modern_analogy",
+                          "empirical_claim",
+                          "prediction"
+                        ]
+                      },
+                      "origin": {
+                        "enum": [
+                          "citation_claim",
+                          "uncited_traditional_assertion",
+                          "mixed_claim_part"
+                        ]
+                      },
+                      "sourceIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "supportLabel": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "enum": [
+                          "supported",
+                          "partial",
+                          "unsupported",
+                          "unknown",
+                          null
+                        ]
+                      },
+                      "rationale": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "evidenceQuote": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "contradiction": {
+                        "type": "boolean"
+                      },
+                      "quotationMatch": {
+                        "enum": [
+                          "exact",
+                          "normalized",
+                          "partial",
+                          "mismatch",
+                          "not_applicable",
+                          "unknown"
+                        ]
+                      },
+                      "excludedFromTraditionalDenominator": {
+                        "type": "boolean"
+                      },
+                      "exclusionReason": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "quote": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "Exact answer excerpt containing the checked assertion; keep assertion as the atomic proposition."
+                      }
+                    },
+                    "additionalProperties": false,
+                    "allOf": [
+                      {
+                        "if": {
+                          "properties": {
+                            "supportLabel": {
+                              "type": "null"
+                            }
+                          }
+                        },
+                        "then": {
+                          "required": [
+                            "excludedFromTraditionalDenominator",
+                            "exclusionReason"
+                          ],
+                          "properties": {
+                            "excludedFromTraditionalDenominator": {
+                              "const": true
+                            },
+                            "exclusionReason": {
+                              "type": "string",
+                              "minLength": 1
+                            },
+                            "layer": {
+                              "enum": [
+                                "modern_analogy",
+                                "empirical_claim",
+                                "prediction"
+                              ]
+                            }
+                          }
+                        },
+                        "else": {
+                          "properties": {
+                            "excludedFromTraditionalDenominator": {
+                              "const": false
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "if": {
+                          "properties": {
+                            "layer": {
+                              "enum": [
+                                "quotation",
+                                "classical_interpretation",
+                                "attribution"
+                              ]
+                            }
+                          }
+                        },
+                        "then": {
+                          "properties": {
+                            "supportLabel": {
+                              "enum": [
+                                "supported",
+                                "partial",
+                                "unsupported",
+                                "unknown"
+                              ]
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "additionalProperties": false
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "taskSuccess": {
+        "enum": [
+          true,
+          false,
+          "unknown"
+        ]
+      },
+      "taskSuccessReason": {
+        "type": "string",
+        "minLength": 1
+      },
+      "candidateTaskSuccess": {
+        "enum": [
+          true,
+          false,
+          "unknown",
+          null
+        ]
+      },
+      "candidateTaskSuccessReason": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "uncertainties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "additionalProperties": false
+  }
+}

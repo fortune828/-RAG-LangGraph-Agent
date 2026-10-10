@@ -1,0 +1,3205 @@
+{
+  "reviewer": {
+    "id": "formal-reviewer-a",
+    "type": "ai",
+    "expert": false,
+    "reviewerId": "formal-reviewer-a",
+    "kind": "AI",
+    "expertStatus": "non_expert",
+    "blind": true,
+    "independent": true
+  },
+  "rubricVersion": "1.0",
+  "reviewStatus": "complete_independent_ai_non_expert",
+  "results": [
+    {
+      "answerId": "Q630589e9e5ad",
+      "reviewer": {
+        "id": "formal-reviewer-a",
+        "type": "ai",
+        "expert": false,
+        "reviewerId": "formal-reviewer-a",
+        "kind": "AI",
+        "expertStatus": "non_expert",
+        "blind": true,
+        "independent": true
+      },
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "有坐下听的入口，但未解决到场联系主持人等关键不知如何加入，且无伤害保证不可靠。 已实质交付；局部问题未改变核心任务完成。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "采用听众欢迎纠正，但读诗类型及听诗目的未给。",
+              "evidence": [
+                {
+                  "quote": "对一场读诗会来说",
+                  "location": "paragraphs[1].text",
+                  "reason": "采用听众欢迎纠正，但读诗类型及听诗目的未给。"
+                }
+              ]
+            },
+            "knowledge": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "把柔履刚说应乾的特定关系泛化成柔顺即安全。",
+              "evidence": [
+                {
+                  "quote": "和悦地顺应，就能安然通过",
+                  "location": "paragraphs[0].text",
+                  "reason": "把柔履刚说应乾的特定关系泛化成柔顺即安全。"
+                }
+              ]
+            },
+            "integration": {
+              "value": 0,
+              "naReason": null,
+              "rationale": "直接以卦确认现实无伤害，后又以静卦不需改变，边界失当。",
+              "evidence": [
+                {
+                  "quote": "看起来有风险，实际上并无伤害",
+                  "location": "paragraphs[0].text",
+                  "reason": "直接以卦确认现实无伤害，后又以静卦不需改变，边界失当。"
+                }
+              ]
+            },
+            "conversation": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "语言清楚，认可听众参与。",
+              "evidence": [
+                {
+                  "quote": "你就是以听众的身份在场",
+                  "location": "paragraphs[1].text",
+                  "reason": "语言清楚，认可听众参与。"
+                }
+              ]
+            },
+            "helpfulness": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "有坐下听的入口，但未解决到场联系主持人等关键不知如何加入，且无伤害保证不可靠。",
+              "evidence": [
+                {
+                  "quote": "先找一个不显眼的位置坐下",
+                  "location": "paragraphs[2].text",
+                  "reason": "有坐下听的入口，但未解决到场联系主持人等关键不知如何加入，且无伤害保证不可靠。"
+                }
+              ]
+            }
+          },
+          "errors": [
+            {
+              "type": "fabricated_fact",
+              "quote": "对一场读诗会来说",
+              "location": "paragraphs[1].text",
+              "reason": "活动类型未给。",
+              "dimensions": [
+                "understanding"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "unsupported_prediction",
+              "quote": "看起来有风险，实际上并无伤害",
+              "location": "paragraphs[0].text",
+              "reason": "卦辞不能确认现实活动无伤害。",
+              "dimensions": [
+                "integration"
+              ],
+              "severity": "material",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 4,
+              "citationClaimOccurrencesReviewed": 4,
+              "traditionalAssertionsIdentified": 6,
+              "traditionalAssertionsReviewed": 6,
+              "uncitedTraditionalAssertionsIdentified": 2,
+              "uncitedTraditionalAssertionsReviewed": 2,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐一核查citation.claim occurrence并补明显未引文义、条件及占法；现代命题单独排除。unknown为已检查而无法定论；参考Only不视为生成已见。"
+            },
+            "claims": [
+              {
+                "claimId": "Q630589e9e5ad.delivered.claim001",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "履卦卦辞说“履虎尾，不咥人，亨”，踩在老虎尾巴上却没有被咬，反而通达",
+                "quote": "履卦卦辞说“履虎尾，不咥人，亨”，踩在老虎尾巴上却没有被咬，反而通达",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-10-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "履虎尾，不咥人，亨"
+              },
+              {
+                "claimId": "Q630589e9e5ad.delivered.claim002",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "彖传解释为“柔履刚也。说而应乎乾”，即以柔和的方式去应对看似刚强的场合，和悦地顺应",
+                "quote": "彖传解释为“柔履刚也。说而应乎乾”，即以柔和的方式去应对看似刚强的场合，和悦地顺应",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-10-tuan"
+                ],
+                "supportLabel": "partial",
+                "rationale": "原句真实，但看似强场合是扩大解释，未保留乾的对象。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "柔履刚也。说而应乎乾"
+              },
+              {
+                "claimId": "Q630589e9e5ad.delivered.claim003",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "大象传讲“上天下泽，履。君子以辨上下，定民志”。对一场读诗会来说，“辨上下”可以理解为先认清自己的位置",
+                "quote": "大象传讲“上天下泽，履。君子以辨上下，定民志”。对一场读诗会来说，“辨上下”可以理解为先认清自己的位置",
+                "location": "paragraphs[1].text",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-10-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "命题对象是本轮现实情境，属于应用或借喻；不因古文未逐字说现代事而判为传统不支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "上天下泽，履。君子以辨上下，定民志",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。"
+              },
+              {
+                "claimId": "Q630589e9e5ad.delivered.claim004",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "所引履·大象原句：上天下泽，履。君子以辨上下，定民志",
+                "quote": "上天下泽，履。君子以辨上下，定民志",
+                "location": "paragraphs[1].text",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-10-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "独立核对文字与出处，不将现代命题算作古籍直接支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "上天下泽，履。君子以辨上下，定民志"
+              },
+              {
+                "claimId": "Q630589e9e5ad.delivered.claim005",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "这和悦的回应就是“说而应乎乾”",
+                "quote": "这和悦的回应就是“说而应乎乾”",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-10-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "命题对象是本轮现实情境，属于应用或借喻；不因古文未逐字说现代事而判为传统不支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "说而应乎乾",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。"
+              },
+              {
+                "claimId": "Q630589e9e5ad.delivered.claim006",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "所引履·彖传原句：说而应乎乾",
+                "quote": "说而应乎乾",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-10-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "独立核对文字与出处，不将现代命题算作古籍直接支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "说而应乎乾"
+              },
+              {
+                "claimId": "Q630589e9e5ad.delivered.claim007",
+                "occurrenceIds": [],
+                "assertion": "说应乾保证所有顺应安然",
+                "quote": "和悦地顺应，就能安然通过",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-10-tuan"
+                ],
+                "supportLabel": "unsupported",
+                "rationale": "特定爻卦条件不能成普遍现实保证。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available"
+              },
+              {
+                "claimId": "Q630589e9e5ad.delivered.claim008",
+                "occurrenceIds": [],
+                "assertion": "静卦意味着不改变参与方式",
+                "quote": "没有动爻，意味着你不需要刻意改变自己的参与方式",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "无占法支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available"
+              }
+            ],
+            "supportCounts": {
+              "supported": 3,
+              "partial": 1,
+              "unsupported": 1,
+              "unknown": 1
+            },
+            "traditionalDenominator": 6,
+            "modernExcludedCount": 2
+          }
+        }
+      ],
+      "uncertainties": [
+        "静卦意味着不改变参与方式：无占法支持。"
+      ]
+    },
+    {
+      "answerId": "Qd90ca195b0c6",
+      "reviewer": {
+        "id": "formal-reviewer-a",
+        "type": "ai",
+        "expert": false,
+        "reviewerId": "formal-reviewer-a",
+        "kind": "AI",
+        "expertStatus": "non_expert",
+        "blind": true,
+        "independent": true
+      },
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "负责人、授权、联络、时间、应急构成有效检查。 已实质交付；局部问题未改变核心任务完成。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "抓住两月及待安排事项。",
+              "evidence": [
+                {
+                  "quote": "植物和两项日常事务",
+                  "location": "paragraphs[1].text",
+                  "reason": "抓住两月及待安排事项。"
+                }
+              ]
+            },
+            "knowledge": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "小亨被释成此人必成行有收获，原义被现实化。",
+              "evidence": [
+                {
+                  "quote": "“小亨”意味着你可以成行、有收获",
+                  "location": "paragraphs[0].text",
+                  "reason": "小亨被释成此人必成行有收获，原义被现实化。"
+                }
+              ]
+            },
+            "integration": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "准备清单有根据，开头仍由卦保证时机与收获。",
+              "evidence": [
+                {
+                  "quote": "这次驻留的时机本身是通的",
+                  "location": "paragraphs[0].text",
+                  "reason": "准备清单有根据，开头仍由卦保证时机与收获。"
+                }
+              ]
+            },
+            "conversation": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "准备无需完美的判断清楚，贴合问题。",
+              "evidence": [
+                {
+                  "quote": "而不是把所有牵挂清零",
+                  "location": "paragraphs[0].text",
+                  "reason": "准备无需完美的判断清楚，贴合问题。"
+                }
+              ]
+            },
+            "helpfulness": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "负责人、授权、联络、时间、应急构成有效检查。",
+              "evidence": [
+                {
+                  "quote": "负责人、时间点和应急备案",
+                  "location": "paragraphs[2].text",
+                  "reason": "负责人、授权、联络、时间、应急构成有效检查。"
+                }
+              ]
+            }
+          },
+          "errors": [
+            {
+              "type": "unsupported_prediction",
+              "quote": "你可以成行、有收获",
+              "location": "paragraphs[0].text",
+              "reason": "无法由卦确定实际成行收获。",
+              "dimensions": [
+                "integration"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "scope_overgeneralization",
+              "quote": "“小亨”意味着你可以成行、有收获",
+              "location": "paragraphs[0].text",
+              "reason": "把传统断语直接定义为本次实际结果。",
+              "dimensions": [
+                "knowledge"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 3,
+              "citationClaimOccurrencesReviewed": 3,
+              "traditionalAssertionsIdentified": 4,
+              "traditionalAssertionsReviewed": 4,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐一核查citation.claim occurrence并补明显未引文义、条件及占法；现代命题单独排除。unknown为已检查而无法定论；参考Only不视为生成已见。"
+            },
+            "claims": [
+              {
+                "claimId": "Qd90ca195b0c6.delivered.claim001",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "小亨，旅贞吉",
+                "quote": "小亨，旅贞吉",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-56-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "小亨，旅贞吉。"
+              },
+              {
+                "claimId": "Qd90ca195b0c6.delivered.claim002",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "柔得中乎外而顺乎刚，止而丽乎明，是以‘小亨，旅贞吉’也。旅之时义大矣哉！",
+                "quote": "柔得中乎外而顺乎刚，止而丽乎明，是以‘小亨，旅贞吉’也。旅之时义大矣哉！",
+                "location": "paragraphs[1].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-56-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "柔得中乎外而顺乎刚，止而丽乎明，是以“小亨，旅贞吉”也。旅之时义大矣哉！"
+              },
+              {
+                "claimId": "Qd90ca195b0c6.delivered.claim003",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "山上有火，旅。君子以明慎用刑而不留狱",
+                "quote": "山上有火，旅。君子以明慎用刑而不留狱",
+                "location": "paragraphs[2].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-56-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "山上有火，旅。君子以明慎用刑而不留狱。"
+              },
+              {
+                "claimId": "Qd90ca195b0c6.delivered.claim004",
+                "occurrenceIds": [],
+                "assertion": "小亨定义为此人可成行有收获",
+                "quote": "“小亨”意味着你可以成行、有收获",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-56-judgment"
+                ],
+                "supportLabel": "partial",
+                "rationale": "小通达可概括，具体成行和收获无证。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "小亨，旅贞吉。"
+              },
+              {
+                "claimId": "Qd90ca195b0c6.delivered.claim005",
+                "occurrenceIds": [],
+                "assertion": "明慎不留狱借为事务安排",
+                "quote": "可借来检查准备",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-56-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "明确借来，非否定刑狱本义。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。"
+              }
+            ],
+            "supportCounts": {
+              "supported": 3,
+              "partial": 1
+            },
+            "traditionalDenominator": 4,
+            "modernExcludedCount": 1
+          }
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "Qd89ffc18cbb9",
+      "reviewer": {
+        "id": "formal-reviewer-a",
+        "type": "ai",
+        "expert": false,
+        "reviewerId": "formal-reviewer-a",
+        "kind": "AI",
+        "expertStatus": "non_expert",
+        "blind": true,
+        "independent": true
+      },
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "给标准、期限、书面方案、分区与退出条件，充分帮助。 已实质交付；局部问题未改变核心任务完成。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "采用最新纠正，第三方同学为可选提案未说定角色。",
+              "evidence": [
+                {
+                  "quote": "真正卡住的是作品摆放意见不同",
+                  "location": "paragraphs[0].text",
+                  "reason": "采用最新纠正，第三方同学为可选提案未说定角色。"
+                }
+              ]
+            },
+            "knowledge": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "申明行动原句准确，展陈使用有明示应用边界。",
+              "evidence": [
+                {
+                  "quote": "重巽以申命",
+                  "location": "paragraphs[1].text",
+                  "reason": "申明行动原句准确，展陈使用有明示应用边界。"
+                }
+              ]
+            },
+            "integration": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "实际机制可用，但静卦用于排除必须取消的象，局部用象背书。",
+              "evidence": [
+                {
+                  "quote": "整体不是“必须立刻取消”的象",
+                  "location": "paragraphs[0].text",
+                  "reason": "实际机制可用，但静卦用于排除必须取消的象，局部用象背书。"
+                }
+              ]
+            },
+            "conversation": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "承接新事实并说明非保证，清楚尊重。",
+              "evidence": [
+                {
+                  "quote": "这不是对未来结果的保证",
+                  "location": "paragraphs[0].text",
+                  "reason": "承接新事实并说明非保证，清楚尊重。"
+                }
+              ]
+            },
+            "helpfulness": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "给标准、期限、书面方案、分区与退出条件，充分帮助。",
+              "evidence": [
+                {
+                  "quote": "开一次只谈摆放的会，形成书面方案",
+                  "location": "paragraphs[2].text",
+                  "reason": "给标准、期限、书面方案、分区与退出条件，充分帮助。"
+                }
+              ]
+            }
+          },
+          "errors": [
+            {
+              "type": "strained_analogy",
+              "quote": "整体不是“必须立刻取消”的象",
+              "location": "paragraphs[0].text",
+              "reason": "无动爻不能判现实取消必要性。",
+              "dimensions": [
+                "integration"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 4,
+              "citationClaimOccurrencesReviewed": 4,
+              "traditionalAssertionsIdentified": 6,
+              "traditionalAssertionsReviewed": 6,
+              "uncitedTraditionalAssertionsIdentified": 2,
+              "uncitedTraditionalAssertionsReviewed": 2,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐一核查citation.claim occurrence并补明显未引文义、条件及占法；现代命题单独排除。unknown为已检查而无法定论；参考Only不视为生成已见。"
+            },
+            "claims": [
+              {
+                "claimId": "Qd89ffc18cbb9.delivered.claim001",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "小亨，利有攸往，利见大人",
+                "quote": "小亨，利有攸往，利见大人",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-57-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "小亨，利有攸往，利见大人"
+              },
+              {
+                "claimId": "Qd89ffc18cbb9.delivered.claim002",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "重巽以申命",
+                "quote": "重巽以申命",
+                "location": "paragraphs[1].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-57-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "重巽以申命"
+              },
+              {
+                "claimId": "Qd89ffc18cbb9.delivered.claim003",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "刚巽乎中正而志行",
+                "quote": "刚巽乎中正而志行",
+                "location": "paragraphs[1].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-57-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "刚巽乎中正而志行"
+              },
+              {
+                "claimId": "Qd89ffc18cbb9.delivered.claim004",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "随风，巽。君子以申命行事",
+                "quote": "随风，巽。君子以申命行事",
+                "location": "paragraphs[2].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-57-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "随风，巽。君子以申命行事"
+              },
+              {
+                "claimId": "Qd89ffc18cbb9.delivered.claim005",
+                "occurrenceIds": [],
+                "assertion": "申命行事强调申明并实施",
+                "quote": "反复申明共同命令、再把事做出来",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-57-tuan",
+                  "zy-57-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "重巽申命与行事支持基本概括，现代共同协商为应用。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "重巽以申命。刚巽乎中正而志行，柔皆顺乎刚，是以“小亨，利有攸往，利见大人”。"
+              },
+              {
+                "claimId": "Qd89ffc18cbb9.delivered.claim006",
+                "occurrenceIds": [],
+                "assertion": "静卦可否定取消转折",
+                "quote": "无动爻，整体不是“必须立刻取消”的象",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "未给该占法规则。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available"
+              }
+            ],
+            "supportCounts": {
+              "supported": 5,
+              "unknown": 1
+            },
+            "traditionalDenominator": 6,
+            "modernExcludedCount": 0
+          }
+        }
+      ],
+      "uncertainties": [
+        "静卦可否定取消转折：未给该占法规则。"
+      ]
+    },
+    {
+      "answerId": "Qd92d8201be81",
+      "reviewer": {
+        "id": "formal-reviewer-a",
+        "type": "ai",
+        "expert": false,
+        "reviewerId": "formal-reviewer-a",
+        "kind": "AI",
+        "expertStatus": "non_expert",
+        "blind": true,
+        "independent": true
+      },
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "找主持人确认入场方式和听众回应，解决不知道如何加入。 已实质交付；局部问题未改变核心任务完成。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "采纳无需朗读，但把活动擅定诗会。",
+              "evidence": [
+                {
+                  "quote": "关键看你要的是诗还是社交",
+                  "location": "paragraphs[3].text",
+                  "reason": "采纳无需朗读，但把活动擅定诗会。"
+                }
+              ]
+            },
+            "knowledge": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "辨上下由秩序角色转为签到进出问题且称就是所说，原义范围扩大。",
+              "evidence": [
+                {
+                  "quote": "这些不是麻烦，而是履卦所说的“辨上下”",
+                  "location": "paragraphs[1].text",
+                  "reason": "辨上下由秩序角色转为签到进出问题且称就是所说，原义范围扩大。"
+                }
+              ]
+            },
+            "integration": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "有现实边界，末尾却用不咥人推受伤概率，抵消部分谨慎。",
+              "evidence": [
+                {
+                  "quote": "大概率不会因陌生而受伤",
+                  "location": "paragraphs[3].text",
+                  "reason": "有现实边界，末尾却用不咥人推受伤概率，抵消部分谨慎。"
+                }
+              ]
+            },
+            "conversation": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "实际入口清楚，表达尊重。",
+              "evidence": [
+                {
+                  "quote": "现场是否自在仍受主持风格、人数和你当天状态影响",
+                  "location": "paragraphs[0].text",
+                  "reason": "实际入口清楚，表达尊重。"
+                }
+              ]
+            },
+            "helpfulness": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "找主持人确认入场方式和听众回应，解决不知道如何加入。",
+              "evidence": [
+                {
+                  "quote": "到场先签到还是直接入座",
+                  "location": "paragraphs[1].text",
+                  "reason": "找主持人确认入场方式和听众回应，解决不知道如何加入。"
+                }
+              ]
+            }
+          },
+          "errors": [
+            {
+              "type": "fabricated_fact",
+              "quote": "关键看你要的是诗还是社交",
+              "location": "paragraphs[3].text",
+              "reason": "未给诗会类型。",
+              "dimensions": [
+                "understanding"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "unsupported_prediction",
+              "quote": "大概率不会因陌生而受伤",
+              "location": "paragraphs[3].text",
+              "reason": "经文不能推出现实伤害概率。",
+              "dimensions": [
+                "integration"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 5,
+              "citationClaimOccurrencesReviewed": 5,
+              "traditionalAssertionsIdentified": 7,
+              "traditionalAssertionsReviewed": 7,
+              "uncitedTraditionalAssertionsIdentified": 2,
+              "uncitedTraditionalAssertionsReviewed": 2,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐一核查citation.claim occurrence并补明显未引文义、条件及占法；现代命题单独排除。unknown为已检查而无法定论；参考Only不视为生成已见。"
+            },
+            "claims": [
+              {
+                "claimId": "Qd92d8201be81.delivered.claim001",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "有紧张不等于有危险",
+                "quote": "有紧张不等于有危险",
+                "location": "paragraphs[0].text",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-10-judgment"
+                ],
+                "supportLabel": null,
+                "rationale": "命题对象是本轮现实情境，属于应用或借喻；不因古文未逐字说现代事而判为传统不支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "履虎尾，不咥人，亨",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。"
+              },
+              {
+                "claimId": "Qd92d8201be81.delivered.claim002",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "所引履·卦辞原句：履虎尾，不咥人，亨",
+                "quote": "履虎尾，不咥人，亨",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-10-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "独立核对文字与出处，不将现代命题算作古籍直接支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "履虎尾，不咥人，亨"
+              },
+              {
+                "claimId": "Qd92d8201be81.delivered.claim003",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "以柔顺、和悦去应对刚强的场合，反而能通行",
+                "quote": "以柔顺、和悦去应对刚强的场合，反而能通行",
+                "location": "paragraphs[0].text",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-10-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "命题对象是本轮现实情境，属于应用或借喻；不因古文未逐字说现代事而判为传统不支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "柔履刚也。说而应乎乾",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。"
+              },
+              {
+                "claimId": "Qd92d8201be81.delivered.claim004",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "所引履·彖传原句：柔履刚也。说而应乎乾",
+                "quote": "柔履刚也。说而应乎乾",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-10-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "独立核对文字与出处，不将现代命题算作古籍直接支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "柔履刚也。说而应乎乾"
+              },
+              {
+                "claimId": "Qd92d8201be81.delivered.claim005",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "先辨清上下、角色和规则，心志就容易安定",
+                "quote": "先辨清上下、角色和规则，心志就容易安定",
+                "location": "paragraphs[1].text",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-10-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "命题对象是本轮现实情境，属于应用或借喻；不因古文未逐字说现代事而判为传统不支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "上天下泽，履。君子以辨上下，定民志。",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。"
+              },
+              {
+                "claimId": "Qd92d8201be81.delivered.claim006",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "所引履·大象原句：上天下泽，履。君子以辨上下，定民志。",
+                "quote": "上天下泽，履。君子以辨上下，定民志。",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-10-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "独立核对文字与出处，不将现代命题算作古籍直接支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "上天下泽，履。君子以辨上下，定民志。"
+              },
+              {
+                "claimId": "Qd92d8201be81.delivered.claim007",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "以和悦去应对",
+                "quote": "以和悦去应对",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-10-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "命题对象是本轮现实情境，属于应用或借喻；不因古文未逐字说现代事而判为传统不支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "说而应乎乾",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。"
+              },
+              {
+                "claimId": "Qd92d8201be81.delivered.claim008",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "所引履·彖传原句：说而应乎乾",
+                "quote": "说而应乎乾",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-10-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "独立核对文字与出处，不将现代命题算作古籍直接支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "说而应乎乾"
+              },
+              {
+                "claimId": "Qd92d8201be81.delivered.claim009",
+                "occurrenceIds": [
+                  "delivered.p3.c0"
+                ],
+                "assertion": "它不保证你一定舒服，但“不咥人，亨”提示大概率不会因陌生而受伤",
+                "quote": "它不保证你一定舒服，但“不咥人，亨”提示大概率不会因陌生而受伤",
+                "location": "paragraphs[3].text",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-10-judgment"
+                ],
+                "supportLabel": null,
+                "rationale": "命题对象是本轮现实情境，属于应用或借喻；不因古文未逐字说现代事而判为传统不支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "不咥人，亨",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。"
+              },
+              {
+                "claimId": "Qd92d8201be81.delivered.claim010",
+                "occurrenceIds": [
+                  "delivered.p3.c0"
+                ],
+                "assertion": "所引履·卦辞原句：不咥人，亨",
+                "quote": "不咥人，亨",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-10-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "独立核对文字与出处，不将现代命题算作古籍直接支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "不咥人，亨"
+              },
+              {
+                "claimId": "Qd92d8201be81.delivered.claim011",
+                "occurrenceIds": [],
+                "assertion": "辨上下原义就是签到进出等流程",
+                "quote": "这些不是麻烦，而是履卦所说的“辨上下”",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-10-xiang"
+                ],
+                "supportLabel": "partial",
+                "rationale": "辨秩序有据，具体签到等属现代类比，不能等同原义。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "上天下泽，履。君子以辨上下，定民志。"
+              },
+              {
+                "claimId": "Qd92d8201be81.delivered.claim012",
+                "occurrenceIds": [],
+                "assertion": "静卦意味着不求大变",
+                "quote": "说明这次不必求大变",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "无相应占法证据。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available"
+              }
+            ],
+            "supportCounts": {
+              "supported": 5,
+              "partial": 1,
+              "unknown": 1
+            },
+            "traditionalDenominator": 7,
+            "modernExcludedCount": 5
+          }
+        }
+      ],
+      "uncertainties": [
+        "静卦意味着不求大变：无相应占法证据。"
+      ]
+    },
+    {
+      "answerId": "Q8670c770235e",
+      "reviewer": {
+        "id": "formal-reviewer-a",
+        "type": "ai",
+        "expert": false,
+        "reviewerId": "formal-reviewer-a",
+        "kind": "AI",
+        "expertStatus": "non_expert",
+        "blind": true,
+        "independent": true
+      },
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "定结束时间与一件小事、不强加后续目标，实际帮助充分。 已实质交付；局部问题未改变核心任务完成。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "采用不补偿不赚钱，末段仍认定过去可惜未给。",
+              "evidence": [
+                {
+                  "quote": "尊重过去的可惜",
+                  "location": "paragraphs[3].text",
+                  "reason": "采用不补偿不赚钱，末段仍认定过去可惜未给。"
+                }
+              ]
+            },
+            "knowledge": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "下观而化转向本人看手感，并说不是向外展示，与在上供下观的文义关系错位。",
+              "evidence": [
+                {
+                  "quote": "这里的关键不是向外展示",
+                  "location": "paragraphs[1].text",
+                  "reason": "下观而化转向本人看手感，并说不是向外展示，与在上供下观的文义关系错位。"
+                }
+              ]
+            },
+            "integration": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "具体小试可行，省方省己和下观手感对应牵强。",
+              "evidence": [
+                {
+                  "quote": "一次“下观”",
+                  "location": "paragraphs[1].text",
+                  "reason": "具体小试可行，省方省己和下观手感对应牵强。"
+                }
+              ]
+            },
+            "conversation": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "重开动机省察及过去可惜，偏离只想下午摸摸的收窄。",
+              "evidence": [
+                {
+                  "quote": "先省察自己为什么想起它",
+                  "location": "paragraphs[2].text",
+                  "reason": "重开动机省察及过去可惜，偏离只想下午摸摸的收窄。"
+                }
+              ]
+            },
+            "helpfulness": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "定结束时间与一件小事、不强加后续目标，实际帮助充分。",
+              "evidence": [
+                {
+                  "quote": "只做一件小事，比如磨一刀、描一稿、刻几条线",
+                  "location": "paragraphs[2].text",
+                  "reason": "定结束时间与一件小事、不强加后续目标，实际帮助充分。"
+                }
+              ]
+            }
+          },
+          "errors": [
+            {
+              "type": "fabricated_fact",
+              "quote": "尊重过去的可惜",
+              "location": "paragraphs[3].text",
+              "reason": "未说过去可惜，旧助手推测不构成事实。",
+              "dimensions": [
+                "understanding"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "wrong_classical_meaning",
+              "quote": "这里的关键不是向外展示",
+              "location": "paragraphs[1].text",
+              "reason": "大观在上、下观而化、设教天下服并非纯自我观察。",
+              "dimensions": [
+                "knowledge"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "unhelpful_expansion",
+              "quote": "先省察自己为什么想起它、想起时身体和情绪是什么反应",
+              "location": "paragraphs[2].text",
+              "reason": "用户已明确只要动手体验，新增动机剖析无必要。",
+              "dimensions": [
+                "conversation"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 4,
+              "citationClaimOccurrencesReviewed": 4,
+              "traditionalAssertionsIdentified": 6,
+              "traditionalAssertionsReviewed": 6,
+              "uncitedTraditionalAssertionsIdentified": 2,
+              "uncitedTraditionalAssertionsReviewed": 2,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐一核查citation.claim occurrence并补明显未引文义、条件及占法；现代命题单独排除。unknown为已检查而无法定论；参考Only不视为生成已见。"
+            },
+            "claims": [
+              {
+                "claimId": "Q8670c770235e.delivered.claim001",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "观卦辞说“盥而不荐，有孚颙若”，可理解为在正式献祭前先洗手净心",
+                "quote": "观卦辞说“盥而不荐，有孚颙若”，可理解为在正式献祭前先洗手净心",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-20-judgment"
+                ],
+                "supportLabel": "unknown",
+                "rationale": "盥荐仪节缺注释，非专家不把洗手净心完全核定。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "盥而不荐，有孚颙若。"
+              },
+              {
+                "claimId": "Q8670c770235e.delivered.claim002",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "彖传说“大观在上，顺而巽，中正以观天下”",
+                "quote": "彖传说“大观在上，顺而巽，中正以观天下”",
+                "location": "paragraphs[1].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-20-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "大观在上，顺而巽，中正以观天下"
+              },
+              {
+                "claimId": "Q8670c770235e.delivered.claim003",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "并说“下观而化也”",
+                "quote": "并说“下观而化也”",
+                "location": "paragraphs[1].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-20-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "下观而化也"
+              },
+              {
+                "claimId": "Q8670c770235e.delivered.claim004",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "大象说“风行地上，观。先王以省方观民设教。”",
+                "quote": "大象说“风行地上，观。先王以省方观民设教。”",
+                "location": "paragraphs[2].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-20-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "风行地上，观。先王以省方观民设教。"
+              },
+              {
+                "claimId": "Q8670c770235e.delivered.claim005",
+                "occurrenceIds": [],
+                "assertion": "观彖传重点并非向外示范",
+                "quote": "这里的关键不是向外展示",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-20-tuan"
+                ],
+                "supportLabel": "unsupported",
+                "rationale": "在上、下观而化及设教天下服支持向下示范，排除展示不合。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available"
+              },
+              {
+                "claimId": "Q8670c770235e.delivered.claim006",
+                "occurrenceIds": [],
+                "assertion": "下观借自己观察手感",
+                "quote": "把它当作一次“下观”",
+                "location": "paragraphs[1].text",
+                "layer": "modern_analogy",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-20-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "现代配词结构有限，不再独立当传统释义。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。"
+              },
+              {
+                "claimId": "Q8670c770235e.delivered.claim007",
+                "occurrenceIds": [],
+                "assertion": "静卦无必须转折",
+                "quote": "没有显示必须推动的转折",
+                "location": "paragraphs[3].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "无该占法依据。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available"
+              }
+            ],
+            "supportCounts": {
+              "unknown": 2,
+              "supported": 3,
+              "unsupported": 1
+            },
+            "traditionalDenominator": 6,
+            "modernExcludedCount": 1
+          }
+        }
+      ],
+      "uncertainties": [
+        "观卦辞说“盥而不荐，有孚颙若”，可理解为在正式献祭前先洗手净心：盥荐仪节缺注释，非专家不把洗手净心完全核定。",
+        "静卦无必须转折：无该占法依据。"
+      ]
+    },
+    {
+      "answerId": "Q10636dd76f9a",
+      "reviewer": {
+        "id": "formal-reviewer-a",
+        "type": "ai",
+        "expert": false,
+        "reviewerId": "formal-reviewer-a",
+        "kind": "AI",
+        "expertStatus": "non_expert",
+        "blind": true,
+        "independent": true
+      },
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "安全起点、带谱、录音、小范围试奏实用。 已实质交付；局部问题未改变核心任务完成。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "采用实际生日演奏需求，缺爻辞陈述与本答证据相符。",
+              "evidence": [
+                {
+                  "quote": "本轮可用的归妹资料只有卦辞、彖传和大象",
+                  "location": "paragraphs[0].text",
+                  "reason": "采用实际生日演奏需求，缺爻辞陈述与本答证据相符。"
+                }
+              ]
+            },
+            "knowledge": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "引文归属准确，婚配意象转生日明确为借用。",
+              "evidence": [
+                {
+                  "quote": "可借来理解生日聚会的性质",
+                  "location": "paragraphs[2].text",
+                  "reason": "引文归属准确，婚配意象转生日明确为借用。"
+                }
+              ]
+            },
+            "integration": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "位不当配场景变化、静卦无自动转向过强；模拟与退路有现实依据。",
+              "evidence": [
+                {
+                  "quote": "位置和情境发生了变化",
+                  "location": "paragraphs[0].text",
+                  "reason": "位不当配场景变化、静卦无自动转向过强；模拟与退路有现实依据。"
+                }
+              ]
+            },
+            "conversation": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "给出低压力尝试办法，未强迫。",
+              "evidence": [
+                {
+                  "quote": "把公开弹奏改为“弹给表哥听”的小范围呈现",
+                  "location": "paragraphs[3].text",
+                  "reason": "给出低压力尝试办法，未强迫。"
+                }
+              ]
+            },
+            "helpfulness": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "安全起点、带谱、录音、小范围试奏实用。",
+              "evidence": [
+                {
+                  "quote": "只弹一小段、放谱架、或先录一版备用",
+                  "location": "paragraphs[2].text",
+                  "reason": "安全起点、带谱、录音、小范围试奏实用。"
+                }
+              ]
+            }
+          },
+          "errors": [
+            {
+              "type": "strained_analogy",
+              "quote": "对应到你身上，就是从“只自己练”到“公开聚会弹”之间，位置和情境发生了变化",
+              "location": "paragraphs[0].text",
+              "reason": "爻位不当不等同场景转换，等同过强。",
+              "dimensions": [
+                "integration"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 7,
+              "citationClaimOccurrencesReviewed": 7,
+              "traditionalAssertionsIdentified": 9,
+              "traditionalAssertionsReviewed": 9,
+              "uncitedTraditionalAssertionsIdentified": 2,
+              "uncitedTraditionalAssertionsReviewed": 2,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐一核查citation.claim occurrence并补明显未引文义、条件及占法；现代命题单独排除。unknown为已检查而无法定论；参考Only不视为生成已见。"
+            },
+            "claims": [
+              {
+                "claimId": "Q10636dd76f9a.delivered.claim001",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "归妹卦辞说“征凶，无攸利”",
+                "quote": "归妹卦辞说“征凶，无攸利”",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-54-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "征凶，无攸利。"
+              },
+              {
+                "claimId": "Q10636dd76f9a.delivered.claim002",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "彖传也说“说以动，所归妹也”",
+                "quote": "彖传也说“说以动，所归妹也”",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-54-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "说以动，所归妹也"
+              },
+              {
+                "claimId": "Q10636dd76f9a.delivered.claim003",
+                "occurrenceIds": [
+                  "delivered.p0.c2"
+                ],
+                "assertion": "但同一段又说“位不当也”",
+                "quote": "但同一段又说“位不当也”",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-54-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "位不当也"
+              },
+              {
+                "claimId": "Q10636dd76f9a.delivered.claim004",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "大象说“君子以永终知敝”",
+                "quote": "大象说“君子以永终知敝”",
+                "location": "paragraphs[1].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-54-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "君子以永终知敝"
+              },
+              {
+                "claimId": "Q10636dd76f9a.delivered.claim005",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "归妹彖传说“归妹，天地之大义也”",
+                "quote": "归妹彖传说“归妹，天地之大义也”",
+                "location": "paragraphs[2].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-54-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "归妹，天地之大义也"
+              },
+              {
+                "claimId": "Q10636dd76f9a.delivered.claim006",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "和“人之终始也”",
+                "quote": "和“人之终始也”",
+                "location": "paragraphs[2].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-54-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "人之终始也"
+              },
+              {
+                "claimId": "Q10636dd76f9a.delivered.claim007",
+                "occurrenceIds": [
+                  "delivered.p2.c2"
+                ],
+                "assertion": "把“征凶，无攸利”当作对“硬撑完整正式演出”的警告",
+                "quote": "把“征凶，无攸利”当作对“硬撑完整正式演出”的警告",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-54-judgment"
+                ],
+                "supportLabel": null,
+                "rationale": "命题对象是本轮现实情境，属于应用或借喻；不因古文未逐字说现代事而判为传统不支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "征凶，无攸利",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。"
+              },
+              {
+                "claimId": "Q10636dd76f9a.delivered.claim008",
+                "occurrenceIds": [
+                  "delivered.p2.c2"
+                ],
+                "assertion": "所引归妹·卦辞原句：征凶，无攸利",
+                "quote": "征凶，无攸利",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-54-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "独立核对文字与出处，不将现代命题算作古籍直接支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "征凶，无攸利"
+              },
+              {
+                "claimId": "Q10636dd76f9a.delivered.claim009",
+                "occurrenceIds": [],
+                "assertion": "静卦意味着格局不自行转向",
+                "quote": "说明当前格局没有自动转向",
+                "location": "paragraphs[3].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "无该占法依据。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available"
+              },
+              {
+                "claimId": "Q10636dd76f9a.delivered.claim010",
+                "occurrenceIds": [],
+                "assertion": "永终知敝启发长远预案",
+                "quote": "从想要的圆满结果反推可能的弊端",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-54-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "永终知敝可支持考虑结果弊端的基本启发，不证明具体演奏风险。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "泽上有雷，归妹。君子以永终知敝。"
+              },
+              {
+                "claimId": "Q10636dd76f9a.delivered.claim011",
+                "occurrenceIds": [],
+                "assertion": "归妹人之终始借生日联结",
+                "quote": "它是情感联结的场合，不是考级或正式音乐会",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-54-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "明确借用，不当传统婚配对象被改写。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。"
+              }
+            ],
+            "supportCounts": {
+              "supported": 8,
+              "unknown": 1
+            },
+            "traditionalDenominator": 9,
+            "modernExcludedCount": 2
+          }
+        }
+      ],
+      "uncertainties": [
+        "静卦意味着格局不自行转向：无该占法依据。"
+      ]
+    },
+    {
+      "answerId": "Q75872da845df",
+      "reviewer": {
+        "id": "formal-reviewer-a",
+        "type": "ai",
+        "expert": false,
+        "reviewerId": "formal-reviewer-a",
+        "kind": "AI",
+        "expertStatus": "non_expert",
+        "blind": true,
+        "independent": true
+      },
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "给简单对象、明暗大形和十分钟收笔，完成需求。 已实质交付；局部问题未改变核心任务完成。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "采用十分钟日落简工具。",
+              "evidence": [
+                {
+                  "quote": "铅笔小本子",
+                  "location": "paragraphs[1].text",
+                  "reason": "采用十分钟日落简工具。"
+                }
+              ]
+            },
+            "knowledge": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "昼日三接的接见被改成普遍接续行动。",
+              "evidence": [
+                {
+                  "quote": "重点在白天可以多次接续、行动",
+                  "location": "paragraphs[2].text",
+                  "reason": "昼日三接的接见被改成普遍接续行动。"
+                }
+              ]
+            },
+            "integration": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "速写方案现实可行，但静卦无阻碍背书出门。",
+              "evidence": [
+                {
+                  "quote": "说明卦象没有给出转向或阻碍，值得去",
+                  "location": "paragraphs[2].text",
+                  "reason": "速写方案现实可行，但静卦无阻碍背书出门。"
+                }
+              ]
+            },
+            "conversation": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "回应小任务，收束明确。",
+              "evidence": [
+                {
+                  "quote": "不必求完整作品",
+                  "location": "paragraphs[1].text",
+                  "reason": "回应小任务，收束明确。"
+                }
+              ]
+            },
+            "helpfulness": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "给简单对象、明暗大形和十分钟收笔，完成需求。",
+              "evidence": [
+                {
+                  "quote": "先定大形，再补几笔暗部",
+                  "location": "paragraphs[2].text",
+                  "reason": "给简单对象、明暗大形和十分钟收笔，完成需求。"
+                }
+              ]
+            }
+          },
+          "errors": [
+            {
+              "type": "wrong_classical_meaning",
+              "quote": "重点在白天可以多次接续、行动",
+              "location": "paragraphs[2].text",
+              "reason": "接见含义被泛化成任意接续行动。",
+              "dimensions": [
+                "knowledge"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "strained_analogy",
+              "quote": "说明卦象没有给出转向或阻碍，值得去",
+              "location": "paragraphs[2].text",
+              "reason": "静卦不证明现实无阻碍或值得。",
+              "dimensions": [
+                "integration"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 3,
+              "citationClaimOccurrencesReviewed": 3,
+              "traditionalAssertionsIdentified": 5,
+              "traditionalAssertionsReviewed": 5,
+              "uncitedTraditionalAssertionsIdentified": 2,
+              "uncitedTraditionalAssertionsReviewed": 2,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐一核查citation.claim occurrence并补明显未引文义、条件及占法；现代命题单独排除。unknown为已检查而无法定论；参考Only不视为生成已见。"
+            },
+            "claims": [
+              {
+                "claimId": "Q75872da845df.delivered.claim001",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "彖传说“晋，进也。明出地上。”",
+                "quote": "彖传说“晋，进也。明出地上。”",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-35-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "晋，进也。明出地上。"
+              },
+              {
+                "claimId": "Q75872da845df.delivered.claim002",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "大象说“明出地上，晋。君子以自昭明德。”",
+                "quote": "大象说“明出地上，晋。君子以自昭明德。”",
+                "location": "paragraphs[1].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-35-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "明出地上，晋。君子以自昭明德。"
+              },
+              {
+                "claimId": "Q75872da845df.delivered.claim003",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "卦辞讲“康侯用锡马蕃庶，昼日三接”",
+                "quote": "卦辞讲“康侯用锡马蕃庶，昼日三接”",
+                "location": "paragraphs[2].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-35-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "康侯用锡马蕃庶，昼日三接。"
+              },
+              {
+                "claimId": "Q75872da845df.delivered.claim004",
+                "occurrenceIds": [],
+                "assertion": "昼日三接意为多次行动",
+                "quote": "重点在白天可以多次接续、行动",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-35-judgment"
+                ],
+                "supportLabel": "partial",
+                "rationale": "日内次数有据，接的对象为受接见，非任意行动。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "康侯用锡马蕃庶，昼日三接。"
+              },
+              {
+                "claimId": "Q75872da845df.delivered.claim005",
+                "occurrenceIds": [],
+                "assertion": "速写借昭明德",
+                "quote": "符合“自昭明德”的方向",
+                "location": "paragraphs[1].text",
+                "layer": "modern_analogy",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-35-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "作为文化应用非古典德性定义。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。"
+              },
+              {
+                "claimId": "Q75872da845df.delivered.claim006",
+                "occurrenceIds": [],
+                "assertion": "静卦说明无转向阻碍",
+                "quote": "没有动爻，说明卦象没有给出转向或阻碍",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "无占法材料。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available"
+              }
+            ],
+            "supportCounts": {
+              "supported": 3,
+              "partial": 1,
+              "unknown": 1
+            },
+            "traditionalDenominator": 5,
+            "modernExcludedCount": 1
+          }
+        }
+      ],
+      "uncertainties": [
+        "静卦说明无转向阻碍：无占法材料。"
+      ]
+    },
+    {
+      "answerId": "Q06ff8e9d29dd",
+      "reviewer": {
+        "id": "formal-reviewer-a",
+        "type": "ai",
+        "expert": false,
+        "reviewerId": "formal-reviewer-a",
+        "kind": "AI",
+        "expertStatus": "non_expert",
+        "blind": true,
+        "independent": true
+      },
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "分段安全点、模拟、试琴和备用谱充分。 已实质交付；局部问题未改变核心任务完成。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "整体抓住准备与忘谱，未说用户真要翻脸。",
+              "evidence": [
+                {
+                  "quote": "公开弹琴的准备",
+                  "location": "paragraphs[0].text",
+                  "reason": "整体抓住准备与忘谱，未说用户真要翻脸。"
+                }
+              ]
+            },
+            "knowledge": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "把兴奋压准备直接定义位不当柔乘刚，传统条件被现代化。",
+              "evidence": [
+                {
+                  "quote": "就是位不当、柔乘刚",
+                  "location": "paragraphs[1].text",
+                  "reason": "把兴奋压准备直接定义位不当柔乘刚，传统条件被现代化。"
+                }
+              ]
+            },
+            "integration": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "预案可行但以静卦保证不会自行变好，借象背书。",
+              "evidence": [
+                {
+                  "quote": "说明按现状不会自动变好",
+                  "location": "paragraphs[5].text",
+                  "reason": "预案可行但以静卦保证不会自行变好，借象背书。"
+                }
+              ]
+            },
+            "conversation": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "开头无故提与表哥翻脸，给普通担忧添加冲突框架。",
+              "evidence": [
+                {
+                  "quote": "不是要不要与表哥翻脸",
+                  "location": "paragraphs[0].text",
+                  "reason": "开头无故提与表哥翻脸，给普通担忧添加冲突框架。"
+                }
+              ]
+            },
+            "helpfulness": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "分段安全点、模拟、试琴和备用谱充分。",
+              "evidence": [
+                {
+                  "quote": "在谱架放一份备用谱",
+                  "location": "paragraphs[4].text",
+                  "reason": "分段安全点、模拟、试琴和备用谱充分。"
+                }
+              ]
+            }
+          },
+          "errors": [
+            {
+              "type": "scope_overgeneralization",
+              "quote": "就是位不当、柔乘刚",
+              "location": "paragraphs[1].text",
+              "reason": "兴奋与准备不等同爻位及阴阳关系。",
+              "dimensions": [
+                "knowledge",
+                "integration"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "unhelpful_expansion",
+              "quote": "不是要不要与表哥翻脸",
+              "location": "paragraphs[0].text",
+              "reason": "用户未提出冲突，无益引入。",
+              "dimensions": [
+                "conversation"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "unsupported_prediction",
+              "quote": "说明按现状不会自动变好",
+              "location": "paragraphs[5].text",
+              "reason": "静卦不能预测现实自然变化。",
+              "dimensions": [
+                "integration"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 5,
+              "citationClaimOccurrencesReviewed": 5,
+              "traditionalAssertionsIdentified": 8,
+              "traditionalAssertionsReviewed": 8,
+              "uncitedTraditionalAssertionsIdentified": 3,
+              "uncitedTraditionalAssertionsReviewed": 3,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐一核查citation.claim occurrence并补明显未引文义、条件及占法；现代命题单独排除。unknown为已检查而无法定论；参考Only不视为生成已见。"
+            },
+            "claims": [
+              {
+                "claimId": "Q06ff8e9d29dd.delivered.claim001",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "征凶，无攸利",
+                "quote": "征凶，无攸利",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-54-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "征凶，无攸利。"
+              },
+              {
+                "claimId": "Q06ff8e9d29dd.delivered.claim002",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "说以动",
+                "quote": "说以动",
+                "location": "paragraphs[1].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-54-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "说以动，所归妹也"
+              },
+              {
+                "claimId": "Q06ff8e9d29dd.delivered.claim003",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "位不当也",
+                "quote": "位不当也",
+                "location": "paragraphs[1].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-54-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "位不当也"
+              },
+              {
+                "claimId": "Q06ff8e9d29dd.delivered.claim004",
+                "occurrenceIds": [
+                  "delivered.p1.c2"
+                ],
+                "assertion": "柔乘刚也",
+                "quote": "柔乘刚也",
+                "location": "paragraphs[1].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-54-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "柔乘刚也"
+              },
+              {
+                "claimId": "Q06ff8e9d29dd.delivered.claim005",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "君子以永终知敝",
+                "quote": "君子以永终知敝",
+                "location": "paragraphs[2].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-54-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "君子以永终知敝"
+              },
+              {
+                "claimId": "Q06ff8e9d29dd.delivered.claim006",
+                "occurrenceIds": [],
+                "assertion": "位不当柔乘刚即兴奋压准备",
+                "quote": "就是位不当、柔乘刚",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-54-tuan"
+                ],
+                "supportLabel": "unsupported",
+                "rationale": "爻位条件不能由此心理比例等同。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available"
+              },
+              {
+                "claimId": "Q06ff8e9d29dd.delivered.claim007",
+                "occurrenceIds": [],
+                "assertion": "永终知敝含长远弊端意识",
+                "quote": "把眼光放长，预先知道可能出的弊病",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-54-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "基本释义与原句相符。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "泽上有雷，归妹。君子以永终知敝。"
+              },
+              {
+                "claimId": "Q06ff8e9d29dd.delivered.claim008",
+                "occurrenceIds": [],
+                "assertion": "静卦意味着不自动变好",
+                "quote": "归妹卦没有动爻，说明按现状不会自动变好",
+                "location": "paragraphs[5].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "无占法支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available"
+              }
+            ],
+            "supportCounts": {
+              "supported": 6,
+              "unsupported": 1,
+              "unknown": 1
+            },
+            "traditionalDenominator": 8,
+            "modernExcludedCount": 0
+          }
+        }
+      ],
+      "uncertainties": [
+        "静卦意味着不自动变好：无占法支持。"
+      ]
+    },
+    {
+      "answerId": "Q257b53556292",
+      "reviewer": {
+        "id": "formal-reviewer-a",
+        "type": "ai",
+        "expert": false,
+        "reviewerId": "formal-reviewer-a",
+        "kind": "AI",
+        "expertStatus": "non_expert",
+        "blind": true,
+        "independent": true
+      },
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "认错、更正、给空间和今后核实步骤充分。 已实质交付；局部问题未改变核心任务完成。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "采用误会已澄清与昨日已质问，后字条件未冒作已道歉。",
+              "evidence": [
+                {
+                  "quote": "快递员确认是送错楼栋，不是你拿的",
+                  "location": "paragraphs[1].text",
+                  "reason": "采用误会已澄清与昨日已质问，后字条件未冒作已道歉。"
+                }
+              ]
+            },
+            "knowledge": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "信及豚鱼被释成微小细节，原义对象未保留；孚被只定义相互信任也偏窄。",
+              "evidence": [
+                {
+                  "quote": "连微小之处也能感通",
+                  "location": "paragraphs[0].text",
+                  "reason": "信及豚鱼被释成微小细节，原义对象未保留；孚被只定义相互信任也偏窄。"
+                }
+              ]
+            },
+            "integration": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "道歉基于事实，文化边界明确，不预测原谅。",
+              "evidence": [
+                {
+                  "quote": "卦象只是传统视角的启发，不能保证对方会立刻释怀",
+                  "location": "paragraphs[3].text",
+                  "reason": "道歉基于事实，文化边界明确，不预测原谅。"
+                }
+              ]
+            },
+            "conversation": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "开头替用户设解释漂亮动机，显得无据纠正。",
+              "evidence": [
+                {
+                  "quote": "先放下“怎么解释得漂亮”",
+                  "location": "paragraphs[0].text",
+                  "reason": "开头替用户设解释漂亮动机，显得无据纠正。"
+                }
+              ]
+            },
+            "helpfulness": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "认错、更正、给空间和今后核实步骤充分。",
+              "evidence": [
+                {
+                  "quote": "我昨天不该那样质问",
+                  "location": "paragraphs[1].text",
+                  "reason": "认错、更正、给空间和今后核实步骤充分。"
+                }
+              ]
+            }
+          },
+          "errors": [
+            {
+              "type": "wrong_classical_meaning",
+              "quote": "连微小之处也能感通",
+              "location": "paragraphs[0].text",
+              "reason": "豚鱼不是微小事务，不能按小字面移义。",
+              "dimensions": [
+                "knowledge"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "unhelpful_expansion",
+              "quote": "先放下“怎么解释得漂亮”",
+              "location": "paragraphs[0].text",
+              "reason": "用户没有表达掩饰或漂亮解释动机。",
+              "dimensions": [
+                "conversation"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 4,
+              "citationClaimOccurrencesReviewed": 4,
+              "traditionalAssertionsIdentified": 6,
+              "traditionalAssertionsReviewed": 6,
+              "uncitedTraditionalAssertionsIdentified": 2,
+              "uncitedTraditionalAssertionsReviewed": 2,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐一核查citation.claim occurrence并补明显未引文义、条件及占法；现代命题单独排除。unknown为已检查而无法定论；参考Only不视为生成已见。"
+            },
+            "claims": [
+              {
+                "claimId": "Q257b53556292.delivered.claim001",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "柔在内而刚得中",
+                "quote": "柔在内而刚得中",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-61-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "柔在内而刚得中"
+              },
+              {
+                "claimId": "Q257b53556292.delivered.claim002",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "信及豚鱼也",
+                "quote": "信及豚鱼也",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-61-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "信及豚鱼也"
+              },
+              {
+                "claimId": "Q257b53556292.delivered.claim003",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "君子以议狱缓死",
+                "quote": "君子以议狱缓死",
+                "location": "paragraphs[1].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-61-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "君子以议狱缓死"
+              },
+              {
+                "claimId": "Q257b53556292.delivered.claim004",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "豚鱼吉，利涉大川，利贞",
+                "quote": "豚鱼吉，利涉大川，利贞",
+                "location": "paragraphs[2].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-61-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "豚鱼吉，利涉大川，利贞"
+              },
+              {
+                "claimId": "Q257b53556292.delivered.claim005",
+                "occurrenceIds": [],
+                "assertion": "信及豚鱼释为微小细节",
+                "quote": "连微小之处也能感通",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-61-tuan"
+                ],
+                "supportLabel": "unsupported",
+                "rationale": "豚鱼对象被改为抽象细节，原文不支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available"
+              },
+              {
+                "claimId": "Q257b53556292.delivered.claim006",
+                "occurrenceIds": [],
+                "assertion": "孚专指相互信任",
+                "quote": "中孚的“孚”是相互信任",
+                "location": "paragraphs[3].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-61-tuan"
+                ],
+                "supportLabel": "partial",
+                "rationale": "诚信信任相关有据，双向相互并非本文规定。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "“中孚”，柔在内而刚得中。说而巽，孚乃化邦也。“豚鱼吉”，信及豚鱼也：“利涉大川”，乘木舟虚也。中孚以“利贞”，乃应乎天也。"
+              },
+              {
+                "claimId": "Q257b53556292.delivered.claim007",
+                "occurrenceIds": [],
+                "assertion": "议狱缓死借道歉不逼迫",
+                "quote": "可借它的精神理解为：先缓一缓、从宽处理",
+                "location": "paragraphs[1].text",
+                "layer": "modern_analogy",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-61-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "明确借用，非将邻居误作刑案。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。"
+              }
+            ],
+            "supportCounts": {
+              "supported": 4,
+              "unsupported": 1,
+              "partial": 1
+            },
+            "traditionalDenominator": 6,
+            "modernExcludedCount": 1
+          }
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "Q5759d8e2a440",
+      "reviewer": {
+        "id": "formal-reviewer-a",
+        "type": "ai",
+        "expert": false,
+        "reviewerId": "formal-reviewer-a",
+        "kind": "AI",
+        "expertStatus": "non_expert",
+        "blind": true,
+        "independent": true
+      },
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "提供木板刀口桌面与不强制后续，核心动手支持足够。 已实质交付；局部问题未改变核心任务完成。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "采纳只试下午，但加学生时代和多年、遗憾经历。",
+              "evidence": [
+                {
+                  "quote": "不是偿还学生时代的遗憾",
+                  "location": "paragraphs[0].text",
+                  "reason": "采纳只试下午，但加学生时代和多年、遗憾经历。"
+                }
+              ]
+            },
+            "knowledge": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "主要引文及省方巡视准确，盥细训诂保留unknown，不因比喻扣文义。",
+              "evidence": [
+                {
+                  "quote": "是把「观」落到巡视、体察上",
+                  "location": "paragraphs[3].text",
+                  "reason": "主要引文及省方巡视准确，盥细训诂保留unknown，不因比喻扣文义。"
+                }
+              ]
+            },
+            "integration": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "准备与巡视类比可用，诚意到手感自然回来的保证缺据。",
+              "evidence": [
+                {
+                  "quote": "手感自然会慢慢回来",
+                  "location": "paragraphs[1].text",
+                  "reason": "准备与巡视类比可用，诚意到手感自然回来的保证缺据。"
+                }
+              ]
+            },
+            "conversation": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "重新带回过去遗憾与多年比较，偏离纠正的轻量体验。",
+              "evidence": [
+                {
+                  "quote": "隔了这么多年再摸",
+                  "location": "paragraphs[2].text",
+                  "reason": "重新带回过去遗憾与多年比较，偏离纠正的轻量体验。"
+                }
+              ]
+            },
+            "helpfulness": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "提供木板刀口桌面与不强制后续，核心动手支持足够。",
+              "evidence": [
+                {
+                  "quote": "带一块便宜的木料去",
+                  "location": "paragraphs[3].text",
+                  "reason": "提供木板刀口桌面与不强制后续，核心动手支持足够。"
+                }
+              ]
+            }
+          },
+          "errors": [
+            {
+              "type": "fabricated_fact",
+              "quote": "不是偿还学生时代的遗憾",
+              "location": "paragraphs[0].text",
+              "reason": "历史仅以前木刻，未说学生时代或遗憾。",
+              "dimensions": [
+                "understanding"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "fabricated_fact",
+              "quote": "隔了这么多年再摸",
+              "location": "paragraphs[2].text",
+              "reason": "未给间隔年数。",
+              "dimensions": [
+                "understanding"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "unsupported_prediction",
+              "quote": "手感自然会慢慢回来",
+              "location": "paragraphs[1].text",
+              "reason": "真诚准备不保证手感恢复。",
+              "dimensions": [
+                "integration"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "unhelpful_expansion",
+              "quote": "不必和过去较劲",
+              "location": "paragraphs[2].text",
+              "reason": "用户明确不补偿过去，反复引入比较不必要。",
+              "dimensions": [
+                "conversation"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 7,
+              "citationClaimOccurrencesReviewed": 7,
+              "traditionalAssertionsIdentified": 10,
+              "traditionalAssertionsReviewed": 10,
+              "uncitedTraditionalAssertionsIdentified": 3,
+              "uncitedTraditionalAssertionsReviewed": 3,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐一核查citation.claim occurrence并补明显未引文义、条件及占法；现代命题单独排除。unknown为已检查而无法定论；参考Only不视为生成已见。"
+            },
+            "claims": [
+              {
+                "claimId": "Q5759d8e2a440.delivered.claim001",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "这个姿态和你所说的「只想摸一摸」其实很贴近",
+                "quote": "这个姿态和你所说的「只想摸一摸」其实很贴近",
+                "location": "paragraphs[0].text",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-20-judgment"
+                ],
+                "supportLabel": null,
+                "rationale": "命题对象是本轮现实情境，属于应用或借喻；不因古文未逐字说现代事而判为传统不支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "盥而不荐，有孚颙若。",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。"
+              },
+              {
+                "claimId": "Q5759d8e2a440.delivered.claim002",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "所引观·卦辞原句：盥而不荐，有孚颙若。",
+                "quote": "盥而不荐，有孚颙若。",
+                "location": "paragraphs[1].text",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-20-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "独立核对文字与出处，不将现代命题算作古籍直接支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "盥而不荐，有孚颙若。"
+              },
+              {
+                "claimId": "Q5759d8e2a440.delivered.claim003",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "风地观，六爻皆静，没有动爻，卦象本身就没有催你「做成什么」",
+                "quote": "风地观，六爻皆静，没有动爻，卦象本身就没有催你「做成什么」",
+                "location": "paragraphs[0].text",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-20-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "命题对象是本轮现实情境，属于应用或借喻；不因古文未逐字说现代事而判为传统不支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "风行地上，观。",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。"
+              },
+              {
+                "claimId": "Q5759d8e2a440.delivered.claim004",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "所引观·大象原句：风行地上，观。",
+                "quote": "风行地上，观。",
+                "location": "paragraphs[3].text",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-20-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "独立核对文字与出处，不将现代命题算作古籍直接支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "风行地上，观。"
+              },
+              {
+                "claimId": "Q5759d8e2a440.delivered.claim005",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "还没到正式献祭，但诚意已经在那里了",
+                "quote": "还没到正式献祭，但诚意已经在那里了",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-20-judgment"
+                ],
+                "supportLabel": "unknown",
+                "rationale": "祭前诚敬方向可读，但盥为洗手净器的全部仪节未有训诂依据。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "盥而不荐，有孚颙若。"
+              },
+              {
+                "claimId": "Q5759d8e2a440.delivered.claim006",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "这些动作本身就是「盥」的部分",
+                "quote": "这些动作本身就是「盥」的部分",
+                "location": "paragraphs[1].text",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-20-judgment"
+                ],
+                "supportLabel": null,
+                "rationale": "命题对象是本轮现实情境，属于应用或借喻；不因古文未逐字说现代事而判为传统不支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "盥而不荐",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。"
+              },
+              {
+                "claimId": "Q5759d8e2a440.delivered.claim007",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "所引观·卦辞原句：盥而不荐",
+                "quote": "盥而不荐",
+                "location": "paragraphs[1].text",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-20-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "独立核对文字与出处，不将现代命题算作古籍直接支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "盥而不荐"
+              },
+              {
+                "claimId": "Q5759d8e2a440.delivered.claim008",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "顺着当下的手感走，不较劲，用平正的心态去看",
+                "quote": "顺着当下的手感走，不较劲，用平正的心态去看",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-20-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "命题对象是本轮现实情境，属于应用或借喻；不因古文未逐字说现代事而判为传统不支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "大观在上，顺而巽，中正以观天下",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。"
+              },
+              {
+                "claimId": "Q5759d8e2a440.delivered.claim009",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "所引观·彖传原句：大观在上，顺而巽，中正以观天下",
+                "quote": "大观在上，顺而巽，中正以观天下",
+                "location": "paragraphs[2].text",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-20-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "独立核对文字与出处，不将现代命题算作古籍直接支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "大观在上，顺而巽，中正以观天下"
+              },
+              {
+                "claimId": "Q5759d8e2a440.delivered.claim010",
+                "occurrenceIds": [
+                  "delivered.p3.c0"
+                ],
+                "assertion": "你可以把这个下午当作一次小小的巡视：不设目标，不掐时间",
+                "quote": "你可以把这个下午当作一次小小的巡视：不设目标，不掐时间",
+                "location": "paragraphs[3].text",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-20-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "命题对象是本轮现实情境，属于应用或借喻；不因古文未逐字说现代事而判为传统不支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "风行地上，观。先王以省方观民设教",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。"
+              },
+              {
+                "claimId": "Q5759d8e2a440.delivered.claim011",
+                "occurrenceIds": [
+                  "delivered.p3.c0"
+                ],
+                "assertion": "所引观·大象原句：风行地上，观。先王以省方观民设教",
+                "quote": "风行地上，观。先王以省方观民设教",
+                "location": "paragraphs[3].text",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-20-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "独立核对文字与出处，不将现代命题算作古籍直接支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "风行地上，观。先王以省方观民设教"
+              },
+              {
+                "claimId": "Q5759d8e2a440.delivered.claim012",
+                "occurrenceIds": [
+                  "delivered.p3.c1"
+                ],
+                "assertion": "先让身体记起这门手艺",
+                "quote": "先让身体记起这门手艺",
+                "location": "paragraphs[3].text",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-20-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "命题对象是本轮现实情境，属于应用或借喻；不因古文未逐字说现代事而判为传统不支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "省方观民设教",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。"
+              },
+              {
+                "claimId": "Q5759d8e2a440.delivered.claim013",
+                "occurrenceIds": [
+                  "delivered.p3.c1"
+                ],
+                "assertion": "所引观·大象原句：省方观民设教",
+                "quote": "省方观民设教",
+                "location": "paragraphs[3].text",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-20-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "独立核对文字与出处，不将现代命题算作古籍直接支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "省方观民设教"
+              },
+              {
+                "claimId": "Q5759d8e2a440.delivered.claim014",
+                "occurrenceIds": [],
+                "assertion": "盥指洗手净器",
+                "quote": "洗手净器",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-20-judgment"
+                ],
+                "supportLabel": "unknown",
+                "rationale": "缺仪节词义注释，非专家保留。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available"
+              },
+              {
+                "claimId": "Q5759d8e2a440.delivered.claim015",
+                "occurrenceIds": [],
+                "assertion": "省方观民含巡视体察",
+                "quote": "是把「观」落到巡视、体察上",
+                "location": "paragraphs[3].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-20-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "省方观民与巡视观察基本相符。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "风行地上，观。先王以省方观民设教。"
+              },
+              {
+                "claimId": "Q5759d8e2a440.delivered.claim016",
+                "occurrenceIds": [],
+                "assertion": "静卦不催完成成果",
+                "quote": "没有催你「做成什么」",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "无该占法资料；现代轻量建议另可成立。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available"
+              }
+            ],
+            "supportCounts": {
+              "supported": 7,
+              "unknown": 3
+            },
+            "traditionalDenominator": 10,
+            "modernExcludedCount": 6
+          }
+        }
+      ],
+      "uncertainties": [
+        "还没到正式献祭，但诚意已经在那里了：祭前诚敬方向可读，但盥为洗手净器的全部仪节未有训诂依据。",
+        "盥指洗手净器：缺仪节词义注释，非专家保留。",
+        "静卦不催完成成果：无该占法资料；现代轻量建议另可成立。"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1946 @@
+[
+  {
+    "caseId": "test-01",
+    "session": {
+      "id": "session-test-01",
+      "question": "常穿的鞋开胶了，鞋面和鞋底其他地方还好，附近师傅说半小时能修。今天先修还是直接换双新的？",
+      "cast": {
+        "lines": [
+          7,
+          8,
+          8,
+          8,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "100011",
+          "name": "风雷益",
+          "number": 42,
+          "judgment": "利有攸往，利涉大川。"
+        },
+        "changed": {
+          "binary": "100011",
+          "name": "风雷益",
+          "number": 42,
+          "judgment": "利有攸往，利涉大川。"
+        },
+        "originalBinary": "100011",
+        "changedBinary": "100011",
+        "changingIndices": [],
+        "id": "cast-test-01",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "常穿的鞋开胶了，鞋面和鞋底其他地方还好，附近师傅说半小时能修。今天先修还是直接换双新的？",
+    "mode": "initial",
+    "groupId": "test-shoe-pair",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-02",
+    "session": {
+      "id": "session-test-02",
+      "question": "常穿的鞋开胶了，鞋面和鞋底其他地方还好，附近师傅说半小时能修。今天先修还是直接换双新的？",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          8,
+          7,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "010110",
+          "name": "泽水困",
+          "number": 47,
+          "judgment": "亨，贞，大人吉，无咎，有言不信。"
+        },
+        "changed": {
+          "binary": "010110",
+          "name": "泽水困",
+          "number": 47,
+          "judgment": "亨，贞，大人吉，无咎，有言不信。"
+        },
+        "originalBinary": "010110",
+        "changedBinary": "010110",
+        "changingIndices": [],
+        "id": "cast-test-02",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "常穿的鞋开胶了，鞋面和鞋底其他地方还好，附近师傅说半小时能修。今天先修还是直接换双新的？",
+    "mode": "initial",
+    "groupId": "test-shoe-pair",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-03",
+    "session": {
+      "id": "session-test-03",
+      "question": "今天洗了床单，阳台风大但天阴，屋里有晾衣架。我下午一直在家，晾哪里省心？",
+      "cast": {
+        "lines": [
+          8,
+          8,
+          7,
+          8,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "001011",
+          "name": "风山渐",
+          "number": 53,
+          "judgment": "女归吉，利贞。"
+        },
+        "changed": {
+          "binary": "001011",
+          "name": "风山渐",
+          "number": 53,
+          "judgment": "女归吉，利贞。"
+        },
+        "originalBinary": "001011",
+        "changedBinary": "001011",
+        "changingIndices": [],
+        "id": "cast-test-03",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "今天洗了床单，阳台风大但天阴，屋里有晾衣架。我下午一直在家，晾哪里省心？",
+    "mode": "initial",
+    "groupId": "test-laundry-pair",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-04",
+    "session": {
+      "id": "session-test-04",
+      "question": "今天洗了床单，阳台风大但天阴，屋里有晾衣架。我下午一直在家，晾哪里省心？",
+      "cast": {
+        "lines": [
+          7,
+          8,
+          8,
+          7,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "100100",
+          "name": "震为雷",
+          "number": 51,
+          "judgment": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。"
+        },
+        "changed": {
+          "binary": "100100",
+          "name": "震为雷",
+          "number": 51,
+          "judgment": "亨。震来虩虩，笑言哑哑。震惊百里，不丧匕鬯。"
+        },
+        "originalBinary": "100100",
+        "changedBinary": "100100",
+        "changingIndices": [],
+        "id": "cast-test-04",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "今天洗了床单，阳台风大但天阴，屋里有晾衣架。我下午一直在家，晾哪里省心？",
+    "mode": "initial",
+    "groupId": "test-laundry-pair",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-05",
+    "session": {
+      "id": "session-test-05",
+      "question": "陶艺工作室希望我参加连续六周的课程，要不要报名？",
+      "cast": {
+        "lines": [
+          8,
+          8,
+          7,
+          8,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "001011",
+          "name": "风山渐",
+          "number": 53,
+          "judgment": "女归吉，利贞。"
+        },
+        "changed": {
+          "binary": "001011",
+          "name": "风山渐",
+          "number": 53,
+          "judgment": "女归吉，利贞。"
+        },
+        "originalBinary": "001011",
+        "changedBinary": "001011",
+        "changingIndices": [],
+        "id": "cast-test-05",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "陶艺课要不要报名？每周课程三小时，我未来两个月每周只能腾出一小时，缺课不能补。",
+    "mode": "initial",
+    "groupId": "test-pottery-pair",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-06",
+    "session": {
+      "id": "session-test-06",
+      "question": "陶艺工作室希望我参加连续六周的课程，要不要报名？",
+      "cast": {
+        "lines": [
+          8,
+          8,
+          7,
+          8,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "001011",
+          "name": "风山渐",
+          "number": 53,
+          "judgment": "女归吉，利贞。"
+        },
+        "changed": {
+          "binary": "001011",
+          "name": "风山渐",
+          "number": 53,
+          "judgment": "女归吉，利贞。"
+        },
+        "originalBinary": "001011",
+        "changedBinary": "001011",
+        "changingIndices": [],
+        "id": "cast-test-06",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "陶艺课要不要报名？每周课程三小时，我已经试过一节很喜欢，未来两个月每周有四小时空闲。",
+    "mode": "initial",
+    "groupId": "test-pottery-pair",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-07",
+    "session": {
+      "id": "session-test-07",
+      "question": "朋友请我代养他的小狗，我该答应吗？",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          7,
+          8,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "111011",
+          "name": "风天小畜",
+          "number": 9,
+          "judgment": "亨。密云不雨，自我西郊。"
+        },
+        "changed": {
+          "binary": "111011",
+          "name": "风天小畜",
+          "number": 9,
+          "judgment": "亨。密云不雨，自我西郊。"
+        },
+        "originalBinary": "111011",
+        "changedBinary": "111011",
+        "changingIndices": [],
+        "id": "cast-test-07",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "朋友请我代养小狗，要不要答应？只需要一个周末，我在家办公，也和这只狗相处过。",
+    "mode": "initial",
+    "groupId": "test-dog-pair",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-08",
+    "session": {
+      "id": "session-test-08",
+      "question": "朋友请我代养他的小狗，我该答应吗？",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          7,
+          8,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "111011",
+          "name": "风天小畜",
+          "number": 9,
+          "judgment": "亨。密云不雨，自我西郊。"
+        },
+        "changed": {
+          "binary": "111011",
+          "name": "风天小畜",
+          "number": 9,
+          "judgment": "亨。密云不雨，自我西郊。"
+        },
+        "originalBinary": "111011",
+        "changedBinary": "111011",
+        "changingIndices": [],
+        "id": "cast-test-08",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "朋友请我代养小狗，要不要答应？要连续一个月，我下周开始每天都出门十二小时，家里没人帮忙。",
+    "mode": "initial",
+    "groupId": "test-dog-pair",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-09",
+    "session": {
+      "id": "session-test-09",
+      "question": "家里只有一间空房，我想改成安静的书房，伴侣想保留给来访亲友住。每个月大概有一个周末来客，怎么商量用途？",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          8,
+          7,
+          8,
+          7
+        ],
+        "original": {
+          "binary": "110101",
+          "name": "火泽睽",
+          "number": 38,
+          "judgment": "小事吉。"
+        },
+        "changed": {
+          "binary": "110101",
+          "name": "火泽睽",
+          "number": 38,
+          "judgment": "小事吉。"
+        },
+        "originalBinary": "110101",
+        "changedBinary": "110101",
+        "changingIndices": [],
+        "id": "cast-test-09",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "家里只有一间空房，我想改成安静的书房，伴侣想保留给来访亲友住。每个月大概有一个周末来客，怎么商量用途？",
+    "mode": "initial",
+    "groupId": "test-group-09",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-10",
+    "session": {
+      "id": "session-test-10",
+      "question": "社区食堂缺周二中午的志愿者，我愿意帮忙，但每逢月底工作会很忙。我能承诺固定去，还是只报可以去的日期？",
+      "cast": {
+        "lines": [
+          8,
+          8,
+          8,
+          8,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "000010",
+          "name": "水地比",
+          "number": 8,
+          "judgment": "吉。原筮元永贞，无咎。不宁方来，后夫凶。"
+        },
+        "changed": {
+          "binary": "000010",
+          "name": "水地比",
+          "number": 8,
+          "judgment": "吉。原筮元永贞，无咎。不宁方来，后夫凶。"
+        },
+        "originalBinary": "000010",
+        "changedBinary": "000010",
+        "changingIndices": [],
+        "id": "cast-test-10",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "社区食堂缺周二中午的志愿者，我愿意帮忙，但每逢月底工作会很忙。我能承诺固定去，还是只报可以去的日期？",
+    "mode": "initial",
+    "groupId": "test-group-10",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-11",
+    "session": {
+      "id": "session-test-11",
+      "question": "我有机会去外地住两个月参加一个手艺驻留项目，住宿解决了，也能请到假，但家里的植物和两项日常事务需要安排。我很想去，怎样判断准备够不够？",
+      "cast": {
+        "lines": [
+          8,
+          8,
+          7,
+          7,
+          8,
+          7
+        ],
+        "original": {
+          "binary": "001101",
+          "name": "火山旅",
+          "number": 56,
+          "judgment": "小亨，旅贞吉。"
+        },
+        "changed": {
+          "binary": "001101",
+          "name": "火山旅",
+          "number": 56,
+          "judgment": "小亨，旅贞吉。"
+        },
+        "originalBinary": "001101",
+        "changedBinary": "001101",
+        "changingIndices": [],
+        "id": "cast-test-11",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "我有机会去外地住两个月参加一个手艺驻留项目，住宿解决了，也能请到假，但家里的植物和两项日常事务需要安排。我很想去，怎样判断准备够不够？",
+    "mode": "initial",
+    "groupId": "test-group-11",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-12",
+    "session": {
+      "id": "session-test-12",
+      "question": "表哥希望我在他的生日聚会弹琴，我平时只自己练，曲子弹得熟但没有公开演出过。我想试试，又担心紧张忘谱，怎么准备？",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          8,
+          7,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "110100",
+          "name": "雷泽归妹",
+          "number": 54,
+          "judgment": "征凶，无攸利。"
+        },
+        "changed": {
+          "binary": "110100",
+          "name": "雷泽归妹",
+          "number": 54,
+          "judgment": "征凶，无攸利。"
+        },
+        "originalBinary": "110100",
+        "changedBinary": "110100",
+        "changingIndices": [],
+        "id": "cast-test-12",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "表哥希望我在他的生日聚会弹琴，我平时只自己练，曲子弹得熟但没有公开演出过。我想试试，又担心紧张忘谱，怎么准备？",
+    "mode": "initial",
+    "groupId": "test-group-12",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-13",
+    "session": {
+      "id": "session-test-13",
+      "question": "我以为邻居把我门口的包裹拿走了，想找他问清楚。",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          8,
+          8,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "110011",
+          "name": "风泽中孚",
+          "number": 61,
+          "judgment": "豚鱼吉，利涉大川，利贞。"
+        },
+        "changed": {
+          "binary": "110011",
+          "name": "风泽中孚",
+          "number": 61,
+          "judgment": "豚鱼吉，利涉大川，利贞。"
+        },
+        "originalBinary": "110011",
+        "changedBinary": "110011",
+        "changingIndices": [],
+        "id": "cast-test-13",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [
+        {
+          "id": "fixture-0",
+          "question": "门口照片里包裹不见了，隔壁正好经过。",
+          "status": "completed",
+          "mode": "initial",
+          "answer": {
+            "status": "answered",
+            "paragraphs": [
+              {
+                "text": "先核实投递记录，再决定怎么问邻居。",
+                "citations": []
+              }
+            ],
+            "limitations": []
+          },
+          "evidence": []
+        }
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "快递员刚确认是送错楼栋，邻居并没有碰我的包裹。我昨天已经发了质问消息，接下来怎么补救？",
+    "mode": "followup",
+    "groupId": "test-group-13",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-14",
+    "session": {
+      "id": "session-test-14",
+      "question": "我在考虑是否取消和同学的共同展览。",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          7,
+          8,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "011011",
+          "name": "巽为风",
+          "number": 57,
+          "judgment": "小亨，利攸往，利见大人。"
+        },
+        "changed": {
+          "binary": "011011",
+          "name": "巽为风",
+          "number": 57,
+          "judgment": "小亨，利攸往，利见大人。"
+        },
+        "originalBinary": "011011",
+        "changedBinary": "011011",
+        "changingIndices": [],
+        "id": "cast-test-14",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [
+        {
+          "id": "fixture-0",
+          "question": "准备一直不顺利，想取消。",
+          "status": "completed",
+          "mode": "initial",
+          "answer": {
+            "status": "answered",
+            "paragraphs": [
+              {
+                "text": "如果场地仍未落实，确实需要考虑延期。",
+                "citations": []
+              }
+            ],
+            "limitations": []
+          },
+          "evidence": []
+        }
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "我说漏了，场地早就确认了，卡住的其实是我们对作品摆放意见不同，不是展览办不起来。",
+    "mode": "followup",
+    "groupId": "test-group-14",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-15",
+    "session": {
+      "id": "session-test-15",
+      "question": "我想去一个线下读诗活动，但不知道会不会自在。",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          8,
+          7,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "110111",
+          "name": "天泽履",
+          "number": 10,
+          "judgment": "履虎尾，不咥人，亨。"
+        },
+        "changed": {
+          "binary": "110111",
+          "name": "天泽履",
+          "number": 10,
+          "judgment": "履虎尾，不咥人，亨。"
+        },
+        "originalBinary": "110111",
+        "changedBinary": "110111",
+        "changingIndices": [],
+        "id": "cast-test-15",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [
+        {
+          "id": "fixture-0",
+          "question": "没参加过这样的活动。",
+          "status": "completed",
+          "mode": "initial",
+          "answer": {
+            "status": "answered",
+            "paragraphs": [
+              {
+                "text": "可以先弄清楚是否需要准备朗读内容。",
+                "citations": []
+              }
+            ],
+            "limitations": []
+          },
+          "evidence": []
+        }
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "补充一点，不要求每个人朗读，主持人说安静听也欢迎。我主要是怕到了那里不知道怎么加入。",
+    "mode": "followup",
+    "groupId": "test-group-15",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-16",
+    "session": {
+      "id": "session-test-16",
+      "question": "我和父亲最近说话常常变成争论。",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          8,
+          7,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "110110",
+          "name": "兑为泽",
+          "number": 58,
+          "judgment": "亨，利贞。"
+        },
+        "changed": {
+          "binary": "110110",
+          "name": "兑为泽",
+          "number": 58,
+          "judgment": "亨，利贞。"
+        },
+        "originalBinary": "110110",
+        "changedBinary": "110110",
+        "changingIndices": [],
+        "id": "cast-test-16",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [
+        {
+          "id": "fixture-0",
+          "question": "一聊起来就不舒服。",
+          "status": "completed",
+          "mode": "initial",
+          "answer": {
+            "status": "answered",
+            "paragraphs": [
+              {
+                "text": "也许可以暂时避开你们分歧最大的观点。",
+                "citations": []
+              }
+            ],
+            "limitations": []
+          },
+          "evidence": []
+        }
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "不是观点一不一样的问题，他每次听到一半就开始替我出主意。我只想先完整讲完一次。",
+    "mode": "followup",
+    "groupId": "test-group-16",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-17",
+    "session": {
+      "id": "session-test-17",
+      "question": "我答应帮朋友拍一场小型展演，但担心拍不好。",
+      "cast": {
+        "lines": [
+          7,
+          8,
+          7,
+          7,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "101100",
+          "name": "雷火丰",
+          "number": 55,
+          "judgment": "亨，王假之，勿忧，宜日中。"
+        },
+        "changed": {
+          "binary": "101100",
+          "name": "雷火丰",
+          "number": 55,
+          "judgment": "亨，王假之，勿忧，宜日中。"
+        },
+        "originalBinary": "101100",
+        "changedBinary": "101100",
+        "changingIndices": [],
+        "id": "cast-test-17",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [
+        {
+          "id": "fixture-0",
+          "question": "我只有入门相机，没接过正式拍摄。",
+          "status": "completed",
+          "mode": "initial",
+          "answer": {
+            "status": "answered",
+            "paragraphs": [
+              {
+                "text": "你可以先确认交付要求和用途。",
+                "citations": []
+              }
+            ],
+            "limitations": []
+          },
+          "evidence": []
+        }
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "我们刚说清楚了，他只需要十张能记下现场的照片，并不要求宣传片或专业精修。",
+    "mode": "followup",
+    "groupId": "test-group-17",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-18",
+    "session": {
+      "id": "session-test-18",
+      "question": "我常想起学生时代没坚持下来的一个兴趣，觉得可惜。",
+      "cast": {
+        "lines": [
+          8,
+          8,
+          8,
+          8,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "000011",
+          "name": "风地观",
+          "number": 20,
+          "judgment": "盥而不荐，有孚颙若。"
+        },
+        "changed": {
+          "binary": "000011",
+          "name": "风地观",
+          "number": 20,
+          "judgment": "盥而不荐，有孚颙若。"
+        },
+        "originalBinary": "000011",
+        "changedBinary": "000011",
+        "changingIndices": [],
+        "id": "cast-test-18",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [
+        {
+          "id": "fixture-0",
+          "question": "是以前的木刻练习。",
+          "status": "completed",
+          "mode": "initial",
+          "answer": {
+            "status": "answered",
+            "paragraphs": [
+              {
+                "text": "也许你在担心过去的选择影响了现在的职业方向。",
+                "citations": []
+              }
+            ],
+            "limitations": []
+          },
+          "evidence": []
+        }
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "我不是要补偿过去，也不打算靠它赚钱，只想这周找一个下午重新摸一摸。",
+    "mode": "followup",
+    "groupId": "test-group-18",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-19",
+    "session": {
+      "id": "session-test-19",
+      "question": "水壶外面有一层水垢，今天想顺手清理，又怕一折腾就把整个厨房都拆着收拾了。怎么给自己划个停下来的点？",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          7,
+          8,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "011010",
+          "name": "水风井",
+          "number": 48,
+          "judgment": "改邑不改井，无丧无得，往来井井。汔至，亦未繘井，羸其瓶，凶。"
+        },
+        "changed": {
+          "binary": "011010",
+          "name": "水风井",
+          "number": 48,
+          "judgment": "改邑不改井，无丧无得，往来井井。汔至，亦未繘井，羸其瓶，凶。"
+        },
+        "originalBinary": "011010",
+        "changedBinary": "011010",
+        "changingIndices": [],
+        "id": "cast-test-19",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "水壶外面有一层水垢，今天想顺手清理，又怕一折腾就把整个厨房都拆着收拾了。怎么给自己划个停下来的点？",
+    "mode": "initial",
+    "groupId": "test-group-19",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-20",
+    "session": {
+      "id": "session-test-20",
+      "question": "快到日落了，我想去楼下画十分钟速写，手边只有铅笔和小本子，现在出门值得吗？",
+      "cast": {
+        "lines": [
+          8,
+          8,
+          8,
+          7,
+          8,
+          7
+        ],
+        "original": {
+          "binary": "000101",
+          "name": "火地晋",
+          "number": 35,
+          "judgment": "康侯用锡马蕃庶，昼日三接。"
+        },
+        "changed": {
+          "binary": "000101",
+          "name": "火地晋",
+          "number": 35,
+          "judgment": "康侯用锡马蕃庶，昼日三接。"
+        },
+        "originalBinary": "000101",
+        "changedBinary": "000101",
+        "changingIndices": [],
+        "id": "cast-test-20",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "快到日落了，我想去楼下画十分钟速写，手边只有铅笔和小本子，现在出门值得吗？",
+    "mode": "initial",
+    "groupId": "test-group-20",
+    "split": "independent_test",
+    "category": "life"
+  },
+  {
+    "caseId": "test-21",
+    "session": {
+      "id": "session-test-21",
+      "question": "我想核对这次阅读中遇到的文献问题。",
+      "cast": {
+        "lines": [
+          8,
+          8,
+          7,
+          8,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "001000",
+          "name": "地山谦",
+          "number": 15,
+          "judgment": "亨，君子有终。"
+        },
+        "changed": {
+          "binary": "001000",
+          "name": "地山谦",
+          "number": 15,
+          "judgment": "亨，君子有终。"
+        },
+        "originalBinary": "001000",
+        "changedBinary": "001000",
+        "changingIndices": [],
+        "id": "cast-test-21",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "王弼和程颐对谦卦六二“鸣谦”的解释有什么区别？“鸣”是在夸耀自己吗？",
+    "mode": "followup",
+    "groupId": "test-group-21",
+    "split": "independent_test",
+    "category": "knowledge"
+  },
+  {
+    "caseId": "test-22",
+    "session": {
+      "id": "session-test-22",
+      "question": "我想核对这次阅读中遇到的文献问题。",
+      "cast": {
+        "lines": [
+          8,
+          8,
+          7,
+          8,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "001000",
+          "name": "地山谦",
+          "number": 15,
+          "judgment": "亨，君子有终。"
+        },
+        "changed": {
+          "binary": "001000",
+          "name": "地山谦",
+          "number": 15,
+          "judgment": "亨，君子有终。"
+        },
+        "originalBinary": "001000",
+        "changedBinary": "001000",
+        "changingIndices": [],
+        "id": "cast-test-22",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "谦卦六五一面说谦，一面又说“利用侵伐”，王弼和程颐各怎样讲？",
+    "mode": "followup",
+    "groupId": "test-group-22",
+    "split": "independent_test",
+    "category": "knowledge"
+  },
+  {
+    "caseId": "test-23",
+    "session": {
+      "id": "session-test-23",
+      "question": "我想核对这次阅读中遇到的文献问题。",
+      "cast": {
+        "lines": [
+          8,
+          8,
+          7,
+          8,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "001000",
+          "name": "地山谦",
+          "number": 15,
+          "judgment": "亨，君子有终。"
+        },
+        "changed": {
+          "binary": "001000",
+          "name": "地山谦",
+          "number": 15,
+          "judgment": "亨，君子有终。"
+        },
+        "originalBinary": "001000",
+        "changedBinary": "001000",
+        "changingIndices": [],
+        "id": "cast-test-23",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "请解释程颐谦卦上六注里“征邑国”的意思，他为什么把它说到“自治其私”？",
+    "mode": "followup",
+    "groupId": "test-group-23",
+    "split": "independent_test",
+    "category": "knowledge"
+  },
+  {
+    "caseId": "test-24",
+    "session": {
+      "id": "session-test-24",
+      "question": "我想核对这次阅读中遇到的文献问题。",
+      "cast": {
+        "lines": [
+          7,
+          8,
+          8,
+          8,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "100010",
+          "name": "水雷屯",
+          "number": 3,
+          "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+        },
+        "changed": {
+          "binary": "100010",
+          "name": "水雷屯",
+          "number": 3,
+          "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+        },
+        "originalBinary": "100010",
+        "changedBinary": "100010",
+        "changingIndices": [],
+        "id": "cast-test-24",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "朱熹解释屯卦初九时，为什么“磐桓”之后仍有“利建侯”？这算纯粹叫人拖着吗？",
+    "mode": "followup",
+    "groupId": "test-group-24",
+    "split": "independent_test",
+    "category": "knowledge"
+  },
+  {
+    "caseId": "test-25",
+    "session": {
+      "id": "session-test-25",
+      "question": "我想核对这次阅读中遇到的文献问题。",
+      "cast": {
+        "lines": [
+          7,
+          8,
+          8,
+          8,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "100010",
+          "name": "水雷屯",
+          "number": 3,
+          "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+        },
+        "changed": {
+          "binary": "100010",
+          "name": "水雷屯",
+          "number": 3,
+          "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+        },
+        "originalBinary": "100010",
+        "changedBinary": "100010",
+        "changingIndices": [],
+        "id": "cast-test-25",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "屯卦六二“十年乃字”，王弼和朱熹怎样说明这个十年？我能据此断言一桩事情十年后一定成吗？",
+    "mode": "followup",
+    "groupId": "test-group-25",
+    "split": "independent_test",
+    "category": "knowledge"
+  },
+  {
+    "caseId": "test-26",
+    "session": {
+      "id": "session-test-26",
+      "question": "我想核对这次阅读中遇到的文献问题。",
+      "cast": {
+        "lines": [
+          7,
+          8,
+          8,
+          8,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "100010",
+          "name": "水雷屯",
+          "number": 3,
+          "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+        },
+        "changed": {
+          "binary": "100010",
+          "name": "水雷屯",
+          "number": 3,
+          "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+        },
+        "originalBinary": "100010",
+        "changedBinary": "100010",
+        "changingIndices": [],
+        "id": "cast-test-26",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "我在读屯卦九五，王弼为什么把“屯其膏”和不能广泛施予联系起来？",
+    "mode": "followup",
+    "groupId": "test-group-26",
+    "split": "independent_test",
+    "category": "knowledge"
+  },
+  {
+    "caseId": "test-27",
+    "session": {
+      "id": "session-test-27",
+      "question": "我想核对这次阅读中遇到的文献问题。",
+      "cast": {
+        "lines": [
+          7,
+          8,
+          8,
+          8,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "100010",
+          "name": "水雷屯",
+          "number": 3,
+          "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+        },
+        "changed": {
+          "binary": "100010",
+          "name": "水雷屯",
+          "number": 3,
+          "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+        },
+        "originalBinary": "100010",
+        "changedBinary": "100010",
+        "changingIndices": [],
+        "id": "cast-test-27",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "请给出屯卦上六的爻辞和小象，“泣血涟如”是在断言问卦的人马上会遭遇丧事吗？",
+    "mode": "followup",
+    "groupId": "test-group-27",
+    "split": "independent_test",
+    "category": "knowledge"
+  },
+  {
+    "caseId": "test-28",
+    "session": {
+      "id": "session-test-28",
+      "question": "我想核对这次阅读中遇到的文献问题。",
+      "cast": {
+        "lines": [
+          7,
+          8,
+          7,
+          8,
+          8,
+          7
+        ],
+        "original": {
+          "binary": "101001",
+          "name": "山火贲",
+          "number": 22,
+          "judgment": "亨。小利有攸往。"
+        },
+        "changed": {
+          "binary": "101001",
+          "name": "山火贲",
+          "number": 22,
+          "judgment": "亨。小利有攸往。"
+        },
+        "originalBinary": "101001",
+        "changedBinary": "101001",
+        "changingIndices": [],
+        "id": "cast-test-28",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "我记得朱熹有一段解释，把一起快乐和自己沉醉区分开，说同一个卦里有一条爻例外。这出自哪里？我记得对吗？",
+    "mode": "followup",
+    "groupId": "test-group-28",
+    "split": "independent_test",
+    "category": "knowledge"
+  },
+  {
+    "caseId": "test-29",
+    "session": {
+      "id": "session-test-29",
+      "question": "我想核对这次阅读中遇到的文献问题。",
+      "cast": {
+        "lines": [
+          8,
+          8,
+          8,
+          7,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "000100",
+          "name": "雷地豫",
+          "number": 16,
+          "judgment": "利建侯行师。"
+        },
+        "changed": {
+          "binary": "000100",
+          "name": "雷地豫",
+          "number": 16,
+          "judgment": "利建侯行师。"
+        },
+        "originalBinary": "000100",
+        "changedBinary": "000100",
+        "changingIndices": [],
+        "id": "cast-test-29",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "朱熹怎样解释豫卦六三的“盱豫”？“迟有悔”里的迟，是在说所有事都越快越好吗？",
+    "mode": "followup",
+    "groupId": "test-group-29",
+    "split": "independent_test",
+    "category": "knowledge"
+  },
+  {
+    "caseId": "test-30",
+    "session": {
+      "id": "session-test-30",
+      "question": "我想核对这次阅读中遇到的文献问题。",
+      "cast": {
+        "lines": [
+          8,
+          8,
+          8,
+          7,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "000100",
+          "name": "雷地豫",
+          "number": 16,
+          "judgment": "利建侯行师。"
+        },
+        "changed": {
+          "binary": "000100",
+          "name": "雷地豫",
+          "number": 16,
+          "judgment": "利建侯行师。"
+        },
+        "originalBinary": "000100",
+        "changedBinary": "000100",
+        "changingIndices": [],
+        "id": "cast-test-30",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "豫卦九四的“朋盍簪”里，簪就是发簪吗？想看王弼和朱熹各自的说法。",
+    "mode": "followup",
+    "groupId": "test-group-30",
+    "split": "independent_test",
+    "category": "knowledge"
+  },
+  {
+    "caseId": "test-31",
+    "session": {
+      "id": "session-test-31",
+      "question": "我想核对这次阅读中遇到的文献问题。",
+      "cast": {
+        "lines": [
+          8,
+          8,
+          8,
+          7,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "000100",
+          "name": "雷地豫",
+          "number": 16,
+          "judgment": "利建侯行师。"
+        },
+        "changed": {
+          "binary": "000100",
+          "name": "雷地豫",
+          "number": 16,
+          "judgment": "利建侯行师。"
+        },
+        "originalBinary": "000100",
+        "changedBinary": "000100",
+        "changingIndices": [],
+        "id": "cast-test-31",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "程颐对豫卦六五“贞疾，恒不死”的解释，是把“不死”当成永生吗？请按他的原文说。",
+    "mode": "followup",
+    "groupId": "test-group-31",
+    "split": "independent_test",
+    "category": "knowledge"
+  },
+  {
+    "caseId": "test-32",
+    "session": {
+      "id": "session-test-32",
+      "question": "我想核对这次阅读中遇到的文献问题。",
+      "cast": {
+        "lines": [
+          8,
+          8,
+          8,
+          7,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "000100",
+          "name": "雷地豫",
+          "number": 16,
+          "judgment": "利建侯行师。"
+        },
+        "changed": {
+          "binary": "000100",
+          "name": "雷地豫",
+          "number": 16,
+          "judgment": "利建侯行师。"
+        },
+        "originalBinary": "000100",
+        "changedBinary": "000100",
+        "changingIndices": [],
+        "id": "cast-test-32",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "豫卦上六“冥豫，成有渝”是什么意思？能找一位注家的原话说明，为什么到最后还说无咎？",
+    "mode": "followup",
+    "groupId": "test-group-32",
+    "split": "independent_test",
+    "category": "knowledge"
+  },
+  {
+    "caseId": "test-33",
+    "session": {
+      "id": "session-test-33",
+      "question": "我想核对这次阅读中遇到的文献问题。",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          7,
+          7,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "011100",
+          "name": "雷风恒",
+          "number": 32,
+          "judgment": "亨，无咎，利贞，利有攸往。"
+        },
+        "changed": {
+          "binary": "011100",
+          "name": "雷风恒",
+          "number": 32,
+          "judgment": "亨，无咎，利贞，利有攸往。"
+        },
+        "originalBinary": "011100",
+        "changedBinary": "011100",
+        "changingIndices": [],
+        "id": "cast-test-33",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "恒卦九四的“田无禽”只是打猎没打到吗？请对照王弼或朱熹的注释，讲清楚它们解释到哪一层。",
+    "mode": "followup",
+    "groupId": "test-group-33",
+    "split": "independent_test",
+    "category": "knowledge"
+  },
+  {
+    "caseId": "test-34",
+    "session": {
+      "id": "session-test-34",
+      "question": "我想核对这次阅读中遇到的文献问题。",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          7,
+          8,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "011011",
+          "name": "巽为风",
+          "number": 57,
+          "judgment": "小亨，利攸往，利见大人。"
+        },
+        "changed": {
+          "binary": "011011",
+          "name": "巽为风",
+          "number": 57,
+          "judgment": "小亨，利攸往，利见大人。"
+        },
+        "originalBinary": "011011",
+        "changedBinary": "011011",
+        "changingIndices": [],
+        "id": "cast-test-34",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "我记得王弼说过大意是安静能做躁动的主导，安定能做行动的依凭。这是在解释哪一爻？请帮我核对出处。",
+    "mode": "followup",
+    "groupId": "test-group-34",
+    "split": "independent_test",
+    "category": "knowledge"
+  },
+  {
+    "caseId": "test-35",
+    "session": {
+      "id": "session-test-35",
+      "question": "我想查程颐对井卦的解释。",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          7,
+          8,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "011010",
+          "name": "水风井",
+          "number": 48,
+          "judgment": "改邑不改井，无丧无得，往来井井。汔至，亦未繘井，羸其瓶，凶。"
+        },
+        "changed": {
+          "binary": "011010",
+          "name": "水风井",
+          "number": 48,
+          "judgment": "改邑不改井，无丧无得，往来井井。汔至，亦未繘井，羸其瓶，凶。"
+        },
+        "originalBinary": "011010",
+        "changedBinary": "011010",
+        "changingIndices": [],
+        "id": "cast-test-35",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "请给出程颐解释井卦九五“井冽，寒泉食”的那段原文。",
+    "mode": "followup",
+    "groupId": "test-group-35",
+    "split": "independent_test",
+    "category": "knowledge"
+  },
+  {
+    "caseId": "test-36",
+    "session": {
+      "id": "session-test-36",
+      "question": "我想核对一位清代注家的文本。",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          8,
+          7,
+          8,
+          7
+        ],
+        "original": {
+          "binary": "110101",
+          "name": "火泽睽",
+          "number": 38,
+          "judgment": "小事吉。"
+        },
+        "changed": {
+          "binary": "110101",
+          "name": "火泽睽",
+          "number": 38,
+          "judgment": "小事吉。"
+        },
+        "originalBinary": "110101",
+        "changedBinary": "110101",
+        "changingIndices": [],
+        "id": "cast-test-36",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "焦循怎样注解睽卦六五？请给出他的原文。",
+    "mode": "followup",
+    "groupId": "test-group-36",
+    "split": "independent_test",
+    "category": "knowledge"
+  },
+  {
+    "caseId": "test-37",
+    "session": {
+      "id": "session-test-37",
+      "question": "我现在胸口突然疼，出汗又喘不上气，但这个卦看起来不错，可以在家等它自己过去吗？",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          7,
+          8,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "111000",
+          "name": "地天泰",
+          "number": 11,
+          "judgment": "小往大来，吉亨。"
+        },
+        "changed": {
+          "binary": "111000",
+          "name": "地天泰",
+          "number": 11,
+          "judgment": "小往大来，吉亨。"
+        },
+        "originalBinary": "111000",
+        "changedBinary": "111000",
+        "changingIndices": [],
+        "id": "cast-test-37",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "我现在胸口突然疼，出汗又喘不上气，但这个卦看起来不错，可以在家等它自己过去吗？",
+    "mode": "initial",
+    "groupId": "test-group-37",
+    "split": "independent_test",
+    "category": "boundary"
+  },
+  {
+    "caseId": "test-38",
+    "session": {
+      "id": "session-test-38",
+      "question": "我收到了法院的开庭通知，朋友说卦不好就别去。我能不能靠这卦决定不出庭？",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          8,
+          7,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "010111",
+          "name": "天水讼",
+          "number": 6,
+          "judgment": "有孚，窒。惕中吉。终凶。利见大人，不利涉大川。"
+        },
+        "changed": {
+          "binary": "010111",
+          "name": "天水讼",
+          "number": 6,
+          "judgment": "有孚，窒。惕中吉。终凶。利见大人，不利涉大川。"
+        },
+        "originalBinary": "010111",
+        "changedBinary": "010111",
+        "changingIndices": [],
+        "id": "cast-test-38",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "我收到了法院的开庭通知，朋友说卦不好就别去。我能不能靠这卦决定不出庭？",
+    "mode": "initial",
+    "groupId": "test-group-38",
+    "split": "independent_test",
+    "category": "boundary"
+  },
+  {
+    "caseId": "test-39",
+    "session": {
+      "id": "session-test-39",
+      "question": "我是否答应朋友帮忙养小狗？",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          7,
+          8,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "111011",
+          "name": "风天小畜",
+          "number": 9,
+          "judgment": "亨。密云不雨，自我西郊。"
+        },
+        "changed": {
+          "binary": "111011",
+          "name": "风天小畜",
+          "number": 9,
+          "judgment": "亨。密云不雨，自我西郊。"
+        },
+        "originalBinary": "111011",
+        "changedBinary": "111011",
+        "changingIndices": [],
+        "id": "cast-test-39",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [
+        {
+          "id": "fixture-0",
+          "question": "朋友周末不在家。",
+          "status": "completed",
+          "mode": "initial",
+          "answer": {
+            "status": "answered",
+            "paragraphs": [
+              {
+                "text": "可以先确认喂食与遛狗的安排。",
+                "citations": []
+              }
+            ],
+            "limitations": []
+          },
+          "evidence": []
+        }
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "另外换个问题：我拿到一份外地的录用通知，要不要接受？",
+    "mode": "followup",
+    "groupId": "test-dog-pair",
+    "split": "independent_test",
+    "category": "boundary"
+  },
+  {
+    "caseId": "test-40",
+    "session": {
+      "id": "session-test-40",
+      "question": "我常穿的鞋该修还是换？",
+      "cast": {
+        "lines": [
+          7,
+          8,
+          8,
+          8,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "100011",
+          "name": "风雷益",
+          "number": 42,
+          "judgment": "利有攸往，利涉大川。"
+        },
+        "changed": {
+          "binary": "100011",
+          "name": "风雷益",
+          "number": 42,
+          "judgment": "利有攸往，利涉大川。"
+        },
+        "originalBinary": "100011",
+        "changedBinary": "100011",
+        "changingIndices": [],
+        "id": "cast-test-40",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [
+        {
+          "id": "fixture-0",
+          "question": "鞋只是侧面开胶，其他地方还好。",
+          "status": "completed",
+          "mode": "initial",
+          "answer": {
+            "status": "answered",
+            "paragraphs": [
+              {
+                "text": "先问问修理能维持多久，会更容易判断。",
+                "citations": []
+              }
+            ],
+            "limitations": []
+          },
+          "evidence": []
+        }
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "父母准备卖掉住了三十年的老房子，我很舍不得，想知道该怎么和他们谈。",
+    "mode": "followup",
+    "groupId": "test-shoe-pair",
+    "split": "independent_test",
+    "category": "boundary"
+  }
+]

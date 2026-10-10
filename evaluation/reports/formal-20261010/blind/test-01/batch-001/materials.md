@@ -1,0 +1,2427 @@
+# 匿名完整回答材料
+
+原始输入、完整答复及原文保留。机械状态不代表语义质量；交付与候选分别评阅。
+
+## Qe3b638f3055c · life
+
+**核心问题：** 陶艺工作室希望我参加连续六周的课程，要不要报名？
+
+**当前问题：** 陶艺课要不要报名？每周课程三小时，我已经试过一节很喜欢，未来两个月每周有四小时空闲。
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    8,
+    8,
+    7,
+    8,
+    7,
+    7
+  ],
+  "original": {
+    "binary": "001011",
+    "name": "风山渐",
+    "number": 53,
+    "judgment": "女归吉，利贞。"
+  },
+  "changed": {
+    "binary": "001011",
+    "name": "风山渐",
+    "number": 53,
+    "judgment": "女归吉，利贞。"
+  },
+  "originalBinary": "001011",
+  "changedBinary": "001011",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "本轮得风山渐，无动爻，静而不变。渐卦的取象是「山上有木」——树木在山上生长，非一日之功，而是逐步长成。这对应到你的问题，不是要不要一步跨入陶艺，而是是否愿意按每周一点点的节奏往前走。",
+      "citations": [
+        {
+          "evidenceId": "zy-53-xiang",
+          "quote": "山上有木，渐。君子以居贤德善俗。",
+          "claim": "渐卦的取象是「山上有木」——树木在山上生长，非一日之功，而是逐步长成"
+        }
+      ]
+    },
+    {
+      "text": "卦辞说「女归吉，利贞」，彖传解释为「渐之进也」，并说「进得位，往有功也；进以正，可以正邦也」。所谓「进得位」，用在你的处境上：每周有四小时空闲，课程占三小时，位置是够的；而且你已经试过一节并喜欢，说明兴趣与体验都已到位。条件得位，按部就班地往前走，是会有成效的。",
+      "citations": [
+        {
+          "evidenceId": "zy-53-judgment",
+          "quote": "女归吉，利贞。",
+          "claim": "卦辞说「女归吉，利贞」"
+        },
+        {
+          "evidenceId": "zy-53-tuan",
+          "quote": "渐之进也，「女归吉」也。进得位，往有功也；进以正，可以正邦也。",
+          "claim": "彖传解释为「渐之进也」，并说「进得位，往有功也；进以正，可以正邦也」"
+        }
+      ]
+    },
+    {
+      "text": "大象讲「君子以居贤德善俗」，渐卦提示的是把自己安放在一个好的场域里，慢慢浸润。陶艺工作室、固定的每周课程、连续六周，正是一个可以「居」的所在——不只是学一门手艺，也是给自己一段稳定下来的时间。",
+      "citations": [
+        {
+          "evidenceId": "zy-53-xiang",
+          "quote": "山上有木，渐。君子以居贤德善俗。",
+          "claim": "大象讲「君子以居贤德善俗」，渐卦提示的是把自己安放在一个好的场域里，慢慢浸润"
+        }
+      ]
+    },
+    {
+      "text": "综合来看，从渐卦的立场，报名是合适的：方向正、位置够、兴趣已验，属于「进以正」的一类。需要提醒的是——渐是慢进，不是冲刺。每周只剩一小时余量，遇到加班、社交或家里的事就会挤压；连续六周也意味着中间不适合频频缺课。所以建议报，但把它当成六周的「渐」：每周固定到场，不追求速成，允许自己慢慢出作品。无动爻也说明当下不必刻意求变，顺着既有节拍走即可。",
+      "citations": [
+        {
+          "evidenceId": "zy-53-tuan",
+          "quote": "进以正，可以正邦也。",
+          "claim": "属于「进以正」的一类"
+        }
+      ]
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "本轮得风山渐，无动爻，静而不变。渐卦的取象是「山上有木」——树木在山上生长，非一日之功，而是逐步长成。这对应到你的问题，不是要不要一步跨入陶艺，而是是否愿意按每周一点点的节奏往前走。",
+    "evidenceId": "zy-53-xiang",
+    "quote": "山上有木，渐。君子以居贤德善俗。",
+    "claim": "渐卦的取象是「山上有木」——树木在山上生长，非一日之功，而是逐步长成"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "卦辞说「女归吉，利贞」，彖传解释为「渐之进也」，并说「进得位，往有功也；进以正，可以正邦也」。所谓「进得位」，用在你的处境上：每周有四小时空闲，课程占三小时，位置是够的；而且你已经试过一节并喜欢，说明兴趣与体验都已到位。条件得位，按部就班地往前走，是会有成效的。",
+    "evidenceId": "zy-53-judgment",
+    "quote": "女归吉，利贞。",
+    "claim": "卦辞说「女归吉，利贞」"
+  },
+  {
+    "occurrenceId": "delivered.p1.c1",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[1]",
+    "paragraphText": "卦辞说「女归吉，利贞」，彖传解释为「渐之进也」，并说「进得位，往有功也；进以正，可以正邦也」。所谓「进得位」，用在你的处境上：每周有四小时空闲，课程占三小时，位置是够的；而且你已经试过一节并喜欢，说明兴趣与体验都已到位。条件得位，按部就班地往前走，是会有成效的。",
+    "evidenceId": "zy-53-tuan",
+    "quote": "渐之进也，「女归吉」也。进得位，往有功也；进以正，可以正邦也。",
+    "claim": "彖传解释为「渐之进也」，并说「进得位，往有功也；进以正，可以正邦也」"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "大象讲「君子以居贤德善俗」，渐卦提示的是把自己安放在一个好的场域里，慢慢浸润。陶艺工作室、固定的每周课程、连续六周，正是一个可以「居」的所在——不只是学一门手艺，也是给自己一段稳定下来的时间。",
+    "evidenceId": "zy-53-xiang",
+    "quote": "山上有木，渐。君子以居贤德善俗。",
+    "claim": "大象讲「君子以居贤德善俗」，渐卦提示的是把自己安放在一个好的场域里，慢慢浸润"
+  },
+  {
+    "occurrenceId": "delivered.p3.c0",
+    "target": "delivered",
+    "location": "paragraphs[3].citations[0]",
+    "paragraphText": "综合来看，从渐卦的立场，报名是合适的：方向正、位置够、兴趣已验，属于「进以正」的一类。需要提醒的是——渐是慢进，不是冲刺。每周只剩一小时余量，遇到加班、社交或家里的事就会挤压；连续六周也意味着中间不适合频频缺课。所以建议报，但把它当成六周的「渐」：每周固定到场，不追求速成，允许自己慢慢出作品。无动爻也说明当下不必刻意求变，顺着既有节拍走即可。",
+    "evidenceId": "zy-53-tuan",
+    "quote": "进以正，可以正邦也。",
+    "claim": "属于「进以正」的一类"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-53-judgment",
+    "hexagramId": 53,
+    "name": "渐",
+    "section": "judgment",
+    "line": null,
+    "text": "女归吉，利贞。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "渐·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:53:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "女归吉，利贞。"
+  },
+  {
+    "id": "zy-53-tuan",
+    "hexagramId": 53,
+    "name": "渐",
+    "section": "tuan",
+    "line": null,
+    "text": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "渐·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:53:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+  },
+  {
+    "id": "zy-53-xiang",
+    "hexagramId": 53,
+    "name": "渐",
+    "section": "xiang",
+    "line": null,
+    "text": "山上有木，渐。君子以居贤德善俗。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "渐·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:53:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "山上有木，渐。君子以居贤德善俗。"
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q953f28729ed7 · life
+
+**核心问题：** 朋友请我代养他的小狗，我该答应吗？
+
+**当前问题：** 朋友请我代养小狗，要不要答应？只需要一个周末，我在家办公，也和这只狗相处过。
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    7,
+    7,
+    7,
+    8,
+    7,
+    7
+  ],
+  "original": {
+    "binary": "111011",
+    "name": "风天小畜",
+    "number": 9,
+    "judgment": "亨。密云不雨，自我西郊。"
+  },
+  "changed": {
+    "binary": "111011",
+    "name": "风天小畜",
+    "number": 9,
+    "judgment": "亨。密云不雨，自我西郊。"
+  },
+  "originalBinary": "111011",
+  "changedBinary": "111011",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "从卦象看，整体偏向可行：小畜卦辞说“亨。密云不雨，自我西郊”，意思是事情可以通，但还处在云聚未雨、尚未真正落地的阶段。因此可以答应，但不宜把它当成毫无负担的事。",
+      "citations": [
+        {
+          "evidenceId": "zy-9-judgment",
+          "quote": "亨。密云不雨，自我西郊。",
+          "claim": "可以答应，但不宜把它当成毫无负担的事。"
+        }
+      ]
+    },
+    {
+      "text": "彖传解释“小畜”，说“柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨””。你和这只狗相处过、又在家办公，属于上下有应的基础；但“密云不雨”，尚往也；“自我西郊”，施未行也提醒，承诺和安排尚未真正执行。答应前确认喂养、遛狗、疫苗/健康状况、作息和紧急联系人，会更稳。",
+      "citations": [
+        {
+          "evidenceId": "zy-9-tuan",
+          "quote": "柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。",
+          "claim": "你和这只狗相处过、又在家办公，属于上下有应的基础"
+        },
+        {
+          "evidenceId": "zy-9-tuan",
+          "quote": "“密云不雨”，尚往也；“自我西郊”，施未行也。",
+          "claim": "答应前确认喂养、遛狗、疫苗/健康状况、作息和紧急联系人，会更稳。"
+        }
+      ]
+    },
+    {
+      "text": "大象说“风行天上，小畜。君子以懿文德”，放在代养上，就是用温和、耐心、有边界的方式对待：可以答应，但提前讲清你的工作时段、不能打扰的会议、狗的禁忌和意外处理。若这个周末有硬截止或狗有特殊医疗需求，则先不答应或改请专业寄养，也是合理取舍。",
+      "citations": [
+        {
+          "evidenceId": "zy-9-xiang",
+          "quote": "风行天上，小畜。君子以懿文德。",
+          "claim": "用温和、耐心、有边界的方式对待"
+        }
+      ]
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "从卦象看，整体偏向可行：小畜卦辞说“亨。密云不雨，自我西郊”，意思是事情可以通，但还处在云聚未雨、尚未真正落地的阶段。因此可以答应，但不宜把它当成毫无负担的事。",
+    "evidenceId": "zy-9-judgment",
+    "quote": "亨。密云不雨，自我西郊。",
+    "claim": "可以答应，但不宜把它当成毫无负担的事。"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "彖传解释“小畜”，说“柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨””。你和这只狗相处过、又在家办公，属于上下有应的基础；但“密云不雨”，尚往也；“自我西郊”，施未行也提醒，承诺和安排尚未真正执行。答应前确认喂养、遛狗、疫苗/健康状况、作息和紧急联系人，会更稳。",
+    "evidenceId": "zy-9-tuan",
+    "quote": "柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。",
+    "claim": "你和这只狗相处过、又在家办公，属于上下有应的基础"
+  },
+  {
+    "occurrenceId": "delivered.p1.c1",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[1]",
+    "paragraphText": "彖传解释“小畜”，说“柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨””。你和这只狗相处过、又在家办公，属于上下有应的基础；但“密云不雨”，尚往也；“自我西郊”，施未行也提醒，承诺和安排尚未真正执行。答应前确认喂养、遛狗、疫苗/健康状况、作息和紧急联系人，会更稳。",
+    "evidenceId": "zy-9-tuan",
+    "quote": "“密云不雨”，尚往也；“自我西郊”，施未行也。",
+    "claim": "答应前确认喂养、遛狗、疫苗/健康状况、作息和紧急联系人，会更稳。"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "大象说“风行天上，小畜。君子以懿文德”，放在代养上，就是用温和、耐心、有边界的方式对待：可以答应，但提前讲清你的工作时段、不能打扰的会议、狗的禁忌和意外处理。若这个周末有硬截止或狗有特殊医疗需求，则先不答应或改请专业寄养，也是合理取舍。",
+    "evidenceId": "zy-9-xiang",
+    "quote": "风行天上，小畜。君子以懿文德。",
+    "claim": "用温和、耐心、有边界的方式对待"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-9-judgment",
+    "hexagramId": 9,
+    "name": "小畜",
+    "section": "judgment",
+    "line": null,
+    "text": "亨。密云不雨，自我西郊。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "小畜·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:09:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "亨。密云不雨，自我西郊。"
+  },
+  {
+    "id": "zy-9-tuan",
+    "hexagramId": 9,
+    "name": "小畜",
+    "section": "tuan",
+    "line": null,
+    "text": "“小畜”，柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。“密云不雨”，尚往也；“自我西郊”，施未行也。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "小畜·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:09:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "“小畜”，柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。“密云不雨”，尚往也；“自我西郊”，施未行也。"
+  },
+  {
+    "id": "zy-9-xiang",
+    "hexagramId": 9,
+    "name": "小畜",
+    "section": "xiang",
+    "line": null,
+    "text": "风行天上，小畜。君子以懿文德。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "小畜·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:09:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "风行天上，小畜。君子以懿文德。"
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q9688917eeddb · life
+
+**核心问题：** 常穿的鞋开胶了，鞋面和鞋底其他地方还好，附近师傅说半小时能修。今天先修还是直接换双新的？
+
+**当前问题：** 常穿的鞋开胶了，鞋面和鞋底其他地方还好，附近师傅说半小时能修。今天先修还是直接换双新的？
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    8,
+    7,
+    8,
+    7,
+    7,
+    8
+  ],
+  "original": {
+    "binary": "010110",
+    "name": "泽水困",
+    "number": 47,
+    "judgment": "亨，贞，大人吉，无咎，有言不信。"
+  },
+  "changed": {
+    "binary": "010110",
+    "name": "泽水困",
+    "number": 47,
+    "judgment": "亨，贞，大人吉，无咎，有言不信。"
+  },
+  "originalBinary": "010110",
+  "changedBinary": "010110",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "困卦的卦辞说“亨。贞，大人吉，无咎；有言不信”，意思是困境中仍有通达的可能，关键在于守正、做恰当的判断，而不轻信空言。放到你这双鞋上：开胶只是局部问题，鞋面和鞋底其他部分还好，这属于“小困”，不是整双鞋报废。师傅说半小时能修，如果修复可靠，用很小的代价就能让常穿的鞋恢复功能，符合困卦“不妄动、不浪费”的取向。",
+      "citations": [
+        {
+          "evidenceId": "zy-47-judgment",
+          "quote": "亨。贞，大人吉，无咎；有言不信。",
+          "claim": "困卦的卦辞说“亨。贞，大人吉，无咎；有言不信”，意思是困境中仍有通达的可能，关键在于守正、做恰当的判断，而不轻信空言。"
+        }
+      ]
+    },
+    {
+      "text": "彖传进一步解释：“困，刚掩也。险以说，困而不失其所‘亨’，其唯君子乎！”说的是阳刚被掩蔽，身处险境仍能保持和悦、不丢掉内在的通达，这才算有智慧。你的鞋开胶，像是“刚掩”——鞋底和鞋面的连接被局部破坏了，但主体没坏。若因为一处开胶就整双换掉，反而是把“险”扩大了。先修，是让局部问题回归局部解决。",
+      "citations": [
+        {
+          "evidenceId": "zy-47-tuan",
+          "quote": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！",
+          "claim": "彖传进一步解释：“困，刚掩也。险以说，困而不失其所‘亨’，其唯君子乎！”说的是阳刚被掩蔽，身处险境仍能保持和悦、不丢掉内在的通达，这才算有智慧。"
+        }
+      ]
+    },
+    {
+      "text": "但困卦也提醒“有言不信”——师傅说半小时能修，这句话本身不能全信，你得看实际结果。具体建议：如果这双鞋穿着舒适、常穿、不贵也不便宜，先花小钱修是合理的；修好后注意观察开胶处是否再次开裂、是否影响走路安全。若师傅只是随便粘一下、修完明显不平整，或者这双鞋已经多处老化、修了这里很快那里又开，那才考虑换新。困卦大象讲“君子以致命遂志”，资源紧张时要把力气用在真正重要的目标上——你的目标是“有鞋穿、穿得稳”，不是“必须换新”或“必须修旧”。",
+      "citations": [
+        {
+          "evidenceId": "zy-47-xiang",
+          "quote": "泽无水，困。君子以致命遂志。",
+          "claim": "困卦大象讲“君子以致命遂志”，资源紧张时要把力气用在真正重要的目标上"
+        }
+      ]
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "困卦的卦辞说“亨。贞，大人吉，无咎；有言不信”，意思是困境中仍有通达的可能，关键在于守正、做恰当的判断，而不轻信空言。放到你这双鞋上：开胶只是局部问题，鞋面和鞋底其他部分还好，这属于“小困”，不是整双鞋报废。师傅说半小时能修，如果修复可靠，用很小的代价就能让常穿的鞋恢复功能，符合困卦“不妄动、不浪费”的取向。",
+    "evidenceId": "zy-47-judgment",
+    "quote": "亨。贞，大人吉，无咎；有言不信。",
+    "claim": "困卦的卦辞说“亨。贞，大人吉，无咎；有言不信”，意思是困境中仍有通达的可能，关键在于守正、做恰当的判断，而不轻信空言。"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "彖传进一步解释：“困，刚掩也。险以说，困而不失其所‘亨’，其唯君子乎！”说的是阳刚被掩蔽，身处险境仍能保持和悦、不丢掉内在的通达，这才算有智慧。你的鞋开胶，像是“刚掩”——鞋底和鞋面的连接被局部破坏了，但主体没坏。若因为一处开胶就整双换掉，反而是把“险”扩大了。先修，是让局部问题回归局部解决。",
+    "evidenceId": "zy-47-tuan",
+    "quote": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！",
+    "claim": "彖传进一步解释：“困，刚掩也。险以说，困而不失其所‘亨’，其唯君子乎！”说的是阳刚被掩蔽，身处险境仍能保持和悦、不丢掉内在的通达，这才算有智慧。"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "但困卦也提醒“有言不信”——师傅说半小时能修，这句话本身不能全信，你得看实际结果。具体建议：如果这双鞋穿着舒适、常穿、不贵也不便宜，先花小钱修是合理的；修好后注意观察开胶处是否再次开裂、是否影响走路安全。若师傅只是随便粘一下、修完明显不平整，或者这双鞋已经多处老化、修了这里很快那里又开，那才考虑换新。困卦大象讲“君子以致命遂志”，资源紧张时要把力气用在真正重要的目标上——你的目标是“有鞋穿、穿得稳”，不是“必须换新”或“必须修旧”。",
+    "evidenceId": "zy-47-xiang",
+    "quote": "泽无水，困。君子以致命遂志。",
+    "claim": "困卦大象讲“君子以致命遂志”，资源紧张时要把力气用在真正重要的目标上"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-47-judgment",
+    "hexagramId": 47,
+    "name": "困",
+    "section": "judgment",
+    "line": null,
+    "text": "亨。贞，大人吉，无咎；有言不信。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "困·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:47:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "亨。贞，大人吉，无咎；有言不信。"
+  },
+  {
+    "id": "zy-47-tuan",
+    "hexagramId": 47,
+    "name": "困",
+    "section": "tuan",
+    "line": null,
+    "text": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "困·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:47:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。"
+  },
+  {
+    "id": "zy-47-xiang",
+    "hexagramId": 47,
+    "name": "困",
+    "section": "xiang",
+    "line": null,
+    "text": "泽无水，困。君子以致命遂志。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "困·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:47:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "泽无水，困。君子以致命遂志。"
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q17ad531a2414 · life
+
+**核心问题：** 社区食堂缺周二中午的志愿者，我愿意帮忙，但每逢月底工作会很忙。我能承诺固定去，还是只报可以去的日期？
+
+**当前问题：** 社区食堂缺周二中午的志愿者，我愿意帮忙，但每逢月底工作会很忙。我能承诺固定去，还是只报可以去的日期？
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    8,
+    8,
+    8,
+    8,
+    7,
+    8
+  ],
+  "original": {
+    "binary": "000010",
+    "name": "水地比",
+    "number": 8,
+    "judgment": "吉。原筮元永贞，无咎。不宁方来，后夫凶。"
+  },
+  "changed": {
+    "binary": "000010",
+    "name": "水地比",
+    "number": 8,
+    "judgment": "吉。原筮元永贞，无咎。不宁方来，后夫凶。"
+  },
+  "originalBinary": "000010",
+  "changedBinary": "000010",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "本卦、变卦皆水地比，无动爻，重点不在突发变化，而在你与社区食堂能否形成稳定、相互响应的“亲比”关系。比卦卦辞说：“吉。原筮，元永贞，无咎。不宁方来，后夫凶。”对你的承诺问题，第一层提醒是：热心可以开始，但承诺要经得起长久守正；若月底无法稳定，就不宜把话说满。",
+      "citations": [
+        {
+          "evidenceId": "zy-8-judgment",
+          "quote": "吉。原筮，元永贞，无咎。不宁方来，后夫凶。",
+          "claim": "吉。原筮，元永贞，无咎。不宁方来，后夫凶。"
+        }
+      ]
+    },
+    {
+      "text": "《彖传》讲：“比，吉也；比，辅也，下顺从也。”志愿者在社区食堂里是辅助、补位和相互配合的角色，不是单独扛起全部排班。因此，比起一句“我每周二都来”的硬承诺，更合适的是让食堂能预期你的节奏：固定你能固定的，机动你需机动的。",
+      "citations": [
+        {
+          "evidenceId": "zy-8-tuan",
+          "quote": "比，吉也；比，辅也，下顺从也。",
+          "claim": "比，吉也；比，辅也，下顺从也。"
+        }
+      ]
+    },
+    {
+      "text": "《大象》说：“地上有水，比。先王以建万国，亲诸侯。”这提示把关系做成制度：固定周期、提前报备、替补安排，比单纯靠个人信誉硬撑更稳。你可以先提出“非月底周二固定去；月底提前一周说明能否补位”，让食堂按此排班；若月底忙到无法预判，就只报可去日期，并尽量一次给整月可去表。",
+      "citations": [
+        {
+          "evidenceId": "zy-8-xiang",
+          "quote": "地上有水，比。先王以建万国，亲诸侯。",
+          "claim": "地上有水，比。先王以建万国，亲诸侯。"
+        }
+      ]
+    },
+    {
+      "text": "所以我的判断是：不要无条件承诺“每周二中午固定都去”。能承诺的应是“有边界的固定”：例如每月非月底周二固定，月底作为机动或提前报备；如果你连非月底也不能稳定保证，那就只报可去日期。这里也含‘原筮，元永贞，无咎’——承诺要长久守正；以及‘后夫凶’的提醒——不要拖到最后才说不能来，尽早和负责人沟通。",
+      "citations": [
+        {
+          "evidenceId": "zy-8-judgment",
+          "quote": "原筮，元永贞，无咎",
+          "claim": "原筮，元永贞，无咎"
+        },
+        {
+          "evidenceId": "zy-8-judgment",
+          "quote": "后夫凶",
+          "claim": "后夫凶"
+        }
+      ]
+    },
+    {
+      "text": "先和食堂负责人确认他们能否接受“非月底固定+月底机动”。能接受，你就承诺固定；不能接受，你就只报可去日期。这样比勉强固定、月底频繁失信更符合比卦的亲比之道，也更保护你的工作节奏。",
+      "citations": []
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "本卦、变卦皆水地比，无动爻，重点不在突发变化，而在你与社区食堂能否形成稳定、相互响应的“亲比”关系。比卦卦辞说：“吉。原筮，元永贞，无咎。不宁方来，后夫凶。”对你的承诺问题，第一层提醒是：热心可以开始，但承诺要经得起长久守正；若月底无法稳定，就不宜把话说满。",
+    "evidenceId": "zy-8-judgment",
+    "quote": "吉。原筮，元永贞，无咎。不宁方来，后夫凶。",
+    "claim": "吉。原筮，元永贞，无咎。不宁方来，后夫凶。"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "《彖传》讲：“比，吉也；比，辅也，下顺从也。”志愿者在社区食堂里是辅助、补位和相互配合的角色，不是单独扛起全部排班。因此，比起一句“我每周二都来”的硬承诺，更合适的是让食堂能预期你的节奏：固定你能固定的，机动你需机动的。",
+    "evidenceId": "zy-8-tuan",
+    "quote": "比，吉也；比，辅也，下顺从也。",
+    "claim": "比，吉也；比，辅也，下顺从也。"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "《大象》说：“地上有水，比。先王以建万国，亲诸侯。”这提示把关系做成制度：固定周期、提前报备、替补安排，比单纯靠个人信誉硬撑更稳。你可以先提出“非月底周二固定去；月底提前一周说明能否补位”，让食堂按此排班；若月底忙到无法预判，就只报可去日期，并尽量一次给整月可去表。",
+    "evidenceId": "zy-8-xiang",
+    "quote": "地上有水，比。先王以建万国，亲诸侯。",
+    "claim": "地上有水，比。先王以建万国，亲诸侯。"
+  },
+  {
+    "occurrenceId": "delivered.p3.c0",
+    "target": "delivered",
+    "location": "paragraphs[3].citations[0]",
+    "paragraphText": "所以我的判断是：不要无条件承诺“每周二中午固定都去”。能承诺的应是“有边界的固定”：例如每月非月底周二固定，月底作为机动或提前报备；如果你连非月底也不能稳定保证，那就只报可去日期。这里也含‘原筮，元永贞，无咎’——承诺要长久守正；以及‘后夫凶’的提醒——不要拖到最后才说不能来，尽早和负责人沟通。",
+    "evidenceId": "zy-8-judgment",
+    "quote": "原筮，元永贞，无咎",
+    "claim": "原筮，元永贞，无咎"
+  },
+  {
+    "occurrenceId": "delivered.p3.c1",
+    "target": "delivered",
+    "location": "paragraphs[3].citations[1]",
+    "paragraphText": "所以我的判断是：不要无条件承诺“每周二中午固定都去”。能承诺的应是“有边界的固定”：例如每月非月底周二固定，月底作为机动或提前报备；如果你连非月底也不能稳定保证，那就只报可去日期。这里也含‘原筮，元永贞，无咎’——承诺要长久守正；以及‘后夫凶’的提醒——不要拖到最后才说不能来，尽早和负责人沟通。",
+    "evidenceId": "zy-8-judgment",
+    "quote": "后夫凶",
+    "claim": "后夫凶"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-8-judgment",
+    "hexagramId": 8,
+    "name": "比",
+    "section": "judgment",
+    "line": null,
+    "text": "吉。原筮，元永贞，无咎。不宁方来，后夫凶。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "比·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:08:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "吉。原筮，元永贞，无咎。不宁方来，后夫凶。"
+  },
+  {
+    "id": "zy-8-tuan",
+    "hexagramId": 8,
+    "name": "比",
+    "section": "tuan",
+    "line": null,
+    "text": "比，吉也；比，辅也，下顺从也。“原筮，元永贞，无咎”，以刚中也。“不宁方来”，上下应也；“后夫凶”，其道穷也。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "比·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:08:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "比，吉也；比，辅也，下顺从也。“原筮，元永贞，无咎”，以刚中也。“不宁方来”，上下应也；“后夫凶”，其道穷也。"
+  },
+  {
+    "id": "zy-8-xiang",
+    "hexagramId": 8,
+    "name": "比",
+    "section": "xiang",
+    "line": null,
+    "text": "地上有水，比。先王以建万国，亲诸侯。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "比·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:08:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "地上有水，比。先王以建万国，亲诸侯。"
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q7ef33d793fc3 · life
+
+**核心问题：** 家里只有一间空房，我想改成安静的书房，伴侣想保留给来访亲友住。每个月大概有一个周末来客，怎么商量用途？
+
+**当前问题：** 家里只有一间空房，我想改成安静的书房，伴侣想保留给来访亲友住。每个月大概有一个周末来客，怎么商量用途？
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    7,
+    7,
+    8,
+    7,
+    8,
+    7
+  ],
+  "original": {
+    "binary": "110101",
+    "name": "火泽睽",
+    "number": 38,
+    "judgment": "小事吉。"
+  },
+  "changed": {
+    "binary": "110101",
+    "name": "火泽睽",
+    "number": 38,
+    "judgment": "小事吉。"
+  },
+  "originalBinary": "110101",
+  "changedBinary": "110101",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "火泽睽的卦象是火向上、泽向下，象征两人各按自己的方向用力；这不是谁对谁错，而是需求不同。卦辞说‘小事吉’，提示空房用途宜从具体、可执行的小安排入手，不要上升为‘你更重视谁’的大判断。先对齐共同目标：家里既要有一个能安静工作、阅读的角落，也要能接待每月约一个周末的亲友。可以把这次商量当作两三个月的试行，而不是永久定案。",
+      "citations": [
+        {
+          "evidenceId": "zy-38-judgment",
+          "quote": "小事吉。",
+          "claim": "小事吉"
+        }
+      ]
+    },
+    {
+      "text": "睽的彖传说‘男女睽而其志通也’，意思是差异并不必然阻断相通；‘睽之时用大矣哉’也说明，相背之时若用得当，反而能逼出更清楚的规则。把伴侣的‘保留客房’翻译成具体需求：来客频次、住几晚、是否需要独立床铺、隐私和储物；也把你的‘安静书房’翻译成具体条件：固定安静时段、桌面不被占用、文件书籍有位置。每月只有一个周末来客，一年约十二次，按天算远少于空置作书房的时间；这是可以用‘小事’尺度处理的分配问题。",
+      "citations": [
+        {
+          "evidenceId": "zy-38-tuan",
+          "quote": "男女睽而其志通也",
+          "claim": "男女睽而其志通也"
+        },
+        {
+          "evidenceId": "zy-38-tuan",
+          "quote": "睽之时用大矣哉！",
+          "claim": "睽之时用大矣哉"
+        }
+      ]
+    },
+    {
+      "text": "可以试一个‘书房为主、客房为预约功能’的方案：平时书桌、书架、座椅固定为阅读办公区；来客前把折叠床、沙发床展开，或将床垫从柜中取出，访客走后由邀请方或共同恢复书房。设一个共享日历，提前一周确认来客，明确安静时段、物品边界和恢复责任。若伴侣希望床常设，可改用折叠床、壁床、榻榻米收纳，保留最小客房功能；若你更需要绝对安静，可在来客周末去图书馆、咖啡馆或卧室临时办公。大象说‘君子以同而异’，共同生活目标相同，但允许书房与客房两种功能不同。",
+      "citations": [
+        {
+          "evidenceId": "zy-38-xiang",
+          "quote": "君子以同而异。",
+          "claim": "君子以同而异"
+        }
+      ]
+    },
+    {
+      "text": "商量时建议按这个顺序：先各自说需求而非方案，再列不可让渡的条件，最后做可逆试验。比如约定试行两个月：每月来客的那个周末切换为客房，其余时间书房功能优先；若冲突大，再调整。也可加补偿机制：来客后由伴侣负责恢复，或给你一个完整无扰的半天。卦象不替你决定结果，只提示在‘睽’中求通，靠小规则而非大胜负。若双方对安静、隐私或接待义务的底线差距很大，可请第三方或家庭咨询协助，但先尝试具体、限时、可恢复的安排。",
+      "citations": []
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "火泽睽的卦象是火向上、泽向下，象征两人各按自己的方向用力；这不是谁对谁错，而是需求不同。卦辞说‘小事吉’，提示空房用途宜从具体、可执行的小安排入手，不要上升为‘你更重视谁’的大判断。先对齐共同目标：家里既要有一个能安静工作、阅读的角落，也要能接待每月约一个周末的亲友。可以把这次商量当作两三个月的试行，而不是永久定案。",
+    "evidenceId": "zy-38-judgment",
+    "quote": "小事吉。",
+    "claim": "小事吉"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "睽的彖传说‘男女睽而其志通也’，意思是差异并不必然阻断相通；‘睽之时用大矣哉’也说明，相背之时若用得当，反而能逼出更清楚的规则。把伴侣的‘保留客房’翻译成具体需求：来客频次、住几晚、是否需要独立床铺、隐私和储物；也把你的‘安静书房’翻译成具体条件：固定安静时段、桌面不被占用、文件书籍有位置。每月只有一个周末来客，一年约十二次，按天算远少于空置作书房的时间；这是可以用‘小事’尺度处理的分配问题。",
+    "evidenceId": "zy-38-tuan",
+    "quote": "男女睽而其志通也",
+    "claim": "男女睽而其志通也"
+  },
+  {
+    "occurrenceId": "delivered.p1.c1",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[1]",
+    "paragraphText": "睽的彖传说‘男女睽而其志通也’，意思是差异并不必然阻断相通；‘睽之时用大矣哉’也说明，相背之时若用得当，反而能逼出更清楚的规则。把伴侣的‘保留客房’翻译成具体需求：来客频次、住几晚、是否需要独立床铺、隐私和储物；也把你的‘安静书房’翻译成具体条件：固定安静时段、桌面不被占用、文件书籍有位置。每月只有一个周末来客，一年约十二次，按天算远少于空置作书房的时间；这是可以用‘小事’尺度处理的分配问题。",
+    "evidenceId": "zy-38-tuan",
+    "quote": "睽之时用大矣哉！",
+    "claim": "睽之时用大矣哉"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "可以试一个‘书房为主、客房为预约功能’的方案：平时书桌、书架、座椅固定为阅读办公区；来客前把折叠床、沙发床展开，或将床垫从柜中取出，访客走后由邀请方或共同恢复书房。设一个共享日历，提前一周确认来客，明确安静时段、物品边界和恢复责任。若伴侣希望床常设，可改用折叠床、壁床、榻榻米收纳，保留最小客房功能；若你更需要绝对安静，可在来客周末去图书馆、咖啡馆或卧室临时办公。大象说‘君子以同而异’，共同生活目标相同，但允许书房与客房两种功能不同。",
+    "evidenceId": "zy-38-xiang",
+    "quote": "君子以同而异。",
+    "claim": "君子以同而异"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-38-judgment",
+    "hexagramId": 38,
+    "name": "睽",
+    "section": "judgment",
+    "line": null,
+    "text": "小事吉。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "睽·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:38:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "小事吉。"
+  },
+  {
+    "id": "zy-38-tuan",
+    "hexagramId": 38,
+    "name": "睽",
+    "section": "tuan",
+    "line": null,
+    "text": "睽，火动而上，泽动而下；二女同居，其志不同行；说而丽乎明，柔进而上行，得中而应乎刚，是以“小事吉”。天地睽而其事同也，男女睽而其志通也，万物睽而其事类也；睽之时用大矣哉！",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "睽·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:38:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "睽，火动而上，泽动而下；二女同居，其志不同行；说而丽乎明，柔进而上行，得中而应乎刚，是以“小事吉”。天地睽而其事同也，男女睽而其志通也，万物睽而其事类也；睽之时用大矣哉！"
+  },
+  {
+    "id": "zy-38-xiang",
+    "hexagramId": 38,
+    "name": "睽",
+    "section": "xiang",
+    "line": null,
+    "text": "上火下泽，睽；君子以同而异。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "睽·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:38:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "上火下泽，睽；君子以同而异。"
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q1df2e37c96dc · life
+
+**核心问题：** 陶艺工作室希望我参加连续六周的课程，要不要报名？
+
+**当前问题：** 陶艺课要不要报名？每周课程三小时，我未来两个月每周只能腾出一小时，缺课不能补。
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    8,
+    8,
+    7,
+    8,
+    7,
+    7
+  ],
+  "original": {
+    "binary": "001011",
+    "name": "风山渐",
+    "number": 53,
+    "judgment": "女归吉，利贞。"
+  },
+  "changed": {
+    "binary": "001011",
+    "name": "风山渐",
+    "number": 53,
+    "judgment": "女归吉，利贞。"
+  },
+  "originalBinary": "001011",
+  "changedBinary": "001011",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "渐卦卦辞说“女归吉，利贞”，用于你问的陶艺课报名，重点不在“能不能去”，而在“渐进是否守正、是否合宜”。你未来两个月每周只能腾出一小时，而课程每周三小时且缺课不能补，这个条件不匹配。若硬报，六周里每周缺两小时，连续缺课又无法补，很可能破坏学习节奏。",
+      "citations": [
+        {
+          "evidenceId": "zy-53-judgment",
+          "quote": "女归吉，利贞。",
+          "claim": "女归吉，利贞"
+        }
+      ]
+    },
+    {
+      "text": "《彖传》解释“渐之进也，‘女归吉’也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也”，核心是渐进要“进得位”，条件合适、方式正当，前往才有功。你现在的“位”是每周只有一小时，课程却要三小时且不能补，这更像“进不得位”。所以不建议报名这一期；如果工作室能调整成每周一小时、可补课或延后完成，才另当别论。",
+      "citations": [
+        {
+          "evidenceId": "zy-53-tuan",
+          "quote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。",
+          "claim": "进得位"
+        }
+      ]
+    },
+    {
+      "text": "大象说“山上有木，渐。君子以居贤德善俗”，山上的树是慢慢长成的，君子用渐进方式积累德行、改善风俗。陶艺学习也适合这种节奏：先保持每周一小时的接触，等两个月后时间宽裕，再报连续课程。这样既不违背工作室的邀请，也不勉强自己。若你仍想报名，至少要先确认缺课是否有替代方案；否则，这一期的“缺课不能补”会与渐卦的渐进积累相冲突。",
+      "citations": [
+        {
+          "evidenceId": "zy-53-xiang",
+          "quote": "山上有木，渐。君子以居贤德善俗。",
+          "claim": "山上有木，渐。君子以居贤德善俗"
+        }
+      ]
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "渐卦卦辞说“女归吉，利贞”，用于你问的陶艺课报名，重点不在“能不能去”，而在“渐进是否守正、是否合宜”。你未来两个月每周只能腾出一小时，而课程每周三小时且缺课不能补，这个条件不匹配。若硬报，六周里每周缺两小时，连续缺课又无法补，很可能破坏学习节奏。",
+    "evidenceId": "zy-53-judgment",
+    "quote": "女归吉，利贞。",
+    "claim": "女归吉，利贞"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "《彖传》解释“渐之进也，‘女归吉’也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也”，核心是渐进要“进得位”，条件合适、方式正当，前往才有功。你现在的“位”是每周只有一小时，课程却要三小时且不能补，这更像“进不得位”。所以不建议报名这一期；如果工作室能调整成每周一小时、可补课或延后完成，才另当别论。",
+    "evidenceId": "zy-53-tuan",
+    "quote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。",
+    "claim": "进得位"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "大象说“山上有木，渐。君子以居贤德善俗”，山上的树是慢慢长成的，君子用渐进方式积累德行、改善风俗。陶艺学习也适合这种节奏：先保持每周一小时的接触，等两个月后时间宽裕，再报连续课程。这样既不违背工作室的邀请，也不勉强自己。若你仍想报名，至少要先确认缺课是否有替代方案；否则，这一期的“缺课不能补”会与渐卦的渐进积累相冲突。",
+    "evidenceId": "zy-53-xiang",
+    "quote": "山上有木，渐。君子以居贤德善俗。",
+    "claim": "山上有木，渐。君子以居贤德善俗"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-53-judgment",
+    "hexagramId": 53,
+    "name": "渐",
+    "section": "judgment",
+    "line": null,
+    "text": "女归吉，利贞。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "渐·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:53:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "女归吉，利贞。"
+  },
+  {
+    "id": "zy-53-tuan",
+    "hexagramId": 53,
+    "name": "渐",
+    "section": "tuan",
+    "line": null,
+    "text": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "渐·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:53:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+  },
+  {
+    "id": "zy-53-xiang",
+    "hexagramId": 53,
+    "name": "渐",
+    "section": "xiang",
+    "line": null,
+    "text": "山上有木，渐。君子以居贤德善俗。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "渐·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:53:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "山上有木，渐。君子以居贤德善俗。"
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Qbbf3c098c4a7 · life
+
+**核心问题：** 朋友请我代养他的小狗，我该答应吗？
+
+**当前问题：** 朋友请我代养小狗，要不要答应？只需要一个周末，我在家办公，也和这只狗相处过。
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    7,
+    7,
+    7,
+    8,
+    7,
+    7
+  ],
+  "original": {
+    "binary": "111011",
+    "name": "风天小畜",
+    "number": 9,
+    "judgment": "亨。密云不雨，自我西郊。"
+  },
+  "changed": {
+    "binary": "111011",
+    "name": "风天小畜",
+    "number": 9,
+    "judgment": "亨。密云不雨，自我西郊。"
+  },
+  "originalBinary": "111011",
+  "changedBinary": "111011",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "就你问的“要不要答应”来说，风天小畜给出的整体基调是：事情可以办，但属于“小畜”——规模不大、力量未全展，适合以短时、有限度的方式答应。卦辞说“亨。密云不雨，自我西郊。”，亨通在前，但云聚而不雨，说明预期中的“顺利”还需要条件落实，不能只凭交情就默认一切顺当。",
+      "citations": [
+        {
+          "evidenceId": "zy-9-judgment",
+          "quote": "亨。密云不雨，自我西郊。",
+          "claim": "亨。密云不雨，自我西郊。"
+        }
+      ]
+    },
+    {
+      "text": "彖传解释小畜为“柔得位而上下应之，曰小畜。”代养这件事要成，关键在“上下应”：你、朋友、小狗三方的习惯与安排要能相应。你与这只狗相处过，是有利条件；但还要确认朋友是否把喂食、遛狗、独处、吠叫、排泄、疫苗和突发疾病等交代清楚。彖传又说“施未行也”，提醒你：在具体安排没有落地前，先别把话说满。",
+      "citations": [
+        {
+          "evidenceId": "zy-9-tuan",
+          "quote": "柔得位而上下应之，曰小畜。",
+          "claim": "柔得位而上下应之，曰小畜。"
+        },
+        {
+          "evidenceId": "zy-9-tuan",
+          "quote": "施未行也",
+          "claim": "施未行也"
+        }
+      ]
+    },
+    {
+      "text": "大象说“风行天上，小畜。君子以懿文德。”风行天上，影响得到处都有，却不是暴雨倾盆；对应一个周末的代养，它更像一段需要耐心、细致和柔和应对的小事。你把它当成“懿文德”的机会，按时喂遛、清理、安抚，也给自己留出工作节奏，就会比较顺。若你本身工作正紧、睡眠怕扰、或对狗的行为没有把握，勉强答应反而容易两伤。",
+      "citations": [
+        {
+          "evidenceId": "zy-9-xiang",
+          "quote": "风行天上，小畜。君子以懿文德。",
+          "claim": "风行天上，小畜。君子以懿文德。"
+        }
+      ]
+    },
+    {
+      "text": "所以，实际取舍可以这样：若你确认只是周末、朋友交代清楚、狗与你相处稳定，且你愿意接受一些被打断，可以答应，但要以“小畜”为界，只承诺一个周末，并约定突发情况联系方式和备选方案；若工作强度高、狗有攻击或严重分离焦虑、朋友含糊其辞，则宜婉拒或改成短时帮忙。无动爻说明这一卦没有明显转向，重点不在吉凶翻转，而在你当下怎样把小边界和小安排做好。",
+      "citations": []
+    },
+    {
+      "text": "最后要说明：卦象只是提供一种反思视角，不能替代你对现实条件的判断。真正决定该不该答应的，是狗的实际习性、你的精力与工作安排、朋友是否负责，以及出现意外时谁来承担。把这几个问题问清、想清，再给朋友答复，会更稳妥。",
+      "citations": []
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "就你问的“要不要答应”来说，风天小畜给出的整体基调是：事情可以办，但属于“小畜”——规模不大、力量未全展，适合以短时、有限度的方式答应。卦辞说“亨。密云不雨，自我西郊。”，亨通在前，但云聚而不雨，说明预期中的“顺利”还需要条件落实，不能只凭交情就默认一切顺当。",
+    "evidenceId": "zy-9-judgment",
+    "quote": "亨。密云不雨，自我西郊。",
+    "claim": "亨。密云不雨，自我西郊。"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "彖传解释小畜为“柔得位而上下应之，曰小畜。”代养这件事要成，关键在“上下应”：你、朋友、小狗三方的习惯与安排要能相应。你与这只狗相处过，是有利条件；但还要确认朋友是否把喂食、遛狗、独处、吠叫、排泄、疫苗和突发疾病等交代清楚。彖传又说“施未行也”，提醒你：在具体安排没有落地前，先别把话说满。",
+    "evidenceId": "zy-9-tuan",
+    "quote": "柔得位而上下应之，曰小畜。",
+    "claim": "柔得位而上下应之，曰小畜。"
+  },
+  {
+    "occurrenceId": "delivered.p1.c1",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[1]",
+    "paragraphText": "彖传解释小畜为“柔得位而上下应之，曰小畜。”代养这件事要成，关键在“上下应”：你、朋友、小狗三方的习惯与安排要能相应。你与这只狗相处过，是有利条件；但还要确认朋友是否把喂食、遛狗、独处、吠叫、排泄、疫苗和突发疾病等交代清楚。彖传又说“施未行也”，提醒你：在具体安排没有落地前，先别把话说满。",
+    "evidenceId": "zy-9-tuan",
+    "quote": "施未行也",
+    "claim": "施未行也"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "大象说“风行天上，小畜。君子以懿文德。”风行天上，影响得到处都有，却不是暴雨倾盆；对应一个周末的代养，它更像一段需要耐心、细致和柔和应对的小事。你把它当成“懿文德”的机会，按时喂遛、清理、安抚，也给自己留出工作节奏，就会比较顺。若你本身工作正紧、睡眠怕扰、或对狗的行为没有把握，勉强答应反而容易两伤。",
+    "evidenceId": "zy-9-xiang",
+    "quote": "风行天上，小畜。君子以懿文德。",
+    "claim": "风行天上，小畜。君子以懿文德。"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-9-judgment",
+    "hexagramId": 9,
+    "name": "小畜",
+    "section": "judgment",
+    "line": null,
+    "text": "亨。密云不雨，自我西郊。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "小畜·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:09:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "亨。密云不雨，自我西郊。"
+  },
+  {
+    "id": "zy-9-tuan",
+    "hexagramId": 9,
+    "name": "小畜",
+    "section": "tuan",
+    "line": null,
+    "text": "“小畜”，柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。“密云不雨”，尚往也；“自我西郊”，施未行也。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "小畜·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:09:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "“小畜”，柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。“密云不雨”，尚往也；“自我西郊”，施未行也。"
+  },
+  {
+    "id": "zy-9-xiang",
+    "hexagramId": 9,
+    "name": "小畜",
+    "section": "xiang",
+    "line": null,
+    "text": "风行天上，小畜。君子以懿文德。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "小畜·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:09:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "风行天上，小畜。君子以懿文德。"
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q5335408b7266 · life
+
+**核心问题：** 常穿的鞋开胶了，鞋面和鞋底其他地方还好，附近师傅说半小时能修。今天先修还是直接换双新的？
+
+**当前问题：** 常穿的鞋开胶了，鞋面和鞋底其他地方还好，附近师傅说半小时能修。今天先修还是直接换双新的？
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    7,
+    8,
+    8,
+    8,
+    7,
+    7
+  ],
+  "original": {
+    "binary": "100011",
+    "name": "风雷益",
+    "number": 42,
+    "judgment": "利有攸往，利涉大川。"
+  },
+  "changed": {
+    "binary": "100011",
+    "name": "风雷益",
+    "number": 42,
+    "judgment": "利有攸往，利涉大川。"
+  },
+  "originalBinary": "100011",
+  "changedBinary": "100011",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "从益卦看，卦辞‘利有攸往，利涉大川’，利于有所行动，也利于渡过大川、做该做的事。你的鞋只是开胶，鞋面鞋底其他都好，师傅半小时能修，这正是一个小行动就能获益的情形。因此，今天先修是更合宜的选择。",
+      "citations": [
+        {
+          "evidenceId": "zy-42-judgment",
+          "quote": "利有攸往，利涉大川。",
+          "claim": "从益卦看，卦辞‘利有攸往，利涉大川’，利于有所行动，也利于渡过大川、做该做的事。"
+        }
+      ]
+    },
+    {
+      "text": "彖传又说‘凡益之道，与时偕行’，增益之道要顺应时机。今天师傅有空、半小时能修，正是修补的好时机；若拖到鞋底进一步损坏或临时买新鞋费时费钱，反而不便。",
+      "citations": [
+        {
+          "evidenceId": "zy-42-tuan",
+          "quote": "凡益之道，与时偕行。",
+          "claim": "彖传又说‘凡益之道，与时偕行’，增益之道要顺应时机。"
+        }
+      ]
+    },
+    {
+      "text": "大象说‘君子以见善则迁，有过则改’，开胶是小毛病，及时送去修补，正是改过迁善的日常实践。除非修后仍频繁开胶、影响走路安全，或你本就想换新，那另当别论。",
+      "citations": [
+        {
+          "evidenceId": "zy-42-xiang",
+          "quote": "君子以见善则迁，有过则改。",
+          "claim": "大象说‘君子以见善则迁，有过则改’，开胶是小毛病，及时送去修补，正是改过迁善的日常实践。"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "卦象与文献不替你对修鞋质量、鞋子实际磨损和穿用安全的判断；若修补后仍影响使用，再考虑换新。"
+  ]
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "从益卦看，卦辞‘利有攸往，利涉大川’，利于有所行动，也利于渡过大川、做该做的事。你的鞋只是开胶，鞋面鞋底其他都好，师傅半小时能修，这正是一个小行动就能获益的情形。因此，今天先修是更合宜的选择。",
+    "evidenceId": "zy-42-judgment",
+    "quote": "利有攸往，利涉大川。",
+    "claim": "从益卦看，卦辞‘利有攸往，利涉大川’，利于有所行动，也利于渡过大川、做该做的事。"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "彖传又说‘凡益之道，与时偕行’，增益之道要顺应时机。今天师傅有空、半小时能修，正是修补的好时机；若拖到鞋底进一步损坏或临时买新鞋费时费钱，反而不便。",
+    "evidenceId": "zy-42-tuan",
+    "quote": "凡益之道，与时偕行。",
+    "claim": "彖传又说‘凡益之道，与时偕行’，增益之道要顺应时机。"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "大象说‘君子以见善则迁，有过则改’，开胶是小毛病，及时送去修补，正是改过迁善的日常实践。除非修后仍频繁开胶、影响走路安全，或你本就想换新，那另当别论。",
+    "evidenceId": "zy-42-xiang",
+    "quote": "君子以见善则迁，有过则改。",
+    "claim": "大象说‘君子以见善则迁，有过则改’，开胶是小毛病，及时送去修补，正是改过迁善的日常实践。"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-42-judgment",
+    "hexagramId": 42,
+    "name": "益",
+    "section": "judgment",
+    "line": null,
+    "text": "利有攸往，利涉大川。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "益·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:42:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "利有攸往，利涉大川。"
+  },
+  {
+    "id": "zy-42-tuan",
+    "hexagramId": 42,
+    "name": "益",
+    "section": "tuan",
+    "line": null,
+    "text": "益，损上益下，民说无疆；自上下下，其道大光。“利有攸往”，中正有庆；“利涉大川”，木道乃行。益动而巽，日进无疆。天施地生，其益无方。凡益之道，与时偕行。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "益·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:42:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "益，损上益下，民说无疆；自上下下，其道大光。“利有攸往”，中正有庆；“利涉大川”，木道乃行。益动而巽，日进无疆。天施地生，其益无方。凡益之道，与时偕行。"
+  },
+  {
+    "id": "zy-42-xiang",
+    "hexagramId": 42,
+    "name": "益",
+    "section": "xiang",
+    "line": null,
+    "text": "风雷，益。君子以见善则迁，有过则改。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "益·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:42:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "风雷，益。君子以见善则迁，有过则改。"
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q0218bcee3c6f · life
+
+**核心问题：** 陶艺工作室希望我参加连续六周的课程，要不要报名？
+
+**当前问题：** 陶艺课要不要报名？每周课程三小时，我已经试过一节很喜欢，未来两个月每周有四小时空闲。
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    8,
+    8,
+    7,
+    8,
+    7,
+    7
+  ],
+  "original": {
+    "binary": "001011",
+    "name": "风山渐",
+    "number": 53,
+    "judgment": "女归吉，利贞。"
+  },
+  "changed": {
+    "binary": "001011",
+    "name": "风山渐",
+    "number": 53,
+    "judgment": "女归吉，利贞。"
+  },
+  "originalBinary": "001011",
+  "changedBinary": "001011",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "从卦象看，本卦是风山渐，且六爻无动爻，整体不是突变冒进，而是渐进、稳定、按部就班的格局。渐卦卦辞说“女归吉，利贞。”，这里可理解为：按正当次序推进则吉，守正、把条件核实清楚才有利。你已经试过一节并且很喜欢，说明兴趣与初步适配已被验证；连续六周、每周三小时，也属于可以逐步投入的安排。因此，若时间与费用真实可承受，报名本身不违背卦意。",
+      "citations": [
+        {
+          "evidenceId": "zy-53-judgment",
+          "quote": "女归吉，利贞。",
+          "claim": "渐卦卦辞说“女归吉，利贞。”，这里可理解为：按正当次序推进则吉，守正、把条件核实清楚才有利。"
+        }
+      ]
+    },
+    {
+      "text": "彖传解释渐卦说：“渐之进也，‘女归吉’也。进得位，往有功也；进以正，可以正邦也；其位，刚得中也；止而巽，动不穷也。”对你的取舍，关键是“进得位”和“止而巽”：位置、时机合适才动，能止而后顺动，才不至于越走越累。你未来两个月每周有四小时空闲，课程占三小时，表面有余；但要把交通、准备、清洁、课后练习也算进去，若只剩一小时缓冲，就要确认它是稳定可支配而不是理论空隙。若稳定，且不撞重要安排，可报；若只是偶然空档，建议先与工作室确认缺课补课、退费与材料费政策，或等下一期。",
+      "citations": [
+        {
+          "evidenceId": "zy-53-tuan",
+          "quote": "进得位，往有功也；进以正，可以正邦也。",
+          "claim": "进得位，往有功也；进以正，可以正邦也"
+        },
+        {
+          "evidenceId": "zy-53-tuan",
+          "quote": "止而巽，动不穷也。",
+          "claim": "止而巽，动不穷也"
+        }
+      ]
+    },
+    {
+      "text": "大象说：“山上有木，渐。君子以居贤德善俗。”山上的树生长缓慢，却扎根深厚；六周陶艺课也类似，重点不只是做出一件作品，而是在连续节奏里养成手感与心性。我的建议是：如果你确认每周四小时是真实可支配，并愿意为课程预留至少半小时到一小时弹性，且费用、材料、交通不造成压力，就报名；若其中一项明显吃紧，先与工作室商量更灵活的方案，或暂缓到条件更稳时再报。无动爻的渐卦，不要求你立刻改变，只提示你按次序推进。",
+      "citations": [
+        {
+          "evidenceId": "zy-53-xiang",
+          "quote": "山上有木，渐。君子以居贤德善俗。",
+          "claim": "山上有木，渐。君子以居贤德善俗。"
+        }
+      ]
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "从卦象看，本卦是风山渐，且六爻无动爻，整体不是突变冒进，而是渐进、稳定、按部就班的格局。渐卦卦辞说“女归吉，利贞。”，这里可理解为：按正当次序推进则吉，守正、把条件核实清楚才有利。你已经试过一节并且很喜欢，说明兴趣与初步适配已被验证；连续六周、每周三小时，也属于可以逐步投入的安排。因此，若时间与费用真实可承受，报名本身不违背卦意。",
+    "evidenceId": "zy-53-judgment",
+    "quote": "女归吉，利贞。",
+    "claim": "渐卦卦辞说“女归吉，利贞。”，这里可理解为：按正当次序推进则吉，守正、把条件核实清楚才有利。"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "彖传解释渐卦说：“渐之进也，‘女归吉’也。进得位，往有功也；进以正，可以正邦也；其位，刚得中也；止而巽，动不穷也。”对你的取舍，关键是“进得位”和“止而巽”：位置、时机合适才动，能止而后顺动，才不至于越走越累。你未来两个月每周有四小时空闲，课程占三小时，表面有余；但要把交通、准备、清洁、课后练习也算进去，若只剩一小时缓冲，就要确认它是稳定可支配而不是理论空隙。若稳定，且不撞重要安排，可报；若只是偶然空档，建议先与工作室确认缺课补课、退费与材料费政策，或等下一期。",
+    "evidenceId": "zy-53-tuan",
+    "quote": "进得位，往有功也；进以正，可以正邦也。",
+    "claim": "进得位，往有功也；进以正，可以正邦也"
+  },
+  {
+    "occurrenceId": "delivered.p1.c1",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[1]",
+    "paragraphText": "彖传解释渐卦说：“渐之进也，‘女归吉’也。进得位，往有功也；进以正，可以正邦也；其位，刚得中也；止而巽，动不穷也。”对你的取舍，关键是“进得位”和“止而巽”：位置、时机合适才动，能止而后顺动，才不至于越走越累。你未来两个月每周有四小时空闲，课程占三小时，表面有余；但要把交通、准备、清洁、课后练习也算进去，若只剩一小时缓冲，就要确认它是稳定可支配而不是理论空隙。若稳定，且不撞重要安排，可报；若只是偶然空档，建议先与工作室确认缺课补课、退费与材料费政策，或等下一期。",
+    "evidenceId": "zy-53-tuan",
+    "quote": "止而巽，动不穷也。",
+    "claim": "止而巽，动不穷也"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "大象说：“山上有木，渐。君子以居贤德善俗。”山上的树生长缓慢，却扎根深厚；六周陶艺课也类似，重点不只是做出一件作品，而是在连续节奏里养成手感与心性。我的建议是：如果你确认每周四小时是真实可支配，并愿意为课程预留至少半小时到一小时弹性，且费用、材料、交通不造成压力，就报名；若其中一项明显吃紧，先与工作室商量更灵活的方案，或暂缓到条件更稳时再报。无动爻的渐卦，不要求你立刻改变，只提示你按次序推进。",
+    "evidenceId": "zy-53-xiang",
+    "quote": "山上有木，渐。君子以居贤德善俗。",
+    "claim": "山上有木，渐。君子以居贤德善俗。"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-53-judgment",
+    "hexagramId": 53,
+    "name": "渐",
+    "section": "judgment",
+    "line": null,
+    "text": "女归吉，利贞。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "渐·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:53:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "女归吉，利贞。"
+  },
+  {
+    "id": "zy-53-tuan",
+    "hexagramId": 53,
+    "name": "渐",
+    "section": "tuan",
+    "line": null,
+    "text": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "渐·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:53:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+  },
+  {
+    "id": "zy-53-xiang",
+    "hexagramId": 53,
+    "name": "渐",
+    "section": "xiang",
+    "line": null,
+    "text": "山上有木，渐。君子以居贤德善俗。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "渐·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:53:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "山上有木，渐。君子以居贤德善俗。"
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Qb98fcff8b6b0 · life
+
+**核心问题：** 陶艺工作室希望我参加连续六周的课程，要不要报名？
+
+**当前问题：** 陶艺课要不要报名？每周课程三小时，我已经试过一节很喜欢，未来两个月每周有四小时空闲。
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    8,
+    8,
+    7,
+    8,
+    7,
+    7
+  ],
+  "original": {
+    "binary": "001011",
+    "name": "风山渐",
+    "number": 53,
+    "judgment": "女归吉，利贞。"
+  },
+  "changed": {
+    "binary": "001011",
+    "name": "风山渐",
+    "number": 53,
+    "judgment": "女归吉，利贞。"
+  },
+  "originalBinary": "001011",
+  "changedBinary": "001011",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "从卦象看，风山渐，无动爻，整体是循序渐进、稳步前行的格局。渐卦卦辞说“女归吉，利贞”，意味着以渐进方式进入一件事，只要守正、不急躁，是吉利的。报名陶艺课这件事，你已经试过一节且很喜欢，属于“进得位”的起点，不是凭空冲动。",
+      "citations": [
+        {
+          "evidenceId": "zy-53-judgment",
+          "quote": "女归吉，利贞。",
+          "claim": "渐卦卦辞说“女归吉，利贞”，意味着以渐进方式进入一件事，只要守正、不急躁，是吉利的。"
+        }
+      ]
+    },
+    {
+      "text": "彖传说“进得位，往有功也；进以正，可以正邦也”，对应到你这里，就是时间位置合适、动机喜欢，报名并持续投入更可能带来实际收获。你未来两个月每周有四小时空闲，课程每周三小时，单看时间能够容纳，属于“进得位”的条件；但连续六周是承诺，不只是单次体验。",
+      "citations": [
+        {
+          "evidenceId": "zy-53-tuan",
+          "quote": "进得位，往有功也；进以正，可以正邦也。",
+          "claim": "彖传说“进得位，往有功也；进以正，可以正邦也”，对应到你这里，就是时间位置合适、动机喜欢，报名并持续投入更可能带来实际收获。"
+        }
+      ]
+    },
+    {
+      "text": "大象说“山上有木，渐。君子以居贤德善俗”，陶艺作为手艺更适合按周积累、慢慢长进，不追求六周速成。若工作室可靠、你能稳定出席，报名是顺理成章的选择；但它会占掉每周三小时，只剩一小时缓冲，若工作中常有临时安排或出行，就要先确认缺课能否补、材料是否额外收费。渐卦无动爻，也提示此时不必大动干戈，按既定节奏报名并守时练习即可。",
+      "citations": [
+        {
+          "evidenceId": "zy-53-xiang",
+          "quote": "山上有木，渐。君子以居贤德善俗。",
+          "claim": "大象说“山上有木，渐。君子以居贤德善俗”，陶艺作为手艺更适合按周积累、慢慢长进，不追求六周速成。"
+        }
+      ]
+    },
+    {
+      "text": "需要你自己核实的是：工作室是否允许补课、材料费是否另计、六周内有无出差或加班高峰。若这些条件基本可控，以渐卦的视角，报名比犹豫更合宜；若每周仅剩的一小时缓冲也常被占用，则可暂缓一期，等时间更宽裕再进。",
+      "citations": []
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "从卦象看，风山渐，无动爻，整体是循序渐进、稳步前行的格局。渐卦卦辞说“女归吉，利贞”，意味着以渐进方式进入一件事，只要守正、不急躁，是吉利的。报名陶艺课这件事，你已经试过一节且很喜欢，属于“进得位”的起点，不是凭空冲动。",
+    "evidenceId": "zy-53-judgment",
+    "quote": "女归吉，利贞。",
+    "claim": "渐卦卦辞说“女归吉，利贞”，意味着以渐进方式进入一件事，只要守正、不急躁，是吉利的。"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "彖传说“进得位，往有功也；进以正，可以正邦也”，对应到你这里，就是时间位置合适、动机喜欢，报名并持续投入更可能带来实际收获。你未来两个月每周有四小时空闲，课程每周三小时，单看时间能够容纳，属于“进得位”的条件；但连续六周是承诺，不只是单次体验。",
+    "evidenceId": "zy-53-tuan",
+    "quote": "进得位，往有功也；进以正，可以正邦也。",
+    "claim": "彖传说“进得位，往有功也；进以正，可以正邦也”，对应到你这里，就是时间位置合适、动机喜欢，报名并持续投入更可能带来实际收获。"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "大象说“山上有木，渐。君子以居贤德善俗”，陶艺作为手艺更适合按周积累、慢慢长进，不追求六周速成。若工作室可靠、你能稳定出席，报名是顺理成章的选择；但它会占掉每周三小时，只剩一小时缓冲，若工作中常有临时安排或出行，就要先确认缺课能否补、材料是否额外收费。渐卦无动爻，也提示此时不必大动干戈，按既定节奏报名并守时练习即可。",
+    "evidenceId": "zy-53-xiang",
+    "quote": "山上有木，渐。君子以居贤德善俗。",
+    "claim": "大象说“山上有木，渐。君子以居贤德善俗”，陶艺作为手艺更适合按周积累、慢慢长进，不追求六周速成。"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-53-judgment",
+    "hexagramId": 53,
+    "name": "渐",
+    "section": "judgment",
+    "line": null,
+    "text": "女归吉，利贞。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "渐·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:53:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "女归吉，利贞。"
+  },
+  {
+    "id": "zy-53-tuan",
+    "hexagramId": 53,
+    "name": "渐",
+    "section": "tuan",
+    "line": null,
+    "text": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "渐·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:53:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+  },
+  {
+    "id": "zy-53-xiang",
+    "hexagramId": 53,
+    "name": "渐",
+    "section": "xiang",
+    "line": null,
+    "text": "山上有木，渐。君子以居贤德善俗。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "渐·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:53:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "山上有木，渐。君子以居贤德善俗。"
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。

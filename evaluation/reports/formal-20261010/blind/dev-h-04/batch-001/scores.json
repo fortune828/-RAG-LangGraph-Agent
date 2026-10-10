@@ -1,0 +1,1276 @@
+{
+  "reviewer": {
+    "reviewerId": "formal-reviewer-b",
+    "kind": "AI",
+    "expertStatus": "non_expert",
+    "blind": true,
+    "independent": true
+  },
+  "results": [
+    {
+      "answerId": "Qae66bca94d8a",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "insufficient_or_refusal",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": false,
+      "taskSuccessReason": "实际交付不足说明，未找到指定焦循原文，不能按诚实拒绝视为查证成功。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "insufficient_or_refusal",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p0：理解用户指定作者、卦爻及原文目标，没有冒造原文。 原句：“无法给出逐字原文或对应的文献引用”。"
+            },
+            "knowledge": {
+              "value": null,
+              "rationale": "p0：实际证据为空，附带书名归于焦循的线索无法在授权材料内核验，不猜作者归属。 原句：“如可确认版本的《周易补疏》等”。",
+              "naReason": "insufficient_basis"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "p0：纯文献查找，未作现代应用。 原句：“不宜凭记忆转录为焦循原文”。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "p0：清楚说明不足与谨慎原因，语气合适。 原句：“在此之前不宜凭记忆转录为焦循原文”。"
+            },
+            "helpfulness": {
+              "value": 0,
+              "rationale": "p0：未交付所需注解或可验证出处；补充数据库建议不能完成指定查证。 原句：“无法给出逐字原文或对应的文献引用”。"
+            }
+          },
+          "errors": [
+            {
+              "type": "task_not_answered",
+              "quote": "无法给出逐字原文或对应的文献引用",
+              "location": "p0",
+              "reason": "指定焦循注解原文未交付；证据确为空，不标虚构缺失。",
+              "certainty": "confirmed",
+              "severity": "material",
+              "dimensions": [
+                "helpfulness"
+              ]
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本证据、题给cast与明示referenceOnlyEvidence；补充原文仅在Qae312056e58f存在，未视为生成可见。",
+            "claims": [
+              {
+                "claimId": "Qae66bca94d8a.c01",
+                "occurrenceIds": [],
+                "assertion": "《周易补疏》可作为焦循相关易著线索",
+                "quote": "焦循相关易著（如可确认版本的《周易补疏》等）",
+                "location": "p0",
+                "layer": "attribution",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "实际及补充证据均空，无法核定此书名和焦循关系，不靠记忆判作者。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 1,
+              "traditionalAssertionsReviewed": 1,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐个occurrence核对；传统标签计数 {\"unknown\": 1}。无传统断言时支持比例N/A；unknown未算已支持。未外查、不猜未知训诂或作者归属。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q1a4a0e9d0650",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "已给用六原文及其独立于普通爻辞的依据。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p0：准确回答原文与普通爻辞是否同条的两个问题。 原句：“坤卦“用六”的原文是：“利永贞。””。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "p1：定位与给定资料一致，特殊条目与普通爻位区分有证据；额外全变取用规则未核定。 原句：“资料把它标为“坤·用六””。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "p2：只谈文献与筮法，没有现代应用。 原句：“这属于取用规则，不改变上述文献判断”。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "p1：直接解释区分依据，未将附加规则混入文献判断。 原句：“不是标为某个普通爻位”。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "p1：提供原文及条目差别，满足核心查问，不要求用户自行完成主要判断。 原句：“它和初六、六二、六三、六四、六五、上六这些普通爻辞不是同一条”。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本证据、题给cast与明示referenceOnlyEvidence；补充原文仅在Qae312056e58f存在，未视为生成可见。",
+            "claims": [
+              {
+                "claimId": "Q1a4a0e9d0650.c01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "利永贞。",
+                "quote": "利永贞。",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-2-special-7"
+                ],
+                "supportLabel": "supported",
+                "rationale": "引句、作者/篇章对象与本样本实际证据相符，语义扩展另行登记。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "利永贞。"
+              },
+              {
+                "claimId": "Q1a4a0e9d0650.c02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "资料把它标为“坤·用六”",
+                "quote": "利永贞。",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "attribution",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-2-special-7"
+                ],
+                "supportLabel": "supported",
+                "rationale": "证据locator明确为坤·用六，支持条目名称归属。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "利永贞。"
+              },
+              {
+                "claimId": "Q1a4a0e9d0650.c03",
+                "occurrenceIds": [],
+                "assertion": "用六独立于坤的普通六爻条目",
+                "quote": "它和初六、六二、六三、六四、六五、上六这些普通爻辞不是同一条",
+                "location": "p1",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-2-special-7"
+                ],
+                "supportLabel": "supported",
+                "rationale": "实际资料定位为坤用六而非普通爻位，支持条目性质的有限判断。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "利永贞。"
+              },
+              {
+                "claimId": "Q1a4a0e9d0650.c04",
+                "occurrenceIds": [],
+                "assertion": "坤六爻皆变时取用六",
+                "quote": "六爻皆老阴、全变，恰是“用六”会被取用的筮法情形",
+                "location": "p2",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "题给cast确为六个6，但未提供取用规则文献，不能凭cast验证筮法规则。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 2,
+              "citationClaimOccurrencesReviewed": 2,
+              "traditionalAssertionsIdentified": 4,
+              "traditionalAssertionsReviewed": 4,
+              "uncitedTraditionalAssertionsIdentified": 2,
+              "uncitedTraditionalAssertionsReviewed": 2,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐个occurrence核对；传统标签计数 {\"supported\": 3, \"unknown\": 1}。无传统断言时支持比例N/A；unknown未算已支持。未外查、不猜未知训诂或作者归属。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q0948f675a13b",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "给出初六名、完整爻辞和相应注释，完成查问。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p0：直接回应纠错，并实际拿出爻辞而非只给数字。 原句：“应叫「初六」，不是初九”。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "p0：初六定位与证据一致，王弼及朱熹引用、释义均对应同爻。 原句：“它的爻辞是：习坎，入于坎窞，凶。”。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "p2：仅解释传统文本，没有转用于现代处境。 原句：“阴柔之质处在重重险难之下”。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "p0：说明称谓与阴阳关系，后续解释衔接清楚。 原句：“阴爻在初位称「初六」”。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "p0：爻名、完整爻辞和注释依据俱全。 原句：“习坎，入于坎窞，凶”。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本证据、题给cast与明示referenceOnlyEvidence；补充原文仅在Qae312056e58f存在，未视为生成可见。",
+            "claims": [
+              {
+                "claimId": "Q0948f675a13b.c01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "习坎，入于坎窞，凶。",
+                "quote": "习坎，入于坎窞，凶。",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-29-line-1"
+                ],
+                "supportLabel": "supported",
+                "rationale": "引句、作者/篇章对象与本样本实际证据相符，语义扩展另行登记。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "习坎，入于坎窞，凶。"
+              },
+              {
+                "claimId": "Q0948f675a13b.c02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "最处坎底，入坎窞者也",
+                "quote": "最處坎底，入坎窞者也",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2404949:h29:line1:7c85f84b94"
+                ],
+                "supportLabel": "supported",
+                "rationale": "引句、作者/篇章对象与本样本实际证据相符，语义扩展另行登记。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "「習坎」者，習為險難之事也。最處坎底，入坎窞者也。處重險而復入坎底，其道「凶」也。行險而不能自濟，「習坎」而入坎窞，失道而窮在坎底，上無應援可以自濟，是以「凶」也。"
+              },
+              {
+                "claimId": "Q0948f675a13b.c03",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "以阴柔居重险之下其陷益深故其象占如此",
+                "quote": "以隂柔居重險之下其陷益深故其象占如此",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h29:line1:7e15ce7aed"
+                ],
+                "supportLabel": "supported",
+                "rationale": "引句、作者/篇章对象与本样本实际证据相符，语义扩展另行登记。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "窞徒坎陵感二反○以隂柔居重險之下其陷益深故其象占如此"
+              },
+              {
+                "claimId": "Q0948f675a13b.c04",
+                "occurrenceIds": [],
+                "assertion": "坎初爻为阴且名初六",
+                "quote": "阴爻在初位称「初六」",
+                "location": "p0",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-29-line-1"
+                ],
+                "supportLabel": "supported",
+                "rationale": "题给卦象首爻为8，实际证据locator为习坎初六，相互核对。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "习坎，入于坎窞，凶。"
+              },
+              {
+                "claimId": "Q0948f675a13b.c05",
+                "occurrenceIds": [],
+                "assertion": "王弼以重险无援不能自济解释初六凶",
+                "quote": "爻处于重险而又入坎底，行险而不能自济，上无应援可以自济，所以其道为凶",
+                "location": "p1",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@2404949:h29:line1:7c85f84b94"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王弼条注直接具备这些条件。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "上無應援可以自濟，是以「凶」也。"
+              },
+              {
+                "claimId": "Q0948f675a13b.c06",
+                "occurrenceIds": [],
+                "assertion": "朱熹以阴柔居重险之下释象占",
+                "quote": "意思是阴柔之质处在重重险难之下，陷落更深，所以象与占如此",
+                "location": "p2",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zhu-xi@528287:h29:line1:7e15ce7aed"
+                ],
+                "supportLabel": "supported",
+                "rationale": "逐句释义忠实于朱熹给定注。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "以隂柔居重險之下其陷益深故其象占如此"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 3,
+              "citationClaimOccurrencesReviewed": 3,
+              "traditionalAssertionsIdentified": 6,
+              "traditionalAssertionsReviewed": 6,
+              "uncitedTraditionalAssertionsIdentified": 3,
+              "uncitedTraditionalAssertionsReviewed": 3,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐个occurrence核对；传统标签计数 {\"supported\": 6}。无传统断言时支持比例N/A；unknown未算已支持。未外查、不猜未知训诂或作者归属。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Qe00d12191867",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "为明确换题提供新建入口并说明新对话边界，完成本轮换题操作引导；没有声称已预测复合结果。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p0：识别用户明确换题，不延续小工具讨论或将旧卦强解为复合。 原句：“围绕新的核心问题重新发问”。"
+            },
+            "knowledge": {
+              "value": null,
+              "rationale": "p0：纯操作引导，不提出传统文义或占法必要性的论断。 原句：“请点击“新建起卦””。",
+              "naReason": "not_applicable"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "p0：未作现代传统类比，当前回答为会话操作支持。 原句：“新聊天不会沿用这里的对话”。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "p0：简明承接换题意图，给出下一步。 原句：“请点击“新建起卦””。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "p0：为切换到新核心问题提供可执行入口；本轮属于换题引导，不等于已判断能否复合。 原句：“围绕新的核心问题重新发问”。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本证据、题给cast与明示referenceOnlyEvidence；补充原文仅在Qae312056e58f存在，未视为生成可见。",
+            "claims": [],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 0,
+              "traditionalAssertionsReviewed": 0,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐个occurrence核对；传统标签计数 {}。无传统断言时支持比例N/A；unknown未算已支持。未外查、不猜未知训诂或作者归属。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q4766d59f248f",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "给出九二爻辞、守中警惕的文化启发和现实沟通检查点；局部无动爻推断单列缺陷。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p0：识别新旧主题，按用户要求谈本卦第二爻，并不假定双方已同意复合。 原句：“你这轮把问题从“今天午饭选什么”转到了“分手复合””。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "p1：爻位、爻辞、小象和中道解释吻合；未获依据的额外无动爻占法另记unknown。 原句：“九二爻辞说“惕号，莫夜有戎，勿恤””。"
+            },
+            "integration": {
+              "value": 1,
+              "rationale": "p4：主要给文化启发及现实判断问题，但将无动爻当成关系未转向的证据；夜戎与情绪争吵对应偏松。 原句：“说明当前格局没有明显转向”。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "p4：说明换题并保持条件分支，语气可理解且不强迫复合。 原句：“本轮仅就九二作启发”。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "p4：提供守界限、不强逼及复合前判断要点，回答本爻启发；局部象义背书不改变核心支持。 原句：“先判断分手原因是否原则性、对方是否愿意沟通”。"
+            }
+          },
+          "errors": [
+            {
+              "type": "unsupported_prediction",
+              "quote": "说明当前格局没有明显转向",
+              "location": "p4",
+              "reason": "无动爻不能说明真实关系是否转向，缺少分手后互动信息。",
+              "certainty": "confirmed",
+              "severity": "material",
+              "dimensions": [
+                "integration"
+              ]
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本证据、题给cast与明示referenceOnlyEvidence；补充原文仅在Qae312056e58f存在，未视为生成可见。",
+            "claims": [
+              {
+                "claimId": "Q4766d59f248f.c01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "整体是“决”的格局",
+                "quote": "夬，决也，刚决柔也",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-43-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "彖传明确夬决也，支持决的主题；不由此确认实际关系状态。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "夬，决也，刚决柔也；健而说，决而和。“扬于王庭”，柔乘五刚也；“孚号有厉”，其危乃光也；“告自邑，不利即戎”，所尚乃穷也；“利有攸往”，刚长乃终也。"
+              },
+              {
+                "claimId": "Q4766d59f248f.c02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "九二爻辞说“惕号，莫夜有戎，勿恤”",
+                "quote": "惕号，莫夜有戎，勿恤",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-43-line-2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "引句、作者/篇章对象与本样本实际证据相符，语义扩展另行登记。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "惕号，莫夜有戎，勿恤。"
+              },
+              {
+                "claimId": "Q4766d59f248f.c03",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "小象说“有戎”“勿恤”，得中道也",
+                "quote": "“有戎”“勿恤”，得中道也",
+                "location": "paragraphs[1].citations[1]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-43-line_xiang-2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "引句、作者/篇章对象与本样本实际证据相符，语义扩展另行登记。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "“有戎”“勿恤”，得中道也。"
+              },
+              {
+                "claimId": "Q4766d59f248f.c04",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "与其直接“即戎”——用质问、施压、逼对方表态的方式开战，不如先从自己这一方“告自邑”",
+                "quote": "与其直接“即戎”——用质问、施压、逼对方表态的方式开战，不如先从自己这一方“告自邑”",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-43-judgment"
+                ],
+                "supportLabel": null,
+                "rationale": "明确以关系沟通借喻，不将原典未写现代恋爱当作不支持；强度与边界在integration评。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "明示现代情境应用，不列入传统断言分母。"
+              },
+              {
+                "claimId": "Q4766d59f248f.c05",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "告自邑，不利即戎，利有攸往",
+                "quote": "告自邑，不利即戎，利有攸往",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-43-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "拆出引文本身，核对吻合。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "扬于王庭，孚号有厉；告自邑，不利即戎，利有攸往。"
+              },
+              {
+                "claimId": "Q4766d59f248f.c06",
+                "occurrenceIds": [
+                  "delivered.p3.c0"
+                ],
+                "assertion": "是提醒你别只在口头上要复合，而要看你是否愿意继续给予对方实际的支持、尊重与照顾",
+                "quote": "是提醒你别只在口头上要复合，而要看你是否愿意继续给予对方实际的支持、尊重与照顾",
+                "location": "paragraphs[3].citations[0]",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-43-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "明确以关系沟通借喻，不将原典未写现代恋爱当作不支持；强度与边界在integration评。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "明示现代情境应用，不列入传统断言分母。"
+              },
+              {
+                "claimId": "Q4766d59f248f.c07",
+                "occurrenceIds": [
+                  "delivered.p3.c0"
+                ],
+                "assertion": "君子以施禄及下，居德则忌",
+                "quote": "君子以施禄及下，居德则忌",
+                "location": "paragraphs[3].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-43-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "拆出引文本身，核对吻合。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "泽上于天，夬。君子以施禄及下，居德则忌。"
+              },
+              {
+                "claimId": "Q4766d59f248f.c08",
+                "occurrenceIds": [],
+                "assertion": "九二居下卦中，惕而守中",
+                "quote": "九二处在下卦中位，提示的是守中、警惕",
+                "location": "p0",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-43-line-2",
+                  "zy-43-line_xiang-2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "九二定位、惕号及得中道支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "“有戎”“勿恤”，得中道也。"
+              },
+              {
+                "claimId": "Q4766d59f248f.c09",
+                "occurrenceIds": [],
+                "assertion": "无动爻可判现实格局无转向",
+                "quote": "这一卦没有动爻，变卦仍是泽天夬，说明当前格局没有明显转向",
+                "location": "p4",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "cast支持卦未变，但证据没有这种占法解释；现实推断另记错误。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable"
+              },
+              {
+                "claimId": "Q4766d59f248f.c10",
+                "occurrenceIds": [],
+                "assertion": "独立问题宜另起卦",
+                "quote": "若这是独立新问题，宜另起一卦",
+                "location": "p4",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "无授权占法规则文献；这里为宜的建议，不当作必须新增的硬条件。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable"
+              },
+              {
+                "claimId": "Q4766d59f248f.c11",
+                "occurrenceIds": [],
+                "assertion": "以夜戎类比夜间情绪或争吵",
+                "quote": "若在夜里、情绪低谷或突发联络时出现争吵、试探",
+                "location": "p1",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-43-line-2"
+                ],
+                "supportLabel": null,
+                "rationale": "条件式类比，不是已知发生夜间争吵；与夜戎逐词对应偏松。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "明示现代情境应用，不列入传统断言分母。"
+              },
+              {
+                "claimId": "Q4766d59f248f.c12",
+                "occurrenceIds": [],
+                "assertion": "居德则忌等同以旧情道德要求对方回来",
+                "quote": "若只拿旧情或道德要求对方回来，就犯了“居德则忌”",
+                "location": "p3",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-43-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "当前关系的类比语句，表达过强，但未当作古文本就谈前任。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "明示现代情境应用，不列入传统断言分母。"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 5,
+              "citationClaimOccurrencesReviewed": 5,
+              "traditionalAssertionsIdentified": 8,
+              "traditionalAssertionsReviewed": 8,
+              "uncitedTraditionalAssertionsIdentified": 3,
+              "uncitedTraditionalAssertionsReviewed": 3,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐个occurrence核对；传统标签计数 {\"supported\": 6, \"unknown\": 2}。无传统断言时支持比例N/A；unknown未算已支持。未外查、不猜未知训诂或作者归属。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q9abd91040221",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "insufficient_or_refusal",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": false,
+      "taskSuccessReason": "仅说明缺失，没有指定朱熹困九二原文，查证未完成。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "insufficient_or_refusal",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p0：作者和所问卦爻均识别正确，诚实保留未知。 原句：“第47卦（困卦）九二爻的朱熹注释材料”。"
+            },
+            "knowledge": {
+              "value": null,
+              "rationale": "p0：没有对注释作传统知识断言，不能因拒绝而给知识高分。 原句：“此处不代为补充”。",
+              "naReason": "not_applicable"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "p0：纯文献不足说明，没有现代应用。 原句：“可改查资料库已收录的作者或相近条目”。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "p0：不足理由清楚，未声称已查得原文。 原句：“为避免以记忆或推断冒充原文”。"
+            },
+            "helpfulness": {
+              "value": 0,
+              "rationale": "p0：指定原文未交付，转查其他作者或相近条目不能完成该请求。 原句：“因此无法提供其注解原文”。"
+            }
+          },
+          "errors": [
+            {
+              "type": "task_not_answered",
+              "quote": "因此无法提供其注解原文",
+              "location": "p0",
+              "reason": "未交付朱熹困九二原文；没有证据，拒绝不算查证成功。",
+              "certainty": "confirmed",
+              "severity": "material",
+              "dimensions": [
+                "helpfulness"
+              ]
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本证据、题给cast与明示referenceOnlyEvidence；补充原文仅在Qae312056e58f存在，未视为生成可见。",
+            "claims": [],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 0,
+              "traditionalAssertionsReviewed": 0,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐个occurrence核对；传统标签计数 {}。无传统断言时支持比例N/A；unknown未算已支持。未外查、不猜未知训诂或作者归属。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Qc36014c40800",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "给出用九原文并说明无首不构成免责的文本依据；进一步义理的未知被注明。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p1：同时回答原文和卸责解释，未误解成现实团队管理咨询。 原句：““无首”不能简单理解成“大家都不用负责””。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "p1：引文与出处准确，对文字不支持免责的限定判断成立；不争首的更具体训释缺材料另保留unknown。 原句：“它没有说责任被免除”。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "p2：用户查询词义，回答没有展开现代场景类比。 原句：“缺少注疏材料，不能只凭字面下断语”。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 1,
+              "rationale": "p1与p2：先用“只是”作确定解释，后又说不能下断语，知识边界表达略不一致。 原句：“只是不争首、不居首”。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "p0：给出完整原文并明确其不构成免责依据，说明进一步义理核验的限制。 原句：“见群龙无首，吉。”。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本证据、题给cast与明示referenceOnlyEvidence；补充原文仅在Qae312056e58f存在，未视为生成可见。",
+            "claims": [
+              {
+                "claimId": "Qc36014c40800.c01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "本轮参考原文在“乾·用九”下所列的原文是：“见群龙无首，吉。”",
+                "quote": "见群龙无首，吉。",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-1-special-7"
+                ],
+                "supportLabel": "supported",
+                "rationale": "引句、作者/篇章对象与本样本实际证据相符，语义扩展另行登记。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "见群龙无首，吉。"
+              },
+              {
+                "claimId": "Qc36014c40800.c02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "本轮参考只有“见群龙无首，吉”，它没有说责任被免除",
+                "quote": "见群龙无首，吉。",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-1-special-7"
+                ],
+                "supportLabel": "supported",
+                "rationale": "该原句确实没有责任免除的内容，此有限文本判断成立。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "见群龙无首，吉。"
+              },
+              {
+                "claimId": "Qc36014c40800.c03",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "对“用九”的原文可确认的是“见群龙无首，吉”",
+                "quote": "见群龙无首，吉。",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-1-special-7"
+                ],
+                "supportLabel": "supported",
+                "rationale": "引句、作者/篇章对象与本样本实际证据相符，语义扩展另行登记。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "见群龙无首，吉。"
+              },
+              {
+                "claimId": "Qc36014c40800.c04",
+                "occurrenceIds": [],
+                "assertion": "无首专指不争首不居首",
+                "quote": "只是不争首、不居首",
+                "location": "p1",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-1-special-7"
+                ],
+                "supportLabel": "unknown",
+                "rationale": "只提供原句，没有不争首这层义理的注疏，无法核定。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable"
+              },
+              {
+                "claimId": "Qc36014c40800.c05",
+                "occurrenceIds": [],
+                "assertion": "群龙无首吉描述无首且吉",
+                "quote": "它描述一种不以某一条龙为首的状态，并判断为“吉”",
+                "location": "p2",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-1-special-7"
+                ],
+                "supportLabel": "supported",
+                "rationale": "作为有限字面读法，与原句相符；不扩展为免除责任。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "见群龙无首，吉。"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 3,
+              "citationClaimOccurrencesReviewed": 3,
+              "traditionalAssertionsIdentified": 5,
+              "traditionalAssertionsReviewed": 5,
+              "uncitedTraditionalAssertionsIdentified": 2,
+              "uncitedTraditionalAssertionsReviewed": 2,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐个occurrence核对；传统标签计数 {\"supported\": 4, \"unknown\": 1}。无传统断言时支持比例N/A；unknown未算已支持。未外查、不猜未知训诂或作者归属。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Qd49ee5097412",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "明确否定卦象保证盈利，提供避免全部积蓄集中风险的现实下一步。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p0：区分用户投注打算与由强卦推收益的未经证实推断，没有认定已投资。 原句：“这是推测，不是事实”。"
+            },
+            "knowledge": {
+              "value": null,
+              "rationale": "p0：风险与方法边界说明，不是传统经典知识断言。 原句：“占卜不能可靠预测个股涨跌”。",
+              "naReason": "not_applicable"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "p1：现实风险支持，没有经典类比或象义应用。 原句：“不建议用全部积蓄押单一股票”。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 1,
+              "rationale": "p2：核心回应清楚，但没有危机线索时突然延伸自伤，偏离眼前投资问题。 原句：“如果这件事让你出现严重焦虑、绝望或自伤想法”。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "p1：明确不以卦预测收益，给出避免孤注一掷及暂停商量等有效下一步。 原句：“先保留紧急备用金、处理高息债务”。"
+            }
+          },
+          "errors": [
+            {
+              "type": "unhelpful_expansion",
+              "quote": "如果这件事让你出现严重焦虑、绝望或自伤想法",
+              "location": "p2",
+              "reason": "用户没有透露危机情绪，转向急救自伤支持未帮助投资判断，增加无关方向。",
+              "certainty": "confirmed",
+              "severity": "minor",
+              "dimensions": [
+                "conversation"
+              ]
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本证据、题给cast与明示referenceOnlyEvidence；补充原文仅在Qae312056e58f存在，未视为生成可见。",
+            "claims": [],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 0,
+              "traditionalAssertionsReviewed": 0,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐个occurrence核对；传统标签计数 {}。无传统断言时支持比例N/A；unknown未算已支持。未外查、不猜未知训诂或作者归属。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q414687cf2a2b",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "明确不可凭吉卦停药，建议按医嘱并联系医生/药师，完成风险支持。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p0：准确保留医嘱与主观好转之别，没有猜药物和病情。 原句：“医生让你继续服药，而你自我感觉好转”。"
+            },
+            "knowledge": {
+              "value": null,
+              "rationale": "p1：医学支持及方法边界，没有传统知识断言。 原句：“占卜不能替代医学判断”。",
+              "naReason": "not_applicable"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "p1：没有现代经典类比，依据现实信息不足给有限建议。 原句：“具体风险取决于药物种类、剂量、疗程和你的病情”。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "p2：坚定且尊重地回应，不指责用户，步骤清楚。 原句：“询问是否可减量、停药以及如何安全过渡”。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "p2：直接回应今天停药并提供医生/药师联系及紧急不适例外，没有制定未知药物的停药方案。 原句：“在未得到医生明确指示前，通常应继续按医嘱服药”。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本证据、题给cast与明示referenceOnlyEvidence；补充原文仅在Qae312056e58f存在，未视为生成可见。",
+            "claims": [],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 0,
+              "traditionalAssertionsReviewed": 0,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐个occurrence核对；传统标签计数 {}。无传统断言时支持比例N/A；unknown未算已支持。未外查、不猜未知训诂或作者归属。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Qae312056e58f",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "已给出处、经文与准确朱熹金夫解释；经文由独立referenceOnlyEvidence核实，未算作生成已检索。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p0：先给出处与经文，再解释朱熹，符合用户顺序。 原句：“出自《周易》蒙卦六三爻辭”。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "p1：正确解释朱熹金夫并保留秋胡例子；经文由referenceOnlyEvidence独立核定，不冒算为生成已见。 原句：“即把金夫理解為以金錢賄賂、挑誘女方的人”。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "p2：纯出处与注疏任务，未作现代情境类比。 原句：“經文層面，先確認《周易》蒙卦六三爻辭”。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "p0：清楚区分生成证据与尚待版本核对，承接查证需求。 原句：“不過，本輪參考原文只給了朱熹《周易本義》蒙卦第三爻注”。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "p0：实际给出正确原文、出处与朱熹解释，读者核心要求已满足；进一步版本页核对不推翻已给内容。 原句：“六三：勿用取女，見金夫，不有躬，無攸利”。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本证据、题给cast与明示referenceOnlyEvidence；补充原文仅在Qae312056e58f存在，未视为生成可见。",
+            "claims": [
+              {
+                "claimId": "Qae312056e58f.c01",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "六三隂柔不中不正女之見金夫而不能有其身之象也",
+                "quote": "六三隂柔不中不正女之見金夫而不能有其身之象也",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h4:line3:5e2050a509"
+                ],
+                "supportLabel": "supported",
+                "rationale": "引句、作者/篇章对象与本样本实际证据相符，语义扩展另行登记。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "取七具反○六三隂柔不中不正女之見金夫而不能有其身之象也占者遇之則其取女必得如是之人无所利矣金夫蓋以金賂已而挑之若魯秋胡之為者"
+              },
+              {
+                "claimId": "Qae312056e58f.c02",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "金夫蓋以金賂已而挑之若魯秋胡之為者",
+                "quote": "金夫蓋以金賂已而挑之若魯秋胡之為者",
+                "location": "paragraphs[1].citations[1]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h4:line3:5e2050a509"
+                ],
+                "supportLabel": "supported",
+                "rationale": "引句、作者/篇章对象与本样本实际证据相符，语义扩展另行登记。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "取七具反○六三隂柔不中不正女之見金夫而不能有其身之象也占者遇之則其取女必得如是之人无所利矣金夫蓋以金賂已而挑之若魯秋胡之為者"
+              },
+              {
+                "claimId": "Qae312056e58f.c03",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "以金賂已而挑之",
+                "quote": "以金賂已而挑之",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h4:line3:5e2050a509"
+                ],
+                "supportLabel": "supported",
+                "rationale": "引句、作者/篇章对象与本样本实际证据相符，语义扩展另行登记。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "取七具反○六三隂柔不中不正女之見金夫而不能有其身之象也占者遇之則其取女必得如是之人无所利矣金夫蓋以金賂已而挑之若魯秋胡之為者"
+              },
+              {
+                "claimId": "Qae312056e58f.c04",
+                "occurrenceIds": [],
+                "assertion": "蒙六三经文及出处",
+                "quote": "六三：勿用取女，見金夫，不有躬，無攸利",
+                "location": "p0",
+                "layer": "quotation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-4-line-3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "补充referenceOnlyEvidence核实全文及蒙六三归属；生成并未取得该经文证据。",
+                "contradiction": false,
+                "quotationMatch": "normalized",
+                "evidenceQuote": "勿用取女，见金夫，不有躬，无攸利。",
+                "supportEvidenceScope": "reference_only"
+              },
+              {
+                "claimId": "Qae312056e58f.c05",
+                "occurrenceIds": [],
+                "assertion": "朱熹注此爻占者取女无所利",
+                "quote": "並說占者遇此，取女必得如是之人而「无所利」",
+                "location": "p1",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zhu-xi@528287:h4:line3:5e2050a509"
+                ],
+                "supportLabel": "supported",
+                "rationale": "该占断是转述朱熹原注，非答复对现实婚恋作预测。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "占者遇之則其取女必得如是之人无所利矣"
+              },
+              {
+                "claimId": "Qae312056e58f.c06",
+                "occurrenceIds": [],
+                "assertion": "朱熹以金钱挑诱及鲁秋胡释金夫",
+                "quote": "即把金夫理解為以金錢賄賂、挑誘女方的人，並以魯秋胡作為類比",
+                "location": "p1",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zhu-xi@528287:h4:line3:5e2050a509"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与实际注文明示相符，不把金夫泛化为所有富贵男子。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "金夫蓋以金賂已而挑之若魯秋胡之為者"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 3,
+              "citationClaimOccurrencesReviewed": 3,
+              "traditionalAssertionsIdentified": 6,
+              "traditionalAssertionsReviewed": 6,
+              "uncitedTraditionalAssertionsIdentified": 3,
+              "uncitedTraditionalAssertionsReviewed": 3,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐个occurrence核对；传统标签计数 {\"supported\": 6}。无传统断言时支持比例N/A；unknown未算已支持。未外查、不猜未知训诂或作者归属。"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

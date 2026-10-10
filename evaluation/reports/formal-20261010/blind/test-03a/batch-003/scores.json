@@ -1,0 +1,2212 @@
+{
+  "reviewer": {
+    "reviewerId": "formal-reviewer-c",
+    "kind": "AI",
+    "expertStatus": "non_expert",
+    "blind": true,
+    "independent": true
+  },
+  "reviewRole": "primary",
+  "reviewScope": {
+    "rubricVersion": "1.0",
+    "identityLimit": "独立 AI 非专家评阅，不是人工评分或专家 Gold。",
+    "limitations": [
+      "仅使用本批获授权材料；未外部查证版本、训诂或作者整个学说，不是专家 Gold。",
+      "文义无法由包内证据核定时保留 unknown；现代类比不纳入传统支持分母。",
+      "本批均为单轮知识题，无用户后续纠正；实际交付状态逐条保留，insufficient 不当作完成查证。",
+      "本记录为 primary 首评，与先前独立复评分开；未读取已有评分，五维不求总分。"
+    ]
+  },
+  "results": [
+    {
+      "answerId": "Q20e53ea9ecb2",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": false,
+      "taskSuccessReason": "现代事件不可保票的判断可用，但两家本身是否排除历数被无依据断定，知识解释存在关键缺口。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "分别回应王弼、朱熹十年解释及现实可否必成，未虚构具体事件。"
+            },
+            "knowledge": {
+              "value": 1,
+              "rationale": "两家引文和背景准确，但“而非日历上的十年整”“两家…没有…确定日历期限”超出所附作者陈述。"
+            },
+            "integration": {
+              "value": 2,
+              "rationale": "把现实结果交还条件、资源、环境，并拒绝仅一句断言必成，应用边界合理。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "按两家和现代边界展开，衔接清楚。"
+            },
+            "helpfulness": {
+              "value": 1,
+              "rationale": "提供相关原文，但作者是否采用精确期限被说定，核心语义还需修正。"
+            }
+          },
+          "errors": [
+            {
+              "type": "wrong_attribution",
+              "quote": "而非日历上的十年整",
+              "location": "paragraphs[1].text",
+              "reason": "朱注未直接排除实际历数；不能由现代不可外推倒推作者年数原义。",
+              "dimensions": [
+                "knowledge",
+                "helpfulness"
+              ],
+              "certainty": "suspected",
+              "severity": "material"
+            },
+            {
+              "type": "scope_overgeneralization",
+              "quote": "两家都是就屯难时势的条件而言，并没有把它兑换成确定日历期限",
+              "location": "paragraphs[2].text",
+              "reason": "条件性不等于排除期限，王弼明言势不过十年，需另有依据才能断言两家均非历数。",
+              "dimensions": [
+                "knowledge"
+              ],
+              "certainty": "suspected",
+              "severity": "material"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 4,
+              "citationClaimOccurrencesReviewed": 4,
+              "traditionalAssertionsIdentified": 10,
+              "traditionalAssertionsReviewed": 10,
+              "uncitedTraditionalAssertionsIdentified": 2,
+              "uncitedTraditionalAssertionsReviewed": 2,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 8,
+              "partial": 1,
+              "unsupported": 0,
+              "unknown": 1
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "《周易正義》·屯·第2爻注含所列引文",
+                "quote": "屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line2:2dfb3b12e9"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《周易本義》·屯·第2爻注含所列引文",
+                "quote": "至於十年數窮理極則妄求者去正應者合而可許矣",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "《周易本義》·屯·第2爻注含所列引文",
+                "quote": "爻有此象故因以戒占者",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "《周易正義》·屯·第2爻注含所列引文",
+                "quote": "十年則反常，反常則本志斯獲矣。",
+                "location": "paragraphs[2].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line2:2dfb3b12e9"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p0.c0",
+                  "delivered.p2.c1"
+                ],
+                "assertion": "王弼以屯难反常、志在五说明十年",
+                "quote": "势不过十年，十年之后局面反常（回到常道），六二本来的志向——与九五相应——才能实现",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line2:2dfb3b12e9"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王注志在五与十年反常、本志获直接支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "朱熹字为许嫁",
+                "quote": "先释“字”为“許嫁”",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "朱注开头明确字许嫁。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "朱熹以数穷理极、妄去正合说明可许",
+                "quote": "到那时妄求者去、正应者合，才可许",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "对应完整朱注。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [],
+                "assertion": "朱熹排除十年为实际历数",
+                "quote": "而非日历上的十年整",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": "unknown",
+                "rationale": "仅该条注不足以核定数穷理极是否必排除实数，非专家不作定论。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [],
+                "assertion": "两家共同排除确定历数期限",
+                "quote": "两家都是就屯难时势的条件而言，并没有把它兑换成确定日历期限",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line2:2dfb3b12e9",
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": "partial",
+                "rationale": "屯难与正应条件有据，但共同排除期限无明确文据。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。 / 邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者"
+              },
+              {
+                "claimId": "C10",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "朱熹以此爻象戒占者",
+                "quote": "即这是爻象所示的警戒之辞，用来提醒占者守正待时",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "爻有此象故戒占者与守正不许相连。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者"
+              },
+              {
+                "claimId": "C11",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "不能仅凭这一句断言必成",
+                "quote": "不能仅凭这一句断言必成",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": null,
+                "rationale": "现代事件不能由古代占义保证，边界判断合理。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q0fff36d4e96d",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "王弼解释链与朱熹旁证明确，作者和现代推断边界清楚。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "聚焦王弼为何联系广施，朱熹只作旁证，没有混同作者。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "尊位、系应六二与不能光施由王注支持，坎体膏润独立归给朱熹。"
+            },
+            "integration": {
+              "value": 2,
+              "rationale": "明确不能据此说现实某人有资源却不肯给，避免卦象确认他人动机。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "先爻位再系应与词义，最后限制现实外推，表达连贯。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "把系应限制施予与膏润词义连起，完成“为什么”的核心需求。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 3,
+              "citationClaimOccurrencesReviewed": 3,
+              "traditionalAssertionsIdentified": 7,
+              "traditionalAssertionsReviewed": 7,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 7,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "《周易正義》·屯·第5爻注含所列引文",
+                "quote": "不能恢弘博施，無物不與，拯濟微滯",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《周易正義》·屯·第5爻注含所列引文",
+                "quote": "亨於群小，而系應在二，屯難其膏，非能光其施者也",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "《周易本義》·屯·第5爻注含所列引文",
+                "quote": "有膏潤而不得施為屯其膏之象",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line5:97a131e15c"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "九五雖以陽剛中正居尊位然當屯之時陷於險中雖有六二正應而隂柔才弱不足以濟初九得民於下衆皆歸之九五坎體有膏潤而不得施為屯其膏之象占者以處小事則守正猶可獲吉以處大事則雖正而不免於凶",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "尊位与应当广施在王注相连",
+                "quote": "居尊位则本有施济之责",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "尊位接不能恢弘博施、拯济微滞，支持此语境解释。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "专系六二、同好限制广施",
+                "quote": "心志有所专属，不能将恩泽普遍地“光其施”",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "系应在二、固志同好、不容他间对应。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "所附王段没有独立训释膏词义",
+                "quote": "王弼并未另下定义",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "本段以膏与施相联而非单列词义，回答应只限此段而非王弼全集。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "朱熹坎体有膏润而不得施",
+                "quote": "他把“膏”明确讲成坎体所具有的“膏润”，但同样强调“不得施”",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line5:97a131e15c"
+                ],
+                "supportLabel": "supported",
+                "rationale": "朱注原文直接支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "九五雖以陽剛中正居尊位然當屯之時陷於險中雖有六二正應而隂柔才弱不足以濟初九得民於下衆皆歸之九五坎體有膏潤而不得施為屯其膏之象占者以處小事則守正猶可獲吉以處大事則雖正而不免於凶"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "不能直接当作现实人事中“某人有资源却不肯给”的因果断言",
+                "quote": "不能直接当作现实人事中“某人有资源却不肯给”的因果断言",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25",
+                  "zhu-xi@528287:h3:line5:97a131e15c"
+                ],
+                "supportLabel": null,
+                "rationale": "拒绝把爻义变成现实心理判断，限制恰当。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。 / 九五雖以陽剛中正居尊位然當屯之時陷於險中雖有六二正應而隂柔才弱不足以濟初九得民於下衆皆歸之九五坎體有膏潤而不得施為屯其膏之象占者以處小事則守正猶可獲吉以處大事則雖正而不免於凶"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Qad932758f7d1",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "指定两家解释及比较均完成，作者、对象和资料范围准确。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "围绕六五两家解释，不冒称校勘完整爻辞。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "王弼以谦伐骄逆、程颐威武相济都有原注，未对立成用武与不用武。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "纯作者、出处和词义核对，本答未作现代情境类比；不把缺少类比记为 0。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "先分家再说明共同点和侧重，易于把握。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "两家为何让谦与侵伐并存得到有证据的说明。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 5,
+              "citationClaimOccurrencesReviewed": 5,
+              "traditionalAssertionsIdentified": 9,
+              "traditionalAssertionsReviewed": 9,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 9,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "《周易正義》·谦·第5爻注含所列引文",
+                "quote": "居於尊位，用謙與順，故能不富而用其鄰也。以謙順而侵伐，所伐皆驕逆也。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line5:64744d05e6"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "居於尊位，用謙與順，故能不富而用其鄰也。以謙順而侵伐，所伐皆驕逆也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《伊川易傳》·谦·第5爻注含所列引文",
+                "quote": "五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "《伊川易傳》·谦·第5爻注含所列引文",
+                "quote": "然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。",
+                "location": "paragraphs[1].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "《周易正義》·谦·第5爻注含所列引文",
+                "quote": "以謙順而侵伐，所伐皆驕逆也。",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line5:64744d05e6"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "居於尊位，用謙與順，故能不富而用其鄰也。以謙順而侵伐，所伐皆驕逆也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "《伊川易傳》·谦·第5爻注含所列引文",
+                "quote": "然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。",
+                "location": "paragraphs[2].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p0.c0",
+                  "delivered.p2.c0"
+                ],
+                "assertion": "王弼以谦顺侵伐骄逆",
+                "quote": "所谓侵伐，是以谦顺去伐骄逆，并非另有与谦相反的做法",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line5:64744d05e6"
+                ],
+                "supportLabel": "supported",
+                "rationale": "以谦顺而侵伐、所伐皆骄逆直接支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "居於尊位，用謙與順，故能不富而用其鄰也。以謙順而侵伐，所伐皆驕逆也。"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "程颐以尊位谦顺说明不富得邻",
+                "quote": "五以君位之尊而执谦顺接于下，众人归心，故不富而能有其邻",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "对应程注君位、谦顺接下、众归。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p1.c1",
+                  "delivered.p2.c1"
+                ],
+                "assertion": "程颐防谦柔过甚、主威武相济",
+                "quote": "君道不可专尚谦柔，必须威武相济，才能怀服天下",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "程注明确如此，并以威德并著说明。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [],
+                "assertion": "两家保留谦顺而允许有条件侵伐",
+                "quote": "两家的共同点是都不把“侵伐”理解为对谦德的否定",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line5:64744d05e6",
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "两条注共同支持，不扩大到现实任何攻击。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "居於尊位，用謙與順，故能不富而用其鄰也。以謙順而侵伐，所伐皆驕逆也。 / 富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q5fbc896312d1",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "指定作者的核心文义与占断条件都有解释和证据。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "开头否定纯拖延，始终解释朱熹屯初九。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "难进时位、居贞、民归侯象和“占者如是”完整保留。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "纯作者、出处和词义核对，本答未作现代情境类比；不把缺少类比记为 0。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "按难进、守正、侯象依次解释，关系清楚。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "说明难进不等于放弃、建侯另有居正得民条件，足以解疑。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 4,
+              "citationClaimOccurrencesReviewed": 4,
+              "traditionalAssertionsIdentified": 7,
+              "traditionalAssertionsReviewed": 7,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 7,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "《周易本義》·屯·第1爻注含所列引文",
+                "quote": "磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line1:d71107df76"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《周易本義》·屯·第1爻注含所列引文",
+                "quote": "然居得其正故其占利於居貞",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line1:d71107df76"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "《周易本義》·屯·第1爻注含所列引文",
+                "quote": "又本成卦之主以陽下隂為民所歸侯之象也",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line1:d71107df76"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "《周易本義》·屯·第1爻注含所列引文",
+                "quote": "故其象又如此而占者如是則利建以為侯也",
+                "location": "paragraphs[2].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line1:d71107df76"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "磐桓为屯难时位及上应险陷之象",
+                "quote": "这里说的是时位造成的难进，不是叫你放弃行动",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line1:d71107df76"
+                ],
+                "supportLabel": "supported",
+                "rationale": "原注难进之貌与阳在下、动体、上应险陷支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "居正故占利居贞",
+                "quote": "在屯难里守正，才是占断中的“居贞”",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line1:d71107df76"
+                ],
+                "supportLabel": "supported",
+                "rationale": "原注直接对应。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p2.c0",
+                  "delivered.p2.c1"
+                ],
+                "assertion": "建侯须占者相应侯象条件",
+                "quote": "占者处屯难而能居正、能像阳下阴那样得民归附，才利建侯；不是仅凭磐桓不动就自然建侯",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line1:d71107df76"
+                ],
+                "supportLabel": "supported",
+                "rationale": "占者如是接阳下阴为民所归，回答保留条件。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q7c17a7df73e3",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "两家解释与现代事件外推边界清楚，保留原文的十年表述。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "两家解释与现实必成问题都回应，未设定额外用户事实。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "“非单独抽出的精确日历承诺”限定外推，没有断言古代作者本来绝不采用年数。"
+            },
+            "integration": {
+              "value": 2,
+              "rationale": "明说文献不替代现实证据，拒绝任意事项十年必成。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "先两家再应用边界，补充屯卦背景仍紧扣主题。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "文据、许嫁正应条件和不能外推的理由充分。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 5,
+              "citationClaimOccurrencesReviewed": 5,
+              "traditionalAssertionsIdentified": 10,
+              "traditionalAssertionsReviewed": 10,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 10,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "《周易正義》·屯·第2爻注含所列引文",
+                "quote": "屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line2:2dfb3b12e9"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《周易本義》·屯·第2爻注含所列引文",
+                "quote": "至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "《周易正義》·屯·第2爻注含所列引文",
+                "quote": "屯難之世，勢不過十年者也",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line2:2dfb3b12e9"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "《周易本義》·屯·第2爻注含所列引文",
+                "quote": "爻有此象故因以戒占者",
+                "location": "paragraphs[2].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p2.c2"
+                ],
+                "assertion": "屯·卦辞含所列引文",
+                "quote": "勿用有攸往，利建侯。",
+                "location": "paragraphs[2].citations[2].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-3-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "元亨，利贞；勿用有攸往，利建侯。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "王弼六二志在五不从初",
+                "quote": "即守正而不从初九",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line2:2dfb3b12e9"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王注志在五、不从初与女子贞不字对应。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p0.c0",
+                  "delivered.p2.c0"
+                ],
+                "assertion": "十年与屯难反常、本志获相连，不能抽成任意承诺",
+                "quote": "十年是局面翻转、本志得获的转折点，而非一个单独抽出的精确日历承诺",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line2:2dfb3b12e9"
+                ],
+                "supportLabel": "supported",
+                "rationale": "“单独抽出”限定了其否定对象，是反对脱离本爻外推，不抹去王注年数。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "朱熹字为许嫁且守正不许初求",
+                "quote": "他先把“字”解为“許嫁”，并说明六二守正不許初九",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "朱注字许嫁、初求婚媾、守正不许直接支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [
+                  "delivered.p1.c0",
+                  "delivered.p2.c1"
+                ],
+                "assertion": "数穷理极后妄去正合而可许",
+                "quote": "条件是妄求者去、正应者合，才可以许",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "原注直接支持，并用于戒占。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者"
+              },
+              {
+                "claimId": "C10",
+                "occurrenceIds": [
+                  "delivered.p2.c2"
+                ],
+                "assertion": "勿往建侯可概括不妄进、立根本",
+                "quote": "提示屯难之时不宜妄进、宜先经营根本",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-3-judgment",
+                  "zy-3-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "卦辞及已见彖传草昧宜建侯可支持背景性概括。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "元亨，利贞；勿用有攸往，利建侯。 / 屯，刚柔始交而难生。动乎险中，大亨贞。雷雨之动满盈，天造草昧，宜建侯而不宁。"
+              },
+              {
+                "claimId": "C11",
+                "occurrenceIds": [
+                  "delivered.p2.c0",
+                  "delivered.p2.c1"
+                ],
+                "assertion": "不是对某个具体事项到期必成的保证",
+                "quote": "不是对某个具体事项到期必成的保证",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line2:2dfb3b12e9",
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": null,
+                "rationale": "现代推断边界合理，不用正应关系自动认定现实成功。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。 / 邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q2953a74c4fd0",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "难进与侯象的主要关系已回答；建侯泛化及现实扩展另记缺陷。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "锁定朱熹初九，但末尾转向用户未说明的团队、根据地安排。"
+            },
+            "knowledge": {
+              "value": 1,
+              "rationale": "难进、居正、民归有据；“占得此爻有利于建立侯位或确立…秩序”泛化建以为侯并弱化如是条件。"
+            },
+            "integration": {
+              "value": 2,
+              "rationale": "现代对应明确标明，支持网络与得民有结构关系，也保留实际条件。"
+            },
+            "conversation": {
+              "value": 1,
+              "rationale": "纯文义题末尾扩成名分、团队、根据地行动建议，增加未请求方向。"
+            },
+            "helpfulness": {
+              "value": 1,
+              "rationale": "核心关系已解释，但建侯对象和条件不够精确，需补正文义。"
+            }
+          },
+          "errors": [
+            {
+              "type": "scope_overgeneralization",
+              "quote": "所以占得此爻有利于建立侯位或确立可归附的秩序",
+              "location": "paragraphs[1].text",
+              "reason": "原注占者如是则利建以为侯更具体，不能仅占得即泛化为有利建立各种秩序。",
+              "dimensions": [
+                "knowledge",
+                "helpfulness"
+              ],
+              "certainty": "suspected",
+              "severity": "material"
+            },
+            {
+              "type": "unhelpful_expansion",
+              "quote": "而应先把名分、团队、根据地或支持网络建立起来",
+              "location": "paragraphs[2].text",
+              "reason": "用户只问朱熹文义，没有要求团队或根据地安排。",
+              "dimensions": [
+                "conversation"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 5,
+              "citationClaimOccurrencesReviewed": 5,
+              "traditionalAssertionsIdentified": 9,
+              "traditionalAssertionsReviewed": 9,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 8,
+              "partial": 1,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "《周易本義》·屯·第1爻注含所列引文",
+                "quote": "磐桓難進之貌",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line1:d71107df76"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "《周易本義》·屯·第1爻注含所列引文",
+                "quote": "以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象",
+                "location": "paragraphs[0].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line1:d71107df76"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《周易本義》·屯·第1爻注含所列引文",
+                "quote": "然居得其正故其占利於居貞",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line1:d71107df76"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "《周易本義》·屯·第1爻注含所列引文",
+                "quote": "又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也",
+                "location": "paragraphs[1].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line1:d71107df76"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "《周易本義》·屯·第1爻注含所列引文",
+                "quote": "以陽下隂為民所歸侯之象",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line1:d71107df76"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p0.c0",
+                  "delivered.p0.c1"
+                ],
+                "assertion": "磐桓难进不等于无期限拖延",
+                "quote": "这层意思确实是不宜躁进，但还不等于叫人一直拖着",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line1:d71107df76"
+                ],
+                "supportLabel": "supported",
+                "rationale": "朱注难进之外仍有居贞和建侯两层。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p1.c0",
+                  "delivered.p1.c1"
+                ],
+                "assertion": "阳下阴为民所归构成侯象",
+                "quote": "初九阳刚而能下于阴柔，是民众所归附的“侯”象",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line1:d71107df76"
+                ],
+                "supportLabel": "supported",
+                "rationale": "对应原注成卦之主、阳下阴、民归侯象。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "占得即利建侯位或一般秩序",
+                "quote": "所以占得此爻有利于建立侯位或确立可归附的秩序",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line1:d71107df76"
+                ],
+                "supportLabel": "partial",
+                "rationale": "建侯有据，但占者如是与建以为侯的条件对象被概括得过宽。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "难进与居贞得民侯象并存",
+                "quote": "二者可以并行",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line1:d71107df76"
+                ],
+                "supportLabel": "supported",
+                "rationale": "两层象在同一注并列，难进未取消其正与侯象。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也"
+              },
+              {
+                "claimId": "C10",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "现实对应上，可理解为不宜孤身冒进，而应先把名分、团队、根据地或支持网络建立起来",
+                "quote": "现实对应上，可理解为不宜孤身冒进，而应先把名分、团队、根据地或支持网络建立起来",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line1:d71107df76"
+                ],
+                "supportLabel": null,
+                "rationale": "明确引申且保留场景条件，不把名分团队当原典直接规定。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "磐步干反○磐桓難進之貌屯難之初以陽在下又居動體而上應隂柔險陷之爻故有磐桓之象然居得其正故其占利於居貞又本成卦之主以陽下隂為民所歸侯之象也故其象又如此而占者如是則利建以為侯也"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q1ac2cad420fd",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "两家释义与自夸疑问都有相应解释和证据。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "比较王、程并回答是否夸耀，两项需求齐全。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "声名闻、得位谦正及谦德充积外显均由各家原注支持。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "纯作者、出处和词义核对，本答未作现代情境类比；不把缺少类比记为 0。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "先比较后解疑，表达清楚且无无关扩展。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "差别、共同前提和非自夸理由均说明，帮助充分。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 4,
+              "citationClaimOccurrencesReviewed": 4,
+              "traditionalAssertionsIdentified": 7,
+              "traditionalAssertionsReviewed": 7,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 7,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "《周易正義》·谦·第2爻注含所列引文",
+                "quote": "鳴者，聲名聞之謂也。得位居中，謙而正焉。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line2:95530cdcb2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "鳴者，聲名聞之謂也。得位居中，謙而正焉。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "《伊川易傳》·谦·第2爻注含所列引文",
+                "quote": "謙德充積於中，故發於外，見於聲音顏色，故曰鳴謙。",
+                "location": "paragraphs[0].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line2:8513e9d757"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "二以柔順居中，是為謙德積於中。謙德充積於中，故發於外，見於聲音顏色，故曰鳴謙。居中得正，有中正之德也，故云貞吉。凡貞吉，有為貞且吉者，有為得貞則吉者，六二之貞吉，所自有也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《周易正義》·谦·第2爻注含所列引文",
+                "quote": "得位居中，謙而正焉。",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line2:95530cdcb2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "鳴者，聲名聞之謂也。得位居中，謙而正焉。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "《伊川易傳》·谦·第2爻注含所列引文",
+                "quote": "謙德充積於中，故發於外，見於聲音顏色",
+                "location": "paragraphs[1].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line2:8513e9d757"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "二以柔順居中，是為謙德積於中。謙德充積於中，故發於外，見於聲音顏色，故曰鳴謙。居中得正，有中正之德也，故云貞吉。凡貞吉，有為貞且吉者，有為得貞則吉者，六二之貞吉，所自有也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p0.c0",
+                  "delivered.p1.c0"
+                ],
+                "assertion": "王弼鸣为声名闻且居中谦正",
+                "quote": "王弼对“鸣谦”的解释偏重“声名闻之”",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line2:95530cdcb2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王注两句直接支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "鳴者，聲名聞之謂也。得位居中，謙而正焉。"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p0.c1",
+                  "delivered.p1.c1"
+                ],
+                "assertion": "程颐鸣为积德内而外显声容",
+                "quote": "程颐则偏重“谦德充积于中而发于外”",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line2:8513e9d757"
+                ],
+                "supportLabel": "supported",
+                "rationale": "充积于中、发于外、声音颜色对应。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "二以柔順居中，是為謙德積於中。謙德充積於中，故發於外，見於聲音顏色，故曰鳴謙。居中得正，有中正之德也，故云貞吉。凡貞吉，有為貞且吉者，有為得貞則吉者，六二之貞吉，所自有也。"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p1.c0",
+                  "delivered.p1.c1"
+                ],
+                "assertion": "两注可据谦正与内德外显理解为非自炫",
+                "quote": "其“鸣”应理解为谦德之自然显现或声誉之自然显著，而非自夸",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line2:95530cdcb2",
+                  "cheng-yi@1313743:h15:line2:8513e9d757"
+                ],
+                "supportLabel": "supported",
+                "rationale": "这是合乎两注语境的推断，不是给作者添加非夸耀的伪引文。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "鳴者，聲名聞之謂也。得位居中，謙而正焉。 / 二以柔順居中，是為謙德積於中。謙德充積於中，故發於外，見於聲音顏色，故曰鳴謙。居中得正，有中正之德也，故云貞吉。凡貞吉，有為貞且吉者，有為得貞則吉者，六二之貞吉，所自有也。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q9c2f6ba9d9e1",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "王弼理由和朱注相近结果、不同原因均得到说明。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "以王弼为何施予受限为主，朱熹另标旁证，没有套现实人物心理。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "保留王弼系二同好与朱熹陷险、二才弱的不同原因，膏润与卦体也有相应证据。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "纯作者、出处和词义核对，本答未作现代情境类比；不把缺少类比记为 0。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "从主要原因到旁证和卦时，解释有连贯因果。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "尊位应广施与专应致不能光施的联系明确，充分回答为什么。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 12,
+              "citationClaimOccurrencesReviewed": 12,
+              "traditionalAssertionsIdentified": 17,
+              "traditionalAssertionsReviewed": 17,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 17,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "《周易正義》·屯·第5爻注含所列引文",
+                "quote": "處屯難之時，居尊位之上",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "《周易正義》·屯·第5爻注含所列引文",
+                "quote": "系應在二",
+                "location": "paragraphs[0].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p0.c2",
+                  "delivered.p1.c1"
+                ],
+                "assertion": "《周易正義》·屯·第5爻注含所列引文",
+                "quote": "固志同好，不容他間",
+                "location": "paragraphs[0].citations[2].quote; paragraphs[1].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p0.c3"
+                ],
+                "assertion": "《周易正義》·屯·第5爻注含所列引文",
+                "quote": "恢弘博施，無物不與",
+                "location": "paragraphs[0].citations[3].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p0.c4"
+                ],
+                "assertion": "《周易正義》·屯·第5爻注含所列引文",
+                "quote": "屯難其膏，非能光其施者也",
+                "location": "paragraphs[0].citations[4].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《周易本義》·屯·第5爻注含所列引文",
+                "quote": "九五坎體有膏潤而不得施為屯其膏之象",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line5:97a131e15c"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "九五雖以陽剛中正居尊位然當屯之時陷於險中雖有六二正應而隂柔才弱不足以濟初九得民於下衆皆歸之九五坎體有膏潤而不得施為屯其膏之象占者以處小事則守正猶可獲吉以處大事則雖正而不免於凶",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p1.c2"
+                ],
+                "assertion": "《周易本義》·屯·第5爻注含所列引文",
+                "quote": "陷於險中",
+                "location": "paragraphs[1].citations[2].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line5:97a131e15c"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "九五雖以陽剛中正居尊位然當屯之時陷於險中雖有六二正應而隂柔才弱不足以濟初九得民於下衆皆歸之九五坎體有膏潤而不得施為屯其膏之象占者以處小事則守正猶可獲吉以處大事則雖正而不免於凶",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p1.c3"
+                ],
+                "assertion": "《周易本義》·屯·第5爻注含所列引文",
+                "quote": "隂柔才弱不足以濟",
+                "location": "paragraphs[1].citations[3].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line5:97a131e15c"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "九五雖以陽剛中正居尊位然當屯之時陷於險中雖有六二正應而隂柔才弱不足以濟初九得民於下衆皆歸之九五坎體有膏潤而不得施為屯其膏之象占者以處小事則守正猶可獲吉以處大事則雖正而不免於凶",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "屯·彖传含所列引文",
+                "quote": "刚柔始交而难生。动乎险中",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-3-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "屯，刚柔始交而难生。动乎险中，大亨贞。雷雨之动满盈，天造草昧，宜建侯而不宁。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C10",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "《周易正義》·屯·第5爻注含所列引文",
+                "quote": "處屯難之時",
+                "location": "paragraphs[2].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C11",
+                "occurrenceIds": [
+                  "delivered.p2.c2"
+                ],
+                "assertion": "《周易正義》·屯·第5爻注含所列引文",
+                "quote": "不能恢弘博施，無物不與",
+                "location": "paragraphs[2].citations[2].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C12",
+                "occurrenceIds": [
+                  "delivered.p0.c0",
+                  "delivered.p0.c1",
+                  "delivered.p0.c2"
+                ],
+                "assertion": "王弼系二同好限制施予范围",
+                "quote": "情志固守与六二的正应，故“固志同好，不容他間”",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "系应在二、固志同好、不容他间对应。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。"
+              },
+              {
+                "claimId": "C13",
+                "occurrenceIds": [
+                  "delivered.p0.c3",
+                  "delivered.p0.c4"
+                ],
+                "assertion": "本爻膏为膏润恩泽，屯为难广施",
+                "quote": "“膏”是膏润、恩泽；“屯”是屯聚、难施；九五不是无膏，而是有膏而不能普遍施出",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25",
+                  "zhu-xi@528287:h3:line5:97a131e15c"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王注膏与光施相连，朱注有膏润不得施补充支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。 / 九五雖以陽剛中正居尊位然當屯之時陷於險中雖有六二正應而隂柔才弱不足以濟初九得民於下衆皆歸之九五坎體有膏潤而不得施為屯其膏之象占者以處小事則守正猶可獲吉以處大事則雖正而不免於凶"
+              },
+              {
+                "claimId": "C14",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "王弼以固志同好、不容他间释不能广施",
+                "quote": "九五把恩泽系著于六二这一正应，不愿分给他爻，因而不能光其施",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "是对该条爻义的通俗化，未用于现实他人心理。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。"
+              },
+              {
+                "claimId": "C15",
+                "occurrenceIds": [
+                  "delivered.p1.c0",
+                  "delivered.p1.c2",
+                  "delivered.p1.c3"
+                ],
+                "assertion": "朱熹原因在陷险应援才弱，与王弼原因不同",
+                "quote": "朱熹则更强调“陷於險中”、六二“隂柔才弱不足以濟”，但二者都落在“有膏而不能广施”上",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25",
+                  "zhu-xi@528287:h3:line5:97a131e15c"
+                ],
+                "supportLabel": "supported",
+                "rationale": "朱注明陷险、二才弱及膏润不得施，区分准确。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。 / 九五雖以陽剛中正居尊位然當屯之時陷於險中雖有六二正應而隂柔才弱不足以濟初九得民於下衆皆歸之九五坎體有膏潤而不得施為屯其膏之象占者以處小事則守正猶可獲吉以處大事則雖正而不免於凶"
+              },
+              {
+                "claimId": "C16",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "九五在坎体陷险",
+                "quote": "九五居上坎，正处险中",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-3-tuan",
+                  "zhu-xi@528287:h3:line5:97a131e15c"
+                ],
+                "supportLabel": "supported",
+                "rationale": "朱注九五坎体、陷于险中直接支持，彖传提供卦时背景。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "屯，刚柔始交而难生。动乎险中，大亨贞。雷雨之动满盈，天造草昧，宜建侯而不宁。 / 九五雖以陽剛中正居尊位然當屯之時陷於險中雖有六二正應而隂柔才弱不足以濟初九得民於下衆皆歸之九五坎體有膏潤而不得施為屯其膏之象占者以處小事則守正猶可獲吉以處大事則雖正而不免於凶"
+              },
+              {
+                "claimId": "C17",
+                "occurrenceIds": [
+                  "delivered.p2.c1",
+                  "delivered.p2.c2"
+                ],
+                "assertion": "王弼综合屯难时势与专应解释不能博施",
+                "quote": "尊位者的施予能力被屯难与私应限制",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "时位、系应和不能博施三部分共同支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "frozenAt": "2026-10-10T11:22:05.556517+00:00",
+  "commit": "4ae701bff993339dd7ab2c50c064d927ff17eae9",
+  "graphVersion": "python-graph-v16",
+  "promptVersion": "evidence-agent-python-v16",
+  "releaseId": "knowledge-v3-20260926-r1",
+  "mainConfiguration": {
+    "model": "deepseek-flash",
+    "messages": [],
+    "max_tokens": 8192,
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "low",
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "repairConfiguration": {
+    "model": "deepseek-flash",
+    "messages": [],
+    "max_tokens": 8192,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "productionFiles": {
+    "backend/__init__.py": "31035e9fa5d2ce31f46dba6f1b3492edf184befa6b9d447c506d6824c539f8f3",
+    "backend/citations.py": "8029e28ea4946ca8653be6b91157311fcbdcf0ce5b099c0843b7e5e45b11607a",
+    "backend/llm.py": "7f1ba810ca64291859446791230307d41d81c1860a17c03d0baf793769d50fd9",
+    "backend/app.py": "a88684e8202e88c690b64526e8daec32c136ebd719075faf48821722552f4aba",
+    "backend/knowledge.py": "b2e90b7994a2e394b90563f7585786b576eb7f433c0e6a3bc9c84b5d029f3ceb",
+    "backend/graph.py": "c67b9bd7bb9db711821e58a5bf2aa5b68a629686a3681b1455d34325b995a761",
+    "backend/__main__.py": "ac31e6560f567ee61fd9c6ff94d9596c0608557293f0c6cd6407f994970d672b",
+    "backend/validation.py": "cec0e7c257aeaeeaede4cd2210002bd3519c9f67120a3d6beb44f7a67536acea",
+    "backend/config.py": "35753bef9d7dc5b65c65e846e72b9610427afea8a9ad7011cab2df3c09cd8c5e",
+    "backend/store.py": "8e759718b5721ce4369d1f00c10ecf5a699503df075ca4bbd1920114ae49a465",
+    "backend/prompts.py": "4a4740e548773e8c011cbaee3e21a53196142bf11640669302d16c3478119207",
+    "backend/retrieval.py": "7552ccf60873a0e8d18c14b019e7d5588afb38dd6373674b9870c994d3ea88a7",
+    "backend/models.py": "ab0df5f73b2dbcefb79c75837f1efc6f94833a0ed44ebbd471d817414a284064",
+    "backend/evaluate.py": "50d16549eb4fe36076517b0ad09f492bdcfe67ca9522446fc1fe0a07d7b050c1",
+    "backend/domain.py": "01c1dcf5bde48957f5f7025f50f67acf967d9f7f8485fd2dec653bc923b2a265",
+    "requirements.txt": "04b3585561c260777a04094dfdaa17bbc4369b8471521c1775fcf612c915a322",
+    "data/knowledge/active.json": "2d502c82b34661c89a872d53c5b9fce13906b6a7c1a882b6f8c08a78847e1228",
+    "data/knowledge/raw/opencc-TSCharacters.txt": "9ff46a7d30e5765375eb13d33f2b03a34d298913caf2b120380679f33ae1642d",
+    "data/knowledge/releases/knowledge-v3-20260926-r1/corrections.json": "7281d68d662f0c2ba6e1f94b7b4d1af2e2b1afe83d8fb276e5f09597013518a0",
+    "data/knowledge/releases/knowledge-v3-20260926-r1/manifest.json": "a35a2235434446ca728e7c6e54dec4268c59a68ad7b862d8f45da52e9a35a24d",
+    "data/knowledge/releases/knowledge-v3-20260926-r1/legacy-aliases.json": "dcd0be2d2ccc70030534a0bdcbb238467f8d9eec56af636b57e027d7421a744e",
+    "data/knowledge/releases/knowledge-v3-20260926-r1/evidence.json": "4154d8c69d0fdf0e6eca3ff570f1c8a092528a6011099533b88f3863bf36ebd4"
+  },
+  "dataFiles": {
+    "evaluation/formal/freeze.json": "21cf131ddc0221c9c2c74c514162b5976b384e796213e7805b641dce8b715139",
+    "evaluation/formal/data.json": "402f639cee901060fe4bf053ef428260619d93ad83b754079f53738a0567bff3",
+    "evaluation/formal/labels.json": "329482c961c02b0565e7a3475569fdfff412d6a3e23dee7559905b41c3ec8d7a",
+    "evaluation/formal/rubric.json": "0ede0d97c92fdbeb4907df4146940c39cd8bc4a4584990e7442c143c4b82063b",
+    "evaluation/formal/continuous.json": "056f8dbdab1d881521e7fa67a145abc4acab643251a8cdae0473c134ecb350fe",
+    "evaluation/formal/rubric.md": "da3af88f1cdfd989154d295a6bfc2d07c522c7301062fb5cdb2fdc942750ab4b",
+    "evaluation/formal/protocol.md": "c3e05288484bcd76b468b7c57779612a0da737b0a554049fd731871fda0f90c6"
+  },
+  "cases": 80,
+  "groups": 67,
+  "budget": {
+    "calls": 800,
+    "tokens": 5000000,
+    "perCellCalls": 8,
+    "perCellTokens": 100000
+  },
+  "scope": "No production tuning after evaluation. Synthetic inputs only. One sample per cell; preserve failures.",
+  "strategies": {
+    "B": "fixed initial evidence; ready policy",
+    "C": "unchanged rules-c-v1",
+    "D": "production graph minus exact_target_request shortcut; other deterministic branches retained",
+    "H": "unchanged production hybrid"
+  },
+  "execution": "Four arms of each fixed input run concurrently, rotating launch order. Concurrency=4, queue time excluded. Not a serial latency benchmark.",
+  "uncertainty": "API alias/cache drift and shared-provider load remain. Independent input groups, not independent knowledge texts."
+}

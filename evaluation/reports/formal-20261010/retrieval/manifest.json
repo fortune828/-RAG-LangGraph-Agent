@@ -1,0 +1,23 @@
+{
+  "releaseId": "knowledge-v3-20260926-r1",
+  "evidenceSha256": "4154d8c69d0fdf0e6eca3ff570f1c8a092528a6011099533b88f3863bf36ebd4",
+  "datasetHashes": {
+    "data.json": "402f639cee901060fe4bf053ef428260619d93ad83b754079f53738a0567bff3",
+    "labels.json": "329482c961c02b0565e7a3475569fdfff412d6a3e23dee7559905b41c3ec8d7a",
+    "continuous.json": "056f8dbdab1d881521e7fa67a145abc4acab643251a8cdae0473c134ecb350fe"
+  },
+  "runnerSha256": "a03433a2bc0ad227c326faf0e2ee41174b70b8be3a43e91e7096d376e3062c4e",
+  "cases": 32,
+  "relevanceFile": null,
+  "relevanceSha256": null,
+  "methods": {
+    "R1": "Unique query/document bigram overlap + 12 point full phrase boost",
+    "R2": "Existing BM25 + same phrase boost",
+    "R3": "R2 + OR of production-parser requested-object metadata scopes"
+  },
+  "authorization": "All arms retain production evidence_scope derived from original text/mode/cast. No label expands scope.",
+  "retrieval": "R1/R2 scan all layers within authorization; R3 uses existing author/work/layer/hexagram/anchor filters. They are offline retrieval ablations, not production tool defaults.",
+  "parserLimitation": "Existing parser mistakes are retained, including unknown 哪一爻 being read as first line. No gold correction.",
+  "timing": "Local warm corpus/index; authorization/metadata filtering, ranking and result selection; excludes query preparation, API and generation. Arm order rotates.",
+  "metricLimits": "Non-exhaustive AI evidence groups support coverage/Hit. Strict Recall is unknown; unjudged retrieved records do not count as irrelevant. Precision bounds include unknowns."
+}

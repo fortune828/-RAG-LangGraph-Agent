@@ -1,0 +1,21 @@
+{
+  "scope": "Completed smoke records only; no formal test questions read or scored. Export executed in disposable directory.",
+  "n": 4,
+  "checks": {
+    "allFourSmokeRecordsPresent": true,
+    "answersPreserved": true,
+    "actualEvidencePreserved": true,
+    "deliveryAndCandidatesDistinct": true,
+    "allCitationClaimsEnumerated": true,
+    "armConfigScoresAbsent": true,
+    "htmlAndMarkdownExist": true,
+    "keyOnlyInAnalysis": true,
+    "humanScoresUnfilled": true
+  },
+  "rubricSha256": "0ede0d97c92fdbeb4907df4146940c39cd8bc4a4584990e7442c143c4b82063b",
+  "unitTests": "23 passed (formal_stats + semantic_reports)",
+  "limitations": [
+    "Structural export verification only; not semantic review.",
+    "Failed-delivery, internal-fallback and reference-only boundaries verified using synthetic tests, not fabricated real failures."
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "datasetVersion": "formal-inputs-v1",
+  "frozenAt": "2026-10-10",
+  "graphVersion": "python-graph-v16",
+  "promptVersion": "evidence-agent-python-v16",
+  "knowledgeRelease": "knowledge-v3-20260926-r1",
+  "evidenceSha256": "4154d8c69d0fdf0e6eca3ff570f1c8a092528a6011099533b88f3863bf36ebd4",
+  "files": {
+    "data.json": "402f639cee901060fe4bf053ef428260619d93ad83b754079f53738a0567bff3",
+    "labels.json": "329482c961c02b0565e7a3475569fdfff412d6a3e23dee7559905b41c3ec8d7a",
+    "continuous.json": "056f8dbdab1d881521e7fa67a145abc4acab643251a8cdae0473c134ecb350fe"
+  },
+  "sourceHashes": {
+    "backend/graph.py": "c67b9bd7bb9db711821e58a5bf2aa5b68a629686a3681b1455d34325b995a761",
+    "backend/knowledge.py": "b2e90b7994a2e394b90563f7585786b576eb7f433c0e6a3bc9c84b5d029f3ceb",
+    "backend/validation.py": "cec0e7c257aeaeeaede4cd2210002bd3519c9f67120a3d6beb44f7a67536acea",
+    "backend/retrieval.py": "7552ccf60873a0e8d18c14b019e7d5588afb38dd6373674b9870c994d3ea88a7",
+    "evaluation/autonomous.py": "c98d17ac5a9ffafce04227084cd305490c4b8664007144dbbcbd549244b33dd9",
+    "EVAL_PLAN.md": "80924c5ccd7532f9dacf463ee656edccd823ca8d4139222329c522036f05c2c5"
+  },
+  "splitCounts": {
+    "development": {
+      "turns": 40,
+      "groups": 33,
+      "categories": {
+        "life": 20,
+        "knowledge": 16,
+        "boundary": 4
+      }
+    },
+    "independent_test": {
+      "turns": 40,
+      "groups": 34,
+      "categories": {
+        "life": 20,
+        "knowledge": 16,
+        "boundary": 4
+      }
+    }
+  },
+  "pairGroupsPerSplit": {
+    "development": 4,
+    "independent_test": 4
+  },
+  "ragCaseIds": [
+    "dev-22",
+    "dev-25",
+    "dev-26",
+    "dev-28",
+    "dev-29",
+    "dev-30",
+    "test-22",
+    "test-24",
+    "test-25",
+    "test-26",
+    "test-32",
+    "test-33"
+  ],
+  "continuousCounts": {
+    "sessions": 4,
+    "turns": 12,
+    "sharedFixedGroups": true
+  },
+  "nonemptyEvidenceLabelsPerSplit": {
+    "development": 14,
+    "independent_test": 14
+  },
+  "priorFixtureCheck": {
+    "paths": [
+      "evaluation/phase1/cases.json",
+      "evaluation/reports/autonomous-20261010/fixtures/confirmation.json",
+      "evaluation/reports/autonomous-20261010/fixtures/holdout-freeze.json",
+      "evaluation/reports/autonomous-20261010/fixtures/confirmation-freeze.json",
+      "evaluation/reports/autonomous-20261010/fixtures/development.json",
+      "evaluation/reports/autonomous-20261010/fixtures/holdout.json",
+      "evaluation/reports/autonomous-20261010/fixtures/development-freeze.json",
+      "evaluation/reports/autonomous-20261010/fixtures/development-retrieval-check.json",
+      "evaluation/reports/semantic-20261010/fixtures/holdout-freeze.json",
+      "evaluation/reports/semantic-20261010/fixtures/development.json",
+      "evaluation/reports/semantic-20261010/fixtures/holdout.json",
+      "evaluation/reports/semantic-20261010/fixtures/paraphrase-stress.json",
+      "evaluation/reports/semantic-20261010/fixtures/development-freeze.json",
+      "evaluation/reports/semantic-20261010/fixtures/rag-development.json"
+    ],
+    "exactTestQuestionOverlap": 0,
+    "groupReview": "AI authored independent-test question families avoid previously run inputs and their direct paraphrases; shared corpus passages remain public. No score or retrieval outcome used to select test questions."
+  },
+  "executionDuringConstruction": "prepare node only with forbidden model transport; no tools/API/generation/results consulted",
+  "freezePolicy": "Do not change independent_test input, grouping or semantic labels after model execution. Any annotation defect is recorded separately with versioned errata; preserve original scores/denominators.",
+  "limitations": [
+    "AI-authored synthetic inputs and AI evidence references are not expert Gold or human scoring.",
+    "Turn count is 80, not 80 independent users. Pair and boundary derivatives remain within groups.",
+    "The test is held out from this optimization round, not from the model pretraining corpus.",
+    "Fixed authored assistant history may include mistakes for correction tests; it is not user fact or measured previous-turn model output."
+  ]
+}

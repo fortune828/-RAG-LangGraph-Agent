@@ -1,0 +1,2222 @@
+# 匿名完整回答材料
+
+原始输入、完整答复及原文保留。机械状态不代表语义质量；交付与候选分别评阅。
+
+## Q2e68618d6dab · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 豫卦九四的“朋盍簪”里，簪就是发簪吗？想看王弼和朱熹各自的说法。
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    8,
+    8,
+    8,
+    7,
+    8,
+    8
+  ],
+  "original": {
+    "binary": "000100",
+    "name": "雷地豫",
+    "number": 16,
+    "judgment": "利建侯行师。"
+  },
+  "changed": {
+    "binary": "000100",
+    "name": "雷地豫",
+    "number": 16,
+    "judgment": "利建侯行师。"
+  },
+  "originalBinary": "000100",
+  "changedBinary": "000100",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "若按字面常见义，“簪”可指发簪；但就本轮所给王弼、朱熹注文而言，他们都不是把“朋盍簪”的“簪”直接解作发簪实物。王弼注：“夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。”这里他把“盍”训为“合”，把“簪”训为“疾”，即快、速；整句强调“勿疑”之后朋类聚合迅速。",
+      "citations": [
+        {
+          "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+          "quote": "夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+          "claim": "王弼注：“夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。”"
+        }
+      ]
+    },
+    {
+      "text": "朱熹注则说：“簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也”其中关键训释是“簪聚也又速也”；他兼取“聚”和“速”，并与“至诚不疑则朋类合而从之”相连。",
+      "citations": [
+        {
+          "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+          "quote": "簪聚也又速也",
+          "claim": "其中关键训释是“簪聚也又速也”"
+        }
+      ]
+    },
+    {
+      "text": "因此，在王弼、朱熹这两家说法中，“朋盍簪”的“簪”不能简单等同于发簪。王弼训“簪”为“疾”，朱熹训“簪”为“聚”又为“速”。如果只把它当发簪，就会漏掉此处以“合”“聚”“速”解释朋类来从的语境。",
+      "citations": [
+        {
+          "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+          "quote": "簪，疾也。",
+          "claim": "王弼训“簪”为“疾”"
+        },
+        {
+          "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+          "quote": "簪聚也又速也",
+          "claim": "朱熹训“簪”为“聚”又为“速”"
+        }
+      ]
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "若按字面常见义，“簪”可指发簪；但就本轮所给王弼、朱熹注文而言，他们都不是把“朋盍簪”的“簪”直接解作发簪实物。王弼注：“夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。”这里他把“盍”训为“合”，把“簪”训为“疾”，即快、速；整句强调“勿疑”之后朋类聚合迅速。",
+    "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+    "quote": "夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+    "claim": "王弼注：“夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。”"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "朱熹注则说：“簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也”其中关键训释是“簪聚也又速也”；他兼取“聚”和“速”，并与“至诚不疑则朋类合而从之”相连。",
+    "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+    "quote": "簪聚也又速也",
+    "claim": "其中关键训释是“簪聚也又速也”"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "因此，在王弼、朱熹这两家说法中，“朋盍簪”的“簪”不能简单等同于发簪。王弼训“簪”为“疾”，朱熹训“簪”为“聚”又为“速”。如果只把它当发簪，就会漏掉此处以“合”“聚”“速”解释朋类来从的语境。",
+    "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+    "quote": "簪，疾也。",
+    "claim": "王弼训“簪”为“疾”"
+  },
+  {
+    "occurrenceId": "delivered.p2.c1",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[1]",
+    "paragraphText": "因此，在王弼、朱熹这两家说法中，“朋盍簪”的“簪”不能简单等同于发簪。王弼训“簪”为“疾”，朱熹训“簪”为“聚”又为“速”。如果只把它当发簪，就会漏掉此处以“合”“聚”“速”解释朋类来从的语境。",
+    "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+    "quote": "簪聚也又速也",
+    "claim": "朱熹训“簪”为“聚”又为“速”"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-16-judgment",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "judgment",
+    "line": null,
+    "text": "利建侯，行师。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "豫·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:16:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "利建侯，行师。"
+  },
+  {
+    "id": "zy-16-tuan",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "tuan",
+    "line": null,
+    "text": "豫，刚应而志行，顺以动，豫。豫顺以动，故天地如之，而况“建侯，行师”乎？天地以顺动，故日月不过，而四时不忒；圣人以顺动，则刑罚清而民服。豫之时义大矣哉！",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "豫·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:16:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "豫，刚应而志行，顺以动，豫。豫顺以动，故天地如之，而况“建侯，行师”乎？天地以顺动，故日月不过，而四时不忒；圣人以顺动，则刑罚清而民服。豫之时义大矣哉！"
+  },
+  {
+    "id": "zy-16-xiang",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "xiang",
+    "line": null,
+    "text": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "豫·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:16:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。"
+  },
+  {
+    "id": "zhu-xi@528287:h16:line4:5d751e0ddf",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "line",
+    "line": 4,
+    "text": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也",
+    "textOriginal": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+    "locator": "《周易本義》·豫·第4爻注",
+    "version": "ws-528287",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "reviewStatus": "machine_parsed",
+    "layer": "commentary",
+    "workId": "zhouyi-benyi",
+    "workTitle": "周易本義",
+    "sourceId": "ws-528287",
+    "editionId": "ws-benyi-skqs",
+    "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+    "authorIds": [
+      "zhu-xi"
+    ],
+    "authorNames": [
+      "朱熹"
+    ],
+    "anchorIds": [
+      "zhouyi:16:line:4"
+    ],
+    "commentsOn": [
+      "zhouyi:16:line:4"
+    ],
+    "releaseId": "knowledge-v3-20260926-r1",
+    "rawLocator": {
+      "file": "data/knowledge/raw/ws-528287.wiki",
+      "startLine": 40,
+      "endLine": 40,
+      "pageLabels": []
+    }
+  },
+  {
+    "id": "wang-bi@7904495:h16:line4:5d368cfa9e",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "line",
+    "line": 4,
+    "text": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+    "textOriginal": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E8%B1%AB&oldid=7904495",
+    "locator": "《周易正義》·豫·第4爻注",
+    "version": "ws-7904495",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "reviewStatus": "machine_parsed",
+    "layer": "commentary",
+    "workId": "zhouyi-zhengyi",
+    "workTitle": "周易正義",
+    "sourceId": "ws-7904495",
+    "editionId": "ws-zhouyi-zhengyi",
+    "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+    "authorIds": [
+      "wang-bi"
+    ],
+    "authorNames": [
+      "王弼"
+    ],
+    "anchorIds": [
+      "zhouyi:16:line:4"
+    ],
+    "commentsOn": [
+      "zhouyi:16:line:4"
+    ],
+    "releaseId": "knowledge-v3-20260926-r1",
+    "rawLocator": {
+      "file": "data/knowledge/raw/ws-7904495.wiki",
+      "startLine": 50,
+      "endLine": 50,
+      "pageLabels": []
+    }
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q81128afb7742 · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 请给出屯卦上六的爻辞和小象，“泣血涟如”是在断言问卦的人马上会遭遇丧事吗？
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    7,
+    8,
+    8,
+    8,
+    7,
+    8
+  ],
+  "original": {
+    "binary": "100010",
+    "name": "水雷屯",
+    "number": 3,
+    "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+  },
+  "changed": {
+    "binary": "100010",
+    "name": "水雷屯",
+    "number": 3,
+    "judgment": "元，亨，利，贞，勿用，有攸往。利建侯。"
+  },
+  "originalBinary": "100010",
+  "changedBinary": "100010",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "屯卦上六的爻辞是“乘马班如，泣血涟如”，小象作“泣血涟如”，何可长也？",
+      "citations": [
+        {
+          "evidenceId": "zy-3-line-6",
+          "quote": "乘马班如，泣血涟如。",
+          "claim": "屯卦上六的爻辞是“乘马班如，泣血涟如”"
+        },
+        {
+          "evidenceId": "zy-3-line_xiang-6",
+          "quote": "“泣血涟如”，何可长也？",
+          "claim": "小象作“泣血涟如”，何可长也？"
+        }
+      ]
+    },
+    {
+      "text": "王弼注把“泣血涟如”解释为处于险难之极、下无应援、进退失据，“居不获安，行无所适，穷困闉厄，无所委仰”，所以悲泣。因此，“泣血涟如”不是对问卦者马上会遭遇丧事的直接断言。小象“何可长也”更近于说这种极端悲泣处境不能长久，或不应长久，含有警戒和促其求解之意，而不是“马上遭遇丧事”的断语。",
+      "citations": [
+        {
+          "evidenceId": "wang-bi@2689596:h3:line6:1a034099b4",
+          "quote": "處險難之極，下無應援，進無所適",
+          "claim": "因此，“泣血涟如”不是对问卦者马上会遭遇丧事的直接断言。"
+        },
+        {
+          "evidenceId": "zy-3-line_xiang-6",
+          "quote": "“泣血涟如”，何可长也？",
+          "claim": "小象“何可长也”更近于说这种极端悲泣处境不能长久，或不应长久"
+        }
+      ]
+    },
+    {
+      "text": "《屯》的整体卦义是艰难初生与在险中经营，而不是把某一爻辞直接等同于具体灾祸。彖传说“刚柔始交而难生”“动乎险中”，大象说“云雷，屯。君子以经纶”。所以上六的“泣血涟如”应放在全卦险难、求通、经纶处困的语境中读；若现实中出现具体忧惧，应结合事实、支持系统与专业判断，不宜仅凭一爻断定马上有丧事。",
+      "citations": [
+        {
+          "evidenceId": "zy-3-tuan",
+          "quote": "刚柔始交而难生",
+          "claim": "《屯》的整体卦义是艰难初生与在险中经营"
+        },
+        {
+          "evidenceId": "zy-3-xiang",
+          "quote": "云雷，屯。君子以经纶。",
+          "claim": "《屯》的整体卦义是艰难初生与在险中经营"
+        }
+      ]
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "屯卦上六的爻辞是“乘马班如，泣血涟如”，小象作“泣血涟如”，何可长也？",
+    "evidenceId": "zy-3-line-6",
+    "quote": "乘马班如，泣血涟如。",
+    "claim": "屯卦上六的爻辞是“乘马班如，泣血涟如”"
+  },
+  {
+    "occurrenceId": "delivered.p0.c1",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[1]",
+    "paragraphText": "屯卦上六的爻辞是“乘马班如，泣血涟如”，小象作“泣血涟如”，何可长也？",
+    "evidenceId": "zy-3-line_xiang-6",
+    "quote": "“泣血涟如”，何可长也？",
+    "claim": "小象作“泣血涟如”，何可长也？"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "王弼注把“泣血涟如”解释为处于险难之极、下无应援、进退失据，“居不获安，行无所适，穷困闉厄，无所委仰”，所以悲泣。因此，“泣血涟如”不是对问卦者马上会遭遇丧事的直接断言。小象“何可长也”更近于说这种极端悲泣处境不能长久，或不应长久，含有警戒和促其求解之意，而不是“马上遭遇丧事”的断语。",
+    "evidenceId": "wang-bi@2689596:h3:line6:1a034099b4",
+    "quote": "處險難之極，下無應援，進無所適",
+    "claim": "因此，“泣血涟如”不是对问卦者马上会遭遇丧事的直接断言。"
+  },
+  {
+    "occurrenceId": "delivered.p1.c1",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[1]",
+    "paragraphText": "王弼注把“泣血涟如”解释为处于险难之极、下无应援、进退失据，“居不获安，行无所适，穷困闉厄，无所委仰”，所以悲泣。因此，“泣血涟如”不是对问卦者马上会遭遇丧事的直接断言。小象“何可长也”更近于说这种极端悲泣处境不能长久，或不应长久，含有警戒和促其求解之意，而不是“马上遭遇丧事”的断语。",
+    "evidenceId": "zy-3-line_xiang-6",
+    "quote": "“泣血涟如”，何可长也？",
+    "claim": "小象“何可长也”更近于说这种极端悲泣处境不能长久，或不应长久"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "《屯》的整体卦义是艰难初生与在险中经营，而不是把某一爻辞直接等同于具体灾祸。彖传说“刚柔始交而难生”“动乎险中”，大象说“云雷，屯。君子以经纶”。所以上六的“泣血涟如”应放在全卦险难、求通、经纶处困的语境中读；若现实中出现具体忧惧，应结合事实、支持系统与专业判断，不宜仅凭一爻断定马上有丧事。",
+    "evidenceId": "zy-3-tuan",
+    "quote": "刚柔始交而难生",
+    "claim": "《屯》的整体卦义是艰难初生与在险中经营"
+  },
+  {
+    "occurrenceId": "delivered.p2.c1",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[1]",
+    "paragraphText": "《屯》的整体卦义是艰难初生与在险中经营，而不是把某一爻辞直接等同于具体灾祸。彖传说“刚柔始交而难生”“动乎险中”，大象说“云雷，屯。君子以经纶”。所以上六的“泣血涟如”应放在全卦险难、求通、经纶处困的语境中读；若现实中出现具体忧惧，应结合事实、支持系统与专业判断，不宜仅凭一爻断定马上有丧事。",
+    "evidenceId": "zy-3-xiang",
+    "quote": "云雷，屯。君子以经纶。",
+    "claim": "《屯》的整体卦义是艰难初生与在险中经营"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-3-judgment",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "judgment",
+    "line": null,
+    "text": "元亨，利贞；勿用有攸往，利建侯。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "屯·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:03:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "元亨，利贞；勿用有攸往，利建侯。"
+  },
+  {
+    "id": "zy-3-tuan",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "tuan",
+    "line": null,
+    "text": "屯，刚柔始交而难生。动乎险中，大亨贞。雷雨之动满盈，天造草昧，宜建侯而不宁。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "屯·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:03:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "屯，刚柔始交而难生。动乎险中，大亨贞。雷雨之动满盈，天造草昧，宜建侯而不宁。"
+  },
+  {
+    "id": "zy-3-xiang",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "xiang",
+    "line": null,
+    "text": "云雷，屯。君子以经纶。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "屯·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:03:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "云雷，屯。君子以经纶。"
+  },
+  {
+    "id": "wang-bi@2689596:h3:line6:1a034099b4",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "line",
+    "line": 6,
+    "text": "處險難之極，下無應援，進無所適，雖比於五，五屯其膏，不與相得，居不獲安，行無所適，窮困闉厄，無所委仰，故「泣血漣如」。",
+    "textOriginal": "處險難之極，下無應援，進無所適，雖比於五，五屯其膏，不與相得，居不獲安，行無所適，窮困闉厄，無所委仰，故「泣血漣如」。",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/01%E5%B1%AF&oldid=2689596",
+    "locator": "《周易正義》·屯·第6爻注",
+    "version": "ws-2689596",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "reviewStatus": "machine_parsed",
+    "layer": "commentary",
+    "workId": "zhouyi-zhengyi",
+    "workTitle": "周易正義",
+    "sourceId": "ws-2689596",
+    "editionId": "ws-zhouyi-zhengyi",
+    "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+    "authorIds": [
+      "wang-bi"
+    ],
+    "authorNames": [
+      "王弼"
+    ],
+    "anchorIds": [
+      "zhouyi:03:line:6"
+    ],
+    "commentsOn": [
+      "zhouyi:03:line:6"
+    ],
+    "releaseId": "knowledge-v3-20260926-r1",
+    "rawLocator": {
+      "file": "data/knowledge/raw/ws-2689596.wiki",
+      "startLine": 79,
+      "endLine": 79,
+      "pageLabels": []
+    }
+  },
+  {
+    "id": "zy-3-line-6",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "line",
+    "line": 6,
+    "text": "乘马班如，泣血涟如。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "屯·上六",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:03:line:6"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "乘马班如，泣血涟如。"
+  },
+  {
+    "id": "zy-3-line_xiang-6",
+    "hexagramId": 3,
+    "name": "屯",
+    "section": "line_xiang",
+    "line": 6,
+    "text": "“泣血涟如”，何可长也？",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "屯·上六小象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:03:line_xiang:6"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "“泣血涟如”，何可长也？"
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q8edd3c19ae69 · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 朱熹怎样解释豫卦六三的“盱豫”？“迟有悔”里的迟，是在说所有事都越快越好吗？
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    8,
+    8,
+    8,
+    7,
+    8,
+    8
+  ],
+  "original": {
+    "binary": "000100",
+    "name": "雷地豫",
+    "number": 16,
+    "judgment": "利建侯行师。"
+  },
+  "changed": {
+    "binary": "000100",
+    "name": "雷地豫",
+    "number": 16,
+    "judgment": "利建侯行师。"
+  },
+  "originalBinary": "000100",
+  "changedBinary": "000100",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "朱熹解释得很具体：盱是上视。六三不中不正，又贴近九四；九四为卦主，所以六三上视九四、下溺于豫，宜有悔。这里的“悔”是这种象与占带来的警示，不是说凡豫皆凶。",
+      "citations": [
+        {
+          "evidenceId": "zhu-xi@528287:h16:line3:8edb84722b",
+          "quote": "盱上視也",
+          "claim": "盱是上视"
+        },
+        {
+          "evidenceId": "zhu-xi@528287:h16:line3:8edb84722b",
+          "quote": "隂不中正而近於四四為卦主",
+          "claim": "六三不中不正，又贴近九四；九四为卦主"
+        },
+        {
+          "evidenceId": "zhu-xi@528287:h16:line3:8edb84722b",
+          "quote": "故六三上視於四而下溺於豫宜有悔者也",
+          "claim": "所以六三上视九四、下溺于豫，宜有悔"
+        }
+      ]
+    },
+    {
+      "text": "所以，“迟有悔”不是把所有事都推成越快越好。朱熹的原意是：其占为事当速悔，若悔之迟则必有悔也。该速的是“悔”，不是一切行动；若已知不妥却拖着不改，悔就由可能变成现实。",
+      "citations": [
+        {
+          "evidenceId": "zhu-xi@528287:h16:line3:8edb84722b",
+          "quote": "其占為事當速悔若悔之遲則必有悔也",
+          "claim": "其占为事当速悔，若悔之迟则必有悔也"
+        }
+      ]
+    },
+    {
+      "text": "现实判断上，六三的问题在“上视四、下溺豫”：一边仰望、攀附卦主，一边沉溺在安逸里。若处境如此，关键不是速度，而是方向：方向不正，越快越陷；已经觉得不对，则改悔宜早。故“迟”在此是“悔之迟”，不是“万事迟”。",
+      "citations": [
+        {
+          "evidenceId": "zhu-xi@528287:h16:line3:8edb84722b",
+          "quote": "上視於四而下溺於豫",
+          "claim": "上视四、下溺豫"
+        },
+        {
+          "evidenceId": "zhu-xi@528287:h16:line3:8edb84722b",
+          "quote": "若悔之遲則必有悔也",
+          "claim": "“迟”在此是“悔之迟”"
+        }
+      ]
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "朱熹解释得很具体：盱是上视。六三不中不正，又贴近九四；九四为卦主，所以六三上视九四、下溺于豫，宜有悔。这里的“悔”是这种象与占带来的警示，不是说凡豫皆凶。",
+    "evidenceId": "zhu-xi@528287:h16:line3:8edb84722b",
+    "quote": "盱上視也",
+    "claim": "盱是上视"
+  },
+  {
+    "occurrenceId": "delivered.p0.c1",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[1]",
+    "paragraphText": "朱熹解释得很具体：盱是上视。六三不中不正，又贴近九四；九四为卦主，所以六三上视九四、下溺于豫，宜有悔。这里的“悔”是这种象与占带来的警示，不是说凡豫皆凶。",
+    "evidenceId": "zhu-xi@528287:h16:line3:8edb84722b",
+    "quote": "隂不中正而近於四四為卦主",
+    "claim": "六三不中不正，又贴近九四；九四为卦主"
+  },
+  {
+    "occurrenceId": "delivered.p0.c2",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[2]",
+    "paragraphText": "朱熹解释得很具体：盱是上视。六三不中不正，又贴近九四；九四为卦主，所以六三上视九四、下溺于豫，宜有悔。这里的“悔”是这种象与占带来的警示，不是说凡豫皆凶。",
+    "evidenceId": "zhu-xi@528287:h16:line3:8edb84722b",
+    "quote": "故六三上視於四而下溺於豫宜有悔者也",
+    "claim": "所以六三上视九四、下溺于豫，宜有悔"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "所以，“迟有悔”不是把所有事都推成越快越好。朱熹的原意是：其占为事当速悔，若悔之迟则必有悔也。该速的是“悔”，不是一切行动；若已知不妥却拖着不改，悔就由可能变成现实。",
+    "evidenceId": "zhu-xi@528287:h16:line3:8edb84722b",
+    "quote": "其占為事當速悔若悔之遲則必有悔也",
+    "claim": "其占为事当速悔，若悔之迟则必有悔也"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "现实判断上，六三的问题在“上视四、下溺豫”：一边仰望、攀附卦主，一边沉溺在安逸里。若处境如此，关键不是速度，而是方向：方向不正，越快越陷；已经觉得不对，则改悔宜早。故“迟”在此是“悔之迟”，不是“万事迟”。",
+    "evidenceId": "zhu-xi@528287:h16:line3:8edb84722b",
+    "quote": "上視於四而下溺於豫",
+    "claim": "上视四、下溺豫"
+  },
+  {
+    "occurrenceId": "delivered.p2.c1",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[1]",
+    "paragraphText": "现实判断上，六三的问题在“上视四、下溺豫”：一边仰望、攀附卦主，一边沉溺在安逸里。若处境如此，关键不是速度，而是方向：方向不正，越快越陷；已经觉得不对，则改悔宜早。故“迟”在此是“悔之迟”，不是“万事迟”。",
+    "evidenceId": "zhu-xi@528287:h16:line3:8edb84722b",
+    "quote": "若悔之遲則必有悔也",
+    "claim": "“迟”在此是“悔之迟”"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zhu-xi@528287:h16:line3:8edb84722b",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "line",
+    "line": 3,
+    "text": "盱況于反○盱上視也隂不中正而近於四四為卦主故六三上視於四而下溺於豫宜有悔者也故其象如此而其占為事當速悔若悔之遲則必有悔也",
+    "textOriginal": "盱況于反○盱上視也隂不中正而近於四四為卦主故六三上視於四而下溺於豫宜有悔者也故其象如此而其占為事當速悔若悔之遲則必有悔也",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+    "locator": "《周易本義》·豫·第3爻注",
+    "version": "ws-528287",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "reviewStatus": "machine_parsed",
+    "layer": "commentary",
+    "workId": "zhouyi-benyi",
+    "workTitle": "周易本義",
+    "sourceId": "ws-528287",
+    "editionId": "ws-benyi-skqs",
+    "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+    "authorIds": [
+      "zhu-xi"
+    ],
+    "authorNames": [
+      "朱熹"
+    ],
+    "anchorIds": [
+      "zhouyi:16:line:3"
+    ],
+    "commentsOn": [
+      "zhouyi:16:line:3"
+    ],
+    "releaseId": "knowledge-v3-20260926-r1",
+    "rawLocator": {
+      "file": "data/knowledge/raw/ws-528287.wiki",
+      "startLine": 40,
+      "endLine": 40,
+      "pageLabels": []
+    }
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q41eef1f41285 · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 豫卦九四的“朋盍簪”里，簪就是发簪吗？想看王弼和朱熹各自的说法。
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    8,
+    8,
+    8,
+    7,
+    8,
+    8
+  ],
+  "original": {
+    "binary": "000100",
+    "name": "雷地豫",
+    "number": 16,
+    "judgment": "利建侯行师。"
+  },
+  "changed": {
+    "binary": "000100",
+    "name": "雷地豫",
+    "number": 16,
+    "judgment": "利建侯行师。"
+  },
+  "originalBinary": "000100",
+  "changedBinary": "000100",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "按本轮所引王弼、朱熹注，豫卦九四“朋盍簪”的“簪”不宜直接解作发簪。王弼解“簪”为“疾”，盍为“合”；朱熹解“簪”为“聚”，又为“速”。所以在这两家注中，簪取的是“疾/速/聚”一类训释，而不是首饰义。",
+      "citations": [
+        {
+          "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+          "quote": "盍，合也。簪，疾也。",
+          "claim": "王弼解“簪”为“疾”，盍为“合”"
+        },
+        {
+          "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+          "quote": "簪聚也又速也",
+          "claim": "朱熹解“簪”为“聚”，又为“速”"
+        }
+      ]
+    },
+    {
+      "text": "王弼注又说：“夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。”这里把“簪”训为疾，并把“勿疑”与“朋合疾”连读：不疑则朋类合而迅速。故在王弼系统中，“簪”不是发簪，而是“疾/速”的训释。",
+      "citations": [
+        {
+          "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+          "quote": "故勿疑則朋合疾也。盍，合也。簪，疾也。",
+          "claim": "把“簪”训为疾"
+        }
+      ]
+    },
+    {
+      "text": "朱熹《周易本義》注：“簪側林反……簪聚也又速也。”他又承上文说：“又當至誠不疑則朋類合而從之矣故又因而戒之。”因此朱熹是把“簪”解为“聚”，又解为“速”；“朋盍簪”在注中指向朋类合而从之，而非发簪。",
+      "citations": [
+        {
+          "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+          "quote": "簪聚也又速也",
+          "claim": "朱熹是把“簪”解为“聚”，又解为“速”"
+        },
+        {
+          "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+          "quote": "又當至誠不疑則朋類合而從之矣故又因而戒之",
+          "claim": "又當至誠不疑則朋類合而從之矣故又因而戒之"
+        }
+      ]
+    },
+    {
+      "text": "所以，若你遇到把“簪”讲成发簪的说法，那不是本轮王弼、朱熹注的训释。本轮资料没有提供“发簪”这一义项的直接依据；若要核对发簪说，需要另找相应注疏或字书材料。",
+      "citations": []
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "按本轮所引王弼、朱熹注，豫卦九四“朋盍簪”的“簪”不宜直接解作发簪。王弼解“簪”为“疾”，盍为“合”；朱熹解“簪”为“聚”，又为“速”。所以在这两家注中，簪取的是“疾/速/聚”一类训释，而不是首饰义。",
+    "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+    "quote": "盍，合也。簪，疾也。",
+    "claim": "王弼解“簪”为“疾”，盍为“合”"
+  },
+  {
+    "occurrenceId": "delivered.p0.c1",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[1]",
+    "paragraphText": "按本轮所引王弼、朱熹注，豫卦九四“朋盍簪”的“簪”不宜直接解作发簪。王弼解“簪”为“疾”，盍为“合”；朱熹解“簪”为“聚”，又为“速”。所以在这两家注中，簪取的是“疾/速/聚”一类训释，而不是首饰义。",
+    "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+    "quote": "簪聚也又速也",
+    "claim": "朱熹解“簪”为“聚”，又为“速”"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "王弼注又说：“夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。”这里把“簪”训为疾，并把“勿疑”与“朋合疾”连读：不疑则朋类合而迅速。故在王弼系统中，“簪”不是发簪，而是“疾/速”的训释。",
+    "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+    "quote": "故勿疑則朋合疾也。盍，合也。簪，疾也。",
+    "claim": "把“簪”训为疾"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "朱熹《周易本義》注：“簪側林反……簪聚也又速也。”他又承上文说：“又當至誠不疑則朋類合而從之矣故又因而戒之。”因此朱熹是把“簪”解为“聚”，又解为“速”；“朋盍簪”在注中指向朋类合而从之，而非发簪。",
+    "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+    "quote": "簪聚也又速也",
+    "claim": "朱熹是把“簪”解为“聚”，又解为“速”"
+  },
+  {
+    "occurrenceId": "delivered.p2.c1",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[1]",
+    "paragraphText": "朱熹《周易本義》注：“簪側林反……簪聚也又速也。”他又承上文说：“又當至誠不疑則朋類合而從之矣故又因而戒之。”因此朱熹是把“簪”解为“聚”，又解为“速”；“朋盍簪”在注中指向朋类合而从之，而非发簪。",
+    "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+    "quote": "又當至誠不疑則朋類合而從之矣故又因而戒之",
+    "claim": "又當至誠不疑則朋類合而從之矣故又因而戒之"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-16-judgment",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "judgment",
+    "line": null,
+    "text": "利建侯，行师。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "豫·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:16:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "利建侯，行师。"
+  },
+  {
+    "id": "zy-16-tuan",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "tuan",
+    "line": null,
+    "text": "豫，刚应而志行，顺以动，豫。豫顺以动，故天地如之，而况“建侯，行师”乎？天地以顺动，故日月不过，而四时不忒；圣人以顺动，则刑罚清而民服。豫之时义大矣哉！",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "豫·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:16:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "豫，刚应而志行，顺以动，豫。豫顺以动，故天地如之，而况“建侯，行师”乎？天地以顺动，故日月不过，而四时不忒；圣人以顺动，则刑罚清而民服。豫之时义大矣哉！"
+  },
+  {
+    "id": "zy-16-xiang",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "xiang",
+    "line": null,
+    "text": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "豫·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:16:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。"
+  },
+  {
+    "id": "zhu-xi@528287:h16:line4:5d751e0ddf",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "line",
+    "line": 4,
+    "text": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也",
+    "textOriginal": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+    "locator": "《周易本義》·豫·第4爻注",
+    "version": "ws-528287",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "reviewStatus": "machine_parsed",
+    "layer": "commentary",
+    "workId": "zhouyi-benyi",
+    "workTitle": "周易本義",
+    "sourceId": "ws-528287",
+    "editionId": "ws-benyi-skqs",
+    "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+    "authorIds": [
+      "zhu-xi"
+    ],
+    "authorNames": [
+      "朱熹"
+    ],
+    "anchorIds": [
+      "zhouyi:16:line:4"
+    ],
+    "commentsOn": [
+      "zhouyi:16:line:4"
+    ],
+    "releaseId": "knowledge-v3-20260926-r1",
+    "rawLocator": {
+      "file": "data/knowledge/raw/ws-528287.wiki",
+      "startLine": 40,
+      "endLine": 40,
+      "pageLabels": []
+    }
+  },
+  {
+    "id": "wang-bi@7904495:h16:line4:5d368cfa9e",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "line",
+    "line": 4,
+    "text": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+    "textOriginal": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E8%B1%AB&oldid=7904495",
+    "locator": "《周易正義》·豫·第4爻注",
+    "version": "ws-7904495",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "reviewStatus": "machine_parsed",
+    "layer": "commentary",
+    "workId": "zhouyi-zhengyi",
+    "workTitle": "周易正義",
+    "sourceId": "ws-7904495",
+    "editionId": "ws-zhouyi-zhengyi",
+    "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+    "authorIds": [
+      "wang-bi"
+    ],
+    "authorNames": [
+      "王弼"
+    ],
+    "anchorIds": [
+      "zhouyi:16:line:4"
+    ],
+    "commentsOn": [
+      "zhouyi:16:line:4"
+    ],
+    "releaseId": "knowledge-v3-20260926-r1",
+    "rawLocator": {
+      "file": "data/knowledge/raw/ws-7904495.wiki",
+      "startLine": 50,
+      "endLine": 50,
+      "pageLabels": []
+    }
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Qb2c5f40a077e · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 我记得朱熹有一段解释，把一起快乐和自己沉醉区分开，说同一个卦里有一条爻例外。这出自哪里？我记得对吗？
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    7,
+    8,
+    7,
+    8,
+    8,
+    7
+  ],
+  "original": {
+    "binary": "101001",
+    "name": "山火贲",
+    "number": 22,
+    "judgment": "亨。小利有攸往。"
+  },
+  "changed": {
+    "binary": "101001",
+    "name": "山火贲",
+    "number": 22,
+    "judgment": "亨。小利有攸往。"
+  },
+  "originalBinary": "101001",
+  "changedBinary": "101001",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "insufficient_or_refusal",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "insufficient",
+  "paragraphs": [
+    {
+      "text": "本轮没有取得朱熹或相关注解材料，因此无法核对你所记的这段话的准确出处、篇名和原文。就你描述的方向说，容易被联想到的是朱熹《周易本义》对《豫》卦六二爻的注解：大意是豫卦主和乐，但和乐容易溺人，而六二居中得正，是卦中不溺于豫的例外；不过这一判断未经本轮文献证据确认。你记忆中的“一起快乐”和“自己沉醉”是否为朱熹原话，以及是否确指《豫》卦六二，尚不能确认。",
+      "citations": []
+    }
+  ],
+  "limitations": [
+    "本轮参考原文为空，未取得朱熹/注解材料；以上仅为需进一步核对的可能方向。"
+  ]
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[]
+```
+
+### 生成实际可见原文
+
+```json
+[]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[
+  {
+    "id": "zhu-xi@528287:h16:line1:c7c5870da6",
+    "text": "隂柔小人上有强援得時主事故不勝其豫而以自鳴凶之道也故其占如此卦之得名本為和樂然卦辭為衆樂之義爻辭除九四與卦同外皆為自樂所以有吉凶之異",
+    "textOriginal": "隂柔小人上有强援得時主事故不勝其豫而以自鳴凶之道也故其占如此卦之得名本為和樂然卦辭為衆樂之義爻辭除九四與卦同外皆為自樂所以有吉凶之異",
+    "hexagramId": 16,
+    "section": "line",
+    "line": 1,
+    "layer": "commentary",
+    "workId": "zhouyi-benyi",
+    "workTitle": "周易本義",
+    "authorIds": [
+      "zhu-xi"
+    ],
+    "authorNames": [
+      "朱熹"
+    ],
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+    "locator": "《周易本義》·豫·第1爻注",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "reviewStatus": "machine_parsed",
+    "referenceOnly": true,
+    "availableToAnswer": false
+  }
+]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q94dcef80bcee · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 豫卦九四的“朋盍簪”里，簪就是发簪吗？想看王弼和朱熹各自的说法。
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    8,
+    8,
+    8,
+    7,
+    8,
+    8
+  ],
+  "original": {
+    "binary": "000100",
+    "name": "雷地豫",
+    "number": 16,
+    "judgment": "利建侯行师。"
+  },
+  "changed": {
+    "binary": "000100",
+    "name": "雷地豫",
+    "number": 16,
+    "judgment": "利建侯行师。"
+  },
+  "originalBinary": "000100",
+  "changedBinary": "000100",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "就本轮所据的两家注文看，王弼和朱熹都没有把“簪”解作发簪。王弼在《周易正義》豫卦九四注中说“盍，合也。簪，疾也”，把“簪”训为“疾”，即快速。朱熹在《周易本義》该爻注中则说“簪聚也又速也”，即“簪”有聚合、又迅速两义。因此，若问“簪就是发簪吗”，至少在这两条注疏里，答案是否定的。",
+      "citations": [
+        {
+          "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+          "quote": "盍，合也。簪，疾也。",
+          "claim": "王弼在《周易正義》豫卦九四注中说“盍，合也。簪，疾也”，把“簪”训为“疾”，即快速。"
+        },
+        {
+          "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+          "quote": "簪聚也又速也",
+          "claim": "朱熹在《周易本義》该爻注中则说“簪聚也又速也”，即“簪”有聚合、又迅速两义。"
+        }
+      ]
+    },
+    {
+      "text": "再看整句的训释：王弼说“夫不信於物，物亦疑焉，故勿疑則朋合疾也”，又明言“盍，合也”，所以“朋盍簪”在王弼读来是“朋合疾”——朋友相合而来得很快。朱熹也说“其占為大有得然又當至誠不疑則朋類合而從之矣”，并补充“簪聚也又速也”，意思是诚而不疑，则同类聚合、迅速跟从。两家共同点是把“簪”当作表示聚合、疾速的训释，而不是首饰发簪。",
+      "citations": [
+        {
+          "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+          "quote": "夫不信於物，物亦疑焉，故勿疑則朋合疾也",
+          "claim": "王弼说“夫不信於物，物亦疑焉，故勿疑則朋合疾也”，又明言“盍，合也”，所以“朋盍簪”在王弼读来是“朋合疾”——朋友相合而来得很快。"
+        },
+        {
+          "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+          "quote": "其占為大有得然又當至誠不疑則朋類合而從之矣",
+          "claim": "朱熹也说“其占為大有得然又當至誠不疑則朋類合而從之矣”，并补充“簪聚也又速也”，意思是诚而不疑，则同类聚合、迅速跟从。"
+        },
+        {
+          "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+          "quote": "簪，疾也",
+          "claim": "两家共同点是把“簪”当作表示聚合、疾速的训释，而不是首饰发簪。"
+        },
+        {
+          "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+          "quote": "簪聚也又速也",
+          "claim": "两家共同点是把“簪”当作表示聚合、疾速的训释，而不是首饰发簪。"
+        }
+      ]
+    },
+    {
+      "text": "所以，按王弼、朱熹的注解，这里的“簪”不是取发簪（首饰）义，而是取“聚”“疾/速”的训释；王弼偏重“疾”，朱熹兼取“聚”与“速”。本轮材料没有给出“簪”作发簪的注文，也没有显示两家在该点上存在以发簪为解的异说。若你关心的是文字学本义，则“簪”字本身通常指发簪，但这一点超出本轮所据注文，需另查字书或训诂材料确认。",
+      "citations": [
+        {
+          "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+          "quote": "簪，疾也",
+          "claim": "王弼偏重“疾”，朱熹兼取“聚”与“速”。"
+        },
+        {
+          "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+          "quote": "簪聚也又速也",
+          "claim": "王弼偏重“疾”，朱熹兼取“聚”与“速”。"
+        }
+      ]
+    }
+  ],
+  "limitations": []
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "就本轮所据的两家注文看，王弼和朱熹都没有把“簪”解作发簪。王弼在《周易正義》豫卦九四注中说“盍，合也。簪，疾也”，把“簪”训为“疾”，即快速。朱熹在《周易本義》该爻注中则说“簪聚也又速也”，即“簪”有聚合、又迅速两义。因此，若问“簪就是发簪吗”，至少在这两条注疏里，答案是否定的。",
+    "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+    "quote": "盍，合也。簪，疾也。",
+    "claim": "王弼在《周易正義》豫卦九四注中说“盍，合也。簪，疾也”，把“簪”训为“疾”，即快速。"
+  },
+  {
+    "occurrenceId": "delivered.p0.c1",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[1]",
+    "paragraphText": "就本轮所据的两家注文看，王弼和朱熹都没有把“簪”解作发簪。王弼在《周易正義》豫卦九四注中说“盍，合也。簪，疾也”，把“簪”训为“疾”，即快速。朱熹在《周易本義》该爻注中则说“簪聚也又速也”，即“簪”有聚合、又迅速两义。因此，若问“簪就是发簪吗”，至少在这两条注疏里，答案是否定的。",
+    "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+    "quote": "簪聚也又速也",
+    "claim": "朱熹在《周易本義》该爻注中则说“簪聚也又速也”，即“簪”有聚合、又迅速两义。"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "再看整句的训释：王弼说“夫不信於物，物亦疑焉，故勿疑則朋合疾也”，又明言“盍，合也”，所以“朋盍簪”在王弼读来是“朋合疾”——朋友相合而来得很快。朱熹也说“其占為大有得然又當至誠不疑則朋類合而從之矣”，并补充“簪聚也又速也”，意思是诚而不疑，则同类聚合、迅速跟从。两家共同点是把“簪”当作表示聚合、疾速的训释，而不是首饰发簪。",
+    "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+    "quote": "夫不信於物，物亦疑焉，故勿疑則朋合疾也",
+    "claim": "王弼说“夫不信於物，物亦疑焉，故勿疑則朋合疾也”，又明言“盍，合也”，所以“朋盍簪”在王弼读来是“朋合疾”——朋友相合而来得很快。"
+  },
+  {
+    "occurrenceId": "delivered.p1.c1",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[1]",
+    "paragraphText": "再看整句的训释：王弼说“夫不信於物，物亦疑焉，故勿疑則朋合疾也”，又明言“盍，合也”，所以“朋盍簪”在王弼读来是“朋合疾”——朋友相合而来得很快。朱熹也说“其占為大有得然又當至誠不疑則朋類合而從之矣”，并补充“簪聚也又速也”，意思是诚而不疑，则同类聚合、迅速跟从。两家共同点是把“簪”当作表示聚合、疾速的训释，而不是首饰发簪。",
+    "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+    "quote": "其占為大有得然又當至誠不疑則朋類合而從之矣",
+    "claim": "朱熹也说“其占為大有得然又當至誠不疑則朋類合而從之矣”，并补充“簪聚也又速也”，意思是诚而不疑，则同类聚合、迅速跟从。"
+  },
+  {
+    "occurrenceId": "delivered.p1.c2",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[2]",
+    "paragraphText": "再看整句的训释：王弼说“夫不信於物，物亦疑焉，故勿疑則朋合疾也”，又明言“盍，合也”，所以“朋盍簪”在王弼读来是“朋合疾”——朋友相合而来得很快。朱熹也说“其占為大有得然又當至誠不疑則朋類合而從之矣”，并补充“簪聚也又速也”，意思是诚而不疑，则同类聚合、迅速跟从。两家共同点是把“簪”当作表示聚合、疾速的训释，而不是首饰发簪。",
+    "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+    "quote": "簪，疾也",
+    "claim": "两家共同点是把“簪”当作表示聚合、疾速的训释，而不是首饰发簪。"
+  },
+  {
+    "occurrenceId": "delivered.p1.c3",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[3]",
+    "paragraphText": "再看整句的训释：王弼说“夫不信於物，物亦疑焉，故勿疑則朋合疾也”，又明言“盍，合也”，所以“朋盍簪”在王弼读来是“朋合疾”——朋友相合而来得很快。朱熹也说“其占為大有得然又當至誠不疑則朋類合而從之矣”，并补充“簪聚也又速也”，意思是诚而不疑，则同类聚合、迅速跟从。两家共同点是把“簪”当作表示聚合、疾速的训释，而不是首饰发簪。",
+    "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+    "quote": "簪聚也又速也",
+    "claim": "两家共同点是把“簪”当作表示聚合、疾速的训释，而不是首饰发簪。"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "所以，按王弼、朱熹的注解，这里的“簪”不是取发簪（首饰）义，而是取“聚”“疾/速”的训释；王弼偏重“疾”，朱熹兼取“聚”与“速”。本轮材料没有给出“簪”作发簪的注文，也没有显示两家在该点上存在以发簪为解的异说。若你关心的是文字学本义，则“簪”字本身通常指发簪，但这一点超出本轮所据注文，需另查字书或训诂材料确认。",
+    "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+    "quote": "簪，疾也",
+    "claim": "王弼偏重“疾”，朱熹兼取“聚”与“速”。"
+  },
+  {
+    "occurrenceId": "delivered.p2.c1",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[1]",
+    "paragraphText": "所以，按王弼、朱熹的注解，这里的“簪”不是取发簪（首饰）义，而是取“聚”“疾/速”的训释；王弼偏重“疾”，朱熹兼取“聚”与“速”。本轮材料没有给出“簪”作发簪的注文，也没有显示两家在该点上存在以发簪为解的异说。若你关心的是文字学本义，则“簪”字本身通常指发簪，但这一点超出本轮所据注文，需另查字书或训诂材料确认。",
+    "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+    "quote": "簪聚也又速也",
+    "claim": "王弼偏重“疾”，朱熹兼取“聚”与“速”。"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-16-judgment",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "judgment",
+    "line": null,
+    "text": "利建侯，行师。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "豫·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:16:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "利建侯，行师。"
+  },
+  {
+    "id": "zy-16-tuan",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "tuan",
+    "line": null,
+    "text": "豫，刚应而志行，顺以动，豫。豫顺以动，故天地如之，而况“建侯，行师”乎？天地以顺动，故日月不过，而四时不忒；圣人以顺动，则刑罚清而民服。豫之时义大矣哉！",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "豫·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:16:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "豫，刚应而志行，顺以动，豫。豫顺以动，故天地如之，而况“建侯，行师”乎？天地以顺动，故日月不过，而四时不忒；圣人以顺动，则刑罚清而民服。豫之时义大矣哉！"
+  },
+  {
+    "id": "zy-16-xiang",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "xiang",
+    "line": null,
+    "text": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "豫·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:16:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。"
+  },
+  {
+    "id": "zhu-xi@528287:h16:line4:5d751e0ddf",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "line",
+    "line": 4,
+    "text": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也",
+    "textOriginal": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+    "locator": "《周易本義》·豫·第4爻注",
+    "version": "ws-528287",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "reviewStatus": "machine_parsed",
+    "layer": "commentary",
+    "workId": "zhouyi-benyi",
+    "workTitle": "周易本義",
+    "sourceId": "ws-528287",
+    "editionId": "ws-benyi-skqs",
+    "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+    "authorIds": [
+      "zhu-xi"
+    ],
+    "authorNames": [
+      "朱熹"
+    ],
+    "anchorIds": [
+      "zhouyi:16:line:4"
+    ],
+    "commentsOn": [
+      "zhouyi:16:line:4"
+    ],
+    "releaseId": "knowledge-v3-20260926-r1",
+    "rawLocator": {
+      "file": "data/knowledge/raw/ws-528287.wiki",
+      "startLine": 40,
+      "endLine": 40,
+      "pageLabels": []
+    }
+  },
+  {
+    "id": "wang-bi@7904495:h16:line4:5d368cfa9e",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "line",
+    "line": 4,
+    "text": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+    "textOriginal": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E8%B1%AB&oldid=7904495",
+    "locator": "《周易正義》·豫·第4爻注",
+    "version": "ws-7904495",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "reviewStatus": "machine_parsed",
+    "layer": "commentary",
+    "workId": "zhouyi-zhengyi",
+    "workTitle": "周易正義",
+    "sourceId": "ws-7904495",
+    "editionId": "ws-zhouyi-zhengyi",
+    "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+    "authorIds": [
+      "wang-bi"
+    ],
+    "authorNames": [
+      "王弼"
+    ],
+    "anchorIds": [
+      "zhouyi:16:line:4"
+    ],
+    "commentsOn": [
+      "zhouyi:16:line:4"
+    ],
+    "releaseId": "knowledge-v3-20260926-r1",
+    "rawLocator": {
+      "file": "data/knowledge/raw/ws-7904495.wiki",
+      "startLine": 50,
+      "endLine": 50,
+      "pageLabels": []
+    }
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q80a9b16ff2b4 · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 豫卦九四的“朋盍簪”里，簪就是发簪吗？想看王弼和朱熹各自的说法。
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    8,
+    8,
+    8,
+    7,
+    8,
+    8
+  ],
+  "original": {
+    "binary": "000100",
+    "name": "雷地豫",
+    "number": 16,
+    "judgment": "利建侯行师。"
+  },
+  "changed": {
+    "binary": "000100",
+    "name": "雷地豫",
+    "number": 16,
+    "judgment": "利建侯行师。"
+  },
+  "originalBinary": "000100",
+  "changedBinary": "000100",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "substantive_answer",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "answered",
+  "paragraphs": [
+    {
+      "text": "就本轮给出的两条注文看，王弼和朱熹都没有把‘簪’解作发簪实体。朱熹在注中说‘簪聚也又速也’，即把‘簪’训为‘聚’和‘速’；王弼则说‘簪，疾也’，把‘簪’训为‘疾’（迅速）。两人取的都是‘聚合、迅速’这一路训释，而非器物义。",
+      "citations": [
+        {
+          "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+          "quote": "簪聚也又速也",
+          "claim": "朱熹在注中说‘簪聚也又速也’"
+        },
+        {
+          "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+          "quote": "簪，疾也",
+          "claim": "王弼则说‘簪，疾也’"
+        }
+      ]
+    },
+    {
+      "text": "王弼的整段注以九四为‘獨體陽爻，眾陰所從’为背景，说‘夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。’他把‘盍’训为‘合’，‘簪’训为‘疾’，合起来就是：若能不疑，朋类便迅速来合。朱熹也说‘又當至誠不疑則朋類合而從之矣’，并同样落在‘聚’与‘速’上。可见两家在这里的重点是朋友聚合之快，而不是描摹一根发簪。",
+      "citations": [
+        {
+          "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+          "quote": "獨體陽爻，眾陰所從",
+          "claim": "王弼的整段注以九四为‘獨體陽爻，眾陰所從’为背景"
+        },
+        {
+          "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+          "quote": "故勿疑則朋合疾也。盍，合也。簪，疾也。",
+          "claim": "故勿疑則朋合疾也。盍，合也。簪，疾也。"
+        },
+        {
+          "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+          "quote": "又當至誠不疑則朋類合而從之矣",
+          "claim": "朱熹也说‘又當至誠不疑則朋類合而從之矣’"
+        }
+      ]
+    },
+    {
+      "text": "所以，按这两条材料回答：‘朋盍簪’里的‘簪’，在王弼和朱熹的注中并不是被当作发簪来解释的，而是被训为‘疾/速/聚’。不过，这不等于说‘簪’字本身与发簪无关；本轮资料只提供了这两条注文，没有提供字书训诂或其他注家对此的讨论，因此‘簪’的字形本义、以及后世是否有从发簪引申的理解，尚不能确认。朱熹还附了‘簪側林反’的反切，说明这里同时有读音上的提示，但本轮材料未展开。",
+      "citations": [
+        {
+          "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+          "quote": "簪側林反",
+          "claim": "朱熹还附了‘簪側林反’的反切"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "本轮仅提供王弼、朱熹两条九四注文，未提供字书、其他注家或‘簪’字本义材料。"
+  ]
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[
+  {
+    "occurrenceId": "delivered.p0.c0",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[0]",
+    "paragraphText": "就本轮给出的两条注文看，王弼和朱熹都没有把‘簪’解作发簪实体。朱熹在注中说‘簪聚也又速也’，即把‘簪’训为‘聚’和‘速’；王弼则说‘簪，疾也’，把‘簪’训为‘疾’（迅速）。两人取的都是‘聚合、迅速’这一路训释，而非器物义。",
+    "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+    "quote": "簪聚也又速也",
+    "claim": "朱熹在注中说‘簪聚也又速也’"
+  },
+  {
+    "occurrenceId": "delivered.p0.c1",
+    "target": "delivered",
+    "location": "paragraphs[0].citations[1]",
+    "paragraphText": "就本轮给出的两条注文看，王弼和朱熹都没有把‘簪’解作发簪实体。朱熹在注中说‘簪聚也又速也’，即把‘簪’训为‘聚’和‘速’；王弼则说‘簪，疾也’，把‘簪’训为‘疾’（迅速）。两人取的都是‘聚合、迅速’这一路训释，而非器物义。",
+    "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+    "quote": "簪，疾也",
+    "claim": "王弼则说‘簪，疾也’"
+  },
+  {
+    "occurrenceId": "delivered.p1.c0",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[0]",
+    "paragraphText": "王弼的整段注以九四为‘獨體陽爻，眾陰所從’为背景，说‘夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。’他把‘盍’训为‘合’，‘簪’训为‘疾’，合起来就是：若能不疑，朋类便迅速来合。朱熹也说‘又當至誠不疑則朋類合而從之矣’，并同样落在‘聚’与‘速’上。可见两家在这里的重点是朋友聚合之快，而不是描摹一根发簪。",
+    "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+    "quote": "獨體陽爻，眾陰所從",
+    "claim": "王弼的整段注以九四为‘獨體陽爻，眾陰所從’为背景"
+  },
+  {
+    "occurrenceId": "delivered.p1.c1",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[1]",
+    "paragraphText": "王弼的整段注以九四为‘獨體陽爻，眾陰所從’为背景，说‘夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。’他把‘盍’训为‘合’，‘簪’训为‘疾’，合起来就是：若能不疑，朋类便迅速来合。朱熹也说‘又當至誠不疑則朋類合而從之矣’，并同样落在‘聚’与‘速’上。可见两家在这里的重点是朋友聚合之快，而不是描摹一根发簪。",
+    "evidenceId": "wang-bi@7904495:h16:line4:5d368cfa9e",
+    "quote": "故勿疑則朋合疾也。盍，合也。簪，疾也。",
+    "claim": "故勿疑則朋合疾也。盍，合也。簪，疾也。"
+  },
+  {
+    "occurrenceId": "delivered.p1.c2",
+    "target": "delivered",
+    "location": "paragraphs[1].citations[2]",
+    "paragraphText": "王弼的整段注以九四为‘獨體陽爻，眾陰所從’为背景，说‘夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。’他把‘盍’训为‘合’，‘簪’训为‘疾’，合起来就是：若能不疑，朋类便迅速来合。朱熹也说‘又當至誠不疑則朋類合而從之矣’，并同样落在‘聚’与‘速’上。可见两家在这里的重点是朋友聚合之快，而不是描摹一根发簪。",
+    "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+    "quote": "又當至誠不疑則朋類合而從之矣",
+    "claim": "朱熹也说‘又當至誠不疑則朋類合而從之矣’"
+  },
+  {
+    "occurrenceId": "delivered.p2.c0",
+    "target": "delivered",
+    "location": "paragraphs[2].citations[0]",
+    "paragraphText": "所以，按这两条材料回答：‘朋盍簪’里的‘簪’，在王弼和朱熹的注中并不是被当作发簪来解释的，而是被训为‘疾/速/聚’。不过，这不等于说‘簪’字本身与发簪无关；本轮资料只提供了这两条注文，没有提供字书训诂或其他注家对此的讨论，因此‘簪’的字形本义、以及后世是否有从发簪引申的理解，尚不能确认。朱熹还附了‘簪側林反’的反切，说明这里同时有读音上的提示，但本轮材料未展开。",
+    "evidenceId": "zhu-xi@528287:h16:line4:5d751e0ddf",
+    "quote": "簪側林反",
+    "claim": "朱熹还附了‘簪側林反’的反切"
+  }
+]
+```
+
+### 生成实际可见原文
+
+```json
+[
+  {
+    "id": "zy-16-judgment",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "judgment",
+    "line": null,
+    "text": "利建侯，行师。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+    "locator": "豫·卦辞",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:16:judgment"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "利建侯，行师。"
+  },
+  {
+    "id": "zy-16-tuan",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "tuan",
+    "line": null,
+    "text": "豫，刚应而志行，顺以动，豫。豫顺以动，故天地如之，而况“建侯，行师”乎？天地以顺动，故日月不过，而四时不忒；圣人以顺动，则刑罚清而民服。豫之时义大矣哉！",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+    "locator": "豫·彖传",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:16:tuan"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "豫，刚应而志行，顺以动，豫。豫顺以动，故天地如之，而况“建侯，行师”乎？天地以顺动，故日月不过，而四时不忒；圣人以顺动，则刑罚清而民服。豫之时义大矣哉！"
+  },
+  {
+    "id": "zy-16-xiang",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "xiang",
+    "line": null,
+    "text": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。",
+    "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+    "locator": "豫·大象",
+    "version": "open-iching-4c5f00f8cb62-v2",
+    "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+    "layer": "classic",
+    "workId": "zhouyi",
+    "workTitle": "周易",
+    "sourceId": "open-iching-4c5f00f8cb62",
+    "editionId": "open-iching-v2",
+    "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+    "authorIds": [],
+    "authorNames": [],
+    "anchorIds": [
+      "zhouyi:16:xiang"
+    ],
+    "commentsOn": [],
+    "reviewStatus": "legacy_unreviewed",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "textOriginal": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。"
+  },
+  {
+    "id": "zhu-xi@528287:h16:line4:5d751e0ddf",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "line",
+    "line": 4,
+    "text": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也",
+    "textOriginal": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+    "locator": "《周易本義》·豫·第4爻注",
+    "version": "ws-528287",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "reviewStatus": "machine_parsed",
+    "layer": "commentary",
+    "workId": "zhouyi-benyi",
+    "workTitle": "周易本義",
+    "sourceId": "ws-528287",
+    "editionId": "ws-benyi-skqs",
+    "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+    "authorIds": [
+      "zhu-xi"
+    ],
+    "authorNames": [
+      "朱熹"
+    ],
+    "anchorIds": [
+      "zhouyi:16:line:4"
+    ],
+    "commentsOn": [
+      "zhouyi:16:line:4"
+    ],
+    "releaseId": "knowledge-v3-20260926-r1",
+    "rawLocator": {
+      "file": "data/knowledge/raw/ws-528287.wiki",
+      "startLine": 40,
+      "endLine": 40,
+      "pageLabels": []
+    }
+  },
+  {
+    "id": "wang-bi@7904495:h16:line4:5d368cfa9e",
+    "hexagramId": 16,
+    "name": "豫",
+    "section": "line",
+    "line": 4,
+    "text": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+    "textOriginal": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E8%B1%AB&oldid=7904495",
+    "locator": "《周易正義》·豫·第4爻注",
+    "version": "ws-7904495",
+    "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+    "reviewStatus": "machine_parsed",
+    "layer": "commentary",
+    "workId": "zhouyi-zhengyi",
+    "workTitle": "周易正義",
+    "sourceId": "ws-7904495",
+    "editionId": "ws-zhouyi-zhengyi",
+    "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+    "authorIds": [
+      "wang-bi"
+    ],
+    "authorNames": [
+      "王弼"
+    ],
+    "anchorIds": [
+      "zhouyi:16:line:4"
+    ],
+    "commentsOn": [
+      "zhouyi:16:line:4"
+    ],
+    "releaseId": "knowledge-v3-20260926-r1",
+    "rawLocator": {
+      "file": "data/knowledge/raw/ws-7904495.wiki",
+      "startLine": 50,
+      "endLine": 50,
+      "pageLabels": []
+    }
+  }
+]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。
+
+## Q2917524c7263 · knowledge
+
+**核心问题：** 我想核对这次阅读中遇到的文献问题。
+
+**当前问题：** 我记得朱熹有一段解释，把一起快乐和自己沉醉区分开，说同一个卦里有一条爻例外。这出自哪里？我记得对吗？
+
+### 历史
+
+```json
+[]
+```
+
+### 程序卦象
+
+```json
+{
+  "lines": [
+    7,
+    8,
+    7,
+    8,
+    8,
+    7
+  ],
+  "original": {
+    "binary": "101001",
+    "name": "山火贲",
+    "number": 22,
+    "judgment": "亨。小利有攸往。"
+  },
+  "changed": {
+    "binary": "101001",
+    "name": "山火贲",
+    "number": 22,
+    "judgment": "亨。小利有攸往。"
+  },
+  "originalBinary": "101001",
+  "changedBinary": "101001",
+  "changingIndices": [],
+  "method": "three-coins",
+  "algorithmVersion": "evaluation-fixed-lines",
+  "readingPolicyVersion": "all-moving-lines-v1"
+}
+```
+
+### 交付状态
+
+```json
+{
+  "mechanicalStatus": "completed",
+  "candidateOnly": false,
+  "visibleKind": "insufficient_or_refusal",
+  "technicalFailure": false,
+  "providedFailureNote": null
+}
+```
+
+### 实际交付正文与引用
+
+```json
+{
+  "status": "insufficient",
+  "paragraphs": [
+    {
+      "text": "本轮没有取得朱熹或相关注解材料，所以我不能按原文逐字核对并给出可引证的出处。就你描述的记忆线索看，最可能指向的是朱熹《周易本义》对《豫》卦的注解，尤其六二爻下注；但这一点目前属于待核线索，不是已由本轮材料确认的结论。",
+      "citations": []
+    },
+    {
+      "text": "你记的“同一个卦里有一条爻例外”与《豫》卦六二注的常见说法方向相近，但这一比较目前没有本轮取得的相关证据支持，不能作为朱熹的观点逐字引用。文献中对豫卦的常见串讲是：豫卦讲和乐，而乐容易使人溺于其中，六二以中正自守，由此得到贞吉之占，若该注原文确作“卦独此爻有贞吉之占”，则“例外”指的就是六二。",
+      "citations": []
+    },
+    {
+      "text": "但“把一起快乐和自己沉醉区分开”这句话，未必是朱熹在六二注中的原措辞。九四“由豫，大有得，勿疑，朋盍簪”常被联系到众人来合、共享其豫；上六“冥豫”则是昏冥沉溺于豫。这些概括同样只是待核线索，并非本轮已由注解材料确认的朱熹原文。因此你的记忆可能是把豫卦不同爻的意涵合并成了“一起快乐/自己沉醉”的对照。要判断你记得对不对，需要核对《周易本义》豫卦六二、九四、上六的原文，或《朱子语类》相关章节；若能提供你看到的版本、页码或原文，我可以据此逐字核对。",
+      "citations": []
+    }
+  ],
+  "limitations": [
+    "未取得朱熹/注解材料，无法按原文引用；以上仅为待核线索。"
+  ]
+}
+```
+
+### 全部引用 claim 位置
+
+```json
+[]
+```
+
+### 生成实际可见原文
+
+```json
+[]
+```
+
+### 仅供评阅查证的补充原文（生成未见）
+
+```json
+[
+  {
+    "id": "zhu-xi@528287:h16:line1:c7c5870da6",
+    "text": "隂柔小人上有强援得時主事故不勝其豫而以自鳴凶之道也故其占如此卦之得名本為和樂然卦辭為衆樂之義爻辭除九四與卦同外皆為自樂所以有吉凶之異",
+    "textOriginal": "隂柔小人上有强援得時主事故不勝其豫而以自鳴凶之道也故其占如此卦之得名本為和樂然卦辭為衆樂之義爻辭除九四與卦同外皆為自樂所以有吉凶之異",
+    "hexagramId": 16,
+    "section": "line",
+    "line": 1,
+    "layer": "commentary",
+    "workId": "zhouyi-benyi",
+    "workTitle": "周易本義",
+    "authorIds": [
+      "zhu-xi"
+    ],
+    "authorNames": [
+      "朱熹"
+    ],
+    "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+    "locator": "《周易本義》·豫·第1爻注",
+    "releaseId": "knowledge-v3-20260926-r1",
+    "reviewStatus": "machine_parsed",
+    "referenceOnly": true,
+    "availableToAnswer": false
+  }
+]
+```
+
+evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。

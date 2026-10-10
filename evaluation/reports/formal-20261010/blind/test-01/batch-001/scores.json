@@ -1,0 +1,2079 @@
+{
+  "reviewer": {
+    "reviewerId": "formal-reviewer-b",
+    "kind": "AI",
+    "expertStatus": "non_expert",
+    "blind": true,
+    "independent": true
+  },
+  "results": [
+    {
+      "answerId": "Qe3b638f3055c",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "给出基于已验证兴趣和时间的报名建议及持续参与条件，局部经典解释和保证式措辞另记。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p1“四小时空闲，课程占三小时”与试课喜欢均被实际用于判断。"
+            },
+            "knowledge": {
+              "value": 1,
+              "rationale": "p2把“居贤德善俗”解释为安放在好的场域，文德修养被缩为地点浸润；其他引句准确。"
+            },
+            "integration": {
+              "value": 1,
+              "rationale": "p1“是会有成效的”以得位保证学习效果，p3无动爻也替不求变背书；稳定按周投入的类比仍相关。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "p3“建议报，但把它当成六周的渐”明确回答，并自然提醒时间余量。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "p3“每周只剩一小时余量”提供现实取舍及固定出席建议，足以作当前报名判断。"
+            }
+          },
+          "errors": [
+            {
+              "type": "citation_mismatch",
+              "quote": "渐卦提示的是把自己安放在一个好的场域里",
+              "location": "p2",
+              "reason": "居贤德善俗的德行风俗对象被转成场所选择，解释依据不足。",
+              "dimensions": [
+                "knowledge"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "unsupported_prediction",
+              "quote": "是会有成效的",
+              "location": "p1",
+              "reason": "兴趣时间合适不能保证学习成效，卦义不能提供保证。",
+              "dimensions": [
+                "integration"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [
+              {
+                "claimId": "Qe3b638f3055c.c01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "渐卦的取象是「山上有木」——树木在山上生长，非一日之功，而是逐步长成",
+                "quote": "渐卦的取象是「山上有木」——树木在山上生长，非一日之功，而是逐步长成",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "山上有木与渐进取象相容，不把具体生长速度当经文事实。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "山上有木，渐。君子以居贤德善俗。"
+              },
+              {
+                "claimId": "Qe3b638f3055c.c02",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "山上有木，渐。君子以居贤德善俗。",
+                "quote": "山上有木，渐。君子以居贤德善俗。",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "另核引文字面与经传对象，不能由字面匹配担保整段应用。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "山上有木，渐。君子以居贤德善俗。"
+              },
+              {
+                "claimId": "Qe3b638f3055c.c03",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "卦辞说「女归吉，利贞」",
+                "quote": "女归吉，利贞。",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "女归吉，利贞。"
+              },
+              {
+                "claimId": "Qe3b638f3055c.c04",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "彖传解释为「渐之进也」，并说「进得位，往有功也；进以正，可以正邦也」",
+                "quote": "渐之进也，「女归吉」也。进得位，往有功也；进以正，可以正邦也。",
+                "location": "paragraphs[1].citations[1]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "normalized",
+                "evidenceQuote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+              },
+              {
+                "claimId": "Qe3b638f3055c.c05",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "大象讲「君子以居贤德善俗」，渐卦提示的是把自己安放在一个好的场域里，慢慢浸润",
+                "quote": "大象讲「君子以居贤德善俗」，渐卦提示的是把自己安放在一个好的场域里，慢慢浸润",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-xiang"
+                ],
+                "supportLabel": "partial",
+                "rationale": "原文为居贤德善俗，支持修德善俗，不直接支持把“居”释成置身好场域。",
+                "contradiction": false,
+                "quotationMatch": "exact"
+              },
+              {
+                "claimId": "Qe3b638f3055c.c06",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "山上有木，渐。君子以居贤德善俗。",
+                "quote": "山上有木，渐。君子以居贤德善俗。",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "另核引文字面与经传对象，不能由字面匹配担保整段应用。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "山上有木，渐。君子以居贤德善俗。"
+              },
+              {
+                "claimId": "Qe3b638f3055c.c07",
+                "occurrenceIds": [
+                  "delivered.p3.c0"
+                ],
+                "assertion": "属于「进以正」的一类",
+                "quote": "属于「进以正」的一类",
+                "location": "paragraphs[3].citations[0]",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "报名归入进以正为现代应用，非经典原义。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代联系/现实判断不作为传统命题支持分母，合理性另评。"
+              },
+              {
+                "claimId": "Qe3b638f3055c.c08",
+                "occurrenceIds": [
+                  "delivered.p3.c0"
+                ],
+                "assertion": "进以正，可以正邦也。",
+                "quote": "进以正，可以正邦也。",
+                "location": "paragraphs[3].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "另核引文字面与经传对象，不能由字面匹配担保整段应用。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+              },
+              {
+                "claimId": "Qe3b638f3055c.c09",
+                "occurrenceIds": [],
+                "assertion": "无动爻意味着不必求变",
+                "quote": "无动爻也说明当下不必刻意求变",
+                "location": "p3",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "资料无这种占法规则。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 5,
+              "citationClaimOccurrencesReviewed": 5,
+              "traditionalAssertionsIdentified": 8,
+              "traditionalAssertionsReviewed": 8,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {\"supported\": 6, \"partial\": 1, \"unknown\": 1}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q953f28729ed7",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "提供可以答应的现实条件、护理核查和婉拒例外，核心需求完成。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p1“相处过、又在家办公”准确采用条件，医疗需求仅用若提出。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "“柔得位而上下应之”及施未行等引文对应小畜；温和照料明示“放在代养上”。"
+            },
+            "integration": {
+              "value": 1,
+              "rationale": "p0“从卦象看，整体偏向可行”借卦支持答应，随后现实核查与边界使建议仍有用。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "p2“若这个周末有硬截止”用条件分支说明取舍，承接周末帮忙问题。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "p1列“喂养、遛狗…紧急联系人”，p2明确工作时段，支持有限承担。"
+            }
+          },
+          "errors": [
+            {
+              "type": "citation_mismatch",
+              "quote": "从卦象看，整体偏向可行",
+              "location": "p0",
+              "reason": "代养可行应由实际照护条件而非卦象确认。",
+              "dimensions": [
+                "integration"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [
+              {
+                "claimId": "Q953f28729ed7.c01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "可以答应，但不宜把它当成毫无负担的事。",
+                "quote": "可以答应，但不宜把它当成毫无负担的事。",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-9-judgment"
+                ],
+                "supportLabel": null,
+                "rationale": "代养条件与象义的明确现代联系，不作为传统事实。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代联系/现实判断不作为传统命题支持分母，合理性另评。"
+              },
+              {
+                "claimId": "Q953f28729ed7.c02",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "亨。密云不雨，自我西郊。",
+                "quote": "亨。密云不雨，自我西郊。",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-9-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "另核引文字面与经传对象，不能由字面匹配担保整段应用。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "亨。密云不雨，自我西郊。"
+              },
+              {
+                "claimId": "Q953f28729ed7.c03",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "你和这只狗相处过、又在家办公，属于上下有应的基础",
+                "quote": "你和这只狗相处过、又在家办公，属于上下有应的基础",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-9-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "代养条件与象义的明确现代联系，不作为传统事实。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代联系/现实判断不作为传统命题支持分母，合理性另评。"
+              },
+              {
+                "claimId": "Q953f28729ed7.c04",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。",
+                "quote": "柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-9-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "另核引文字面与经传对象，不能由字面匹配担保整段应用。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "“小畜”，柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。“密云不雨”，尚往也；“自我西郊”，施未行也。"
+              },
+              {
+                "claimId": "Q953f28729ed7.c05",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "答应前确认喂养、遛狗、疫苗/健康状况、作息和紧急联系人，会更稳。",
+                "quote": "答应前确认喂养、遛狗、疫苗/健康状况、作息和紧急联系人，会更稳。",
+                "location": "paragraphs[1].citations[1]",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-9-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "代养条件与象义的明确现代联系，不作为传统事实。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代联系/现实判断不作为传统命题支持分母，合理性另评。"
+              },
+              {
+                "claimId": "Q953f28729ed7.c06",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "“密云不雨”，尚往也；“自我西郊”，施未行也。",
+                "quote": "“密云不雨”，尚往也；“自我西郊”，施未行也。",
+                "location": "paragraphs[1].citations[1]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-9-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "另核引文字面与经传对象，不能由字面匹配担保整段应用。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "“小畜”，柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。“密云不雨”，尚往也；“自我西郊”，施未行也。"
+              },
+              {
+                "claimId": "Q953f28729ed7.c07",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "用温和、耐心、有边界的方式对待",
+                "quote": "用温和、耐心、有边界的方式对待",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-9-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "代养条件与象义的明确现代联系，不作为传统事实。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代联系/现实判断不作为传统命题支持分母，合理性另评。"
+              },
+              {
+                "claimId": "Q953f28729ed7.c08",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "风行天上，小畜。君子以懿文德。",
+                "quote": "风行天上，小畜。君子以懿文德。",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-9-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "另核引文字面与经传对象，不能由字面匹配担保整段应用。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "风行天上，小畜。君子以懿文德。"
+              },
+              {
+                "claimId": "Q953f28729ed7.c09",
+                "occurrenceIds": [],
+                "assertion": "小畜含可亨而施未行",
+                "quote": "事情可以通，但还处在云聚未雨、尚未真正落地的阶段",
+                "location": "p0",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-9-judgment",
+                  "zy-9-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "卦辞亨及彖施未行支持这一有限概括。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "亨。密云不雨，自我西郊。 / “小畜”，柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。“密云不雨”，尚往也；“自我西郊”，施未行也。"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 4,
+              "citationClaimOccurrencesReviewed": 4,
+              "traditionalAssertionsIdentified": 5,
+              "traditionalAssertionsReviewed": 5,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {\"supported\": 5}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q9688917eeddb",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "修鞋优先和换新条件回答了用户取舍，局部误释与牵强类比不改变合理的实用部分。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p0保留鞋其他部分完好，修复可靠用“如果”，没有假定已查验。"
+            },
+            "knowledge": {
+              "value": 1,
+              "rationale": "p0把“有言不信”释为“不轻信空言”，而彖传说尚口乃穷，转移了说话者与不被信对象；其余困亨解释相符。"
+            },
+            "integration": {
+              "value": 1,
+              "rationale": "p1把鞋胶损坏对应“刚掩”，连接较牵强，并用有言不信制造对师傅的怀疑。"
+            },
+            "conversation": {
+              "value": 1,
+              "rationale": "p2“这句话本身不能全信”给日常修鞋增加未有事实支持的疑虑。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "p2明确先修并观察是否开裂、平整、安全，实际选择与验证步骤可用。"
+            }
+          },
+          "errors": [
+            {
+              "type": "wrong_classical_meaning",
+              "quote": "而不轻信空言",
+              "location": "p0",
+              "reason": "尚口乃穷说明言语不被信的局限，并非让受众不信师傅。",
+              "dimensions": [
+                "knowledge"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "strained_analogy",
+              "quote": "你的鞋开胶，像是“刚掩”",
+              "location": "p1",
+              "reason": "开胶不是刚被阴掩的相同结构，逐词套物。",
+              "dimensions": [
+                "integration"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "unhelpful_expansion",
+              "quote": "这句话本身不能全信",
+              "location": "p2",
+              "reason": "无具体质量线索，仅因卦辞引入对师傅的怀疑。",
+              "dimensions": [
+                "conversation"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [
+              {
+                "claimId": "Q9688917eeddb.c01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "困卦的卦辞说“亨。贞，大人吉，无咎；有言不信”，意思是困境中仍有通达的可能，关键在于守正、做恰当的判断，而不轻信空言。",
+                "quote": "困卦的卦辞说“亨。贞，大人吉，无咎；有言不信”，意思是困境中仍有通达的可能，关键在于守正、做恰当的判断，而不轻信空言。",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-47-judgment"
+                ],
+                "supportLabel": "partial",
+                "rationale": "困中守正可核，但有言不信被转为不轻信他人的话；彖传尚口乃穷未支持这种主客转移。",
+                "contradiction": false,
+                "quotationMatch": "exact"
+              },
+              {
+                "claimId": "Q9688917eeddb.c02",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "亨。贞，大人吉，无咎；有言不信。",
+                "quote": "亨。贞，大人吉，无咎；有言不信。",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-47-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "另核引文字面与经传对象，不能由字面匹配担保整段应用。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "亨。贞，大人吉，无咎；有言不信。"
+              },
+              {
+                "claimId": "Q9688917eeddb.c03",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "彖传进一步解释：“困，刚掩也。险以说，困而不失其所‘亨’，其唯君子乎！”说的是阳刚被掩蔽，身处险境仍能保持和悦、不丢掉内在的通达，这才算有智慧。",
+                "quote": "彖传进一步解释：“困，刚掩也。险以说，困而不失其所‘亨’，其唯君子乎！”说的是阳刚被掩蔽，身处险境仍能保持和悦、不丢掉内在的通达，这才算有智慧。",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-47-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "刚掩、险以说、不失所亨的概括与彖文对应。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。"
+              },
+              {
+                "claimId": "Q9688917eeddb.c04",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！",
+                "quote": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-47-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "另核引文字面与经传对象，不能由字面匹配担保整段应用。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "困，刚掩也。险以说，困而不失其所“亨”，其唯君子乎！“贞，大人吉”，以刚中也；“有言不信”，尚口乃穷也。"
+              },
+              {
+                "claimId": "Q9688917eeddb.c05",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "困卦大象讲“君子以致命遂志”，资源紧张时要把力气用在真正重要的目标上",
+                "quote": "困卦大象讲“君子以致命遂志”，资源紧张时要把力气用在真正重要的目标上",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-47-xiang"
+                ],
+                "supportLabel": "partial",
+                "rationale": "致命遂志含坚持志向，不能直接等同资源紧张时的效率分配。",
+                "contradiction": false,
+                "quotationMatch": "exact"
+              },
+              {
+                "claimId": "Q9688917eeddb.c06",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "泽无水，困。君子以致命遂志。",
+                "quote": "泽无水，困。君子以致命遂志。",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-47-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "另核引文字面与经传对象，不能由字面匹配担保整段应用。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "泽无水，困。君子以致命遂志。"
+              },
+              {
+                "claimId": "Q9688917eeddb.c07",
+                "occurrenceIds": [],
+                "assertion": "困卦以不妄动不浪费为取向",
+                "quote": "符合困卦“不妄动、不浪费”的取向",
+                "location": "p0",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-47-tuan",
+                  "zy-47-xiang"
+                ],
+                "supportLabel": "unsupported",
+                "rationale": "证据无节约不浪费的卦义归纳。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable"
+              },
+              {
+                "claimId": "Q9688917eeddb.c08",
+                "occurrenceIds": [],
+                "assertion": "胶合破坏类比刚掩",
+                "quote": "你的鞋开胶，像是“刚掩”",
+                "location": "p1",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [],
+                "supportLabel": null,
+                "rationale": "明示像的现代比喻，不当作传统事实；结构关联弱。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代联系/现实判断不作为传统命题支持分母，合理性另评。"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 3,
+              "citationClaimOccurrencesReviewed": 3,
+              "traditionalAssertionsIdentified": 7,
+              "traditionalAssertionsReviewed": 7,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {\"partial\": 2, \"supported\": 4, \"unsupported\": 1}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q17ad531a2414",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "明确不作无条件承诺，并提供负责人可接受的有限固定或日期方案。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p3“不要无条件承诺每周二中午固定都去”采用月底忙的关键限制。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "比“辅也”及所引卦辞大象准确；后夫凶被称提醒，不冒充排班的古义。"
+            },
+            "integration": {
+              "value": 2,
+              "rationale": "p2“非月底固定+月底机动”把亲比合作转成可预期安排，依据实际工作周期。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "p4“能接受…不能接受…”清楚收尾，没有逼迫多承担。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "提供整月日期表、提前报备和负责人是否接受的判断，完成承诺方式选择。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [
+              {
+                "claimId": "Q17ad531a2414.c01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "吉。原筮，元永贞，无咎。不宁方来，后夫凶。",
+                "quote": "吉。原筮，元永贞，无咎。不宁方来，后夫凶。",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-8-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "吉。原筮，元永贞，无咎。不宁方来，后夫凶。"
+              },
+              {
+                "claimId": "Q17ad531a2414.c02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "比，吉也；比，辅也，下顺从也。",
+                "quote": "比，吉也；比，辅也，下顺从也。",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-8-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "比，吉也；比，辅也，下顺从也。“原筮，元永贞，无咎”，以刚中也。“不宁方来”，上下应也；“后夫凶”，其道穷也。"
+              },
+              {
+                "claimId": "Q17ad531a2414.c03",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "地上有水，比。先王以建万国，亲诸侯。",
+                "quote": "地上有水，比。先王以建万国，亲诸侯。",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-8-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "地上有水，比。先王以建万国，亲诸侯。"
+              },
+              {
+                "claimId": "Q17ad531a2414.c04",
+                "occurrenceIds": [
+                  "delivered.p3.c0"
+                ],
+                "assertion": "原筮，元永贞，无咎",
+                "quote": "原筮，元永贞，无咎",
+                "location": "paragraphs[3].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-8-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "吉。原筮，元永贞，无咎。不宁方来，后夫凶。"
+              },
+              {
+                "claimId": "Q17ad531a2414.c05",
+                "occurrenceIds": [
+                  "delivered.p3.c1"
+                ],
+                "assertion": "后夫凶",
+                "quote": "后夫凶",
+                "location": "paragraphs[3].citations[1]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-8-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "吉。原筮，元永贞，无咎。不宁方来，后夫凶。"
+              },
+              {
+                "claimId": "Q17ad531a2414.c06",
+                "occurrenceIds": [],
+                "assertion": "比的主题为亲附相助",
+                "quote": "稳定、相互响应的“亲比”关系",
+                "location": "p0",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-8-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "比辅也和上下应支持亲附互应概括。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "比，吉也；比，辅也，下顺从也。“原筮，元永贞，无咎”，以刚中也。“不宁方来”，上下应也；“后夫凶”，其道穷也。"
+              },
+              {
+                "claimId": "Q17ad531a2414.c07",
+                "occurrenceIds": [],
+                "assertion": "后夫凶用于及时报备提醒",
+                "quote": "不要拖到最后才说不能来",
+                "location": "p3",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-8-judgment"
+                ],
+                "supportLabel": null,
+                "rationale": "现代提醒，不把后夫原义缩成临时请假。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代联系/现实判断不作为传统命题支持分母，合理性另评。"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 5,
+              "citationClaimOccurrencesReviewed": 5,
+              "traditionalAssertionsIdentified": 6,
+              "traditionalAssertionsReviewed": 6,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {\"supported\": 6}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q7ef33d793fc3",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "充分回应有限房间兼顾双方需求，有可逆试行和恢复分工。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p0“两种需要”及每月一周末来客均被保留，未把伴侣偏好说成敌意。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "“火向上、泽向下”“男女睽而其志通”均与彖传吻合，同而异主题解释恰当。"
+            },
+            "integration": {
+              "value": 2,
+              "rationale": "p3“卦象不替你决定结果”划清边界，以实际频次设计兼用而非借卦裁判谁正确。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "p3“先各自说需求而非方案”尊重双方且流程清楚，额外帮助使用条件式。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "书房优先、预约客房、共享日历、恢复责任和两个月试行构成可执行协商方案。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [
+              {
+                "claimId": "Q7ef33d793fc3.c01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "小事吉",
+                "quote": "小事吉。",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-38-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "小事吉。"
+              },
+              {
+                "claimId": "Q7ef33d793fc3.c02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "男女睽而其志通也",
+                "quote": "男女睽而其志通也",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-38-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "睽，火动而上，泽动而下；二女同居，其志不同行；说而丽乎明，柔进而上行，得中而应乎刚，是以“小事吉”。天地睽而其事同也，男女睽而其志通也，万物睽而其事类也；睽之时用大矣哉！"
+              },
+              {
+                "claimId": "Q7ef33d793fc3.c03",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "睽之时用大矣哉",
+                "quote": "睽之时用大矣哉！",
+                "location": "paragraphs[1].citations[1]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-38-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "睽，火动而上，泽动而下；二女同居，其志不同行；说而丽乎明，柔进而上行，得中而应乎刚，是以“小事吉”。天地睽而其事同也，男女睽而其志通也，万物睽而其事类也；睽之时用大矣哉！"
+              },
+              {
+                "claimId": "Q7ef33d793fc3.c04",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "君子以同而异",
+                "quote": "君子以同而异。",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-38-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "上火下泽，睽；君子以同而异。"
+              },
+              {
+                "claimId": "Q7ef33d793fc3.c05",
+                "occurrenceIds": [],
+                "assertion": "睽的火上泽下取象",
+                "quote": "火向上、泽向下",
+                "location": "p0",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-38-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "彖传直接如此解释。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "睽，火动而上，泽动而下；二女同居，其志不同行；说而丽乎明，柔进而上行，得中而应乎刚，是以“小事吉”。天地睽而其事同也，男女睽而其志通也，万物睽而其事类也；睽之时用大矣哉！"
+              },
+              {
+                "claimId": "Q7ef33d793fc3.c06",
+                "occurrenceIds": [],
+                "assertion": "男女睽志通指差异仍可相通",
+                "quote": "意思是差异并不必然阻断相通",
+                "location": "p1",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-38-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与给定原句相符，不作现实关系保证。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "睽，火动而上，泽动而下；二女同居，其志不同行；说而丽乎明，柔进而上行，得中而应乎刚，是以“小事吉”。天地睽而其事同也，男女睽而其志通也，万物睽而其事类也；睽之时用大矣哉！"
+              },
+              {
+                "claimId": "Q7ef33d793fc3.c07",
+                "occurrenceIds": [],
+                "assertion": "睽的时用启发规则澄清",
+                "quote": "相背之时若用得当，反而能逼出更清楚的规则",
+                "location": "p1",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-38-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "现代关系启发，未作为一定产生结果的经文结论。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代联系/现实判断不作为传统命题支持分母，合理性另评。"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 4,
+              "citationClaimOccurrencesReviewed": 4,
+              "traditionalAssertionsIdentified": 6,
+              "traditionalAssertionsReviewed": 6,
+              "uncitedTraditionalAssertionsIdentified": 2,
+              "uncitedTraditionalAssertionsReviewed": 2,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {\"supported\": 6}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q1df2e37c96dc",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "明确当前无法满足出席要求，给出不报名本期的合理判断，未来时间假设为局部缺陷。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 1,
+              "rationale": "每周一小时、三小时且不能补均采用，但p2“等两个月后时间宽裕”加入未给定未来事实。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "“进得位、进以正”及修德善俗概括与资料相符。"
+            },
+            "integration": {
+              "value": 2,
+              "rationale": "p1“进不得位”明示对应当前时间不足，现实不报名判断由两小时缺口支持。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "p1“不建议报名这一期”直截了当，并只在课程可调整时提供例外。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "拒报本期、短时接触及可调整课程条件足以处理当前不匹配。"
+            }
+          },
+          "errors": [
+            {
+              "type": "fabricated_fact",
+              "quote": "等两个月后时间宽裕",
+              "location": "p2",
+              "reason": "用户仅提供未来两个月时间不足，没有确认之后更宽裕。",
+              "dimensions": [
+                "understanding"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [
+              {
+                "claimId": "Q1df2e37c96dc.c01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "女归吉，利贞",
+                "quote": "女归吉，利贞。",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "女归吉，利贞。"
+              },
+              {
+                "claimId": "Q1df2e37c96dc.c02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "进得位",
+                "quote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+              },
+              {
+                "claimId": "Q1df2e37c96dc.c03",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "山上有木，渐。君子以居贤德善俗",
+                "quote": "山上有木，渐。君子以居贤德善俗。",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "山上有木，渐。君子以居贤德善俗。"
+              },
+              {
+                "claimId": "Q1df2e37c96dc.c04",
+                "occurrenceIds": [],
+                "assertion": "居贤德善俗为修德善俗",
+                "quote": "君子用渐进方式积累德行、改善风俗",
+                "location": "p2",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-53-xiang",
+                  "zy-53-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所引大象支持修德善俗，结合渐进为有限概括。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "evidenceQuote": "山上有木，渐。君子以居贤德善俗。 / 渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+              },
+              {
+                "claimId": "Q1df2e37c96dc.c05",
+                "occurrenceIds": [],
+                "assertion": "时间容量类比进得位",
+                "quote": "你现在的“位”是每周只有一小时",
+                "location": "p1",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "明示现实对应，不把爻位定义为课程时数。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代联系/现实判断不作为传统命题支持分母，合理性另评。"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 3,
+              "citationClaimOccurrencesReviewed": 3,
+              "traditionalAssertionsIdentified": 4,
+              "traditionalAssertionsReviewed": 4,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {\"supported\": 4}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Qbbf3c098c4a7",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "给出有条件答应与具体照护边界，满足周末代养决策。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p3“只承诺一个周末”符合用户范围，工作负担和狗行为均为条件核查。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "经典引用准确，云未雨与施未行概括可核；小规模照料为现代应用而非畜字训诂。"
+            },
+            "integration": {
+              "value": 1,
+              "rationale": "p0“小畜…适合以短时、有限度的方式答应”用卦限定答应尺度；末尾现实判断声明有助纠偏。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "p4“真正决定该不该答应的”清楚落实到狗习性与工作安排，交流连贯。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "p1核实喂遛、健康与紧急联系，p3备选方案和一周末边界可执行。"
+            }
+          },
+          "errors": [
+            {
+              "type": "citation_mismatch",
+              "quote": "适合以短时、有限度的方式答应",
+              "location": "p0",
+              "reason": "短时边界来自用户只有一周末，不由小畜卦义证明。",
+              "dimensions": [
+                "integration"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [
+              {
+                "claimId": "Qbbf3c098c4a7.c01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "亨。密云不雨，自我西郊。",
+                "quote": "亨。密云不雨，自我西郊。",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-9-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "亨。密云不雨，自我西郊。"
+              },
+              {
+                "claimId": "Qbbf3c098c4a7.c02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "柔得位而上下应之，曰小畜。",
+                "quote": "柔得位而上下应之，曰小畜。",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-9-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "“小畜”，柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。“密云不雨”，尚往也；“自我西郊”，施未行也。"
+              },
+              {
+                "claimId": "Qbbf3c098c4a7.c03",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "施未行也",
+                "quote": "施未行也",
+                "location": "paragraphs[1].citations[1]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-9-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "“小畜”，柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。“密云不雨”，尚往也；“自我西郊”，施未行也。"
+              },
+              {
+                "claimId": "Qbbf3c098c4a7.c04",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "风行天上，小畜。君子以懿文德。",
+                "quote": "风行天上，小畜。君子以懿文德。",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-9-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "风行天上，小畜。君子以懿文德。"
+              },
+              {
+                "claimId": "Qbbf3c098c4a7.c05",
+                "occurrenceIds": [],
+                "assertion": "小畜表示规模小而力量未全展",
+                "quote": "规模不大、力量未全展",
+                "location": "p0",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-9-tuan"
+                ],
+                "supportLabel": "unknown",
+                "rationale": "资料无小畜字义及力量规模训释，不猜。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable"
+              },
+              {
+                "claimId": "Qbbf3c098c4a7.c06",
+                "occurrenceIds": [],
+                "assertion": "上下应类比三方协调",
+                "quote": "你、朋友、小狗三方的习惯与安排要能相应",
+                "location": "p1",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-9-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "现代角色类比，不当作传统上下爻位说明。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代联系/现实判断不作为传统命题支持分母，合理性另评。"
+              },
+              {
+                "claimId": "Qbbf3c098c4a7.c07",
+                "occurrenceIds": [],
+                "assertion": "无动爻与卦不变",
+                "quote": "无动爻说明这一卦没有明显转向",
+                "location": "p3",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "supported",
+                "rationale": "此处只说这一卦，题给cast本变卦相同；不扩大为狗行为不会变。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 4,
+              "citationClaimOccurrencesReviewed": 4,
+              "traditionalAssertionsIdentified": 6,
+              "traditionalAssertionsReviewed": 6,
+              "uncitedTraditionalAssertionsIdentified": 2,
+              "uncitedTraditionalAssertionsReviewed": 2,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {\"supported\": 5, \"unknown\": 1}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q5335408b7266",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "完成先修或换新判断，建议由鞋况与修复便利支撑。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p0准确使用局部开胶和半小时可修，修后反复开裂仅作例外。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "益卦有攸往、与时偕行的概括与原句一致，修鞋被当现代实践。"
+            },
+            "integration": {
+              "value": 1,
+              "rationale": "p2“正是改过迁善的日常实践”把鞋损坏套成德行改过，结构偏牵强。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "p0“今天先修”清楚，p2给换新例外，符合随手决策的需要。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "根据其他部分完好和修复便利建议先修，补充安全与反复故障时再换新。"
+            }
+          },
+          "errors": [
+            {
+              "type": "strained_analogy",
+              "quote": "正是改过迁善的日常实践",
+              "location": "p2",
+              "reason": "器物磨损不等于人的过失或迁善，附会德行概念。",
+              "dimensions": [
+                "integration"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [
+              {
+                "claimId": "Q5335408b7266.c01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "从益卦看，卦辞‘利有攸往，利涉大川’，利于有所行动，也利于渡过大川、做该做的事。",
+                "quote": "从益卦看，卦辞‘利有攸往，利涉大川’，利于有所行动，也利于渡过大川、做该做的事。",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-42-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "有所行动、涉大川与引句对应；不推断所有行动有利。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "利有攸往，利涉大川。"
+              },
+              {
+                "claimId": "Q5335408b7266.c02",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "利有攸往，利涉大川。",
+                "quote": "利有攸往，利涉大川。",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-42-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "另核引文字面与经传对象，不能由字面匹配担保整段应用。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "利有攸往，利涉大川。"
+              },
+              {
+                "claimId": "Q5335408b7266.c03",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "彖传又说‘凡益之道，与时偕行’，增益之道要顺应时机。",
+                "quote": "彖传又说‘凡益之道，与时偕行’，增益之道要顺应时机。",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-42-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与时偕行支持顺应时机。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "益，损上益下，民说无疆；自上下下，其道大光。“利有攸往”，中正有庆；“利涉大川”，木道乃行。益动而巽，日进无疆。天施地生，其益无方。凡益之道，与时偕行。"
+              },
+              {
+                "claimId": "Q5335408b7266.c04",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "凡益之道，与时偕行。",
+                "quote": "凡益之道，与时偕行。",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-42-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "另核引文字面与经传对象，不能由字面匹配担保整段应用。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "益，损上益下，民说无疆；自上下下，其道大光。“利有攸往”，中正有庆；“利涉大川”，木道乃行。益动而巽，日进无疆。天施地生，其益无方。凡益之道，与时偕行。"
+              },
+              {
+                "claimId": "Q5335408b7266.c05",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "大象说‘君子以见善则迁，有过则改’，开胶是小毛病，及时送去修补，正是改过迁善的日常实践。",
+                "quote": "大象说‘君子以见善则迁，有过则改’，开胶是小毛病，及时送去修补，正是改过迁善的日常实践。",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-42-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "改过用于鞋胶修复的现代比喻，非传统文义；等同过强另评。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代联系/现实判断不作为传统命题支持分母，合理性另评。"
+              },
+              {
+                "claimId": "Q5335408b7266.c06",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "君子以见善则迁，有过则改。",
+                "quote": "君子以见善则迁，有过则改。",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-42-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "另核引文字面与经传对象，不能由字面匹配担保整段应用。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "风雷，益。君子以见善则迁，有过则改。"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 3,
+              "citationClaimOccurrencesReviewed": 3,
+              "traditionalAssertionsIdentified": 5,
+              "traditionalAssertionsReviewed": 5,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {\"supported\": 5}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q0218bcee3c6f",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "提供基于兴趣及完整时间成本的条件报名建议。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p1“四小时…三小时”准确采用，交通与材料费保留待确认，没有否认用户已试过喜欢。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "渐进守正的主要概括与彖传相符，经典对象正确；无动爻的额外方法未能核定。"
+            },
+            "integration": {
+              "value": 1,
+              "rationale": "p2“无动爻…只提示你按次序推进”仍用爻静给现实行动规则背书，其余以稳定时间为据。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "p2“就报名；若…吃紧…暂缓”给明确分支，提醒与实际余量相关。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "把交通准备和费用纳入四小时容量，给报名与暂缓标准，核心判断充分。"
+            }
+          },
+          "errors": [
+            {
+              "type": "unsupported_requirement",
+              "quote": "只提示你按次序推进",
+              "location": "p2",
+              "reason": "次序可作为渐进启发，不能由无动爻给出行动规则。",
+              "dimensions": [
+                "integration"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [
+              {
+                "claimId": "Q0218bcee3c6f.c01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "渐卦卦辞说“女归吉，利贞。”，这里可理解为：按正当次序推进则吉，守正、把条件核实清楚才有利。",
+                "quote": "渐卦卦辞说“女归吉，利贞。”，这里可理解为：按正当次序推进则吉，守正、把条件核实清楚才有利。",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-judgment"
+                ],
+                "supportLabel": "partial",
+                "rationale": "渐进守正与彖传相容，但把核实条件视为卦辞直接意义是现代解释增补。",
+                "contradiction": false,
+                "quotationMatch": "exact"
+              },
+              {
+                "claimId": "Q0218bcee3c6f.c02",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "女归吉，利贞。",
+                "quote": "女归吉，利贞。",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "另核引文字面与经传对象，不能由字面匹配担保整段应用。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "女归吉，利贞。"
+              },
+              {
+                "claimId": "Q0218bcee3c6f.c03",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "进得位，往有功也；进以正，可以正邦也",
+                "quote": "进得位，往有功也；进以正，可以正邦也。",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+              },
+              {
+                "claimId": "Q0218bcee3c6f.c04",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "止而巽，动不穷也",
+                "quote": "止而巽，动不穷也。",
+                "location": "paragraphs[1].citations[1]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+              },
+              {
+                "claimId": "Q0218bcee3c6f.c05",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "山上有木，渐。君子以居贤德善俗。",
+                "quote": "山上有木，渐。君子以居贤德善俗。",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "核对所给原文、篇章/卦爻归属相符；相邻解释或现代应用分开判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "山上有木，渐。君子以居贤德善俗。"
+              },
+              {
+                "claimId": "Q0218bcee3c6f.c06",
+                "occurrenceIds": [],
+                "assertion": "无动爻规定按次序推进",
+                "quote": "无动爻的渐卦，不要求你立刻改变，只提示你按次序推进",
+                "location": "p2",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "未提供无动爻占法材料。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable"
+              },
+              {
+                "claimId": "Q0218bcee3c6f.c07",
+                "occurrenceIds": [],
+                "assertion": "山上有木意象说明慢长深根",
+                "quote": "山上的树生长缓慢，却扎根深厚",
+                "location": "p2",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-53-xiang"
+                ],
+                "supportLabel": "unknown",
+                "rationale": "经传未给生长慢或根深细节，不当作已获训释。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 4,
+              "citationClaimOccurrencesReviewed": 4,
+              "traditionalAssertionsIdentified": 7,
+              "traditionalAssertionsReviewed": 7,
+              "uncitedTraditionalAssertionsIdentified": 2,
+              "uncitedTraditionalAssertionsReviewed": 2,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {\"partial\": 1, \"supported\": 4, \"unknown\": 2}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Qb98fcff8b6b0",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "有明确的有条件报名结论与核实要点，泛化卦义与无动爻背书为局部缺陷。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "p1“单看时间能够容纳”准确保留三小时与四小时，补课费用作为未知核实项。"
+            },
+            "knowledge": {
+              "value": 1,
+              "rationale": "p0“只要守正、不急躁，是吉利的”将女归吉及位正条件泛化为任何事情的一般充分条件。"
+            },
+            "integration": {
+              "value": 1,
+              "rationale": "p2“无动爻…按既定节奏报名”用无动爻支持具体报名；兴趣时间的现实分析仍合理。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "p3给可控则报、余量常被占则缓的清楚结论，没有让用户重开已知兴趣。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "已说明连续承诺、时间余量、补课材料费等必要核实，能支持决策。"
+            }
+          },
+          "errors": [
+            {
+              "type": "scope_overgeneralization",
+              "quote": "只要守正、不急躁，是吉利的",
+              "location": "p0",
+              "reason": "把卦辞和彖传特定条件扩大为一般事情的充分保证。",
+              "dimensions": [
+                "knowledge"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "unsupported_requirement",
+              "quote": "按既定节奏报名并守时练习即可",
+              "location": "p2",
+              "reason": "无动爻不是报名规则；应由现实时间条件确定。",
+              "dimensions": [
+                "integration"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "只用本样本evidence、题给cast及明示referenceOnlyEvidence；未看其他输出或外部文献。",
+            "claims": [
+              {
+                "claimId": "Qb98fcff8b6b0.c01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "渐卦卦辞说“女归吉，利贞”，意味着以渐进方式进入一件事，只要守正、不急躁，是吉利的。",
+                "quote": "渐卦卦辞说“女归吉，利贞”，意味着以渐进方式进入一件事，只要守正、不急躁，是吉利的。",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-judgment"
+                ],
+                "supportLabel": "partial",
+                "rationale": "渐进守正有据，但只要不急躁即吉的范围超过女归与得位条件。",
+                "contradiction": false,
+                "quotationMatch": "exact"
+              },
+              {
+                "claimId": "Qb98fcff8b6b0.c02",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "女归吉，利贞。",
+                "quote": "女归吉，利贞。",
+                "location": "paragraphs[0].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "另核引文字面与经传对象，不能由字面匹配担保整段应用。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "女归吉，利贞。"
+              },
+              {
+                "claimId": "Qb98fcff8b6b0.c03",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "彖传说“进得位，往有功也；进以正，可以正邦也”，对应到你这里，就是时间位置合适、动机喜欢，报名并持续投入更可能带来实际收获。",
+                "quote": "彖传说“进得位，往有功也；进以正，可以正邦也”，对应到你这里，就是时间位置合适、动机喜欢，报名并持续投入更可能带来实际收获。",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": null,
+                "rationale": "时间容量与动机属于当前类比，不把现代效益当古文事实。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代联系/现实判断不作为传统命题支持分母，合理性另评。"
+              },
+              {
+                "claimId": "Qb98fcff8b6b0.c04",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "进得位，往有功也；进以正，可以正邦也。",
+                "quote": "进得位，往有功也；进以正，可以正邦也。",
+                "location": "paragraphs[1].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "另核引文字面与经传对象，不能由字面匹配担保整段应用。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "渐之进也，“女归吉”也。进得位，往有功也；进以正，可以正邦也。其位，刚得中也；止而巽，动不穷也。"
+              },
+              {
+                "claimId": "Qb98fcff8b6b0.c05",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "大象说“山上有木，渐。君子以居贤德善俗”，陶艺作为手艺更适合按周积累、慢慢长进，不追求六周速成。",
+                "quote": "大象说“山上有木，渐。君子以居贤德善俗”，陶艺作为手艺更适合按周积累、慢慢长进，不追求六周速成。",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-53-xiang"
+                ],
+                "supportLabel": null,
+                "rationale": "按周学习慢积累的类比，不要求原文逐字说陶艺。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代联系/现实判断不作为传统命题支持分母，合理性另评。"
+              },
+              {
+                "claimId": "Qb98fcff8b6b0.c06",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "山上有木，渐。君子以居贤德善俗。",
+                "quote": "山上有木，渐。君子以居贤德善俗。",
+                "location": "paragraphs[2].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-53-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "另核引文字面与经传对象，不能由字面匹配担保整段应用。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "山上有木，渐。君子以居贤德善俗。"
+              },
+              {
+                "claimId": "Qb98fcff8b6b0.c07",
+                "occurrenceIds": [],
+                "assertion": "无动爻意味着不必大动",
+                "quote": "渐卦无动爻，也提示此时不必大动干戈",
+                "location": "p2",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "无方法资料核定。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable"
+              }
+            ],
+            "coverage": {
+              "citationClaimOccurrencesTotal": 3,
+              "citationClaimOccurrencesReviewed": 3,
+              "traditionalAssertionsIdentified": 5,
+              "traditionalAssertionsReviewed": 5,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "传统标签计数 {\"partial\": 1, \"supported\": 3, \"unknown\": 1}；未知未记为已支持，无传统命题则比例N/A。全部occurrence逐项核对，明显未引断言另列，未宣称穷尽。"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

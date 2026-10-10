@@ -1,0 +1,1935 @@
+{
+  "reviewer": {
+    "reviewerId": "formal-reviewer-c",
+    "kind": "AI",
+    "expertStatus": "non_expert",
+    "blind": true,
+    "independent": true
+  },
+  "reviewRole": "primary",
+  "reviewScope": {
+    "rubricVersion": "1.0",
+    "identityLimit": "独立 AI 非专家评阅，不是人工评分或专家 Gold。",
+    "limitations": [
+      "仅使用本批获授权材料；未外部查证版本、训诂或作者整个学说，不是专家 Gold。",
+      "文义无法由包内证据核定时保留 unknown；现代类比不纳入传统支持分母。",
+      "本批均为单轮知识题，无用户后续纠正；实际交付状态逐条保留，taskSuccess 独立按交付内容判断，不由 answered/insufficient 标签推定。",
+      "本记录为 primary 首评，与先前独立复评分开；未读取已有评分，五维不求总分。"
+    ]
+  },
+  "results": [
+    {
+      "answerId": "Q2e68618d6dab",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "已给两家对应注文，准确区分王弼疾与朱熹聚又速。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "直接区分“发簪实物”与所问王弼、朱熹注文，没有变成现实占断。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "“王弼训…疾，朱熹训…聚又…速”及不疑条件均符合两条注。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "只比较字义和注家，没有现代类比，故不适用。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "先答是否发簪，再逐家说明，最后回到“合、聚、速”的差别，顺畅明确。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "两家关键原文及训释差异俱全，可直接解决所问。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 4,
+              "citationClaimOccurrencesReviewed": 4,
+              "traditionalAssertionsIdentified": 7,
+              "traditionalAssertionsReviewed": 7,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 6,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 1
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "《周易正義》·豫·第4爻注含所列引文",
+                "quote": "夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p1.c0",
+                  "delivered.p2.c1"
+                ],
+                "assertion": "《周易本義》·豫·第4爻注含所列引文",
+                "quote": "簪聚也又速也",
+                "location": "paragraphs[1].citations[0].quote; paragraphs[2].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line4:5d751e0ddf"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "《周易正義》·豫·第4爻注含所列引文",
+                "quote": "簪，疾也。",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "王弼盍训合、簪训疾速；勿疑则朋合疾",
+                "quote": "这里他把“盍”训为“合”，把“簪”训为“疾”，即快、速",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王注明列盍合、簪疾及勿疑条件。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "朱熹簪聚又速，附至诚不疑条件",
+                "quote": "他兼取“聚”和“速”，并与“至诚不疑则朋类合而从之”相连",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line4:5d751e0ddf"
+                ],
+                "supportLabel": "supported",
+                "rationale": "朱注两义和至诚条件均在原文。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p2.c0",
+                  "delivered.p2.c1"
+                ],
+                "assertion": "两注此处非发簪器物义而为上述不同训释",
+                "quote": "王弼训“簪”为“疾”，朱熹训“簪”为“聚”又为“速”",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e",
+                  "zhu-xi@528287:h16:line4:5d751e0ddf"
+                ],
+                "supportLabel": "supported",
+                "rationale": "两条均明确以疾或聚速训簪，不能据此扩为字形本义结论。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。 / 簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [],
+                "assertion": "簪的一般字义可为发簪",
+                "quote": "若按字面常见义，“簪”可指发簪",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "包内没有字书条目；常见义提示不影响本题两注判断，不据空缺断为错误。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "insufficient_reference"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q81128afb7742",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "给出准确爻辞、小象并有王注支持的非即时丧事说明。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "回应“爻辞、小象”以及“马上会遭遇丧事”，没有推定用户现实已经出事。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "经文、王弼险极无援的解释均对应所附材料；“促其求解”标为解释而非原句。"
+            },
+            "integration": {
+              "value": 2,
+              "rationale": "“结合事实、支持系统与专业判断”将现实丧事判断交回事实，并非借象确认。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "从原文到王注再解释误读边界，措辞清楚，回应了用户担忧。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "给出两条所需原文及不应直接断丧事的理由，核心查证完成。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 6,
+              "citationClaimOccurrencesReviewed": 6,
+              "traditionalAssertionsIdentified": 9,
+              "traditionalAssertionsReviewed": 9,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 8,
+              "partial": 1,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "屯·上六含所列引文",
+                "quote": "乘马班如，泣血涟如。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-3-line-6"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "乘马班如，泣血涟如。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p0.c1",
+                  "delivered.p1.c1"
+                ],
+                "assertion": "屯·上六小象含所列引文",
+                "quote": "“泣血涟如”，何可长也？",
+                "location": "paragraphs[0].citations[1].quote; paragraphs[1].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-3-line_xiang-6"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "“泣血涟如”，何可长也？",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《周易正義》·屯·第6爻注含所列引文",
+                "quote": "處險難之極，下無應援，進無所適",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line6:1a034099b4"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處險難之極，下無應援，進無所適，雖比於五，五屯其膏，不與相得，居不獲安，行無所適，窮困闉厄，無所委仰，故「泣血漣如」。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "屯·彖传含所列引文",
+                "quote": "刚柔始交而难生",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-3-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "屯，刚柔始交而难生。动乎险中，大亨贞。雷雨之动满盈，天造草昧，宜建侯而不宁。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "屯·大象含所列引文",
+                "quote": "云雷，屯。君子以经纶。",
+                "location": "paragraphs[2].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-3-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "云雷，屯。君子以经纶。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p0.c0",
+                  "delivered.p0.c1"
+                ],
+                "assertion": "屯上六爻辞及小象归属",
+                "quote": "屯卦上六的爻辞是“乘马班如，泣血涟如”，小象作“泣血涟如”，何可长也？",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-3-line-6",
+                  "zy-3-line_xiang-6"
+                ],
+                "supportLabel": "supported",
+                "rationale": "两条本包经文定位均为屯上六。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "乘马班如，泣血涟如。 / “泣血涟如”，何可长也？"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "王弼从险极无援、行止无适释悲泣",
+                "quote": "王弼注把“泣血涟如”解释为处于险难之极、下无应援、进退失据",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line6:1a034099b4"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王注完整描述处险难之极、进无所适及无所委仰。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處險難之極，下無應援，進無所適，雖比於五，五屯其膏，不與相得，居不獲安，行無所適，窮困闉厄，無所委仰，故「泣血漣如」。"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "小象不能久处此境，进一步含促求解之意",
+                "quote": "小象“何可长也”更近于说这种极端悲泣处境不能长久，或不应长久，含有警戒和促其求解之意",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-3-line_xiang-6"
+                ],
+                "supportLabel": "partial",
+                "rationale": "何可长也直接支持不可久；具体促其求解为有标记的阐发，非经文明示。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "“泣血涟如”，何可长也？"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [
+                  "delivered.p2.c0",
+                  "delivered.p2.c1"
+                ],
+                "assertion": "屯难生、动险与君子经纶相连",
+                "quote": "《屯》的整体卦义是艰难初生与在险中经营",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-3-tuan",
+                  "zy-3-xiang"
+                ],
+                "supportLabel": "supported",
+                "rationale": "彖传难生、动乎险中及大象经纶可支持该概括。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "屯，刚柔始交而难生。动乎险中，大亨贞。雷雨之动满盈，天造草昧，宜建侯而不宁。 / 云雷，屯。君子以经纶。"
+              },
+              {
+                "claimId": "C10",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "“泣血涟如”不是对问卦者马上会遭遇丧事的直接断言",
+                "quote": "“泣血涟如”不是对问卦者马上会遭遇丧事的直接断言",
+                "location": "paragraphs[1].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line6:1a034099b4"
+                ],
+                "supportLabel": null,
+                "rationale": "是限制现实预测的合理判断，不要求古文直接讨论现代个案。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "處險難之極，下無應援，進無所適，雖比於五，五屯其膏，不與相得，居不獲安，行無所適，窮困闉厄，無所委仰，故「泣血漣如」。"
+              },
+              {
+                "claimId": "C11",
+                "occurrenceIds": [],
+                "assertion": "若现实中出现具体忧惧，应结合事实、支持系统与专业判断",
+                "quote": "若现实中出现具体忧惧，应结合事实、支持系统与专业判断",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [],
+                "supportLabel": null,
+                "rationale": "条件式现实提醒，不把卦象当已经发生的事实。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q8edd3c19ae69",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "朱注所问词义、迟的对象及不宜泛化的界限均答明。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "回答盱与迟，并直接处理用户“所有事都越快越好”的疑问。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "“上视九四、下溺于豫”和“该速的是悔”符合朱注，保留六三不中正条件。"
+            },
+            "integration": {
+              "value": 2,
+              "rationale": "现实段用“若处境如此”，将速用于及时改正而非泛化行动速度，边界清楚。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "逐步解释盱、迟及应用边界，自然可懂，未假定用户有沉溺或攀附。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "明确指出速度须结合方向、悔改这一对象，消除了核心误解。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 6,
+              "citationClaimOccurrencesReviewed": 6,
+              "traditionalAssertionsIdentified": 11,
+              "traditionalAssertionsReviewed": 11,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 10,
+              "partial": 1,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "《周易本義》·豫·第3爻注含所列引文",
+                "quote": "盱上視也",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line3:8edb84722b"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "盱況于反○盱上視也隂不中正而近於四四為卦主故六三上視於四而下溺於豫宜有悔者也故其象如此而其占為事當速悔若悔之遲則必有悔也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "《周易本義》·豫·第3爻注含所列引文",
+                "quote": "隂不中正而近於四四為卦主",
+                "location": "paragraphs[0].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line3:8edb84722b"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "盱況于反○盱上視也隂不中正而近於四四為卦主故六三上視於四而下溺於豫宜有悔者也故其象如此而其占為事當速悔若悔之遲則必有悔也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p0.c2"
+                ],
+                "assertion": "《周易本義》·豫·第3爻注含所列引文",
+                "quote": "故六三上視於四而下溺於豫宜有悔者也",
+                "location": "paragraphs[0].citations[2].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line3:8edb84722b"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "盱況于反○盱上視也隂不中正而近於四四為卦主故六三上視於四而下溺於豫宜有悔者也故其象如此而其占為事當速悔若悔之遲則必有悔也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《周易本義》·豫·第3爻注含所列引文",
+                "quote": "其占為事當速悔若悔之遲則必有悔也",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line3:8edb84722b"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "盱況于反○盱上視也隂不中正而近於四四為卦主故六三上視於四而下溺於豫宜有悔者也故其象如此而其占為事當速悔若悔之遲則必有悔也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "《周易本義》·豫·第3爻注含所列引文",
+                "quote": "上視於四而下溺於豫",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line3:8edb84722b"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "盱況于反○盱上視也隂不中正而近於四四為卦主故六三上視於四而下溺於豫宜有悔者也故其象如此而其占為事當速悔若悔之遲則必有悔也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "《周易本義》·豫·第3爻注含所列引文",
+                "quote": "若悔之遲則必有悔也",
+                "location": "paragraphs[2].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line3:8edb84722b"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "盱況于反○盱上視也隂不中正而近於四四為卦主故六三上視於四而下溺於豫宜有悔者也故其象如此而其占為事當速悔若悔之遲則必有悔也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p0.c0",
+                  "delivered.p0.c1"
+                ],
+                "assertion": "盱上视，六三不中正近九四卦主",
+                "quote": "盱是上视。六三不中不正，又贴近九四；九四为卦主",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line3:8edb84722b"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与朱注盱上視也及阴不中正近四为卦主相合。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "盱況于反○盱上視也隂不中正而近於四四為卦主故六三上視於四而下溺於豫宜有悔者也故其象如此而其占為事當速悔若悔之遲則必有悔也"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p0.c2"
+                ],
+                "assertion": "六三上视四下溺豫而宜悔",
+                "quote": "所以六三上视九四、下溺于豫，宜有悔",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line3:8edb84722b"
+                ],
+                "supportLabel": "supported",
+                "rationale": "原注明说该象与宜有悔，不是泛称豫皆凶。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "盱況于反○盱上視也隂不中正而近於四四為卦主故六三上視於四而下溺於豫宜有悔者也故其象如此而其占為事當速悔若悔之遲則必有悔也"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "朱注速悔、迟悔有悔，不等于凡事须快",
+                "quote": "该速的是“悔”，不是一切行动",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line3:8edb84722b"
+                ],
+                "supportLabel": "supported",
+                "rationale": "事当速悔与若悔之迟限定动作是悔。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "盱況于反○盱上視也隂不中正而近於四四為卦主故六三上視於四而下溺於豫宜有悔者也故其象如此而其占為事當速悔若悔之遲則必有悔也"
+              },
+              {
+                "claimId": "C10",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "上视四可阐为仰望卦主，下溺豫为沉溺豫乐",
+                "quote": "一边仰望、攀附卦主，一边沉溺在安逸里",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line3:8edb84722b"
+                ],
+                "supportLabel": "partial",
+                "rationale": "原文直接支持上视与沉溺；“攀附”增添趋附色彩，可作阐释但不是明确词训。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "盱況于反○盱上視也隂不中正而近於四四為卦主故六三上視於四而下溺於豫宜有悔者也故其象如此而其占為事當速悔若悔之遲則必有悔也"
+              },
+              {
+                "claimId": "C11",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "迟限定为悔之迟",
+                "quote": "故“迟”在此是“悔之迟”，不是“万事迟”",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line3:8edb84722b"
+                ],
+                "supportLabel": "supported",
+                "rationale": "若悔之迟则必有悔直接限定。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "盱況于反○盱上視也隂不中正而近於四四為卦主故六三上視於四而下溺於豫宜有悔者也故其象如此而其占為事當速悔若悔之遲則必有悔也"
+              },
+              {
+                "claimId": "C12",
+                "occurrenceIds": [],
+                "assertion": "若处境如此，关键不是速度，而是方向",
+                "quote": "若处境如此，关键不是速度，而是方向",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [],
+                "supportLabel": null,
+                "rationale": "条件化现代启发，不宣称用户实际攀附或以古文保证结果。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q41eef1f41285",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "作者、爻位、两家训释及语境边界正确。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "始终围绕所问两家“簪”的解释，未将字的一般本义与爻注混同。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "“王弼解…疾”“朱熹…聚，又…速”准确，且保留至诚不疑。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "没有现代事务对应，属于字义比较，不适用。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "先结论后原注与范围说明；“需另找…字书”只针对额外发簪说，未阻碍本题。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "提供两家具体训释及证据，直接完成核对。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 5,
+              "citationClaimOccurrencesReviewed": 5,
+              "traditionalAssertionsIdentified": 7,
+              "traditionalAssertionsReviewed": 7,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 7,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "《周易正義》·豫·第4爻注含所列引文",
+                "quote": "盍，合也。簪，疾也。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p0.c1",
+                  "delivered.p2.c0"
+                ],
+                "assertion": "《周易本義》·豫·第4爻注含所列引文",
+                "quote": "簪聚也又速也",
+                "location": "paragraphs[0].citations[1].quote; paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line4:5d751e0ddf"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《周易正義》·豫·第4爻注含所列引文",
+                "quote": "故勿疑則朋合疾也。盍，合也。簪，疾也。",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "《周易本義》·豫·第4爻注含所列引文",
+                "quote": "又當至誠不疑則朋類合而從之矣故又因而戒之",
+                "location": "paragraphs[2].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line4:5d751e0ddf"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p0.c0",
+                  "delivered.p0.c1"
+                ],
+                "assertion": "两家的不同训释",
+                "quote": "王弼解“簪”为“疾”，盍为“合”；朱熹解“簪”为“聚”，又为“速”",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e",
+                  "zhu-xi@528287:h16:line4:5d751e0ddf"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王盍合簪疾，朱簪聚又速。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。 / 簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "王弼解释不疑则朋合疾",
+                "quote": "并把“勿疑”与“朋合疾”连读：不疑则朋类合而迅速",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王注故勿疑则朋合疾直接支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p2.c0",
+                  "delivered.p2.c1"
+                ],
+                "assertion": "朱熹以至诚不疑则朋类合从释整句",
+                "quote": "“朋盍簪”在注中指向朋类合而从之，而非发簪",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line4:5d751e0ddf"
+                ],
+                "supportLabel": "supported",
+                "rationale": "朱注至诚不疑、朋类合从及聚速训释相互对应。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Qb2c5f40a077e",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "insufficient_or_refusal",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": false,
+      "taskSuccessReason": "未给正确出处初六、例外九四；所提六二只是有误待核线索。缺资料说明与实际空 evidence 相符，不记虚构缺失。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "insufficient_or_refusal",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "理解用户要核对记忆出处，并将“六二”称为“未经…证据确认”，没有伪装已核定。"
+            },
+            "knowledge": {
+              "value": 1,
+              "rationale": "核心线索“《豫》卦六二爻”错指：补充参考将众乐/自乐之分定位初六，例外为九四；猜测语气降低但不消除知识不足。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "纯出处题无现代类比，不适用。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "明说无法核对且用不确定语气，连贯克制；没有把所需信息推定为用户记错。"
+            },
+            "helpfulness": {
+              "value": 1,
+              "rationale": "有《周易本义》豫卦的部分线索，但具体爻位与例外未正确给出，仍需实质重查。"
+            }
+          },
+          "errors": [
+            {
+              "type": "wrong_attribution",
+              "quote": "容易被联想到的是朱熹《周易本义》对《豫》卦六二爻的注解",
+              "location": "paragraphs[0].text",
+              "reason": "作为所问众乐/自乐出处的猜测错指六二；referenceOnly 初六原注明列众乐、自乐和九四例外。仅判断猜测不正确，不说其故意伪称核实。",
+              "dimensions": [
+                "knowledge",
+                "helpfulness"
+              ],
+              "certainty": "suspected",
+              "severity": "material"
+            },
+            {
+              "type": "task_not_answered",
+              "quote": "尚不能确认",
+              "location": "paragraphs[0].text",
+              "reason": "所需准确出处、原文及例外爻没有完成；诚实缺失不等于查证成功。",
+              "dimensions": [
+                "helpfulness"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 2,
+              "traditionalAssertionsReviewed": 2,
+              "uncitedTraditionalAssertionsIdentified": 2,
+              "uncitedTraditionalAssertionsReviewed": 2,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 0,
+              "partial": 0,
+              "unsupported": 1,
+              "unknown": 1
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [],
+                "assertion": "所问众乐/自乐之分可能源于六二注",
+                "quote": "容易被联想到的是朱熹《周易本义》对《豫》卦六二爻的注解",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line1:c7c5870da6"
+                ],
+                "supportLabel": "unsupported",
+                "rationale": "本答补充参考明确在初六注，例外九四，故该待核出处猜测不符合参考；不把补充参考当实际检索。",
+                "contradiction": true,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "隂柔小人上有强援得時主事故不勝其豫而以自鳴凶之道也故其占如此卦之得名本為和樂然卦辭為衆樂之義爻辭除九四與卦同外皆為自樂所以有吉凶之異"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [],
+                "assertion": "六二注有中正不溺这一内容",
+                "quote": "大意是豫卦主和乐，但和乐容易溺人，而六二居中得正，是卦中不溺于豫的例外",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "本答只附初六参考，不能核定六二原注具体表述；所问众乐/自乐例外则明为九四，不混同两类例外。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "insufficient_reference"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q94dcef80bcee",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "正确给出王、朱训释和原文；共同概括的措辞略宽不改变最终明确差别。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "区分当前两注与“文字学本义”，准确对准用户所问。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "分家解释“王弼偏重疾，朱熹兼取聚与速”准确；一处共同点概括略宽，前后分辨足以消歧。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "只做注疏比较和字义范围说明，无现代类比。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "“再看整句”把词训接到不疑与朋类来合上，论述连贯。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "各自词义及整句条件有实证，直接回答是否发簪与两家差异。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 8,
+              "citationClaimOccurrencesReviewed": 8,
+              "traditionalAssertionsIdentified": 12,
+              "traditionalAssertionsReviewed": 12,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 10,
+              "partial": 1,
+              "unsupported": 0,
+              "unknown": 1
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "《周易正義》·豫·第4爻注含所列引文",
+                "quote": "盍，合也。簪，疾也。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p0.c1",
+                  "delivered.p1.c3",
+                  "delivered.p2.c1"
+                ],
+                "assertion": "《周易本義》·豫·第4爻注含所列引文",
+                "quote": "簪聚也又速也",
+                "location": "paragraphs[0].citations[1].quote; paragraphs[1].citations[3].quote; paragraphs[2].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line4:5d751e0ddf"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《周易正義》·豫·第4爻注含所列引文",
+                "quote": "夫不信於物，物亦疑焉，故勿疑則朋合疾也",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "《周易本義》·豫·第4爻注含所列引文",
+                "quote": "其占為大有得然又當至誠不疑則朋類合而從之矣",
+                "location": "paragraphs[1].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line4:5d751e0ddf"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p1.c2",
+                  "delivered.p2.c0"
+                ],
+                "assertion": "《周易正義》·豫·第4爻注含所列引文",
+                "quote": "簪，疾也",
+                "location": "paragraphs[1].citations[2].quote; paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "王弼簪训疾速",
+                "quote": "把“簪”训为“疾”，即快速",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王注明说簪疾。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "朱熹簪聚又速",
+                "quote": "即“簪”有聚合、又迅速两义",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line4:5d751e0ddf"
+                ],
+                "supportLabel": "supported",
+                "rationale": "朱注簪聚也又速也。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "王弼朋合疾意指朋类快速来合，须勿疑",
+                "quote": "朋友相合而来得很快",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王注文勿疑则朋合疾支持整句，非现实朋友必来预测。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "朱熹至诚不疑则朋类合从",
+                "quote": "意思是诚而不疑，则同类聚合、迅速跟从",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line4:5d751e0ddf"
+                ],
+                "supportLabel": "supported",
+                "rationale": "朱注条件、来合及簪速聚均有。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也"
+              },
+              {
+                "claimId": "C10",
+                "occurrenceIds": [
+                  "delivered.p1.c2",
+                  "delivered.p1.c3"
+                ],
+                "assertion": "两家都以聚合疾速解释整句而非首饰",
+                "quote": "两家共同点是把“簪”当作表示聚合、疾速的训释",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e",
+                  "zhu-xi@528287:h16:line4:5d751e0ddf"
+                ],
+                "supportLabel": "partial",
+                "rationale": "整句共同语义可成立；若专指簪字，两家并非都训聚，王把合训给盍。前后已明确王疾朱聚速。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。 / 簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也"
+              },
+              {
+                "claimId": "C11",
+                "occurrenceIds": [
+                  "delivered.p2.c0",
+                  "delivered.p2.c1"
+                ],
+                "assertion": "王朱关键异同",
+                "quote": "王弼偏重“疾”，朱熹兼取“聚”与“速”",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e",
+                  "zhu-xi@528287:h16:line4:5d751e0ddf"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与两家各自词训一致。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。 / 簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也"
+              },
+              {
+                "claimId": "C12",
+                "occurrenceIds": [],
+                "assertion": "簪的一般词义为发簪",
+                "quote": "“簪”字本身通常指发簪",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "本包无字书可核，只能保留一般词义问题；答案也注明超出所据注文。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "insufficient_reference"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q80a9b16ff2b4",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "完成两注训释核对；对未提供的字书、异说保留未知。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "准确围绕王、朱注文，不把用户询字义转成吉凶预测。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "逐家分出聚速与疾，并以“独体阳爻、众阴所从”解释九四语境，符合材料。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "无现代类比，词义和音读查证不适用此维。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "清楚区分此处注解与字形本义未知，语气有分寸。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "回答两家的主要训释、整句条件与发簪义范围，所问得到解决。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 6,
+              "citationClaimOccurrencesReviewed": 6,
+              "traditionalAssertionsIdentified": 11,
+              "traditionalAssertionsReviewed": 11,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 11,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "《周易本義》·豫·第4爻注含所列引文",
+                "quote": "簪聚也又速也",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line4:5d751e0ddf"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "《周易正義》·豫·第4爻注含所列引文",
+                "quote": "簪，疾也",
+                "location": "paragraphs[0].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《周易正義》·豫·第4爻注含所列引文",
+                "quote": "獨體陽爻，眾陰所從",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "《周易正義》·豫·第4爻注含所列引文",
+                "quote": "故勿疑則朋合疾也。盍，合也。簪，疾也。",
+                "location": "paragraphs[1].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p1.c2"
+                ],
+                "assertion": "《周易本義》·豫·第4爻注含所列引文",
+                "quote": "又當至誠不疑則朋類合而從之矣",
+                "location": "paragraphs[1].citations[2].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line4:5d751e0ddf"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "《周易本義》·豫·第4爻注含所列引文",
+                "quote": "簪側林反",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line4:5d751e0ddf"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p0.c0",
+                  "delivered.p0.c1"
+                ],
+                "assertion": "朱聚速与王疾的分别",
+                "quote": "朱熹在注中说‘簪聚也又速也’，即把‘簪’训为‘聚’和‘速’；王弼则说‘簪，疾也’，把‘簪’训为‘疾’（迅速）",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line4:5d751e0ddf",
+                  "wang-bi@7904495:h16:line4:5d368cfa9e"
+                ],
+                "supportLabel": "supported",
+                "rationale": "两家词训逐一吻合。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也 / 處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "王注九四独阳众阴从",
+                "quote": "王弼的整段注以九四为‘獨體陽爻，眾陰所從’为背景",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王原注含完全对应描述。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "王勿疑则朋合疾",
+                "quote": "若能不疑，朋类便迅速来合",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@7904495:h16:line4:5d368cfa9e"
+                ],
+                "supportLabel": "supported",
+                "rationale": "以若能保留注中条件，非现代朋友事实预测。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處豫之時，居動之始，獨體陽爻，眾陰所從，莫不由之以得其豫，故曰「由豫，大有得」也。夫不信於物，物亦疑焉，故勿疑則朋合疾也。盍，合也。簪，疾也。"
+              },
+              {
+                "claimId": "C10",
+                "occurrenceIds": [
+                  "delivered.p1.c2"
+                ],
+                "assertion": "朱至诚不疑、朋合从与簪聚速相连",
+                "quote": "朱熹也说‘又當至誠不疑則朋類合而從之矣’，并同样落在‘聚’与‘速’上",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line4:5d751e0ddf"
+                ],
+                "supportLabel": "supported",
+                "rationale": "朱注直接列出这些文句。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也"
+              },
+              {
+                "claimId": "C11",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "侧林反是朱注音读提示",
+                "quote": "朱熹还附了‘簪側林反’的反切，说明这里同时有读音上的提示",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line4:5d751e0ddf"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所附朱注开头列簪侧林反，按其形式辨为音注，无擅报具体古音。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "簪側林反○九四卦之所由以為豫者也故其象如此而其占為大有得然又當至誠不疑則朋類合而從之矣故又因而戒之簪聚也又速也"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q2917524c7263",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "insufficient_or_refusal",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": false,
+      "taskSuccessReason": "核心出处初六与例外九四未核出；有正确书卦级线索但错误爻位分流，查证不完整。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "insufficient_or_refusal",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "知道要“逐字核对并给出可引证的出处”，且明确猜测未证；未把用户记忆错误当定论。"
+            },
+            "knowledge": {
+              "value": 1,
+              "rationale": "“尤其六二爻下注”和例外六二偏离补充参考初六注、九四例外；加待核标记不能代替正确对象。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "纯来源核对，没有现代应用，N/A。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 1,
+              "rationale": "从六二猜到九四、上六乃至语类，又提出“记忆可能…合并”，让一个有明确出处的问题增加无益岔路。"
+            },
+            "helpfulness": {
+              "value": 1,
+              "rationale": "提供了本义豫卦方向，但正确出处及例外未确定，要求用户再查多个不对应位置。"
+            }
+          },
+          "errors": [
+            {
+              "type": "wrong_attribution",
+              "quote": "尤其六二爻下注",
+              "location": "paragraphs[0].text",
+              "reason": "补充参考把众乐/自乐之分放在初六注，并以九四为例外；这里只能算错误的待核猜测。",
+              "dimensions": [
+                "knowledge",
+                "helpfulness"
+              ],
+              "certainty": "suspected",
+              "severity": "material"
+            },
+            {
+              "type": "unhelpful_expansion",
+              "quote": "因此你的记忆可能是把豫卦不同爻的意涵合并成了“一起快乐/自己沉醉”的对照",
+              "location": "paragraphs[2].text",
+              "reason": "该推测无本轮证据；补充参考实际存在同一段直接对照。虽非断言用户记错，仍把核出处引向不必要的记忆重构。",
+              "dimensions": [
+                "conversation",
+                "helpfulness"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            },
+            {
+              "type": "task_not_answered",
+              "quote": "需要核对《周易本义》豫卦六二、九四、上六的原文，或《朱子语类》相关章节",
+              "location": "paragraphs[2].text",
+              "reason": "所问准确出处、原文及例外仍未交付，所列位置又遗漏实际初六。",
+              "dimensions": [
+                "helpfulness"
+              ],
+              "certainty": "confirmed",
+              "severity": "material"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 5,
+              "traditionalAssertionsReviewed": 5,
+              "uncitedTraditionalAssertionsIdentified": 5,
+              "uncitedTraditionalAssertionsReviewed": 5,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 0,
+              "partial": 1,
+              "unsupported": 1,
+              "unknown": 3
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [],
+                "assertion": "所问众乐/自乐对照可能出于本义豫六二",
+                "quote": "尤其六二爻下注",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line1:c7c5870da6"
+                ],
+                "supportLabel": "unsupported",
+                "rationale": "补充参考明确原段在初六，九四例外；猜测不符合所问段落，但实际 evidence 为空这一缺失说明属实。",
+                "contradiction": true,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "隂柔小人上有强援得時主事故不勝其豫而以自鳴凶之道也故其占如此卦之得名本為和樂然卦辭為衆樂之義爻辭除九四與卦同外皆為自樂所以有吉凶之異"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [],
+                "assertion": "六二注有中正自守贞吉说",
+                "quote": "六二以中正自守，由此得到贞吉之占",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "本答只提供初六参考，无法核定六二全文；不拿其他答的材料填充其证据。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "insufficient_reference"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [],
+                "assertion": "假定六二原文有卦独此爻有贞吉之占",
+                "quote": "若该注原文确作“卦独此爻有贞吉之占”，则“例外”指的就是六二",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "假定原句非本包所附初六原文，无法验证六二是否如此措辞；条件式不是伪称已引到。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "insufficient_reference"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [],
+                "assertion": "九四爻辞及与众人共享其豫的关系",
+                "quote": "九四“由豫，大有得，勿疑，朋盍簪”常被联系到众人来合、共享其豫",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zhu-xi@528287:h16:line1:c7c5870da6"
+                ],
+                "supportLabel": "partial",
+                "rationale": "初六参考支持九四与卦同属众乐，未列九四爻辞或朋合详细训释；只有关联一部分可核。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "隂柔小人上有强援得時主事故不勝其豫而以自鳴凶之道也故其占如此卦之得名本為和樂然卦辭為衆樂之義爻辭除九四與卦同外皆為自樂所以有吉凶之異"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [],
+                "assertion": "上六冥豫解释",
+                "quote": "上六“冥豫”则是昏冥沉溺于豫",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "本答未附上六经注，所附初六不能证明具体词义。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "insufficient_reference"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [],
+                "assertion": "因此你的记忆可能是把豫卦不同爻的意涵合并成了“一起快乐/自己沉醉”的对照",
+                "quote": "因此你的记忆可能是把豫卦不同爻的意涵合并成了“一起快乐/自己沉醉”的对照",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [],
+                "supportLabel": null,
+                "rationale": "关于用户记忆的推测不计传统支持；本包没有支持该记忆重构的用户事实。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

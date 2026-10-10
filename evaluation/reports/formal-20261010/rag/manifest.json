@@ -1,0 +1,48 @@
+{
+  "stage": "rag",
+  "createdAt": "2026-10-10T11:54:06.081000+00:00",
+  "graphVersion": "python-graph-v16",
+  "promptVersion": "evidence-agent-python-v16",
+  "releaseId": "knowledge-v3-20260926-r1",
+  "arms": [
+    "memory",
+    "classic",
+    "full"
+  ],
+  "caseHash": "19d2177568cad71ae37c9eeb81353d50d8c6b3545618ca57ecfdce964074508b",
+  "configuration": {
+    "model": "deepseek-flash",
+    "messages": [],
+    "max_tokens": 8192,
+    "thinking": {
+      "type": "enabled"
+    },
+    "reasoning_effort": "low",
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "repairConfiguration": {
+    "model": "deepseek-flash",
+    "messages": [],
+    "max_tokens": 8192,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "codeHash": "4f83fbd430abb2c4e2e2fa1d73fedbf7b64cee770b8f66b5e9e6026667cc66b0",
+  "freezeSha256": "5b8819e3d18c891d1baedfbcc5fcc0a6c5584a70f626d3200db4997707218fee",
+  "design": "One run per cell; complete graph, at most one repair. rag is one fixed generation without repair.",
+  "limits": {
+    "calls": 800,
+    "tokens": 5000000,
+    "perCellCalls": 8,
+    "perCellTokens": 100000
+  },
+  "seed": "not_sent",
+  "temperature": "not_sent",
+  "cache": "local corpus/index prewarmed; actual provider cache usage captured"
+}

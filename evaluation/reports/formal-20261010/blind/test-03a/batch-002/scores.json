@@ -1,0 +1,2363 @@
+{
+  "reviewer": {
+    "reviewerId": "formal-reviewer-c",
+    "kind": "AI",
+    "expertStatus": "non_expert",
+    "blind": true,
+    "independent": true
+  },
+  "reviewRole": "primary",
+  "reviewScope": {
+    "rubricVersion": "1.0",
+    "identityLimit": "独立 AI 非专家评阅，不是人工评分或专家 Gold。",
+    "limitations": [
+      "仅使用本批获授权材料；未外部查证版本、训诂或作者整个学说，不是专家 Gold。",
+      "文义无法由包内证据核定时保留 unknown；现代类比不纳入传统支持分母。",
+      "本批均为单轮知识题，无用户后续纠正；实际交付状态逐条保留，insufficient 不当作完成查证。",
+      "本记录为 primary 首评，与先前独立复评分开；未读取已有评分，五维不求总分。"
+    ]
+  },
+  "results": [
+    {
+      "answerId": "Qc6f2f0c99038",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "两家解释及其限制均回答，有原文支撑核心比较。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "围绕王弼、程颐六五注比较；“未列出六五爻辞经典原文”符合本答实际证据范围。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "王弼骄逆对象、程颐威武相济及防谦柔过甚均对应原注，并未用卦辞替代指定爻注。"
+            },
+            "integration": {
+              "value": 2,
+              "rationale": "末段“谦不等于无原则退让”明示为现实提醒，且限制不可泛化主动攻击，没有以注家说法确认现实敌人。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "分两家后比较，最后简要提示应用边界，叙述清楚。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "解释谦与侵伐何以并存，并指出两家在对象和君道平衡上的侧重差别。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 11,
+              "citationClaimOccurrencesReviewed": 11,
+              "traditionalAssertionsIdentified": 14,
+              "traditionalAssertionsReviewed": 14,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 14,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "《周易正義》·谦·第5爻注含所列引文",
+                "quote": "居於尊位，用謙與順，故能不富而用其鄰也。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line5:64744d05e6"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "居於尊位，用謙與順，故能不富而用其鄰也。以謙順而侵伐，所伐皆驕逆也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "《周易正義》·谦·第5爻注含所列引文",
+                "quote": "以謙順而侵伐，所伐皆驕逆也。",
+                "location": "paragraphs[0].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line5:64744d05e6"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "居於尊位，用謙與順，故能不富而用其鄰也。以謙順而侵伐，所伐皆驕逆也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《伊川易傳》·谦·第5爻注含所列引文",
+                "quote": "不富而能有其鄰也",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "《伊川易傳》·谦·第5爻注含所列引文",
+                "quote": "不富而得人之親也，為人君而持謙順，天下所歸心也",
+                "location": "paragraphs[1].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p1.c2"
+                ],
+                "assertion": "《伊川易傳》·谦·第5爻注含所列引文",
+                "quote": "然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。",
+                "location": "paragraphs[1].citations[2].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p1.c3"
+                ],
+                "assertion": "《伊川易傳》·谦·第5爻注含所列引文",
+                "quote": "威德並著，然後盡君道之宜，而無所不利也",
+                "location": "paragraphs[1].citations[3].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p1.c4"
+                ],
+                "assertion": "《伊川易傳》·谦·第5爻注含所列引文",
+                "quote": "蓋五之謙柔，當防於過，故發此義",
+                "location": "paragraphs[1].citations[4].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "《周易正義》·谦·第5爻注含所列引文",
+                "quote": "以謙順而侵伐，所伐皆驕逆也",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line5:64744d05e6"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "居於尊位，用謙與順，故能不富而用其鄰也。以謙順而侵伐，所伐皆驕逆也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "《伊川易傳》·谦·第5爻注含所列引文",
+                "quote": "專尚謙柔",
+                "location": "paragraphs[2].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C10",
+                "occurrenceIds": [
+                  "delivered.p2.c2"
+                ],
+                "assertion": "《伊川易傳》·谦·第5爻注含所列引文",
+                "quote": "威武相濟",
+                "location": "paragraphs[2].citations[2].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C11",
+                "occurrenceIds": [
+                  "delivered.p2.c3"
+                ],
+                "assertion": "《伊川易傳》·谦·第5爻注含所列引文",
+                "quote": "威德並著",
+                "location": "paragraphs[2].citations[3].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C12",
+                "occurrenceIds": [
+                  "delivered.p0.c0",
+                  "delivered.p0.c1",
+                  "delivered.p2.c0"
+                ],
+                "assertion": "王弼侵伐仍行谦顺且对象为骄逆",
+                "quote": "以谦顺为前提，所侵伐者是骄逆",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line5:64744d05e6"
+                ],
+                "supportLabel": "supported",
+                "rationale": "以谦顺而侵伐、所伐皆骄逆直接支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "居於尊位，用謙與順，故能不富而用其鄰也。以謙順而侵伐，所伐皆驕逆也。"
+              },
+              {
+                "claimId": "C13",
+                "occurrenceIds": [
+                  "delivered.p1.c0",
+                  "delivered.p1.c1"
+                ],
+                "assertion": "程颐由尊位谦顺接下说明不富得邻、天下归心",
+                "quote": "五以尊位而执谦顺接下",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "程注明列君位之尊、谦顺接下和得人之亲。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。"
+              },
+              {
+                "claimId": "C14",
+                "occurrenceIds": [
+                  "delivered.p1.c2",
+                  "delivered.p1.c3",
+                  "delivered.p1.c4",
+                  "delivered.p2.c1",
+                  "delivered.p2.c2",
+                  "delivered.p2.c3"
+                ],
+                "assertion": "程颐防谦柔过甚，强调威武相济、威德并著",
+                "quote": "担心“專尚謙柔”之过，主张“威武相濟”，以“威德並著”为君道之宜",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所引程注逐项给出这三层意思。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。"
+              },
+              {
+                "claimId": "C15",
+                "occurrenceIds": [
+                  "delivered.p2.c0",
+                  "delivered.p2.c1",
+                  "delivered.p2.c2",
+                  "delivered.p2.c3"
+                ],
+                "assertion": "谦不等于无原则退让，但所谓“侵伐”须有明确对象与正当性，不可泛化为主动攻击",
+                "quote": "谦不等于无原则退让，但所谓“侵伐”须有明确对象与正当性，不可泛化为主动攻击",
+                "location": "paragraphs[2].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line5:64744d05e6",
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": null,
+                "rationale": "是带边界的现代启发，未将古代君道直接赋予用户或证实现实武力正当性。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "居於尊位，用謙與順，故能不富而用其鄰也。以謙順而侵伐，所伐皆驕逆也。 / 富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Qf1387c78a46b",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": false,
+      "taskSuccessReason": "现实不可任意保证的结论可用，但对两家十年含义给出未获证据支持的共同否定，核心知识解释有缺口。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "同时处理两家对十年和现实可否必成，未增加具体用户事件。"
+            },
+            "knowledge": {
+              "value": 1,
+              "rationale": "原句引用准确，却说“两者…都不把十年当作精确的日历期限”，原文未明示此否定，王弼反而明确势不过十年。"
+            },
+            "integration": {
+              "value": 2,
+              "rationale": "不能据注解保证任意现实事情十年后成功的边界合理，并回到现实条件、选择和外部变化。"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "两家、共同处、现实边界的顺序易懂，没有离开所问。"
+            },
+            "helpfulness": {
+              "value": 1,
+              "rationale": "能给文据与现代限制，但两家是否将十年视为期限被过度说定，用户主要文义判断仍需修正。"
+            }
+          },
+          "errors": [
+            {
+              "type": "wrong_attribution",
+              "quote": "都不把“十年”当作精确的日历期限",
+              "location": "paragraphs[2].text",
+              "reason": "包内两注并未如此明说，不能从不得外推现代事件倒推两位作者都否认十年的期限含义；是否为历数需额外训诂。",
+              "dimensions": [
+                "knowledge",
+                "helpfulness"
+              ],
+              "certainty": "suspected",
+              "severity": "material"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 9,
+              "citationClaimOccurrencesReviewed": 9,
+              "traditionalAssertionsIdentified": 14,
+              "traditionalAssertionsReviewed": 14,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 13,
+              "partial": 1,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "《周易正義》·屯·第2爻注含所列引文",
+                "quote": "屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line2:2dfb3b12e9"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《周易本義》·屯·第2爻注含所列引文",
+                "quote": "至於十年數窮理極則妄求者去正應者合而可許矣",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "《周易正義》·屯·第2爻注含所列引文",
+                "quote": "反常則本志斯獲矣",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line2:2dfb3b12e9"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "《周易本義》·屯·第2爻注含所列引文",
+                "quote": "妄求者去正應者合而可許矣",
+                "location": "paragraphs[2].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p2.c2"
+                ],
+                "assertion": "《周易本義》·屯·第2爻注含所列引文",
+                "quote": "爻有此象故因以戒占者",
+                "location": "paragraphs[2].citations[2].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p3.c0"
+                ],
+                "assertion": "《周易正義》·屯·第2爻注含所列引文",
+                "quote": "屯難之世，勢不過十年者也",
+                "location": "paragraphs[3].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line2:2dfb3b12e9"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p3.c1"
+                ],
+                "assertion": "《周易本義》·屯·第2爻注含所列引文",
+                "quote": "至於十年數窮理極",
+                "location": "paragraphs[3].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p3.c2"
+                ],
+                "assertion": "屯·卦辞含所列引文",
+                "quote": "勿用有攸往，利建侯",
+                "location": "paragraphs[3].citations[2].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-3-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "元亨，利贞；勿用有攸往，利建侯。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [
+                  "delivered.p3.c3"
+                ],
+                "assertion": "屯·彖传含所列引文",
+                "quote": "动乎险中",
+                "location": "paragraphs[3].citations[3].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-3-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "屯，刚柔始交而难生。动乎险中，大亨贞。雷雨之动满盈，天造草昧，宜建侯而不宁。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C10",
+                "occurrenceIds": [
+                  "delivered.p0.c0",
+                  "delivered.p2.c0",
+                  "delivered.p3.c0"
+                ],
+                "assertion": "王弼在屯难之世说势不过十年、反常获本志",
+                "quote": "难的局势不会超过十年，到十年就“反常”，常态恢复，本来的志向得以实现",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line2:2dfb3b12e9"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王注对应原句明确，回答此处保留限定语。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。"
+              },
+              {
+                "claimId": "C11",
+                "occurrenceIds": [
+                  "delivered.p1.c0",
+                  "delivered.p2.c1",
+                  "delivered.p3.c1"
+                ],
+                "assertion": "朱熹以数穷理极、妄去正合说明可许嫁",
+                "quote": "到那时，不合正道的“妄求者”退去，真正的正应相合，才可以许婚",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "朱注有字许嫁、妄求者去、正应者合而可许。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者"
+              },
+              {
+                "claimId": "C12",
+                "occurrenceIds": [],
+                "assertion": "两家都否定十年为精确历数期限",
+                "quote": "都不把“十年”当作精确的日历期限，而是屯难时势的限度与条件成熟",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line2:2dfb3b12e9",
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": "partial",
+                "rationale": "时势限度及条件成熟可据两注说明，但“都不当精确期限”不是原注明确结论，不能与现代拒绝外推混同。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。 / 邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者"
+              },
+              {
+                "claimId": "C13",
+                "occurrenceIds": [
+                  "delivered.p2.c2"
+                ],
+                "assertion": "朱熹明示以此象戒占者",
+                "quote": "说明这是借象来警戒占问者",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "爻有此象故因以戒占者直接支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者"
+              },
+              {
+                "claimId": "C14",
+                "occurrenceIds": [
+                  "delivered.p3.c2",
+                  "delivered.p3.c3"
+                ],
+                "assertion": "屯卦勿用有攸往、利建侯可概括为不妄进及立根基",
+                "quote": "提示此时不宜妄进，宜经营根基、建侯安民",
+                "location": "paragraphs[3].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-3-judgment",
+                  "zy-3-tuan"
+                ],
+                "supportLabel": "supported",
+                "rationale": "卦辞与彖传草昧宜建侯提供背景，不等于十年事件保证。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "元亨，利贞；勿用有攸往，利建侯。 / 屯，刚柔始交而难生。动乎险中，大亨贞。雷雨之动满盈，天造草昧，宜建侯而不宁。"
+              },
+              {
+                "claimId": "C15",
+                "occurrenceIds": [
+                  "delivered.p3.c0",
+                  "delivered.p3.c1"
+                ],
+                "assertion": "不能据此断言一桩事情十年后一定成",
+                "quote": "不能据此断言一桩事情十年后一定成",
+                "location": "paragraphs[3].text",
+                "layer": "modern_analogy",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line2:2dfb3b12e9",
+                  "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+                ],
+                "supportLabel": null,
+                "rationale": "这是对现代现实推断的合理限制，独立于作者古代是否实际采用期限数的未定问题。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "exclusionReason": "现代类比、建议或现实断言，独立评应用合理性，不要求原典逐字记载现代事务。",
+                "evidenceQuote": "志在乎「五」，不從於初。屯難之時，正道未行，與初相近而不相得，困於侵害，故屯邅也。時方屯難，正道未通，涉遠而行，難可以進，故曰：「乘馬班如」也。寇謂初也。無「初」之難，則與「五」婚矣，故曰「匪寇婚媾」也。「志在於五」，不從於初，故曰「女子貞不字」也。屯難之世，勢不過十年者也。十年則反常，反常則本志斯獲矣。故曰「十年乃字」。 / 邅張連反乗䋲澄反又音繩○班分布不進之貌字許嫁也禮曰女子許嫁笄而字六二隂柔中正有應於上而乗初剛故為所難而邅囘不進然初非為寇也乃求與已為婚媾耳但已守正故不之許至於十年數窮理極則妄求者去正應者合而可許矣爻有此象故因以戒占者"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q14bf4440d3bd",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "两家释义及自夸疑问均得到有证据、带推断标记的回答。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "分别答王、程的差异与“是不是夸耀”，没有把作者互换或遗漏一侧。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "王弼声名闻、程颐德积中而声容外显均准确；特别说明“王弼没有直接写非夸耀”是文意推断。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "纯作者、出处和词义核对，本答未作现代情境类比；不把缺少类比记为 0。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "两段先比较后澄清，推断边界也表达得自然清楚。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "有两家原文和具体差别，还解释不等于自夸的根据，充分完成所问。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 4,
+              "citationClaimOccurrencesReviewed": 4,
+              "traditionalAssertionsIdentified": 7,
+              "traditionalAssertionsReviewed": 7,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 7,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "《周易正義》·谦·第2爻注含所列引文",
+                "quote": "鳴者，聲名聞之謂也。得位居中，謙而正焉。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line2:95530cdcb2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "鳴者，聲名聞之謂也。得位居中，謙而正焉。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "《伊川易傳》·谦·第2爻注含所列引文",
+                "quote": "二以柔順居中，是為謙德積於中。謙德充積於中，故發於外，見於聲音顏色，故曰鳴謙。",
+                "location": "paragraphs[0].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line2:8513e9d757"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "二以柔順居中，是為謙德積於中。謙德充積於中，故發於外，見於聲音顏色，故曰鳴謙。居中得正，有中正之德也，故云貞吉。凡貞吉，有為貞且吉者，有為得貞則吉者，六二之貞吉，所自有也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《周易正義》·谦·第2爻注含所列引文",
+                "quote": "鳴者，聲名聞之謂也。",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line2:95530cdcb2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "鳴者，聲名聞之謂也。得位居中，謙而正焉。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "《伊川易傳》·谦·第2爻注含所列引文",
+                "quote": "謙德充積於中，故發於外，見於聲音顏色，故曰鳴謙。",
+                "location": "paragraphs[1].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line2:8513e9d757"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "二以柔順居中，是為謙德積於中。謙德充積於中，故發於外，見於聲音顏色，故曰鳴謙。居中得正，有中正之德也，故云貞吉。凡貞吉，有為貞且吉者，有為得貞則吉者，六二之貞吉，所自有也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p0.c0",
+                  "delivered.p1.c0"
+                ],
+                "assertion": "王弼鸣指声名闻，六二得位居中谦正",
+                "quote": "他把“鸣”理解为声名被人听闻，六二因得位居中、谦而正，所以谦正之名闻于外",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line2:95530cdcb2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王注两句直接支持词义和爻德。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "鳴者，聲名聞之謂也。得位居中，謙而正焉。"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p0.c1",
+                  "delivered.p1.c1"
+                ],
+                "assertion": "程颐鸣谦是谦德积内而见于声容",
+                "quote": "他把“鸣”理解为谦德积于内而自然发见于声音颜色",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line2:8513e9d757"
+                ],
+                "supportLabel": "supported",
+                "rationale": "程注直接有积中、发外、声音颜色。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "二以柔順居中，是為謙德積於中。謙德充積於中，故發於外，見於聲音顏色，故曰鳴謙。居中得正，有中正之德也，故云貞吉。凡貞吉，有為貞且吉者，有為得貞則吉者，六二之貞吉，所自有也。"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "不夸耀是据谦正文意推断，不是王注逐字说法",
+                "quote": "王弼注较简，没有直接写“非夸耀”，这一判断是从“声名闻之”与“得位居中，谦而正”的文意推出来的",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line2:95530cdcb2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "实际王注确无非夸耀四字，但谦而正支持区别自炫的推论；回答标清推断层级。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "鳴者，聲名聞之謂也。得位居中，謙而正焉。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q4ff575cf2ce8",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "所问比较和鸣之含义均已完成，未扩大为用户心理判断。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "准确围绕六二、王弼和程颐，回答各自侧重和是否自炫。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "“声名闻达”与“谦德充积外显”区分准确，贞吉所自有也取自程颐六二注。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "纯作者、出处和词义核对，本答未作现代情境类比；不把缺少类比记为 0。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "首段比较、次段释非自夸、末段归纳，虽有重述仍服务本题澄清。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "两家原文与区别都有，并从谦正、内德外显解释不是自夸。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 7,
+              "citationClaimOccurrencesReviewed": 7,
+              "traditionalAssertionsIdentified": 9,
+              "traditionalAssertionsReviewed": 9,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 9,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0",
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《伊川易傳》·谦·第2爻注含所列引文",
+                "quote": "謙德充積於中，故發於外，見於聲音顏色，故曰鳴謙。",
+                "location": "paragraphs[0].citations[0].quote; paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line2:8513e9d757"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "二以柔順居中，是為謙德積於中。謙德充積於中，故發於外，見於聲音顏色，故曰鳴謙。居中得正，有中正之德也，故云貞吉。凡貞吉，有為貞且吉者，有為得貞則吉者，六二之貞吉，所自有也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "《周易正義》·谦·第2爻注含所列引文",
+                "quote": "鳴者，聲名聞之謂也。",
+                "location": "paragraphs[0].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line2:95530cdcb2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "鳴者，聲名聞之謂也。得位居中，謙而正焉。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p0.c2",
+                  "delivered.p2.c0"
+                ],
+                "assertion": "《周易正義》·谦·第2爻注含所列引文",
+                "quote": "得位居中，謙而正焉。",
+                "location": "paragraphs[0].citations[2].quote; paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line2:95530cdcb2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "鳴者，聲名聞之謂也。得位居中，謙而正焉。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "《周易正義》·谦·第2爻注含所列引文",
+                "quote": "鳴者，聲名聞之謂也。得位居中，謙而正焉。",
+                "location": "paragraphs[1].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line2:95530cdcb2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "鳴者，聲名聞之謂也。得位居中，謙而正焉。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p1.c2"
+                ],
+                "assertion": "《伊川易傳》·谦·第2爻注含所列引文",
+                "quote": "六二之貞吉，所自有也。",
+                "location": "paragraphs[1].citations[2].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line2:8513e9d757"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "二以柔順居中，是為謙德積於中。謙德充積於中，故發於外，見於聲音顏色，故曰鳴謙。居中得正，有中正之德也，故云貞吉。凡貞吉，有為貞且吉者，有為得貞則吉者，六二之貞吉，所自有也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p0.c0",
+                  "delivered.p1.c0"
+                ],
+                "assertion": "程颐强调谦德由内而外显现",
+                "quote": "程颐把“鸣谦”理解为谦德积于中而自然发见于外",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line2:8513e9d757"
+                ],
+                "supportLabel": "supported",
+                "rationale": "程注充积于中、发于外明确支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "二以柔順居中，是為謙德積於中。謙德充積於中，故發於外，見於聲音顏色，故曰鳴謙。居中得正，有中正之德也，故云貞吉。凡貞吉，有為貞且吉者，有為得貞則吉者，六二之貞吉，所自有也。"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p0.c1",
+                  "delivered.p0.c2",
+                  "delivered.p1.c1"
+                ],
+                "assertion": "王弼鸣为声名闻且得位居中谦正",
+                "quote": "王弼则把“鸣”解为“声名闻之谓”，侧重谦正之名闻于外",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line2:95530cdcb2"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王注两句对应，未推成主动求名。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "鳴者，聲名聞之謂也。得位居中，謙而正焉。"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p1.c2"
+                ],
+                "assertion": "程颐贞吉由中正德自有，可辅助非刻意求名的推断",
+                "quote": "其“贞吉”是“所自有”，更可见不是向外求名",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line2:8513e9d757"
+                ],
+                "supportLabel": "supported",
+                "rationale": "居中得正、有中正之德、六二贞吉所自有支持此合理推论。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "二以柔順居中，是為謙德積於中。謙德充積於中，故發於外，見於聲音顏色，故曰鳴謙。居中得正，有中正之德也，故云貞吉。凡貞吉，有為貞且吉者，有為得貞則吉者，六二之貞吉，所自有也。"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "两注分别以声名闻和积德外显解释，不是自炫",
+                "quote": "两家都没有把六二之“鸣”解作自炫",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line2:95530cdcb2",
+                  "cheng-yi@1313743:h15:line2:8513e9d757"
+                ],
+                "supportLabel": "supported",
+                "rationale": "本句局部只引王弼，但本答已取得并列明程注，须合看两条实际证据而非仅以王句证明程。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "鳴者，聲名聞之謂也。得位居中，謙而正焉。 / 二以柔順居中，是為謙德積於中。謙德充積於中，故發於外，見於聲音顏色，故曰鳴謙。居中得正，有中正之德也，故云貞吉。凡貞吉，有為貞且吉者，有為得貞則吉者，六二之貞吉，所自有也。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q6656a55ef970",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "两家的核心文本和解释均给出；额外“消化武力”的对照过强，作为局部解释缺陷保留。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "始终处理两位注家六五侵伐，知道重点在谦与用武的相容。"
+            },
+            "knowledge": {
+              "value": 1,
+              "rationale": "两家原句准确，但“以所伐皆骄逆来消化武力色彩”“若只取王弼…纯粹的谦顺”过度淡化王弼明确承认的侵伐。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "纯作者、出处和词义核对，本答未作现代情境类比；不把缺少类比记为 0。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "按两家及差别组织，能够跟读，限制说明也没有拒绝主任务。"
+            },
+            "helpfulness": {
+              "value": 1,
+              "rationale": "给出有用原文与君道差异，但王弼武力意义被弱化，比较结论需要补正。"
+            }
+          },
+          "errors": [
+            {
+              "type": "wrong_classical_meaning",
+              "quote": "以“所伐皆驕逆”来消化武力色彩",
+              "location": "paragraphs[2].text",
+              "reason": "王弼是在限定侵伐对象，并未取消实际侵伐；据此暗示其更接近纯谦顺，比较对立过强。",
+              "dimensions": [
+                "knowledge",
+                "helpfulness"
+              ],
+              "certainty": "suspected",
+              "severity": "material"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 4,
+              "citationClaimOccurrencesReviewed": 4,
+              "traditionalAssertionsIdentified": 8,
+              "traditionalAssertionsReviewed": 8,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 7,
+              "partial": 1,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0",
+                  "delivered.p2.c0"
+                ],
+                "assertion": "《周易正義》·谦·第5爻注含所列引文",
+                "quote": "以謙順而侵伐，所伐皆驕逆也。",
+                "location": "paragraphs[0].citations[0].quote; paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line5:64744d05e6"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "居於尊位，用謙與順，故能不富而用其鄰也。以謙順而侵伐，所伐皆驕逆也。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《伊川易傳》·谦·第5爻注含所列引文",
+                "quote": "然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "《伊川易傳》·谦·第5爻注含所列引文",
+                "quote": "必須威武相濟",
+                "location": "paragraphs[2].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "王弼侵伐仍以谦顺且对象为骄逆",
+                "quote": "所谓“侵伐”，并非转为尚武，而是谦顺的延伸——所伐者皆是骄逆之人",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line5:64744d05e6"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王注以谦顺而侵伐直接支持，不作全面好战的概括。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "居於尊位，用謙與順，故能不富而用其鄰也。以謙順而侵伐，所伐皆驕逆也。"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "程颐主张威武相济、防谦柔过甚",
+                "quote": "君道不能一味谦柔，必须威德并著；“利用侵伐”正是为防谦柔过甚而发",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "程注完整包含威武相济、威德并著和防过。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "王弼用对象限制消化侵伐的武力色彩",
+                "quote": "王弼把它收在谦顺之内，以“所伐皆驕逆”来消化武力色彩",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line5:64744d05e6"
+                ],
+                "supportLabel": "partial",
+                "rationale": "收在谦顺之内与对象限制有据；“消化武力色彩”是额外评价，原注仍明说侵伐，不支持抹去用武。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "居於尊位，用謙與順，故能不富而用其鄰也。以謙順而侵伐，所伐皆驕逆也。"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "程颐强调君道中威武与谦柔相济",
+                "quote": "程颐则把它当作君道中与谦柔相济的另一面，强调“威武相濟”",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "君道不可专尚谦柔、必须威武相济直接支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [],
+                "assertion": "两家均以谦顺解释不富得邻",
+                "quote": "两家都把“不富以其鄰”读成谦顺得众",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@2000726:h15:line5:64744d05e6",
+                  "cheng-yi@1313743:h15:line5:5f89e7b763"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王注不富而用其邻、程注不富而有其邻均紧接谦顺。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "居於尊位，用謙與順，故能不富而用其鄰也。以謙順而侵伐，所伐皆驕逆也。 / 富者眾之所歸，唯財為能聚人。五以君位之尊，而執謙順以接於下，眾所歸也，故不富而能有其鄰也。鄰，近也。不富而得人之親也，為人君而持謙順，天下所歸心也。然君道不可專尚謙柔，必須威武相濟，然後能懷服天下，故利用行侵伐也。威德並著，然後盡君道之宜，而無所不利也。蓋五之謙柔，當防於過，故發此義。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q28a6b7de8646",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "王弼的主要解释链及相关词义已说明；不将两条注外推为整个注疏史定论。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "聚焦王弼为何不能广施，朱熹只作为同一语义方向的旁证。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "王弼的尊位、系应六二、固志同好解释准确；“注疏传统中就是”范围偏宽，超出两条注的全体结论另记未知。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "纯作者、出处和词义核对，本答未作现代情境类比；不把缺少类比记为 0。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "先处境再关键应爻，最后说明膏润词义，易于理解。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "以系应、同好和光其施把词义与施予受限连起，完成核心问题。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 5,
+              "citationClaimOccurrencesReviewed": 5,
+              "traditionalAssertionsIdentified": 10,
+              "traditionalAssertionsReviewed": 10,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 9,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 1
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "《周易正義》·屯·第5爻注含所列引文",
+                "quote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《周易正義》·屯·第5爻注含所列引文",
+                "quote": "亨於群小，而系應在二，屯難其膏，非能光其施者也。",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "《周易正義》·屯·第5爻注含所列引文",
+                "quote": "固志同好，不容他間",
+                "location": "paragraphs[1].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "《周易正義》·屯·第5爻注含所列引文",
+                "quote": "不能恢弘博施",
+                "location": "paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "《周易本義》·屯·第5爻注含所列引文",
+                "quote": "九五坎體有膏潤而不得施為屯其膏之象",
+                "location": "paragraphs[2].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line5:97a131e15c"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "九五雖以陽剛中正居尊位然當屯之時陷於險中雖有六二正應而隂柔才弱不足以濟初九得民於下衆皆歸之九五坎體有膏潤而不得施為屯其膏之象占者以處小事則守正猶可獲吉以處大事則雖正而不免於凶",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "王弼以九五居尊却不能博施说明膏屯",
+                "quote": "虽有尊位，却未能普遍施泽",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "处屯难、居尊位、不能恢弘博施直接支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p1.c0",
+                  "delivered.p1.c1"
+                ],
+                "assertion": "王弼以专系六二和同好排他说明不能光施",
+                "quote": "因为心意专系六二、固守同好而不容他人介入，所以膏泽被屯积，不能光大普及",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "系应在二、固志同好、不容他间与非能光其施相连。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "王弼膏与施予恩泽相关",
+                "quote": "王弼的“不能恢弘博施”正是就“膏”的恩泽、膏润义立说",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王注把膏与博施、光其施连写，恩泽为可据上下文的概括。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "朱熹以坎体膏润不得施释膏屯",
+                "quote": "朱熹也把此象解释为“九五坎體有膏潤而不得施為屯其膏之象”",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line5:97a131e15c"
+                ],
+                "supportLabel": "supported",
+                "rationale": "对应朱注原句，无作者混用。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "九五雖以陽剛中正居尊位然當屯之時陷於險中雖有六二正應而隂柔才弱不足以濟初九得民於下衆皆歸之九五坎體有膏潤而不得施為屯其膏之象占者以處小事則守正猶可獲吉以處大事則雖正而不免於凶"
+              },
+              {
+                "claimId": "C10",
+                "occurrenceIds": [],
+                "assertion": "整个注疏传统以膏为恩泽膏润",
+                "quote": "可见“膏”在注疏传统中就是恩泽、膏润",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line5:e8af156c25",
+                  "zhu-xi@528287:h3:line5:97a131e15c"
+                ],
+                "supportLabel": "unknown",
+                "rationale": "两条注足以支持本题两家的语境，无法核定“注疏传统”整体有无不同解释；不把范围扩大当已证实全称。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "處屯難之時，居尊位之上，不能恢弘博施，無物不與，拯濟微滯。亨於群小，而系應在二，屯難其膏，非能光其施者也。固志同好，不容他間，小貞之吉，大貞之凶。 / 九五雖以陽剛中正居尊位然當屯之時陷於險中雖有六二正應而隂柔才弱不足以濟初九得民於下衆皆歸之九五坎體有膏潤而不得施為屯其膏之象占者以處小事則守正猶可獲吉以處大事則雖正而不免於凶"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Q7a06186fc872",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "程颐词义与刚柔自治原因已完成，排除实际用兵的绝对措辞作为局部不确定性保留。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "限定程颐上六，准确处理邑国、行师和自治其私的关系。"
+            },
+            "knowledge": {
+              "value": 1,
+              "rationale": "私有、刚武与无位、谦极的推理有据；“行师也不是实际出兵”比不任天下、自治私属更绝对，原注不足以排除所有实际用兵含义。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "纯作者、出处和词义核对，本答未作现代情境类比；不把缺少类比记为 0。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "先训词再分两层原因，最后回到自治范围，连贯清楚。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "核心自治为何而来已经解释；须把“不对外征天下”与“完全非实际出兵”分得更细。"
+            }
+          },
+          "errors": [
+            {
+              "type": "scope_overgeneralization",
+              "quote": "“行师”也不是实际出兵",
+              "location": "paragraphs[0].text",
+              "reason": "“用刚武”“己之私有”支持范围转向自身/私属，却未足以从本包断定程颐一概排除实际用兵；非专家不作绝对训诂。",
+              "dimensions": [
+                "knowledge"
+              ],
+              "certainty": "suspected",
+              "severity": "material"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 10,
+              "citationClaimOccurrencesReviewed": 10,
+              "traditionalAssertionsIdentified": 12,
+              "traditionalAssertionsReviewed": 12,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 11,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 1
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0",
+                  "delivered.p2.c0"
+                ],
+                "assertion": "《伊川易傳》·谦·第6爻注含所列引文",
+                "quote": "邑國，己之私有",
+                "location": "paragraphs[0].citations[0].quote; paragraphs[2].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "《伊川易傳》·谦·第6爻注含所列引文",
+                "quote": "行師，謂用剛武",
+                "location": "paragraphs[0].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p0.c2",
+                  "delivered.p2.c2"
+                ],
+                "assertion": "《伊川易傳》·谦·第6爻注含所列引文",
+                "quote": "征邑國，謂自治其私",
+                "location": "paragraphs[0].citations[2].quote; paragraphs[2].citations[2].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p1.c0",
+                  "delivered.p2.c1"
+                ],
+                "assertion": "《伊川易傳》·谦·第6爻注含所列引文",
+                "quote": "雖居無位之地，非任天下之事",
+                "location": "paragraphs[1].citations[0].quote; paragraphs[2].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "《伊川易傳》·谦·第6爻注含所列引文",
+                "quote": "至於大甚，則反為過矣",
+                "location": "paragraphs[1].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p1.c2"
+                ],
+                "assertion": "《伊川易傳》·谦·第6爻注含所列引文",
+                "quote": "利在以剛武自治",
+                "location": "paragraphs[1].citations[2].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p1.c3"
+                ],
+                "assertion": "《伊川易傳》·谦·第6爻注含所列引文",
+                "quote": "人之行己，必須剛柔相濟",
+                "location": "paragraphs[1].citations[3].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p0.c0",
+                  "delivered.p0.c1",
+                  "delivered.p0.c2"
+                ],
+                "assertion": "程颐征邑国为刚武自治己之私有",
+                "quote": "“征邑国”的“征”可理解为整治、匡正，“邑国”则是自己私有、自己分内的领域",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "邑国私有、行师刚武、征邑国自治其私三训相互支持；“可理解”是通俗解释。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "程颐完全排除行师的实际用兵含义",
+                "quote": "“行师”也不是实际出兵",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "unknown",
+                "rationale": "注文明说用刚武与自治，却没有单独裁定修身与私属治理是否全属比喻；需额外训诂资料核定。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。"
+              },
+              {
+                "claimId": "C10",
+                "occurrenceIds": [
+                  "delivered.p1.c0",
+                  "delivered.p2.c1"
+                ],
+                "assertion": "无位不任天下使施为范围收束于己",
+                "quote": "首先与上六的爻位有关",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "无位、非任天下与自治其私支持范围限制。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。"
+              },
+              {
+                "claimId": "C11",
+                "occurrenceIds": [
+                  "delivered.p1.c1",
+                  "delivered.p1.c2",
+                  "delivered.p1.c3"
+                ],
+                "assertion": "过谦柔顺须刚柔相济，故以刚武自治",
+                "quote": "因此“行师”之刚武被收到自身和私属范围，成为纠正过谦之偏的自治",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "程注人之行己、刚柔相济、太甚反过、刚武自治给出完整理由。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。"
+              },
+              {
+                "claimId": "C12",
+                "occurrenceIds": [
+                  "delivered.p2.c0",
+                  "delivered.p2.c2"
+                ],
+                "assertion": "此处征邑国在程注指自治其私而非治天下",
+                "quote": "这是“自治其私”，不是讨伐他人",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "结合邑国私有和非任天下，支持本答对外/自身范围区分；不延伸为彻底无实际治理行为。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "answerId": "Qba8bc4e4ceda",
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "指定作者的征邑国含义与自治理由均由原注核定。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "rationale": "按指定程颐上六解释，没有借六五侵伐或其他注家替代。"
+            },
+            "knowledge": {
+              "value": 2,
+              "rationale": "柔处柔、谦极、无位以及私有刚武自治均来自本注，并保留“自身或自己所属”的范围。"
+            },
+            "integration": {
+              "value": null,
+              "rationale": "纯作者、出处和词义核对，本答未作现代情境类比；不把缺少类比记为 0。",
+              "naReason": "not_applicable"
+            },
+            "conversation": {
+              "value": 2,
+              "rationale": "先给训词和结果，再说明过柔、无位和刚柔相济的原因，表述明确。"
+            },
+            "helpfulness": {
+              "value": 2,
+              "rationale": "解释为何不是向外扩张及为何要以刚武自治，涵盖用户词义与缘由两方面。"
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "仅本答实际 evidence、cast 与明确分列的 referenceOnlyEvidence；补充参考不反算为生成已取得。未外查或读取其他评阅。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 9,
+              "citationClaimOccurrencesReviewed": 9,
+              "traditionalAssertionsIdentified": 11,
+              "traditionalAssertionsReviewed": 11,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "所有 citationClaims occurrence 已核对；引文与其解释/应用拆项，同文引文可合并 occurrenceIds。段内解释仍关联该段引用；另列明确无相应引证的传统/占法断言。只承诺明显断言检查，不穷尽隐含命题。"
+            },
+            "supportCounts": {
+              "supported": 11,
+              "partial": 0,
+              "unsupported": 0,
+              "unknown": 0
+            },
+            "claims": [
+              {
+                "claimId": "C01",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "《伊川易傳》·谦·第6爻注含所列引文",
+                "quote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。",
+                "location": "paragraphs[0].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C02",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "《伊川易傳》·谦·第6爻注含所列引文",
+                "quote": "故利在以剛武自治。",
+                "location": "paragraphs[0].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C03",
+                "occurrenceIds": [
+                  "delivered.p0.c2"
+                ],
+                "assertion": "《伊川易傳》·谦·第6爻注含所列引文",
+                "quote": "行師，謂用剛武。",
+                "location": "paragraphs[0].citations[2].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C04",
+                "occurrenceIds": [
+                  "delivered.p0.c3",
+                  "delivered.p1.c2"
+                ],
+                "assertion": "《伊川易傳》·谦·第6爻注含所列引文",
+                "quote": "邑國，己之私有。",
+                "location": "paragraphs[0].citations[3].quote; paragraphs[1].citations[2].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C05",
+                "occurrenceIds": [
+                  "delivered.p0.c4",
+                  "delivered.p1.c3"
+                ],
+                "assertion": "《伊川易傳》·谦·第6爻注含所列引文",
+                "quote": "征邑國，謂自治其私。",
+                "location": "paragraphs[0].citations[4].quote; paragraphs[1].citations[3].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C06",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《伊川易傳》·谦·第6爻注含所列引文",
+                "quote": "上，謙之極也，至於大甚，則反為過矣。",
+                "location": "paragraphs[1].citations[0].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C07",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "《伊川易傳》·谦·第6爻注含所列引文",
+                "quote": "雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。",
+                "location": "paragraphs[1].citations[1].quote",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "与所附对应原文及定位相符；此项仅核对原句，解释与现代用途另项判断。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。",
+                "supportEvidenceScope": "actual_evidence"
+              },
+              {
+                "claimId": "C08",
+                "occurrenceIds": [
+                  "delivered.p0.c0",
+                  "delivered.p0.c1",
+                  "delivered.p1.c0"
+                ],
+                "assertion": "上六谦极反居高、太甚反过",
+                "quote": "上六以阴柔居谦卦之极，又反居高，谦到太过便成过",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "程注极谦反居高、至于太甚反为过明确支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。"
+              },
+              {
+                "claimId": "C09",
+                "occurrenceIds": [
+                  "delivered.p0.c2",
+                  "delivered.p0.c3",
+                  "delivered.p0.c4"
+                ],
+                "assertion": "程颐行师取刚武，邑国取己之私有而非对外敌国",
+                "quote": "这里的“行师”不是一般意义上的对外用兵，而是“用刚武”；“邑国”也不是敌国，而是“己之私有”",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "三个训词及非任天下共同限定应用范围，回答保留自己所属领域而未断言全部纯心理活动。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。"
+              },
+              {
+                "claimId": "C10",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "虽无位不任天下，行己仍需刚柔相济",
+                "quote": "但仍须“刚柔相济”，缺刚则偏",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "原注“然人之行己，必须刚柔相济”与谦极反过直接支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。"
+              },
+              {
+                "claimId": "C11",
+                "occurrenceIds": [
+                  "delivered.p1.c2",
+                  "delivered.p1.c3"
+                ],
+                "assertion": "征邑国在此为自治自己及私有范围",
+                "quote": "锋芒转向自身或自己所属，是以刚武自纠、自守、自治，而非对外扩张",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line6:4aea04eede"
+                ],
+                "supportLabel": "supported",
+                "rationale": "己之私有、自治其私以及以刚武自治支持概括，不将其当现实史事。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "supportEvidenceScope": "actual_evidence",
+                "evidenceQuote": "六以柔處柔，順之極，又處謙之極，極乎謙者也。以極謙而反居高，未得遂其謙之志，故至發於聲音；又柔處謙之極，亦必見於聲色，故曰鳴謙。雖居無位之地，非任天下之事，然人之行己，必須剛柔相濟。上，謙之極也，至於大甚，則反為過矣。故利在以剛武自治。邑國，己之私有。行師，謂用剛武。征邑國，謂自治其私。"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

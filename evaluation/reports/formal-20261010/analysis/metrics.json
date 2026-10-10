@@ -1,0 +1,3937 @@
+{
+  "protocol": "formal-offline-stats-v1",
+  "groups": [
+    {
+      "stage": "continuous",
+      "split": "development",
+      "arm": "H",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "n": 6,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 10,
+      "modelRequests": 10,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 40198,
+      "unknownUsageCalls": 0,
+      "totalTokens": 40198,
+      "medianMs": 16610.5,
+      "latencyN": 6,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.014463300000000002,
+      "reportedEstimateUSD": 0.014463300000000002,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ],
+      "reportedCompleted": 6,
+      "budgetStopped": 0,
+      "independentGroups": 2,
+      "statuses": {
+        "completed": 6
+      },
+      "mechanicalComplete": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "mechanicalAmongTerminal": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "firstSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "firstDeliverableSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "finalSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "repair": {
+        "triggered": 0,
+        "successful": 0,
+        "success": {
+          "successes": 0,
+          "n": 0,
+          "rate": null,
+          "low": null,
+          "high": null
+        }
+      },
+      "p50Ms": 16610.5,
+      "p95Ms": 25187.5,
+      "meanMs": 16929.833333333332,
+      "minMs": 7353,
+      "maxMs": 26802,
+      "missingLatency": 0,
+      "usage": {
+        "total_tokens": {
+          "reportedSum": 40198,
+          "unknownCalls": 0,
+          "total": 40198
+        },
+        "prompt_tokens": {
+          "reportedSum": 19366,
+          "unknownCalls": 0,
+          "total": 19366
+        },
+        "completion_tokens": {
+          "reportedSum": 20832,
+          "unknownCalls": 0,
+          "total": 20832
+        },
+        "prompt_cache_hit_tokens": {
+          "reportedSum": 6400,
+          "unknownCalls": 0,
+          "total": 6400
+        },
+        "prompt_cache_miss_tokens": {
+          "reportedSum": 12966,
+          "unknownCalls": 0,
+          "total": 12966
+        },
+        "reasoning_tokens": {
+          "reportedSum": 16839,
+          "unknownCalls": 0,
+          "total": 16839
+        }
+      },
+      "firstQuotes": {
+        "total": 25,
+        "direct": 25,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 25,
+        "rate": 1.0
+      },
+      "finalQuotes": {
+        "total": 25,
+        "direct": 25,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 25,
+        "rate": 1.0
+      }
+    },
+    {
+      "stage": "continuous",
+      "split": "independent_test",
+      "arm": "H",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "n": 6,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 10,
+      "modelRequests": 10,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 42052,
+      "unknownUsageCalls": 0,
+      "totalTokens": 42052,
+      "medianMs": 19018.0,
+      "latencyN": 6,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.015797099999999998,
+      "reportedEstimateUSD": 0.015797099999999998,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ],
+      "reportedCompleted": 6,
+      "budgetStopped": 0,
+      "independentGroups": 2,
+      "statuses": {
+        "completed": 6
+      },
+      "mechanicalComplete": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "mechanicalAmongTerminal": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "firstSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "firstDeliverableSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "finalSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "repair": {
+        "triggered": 0,
+        "successful": 0,
+        "success": {
+          "successes": 0,
+          "n": 0,
+          "rate": null,
+          "low": null,
+          "high": null
+        }
+      },
+      "p50Ms": 19018.0,
+      "p95Ms": 20149.25,
+      "meanMs": 18251.166666666668,
+      "minMs": 14343,
+      "maxMs": 20478,
+      "missingLatency": 0,
+      "usage": {
+        "total_tokens": {
+          "reportedSum": 42052,
+          "unknownCalls": 0,
+          "total": 42052
+        },
+        "prompt_tokens": {
+          "reportedSum": 18874,
+          "unknownCalls": 0,
+          "total": 18874
+        },
+        "completion_tokens": {
+          "reportedSum": 23178,
+          "unknownCalls": 0,
+          "total": 23178
+        },
+        "prompt_cache_hit_tokens": {
+          "reportedSum": 6400,
+          "unknownCalls": 0,
+          "total": 6400
+        },
+        "prompt_cache_miss_tokens": {
+          "reportedSum": 12474,
+          "unknownCalls": 0,
+          "total": 12474
+        },
+        "reasoning_tokens": {
+          "reportedSum": 19050,
+          "unknownCalls": 0,
+          "total": 19050
+        }
+      },
+      "firstQuotes": {
+        "total": 27,
+        "direct": 27,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 27,
+        "rate": 1.0
+      },
+      "finalQuotes": {
+        "total": 27,
+        "direct": 27,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 27,
+        "rate": 1.0
+      }
+    },
+    {
+      "stage": "development",
+      "split": "development",
+      "arm": "B",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "n": 40,
+      "failed": 3,
+      "technicalFailures": 0,
+      "validationFailed": 3,
+      "unfinished": 0,
+      "calls": 45,
+      "modelRequests": 45,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 160934,
+      "unknownUsageCalls": 0,
+      "totalTokens": 160934,
+      "medianMs": 15931.0,
+      "latencyN": 40,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 5,
+      "repairRequests": 5,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.07954736999999996,
+      "reportedEstimateUSD": 0.07954736999999996,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      ],
+      "reportedCompleted": 37,
+      "budgetStopped": 0,
+      "independentGroups": 33,
+      "statuses": {
+        "completed": 37,
+        "validation_failed": 3
+      },
+      "mechanicalComplete": {
+        "successes": 37,
+        "n": 40,
+        "rate": 0.925,
+        "low": 0.8013576647568946,
+        "high": 0.9741639742254119
+      },
+      "mechanicalAmongTerminal": {
+        "successes": 37,
+        "n": 40,
+        "rate": 0.925,
+        "low": 0.8013576647568946,
+        "high": 0.9741639742254119
+      },
+      "firstSchema": {
+        "successes": 40,
+        "n": 40,
+        "rate": 1.0,
+        "low": 0.9123783988027135,
+        "high": 1.0
+      },
+      "firstDeliverableSchema": {
+        "successes": 40,
+        "n": 40,
+        "rate": 1.0,
+        "low": 0.9123783988027135,
+        "high": 1.0
+      },
+      "finalSchema": {
+        "successes": 38,
+        "n": 40,
+        "rate": 0.95,
+        "low": 0.8349612263085903,
+        "high": 0.9861793326138516
+      },
+      "repair": {
+        "triggered": 5,
+        "successful": 2,
+        "success": {
+          "successes": 2,
+          "n": 5,
+          "rate": 0.4,
+          "low": 0.11762077423264783,
+          "high": 0.769275718723987
+        }
+      },
+      "p50Ms": 15931.0,
+      "p95Ms": 25277.699999999997,
+      "meanMs": 15641.85,
+      "minMs": 2477,
+      "maxMs": 30697,
+      "missingLatency": 0,
+      "usage": {
+        "total_tokens": {
+          "reportedSum": 160934,
+          "unknownCalls": 0,
+          "total": 160934
+        },
+        "prompt_tokens": {
+          "reportedSum": 35507,
+          "unknownCalls": 0,
+          "total": 35507
+        },
+        "completion_tokens": {
+          "reportedSum": 125427,
+          "unknownCalls": 0,
+          "total": 125427
+        },
+        "prompt_cache_hit_tokens": {
+          "reportedSum": 7040,
+          "unknownCalls": 0,
+          "total": 7040
+        },
+        "prompt_cache_miss_tokens": {
+          "reportedSum": 28467,
+          "unknownCalls": 0,
+          "total": 28467
+        },
+        "reasoning_tokens": {
+          "reportedSum": 102056,
+          "unknownCalls": 5,
+          "total": null
+        }
+      },
+      "firstQuotes": {
+        "total": 136,
+        "direct": 136,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 136,
+        "rate": 1.0
+      },
+      "finalQuotes": {
+        "total": 131,
+        "direct": 130,
+        "resolved": 0,
+        "invalid": 1,
+        "unknown": 0,
+        "matched": 130,
+        "rate": 0.9923664122137404
+      }
+    },
+    {
+      "stage": "development",
+      "split": "development",
+      "arm": "C",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "n": 40,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 43,
+      "modelRequests": 43,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 174334,
+      "unknownUsageCalls": 0,
+      "totalTokens": 174334,
+      "medianMs": 16772.0,
+      "latencyN": 40,
+      "toolRequests": 11,
+      "toolAttempts": 11,
+      "toolOk": 11,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 3,
+      "repairRequests": 3,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.08837706599999999,
+      "reportedEstimateUSD": 0.08837706599999999,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      ],
+      "reportedCompleted": 40,
+      "budgetStopped": 0,
+      "independentGroups": 33,
+      "statuses": {
+        "completed": 40
+      },
+      "mechanicalComplete": {
+        "successes": 40,
+        "n": 40,
+        "rate": 1.0,
+        "low": 0.9123783988027135,
+        "high": 1.0
+      },
+      "mechanicalAmongTerminal": {
+        "successes": 40,
+        "n": 40,
+        "rate": 1.0,
+        "low": 0.9123783988027135,
+        "high": 1.0
+      },
+      "firstSchema": {
+        "successes": 40,
+        "n": 40,
+        "rate": 1.0,
+        "low": 0.9123783988027135,
+        "high": 1.0
+      },
+      "firstDeliverableSchema": {
+        "successes": 40,
+        "n": 40,
+        "rate": 1.0,
+        "low": 0.9123783988027135,
+        "high": 1.0
+      },
+      "finalSchema": {
+        "successes": 40,
+        "n": 40,
+        "rate": 1.0,
+        "low": 0.9123783988027135,
+        "high": 1.0
+      },
+      "repair": {
+        "triggered": 3,
+        "successful": 3,
+        "success": {
+          "successes": 3,
+          "n": 3,
+          "rate": 1.0,
+          "low": 0.4385029682449546,
+          "high": 1.0
+        }
+      },
+      "p50Ms": 16772.0,
+      "p95Ms": 28678.45,
+      "meanMs": 16844.775,
+      "minMs": 4156,
+      "maxMs": 30823,
+      "missingLatency": 0,
+      "usage": {
+        "total_tokens": {
+          "reportedSum": 174334,
+          "unknownCalls": 0,
+          "total": 174334
+        },
+        "prompt_tokens": {
+          "reportedSum": 34003,
+          "unknownCalls": 0,
+          "total": 34003
+        },
+        "completion_tokens": {
+          "reportedSum": 140331,
+          "unknownCalls": 0,
+          "total": 140331
+        },
+        "prompt_cache_hit_tokens": {
+          "reportedSum": 6272,
+          "unknownCalls": 0,
+          "total": 6272
+        },
+        "prompt_cache_miss_tokens": {
+          "reportedSum": 27731,
+          "unknownCalls": 0,
+          "total": 27731
+        },
+        "reasoning_tokens": {
+          "reportedSum": 115698,
+          "unknownCalls": 3,
+          "total": null
+        }
+      },
+      "firstQuotes": {
+        "total": 159,
+        "direct": 158,
+        "resolved": 0,
+        "invalid": 1,
+        "unknown": 0,
+        "matched": 158,
+        "rate": 0.9937106918238994
+      },
+      "finalQuotes": {
+        "total": 162,
+        "direct": 162,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 162,
+        "rate": 1.0
+      }
+    },
+    {
+      "stage": "development",
+      "split": "development",
+      "arm": "D",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "n": 40,
+      "failed": 1,
+      "technicalFailures": 0,
+      "validationFailed": 1,
+      "unfinished": 0,
+      "calls": 69,
+      "modelRequests": 69,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 256085,
+      "unknownUsageCalls": 0,
+      "totalTokens": 256085,
+      "medianMs": 17572.0,
+      "latencyN": 40,
+      "toolRequests": 20,
+      "toolAttempts": 20,
+      "toolOk": 20,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 5,
+      "repairRequests": 5,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.09358851900000001,
+      "reportedEstimateUSD": 0.09358851900000001,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      ],
+      "reportedCompleted": 39,
+      "budgetStopped": 0,
+      "independentGroups": 33,
+      "statuses": {
+        "completed": 39,
+        "validation_failed": 1
+      },
+      "mechanicalComplete": {
+        "successes": 39,
+        "n": 40,
+        "rate": 0.975,
+        "low": 0.8711863103652591,
+        "high": 0.9955731684973186
+      },
+      "mechanicalAmongTerminal": {
+        "successes": 39,
+        "n": 40,
+        "rate": 0.975,
+        "low": 0.8711863103652591,
+        "high": 0.9955731684973186
+      },
+      "firstSchema": {
+        "successes": 38,
+        "n": 39,
+        "rate": 0.9743589743589743,
+        "low": 0.8681900983014993,
+        "high": 0.99545929689901
+      },
+      "firstDeliverableSchema": {
+        "successes": 38,
+        "n": 39,
+        "rate": 0.9743589743589743,
+        "low": 0.8681900983014993,
+        "high": 0.99545929689901
+      },
+      "finalSchema": {
+        "successes": 39,
+        "n": 39,
+        "rate": 1.0,
+        "low": 0.9103331462924287,
+        "high": 1.0
+      },
+      "repair": {
+        "triggered": 5,
+        "successful": 4,
+        "success": {
+          "successes": 4,
+          "n": 5,
+          "rate": 0.8,
+          "low": 0.37553462976252533,
+          "high": 0.9637758913675698
+        }
+      },
+      "p50Ms": 17572.0,
+      "p95Ms": 30732.35,
+      "meanMs": 17506.9,
+      "minMs": 1854,
+      "maxMs": 35068,
+      "missingLatency": 0,
+      "usage": {
+        "total_tokens": {
+          "reportedSum": 256085,
+          "unknownCalls": 0,
+          "total": 256085
+        },
+        "prompt_tokens": {
+          "reportedSum": 116037,
+          "unknownCalls": 0,
+          "total": 116037
+        },
+        "completion_tokens": {
+          "reportedSum": 140048,
+          "unknownCalls": 0,
+          "total": 140048
+        },
+        "prompt_cache_hit_tokens": {
+          "reportedSum": 53373,
+          "unknownCalls": 0,
+          "total": 53373
+        },
+        "prompt_cache_miss_tokens": {
+          "reportedSum": 62664,
+          "unknownCalls": 0,
+          "total": 62664
+        },
+        "reasoning_tokens": {
+          "reportedSum": 111597,
+          "unknownCalls": 5,
+          "total": null
+        }
+      },
+      "firstQuotes": {
+        "total": 170,
+        "direct": 170,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 170,
+        "rate": 1.0
+      },
+      "finalQuotes": {
+        "total": 168,
+        "direct": 168,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 168,
+        "rate": 1.0
+      }
+    },
+    {
+      "stage": "development",
+      "split": "development",
+      "arm": "H",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "n": 40,
+      "failed": 1,
+      "technicalFailures": 0,
+      "validationFailed": 1,
+      "unfinished": 0,
+      "calls": 71,
+      "modelRequests": 71,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 273155,
+      "unknownUsageCalls": 0,
+      "totalTokens": 273155,
+      "medianMs": 18615.0,
+      "latencyN": 40,
+      "toolRequests": 15,
+      "toolAttempts": 15,
+      "toolOk": 15,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 6,
+      "repairRequests": 6,
+      "quoteResolutions": 6,
+      "estimatedUSD": 0.100621251,
+      "reportedEstimateUSD": 0.100621251,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      ],
+      "reportedCompleted": 39,
+      "budgetStopped": 0,
+      "independentGroups": 33,
+      "statuses": {
+        "completed": 39,
+        "validation_failed": 1
+      },
+      "mechanicalComplete": {
+        "successes": 39,
+        "n": 40,
+        "rate": 0.975,
+        "low": 0.8711863103652591,
+        "high": 0.9955731684973186
+      },
+      "mechanicalAmongTerminal": {
+        "successes": 39,
+        "n": 40,
+        "rate": 0.975,
+        "low": 0.8711863103652591,
+        "high": 0.9955731684973186
+      },
+      "firstSchema": {
+        "successes": 39,
+        "n": 39,
+        "rate": 1.0,
+        "low": 0.9103331462924287,
+        "high": 1.0
+      },
+      "firstDeliverableSchema": {
+        "successes": 39,
+        "n": 39,
+        "rate": 1.0,
+        "low": 0.9103331462924287,
+        "high": 1.0
+      },
+      "finalSchema": {
+        "successes": 39,
+        "n": 39,
+        "rate": 1.0,
+        "low": 0.9103331462924287,
+        "high": 1.0
+      },
+      "repair": {
+        "triggered": 6,
+        "successful": 5,
+        "success": {
+          "successes": 5,
+          "n": 6,
+          "rate": 0.8333333333333334,
+          "low": 0.43649717781352987,
+          "high": 0.9699466302516935
+        }
+      },
+      "p50Ms": 18615.0,
+      "p95Ms": 29152.94999999999,
+      "meanMs": 18437.5,
+      "minMs": 1682,
+      "maxMs": 37220,
+      "missingLatency": 0,
+      "usage": {
+        "total_tokens": {
+          "reportedSum": 273155,
+          "unknownCalls": 0,
+          "total": 273155
+        },
+        "prompt_tokens": {
+          "reportedSum": 122207,
+          "unknownCalls": 0,
+          "total": 122207
+        },
+        "completion_tokens": {
+          "reportedSum": 150948,
+          "unknownCalls": 0,
+          "total": 150948
+        },
+        "prompt_cache_hit_tokens": {
+          "reportedSum": 56317,
+          "unknownCalls": 0,
+          "total": 56317
+        },
+        "prompt_cache_miss_tokens": {
+          "reportedSum": 65890,
+          "unknownCalls": 0,
+          "total": 65890
+        },
+        "reasoning_tokens": {
+          "reportedSum": 121517,
+          "unknownCalls": 6,
+          "total": null
+        }
+      },
+      "firstQuotes": {
+        "total": 174,
+        "direct": 168,
+        "resolved": 3,
+        "invalid": 3,
+        "unknown": 0,
+        "matched": 171,
+        "rate": 0.9827586206896551
+      },
+      "finalQuotes": {
+        "total": 178,
+        "direct": 173,
+        "resolved": 3,
+        "invalid": 2,
+        "unknown": 0,
+        "matched": 176,
+        "rate": 0.9887640449438202
+      }
+    },
+    {
+      "stage": "rag",
+      "split": "development",
+      "arm": "classic",
+      "configKey": "f18be4380736a7085665d82429d6a8f0fc2b8606dbcfb513d7d24c2fa5351339",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "n": 6,
+      "failed": 3,
+      "technicalFailures": 0,
+      "validationFailed": 3,
+      "unfinished": 0,
+      "calls": 6,
+      "modelRequests": 6,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 13268,
+      "unknownUsageCalls": 0,
+      "totalTokens": 13268,
+      "medianMs": 8561.0,
+      "latencyN": 6,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.005929044,
+      "reportedEstimateUSD": 0.005929044,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ],
+      "reportedCompleted": 3,
+      "budgetStopped": 0,
+      "independentGroups": 6,
+      "statuses": {
+        "validation_failed": 3,
+        "completed": 3
+      },
+      "mechanicalComplete": {
+        "successes": 3,
+        "n": 6,
+        "rate": 0.5,
+        "low": 0.1876163064826506,
+        "high": 0.8123836935173494
+      },
+      "mechanicalAmongTerminal": {
+        "successes": 3,
+        "n": 6,
+        "rate": 0.5,
+        "low": 0.1876163064826506,
+        "high": 0.8123836935173494
+      },
+      "firstSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "firstDeliverableSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "finalSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "repair": {
+        "triggered": 0,
+        "successful": 0,
+        "success": {
+          "successes": 0,
+          "n": 0,
+          "rate": null,
+          "low": null,
+          "high": null
+        }
+      },
+      "p50Ms": 8561.0,
+      "p95Ms": 11840.75,
+      "meanMs": 8526.666666666666,
+      "minMs": 3148,
+      "maxMs": 11921,
+      "missingLatency": 0,
+      "usage": {
+        "total_tokens": {
+          "reportedSum": 13268,
+          "unknownCalls": 0,
+          "total": 13268
+        },
+        "prompt_tokens": {
+          "reportedSum": 3846,
+          "unknownCalls": 0,
+          "total": 3846
+        },
+        "completion_tokens": {
+          "reportedSum": 9422,
+          "unknownCalls": 0,
+          "total": 9422
+        },
+        "prompt_cache_hit_tokens": {
+          "reportedSum": 2048,
+          "unknownCalls": 0,
+          "total": 2048
+        },
+        "prompt_cache_miss_tokens": {
+          "reportedSum": 1798,
+          "unknownCalls": 0,
+          "total": 1798
+        },
+        "reasoning_tokens": {
+          "reportedSum": 7526,
+          "unknownCalls": 0,
+          "total": 7526
+        }
+      },
+      "firstQuotes": {
+        "total": 7,
+        "direct": 7,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 7,
+        "rate": 1.0
+      },
+      "finalQuotes": {
+        "total": 7,
+        "direct": 7,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 7,
+        "rate": 1.0
+      }
+    },
+    {
+      "stage": "rag",
+      "split": "development",
+      "arm": "full",
+      "configKey": "f18be4380736a7085665d82429d6a8f0fc2b8606dbcfb513d7d24c2fa5351339",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "n": 6,
+      "failed": 2,
+      "technicalFailures": 0,
+      "validationFailed": 2,
+      "unfinished": 0,
+      "calls": 6,
+      "modelRequests": 6,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 27472,
+      "unknownUsageCalls": 0,
+      "totalTokens": 27472,
+      "medianMs": 15739.0,
+      "latencyN": 6,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.013452597,
+      "reportedEstimateUSD": 0.013452597,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ],
+      "reportedCompleted": 4,
+      "budgetStopped": 0,
+      "independentGroups": 6,
+      "statuses": {
+        "validation_failed": 2,
+        "completed": 4
+      },
+      "mechanicalComplete": {
+        "successes": 4,
+        "n": 6,
+        "rate": 0.6666666666666666,
+        "low": 0.299993315138392,
+        "high": 0.9032285888942195
+      },
+      "mechanicalAmongTerminal": {
+        "successes": 4,
+        "n": 6,
+        "rate": 0.6666666666666666,
+        "low": 0.299993315138392,
+        "high": 0.9032285888942195
+      },
+      "firstSchema": {
+        "successes": 5,
+        "n": 6,
+        "rate": 0.8333333333333334,
+        "low": 0.43649717781352987,
+        "high": 0.9699466302516935
+      },
+      "firstDeliverableSchema": {
+        "successes": 5,
+        "n": 6,
+        "rate": 0.8333333333333334,
+        "low": 0.43649717781352987,
+        "high": 0.9699466302516935
+      },
+      "finalSchema": {
+        "successes": 5,
+        "n": 6,
+        "rate": 0.8333333333333334,
+        "low": 0.43649717781352987,
+        "high": 0.9699466302516935
+      },
+      "repair": {
+        "triggered": 0,
+        "successful": 0,
+        "success": {
+          "successes": 0,
+          "n": 0,
+          "rate": null,
+          "low": null,
+          "high": null
+        }
+      },
+      "p50Ms": 15739.0,
+      "p95Ms": 25155.5,
+      "meanMs": 16426.666666666668,
+      "minMs": 6798,
+      "maxMs": 26854,
+      "missingLatency": 0,
+      "usage": {
+        "total_tokens": {
+          "reportedSum": 27472,
+          "unknownCalls": 0,
+          "total": 27472
+        },
+        "prompt_tokens": {
+          "reportedSum": 5314,
+          "unknownCalls": 0,
+          "total": 5314
+        },
+        "completion_tokens": {
+          "reportedSum": 22158,
+          "unknownCalls": 0,
+          "total": 22158
+        },
+        "prompt_cache_hit_tokens": {
+          "reportedSum": 4349,
+          "unknownCalls": 0,
+          "total": 4349
+        },
+        "prompt_cache_miss_tokens": {
+          "reportedSum": 965,
+          "unknownCalls": 0,
+          "total": 965
+        },
+        "reasoning_tokens": {
+          "reportedSum": 18069,
+          "unknownCalls": 0,
+          "total": 18069
+        }
+      },
+      "firstQuotes": {
+        "total": 35,
+        "direct": 35,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 35,
+        "rate": 1.0
+      },
+      "finalQuotes": {
+        "total": 35,
+        "direct": 35,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 35,
+        "rate": 1.0
+      }
+    },
+    {
+      "stage": "rag",
+      "split": "development",
+      "arm": "memory",
+      "configKey": "f18be4380736a7085665d82429d6a8f0fc2b8606dbcfb513d7d24c2fa5351339",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "n": 6,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 6,
+      "modelRequests": 6,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 14640,
+      "unknownUsageCalls": 0,
+      "totalTokens": 14640,
+      "medianMs": 11542.0,
+      "latencyN": 6,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.007156824,
+      "reportedEstimateUSD": 0.007156824,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ],
+      "reportedCompleted": 6,
+      "budgetStopped": 0,
+      "independentGroups": 6,
+      "statuses": {
+        "completed": 6
+      },
+      "mechanicalComplete": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "mechanicalAmongTerminal": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "firstSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "firstDeliverableSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "finalSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "repair": {
+        "triggered": 0,
+        "successful": 0,
+        "success": {
+          "successes": 0,
+          "n": 0,
+          "rate": null,
+          "low": null,
+          "high": null
+        }
+      },
+      "p50Ms": 11542.0,
+      "p95Ms": 16725.25,
+      "meanMs": 11639.666666666666,
+      "minMs": 5576,
+      "maxMs": 17242,
+      "missingLatency": 0,
+      "usage": {
+        "total_tokens": {
+          "reportedSum": 14640,
+          "unknownCalls": 0,
+          "total": 14640
+        },
+        "prompt_tokens": {
+          "reportedSum": 3156,
+          "unknownCalls": 0,
+          "total": 3156
+        },
+        "completion_tokens": {
+          "reportedSum": 11484,
+          "unknownCalls": 0,
+          "total": 11484
+        },
+        "prompt_cache_hit_tokens": {
+          "reportedSum": 1408,
+          "unknownCalls": 0,
+          "total": 1408
+        },
+        "prompt_cache_miss_tokens": {
+          "reportedSum": 1748,
+          "unknownCalls": 0,
+          "total": 1748
+        },
+        "reasoning_tokens": {
+          "reportedSum": 8873,
+          "unknownCalls": 0,
+          "total": 8873
+        }
+      },
+      "firstQuotes": {
+        "total": 0,
+        "direct": 0,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 0,
+        "rate": null
+      },
+      "finalQuotes": {
+        "total": 0,
+        "direct": 0,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 0,
+        "rate": null
+      }
+    },
+    {
+      "stage": "rag",
+      "split": "independent_test",
+      "arm": "classic",
+      "configKey": "f18be4380736a7085665d82429d6a8f0fc2b8606dbcfb513d7d24c2fa5351339",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "n": 6,
+      "failed": 3,
+      "technicalFailures": 0,
+      "validationFailed": 3,
+      "unfinished": 0,
+      "calls": 6,
+      "modelRequests": 6,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 16511,
+      "unknownUsageCalls": 0,
+      "totalTokens": 16511,
+      "medianMs": 9592.0,
+      "latencyN": 6,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.007851443999999999,
+      "reportedEstimateUSD": 0.007851443999999999,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ],
+      "reportedCompleted": 3,
+      "budgetStopped": 0,
+      "independentGroups": 6,
+      "statuses": {
+        "validation_failed": 3,
+        "completed": 3
+      },
+      "mechanicalComplete": {
+        "successes": 3,
+        "n": 6,
+        "rate": 0.5,
+        "low": 0.1876163064826506,
+        "high": 0.8123836935173494
+      },
+      "mechanicalAmongTerminal": {
+        "successes": 3,
+        "n": 6,
+        "rate": 0.5,
+        "low": 0.1876163064826506,
+        "high": 0.8123836935173494
+      },
+      "firstSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "firstDeliverableSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "finalSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "repair": {
+        "triggered": 0,
+        "successful": 0,
+        "success": {
+          "successes": 0,
+          "n": 0,
+          "rate": null,
+          "low": null,
+          "high": null
+        }
+      },
+      "p50Ms": 9592.0,
+      "p95Ms": 17181.75,
+      "meanMs": 10639.833333333334,
+      "minMs": 4984,
+      "maxMs": 17972,
+      "missingLatency": 0,
+      "usage": {
+        "total_tokens": {
+          "reportedSum": 16511,
+          "unknownCalls": 0,
+          "total": 16511
+        },
+        "prompt_tokens": {
+          "reportedSum": 3898,
+          "unknownCalls": 0,
+          "total": 3898
+        },
+        "completion_tokens": {
+          "reportedSum": 12613,
+          "unknownCalls": 0,
+          "total": 12613
+        },
+        "prompt_cache_hit_tokens": {
+          "reportedSum": 2048,
+          "unknownCalls": 0,
+          "total": 2048
+        },
+        "prompt_cache_miss_tokens": {
+          "reportedSum": 1850,
+          "unknownCalls": 0,
+          "total": 1850
+        },
+        "reasoning_tokens": {
+          "reportedSum": 10318,
+          "unknownCalls": 0,
+          "total": 10318
+        }
+      },
+      "firstQuotes": {
+        "total": 14,
+        "direct": 14,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 14,
+        "rate": 1.0
+      },
+      "finalQuotes": {
+        "total": 14,
+        "direct": 14,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 14,
+        "rate": 1.0
+      }
+    },
+    {
+      "stage": "rag",
+      "split": "independent_test",
+      "arm": "full",
+      "configKey": "f18be4380736a7085665d82429d6a8f0fc2b8606dbcfb513d7d24c2fa5351339",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "n": 6,
+      "failed": 2,
+      "technicalFailures": 0,
+      "validationFailed": 2,
+      "unfinished": 0,
+      "calls": 6,
+      "modelRequests": 6,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 29665,
+      "unknownUsageCalls": 0,
+      "totalTokens": 29665,
+      "medianMs": 20488.5,
+      "latencyN": 6,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.01464654,
+      "reportedEstimateUSD": 0.01464654,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ],
+      "reportedCompleted": 4,
+      "budgetStopped": 0,
+      "independentGroups": 6,
+      "statuses": {
+        "completed": 4,
+        "validation_failed": 2
+      },
+      "mechanicalComplete": {
+        "successes": 4,
+        "n": 6,
+        "rate": 0.6666666666666666,
+        "low": 0.299993315138392,
+        "high": 0.9032285888942195
+      },
+      "mechanicalAmongTerminal": {
+        "successes": 4,
+        "n": 6,
+        "rate": 0.6666666666666666,
+        "low": 0.299993315138392,
+        "high": 0.9032285888942195
+      },
+      "firstSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "firstDeliverableSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "finalSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "repair": {
+        "triggered": 0,
+        "successful": 0,
+        "success": {
+          "successes": 0,
+          "n": 0,
+          "rate": null,
+          "low": null,
+          "high": null
+        }
+      },
+      "p50Ms": 20488.5,
+      "p95Ms": 22118.75,
+      "meanMs": 17748.666666666668,
+      "minMs": 9363,
+      "maxMs": 22125,
+      "missingLatency": 0,
+      "usage": {
+        "total_tokens": {
+          "reportedSum": 29665,
+          "unknownCalls": 0,
+          "total": 29665
+        },
+        "prompt_tokens": {
+          "reportedSum": 5542,
+          "unknownCalls": 0,
+          "total": 5542
+        },
+        "completion_tokens": {
+          "reportedSum": 24123,
+          "unknownCalls": 0,
+          "total": 24123
+        },
+        "prompt_cache_hit_tokens": {
+          "reportedSum": 4480,
+          "unknownCalls": 0,
+          "total": 4480
+        },
+        "prompt_cache_miss_tokens": {
+          "reportedSum": 1062,
+          "unknownCalls": 0,
+          "total": 1062
+        },
+        "reasoning_tokens": {
+          "reportedSum": 19844,
+          "unknownCalls": 0,
+          "total": 19844
+        }
+      },
+      "firstQuotes": {
+        "total": 27,
+        "direct": 27,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 27,
+        "rate": 1.0
+      },
+      "finalQuotes": {
+        "total": 27,
+        "direct": 27,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 27,
+        "rate": 1.0
+      }
+    },
+    {
+      "stage": "rag",
+      "split": "independent_test",
+      "arm": "memory",
+      "configKey": "f18be4380736a7085665d82429d6a8f0fc2b8606dbcfb513d7d24c2fa5351339",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "n": 6,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 6,
+      "modelRequests": 6,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 16288,
+      "unknownUsageCalls": 0,
+      "totalTokens": 16288,
+      "medianMs": 9641.5,
+      "latencyN": 6,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.008117808,
+      "reportedEstimateUSD": 0.008117808,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ],
+      "reportedCompleted": 6,
+      "budgetStopped": 0,
+      "independentGroups": 6,
+      "statuses": {
+        "completed": 6
+      },
+      "mechanicalComplete": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "mechanicalAmongTerminal": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "firstSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "firstDeliverableSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "finalSchema": {
+        "successes": 6,
+        "n": 6,
+        "rate": 1.0,
+        "low": 0.6096657120978346,
+        "high": 1.0
+      },
+      "repair": {
+        "triggered": 0,
+        "successful": 0,
+        "success": {
+          "successes": 0,
+          "n": 0,
+          "rate": null,
+          "low": null,
+          "high": null
+        }
+      },
+      "p50Ms": 9641.5,
+      "p95Ms": 24882.25,
+      "meanMs": 13155.833333333334,
+      "minMs": 8047,
+      "maxMs": 28459,
+      "missingLatency": 0,
+      "usage": {
+        "total_tokens": {
+          "reportedSum": 16288,
+          "unknownCalls": 0,
+          "total": 16288
+        },
+        "prompt_tokens": {
+          "reportedSum": 3176,
+          "unknownCalls": 0,
+          "total": 3176
+        },
+        "completion_tokens": {
+          "reportedSum": 13112,
+          "unknownCalls": 0,
+          "total": 13112
+        },
+        "prompt_cache_hit_tokens": {
+          "reportedSum": 1536,
+          "unknownCalls": 0,
+          "total": 1536
+        },
+        "prompt_cache_miss_tokens": {
+          "reportedSum": 1640,
+          "unknownCalls": 0,
+          "total": 1640
+        },
+        "reasoning_tokens": {
+          "reportedSum": 9488,
+          "unknownCalls": 0,
+          "total": 9488
+        }
+      },
+      "firstQuotes": {
+        "total": 0,
+        "direct": 0,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 0,
+        "rate": null
+      },
+      "finalQuotes": {
+        "total": 0,
+        "direct": 0,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 0,
+        "rate": null
+      }
+    },
+    {
+      "stage": "smoke",
+      "split": "smoke_new",
+      "arm": "H",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "n": 1,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 1,
+      "modelRequests": 1,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 9039,
+      "unknownUsageCalls": 0,
+      "totalTokens": 9039,
+      "medianMs": 33893,
+      "latencyN": 1,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.004824983999999999,
+      "reportedEstimateUSD": 0.004824983999999999,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ],
+      "reportedCompleted": 1,
+      "budgetStopped": 0,
+      "independentGroups": 1,
+      "statuses": {
+        "completed": 1
+      },
+      "mechanicalComplete": {
+        "successes": 1,
+        "n": 1,
+        "rate": 1.0,
+        "low": 0.20654931437723745,
+        "high": 1.0
+      },
+      "mechanicalAmongTerminal": {
+        "successes": 1,
+        "n": 1,
+        "rate": 1.0,
+        "low": 0.20654931437723745,
+        "high": 1.0
+      },
+      "firstSchema": {
+        "successes": 1,
+        "n": 1,
+        "rate": 1.0,
+        "low": 0.20654931437723745,
+        "high": 1.0
+      },
+      "firstDeliverableSchema": {
+        "successes": 1,
+        "n": 1,
+        "rate": 1.0,
+        "low": 0.20654931437723745,
+        "high": 1.0
+      },
+      "finalSchema": {
+        "successes": 1,
+        "n": 1,
+        "rate": 1.0,
+        "low": 0.20654931437723745,
+        "high": 1.0
+      },
+      "repair": {
+        "triggered": 0,
+        "successful": 0,
+        "success": {
+          "successes": 0,
+          "n": 0,
+          "rate": null,
+          "low": null,
+          "high": null
+        }
+      },
+      "p50Ms": 33893.0,
+      "p95Ms": 33893.0,
+      "meanMs": 33893,
+      "minMs": 33893,
+      "maxMs": 33893,
+      "missingLatency": 0,
+      "usage": {
+        "total_tokens": {
+          "reportedSum": 9039,
+          "unknownCalls": 0,
+          "total": 9039
+        },
+        "prompt_tokens": {
+          "reportedSum": 1288,
+          "unknownCalls": 0,
+          "total": 1288
+        },
+        "completion_tokens": {
+          "reportedSum": 7751,
+          "unknownCalls": 0,
+          "total": 7751
+        },
+        "prompt_cache_hit_tokens": {
+          "reportedSum": 128,
+          "unknownCalls": 0,
+          "total": 128
+        },
+        "prompt_cache_miss_tokens": {
+          "reportedSum": 1160,
+          "unknownCalls": 0,
+          "total": 1160
+        },
+        "reasoning_tokens": {
+          "reportedSum": 6613,
+          "unknownCalls": 0,
+          "total": 6613
+        }
+      },
+      "firstQuotes": {
+        "total": 14,
+        "direct": 14,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 14,
+        "rate": 1.0
+      },
+      "finalQuotes": {
+        "total": 14,
+        "direct": 14,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 14,
+        "rate": 1.0
+      }
+    },
+    {
+      "stage": "smoke",
+      "split": "smoke_seen",
+      "arm": "H",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "n": 3,
+      "failed": 0,
+      "technicalFailures": 0,
+      "validationFailed": 0,
+      "unfinished": 0,
+      "calls": 5,
+      "modelRequests": 5,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 14555,
+      "unknownUsageCalls": 0,
+      "totalTokens": 14555,
+      "medianMs": 12341,
+      "latencyN": 3,
+      "toolRequests": 4,
+      "toolAttempts": 4,
+      "toolOk": 4,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 0,
+      "repairRequests": 0,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.004041984,
+      "reportedEstimateUSD": 0.004041984,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "thinking": {
+            "type": "enabled"
+          }
+        }
+      ],
+      "reportedCompleted": 3,
+      "budgetStopped": 0,
+      "independentGroups": 3,
+      "statuses": {
+        "completed": 3
+      },
+      "mechanicalComplete": {
+        "successes": 3,
+        "n": 3,
+        "rate": 1.0,
+        "low": 0.4385029682449546,
+        "high": 1.0
+      },
+      "mechanicalAmongTerminal": {
+        "successes": 3,
+        "n": 3,
+        "rate": 1.0,
+        "low": 0.4385029682449546,
+        "high": 1.0
+      },
+      "firstSchema": {
+        "successes": 3,
+        "n": 3,
+        "rate": 1.0,
+        "low": 0.4385029682449546,
+        "high": 1.0
+      },
+      "firstDeliverableSchema": {
+        "successes": 3,
+        "n": 3,
+        "rate": 1.0,
+        "low": 0.4385029682449546,
+        "high": 1.0
+      },
+      "finalSchema": {
+        "successes": 3,
+        "n": 3,
+        "rate": 1.0,
+        "low": 0.4385029682449546,
+        "high": 1.0
+      },
+      "repair": {
+        "triggered": 0,
+        "successful": 0,
+        "success": {
+          "successes": 0,
+          "n": 0,
+          "rate": null,
+          "low": null,
+          "high": null
+        }
+      },
+      "p50Ms": 12341.0,
+      "p95Ms": 15382.1,
+      "meanMs": 10899.666666666666,
+      "minMs": 4638,
+      "maxMs": 15720,
+      "missingLatency": 0,
+      "usage": {
+        "total_tokens": {
+          "reportedSum": 14555,
+          "unknownCalls": 0,
+          "total": 14555
+        },
+        "prompt_tokens": {
+          "reportedSum": 8292,
+          "unknownCalls": 0,
+          "total": 8292
+        },
+        "completion_tokens": {
+          "reportedSum": 6263,
+          "unknownCalls": 0,
+          "total": 6263
+        },
+        "prompt_cache_hit_tokens": {
+          "reportedSum": 6528,
+          "unknownCalls": 0,
+          "total": 6528
+        },
+        "prompt_cache_miss_tokens": {
+          "reportedSum": 1764,
+          "unknownCalls": 0,
+          "total": 1764
+        },
+        "reasoning_tokens": {
+          "reportedSum": 4886,
+          "unknownCalls": 0,
+          "total": 4886
+        }
+      },
+      "firstQuotes": {
+        "total": 7,
+        "direct": 7,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 7,
+        "rate": 1.0
+      },
+      "finalQuotes": {
+        "total": 7,
+        "direct": 7,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 7,
+        "rate": 1.0
+      }
+    },
+    {
+      "stage": "test",
+      "split": "independent_test",
+      "arm": "B",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "n": 40,
+      "failed": 1,
+      "technicalFailures": 0,
+      "validationFailed": 1,
+      "unfinished": 0,
+      "calls": 45,
+      "modelRequests": 45,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 188115,
+      "unknownUsageCalls": 0,
+      "totalTokens": 188115,
+      "medianMs": 17853.5,
+      "latencyN": 40,
+      "toolRequests": 0,
+      "toolAttempts": 0,
+      "toolOk": 0,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 5,
+      "repairRequests": 5,
+      "quoteResolutions": 10,
+      "estimatedUSD": 0.09521471999999997,
+      "reportedEstimateUSD": 0.09521471999999997,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      ],
+      "reportedCompleted": 39,
+      "budgetStopped": 0,
+      "independentGroups": 34,
+      "statuses": {
+        "completed": 39,
+        "validation_failed": 1
+      },
+      "mechanicalComplete": {
+        "successes": 39,
+        "n": 40,
+        "rate": 0.975,
+        "low": 0.8711863103652591,
+        "high": 0.9955731684973186
+      },
+      "mechanicalAmongTerminal": {
+        "successes": 39,
+        "n": 40,
+        "rate": 0.975,
+        "low": 0.8711863103652591,
+        "high": 0.9955731684973186
+      },
+      "firstSchema": {
+        "successes": 39,
+        "n": 40,
+        "rate": 0.975,
+        "low": 0.8711863103652591,
+        "high": 0.9955731684973186
+      },
+      "firstDeliverableSchema": {
+        "successes": 39,
+        "n": 40,
+        "rate": 0.975,
+        "low": 0.8711863103652591,
+        "high": 0.9955731684973186
+      },
+      "finalSchema": {
+        "successes": 39,
+        "n": 40,
+        "rate": 0.975,
+        "low": 0.8711863103652591,
+        "high": 0.9955731684973186
+      },
+      "repair": {
+        "triggered": 5,
+        "successful": 4,
+        "success": {
+          "successes": 4,
+          "n": 5,
+          "rate": 0.8,
+          "low": 0.37553462976252533,
+          "high": 0.9637758913675698
+        }
+      },
+      "p50Ms": 17853.5,
+      "p95Ms": 30574.349999999995,
+      "meanMs": 18376,
+      "minMs": 4237,
+      "maxMs": 40898,
+      "missingLatency": 0,
+      "usage": {
+        "total_tokens": {
+          "reportedSum": 188115,
+          "unknownCalls": 0,
+          "total": 188115
+        },
+        "prompt_tokens": {
+          "reportedSum": 36932,
+          "unknownCalls": 0,
+          "total": 36932
+        },
+        "completion_tokens": {
+          "reportedSum": 151183,
+          "unknownCalls": 0,
+          "total": 151183
+        },
+        "prompt_cache_hit_tokens": {
+          "reportedSum": 7040,
+          "unknownCalls": 0,
+          "total": 7040
+        },
+        "prompt_cache_miss_tokens": {
+          "reportedSum": 29892,
+          "unknownCalls": 0,
+          "total": 29892
+        },
+        "reasoning_tokens": {
+          "reportedSum": 125854,
+          "unknownCalls": 5,
+          "total": null
+        }
+      },
+      "firstQuotes": {
+        "total": 152,
+        "direct": 152,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 152,
+        "rate": 1.0
+      },
+      "finalQuotes": {
+        "total": 158,
+        "direct": 148,
+        "resolved": 10,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 158,
+        "rate": 1.0
+      }
+    },
+    {
+      "stage": "test",
+      "split": "independent_test",
+      "arm": "C",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "n": 40,
+      "failed": 1,
+      "technicalFailures": 0,
+      "validationFailed": 1,
+      "unfinished": 0,
+      "calls": 43,
+      "modelRequests": 43,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 176965,
+      "unknownUsageCalls": 0,
+      "totalTokens": 176965,
+      "medianMs": 18345.5,
+      "latencyN": 40,
+      "toolRequests": 6,
+      "toolAttempts": 6,
+      "toolOk": 5,
+      "toolEmpty": 1,
+      "toolRejected": 0,
+      "repairs": 3,
+      "repairRequests": 3,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.08968915199999997,
+      "reportedEstimateUSD": 0.08968915199999997,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      ],
+      "reportedCompleted": 39,
+      "budgetStopped": 0,
+      "independentGroups": 34,
+      "statuses": {
+        "completed": 39,
+        "validation_failed": 1
+      },
+      "mechanicalComplete": {
+        "successes": 39,
+        "n": 40,
+        "rate": 0.975,
+        "low": 0.8711863103652591,
+        "high": 0.9955731684973186
+      },
+      "mechanicalAmongTerminal": {
+        "successes": 39,
+        "n": 40,
+        "rate": 0.975,
+        "low": 0.8711863103652591,
+        "high": 0.9955731684973186
+      },
+      "firstSchema": {
+        "successes": 39,
+        "n": 40,
+        "rate": 0.975,
+        "low": 0.8711863103652591,
+        "high": 0.9955731684973186
+      },
+      "firstDeliverableSchema": {
+        "successes": 39,
+        "n": 40,
+        "rate": 0.975,
+        "low": 0.8711863103652591,
+        "high": 0.9955731684973186
+      },
+      "finalSchema": {
+        "successes": 40,
+        "n": 40,
+        "rate": 1.0,
+        "low": 0.9123783988027135,
+        "high": 1.0
+      },
+      "repair": {
+        "triggered": 3,
+        "successful": 2,
+        "success": {
+          "successes": 2,
+          "n": 3,
+          "rate": 0.6666666666666666,
+          "low": 0.2076596008020477,
+          "high": 0.9385080552796037
+        }
+      },
+      "p50Ms": 18345.5,
+      "p95Ms": 25127.249999999996,
+      "meanMs": 17153.275,
+      "minMs": 3663,
+      "maxMs": 31024,
+      "missingLatency": 0,
+      "usage": {
+        "total_tokens": {
+          "reportedSum": 176965,
+          "unknownCalls": 0,
+          "total": 176965
+        },
+        "prompt_tokens": {
+          "reportedSum": 34428,
+          "unknownCalls": 0,
+          "total": 34428
+        },
+        "completion_tokens": {
+          "reportedSum": 142537,
+          "unknownCalls": 0,
+          "total": 142537
+        },
+        "prompt_cache_hit_tokens": {
+          "reportedSum": 6784,
+          "unknownCalls": 0,
+          "total": 6784
+        },
+        "prompt_cache_miss_tokens": {
+          "reportedSum": 27644,
+          "unknownCalls": 0,
+          "total": 27644
+        },
+        "reasoning_tokens": {
+          "reportedSum": 115558,
+          "unknownCalls": 3,
+          "total": null
+        }
+      },
+      "firstQuotes": {
+        "total": 172,
+        "direct": 171,
+        "resolved": 0,
+        "invalid": 1,
+        "unknown": 0,
+        "matched": 171,
+        "rate": 0.9941860465116279
+      },
+      "finalQuotes": {
+        "total": 174,
+        "direct": 173,
+        "resolved": 0,
+        "invalid": 1,
+        "unknown": 0,
+        "matched": 173,
+        "rate": 0.9942528735632183
+      }
+    },
+    {
+      "stage": "test",
+      "split": "independent_test",
+      "arm": "D",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "n": 40,
+      "failed": 3,
+      "technicalFailures": 0,
+      "validationFailed": 3,
+      "unfinished": 0,
+      "calls": 70,
+      "modelRequests": 70,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 279784,
+      "unknownUsageCalls": 0,
+      "totalTokens": 279784,
+      "medianMs": 18091.5,
+      "latencyN": 40,
+      "toolRequests": 11,
+      "toolAttempts": 11,
+      "toolOk": 11,
+      "toolEmpty": 0,
+      "toolRejected": 0,
+      "repairs": 7,
+      "repairRequests": 7,
+      "quoteResolutions": 0,
+      "estimatedUSD": 0.10707543300000001,
+      "reportedEstimateUSD": 0.10707543300000001,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      ],
+      "reportedCompleted": 37,
+      "budgetStopped": 0,
+      "independentGroups": 34,
+      "statuses": {
+        "completed": 37,
+        "validation_failed": 3
+      },
+      "mechanicalComplete": {
+        "successes": 37,
+        "n": 40,
+        "rate": 0.925,
+        "low": 0.8013576647568946,
+        "high": 0.9741639742254119
+      },
+      "mechanicalAmongTerminal": {
+        "successes": 37,
+        "n": 40,
+        "rate": 0.925,
+        "low": 0.8013576647568946,
+        "high": 0.9741639742254119
+      },
+      "firstSchema": {
+        "successes": 36,
+        "n": 38,
+        "rate": 0.9473684210526315,
+        "low": 0.8271453786822962,
+        "high": 0.9854457918527075
+      },
+      "firstDeliverableSchema": {
+        "successes": 36,
+        "n": 38,
+        "rate": 0.9473684210526315,
+        "low": 0.8271453786822962,
+        "high": 0.9854457918527075
+      },
+      "finalSchema": {
+        "successes": 38,
+        "n": 38,
+        "rate": 1.0,
+        "low": 0.908190131774416,
+        "high": 0.9999999999999999
+      },
+      "repair": {
+        "triggered": 7,
+        "successful": 4,
+        "success": {
+          "successes": 4,
+          "n": 7,
+          "rate": 0.5714285714285714,
+          "low": 0.2504583645276572,
+          "high": 0.8417801447485302
+        }
+      },
+      "p50Ms": 18091.5,
+      "p95Ms": 32653.09999999997,
+      "meanMs": 19541.6,
+      "minMs": 2013,
+      "maxMs": 43222,
+      "missingLatency": 0,
+      "usage": {
+        "total_tokens": {
+          "reportedSum": 279784,
+          "unknownCalls": 0,
+          "total": 279784
+        },
+        "prompt_tokens": {
+          "reportedSum": 116705,
+          "unknownCalls": 0,
+          "total": 116705
+        },
+        "completion_tokens": {
+          "reportedSum": 163079,
+          "unknownCalls": 0,
+          "total": 163079
+        },
+        "prompt_cache_hit_tokens": {
+          "reportedSum": 56311,
+          "unknownCalls": 0,
+          "total": 56311
+        },
+        "prompt_cache_miss_tokens": {
+          "reportedSum": 60394,
+          "unknownCalls": 0,
+          "total": 60394
+        },
+        "reasoning_tokens": {
+          "reportedSum": 133532,
+          "unknownCalls": 7,
+          "total": null
+        }
+      },
+      "firstQuotes": {
+        "total": 156,
+        "direct": 156,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 156,
+        "rate": 1.0
+      },
+      "finalQuotes": {
+        "total": 180,
+        "direct": 180,
+        "resolved": 0,
+        "invalid": 0,
+        "unknown": 0,
+        "matched": 180,
+        "rate": 1.0
+      }
+    },
+    {
+      "stage": "test",
+      "split": "independent_test",
+      "arm": "H",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "n": 40,
+      "failed": 2,
+      "technicalFailures": 0,
+      "validationFailed": 2,
+      "unfinished": 0,
+      "calls": 66,
+      "modelRequests": 66,
+      "unresolvedRequests": 0,
+      "budgetRejectedRequests": 0,
+      "reportedTokens": 250922,
+      "unknownUsageCalls": 0,
+      "totalTokens": 250922,
+      "medianMs": 19310.0,
+      "latencyN": 40,
+      "toolRequests": 10,
+      "toolAttempts": 10,
+      "toolOk": 8,
+      "toolEmpty": 2,
+      "toolRejected": 0,
+      "repairs": 5,
+      "repairRequests": 5,
+      "quoteResolutions": 2,
+      "estimatedUSD": 0.09635396100000003,
+      "reportedEstimateUSD": 0.09635396100000003,
+      "unknownCostCalls": 0,
+      "configurations": [
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "reasoning_effort": "low",
+          "thinking": {
+            "type": "enabled"
+          }
+        },
+        {
+          "max_tokens": 8192,
+          "model": "deepseek-flash",
+          "response_format": {
+            "type": "json_object"
+          },
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      ],
+      "reportedCompleted": 38,
+      "budgetStopped": 0,
+      "independentGroups": 34,
+      "statuses": {
+        "completed": 38,
+        "validation_failed": 2
+      },
+      "mechanicalComplete": {
+        "successes": 38,
+        "n": 40,
+        "rate": 0.95,
+        "low": 0.8349612263085903,
+        "high": 0.9861793326138516
+      },
+      "mechanicalAmongTerminal": {
+        "successes": 38,
+        "n": 40,
+        "rate": 0.95,
+        "low": 0.8349612263085903,
+        "high": 0.9861793326138516
+      },
+      "firstSchema": {
+        "successes": 36,
+        "n": 38,
+        "rate": 0.9473684210526315,
+        "low": 0.8271453786822962,
+        "high": 0.9854457918527075
+      },
+      "firstDeliverableSchema": {
+        "successes": 36,
+        "n": 38,
+        "rate": 0.9473684210526315,
+        "low": 0.8271453786822962,
+        "high": 0.9854457918527075
+      },
+      "finalSchema": {
+        "successes": 37,
+        "n": 38,
+        "rate": 0.9736842105263158,
+        "low": 0.8650512388404787,
+        "high": 0.9953394123142312
+      },
+      "repair": {
+        "triggered": 5,
+        "successful": 3,
+        "success": {
+          "successes": 3,
+          "n": 5,
+          "rate": 0.6,
+          "low": 0.2307242812760128,
+          "high": 0.882379225767352
+        }
+      },
+      "p50Ms": 19310.0,
+      "p95Ms": 28127.699999999993,
+      "meanMs": 17759.95,
+      "minMs": 1457,
+      "maxMs": 47067,
+      "missingLatency": 0,
+      "usage": {
+        "total_tokens": {
+          "reportedSum": 250922,
+          "unknownCalls": 0,
+          "total": 250922
+        },
+        "prompt_tokens": {
+          "reportedSum": 104473,
+          "unknownCalls": 0,
+          "total": 104473
+        },
+        "completion_tokens": {
+          "reportedSum": 146449,
+          "unknownCalls": 0,
+          "total": 146449
+        },
+        "prompt_cache_hit_tokens": {
+          "reportedSum": 48887,
+          "unknownCalls": 0,
+          "total": 48887
+        },
+        "prompt_cache_miss_tokens": {
+          "reportedSum": 55586,
+          "unknownCalls": 0,
+          "total": 55586
+        },
+        "reasoning_tokens": {
+          "reportedSum": 116700,
+          "unknownCalls": 5,
+          "total": null
+        }
+      },
+      "firstQuotes": {
+        "total": 169,
+        "direct": 167,
+        "resolved": 1,
+        "invalid": 1,
+        "unknown": 0,
+        "matched": 168,
+        "rate": 0.9940828402366864
+      },
+      "finalQuotes": {
+        "total": 191,
+        "direct": 189,
+        "resolved": 1,
+        "invalid": 1,
+        "unknown": 0,
+        "matched": 190,
+        "rate": 0.9947643979057592
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "stage": "development",
+      "split": "development",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "left": "B",
+      "right": "C",
+      "n": 40,
+      "independentGroups": 33,
+      "rightWins": 3,
+      "leftWins": 0,
+      "ties": 37,
+      "mechanicalRateDifference": 0.075,
+      "mechanicalClusterCI": {
+        "n": 40,
+        "groups": 33,
+        "estimate": 0.075,
+        "low": 0.0,
+        "high": 0.16666666666666666,
+        "seed": 1729,
+        "iterations": 2000,
+        "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+      },
+      "differences": {
+        "calls": {
+          "n": 40,
+          "mean": -0.05,
+          "median": 0.0
+        },
+        "totalTokens": {
+          "n": 40,
+          "mean": 335,
+          "median": 430.0
+        },
+        "durationMs": {
+          "n": 40,
+          "mean": 1202.925,
+          "median": 2025.5
+        },
+        "estimatedUSD": {
+          "n": 40,
+          "mean": 0.00022074239999999996,
+          "median": 0.00025169999999999983
+        }
+      },
+      "missingLeft": [],
+      "missingRight": [],
+      "incompatibleInputs": [],
+      "pendingCases": []
+    },
+    {
+      "stage": "development",
+      "split": "development",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "left": "B",
+      "right": "D",
+      "n": 40,
+      "independentGroups": 33,
+      "rightWins": 3,
+      "leftWins": 1,
+      "ties": 36,
+      "mechanicalRateDifference": 0.05,
+      "mechanicalClusterCI": {
+        "n": 40,
+        "groups": 33,
+        "estimate": 0.05,
+        "low": -0.044444444444444446,
+        "high": 0.15789473684210525,
+        "seed": 1729,
+        "iterations": 2000,
+        "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+      },
+      "differences": {
+        "calls": {
+          "n": 40,
+          "mean": 0.6,
+          "median": 0.5
+        },
+        "totalTokens": {
+          "n": 40,
+          "mean": 2378.775,
+          "median": 1653.5
+        },
+        "durationMs": {
+          "n": 40,
+          "mean": 1865.05,
+          "median": 1321.0
+        },
+        "estimatedUSD": {
+          "n": 40,
+          "mean": 0.000351028725,
+          "median": 0.0001604460000000001
+        }
+      },
+      "missingLeft": [],
+      "missingRight": [],
+      "incompatibleInputs": [],
+      "pendingCases": []
+    },
+    {
+      "stage": "development",
+      "split": "development",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "left": "B",
+      "right": "H",
+      "n": 40,
+      "independentGroups": 33,
+      "rightWins": 2,
+      "leftWins": 0,
+      "ties": 38,
+      "mechanicalRateDifference": 0.05,
+      "mechanicalClusterCI": {
+        "n": 40,
+        "groups": 33,
+        "estimate": 0.05,
+        "low": 0.0,
+        "high": 0.13157894736842105,
+        "seed": 1729,
+        "iterations": 2000,
+        "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+      },
+      "differences": {
+        "calls": {
+          "n": 40,
+          "mean": 0.65,
+          "median": 1.0
+        },
+        "totalTokens": {
+          "n": 40,
+          "mean": 2805.525,
+          "median": 1595.0
+        },
+        "durationMs": {
+          "n": 40,
+          "mean": 2795.65,
+          "median": 2319.5
+        },
+        "estimatedUSD": {
+          "n": 40,
+          "mean": 0.0005268470249999999,
+          "median": 0.0003944999999999999
+        }
+      },
+      "missingLeft": [],
+      "missingRight": [],
+      "incompatibleInputs": [],
+      "pendingCases": []
+    },
+    {
+      "stage": "development",
+      "split": "development",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "left": "C",
+      "right": "D",
+      "n": 40,
+      "independentGroups": 33,
+      "rightWins": 0,
+      "leftWins": 1,
+      "ties": 39,
+      "mechanicalRateDifference": -0.025,
+      "mechanicalClusterCI": {
+        "n": 40,
+        "groups": 33,
+        "estimate": -0.025,
+        "low": -0.07317073170731707,
+        "high": 0.0,
+        "seed": 1729,
+        "iterations": 2000,
+        "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+      },
+      "differences": {
+        "calls": {
+          "n": 40,
+          "mean": 0.65,
+          "median": 1.0
+        },
+        "totalTokens": {
+          "n": 40,
+          "mean": 2043.775,
+          "median": 1212.0
+        },
+        "durationMs": {
+          "n": 40,
+          "mean": 662.125,
+          "median": 2013.5
+        },
+        "estimatedUSD": {
+          "n": 40,
+          "mean": 0.00013028632500000008,
+          "median": 0.00030592200000000014
+        }
+      },
+      "missingLeft": [],
+      "missingRight": [],
+      "incompatibleInputs": [],
+      "pendingCases": []
+    },
+    {
+      "stage": "development",
+      "split": "development",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "left": "C",
+      "right": "H",
+      "n": 40,
+      "independentGroups": 33,
+      "rightWins": 0,
+      "leftWins": 1,
+      "ties": 39,
+      "mechanicalRateDifference": -0.025,
+      "mechanicalClusterCI": {
+        "n": 40,
+        "groups": 33,
+        "estimate": -0.025,
+        "low": -0.08108108108108109,
+        "high": 0.0,
+        "seed": 1729,
+        "iterations": 2000,
+        "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+      },
+      "differences": {
+        "calls": {
+          "n": 40,
+          "mean": 0.7,
+          "median": 0.5
+        },
+        "totalTokens": {
+          "n": 40,
+          "mean": 2470.525,
+          "median": 1193.5
+        },
+        "durationMs": {
+          "n": 40,
+          "mean": 1592.725,
+          "median": 2576.5
+        },
+        "estimatedUSD": {
+          "n": 40,
+          "mean": 0.00030610462499999996,
+          "median": 0.0004003709999999999
+        }
+      },
+      "missingLeft": [],
+      "missingRight": [],
+      "incompatibleInputs": [],
+      "pendingCases": []
+    },
+    {
+      "stage": "development",
+      "split": "development",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "left": "D",
+      "right": "H",
+      "n": 40,
+      "independentGroups": 33,
+      "rightWins": 1,
+      "leftWins": 1,
+      "ties": 38,
+      "mechanicalRateDifference": 0.0,
+      "mechanicalClusterCI": {
+        "n": 40,
+        "groups": 33,
+        "estimate": 0,
+        "low": -0.075,
+        "high": 0.06666666666666667,
+        "seed": 1729,
+        "iterations": 2000,
+        "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+      },
+      "differences": {
+        "calls": {
+          "n": 40,
+          "mean": 0.05,
+          "median": 0.0
+        },
+        "totalTokens": {
+          "n": 40,
+          "mean": 426.75,
+          "median": 260.5
+        },
+        "durationMs": {
+          "n": 40,
+          "mean": 930.6,
+          "median": -586.5
+        },
+        "estimatedUSD": {
+          "n": 40,
+          "mean": 0.0001758182999999999,
+          "median": -2.311799999999987e-05
+        }
+      },
+      "missingLeft": [],
+      "missingRight": [],
+      "incompatibleInputs": [],
+      "pendingCases": []
+    },
+    {
+      "stage": "rag",
+      "split": "development",
+      "configKey": "f18be4380736a7085665d82429d6a8f0fc2b8606dbcfb513d7d24c2fa5351339",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "left": "classic",
+      "right": "full",
+      "n": 6,
+      "independentGroups": 6,
+      "rightWins": 2,
+      "leftWins": 1,
+      "ties": 3,
+      "mechanicalRateDifference": 0.16666666666666666,
+      "mechanicalClusterCI": {
+        "n": 6,
+        "groups": 6,
+        "estimate": 0.16666666666666666,
+        "low": -0.3333333333333333,
+        "high": 0.6666666666666666,
+        "seed": 1729,
+        "iterations": 2000,
+        "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+      },
+      "differences": {
+        "calls": {
+          "n": 6,
+          "mean": 0,
+          "median": 0.0
+        },
+        "totalTokens": {
+          "n": 6,
+          "mean": 2367.3333333333335,
+          "median": 2047.0
+        },
+        "durationMs": {
+          "n": 6,
+          "mean": 7900,
+          "median": 7041.5
+        },
+        "estimatedUSD": {
+          "n": 6,
+          "mean": 0.0012539254999999999,
+          "median": 0.0010725269999999998
+        }
+      },
+      "missingLeft": [],
+      "missingRight": [],
+      "incompatibleInputs": [],
+      "pendingCases": []
+    },
+    {
+      "stage": "rag",
+      "split": "development",
+      "configKey": "f18be4380736a7085665d82429d6a8f0fc2b8606dbcfb513d7d24c2fa5351339",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "left": "classic",
+      "right": "memory",
+      "n": 6,
+      "independentGroups": 6,
+      "rightWins": 3,
+      "leftWins": 0,
+      "ties": 3,
+      "mechanicalRateDifference": 0.5,
+      "mechanicalClusterCI": {
+        "n": 6,
+        "groups": 6,
+        "estimate": 0.5,
+        "low": 0.16666666666666666,
+        "high": 0.8333333333333334,
+        "seed": 1729,
+        "iterations": 2000,
+        "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+      },
+      "differences": {
+        "calls": {
+          "n": 6,
+          "mean": 0,
+          "median": 0.0
+        },
+        "totalTokens": {
+          "n": 6,
+          "mean": 228.66666666666666,
+          "median": -220.5
+        },
+        "durationMs": {
+          "n": 6,
+          "mean": 3113,
+          "median": 1462.0
+        },
+        "estimatedUSD": {
+          "n": 6,
+          "mean": 0.0002046299999999999,
+          "median": -1.425900000000019e-05
+        }
+      },
+      "missingLeft": [],
+      "missingRight": [],
+      "incompatibleInputs": [],
+      "pendingCases": []
+    },
+    {
+      "stage": "rag",
+      "split": "development",
+      "configKey": "f18be4380736a7085665d82429d6a8f0fc2b8606dbcfb513d7d24c2fa5351339",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "left": "full",
+      "right": "memory",
+      "n": 6,
+      "independentGroups": 6,
+      "rightWins": 2,
+      "leftWins": 0,
+      "ties": 4,
+      "mechanicalRateDifference": 0.3333333333333333,
+      "mechanicalClusterCI": {
+        "n": 6,
+        "groups": 6,
+        "estimate": 0.3333333333333333,
+        "low": 0.0,
+        "high": 0.6666666666666666,
+        "seed": 1729,
+        "iterations": 2000,
+        "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+      },
+      "differences": {
+        "calls": {
+          "n": 6,
+          "mean": 0,
+          "median": 0.0
+        },
+        "totalTokens": {
+          "n": 6,
+          "mean": -2138.6666666666665,
+          "median": -2562.5
+        },
+        "durationMs": {
+          "n": 6,
+          "mean": -4787,
+          "median": -6224.5
+        },
+        "estimatedUSD": {
+          "n": 6,
+          "mean": -0.0010492955,
+          "median": -0.0012343950000000001
+        }
+      },
+      "missingLeft": [],
+      "missingRight": [],
+      "incompatibleInputs": [],
+      "pendingCases": []
+    },
+    {
+      "stage": "rag",
+      "split": "independent_test",
+      "configKey": "f18be4380736a7085665d82429d6a8f0fc2b8606dbcfb513d7d24c2fa5351339",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "left": "classic",
+      "right": "full",
+      "n": 6,
+      "independentGroups": 6,
+      "rightWins": 3,
+      "leftWins": 2,
+      "ties": 1,
+      "mechanicalRateDifference": 0.16666666666666666,
+      "mechanicalClusterCI": {
+        "n": 6,
+        "groups": 6,
+        "estimate": 0.16666666666666666,
+        "low": -0.5,
+        "high": 0.8333333333333334,
+        "seed": 1729,
+        "iterations": 2000,
+        "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+      },
+      "differences": {
+        "calls": {
+          "n": 6,
+          "mean": 0,
+          "median": 0.0
+        },
+        "totalTokens": {
+          "n": 6,
+          "mean": 2192.3333333333335,
+          "median": 2849.5
+        },
+        "durationMs": {
+          "n": 6,
+          "mean": 7108.833333333333,
+          "median": 9292.0
+        },
+        "estimatedUSD": {
+          "n": 6,
+          "mean": 0.001132516,
+          "median": 0.001536702
+        }
+      },
+      "missingLeft": [],
+      "missingRight": [],
+      "incompatibleInputs": [],
+      "pendingCases": []
+    },
+    {
+      "stage": "rag",
+      "split": "independent_test",
+      "configKey": "f18be4380736a7085665d82429d6a8f0fc2b8606dbcfb513d7d24c2fa5351339",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "left": "classic",
+      "right": "memory",
+      "n": 6,
+      "independentGroups": 6,
+      "rightWins": 3,
+      "leftWins": 0,
+      "ties": 3,
+      "mechanicalRateDifference": 0.5,
+      "mechanicalClusterCI": {
+        "n": 6,
+        "groups": 6,
+        "estimate": 0.5,
+        "low": 0.16666666666666666,
+        "high": 0.8333333333333334,
+        "seed": 1729,
+        "iterations": 2000,
+        "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+      },
+      "differences": {
+        "calls": {
+          "n": 6,
+          "mean": 0,
+          "median": 0.0
+        },
+        "totalTokens": {
+          "n": 6,
+          "mean": -37.166666666666664,
+          "median": -159.0
+        },
+        "durationMs": {
+          "n": 6,
+          "mean": 2516,
+          "median": 302.5
+        },
+        "estimatedUSD": {
+          "n": 6,
+          "mean": 4.4393999999999934e-05,
+          "median": -5.2241999999999924e-05
+        }
+      },
+      "missingLeft": [],
+      "missingRight": [],
+      "incompatibleInputs": [],
+      "pendingCases": []
+    },
+    {
+      "stage": "rag",
+      "split": "independent_test",
+      "configKey": "f18be4380736a7085665d82429d6a8f0fc2b8606dbcfb513d7d24c2fa5351339",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "left": "full",
+      "right": "memory",
+      "n": 6,
+      "independentGroups": 6,
+      "rightWins": 2,
+      "leftWins": 0,
+      "ties": 4,
+      "mechanicalRateDifference": 0.3333333333333333,
+      "mechanicalClusterCI": {
+        "n": 6,
+        "groups": 6,
+        "estimate": 0.3333333333333333,
+        "low": 0.0,
+        "high": 0.6666666666666666,
+        "seed": 1729,
+        "iterations": 2000,
+        "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+      },
+      "differences": {
+        "calls": {
+          "n": 6,
+          "mean": 0,
+          "median": 0.0
+        },
+        "totalTokens": {
+          "n": 6,
+          "mean": -2229.5,
+          "median": -2241.5
+        },
+        "durationMs": {
+          "n": 6,
+          "mean": -4592.833333333333,
+          "median": -6922.5
+        },
+        "estimatedUSD": {
+          "n": 6,
+          "mean": -0.001088122,
+          "median": -0.0012143429999999999
+        }
+      },
+      "missingLeft": [],
+      "missingRight": [],
+      "incompatibleInputs": [],
+      "pendingCases": []
+    },
+    {
+      "stage": "test",
+      "split": "independent_test",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "left": "B",
+      "right": "C",
+      "n": 40,
+      "independentGroups": 34,
+      "rightWins": 1,
+      "leftWins": 1,
+      "ties": 38,
+      "mechanicalRateDifference": 0.0,
+      "mechanicalClusterCI": {
+        "n": 40,
+        "groups": 34,
+        "estimate": 0,
+        "low": -0.06670454545454545,
+        "high": 0.07894736842105263,
+        "seed": 1729,
+        "iterations": 2000,
+        "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+      },
+      "differences": {
+        "calls": {
+          "n": 40,
+          "mean": -0.05,
+          "median": 0.0
+        },
+        "totalTokens": {
+          "n": 40,
+          "mean": -278.75,
+          "median": 65.5
+        },
+        "durationMs": {
+          "n": 40,
+          "mean": -1222.725,
+          "median": 72.5
+        },
+        "estimatedUSD": {
+          "n": 40,
+          "mean": -0.00013813919999999997,
+          "median": -1.2900000000000043e-05
+        }
+      },
+      "missingLeft": [],
+      "missingRight": [],
+      "incompatibleInputs": [],
+      "pendingCases": []
+    },
+    {
+      "stage": "test",
+      "split": "independent_test",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "left": "B",
+      "right": "D",
+      "n": 40,
+      "independentGroups": 34,
+      "rightWins": 0,
+      "leftWins": 2,
+      "ties": 38,
+      "mechanicalRateDifference": -0.05,
+      "mechanicalClusterCI": {
+        "n": 40,
+        "groups": 34,
+        "estimate": -0.05,
+        "low": -0.13166785206258888,
+        "high": 0.0,
+        "seed": 1729,
+        "iterations": 2000,
+        "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+      },
+      "differences": {
+        "calls": {
+          "n": 40,
+          "mean": 0.625,
+          "median": 0.0
+        },
+        "totalTokens": {
+          "n": 40,
+          "mean": 2291.725,
+          "median": 1725.0
+        },
+        "durationMs": {
+          "n": 40,
+          "mean": 1165.6,
+          "median": 2719.0
+        },
+        "estimatedUSD": {
+          "n": 40,
+          "mean": 0.000296517825,
+          "median": 0.0004836959999999998
+        }
+      },
+      "missingLeft": [],
+      "missingRight": [],
+      "incompatibleInputs": [],
+      "pendingCases": []
+    },
+    {
+      "stage": "test",
+      "split": "independent_test",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "left": "B",
+      "right": "H",
+      "n": 40,
+      "independentGroups": 34,
+      "rightWins": 1,
+      "leftWins": 2,
+      "ties": 37,
+      "mechanicalRateDifference": -0.025,
+      "mechanicalClusterCI": {
+        "n": 40,
+        "groups": 34,
+        "estimate": -0.025,
+        "low": -0.10869565217391304,
+        "high": 0.05555555555555555,
+        "seed": 1729,
+        "iterations": 2000,
+        "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+      },
+      "differences": {
+        "calls": {
+          "n": 40,
+          "mean": 0.525,
+          "median": 0.0
+        },
+        "totalTokens": {
+          "n": 40,
+          "mean": 1570.175,
+          "median": 1619.5
+        },
+        "durationMs": {
+          "n": 40,
+          "mean": -616.05,
+          "median": 60.5
+        },
+        "estimatedUSD": {
+          "n": 40,
+          "mean": 2.848102499999999e-05,
+          "median": -8.489999999999998e-05
+        }
+      },
+      "missingLeft": [],
+      "missingRight": [],
+      "incompatibleInputs": [],
+      "pendingCases": []
+    },
+    {
+      "stage": "test",
+      "split": "independent_test",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "left": "C",
+      "right": "D",
+      "n": 40,
+      "independentGroups": 34,
+      "rightWins": 1,
+      "leftWins": 3,
+      "ties": 36,
+      "mechanicalRateDifference": -0.05,
+      "mechanicalClusterCI": {
+        "n": 40,
+        "groups": 34,
+        "estimate": -0.05,
+        "low": -0.15789473684210525,
+        "high": 0.044444444444444446,
+        "seed": 1729,
+        "iterations": 2000,
+        "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+      },
+      "differences": {
+        "calls": {
+          "n": 40,
+          "mean": 0.675,
+          "median": 0.5
+        },
+        "totalTokens": {
+          "n": 40,
+          "mean": 2570.475,
+          "median": 1661.5
+        },
+        "durationMs": {
+          "n": 40,
+          "mean": 2388.325,
+          "median": 1388.5
+        },
+        "estimatedUSD": {
+          "n": 40,
+          "mean": 0.000434657025,
+          "median": 0.00019922399999999977
+        }
+      },
+      "missingLeft": [],
+      "missingRight": [],
+      "incompatibleInputs": [],
+      "pendingCases": []
+    },
+    {
+      "stage": "test",
+      "split": "independent_test",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "left": "C",
+      "right": "H",
+      "n": 40,
+      "independentGroups": 34,
+      "rightWins": 1,
+      "leftWins": 2,
+      "ties": 37,
+      "mechanicalRateDifference": -0.025,
+      "mechanicalClusterCI": {
+        "n": 40,
+        "groups": 34,
+        "estimate": -0.025,
+        "low": -0.08333333333333333,
+        "high": 0.0,
+        "seed": 1729,
+        "iterations": 2000,
+        "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+      },
+      "differences": {
+        "calls": {
+          "n": 40,
+          "mean": 0.575,
+          "median": 0.0
+        },
+        "totalTokens": {
+          "n": 40,
+          "mean": 1848.925,
+          "median": 1877.0
+        },
+        "durationMs": {
+          "n": 40,
+          "mean": 606.675,
+          "median": 604.5
+        },
+        "estimatedUSD": {
+          "n": 40,
+          "mean": 0.00016662022499999997,
+          "median": 6.79350000000003e-05
+        }
+      },
+      "missingLeft": [],
+      "missingRight": [],
+      "incompatibleInputs": [],
+      "pendingCases": []
+    },
+    {
+      "stage": "test",
+      "split": "independent_test",
+      "configKey": "35bf0e687c4edf869e604cd635e66bf829c94b9be27927a2c279ba3a3943c51c",
+      "graphVersion": "python-graph-v16",
+      "promptVersion": "evidence-agent-python-v16",
+      "left": "D",
+      "right": "H",
+      "n": 40,
+      "independentGroups": 34,
+      "rightWins": 3,
+      "leftWins": 2,
+      "ties": 35,
+      "mechanicalRateDifference": 0.025,
+      "mechanicalClusterCI": {
+        "n": 40,
+        "groups": 34,
+        "estimate": 0.025,
+        "low": -0.07900071123755334,
+        "high": 0.1388888888888889,
+        "seed": 1729,
+        "iterations": 2000,
+        "method": "Paired right-minus-left deltas; resample groupId with replacement, retain all observations per selected group."
+      },
+      "differences": {
+        "calls": {
+          "n": 40,
+          "mean": -0.1,
+          "median": 0.0
+        },
+        "totalTokens": {
+          "n": 40,
+          "mean": -721.55,
+          "median": -242.5
+        },
+        "durationMs": {
+          "n": 40,
+          "mean": -1781.65,
+          "median": -168.5
+        },
+        "estimatedUSD": {
+          "n": 40,
+          "mean": -0.0002680368,
+          "median": -4.949999999999985e-05
+        }
+      },
+      "missingLeft": [],
+      "missingRight": [],
+      "incompatibleInputs": [],
+      "pendingCases": []
+    }
+  ],
+  "accounting": {
+    "calls": 514,
+    "requests": 514,
+    "unknownDispatch": 0,
+    "reportedTokens": 1983982,
+    "unknownUsageCalls": 0,
+    "usage": {
+      "total_tokens": {
+        "reportedSum": 1983982,
+        "unknownCalls": 0,
+        "total": 1983982
+      },
+      "prompt_tokens": {
+        "reportedSum": 673044,
+        "unknownCalls": 0,
+        "total": 673044
+      },
+      "completion_tokens": {
+        "reportedSum": 1310938,
+        "unknownCalls": 0,
+        "total": 1310938
+      },
+      "prompt_cache_hit_tokens": {
+        "reportedSum": 277349,
+        "unknownCalls": 0,
+        "total": 277349
+      },
+      "prompt_cache_miss_tokens": {
+        "reportedSum": 395695,
+        "unknownCalls": 0,
+        "total": 395695
+      },
+      "reasoning_tokens": {
+        "reportedSum": 1064018,
+        "unknownCalls": 39,
+        "total": null
+      }
+    }
+  },
+  "ledger": {
+    "recorded": {
+      "calls": 514,
+      "reportedTokens": 1983982,
+      "accountedTokens": 1983982,
+      "missingUsageCalls": 0,
+      "maxCalls": 800,
+      "maxTokens": 5000000
+    },
+    "comparisons": {
+      "calls": {
+        "recorded": 514,
+        "recomputed": 514,
+        "match": true
+      },
+      "reportedTokens": {
+        "recorded": 1983982,
+        "recomputed": 1983982,
+        "match": true
+      },
+      "missingUsageCalls": {
+        "recorded": 0,
+        "recomputed": 0,
+        "match": true
+      },
+      "accountedTokens": {
+        "recorded": 1983982,
+        "recomputed": 1983982,
+        "match": true
+      }
+    },
+    "consistent": true
+  },
+  "cost": {
+    "currency": "USD",
+    "estimatedUSD": 0.8467490970000001,
+    "reportedEstimateUSD": 0.8467490970000001,
+    "unknownCalls": 0,
+    "priceTable": "/home/ubuntu/bl/workspace/AI--main/evaluation/reports/formal-20261010/price_table.json",
+    "priceTableSha256": "b718c8af9d24b74d8138c075d28cca0c525b3d2a18281bcc56aa99b34b27be10",
+    "observedDate": "2026-10-10",
+    "limitation": "Same-day weekend list-price estimate, not a bill. Other dates or missing cache components remain unknown. Reasoning is included in completion; never charged twice."
+  },
+  "integrityIssues": [],
+  "definitions": {
+    "mechanical": "Completed row with schema-valid answer, trace and no final validation errors. Pending cells remain in planned denominator.",
+    "schema": "Pydantic structure only; parseable length-truncated JSON can be schema-valid but not deliverable. No-response cells are N/A, separately retained as incomplete.",
+    "quotes": "Known ID and source text match (including logged deterministic source-span restoration), not semantic entailment.",
+    "repair": "Actually budget-counted repair calls; successful means final mechanical completion, not semantic correctness.",
+    "latency": "End-to-end recorded cell duration; all recorded outcomes, including failures. P50/P95 linear interpolation at (n-1)*p.",
+    "intervals": "95% Wilson describes input rounds only. Paired deltas additionally use whole-groupId cluster bootstrap (seed 1729, 2000 resamples); fewer than two groups has no interval. Neither quotes nor related turns are treated as independent groups.",
+    "pairing": "Same stage/split/config/version/case/input hash; terminal outcomes only. Right minus left. Continuous self-generated histories excluded.",
+    "scopes": "No pooled production success rate across stages or arms. Accounting total alone spans all recorded experiments."
+  }
+}

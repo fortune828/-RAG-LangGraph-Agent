@@ -1,0 +1,2198 @@
+[
+  {
+    "split": "development",
+    "arm": "R1",
+    "k": 1,
+    "queryType": "explicit_metadata",
+    "cases": 12,
+    "eligibleCases": 12,
+    "hit": {
+      "numerator": 6,
+      "denominator": 12,
+      "value": 0.5
+    },
+    "groupCoverage": {
+      "numerator": 6,
+      "denominator": 18,
+      "value": 0.3333333333333333
+    },
+    "allGroupsCovered": {
+      "numerator": 1,
+      "denominator": 12,
+      "value": 0.08333333333333333
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 12,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 12,
+      "micro": {
+        "numerator": 6,
+        "denominator": 23,
+        "value": 0.2608695652173913
+      },
+      "macro": 0.2361111111111111
+    },
+    "precisionAtK": {
+      "knownCases": 6,
+      "unknownCases": 6,
+      "meanAmongKnown": 1.0
+    },
+    "precisionBounds": {
+      "meanLower": 0.5,
+      "meanUpper": 1.0
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.15722867101430893,
+      "p95": 0.31181517988443375,
+      "samples": [
+        0.12967176735401154,
+        0.1425938680768013,
+        0.1531662419438362,
+        0.15445146709680557,
+        0.15601515769958496,
+        0.15639141201972961,
+        0.15806593000888824,
+        0.15846360474824905,
+        0.16025640070438385,
+        0.1889839768409729,
+        0.21072477102279663,
+        0.31181517988443375
+      ]
+    }
+  },
+  {
+    "split": "development",
+    "arm": "R1",
+    "k": 1,
+    "queryType": "fuzzy_or_missing",
+    "cases": 4,
+    "eligibleCases": 2,
+    "hit": {
+      "numerator": 1,
+      "denominator": 2,
+      "value": 0.5
+    },
+    "groupCoverage": {
+      "numerator": 1,
+      "denominator": 3,
+      "value": 0.3333333333333333
+    },
+    "allGroupsCovered": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 0,
+      "micro": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "macro": null
+    },
+    "precisionAtK": {
+      "knownCases": 1,
+      "unknownCases": 1,
+      "meanAmongKnown": 1.0
+    },
+    "precisionBounds": {
+      "meanLower": 0.5,
+      "meanUpper": 1.0
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.6988029927015305,
+      "p95": 1.3373717665672302,
+      "samples": [
+        0.12356974184513092,
+        0.17151329666376114,
+        1.2260926887392998,
+        1.3373717665672302
+      ]
+    }
+  },
+  {
+    "split": "development",
+    "arm": "R1",
+    "k": 3,
+    "queryType": "explicit_metadata",
+    "cases": 12,
+    "eligibleCases": 12,
+    "hit": {
+      "numerator": 10,
+      "denominator": 12,
+      "value": 0.8333333333333334
+    },
+    "groupCoverage": {
+      "numerator": 14,
+      "denominator": 18,
+      "value": 0.7777777777777778
+    },
+    "allGroupsCovered": {
+      "numerator": 9,
+      "denominator": 12,
+      "value": 0.75
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 12,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 12,
+      "micro": {
+        "numerator": 15,
+        "denominator": 23,
+        "value": 0.6521739130434783
+      },
+      "macro": 0.7013888888888888
+    },
+    "precisionAtK": {
+      "knownCases": 1,
+      "unknownCases": 11,
+      "meanAmongKnown": 1.0
+    },
+    "precisionBounds": {
+      "meanLower": 0.41666666666666663,
+      "meanUpper": 0.9444444444444444
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.15722867101430893,
+      "p95": 0.31181517988443375,
+      "samples": [
+        0.12967176735401154,
+        0.1425938680768013,
+        0.1531662419438362,
+        0.15445146709680557,
+        0.15601515769958496,
+        0.15639141201972961,
+        0.15806593000888824,
+        0.15846360474824905,
+        0.16025640070438385,
+        0.1889839768409729,
+        0.21072477102279663,
+        0.31181517988443375
+      ]
+    }
+  },
+  {
+    "split": "development",
+    "arm": "R1",
+    "k": 3,
+    "queryType": "fuzzy_or_missing",
+    "cases": 4,
+    "eligibleCases": 2,
+    "hit": {
+      "numerator": 1,
+      "denominator": 2,
+      "value": 0.5
+    },
+    "groupCoverage": {
+      "numerator": 2,
+      "denominator": 3,
+      "value": 0.6666666666666666
+    },
+    "allGroupsCovered": {
+      "numerator": 1,
+      "denominator": 2,
+      "value": 0.5
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 0,
+      "micro": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "macro": null
+    },
+    "precisionAtK": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "meanAmongKnown": null
+    },
+    "precisionBounds": {
+      "meanLower": 0.3333333333333333,
+      "meanUpper": 1.0
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.6988029927015305,
+      "p95": 1.3373717665672302,
+      "samples": [
+        0.12356974184513092,
+        0.17151329666376114,
+        1.2260926887392998,
+        1.3373717665672302
+      ]
+    }
+  },
+  {
+    "split": "development",
+    "arm": "R1",
+    "k": 5,
+    "queryType": "explicit_metadata",
+    "cases": 12,
+    "eligibleCases": 12,
+    "hit": {
+      "numerator": 11,
+      "denominator": 12,
+      "value": 0.9166666666666666
+    },
+    "groupCoverage": {
+      "numerator": 15,
+      "denominator": 18,
+      "value": 0.8333333333333334
+    },
+    "allGroupsCovered": {
+      "numerator": 9,
+      "denominator": 12,
+      "value": 0.75
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 12,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 12,
+      "micro": {
+        "numerator": 18,
+        "denominator": 23,
+        "value": 0.782608695652174
+      },
+      "macro": 0.7916666666666666
+    },
+    "precisionAtK": {
+      "knownCases": 1,
+      "unknownCases": 11,
+      "meanAmongKnown": 0.6
+    },
+    "precisionBounds": {
+      "meanLower": 0.3,
+      "meanUpper": 0.7
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.15722867101430893,
+      "p95": 0.31181517988443375,
+      "samples": [
+        0.12967176735401154,
+        0.1425938680768013,
+        0.1531662419438362,
+        0.15445146709680557,
+        0.15601515769958496,
+        0.15639141201972961,
+        0.15806593000888824,
+        0.15846360474824905,
+        0.16025640070438385,
+        0.1889839768409729,
+        0.21072477102279663,
+        0.31181517988443375
+      ]
+    }
+  },
+  {
+    "split": "development",
+    "arm": "R1",
+    "k": 5,
+    "queryType": "fuzzy_or_missing",
+    "cases": 4,
+    "eligibleCases": 2,
+    "hit": {
+      "numerator": 2,
+      "denominator": 2,
+      "value": 1.0
+    },
+    "groupCoverage": {
+      "numerator": 3,
+      "denominator": 3,
+      "value": 1.0
+    },
+    "allGroupsCovered": {
+      "numerator": 2,
+      "denominator": 2,
+      "value": 1.0
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 0,
+      "micro": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "macro": null
+    },
+    "precisionAtK": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "meanAmongKnown": null
+    },
+    "precisionBounds": {
+      "meanLower": 0.30000000000000004,
+      "meanUpper": 0.9
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.6988029927015305,
+      "p95": 1.3373717665672302,
+      "samples": [
+        0.12356974184513092,
+        0.17151329666376114,
+        1.2260926887392998,
+        1.3373717665672302
+      ]
+    }
+  },
+  {
+    "split": "development",
+    "arm": "R2",
+    "k": 1,
+    "queryType": "explicit_metadata",
+    "cases": 12,
+    "eligibleCases": 12,
+    "hit": {
+      "numerator": 3,
+      "denominator": 12,
+      "value": 0.25
+    },
+    "groupCoverage": {
+      "numerator": 3,
+      "denominator": 18,
+      "value": 0.16666666666666666
+    },
+    "allGroupsCovered": {
+      "numerator": 0,
+      "denominator": 12,
+      "value": 0.0
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 12,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 12,
+      "micro": {
+        "numerator": 3,
+        "denominator": 23,
+        "value": 0.13043478260869565
+      },
+      "macro": 0.06944444444444445
+    },
+    "precisionAtK": {
+      "knownCases": 3,
+      "unknownCases": 9,
+      "meanAmongKnown": 1.0
+    },
+    "precisionBounds": {
+      "meanLower": 0.25,
+      "meanUpper": 1.0
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.17098942771553993,
+      "p95": 0.4481440410017967,
+      "samples": [
+        0.12695323675870895,
+        0.13830792158842087,
+        0.14713779091835022,
+        0.15084445476531982,
+        0.16690045595169067,
+        0.16934331506490707,
+        0.1726355403661728,
+        0.18588174134492874,
+        0.18830131739377975,
+        0.3672223538160324,
+        0.40236208587884903,
+        0.4481440410017967
+      ]
+    }
+  },
+  {
+    "split": "development",
+    "arm": "R2",
+    "k": 1,
+    "queryType": "fuzzy_or_missing",
+    "cases": 4,
+    "eligibleCases": 2,
+    "hit": {
+      "numerator": 1,
+      "denominator": 2,
+      "value": 0.5
+    },
+    "groupCoverage": {
+      "numerator": 1,
+      "denominator": 3,
+      "value": 0.3333333333333333
+    },
+    "allGroupsCovered": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 0,
+      "micro": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "macro": null
+    },
+    "precisionAtK": {
+      "knownCases": 1,
+      "unknownCases": 1,
+      "meanAmongKnown": 1.0
+    },
+    "precisionBounds": {
+      "meanLower": 0.5,
+      "meanUpper": 1.0
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 1.2694187462329865,
+      "p95": 11.587931774556637,
+      "samples": [
+        0.16101915389299393,
+        0.16534607857465744,
+        2.3734914138913155,
+        11.587931774556637
+      ]
+    }
+  },
+  {
+    "split": "development",
+    "arm": "R2",
+    "k": 3,
+    "queryType": "explicit_metadata",
+    "cases": 12,
+    "eligibleCases": 12,
+    "hit": {
+      "numerator": 9,
+      "denominator": 12,
+      "value": 0.75
+    },
+    "groupCoverage": {
+      "numerator": 13,
+      "denominator": 18,
+      "value": 0.7222222222222222
+    },
+    "allGroupsCovered": {
+      "numerator": 8,
+      "denominator": 12,
+      "value": 0.6666666666666666
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 12,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 12,
+      "micro": {
+        "numerator": 14,
+        "denominator": 23,
+        "value": 0.6086956521739131
+      },
+      "macro": 0.6180555555555556
+    },
+    "precisionAtK": {
+      "knownCases": 1,
+      "unknownCases": 11,
+      "meanAmongKnown": 1.0
+    },
+    "precisionBounds": {
+      "meanLower": 0.3888888888888889,
+      "meanUpper": 0.9444444444444444
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.17098942771553993,
+      "p95": 0.4481440410017967,
+      "samples": [
+        0.12695323675870895,
+        0.13830792158842087,
+        0.14713779091835022,
+        0.15084445476531982,
+        0.16690045595169067,
+        0.16934331506490707,
+        0.1726355403661728,
+        0.18588174134492874,
+        0.18830131739377975,
+        0.3672223538160324,
+        0.40236208587884903,
+        0.4481440410017967
+      ]
+    }
+  },
+  {
+    "split": "development",
+    "arm": "R2",
+    "k": 3,
+    "queryType": "fuzzy_or_missing",
+    "cases": 4,
+    "eligibleCases": 2,
+    "hit": {
+      "numerator": 2,
+      "denominator": 2,
+      "value": 1.0
+    },
+    "groupCoverage": {
+      "numerator": 3,
+      "denominator": 3,
+      "value": 1.0
+    },
+    "allGroupsCovered": {
+      "numerator": 2,
+      "denominator": 2,
+      "value": 1.0
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 0,
+      "micro": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "macro": null
+    },
+    "precisionAtK": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "meanAmongKnown": null
+    },
+    "precisionBounds": {
+      "meanLower": 0.5,
+      "meanUpper": 1.0
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 1.2694187462329865,
+      "p95": 11.587931774556637,
+      "samples": [
+        0.16101915389299393,
+        0.16534607857465744,
+        2.3734914138913155,
+        11.587931774556637
+      ]
+    }
+  },
+  {
+    "split": "development",
+    "arm": "R2",
+    "k": 5,
+    "queryType": "explicit_metadata",
+    "cases": 12,
+    "eligibleCases": 12,
+    "hit": {
+      "numerator": 11,
+      "denominator": 12,
+      "value": 0.9166666666666666
+    },
+    "groupCoverage": {
+      "numerator": 15,
+      "denominator": 18,
+      "value": 0.8333333333333334
+    },
+    "allGroupsCovered": {
+      "numerator": 9,
+      "denominator": 12,
+      "value": 0.75
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 12,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 12,
+      "micro": {
+        "numerator": 18,
+        "denominator": 23,
+        "value": 0.782608695652174
+      },
+      "macro": 0.7916666666666666
+    },
+    "precisionAtK": {
+      "knownCases": 1,
+      "unknownCases": 11,
+      "meanAmongKnown": 0.6
+    },
+    "precisionBounds": {
+      "meanLower": 0.3,
+      "meanUpper": 0.7
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.17098942771553993,
+      "p95": 0.4481440410017967,
+      "samples": [
+        0.12695323675870895,
+        0.13830792158842087,
+        0.14713779091835022,
+        0.15084445476531982,
+        0.16690045595169067,
+        0.16934331506490707,
+        0.1726355403661728,
+        0.18588174134492874,
+        0.18830131739377975,
+        0.3672223538160324,
+        0.40236208587884903,
+        0.4481440410017967
+      ]
+    }
+  },
+  {
+    "split": "development",
+    "arm": "R2",
+    "k": 5,
+    "queryType": "fuzzy_or_missing",
+    "cases": 4,
+    "eligibleCases": 2,
+    "hit": {
+      "numerator": 2,
+      "denominator": 2,
+      "value": 1.0
+    },
+    "groupCoverage": {
+      "numerator": 3,
+      "denominator": 3,
+      "value": 1.0
+    },
+    "allGroupsCovered": {
+      "numerator": 2,
+      "denominator": 2,
+      "value": 1.0
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 0,
+      "micro": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "macro": null
+    },
+    "precisionAtK": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "meanAmongKnown": null
+    },
+    "precisionBounds": {
+      "meanLower": 0.30000000000000004,
+      "meanUpper": 0.9
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 1.2694187462329865,
+      "p95": 11.587931774556637,
+      "samples": [
+        0.16101915389299393,
+        0.16534607857465744,
+        2.3734914138913155,
+        11.587931774556637
+      ]
+    }
+  },
+  {
+    "split": "development",
+    "arm": "R3",
+    "k": 1,
+    "queryType": "explicit_metadata",
+    "cases": 12,
+    "eligibleCases": 12,
+    "hit": {
+      "numerator": 11,
+      "denominator": 12,
+      "value": 0.9166666666666666
+    },
+    "groupCoverage": {
+      "numerator": 11,
+      "denominator": 18,
+      "value": 0.6111111111111112
+    },
+    "allGroupsCovered": {
+      "numerator": 5,
+      "denominator": 12,
+      "value": 0.4166666666666667
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 12,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 12,
+      "micro": {
+        "numerator": 11,
+        "denominator": 23,
+        "value": 0.4782608695652174
+      },
+      "macro": 0.6111111111111112
+    },
+    "precisionAtK": {
+      "knownCases": 12,
+      "unknownCases": 0,
+      "meanAmongKnown": 0.9166666666666666
+    },
+    "precisionBounds": {
+      "meanLower": 0.9166666666666666,
+      "meanUpper": 0.9166666666666666
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.15439558774232864,
+      "p95": 0.280953012406826,
+      "samples": [
+        0.14268513768911362,
+        0.14398526400327682,
+        0.14435779303312302,
+        0.14668237417936325,
+        0.14671217650175095,
+        0.15364401042461395,
+        0.15514716506004333,
+        0.16540102660655975,
+        0.18083024770021439,
+        0.1823119819164276,
+        0.1856209710240364,
+        0.280953012406826
+      ]
+    }
+  },
+  {
+    "split": "development",
+    "arm": "R3",
+    "k": 1,
+    "queryType": "fuzzy_or_missing",
+    "cases": 4,
+    "eligibleCases": 2,
+    "hit": {
+      "numerator": 1,
+      "denominator": 2,
+      "value": 0.5
+    },
+    "groupCoverage": {
+      "numerator": 1,
+      "denominator": 3,
+      "value": 0.3333333333333333
+    },
+    "allGroupsCovered": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 0,
+      "micro": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "macro": null
+    },
+    "precisionAtK": {
+      "knownCases": 1,
+      "unknownCases": 1,
+      "meanAmongKnown": 1.0
+    },
+    "precisionBounds": {
+      "meanLower": 0.5,
+      "meanUpper": 1.0
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.5134465172886848,
+      "p95": 12.427316047251225,
+      "samples": [
+        0.10339263826608658,
+        0.13303570449352264,
+        0.893857330083847,
+        12.427316047251225
+      ]
+    }
+  },
+  {
+    "split": "development",
+    "arm": "R3",
+    "k": 3,
+    "queryType": "explicit_metadata",
+    "cases": 12,
+    "eligibleCases": 12,
+    "hit": {
+      "numerator": 11,
+      "denominator": 12,
+      "value": 0.9166666666666666
+    },
+    "groupCoverage": {
+      "numerator": 12,
+      "denominator": 18,
+      "value": 0.6666666666666666
+    },
+    "allGroupsCovered": {
+      "numerator": 6,
+      "denominator": 12,
+      "value": 0.5
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 12,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 12,
+      "micro": {
+        "numerator": 12,
+        "denominator": 23,
+        "value": 0.5217391304347826
+      },
+      "macro": 0.6527777777777778
+    },
+    "precisionAtK": {
+      "knownCases": 12,
+      "unknownCases": 0,
+      "meanAmongKnown": 0.3333333333333333
+    },
+    "precisionBounds": {
+      "meanLower": 0.3333333333333333,
+      "meanUpper": 0.3333333333333333
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.15439558774232864,
+      "p95": 0.280953012406826,
+      "samples": [
+        0.14268513768911362,
+        0.14398526400327682,
+        0.14435779303312302,
+        0.14668237417936325,
+        0.14671217650175095,
+        0.15364401042461395,
+        0.15514716506004333,
+        0.16540102660655975,
+        0.18083024770021439,
+        0.1823119819164276,
+        0.1856209710240364,
+        0.280953012406826
+      ]
+    }
+  },
+  {
+    "split": "development",
+    "arm": "R3",
+    "k": 3,
+    "queryType": "fuzzy_or_missing",
+    "cases": 4,
+    "eligibleCases": 2,
+    "hit": {
+      "numerator": 2,
+      "denominator": 2,
+      "value": 1.0
+    },
+    "groupCoverage": {
+      "numerator": 2,
+      "denominator": 3,
+      "value": 0.6666666666666666
+    },
+    "allGroupsCovered": {
+      "numerator": 1,
+      "denominator": 2,
+      "value": 0.5
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 0,
+      "micro": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "macro": null
+    },
+    "precisionAtK": {
+      "knownCases": 1,
+      "unknownCases": 1,
+      "meanAmongKnown": 0.3333333333333333
+    },
+    "precisionBounds": {
+      "meanLower": 0.3333333333333333,
+      "meanUpper": 0.6666666666666666
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.5134465172886848,
+      "p95": 12.427316047251225,
+      "samples": [
+        0.10339263826608658,
+        0.13303570449352264,
+        0.893857330083847,
+        12.427316047251225
+      ]
+    }
+  },
+  {
+    "split": "development",
+    "arm": "R3",
+    "k": 5,
+    "queryType": "explicit_metadata",
+    "cases": 12,
+    "eligibleCases": 12,
+    "hit": {
+      "numerator": 11,
+      "denominator": 12,
+      "value": 0.9166666666666666
+    },
+    "groupCoverage": {
+      "numerator": 12,
+      "denominator": 18,
+      "value": 0.6666666666666666
+    },
+    "allGroupsCovered": {
+      "numerator": 6,
+      "denominator": 12,
+      "value": 0.5
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 12,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 12,
+      "micro": {
+        "numerator": 12,
+        "denominator": 23,
+        "value": 0.5217391304347826
+      },
+      "macro": 0.6527777777777778
+    },
+    "precisionAtK": {
+      "knownCases": 12,
+      "unknownCases": 0,
+      "meanAmongKnown": 0.2
+    },
+    "precisionBounds": {
+      "meanLower": 0.2,
+      "meanUpper": 0.2
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.15439558774232864,
+      "p95": 0.280953012406826,
+      "samples": [
+        0.14268513768911362,
+        0.14398526400327682,
+        0.14435779303312302,
+        0.14668237417936325,
+        0.14671217650175095,
+        0.15364401042461395,
+        0.15514716506004333,
+        0.16540102660655975,
+        0.18083024770021439,
+        0.1823119819164276,
+        0.1856209710240364,
+        0.280953012406826
+      ]
+    }
+  },
+  {
+    "split": "development",
+    "arm": "R3",
+    "k": 5,
+    "queryType": "fuzzy_or_missing",
+    "cases": 4,
+    "eligibleCases": 2,
+    "hit": {
+      "numerator": 2,
+      "denominator": 2,
+      "value": 1.0
+    },
+    "groupCoverage": {
+      "numerator": 2,
+      "denominator": 3,
+      "value": 0.6666666666666666
+    },
+    "allGroupsCovered": {
+      "numerator": 1,
+      "denominator": 2,
+      "value": 0.5
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 0,
+      "micro": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "macro": null
+    },
+    "precisionAtK": {
+      "knownCases": 1,
+      "unknownCases": 1,
+      "meanAmongKnown": 0.2
+    },
+    "precisionBounds": {
+      "meanLower": 0.2,
+      "meanUpper": 0.6
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.5134465172886848,
+      "p95": 12.427316047251225,
+      "samples": [
+        0.10339263826608658,
+        0.13303570449352264,
+        0.893857330083847,
+        12.427316047251225
+      ]
+    }
+  },
+  {
+    "split": "independent_test",
+    "arm": "R1",
+    "k": 1,
+    "queryType": "explicit_metadata",
+    "cases": 12,
+    "eligibleCases": 12,
+    "hit": {
+      "numerator": 6,
+      "denominator": 12,
+      "value": 0.5
+    },
+    "groupCoverage": {
+      "numerator": 6,
+      "denominator": 19,
+      "value": 0.3157894736842105
+    },
+    "allGroupsCovered": {
+      "numerator": 2,
+      "denominator": 12,
+      "value": 0.16666666666666666
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 12,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 12,
+      "micro": {
+        "numerator": 6,
+        "denominator": 22,
+        "value": 0.2727272727272727
+      },
+      "macro": 0.2986111111111111
+    },
+    "precisionAtK": {
+      "knownCases": 6,
+      "unknownCases": 6,
+      "meanAmongKnown": 1.0
+    },
+    "precisionBounds": {
+      "meanLower": 0.5,
+      "meanUpper": 1.0
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.14637084677815437,
+      "p95": 0.17245952039957047,
+      "samples": [
+        0.13551022857427597,
+        0.14008115977048874,
+        0.1409323886036873,
+        0.14094635844230652,
+        0.14122109860181808,
+        0.1459568738937378,
+        0.14678481966257095,
+        0.1496756449341774,
+        0.15832949429750443,
+        0.1607881858944893,
+        0.16979500651359558,
+        0.17245952039957047
+      ]
+    }
+  },
+  {
+    "split": "independent_test",
+    "arm": "R1",
+    "k": 1,
+    "queryType": "fuzzy_or_missing",
+    "cases": 4,
+    "eligibleCases": 2,
+    "hit": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "groupCoverage": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "allGroupsCovered": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 0,
+      "micro": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "macro": null
+    },
+    "precisionAtK": {
+      "knownCases": 2,
+      "unknownCases": 0,
+      "meanAmongKnown": 0.0
+    },
+    "precisionBounds": {
+      "meanLower": 0.0,
+      "meanUpper": 0.0
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.12692343443632126,
+      "p95": 1.3461718335747719,
+      "samples": [
+        0.11952873319387436,
+        0.12291315943002701,
+        0.1309337094426155,
+        1.3461718335747719
+      ]
+    }
+  },
+  {
+    "split": "independent_test",
+    "arm": "R1",
+    "k": 3,
+    "queryType": "explicit_metadata",
+    "cases": 12,
+    "eligibleCases": 12,
+    "hit": {
+      "numerator": 9,
+      "denominator": 12,
+      "value": 0.75
+    },
+    "groupCoverage": {
+      "numerator": 12,
+      "denominator": 19,
+      "value": 0.631578947368421
+    },
+    "allGroupsCovered": {
+      "numerator": 6,
+      "denominator": 12,
+      "value": 0.5
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 12,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 12,
+      "micro": {
+        "numerator": 13,
+        "denominator": 22,
+        "value": 0.5909090909090909
+      },
+      "macro": 0.5763888888888888
+    },
+    "precisionAtK": {
+      "knownCases": 2,
+      "unknownCases": 10,
+      "meanAmongKnown": 0.8333333333333333
+    },
+    "precisionBounds": {
+      "meanLower": 0.3611111111111111,
+      "meanUpper": 0.8888888888888888
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.14637084677815437,
+      "p95": 0.17245952039957047,
+      "samples": [
+        0.13551022857427597,
+        0.14008115977048874,
+        0.1409323886036873,
+        0.14094635844230652,
+        0.14122109860181808,
+        0.1459568738937378,
+        0.14678481966257095,
+        0.1496756449341774,
+        0.15832949429750443,
+        0.1607881858944893,
+        0.16979500651359558,
+        0.17245952039957047
+      ]
+    }
+  },
+  {
+    "split": "independent_test",
+    "arm": "R1",
+    "k": 3,
+    "queryType": "fuzzy_or_missing",
+    "cases": 4,
+    "eligibleCases": 2,
+    "hit": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "groupCoverage": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "allGroupsCovered": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 0,
+      "micro": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "macro": null
+    },
+    "precisionAtK": {
+      "knownCases": 2,
+      "unknownCases": 0,
+      "meanAmongKnown": 0.0
+    },
+    "precisionBounds": {
+      "meanLower": 0.0,
+      "meanUpper": 0.0
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.12692343443632126,
+      "p95": 1.3461718335747719,
+      "samples": [
+        0.11952873319387436,
+        0.12291315943002701,
+        0.1309337094426155,
+        1.3461718335747719
+      ]
+    }
+  },
+  {
+    "split": "independent_test",
+    "arm": "R1",
+    "k": 5,
+    "queryType": "explicit_metadata",
+    "cases": 12,
+    "eligibleCases": 12,
+    "hit": {
+      "numerator": 10,
+      "denominator": 12,
+      "value": 0.8333333333333334
+    },
+    "groupCoverage": {
+      "numerator": 15,
+      "denominator": 19,
+      "value": 0.7894736842105263
+    },
+    "allGroupsCovered": {
+      "numerator": 9,
+      "denominator": 12,
+      "value": 0.75
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 12,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 12,
+      "micro": {
+        "numerator": 17,
+        "denominator": 22,
+        "value": 0.7727272727272727
+      },
+      "macro": 0.7638888888888888
+    },
+    "precisionAtK": {
+      "knownCases": 1,
+      "unknownCases": 11,
+      "meanAmongKnown": 0.4
+    },
+    "precisionBounds": {
+      "meanLower": 0.2833333333333333,
+      "meanUpper": 0.7666666666666667
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.14637084677815437,
+      "p95": 0.17245952039957047,
+      "samples": [
+        0.13551022857427597,
+        0.14008115977048874,
+        0.1409323886036873,
+        0.14094635844230652,
+        0.14122109860181808,
+        0.1459568738937378,
+        0.14678481966257095,
+        0.1496756449341774,
+        0.15832949429750443,
+        0.1607881858944893,
+        0.16979500651359558,
+        0.17245952039957047
+      ]
+    }
+  },
+  {
+    "split": "independent_test",
+    "arm": "R1",
+    "k": 5,
+    "queryType": "fuzzy_or_missing",
+    "cases": 4,
+    "eligibleCases": 2,
+    "hit": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "groupCoverage": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "allGroupsCovered": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 0,
+      "micro": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "macro": null
+    },
+    "precisionAtK": {
+      "knownCases": 2,
+      "unknownCases": 0,
+      "meanAmongKnown": 0.0
+    },
+    "precisionBounds": {
+      "meanLower": 0.0,
+      "meanUpper": 0.0
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.12692343443632126,
+      "p95": 1.3461718335747719,
+      "samples": [
+        0.11952873319387436,
+        0.12291315943002701,
+        0.1309337094426155,
+        1.3461718335747719
+      ]
+    }
+  },
+  {
+    "split": "independent_test",
+    "arm": "R2",
+    "k": 1,
+    "queryType": "explicit_metadata",
+    "cases": 12,
+    "eligibleCases": 12,
+    "hit": {
+      "numerator": 3,
+      "denominator": 12,
+      "value": 0.25
+    },
+    "groupCoverage": {
+      "numerator": 3,
+      "denominator": 19,
+      "value": 0.15789473684210525
+    },
+    "allGroupsCovered": {
+      "numerator": 0,
+      "denominator": 12,
+      "value": 0.0
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 12,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 12,
+      "micro": {
+        "numerator": 3,
+        "denominator": 22,
+        "value": 0.13636363636363635
+      },
+      "macro": 0.09027777777777778
+    },
+    "precisionAtK": {
+      "knownCases": 3,
+      "unknownCases": 9,
+      "meanAmongKnown": 1.0
+    },
+    "precisionBounds": {
+      "meanLower": 0.25,
+      "meanUpper": 1.0
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.14895014464855194,
+      "p95": 0.17423275858163834,
+      "samples": [
+        0.13691838830709457,
+        0.14132540673017502,
+        0.1420583575963974,
+        0.1441529020667076,
+        0.14550331979990005,
+        0.1462586224079132,
+        0.15164166688919067,
+        0.15443749725818634,
+        0.1549646258354187,
+        0.16080588102340698,
+        0.1730090007185936,
+        0.17423275858163834
+      ]
+    }
+  },
+  {
+    "split": "independent_test",
+    "arm": "R2",
+    "k": 1,
+    "queryType": "fuzzy_or_missing",
+    "cases": 4,
+    "eligibleCases": 2,
+    "hit": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "groupCoverage": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "allGroupsCovered": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 0,
+      "micro": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "macro": null
+    },
+    "precisionAtK": {
+      "knownCases": 2,
+      "unknownCases": 0,
+      "meanAmongKnown": 0.0
+    },
+    "precisionBounds": {
+      "meanLower": 0.0,
+      "meanUpper": 0.0
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.20348140969872475,
+      "p95": 12.396270409226418,
+      "samples": [
+        0.12949109077453613,
+        0.16692280769348145,
+        0.24004001170396805,
+        12.396270409226418
+      ]
+    }
+  },
+  {
+    "split": "independent_test",
+    "arm": "R2",
+    "k": 3,
+    "queryType": "explicit_metadata",
+    "cases": 12,
+    "eligibleCases": 12,
+    "hit": {
+      "numerator": 5,
+      "denominator": 12,
+      "value": 0.4166666666666667
+    },
+    "groupCoverage": {
+      "numerator": 8,
+      "denominator": 19,
+      "value": 0.42105263157894735
+    },
+    "allGroupsCovered": {
+      "numerator": 4,
+      "denominator": 12,
+      "value": 0.3333333333333333
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 12,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 12,
+      "micro": {
+        "numerator": 8,
+        "denominator": 22,
+        "value": 0.36363636363636365
+      },
+      "macro": 0.3055555555555556
+    },
+    "precisionAtK": {
+      "knownCases": 1,
+      "unknownCases": 11,
+      "meanAmongKnown": 0.6666666666666666
+    },
+    "precisionBounds": {
+      "meanLower": 0.2222222222222222,
+      "meanUpper": 0.8888888888888888
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.14895014464855194,
+      "p95": 0.17423275858163834,
+      "samples": [
+        0.13691838830709457,
+        0.14132540673017502,
+        0.1420583575963974,
+        0.1441529020667076,
+        0.14550331979990005,
+        0.1462586224079132,
+        0.15164166688919067,
+        0.15443749725818634,
+        0.1549646258354187,
+        0.16080588102340698,
+        0.1730090007185936,
+        0.17423275858163834
+      ]
+    }
+  },
+  {
+    "split": "independent_test",
+    "arm": "R2",
+    "k": 3,
+    "queryType": "fuzzy_or_missing",
+    "cases": 4,
+    "eligibleCases": 2,
+    "hit": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "groupCoverage": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "allGroupsCovered": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 0,
+      "micro": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "macro": null
+    },
+    "precisionAtK": {
+      "knownCases": 2,
+      "unknownCases": 0,
+      "meanAmongKnown": 0.0
+    },
+    "precisionBounds": {
+      "meanLower": 0.0,
+      "meanUpper": 0.0
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.20348140969872475,
+      "p95": 12.396270409226418,
+      "samples": [
+        0.12949109077453613,
+        0.16692280769348145,
+        0.24004001170396805,
+        12.396270409226418
+      ]
+    }
+  },
+  {
+    "split": "independent_test",
+    "arm": "R2",
+    "k": 5,
+    "queryType": "explicit_metadata",
+    "cases": 12,
+    "eligibleCases": 12,
+    "hit": {
+      "numerator": 10,
+      "denominator": 12,
+      "value": 0.8333333333333334
+    },
+    "groupCoverage": {
+      "numerator": 15,
+      "denominator": 19,
+      "value": 0.7894736842105263
+    },
+    "allGroupsCovered": {
+      "numerator": 9,
+      "denominator": 12,
+      "value": 0.75
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 12,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 12,
+      "micro": {
+        "numerator": 17,
+        "denominator": 22,
+        "value": 0.7727272727272727
+      },
+      "macro": 0.7638888888888888
+    },
+    "precisionAtK": {
+      "knownCases": 1,
+      "unknownCases": 11,
+      "meanAmongKnown": 0.4
+    },
+    "precisionBounds": {
+      "meanLower": 0.2833333333333333,
+      "meanUpper": 0.7666666666666667
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.14895014464855194,
+      "p95": 0.17423275858163834,
+      "samples": [
+        0.13691838830709457,
+        0.14132540673017502,
+        0.1420583575963974,
+        0.1441529020667076,
+        0.14550331979990005,
+        0.1462586224079132,
+        0.15164166688919067,
+        0.15443749725818634,
+        0.1549646258354187,
+        0.16080588102340698,
+        0.1730090007185936,
+        0.17423275858163834
+      ]
+    }
+  },
+  {
+    "split": "independent_test",
+    "arm": "R2",
+    "k": 5,
+    "queryType": "fuzzy_or_missing",
+    "cases": 4,
+    "eligibleCases": 2,
+    "hit": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "groupCoverage": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "allGroupsCovered": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 0,
+      "micro": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "macro": null
+    },
+    "precisionAtK": {
+      "knownCases": 2,
+      "unknownCases": 0,
+      "meanAmongKnown": 0.0
+    },
+    "precisionBounds": {
+      "meanLower": 0.0,
+      "meanUpper": 0.0
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.20348140969872475,
+      "p95": 12.396270409226418,
+      "samples": [
+        0.12949109077453613,
+        0.16692280769348145,
+        0.24004001170396805,
+        12.396270409226418
+      ]
+    }
+  },
+  {
+    "split": "independent_test",
+    "arm": "R3",
+    "k": 1,
+    "queryType": "explicit_metadata",
+    "cases": 12,
+    "eligibleCases": 12,
+    "hit": {
+      "numerator": 10,
+      "denominator": 12,
+      "value": 0.8333333333333334
+    },
+    "groupCoverage": {
+      "numerator": 10,
+      "denominator": 19,
+      "value": 0.5263157894736842
+    },
+    "allGroupsCovered": {
+      "numerator": 4,
+      "denominator": 12,
+      "value": 0.3333333333333333
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 12,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 12,
+      "micro": {
+        "numerator": 10,
+        "denominator": 22,
+        "value": 0.45454545454545453
+      },
+      "macro": 0.5486111111111112
+    },
+    "precisionAtK": {
+      "knownCases": 12,
+      "unknownCases": 0,
+      "meanAmongKnown": 0.8333333333333334
+    },
+    "precisionBounds": {
+      "meanLower": 0.8333333333333334,
+      "meanUpper": 0.8333333333333334
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.15797466039657593,
+      "p95": 0.17964188009500504,
+      "samples": [
+        0.13152975589036942,
+        0.13269484043121338,
+        0.13791397213935852,
+        0.14388840645551682,
+        0.14786981046199799,
+        0.14953222125768661,
+        0.16641709953546524,
+        0.16783457249403,
+        0.1699412241578102,
+        0.17068441957235336,
+        0.1786462962627411,
+        0.17964188009500504
+      ]
+    }
+  },
+  {
+    "split": "independent_test",
+    "arm": "R3",
+    "k": 1,
+    "queryType": "fuzzy_or_missing",
+    "cases": 4,
+    "eligibleCases": 2,
+    "hit": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "groupCoverage": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "allGroupsCovered": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 0,
+      "micro": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "macro": null
+    },
+    "precisionAtK": {
+      "knownCases": 2,
+      "unknownCases": 0,
+      "meanAmongKnown": 0.0
+    },
+    "precisionBounds": {
+      "meanLower": 0.0,
+      "meanUpper": 0.0
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.11283764615654945,
+      "p95": 1.4458810910582542,
+      "samples": [
+        0.10322779417037964,
+        0.10652374476194382,
+        0.11915154755115509,
+        1.4458810910582542
+      ]
+    }
+  },
+  {
+    "split": "independent_test",
+    "arm": "R3",
+    "k": 3,
+    "queryType": "explicit_metadata",
+    "cases": 12,
+    "eligibleCases": 12,
+    "hit": {
+      "numerator": 10,
+      "denominator": 12,
+      "value": 0.8333333333333334
+    },
+    "groupCoverage": {
+      "numerator": 13,
+      "denominator": 19,
+      "value": 0.6842105263157895
+    },
+    "allGroupsCovered": {
+      "numerator": 7,
+      "denominator": 12,
+      "value": 0.5833333333333334
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 12,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 12,
+      "micro": {
+        "numerator": 13,
+        "denominator": 22,
+        "value": 0.5909090909090909
+      },
+      "macro": 0.6736111111111112
+    },
+    "precisionAtK": {
+      "knownCases": 12,
+      "unknownCases": 0,
+      "meanAmongKnown": 0.3611111111111111
+    },
+    "precisionBounds": {
+      "meanLower": 0.3611111111111111,
+      "meanUpper": 0.3611111111111111
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.15797466039657593,
+      "p95": 0.17964188009500504,
+      "samples": [
+        0.13152975589036942,
+        0.13269484043121338,
+        0.13791397213935852,
+        0.14388840645551682,
+        0.14786981046199799,
+        0.14953222125768661,
+        0.16641709953546524,
+        0.16783457249403,
+        0.1699412241578102,
+        0.17068441957235336,
+        0.1786462962627411,
+        0.17964188009500504
+      ]
+    }
+  },
+  {
+    "split": "independent_test",
+    "arm": "R3",
+    "k": 3,
+    "queryType": "fuzzy_or_missing",
+    "cases": 4,
+    "eligibleCases": 2,
+    "hit": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "groupCoverage": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "allGroupsCovered": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 0,
+      "micro": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "macro": null
+    },
+    "precisionAtK": {
+      "knownCases": 2,
+      "unknownCases": 0,
+      "meanAmongKnown": 0.0
+    },
+    "precisionBounds": {
+      "meanLower": 0.0,
+      "meanUpper": 0.0
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.11283764615654945,
+      "p95": 1.4458810910582542,
+      "samples": [
+        0.10322779417037964,
+        0.10652374476194382,
+        0.11915154755115509,
+        1.4458810910582542
+      ]
+    }
+  },
+  {
+    "split": "independent_test",
+    "arm": "R3",
+    "k": 5,
+    "queryType": "explicit_metadata",
+    "cases": 12,
+    "eligibleCases": 12,
+    "hit": {
+      "numerator": 10,
+      "denominator": 12,
+      "value": 0.8333333333333334
+    },
+    "groupCoverage": {
+      "numerator": 13,
+      "denominator": 19,
+      "value": 0.6842105263157895
+    },
+    "allGroupsCovered": {
+      "numerator": 7,
+      "denominator": 12,
+      "value": 0.5833333333333334
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 12,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 12,
+      "micro": {
+        "numerator": 13,
+        "denominator": 22,
+        "value": 0.5909090909090909
+      },
+      "macro": 0.6736111111111112
+    },
+    "precisionAtK": {
+      "knownCases": 12,
+      "unknownCases": 0,
+      "meanAmongKnown": 0.21666666666666667
+    },
+    "precisionBounds": {
+      "meanLower": 0.21666666666666667,
+      "meanUpper": 0.21666666666666667
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.15797466039657593,
+      "p95": 0.17964188009500504,
+      "samples": [
+        0.13152975589036942,
+        0.13269484043121338,
+        0.13791397213935852,
+        0.14388840645551682,
+        0.14786981046199799,
+        0.14953222125768661,
+        0.16641709953546524,
+        0.16783457249403,
+        0.1699412241578102,
+        0.17068441957235336,
+        0.1786462962627411,
+        0.17964188009500504
+      ]
+    }
+  },
+  {
+    "split": "independent_test",
+    "arm": "R3",
+    "k": 5,
+    "queryType": "fuzzy_or_missing",
+    "cases": 4,
+    "eligibleCases": 2,
+    "hit": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "groupCoverage": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "allGroupsCovered": {
+      "numerator": 0,
+      "denominator": 2,
+      "value": 0.0
+    },
+    "strictRecall": {
+      "knownCases": 0,
+      "unknownCases": 2,
+      "mean": null
+    },
+    "requestedTargetRecall": {
+      "eligibleCases": 0,
+      "micro": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "macro": null
+    },
+    "precisionAtK": {
+      "knownCases": 2,
+      "unknownCases": 0,
+      "meanAmongKnown": 0.0
+    },
+    "precisionBounds": {
+      "meanLower": 0.0,
+      "meanUpper": 0.0
+    },
+    "referenceConflictIds": [],
+    "durationMs": {
+      "p50": 0.11283764615654945,
+      "p95": 1.4458810910582542,
+      "samples": [
+        0.10322779417037964,
+        0.10652374476194382,
+        0.11915154755115509,
+        1.4458810910582542
+      ]
+    }
+  }
+]

@@ -1,0 +1,2365 @@
+{
+  "reviewer": {
+    "id": "formal-reviewer-a",
+    "type": "ai",
+    "expert": false,
+    "reviewerId": "formal-reviewer-a",
+    "kind": "AI",
+    "expertStatus": "non_expert",
+    "blind": true,
+    "independent": true
+  },
+  "rubricVersion": "1.0",
+  "reviewStatus": "complete_independent_ai_non_expert",
+  "results": [
+    {
+      "answerId": "Q5a10497e050b",
+      "reviewer": {
+        "id": "formal-reviewer-a",
+        "type": "ai",
+        "expert": false,
+        "reviewerId": "formal-reviewer-a",
+        "kind": "AI",
+        "expertStatus": "non_expert",
+        "blind": true,
+        "independent": true
+      },
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "解释功劳基础与谦德持久，参考原文核对核心准确，完成为何查询。 已实质交付；局部问题未改变核心任务完成。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "回应指定注家的两概念关系，注明无实际原文不冒称已检索。",
+              "evidence": [
+                {
+                  "quote": "程颐解谦卦九三“劳谦”",
+                  "location": "paragraphs[0].text",
+                  "reason": "回应指定注家的两概念关系，注明无实际原文不冒称已检索。"
+                }
+              ]
+            },
+            "knowledge": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "参考Only程颐原文支持有功持谦及长久条件；系辞附引无参考另unknown。",
+              "evidence": [
+                {
+                  "quote": "有功劳而能谦",
+                  "location": "paragraphs[0].text",
+                  "reason": "参考Only程颐原文支持有功持谦及长久条件；系辞附引无参考另unknown。"
+                }
+              ]
+            },
+            "integration": {
+              "value": null,
+              "naReason": "not_applicable",
+              "rationale": "纯文义查询，无现代应用。",
+              "evidence": [
+                {
+                  "quote": "程颐解谦卦九三",
+                  "location": "paragraphs[0].text",
+                  "reason": "纯文义查询，无现代应用。"
+                }
+              ]
+            },
+            "conversation": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "按概念关联展开，限制说明清楚。",
+              "evidence": [
+                {
+                  "quote": "并不矛盾",
+                  "location": "paragraphs[2].text",
+                  "reason": "按概念关联展开，限制说明清楚。"
+                }
+              ]
+            },
+            "helpfulness": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "解释功劳基础与谦德持久，参考原文核对核心准确，完成为何查询。",
+              "evidence": [
+                {
+                  "quote": "有终是“劳谦”之德经受考验后的结果",
+                  "location": "paragraphs[2].text",
+                  "reason": "解释功劳基础与谦德持久，参考原文核对核心准确，完成为何查询。"
+                }
+              ]
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 6,
+              "traditionalAssertionsReviewed": 6,
+              "uncitedTraditionalAssertionsIdentified": 6,
+              "uncitedTraditionalAssertionsReviewed": 6,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐一核查citation.claim occurrence并补明显未引文义、条件及占法；现代命题单独排除。unknown为已检查而无法定论；参考Only不视为生成已见。"
+            },
+            "claims": [
+              {
+                "claimId": "Q5a10497e050b.delivered.claim001",
+                "occurrenceIds": [],
+                "assertion": "程颐劳谦为有功持谦",
+                "quote": "有功劳而能谦",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line3:3d9184f339"
+                ],
+                "supportLabel": "supported",
+                "rationale": "参考Only原文有功劳而持谦德直接支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "三以陽剛之德而居下體，為眾陰所宗，履得其位，為下之上，是上為君所任，下為眾所從，有功勞而持謙德者也，故曰勞謙。古之人有當之者，周公是也。身當天下之大任，上奉幼弱之主，謙恭自牧，夔夔如畏然，可謂有勞而能謙矣。既能勞謙，又須君子行之有終，則吉。夫樂高喜勝，人之常情。平時能謙，固已鮮矣，況有功勞可尊乎？雖使知謙之善，勉而為之，若矜負之心不忘，則不能常久，欲其有終，不可得也。唯君子安履謙順，乃其常行，故久而不變，乃所謂有終，有終則吉也。九三以剛居正，能終者也。此爻之德最盛，故象辭特重。",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Q5a10497e050b.delivered.claim002",
+                "occurrenceIds": [],
+                "assertion": "九三阳刚得位且下体之上",
+                "quote": "九三以阳刚居阳位，又处下卦艮之上",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line3:3d9184f339"
+                ],
+                "supportLabel": "supported",
+                "rationale": "参考原文阳刚居下体履得其位为下之上支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "三以陽剛之德而居下體，為眾陰所宗，履得其位，為下之上，是上為君所任，下為眾所從，有功勞而持謙德者也，故曰勞謙。古之人有當之者，周公是也。身當天下之大任，上奉幼弱之主，謙恭自牧，夔夔如畏然，可謂有勞而能謙矣。既能勞謙，又須君子行之有終，則吉。夫樂高喜勝，人之常情。平時能謙，固已鮮矣，況有功勞可尊乎？雖使知謙之善，勉而為之，若矜負之心不忘，則不能常久，欲其有終，不可得也。唯君子安履謙順，乃其常行，故久而不變，乃所謂有終，有終則吉也。九三以剛居正，能終者也。此爻之德最盛，故象辭特重。",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Q5a10497e050b.delivered.claim003",
+                "occurrenceIds": [],
+                "assertion": "谦九三为唯一阳爻",
+                "quote": "谦卦中唯一的阳爻",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "cast可见结构但参考注未明示唯一；不将给定结构误当已检索文献，细卦象核验限度。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Q5a10497e050b.delivered.claim004",
+                "occurrenceIds": [],
+                "assertion": "程颐有终为君子恒常谦顺",
+                "quote": "唯有君子能把“劳谦”保持到底，所以吉",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line3:3d9184f339"
+                ],
+                "supportLabel": "supported",
+                "rationale": "唯君子安履谦顺久而不变乃有终支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "三以陽剛之德而居下體，為眾陰所宗，履得其位，為下之上，是上為君所任，下為眾所從，有功勞而持謙德者也，故曰勞謙。古之人有當之者，周公是也。身當天下之大任，上奉幼弱之主，謙恭自牧，夔夔如畏然，可謂有勞而能謙矣。既能勞謙，又須君子行之有終，則吉。夫樂高喜勝，人之常情。平時能謙，固已鮮矣，況有功勞可尊乎？雖使知謙之善，勉而為之，若矜負之心不忘，則不能常久，欲其有終，不可得也。唯君子安履謙順，乃其常行，故久而不變，乃所謂有終，有終則吉也。九三以剛居正，能終者也。此爻之德最盛，故象辭特重。",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Q5a10497e050b.delivered.claim005",
+                "occurrenceIds": [],
+                "assertion": "系辞有劳而不伐有功不德",
+                "quote": "《系辞》释此爻“劳而不伐，有功而不德”",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "许可参考中无系辞，不能负责核对该归属及字句。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Q5a10497e050b.delivered.claim006",
+                "occurrenceIds": [],
+                "assertion": "程颐区分勉为与恒常",
+                "quote": "一时谦下尚可勉强，长久保持才难",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line3:3d9184f339"
+                ],
+                "supportLabel": "supported",
+                "rationale": "勉而为之但矜负不忘则不能常久直接支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "三以陽剛之德而居下體，為眾陰所宗，履得其位，為下之上，是上為君所任，下為眾所從，有功勞而持謙德者也，故曰勞謙。古之人有當之者，周公是也。身當天下之大任，上奉幼弱之主，謙恭自牧，夔夔如畏然，可謂有勞而能謙矣。既能勞謙，又須君子行之有終，則吉。夫樂高喜勝，人之常情。平時能謙，固已鮮矣，況有功勞可尊乎？雖使知謙之善，勉而為之，若矜負之心不忘，則不能常久，欲其有終，不可得也。唯君子安履謙順，乃其常行，故久而不變，乃所謂有終，有終則吉也。九三以剛居正，能終者也。此爻之德最盛，故象辭特重。",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              }
+            ],
+            "supportCounts": {
+              "supported": 4,
+              "unknown": 2
+            },
+            "traditionalDenominator": 6,
+            "modernExcludedCount": 0,
+            "supportCountsScope": "knowledge_semantic_check_including_reference_only_not_input_faithfulness",
+            "inputEvidenceFaithfulness": {
+              "value": null,
+              "naReason": "no_input_evidence",
+              "note": "referenceOnlyEvidence仅供独立知识核验，不能计为生成已見或已检索。",
+              "traditionalAssertionsWithInputEvidence": 0
+            }
+          }
+        }
+      ],
+      "uncertainties": [
+        "谦九三为唯一阳爻：cast可见结构但参考注未明示唯一；不将给定结构误当已检索文献，细卦象核验限度。",
+        "系辞有劳而不伐有功不德：许可参考中无系辞，不能负责核对该归属及字句。"
+      ]
+    },
+    {
+      "answerId": "Q0e84e338027d",
+      "reviewer": {
+        "id": "formal-reviewer-a",
+        "type": "ai",
+        "expert": false,
+        "reviewerId": "formal-reviewer-a",
+        "kind": "AI",
+        "expertStatus": "non_expert",
+        "blind": true,
+        "independent": true
+      },
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "validation_failed",
+        "candidateOnly": true,
+        "visibleKind": "none",
+        "technicalFailure": true,
+        "providedFailureNote": "未完成可交付回答；内部候选不是实际交付。"
+      },
+      "taskSuccess": false,
+      "taskSuccessReason": "技术未交付，delivery.visibleKind=none。候选及内部fallback不构成实际交付。",
+      "candidateTaskSuccess": false,
+      "candidateTaskSuccessReason": "没有提供所求关系解释，只有要补资料，核心未答。",
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "no_answer",
+          "dimensions": {
+            "understanding": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "没有实际可见答复，不能将未交付候选或内部fallback当用户已见。",
+              "evidence": []
+            },
+            "knowledge": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "没有实际可见答复，不能将未交付候选或内部fallback当用户已见。",
+              "evidence": []
+            },
+            "integration": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "没有实际可见答复，不能将未交付候选或内部fallback当用户已见。",
+              "evidence": []
+            },
+            "conversation": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "没有实际可见答复，不能将未交付候选或内部fallback当用户已见。",
+              "evidence": []
+            },
+            "helpfulness": {
+              "value": null,
+              "naReason": "technical_no_answer",
+              "rationale": "没有实际可见答复，不能将未交付候选或内部fallback当用户已见。",
+              "evidence": []
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 0,
+              "traditionalAssertionsReviewed": 0,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "无实际文本；候选在candidate独立评价。"
+            },
+            "claims": [],
+            "supportCounts": {},
+            "traditionalDenominator": 0,
+            "modernExcludedCount": 0,
+            "inputEvidenceFaithfulness": {
+              "value": null,
+              "naReason": "technical_no_answer"
+            }
+          }
+        },
+        {
+          "target": "candidate",
+          "responseKind": "insufficient_or_refusal",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "候选理解对象，证据为空的说明真实。",
+              "evidence": [
+                {
+                  "quote": "你问的是程颐解释谦卦九三",
+                  "location": "paragraphs[0].text",
+                  "reason": "候选理解对象，证据为空的说明真实。"
+                }
+              ]
+            },
+            "knowledge": {
+              "value": null,
+              "naReason": "insufficient_basis",
+              "rationale": "没有作所求解释，核心知识无断言可评，拒绝不算准确高分。",
+              "evidence": [
+                {
+                  "quote": "我不能仅凭记忆",
+                  "location": "paragraphs[0].text",
+                  "reason": "没有作所求解释，核心知识无断言可评，拒绝不算准确高分。"
+                }
+              ]
+            },
+            "integration": {
+              "value": null,
+              "naReason": "not_applicable",
+              "rationale": "纯文献任务，无应用。",
+              "evidence": [
+                {
+                  "quote": "需要补充的是程颐",
+                  "location": "paragraphs[1].text",
+                  "reason": "纯文献任务，无应用。"
+                }
+              ]
+            },
+            "conversation": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "可理解但把内部资料要求交给用户，实际回应停在流程。",
+              "evidence": [
+                {
+                  "quote": "资料说明要求“本轮须引用对应资料”",
+                  "location": "paragraphs[0].text",
+                  "reason": "可理解但把内部资料要求交给用户，实际回应停在流程。"
+                }
+              ]
+            },
+            "helpfulness": {
+              "value": 0,
+              "naReason": null,
+              "rationale": "没有提供所求关系解释，只有要补资料，核心未答。",
+              "evidence": [
+                {
+                  "quote": "不能可靠回答他为何同时突出“劳”与“有终”",
+                  "location": "paragraphs[1].text",
+                  "reason": "没有提供所求关系解释，只有要补资料，核心未答。"
+                }
+              ]
+            }
+          },
+          "errors": [
+            {
+              "type": "task_not_answered",
+              "quote": "不能可靠回答他为何同时突出“劳”与“有终”",
+              "location": "paragraphs[1].text",
+              "reason": "诚实缺资料避免误引但任务仍未完成。",
+              "dimensions": [
+                "helpfulness"
+              ],
+              "severity": "material",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 1,
+              "traditionalAssertionsReviewed": 1,
+              "uncitedTraditionalAssertionsIdentified": 1,
+              "uncitedTraditionalAssertionsReviewed": 1,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐一核查citation.claim occurrence并补明显未引文义、条件及占法；现代命题单独排除。unknown为已检查而无法定论；参考Only不视为生成已见。"
+            },
+            "claims": [
+              {
+                "claimId": "Q0e84e338027d.candidate.claim001",
+                "occurrenceIds": [],
+                "assertion": "谦九三爻辞为劳谦君子有终吉",
+                "quote": "劳谦，君子有终，吉",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "cheng-yi@1313743:h15:line3:3d9184f339"
+                ],
+                "supportLabel": "partial",
+                "rationale": "参考程颐注含这些成分和有终则吉，但未以完整爻辞单列；不冒称完成逐字原文核对。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "三以陽剛之德而居下體，為眾陰所宗，履得其位，為下之上，是上為君所任，下為眾所從，有功勞而持謙德者也，故曰勞謙。古之人有當之者，周公是也。身當天下之大任，上奉幼弱之主，謙恭自牧，夔夔如畏然，可謂有勞而能謙矣。既能勞謙，又須君子行之有終，則吉。夫樂高喜勝，人之常情。平時能謙，固已鮮矣，況有功勞可尊乎？雖使知謙之善，勉而為之，若矜負之心不忘，則不能常久，欲其有終，不可得也。唯君子安履謙順，乃其常行，故久而不變，乃所謂有終，有終則吉也。九三以剛居正，能終者也。此爻之德最盛，故象辭特重。",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              }
+            ],
+            "supportCounts": {
+              "partial": 1
+            },
+            "traditionalDenominator": 1,
+            "modernExcludedCount": 0,
+            "supportCountsScope": "knowledge_semantic_check_including_reference_only_not_input_faithfulness",
+            "inputEvidenceFaithfulness": {
+              "value": null,
+              "naReason": "no_input_evidence",
+              "note": "referenceOnlyEvidence仅供独立知识核验，不能计为生成已見或已检索。",
+              "traditionalAssertionsWithInputEvidence": 0
+            }
+          }
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "Q906e0d3d9600",
+      "reviewer": {
+        "id": "formal-reviewer-a",
+        "type": "ai",
+        "expert": false,
+        "reviewerId": "formal-reviewer-a",
+        "kind": "AI",
+        "expertStatus": "non_expert",
+        "blind": true,
+        "independent": true
+      },
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "insufficient_or_refusal",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": false,
+      "taskSuccessReason": "已回答非安全保证，但没有提供用户要求的一位注家解释，核心文献部分未完成。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "insufficient_or_refusal",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "识别两个任务，注家实际未见说明准确，参考Only不反判缺失。",
+              "evidence": [
+                {
+                  "quote": "没有提供任何注家的解释",
+                  "location": "paragraphs[0].text",
+                  "reason": "识别两个任务，注家实际未见说明准确，参考Only不反判缺失。"
+                }
+              ]
+            },
+            "knowledge": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "经文和有条件非普遍保证的解释准确。",
+              "evidence": [
+                {
+                  "quote": "在此先有“谦谦君子”的限定",
+                  "location": "paragraphs[1].text",
+                  "reason": "经文和有条件非普遍保证的解释准确。"
+                }
+              ]
+            },
+            "integration": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "明确区分占断与现实安全，未保证某次渡河。",
+              "evidence": [
+                {
+                  "quote": "不能直接等同于现实里过河肯定安全",
+                  "location": "paragraphs[1].text",
+                  "reason": "明确区分占断与现实安全，未保证某次渡河。"
+                }
+              ]
+            },
+            "conversation": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "直接答安全疑问并说明剩余缺口。",
+              "evidence": [
+                {
+                  "quote": "对“这就是现实里过河肯定安全吗”的回答应是否定的",
+                  "location": "paragraphs[2].text",
+                  "reason": "直接答安全疑问并说明剩余缺口。"
+                }
+              ]
+            },
+            "helpfulness": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "完成安全边界但缺指定一位注家，整体请求未完成。",
+              "evidence": [
+                {
+                  "quote": "这一文献目标无法完成",
+                  "location": "paragraphs[0].text",
+                  "reason": "完成安全边界但缺指定一位注家，整体请求未完成。"
+                }
+              ]
+            }
+          },
+          "errors": [
+            {
+              "type": "task_not_answered",
+              "quote": "这一文献目标无法完成",
+              "location": "paragraphs[0].text",
+              "reason": "实际缺注家不是幻觉，但用户该要求未完成。",
+              "dimensions": [
+                "helpfulness"
+              ],
+              "severity": "material",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 2,
+              "citationClaimOccurrencesReviewed": 2,
+              "traditionalAssertionsIdentified": 2,
+              "traditionalAssertionsReviewed": 2,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐一核查citation.claim occurrence并补明显未引文义、条件及占法；现代命题单独排除。unknown为已检查而无法定论；参考Only不视为生成已见。"
+            },
+            "claims": [
+              {
+                "claimId": "Q906e0d3d9600.delivered.claim001",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "就现有资料可确认的是谦卦初六原文作“谦谦君子，用涉大川，吉。”",
+                "quote": "就现有资料可确认的是谦卦初六原文作“谦谦君子，用涉大川，吉。”",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-15-line-1"
+                ],
+                "supportLabel": "supported",
+                "rationale": "实际证据为谦初六原文。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "谦谦君子，用涉大川，吉。",
+                "inputEvidenceSupportLabel": "supported",
+                "inputEvidenceNAReason": null
+              },
+              {
+                "claimId": "Q906e0d3d9600.delivered.claim002",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "“用涉大川，吉”在此先有“谦谦君子”的限定，且“吉”是占断语；它不能直接等同于现实里过河肯定安全。",
+                "quote": "“用涉大川，吉”在此先有“谦谦君子”的限定，且“吉”是占断语；它不能直接等同于现实里过河肯定安全。",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-15-line-1"
+                ],
+                "supportLabel": "supported",
+                "rationale": "经文有谦谦君子主体与吉断，支持有限条件；现实安全结论单列现代层。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "用涉大川，吉",
+                "inputEvidenceSupportLabel": "supported",
+                "inputEvidenceNAReason": null
+              },
+              {
+                "claimId": "Q906e0d3d9600.delivered.claim003",
+                "occurrenceIds": [],
+                "assertion": "经典不能保证实际渡河",
+                "quote": "它不能直接等同于现实里过河肯定安全",
+                "location": "paragraphs[1].text",
+                "layer": "empirical_claim",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": null,
+                "rationale": "经验风险不能由占断确认，应用边界清晰。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": null
+              }
+            ],
+            "supportCounts": {
+              "supported": 2
+            },
+            "traditionalDenominator": 2,
+            "modernExcludedCount": 1,
+            "supportCountsScope": "knowledge_semantic_check_including_reference_only_not_input_faithfulness",
+            "inputEvidenceFaithfulness": {
+              "value": "applicable",
+              "naReason": null,
+              "note": "referenceOnlyEvidence仅供独立知识核验，不能计为生成已見或已检索。",
+              "traditionalAssertionsWithInputEvidence": 2
+            }
+          }
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "Q9014b6f7f5d9",
+      "reviewer": {
+        "id": "formal-reviewer-a",
+        "type": "ai",
+        "expert": false,
+        "reviewerId": "formal-reviewer-a",
+        "kind": "AI",
+        "expertStatus": "non_expert",
+        "blind": true,
+        "independent": true
+      },
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": false,
+      "taskSuccessReason": "没有提供任何注家解释，且完整含义的概括扩大；诚实说明缺注释不等于查证完成。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "理解要注家及不永远沉默，实际缺材料说明真实。",
+              "evidence": [
+                {
+                  "quote": "没有收入王弼、程颐、朱熹等注家的注文",
+                  "location": "paragraphs[2].text",
+                  "reason": "理解要注家及不永远沉默，实际缺材料说明真实。"
+                }
+              ]
+            },
+            "knowledge": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "特定时位收敛受参考注支持，但将该说即说称六四完整义超范围。",
+              "evidence": [
+                {
+                  "quote": "该开口时开口、该收敛时收敛，才是坤六四的完整含义",
+                  "location": "paragraphs[3].text",
+                  "reason": "特定时位收敛受参考注支持，但将该说即说称六四完整义超范围。"
+                }
+              ]
+            },
+            "integration": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "主动引现实关系，厚德载物被用来规定应说话，依据不足。",
+              "evidence": [
+                {
+                  "quote": "厚德载物恰恰要求人在该说话",
+                  "location": "paragraphs[1].text",
+                  "reason": "主动引现实关系，厚德载物被用来规定应说话，依据不足。"
+                }
+              ]
+            },
+            "conversation": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "用户求文义却转向自我关系省察，存在无益扩展。",
+              "evidence": [
+                {
+                  "quote": "你可以留意自己面对的究竟",
+                  "location": "paragraphs[3].text",
+                  "reason": "用户求文义却转向自我关系省察，存在无益扩展。"
+                }
+              ]
+            },
+            "helpfulness": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "解释反绝对化有用，但未完成注家要求。",
+              "evidence": [
+                {
+                  "quote": "无法忠实引用某位注家的原话",
+                  "location": "paragraphs[2].text",
+                  "reason": "解释反绝对化有用，但未完成注家要求。"
+                }
+              ]
+            }
+          },
+          "errors": [
+            {
+              "type": "task_not_answered",
+              "quote": "我无法忠实引用某位注家的原话",
+              "location": "paragraphs[2].text",
+              "reason": "文献目标未完成；未将参考Only当生成已见。",
+              "dimensions": [
+                "helpfulness"
+              ],
+              "severity": "material",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "scope_overgeneralization",
+              "quote": "该开口时开口、该收敛时收敛，才是坤六四的完整含义",
+              "location": "paragraphs[3].text",
+              "reason": "六四条件下谨密不等同完整包括各种开口规则。",
+              "dimensions": [
+                "knowledge"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "unhelpful_expansion",
+              "quote": "你可以留意自己面对的究竟",
+              "location": "paragraphs[3].text",
+              "reason": "用户未求关系建议。",
+              "dimensions": [
+                "conversation"
+              ],
+              "severity": "minor",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 4,
+              "citationClaimOccurrencesReviewed": 4,
+              "traditionalAssertionsIdentified": 7,
+              "traditionalAssertionsReviewed": 7,
+              "uncitedTraditionalAssertionsIdentified": 3,
+              "uncitedTraditionalAssertionsReviewed": 3,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐一核查citation.claim occurrence并补明显未引文义、条件及占法；现代命题单独排除。unknown为已检查而无法定论；参考Only不视为生成已见。"
+            },
+            "claims": [
+              {
+                "claimId": "Q9014b6f7f5d9.delivered.claim001",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "坤卦六四“括囊，无咎无誉”不是教人永远不开口",
+                "quote": "坤卦六四“括囊，无咎无誉”不是教人永远不开口",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-2-line-4"
+                ],
+                "supportLabel": "partial",
+                "rationale": "特定条件的反永久化可由参考Only支持，单独爻辞不充分给出全部条件。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "括囊，无咎无誉。",
+                "inputEvidenceSupportLabel": "partial",
+                "inputEvidenceNAReason": null
+              },
+              {
+                "claimId": "Q9014b6f7f5d9.delivered.claim002",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "《大象》说“地势坤，君子以厚德载物”，坤的德性是承载、包容与顺承，而不是一味沉默",
+                "quote": "《大象》说“地势坤，君子以厚德载物”，坤的德性是承载、包容与顺承，而不是一味沉默",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-2-xiang"
+                ],
+                "supportLabel": "partial",
+                "rationale": "承载顺承可由本答彖传支持，但不必然要求说话。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "地势坤，君子以厚德载物。",
+                "inputEvidenceSupportLabel": "partial",
+                "inputEvidenceNAReason": null
+              },
+              {
+                "claimId": "Q9014b6f7f5d9.delivered.claim003",
+                "occurrenceIds": [
+                  "delivered.p1.c1"
+                ],
+                "assertion": "坤卦卦辞讲“利牝马之贞”，牝马柔顺却能行地无疆，说明坤的柔顺是有方向、有行动的，并非静止不动",
+                "quote": "坤卦卦辞讲“利牝马之贞”，牝马柔顺却能行地无疆，说明坤的柔顺是有方向、有行动的，并非静止不动",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-2-judgment"
+                ],
+                "supportLabel": "partial",
+                "rationale": "实际彖传有牝马行地无疆，支持非不动。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "利牝马之贞",
+                "inputEvidenceSupportLabel": "partial",
+                "inputEvidenceNAReason": null
+              },
+              {
+                "claimId": "Q9014b6f7f5d9.delivered.claim004",
+                "occurrenceIds": [
+                  "delivered.p3.c0"
+                ],
+                "assertion": "若把“无咎无誉”当成永远不说话的借口，反而会错失坤卦“有攸往”“后得主”所暗示的行动空间",
+                "quote": "若把“无咎无誉”当成永远不说话的借口，反而会错失坤卦“有攸往”“后得主”所暗示的行动空间",
+                "location": "paragraphs[3].text",
+                "layer": "modern_analogy",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-2-judgment"
+                ],
+                "supportLabel": null,
+                "rationale": "命题对象是本轮现实情境，属于应用或借喻；不因古文未逐字说现代事而判为传统不支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "君子有攸往，先迷，后得主",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": null
+              },
+              {
+                "claimId": "Q9014b6f7f5d9.delivered.claim005",
+                "occurrenceIds": [
+                  "delivered.p3.c0"
+                ],
+                "assertion": "所引坤·卦辞原句：君子有攸往，先迷，后得主",
+                "quote": "君子有攸往，先迷，后得主",
+                "location": "paragraphs[3].citations[0]",
+                "layer": "quotation",
+                "origin": "mixed_claim_part",
+                "sourceIds": [
+                  "zy-2-judgment"
+                ],
+                "supportLabel": "supported",
+                "rationale": "独立核对文字与出处，不将现代命题算作古籍直接支持。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "君子有攸往，先迷，后得主",
+                "inputEvidenceSupportLabel": "supported",
+                "inputEvidenceNAReason": null
+              },
+              {
+                "claimId": "Q9014b6f7f5d9.delivered.claim006",
+                "occurrenceIds": [],
+                "assertion": "括囊为结囊口谨密",
+                "quote": "扎紧袋口、慎密不露",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zhu-xi@528287:h2:line4:847d5f53d3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "朱熹补充参考直接释结囊口而不出。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "括古活反譽音餘又音預○括囊言結囊口而不出也譽者過實之名謹密如是則无咎而亦无譽矣六四重隂不中故其象占如此蓋或事當謹密或時當隱遯也",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "reference_only_not_seen"
+              },
+              {
+                "claimId": "Q9014b6f7f5d9.delivered.claim007",
+                "occurrenceIds": [],
+                "assertion": "六四属有条件自守",
+                "quote": "特定时位下的收敛自保",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "cheng-yi@1313743:h2:line4:2d8ef483ee",
+                  "zhu-xi@528287:h2:line4:847d5f53d3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "程颐危疑闭隔、朱熹或事当谨密或时隐遁支持；生成未见。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "四居近五之位，而無相得之義，乃上下閉隔之時。其自處以正，危疑之地也。若晦藏其知，如括結囊口而不露，則可得無咎，不然則有害也。既晦藏，則無譽矣。",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "reference_only_not_seen"
+              },
+              {
+                "claimId": "Q9014b6f7f5d9.delivered.claim008",
+                "occurrenceIds": [],
+                "assertion": "厚德载物明确要求该说话",
+                "quote": "厚德载物恰恰要求人在该说话、该担当的时候能够容受和回应",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zy-2-xiang"
+                ],
+                "supportLabel": "unsupported",
+                "rationale": "实际大象未规定言语时机。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "inputEvidenceSupportLabel": "unsupported",
+                "inputEvidenceNAReason": null
+              }
+            ],
+            "supportCounts": {
+              "partial": 3,
+              "supported": 3,
+              "unsupported": 1
+            },
+            "traditionalDenominator": 7,
+            "modernExcludedCount": 1,
+            "supportCountsScope": "knowledge_semantic_check_including_reference_only_not_input_faithfulness",
+            "inputEvidenceFaithfulness": {
+              "value": "applicable",
+              "naReason": null,
+              "note": "referenceOnlyEvidence仅供独立知识核验，不能计为生成已見或已检索。",
+              "traditionalAssertionsWithInputEvidence": 5
+            }
+          }
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "Qa9eca0d0bc44",
+      "reviewer": {
+        "id": "formal-reviewer-a",
+        "type": "ai",
+        "expert": false,
+        "reviewerId": "formal-reviewer-a",
+        "kind": "AI",
+        "expertStatus": "non_expert",
+        "blind": true,
+        "independent": true
+      },
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": "unknown",
+      "taskSuccessReason": "答案给出虞的定义但现有注没有直接训释职掌，非专家不能负责核定核心定义；有相关注不等于已验证。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "准确识别虞词义和注解目标。",
+              "evidence": [
+                {
+                  "quote": "“虞”在这里指",
+                  "location": "paragraphs[0].text",
+                  "reason": "准确识别虞词义和注解目标。"
+                }
+              ]
+            },
+            "knowledge": {
+              "value": null,
+              "naReason": "insufficient_basis",
+              "rationale": "核心官职与向导定义在许可注释未直接训释，不能仅因相关引文真实而判核验成功。",
+              "evidence": [
+                {
+                  "quote": "古代掌管山林川泽的官",
+                  "location": "paragraphs[0].text",
+                  "reason": "核心官职与向导定义在许可注释未直接训释，不能仅因相关引文真实而判核验成功。"
+                }
+              ]
+            },
+            "integration": {
+              "value": null,
+              "naReason": "not_applicable",
+              "rationale": "纯字义文献任务，无现代应用。",
+              "evidence": [
+                {
+                  "quote": "即鹿无虞",
+                  "location": "paragraphs[0].text",
+                  "reason": "纯字义文献任务，无现代应用。"
+                }
+              ]
+            },
+            "conversation": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "直接集中说明词义与两家线索，易懂。",
+              "evidence": [
+                {
+                  "quote": "所以“无虞”不是“无忧”",
+                  "location": "paragraphs[0].text",
+                  "reason": "直接集中说明词义与两家线索，易懂。"
+                }
+              ]
+            },
+            "helpfulness": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "有真实相关注解，但官职确义仍缺直接依据。",
+              "evidence": [
+                {
+                  "quote": "逐鹿无虞陷入林中之象",
+                  "location": "paragraphs[0].text",
+                  "reason": "有真实相关注解，但官职确义仍缺直接依据。"
+                }
+              ]
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 2,
+              "citationClaimOccurrencesReviewed": 2,
+              "traditionalAssertionsIdentified": 6,
+              "traditionalAssertionsReviewed": 6,
+              "uncitedTraditionalAssertionsIdentified": 4,
+              "uncitedTraditionalAssertionsReviewed": 4,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐一核查citation.claim occurrence并补明显未引文义、条件及占法；现代命题单独排除。unknown为已检查而无法定论；参考Only不视为生成已见。"
+            },
+            "claims": [
+              {
+                "claimId": "Qa9eca0d0bc44.delivered.claim001",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "“即鹿无虞”是说追逐鹿却没有虞人带路",
+                "quote": "“即鹿无虞”是说追逐鹿却没有虞人带路",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-3-line-3"
+                ],
+                "supportLabel": "unknown",
+                "rationale": "即鹿无虞没有直接说明官职、向导含义，核心定义未知。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "即鹿无虞",
+                "inputEvidenceSupportLabel": "unknown",
+                "inputEvidenceNAReason": null
+              },
+              {
+                "claimId": "Qa9eca0d0bc44.delivered.claim002",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "其注说这是“逐鹿无虞陷入林中之象”",
+                "quote": "其注说这是“逐鹿无虞陷入林中之象”",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line3:7563e4fcb1"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "逐鹿无虞陷入林中之象",
+                "inputEvidenceSupportLabel": "supported",
+                "inputEvidenceNAReason": null
+              },
+              {
+                "claimId": "Qa9eca0d0bc44.delivered.claim003",
+                "occurrenceIds": [],
+                "assertion": "虞是古代掌山林川泽官",
+                "quote": "古代掌管山林川泽的官，即“虞人”",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line3:f0d5cdd6b5",
+                  "zhu-xi@528287:h3:line3:7563e4fcb1"
+                ],
+                "supportLabel": "unknown",
+                "rationale": "没有定义性注解，保持训诂未知。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "inputEvidenceSupportLabel": "unknown",
+                "inputEvidenceNAReason": null
+              },
+              {
+                "claimId": "Qa9eca0d0bc44.delivered.claim004",
+                "occurrenceIds": [],
+                "assertion": "朱熹注有见几舍去",
+                "quote": "君子见几，不如舍去",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zhu-xi@528287:h3:line3:7563e4fcb1"
+                ],
+                "supportLabel": "supported",
+                "rationale": "实际朱熹注有君子見幾不如舍去。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "幾音機舍音捨象同○隂柔居下不中不正上无正應妄行取困為逐鹿无虞陷入林中之象君子見幾不如舍去若往逐而不舍必致羞吝戒占者宜如是也",
+                "inputEvidenceSupportLabel": "supported",
+                "inputEvidenceNAReason": null
+              },
+              {
+                "claimId": "Qa9eca0d0bc44.delivered.claim005",
+                "occurrenceIds": [],
+                "assertion": "王弼注含无虞从禽",
+                "quote": "王弼《周易正義》也以“无虞以从禽”设喻",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line3:f0d5cdd6b5"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所见注有何異無虞以從禽乎。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "三既近五而無寇難，四雖比五，其志在初，不妨已路，可以進而無屯邅也。見路之易，不揆其志，五應在二，往必不納，何異無虞以從禽乎？雖見其禽而無其虞，徒入于林中，其可獲乎？幾，辭也。夫君子之動，豈取恨辱哉！故不如舍，「往吝」，窮也。",
+                "inputEvidenceSupportLabel": "supported",
+                "inputEvidenceNAReason": null
+              },
+              {
+                "claimId": "Qa9eca0d0bc44.delivered.claim006",
+                "occurrenceIds": [],
+                "assertion": "王弼虞定义为猎事导引者",
+                "quote": "同样把“虞”理解为猎事中的导引者",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@2689596:h3:line3:f0d5cdd6b5"
+                ],
+                "supportLabel": "unknown",
+                "rationale": "用虞未直接训虞，不能反由句中出现定职掌。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "inputEvidenceSupportLabel": "unknown",
+                "inputEvidenceNAReason": null
+              }
+            ],
+            "supportCounts": {
+              "unknown": 3,
+              "supported": 3
+            },
+            "traditionalDenominator": 6,
+            "modernExcludedCount": 0,
+            "supportCountsScope": "knowledge_semantic_check_including_reference_only_not_input_faithfulness",
+            "inputEvidenceFaithfulness": {
+              "value": "applicable",
+              "naReason": null,
+              "note": "referenceOnlyEvidence仅供独立知识核验，不能计为生成已見或已检索。",
+              "traditionalAssertionsWithInputEvidence": 6
+            }
+          }
+        }
+      ],
+      "uncertainties": [
+        "“即鹿无虞”是说追逐鹿却没有虞人带路：即鹿无虞没有直接说明官职、向导含义，核心定义未知。",
+        "虞是古代掌山林川泽官：没有定义性注解，保持训诂未知。",
+        "王弼虞定义为猎事导引者：用虞未直接训虞，不能反由句中出现定职掌。"
+      ]
+    },
+    {
+      "answerId": "Qc505fb328cdb",
+      "reviewer": {
+        "id": "formal-reviewer-a",
+        "type": "ai",
+        "expert": false,
+        "reviewerId": "formal-reviewer-a",
+        "kind": "AI",
+        "expertStatus": "non_expert",
+        "blind": true,
+        "independent": true
+      },
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "insufficient_or_refusal",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": false,
+      "taskSuccessReason": "未给虞的词义及现有注解，只有原文与缺失说明，未完成核心文献请求。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "insufficient_or_refusal",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "理解字义和找注要求，实际证据确无注释；referenceOnly不反判缺失。",
+              "evidence": [
+                {
+                  "quote": "本轮资料并未收录任何针对“虞”字的注解",
+                  "location": "paragraphs[0].text",
+                  "reason": "理解字义和找注要求，实际证据确无注释；referenceOnly不反判缺失。"
+                }
+              ]
+            },
+            "knowledge": {
+              "value": null,
+              "naReason": "insufficient_basis",
+              "rationale": "只有原文转录，没有核心词义断言，主知识判断不足依据。",
+              "evidence": [
+                {
+                  "quote": "无法从现有证据中给出一段解释“虞”的可靠注解",
+                  "location": "paragraphs[0].text",
+                  "reason": "只有原文转录，没有核心词义断言，主知识判断不足依据。"
+                }
+              ]
+            },
+            "integration": {
+              "value": null,
+              "naReason": "not_applicable",
+              "rationale": "纯文义任务，无现代应用。",
+              "evidence": [
+                {
+                  "quote": "要核对“虞”的确切含义",
+                  "location": "paragraphs[0].text",
+                  "reason": "纯文义任务，无现代应用。"
+                }
+              ]
+            },
+            "conversation": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "说明具体缺口，表达清楚。",
+              "evidence": [
+                {
+                  "quote": "目前尚缺这部分材料",
+                  "location": "paragraphs[0].text",
+                  "reason": "说明具体缺口，表达清楚。"
+                }
+              ]
+            },
+            "helpfulness": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "给出完整爻辞线索，但未解释虞或提供所需注解。",
+              "evidence": [
+                {
+                  "quote": "即鹿无虞，惟入于林中，君子几，不如舍，往吝。",
+                  "location": "paragraphs[0].text",
+                  "reason": "给出完整爻辞线索，但未解释虞或提供所需注解。"
+                }
+              ]
+            }
+          },
+          "errors": [
+            {
+              "type": "task_not_answered",
+              "quote": "无法从现有证据中给出一段解释“虞”的可靠注解",
+              "location": "paragraphs[0].text",
+              "reason": "缺材料说明诚实，仍未完成任务。",
+              "dimensions": [
+                "helpfulness"
+              ],
+              "severity": "material",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 1,
+              "citationClaimOccurrencesReviewed": 1,
+              "traditionalAssertionsIdentified": 1,
+              "traditionalAssertionsReviewed": 1,
+              "uncitedTraditionalAssertionsIdentified": 0,
+              "uncitedTraditionalAssertionsReviewed": 0,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐一核查citation.claim occurrence并补明显未引文义、条件及占法；现代命题单独排除。unknown为已检查而无法定论；参考Only不视为生成已见。"
+            },
+            "claims": [
+              {
+                "claimId": "Qc505fb328cdb.delivered.claim001",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "本轮参考原文中，与屯卦六三直接相关的材料只有爻辞本身：“即鹿无虞，惟入于林中，君子几，不如舍，往吝。”其中“即鹿无虞”一语确实出现",
+                "quote": "本轮参考原文中，与屯卦六三直接相关的材料只有爻辞本身：“即鹿无虞，惟入于林中，君子几，不如舍，往吝。”其中“即鹿无虞”一语确实出现",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zy-3-line-3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "本答实际证据仅经传及六三原文，没有注家；完整引文正确。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "即鹿无虞",
+                "inputEvidenceSupportLabel": "supported",
+                "inputEvidenceNAReason": null
+              }
+            ],
+            "supportCounts": {
+              "supported": 1
+            },
+            "traditionalDenominator": 1,
+            "modernExcludedCount": 0,
+            "supportCountsScope": "knowledge_semantic_check_including_reference_only_not_input_faithfulness",
+            "inputEvidenceFaithfulness": {
+              "value": "applicable",
+              "naReason": null,
+              "note": "referenceOnlyEvidence仅供独立知识核验，不能计为生成已見或已检索。",
+              "traditionalAssertionsWithInputEvidence": 1
+            }
+          }
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "Qce3c31639863",
+      "reviewer": {
+        "id": "formal-reviewer-a",
+        "type": "ai",
+        "expert": false,
+        "reviewerId": "formal-reviewer-a",
+        "kind": "AI",
+        "expertStatus": "non_expert",
+        "blind": true,
+        "independent": true
+      },
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "给出两家解释及非宿命判断，核心需求由参考材料核对成立。 已实质交付；局部问题未改变核心任务完成。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "识别比较两家和先天不可学疑问，未冒称看过原文。",
+              "evidence": [
+                {
+                  "quote": "下面说的是两家注释的通行大意",
+                  "location": "paragraphs[0].text",
+                  "reason": "识别比较两家和先天不可学疑问，未冒称看过原文。"
+                }
+              ]
+            },
+            "knowledge": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "referenceOnly支持王弼远阳无启与朱熹无正应可近刚明，两家基本含义准确；小象额外引句未知另列。",
+              "evidence": [
+                {
+                  "quote": "六四既远离阳刚，又没有正应",
+                  "location": "paragraphs[2].text",
+                  "reason": "referenceOnly支持王弼远阳无启与朱熹无正应可近刚明，两家基本含义准确；小象额外引句未知另列。"
+                }
+              ]
+            },
+            "integration": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "将学习困境理解为可寻启发而非先天定论，未诊断具体人。",
+              "evidence": [
+                {
+                  "quote": "不是资质上的先天判决",
+                  "location": "paragraphs[3].text",
+                  "reason": "将学习困境理解为可寻启发而非先天定论，未诊断具体人。"
+                }
+              ]
+            },
+            "conversation": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "两家分述清楚，末段现实启发温和。",
+              "evidence": [
+                {
+                  "quote": "两家都没有把“困蒙”解释成一个人天生学不会",
+                  "location": "paragraphs[2].text",
+                  "reason": "两家分述清楚，末段现实启发温和。"
+                }
+              ]
+            },
+            "helpfulness": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "给出两家解释及非宿命判断，核心需求由参考材料核对成立。",
+              "evidence": [
+                {
+                  "quote": "主动亲近明师、打开受教通道",
+                  "location": "paragraphs[4].text",
+                  "reason": "给出两家解释及非宿命判断，核心需求由参考材料核对成立。"
+                }
+              ]
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 7,
+              "traditionalAssertionsReviewed": 7,
+              "uncitedTraditionalAssertionsIdentified": 7,
+              "uncitedTraditionalAssertionsReviewed": 7,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐一核查citation.claim occurrence并补明显未引文义、条件及占法；现代命题单独排除。unknown为已检查而无法定论；参考Only不视为生成已见。"
+            },
+            "claims": [
+              {
+                "claimId": "Qce3c31639863.delivered.claim001",
+                "occurrenceIds": [],
+                "assertion": "蒙六四爻辞为困蒙吝",
+                "quote": "困蒙，吝",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@2404940:h4:line4:262bd9d53b",
+                  "zhu-xi@528287:h4:line4:0ded86be84"
+                ],
+                "supportLabel": "supported",
+                "rationale": "两份参考注分别明说故曰困蒙、故曰吝，支持该爻归属内容。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "獨遠於陽，處兩陰之中，闇莫之發，故曰「困蒙」也。困於蒙昧，不能比賢以發其志，亦以鄙矣，故曰「吝」也。",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Qce3c31639863.delivered.claim002",
+                "occurrenceIds": [],
+                "assertion": "蒙六四小象原句",
+                "quote": "困蒙之吝，独远实也",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "许可参考只含注家爻注，无此小象全文，不能核定引文字面。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Qce3c31639863.delivered.claim003",
+                "occurrenceIds": [],
+                "assertion": "王弼以远阳无启说明困蒙",
+                "quote": "远离阳刚之“实”，没有阳来发蒙",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@2404940:h4:line4:262bd9d53b"
+                ],
+                "supportLabel": "supported",
+                "rationale": "参考王弼獨遠於陽闇莫之發支持核心解释；实的用词另核。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "獨遠於陽，處兩陰之中，闇莫之發，故曰「困蒙」也。困於蒙昧，不能比賢以發其志，亦以鄙矣，故曰「吝」也。",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Qce3c31639863.delivered.claim004",
+                "occurrenceIds": [],
+                "assertion": "小象实训为阳",
+                "quote": "“实”在这里通常指阳",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [],
+                "supportLabel": "unknown",
+                "rationale": "未给对应小象与训释，不能负责核定词义。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Qce3c31639863.delivered.claim005",
+                "occurrenceIds": [],
+                "assertion": "朱熹蒙六四远阳无正应",
+                "quote": "六四既远离阳刚，又没有正应",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zhu-xi@528287:h4:line4:0ded86be84"
+                ],
+                "supportLabel": "supported",
+                "rationale": "参考朱熹既遠於陽又无正應直接支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "既逺於陽又无正應為困於䝉之象占者如是可羞吝也能求剛明之徳而親近之則可免矣",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Qce3c31639863.delivered.claim006",
+                "occurrenceIds": [],
+                "assertion": "两家困蒙非固定先天不能学",
+                "quote": "两家都没有把“困蒙”解释成一个人天生学不会",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@2404940:h4:line4:262bd9d53b",
+                  "zhu-xi@528287:h4:line4:0ded86be84"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王弼关系条件、朱熹亲近刚明则可免均反对绝对先天论。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "獨遠於陽，處兩陰之中，闇莫之發，故曰「困蒙」也。困於蒙昧，不能比賢以發其志，亦以鄙矣，故曰「吝」也。",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Qce3c31639863.delivered.claim007",
+                "occurrenceIds": [],
+                "assertion": "困蒙含不求助不受教的危险",
+                "quote": "不求助、不受教的危险",
+                "location": "paragraphs[3].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@2404940:h4:line4:262bd9d53b",
+                  "zhu-xi@528287:h4:line4:0ded86be84"
+                ],
+                "supportLabel": "partial",
+                "rationale": "不能比贤和求近可免支持求助重要，但不受教意愿不是所给注明确断言。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "獨遠於陽，處兩陰之中，闇莫之發，故曰「困蒙」也。困於蒙昧，不能比賢以發其志，亦以鄙矣，故曰「吝」也。",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Qce3c31639863.delivered.claim008",
+                "occurrenceIds": [],
+                "assertion": "求近刚明借学习求助",
+                "quote": "主动亲近明师、打开受教通道",
+                "location": "paragraphs[4].text",
+                "layer": "modern_analogy",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zhu-xi@528287:h4:line4:0ded86be84"
+                ],
+                "supportLabel": null,
+                "rationale": "现代启发，未声称找到老师便保证学会。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": true,
+                "supportEvidenceScope": "reference_only",
+                "exclusionReason": "现代情境的类比、建议或现实判断，不计作传统文义命题；合理性独立评入integration。",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              }
+            ],
+            "supportCounts": {
+              "supported": 4,
+              "unknown": 2,
+              "partial": 1
+            },
+            "traditionalDenominator": 7,
+            "modernExcludedCount": 1,
+            "supportCountsScope": "knowledge_semantic_check_including_reference_only_not_input_faithfulness",
+            "inputEvidenceFaithfulness": {
+              "value": null,
+              "naReason": "no_input_evidence",
+              "note": "referenceOnlyEvidence仅供独立知识核验，不能计为生成已見或已检索。",
+              "traditionalAssertionsWithInputEvidence": 0
+            }
+          }
+        }
+      ],
+      "uncertainties": [
+        "蒙六四小象原句：许可参考只含注家爻注，无此小象全文，不能核定引文字面。",
+        "小象实训为阳：未给对应小象与训释，不能负责核定词义。"
+      ]
+    },
+    {
+      "answerId": "Qcb4b8e611672",
+      "reviewer": {
+        "id": "formal-reviewer-a",
+        "type": "ai",
+        "expert": false,
+        "reviewerId": "formal-reviewer-a",
+        "kind": "AI",
+        "expertStatus": "non_expert",
+        "blind": true,
+        "independent": true
+      },
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": true,
+      "taskSuccessReason": "对象、两家原文及非先天判决的理由齐全。 已实质交付；局部问题未改变核心任务完成。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "准确理解两家比较及先天论疑问。",
+              "evidence": [
+                {
+                  "quote": "王弼和朱熹都不是说一个人天生学不会",
+                  "location": "paragraphs[2].text",
+                  "reason": "准确理解两家比较及先天论疑问。"
+                }
+              ]
+            },
+            "knowledge": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "引用及语义与实际两份注文一致，保持各自解释和可免条件。",
+              "evidence": [
+                {
+                  "quote": "能求刚明之德并亲近它，就可免于羞吝",
+                  "location": "paragraphs[1].text",
+                  "reason": "引用及语义与实际两份注文一致，保持各自解释和可免条件。"
+                }
+              ]
+            },
+            "integration": {
+              "value": null,
+              "naReason": "not_applicable",
+              "rationale": "纯文義范围解释，未评具体现代个案。",
+              "evidence": [
+                {
+                  "quote": "按这个解释",
+                  "location": "paragraphs[2].text",
+                  "reason": "纯文義范围解释，未评具体现代个案。"
+                }
+              ]
+            },
+            "conversation": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "分家说明再比较，逻辑连贯。",
+              "evidence": [
+                {
+                  "quote": "重点在“不能比贤”",
+                  "location": "paragraphs[2].text",
+                  "reason": "分家说明再比较，逻辑连贯。"
+                }
+              ]
+            },
+            "helpfulness": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "对象、两家原文及非先天判决的理由齐全。",
+              "evidence": [
+                {
+                  "quote": "处境可以通过转向刚明之德来改变",
+                  "location": "paragraphs[2].text",
+                  "reason": "对象、两家原文及非先天判决的理由齐全。"
+                }
+              ]
+            }
+          },
+          "errors": [],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 5,
+              "citationClaimOccurrencesReviewed": 5,
+              "traditionalAssertionsIdentified": 8,
+              "traditionalAssertionsReviewed": 8,
+              "uncitedTraditionalAssertionsIdentified": 3,
+              "uncitedTraditionalAssertionsReviewed": 3,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐一核查citation.claim occurrence并补明显未引文义、条件及占法；现代命题单独排除。unknown为已检查而无法定论；参考Only不视为生成已见。"
+            },
+            "claims": [
+              {
+                "claimId": "Qcb4b8e611672.delivered.claim001",
+                "occurrenceIds": [
+                  "delivered.p0.c0"
+                ],
+                "assertion": "獨遠於陽，處兩陰之中，闇莫之發，故曰「困蒙」也。",
+                "quote": "獨遠於陽，處兩陰之中，闇莫之發，故曰「困蒙」也。",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2404940:h4:line4:262bd9d53b"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "獨遠於陽，處兩陰之中，闇莫之發，故曰「困蒙」也。",
+                "inputEvidenceSupportLabel": "supported",
+                "inputEvidenceNAReason": null
+              },
+              {
+                "claimId": "Qcb4b8e611672.delivered.claim002",
+                "occurrenceIds": [
+                  "delivered.p0.c1"
+                ],
+                "assertion": "困於蒙昧，不能比賢以發其志，亦以鄙矣，故曰「吝」也。",
+                "quote": "困於蒙昧，不能比賢以發其志，亦以鄙矣，故曰「吝」也。",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2404940:h4:line4:262bd9d53b"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "困於蒙昧，不能比賢以發其志，亦以鄙矣，故曰「吝」也。",
+                "inputEvidenceSupportLabel": "supported",
+                "inputEvidenceNAReason": null
+              },
+              {
+                "claimId": "Qcb4b8e611672.delivered.claim003",
+                "occurrenceIds": [
+                  "delivered.p1.c0"
+                ],
+                "assertion": "既逺於陽又无正應為困於䝉之象占者如是可羞吝也能求剛明之徳而親近之則可免矣",
+                "quote": "既逺於陽又无正應為困於䝉之象占者如是可羞吝也能求剛明之徳而親近之則可免矣",
+                "location": "paragraphs[1].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h4:line4:0ded86be84"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "既逺於陽又无正應為困於䝉之象占者如是可羞吝也能求剛明之徳而親近之則可免矣",
+                "inputEvidenceSupportLabel": "supported",
+                "inputEvidenceNAReason": null
+              },
+              {
+                "claimId": "Qcb4b8e611672.delivered.claim004",
+                "occurrenceIds": [
+                  "delivered.p2.c0"
+                ],
+                "assertion": "困於蒙昧，不能比賢以發其志",
+                "quote": "困於蒙昧，不能比賢以發其志",
+                "location": "paragraphs[0].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "wang-bi@2404940:h4:line4:262bd9d53b"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "困於蒙昧，不能比賢以發其志",
+                "inputEvidenceSupportLabel": "supported",
+                "inputEvidenceNAReason": null
+              },
+              {
+                "claimId": "Qcb4b8e611672.delivered.claim005",
+                "occurrenceIds": [
+                  "delivered.p2.c1"
+                ],
+                "assertion": "能求剛明之徳而親近之則可免矣",
+                "quote": "能求剛明之徳而親近之則可免矣",
+                "location": "paragraphs[1].text",
+                "layer": "quotation",
+                "origin": "citation_claim",
+                "sourceIds": [
+                  "zhu-xi@528287:h4:line4:0ded86be84"
+                ],
+                "supportLabel": "supported",
+                "rationale": "所列原句及来源对象与实际证据相符；仅核定此命题，不以引文真实替整段解释背书。",
+                "contradiction": false,
+                "quotationMatch": "exact",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "能求剛明之徳而親近之則可免矣",
+                "inputEvidenceSupportLabel": "supported",
+                "inputEvidenceNAReason": null
+              },
+              {
+                "claimId": "Qcb4b8e611672.delivered.claim006",
+                "occurrenceIds": [],
+                "assertion": "王弼困蒙因远阳不能比贤",
+                "quote": "得不到启发，又不能亲近贤者来发动心志，所以“困”",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@2404940:h4:line4:262bd9d53b"
+                ],
+                "supportLabel": "supported",
+                "rationale": "闇莫之發、不能比賢以發其志直接支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "獨遠於陽，處兩陰之中，闇莫之發，故曰「困蒙」也。困於蒙昧，不能比賢以發其志，亦以鄙矣，故曰「吝」也。",
+                "inputEvidenceSupportLabel": "supported",
+                "inputEvidenceNAReason": null
+              },
+              {
+                "claimId": "Qcb4b8e611672.delivered.claim007",
+                "occurrenceIds": [],
+                "assertion": "朱熹明确亲近刚明可免",
+                "quote": "但后半句给出出路",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zhu-xi@528287:h4:line4:0ded86be84"
+                ],
+                "supportLabel": "supported",
+                "rationale": "能求剛明之德而親近之則可免矣直接支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "既逺於陽又无正應為困於䝉之象占者如是可羞吝也能求剛明之徳而親近之則可免矣",
+                "inputEvidenceSupportLabel": "supported",
+                "inputEvidenceNAReason": null
+              },
+              {
+                "claimId": "Qcb4b8e611672.delivered.claim008",
+                "occurrenceIds": [],
+                "assertion": "两家困蒙非先天不能学",
+                "quote": "不是先天资质判决",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@2404940:h4:line4:262bd9d53b",
+                  "zhu-xi@528287:h4:line4:0ded86be84"
+                ],
+                "supportLabel": "supported",
+                "rationale": "参考关系条件与可免断语支持反绝对化。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "actually_available",
+                "evidenceQuote": "獨遠於陽，處兩陰之中，闇莫之發，故曰「困蒙」也。困於蒙昧，不能比賢以發其志，亦以鄙矣，故曰「吝」也。",
+                "inputEvidenceSupportLabel": "supported",
+                "inputEvidenceNAReason": null
+              }
+            ],
+            "supportCounts": {
+              "supported": 8
+            },
+            "traditionalDenominator": 8,
+            "modernExcludedCount": 0,
+            "supportCountsScope": "knowledge_semantic_check_including_reference_only_not_input_faithfulness",
+            "inputEvidenceFaithfulness": {
+              "value": "applicable",
+              "naReason": null,
+              "note": "referenceOnlyEvidence仅供独立知识核验，不能计为生成已見或已检索。",
+              "traditionalAssertionsWithInputEvidence": 8
+            }
+          }
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "Q935744d98256",
+      "reviewer": {
+        "id": "formal-reviewer-a",
+        "type": "ai",
+        "expert": false,
+        "reviewerId": "formal-reviewer-a",
+        "kind": "AI",
+        "expertStatus": "non_expert",
+        "blind": true,
+        "independent": true
+      },
+      "rubricVersion": "1.0",
+      "delivery": {
+        "mechanicalStatus": "completed",
+        "candidateOnly": false,
+        "visibleKind": "substantive_answer",
+        "technicalFailure": false,
+        "providedFailureNote": null
+      },
+      "taskSuccess": false,
+      "taskSuccessReason": "虽然非永久沉默的结论合理，但作为文献依据的王弼、程颐引文存在关键错引及拟造，未可靠完成结合注家查证要求。",
+      "candidateTaskSuccess": null,
+      "candidateTaskSuccessReason": null,
+      "evaluations": [
+        {
+          "target": "delivered",
+          "responseKind": "substantive_answer",
+          "dimensions": {
+            "understanding": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "理解是否永久沉默与注家依据要求，没有转移目标。",
+              "evidence": [
+                {
+                  "quote": "不是教人终身闭口不言",
+                  "location": "paragraphs[0].text",
+                  "reason": "理解是否永久沉默与注家依据要求，没有转移目标。"
+                }
+              ]
+            },
+            "knowledge": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "核心条件性解释方向正确，但王弼原文处阴之卦被引成处阴之极；程颐多句拟作引文不见参考原文。",
+              "evidence": [
+                {
+                  "quote": "处阴之极",
+                  "location": "paragraphs[1].text",
+                  "reason": "核心条件性解释方向正确，但王弼原文处阴之卦被引成处阴之极；程颐多句拟作引文不见参考原文。"
+                }
+              ]
+            },
+            "integration": {
+              "value": null,
+              "naReason": "not_applicable",
+              "rationale": "纯文义查询，无具体现代应用。",
+              "evidence": [
+                {
+                  "quote": "这是一个特定时位下的处世分寸",
+                  "location": "paragraphs[0].text",
+                  "reason": "纯文义查询，无具体现代应用。"
+                }
+              ]
+            },
+            "conversation": {
+              "value": 2,
+              "naReason": null,
+              "rationale": "分注家回答清楚，结论直接。",
+              "evidence": [
+                {
+                  "quote": "因此，回到你的问题",
+                  "location": "paragraphs[4].text",
+                  "reason": "分注家回答清楚，结论直接。"
+                }
+              ]
+            },
+            "helpfulness": {
+              "value": 1,
+              "naReason": null,
+              "rationale": "反绝对化解释有用，朱熹概括基本正确；但所给两家具体引文不能信赖，文献核对需要明显修正。",
+              "evidence": [
+                {
+                  "quote": "当括囊，谨慎不出",
+                  "location": "paragraphs[2].text",
+                  "reason": "反绝对化解释有用，朱熹概括基本正确；但所给两家具体引文不能信赖，文献核对需要明显修正。"
+                }
+              ]
+            }
+          },
+          "errors": [
+            {
+              "type": "citation_mismatch",
+              "quote": "处阴之极",
+              "location": "paragraphs[1].text",
+              "reason": "参考王弼为處陰之卦，卦与极不同，且据此扩为阴气极盛。",
+              "dimensions": [
+                "knowledge"
+              ],
+              "severity": "material",
+              "certainty": "confirmed"
+            },
+            {
+              "type": "citation_mismatch",
+              "quote": "当括囊，谨慎不出",
+              "location": "paragraphs[2].text",
+              "reason": "参考程颐原文无此引句，实际为若晦藏其知等。",
+              "dimensions": [
+                "knowledge"
+              ],
+              "severity": "material",
+              "certainty": "confirmed"
+            }
+          ],
+          "faithfulness": {
+            "method": "all_citation_claims_plus_obvious_uncited_traditional_assertions",
+            "evidenceScope": "evidence 是该回答实际可见资料；referenceOnlyEvidence 仅授权评阅查证，未提供给被测生成，不得视为该回答已检索或已引用。",
+            "coverage": {
+              "citationClaimOccurrencesTotal": 0,
+              "citationClaimOccurrencesReviewed": 0,
+              "traditionalAssertionsIdentified": 9,
+              "traditionalAssertionsReviewed": 9,
+              "uncitedTraditionalAssertionsIdentified": 9,
+              "uncitedTraditionalAssertionsReviewed": 9,
+              "uncitedDiscoveryExhaustive": false,
+              "notes": "逐一核查citation.claim occurrence并补明显未引文义、条件及占法；现代命题单独排除。unknown为已检查而无法定论；参考Only不视为生成已见。"
+            },
+            "claims": [
+              {
+                "claimId": "Q935744d98256.delivered.claim001",
+                "occurrenceIds": [],
+                "assertion": "六四以阴居阴近五且危疑",
+                "quote": "坤卦六四以阴居阴，位近六五之君，处在危疑之地",
+                "location": "paragraphs[0].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@2404938:h2:line4:216f57e528",
+                  "cheng-yi@1313743:h2:line4:2d8ef483ee"
+                ],
+                "supportLabel": "supported",
+                "rationale": "王弼以阴居阴，程颐四居近五危疑支持；均referenceOnly。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "處陰之卦，以陰居陰，履非中位，無「直方」之質，不造陽事，無「含章」之美，括結否閉，賢人乃隱。施慎則可，非泰之道。",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Q935744d98256.delivered.claim002",
+                "occurrenceIds": [],
+                "assertion": "王弼原句为处阴之极",
+                "quote": "王弼注此爻说：“处阴之极，……括结否闭，贤人乃隐。”",
+                "location": "paragraphs[1].text",
+                "layer": "quotation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@2404938:h2:line4:216f57e528"
+                ],
+                "supportLabel": "unsupported",
+                "rationale": "参考原文是處陰之卦；后半括結否閉賢人乃隱准确但首句改字。",
+                "contradiction": true,
+                "quotationMatch": "mismatch",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Q935744d98256.delivered.claim003",
+                "occurrenceIds": [],
+                "assertion": "王弼六四解释阴气极盛世道晦暗",
+                "quote": "在阴气极盛、世道晦暗之时",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "wang-bi@2404938:h2:line4:216f57e528"
+                ],
+                "supportLabel": "partial",
+                "rationale": "括结否闭贤人隐支持闭塞，但阴气极盛来自错引卦为极，所给注未言。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "處陰之卦，以陰居陰，履非中位，無「直方」之質，不造陽事，無「含章」之美，括結否閉，賢人乃隱。施慎則可，非泰之道。",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Q935744d98256.delivered.claim004",
+                "occurrenceIds": [],
+                "assertion": "程颐原句居近君之位",
+                "quote": "居近君之位",
+                "location": "paragraphs[2].text",
+                "layer": "quotation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "cheng-yi@1313743:h2:line4:2d8ef483ee"
+                ],
+                "supportLabel": "partial",
+                "rationale": "参考为四居近五之位，近君可作意译但不应标原句。",
+                "contradiction": false,
+                "quotationMatch": "partial",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "四居近五之位，而無相得之義，乃上下閉隔之時。其自處以正，危疑之地也。若晦藏其知，如括結囊口而不露，則可得無咎，不然則有害也。既晦藏，則無譽矣。",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Q935744d98256.delivered.claim005",
+                "occurrenceIds": [],
+                "assertion": "程颐此注明言六四有辅君责",
+                "quote": "本有辅君之责",
+                "location": "paragraphs[2].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "cheng-yi@1313743:h2:line4:2d8ef483ee"
+                ],
+                "supportLabel": "unknown",
+                "rationale": "参考注无此责任说明，不扩查其他篇目。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Q935744d98256.delivered.claim006",
+                "occurrenceIds": [],
+                "assertion": "程颐直接说当括囊谨慎不出",
+                "quote": "当括囊，谨慎不出",
+                "location": "paragraphs[2].text",
+                "layer": "quotation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "cheng-yi@1313743:h2:line4:2d8ef483ee"
+                ],
+                "supportLabel": "unsupported",
+                "rationale": "参考程颐没有此引文，概括不能当直接引语。",
+                "contradiction": false,
+                "quotationMatch": "mismatch",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Q935744d98256.delivered.claim007",
+                "occurrenceIds": [],
+                "assertion": "朱熹释括囊结囊口而不出",
+                "quote": "结囊口而不出",
+                "location": "paragraphs[3].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zhu-xi@528287:h2:line4:847d5f53d3"
+                ],
+                "supportLabel": "supported",
+                "rationale": "参考朱熹括囊言結囊口而不出也支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "括古活反譽音餘又音預○括囊言結囊口而不出也譽者過實之名謹密如是則无咎而亦无譽矣六四重隂不中故其象占如此蓋或事當謹密或時當隱遯也",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Q935744d98256.delivered.claim008",
+                "occurrenceIds": [],
+                "assertion": "朱熹无誉为不得显赫名声",
+                "quote": "既不犯错，也不会有显赫名声",
+                "location": "paragraphs[3].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zhu-xi@528287:h2:line4:847d5f53d3"
+                ],
+                "supportLabel": "partial",
+                "rationale": "无誉结果有据，但朱熹譽者過實之名的特别解释被略去，显赫未必同过实。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "括古活反譽音餘又音預○括囊言結囊口而不出也譽者過實之名謹密如是則无咎而亦无譽矣六四重隂不中故其象占如此蓋或事當謹密或時當隱遯也",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              },
+              {
+                "claimId": "Q935744d98256.delivered.claim009",
+                "occurrenceIds": [],
+                "assertion": "括囊有时位条件非永久禁令",
+                "quote": "时当闭藏则闭藏",
+                "location": "paragraphs[1].text",
+                "layer": "classical_interpretation",
+                "origin": "uncited_traditional_assertion",
+                "sourceIds": [
+                  "zhu-xi@528287:h2:line4:847d5f53d3",
+                  "cheng-yi@1313743:h2:line4:2d8ef483ee"
+                ],
+                "supportLabel": "supported",
+                "rationale": "朱熹或事当谨密或时当隐遁、程颐危疑闭隔支持。",
+                "contradiction": false,
+                "quotationMatch": "not_applicable",
+                "excludedFromTraditionalDenominator": false,
+                "supportEvidenceScope": "reference_only",
+                "evidenceQuote": "括古活反譽音餘又音預○括囊言結囊口而不出也譽者過實之名謹密如是則无咎而亦无譽矣六四重隂不中故其象占如此蓋或事當謹密或時當隱遯也",
+                "inputEvidenceSupportLabel": null,
+                "inputEvidenceNAReason": "no_input_evidence"
+              }
+            ],
+            "supportCounts": {
+              "supported": 3,
+              "unsupported": 2,
+              "partial": 3,
+              "unknown": 1
+            },
+            "traditionalDenominator": 9,
+            "modernExcludedCount": 0,
+            "supportCountsScope": "knowledge_semantic_check_including_reference_only_not_input_faithfulness",
+            "inputEvidenceFaithfulness": {
+              "value": null,
+              "naReason": "no_input_evidence",
+              "note": "referenceOnlyEvidence仅供独立知识核验，不能计为生成已見或已检索。",
+              "traditionalAssertionsWithInputEvidence": 0
+            }
+          }
+        }
+      ],
+      "uncertainties": [
+        "程颐此注明言六四有辅君责：参考注无此责任说明，不扩查其他篇目。"
+      ]
+    }
+  ]
+}

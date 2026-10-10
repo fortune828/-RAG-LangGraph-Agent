@@ -1,0 +1,23 @@
+stage,split,caseId,arm,status,error,errors,calls,reportedTokens,estimatedUSD,durationMs,trace
+development,development,dev-06,D,validation_failed,,"[""CLAIM_NOT_IN_PARAGRAPH:zy-40-tuan""]",2,3886,0.0013769519999999999,10529,development/dev-06-D.jsonl
+development,development,dev-25,B,validation_failed,,"[""paragraphs: List should have at least 1 item after validation, not 0""]",2,6027,0.002258268,18094,development/dev-25-B.jsonl
+development,development,dev-27,B,validation_failed,,"[""paragraphs.0.citations.0.quote: String should have at least 2 characters""]",2,3820,0.001639218,13456,development/dev-27-B.jsonl
+development,development,dev-27,H,validation_failed,,"[""QUOTE_MISMATCH:zy-3-line-3"", ""QUOTE_MISMATCH:zy-3-line_xiang-3""]",4,15777,0.0044475899999999995,28992,development/dev-27-H.jsonl
+development,development,dev-31,B,validation_failed,,"[""AUTHOR_ATTRIBUTION_MISMATCH:zhu-xi""]",2,3246,0.0012732179999999998,11154,development/dev-31-B.jsonl
+test,independent_test,test-07,H,validation_failed,,"[""paragraphs.0.citations.0.quote: String should have at least 2 characters""]",2,8207,0.003906468,25258,test/test-07-H.jsonl
+test,independent_test,test-32,B,validation_failed,,"[""paragraphs: List should have at least 1 item after validation, not 0""]",2,9842,0.004378968,30468,test/test-32-B.jsonl
+test,independent_test,test-32,D,validation_failed,,"[""CLAIM_NOT_IN_PARAGRAPH:wang-bi@7904495:h16:line6:067f0d7036"", ""CLAIM_NOT_IN_PARAGRAPH:cheng-yi@1313743:h16:line6:065f828f81"", ""CLAIM_NOT_IN_PARAGRAPH:zhu-xi@528287:h16:line6:ed433daded""]",3,15853,0.006297666,42744,test/test-32-D.jsonl
+test,independent_test,test-33,D,validation_failed,,"[""AUTHOR_ATTRIBUTION_MISMATCH:zhu-xi""]",3,10747,0.003999744,28673,test/test-33-D.jsonl
+test,independent_test,test-34,H,validation_failed,,"[""AUTHOR_ATTRIBUTION_MISMATCH:wang-bi""]",2,2650,0.000863868,7254,test/test-34-H.jsonl
+test,independent_test,test-35,D,validation_failed,,"[""MISSING_ANSWER_CITATION"", ""REQUIRED_TARGET_NOT_CITED:{'hexagramId': 48, 'section': 'line', 'line': 5, 'layer': 'commentary', 'authorId': 'cheng-yi'}"", ""AUTHOR_ATTRIBUTION_MISMATCH:cheng-yi""]",2,1940,0.000526968,4823,test/test-35-D.jsonl
+test,independent_test,test-39,C,validation_failed,,"[""QUOTE_MISMATCH:zy-9-judgment""]",2,5227,0.002150418,14756,test/test-39-C.jsonl
+rag,development,dev-22,classic,validation_failed,,"[""AUTHOR_ATTRIBUTION_MISMATCH:wang-bi""]",1,2694,0.001349718,11600,rag/dev-22-classic.jsonl
+rag,development,dev-22,full,validation_failed,,"[""paragraphs.0.citations: List should have at most 5 items after validation, not 6""]",1,4899,0.002558586,20060,rag/dev-22-full.jsonl
+rag,development,dev-25,full,validation_failed,,"[""REQUIRED_TARGET_NOT_CITED:{'hexagramId': 2, 'section': 'line', 'line': 4, 'layer': 'classic'}""]",1,4249,0.001941588,13934,rag/dev-25-full.jsonl
+rag,development,dev-28,classic,validation_failed,,"[""AUTHOR_ATTRIBUTION_MISMATCH:cheng-yi""]",1,1854,0.000842118,8495,rag/dev-28-classic.jsonl
+rag,development,dev-30,classic,validation_failed,,"[""AUTHOR_ATTRIBUTION_MISMATCH:zhu-xi""]",1,969,0.00031246800000000004,3148,rag/dev-30-classic.jsonl
+rag,independent_test,test-22,classic,validation_failed,,"[""AUTHOR_ATTRIBUTION_MISMATCH:cheng-yi"", ""WORK_ATTRIBUTION_MISMATCH:yichuan-yizhuan""]",1,2628,0.001202202,9636,rag/test-22-classic.jsonl
+rag,independent_test,test-25,classic,validation_failed,,"[""AUTHOR_ATTRIBUTION_MISMATCH:wang-bi"", ""AUTHOR_ATTRIBUTION_MISMATCH:zhu-xi""]",1,3733,0.001872852,14811,rag/test-25-classic.jsonl
+rag,independent_test,test-26,classic,validation_failed,,"[""AUTHOR_ATTRIBUTION_MISMATCH:wang-bi""]",1,1938,0.000799452,6888,rag/test-26-classic.jsonl
+rag,independent_test,test-32,full,validation_failed,,"[""CLAIM_NOT_IN_PARAGRAPH:zhu-xi@528287:h16:line6:ed433daded"", ""AUTHOR_ATTRIBUTION_MISMATCH:wang-bi"", ""AUTHOR_ATTRIBUTION_MISMATCH:cheng-yi"", ""AUTHOR_ATTRIBUTION_MISMATCH:zhu-xi""]",1,3046,0.001144272,9363,rag/test-32-full.jsonl
+rag,independent_test,test-33,full,validation_failed,,"[""AUTHOR_ATTRIBUTION_MISMATCH:wang-bi"", ""AUTHOR_ATTRIBUTION_MISMATCH:zhu-xi""]",1,3085,0.001468386,11927,rag/test-33-full.jsonl

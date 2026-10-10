@@ -1,0 +1,650 @@
+{
+  "input": {
+    "caseId": "dev-31",
+    "session": {
+      "id": "session-dev-31",
+      "question": "我想核对这次阅读中遇到的文献问题。",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          8,
+          8,
+          8,
+          7
+        ],
+        "original": {
+          "binary": "010001",
+          "name": "山水蒙",
+          "number": 4,
+          "judgment": "亨。匪我求童蒙，童蒙求我。初筮告，再三渎，渎则不告。利贞。"
+        },
+        "changed": {
+          "binary": "010001",
+          "name": "山水蒙",
+          "number": 4,
+          "judgment": "亨。匪我求童蒙，童蒙求我。初筮告，再三渎，渎则不告。利贞。"
+        },
+        "originalBinary": "010001",
+        "changedBinary": "010001",
+        "changingIndices": [],
+        "id": "cast-dev-31",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "“见金夫，不有躬”出自哪里？我想先看原文，再看朱熹如何解释“金夫”。",
+    "mode": "followup",
+    "groupId": "dev-group-31",
+    "split": "development",
+    "category": "knowledge"
+  },
+  "records": [
+    {
+      "arm": "B",
+      "status": "validation_failed",
+      "targets": [
+        {
+          "hexagramId": null,
+          "layer": "commentary",
+          "authorId": "zhu-xi"
+        }
+      ],
+      "initialEvidenceIds": [
+        "zy-4-judgment",
+        "zy-4-tuan",
+        "zy-4-xiang"
+      ],
+      "retrievedEvidenceIds": [
+        "zy-4-judgment",
+        "zy-4-tuan",
+        "zy-4-xiang"
+      ],
+      "generationEvidenceIds": [],
+      "answer": {
+        "status": "insufficient",
+        "paragraphs": [
+          {
+            "text": "这次回答未能通过核验，本次卦象已保留。可以查看原文依据，或继续说明你的问题。",
+            "citations": []
+          }
+        ],
+        "limitations": [
+          "结构或引用校验修复一次后仍未通过。"
+        ]
+      },
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "source_request",
+          "evidenceIds": [
+            "zy-4-judgment",
+            "zy-4-tuan",
+            "zy-4-xiang"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "route",
+          "status": "ok",
+          "code": "RULE_POLICY"
+        },
+        {
+          "step": "replan",
+          "status": "requested",
+          "code": "MISSING_RETRIEVABLE_TARGET"
+        },
+        {
+          "step": "route",
+          "status": "ok",
+          "code": "RULE_POLICY"
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 9160,
+          "promptTokens": 529,
+          "completionTokens": 1602,
+          "totalTokens": 2131
+        },
+        {
+          "step": "validate",
+          "status": "failed",
+          "code": "AUTHOR_ATTRIBUTION_MISMATCH:zhu-xi"
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 1639,
+          "promptTokens": 886,
+          "completionTokens": 229,
+          "totalTokens": 1115
+        },
+        {
+          "step": "validate",
+          "status": "failed",
+          "code": "AUTHOR_ATTRIBUTION_MISMATCH:zhu-xi"
+        }
+      ]
+    },
+    {
+      "arm": "C",
+      "status": "completed",
+      "targets": [
+        {
+          "hexagramId": null,
+          "layer": "commentary",
+          "authorId": "zhu-xi"
+        }
+      ],
+      "initialEvidenceIds": [
+        "zy-4-judgment",
+        "zy-4-tuan",
+        "zy-4-xiang"
+      ],
+      "retrievedEvidenceIds": [
+        "zy-4-judgment",
+        "zy-4-tuan",
+        "zy-4-xiang",
+        "zhu-xi@528287:h4:line3:5e2050a509"
+      ],
+      "generationEvidenceIds": [
+        "zhu-xi@528287:h4:line3:5e2050a509"
+      ],
+      "answer": {
+        "status": "answered",
+        "paragraphs": [
+          {
+            "text": "你问的“见金夫，不有躬”出自《周易》蒙卦六三爻辞。通行本作：“六三：勿用取女，见金夫，不有躬，无攸利。” 本轮参考原文没有直接收录《周易》经文，只收录朱熹《周易本義》蒙卦第3爻注；因此若要看严格的经文字面，仍需回查《周易》经文。朱熹注中与此对应的句子是“女之見金夫而不能有其身之象也”。",
+            "citations": [
+              {
+                "evidenceId": "zhu-xi@528287:h4:line3:5e2050a509",
+                "quote": "女之見金夫而不能有其身之象也",
+                "claim": "女之見金夫而不能有其身之象也"
+              }
+            ]
+          },
+          {
+            "text": "朱熹如何解释“金夫”？《周易本義》蒙卦第3爻注说：“金夫蓋以金賂已而挑之若魯秋胡之為者”。这表示他把“金夫”理解为用金钱贿赂、挑诱女子的人，并以鲁秋胡一类人物作比。同注又说“六三隂柔不中不正”，并将此爻概括为“女之見金夫而不能有其身之象也”；占遇此爻，则“占者遇之則其取女必得如是之人无所利矣”，即娶女会遇到这样的人而无所利。",
+            "citations": [
+              {
+                "evidenceId": "zhu-xi@528287:h4:line3:5e2050a509",
+                "quote": "金夫蓋以金賂已而挑之若魯秋胡之為者",
+                "claim": "金夫蓋以金賂已而挑之若魯秋胡之為者"
+              },
+              {
+                "evidenceId": "zhu-xi@528287:h4:line3:5e2050a509",
+                "quote": "占者遇之則其取女必得如是之人无所利矣",
+                "claim": "占者遇之則其取女必得如是之人无所利矣"
+              }
+            ]
+          },
+          {
+            "text": "就本次卦象看，本卦为山水蒙，六三正是“见金夫，不有躬”所在的爻；但本卦与变卦相同、无动爻，所以它更像是文本定位：你要核对的文献在此爻。若用于判断现实，朱熹的读法把重点放在“因财色挑诱而不能保有自身”，并说“无所利”；这属于对爻辞的义理和占断，不是对某个具体人事的既成事实。",
+            "citations": []
+          }
+        ],
+        "limitations": []
+      },
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "source_request",
+          "evidenceIds": [
+            "zy-4-judgment",
+            "zy-4-tuan",
+            "zy-4-xiang"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "route",
+          "status": "ok",
+          "code": "RULE_POLICY"
+        },
+        {
+          "step": "tool",
+          "tool": "search_knowledge",
+          "args": {
+            "authorIds": [
+              "zhu-xi"
+            ],
+            "layers": [
+              "commentary"
+            ],
+            "query": "见金夫不有躬",
+            "topK": 4
+          },
+          "status": "ok",
+          "evidenceIds": [
+            "zhu-xi@528287:h4:line3:5e2050a509"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "hits": [
+            {
+              "passageId": "zhu-xi@528287:h4:line3:5e2050a509",
+              "channel": "lexical",
+              "score": 8.666772263174646,
+              "matchReason": "Chinese bigram BM25 + phrase boost"
+            }
+          ],
+          "coverageStatus": "covered",
+          "truncated": false,
+          "durationMs": 3
+        },
+        {
+          "step": "route",
+          "status": "ok",
+          "code": "RULE_POLICY"
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 16294,
+          "promptTokens": 633,
+          "completionTokens": 3369,
+          "totalTokens": 4002
+        },
+        {
+          "step": "validate",
+          "status": "passed",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "arm": "D",
+      "status": "completed",
+      "targets": [
+        {
+          "hexagramId": null,
+          "layer": "commentary",
+          "authorId": "zhu-xi"
+        }
+      ],
+      "initialEvidenceIds": [
+        "zy-4-judgment",
+        "zy-4-tuan",
+        "zy-4-xiang"
+      ],
+      "retrievedEvidenceIds": [
+        "zy-4-judgment",
+        "zy-4-tuan",
+        "zy-4-xiang",
+        "zy-4-line-3",
+        "zhu-xi@528287:h4:line3:5e2050a509"
+      ],
+      "generationEvidenceIds": [
+        "zhu-xi@528287:h4:line3:5e2050a509"
+      ],
+      "answer": {
+        "status": "answered",
+        "paragraphs": [
+          {
+            "text": "“见金夫，不有躬”应出自《周易》蒙卦六三爻辞。不过本轮参考原文只收录了朱熹《周易本義》蒙卦第三爻的注文，没有收录经文原文；因此我能确认其卦爻位置，却无法从本轮资料中提供经文逐字原文。朱熹注文对应六三，称“六三隂柔不中不正女之見金夫而不能有其身之象也”，可见他是把“见金夫，不有躬”放在六三阴柔不中不正的语境中理解。",
+            "citations": [
+              {
+                "evidenceId": "zhu-xi@528287:h4:line3:5e2050a509",
+                "quote": "六三隂柔不中不正女之見金夫而不能有其身之象也",
+                "claim": "朱熹注文对应六三"
+              }
+            ]
+          },
+          {
+            "text": "关于“金夫”，朱熹的解释是：“金夫蓋以金賂已而挑之若魯秋胡之為者。”也就是说，他把“金夫”理解为用金钱贿赂、挑逗对方的人，并以鲁秋胡作为类比。这里“賂已”在原文中写作“賂已”，不是现代常见的“贿赂自己”的直白表达，而是指以金相赂、主动挑诱。至于经文原文的完整句读和版本差异，本轮资料未提供，不能仅凭此注文逐字还原。",
+            "citations": [
+              {
+                "evidenceId": "zhu-xi@528287:h4:line3:5e2050a509",
+                "quote": "金夫蓋以金賂已而挑之若魯秋胡之為者",
+                "claim": "把“金夫”理解为用金钱贿赂、挑逗对方的人"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "本轮未提供经文原文，无法核对原文逐字；金夫释义仅据朱熹注文。"
+        ]
+      },
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "source_request",
+          "evidenceIds": [
+            "zy-4-judgment",
+            "zy-4-tuan",
+            "zy-4-xiang"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 4338,
+          "promptTokens": 2481,
+          "completionTokens": 973,
+          "totalTokens": 3454
+        },
+        {
+          "step": "tool",
+          "tool": "get_passages",
+          "args": {
+            "layers": [
+              "classic"
+            ],
+            "hexagramId": 4,
+            "sections": [
+              "line"
+            ],
+            "lineIndices": [
+              3
+            ]
+          },
+          "status": "ok",
+          "evidenceIds": [
+            "zy-4-line-3"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "hits": [
+            {
+              "passageId": "zy-4-line-3",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "coverageStatus": "covered",
+          "truncated": false,
+          "durationMs": 2
+        },
+        {
+          "step": "tool",
+          "tool": "get_passages",
+          "args": {
+            "authorIds": [
+              "zhu-xi"
+            ],
+            "layers": [
+              "commentary"
+            ],
+            "hexagramId": 4,
+            "sections": [
+              "line"
+            ],
+            "lineIndices": [
+              3
+            ]
+          },
+          "status": "ok",
+          "evidenceIds": [
+            "zhu-xi@528287:h4:line3:5e2050a509"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "hits": [
+            {
+              "passageId": "zhu-xi@528287:h4:line3:5e2050a509",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "coverageStatus": "covered",
+          "truncated": false,
+          "durationMs": 2
+        },
+        {
+          "step": "tool",
+          "tool": "search_knowledge",
+          "args": {
+            "query": "见金夫不有躬金夫",
+            "hexagramId": 4,
+            "topK": 6
+          },
+          "status": "ok",
+          "evidenceIds": [
+            "zy-4-line-3"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "hits": [
+            {
+              "passageId": "zy-4-line-3",
+              "channel": "lexical",
+              "score": 34.38647125874087,
+              "matchReason": "Chinese bigram BM25 + phrase boost"
+            }
+          ],
+          "coverageStatus": "covered",
+          "truncated": false,
+          "durationMs": 2
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 20468,
+          "promptTokens": 633,
+          "completionTokens": 4567,
+          "totalTokens": 5200
+        },
+        {
+          "step": "validate",
+          "status": "passed",
+          "code": ""
+        }
+      ]
+    },
+    {
+      "arm": "H",
+      "status": "completed",
+      "targets": [
+        {
+          "hexagramId": null,
+          "layer": "commentary",
+          "authorId": "zhu-xi"
+        }
+      ],
+      "initialEvidenceIds": [
+        "zy-4-judgment",
+        "zy-4-tuan",
+        "zy-4-xiang"
+      ],
+      "retrievedEvidenceIds": [
+        "zy-4-judgment",
+        "zy-4-tuan",
+        "zy-4-xiang",
+        "zhu-xi@528287:h4:line3:5e2050a509",
+        "zy-4-line-3",
+        "zy-4-line_xiang-3"
+      ],
+      "generationEvidenceIds": [
+        "zhu-xi@528287:h4:line3:5e2050a509"
+      ],
+      "answer": {
+        "status": "answered",
+        "paragraphs": [
+          {
+            "text": "你問的「見金夫，不有躬」出自《周易》蒙卦六三爻辭；通行本此爻通常作「六三：勿用取女，見金夫，不有躬，無攸利」。不過，本輪參考原文只給了朱熹《周易本義》蒙卦第三爻注，並沒有提供《周易》經文本身，所以經文逐字與版本異文還需另找經文頁核對。",
+            "citations": []
+          },
+          {
+            "text": "朱熹在《周易本義》蒙卦六三注中，先以象解此爻：「六三隂柔不中不正女之見金夫而不能有其身之象也」，並說占者遇此，取女必得如是之人而「无所利」。他對「金夫」的解釋是：「金夫蓋以金賂已而挑之若魯秋胡之為者」，即把金夫理解為以金錢賄賂、挑誘女方的人，並以魯秋胡作為類比。",
+            "citations": [
+              {
+                "evidenceId": "zhu-xi@528287:h4:line3:5e2050a509",
+                "quote": "六三隂柔不中不正女之見金夫而不能有其身之象也",
+                "claim": "六三隂柔不中不正女之見金夫而不能有其身之象也"
+              },
+              {
+                "evidenceId": "zhu-xi@528287:h4:line3:5e2050a509",
+                "quote": "金夫蓋以金賂已而挑之若魯秋胡之為者",
+                "claim": "金夫蓋以金賂已而挑之若魯秋胡之為者"
+              }
+            ]
+          },
+          {
+            "text": "因此，核對時可以分兩層：經文層面，先確認《周易》蒙卦六三爻辭；注釋層面，朱熹在此注中並非把「金夫」泛泛解為富貴男子，而是強調「以金賂已而挑之」的引誘行為，並繫於「魯秋胡之為」。若你要繼續查證，下一步應補《周易》經文原文及朱熹注的版本頁；本輪可見材料只足以確認朱熹注中的說法。",
+            "citations": [
+              {
+                "evidenceId": "zhu-xi@528287:h4:line3:5e2050a509",
+                "quote": "以金賂已而挑之",
+                "claim": "以金賂已而挑之"
+              }
+            ]
+          }
+        ],
+        "limitations": []
+      },
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "source_request",
+          "evidenceIds": [
+            "zy-4-judgment",
+            "zy-4-tuan",
+            "zy-4-xiang"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 1744,
+          "promptTokens": 2481,
+          "completionTokens": 256,
+          "totalTokens": 2737
+        },
+        {
+          "step": "tool",
+          "tool": "get_passages",
+          "args": {
+            "authorIds": [
+              "zhu-xi"
+            ],
+            "layers": [
+              "classic",
+              "commentary"
+            ],
+            "hexagramId": 4,
+            "sections": [
+              "line",
+              "line_xiang"
+            ],
+            "lineIndices": [
+              3
+            ]
+          },
+          "status": "ok",
+          "evidenceIds": [
+            "zhu-xi@528287:h4:line3:5e2050a509"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "hits": [
+            {
+              "passageId": "zhu-xi@528287:h4:line3:5e2050a509",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "coverageStatus": "partial",
+          "truncated": false,
+          "durationMs": 2
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 1691,
+          "promptTokens": 3046,
+          "completionTokens": 194,
+          "totalTokens": 3240
+        },
+        {
+          "step": "tool",
+          "tool": "get_passages",
+          "args": {
+            "layers": [
+              "classic"
+            ],
+            "hexagramId": 4,
+            "sections": [
+              "line",
+              "line_xiang"
+            ],
+            "lineIndices": [
+              3
+            ]
+          },
+          "status": "ok",
+          "evidenceIds": [
+            "zy-4-line-3",
+            "zy-4-line_xiang-3"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "hits": [
+            {
+              "passageId": "zy-4-line-3",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zy-4-line_xiang-3",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "coverageStatus": "covered",
+          "truncated": false,
+          "durationMs": 2
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 1443,
+          "promptTokens": 3604,
+          "completionTokens": 108,
+          "totalTokens": 3712
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 19241,
+          "promptTokens": 633,
+          "completionTokens": 4116,
+          "totalTokens": 4749
+        },
+        {
+          "step": "validate",
+          "status": "passed",
+          "code": ""
+        }
+      ]
+    }
+  ],
+  "analysisOrigin": "Root code/trace analysis after frozen evaluation; no production change",
+  "sourceLocations": [
+    "backend/validation.py:55",
+    "backend/graph.py:140"
+  ],
+  "finding": "Mixed request parsed as commentary target; original acquired by D/H is then omitted from generation_evidence. Acquisition is not usable-context coverage."
+}

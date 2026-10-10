@@ -1,0 +1,381 @@
+[
+  {
+    "caseId": "dev-22",
+    "split": "development",
+    "arm": "memory",
+    "status": "completed",
+    "evidenceIds": [],
+    "evidenceCount": 0
+  },
+  {
+    "caseId": "dev-22",
+    "split": "development",
+    "arm": "classic",
+    "status": "validation_failed",
+    "evidenceIds": [],
+    "evidenceCount": 0
+  },
+  {
+    "caseId": "dev-22",
+    "split": "development",
+    "arm": "full",
+    "status": "validation_failed",
+    "evidenceIds": [
+      "wang-bi@2676007:h1:line4:06f1680099"
+    ],
+    "evidenceCount": 1
+  },
+  {
+    "caseId": "dev-25",
+    "split": "development",
+    "arm": "memory",
+    "status": "completed",
+    "evidenceIds": [],
+    "evidenceCount": 0
+  },
+  {
+    "caseId": "dev-25",
+    "split": "development",
+    "arm": "classic",
+    "status": "completed",
+    "evidenceIds": [
+      "zy-2-judgment",
+      "zy-2-tuan",
+      "zy-2-xiang",
+      "zy-2-line-4"
+    ],
+    "evidenceCount": 4
+  },
+  {
+    "caseId": "dev-25",
+    "split": "development",
+    "arm": "full",
+    "status": "validation_failed",
+    "evidenceIds": [
+      "zy-2-judgment",
+      "zy-2-tuan",
+      "zy-2-xiang",
+      "zhu-xi@528287:h2:line4:847d5f53d3",
+      "cheng-yi@1313743:h2:line4:2d8ef483ee",
+      "zy-2-line-4"
+    ],
+    "evidenceCount": 6
+  },
+  {
+    "caseId": "dev-26",
+    "split": "development",
+    "arm": "memory",
+    "status": "completed",
+    "evidenceIds": [],
+    "evidenceCount": 0
+  },
+  {
+    "caseId": "dev-26",
+    "split": "development",
+    "arm": "classic",
+    "status": "completed",
+    "evidenceIds": [
+      "zy-3-judgment",
+      "zy-3-tuan",
+      "zy-3-xiang",
+      "zy-3-line-3"
+    ],
+    "evidenceCount": 4
+  },
+  {
+    "caseId": "dev-26",
+    "split": "development",
+    "arm": "full",
+    "status": "completed",
+    "evidenceIds": [
+      "zy-3-judgment",
+      "zy-3-tuan",
+      "zy-3-xiang",
+      "zhu-xi@528287:h3:line3:7563e4fcb1",
+      "wang-bi@2689596:h3:line3:f0d5cdd6b5",
+      "zy-3-line-3"
+    ],
+    "evidenceCount": 6
+  },
+  {
+    "caseId": "dev-28",
+    "split": "development",
+    "arm": "memory",
+    "status": "completed",
+    "evidenceIds": [],
+    "evidenceCount": 0
+  },
+  {
+    "caseId": "dev-28",
+    "split": "development",
+    "arm": "classic",
+    "status": "validation_failed",
+    "evidenceIds": [],
+    "evidenceCount": 0
+  },
+  {
+    "caseId": "dev-28",
+    "split": "development",
+    "arm": "full",
+    "status": "completed",
+    "evidenceIds": [
+      "cheng-yi@1313743:h15:line3:3d9184f339"
+    ],
+    "evidenceCount": 1
+  },
+  {
+    "caseId": "dev-29",
+    "split": "development",
+    "arm": "memory",
+    "status": "completed",
+    "evidenceIds": [],
+    "evidenceCount": 0
+  },
+  {
+    "caseId": "dev-29",
+    "split": "development",
+    "arm": "classic",
+    "status": "completed",
+    "evidenceIds": [
+      "zy-15-judgment",
+      "zy-15-tuan",
+      "zy-15-xiang",
+      "zy-15-line-1"
+    ],
+    "evidenceCount": 4
+  },
+  {
+    "caseId": "dev-29",
+    "split": "development",
+    "arm": "full",
+    "status": "completed",
+    "evidenceIds": [
+      "zy-15-judgment",
+      "zy-15-tuan",
+      "zy-15-xiang",
+      "wang-bi@2000726:h15:line1:c0f8bb634a",
+      "cheng-yi@1313743:h15:line1:f342d52f62",
+      "zy-15-line-1"
+    ],
+    "evidenceCount": 6
+  },
+  {
+    "caseId": "dev-30",
+    "split": "development",
+    "arm": "memory",
+    "status": "completed",
+    "evidenceIds": [],
+    "evidenceCount": 0
+  },
+  {
+    "caseId": "dev-30",
+    "split": "development",
+    "arm": "classic",
+    "status": "validation_failed",
+    "evidenceIds": [],
+    "evidenceCount": 0
+  },
+  {
+    "caseId": "dev-30",
+    "split": "development",
+    "arm": "full",
+    "status": "completed",
+    "evidenceIds": [
+      "wang-bi@2404940:h4:line4:262bd9d53b",
+      "zhu-xi@528287:h4:line4:0ded86be84"
+    ],
+    "evidenceCount": 2
+  },
+  {
+    "caseId": "test-22",
+    "split": "independent_test",
+    "arm": "memory",
+    "status": "completed",
+    "evidenceIds": [],
+    "evidenceCount": 0
+  },
+  {
+    "caseId": "test-22",
+    "split": "independent_test",
+    "arm": "classic",
+    "status": "validation_failed",
+    "evidenceIds": [
+      "zy-15-judgment",
+      "zy-15-tuan",
+      "zy-15-xiang"
+    ],
+    "evidenceCount": 3
+  },
+  {
+    "caseId": "test-22",
+    "split": "independent_test",
+    "arm": "full",
+    "status": "completed",
+    "evidenceIds": [
+      "zy-15-judgment",
+      "zy-15-tuan",
+      "zy-15-xiang",
+      "wang-bi@2000726:h15:line5:64744d05e6",
+      "cheng-yi@1313743:h15:line5:5f89e7b763"
+    ],
+    "evidenceCount": 5
+  },
+  {
+    "caseId": "test-24",
+    "split": "independent_test",
+    "arm": "memory",
+    "status": "completed",
+    "evidenceIds": [],
+    "evidenceCount": 0
+  },
+  {
+    "caseId": "test-24",
+    "split": "independent_test",
+    "arm": "classic",
+    "status": "completed",
+    "evidenceIds": [],
+    "evidenceCount": 0
+  },
+  {
+    "caseId": "test-24",
+    "split": "independent_test",
+    "arm": "full",
+    "status": "completed",
+    "evidenceIds": [
+      "zhu-xi@528287:h3:line1:d71107df76"
+    ],
+    "evidenceCount": 1
+  },
+  {
+    "caseId": "test-25",
+    "split": "independent_test",
+    "arm": "memory",
+    "status": "completed",
+    "evidenceIds": [],
+    "evidenceCount": 0
+  },
+  {
+    "caseId": "test-25",
+    "split": "independent_test",
+    "arm": "classic",
+    "status": "validation_failed",
+    "evidenceIds": [
+      "zy-3-judgment",
+      "zy-3-tuan",
+      "zy-3-xiang"
+    ],
+    "evidenceCount": 3
+  },
+  {
+    "caseId": "test-25",
+    "split": "independent_test",
+    "arm": "full",
+    "status": "completed",
+    "evidenceIds": [
+      "zy-3-judgment",
+      "zy-3-tuan",
+      "zy-3-xiang",
+      "wang-bi@2689596:h3:line2:2dfb3b12e9",
+      "zhu-xi@528287:h3:line2:5f4cc5b0f3"
+    ],
+    "evidenceCount": 5
+  },
+  {
+    "caseId": "test-26",
+    "split": "independent_test",
+    "arm": "memory",
+    "status": "completed",
+    "evidenceIds": [],
+    "evidenceCount": 0
+  },
+  {
+    "caseId": "test-26",
+    "split": "independent_test",
+    "arm": "classic",
+    "status": "validation_failed",
+    "evidenceIds": [
+      "zy-3-judgment",
+      "zy-3-tuan",
+      "zy-3-xiang"
+    ],
+    "evidenceCount": 3
+  },
+  {
+    "caseId": "test-26",
+    "split": "independent_test",
+    "arm": "full",
+    "status": "completed",
+    "evidenceIds": [
+      "zy-3-judgment",
+      "zy-3-tuan",
+      "zy-3-xiang",
+      "wang-bi@2689596:h3:line5:e8af156c25",
+      "zhu-xi@528287:h3:line5:97a131e15c"
+    ],
+    "evidenceCount": 5
+  },
+  {
+    "caseId": "test-32",
+    "split": "independent_test",
+    "arm": "memory",
+    "status": "completed",
+    "evidenceIds": [],
+    "evidenceCount": 0
+  },
+  {
+    "caseId": "test-32",
+    "split": "independent_test",
+    "arm": "classic",
+    "status": "completed",
+    "evidenceIds": [
+      "zy-16-judgment",
+      "zy-16-tuan",
+      "zy-16-xiang",
+      "zy-16-line-6"
+    ],
+    "evidenceCount": 4
+  },
+  {
+    "caseId": "test-32",
+    "split": "independent_test",
+    "arm": "full",
+    "status": "validation_failed",
+    "evidenceIds": [
+      "zy-16-judgment",
+      "zy-16-tuan",
+      "zy-16-xiang",
+      "wang-bi@7904495:h16:line6:067f0d7036",
+      "cheng-yi@1313743:h16:line6:065f828f81",
+      "zhu-xi@528287:h16:line6:ed433daded",
+      "zy-16-line-6"
+    ],
+    "evidenceCount": 7
+  },
+  {
+    "caseId": "test-33",
+    "split": "independent_test",
+    "arm": "memory",
+    "status": "completed",
+    "evidenceIds": [],
+    "evidenceCount": 0
+  },
+  {
+    "caseId": "test-33",
+    "split": "independent_test",
+    "arm": "classic",
+    "status": "completed",
+    "evidenceIds": [],
+    "evidenceCount": 0
+  },
+  {
+    "caseId": "test-33",
+    "split": "independent_test",
+    "arm": "full",
+    "status": "validation_failed",
+    "evidenceIds": [
+      "zhu-xi@737053:h32:line4:0f4238b3b2",
+      "wang-bi@2404960:h32:line4:082ae569fb"
+    ],
+    "evidenceCount": 2
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "trace": "test/test-13-D.jsonl",
+    "callId": 3,
+    "error": "MODEL_INCOMPLETE_RESPONSE",
+    "finishReason": "length",
+    "usage": {
+      "prompt_tokens": 1338,
+      "completion_tokens": 8192,
+      "total_tokens": 9530,
+      "prompt_tokens_details": {
+        "cached_tokens": 384
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 7423
+      },
+      "prompt_cache_hit_tokens": 384,
+      "prompt_cache_miss_tokens": 954
+    },
+    "estimatedUSD": 0.005059452,
+    "eventuallyMechanicalComplete": true
+  },
+  {
+    "trace": "test/test-16-H.jsonl",
+    "callId": 3,
+    "error": "MODEL_INCOMPLETE_RESPONSE",
+    "finishReason": "length",
+    "usage": {
+      "prompt_tokens": 1268,
+      "completion_tokens": 8192,
+      "total_tokens": 9460,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 8192
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 244
+    },
+    "estimatedUSD": 0.004954871999999999,
+    "eventuallyMechanicalComplete": true
+  },
+  {
+    "trace": "test/test-23-B.jsonl",
+    "callId": 1,
+    "error": "MODEL_INCOMPLETE_RESPONSE",
+    "finishReason": "length",
+    "usage": {
+      "prompt_tokens": 714,
+      "completion_tokens": 8192,
+      "total_tokens": 8906,
+      "prompt_tokens_details": {
+        "cached_tokens": 128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 7623
+      },
+      "prompt_cache_hit_tokens": 128,
+      "prompt_cache_miss_tokens": 586
+    },
+    "estimatedUSD": 0.005003484,
+    "eventuallyMechanicalComplete": true
+  },
+  {
+    "trace": "test/test-32-D.jsonl",
+    "callId": 2,
+    "error": "MODEL_INCOMPLETE_RESPONSE",
+    "finishReason": "length",
+    "usage": {
+      "prompt_tokens": 1184,
+      "completion_tokens": 8192,
+      "total_tokens": 9376,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 7582
+      },
+      "prompt_cache_hit_tokens": 1024,
+      "prompt_cache_miss_tokens": 160
+    },
+    "estimatedUSD": 0.004942272,
+    "eventuallyMechanicalComplete": false
+  }
+]
