@@ -1,0 +1,16 @@
+{
+  "release_id": "knowledge-v3-20260926",
+  "input_sha256": "c9375046355eac73ef120aa9275877c9eafbbf225f1d5d2d9116a3a4ba3b2b05",
+  "total": 964,
+  "statuses": {
+    "matches_two_transcriptions": 887,
+    "differs_from_both": 28,
+    "matches_one_transcription": 49
+  },
+  "normalization": "NFKC + remove Unicode punctuation/symbols/spacing + pinned OpenCC single-character folding; never alters source text",
+  "limitations": [
+    "Machine agreement is not historical authenticity or full scholarly collation.",
+    "Wikisource and Kanripo are separate electronic witnesses; undocumented common ancestry is not ruled out.",
+    "Differences require adjudication; no majority-vote automatic correction."
+  ]
+}

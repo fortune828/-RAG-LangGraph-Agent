@@ -1,0 +1,27 @@
+{
+  "openccSource": "data/knowledge/raw/opencc-TSCharacters.txt",
+  "variants": {
+    "无": "無",
+    "隂": "陰",
+    "㫁": "斷",
+    "𧰼": "象",
+    "𥘉": "初",
+    "㣲": "微",
+    "𫝑": "勢",
+    "㫖": "旨",
+    "飬": "養",
+    "𤣥": "玄",
+    "徳": "德",
+    "歴": "歷",
+    "値": "值",
+    "賔": "賓",
+    "内": "內",
+    "羣": "群",
+    "强": "強",
+    "衆": "眾",
+    "逺": "遠",
+    "䝉": "蒙"
+  },
+  "rule": "NFKC; remove header/page markup/non-Han/punctuation; apply declared glyph map then single-character OpenCC TS; raw unchanged",
+  "warning": "Normalization supports comparison, not correction or proof of equal meaning."
+}

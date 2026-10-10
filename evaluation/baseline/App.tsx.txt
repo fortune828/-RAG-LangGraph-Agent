@@ -1,0 +1,373 @@
+import { useState, useRef, useEffect } from "react";
+import { motion, AnimatePresence } from "motion/react";
+import { GoogleGenAI } from "@google/genai";
+import ReactMarkdown from "react-markdown";
+import { Sparkles, Send, RefreshCw, ScrollText, Wind, Mountain } from "lucide-react";
+import { getHexagramResult, HEXAGRAMS } from "./lib/yijing";
+import { Hexagram } from "./components/Hexagram";
+
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || "" });
+
+const CASTING_STEPS = [
+  "分而为二，以象两。",
+  "挂一，以象三。",
+  "揲之以四，以象四时。",
+  "归奇于扐，以象闰。",
+  "五岁再闰，故再扐而后卦。",
+  "乾坤之策，凡三百有六十，当期之日。"
+];
+
+export default function App() {
+  const [question, setQuestion] = useState("");
+  const [phase, setPhase] = useState<"input" | "breathing" | "casting" | "result">("input");
+  const [breathingStep, setBreathingStep] = useState(0);
+  const [randomJudgment, setRandomJudgment] = useState("");
+  const [castingLine, setCastingLine] = useState(0);
+  const [castingText, setCastingText] = useState("");
+  const [result, setResult] = useState<any>(null);
+  const [interpretation, setInterpretation] = useState("");
+  const [isInterpreting, setIsInterpreting] = useState(false);
+  const resultRef = useRef<HTMLDivElement>(null);
+
+  // Breathing logic
+  useEffect(() => {
+    if (phase === "breathing") {
+      const allJudgments = Object.values(HEXAGRAMS).map(h => h.judgment);
+      const getRandomJudgment = () => allJudgments[Math.floor(Math.random() * allJudgments.length)];
+
+      setRandomJudgment(getRandomJudgment());
+
+      const judgmentTimer = setInterval(() => {
+        setRandomJudgment(getRandomJudgment());
+      }, 3000);
+
+      const stepTimer = setInterval(() => {
+        setBreathingStep((prev) => {
+          if (prev >= 2) {
+            clearInterval(stepTimer);
+            clearInterval(judgmentTimer);
+            setTimeout(() => setPhase("casting"), 1000);
+            return prev;
+          }
+          return prev + 1;
+        });
+      }, 4000);
+
+      return () => {
+        clearInterval(stepTimer);
+        clearInterval(judgmentTimer);
+      };
+    }
+  }, [phase]);
+
+  // Casting logic
+  useEffect(() => {
+    if (phase === "casting") {
+      const hexResult = getHexagramResult();
+      setResult(hexResult);
+
+      let line = 0;
+      const castTimer = setInterval(() => {
+        if (line >= 6) {
+          clearInterval(castTimer);
+          setTimeout(() => setPhase("result"), 1000);
+          return;
+        }
+        setCastingText(CASTING_STEPS[line]);
+        setCastingLine(line + 1);
+        line++;
+      }, 2000);
+
+      return () => clearInterval(castTimer);
+    }
+  }, [phase]);
+
+  const handleStart = () => {
+    if (!question.trim()) return;
+    setPhase("breathing");
+    setBreathingStep(0);
+  };
+
+  const startInterpretation = async () => {
+    if (!result || isInterpreting) return;
+
+    setIsInterpreting(true);
+    try {
+      const changingLinesText = result.changingIndices.length > 0
+        ? result.changingIndices.map((i: number) => `第${i + 1}爻`).join("、")
+        : "无动爻";
+
+      const prompt = `你是一位深谙《易经》哲思与人文底蕴的智者。你不仅仅在解卦，更是在通过古老的符号系统观察众生、抚慰人心。
+
+【输入背景】
+用户问的问题是：'${question}'
+所得卦象为：
+- 本卦：${result.original.name}（卦辞：${result.original.judgment}）
+- 变卦：${result.changed.name}（卦辞：${result.changed.judgment}）
+- 动爻：${changingLinesText}
+
+【你的任务】
+请你结合上述信息，为用户撰写一份“入木三分”的解答。请遵循以下要求：
+
+1. **破题入画**：
+   开篇直接针对用户的问题，借用本卦的“大象”（如“泽上于天”、“山下有火”）构建一个意象世界。要让用户感觉到，他的处境正如同这自然界中的某种瞬间。
+
+2. **引经据典，取法乎上**：
+   在分析中，至少引用一句《易经》的《象传》、《彖传》或《系辞》（如“天行健，君子以自强不息”或“唯几也，故能成天下之务”）。不要生硬搬运，要将其化为智慧的点睛之笔。
+
+3. **化“卦理”为“人情”**：
+   不要机械拆解卦义。请将卦象中的吉凶悔吝，转化为对人性、时机和心态的洞察。变卦和动爻代表的能量流动，应被描述为“时势的推移”或“心念的转折”。
+
+4. **克制的指引（按需提供）**：
+   - 如果用户的问题涉及“如何做、怎么办、能否成功”，请给出具体的“行动指引”。
+   - 如果用户只是在询问“性质、缘由或现状”，则只需给出“心性定见”，点破其执念即可，不要强行说教。
+
+5. **文风要求**：
+   现代文与文言雅韵交织。语言要清雅、深邃，具有“智者”的松弛感。拒绝使用“格式化标题”，请使用更具文学色彩的短句作为段落转折。
+
+【输出格式】
+使用 Markdown 格式。不要出现“卦象解析、德行建议”这种生硬的词汇。请用“象、理、机”的逻辑自然串联。`;
+
+      const response = await ai.models.generateContent({
+        model: "gemini-3.1-flash-lite-preview",
+        contents: prompt,
+      });
+
+      setInterpretation(response.text || "智者陷入了沉思，请稍后再试。");
+    } catch (error) {
+      console.error("AI Interpretation error:", error);
+      setInterpretation("天机不可泄露（连接失败），请稍后再试。");
+    } finally {
+      setIsInterpreting(false);
+    }
+  };
+
+  useEffect(() => {
+    if (phase === "result") {
+      startInterpretation();
+      setTimeout(() => {
+        resultRef.current?.scrollIntoView({ behavior: "smooth" });
+      }, 100);
+    }
+  }, [phase]);
+
+  const reset = () => {
+    setQuestion("");
+    setPhase("input");
+    setResult(null);
+    setInterpretation("");
+    setCastingLine(0);
+  };
+
+  return (
+    <div className="min-h-screen bg-stone-50 selection:bg-stone-200">
+      {/* Header */}
+      <header className="max-w-4xl mx-auto pt-12 px-6 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-stone-200 text-stone-600 text-sm font-medium mb-6"
+        >
+          <Mountain className="w-4 h-4" />
+          <span>见素问微 · 万物回响</span>
+        </motion.div>
+        <h1 className="text-5xl md:text-6xl font-serif font-bold text-stone-900 mb-4 tracking-tight">
+          问卜天机
+        </h1>
+        <p className="text-stone-500 text-lg max-w-xl mx-auto font-serif italic">
+          “易与天地准，故能弥纶天地之道。”
+        </p>
+      </header>
+
+      <main className="max-w-4xl mx-auto px-6 py-12">
+        <AnimatePresence mode="wait">
+          {phase === "input" && (
+            <motion.section
+              key="input"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              className="bg-white rounded-3xl shadow-sm border border-stone-100 p-8 md:p-12"
+            >
+              <div className="space-y-6">
+                <div className="space-y-2">
+                  <label className="text-sm font-medium text-stone-500 ml-1">
+                    万物皆有回响。请摒除杂念，将当下的困惑交予算法。你的真诚，是触发这场因果演算的唯一变量。
+                  </label>
+                  <textarea
+                    value={question}
+                    onChange={(e) => setQuestion(e.target.value)}
+                    placeholder="例如：我该如何应对当下的困境？"
+                    className="w-full min-h-[120px] p-4 rounded-2xl bg-stone-50 border-none focus:ring-2 focus:ring-stone-200 transition-all resize-none text-lg placeholder:text-stone-300"
+                  />
+                </div>
+
+                <div className="flex justify-center">
+                  <button
+                    onClick={handleStart}
+                    disabled={!question.trim()}
+                    className={`
+                      flex items-center gap-2 px-8 py-4 rounded-full font-medium transition-all
+                      ${!question.trim()
+                        ? 'bg-stone-100 text-stone-400 cursor-not-allowed'
+                        : 'bg-stone-900 text-white hover:bg-stone-800 hover:scale-105 active:scale-95 shadow-lg shadow-stone-200'}
+                    `}
+                  >
+                    <Send className="w-5 h-5" />
+                    <span>虔诚请教</span>
+                  </button>
+                </div>
+              </div>
+            </motion.section>
+          )}
+
+          {phase === "breathing" && (
+            <motion.section
+              key="breathing"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="flex flex-col items-center justify-center py-24 space-y-12"
+            >
+              <motion.div
+                animate={{ scale: [1, 1.2, 1] }}
+                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                className="w-32 h-32 rounded-full border-2 border-stone-200 flex items-center justify-center"
+              >
+                <Wind className="w-12 h-12 text-stone-300" />
+              </motion.div>
+              <div className="text-center space-y-4">
+                <h2 className="text-2xl font-serif text-stone-800">
+                  {breathingStep === 0 && "止。沉淀心境..."}
+                  {breathingStep === 1 && "深呼吸，感受当下的宁静..."}
+                  {breathingStep === 2 && "心怀至诚，感通天地..."}
+                </h2>
+                <AnimatePresence mode="wait">
+                  <motion.p
+                    key={randomJudgment}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    className="text-stone-400 font-serif italic"
+                  >
+                    “{randomJudgment}”
+                  </motion.p>
+                </AnimatePresence>
+              </div>
+            </motion.section>
+          )}
+
+          {phase === "casting" && (
+            <motion.section
+              key="casting"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="flex flex-col items-center justify-center py-12 space-y-12"
+            >
+              <div className="bg-white p-12 rounded-3xl border border-stone-100 shadow-sm">
+                <Hexagram
+                  binary={result?.originalBinary || "000000"}
+                  visibleLines={castingLine}
+                  changingIndices={result?.changingIndices}
+                />
+              </div>
+              <div className="text-center space-y-4 h-24">
+                <motion.p
+                  key={castingText}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="text-xl font-serif text-stone-700"
+                >
+                  {castingText}
+                </motion.p>
+                <p className="text-stone-400 text-sm">正在模拟揲蓍布卦之法...</p>
+              </div>
+            </motion.section>
+          )}
+
+          {phase === "result" && result && (
+            <motion.section
+              key="result"
+              ref={resultRef}
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="space-y-12"
+            >
+              {/* Hexagram Display */}
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="bg-white rounded-3xl p-8 border border-stone-100 flex flex-col items-center">
+                  <span className="text-xs font-bold text-stone-400 uppercase tracking-widest mb-6">本卦 (Original)</span>
+                  <Hexagram binary={result.originalBinary} changingIndices={result.changingIndices} />
+                  <h3 className="mt-8 text-2xl font-serif font-bold text-stone-900">
+                    {result.original.name}
+                  </h3>
+                  <p className="text-stone-600 text-center mt-4 font-serif italic px-4">
+                    “{result.original.judgment}”
+                  </p>
+                </div>
+
+                <div className="bg-white rounded-3xl p-8 border border-stone-100 flex flex-col items-center">
+                  <span className="text-xs font-bold text-stone-400 uppercase tracking-widest mb-6">变卦 (Changed)</span>
+                  <Hexagram binary={result.changedBinary} isChanged />
+                  <h3 className="mt-8 text-2xl font-serif font-bold text-stone-900">
+                    {result.changed.name}
+                  </h3>
+                  <p className="text-stone-600 text-center mt-4 font-serif italic px-4">
+                    “{result.changed.judgment}”
+                  </p>
+                </div>
+              </div>
+
+              {/* Interpretation */}
+              <div className="bg-white rounded-3xl p-8 md:p-12 border border-stone-100 shadow-sm relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-stone-200 via-stone-400 to-stone-200" />
+
+                <div className="flex items-center gap-3 mb-8">
+                  <div className="p-2 bg-stone-100 rounded-lg">
+                    <ScrollText className="w-6 h-6 text-stone-600" />
+                  </div>
+                  <h2 className="text-2xl font-serif font-bold text-stone-900">卦象解读与指引</h2>
+                </div>
+
+                {isInterpreting ? (
+                  <div className="space-y-4">
+                    <div className="h-4 bg-stone-50 rounded w-3/4 animate-pulse" />
+                    <div className="h-4 bg-stone-50 rounded w-full animate-pulse" />
+                    <div className="h-4 bg-stone-50 rounded w-5/6 animate-pulse" />
+                    <div className="h-4 bg-stone-50 rounded w-2/3 animate-pulse" />
+                    <p className="text-center text-stone-400 text-sm mt-8 animate-bounce">智者正在参悟，请静候...</p>
+                  </div>
+                ) : (
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    className="markdown-body"
+                  >
+                    <ReactMarkdown>{interpretation}</ReactMarkdown>
+                  </motion.div>
+                )}
+
+                {!isInterpreting && interpretation && (
+                  <div className="mt-12 pt-8 border-t border-stone-100 flex justify-center">
+                    <button
+                      onClick={reset}
+                      className="flex items-center gap-2 text-stone-400 hover:text-stone-600 transition-colors text-sm font-medium"
+                    >
+                      <RefreshCw className="w-4 h-4" />
+                      <span>重新虔诚请教</span>
+                    </button>
+                  </div>
+                )}
+              </div>
+            </motion.section>
+          )}
+        </AnimatePresence>
+      </main>
+
+      <footer className="max-w-4xl mx-auto px-6 py-12 text-center text-stone-400 text-sm font-serif">
+        <p>© 2026 AI Yijing Oracle · 至诚如神</p>
+      </footer>
+    </div>
+  );
+}

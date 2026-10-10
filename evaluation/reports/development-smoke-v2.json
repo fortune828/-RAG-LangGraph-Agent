@@ -1,0 +1,1496 @@
+{
+  "date": "2026-09-24",
+  "notice": "开发集调试后累计回归，不是同一版本独立测试；baseline/evidence使用同语料版本对照，agent六场景中缺失彖传一项为v2.5定向复测。自动条件不等于人工语义评审。",
+  "model": "deepseek-flash",
+  "corpusVersion": "open-iching-4c5f00f8cb62-v2",
+  "rows": [
+    {
+      "caseId": "initial-qian",
+      "variant": "baseline",
+      "status": "answered",
+      "schemaAndCitationValid": true,
+      "citedCount": 2,
+      "validCitationCount": 2,
+      "requiredEvidenceCited": false,
+      "expectedStatus": "answered",
+      "expectedStatusMatched": true,
+      "expectedToolUsed": true,
+      "mechanicalTaskPass": false,
+      "durationMs": 4233,
+      "totalTokens": 1059,
+      "toolCalls": 0,
+      "validationErrors": [],
+      "answer": {
+        "status": "answered",
+        "summary": "本卦为乾为天，六爻皆静，无动爻，也无变卦。乾卦卦辞“元亨利贞”提示你以“始、通、宜、正”四德为思考框架：先审视新机会是否合乎正道与长期价值，再评估自身是否具备持续进取的条件，最后以稳健而主动的态度决定进退。",
+        "paragraphs": [
+          {
+            "text": "乾为天是纯阳之卦，象征刚健、主动、创造与领导力。卦辞“元亨利贞”四字，传统上解为“元始、亨通、利和、贞正”，也可理解为事物发展的四个阶段或四种德性：元是发端与初心，亨是通达与顺畅，利是适宜与和谐，贞是正固与坚守。面对工作变化，你可以依次追问：这个新机会的“元”是什么——它是否源于你真正的志向与长期方向？它能否带来“亨”——新的路径是否通畅、资源与能力是否匹配？它是否“利”——对他人、团队、家庭与自身是否合宜？最后它是否“贞”——是否符合你的原则与底线，能否长期坚持。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              }
+            ]
+          },
+          {
+            "text": "由于六爻皆静、无动爻，本次占问不取变爻与变卦，重点在本卦的整体卦义。乾卦六爻纯阳，强调“天行健，君子以自强不息”的精神，但纯阳也意味着刚猛有余、柔顺不足。因此，在进退之间，你既要保持主动进取的姿态，也要警惕过于刚强、急于求成。若新机会符合“元亨利贞”的标准，可以积极考虑；若只是外在诱惑而内心不安，则宜先守正待时，不必仓促决定。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "本次占问六爻皆静，无动爻，因此仅依据乾卦卦辞作整体解读，未涉及爻辞与变卦。",
+          "卦辞“元亨利贞”为高度概括的古典表述，具体到个人工作选择时，仍需结合现实条件、个人志向与客观信息综合判断。",
+          "本解读不构成职业决策的唯一依据，建议同时咨询可信赖的师长、同行或职业顾问。"
+        ]
+      },
+      "evidenceIds": [
+        "zy-1-judgment"
+      ],
+      "trace": [
+        {
+          "step": "model",
+          "totalTokens": 1059,
+          "promptTokens": 487,
+          "completionTokens": 572
+        }
+      ],
+      "semanticSupportReview": "pending",
+      "relevanceReview": "pending",
+      "runFile": "evaluation/results/live-2026-09-24T06-53-52-129Z.json",
+      "version": "evidence-agent-v2.3",
+      "safeFallback": false
+    },
+    {
+      "caseId": "initial-qian",
+      "variant": "evidence",
+      "status": "answered",
+      "schemaAndCitationValid": true,
+      "citedCount": 4,
+      "validCitationCount": 4,
+      "requiredEvidenceCited": true,
+      "expectedStatus": "answered",
+      "expectedStatusMatched": true,
+      "expectedToolUsed": true,
+      "mechanicalTaskPass": true,
+      "durationMs": 2999,
+      "totalTokens": 1663,
+      "toolCalls": 0,
+      "validationErrors": [],
+      "answer": {
+        "status": "answered",
+        "summary": "本卦为乾为天，无动爻，可借乾卦卦辞、彖传与大象传的文化意涵，反思工作变化中的进取与守正。",
+        "paragraphs": [
+          {
+            "text": "本次起卦得乾为天，六爻皆静，没有动爻。乾卦卦辞为“元亨利贞”，可理解为事物发展具有开创、通达、和谐、正固的维度。面对工作变化，可先审视新机会是否具备开创空间、能否顺畅推进，以及是否合乎自身长期持守的原则，而非直接判断吉凶。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              }
+            ]
+          },
+          {
+            "text": "彖传言“乾道变化，各正性命，保合太和，乃利贞”，提示变化本身是天道运行的一部分，关键在于变化中能否各安其位、各正其性，并保持整体和谐。工作变动可视为重新定位的契机，思考自己适合什么、能贡献什么，以及如何在新环境中保持内在稳定。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-tuan",
+                "quote": "乾道变化，各正性命，保合太和，乃利贞。"
+              }
+            ]
+          },
+          {
+            "text": "大象传“天行健，君子以自强不息”强调持续奋进的精神。面对新机会，进退之间可保持主动学习与自我更新，但自强不息不等于盲目冒进；结合乾卦“利贞”的守正意涵，宜在积极行动的同时守住底线与节奏。这是文化层面的反思，不是对具体选择的现实预测。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-xiang",
+                "quote": "天行健，君子以自强不息。"
+              },
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "本卦无动爻，不取变卦，解释仅基于乾卦卦辞、彖传与大象传。",
+          "以上为易经文化理解与反思，不构成对工作机会的现实预测或决策建议。",
+          "原文来自固定学习语料，文字尚未完成逐条人工校勘。"
+        ]
+      },
+      "evidenceIds": [
+        "zy-1-judgment",
+        "zy-1-tuan",
+        "zy-1-xiang"
+      ],
+      "trace": [
+        {
+          "step": "model",
+          "totalTokens": 1663,
+          "promptTokens": 1124,
+          "completionTokens": 539
+        }
+      ],
+      "semanticSupportReview": "pending",
+      "relevanceReview": "pending",
+      "runFile": "evaluation/results/live-2026-09-24T06-53-52-129Z.json",
+      "version": "evidence-agent-v2.3",
+      "safeFallback": false
+    },
+    {
+      "caseId": "line-qian2",
+      "variant": "baseline",
+      "status": "answered",
+      "schemaAndCitationValid": true,
+      "citedCount": 3,
+      "validCitationCount": 3,
+      "requiredEvidenceCited": false,
+      "expectedStatus": "answered",
+      "expectedStatusMatched": true,
+      "expectedTool": "get_passages",
+      "expectedToolUsed": false,
+      "mechanicalTaskPass": false,
+      "durationMs": 2139,
+      "totalTokens": 859,
+      "toolCalls": 0,
+      "validationErrors": [],
+      "answer": {
+        "status": "answered",
+        "summary": "本卦为乾为天，六爻皆静（无动爻），故不取变卦。您要求查出的第二爻原文为“见龙在田，利见大人”，出自《周易》乾卦九二爻辞。",
+        "paragraphs": [
+          {
+            "text": "您所问的卦为乾为天（第1卦），六爻皆为7（少阳），属静卦，没有动爻，因此本卦与变卦相同，均为乾为天，不另取变卦。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              }
+            ]
+          },
+          {
+            "text": "乾卦第二爻（自下而上第二爻）为九二，其爻辞原文是：“见龙在田，利见大人。” 这句爻辞出自《周易》乾卦的九二爻。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              }
+            ]
+          },
+          {
+            "text": "关于出处：该爻辞属于《周易》上经乾卦的爻辞部分。本次检索所提供的证据仅包含乾卦卦辞“元亨利贞”，未包含九二爻辞的独立证据条目，因此上述九二爻辞原文系依据《周易》通行本乾卦经文补充说明，未能从当前证据集中直接引用。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "当前证据集仅提供乾卦卦辞“元亨利贞”，未包含九二爻辞的独立证据条目，故九二爻辞原文无法从给定证据中直接引用。",
+          "本卦无动爻，按材料政策不额外取变卦，故未提供变卦信息。"
+        ]
+      },
+      "evidenceIds": [
+        "zy-1-judgment"
+      ],
+      "trace": [
+        {
+          "step": "model",
+          "totalTokens": 859,
+          "promptTokens": 489,
+          "completionTokens": 370
+        }
+      ],
+      "semanticSupportReview": "pending",
+      "relevanceReview": "pending",
+      "runFile": "evaluation/results/live-2026-09-24T06-53-52-129Z.json",
+      "version": "evidence-agent-v2.3",
+      "safeFallback": false
+    },
+    {
+      "caseId": "line-qian2",
+      "variant": "evidence",
+      "status": "insufficient",
+      "schemaAndCitationValid": true,
+      "citedCount": 4,
+      "validCitationCount": 4,
+      "requiredEvidenceCited": false,
+      "expectedStatus": "answered",
+      "expectedStatusMatched": false,
+      "expectedTool": "get_passages",
+      "expectedToolUsed": false,
+      "mechanicalTaskPass": false,
+      "durationMs": 1916,
+      "totalTokens": 1416,
+      "toolCalls": 0,
+      "validationErrors": [],
+      "answer": {
+        "status": "insufficient",
+        "summary": "所提供证据仅含乾卦卦辞、彖传、大象，未收录第二爻爻辞，无法查出该原文及出处。",
+        "paragraphs": [
+          {
+            "text": "本次起卦为乾为天，六爻皆静，没有动爻。按材料政策，无动爻时不额外取变卦，因此可依据的原文限于本卦的卦辞、彖传与大象。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              },
+              {
+                "evidenceId": "zy-1-tuan",
+                "quote": "大哉乾元，万物资始，乃统天。"
+              },
+              {
+                "evidenceId": "zy-1-xiang",
+                "quote": "天行健，君子以自强不息。"
+              }
+            ]
+          },
+          {
+            "text": "你问的是本卦第二爻的原文与出处。现有证据中没有乾卦第二爻的爻辞或小象条目，因此无法给出该爻原文，也不能凭记忆补造出处。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-xiang",
+                "quote": "天行健，君子以自强不息。"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "证据未收录乾卦第二爻爻辞，缺少该爻原文与出处信息。",
+          "本次为无动爻，不取变卦；如需第二爻内容，请补充包含该爻辞的证据或使用可检索该爻的工具。"
+        ]
+      },
+      "evidenceIds": [
+        "zy-1-judgment",
+        "zy-1-tuan",
+        "zy-1-xiang"
+      ],
+      "trace": [
+        {
+          "step": "model",
+          "totalTokens": 1416,
+          "promptTokens": 1126,
+          "completionTokens": 290
+        }
+      ],
+      "semanticSupportReview": "pending",
+      "relevanceReview": "pending",
+      "runFile": "evaluation/results/live-2026-09-24T06-53-52-129Z.json",
+      "version": "evidence-agent-v2.3",
+      "safeFallback": false
+    },
+    {
+      "caseId": "search-source",
+      "variant": "baseline",
+      "status": "answered",
+      "schemaAndCitationValid": false,
+      "citedCount": 1,
+      "validCitationCount": 1,
+      "requiredEvidenceCited": false,
+      "expectedStatus": "answered",
+      "expectedStatusMatched": true,
+      "expectedToolUsed": true,
+      "mechanicalTaskPass": false,
+      "durationMs": 2586,
+      "totalTokens": 857,
+      "toolCalls": 0,
+      "validationErrors": [
+        "MISSING_CITATION"
+      ],
+      "answer": {
+        "status": "answered",
+        "summary": "你问的是“地势坤，君子以厚德载物”的出处。它出自《周易》坤卦的《象传》（大象），原文即“地势坤，君子以厚德载物”。本次所给证据只包含乾卦卦辞“元亨利贞”，未包含坤卦象传原文，因此无法在本轮证据中直接引用该句出处。",
+        "paragraphs": [
+          {
+            "text": "“地势坤，君子以厚德载物”出自《周易》坤卦的《象传》。坤卦与乾卦相对：乾象天、象健，坤象地、象顺；因此《象传》以“地势坤”说明大地的形势宽厚承载，进而引出君子应效法大地，以深厚德行容载万物。",
+            "citations": []
+          },
+          {
+            "text": "就你提供的占测数据而言，本卦与变卦都是“乾为天”，六爻皆静，没有动爻；证据中只收录了乾卦卦辞“元亨利贞”，并没有坤卦《象传》的原文条目。因此，严格依据本轮证据，只能确认乾卦卦辞，不能直接引用坤卦象传原文来作证。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "本轮证据仅含乾卦卦辞，未包含坤卦《象传》原文，故无法在证据引用中给出“地势坤，君子以厚德载物”的对应出处。",
+          "该句通常归于《周易》坤卦《象传》，但本轮未提供坤卦相关证据条目，不能以本轮证据作逐字校勘。"
+        ]
+      },
+      "evidenceIds": [
+        "zy-1-judgment"
+      ],
+      "trace": [
+        {
+          "step": "model",
+          "totalTokens": 857,
+          "promptTokens": 497,
+          "completionTokens": 360
+        }
+      ],
+      "semanticSupportReview": "pending",
+      "relevanceReview": "pending",
+      "runFile": "evaluation/results/live-2026-09-24T06-53-52-129Z.json",
+      "version": "evidence-agent-v2.3",
+      "safeFallback": false
+    },
+    {
+      "caseId": "search-source",
+      "variant": "evidence",
+      "status": "insufficient",
+      "schemaAndCitationValid": true,
+      "citedCount": 1,
+      "validCitationCount": 1,
+      "requiredEvidenceCited": false,
+      "expectedStatus": "answered",
+      "expectedStatusMatched": false,
+      "expectedToolUsed": true,
+      "mechanicalTaskPass": false,
+      "durationMs": 1605,
+      "totalTokens": 1333,
+      "toolCalls": 0,
+      "validationErrors": [],
+      "answer": {
+        "status": "insufficient",
+        "summary": "所提供证据仅覆盖乾卦卦辞、彖传、大象，未收录坤卦象传原文，无法查出“地势坤，君子以厚德载物”的出处。",
+        "paragraphs": [
+          {
+            "text": "本次证据只包含乾卦的卦辞、彖传和大象，例如“天行健，君子以自强不息”出自乾·大象。你问的“地势坤，君子以厚德载物”属于坤卦象传，但当前语料中没有坤卦相关条目，因此无法给出该句的原文与出处。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-xiang",
+                "quote": "天行健，君子以自强不息。"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "缺少坤卦象传或坤卦相关证据，无法确认该句原文及出处。",
+          "现有语料未收录坤卦内容，不能以乾卦证据替代回答。"
+        ]
+      },
+      "evidenceIds": [
+        "zy-1-judgment",
+        "zy-1-tuan",
+        "zy-1-xiang"
+      ],
+      "trace": [
+        {
+          "step": "model",
+          "totalTokens": 1333,
+          "promptTokens": 1134,
+          "completionTokens": 199
+        }
+      ],
+      "semanticSupportReview": "pending",
+      "relevanceReview": "pending",
+      "runFile": "evaluation/results/live-2026-09-24T06-53-52-129Z.json",
+      "version": "evidence-agent-v2.3",
+      "safeFallback": false
+    },
+    {
+      "caseId": "missing-tuan",
+      "variant": "baseline",
+      "status": "insufficient",
+      "schemaAndCitationValid": true,
+      "citedCount": 1,
+      "validCitationCount": 1,
+      "requiredEvidenceCited": true,
+      "expectedStatus": "insufficient",
+      "expectedStatusMatched": true,
+      "expectedToolUsed": true,
+      "mechanicalTaskPass": true,
+      "durationMs": 1526,
+      "totalTokens": 745,
+      "toolCalls": 0,
+      "validationErrors": [],
+      "answer": {
+        "status": "insufficient",
+        "summary": "当前证据库中没有恒卦《彖传》原文，无法按你的要求仅提供彖传原文；现有证据仅包含恒卦卦辞。",
+        "paragraphs": [
+          {
+            "text": "你要求只查询恒卦《彖传》的原文，并且如果库里没有就明确说没有。根据本次提供的证据材料，唯一可用的恒卦文本是卦辞“亨，无咎，利贞，利有攸往”，其章节标注为“judgment”（卦辞），并非《彖传》。因此，当前证据库中没有恒卦《彖传》原文，不能以其他篇章或后世解释替代。",
+            "citations": [
+              {
+                "evidenceId": "zy-32-judgment",
+                "quote": "亨，无咎，利贞，利有攸往。"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "证据库未包含恒卦《彖传》原文。",
+          "现有恒卦证据仅为卦辞，不能替代《彖传》。",
+          "按你的要求，不引用其他篇章或非彖传材料来补足。"
+        ]
+      },
+      "evidenceIds": [
+        "zy-32-judgment"
+      ],
+      "trace": [
+        {
+          "step": "model",
+          "totalTokens": 745,
+          "promptTokens": 518,
+          "completionTokens": 227
+        }
+      ],
+      "semanticSupportReview": "pending",
+      "relevanceReview": "pending",
+      "runFile": "evaluation/results/live-2026-09-24T06-53-52-129Z.json",
+      "version": "evidence-agent-v2.3",
+      "safeFallback": false
+    },
+    {
+      "caseId": "missing-tuan",
+      "variant": "evidence",
+      "status": "insufficient",
+      "schemaAndCitationValid": true,
+      "citedCount": 2,
+      "validCitationCount": 2,
+      "requiredEvidenceCited": true,
+      "expectedStatus": "insufficient",
+      "expectedStatusMatched": true,
+      "expectedToolUsed": true,
+      "mechanicalTaskPass": true,
+      "durationMs": 1354,
+      "totalTokens": 1120,
+      "toolCalls": 0,
+      "validationErrors": [],
+      "answer": {
+        "status": "insufficient",
+        "summary": "所提供证据中没有恒卦彖传原文，无法按该请求作答。",
+        "paragraphs": [
+          {
+            "text": "本次提供的证据只包含恒卦卦辞与大象，未包含彖传。因此无法给出恒卦彖传的原文，也不能用其他篇章替代。",
+            "citations": [
+              {
+                "evidenceId": "zy-32-judgment",
+                "quote": "亨，无咎，利贞，利有攸往。"
+              },
+              {
+                "evidenceId": "zy-32-xiang",
+                "quote": "雷风，恒。君子以立不易方。"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "证据库未收录恒卦彖传，故无法回答其原文。",
+          "不能以卦辞或大象替代彖传。"
+        ]
+      },
+      "evidenceIds": [
+        "zy-32-judgment",
+        "zy-32-xiang"
+      ],
+      "trace": [
+        {
+          "step": "model",
+          "totalTokens": 1120,
+          "promptTokens": 963,
+          "completionTokens": 157
+        }
+      ],
+      "semanticSupportReview": "pending",
+      "relevanceReview": "pending",
+      "runFile": "evaluation/results/live-2026-09-24T06-53-52-129Z.json",
+      "version": "evidence-agent-v2.3",
+      "safeFallback": false
+    },
+    {
+      "caseId": "missing-commentary",
+      "variant": "baseline",
+      "status": "insufficient",
+      "schemaAndCitationValid": true,
+      "citedCount": 3,
+      "validCitationCount": 3,
+      "requiredEvidenceCited": true,
+      "expectedStatus": "insufficient",
+      "expectedStatusMatched": true,
+      "expectedToolUsed": true,
+      "mechanicalTaskPass": true,
+      "durationMs": 2709,
+      "totalTokens": 905,
+      "toolCalls": 0,
+      "validationErrors": [],
+      "answer": {
+        "status": "insufficient",
+        "summary": "所问为乾卦（乾为天）面对工作变化之思考，但证据库仅含卦辞“元亨利贞”，未收录朱熹逐字注解；故无法按朱熹原文作答，只能就现有卦辞作有限说明。",
+        "paragraphs": [
+          {
+            "text": "本次起卦六爻皆七，无动爻，本卦与变卦同为乾为天。按材料政策，无动爻时不额外取变卦，因此可依据的核心材料只有本卦卦辞。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              }
+            ]
+          },
+          {
+            "text": "乾卦卦辞“元亨利贞”通常可理解为：以开创、通达、适宜、正固为总纲。面对工作变化，可先取“元”的创始与发端之义，思考变化中哪些部分需要主动开创；取“亨”的通达之义，思考如何使沟通与路径顺畅；取“利”的适宜之义，衡量取舍是否合宜；取“贞”的正固之义，守住原则与长期方向。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              }
+            ]
+          },
+          {
+            "text": "但您明确要求引用朱熹对本卦的逐字注解。当前证据库中只有乾卦卦辞“元亨利贞”一条，未提供朱熹《周易本义》或其他朱熹注文的逐字内容，因此不能伪造或替代引用。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "证据库未收录朱熹对乾卦的逐字注解，无法满足“引用朱熹逐字注解”的要求。",
+          "本次无动爻，按材料政策不取变卦，故不能据动爻或变卦展开更细的变化分析。",
+          "现有证据仅含乾卦卦辞，缺少彖、象、爻辞等，解释范围有限。"
+        ]
+      },
+      "evidenceIds": [
+        "zy-1-judgment"
+      ],
+      "trace": [
+        {
+          "step": "model",
+          "totalTokens": 905,
+          "promptTokens": 492,
+          "completionTokens": 413
+        }
+      ],
+      "semanticSupportReview": "pending",
+      "relevanceReview": "pending",
+      "runFile": "evaluation/results/live-2026-09-24T06-53-52-129Z.json",
+      "version": "evidence-agent-v2.3",
+      "safeFallback": false
+    },
+    {
+      "caseId": "missing-commentary",
+      "variant": "evidence",
+      "status": "insufficient",
+      "schemaAndCitationValid": true,
+      "citedCount": 3,
+      "validCitationCount": 3,
+      "requiredEvidenceCited": true,
+      "expectedStatus": "insufficient",
+      "expectedStatusMatched": true,
+      "expectedToolUsed": true,
+      "mechanicalTaskPass": true,
+      "durationMs": 1476,
+      "totalTokens": 1337,
+      "toolCalls": 0,
+      "validationErrors": [],
+      "answer": {
+        "status": "insufficient",
+        "summary": "所问为朱熹对本卦的逐字注解，本次证据仅含乾卦卦辞、彖传、大象，未收录朱熹注，无法回答。",
+        "paragraphs": [
+          {
+            "text": "你问的是朱熹对乾卦的逐字注解。本次可用证据只有乾卦的卦辞、彖传与大象三处原文，均未包含朱熹的注释文字，因此无法提供其逐字注解。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              },
+              {
+                "evidenceId": "zy-1-tuan",
+                "quote": "大哉乾元，万物资始，乃统天。"
+              },
+              {
+                "evidenceId": "zy-1-xiang",
+                "quote": "天行健，君子以自强不息。"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "本次语料未收录朱熹注，不能把卦辞、彖传、大象当作朱熹注解。",
+          "若需朱熹注，请补充相应文献证据后再问。"
+        ]
+      },
+      "evidenceIds": [
+        "zy-1-judgment",
+        "zy-1-tuan",
+        "zy-1-xiang"
+      ],
+      "trace": [
+        {
+          "step": "model",
+          "totalTokens": 1337,
+          "promptTokens": 1129,
+          "completionTokens": 208
+        }
+      ],
+      "semanticSupportReview": "pending",
+      "relevanceReview": "pending",
+      "runFile": "evaluation/results/live-2026-09-24T06-53-52-129Z.json",
+      "version": "evidence-agent-v2.3",
+      "safeFallback": false
+    },
+    {
+      "caseId": "same-cast",
+      "variant": "baseline",
+      "status": "answered",
+      "schemaAndCitationValid": true,
+      "citedCount": 3,
+      "validCitationCount": 3,
+      "requiredEvidenceCited": true,
+      "expectedStatus": "answered",
+      "expectedStatusMatched": true,
+      "expectedToolUsed": true,
+      "mechanicalTaskPass": true,
+      "durationMs": 3907,
+      "totalTokens": 1056,
+      "toolCalls": 0,
+      "validationErrors": [],
+      "answer": {
+        "status": "answered",
+        "summary": "面对工作变化，乾卦六爻皆静，提示你以“元亨利贞”为思考框架：从发心、沟通、协作到守正，把变化视为持续自强与自我校准的过程，而非被动应对。",
+        "paragraphs": [
+          {
+            "text": "你问“面对工作变化，我该怎样思考”，本次得乾为天，六爻皆静，无动爻，故以本卦卦辞“元亨利贞”为总纲。乾为纯阳之卦，象征刚健、主动、创造与不息。面对变化，首先应回到“元”——问自己：这次变化的根本起点是什么？我的初心与长期目标是否清晰？把变化放在更长的时间尺度上审视，而非只盯住眼前的得失。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              }
+            ]
+          },
+          {
+            "text": "其次，“亨”提示沟通与通达。工作变化往往涉及信息不对称、角色调整或资源重组，主动了解变化的全貌、与相关方坦诚交流，比独自揣测更有效。“利”则指向协作与共赢：思考如何在变化中找到对各方都有利的切入点，而不是把变化视为零和博弈。最后，“贞”是守正与坚持：在变化中守住职业底线、核心能力与长期价值，不因短期波动而轻易动摇。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              }
+            ]
+          },
+          {
+            "text": "乾卦六爻皆阳且无动爻，也意味着当前局面相对稳定，变化更多是外部环境或内在认知的调整，而非卦象本身给出的剧烈转折信号。你可以把“自强不息”作为思考底色：把变化当作一次自我更新的契机，主动规划下一步，而不是等待变化来定义你。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "本次为六爻皆静的乾卦，无动爻与变卦，故解读以本卦卦辞为主，不涉及爻辞与变卦的细节指引。",
+          "卦辞“元亨利贞”为高度概括的原则，具体到你的行业、岗位与变化类型，仍需结合现实信息做判断。",
+          "本结果不构成职业决策建议，重大选择请结合个人实际情况与专业意见。"
+        ]
+      },
+      "evidenceIds": [
+        "zy-1-judgment"
+      ],
+      "trace": [
+        {
+          "step": "model",
+          "totalTokens": 1056,
+          "promptTokens": 487,
+          "completionTokens": 569
+        }
+      ],
+      "semanticSupportReview": "pending",
+      "relevanceReview": "pending",
+      "runFile": "evaluation/results/live-2026-09-24T06-53-52-129Z.json",
+      "version": "evidence-agent-v2.3",
+      "safeFallback": false
+    },
+    {
+      "caseId": "same-cast",
+      "variant": "evidence",
+      "status": "answered",
+      "schemaAndCitationValid": true,
+      "citedCount": 3,
+      "validCitationCount": 3,
+      "requiredEvidenceCited": true,
+      "expectedStatus": "answered",
+      "expectedStatusMatched": true,
+      "expectedToolUsed": true,
+      "mechanicalTaskPass": true,
+      "durationMs": 2595,
+      "totalTokens": 1532,
+      "toolCalls": 0,
+      "validationErrors": [],
+      "answer": {
+        "status": "answered",
+        "summary": "本次为乾为天，六爻皆静，无动爻；可借卦辞、彖传、大象的原文，把工作变化理解为在持续变动中守正、自强与调适。",
+        "paragraphs": [
+          {
+            "text": "这次起卦得到乾为天，六爻皆为七，没有动爻，因此本卦与变卦相同，解读重点落在乾卦的卦辞、彖传和大象上。面对工作变化，可先把“元亨利贞”当作一种文化性的思考框架：在变动中重视开端、通达、适宜与守正，而不是把它当作现实吉凶预测。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              }
+            ]
+          },
+          {
+            "text": "彖传讲“乾道变化，各正性命，保合太和，乃利贞”，提示变化本身是天道运行的一部分；工作变化中，也可反思如何在调整里安顿自己的位置与方向，使内外尽量协调，而不是只追求短期结果。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-tuan",
+                "quote": "乾道变化，各正性命，保合太和，乃利贞。"
+              }
+            ]
+          },
+          {
+            "text": "大象说“天行健，君子以自强不息”，可理解为面对变化时保持主动学习和持续行动的态度。但这只是文化理解与反思，不构成对具体工作变动的确定判断，也不替代现实中的信息收集、沟通与专业建议。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-xiang",
+                "quote": "天行健，君子以自强不息。"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "本次无动爻，不取变卦，也不虚构唯一断卦法。",
+          "仅依据已提供乾卦卦辞、彖传、大象作文化解释，不构成现实预测、医疗、投资或职业决策结论。",
+          "原文来自固定学习语料，文字尚未全部人工校勘。"
+        ]
+      },
+      "evidenceIds": [
+        "zy-1-judgment",
+        "zy-1-tuan",
+        "zy-1-xiang"
+      ],
+      "trace": [
+        {
+          "step": "model",
+          "totalTokens": 1532,
+          "promptTokens": 1124,
+          "completionTokens": 408
+        }
+      ],
+      "semanticSupportReview": "pending",
+      "relevanceReview": "pending",
+      "runFile": "evaluation/results/live-2026-09-24T06-53-52-129Z.json",
+      "version": "evidence-agent-v2.3",
+      "safeFallback": false
+    },
+    {
+      "caseId": "initial-qian",
+      "variant": "agent",
+      "status": "answered",
+      "schemaAndCitationValid": true,
+      "citedCount": 3,
+      "validCitationCount": 3,
+      "requiredEvidenceCited": true,
+      "expectedStatus": "answered",
+      "expectedStatusMatched": true,
+      "expectedToolUsed": true,
+      "mechanicalTaskPass": true,
+      "durationMs": 8544,
+      "totalTokens": 1451,
+      "toolCalls": 0,
+      "validationErrors": [],
+      "answer": {
+        "status": "answered",
+        "summary": "本卦为乾为天，六爻皆静、无动爻，可借卦辞、彖传、大象三处原文反思面对工作机会时的态度与节奏。",
+        "paragraphs": [
+          {
+            "text": "本次起卦得乾为天，六爻皆为七，没有动爻，因此不存在由动爻引出的变卦线索。卦辞“元亨利贞”呈现的是乾卦整体的四种德性，可理解为面对新机会时，先看其开端是否正当、过程是否通达、取舍是否合宜、守持是否坚定，而非直接判定吉凶。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              }
+            ]
+          },
+          {
+            "text": "彖传讲“乾道变化，各正性命，保合太和，乃利贞”，提示变化本身是乾道的常态，关键在于让事物各归其正、保持整体和谐。放到工作机会上，可反思新岗位是否与自身长期方向相合、是否让相关各方关系更顺，而不是只看短期得失。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-tuan",
+                "quote": "乾道变化，各正性命，保合太和，乃利贞。"
+              }
+            ]
+          },
+          {
+            "text": "大象“天行健，君子以自强不息”侧重持续进取的姿态。面对进退，可把它理解为：无论选择进入还是暂缓，都应保持主动学习和自我更新，而不是把卦象当作现实预测或替你做决定的依据。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-xiang",
+                "quote": "天行健，君子以自强不息。"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "本次无动爻，不能据动爻推断具体变化或唯一断法。",
+          "以上为易经文化理解与反思，不构成对工作机会的现实预测或决策结论。",
+          "所引原文来自固定学习语料，文字尚未完成逐条人工校勘。"
+        ]
+      },
+      "evidenceIds": [
+        "zy-1-judgment",
+        "zy-1-tuan",
+        "zy-1-xiang"
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "evidenceIds": [
+            "zy-1-judgment",
+            "zy-1-tuan",
+            "zy-1-xiang"
+          ]
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 8531,
+          "promptTokens": 1047,
+          "completionTokens": 404,
+          "totalTokens": 1451
+        },
+        {
+          "step": "validate",
+          "status": "passed"
+        }
+      ],
+      "semanticSupportReview": "pending",
+      "relevanceReview": "pending",
+      "runFile": "evaluation/results/live-2026-09-24T06-55-03-655Z.json",
+      "version": "evidence-agent-v2.4",
+      "safeFallback": false
+    },
+    {
+      "caseId": "line-qian2",
+      "variant": "agent",
+      "status": "answered",
+      "schemaAndCitationValid": true,
+      "citedCount": 3,
+      "validCitationCount": 3,
+      "requiredEvidenceCited": true,
+      "expectedStatus": "answered",
+      "expectedStatusMatched": true,
+      "expectedTool": "get_passages",
+      "expectedToolUsed": true,
+      "mechanicalTaskPass": true,
+      "durationMs": 5399,
+      "totalTokens": 6900,
+      "toolCalls": 1,
+      "validationErrors": [],
+      "answer": {
+        "status": "answered",
+        "summary": "乾卦第二爻（九二）爻辞为“见龙在田，利见大人”，小象作“见龙在田，德施普也”，出处为《周易》乾卦。",
+        "paragraphs": [
+          {
+            "text": "本卦为乾为天，六爻皆七，无动爻。所问第二爻即乾卦九二，其爻辞原文是“见龙在田，利见大人”。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-line-2",
+                "quote": "见龙在田，利见大人。"
+              }
+            ]
+          },
+          {
+            "text": "出处方面，该条属《周易》乾卦九二爻辞，本次证据标注的定位为“乾·九二”，来源为维基文库固定修订版《周易/乾》。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-line-2",
+                "quote": "见龙在田，利见大人。"
+              }
+            ]
+          },
+          {
+            "text": "同一证据还附有九二的小象文字“见龙在田，德施普也”，可一并作为该爻的传文参考。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-line_xiang-2",
+                "quote": "见龙在田，德施普也。"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "本次仅提供乾卦九二爻辞与小象的原文及出处，未展开历代注疏或义理解释。",
+          "原文来自固定版本学习语料，文字尚未完成逐条人工校勘。"
+        ]
+      },
+      "evidenceIds": [
+        "zy-1-judgment",
+        "zy-1-tuan",
+        "zy-1-xiang",
+        "zy-1-line-2",
+        "zy-1-line_xiang-2"
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "evidenceIds": [
+            "zy-1-judgment",
+            "zy-1-tuan",
+            "zy-1-xiang"
+          ]
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 902,
+          "promptTokens": 1267,
+          "completionTokens": 85,
+          "totalTokens": 1352
+        },
+        {
+          "step": "tool",
+          "tool": "get_passages",
+          "args": {
+            "hexagramId": 1,
+            "sections": [
+              "line",
+              "line_xiang"
+            ],
+            "lineIndices": [
+              2
+            ]
+          },
+          "durationMs": 1,
+          "status": "ok",
+          "evidenceIds": [
+            "zy-1-line-2",
+            "zy-1-line_xiang-2"
+          ]
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 843,
+          "promptTokens": 1629,
+          "completionTokens": 5,
+          "totalTokens": 1634
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 2052,
+          "promptTokens": 1469,
+          "completionTokens": 309,
+          "totalTokens": 1778
+        },
+        {
+          "step": "validate",
+          "status": "failed",
+          "code": "QUOTE_MISMATCH:zy-1-line-2"
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 1599,
+          "promptTokens": 1823,
+          "completionTokens": 313,
+          "totalTokens": 2136
+        },
+        {
+          "step": "validate",
+          "status": "passed"
+        }
+      ],
+      "semanticSupportReview": "pending",
+      "relevanceReview": "pending",
+      "runFile": "evaluation/results/live-2026-09-24T06-55-03-655Z.json",
+      "version": "evidence-agent-v2.4",
+      "safeFallback": false
+    },
+    {
+      "caseId": "search-source",
+      "variant": "agent",
+      "status": "answered",
+      "schemaAndCitationValid": true,
+      "citedCount": 1,
+      "validCitationCount": 1,
+      "requiredEvidenceCited": true,
+      "expectedStatus": "answered",
+      "expectedStatusMatched": true,
+      "expectedToolUsed": true,
+      "mechanicalTaskPass": true,
+      "durationMs": 2544,
+      "totalTokens": 5084,
+      "toolCalls": 1,
+      "validationErrors": [],
+      "answer": {
+        "status": "answered",
+        "summary": "“地势坤，君子以厚德载物”出自坤卦的象传（大象）。",
+        "paragraphs": [
+          {
+            "text": "该句属于坤卦的象传，在语料中标注为“坤·大象”，原文为“地势坤，君子以厚德载物”。",
+            "citations": [
+              {
+                "evidenceId": "zy-2-xiang",
+                "quote": "地势坤，君子以厚德载物。"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "仅依据固定版本学习语料，文字尚未完成逐条人工校勘。"
+        ]
+      },
+      "evidenceIds": [
+        "zy-1-judgment",
+        "zy-1-tuan",
+        "zy-1-xiang",
+        "zy-2-xiang",
+        "zy-10-xiang",
+        "zy-12-xiang"
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "evidenceIds": [
+            "zy-1-judgment",
+            "zy-1-tuan",
+            "zy-1-xiang"
+          ]
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 557,
+          "promptTokens": 1275,
+          "completionTokens": 47,
+          "totalTokens": 1322
+        },
+        {
+          "step": "tool",
+          "tool": "search_knowledge",
+          "args": {
+            "query": "地势坤 君子以厚德载物"
+          },
+          "durationMs": 19,
+          "status": "ok",
+          "evidenceIds": [
+            "zy-2-xiang",
+            "zy-1-xiang",
+            "zy-10-xiang",
+            "zy-12-xiang"
+          ]
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 731,
+          "promptTokens": 1902,
+          "completionTokens": 5,
+          "totalTokens": 1907
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 1235,
+          "promptTokens": 1735,
+          "completionTokens": 120,
+          "totalTokens": 1855
+        },
+        {
+          "step": "validate",
+          "status": "passed"
+        }
+      ],
+      "semanticSupportReview": "pending",
+      "relevanceReview": "pending",
+      "runFile": "evaluation/results/live-2026-09-24T06-55-03-655Z.json",
+      "version": "evidence-agent-v2.4",
+      "safeFallback": false
+    },
+    {
+      "caseId": "missing-tuan",
+      "variant": "agent",
+      "status": "insufficient",
+      "schemaAndCitationValid": true,
+      "citedCount": 0,
+      "validCitationCount": 0,
+      "requiredEvidenceCited": true,
+      "expectedStatus": "insufficient",
+      "expectedStatusMatched": true,
+      "expectedToolUsed": true,
+      "safeFallback": false,
+      "mechanicalTaskPass": true,
+      "durationMs": 7700,
+      "totalTokens": 3513,
+      "toolCalls": 1,
+      "validationErrors": [],
+      "answer": {
+        "status": "insufficient",
+        "summary": "库中未收录恒卦彖传原文，无法提供该篇内容。",
+        "paragraphs": [],
+        "limitations": [
+          "本次提供的证据仅含恒卦卦辞（zy-32-judgment）与大象（zy-32-xiang），未包含彖传（tuan）条目；按规则不以其他篇章替代回答。"
+        ]
+      },
+      "evidenceIds": [
+        "zy-32-judgment",
+        "zy-32-xiang"
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "evidenceIds": [
+            "zy-32-judgment",
+            "zy-32-xiang"
+          ]
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 5807,
+          "promptTokens": 1104,
+          "completionTokens": 60,
+          "totalTokens": 1164
+        },
+        {
+          "step": "tool",
+          "tool": "get_passages",
+          "args": {
+            "hexagramId": 32,
+            "sections": [
+              "tuan"
+            ]
+          },
+          "durationMs": 0,
+          "status": "empty",
+          "evidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 1180,
+          "promptTokens": 1180,
+          "completionTokens": 68,
+          "totalTokens": 1248
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 704,
+          "promptTokens": 1019,
+          "completionTokens": 82,
+          "totalTokens": 1101
+        },
+        {
+          "step": "validate",
+          "status": "passed"
+        }
+      ],
+      "semanticSupportReview": "pending",
+      "relevanceReview": "pending",
+      "runFile": "evaluation/results/live-2026-09-24T06-57-31-731Z.json",
+      "version": "evidence-agent-v2.5"
+    },
+    {
+      "caseId": "missing-commentary",
+      "variant": "agent",
+      "status": "insufficient",
+      "schemaAndCitationValid": true,
+      "citedCount": 2,
+      "validCitationCount": 2,
+      "requiredEvidenceCited": true,
+      "expectedStatus": "insufficient",
+      "expectedStatusMatched": true,
+      "expectedToolUsed": true,
+      "mechanicalTaskPass": true,
+      "durationMs": 4026,
+      "totalTokens": 5473,
+      "toolCalls": 2,
+      "validationErrors": [],
+      "answer": {
+        "status": "insufficient",
+        "summary": "知识库未收录朱熹《周易本义》等逐字注解，无法提供所问内容。",
+        "paragraphs": [
+          {
+            "text": "您要求引用朱熹对本卦（乾）的逐字注解。经检索，本次可用证据仅包含乾卦卦辞、彖传、大象及部分小象等原文，均未标注朱熹注，也没有《周易本义》相关条目。因此无法给出朱熹的逐字注解。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              },
+              {
+                "evidenceId": "zy-1-tuan",
+                "quote": "大哉乾元，万物资始，乃统天。"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "知识库未收录朱熹注、《周易本义》等材料，缺少所问对象。",
+          "现有证据仅为乾卦经文与传文，不能替代朱熹注解。",
+          "如需朱熹注解，请补充相应文献来源后再查。"
+        ]
+      },
+      "evidenceIds": [
+        "zy-1-judgment",
+        "zy-1-tuan",
+        "zy-1-xiang",
+        "zy-1-line_xiang-1",
+        "zy-1-line_xiang-2",
+        "zy-1-line_xiang-3"
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "evidenceIds": [
+            "zy-1-judgment",
+            "zy-1-tuan",
+            "zy-1-xiang"
+          ]
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 1094,
+          "promptTokens": 1270,
+          "completionTokens": 110,
+          "totalTokens": 1380
+        },
+        {
+          "step": "tool",
+          "tool": "search_knowledge",
+          "args": {
+            "query": "朱熹 乾 注解",
+            "hexagramId": 1
+          },
+          "durationMs": 0,
+          "status": "ok",
+          "evidenceIds": [
+            "zy-1-judgment",
+            "zy-1-line_xiang-1",
+            "zy-1-line_xiang-2",
+            "zy-1-line_xiang-3"
+          ]
+        },
+        {
+          "step": "tool",
+          "tool": "search_knowledge",
+          "args": {
+            "query": "朱熹 周易本义"
+          },
+          "durationMs": 9,
+          "status": "empty",
+          "evidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 1165,
+          "promptTokens": 1967,
+          "completionTokens": 125,
+          "totalTokens": 2092
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 1756,
+          "promptTokens": 1800,
+          "completionTokens": 201,
+          "totalTokens": 2001
+        },
+        {
+          "step": "validate",
+          "status": "passed"
+        }
+      ],
+      "semanticSupportReview": "pending",
+      "relevanceReview": "pending",
+      "runFile": "evaluation/results/live-2026-09-24T06-55-03-655Z.json",
+      "version": "evidence-agent-v2.4",
+      "safeFallback": false
+    },
+    {
+      "caseId": "same-cast",
+      "variant": "agent",
+      "status": "answered",
+      "schemaAndCitationValid": true,
+      "citedCount": 7,
+      "validCitationCount": 7,
+      "requiredEvidenceCited": true,
+      "expectedStatus": "answered",
+      "expectedStatusMatched": true,
+      "expectedToolUsed": true,
+      "mechanicalTaskPass": true,
+      "durationMs": 4744,
+      "totalTokens": 8434,
+      "toolCalls": 1,
+      "validationErrors": [],
+      "answer": {
+        "status": "answered",
+        "summary": "同一卦象可换角度：从卦辞、彖传、大象及六爻序列理解乾卦的层次与变化观，而非预测吉凶。",
+        "paragraphs": [
+          {
+            "text": "同一卦象可以换一个层面看：先看卦辞“元亨利贞”，它把乾卦放在“始、通、利、正”的整体框架里，而不是只给一个结果。再看彖传，从“万物资始”讲到“各正性命”“保合太和”，说明乾卦的意涵在于万物各得其位、各正其性，工作变化也可理解为重新定位的过程。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-judgment",
+                "quote": "元亨利贞。"
+              },
+              {
+                "evidenceId": "zy-1-tuan",
+                "quote": "乾道变化，各正性命，保合太和，乃利贞。"
+              }
+            ]
+          },
+          {
+            "text": "大象“天行健，君子以自强不息”提供了另一角度：面对变化，重点不在预测走向，而在持续自我更新与行动。乾卦六爻从“潜龙，勿用”到“亢龙有悔”，呈现由潜藏、显现、勤勉、跃动、上升到过盛的阶段序列；同一卦象因此可读作一条关于时机与分寸的线索，而非单一结论。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-xiang",
+                "quote": "天行健，君子以自强不息。"
+              },
+              {
+                "evidenceId": "zy-1-line-1",
+                "quote": "潜龙，勿用。"
+              },
+              {
+                "evidenceId": "zy-1-line-6",
+                "quote": "亢龙有悔。"
+              }
+            ]
+          },
+          {
+            "text": "本次起卦六爻皆为七，没有动爻，本卦与变卦同为乾为天，因此不存在由动爻引出的变卦解读。以上只是文化理解与反思，不是对工作变化的现实预测；乾卦各爻的吉凶用语应放在原文语境中体会，不宜直接套为确定性的行动结论。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-line-4",
+                "quote": "或跃在渊，无咎。"
+              },
+              {
+                "evidenceId": "zy-1-line-5",
+                "quote": "飞龙在天，利见大人。"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "本次无动爻，不能据动爻或变卦展开解释。",
+          "未收录现代注解、系辞、朱熹注等材料，不能把它们当作乾卦原文来引用。",
+          "原文来自固定版本学习语料，文字尚未全部人工校勘。",
+          "本回答属文化理解与反思，不构成现实预测、医疗或投资建议。"
+        ]
+      },
+      "evidenceIds": [
+        "zy-1-judgment",
+        "zy-1-tuan",
+        "zy-1-xiang",
+        "zy-1-line-1",
+        "zy-1-line-2",
+        "zy-1-line-3",
+        "zy-1-line-4",
+        "zy-1-line-5",
+        "zy-1-line-6",
+        "zy-1-special-7",
+        "zy-1-line_xiang-1",
+        "zy-1-line_xiang-2",
+        "zy-1-line_xiang-3",
+        "zy-1-line_xiang-4",
+        "zy-1-line_xiang-5",
+        "zy-1-line_xiang-6",
+        "zy-1-line_xiang-7"
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "evidenceIds": [
+            "zy-1-judgment",
+            "zy-1-tuan",
+            "zy-1-xiang"
+          ]
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 996,
+          "promptTokens": 1265,
+          "completionTokens": 106,
+          "totalTokens": 1371
+        },
+        {
+          "step": "tool",
+          "tool": "get_passages",
+          "args": {
+            "hexagramId": 1,
+            "sections": [
+              "line",
+              "line_xiang",
+              "special"
+            ],
+            "lineIndices": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ]
+          },
+          "durationMs": 0,
+          "status": "ok",
+          "evidenceIds": [
+            "zy-1-line-1",
+            "zy-1-line-2",
+            "zy-1-line-3",
+            "zy-1-line-4",
+            "zy-1-line-5",
+            "zy-1-line-6",
+            "zy-1-special-7",
+            "zy-1-line_xiang-1",
+            "zy-1-line_xiang-2",
+            "zy-1-line_xiang-3",
+            "zy-1-line_xiang-4",
+            "zy-1-line_xiang-5",
+            "zy-1-line_xiang-6",
+            "zy-1-line_xiang-7"
+          ]
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 464,
+          "promptTokens": 3341,
+          "completionTokens": 5,
+          "totalTokens": 3346
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 3281,
+          "promptTokens": 3174,
+          "completionTokens": 543,
+          "totalTokens": 3717
+        },
+        {
+          "step": "validate",
+          "status": "passed"
+        }
+      ],
+      "semanticSupportReview": "pending",
+      "relevanceReview": "pending",
+      "runFile": "evaluation/results/live-2026-09-24T06-55-03-655Z.json",
+      "version": "evidence-agent-v2.4",
+      "safeFallback": false
+    }
+  ]
+}

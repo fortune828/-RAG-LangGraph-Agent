@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-08",
+  "graphVersion": "python-graph-v3",
+  "promptVersion": "evidence-agent-python-v4",
+  "humanReviewed": false,
+  "reviewer": "Codex AI-assisted review, not human blind scoring",
+  "passedTasks": [
+    "T02",
+    "T03",
+    "T04",
+    "T06",
+    "T07",
+    "T08"
+  ],
+  "partialTasks": [
+    "T01",
+    "T05",
+    "T13"
+  ],
+  "checks": {
+    "pythonTests": 50,
+    "legacyTypescriptTests": 37,
+    "offlineExact": 64,
+    "lint": "passed",
+    "build": "passed",
+    "knowledgeAudit": "passed",
+    "pipCheck": "passed"
+  },
+  "liveUsage": {
+    "calls": 74,
+    "reportedTokens": 336520,
+    "missingUsageCalls": 0
+  },
+  "codeSha256": {
+    "backend/app.py": "a88684e8202e88c690b64526e8daec32c136ebd719075faf48821722552f4aba",
+    "backend/graph.py": "9f1671484bc59675afb68ce36e36c987c51314d39c9461c98a1f494f15ea59b2",
+    "backend/prompts.py": "f0ab8a7a9de6562e39e7d6d3698e25e62059acc65662e7251465e76fa42f8e05",
+    "backend/validation.py": "3b5e16be1ffb6150c22ee7ce91f91496e2ae33a035dfa7d0909623ac21b00601",
+    "backend/evaluate.py": "a36ca2c7b2e05b11e463b8efd51e88df4d0fe656c2a8d47e5eb5f80a285d8902",
+    "src/App.tsx": "9e44c311a66b6a4199b7cdeca0bedb56a57edbcabb676f06f8d587898f8bb7db",
+    "src/index.css": "0e874017d8f002d89be1c59bfc96eb8efd983f4348ed9705d4e8cdefe11a5371",
+    "shared/types.ts": "fe22327fc18bf73aa8753751911756379bcd927f240bbb75f51771f83170c644",
+    "tests_python/test_answer_recovery.py": "55ca00f5b135091644a1079640f015384343a3069a965d4eda91d03aba3e095c",
+    "tests_python/test_attribution.py": "53a53bd3d7cc760f8eda1a978277620591b4dc3882743aa1994f0f4e333dba13",
+    "tests_python/test_boundaries.py": "8781c5aa957b44d425b983c5bcad6cbb0fa0083aaa2b253e031031e10af24baa",
+    "tests_python/test_practical_routes.py": "ba42fa46600c6ad259f9dd39ffb35dd1575614f37b4ce3c64a55893d9fb40c87",
+    "tests_python/test_migration.py": "d2a1730fa625ecdf52a3cef658a975a6dc4209ba166142b529c4ae06c3ef6659",
+    "tests_python/restart_worker.py": "329e2dee4b0578141636eaab1f3bee1970055f4e020287eeda2970f7fe58594f",
+    "evaluation/development_checks.py": "67bcde34b9a961a6f7627126b3ac49e8b5bf1ae7b61a200dee4ef38692c496ee",
+    "scripts/browser-smoke.mjs": "d49e2a3fe3271ee2a7b49025b111fd969aefe2b16cd21ae13818bf12776d1cae",
+    "scripts/browser-live-acceptance.mjs": "50009991cec7da7bed7edaadd997f785a78f1efd9ae828edd1a477a53f887663"
+  }
+}

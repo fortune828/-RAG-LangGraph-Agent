@@ -1,0 +1,356 @@
+{
+  "version": "knowledge-v3-20260926-r1",
+  "releaseId": "knowledge-v3-20260926-r1",
+  "records": 1076,
+  "legacyVersion": "open-iching-4c5f00f8cb62-v2",
+  "parserVersion": "source-specific-v1",
+  "indexVersion": "bigrams-bm25-v1",
+  "normalizerVersion": "opencc-TSCharacters-528ae2624972",
+  "evidenceSha256": "4154d8c69d0fdf0e6eca3ff570f1c8a092528a6011099533b88f3863bf36ebd4",
+  "sourceHashes": {
+    "raw/ws-1645137.wiki": "ed9a5417c0b8af993f14e559262cc25bfce18a108d30e6da24edb7d61c4b6485",
+    "raw/ws-2676007.wiki": "dae9906d9a18c9d1b9e1ad877081f1bb7a17e90756fcb417503a2735b1854d50",
+    "raw/ws-2404938.wiki": "4bdaa2d02468975f7eb2fdb5263e80dc073e94bbac8ef2b45f29afa6d77ceaa6",
+    "raw/ws-2689596.wiki": "5d11567b8609c45961985cb7312f2ca57ce139b11a744d6a359d4c20838eb0b8",
+    "raw/ws-2404940.wiki": "1766d06d4984e624b206a237a83394aa6c28a5080a3eaf5eb85e718bab64a877",
+    "raw/ws-2000726.wiki": "866555b1a68fabd6b8d64b0d8aeab4fdb7bb5e5baf9ed874e1541e2bde18a58c",
+    "raw/ws-7904495.wiki": "204e9589d645d49ae519083e7b7df110ae17bdd26570ddaa4b7456cf90920360",
+    "raw/ws-2404949.wiki": "20e0a361668627576799d602cd6c9a92ebe224522c76e9bd55231e94493ed0ef",
+    "raw/ws-2404960.wiki": "6730143ef1d47282f6fc17adc291455cef1d726807eb230c1fa4b612a9da7d32",
+    "raw/ws-1313743.wiki": "5e79f5b72e6fb3eafb36e70f367aa338673297096586b2e5c1f5d9ee8d077cda",
+    "raw/ws-528287.wiki": "70971fba40eba68e4f164b4b48cfd8454eb91f948bbd84df68f39aa3612a65cc",
+    "raw/ws-737053.wiki": "635373f13fc62b19031cd0f09e68efaed8d5ebc653a7392e94166c87e1f43bdf",
+    "raw/ws-2530043.wiki": "f83bd210dfac9669fab947e02479a45bcff367da4ea21d29192c6afe8216d8c1",
+    "raw/opencc-TSCharacters.txt": "9ff46a7d30e5765375eb13d33f2b03a34d298913caf2b120380679f33ae1642d",
+    "raw/opencc-LICENSE": "b534e465949558eec2597b04f5092b5e161236a68dfbfd04d547592ac3964308"
+  },
+  "coverage": {
+    "classic": {
+      "hexagramIds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64
+      ],
+      "records": 964,
+      "missingTuan": []
+    },
+    "authors": {
+      "wang-bi": {
+        "name": "王弼",
+        "workId": "zhouyi-zhengyi",
+        "records": 47,
+        "hexagramIds": [
+          1,
+          2,
+          3,
+          4,
+          15,
+          16,
+          29,
+          32
+        ],
+        "anchorIds": [
+          "zhouyi:01:line:1",
+          "zhouyi:01:line:2",
+          "zhouyi:01:line:3",
+          "zhouyi:01:line:4",
+          "zhouyi:01:line:5",
+          "zhouyi:02:line:1",
+          "zhouyi:02:line:2",
+          "zhouyi:02:line:3",
+          "zhouyi:02:line:4",
+          "zhouyi:02:line:5",
+          "zhouyi:02:line:6",
+          "zhouyi:03:line:1",
+          "zhouyi:03:line:2",
+          "zhouyi:03:line:3",
+          "zhouyi:03:line:4",
+          "zhouyi:03:line:5",
+          "zhouyi:03:line:6",
+          "zhouyi:04:line:1",
+          "zhouyi:04:line:2",
+          "zhouyi:04:line:3",
+          "zhouyi:04:line:4",
+          "zhouyi:04:line:5",
+          "zhouyi:04:line:6",
+          "zhouyi:15:line:1",
+          "zhouyi:15:line:2",
+          "zhouyi:15:line:3",
+          "zhouyi:15:line:4",
+          "zhouyi:15:line:5",
+          "zhouyi:15:line:6",
+          "zhouyi:16:line:1",
+          "zhouyi:16:line:2",
+          "zhouyi:16:line:3",
+          "zhouyi:16:line:4",
+          "zhouyi:16:line:5",
+          "zhouyi:16:line:6",
+          "zhouyi:29:line:1",
+          "zhouyi:29:line:2",
+          "zhouyi:29:line:3",
+          "zhouyi:29:line:4",
+          "zhouyi:29:line:5",
+          "zhouyi:29:line:6",
+          "zhouyi:32:line:1",
+          "zhouyi:32:line:2",
+          "zhouyi:32:line:3",
+          "zhouyi:32:line:4",
+          "zhouyi:32:line:5",
+          "zhouyi:32:line:6"
+        ],
+        "sections": [
+          "line"
+        ],
+        "scope": "selected directly attached line annotations only; not complete book"
+      },
+      "cheng-yi": {
+        "name": "程颐",
+        "workId": "yichuan-yizhuan",
+        "records": 23,
+        "hexagramIds": [
+          1,
+          2,
+          15,
+          16,
+          32
+        ],
+        "anchorIds": [
+          "zhouyi:01:line:1",
+          "zhouyi:01:line:2",
+          "zhouyi:01:line:3",
+          "zhouyi:01:line:4",
+          "zhouyi:01:line:5",
+          "zhouyi:01:line:6",
+          "zhouyi:02:line:1",
+          "zhouyi:02:line:2",
+          "zhouyi:02:line:3",
+          "zhouyi:02:line:4",
+          "zhouyi:02:line:5",
+          "zhouyi:02:line:6",
+          "zhouyi:15:line:1",
+          "zhouyi:15:line:2",
+          "zhouyi:15:line:3",
+          "zhouyi:15:line:4",
+          "zhouyi:15:line:5",
+          "zhouyi:15:line:6",
+          "zhouyi:16:line:1",
+          "zhouyi:16:line:2",
+          "zhouyi:16:line:5",
+          "zhouyi:16:line:6",
+          "zhouyi:32:line:1"
+        ],
+        "sections": [
+          "line"
+        ],
+        "scope": "selected directly attached line annotations only; not complete book"
+      },
+      "zhu-xi": {
+        "name": "朱熹",
+        "workId": "zhouyi-benyi",
+        "records": 42,
+        "hexagramIds": [
+          1,
+          2,
+          3,
+          4,
+          15,
+          16,
+          29,
+          32
+        ],
+        "anchorIds": [
+          "zhouyi:01:line:1",
+          "zhouyi:01:line:2",
+          "zhouyi:01:line:3",
+          "zhouyi:01:line:4",
+          "zhouyi:01:line:5",
+          "zhouyi:01:line:6",
+          "zhouyi:02:line:1",
+          "zhouyi:02:line:3",
+          "zhouyi:02:line:4",
+          "zhouyi:02:line:5",
+          "zhouyi:03:line:1",
+          "zhouyi:03:line:2",
+          "zhouyi:03:line:3",
+          "zhouyi:03:line:4",
+          "zhouyi:03:line:5",
+          "zhouyi:03:line:6",
+          "zhouyi:04:line:3",
+          "zhouyi:04:line:4",
+          "zhouyi:04:line:6",
+          "zhouyi:15:line:1",
+          "zhouyi:15:line:2",
+          "zhouyi:15:line:3",
+          "zhouyi:15:line:5",
+          "zhouyi:15:line:6",
+          "zhouyi:16:line:1",
+          "zhouyi:16:line:2",
+          "zhouyi:16:line:3",
+          "zhouyi:16:line:4",
+          "zhouyi:16:line:5",
+          "zhouyi:16:line:6",
+          "zhouyi:29:line:1",
+          "zhouyi:29:line:2",
+          "zhouyi:29:line:3",
+          "zhouyi:29:line:4",
+          "zhouyi:29:line:5",
+          "zhouyi:29:line:6",
+          "zhouyi:32:line:1",
+          "zhouyi:32:line:2",
+          "zhouyi:32:line:3",
+          "zhouyi:32:line:4",
+          "zhouyi:32:line:5",
+          "zhouyi:32:line:6"
+        ],
+        "sections": [
+          "line"
+        ],
+        "scope": "selected directly attached line annotations only; not complete book"
+      }
+    },
+    "layers": [
+      "classic",
+      "commentary"
+    ],
+    "modernEditorialRecords": 0,
+    "humanReviewedRecords": 0,
+    "excludedCount": 32
+  },
+  "sourceRevisions": [
+    {
+      "sourceId": "ws-1645137",
+      "revision": "1645137"
+    },
+    {
+      "sourceId": "ws-2676007",
+      "revision": "2676007"
+    },
+    {
+      "sourceId": "ws-2404938",
+      "revision": "2404938"
+    },
+    {
+      "sourceId": "ws-2689596",
+      "revision": "2689596"
+    },
+    {
+      "sourceId": "ws-2404940",
+      "revision": "2404940"
+    },
+    {
+      "sourceId": "ws-2000726",
+      "revision": "2000726"
+    },
+    {
+      "sourceId": "ws-7904495",
+      "revision": "7904495"
+    },
+    {
+      "sourceId": "ws-2404949",
+      "revision": "2404949"
+    },
+    {
+      "sourceId": "ws-2404960",
+      "revision": "2404960"
+    },
+    {
+      "sourceId": "ws-1313743",
+      "revision": "1313743"
+    },
+    {
+      "sourceId": "ws-528287",
+      "revision": "528287"
+    },
+    {
+      "sourceId": "ws-737053",
+      "revision": "737053"
+    },
+    {
+      "sourceId": "ws-2530043",
+      "revision": "2530043"
+    },
+    {
+      "sourceId": "opencc-TSCharacters.txt",
+      "revision": "528ae2624972301649fbd00bbd837ce4e085650b"
+    },
+    {
+      "sourceId": "opencc-LICENSE",
+      "revision": "528ae2624972301649fbd00bbd837ce4e085650b"
+    }
+  ],
+  "licenseNotice": "Mixed sources: legacy Open I Ching learning/non-commercial restriction retained; new Wikisource classical excerpts retain attribution + CC BY-SA 4.0 notice; OpenCC dictionary Apache-2.0. No blanket new data license.",
+  "review": "12 machine-assisted corrections; original text and provenance retained. Zero expert/human review claims.",
+  "missingTuan": [],
+  "parentReleaseId": "knowledge-v3-20260926",
+  "parentEvidenceSha256": "c9375046355eac73ef120aa9275877c9eafbbf225f1d5d2d9116a3a4ba3b2b05",
+  "correctionSet": {
+    "file": "corrections.json",
+    "sha256": "7281d68d662f0c2ba6e1f94b7b4d1af2e2b1afe83d8fb276e5f09597013518a0",
+    "records": 12,
+    "auditFile": "review/crosscheck-20260926/corrections.json",
+    "auditSha256": "899310472965bdef1a33ccd41da2f7953cab5c0183fc823c319d826d86fb9ff6",
+    "method": "machine_assisted",
+    "humanReviewed": false
+  }
+}
