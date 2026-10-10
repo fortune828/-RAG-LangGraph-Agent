@@ -1,5 +1,6 @@
 """Recompute mechanical/usage summaries from saved calls; no semantic scores."""
 import csv
+import hashlib
 import json
 import math
 import random
@@ -8,6 +9,8 @@ from pathlib import Path
 
 from backend.models import Answer
 from backend.knowledge import normalize
+
+SCORING_VERSION = 'paired-metrics-v2'
 
 
 def number(value):
@@ -36,10 +39,14 @@ def schema_valid(content):
 
 def score_row(row, events):
     calls = [e for e in events if e['kind'] == 'model_result' and e['budgetCounted']]
+    responded = {e['callId'] for e in events if e['kind'] == 'model_result'}
+    unresolved = [e for e in events if e['kind'] == 'model_request' and e['callId'] not in responded]
     tools = [e for e in events if e['kind'] == 'tool_result']
     generations = [e for e in calls if e['stage'] == 'generate']
     validations = [e for e in events if e['kind'] == 'validation']
-    values = {k: [number((e.get('response', {}).get('usage') or {}).get(k)) for e in calls]
+    # A hard-killed process can leave a request without a response. It may or
+    # may not have reached the provider: never infer zero use or a paid call.
+    values = {k: [number((e.get('response', {}).get('usage') or {}).get(k)) for e in calls] + [None] * len(unresolved)
               for k in ('prompt_tokens','completion_tokens','total_tokens')}
     usage = {k: dict(reportedSum=sum(v for v in vs if v is not None),
                     unknownCalls=sum(v is None for v in vs),
@@ -59,6 +66,7 @@ def score_row(row, events):
     return dict(caseId=row['caseId'], variant=row['variant'], scenario=row['scenario'], status=row['status'],
         completed=row['status']=='completed', businessStatus=(row.get('answer') or {}).get('status') if row['status']=='completed' else None,
         durationMs=row.get('durationMs'), modelRequests=len([e for e in events if e['kind']=='model_request']),
+        unresolvedModelRequests=len(unresolved), modelCallsTotal=None if unresolved else len(calls),
         modelCalls=len(calls), failedModelCalls=sum(e['status']!='ok' for e in calls),
         budgetRejectedRequests=sum(e['kind']=='model_result' and not e['budgetCounted'] for e in events),
         usage=usage, toolRequests=sum(e['kind']=='tool_request' for e in events),
@@ -87,7 +95,8 @@ def aggregate(rows):
         finalMechanicalValidity=metric(sum(r['finalMechanicalValid'] for r in rows),len(attempted)),
         mechanicalCompletion=metric(sum(r['completed'] for r in rows),len(attempted)),
         citationValidity=metric(sum(r['citationValidity']['numerator'] for r in rows),sum(r['citationValidity']['denominator'] for r in rows)),
-        totals={k:sum(r[k] for r in rows) for k in ('modelRequests','modelCalls','failedModelCalls','budgetRejectedRequests','toolRequests','toolBudgetAttempts','toolSucceeded','toolEmpty','toolRejected','repairs')},
+        totals={k:sum(r[k] for r in rows) for k in ('modelRequests','modelCalls','unresolvedModelRequests','failedModelCalls','budgetRejectedRequests','toolRequests','toolBudgetAttempts','toolSucceeded','toolEmpty','toolRejected','repairs')},
+        modelCallsTotal=None if any(r['unresolvedModelRequests'] for r in rows) else sum(r['modelCalls'] for r in rows),
         usage=usage, latencyMs=distribution([r['durationMs'] for r in attempted if r['durationMs'] is not None]),
         semanticTaskSuccess=None, estimatedCost=None)
 
@@ -106,12 +115,15 @@ def rescore(directory):
         pairs.append(dict(caseId=case_id,
             inputIdentical=c.get('inputSha256') == d.get('inputSha256') if c.get('inputSha256') and d.get('inputSha256') else None,
             initialEvidenceIdentical=c.get('initialEvidenceSha256') == d.get('initialEvidenceSha256') if c.get('initialEvidenceSha256') and d.get('initialEvidenceSha256') else None))
-    result = dict(note='Mechanical checks and recorded usage only. Semantic scores pending; no gold-based retrieval metrics or price estimates.',
+    source = Path(__file__).read_bytes()
+    result = dict(metricsVersion=SCORING_VERSION, scorerSha256=hashlib.sha256(source).hexdigest(),
+        note='Mechanical checks and recorded usage only. Semantic scores pending; no gold-based retrieval metrics or price estimates. Unresolved requests have unknown execution and usage; modelCalls is the confirmed count, modelCallsTotal is null if unresolved.',
         rows=scores, pairs=pairs,
         overall={v:aggregate([r for r in scores if r['variant']==v]) for v in ('C','D')},
         byScenario={s:{v:aggregate([r for r in scores if r['variant']==v and r['scenario']==s]) for v in ('C','D')} for s in sorted({r['scenario'] for r in scores})})
     (directory / 'metrics.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
-    fields=['caseId','scenario','variant','status','businessStatus','modelCalls','failedModelCalls','toolRequests','toolBudgetAttempts','toolSucceeded','toolEmpty','toolRejected','repairs','reportedTokens','unknownUsageCalls','durationMs','firstSchemaValid','finalMechanicalValid','semanticReview']
+    (directory / 'scoring-source.py').write_bytes(source)
+    fields=['caseId','scenario','variant','status','businessStatus','modelCalls','modelCallsTotal','unresolvedModelRequests','failedModelCalls','toolRequests','toolBudgetAttempts','toolSucceeded','toolEmpty','toolRejected','repairs','reportedTokens','unknownUsageCalls','durationMs','firstSchemaValid','finalMechanicalValid','semanticReview']
     with (directory / 'comparison.csv').open('w') as stream:
         writer=csv.DictWriter(stream,fieldnames=fields); writer.writeheader()
         for r in scores:

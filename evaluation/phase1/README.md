@@ -32,7 +32,7 @@
 - manifest.json / baseline.json / source/：配置、Git/dirty、代码、数据和依赖哈希及源码快照。
 - inputs.json：完整固定输入；rows.json：最终状态、初始证据、路由最终证据及生成/校验实际可见证据。
 - traces/*.jsonl：模型请求/响应、规则决策、工具请求/结果、预算是否计数、修复前后候选、节点更新、错误与时间。真实密钥/HTTP 认证头不采集；内部 reasoning_content 不导出，仅存存在标记、长度与哈希，运行时协议仍原样传递。这里的可复现指配置、输入、输出和统计可追溯，不是 API 输出字节级确定。
-- metrics.json / comparison.csv / report.md：逐题、总体和分场景的机械与用量数据，可用 --rescore 重算。Schema 首次、最终机械校验与逐引用匹配分开；reportedSum 是已知部分，unknownCalls > 0 时完整总量为 null。
+- metrics.json / comparison.csv / report.md / scoring-source.py：逐题、总体和分场景的机械与用量数据，可用 --rescore 重算。Schema 首次、最终机械校验与逐引用匹配分开；reportedSum 是已知部分，unknownCalls > 0 时完整总量为 null。离线统计版本 paired-metrics-v2 还识别请求无响应的硬中断：unresolvedModelRequests 单列，执行/计费未知，modelCalls 只计已确认，modelCallsTotal 为 null；不猜测请求是否付费。评分器源码哈希与快照独立于运行 manifest 保存。
 - review/：14 份预选匿名输出、空白 scores.csv、rubric。review-key 文件单独保存，评分前不要打开；不会自动填真人评分。未足够完成时会标记 INCOMPLETE，不伪造缺失材料。
 
 工具请求和预算尝试分开：非法/重复/越界尝试可能消耗一次预算，但没有成功执行；超预算请求不再增加尝试。ok/empty 为实际检索结果，rejected 为程序拒绝；prepare 固定读取另记，不能把工具 0 次说成没有检索。
@@ -40,3 +40,5 @@
 本阶段没有 gold，所以不计算 Recall、工具必要性召回、语义成功率或过度拒答率。没有完整价目表，不估算金额。mock 的 D 故意只回答 ready，用于观察漏检索/修复记录，不能拿其机械失败率评价真实 Agent。
 
 完整运行先留在被忽略的 results/；公开前只导出已核查的合成记录到 reports/。没有真实用户 runtime，也没有推送到外部观测服务。第一阶段验收后再由用户决定是否进入检索标注和 40+40。
+
+首轮交付见[验收](../phase1-acceptance-20261010.md)。完整合成记录在 reports/phase1-20261010/complete，外部中断轮次单列为 interrupted；两者不拼接。完整轮次另附匿名材料的 materials.md 阅读版。

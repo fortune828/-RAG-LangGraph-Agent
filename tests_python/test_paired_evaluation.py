@@ -157,3 +157,18 @@ async def test_repair_candidates_and_zero_model_error_usage_are_preserved(tmp_pa
         answer=result['answer'],durationMs=1),recorder.events)
     assert row['firstSchemaValid'] is False and row['finalMechanicalValid']
     assert row['repairs']==1 and row['usage']['prompt_tokens']['unknownCalls']==1
+
+
+def test_interrupted_request_has_unknown_dispatch_and_usage():
+    events=[dict(kind='model_request',callId=1,stage='route'),
+            dict(kind='model_result',callId=1,stage='route',status='ok',budgetCounted=True,
+                 response=dict(usage={'total_tokens':7})),
+            dict(kind='model_request',callId=2,stage='generate')]
+    row=score_row(dict(caseId='interrupted',variant='D',scenario='test',status='running'),events)
+    assert row['modelRequests']==2 and row['modelCalls']==1
+    assert row['unresolvedModelRequests']==1 and row['modelCallsTotal'] is None
+    assert row['usage']['total_tokens']==dict(reportedSum=7,unknownCalls=1,total=None)
+    totals=aggregate([row])
+    assert totals['attempted']==0 and totals['statuses']['running']==1
+    assert totals['modelCallsTotal'] is None
+    assert totals['usage']['total_tokens']['total'] is None
