@@ -1,9 +1,11 @@
 # architect.md — 《周易》情境解读应用：产品导向的技术架构
 
-提示词减法修订（2026-10-10）：当前 graph v10 / prompt v16，保留普通段落与 claim 引用契约。清理 SYSTEM、ROUTER、RISK_SYSTEM、动态指令、repair 和工具描述；技术约束继续由程序保障。生成机制、Schema、校验器和前端保持，表达质量以真实回答复核，见[本轮完整提示词、删减与对照](evaluation/prompt-subtraction-20261010.md)。
+自主实验修订（2026-10-10）：当前 graph v13 / prompt v16；主回答采用 Flash enabled / low / 8192，校验修复使用同模型 disabled / 8192 并提供错误位置及原因；非思考候选经盲评后未替换质量默认配置。路由只传所需证据字段，明确授权文献目标取齐后直接生成；完整来源、权限与校验保留。模型筛选、RAG 消融、B/C/D、图版本对照和隔离小留出均单列，见[结果与局限](evaluation/autonomous-optimization-20261010.md)。这些实验不代表人工对话质量验收。
+
+上一轮提示词减法修订（2026-10-10）：当时为 graph v10 / prompt v16，保留普通段落与 claim 引用契约。清理 SYSTEM、ROUTER、RISK_SYSTEM、动态指令、repair 和工具描述；技术约束继续由程序保障。生成机制、Schema、校验器和前端保持，表达质量以真实回答复核，见[本轮完整提示词、删减与对照](evaluation/prompt-subtraction-20261010.md)。
 
 > **关联需求**：[SPEC.md](./SPEC.md)  
-> **架构版本**：v1.4 · 2026-10-10（目标设计，非现状完成声明）
+> **架构版本**：v1.5 · 2026-10-10（目标设计，非现状完成声明）
 > **核心原则**：**计算由规则保证，传统解读由可定位文献约束，生活化交流由受限 LLM 完成；技术可观测，但不强迫用户进入知识检索界面。**  
 > **技术决策**：保留 React 前端，将核心后端迁移为 Python + FastAPI + LangGraph。用户以掌握 Agent / LLM / LangGraph 为学习目标，不要求学习 TypeScript 或前端开发。旧 `server/*.ts` 作为迁移对照与回滚版本，保留 API、知识发布和会话兼容性。
 
@@ -470,7 +472,7 @@ class AgentState(TypedDict, total=False):
 
 ### 9.1 评测集结构
 
-正式目标 **40 开发 + 40 冻结留出输入轮次**，按会话/衍生组划分，独立组数另报。旧 v9/v14 第一阶段使用 14 条固定开发输入，提供 14 份匿名输出及原评分表；评分现已暂停，原档案保留，不作为正式评分。当前 v10/v16 核心体验移出 fuzzy-author/source-two-lines，相关检索能力独立测试；新生成对照与连续追问另记版本。Gold、检索对照和 40+40 仍待后续授权。见[第一阶段验收](evaluation/phase1-acceptance-20261010.md)。
+正式目标 **40 开发 + 40 冻结留出输入轮次**，按会话/衍生组划分，独立组数另报。旧 v9/v14 第一阶段使用 14 条固定开发输入，提供 14 份匿名输出及原评分表；评分现已暂停，原档案保留，不作为正式评分。当前 v13/v16 核心体验移出 fuzzy-author/source-two-lines，相关检索能力独立测试；新生成对照与连续追问另记版本。Gold、检索对照和 40+40 仍待后续授权。见[第一阶段验收](evaluation/phase1-acceptance-20261010.md)。
 
 核心必须包括：
 
@@ -681,3 +683,13 @@ AI--main/
 - [LangGraph Persistence](https://docs.langchain.com/oss/python/langgraph/persistence)
 - [LangSmith Evaluations](https://docs.langchain.com/langsmith/evaluation-types)
 - [OWASP Top 10 for LLM Applications](https://owasp.github.io/www-project-top-10-for-large-language-model-applications/)
+
+## 2026-10-10 自主实验后的执行变化
+
+采用单一 Flash low 思考模型，不新增任务模型路由或润色调用。Flash 非思考候选降低延迟和 Token，但在小留出的 AI 交流/克制评分较低，因此撤销非思考默认切换；high 进一步出现思考耗尽正文，最终采用 low。完整失败与候选结果保留。`ChatConfig` 是不可变的单次请求配置；评测注入配置时，记录器和预算器读取同一请求 payload，避免运行配置与报告不一致。
+
+生产图 v13 延续 v11 的路由优化，证据存储及生成契约保持不变。路由消息中的证据只保留正文、ID、作者、作品、版本和卦爻定位等工具决策字段，来源 URL/校勘记录仍在完整证据和前端中；coverage 不再逐条列出所有作者 anchor。工具返回给模型使用同样投影，服务端权限、真实检索结果和 observer 完整记录不变。
+
+工具结果均非空成功、明确 targets 非空且每个目标有章节（爻级还须爻位）、不是全库出处查找、无未识别书名、全部目标已在接受的授权证据中时，直接生成。空结果、拒绝、目标未齐或证据被截断等情况继续有界路由。生成及一次修复仍进行原有引用与归属验证。这减少了可由程序完成的确认，不证明模型已掌握材料的含义。
+
+一次 repair 使用同模型 disabled / 8192，主路由与生成采用 low。校验仍返回既有错误码，另向修复提供字段路径及本段作者/作品引用缺口的可读说明；未降低判定条件。评测显式 ChatConfig 默认各阶段一致，仅在传入 repair_config 时覆盖。预算沿完整父链累计，修复请求使用同一 Trace 的连续 callId。原样输入重放显示仅关闭思考、仅加路径均未修复归属错误；加可读原因后该例通过机械校验，但正文仍有错误爻名，不能视为语义修复成功。

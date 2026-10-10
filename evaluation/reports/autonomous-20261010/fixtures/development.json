@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 1,
+  "split": "development",
+  "createdAt": "2026-10-10",
+  "knowledgeRelease": "knowledge-v3-20260926-r1",
+  "evidenceSha256": "4154d8c69d0fdf0e6eca3ff570f1c8a092528a6011099533b88f3863bf36ebd4",
+  "annotationOrigin": "AI proposed, not expert or human gold",
+  "caseCount": 6,
+  "independentGroupCount": 5,
+  "fieldsAllowedInModelInput": [
+    "question",
+    "currentQuestion",
+    "mode",
+    "lineValues",
+    "history"
+  ],
+  "labelHandling": "expectedEvidenceGroups, retrievalNecessity, reviewPoints and initialEvidenceAudit are evaluation labels; never include them in model messages or rule-policy inputs.",
+  "cases": [
+    {
+      "caseId": "dev-lunch",
+      "groupId": "dev-lunch",
+      "question": "我今天中午只有半小时，附近有番茄鸡蛋面和鸡肉饭，吃哪个比较好？",
+      "currentQuestion": "我今天中午只有半小时，附近有番茄鸡蛋面和鸡肉饭，吃哪个比较好？",
+      "mode": "initial",
+      "lineValues": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        6
+      ],
+      "history": [],
+      "category": "daily_small",
+      "expectedEvidenceGroups": [
+        [
+          "zy-43-tuan"
+        ]
+      ],
+      "retrievalNecessity": "unnecessary",
+      "reviewPoints": [
+        "回应现成两个选项与半小时条件。",
+        "夬的决断意涵可轻度参与；不得由上六凶辞推断食物或现实危险。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI proposed, not expert or human gold",
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v10",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 43,
+        "changedHexagram": 1,
+        "intent": "explanation_followup",
+        "allowedHexagramIds": [
+          1,
+          43
+        ],
+        "initialEvidenceIds": [
+          "zy-43-judgment",
+          "zy-43-tuan",
+          "zy-43-xiang",
+          "zy-43-line-6",
+          "zy-43-line_xiang-6",
+          "zy-1-judgment",
+          "zy-1-xiang"
+        ],
+        "requiredTargets": [],
+        "retrievableMissingTargets": [],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [
+          true
+        ],
+        "droppedEvidenceIds": []
+      }
+    },
+    {
+      "caseId": "dev-project",
+      "groupId": "dev-project",
+      "question": "我的项目已经能演示，简历也写好了。离投递还有一周，我是继续加功能还是把现有功能测试扎实？",
+      "currentQuestion": "我的项目已经能演示，简历也写好了。离投递还有一周，我是继续加功能还是把现有功能测试扎实？",
+      "mode": "initial",
+      "lineValues": [
+        7,
+        9,
+        7,
+        7,
+        7,
+        7
+      ],
+      "history": [],
+      "category": "complex_tradeoff",
+      "expectedEvidenceGroups": [
+        [
+          "zy-1-line-2",
+          "zy-1-tuan",
+          "zy-1-xiang"
+        ]
+      ],
+      "retrievalNecessity": "unnecessary",
+      "reviewPoints": [
+        "分析已有可演示成果、投递期限和新增功能/测试投入的取舍。",
+        "九二与注家对见龙、利见大人的解释可提供联系现实的视角，但不能由此断定面试官或他人意图、保证获得录用。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI proposed, not expert or human gold",
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v10",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 1,
+        "changedHexagram": 13,
+        "intent": "explanation_followup",
+        "allowedHexagramIds": [
+          1,
+          13
+        ],
+        "initialEvidenceIds": [
+          "zy-1-judgment",
+          "zy-1-tuan",
+          "zy-1-xiang",
+          "zy-1-line-2",
+          "zy-1-line_xiang-2",
+          "zy-13-judgment",
+          "zy-13-xiang",
+          "wang-bi@2676007:h1:line2:156a776063",
+          "cheng-yi@1313743:h1:line2:1ac147277e",
+          "zhu-xi@528287:h1:line2:9c12de10ea"
+        ],
+        "requiredTargets": [],
+        "retrievableMissingTargets": [],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [
+          true
+        ],
+        "droppedEvidenceIds": []
+      }
+    },
+    {
+      "caseId": "dev-project-correction",
+      "groupId": "dev-project",
+      "question": "我的项目已经能演示，简历也写好了。离投递还有一周，我是继续加功能还是把现有功能测试扎实？",
+      "currentQuestion": "不是我没信心，我已经开始投递了。现在真正担心的是面试时解释不清检索为什么有效，继续加功能对这件事有没有帮助？",
+      "mode": "followup",
+      "lineValues": [
+        7,
+        9,
+        7,
+        7,
+        7,
+        7
+      ],
+      "history": [
+        {
+          "user": "我的项目已经能演示，简历也写好了。离投递还有一周，我是继续加功能还是把现有功能测试扎实？",
+          "assistant": "你可能对现有成果还不太有信心。可以先暂停投递，多做几个功能，再考虑是否展示。"
+        }
+      ],
+      "category": "same_topic_correction",
+      "expectedEvidenceGroups": [],
+      "retrievalNecessity": "unnecessary",
+      "reviewPoints": [
+        "采用用户已开始投递及纠正无信心猜测的事实。",
+        "讨论检索效果证据和解释能力是否比新增功能更解决当前疑问，不能把此前助手建议当用户计划。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI proposed, not expert or human gold",
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v10",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 1,
+        "changedHexagram": 13,
+        "intent": "situation_followup",
+        "allowedHexagramIds": [
+          1,
+          13
+        ],
+        "initialEvidenceIds": [
+          "zy-1-judgment",
+          "zy-1-tuan",
+          "zy-1-xiang",
+          "zy-1-line-2",
+          "zy-1-line_xiang-2",
+          "zy-13-judgment",
+          "zy-13-xiang",
+          "wang-bi@2676007:h1:line2:156a776063",
+          "cheng-yi@1313743:h1:line2:1ac147277e",
+          "zhu-xi@528287:h1:line2:9c12de10ea"
+        ],
+        "requiredTargets": [],
+        "retrievableMissingTargets": [],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [],
+        "droppedEvidenceIds": []
+      }
+    },
+    {
+      "caseId": "dev-exact-gap",
+      "groupId": "dev-exact-gap",
+      "question": "我想了解本次坎卦的具体文义。",
+      "currentQuestion": "请查本卦九二的爻辞和小象，“求小得”是什么意思？",
+      "mode": "followup",
+      "lineValues": [
+        8,
+        7,
+        8,
+        8,
+        7,
+        8
+      ],
+      "history": [],
+      "category": "exact_evidence_gap",
+      "expectedEvidenceGroups": [
+        [
+          "zy-29-line-2"
+        ],
+        [
+          "zy-29-line_xiang-2"
+        ]
+      ],
+      "retrievalNecessity": "required",
+      "reviewPoints": [
+        "初始可能已有九二注解，但没有非动爻的爻辞及小象，两项明确文献目标均需补齐。",
+        "爻辞坎有险求小得与小象未出中也不能解释为已经脱险或能取得大成。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI proposed, not expert or human gold",
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v10",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 29,
+        "changedHexagram": 29,
+        "intent": "explanation_followup",
+        "allowedHexagramIds": [
+          29
+        ],
+        "initialEvidenceIds": [
+          "zy-29-judgment",
+          "zy-29-tuan",
+          "zy-29-xiang",
+          "wang-bi@2404949:h29:line2:75b15f7dc9",
+          "zhu-xi@528287:h29:line2:9d356a7715"
+        ],
+        "requiredTargets": [
+          {
+            "hexagramId": 29,
+            "section": "line",
+            "line": 2,
+            "layer": "classic"
+          },
+          {
+            "hexagramId": 29,
+            "section": "line_xiang",
+            "line": 2,
+            "layer": "classic"
+          }
+        ],
+        "retrievableMissingTargets": [
+          {
+            "hexagramId": 29,
+            "section": "line",
+            "line": 2,
+            "layer": "classic"
+          },
+          {
+            "hexagramId": 29,
+            "section": "line_xiang",
+            "line": 2,
+            "layer": "classic"
+          }
+        ],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [
+          false,
+          false
+        ],
+        "droppedEvidenceIds": []
+      }
+    },
+    {
+      "caseId": "dev-fuzzy-source",
+      "groupId": "dev-fuzzy-source",
+      "question": "我记得一段关于以诚意沟通的易学解释，想核对出处。",
+      "currentQuestion": "我记得朱熹似乎说过，大意是在险难的时候，礼物虽薄，也可以用诚心沟通。这句出自哪里？我想确认自己记得对不对。",
+      "mode": "followup",
+      "lineValues": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "history": [],
+      "category": "fuzzy_commentary_gap",
+      "expectedEvidenceGroups": [
+        [
+          "zhu-xi@528287:h29:line4:99879a18e8"
+        ]
+      ],
+      "retrievalNecessity": "required",
+      "reviewPoints": [
+        "目标是朱熹对习坎六四的注解，措辞为现代概括，不当作逐字引文。",
+        "未知出处允许全库检索；乾卦已有朱熹注释不能替代所问出处。",
+        "这一资料具有薄礼益以诚心的语义近似，并不证明任何具体沟通一定成功。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI proposed, not expert or human gold",
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v10",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 1,
+        "changedHexagram": 1,
+        "intent": "source_request",
+        "allowedHexagramIds": null,
+        "initialEvidenceIds": [
+          "zy-1-judgment",
+          "zy-1-tuan",
+          "zy-1-xiang",
+          "zhu-xi@528287:h1:line6:90a3dde36f",
+          "wang-bi@2676007:h1:line3:77e8edd366"
+        ],
+        "requiredTargets": [
+          {
+            "hexagramId": null,
+            "layer": "commentary",
+            "authorId": "zhu-xi"
+          }
+        ],
+        "retrievableMissingTargets": [],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [
+          false
+        ],
+        "droppedEvidenceIds": []
+      }
+    },
+    {
+      "caseId": "dev-absent",
+      "groupId": "dev-absent",
+      "question": "想核对解卦九四的一家注解。",
+      "currentQuestion": "请给出焦循对解卦九四的注解原文，并说明他怎样理解“解而拇”。",
+      "mode": "followup",
+      "lineValues": [
+        8,
+        7,
+        8,
+        9,
+        8,
+        8
+      ],
+      "history": [],
+      "category": "confirmed_missing",
+      "expectedEvidenceGroups": [],
+      "retrievalNecessity": "confirmed_unavailable",
+      "reviewPoints": [
+        "当前发布集未收录焦循资料，不能以王弼、程颐、朱熹或模型记忆代替。",
+        "如实说明当前资料不足，不谎称焦循从未讨论该问题。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI proposed, not expert or human gold",
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v10",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 40,
+        "changedHexagram": 7,
+        "intent": "source_request",
+        "allowedHexagramIds": [
+          7,
+          40
+        ],
+        "initialEvidenceIds": [
+          "zy-40-judgment",
+          "zy-40-tuan",
+          "zy-40-xiang",
+          "zy-40-line-4",
+          "zy-40-line_xiang-4",
+          "zy-7-judgment",
+          "zy-7-xiang"
+        ],
+        "requiredTargets": [
+          {
+            "hexagramId": 40,
+            "section": "line",
+            "line": 4,
+            "layer": "commentary",
+            "authorId": "jiao-xun"
+          }
+        ],
+        "retrievableMissingTargets": [],
+        "unavailableTargets": [
+          {
+            "hexagramId": 40,
+            "section": "line",
+            "line": 4,
+            "layer": "commentary",
+            "authorId": "jiao-xun"
+          }
+        ],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [],
+        "droppedEvidenceIds": []
+      }
+    }
+  ]
+}

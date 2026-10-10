@@ -84,10 +84,6 @@ async def test_retrieved_instructions_stay_in_tool_data(monkeypatch):
             dict(role='system', content=ROUTER if tools else SYSTEM)]
         if count == 1:
             return response(calls=[call('get_passages', dict(hexagramId=1, sections=['line'], lineIndices=[2]))])
-        if tools:
-            material = next(m for m in messages if m['role'] == 'tool')
-            assert injected in json.loads(material['content'])['evidence'][0]['text']
-            return response({'ready': True})
         assert not any(m['role'] == 'tool' for m in messages)
         evidence = json.loads(messages[1]['content'])['参考原文']
         poisoned = [e for e in evidence if injected in e['text']]
@@ -98,7 +94,9 @@ async def test_retrieved_instructions_stay_in_tool_data(monkeypatch):
     result = await build_graph(InMemorySaver(), model).ainvoke(
         initial_state(s, '本卦第二爻原文是什么？', 'followup'),
         {'configurable': {'thread_id': 'retrieval-injection'}})
-    assert count == 3
+    assert count == 2  # Exact targets are satisfied without another ready request.
+    material = next(m for m in result['messages'] if m['role'] == 'tool')
+    assert injected in json.loads(material['content'])['evidence'][0]['text']
     assert result['answer']['status'] == 'answered'
     assert result['scope_ids'] == [1] and result['session']['cast'] == s['cast']
     assert [e['tool'] for e in result['trace'] if e['step'] == 'tool'] == ['get_passages']

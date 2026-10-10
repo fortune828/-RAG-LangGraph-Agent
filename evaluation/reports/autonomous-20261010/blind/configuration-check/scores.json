@@ -1,0 +1,225 @@
+{
+  "reviewType": "独立 AI 主观匿名评阅；不是人工评分或专家验收",
+  "scope": "仅阅读本目录 materials.json 与 rubric.md；不读取其他目录、源码、策略标签或解盲信息，不推测总胜者。",
+  "dimensions": {
+    "understanding": "理解与承接",
+    "conversation": "自然交流与适度深度",
+    "helpfulness": "建议帮助",
+    "grounding": "文献支持与推断克制"
+  },
+  "scale": {
+    "0": "明显或关键缺陷",
+    "1": "部分达到，有实质不足",
+    "2": "达到，未见足以降分的明显缺陷",
+    "null": "N/A，无答案，不作为语义零分"
+  },
+  "counts": {
+    "total": 6,
+    "scored": 4,
+    "noAnswer": 2,
+    "recordedFailure": 2,
+    "technicalFailureWithoutAnswer": 2,
+    "mechanicalValidationFailure": 0,
+    "literatureLookupItems": 2,
+    "literatureLookupAnswered": 1,
+    "literatureLookupSuccess": 1
+  },
+  "failureIds": [
+    "configuration-check-01",
+    "configuration-check-04"
+  ],
+  "results": [
+    {
+      "answerId": "configuration-check-01",
+      "evaluationStatus": "no_answer",
+      "sourceStatus": "failed",
+      "technicalFailure": true,
+      "error": "ModelError:MODEL_INCOMPLETE_RESPONSE",
+      "scores": {
+        "understanding": null,
+        "conversation": null,
+        "helpfulness": null,
+        "grounding": null
+      },
+      "reasons": {
+        "understanding": "N/A：技术失败，answer 为 null，没有可评阅文本。",
+        "conversation": "N/A：技术失败，answer 为 null，没有可评阅文本。",
+        "helpfulness": "N/A：技术失败，answer 为 null，没有可评阅文本。",
+        "grounding": "N/A：技术失败，answer 为 null，没有可评阅文本。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "MODEL_INCOMPLETE_RESPONSE 说明返回未完成；材料不足以进一步判断故障原因。"
+      ],
+      "taskType": "dialogue"
+    },
+    {
+      "answerId": "configuration-check-02",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "technicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "接受“已经投递”，转向检索为何有效的解释，没有继续要求暂停或归因没信心。",
+        "conversation": "“相对什么基线、用什么指标”贴合面试难点；起笔把用户阶段等同见龙、项目能力等同德，仍显得被经义框住。",
+        "helpfulness": "基线、指标、消融、失败样例、适用边界和“新功能只在直接产证据时有帮助”的规则，能实质回答该不该加功能。",
+        "grounding": "三家引文均可在材料核对；“这些注家共同的意思”后直接解释用户项目、同人本质就是面试，混淆原注与现代应用。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "让已有的'德'——也就是你的项目能力——被看见、被理解、被任用",
+          "reason": "项目能力作为联想可理解，但“也就是”将古代德的含义确定等同现代工程能力。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "这些注家共同的意思是：你已从潜伏积蓄进入被人看见、与人相接的阶段",
+          "reason": "注家确有出潜、德已著的文字，但没有关于这位用户投递阶段或堆功能取舍的共同论断。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "面试本质上就是'同人'",
+          "reason": "将同人卦和面试直接同一化，缺少表明这是类比的边界。"
+        }
+      ],
+      "uncertainties": [
+        "三家对大人与占者的关系并不完全一样；此材料含朱熹主宾与条件区分，答案归成共同现代建议时有所扁平化，但未据此裁定学术流派全部差异。"
+      ],
+      "taskType": "dialogue"
+    },
+    {
+      "answerId": "configuration-check-03",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "technicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "保留半小时时限和面/饭两选项，最终以出餐和排队作为首要判断。",
+        "conversation": "“需要果断”“不要最后一刻”“不刷手机”反复规训时间使用，用户只在问吃哪个，交流显得过度论证。",
+        "helpfulness": "现场比较哪家能马上取餐、鸡肉饭现成则选饭、同速按口味的规则可以使用；快速吃完的催促没有增加判断信息。",
+        "grounding": "夬决断的引文真实，但不利即戎被释成不能硬等、无号终凶被释成错过饭点、自强不息被释成快速吃完，均未获原文支持。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "不宜硬碰硬地等待或勉强，而适合顺势前往",
+          "reason": "“不利即戎，利有攸往”不直接讲排队等餐。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "如果犹豫拖延、到最后才决定，可能来不及吃饭",
+          "reason": "这作为日常时间提醒可以成立，但并非所引上六与小象给出的含义。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "一旦选定就快速吃完、快速返回，不要在饭桌上刷手机拖延",
+          "reason": "以自强不息担保餐桌行为规则，未说明文本关联。"
+        }
+      ],
+      "uncertainties": [
+        "“番茄鸡蛋面通常更易快速进食”依温度、份量与个人而异；未把这种泛化认定为已知用户事实。",
+        "不对无号作唯一训诂裁定；现有原文不足以支持点餐拖延的特定义。"
+      ],
+      "taskType": "dialogue"
+    },
+    {
+      "answerId": "configuration-check-04",
+      "evaluationStatus": "no_answer",
+      "sourceStatus": "failed",
+      "technicalFailure": true,
+      "error": "ModelError:MODEL_INCOMPLETE_RESPONSE",
+      "scores": {
+        "understanding": null,
+        "conversation": null,
+        "helpfulness": null,
+        "grounding": null
+      },
+      "reasons": {
+        "understanding": "N/A：技术失败，answer 为 null，没有可评阅文本。",
+        "conversation": "N/A：技术失败，answer 为 null，没有可评阅文本。",
+        "helpfulness": "N/A：技术失败，answer 为 null，没有可评阅文本。",
+        "grounding": "N/A：技术失败，answer 为 null，没有可评阅文本。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "MODEL_INCOMPLETE_RESPONSE 说明返回未完成；材料不足以进一步判断故障原因。"
+      ],
+      "taskType": "literature_lookup"
+    },
+    {
+      "answerId": "configuration-check-05",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "technicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "围绕半小时、两种餐食和现场等候作选择，没有扩张到其他菜单。",
+        "conversation": "“乾的刚健也帮不了半小时”较口语化；但反复谈终有凶和不争抢座位，把简单午饭加上了不必要的训诫。",
+        "helpfulness": "先问出餐、现成鸡肉饭可优先、面店人少且符合口味则选面，有可执行条件；最后明确以实际速度和个人情况决定。",
+        "grounding": "末尾承认卦象只是视角是优点，但先前仍把无号解释为没时间吃饭、告自邑解释为就近、不利即戎解释为抢座位，关键桥接未受支持。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "风险就不在选面还是选饭，而在来不及吃",
+          "reason": "对时间约束的现实提醒不能自动成为“无号，终有凶”的解释。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "先就近、先问出餐时间，不要在两家之间来回跑或跟人争抢座位",
+          "reason": "“告自邑，不利即戎”被逐句贴合店铺距离和争座，原文无这些含义。"
+        }
+      ],
+      "uncertainties": [
+        "鸡肉饭更扛饿、面更温和的概括未经份量及做法核对；并非本材料能确认的营养结论。未因这些条件句标记用户确有肠胃问题。"
+      ],
+      "taskType": "dialogue"
+    },
+    {
+      "answerId": "configuration-check-06",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "technicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "明确提供九二爻辞与小象，按用户所问解释求小得，没有改做现实占断。",
+        "conversation": "先列经文，再分王弼的应援与朱熹的刚中，说明有限所得而非彻底脱险，结构清楚。",
+        "helpfulness": "把原文、两家理由与“小得不等于大成功”的文义区别讲清，完成查证与释义。",
+        "grounding": "经文与两家引文可逐一核对，主要解释紧贴未出险、相得而援助有限、刚而得中，没有断言用户本人处于险境。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "“履失其位”被说成“失去正位”，宜避免被读成曾居正位后又失去的时间过程；此处整体仍在解释爻位，未据此判为实质误读。",
+        "末尾“安于小步进展”是从小得作出的轻度策略引申；它未套到任何未知用户事实，不视为现实预测。",
+        "关于相得的完整爻际机制未另作专家考证，只确认其解释与本条给定注释相符。"
+      ],
+      "taskType": "literature_lookup",
+      "verification": {
+        "requestedObjectProvided": true,
+        "lookupSuccess": true,
+        "outcome": "requested_texts_and_commentaries_found",
+        "reason": "所问九二爻辞、小象均完整提供，王弼和朱熹的引文支持主要文义。"
+      }
+    }
+  ]
+}

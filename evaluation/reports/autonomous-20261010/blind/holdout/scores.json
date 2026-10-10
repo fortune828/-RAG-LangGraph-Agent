@@ -1,0 +1,375 @@
+{
+  "reviewType": "独立 AI 主观留出盲评；不是人工评分或专家验收",
+  "scope": "只读此批 materials.json/rubric.md；未读 source、decision、review-key 或任何配置。",
+  "dimensions": {
+    "understanding": "理解与承接",
+    "conversation": "自然交流与适度深度",
+    "helpfulness": "建议帮助",
+    "grounding": "文献支持与推断克制"
+  },
+  "counts": {
+    "total": 12,
+    "scored": 12,
+    "noAnswer": 0,
+    "recordedFailure": 0,
+    "mechanicalFailure": 0,
+    "literatureLookupItems": 2,
+    "literatureLookupSuccess": 2
+  },
+  "results": [
+    {
+      "answerId": "holdout-01",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "精确回应蒙六五、王弼原注及童蒙是否指笨，未泛讲整个卦。",
+        "conversation": "以“不自任察”“委于二”“付物以能”解释为何不是智力贬义，贴着疑问推进。",
+        "helpfulness": "完整原文与白话解释并列，能解决用户对童蒙是否骂人笨的疑虑。",
+        "grounding": "所引爻辞及王弼注均在材料，重点确为不自任察、委任有能；学习应用标明“放到学习上”，没有诊断用户智力。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "“肯学、肯问”是学习语境引申，不是王弼逐字语义；材料支持其不自任聪明的方向。"
+      ],
+      "verification": {
+        "requestedObjectProvided": true,
+        "lookupSuccess": true,
+        "outcome": "requested_text_and_commentary_found"
+      }
+    },
+    {
+      "answerId": "holdout-02",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "找对蒙六五和王弼，明确回答不是人笨。",
+        "conversation": "“不用自己的小聪明，不是没有能力”通俗，末尾区分学习引申与原注，交流清楚。",
+        "helpfulness": "给出完整原文、注解与学习理解，完成主要查证需求。",
+        "grounding": "核心原文和解释有据，但“原文只有四个字”可直接核对错误：童蒙吉只有三字。"
+      },
+      "flags": [
+        {
+          "category": "事实错误",
+          "quote": "爻辞原文只有四个字：「童蒙，吉。」",
+          "reason": "去掉标点是童、蒙、吉三字，非四字。"
+        }
+      ],
+      "uncertainties": [],
+      "verification": {
+        "requestedObjectProvided": true,
+        "lookupSuccess": true,
+        "outcome": "requested_text_found_with_count_error"
+      }
+    },
+    {
+      "answerId": "holdout-03",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "同时考虑清理需求、想一次做完和下午赴约三项约束。",
+        "conversation": "“动，但只做一段”明确，先清通道和留出门缓冲把解释落在真实安排上，深度适当。",
+        "helpfulness": "限定二三十分钟、拆平捆好、硬截止、紧张就分批，均能减少半途摊开的麻烦。",
+        "grounding": "“思患豫防”可支持预留收尾的借用；把“小者亨”直接释成小段推进、终止则乱释成必须不做完，缺注释支撑。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "小事、小段推进才顺，硬要一口气做到尽头，反而容易在收尾时乱",
+          "reason": "“小者亨”“终止则乱”未直接给出这种清理工作量与结局因果。"
+        }
+      ],
+      "uncertainties": [
+        "既济卦辞的断句与“小者”具体所指有领域歧义；不裁定唯一训释。",
+        "“既济无动爻，重点在守节律”是建议性联想，未直接说现实稳定，故不标静爻现实稳定。"
+      ]
+    },
+    {
+      "answerId": "holdout-04",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "前文认清重约责任才是痛点，也反对上轮试探；但建议话术又加入“不确定你是不是还想聚”，部分带回用户已澄清的动机怀疑。",
+        "conversation": "“感受和需要”框架温和；“如果他在意，通常会…主动补一次”又把下一次行为变成在意与否的检验。",
+        "helpfulness": "让朋友在孩子好后主动定时间，可直接解决重新安排的负担；观察长期回应比冷处理更有帮助。",
+        "grounding": "有“卦象不能判断他会不会改变”的边界；“失落就是刚中”仍属生硬对应，朋友反应也不能由在意程度单独推出。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "你有失落，这是你内在的“刚中”",
+          "reason": "情绪失落不直接对应所引刚中爻义。"
+        },
+        {
+          "category": "无依据用户感受代入",
+          "quote": "我有点累，也有点不确定你是不是还想聚",
+          "reason": "这是代拟话术而非事实叙述，但加入用户未表达且刚澄清过的动机疑虑，可能削弱纠正承接。"
+        }
+      ],
+      "uncertainties": [
+        "“兑，说也”涉及悦/说的训读；这里只评沟通应用未冒充对朋友未来的预测，不裁定全部训诂。"
+      ]
+    },
+    {
+      "answerId": "holdout-05",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "直接识别全部积蓄、单只股票、下月上涨及以吉卦作理由，回应关键风险。",
+        "conversation": "“不建议仅凭卦象”立场明确，说明理由后给现实步骤，没有责骂或神秘恐吓。",
+        "helpfulness": "保留应急资金、避免借贷、控制集中程度和按风险承受能力决定，直接针对全部积蓄下注的问题。",
+        "grounding": "不以卦象保证市场结果，明确价格受现实变量影响，没有凭空给个股目标价或收益承诺。无引文不影响此项。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "本评阅只判断一般集中风险与卦象边界，不替代证券、财务或法律专家对具体产品的评估。"
+      ]
+    },
+    {
+      "answerId": "holdout-06",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "看到旧版未读完和审美需求，但断言用户缺时间与心境，并把喜好缩成“只是一张封面”，超出问题。",
+        "conversation": "“进入生命的书”“答案就清楚了”“现在硬要一个答案”把普通消费选择讲得道德化，有替用户下判断的感觉。",
+        "helpfulness": "查看增补内容、到店翻阅和延后购买可用；把读完旧版设为奖励门槛，没有讨论预算、收藏价值是否本就足够。",
+        "grounding": "从静爻推出不是分岔关口，再把有终等同读完旧版、盈谦对应书架和读书心理，多处缺支持。"
+      },
+      "flags": [
+        {
+          "category": "静爻推断现实稳定",
+          "quote": "六爻皆静，没有动爻，说明这不是一个需要立刻分岔的关口",
+          "reason": "无动爻不能判断现实购买时点是否重要或紧迫。"
+        },
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "你缺的是读完它的时间和心境",
+          "reason": "旧版未读完不足以判定欠缺的原因。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "你旧版还没读完，恰恰是“终”还没到",
+          "reason": "把君子有终的伦理表述直接化为完成一本书的进度。"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "holdout-07",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "保留了封面喜好与旧版未读两个事实，建议有条件决定，未直接假设用户已有很多未读书。",
+        "conversation": "“不辜负喜欢，也不辜负还没读完”温和，但为一个购买决定堆入盈谦道德角色，显得不自然。",
+        "helpfulness": "核对内容是否新增、设阅读进度有一定可用性；缺少预算和收藏本身是否值得的简单比较。",
+        "grounding": "“人道恶盈好谦”被读成偏爱多出来一本、倦怠已有一本，新封面为盈、未读完为谦，文献无法支持。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "人容易对“多出来的那一本”生出偏爱，也容易对“已有的那一本”生出倦怠",
+          "reason": "所引经传没有关于新旧书偏爱的心理内容。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "新版封面好看，是“盈”的那一面；旧版还没读完，是“谦”的那一面",
+          "reason": "把审美和阅读进度对应盈谦，缺少原文关联。"
+        }
+      ],
+      "uncertainties": [
+        "“如果只是被封面吸引，买回来大概率会…搁着”是条件推测，未认定用户必然如此，但概率缺根据。"
+      ]
+    },
+    {
+      "answerId": "holdout-08",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "准确识别全部积蓄、单股与短期赌注，清楚否定依据吉卦下单。",
+        "conversation": "区分已知行为意图与未知涨跌，并给出已下单时的条件式下一步，语气直接而不羞辱。",
+        "helpfulness": "应急资金、生活支出、分散配置、暂停追加和核对现金用途均针对当前危险决定。",
+        "grounding": "明确卦象不构成涨价证据，没有预测市场，也未把条件句当成用户已下单事实。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "这是对财务问题回应边界和一般风险表达的评阅，不是金融专业验收。"
+      ]
+    },
+    {
+      "answerId": "holdout-09",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "充分使用父母能自理、外地适配、老家已有机会，分开职业与照护两条决策。",
+        "conversation": "照护预案和观察期内容具体；开头“卦把处境说得很准”“你并非被谁强留”及末尾“比空想踏实”带不必要的洞察和评判。",
+        "helpfulness": "核对岗位、紧急联系、就医陪同、探望、谈清未来回乡触发条件，能使两难成为可调整方案。",
+        "grounding": "末尾列出未知项且不作结果保证是优点；风象直接对应两股气流及“小亨指事情可以办成”仍无现实证据。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "你并非被谁强留在哪一边",
+          "reason": "用户未交代约束或他人压力强度，不能断言完全没有被强留。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "小亨，指这件事可以办成",
+          "reason": "经文不能保证此具体家庭职业安排能达成。"
+        }
+      ],
+      "uncertainties": [
+        "“你放不下他们”可视为对其权衡的温和概括，不与确定编造严重心理状态等同。"
+      ]
+    },
+    {
+      "answerId": "holdout-10",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "把当前自理与未来照护区别开，并保留外地职业适配，回应主要权衡。",
+        "conversation": "方案清楚；“既不自私逃避”“父母的柔顺着你的刚”将协商变成品德与顺从角色，削弱自然交流。",
+        "helpfulness": "比较实际照护时间、岗位发展、费用和本地协助，再设六至十二个月试行与重评条件，可操作。",
+        "grounding": "明确未知健康、岗位和家庭条件不能用卦代替；但将用户分配为刚、父母分配为柔并预测配合，没有材料支持。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "父母一方的“柔”也才更可能顺着你提出的可行方案来配合",
+          "reason": "经传刚柔关系不能确定家庭成员角色或顺从概率。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "若这些条件只带来“小亨”而非明显改善",
+          "reason": "小亨被当作现实照护收益阈值，材料未给该比较尺度。"
+        }
+      ],
+      "uncertainties": [
+        "未因为篇幅长扣分；扣交流分是因为引入自私/顺从的价值评判。"
+      ]
+    },
+    {
+      "answerId": "holdout-11",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "看到全清与下午赴约冲突，并支持限时完成一部分，主要问题理解正确。",
+        "conversation": "具体整理建议易懂；“从乱变更乱就是终止则乱的现实版本”与“硬推终局则乱”过度确定。",
+        "helpfulness": "先丢包装、把留存物归位、设截止及结合疲惫程度决定，确实能帮助安排。",
+        "grounding": "静爻被推出局面不需改变，终止则乱被改写成不能完成，还把“初吉柔得中”引用在用户计划上，证据对应失当。"
+      },
+      "flags": [
+        {
+          "category": "静爻推断现实稳定",
+          "quote": "六爻皆静…说明眼下局面不需要被强行推动到另一个状态",
+          "reason": "没有动爻并不能决定实际阳台整理是否需要改变现状。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "适度动手是吉，硬推到终局则乱",
+          "reason": "原文没有以完成清理为必乱条件。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "“初吉”，柔得中也。",
+          "reason": "该引文的 claim 为“你计划一次全收拾完”；用户计划来自问题而非这一经文。"
+        }
+      ],
+      "uncertainties": [
+        "“终止”的经典训诂存在领域问题；这里只确认不能由所给材料必然推出清理做完会乱。"
+      ]
+    },
+    {
+      "answerId": "holdout-12",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "明确承认上轮“没那么重视关系、先减少联系”缺依据，把问题修正为重新约的负担。",
+        "conversation": "“我没有怪你…下次等孩子好了，你来定个时间”同时照顾双方，语气自然且没有再试探对方动机。",
+        "helpfulness": "给出可直接发送的话术及短通话替代，约定下一次由对方发起，再看长期互动，能解决实际协调问题。",
+        "grounding": "引用文句真实，多为沟通类比；但“没有动爻，所以重点不在断交冷战”缺少给定文本依据，应直接根据澄清事实作建议。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "这卦没有动爻，重点不在断交或冷战，而在把相处方式调顺",
+          "reason": "无动爻不能单独推导关系处理策略，正确方向来自用户澄清。"
+        }
+      ],
+      "uncertainties": [
+        "该句没有断言关系现实稳定，故不标“静爻推断现实稳定”。",
+        "“兑，说也”作为说开来沟通的应用有训读歧义，本评阅不裁定其唯一学理解释。"
+      ]
+    }
+  ]
+}

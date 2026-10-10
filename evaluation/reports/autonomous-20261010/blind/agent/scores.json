@@ -1,0 +1,319 @@
+{
+  "reviewType": "独立 AI 主观文献查证盲评；不是人工评分或易学专家验收",
+  "scope": "本批独立报告查证结果；四维只用于定位，不与日常对话总分混算。仅依据本批匿名材料核对。",
+  "dimensions": {
+    "understanding": "理解与承接",
+    "conversation": "自然交流与适度深度",
+    "helpfulness": "建议帮助",
+    "grounding": "文献支持与推断克制"
+  },
+  "lookupSuccessDefinition": "完整给出所问原文/出处且主要解释可由随附文献核对；小错误另记。准确缺失处理不计为原文查证成功，也不计技术失败。",
+  "counts": {
+    "total": 9,
+    "scored": 9,
+    "noAnswer": 0,
+    "recordedFailure": 0,
+    "mechanicalFailure": 0,
+    "answerInsufficient": 5,
+    "lookupSuccess": 4,
+    "accurateSpecifiedAuthorAbsenceHandling": 3,
+    "partialSourceExplanation": 1,
+    "unresolvedSourceWithInaccurateScopeStatement": 1
+  },
+  "results": [
+    {
+      "answerId": "agent-01",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "insufficient",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "识别用户指定焦循及解九四，没有拿其他注家替代焦循。",
+        "conversation": "“不宜凭记忆或推测代拟”界线清楚，但反复讲缺失并承诺之后可列线索，未推进具体查证。",
+        "helpfulness": "明确告诉用户尚不能核对原文，有避免误归作者的帮助；提出文献线索却未实际列出，任务未完成。",
+        "grounding": "所附材料没有焦循，未捏造引文或焦循观点。"
+      },
+      "verification": {
+        "requestedObjectProvided": false,
+        "lookupSuccess": false,
+        "outcome": "accurate_absence_handling",
+        "absenceStatementAccuracy": "consistent_with_supplied_evidence",
+        "reason": "无法提供指定原文，但准确保留未知；缺失处理成功，原文查证未完成。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "只能确认随附材料缺焦循，不能据此独立断定整个资料库绝无该条。"
+      ]
+    },
+    {
+      "answerId": "agent-02",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "定位朱熹《周易本义》习坎六四，并回应用户只是核对大意与出处的意图。",
+        "conversation": "先确认大意再说明六四九五与自牖语境，解释顺畅；没有把随机乾卦强行作为出处。",
+        "helpfulness": "给出作者、书名、卦爻位置及关键原文，用户可以据此继续核对。",
+        "grounding": "“但用薄礼益以诚心进结自牖”及后句都在指定朱熹条目，归属与解释整体受支持。"
+      },
+      "verification": {
+        "requestedObjectProvided": true,
+        "lookupSuccess": true,
+        "outcome": "requested_source_found",
+        "absenceStatementAccuracy": "not_applicable",
+        "reason": "作者、书名、习坎六四及核心引文与给定资料匹配。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "“如从窗户送入光明”是解释性譬喻；原文仅说室之所以受明，不作为新的训诂定论。"
+      ]
+    },
+    {
+      "answerId": "agent-03",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "准确找到朱熹与习坎六四，并判断用户大意基本吻合。",
+        "conversation": "原文、语境和记忆对照相互连接，未绕回本次乾卦作无关占断。",
+        "helpfulness": "给出可定位的书名、爻位与薄礼诚心原文，完成主要查证请求。",
+        "grounding": "核心引文及归属有支持；将“牖”括注为“非正式正门”不准确，原文明确是非所由之正、室之所以受明，应避免当成一种门。"
+      },
+      "verification": {
+        "requestedObjectProvided": true,
+        "lookupSuccess": true,
+        "outcome": "requested_source_found_with_minor_gloss_issue",
+        "absenceStatementAccuracy": "not_applicable",
+        "reason": "主要出处与原句匹配；牖的括注有用词问题，不影响定位成功。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "“牖”（非正式正门）",
+          "reason": "“非所由之正”说明不是通常入口，不能直接将牖释作一种正门。"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "agent-04",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "找到了所问九二爻辞、小象并说明求小得，两家注释也对题。",
+        "conversation": "按经文、王弼、朱熹展开清楚；“放到你的实际处境里”却给未描述现实困境的用户加了处境。",
+        "helpfulness": "两家侧重点有助理解有限所得；无需用户再补材料即可获得核心文义。",
+        "grounding": "核心原文和注释可核对；“原文只有五个字”可直接数出错误，后段把经文处境当作用户事实。"
+      },
+      "verification": {
+        "requestedObjectProvided": true,
+        "lookupSuccess": true,
+        "outcome": "requested_texts_found_with_answer_errors",
+        "absenceStatementAccuracy": "not_applicable",
+        "reason": "爻辞、小象与两家原文都给出，核心文义受支持；字数错误及现实外推须另扣分。"
+      },
+      "flags": [
+        {
+          "category": "事实错误",
+          "quote": "爻辞原文只有五个字：“坎有险，求小得。”",
+          "reason": "去掉标点共有六字，并非五字。"
+        },
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "放到你的实际处境里…先承认自己还在险中",
+          "reason": "用户只要求查文义，没有说明自己处于危险或困境。"
+        }
+      ],
+      "uncertainties": [
+        "王弼“相得”的具体爻际机制未独立考证，主要解释与给定注释一致。"
+      ]
+    },
+    {
+      "answerId": "agent-05",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "insufficient",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 1,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "准确识别必须是焦循原文及他的解释，没有混入经文或其他注解冒充。",
+        "conversation": "“无法给出其逐字文本，也无法据此说明”清楚简洁，无责备或多余推断。",
+        "helpfulness": "如实说明缺文献，避免错误答案；用户所需原文仍未取得。",
+        "grounding": "随附材料未见焦循，拒绝代拟与证据状态一致。"
+      },
+      "verification": {
+        "requestedObjectProvided": false,
+        "lookupSuccess": false,
+        "outcome": "accurate_absence_handling",
+        "absenceStatementAccuracy": "consistent_with_supplied_evidence",
+        "reason": "资料缺指定作者，正确不作归属或解释；不等于已完成原文查证。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "不能仅从附带证据核验全库收录范围。"
+      ]
+    },
+    {
+      "answerId": "agent-06",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "给出所问爻辞、小象与两家注释，主要文义回应充分。",
+        "conversation": "解释相得、刚而得中较连贯；结尾“你目前在坎险里”“唯一能做”越过纯查证请求。",
+        "helpfulness": "经注分别呈现，能帮助用户辨认求小得为何有限；不必要的占断降低稳妥性。",
+        "grounding": "原文真实，但五字说法错误，且“未出中也”不能证明用户当前没有强援。"
+      },
+      "verification": {
+        "requestedObjectProvided": true,
+        "lookupSuccess": true,
+        "outcome": "requested_texts_found_with_answer_errors",
+        "absenceStatementAccuracy": "not_applicable",
+        "reason": "主要查证对象完整；六字误计五字及用户现实断言不应因查到文献而忽略。"
+      },
+      "flags": [
+        {
+          "category": "事实错误",
+          "quote": "爻辞原文只有五个字",
+          "reason": "所列“坎有险，求小得”实际六字。"
+        },
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "你目前在坎险里，外面没有强援，唯一能做的是",
+          "reason": "用户没有提供相应处境，文本状态不能直接变成现实事实或唯一策略。"
+        }
+      ],
+      "uncertainties": [
+        "“综合三家”究竟把小象算作一家的说法不清；明确列出的注家只有王弼、朱熹，未按此单独判伪造第三注家。"
+      ]
+    },
+    {
+      "answerId": "agent-07",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "insufficient",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 1,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "识别用户要求爻辞和小象，并准确区分自己拿到的只是两家注释。",
+        "conversation": "“可以据此说明他们的理解，但不能等同于爻辞”边界清楚，随后仍提供有用解释。",
+        "helpfulness": "两家对于有限所得的解说有帮助，但用户指定的两段原文未交付，查证只部分完成。",
+        "grounding": "该条随附确实只有九二注释、没有独立爻辞和小象；引用内容与解释基本相符。"
+      },
+      "verification": {
+        "requestedObjectProvided": false,
+        "lookupSuccess": false,
+        "outcome": "partial_source_explanation",
+        "absenceStatementAccuracy": "accurate_for_this_items_evidence",
+        "reason": "解释注释成功，缺少用户指定经文两项，不能算完整查证成功。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "“相应”可能让读者误会成严格爻位应的术语；原注写相得，机制不在此确定。",
+        "同题其他条目有经文，但不能倒推本回答当时也取得了这些经文，故不将本条缺失说明判错。"
+      ]
+    },
+    {
+      "answerId": "agent-08",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "insufficient",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 1,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "清楚保留焦循这一作者限定，没有用通行解而拇解释替换。",
+        "conversation": "缺失说明直接，补充篇名、版本或片段的下一步也具体。",
+        "helpfulness": "指出需要什么材料有帮助，但指定原文仍未取得。",
+        "grounding": "本条未附焦循原文，且未编引或擅断其观点；全库返回未收录的过程不在材料中核验。"
+      },
+      "verification": {
+        "requestedObjectProvided": false,
+        "lookupSuccess": false,
+        "outcome": "accurate_absence_handling",
+        "absenceStatementAccuracy": "consistent_with_supplied_evidence",
+        "reason": "准确处理当前证据缺失；未获得指定原文，所以 lookupSuccess 为 false。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "limitations 中“资料库明确返回未收录”属过程声称；盲评材料未提供检索轨迹，无法确认，只能核验随附缺失。"
+      ]
+    },
+    {
+      "answerId": "agent-09",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "insufficient",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 1,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "识别用户寻找薄礼诚心出处，并没有因为本次乾卦就硬套乾上九。",
+        "conversation": "说明所见主题不符，直接承认不能确认，语气自然。",
+        "helpfulness": "避免编造归属，但未找出实际出处；局限中只有坎、困的宽泛猜测，查证未完成。",
+        "grounding": "缺少相关朱熹条目属实；“本轮唯一的文献”却与随附王弼乾九三及经典材料矛盾，夸大了资料空缺。"
+      },
+      "verification": {
+        "requestedObjectProvided": false,
+        "lookupSuccess": false,
+        "outcome": "unresolved_source_with_inaccurate_scope_statement",
+        "absenceStatementAccuracy": "partly_accurate",
+        "reason": "当前确未附目标坎六四，不能完成定位；但并非只有一条文献。"
+      },
+      "flags": [
+        {
+          "category": "事实错误",
+          "quote": "本轮唯一的文献是朱熹《周易本义》对乾卦上九的注解",
+          "reason": "附带还包括王弼乾九三及乾卦经传，资料范围描述不准确。"
+        }
+      ],
+      "uncertainties": [
+        "“唯一的文献”若本意是“唯一的朱熹文献”，可以成立，但实际没有此限定，按原句指出不准确。"
+      ]
+    }
+  ]
+}

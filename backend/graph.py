@@ -17,7 +17,7 @@ from .llm import deepseek_chat
 from .prompts import PROMPT_VERSION, ROUTER, SYSTEM, RISK_SYSTEM
 from .validation import AUTHORS, WORKS, fallback, matches_target, named_hexagrams, requested_targets, validate_answer
 
-GRAPH_VERSION = 'python-graph-v10'
+GRAPH_VERSION = 'python-graph-v13'
 
 
 class AgentState(TypedDict, total=False):
@@ -38,6 +38,7 @@ class AgentState(TypedDict, total=False):
     repairs: int
     seen: list[str]
     errors: list[str]
+    validation_issues: list[dict]
     next_step: str
     require_citations: bool
     prompt_version: str
@@ -47,6 +48,19 @@ class AgentState(TypedDict, total=False):
 
 def dumps(value):
     return json.dumps(value, ensure_ascii=False, separators=(',', ':'))
+
+
+def routing_evidence(evidence):
+    """Routing needs source content and filters, not transport/provenance detail."""
+    fields = ('id', 'text', 'hexagramId', 'section', 'line', 'layer', 'authorIds',
+              'authorNames', 'workId', 'workTitle', 'editionId', 'editionLabel', 'anchorIds', 'locator')
+    return [{key: e[key] for key in fields if key in e} for e in evidence]
+
+
+def routing_coverage(release):
+    current = coverage(release)
+    return dict(current, authors={author: {key: value for key, value in data.items() if key != 'anchorIds'}
+                                 for author, data in current.get('authors', {}).items()})
 
 
 def pack_evidence(required, optional, max_chars=16000):
@@ -224,7 +238,7 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None, *, rout
         # its meaning forward without repeating citations; risk/handoff stays practical.
         requires = (state['mode'] == 'initial' and not practical_only) or bool(targets) or intent == 'source_request' or (
             intent == 'explanation_followup' and bool(re.search(r'卦|爻|彖|象传|象傳|古文|注解', question)))
-        partial = dict(state, evidence=evidence, targets=targets)
+        partial = dict(state, intent=intent, evidence=evidence, targets=targets)
         availability = target_availability(partial)
         gaps = availability['retrievable']
         known_missing = bool(targets) and len(availability['unavailable']) == len(targets)
@@ -233,9 +247,9 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None, *, rout
                            'lineTypes': [{6: '老阴', 7: '少阳', 8: '少阴', 9: '老阳'}[v] for v in cast['lines']],
                            'original': {k: cast['original'][k] for k in ('number', 'name')},
                            'changed': {k: cast['changed'][k] for k in ('number', 'name')}},
-                       evidence=evidence, recentHistory=(
+                       evidence=routing_evidence(evidence), recentHistory=(
                            [dict(user=t['user']) for t in history(session)] if practical_only else history(session)),
-                       knowledgeCoverage=coverage(release),
+                       knowledgeCoverage=routing_coverage(release),
                        allowedHexagramIds=scope, intent=intent, requireCitations=requires,
                        requiredEvidenceTargetsForAnswered=targets, retrievableMissingTargets=gaps,
                        unavailableTargets=availability['unavailable'], unresolvedBooks=availability['unresolvedBooks'])
@@ -255,9 +269,9 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None, *, rout
                   durationMs=round((time.monotonic() - started) * 1000)))
         return update
 
-    async def invoke(messages, state, tools=None):
+    async def invoke(messages, state, tools=None, *, model=None):
         before = time.monotonic()
-        result = await chat(messages, tools=tools)
+        result = await (model or chat)(messages, tools=tools)
         usage = result.get('usage') or {}
         event = dict(step='model', status='ok', durationMs=round((time.monotonic() - before) * 1000),
                      promptTokens=usage.get('prompt_tokens'), completionTokens=usage.get('completion_tokens'),
@@ -297,6 +311,7 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None, *, rout
     def tools_node(state):
         evidence, trace, messages = list(state['evidence']), list(state['trace']), list(state['messages'])
         seen, attempts = list(state['seen']), state['attempts']
+        all_results_accepted = True
         for call in state['response']['tool_calls']:
             name, args = call.get('function', {}).get('name', ''), None
             started = time.monotonic()
@@ -336,9 +351,22 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None, *, rout
                       executionStatus='rejected' if event['status'] == 'error' else event['status'],
                       retrievedResult=retrieved, returnedResult=result, trace=event))
             trace.append(event)
-            messages.append(dict(role='tool', tool_call_id=call['id'], content=dumps(result)))
+            all_results_accepted &= event['status'] == 'ok'
+            model_result = dict(result, evidence=routing_evidence(result['evidence'])) if 'evidence' in result else result
+            messages.append(dict(role='tool', tool_call_id=call['id'], content=dumps(model_result)))
+        # Exact, authorized targets can be checked locally. Discovery still needs
+        # the router to interpret search results; rejected/empty calls may recover.
+        exact_targets = bool(state['targets']) and all(
+            target.get('section') and (target['section'] not in ('line', 'line_xiang', 'special') or target.get('line'))
+            for target in state['targets'])
+        targets_ready = (all_results_accepted and exact_targets and state['scope_ids'] is not None
+                         and not target_availability(dict(state, evidence=evidence))['unresolvedBooks']
+                         and all(any(e['hexagramId'] in state['scope_ids'] and matches_target(e, target)
+                                     for e in evidence) for target in state['targets']))
+        if targets_ready:
+            trace.append(dict(step='route', status='ok', code='EXPLICIT_TARGETS_SATISFIED'))
         return dict(evidence=evidence, trace=trace, messages=messages, seen=seen, attempts=attempts,
-                    next_step='generate' if attempts >= 3 else 'route')
+                    next_step='generate' if attempts >= 3 or targets_ready else 'route')
 
     def generation_messages(state):
         # Dialog roles are preserved; old assistant text is neither user fact nor
@@ -380,17 +408,19 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None, *, rout
             value = json.loads(state['response'].get('content') or '')
         except (ValueError, TypeError):
             value = None
-        answer, errors = validate_answer(value, generation_evidence(state), state['targets'], state['require_citations'])
+        issues = []
+        answer, errors = validate_answer(value, generation_evidence(state), state['targets'], state['require_citations'], issues=issues)
         emit(dict(kind='validation', candidate=value, errors=errors, answer=answer,
-                  evidence=generation_evidence(state), repairNumber=state['repairs']))
-        return dict(answer=answer, errors=errors, next_step='finish' if answer or state['repairs'] >= 1 else 'repair',
+                  issues=issues, evidence=generation_evidence(state), repairNumber=state['repairs']))
+        return dict(answer=answer, errors=errors, validation_issues=issues,
+                    next_step='finish' if answer or state['repairs'] >= 1 else 'repair',
                     trace=state['trace'] + [dict(step='validate', status='failed' if errors else 'passed', code=','.join(errors))])
 
     async def repair(state):
         instruction = '根据下列校验错误修正回答，返回完整 JSON。'
         messages = generation_messages(state) + [state['response'], dict(role='user', content=dumps(dict(
-            instruction=instruction, errors=state['errors'])))]
-        response, trace = await invoke(messages, state)
+            instruction=instruction, errors=state.get('validation_issues') or state['errors'])))]
+        response, trace = await invoke(messages, state, model=getattr(chat, 'repair_chat', chat))
         return dict(response=response, trace=trace, repairs=state['repairs'] + 1)
 
     def finish(state):

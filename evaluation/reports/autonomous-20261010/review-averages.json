@@ -1,0 +1,401 @@
+[
+  {
+    "stage": "agent",
+    "arm": "B",
+    "reviewed": 3,
+    "n": 3,
+    "noAnswerOrUnscored": 0,
+    "scores": {
+      "understanding": 2,
+      "conversation": 2,
+      "helpfulness": 1,
+      "grounding": 1.6666666666666667
+    },
+    "completedOutputCount": 3,
+    "completedOutputScores": {
+      "understanding": 2,
+      "conversation": 2,
+      "helpfulness": 1,
+      "grounding": 1.6666666666666667
+    },
+    "note": "Visible fallback scores do not mean task completion. Compare paired completed outputs separately; preserve all failures in success denominator."
+  },
+  {
+    "stage": "agent",
+    "arm": "C",
+    "reviewed": 3,
+    "n": 3,
+    "noAnswerOrUnscored": 0,
+    "scores": {
+      "understanding": 2,
+      "conversation": 1.6666666666666667,
+      "helpfulness": 1.6666666666666667,
+      "grounding": 1.6666666666666667
+    },
+    "completedOutputCount": 3,
+    "completedOutputScores": {
+      "understanding": 2,
+      "conversation": 1.6666666666666667,
+      "helpfulness": 1.6666666666666667,
+      "grounding": 1.6666666666666667
+    },
+    "note": "Visible fallback scores do not mean task completion. Compare paired completed outputs separately; preserve all failures in success denominator."
+  },
+  {
+    "stage": "agent",
+    "arm": "D",
+    "reviewed": 3,
+    "n": 3,
+    "noAnswerOrUnscored": 0,
+    "scores": {
+      "understanding": 2,
+      "conversation": 1.3333333333333333,
+      "helpfulness": 1.6666666666666667,
+      "grounding": 1.3333333333333333
+    },
+    "completedOutputCount": 3,
+    "completedOutputScores": {
+      "understanding": 2,
+      "conversation": 1.3333333333333333,
+      "helpfulness": 1.6666666666666667,
+      "grounding": 1.3333333333333333
+    },
+    "note": "Visible fallback scores do not mean task completion. Compare paired completed outputs separately; preserve all failures in success denominator."
+  },
+  {
+    "stage": "confirmation",
+    "arm": "flash-high",
+    "reviewed": 4,
+    "n": 3,
+    "noAnswerOrUnscored": 1,
+    "scores": {
+      "understanding": 2,
+      "conversation": 1.3333333333333333,
+      "helpfulness": 2,
+      "grounding": 1.3333333333333333
+    },
+    "completedOutputCount": 3,
+    "completedOutputScores": {
+      "understanding": 2,
+      "conversation": 1.3333333333333333,
+      "helpfulness": 2,
+      "grounding": 1.3333333333333333
+    },
+    "note": "Visible fallback scores do not mean task completion. Compare paired completed outputs separately; preserve all failures in success denominator."
+  },
+  {
+    "stage": "confirmation",
+    "arm": "flash-low",
+    "reviewed": 4,
+    "n": 4,
+    "noAnswerOrUnscored": 0,
+    "scores": {
+      "understanding": 1.5,
+      "conversation": 1.25,
+      "helpfulness": 1.5,
+      "grounding": 1.5
+    },
+    "completedOutputCount": 3,
+    "completedOutputScores": {
+      "understanding": 2,
+      "conversation": 1.3333333333333333,
+      "helpfulness": 2,
+      "grounding": 1.3333333333333333
+    },
+    "note": "Visible fallback scores do not mean task completion. Compare paired completed outputs separately; preserve all failures in success denominator."
+  },
+  {
+    "stage": "continuous",
+    "arm": "candidate",
+    "reviewed": 3,
+    "n": 3,
+    "noAnswerOrUnscored": 0,
+    "scores": {
+      "understanding": 1.3333333333333333,
+      "conversation": 1,
+      "helpfulness": 1.3333333333333333,
+      "grounding": 0.3333333333333333
+    },
+    "completedOutputCount": 3,
+    "completedOutputScores": {
+      "understanding": 1.3333333333333333,
+      "conversation": 1,
+      "helpfulness": 1.3333333333333333,
+      "grounding": 0.3333333333333333
+    },
+    "note": "Visible fallback scores do not mean task completion. Compare paired completed outputs separately; preserve all failures in success denominator."
+  },
+  {
+    "stage": "final-verification",
+    "arm": "final-high",
+    "reviewed": 3,
+    "n": 1,
+    "noAnswerOrUnscored": 2,
+    "scores": {
+      "understanding": 2,
+      "conversation": 1,
+      "helpfulness": 2,
+      "grounding": 0
+    },
+    "completedOutputCount": 1,
+    "completedOutputScores": {
+      "understanding": 2,
+      "conversation": 1,
+      "helpfulness": 2,
+      "grounding": 0
+    },
+    "note": "Visible fallback scores do not mean task completion. Compare paired completed outputs separately; preserve all failures in success denominator."
+  },
+  {
+    "stage": "finalists",
+    "arm": "flash-off",
+    "reviewed": 4,
+    "n": 4,
+    "noAnswerOrUnscored": 0,
+    "scores": {
+      "understanding": 1.5,
+      "conversation": 1,
+      "helpfulness": 1.5,
+      "grounding": 0.25
+    },
+    "completedOutputCount": 4,
+    "completedOutputScores": {
+      "understanding": 1.5,
+      "conversation": 1,
+      "helpfulness": 1.5,
+      "grounding": 0.25
+    },
+    "note": "Visible fallback scores do not mean task completion. Compare paired completed outputs separately; preserve all failures in success denominator."
+  },
+  {
+    "stage": "finalists",
+    "arm": "pro-low",
+    "reviewed": 4,
+    "n": 4,
+    "noAnswerOrUnscored": 0,
+    "scores": {
+      "understanding": 1.75,
+      "conversation": 1.5,
+      "helpfulness": 1.5,
+      "grounding": 0.5
+    },
+    "completedOutputCount": 3,
+    "completedOutputScores": {
+      "understanding": 1.6666666666666667,
+      "conversation": 1.3333333333333333,
+      "helpfulness": 1.3333333333333333,
+      "grounding": 0.3333333333333333
+    },
+    "note": "Visible fallback scores do not mean task completion. Compare paired completed outputs separately; preserve all failures in success denominator."
+  },
+  {
+    "stage": "holdout",
+    "arm": "baseline-high",
+    "reviewed": 6,
+    "n": 6,
+    "noAnswerOrUnscored": 0,
+    "scores": {
+      "understanding": 1.8333333333333333,
+      "conversation": 1.6666666666666667,
+      "helpfulness": 1.8333333333333333,
+      "grounding": 1.1666666666666667
+    },
+    "completedOutputCount": 6,
+    "completedOutputScores": {
+      "understanding": 1.8333333333333333,
+      "conversation": 1.6666666666666667,
+      "helpfulness": 1.8333333333333333,
+      "grounding": 1.1666666666666667
+    },
+    "note": "Visible fallback scores do not mean task completion. Compare paired completed outputs separately; preserve all failures in success denominator."
+  },
+  {
+    "stage": "holdout",
+    "arm": "candidate",
+    "reviewed": 6,
+    "n": 6,
+    "noAnswerOrUnscored": 0,
+    "scores": {
+      "understanding": 1.8333333333333333,
+      "conversation": 1.3333333333333333,
+      "helpfulness": 1.8333333333333333,
+      "grounding": 0.8333333333333334
+    },
+    "completedOutputCount": 6,
+    "completedOutputScores": {
+      "understanding": 1.8333333333333333,
+      "conversation": 1.3333333333333333,
+      "helpfulness": 1.8333333333333333,
+      "grounding": 0.8333333333333334
+    },
+    "note": "Visible fallback scores do not mean task completion. Compare paired completed outputs separately; preserve all failures in success denominator."
+  },
+  {
+    "stage": "low-verification",
+    "arm": "final-flash-low",
+    "reviewed": 3,
+    "n": 3,
+    "noAnswerOrUnscored": 0,
+    "scores": {
+      "understanding": 2,
+      "conversation": 1.3333333333333333,
+      "helpfulness": 2,
+      "grounding": 1
+    },
+    "completedOutputCount": 3,
+    "completedOutputScores": {
+      "understanding": 2,
+      "conversation": 1.3333333333333333,
+      "helpfulness": 2,
+      "grounding": 1
+    },
+    "note": "Visible fallback scores do not mean task completion. Compare paired completed outputs separately; preserve all failures in success denominator."
+  },
+  {
+    "stage": "rag",
+    "arm": "classic",
+    "reviewed": 3,
+    "n": 3,
+    "noAnswerOrUnscored": 0,
+    "scores": {
+      "understanding": 1.6666666666666667,
+      "conversation": 1,
+      "helpfulness": 1.6666666666666667,
+      "grounding": 0.6666666666666666
+    },
+    "completedOutputCount": 2,
+    "completedOutputScores": {
+      "understanding": 1.5,
+      "conversation": 1,
+      "helpfulness": 1.5,
+      "grounding": 0.5
+    },
+    "note": "Visible fallback scores do not mean task completion. Compare paired completed outputs separately; preserve all failures in success denominator."
+  },
+  {
+    "stage": "rag",
+    "arm": "full",
+    "reviewed": 3,
+    "n": 3,
+    "noAnswerOrUnscored": 0,
+    "scores": {
+      "understanding": 2,
+      "conversation": 1,
+      "helpfulness": 1.6666666666666667,
+      "grounding": 0.3333333333333333
+    },
+    "completedOutputCount": 3,
+    "completedOutputScores": {
+      "understanding": 2,
+      "conversation": 1,
+      "helpfulness": 1.6666666666666667,
+      "grounding": 0.3333333333333333
+    },
+    "note": "Visible fallback scores do not mean task completion. Compare paired completed outputs separately; preserve all failures in success denominator."
+  },
+  {
+    "stage": "rag",
+    "arm": "memory",
+    "reviewed": 3,
+    "n": 3,
+    "noAnswerOrUnscored": 0,
+    "scores": {
+      "understanding": 1.6666666666666667,
+      "conversation": 1.6666666666666667,
+      "helpfulness": 1.6666666666666667,
+      "grounding": 0.6666666666666666
+    },
+    "completedOutputCount": 3,
+    "completedOutputScores": {
+      "understanding": 1.6666666666666667,
+      "conversation": 1.6666666666666667,
+      "helpfulness": 1.6666666666666667,
+      "grounding": 0.6666666666666666
+    },
+    "note": "Visible fallback scores do not mean task completion. Compare paired completed outputs separately; preserve all failures in success denominator."
+  },
+  {
+    "stage": "screening",
+    "arm": "flash-high",
+    "reviewed": 4,
+    "n": 4,
+    "noAnswerOrUnscored": 0,
+    "scores": {
+      "understanding": 1.75,
+      "conversation": 1,
+      "helpfulness": 1.75,
+      "grounding": 0.75
+    },
+    "completedOutputCount": 4,
+    "completedOutputScores": {
+      "understanding": 1.75,
+      "conversation": 1,
+      "helpfulness": 1.75,
+      "grounding": 0.75
+    },
+    "note": "Visible fallback scores do not mean task completion. Compare paired completed outputs separately; preserve all failures in success denominator."
+  },
+  {
+    "stage": "screening",
+    "arm": "flash-low",
+    "reviewed": 4,
+    "n": 4,
+    "noAnswerOrUnscored": 0,
+    "scores": {
+      "understanding": 2,
+      "conversation": 1.25,
+      "helpfulness": 2,
+      "grounding": 0.5
+    },
+    "completedOutputCount": 4,
+    "completedOutputScores": {
+      "understanding": 2,
+      "conversation": 1.25,
+      "helpfulness": 2,
+      "grounding": 0.5
+    },
+    "note": "Visible fallback scores do not mean task completion. Compare paired completed outputs separately; preserve all failures in success denominator."
+  },
+  {
+    "stage": "screening",
+    "arm": "flash-off",
+    "reviewed": 4,
+    "n": 4,
+    "noAnswerOrUnscored": 0,
+    "scores": {
+      "understanding": 1.5,
+      "conversation": 1,
+      "helpfulness": 1.75,
+      "grounding": 0.5
+    },
+    "completedOutputCount": 4,
+    "completedOutputScores": {
+      "understanding": 1.5,
+      "conversation": 1,
+      "helpfulness": 1.75,
+      "grounding": 0.5
+    },
+    "note": "Visible fallback scores do not mean task completion. Compare paired completed outputs separately; preserve all failures in success denominator."
+  },
+  {
+    "stage": "screening",
+    "arm": "pro-off",
+    "reviewed": 4,
+    "n": 4,
+    "noAnswerOrUnscored": 0,
+    "scores": {
+      "understanding": 1.5,
+      "conversation": 1,
+      "helpfulness": 1.25,
+      "grounding": 0.5
+    },
+    "completedOutputCount": 4,
+    "completedOutputScores": {
+      "understanding": 1.5,
+      "conversation": 1,
+      "helpfulness": 1.25,
+      "grounding": 0.5
+    },
+    "note": "Visible fallback scores do not mean task completion. Compare paired completed outputs separately; preserve all failures in success denominator."
+  }
+]

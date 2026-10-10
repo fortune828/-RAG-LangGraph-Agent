@@ -1,0 +1,188 @@
+[
+  {
+    "caseId": "confirmation-daily",
+    "session": {
+      "id": "session-confirmation-daily",
+      "question": "同事邀请我周五参加羽毛球活动。我水平很差，但其实想去，又怕拖累别人，要不要答应？",
+      "cast": {
+        "lines": [
+          8,
+          8,
+          8,
+          8,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "000010",
+          "name": "水地比",
+          "number": 8,
+          "judgment": "吉。原筮元永贞，无咎。不宁方来，后夫凶。"
+        },
+        "changed": {
+          "binary": "000010",
+          "name": "水地比",
+          "number": 8,
+          "judgment": "吉。原筮元永贞，无咎。不宁方来，后夫凶。"
+        },
+        "originalBinary": "000010",
+        "changedBinary": "000010",
+        "changingIndices": [],
+        "id": "cast-confirmation-daily",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "同事邀请我周五参加羽毛球活动。我水平很差，但其实想去，又怕拖累别人，要不要答应？",
+    "mode": "initial"
+  },
+  {
+    "caseId": "confirmation-complex",
+    "session": {
+      "id": "session-confirmation-complex",
+      "question": "我和伴侣本来想办小婚礼，双方父母提出加到二十桌，费用他们愿意出，但希望流程听他们安排。我们担心婚礼失去自己的意思，又不想让父母难堪，怎么商量？",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          8,
+          7,
+          8,
+          7
+        ],
+        "original": {
+          "binary": "110101",
+          "name": "火泽睽",
+          "number": 38,
+          "judgment": "小事吉。"
+        },
+        "changed": {
+          "binary": "110101",
+          "name": "火泽睽",
+          "number": 38,
+          "judgment": "小事吉。"
+        },
+        "originalBinary": "110101",
+        "changedBinary": "110101",
+        "changingIndices": [],
+        "id": "cast-confirmation-complex",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "我和伴侣本来想办小婚礼，双方父母提出加到二十桌，费用他们愿意出，但希望流程听他们安排。我们担心婚礼失去自己的意思，又不想让父母难堪，怎么商量？",
+    "mode": "initial"
+  },
+  {
+    "caseId": "confirmation-correction",
+    "session": {
+      "id": "session-confirmation-correction",
+      "question": "搭档连续两次晚交小组作业中他负责的部分，最后都要我赶着合并。怎么跟他谈这件事？",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          7,
+          7,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "011100",
+          "name": "雷风恒",
+          "number": 32,
+          "judgment": "亨，无咎，利贞，利有攸往。"
+        },
+        "changed": {
+          "binary": "011100",
+          "name": "雷风恒",
+          "number": 32,
+          "judgment": "亨，无咎，利贞，利有攸往。"
+        },
+        "originalBinary": "011100",
+        "changedBinary": "011100",
+        "changingIndices": [],
+        "id": "cast-confirmation-correction",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [
+        {
+          "id": "fixture-0",
+          "question": "搭档连续两次晚交小组作业中他负责的部分，最后都要我赶着合并。怎么跟他谈这件事？",
+          "status": "completed",
+          "mode": "initial",
+          "answer": {
+            "status": "answered",
+            "paragraphs": [
+              {
+                "text": "他可能习惯了让你兜底。你可以明确告诉他，下次再晚交就由他自己承担后果。",
+                "citations": []
+              }
+            ],
+            "limitations": []
+          },
+          "evidence": []
+        }
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "我刚核对了记录，两次都是我把基础数据给晚了，他后面其实一直在赶。我之前只注意到最后交稿的时间。现在怎么开口比较好？",
+    "mode": "followup"
+  },
+  {
+    "caseId": "confirmation-source",
+    "session": {
+      "id": "session-confirmation-source",
+      "question": "我想了解本次恒卦初六的含义。",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          7,
+          7,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "011100",
+          "name": "雷风恒",
+          "number": 32,
+          "judgment": "亨，无咎，利贞，利有攸往。"
+        },
+        "changed": {
+          "binary": "011100",
+          "name": "雷风恒",
+          "number": 32,
+          "judgment": "亨，无咎，利贞，利有攸往。"
+        },
+        "originalBinary": "011100",
+        "changedBinary": "011100",
+        "changingIndices": [],
+        "id": "cast-confirmation-source",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "请给出本卦初六的爻辞原文和王弼注解，“浚恒”是越早坚持得越深越好吗？",
+    "mode": "followup"
+  }
+]

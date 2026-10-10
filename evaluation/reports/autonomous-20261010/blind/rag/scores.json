@@ -1,0 +1,335 @@
+{
+  "reviewType": "独立 AI 主观盲评；不是人工评分或专家验收",
+  "dimensions": {
+    "understanding": "理解与承接",
+    "conversation": "自然交流与适度深度",
+    "helpfulness": "建议帮助",
+    "grounding": "文献支持与推断克制"
+  },
+  "scale": {
+    "0": "明显或关键缺陷",
+    "1": "部分达到，有实质不足",
+    "2": "达到，未见明显缺陷"
+  },
+  "counts": {
+    "total": 9,
+    "scored": 9,
+    "noAnswer": 0,
+    "recordedFailure": 1,
+    "mechanicalFailure": 1,
+    "technicalFailureWithoutAnswer": 0
+  },
+  "failureNote": "rag-05 的 validation_failed 为记录到的机械失败；有完整答案，正常评分，不将失败状态转成语义零分。",
+  "evidencePolicy": "无随附 evidence 的 rag-01/06/08，以同题其他匿名材料的真实文献交叉核对；引用数量及格式本身不加减分。",
+  "results": [
+    {
+      "answerId": "rag-01",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 1,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "识别半小时时限，并在两种现有选项内给条件选择，没有另开菜单。",
+        "conversation": "“现实条件优先于卦象”自然转到距离和队伍，整体语气友好，没有凶辞施压。",
+        "helpfulness": "查看排队、距离很有帮助；“面通常出餐快、温度适中”及鸡肉饭更油更慢没有店铺事实支撑，选择理由不稳。",
+        "grounding": "与同题原文核对，“夬”有决断依据；变乾即“纯粹直接”“变量最少”未获原文支持。无引用格式本身不扣分。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "上六动而变乾，象意是从“果断抉择”走向“纯粹直接”",
+          "reason": "同题乾卦卦辞与大象没有纯粹直接、最少变量这层操作定义。"
+        }
+      ],
+      "uncertainties": [
+        "餐食速度、份量和饭后感觉依店铺及个人而定；本文只是说“通常”，不记成虚构已知用户事实。"
+      ],
+      "crossCheckedEvidenceFrom": [
+        "rag-03",
+        "rag-07"
+      ]
+    },
+    {
+      "answerId": "rag-02",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "接受“已经投递”，把真正问题转到检索有效性的解释，没有延续“没信心所以暂停”的旧建议。",
+        "conversation": "“基线是什么、改动前后差异在哪”贴题；“面试正是君臣相互利见”等铺陈让技术交流显得被经典套住。",
+        "helpfulness": "明确区分堆模块与受控验证，建议基线、成功失败样例及可被追问的论证，直接回答继续加功能是否有用。",
+        "grounding": "王弼、程颐、朱熹所引文字可在材料找到；但“德施普”必需外人理解与面试是君臣互见，属于未充分标明的现代对应。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "面试正是君臣相互利见、彼此要能对上话的场景",
+          "reason": "材料能支持古代注释的双向利见，不能直接认定现代面试等于君臣场景。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "德要能普遍施及他人，就必须可被外面的人理解",
+          "reason": "从德的施及推到技术解释可理解性，是回答新增的前提。"
+        }
+      ],
+      "uncertainties": [
+        "这里只核对所给注释，不裁定经典的所有现代应用均无价值。"
+      ],
+      "crossCheckedEvidenceFrom": []
+    },
+    {
+      "answerId": "rag-03",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "知道是面饭二选一，但“选哪个都能吃完”“半小时足够”未经排队和距离核对，轻视用户最明确约束。",
+        "conversation": "“不是教人中午吃什么”保持边界，但“有没有把吃饭当回事”给简单抉择加了不必要的评判。",
+        "helpfulness": "依据饥饿程度和活动量给两种选择有用；未优先核对店铺等待时间，且先后保证时间够与承认出餐差异不一致。",
+        "grounding": "明示只有态度类比、无直接因果是优点；“施禄及下”到先照顾自己、“自强不息”到吃饭节奏稳仍有明显跳接。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "半小时的午休，选哪个都能吃完",
+          "reason": "无法从用户给定事实知道两家等餐和往返时间，不能保证。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "放在这里可以理解为先照顾好自己的基本需要",
+          "reason": "所引施禄及下没有关于优先自我饮食照顾的对应。"
+        }
+      ],
+      "uncertainties": [],
+      "crossCheckedEvidenceFrom": []
+    },
+    {
+      "answerId": "rag-04",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "更新为已投递，正面回答加功能不能自动帮助解释检索；没有再建议暂停投递。",
+        "conversation": "三项实操建议清楚，但“本质上是德施普还没走通”强行解释用户问题，交流不够自然。",
+        "helpfulness": "可复现测试、成功失败案例、替代方案和模拟讲解，能直接服务面试准备。",
+        "grounding": "“大人就是面试官”“元是理解出发点…亨是表达通畅”，再据此说面试考亨和贞，核心论证没有原文支持。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "“大人”就是面试官、招聘方和未来的同事",
+          "reason": "把可能的现代类比写成同一对象，没有材料说明。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "继续加功能最多让“元”更大，但面试真正考的是你能不能亨、能不能贞",
+          "reason": "四字被改造成软件和面试维度，无法从所给卦辞推出。"
+        }
+      ],
+      "uncertainties": [
+        "“各正性命”的完整训诂不作权威裁定；主要扣分来自将现代应用写成确定的经典结构。"
+      ],
+      "crossCheckedEvidenceFrom": []
+    },
+    {
+      "answerId": "rag-05",
+      "evaluationStatus": "scored",
+      "sourceStatus": "validation_failed",
+      "mechanicalFailure": true,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "围绕剩一周、已能演示、简历已就绪给出优先测试的明确选择。",
+        "conversation": "“更宽展示面/更深可信度”容易理解；“恰好卡在这个位置”及“这周正处过渡”把实际取舍过度卦象化。",
+        "helpfulness": "前五天测试修补、最后两天收敛，按演示路径、异常输入、失败恢复分级，且保留核心缺口例外，实用。",
+        "grounding": "引文在材料中存在，末尾明确非结果预测、具体项目未知；但德施普被当作产品普遍可靠的前提，仍未获注释支持。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "“利见大人”的前提不是功能多，而是“德施普”",
+          "reason": "将德的施及直接改写为产品功能可靠性，建议合理不代表古文证明。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "一周足够把核心路径的边界情况、异常输入…逐条测一遍",
+          "reason": "项目规模未知，“六位时成”也不能证明一周测试容量。"
+        }
+      ],
+      "uncertainties": [
+        "validation_failed 是机械状态；未提供失败原因，不猜测校验规则。此回答所有四维均按实际文本评分。"
+      ],
+      "crossCheckedEvidenceFrom": []
+    },
+    {
+      "answerId": "rag-06",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "承接已经投递和解释检索这一纠正，把理解深度与功能覆盖度区分开。",
+        "conversation": "“为什么选这套索引/召回/排序”直接进入用户关心的实质，尾段承认岗位和功能性质会改变判断。",
+        "helpfulness": "关键取舍、指标、基线、失效案例、模拟面试与低成本实验均可执行，也承认有证据价值的功能例外。",
+        "grounding": "与同题文献核对爻辞无误；“利见大人指向的正是面试官”仍过于确定，末尾的不确定性缓和但未完全纠正这层对应。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "“利见大人”指向的正是与面试官、用人方沟通",
+          "reason": "可作为联想，却写成经文确指的现实对象。"
+        }
+      ],
+      "uncertainties": [],
+      "crossCheckedEvidenceFrom": [
+        "rag-02",
+        "rag-04"
+      ]
+    },
+    {
+      "answerId": "rag-07",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "考虑半小时中预留十分钟，且最后按已出餐与排队情况二选一，贴近问题。",
+        "conversation": "“当断则断，但不要把自己逼到紧张”温和，但多次强调“别反复犹豫”“不回头比较”有多余管束。",
+        "helpfulness": "鸡肉饭若已做好就选饭有帮助；“汤汁温度高、入口快”推理可疑，未先确认哪家实际更快。",
+        "grounding": "将“终不可长也”说成拖延到饭点、“刚长乃终也”说方向对自然收尾，证据没有支持这些现代因果。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "“终不可长也”——拖到最后一刻才决定",
+          "reason": "所给小象没有解释点餐拖延。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "别把“应该吃好”当成负担",
+          "reason": "“施禄及下，居德则忌”与此心理提醒无已说明关联。"
+        }
+      ],
+      "uncertainties": [
+        "不凭材料判断两道菜的营养或饱腹优劣；此处评价的是答案拿未核实速度作为决定理由。"
+      ],
+      "crossCheckedEvidenceFrom": []
+    },
+    {
+      "answerId": "rag-08",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "对一周内优先测试给出直接建议，但“能量足、方向明”是从卦象补出的用户状态。",
+        "conversation": "“再长一只角”“按回水里”比喻鲜明，却使加功能变成必然露怯的剧情，语气过度笃定。",
+        "helpfulness": "主流程、边界异常测试、简历与演示对齐很具体；最后保留核心缺口优先补齐的条件。",
+        "grounding": "同题文献不支持六爻皆阳就用户精力足，也不支持加功能等于退回潜藏且面试必露怯。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "代表你现在的状态是能量足、方向明",
+          "reason": "用户未谈精力和方向确定程度，阳爻不能代替这些事实。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "面试官一追问就露怯",
+          "reason": "加功能后必然讲不清是无事实根据的后果断言。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "如果继续加功能，等于把已经露出的龙又按回水里",
+          "reason": "卦爻中的阶段不足以推出这个项目管理等式。"
+        }
+      ],
+      "uncertainties": [],
+      "crossCheckedEvidenceFrom": [
+        "rag-05",
+        "rag-09"
+      ]
+    },
+    {
+      "answerId": "rag-09",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "围绕一周、测试与加功能取舍展开，且不否定所有新增功能，理解基本到位。",
+        "conversation": "多次说“恰好对应”“对方也正需要你”，形成未经核实的赞许；功能分级一段更自然有用。",
+        "helpfulness": "核心/可说明/暂不碰的分类、目标岗位需求核对和新增后预留测试，能落地。",
+        "grounding": "注释引文真实，但“对方也正需要你”不是程颐文字能证实的招聘事实；朱熹德已著被确定等同代码可靠。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "对方也正需要你这样有真实本事的人",
+          "reason": "没有招聘方需求与能力匹配证据，不能从古代君臣注释确定。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "招人方看的正是这个“德已著”的部分，也就是你现有功能到底靠不靠得住",
+          "reason": "朱熹注释谈大人之德，未谈现代招聘评估或功能可靠性。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "还没有到九三那种需要拼命推进的阶段",
+          "reason": "把爻位顺序确定为此项目工作阶段，缺乏现实根据。"
+        }
+      ],
+      "uncertainties": [
+        "“自强不息常被读成不停加功能”未提供出处；不据此假设确有某种流行解释。"
+      ],
+      "crossCheckedEvidenceFrom": []
+    }
+  ]
+}

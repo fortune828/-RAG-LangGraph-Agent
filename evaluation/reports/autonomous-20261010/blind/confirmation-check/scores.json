@@ -1,0 +1,292 @@
+{
+  "reviewType": "独立 AI 主观匿名确认评阅；不是人工评分或专家验收",
+  "scope": "只读指定本目录材料与 rubric；不读取解盲键、源码、其他结果，不推测隐藏配置或总胜者。",
+  "dimensions": {
+    "understanding": "理解与承接",
+    "conversation": "自然交流与适度深度",
+    "helpfulness": "建议帮助",
+    "grounding": "文献支持与推断克制"
+  },
+  "scale": {
+    "0": "明显或关键缺陷",
+    "1": "部分达到，有实质不足",
+    "2": "达到，未见足以降分的明显缺陷",
+    "null": "N/A，无答案，不算语义零分"
+  },
+  "counts": {
+    "total": 8,
+    "scoredVisibleTexts": 7,
+    "substantiveResponses": 6,
+    "noAnswer": 1,
+    "recordedFailure": 2,
+    "technicalFailureWithoutAnswer": 1,
+    "visibleValidationFailureNotice": 1,
+    "taskNotCompletedDueToFailure": 2,
+    "literatureLookupItems": 2,
+    "literatureLookupSuccess": 2
+  },
+  "failureClassification": [
+    {
+      "answerId": "confirmation-check-04",
+      "kind": "visible_validation_failure_notice",
+      "semanticScoring": "score actual notice; helpfulness=0",
+      "taskCompleted": false
+    },
+    {
+      "answerId": "confirmation-check-07",
+      "kind": "technical_failure_without_answer",
+      "semanticScoring": "N/A, null scores",
+      "taskCompleted": false
+    }
+  ],
+  "results": [
+    {
+      "answerId": "confirmation-check-01",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "taskType": "literature_lookup",
+      "taskCompletion": "substantive_response",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "给出恒初六爻辞与王弼指定注解，并直接否定“越早坚持得越深越好”的误读。",
+        "conversation": "沿“始求深”到“令物无余缊”解释过早求到底的问题，贴合问题，没有将凶辞指向用户命运。",
+        "helpfulness": "原文、白话和概念纠偏都给出，能分辨恒常与过早过度索求。",
+        "grounding": "引文与本条王弼材料吻合，解释聚焦初位求深和不留余地；无动爻只用于说明所问初六并非动爻，没有推现实稳定。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "末尾“循序渐进地加深”是答者建议，不能读成渐进便可无限求深；王弼也说渐至穷底仍会不堪。答案先前已明确说明这一点，未据此认定核心误解。",
+        "贞的完整训诂可有不同解释；本次只确认“浚恒不等于越早越深越好”的核心结论受到指定注解支持。"
+      ],
+      "verification": {
+        "requestedObjectProvided": true,
+        "lookupSuccess": true,
+        "outcome": "requested_line_and_wang_bi_commentary_found"
+      }
+    },
+    {
+      "answerId": "confirmation-check-02",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "taskType": "dialogue",
+      "taskCompletion": "substantive_response",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "识别规模、费用与流程主导权互相牵连，也考虑伴侣意见及双方父母的体面。",
+        "conversation": "分清可让与不可让、先和伴侣统一很清楚；“往后买房、生育、过节都照此办理”把本次谈判扩成广泛家庭惯例警告，压力偏大。",
+        "helpfulness": "列议题、分配决策权、分别沟通及仪式自筹等办法可实施，且提醒父母真正诉求需问清。",
+        "grounding": "同而异用于允许差异有一定贴合，末尾承认沟通步骤是引申；但“小事吉”只有三字，且小事吉不能直接证明每次谈一两项就更吉。"
+      },
+      "flags": [
+        {
+          "category": "事实错误",
+          "quote": "卦辞只给四个字：小事吉。",
+          "reason": "小、事、吉共三字，不是四字。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "宜从小处、具体处着手，一次只谈一两项",
+          "reason": "可作为现实协商办法，但给定“小事吉”没有规定谈判分项或每次数量。"
+        }
+      ],
+      "uncertainties": [
+        "父母体面、人情、参与感用了“多半”，且随后说应亲自问明，未按确定虚构父母动机标记。",
+        "两个示例方案偏向接受酒席扩张，仍需新人自己确认二十桌是否可让；不把示例当成用户已授权接受。"
+      ]
+    },
+    {
+      "answerId": "confirmation-check-03",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "taskType": "dialogue",
+      "taskCompletion": "substantive_response",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "回应出资与流程边界，也保留最后缩小规模、自筹的替代，理解主要矛盾。",
+        "conversation": "清单与流程负责人容易使用；“二十桌我们接受”的代拟话术替用户先作让步，核心仪式“必须”如何划分也较生硬。",
+        "helpfulness": "新人先统一、父母主导/共同/新人专属分类、标负责人和资金条件谈不成时自筹，能帮助实际商量。",
+        "grounding": "大象同而异的应用有解释，但无动爻被说成局面暂定，未由用户事实或所给经传支持。"
+      },
+      "flags": [
+        {
+          "category": "静爻推断现实稳定",
+          "quote": "无动爻…说明眼下局面暂时定在“相背而同行”的状态",
+          "reason": "静爻不能确认家庭协商的当前稳定状态或一次谈话能否解决。"
+        },
+        {
+          "category": "未授权让步代拟",
+          "quote": "二十桌我们接受，感谢你们承担费用",
+          "reason": "用户尚在犹豫规模与流程；示例话术应附上“若愿意接受二十桌”的条件。"
+        }
+      ],
+      "uncertainties": [
+        "父母面子与人情在示例中被当成分工依据，实际需求仍未确认；答案也建议先询问，故未将其一律记为确定虚构。"
+      ]
+    },
+    {
+      "answerId": "confirmation-check-04",
+      "evaluationStatus": "scored_failure_notice",
+      "sourceStatus": "validation_failed",
+      "answerStatus": "insufficient",
+      "taskType": "dialogue",
+      "taskCompletion": "not_completed_visible_validation_failure",
+      "scores": {
+        "understanding": 0,
+        "conversation": 1,
+        "helpfulness": 0,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "只说“回答未能通过核验”，没有承接基础数据晚给这一纠正，也没有撤回旧的兜底归因。",
+        "conversation": "提示本身简明、可理解，但内容是系统失败状态，不能构成针对如何开口的自然回应。",
+        "helpfulness": "没有道歉或承责话术，没有新的协作安排；“查看原文或继续说明”不完成用户任务，帮助为0。",
+        "grounding": "没有代拟经义、用户心理或未验证建议，推断保持克制。此项2只表示未编造，不表示任务完成或查证成功。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "只能确认提供的可见提示及 validation_failed 状态，无法核验内部修复经过或卦象存储行为。",
+        "已有用户可见文本，按该提示评语义，不作 N/A；也不把诚实承认失败等同建议帮助。"
+      ]
+    },
+    {
+      "answerId": "confirmation-check-05",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "taskType": "dialogue",
+      "taskCompletion": "substantive_response",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "接住想去与怕拖累的双重感受，不把水平差直接认作不应参加。",
+        "conversation": "“不必先把自己判成拖累”和允许拒绝有支持性；动机端正、亲诸侯与后夫凶等层层对应，让普通运动邀约显得过于郑重。",
+        "helpfulness": "直接问娱乐局还是竞技局、能否轮换，娱乐局就去，正式赛则换参与方式，能化解关键未知。",
+        "grounding": "明确实际性质需问、卦象不能代替确认；但后夫凶被借成及时回复的要求，原文未支持这个具体因果。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "别人来亲近你时，宜及时回应，不要拖到最后才勉强答应或拒绝",
+          "reason": "这是合理社交提醒，但不能直接从所给“不宁方来，后夫凶”确定现代邀约回复时限。"
+        }
+      ],
+      "uncertainties": [
+        "亲附与结伴可以作为宽泛联想，不因任何现代应用都自动认定牵强；此处重点是凶辞与具体行为后果的桥接。",
+        "运动的轮换、体力安排需依实际活动，本评阅不冒充运动训练专家。"
+      ]
+    },
+    {
+      "answerId": "confirmation-check-06",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "taskType": "literature_lookup",
+      "taskCompletion": "substantive_response",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "完整提供指定爻辞和王弼注，并明确答复浚恒不是越早越深越好。",
+        "conversation": "原文之后围绕“始求深”“穷底”“物不堪”解释，范围集中，没有添加用户心理剧情。",
+        "helpfulness": "能让读者对照原文纠正误读，满足本次查询与理解请求。",
+        "grounding": "引用匹配给定初六注，而非夹杂的六五注；“渐至此仍不堪，何况开始即求深”的解释有直接依据。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "“凶正害德”等古语未逐字展开，未影响当前用户所问的核心对错；不因缺少额外训诂自动扣分。"
+      ],
+      "verification": {
+        "requestedObjectProvided": true,
+        "lookupSuccess": true,
+        "outcome": "requested_line_and_wang_bi_commentary_found"
+      }
+    },
+    {
+      "answerId": "confirmation-check-07",
+      "evaluationStatus": "no_answer",
+      "sourceStatus": "failed",
+      "answerStatus": null,
+      "taskType": "dialogue",
+      "taskCompletion": "not_completed_technical_failure",
+      "technicalFailure": true,
+      "error": "ModelError:MODEL_INCOMPLETE_RESPONSE",
+      "scores": {
+        "understanding": null,
+        "conversation": null,
+        "helpfulness": null,
+        "grounding": null
+      },
+      "reasons": {
+        "understanding": "N/A：MODEL_INCOMPLETE_RESPONSE，answer=null，无可评阅文本。",
+        "conversation": "N/A：MODEL_INCOMPLETE_RESPONSE，answer=null，无可评阅文本。",
+        "helpfulness": "N/A：MODEL_INCOMPLETE_RESPONSE，answer=null，无可评阅文本。",
+        "grounding": "N/A：MODEL_INCOMPLETE_RESPONSE，answer=null，无可评阅文本。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "材料不足以说明技术失败根因，不能从无答案反推语义能力。"
+      ]
+    },
+    {
+      "answerId": "confirmation-check-08",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "taskType": "dialogue",
+      "taskCompletion": "substantive_response",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "回应想去、怕水平拖累，并建议如实讲水平、询问安排，没有忽略参加意愿。",
+        "conversation": "“不必硬撑水平”友好；把捡球、带水安排为“辅”的角色，并用迟复或游离会为难组织者来催促，容易增加新手负担。",
+        "helpfulness": "确认时间场地与轮换、找水平相近搭配、竞技训练则下次等条件可用；能让用户先问清而非盲目参加。",
+        "grounding": "结尾承认不能保证结果；前文“群体打球不是单人考核”尚未核实活动性质，后夫凶到迟回复或游离的映射也缺文献支持。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "若迟迟不回复、临时才说，或到场后游离，反而容易让组织者为难",
+          "reason": "所引后夫凶没有这些邀约回复、到场表现和组织者反应的具体内容。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "自己多做跑位、捡球、带球水，做“辅”的角色",
+          "reason": "比辅的古典表述被转为低水平参与者的服务职责，原文并未要求此种补偿。"
+        }
+      ],
+      "uncertainties": [
+        "“群体打球不是单人考核”是未核实的一般化判断；末尾有竞技训练例外，因此不认定答案确定虚构本次活动类型。",
+        "混双不必然意味着适合新手，是否适合需看实际搭档与活动安排，材料不足以作训练专业判断。"
+      ]
+    }
+  ]
+}

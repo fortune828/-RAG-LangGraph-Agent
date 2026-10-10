@@ -1,0 +1,404 @@
+[
+  {
+    "caseId": "dev-lunch",
+    "arm": "final-high",
+    "config": "flash-high",
+    "stage": "final",
+    "initialEvidenceIds": [
+      "zy-43-judgment",
+      "zy-43-tuan",
+      "zy-43-xiang",
+      "zy-43-line-6",
+      "zy-43-line_xiang-6",
+      "zy-1-judgment",
+      "zy-1-xiang"
+    ],
+    "inputHash": "0cd6ad039836a5d8ccc62fcba2b44b2773717a74b844b5e7ee942c0f68464e21",
+    "graphVersion": "python-graph-v12",
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "本卦为泽天夬，变卦为乾为天，动爻在上六。夬是决断之卦，彖传说“健而说，决而和”，放在午饭选择上，就是要在半小时内果断定下，同时保持平和，不必把两家饭反复比较到时间耗尽。",
+          "citations": [
+            {
+              "evidenceId": "zy-43-tuan",
+              "quote": "健而说，决而和",
+              "claim": "健而说，决而和"
+            }
+          ]
+        },
+        {
+          "text": "动爻上六说“无号，终有凶”，小象解释“‘无号’之‘凶’，终不可长也”。这最值得留意：时间只有半小时，若拖到最后一刻才决定、才排队点单，风险就不在选面还是选饭，而在来不及吃。",
+          "citations": [
+            {
+              "evidenceId": "zy-43-line-6",
+              "quote": "无号，终有凶",
+              "claim": "无号，终有凶"
+            },
+            {
+              "evidenceId": "zy-43-line_xiang-6",
+              "quote": "终不可长也",
+              "claim": "终不可长也"
+            }
+          ]
+        },
+        {
+          "text": "现实取舍上，乾卦辞说“元亨利贞”，大象说“天行健，君子以自强不息”。如果下午还要持续用脑或体力，鸡肉饭的米饭加鸡肉通常更扛饿，蛋白质和主食更稳；但若它要等很久，乾的刚健也帮不了半小时。番茄鸡蛋面通常更热乎、温和、易入口，出餐若快，适合想快点吃完、不想太油的人。",
+          "citations": [
+            {
+              "evidenceId": "zy-1-judgment",
+              "quote": "元亨利贞",
+              "claim": "元亨利贞"
+            },
+            {
+              "evidenceId": "zy-1-xiang",
+              "quote": "天行健，君子以自强不息",
+              "claim": "天行健，君子以自强不息"
+            }
+          ]
+        },
+        {
+          "text": "夬卦辞说“告自邑，不利即戎，利有攸往”。用在今天中午，就是先就近、先问出餐时间，不要在两家之间来回跑或跟人争抢座位；哪家能让你更快坐下吃完，就利有攸往。",
+          "citations": [
+            {
+              "evidenceId": "zy-43-judgment",
+              "quote": "告自邑，不利即戎，利有攸往",
+              "claim": "告自邑，不利即戎，利有攸往"
+            }
+          ]
+        },
+        {
+          "text": "我的建议：如果鸡肉饭是快餐盒饭、到店即取，且你下午需要撑到较晚，选鸡肉饭；如果面店人少、现煮也快，或者你想吃热汤、胃更舒服，选番茄鸡蛋面。若两家距离和排队差不多，优先选出餐最快的那家；点单后专心吃，别边吃边刷手机。卦象只提供决策视角，真正决定因素是你实际看到的出餐速度、排队长度、肠胃情况和下午安排。",
+          "citations": []
+        }
+      ],
+      "limitations": []
+    },
+    "errors": [],
+    "evidence": [
+      {
+        "id": "zy-43-judgment",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "judgment",
+        "line": null,
+        "text": "扬于王庭，孚号有厉；告自邑，不利即戎，利有攸往。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "夬·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "扬于王庭，孚号有厉；告自邑，不利即戎，利有攸往。"
+      },
+      {
+        "id": "zy-43-tuan",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "tuan",
+        "line": null,
+        "text": "夬，决也，刚决柔也；健而说，决而和。“扬于王庭”，柔乘五刚也；“孚号有厉”，其危乃光也；“告自邑，不利即戎”，所尚乃穷也；“利有攸往”，刚长乃终也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "夬·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "夬，决也，刚决柔也；健而说，决而和。“扬于王庭”，柔乘五刚也；“孚号有厉”，其危乃光也；“告自邑，不利即戎”，所尚乃穷也；“利有攸往”，刚长乃终也。"
+      },
+      {
+        "id": "zy-43-xiang",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "xiang",
+        "line": null,
+        "text": "泽上于天，夬。君子以施禄及下，居德则忌。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "夬·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "泽上于天，夬。君子以施禄及下，居德则忌。"
+      },
+      {
+        "id": "zy-43-line-6",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "line",
+        "line": 6,
+        "text": "无号，终有凶。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "夬·上六",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:line:6"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "无号，终有凶。"
+      },
+      {
+        "id": "zy-43-line_xiang-6",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "line_xiang",
+        "line": 6,
+        "text": "“无号”之“凶”，终不可长也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "夬·上六小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:line_xiang:6"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“无号”之“凶”，终不可长也。"
+      },
+      {
+        "id": "zy-1-judgment",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "judgment",
+        "line": null,
+        "text": "元亨利贞。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "乾·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:01:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "元亨利贞。"
+      },
+      {
+        "id": "zy-1-xiang",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "xiang",
+        "line": null,
+        "text": "天行健，君子以自强不息。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "乾·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:01:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "天行健，君子以自强不息。"
+      }
+    ],
+    "finalEvidenceIds": [
+      "zy-43-judgment",
+      "zy-43-tuan",
+      "zy-43-xiang",
+      "zy-43-line-6",
+      "zy-43-line_xiang-6",
+      "zy-1-judgment",
+      "zy-1-xiang"
+    ],
+    "trace": [
+      {
+        "step": "retrieve",
+        "status": "ok",
+        "channel": "fixed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "code": "explanation_followup",
+        "evidenceIds": [
+          "zy-43-judgment",
+          "zy-43-tuan",
+          "zy-43-xiang",
+          "zy-43-line-6",
+          "zy-43-line_xiang-6",
+          "zy-1-judgment",
+          "zy-1-xiang"
+        ],
+        "truncated": false,
+        "droppedEvidenceIds": []
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 29990,
+        "promptTokens": 891,
+        "completionTokens": 6416,
+        "totalTokens": 7307
+      },
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "repairs": 0,
+    "toolAttempts": 0,
+    "sameCast": true,
+    "durationMs": 30019,
+    "toolCounts": {
+      "ok": 0,
+      "empty": 0,
+      "rejected": 0,
+      "budgetCounted": 0
+    },
+    "auto": {
+      "calls": 1,
+      "reportedTokens": 7307,
+      "unknownUsage": 0,
+      "promptTokens": 891,
+      "completionTokens": 6416,
+      "reasoningTokens": 5786,
+      "toolRequests": 0
+    }
+  },
+  {
+    "caseId": "dev-project-correction",
+    "arm": "final-high",
+    "config": "flash-high",
+    "stage": "final",
+    "initialEvidenceIds": [
+      "zy-1-judgment",
+      "zy-1-tuan",
+      "zy-1-xiang",
+      "zy-1-line-2",
+      "zy-1-line_xiang-2",
+      "zy-13-judgment",
+      "zy-13-xiang",
+      "wang-bi@2676007:h1:line2:156a776063",
+      "cheng-yi@1313743:h1:line2:1ac147277e",
+      "zhu-xi@528287:h1:line2:9c12de10ea"
+    ],
+    "inputHash": "c6331266a92184efcb9f96f9f83f9d3778b2ef766e3668b0e325e1065f895fc9",
+    "graphVersion": "python-graph-v12",
+    "status": "failed",
+    "error": "ModelError:MODEL_INCOMPLETE_RESPONSE",
+    "durationMs": 39938,
+    "toolCounts": {
+      "ok": 3,
+      "empty": 0,
+      "rejected": 0,
+      "budgetCounted": 3
+    },
+    "auto": {
+      "calls": 2,
+      "reportedTokens": 14774,
+      "unknownUsage": 0,
+      "promptTokens": 5867,
+      "completionTokens": 8907,
+      "reasoningTokens": 8591,
+      "toolRequests": 3
+    }
+  },
+  {
+    "caseId": "dev-exact-gap",
+    "arm": "final-high",
+    "config": "flash-high",
+    "stage": "final",
+    "initialEvidenceIds": [
+      "zy-29-judgment",
+      "zy-29-tuan",
+      "zy-29-xiang",
+      "wang-bi@2404949:h29:line2:75b15f7dc9",
+      "zhu-xi@528287:h29:line2:9d356a7715"
+    ],
+    "inputHash": "3f917fa9b112f5e58a905e4b840d32f90c9bace562ba1914f3d289be2244eaa0",
+    "graphVersion": "python-graph-v12",
+    "status": "failed",
+    "error": "ModelError:MODEL_INCOMPLETE_RESPONSE",
+    "durationMs": 35862,
+    "toolCounts": {
+      "ok": 1,
+      "empty": 0,
+      "rejected": 0,
+      "budgetCounted": 1
+    },
+    "auto": {
+      "calls": 2,
+      "reportedTokens": 12273,
+      "unknownUsage": 0,
+      "promptTokens": 3860,
+      "completionTokens": 8413,
+      "reasoningTokens": 8292,
+      "toolRequests": 1
+    }
+  }
+]

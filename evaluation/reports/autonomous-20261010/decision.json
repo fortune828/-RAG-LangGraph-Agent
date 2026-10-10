@@ -1,0 +1,35 @@
+{
+  "frozenAt": "2026-10-10T08:31:43.212042+00:00",
+  "candidate": {
+    "graph": "python-graph-v11",
+    "prompt": "evidence-agent-python-v16",
+    "model": "deepseek-flash",
+    "thinking": "disabled",
+    "max_tokens": 4096,
+    "rag": "unchanged fixed classics plus selected source-backed commentary; existing scoped tools",
+    "agent": "compact router evidence/provenance projection; stop routing after explicit scoped targets satisfied"
+  },
+  "baseline": {
+    "commit": "b4c73d4",
+    "graph": "python-graph-v10",
+    "prompt": "evidence-agent-python-v16",
+    "model": "deepseek-flash",
+    "thinking": "enabled",
+    "reasoning_effort": "high",
+    "max_tokens": 8192
+  },
+  "reason": [
+    "Flash off reduces latency/tokens in two same-input batches. No claim of best semantic scores.",
+    "Flash low has better subjective understanding on four screening cases but similar grounding defects and much higher generation cost/latency.",
+    "Pro off/low show no consistent knowledge/restraint gain; low has one mechanical failure.",
+    "RAG provides traceable sources but does not resolve forced analogies. Keep retrieval unchanged rather than expanding it.",
+    "Router compression/explicit-target termination reduces overhead; permissions and final validation unchanged."
+  ],
+  "heldoutHash": "d5693980b70ebf4142389d571e94a51f5cd18cc63ac61e41219682fe2f01cf01",
+  "codeHashes": {
+    "backend/graph.py": "ef8ffde59796963c4779692dcba78c6070aad0e6708136fa1e9dde5378565e0d",
+    "backend/prompts.py": "4a4740e548773e8c011cbaee3e21a53196142bf11640669302d16c3478119207",
+    "backend/knowledge.py": "e157a22c1cce8827b8e345b5e2725aeeafa1d7c438b861cc0f37a2fa6cf8a6af"
+  },
+  "rules": "Freeze before root opens holdout inputs/results; no tuning on this set. Production config may be wired to this frozen choice afterwards. Small AI-authored holdout, not expert benchmark."
+}

@@ -99,47 +99,60 @@ def asserted_names(text, catalog):
     return result
 
 
-def validate_answer(value, evidence, targets=(), require_citations=True):
+def validate_answer(value, evidence, targets=(), require_citations=True, *, issues=None):
     try:
         answer = Answer.model_validate(value).model_dump()
     except ValidationError as exc:
+        if issues is not None:
+            issues.extend(dict(code=e['msg'], path=list(e['loc'])) for e in exc.errors(include_input=False, include_url=False)[:12])
         return None, [f"{'.'.join(map(str, e['loc']))}: {e['msg']}" for e in exc.errors(include_input=False, include_url=False)][:12]
     errors = []
+    def add(code, path=()):
+        errors.append(code)
+        if issues is not None:
+            issue = dict(code=code, path=list(path))
+            if code.startswith('AUTHOR_ATTRIBUTION_MISMATCH:'):
+                issue['message'] = '本段声称该作者的观点，但本段 citations 没有该作者的证据。将支持该观点的证据关联到本段，或更正无依据的归属。'
+            elif code.startswith('WORK_ATTRIBUTION_MISMATCH:'):
+                issue['message'] = '本段声称该作品的观点，但本段 citations 没有该作品的证据。将支持该观点的证据关联到本段，或更正无依据的归属。'
+            issues.append(issue)
+
     by_id = {e['id']: e for e in evidence}
     cited = {c['evidenceId'] for p in answer['paragraphs'] for c in p['citations']}
     if answer['status'] == 'answered':
         if not answer['paragraphs']:
-            errors.append('EMPTY_ANSWER_PARAGRAPHS')
+            add('EMPTY_ANSWER_PARAGRAPHS', ('paragraphs',))
         # Source/explanation answers need evidence somewhere in the answer.
         # Ordinary practical paragraphs may remain uncited. Whether a particular
         # interpretation is supported is a separate semantic review, not a regex.
         if require_citations and not cited:
-            errors.append('MISSING_ANSWER_CITATION')
+            add('MISSING_ANSWER_CITATION', ('paragraphs',))
         for t in targets:
             if not any(e['id'] in cited and matches_target(e, t) for e in evidence):
-                errors.append(f'REQUIRED_TARGET_NOT_CITED:{t}')
+                add(f'REQUIRED_TARGET_NOT_CITED:{t}', ('paragraphs',))
     for i, p in enumerate(answer['paragraphs']):
-        for c in p['citations']:
+        for j, c in enumerate(p['citations']):
+            path = ('paragraphs', i, 'citations', j)
             if c['claim'] not in p['text']:
-                errors.append('CLAIM_NOT_IN_PARAGRAPH:' + c['evidenceId'])
+                add('CLAIM_NOT_IN_PARAGRAPH:' + c['evidenceId'], path + ('claim',))
             e = by_id.get(c['evidenceId'])
             if not e:
-                errors.append('UNKNOWN_EVIDENCE:' + c['evidenceId'])
+                add('UNKNOWN_EVIDENCE:' + c['evidenceId'], path + ('evidenceId',))
             elif len(normalize(c['quote'])) < 2 or normalize(c['quote']) not in normalize(e['text']):
-                errors.append('QUOTE_MISMATCH:' + c['evidenceId'])
+                add('QUOTE_MISMATCH:' + c['evidenceId'], path + ('quote',))
             if e:
                 for author in asserted_names(c['claim'], AUTHORS):
                     if author not in e.get('authorIds', []):
-                        errors.append('CLAIM_AUTHOR_ATTRIBUTION_MISMATCH:' + author)
+                        add('CLAIM_AUTHOR_ATTRIBUTION_MISMATCH:' + author, path + ('claim',))
                 for work in asserted_names(c['claim'], WORKS):
                     if work != e.get('workId'):
-                        errors.append('CLAIM_WORK_ATTRIBUTION_MISMATCH:' + work)
+                        add('CLAIM_WORK_ATTRIBUTION_MISMATCH:' + work, path + ('claim',))
         for author in asserted_names(p['text'], AUTHORS):
             if not any(author in by_id.get(c['evidenceId'], {}).get('authorIds', []) for c in p['citations']):
-                errors.append('AUTHOR_ATTRIBUTION_MISMATCH:' + author)
+                add('AUTHOR_ATTRIBUTION_MISMATCH:' + author, ('paragraphs', i, 'citations'))
         for work in asserted_names(p['text'], WORKS):
             if not any(work == by_id.get(c['evidenceId'], {}).get('workId') for c in p['citations']):
-                errors.append('WORK_ATTRIBUTION_MISMATCH:' + work)
+                add('WORK_ATTRIBUTION_MISMATCH:' + work, ('paragraphs', i, 'citations'))
     return (None if errors else answer), list(dict.fromkeys(errors))
 
 

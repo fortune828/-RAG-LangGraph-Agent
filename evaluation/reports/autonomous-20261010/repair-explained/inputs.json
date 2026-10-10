@@ -1,0 +1,44 @@
+[
+  {
+    "caseId": "dev-exact-gap",
+    "session": {
+      "id": "session-dev-exact-gap",
+      "question": "我想了解本次坎卦的具体文义。",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          8,
+          8,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "010010",
+          "name": "坎为水",
+          "number": 29,
+          "judgment": "习坎，有孚，维心亨，行有尚。"
+        },
+        "changed": {
+          "binary": "010010",
+          "name": "坎为水",
+          "number": 29,
+          "judgment": "习坎，有孚，维心亨，行有尚。"
+        },
+        "originalBinary": "010010",
+        "changedBinary": "010010",
+        "changingIndices": [],
+        "id": "cast-dev-exact-gap",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "请查本卦九二的爻辞和小象，“求小得”是什么意思？",
+    "mode": "followup"
+  }
+]

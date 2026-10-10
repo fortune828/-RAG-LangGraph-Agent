@@ -1,0 +1,287 @@
+{
+  "reviewType": "独立 AI 主观盲评；不是人工评分或专家验收",
+  "dimensions": {
+    "understanding": "理解与承接",
+    "conversation": "自然交流与适度深度",
+    "helpfulness": "建议帮助",
+    "grounding": "文献支持与推断克制"
+  },
+  "scale": {
+    "0": "明显或关键缺陷",
+    "1": "部分达到，有实质不足",
+    "2": "达到，未见明显缺陷"
+  },
+  "counts": {
+    "total": 8,
+    "scored": 8,
+    "noAnswer": 0,
+    "recordedFailure": 1,
+    "mechanicalFailure": 1,
+    "technicalFailureWithoutAnswer": 0
+  },
+  "failureNote": "finalists-02 为 validation_failed，但有完整答案，正常评分。",
+  "results": [
+    {
+      "answerId": "finalists-01",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "回应了简历阶段价值与去留，但把未提供的“独自面对”和“困境正在缓解”纳入判断。",
+        "conversation": "两条路径清楚；从“支持未明”直接转到“谨慎收手”显得替用户过早定论。",
+        "helpfulness": "目标和资源检查有用，但缺少支持信息不等于缺少支持，据此倾向停止可能误导。",
+        "grounding": "爻辞不证明已经解除初步束缚、现实正在缓解或必须团队协作，关键结论无支持。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "当前困境正在缓解",
+          "reason": "用户只说当前有困境，没有趋势信息。"
+        },
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "当前你独自面对困境",
+          "reason": "材料没有团队或独自工作的事实。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "表明已解除初步束缚",
+          "reason": "所附爻辞没有此项目已完成何种解困的事实。"
+        }
+      ],
+      "uncertainties": [
+        "“解而拇”的训诂不裁定唯一正解；确定已有现实改善不能由材料支持。"
+      ]
+    },
+    {
+      "answerId": "finalists-02",
+      "evaluationStatus": "scored",
+      "sourceStatus": "validation_failed",
+      "mechanicalFailure": true,
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "明确改为一个月储蓄及房租，持续围绕现金、录用和在职求职。",
+        "conversation": "“整理思路可分三步”清晰平和，兼顾现职可忍受程度，没有指责用户心理。",
+        "helpfulness": "支出预算、录用确定、首薪和试用期衔接都直接可做，也保留现职能否坚持的现实因素。",
+        "grounding": "“自强不息”与积极准备的借用尚可；但静爻被确定说成当前局势无变化，属于重要越界。"
+      },
+      "flags": [
+        {
+          "category": "静爻推断现实稳定",
+          "quote": "无动爻，表示当前局势没有明显变化",
+          "reason": "爻的记录不能证明工作和收入局势不变。"
+        }
+      ],
+      "uncertainties": [
+        "validation_failed 未提供失败原因；语义按完整答案评分，不因机械失败降低四维。"
+      ]
+    },
+    {
+      "answerId": "finalists-03",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "准确抓住头发已长、今天有空，给出“没有冲突就去”的选择。",
+        "conversation": "“现实信息比卦更直接”自然；“理发是往有功轻量版”“属于常德行”把日常答复讲得过于经义化。",
+        "helpfulness": "确认营业、理发师是否在和避开排长队可执行，且保留临时安排例外。",
+        "grounding": "有现实优先的边界，未由静爻断现实稳定；但用“往有功”推出事情会办成、理发属于常德行仍缺文献支持。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "意味着按部就班地去做，事情会办成",
+          "reason": "引文不能保证此次理发能办成。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "像理发这样维持日常仪容的事，属于“常德行”的范畴",
+          "reason": "常德行被直接归成周期性外表打理，原文没有这项对应。"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "finalists-04",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "理解可以继续或收束，但添入用户有执念、过度承担和判断偏差等未提供前提。",
+        "conversation": "“更诚实的选择”“不能再以个人理由驱动”把项目取舍道德化，用户容易感到被评判。",
+        "helpfulness": "明确目标后行动、否则整理交付有方向；缺少增量价值、成本或里程碑的核对，反而要求先赦免自己。",
+        "grounding": "原文不支持脚趾必最先着地的说明、用户心理诊断，也不证明放下牵绊后帮助才会来。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "对项目中的失误、对自己的判断偏差，先赦免、先宽宥",
+          "reason": "用户未说自己有失误、判断偏差或需要自我宽宥。"
+        },
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "比如对“沉没成本”“简历已经够看”的执念，或是对团队、对承诺的过度承担",
+          "reason": "列举仍建立在“你身上有…牵绊”的确定诊断之上，未先核对。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "拇是脚拇指，是行走时最先着地、也最容易被牵绊的部分",
+          "reason": "所引爻辞没有关于步态或最容易牵绊的内容。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "更值得投入的“丈人”式理由",
+          "reason": "将“丈人”从人物称谓改写为公共价值或高尚动机的门槛，材料没有说明。"
+        }
+      ],
+      "uncertainties": [
+        "拇的经典指代与人体步态均未外部查证；这里不作专家判断，只确认引用不足以证明所述。"
+      ]
+    },
+    {
+      "answerId": "finalists-05",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "使用了头发已长及有空两个事实，并给出可以行动的答案。",
+        "conversation": "“只要心中有诚信”起笔对理发显得生硬；“结果应该不错”比用户需要的实际判断更武断。",
+        "helpfulness": "选择可靠理发师有用，但未核对营业或等候等当前可行性，以卦象直接支持出发。",
+        "grounding": "从诚信和往有功一路推出剪发结果不错，没有文献或现实根据，引用自身准确不能支撑该结果。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "可以根据卦象行动…结果应该不错",
+          "reason": "经典文字不能预测此次理发效果。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "君子以常德行，习教事…保持日常良好习惯",
+          "reason": "把德行与教事泛化为理发习惯，关系未经解释。"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "finalists-06",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "“收到你的更正”承接明确，并把一个月进一步转为需算几周的现金约束。",
+        "conversation": "支出底线和路径对比清楚，但“你现在缺的不是决心，而是阶段判断”在不了解用户判断过程时下诊断。",
+        "helpfulness": "实际支出、可动用支持、先拿录用与收入下限均实用，末尾也说明须依据现实条件。",
+        "grounding": "末尾说不能由材料断是否走，但开头从无动爻推出无转折信号，还用自强不息支持这一断言，前后边界不一致。"
+      },
+      "flags": [
+        {
+          "category": "静爻推断现实稳定",
+          "quote": "说明你问的这件事眼下没有明显的转折信号",
+          "reason": "现实是否有转折不能由无动爻确认。"
+        },
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "你现在缺的不是决心，而是阶段判断",
+          "reason": "用户只更正财务数字，未提供决心充足或判断不足的依据。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "天行健，君子以自强不息",
+          "reason": "引用的 claim 是本次无动爻及现实无转折信号，这段大象不能支持。"
+        }
+      ],
+      "uncertainties": [
+        "“元亨利贞”与四阶段的对应有领域歧义，不以个人记忆裁定其绝对错误。"
+      ]
+    },
+    {
+      "answerId": "finalists-07",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "直接把上一轮热汤面落实为阳春面，满足用户“具体吃什么”，没有假称用户已接受某种偏好。",
+        "conversation": "“清汤细面，撒点葱花”自然具体；没有训斥追问，也未编造复杂动机，深度适合日常选择。",
+        "helpfulness": "给出可直接点单的菜名及做法特征，已足够完成本轮；不因未列更多备选或营养分析而扣帮助分。",
+        "grounding": "“健而说，决而和”文字可核对，但“这种吃法…正合适”仍是答者联想，未明确与经文菜品支持区分。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "此处仅为轻度类比，未把阳春面写成必有某种吉凶或身体功效；不按严重牵强推断标记。"
+      ]
+    },
+    {
+      "answerId": "finalists-08",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "虽提上一轮，但重复热汤面后又扩大到面、饭、粉，没有真正缩小到具体菜名。",
+        "conversation": "“别把小事拖成消耗”“不必…反复纠结”让一次合理追问像需要纠正的拖延，交流感欠佳。",
+        "helpfulness": "就近选择和慢吃有少量实际帮助，却没有完成具体点单选择，第二段还扩大了选项。",
+        "grounding": "把刚决柔对应就近餐馆、不利即戎对应小事消耗、居德则忌对应喝热汤，多个关键引用均不支持。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "先喝口热汤、慢慢吃，比再刷菜单更有帮助",
+          "reason": "引用居德则忌并不能支持此饮食建议。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "如果饿过头或赶时间，更容易随便乱选或吃过量",
+          "reason": "以“孚号有厉”担保点餐及过量行为的因果，原文没有该信息。"
+        }
+      ],
+      "uncertainties": []
+    }
+  ]
+}

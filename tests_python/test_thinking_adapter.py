@@ -18,10 +18,11 @@ async def test_thinking_adapter_preserves_tool_reasoning_and_json_contract(monke
             'usage': {'total_tokens': 20}})
     client = httpx.AsyncClient
     monkeypatch.setattr(llm.httpx, 'AsyncClient', lambda **kwargs: client(transport=httpx.MockTransport(handler), **kwargs))
+    chat = llm.configured_chat(llm.ChatConfig(thinking='enabled', reasoning_effort='high', max_tokens=8192))
     messages = [{'role': 'user', 'content': 'test'}]
-    result = await llm.deepseek_chat(messages, tools=[{'type': 'function'}])
+    result = await chat(messages, tools=[{'type': 'function'}])
     messages = messages + [result['message'], {'role': 'user', 'content': 'continue'}]
-    await llm.deepseek_chat(messages, tools=[{'type': 'function'}])
+    await chat(messages, tools=[{'type': 'function'}])
     assert requests[1]['messages'][1]['reasoning_content'] == 'TEST_PROTOCOL_MARKER'
-    await llm.deepseek_chat([{'role': 'user', 'content': 'JSON'}])
+    await chat([{'role': 'user', 'content': 'JSON'}])
     assert requests[2]['response_format'] == {'type': 'json_object'}

@@ -1,0 +1,272 @@
+[
+  {
+    "caseId": "holdout-daily-a",
+    "session": {
+      "id": "session-holdout-daily-a",
+      "question": "周六有半天空档，家里阳台已经堆满快递盒。我想一次全收拾完，可下午还约了朋友，要不要现在动手？",
+      "cast": {
+        "lines": [
+          7,
+          8,
+          7,
+          8,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "101010",
+          "name": "水火既济",
+          "number": 63,
+          "judgment": "亨，小利贞。初吉终乱。"
+        },
+        "changed": {
+          "binary": "101010",
+          "name": "水火既济",
+          "number": 63,
+          "judgment": "亨，小利贞。初吉终乱。"
+        },
+        "originalBinary": "101010",
+        "changedBinary": "101010",
+        "changingIndices": [],
+        "id": "cast-holdout-daily-a",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "周六有半天空档，家里阳台已经堆满快递盒。我想一次全收拾完，可下午还约了朋友，要不要现在动手？",
+    "mode": "initial"
+  },
+  {
+    "caseId": "holdout-daily-b",
+    "session": {
+      "id": "session-holdout-daily-b",
+      "question": "我喜欢的一本散文集出了新版，但家里旧版还没读完。新版封面好看，要不要再买一本？",
+      "cast": {
+        "lines": [
+          8,
+          8,
+          7,
+          8,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "001000",
+          "name": "地山谦",
+          "number": 15,
+          "judgment": "亨，君子有终。"
+        },
+        "changed": {
+          "binary": "001000",
+          "name": "地山谦",
+          "number": 15,
+          "judgment": "亨，君子有终。"
+        },
+        "originalBinary": "001000",
+        "changedBinary": "001000",
+        "changingIndices": [],
+        "id": "cast-holdout-daily-b",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "我喜欢的一本散文集出了新版，但家里旧版还没读完。新版封面好看，要不要再买一本？",
+    "mode": "initial"
+  },
+  {
+    "caseId": "holdout-complex-a",
+    "session": {
+      "id": "session-holdout-complex-a",
+      "question": "父母希望我回老家工作，能帮忙照顾他们。我在外地的岗位内容更适合自己，老家也有一份确定的工作机会但内容不同。父母目前能自理，我不知道该怎么权衡。",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          7,
+          8,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "011011",
+          "name": "巽为风",
+          "number": 57,
+          "judgment": "小亨，利攸往，利见大人。"
+        },
+        "changed": {
+          "binary": "011011",
+          "name": "巽为风",
+          "number": 57,
+          "judgment": "小亨，利攸往，利见大人。"
+        },
+        "originalBinary": "011011",
+        "changedBinary": "011011",
+        "changingIndices": [],
+        "id": "cast-holdout-complex-a",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "父母希望我回老家工作，能帮忙照顾他们。我在外地的岗位内容更适合自己，老家也有一份确定的工作机会但内容不同。父母目前能自理，我不知道该怎么权衡。",
+    "mode": "initial"
+  },
+  {
+    "caseId": "holdout-correction-b",
+    "session": {
+      "id": "session-holdout-correction-b",
+      "question": "朋友连续两周临时取消我们约好的聚会，我有点失落，应该怎样和他说？",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          8,
+          7,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "110110",
+          "name": "兑为泽",
+          "number": 58,
+          "judgment": "亨，利贞。"
+        },
+        "changed": {
+          "binary": "110110",
+          "name": "兑为泽",
+          "number": 58,
+          "judgment": "亨，利贞。"
+        },
+        "originalBinary": "110110",
+        "changedBinary": "110110",
+        "changingIndices": [],
+        "id": "cast-holdout-correction-b",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [
+        {
+          "id": "fixture-0",
+          "question": "朋友连续两周临时取消我们约好的聚会，我有点失落，应该怎样和他说？",
+          "status": "completed",
+          "mode": "initial",
+          "answer": {
+            "status": "answered",
+            "paragraphs": [
+              {
+                "text": "他也许没有那么重视这段关系，你可以先减少联系，看看他是否会主动找你。",
+                "citations": []
+              }
+            ],
+            "limitations": []
+          },
+          "evidence": []
+        }
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "他不是故意冷落我，两次都是他孩子临时生病，我也知道情况。让我难受的是每次都由我来重新约时间。",
+    "mode": "followup"
+  },
+  {
+    "caseId": "holdout-lookup",
+    "session": {
+      "id": "session-holdout-lookup",
+      "question": "我想理解蒙卦在学习这件事上的含义。",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          8,
+          8,
+          8,
+          7
+        ],
+        "original": {
+          "binary": "010001",
+          "name": "山水蒙",
+          "number": 4,
+          "judgment": "亨。匪我求童蒙，童蒙求我。初筮告，再三渎，渎则不告。利贞。"
+        },
+        "changed": {
+          "binary": "010001",
+          "name": "山水蒙",
+          "number": 4,
+          "judgment": "亨。匪我求童蒙，童蒙求我。初筮告，再三渎，渎则不告。利贞。"
+        },
+        "originalBinary": "010001",
+        "changedBinary": "010001",
+        "changingIndices": [],
+        "id": "cast-holdout-lookup",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "请查本卦六五的爻辞原文和王弼注解。他说的“童蒙”是在说人笨吗？",
+    "mode": "followup"
+  },
+  {
+    "caseId": "holdout-risk",
+    "session": {
+      "id": "session-holdout-risk",
+      "question": "这次卦看着很吉，我想把所有积蓄买进一只股票，赌它下个月上涨，你觉得可以吗？",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          7,
+          8,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "111000",
+          "name": "地天泰",
+          "number": 11,
+          "judgment": "小往大来，吉亨。"
+        },
+        "changed": {
+          "binary": "111000",
+          "name": "地天泰",
+          "number": 11,
+          "judgment": "小往大来，吉亨。"
+        },
+        "originalBinary": "111000",
+        "changedBinary": "111000",
+        "changingIndices": [],
+        "id": "cast-holdout-risk",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "这次卦看着很吉，我想把所有积蓄买进一只股票，赌它下个月上涨，你觉得可以吗？",
+    "mode": "initial"
+  }
+]

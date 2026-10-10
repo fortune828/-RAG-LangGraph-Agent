@@ -1,0 +1,494 @@
+{
+  "reviewType": "独立 AI 主观盲评；不是人工评分或专家验收",
+  "materialsRead": [
+    "materials.json",
+    "rubric.md"
+  ],
+  "scope": "仅核对提供的匿名问题、历史、卦象、答案与文献；未读取源码、配置、旧评测或解盲键。",
+  "dimensions": {
+    "understanding": "理解与承接",
+    "conversation": "自然交流与适度深度",
+    "helpfulness": "建议帮助",
+    "grounding": "文献支持与推断克制"
+  },
+  "scale": {
+    "0": "该维度有明显或关键缺陷",
+    "1": "部分达到，有实质不足",
+    "2": "达到，未见足以降低该维度的明显缺陷"
+  },
+  "counts": {
+    "total": 16,
+    "scored": 16,
+    "noAnswer": 0,
+    "technicalFailure": 0,
+    "mechanicalFailure": 0
+  },
+  "results": [
+    {
+      "answerId": "screening-01",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "直接回应“现在去”，沿用头发已长、今天有空的条件，没有漏掉时间抉择。",
+        "conversation": "“倾向可以去”清楚，但把日常理发讲成“诚信常规”“常德行”，对小问题显得说教。",
+        "helpfulness": "“先电话或小程序确认营业与排队”“约好时间再去”能直接帮助行动。",
+        "grounding": "“行险而不失其信”不提供排队或天气预测；又从无动爻推出“事态没有明显变坏或变好的推动”，超出材料。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "理发本身是日常“常德行”",
+          "reason": "把持续的德行直接等同理发的日常性，未解释关联。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "但路上、店里可能有小波折",
+          "reason": "所引“行险而不失其信”不支持具体店铺或交通波折的预测。"
+        },
+        {
+          "category": "静爻推断现实稳定",
+          "quote": "事态没有明显变坏或变好的推动",
+          "reason": "无动爻只能说明本次卦的记录，不能给出现实态势结论。"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "screening-02",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 1,
+        "conversation": 0,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "承接上一轮汤面且补了配菜，但把用户要求具体菜品当作需要停止犹豫和求助。",
+        "conversation": "“更不要再反复呼喊求助”“这次不要再纠结”对正常追问带责备，破坏自然交流。",
+        "helpfulness": "清汤、青菜、蛋或瘦肉有一定可执行性；以凶辞催促执行，降低建议帮助。",
+        "grounding": "“施禄及下”推到脾胃舒服、“利有攸往”推到饮食轻快、“无号”推到不要求助，均无随附原文支持。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "落实到午饭上，就是选一种能让脾胃舒服、吃完不胀不累的汤食",
+          "reason": "社会施予之意不能直接推出汤食的身体效果。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "更不要再反复呼喊求助",
+          "reason": "“无号，终有凶”未说明向助手追问菜品是不当行为。"
+        }
+      ],
+      "uncertainties": [
+        "“无号”的完整训诂未提供，未裁定其唯一正确解释；这里只判断原文未支持该午饭训诫。"
+      ]
+    },
+    {
+      "answerId": "screening-03",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "准确更新为一个月储蓄、需付房租，并保留历史中的“没有录用通知”。",
+        "conversation": "“先把数字改成现实版本”衔接明确，但“只能承受”“承受不起”在缺少详细账目时口气过满。",
+        "helpfulness": "在职面试、核对录用及首薪和试用期条件均有帮助，可直接用来整理换工作顺序。",
+        "grounding": "用“自强不息”提醒准备尚可；“无动爻”被外推成现实节奏没有转折，削弱克制。"
+      },
+      "flags": [
+        {
+          "category": "静爻推断现实稳定",
+          "quote": "节奏尚未出现明确转折的状态",
+          "reason": "这项现实状态没有用户事实支持，仅由无动爻带出。"
+        }
+      ],
+      "uncertainties": [
+        "“元亨利贞”四字可否解释成依次决策步骤存在学理歧义；答案说“借”，故未按确定误释另行扣分。"
+      ]
+    },
+    {
+      "answerId": "screening-04",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "补出牛肉面、番茄鸡蛋面等，但“你已经接受的那碗热汤面”并非历史事实，用户只问了具体吃什么。",
+        "conversation": "菜品段落自然，“具体钉死”“不必再纠结第三样”略显管束，且引经展开压过简单追问。",
+        "helpfulness": "汤面及米饭替代、荤素搭配、过敏或不耐受时替换，都有现实可用性。",
+        "grounding": "末尾明确菜品不是经文直接断言是优点；仍把“居德则忌”释成使人悬而未决，材料不支持。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "从你已经接受的那碗热汤面出发",
+          "reason": "上一轮是助手建议，没有用户接受或倾向吃面的表态。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "把人困在悬而未决的状态",
+          "reason": "“君子以施禄及下，居德则忌”未提供这层意思。"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "screening-05",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "优先重设一个月储蓄和房租前提，后续规则也围绕现金和录用条件展开。",
+        "conversation": "“列出…每月必须支出”清楚，但每个现金决策都追加一段经典引申，使交流显得讲章化。",
+        "helpfulness": "计算能撑几周、核对发薪日、区分书面录用/意向/必须离开的三种情况，能实际组织决策。",
+        "grounding": "多用“可引申”且提醒按现实判断，保留一定边界；“首出庶物”到抓主要矛盾的桥接仍很牵强。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "“首出庶物，万国咸宁”，可引申为先抓住主要矛盾",
+          "reason": "已标引申而非直译，但原文与现金流问题的对应关系没有说明。"
+        }
+      ],
+      "uncertainties": [
+        "“此前按三个月缓冲做的判断要作废”略夸大历史：历史只要求核对，并未给出具体辞职判断；不视为严重捏造。"
+      ]
+    },
+    {
+      "answerId": "screening-06",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "抓住继续是否还有可验证目标，同时承认“简历够写可以是止损理由”，贴合真实取舍。",
+        "conversation": "“仅凭当前信息，我不能替你断定”保持合作语气，解释为继续或收束两条路，深度与项目决策匹配。",
+        "helpfulness": "给出目标、伙伴资源、角色、成果归档和交接等检查点，继续和停止都有可做的事。",
+        "grounding": "大部分引文可在材料中找到；从“未当位”诊断用户推进方式不恰当，仍超过原文所能确定的现实信息。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "这提示你当前继续推进的位置或方式可能并不恰当",
+          "reason": "虽用“可能”，仍以爻位评语替代对实际项目问题的了解。"
+        }
+      ],
+      "uncertainties": [
+        "“解而拇”具体对象在材料中未有注释；不裁定牵累解释的学术正误。"
+      ]
+    },
+    {
+      "answerId": "screening-07",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 1,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "明确承接更正后的一个月与房租，重心转向现金缓冲。",
+        "conversation": "“持续行动、争取机会，但不等于…冒进”表达平和，解释与在职求职建议连接顺畅。",
+        "helpfulness": "在职面试和控制开支可用；“录用通知或三至六个月储蓄”作为通用门槛，未进一步算房租及首薪衔接。",
+        "grounding": "引文真实，但把“元亨利贞”断定为一个先后过程，把“保合太和”直接等同自身稳定，缺少随附注释支持。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "四德的训释及“保合太和”是否支持上述解释属于领域歧义；评为部分支持，不认定已证实学术错误。"
+      ]
+    },
+    {
+      "answerId": "screening-08",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "围绕当前能否理发，并准确指出无动爻不必挑一爻断吉凶。",
+        "conversation": "“不必把小事放大”亲切，但从“天险、地险”绕回营业和价格，让简单交流显得过度论证。",
+        "helpfulness": "确认营业、排队、价格和发型沟通，均是恰当具体的安排。",
+        "grounding": "没有由静爻断现实稳定；“行险而不失其信”被直接转成问价格与发型，出处与建议的区别不够清楚。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "用到这件事上，就是提前问清价格、时间，和理发师把发型沟通清楚",
+          "reason": "建议本身合理，但不是该引文特有或直接支持的含义。"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "screening-09",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 1,
+        "conversation": 0,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "给出具体面食并承接上轮，却把一次具体追问说成“反复占问”“越问越细”会耽误饭点。",
+        "conversation": "“你越问越细，反而容易错过饭点”“不要临时再改”带训斥和无根据的催促。",
+        "helpfulness": "菜名及蛋、青菜可用；不让改主意、用凶辞催促，削弱选择帮助。",
+        "grounding": "“无号，终有凶”不能支持追问导致饿过头，“自强不息”也不推出饭前不能改主意。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "午饭不是需要反复占问的大事",
+          "reason": "所给历史只是普通提问和追问，没有反复占问记录。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "你越问越细，反而容易错过饭点",
+          "reason": "爻辞不支持这条针对用户行为的现实因果。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "选好后按点去吃，不要临时再改",
+          "reason": "以“自强不息”担保一顿饭的不可更改，关联薄弱。"
+        }
+      ],
+      "uncertainties": [
+        "未对“无号”的正统训释作专家裁定。"
+      ]
+    },
+    {
+      "answerId": "screening-10",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "明确说菜名不能由卦直接得出，并以“如果顺着上一轮”承接汤面，没有假定用户已接受。",
+        "conversation": "具体菜单友好，但“别一直喊‘吃啥好’却不定”把正常追问变成责备，冲淡了交流感。",
+        "helpfulness": "“番茄鸡蛋面，加一份烫青菜”和替代米饭套餐可直接执行，也考虑等待时间。",
+        "grounding": "开头有边界，但中段仍把“无号”确指拖延、饿过头、只剩难吃选择；关键解释无文献支持。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "放到午饭上，就是别一直喊“吃啥好”却不定",
+          "reason": "所附爻辞没有关于点餐追问或饭点风险的含义。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "拖到太晚、饿过头或只剩难吃的选择",
+          "reason": "把凶辞转为菜单后果，虽未断定会发生，仍缺少解释依据。"
+        }
+      ],
+      "uncertainties": [
+        "“无号”训诂存在领域问题；此处仅确认提供文本不足以支持午饭结论。"
+      ]
+    },
+    {
+      "answerId": "screening-11",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "“先按你的更正来”准确更新数字，重点转为收入衔接与基本支出，回应原始“整理思路”。",
+        "conversation": "用“在什么条件下才能安全地走”组织思考，解释有推进而不是反复催促；语气虽略严肃但合乎情境。",
+        "helpfulness": "现金流表、录用和首薪衔接、底薪与浮动收入、在职准备及每周复盘，构成实用决策路径。",
+        "grounding": "引文可核对，现实建议用“在求职语境里”“对应到”标明转化，并明确不是未来保证、需依合同账目判断。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "“当前结构尚未发生爻变”可指卦的结构，也可能被读为现实未变；因明确写“爻变”并有边界，不标为已出现静爻推断现实稳定。",
+        "“现在约一个月”未先确认用户的一个月储蓄是否已含房租；实际预算仍需按其提供的公式算。",
+        "不裁定四德与“各正性命”的学术解释唯一性；这里只评其明确作为借用和是否伪装现实证据。"
+      ]
+    },
+    {
+      "answerId": "screening-12",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "涉及继续和收束，但把“够写简历”解释成“不再强求完美收尾”，用户未表明这种心理。",
+        "conversation": "“当前…确有解救之机”及定位、人事问题连续下判断，容易给人被套用卦象诊断的感受。",
+        "helpfulness": "“有更有价值成果则继续，否则止损”有一定方向；缺少如何验证增量价值，且建议依赖未证实的人际牵连。",
+        "grounding": "引文存在，但从中确认解救时机、亲近者牵连、用户位置不当均越过材料，未标出现实信息不足。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "似乎已把项目当作一种阶段性成果，不再强求完美收尾",
+          "reason": "“似乎”有所缓和，但完美收尾的心理主题仍无用户依据。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "当前项目困境确有解救之机",
+          "reason": "卦的文字不能确认此项目现实中有解决机会。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "要解开与亲近者（如同事、合作者）之间如拇指般的牵连",
+          "reason": "材料无项目关系事实，也无这种具体对象的注释。"
+        }
+      ],
+      "uncertainties": [
+        "“拇”的具体象征对象与“丈人”的训释有领域歧义；不据个人常识断言唯一正确解释。"
+      ]
+    },
+    {
+      "answerId": "screening-13",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "把问题聚焦“是否值得”有帮助，但声称用户“只解开履历可展示部分”并非用户已提供事实。",
+        "conversation": "“这恰好对应”制造过于精准的洞察；后面的执行问题与方向问题之分较自然、容易理解。",
+        "helpfulness": "区分执行障碍与方向失效，并安排协作或归档成果，能帮助下一步判断。",
+        "grounding": "“拇”被释成只解最外层、未触根本，原文无此层次关系；再把它当作项目诊断，构成关键无依据推断。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "你解开的只是履历上可展示的那部分",
+          "reason": "问题没有交代解决了项目哪一部分，回答增添具体事实。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "解而拇意味着解除时只解开了最外层的牵扯，还没触及根本",
+          "reason": "提供的爻辞和小象没有最外层/根本的解释。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "这恰好对应你说的“够写简历了”",
+          "reason": "把脚趾/外层套到履历展示与项目根本，既无文本说明，也无项目事实。"
+        }
+      ],
+      "uncertainties": [
+        "“拇”的准确训释不在盲评材料内；扣分针对所给材料不支持，而非宣称掌握权威训诂。"
+      ]
+    },
+    {
+      "answerId": "screening-14",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "直接承接“头发已长、今天有空”，给出有条件可去的明确回答。",
+        "conversation": "“低风险…日常事务”与“不必赋予过多趋避意义”减轻紧张，但“诚信、恒常练习”仍显得过于郑重。",
+        "helpfulness": "时间状态、天气、排队、熟悉理发店均切合现实，足以辅助这个小决定。",
+        "grounding": "经典文字基本可核对；从“六爻皆静”推出“当前处境…非变动”，以及理发符合常德行，推断边界不够清楚。"
+      },
+      "flags": [
+        {
+          "category": "静爻推断现实稳定",
+          "quote": "六爻皆静、无动爻，表示当前处境重在应对而非变动",
+          "reason": "把卦结构直接描述为现实处境与行动性质，虽较缓和，仍属外推。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "今天前往是符合“常德行”的稳妥选择",
+          "reason": "恒常德行并不直接支持何日理发。"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "screening-15",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "理解日常小事且最后给出可去，但重心转到“心里是否笃定”，比用户明确给出的需求和时间更主观。",
+        "conversation": "“卦象给得并不轻巧”先增加分量，随后多次解释不必迟疑，交流显得费力。",
+        "helpfulness": "最后要求确认营业、预约和天气有用；前面又说“不必因为…天气、排队…就卡住”，实际筛选条件前后不够一致。",
+        "grounding": "limitations 中明说“无动爻，说明事情本身没有明显变数”，是未经支持的现实稳定判断；理发与常德行的对应也牵强。"
+      },
+      "flags": [
+        {
+          "category": "静爻推断现实稳定",
+          "quote": "无动爻，说明事情本身没有明显变数",
+          "reason": "句子在 limitations 中仍是确定的现实断言，后面的自主决定说明不能抵消。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "正合“常德行、习教事”的节奏",
+          "reason": "把周期性的理发直接等同道德实践和教事，原文未说明这种关系。"
+        }
+      ],
+      "uncertainties": []
+    },
+    {
+      "answerId": "screening-16",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "围绕是否有明确目标、已有简历价值是否足以停止，回应项目取舍。",
+        "conversation": "“先做一次分辨”有合作感，但“继续推进的‘吉’就不成立”把复杂判断讲成带绝对条件的卦象裁决。",
+        "helpfulness": "明确目标、可信支持、时限里程碑与成果沉淀，形成可操作的继续/收束条件。",
+        "grounding": "从变师确定项目将由个人转组织，并认为无此支持就不吉，经典材料不能支撑这种现实预测。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "事情会从个人项目转向组织、团队与资源调度",
+          "reason": "用户未说现在是个人项目，亦未提供必将转团队的信息。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "若你无法获得这样的支持结构，继续推进的“吉”就不成立",
+          "reason": "原文不能判定这个项目继续的必要现实条件或结果。"
+        }
+      ],
+      "uncertainties": [
+        "“九四提示…角色不恰当”已用“可能”，仍应作为待核对假说；不将此条件句单独算作已虚构事实。"
+      ]
+    }
+  ]
+}

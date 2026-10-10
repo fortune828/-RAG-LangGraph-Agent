@@ -1,0 +1,61 @@
+{
+  "observedAt": "2026-10-10T08:19:08.494063+00:00",
+  "request": {
+    "model": "deepseek-v4-pro",
+    "max_tokens": 1024,
+    "thinking": {
+      "type": "enabled"
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": "Return only a JSON object with the answer."
+      },
+      {
+        "role": "user",
+        "content": "What is 17 plus 28? Use the field answer."
+      }
+    ],
+    "response_format": {
+      "type": "json_object"
+    },
+    "reasoning_effort": "low"
+  },
+  "httpStatus": 200,
+  "response": {
+    "id": "15065ffc-a2fc-4182-88d9-452e68e418d6",
+    "object": "chat.completion",
+    "created": 1791620348,
+    "model": "deepseek-v4-pro",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"answer\": 45}",
+          "reasoningContentMetadata": {
+            "characters": 239,
+            "sha256": "64ae65c673280c54352c72a5477ba503fcfba9c6da83eed50f5f98b26ef4cd81"
+          }
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 46,
+      "completion_tokens": 75,
+      "total_tokens": 121,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 68
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 46
+    },
+    "system_fingerprint": "a307abda487cd1b463329ccb945ce396"
+  },
+  "latencyMs": 2412
+}

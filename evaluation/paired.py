@@ -68,13 +68,16 @@ class Recorder:
 class RecordedChat:
     def __init__(self, budget, recorder):
         self.budget, self.recorder = budget, recorder
-        self.sequence = 0
+
+    @property
+    def repair_chat(self):
+        budget = self.budget.repair_chat
+        return self if budget is self.budget else RecordedChat(budget, self.recorder)
 
     async def __call__(self, messages, tools=None):
-        self.sequence += 1
-        call_id = self.sequence
+        call_id = 1 + sum(e['kind'] == 'model_request' for e in self.recorder.events)
         stage = 'route' if tools else 'repair' if len(messages) > 2 else 'generate'
-        payload = request_payload(messages, tools)
+        payload = self.budget.request_payload(messages, tools)
         self.recorder(dict(kind='model_request', callId=call_id, stage=stage,
                            payload=payload, payloadSha256=sha(payload)))
         started, before = time.monotonic(), self.budget.calls

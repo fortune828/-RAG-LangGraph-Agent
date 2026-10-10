@@ -1,0 +1,15 @@
+{
+  "decidedAt": "2026-10-10T08:41:20.866122+00:00",
+  "action": "Reject off-default candidate; retain baseline generation configuration and graph v11 router optimization",
+  "configuration": {
+    "model": "deepseek-flash",
+    "thinking": "enabled",
+    "reasoning_effort": "high",
+    "max_tokens": 8192,
+    "graphVersion": "python-graph-v11",
+    "promptVersion": "evidence-agent-python-v16"
+  },
+  "basis": "AI blind review of 4 holdout life-dialogue pairs: candidate conversation1.0/grounding0.5 vs baseline1.5/0.75; understanding/help both1.75. Small sample cannot prove inferiority, but lacks evidence to replace quality default with off. No prompt/RAG retuning on holdout.",
+  "limits": "Budget initially90 main calls; extend at most6 calls to verify final high+v11 combination on existing development inputs. Original90-call experiments and failures unchanged. Capability probes4 are separate.",
+  "quality": "Conservative release choice, not demonstrated globally optimal or human approved. Main semantic issues persist."
+}

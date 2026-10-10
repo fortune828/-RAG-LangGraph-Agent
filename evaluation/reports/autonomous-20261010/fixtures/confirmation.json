@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "split": "configuration_confirmation",
+  "createdAt": "2026-10-10",
+  "knowledgeRelease": "knowledge-v3-20260926-r1",
+  "evidenceSha256": "4154d8c69d0fdf0e6eca3ff570f1c8a092528a6011099533b88f3863bf36ebd4",
+  "annotationOrigin": "AI proposed, not expert or human gold",
+  "caseCount": 4,
+  "independentGroupCount": 4,
+  "fieldsAllowedInModelInput": [
+    "question",
+    "currentQuestion",
+    "mode",
+    "lineValues",
+    "history"
+  ],
+  "labelHandling": "expectedEvidenceGroups, retrievalNecessity, reviewPoints and initialEvidenceAudit are evaluation labels; never include them in model messages or rule-policy inputs.",
+  "cases": [
+    {
+      "caseId": "confirmation-daily",
+      "groupId": "confirmation-daily",
+      "question": "同事邀请我周五参加羽毛球活动。我水平很差，但其实想去，又怕拖累别人，要不要答应？",
+      "currentQuestion": "同事邀请我周五参加羽毛球活动。我水平很差，但其实想去，又怕拖累别人，要不要答应？",
+      "mode": "initial",
+      "lineValues": [
+        8,
+        8,
+        8,
+        8,
+        7,
+        8
+      ],
+      "history": [],
+      "category": "daily_small",
+      "expectedEvidenceGroups": [
+        [
+          "zy-8-judgment",
+          "zy-8-tuan",
+          "zy-8-xiang"
+        ]
+      ],
+      "retrievalNecessity": "unnecessary",
+      "reviewPoints": [
+        "同时理解想参与和水平较差的顾虑，不把技艺水平推成同事嫌弃。",
+        "比卦可提供相亲相辅的视角，但不能保证活动气氛或他人反应。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI proposed, not expert or human gold",
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v12",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 8,
+        "changedHexagram": 8,
+        "intent": "explanation_followup",
+        "allowedHexagramIds": [
+          8
+        ],
+        "initialEvidenceIds": [
+          "zy-8-judgment",
+          "zy-8-tuan",
+          "zy-8-xiang"
+        ],
+        "requiredTargets": [],
+        "retrievableMissingTargets": [],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [
+          true
+        ],
+        "droppedEvidenceIds": []
+      }
+    },
+    {
+      "caseId": "confirmation-complex",
+      "groupId": "confirmation-complex",
+      "question": "我和伴侣本来想办小婚礼，双方父母提出加到二十桌，费用他们愿意出，但希望流程听他们安排。我们担心婚礼失去自己的意思，又不想让父母难堪，怎么商量？",
+      "currentQuestion": "我和伴侣本来想办小婚礼，双方父母提出加到二十桌，费用他们愿意出，但希望流程听他们安排。我们担心婚礼失去自己的意思，又不想让父母难堪，怎么商量？",
+      "mode": "initial",
+      "lineValues": [
+        7,
+        7,
+        8,
+        7,
+        8,
+        7
+      ],
+      "history": [],
+      "category": "complex_tradeoff",
+      "expectedEvidenceGroups": [
+        [
+          "zy-38-judgment",
+          "zy-38-tuan",
+          "zy-38-xiang"
+        ]
+      ],
+      "retrievalNecessity": "unnecessary",
+      "reviewPoints": [
+        "讨论费用支持、流程决定权、双方意愿及父母感受的具体取舍。",
+        "不能将父母愿意出钱直接判定为操控动机，或把卦象差异说成感情必然破裂。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI proposed, not expert or human gold",
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v12",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 38,
+        "changedHexagram": 38,
+        "intent": "explanation_followup",
+        "allowedHexagramIds": [
+          38
+        ],
+        "initialEvidenceIds": [
+          "zy-38-judgment",
+          "zy-38-tuan",
+          "zy-38-xiang"
+        ],
+        "requiredTargets": [],
+        "retrievableMissingTargets": [],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [
+          true
+        ],
+        "droppedEvidenceIds": []
+      }
+    },
+    {
+      "caseId": "confirmation-correction",
+      "groupId": "confirmation-correction",
+      "question": "搭档连续两次晚交小组作业中他负责的部分，最后都要我赶着合并。怎么跟他谈这件事？",
+      "currentQuestion": "我刚核对了记录，两次都是我把基础数据给晚了，他后面其实一直在赶。我之前只注意到最后交稿的时间。现在怎么开口比较好？",
+      "mode": "followup",
+      "lineValues": [
+        8,
+        7,
+        7,
+        7,
+        8,
+        8
+      ],
+      "history": [
+        {
+          "user": "搭档连续两次晚交小组作业中他负责的部分，最后都要我赶着合并。怎么跟他谈这件事？",
+          "assistant": "他可能习惯了让你兜底。你可以明确告诉他，下次再晚交就由他自己承担后果。"
+        }
+      ],
+      "category": "same_topic_correction",
+      "expectedEvidenceGroups": [],
+      "retrievalNecessity": "unnecessary",
+      "reviewPoints": [
+        "接受用户发现的上游延迟事实，修正之前对搭档习惯甩责的无据推测。",
+        "帮助用户说明核对结果和调整协作安排，不继续重复追责搭档的旧建议。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI proposed, not expert or human gold",
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v12",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 32,
+        "changedHexagram": 32,
+        "intent": "situation_followup",
+        "allowedHexagramIds": [
+          32
+        ],
+        "initialEvidenceIds": [
+          "zy-32-judgment",
+          "zy-32-xiang",
+          "zy-32-tuan"
+        ],
+        "requiredTargets": [],
+        "retrievableMissingTargets": [],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [],
+        "droppedEvidenceIds": []
+      }
+    },
+    {
+      "caseId": "confirmation-source",
+      "groupId": "confirmation-source",
+      "question": "我想了解本次恒卦初六的含义。",
+      "currentQuestion": "请给出本卦初六的爻辞原文和王弼注解，“浚恒”是越早坚持得越深越好吗？",
+      "mode": "followup",
+      "lineValues": [
+        8,
+        7,
+        7,
+        7,
+        8,
+        8
+      ],
+      "history": [],
+      "category": "exact_evidence_gap",
+      "expectedEvidenceGroups": [
+        [
+          "zy-32-line-1"
+        ],
+        [
+          "wang-bi@2404960:h32:line1:138a4adbf2"
+        ]
+      ],
+      "retrievalNecessity": "required",
+      "reviewPoints": [
+        "两项指定材料在当前发布集存在；非动爻原文需要补齐。",
+        "王弼注的始求深、渐以至此语意不能反转为越早强求深度越好。"
+      ],
+      "inputOrigin": "synthetic_authored_fixture",
+      "historyOrigin": "authored_user_assistant_fixture_not_model_run",
+      "annotationOrigin": "AI proposed, not expert or human gold",
+      "initialEvidenceAudit": {
+        "graphVersion": "python-graph-v12",
+        "promptVersion": "evidence-agent-python-v16",
+        "originalHexagram": 32,
+        "changedHexagram": 32,
+        "intent": "source_request",
+        "allowedHexagramIds": [
+          32
+        ],
+        "initialEvidenceIds": [
+          "zy-32-judgment",
+          "zy-32-xiang",
+          "zy-32-tuan",
+          "cheng-yi@1313743:h32:line1:0091fef850",
+          "zhu-xi@737053:h32:line1:100d54403f",
+          "wang-bi@2404960:h32:line5:5cdd8ebbb7"
+        ],
+        "requiredTargets": [
+          {
+            "hexagramId": 32,
+            "section": "line",
+            "line": 1,
+            "layer": "classic"
+          },
+          {
+            "hexagramId": 32,
+            "section": "line",
+            "line": 1,
+            "layer": "commentary",
+            "authorId": "wang-bi"
+          }
+        ],
+        "retrievableMissingTargets": [
+          {
+            "hexagramId": 32,
+            "section": "line",
+            "line": 1,
+            "layer": "classic"
+          },
+          {
+            "hexagramId": 32,
+            "section": "line",
+            "line": 1,
+            "layer": "commentary",
+            "authorId": "wang-bi"
+          }
+        ],
+        "unavailableTargets": [],
+        "unresolvedBooks": [],
+        "expectedGroupsPresent": [
+          false,
+          false
+        ],
+        "droppedEvidenceIds": []
+      }
+    }
+  ]
+}

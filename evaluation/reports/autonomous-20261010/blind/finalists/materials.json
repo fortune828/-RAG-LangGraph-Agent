@@ -1,0 +1,2167 @@
+[
+  {
+    "answerId": "finalists-01",
+    "coreQuestion": "面对当前项目的困境，我要不要继续推进？毕竟达到现在的地步，也已经够简历书写了",
+    "question": "面对当前项目的困境，我要不要继续推进？毕竟达到现在的地步，也已经够简历书写了",
+    "cast": {
+      "lines": [
+        8,
+        7,
+        8,
+        9,
+        8,
+        8
+      ],
+      "original": {
+        "binary": "010100",
+        "name": "雷水解",
+        "number": 40,
+        "judgment": "利西南，无所往，其来复吉。有攸往，夙吉。"
+      },
+      "changed": {
+        "binary": "010000",
+        "name": "地水师",
+        "number": 7,
+        "judgment": "贞，丈人，吉无咎。"
+      },
+      "originalBinary": "010100",
+      "changedBinary": "010000",
+      "changingIndices": [
+        3
+      ],
+      "id": "fixed-project",
+      "method": "three-coins",
+      "algorithmVersion": "development-fixed-coins",
+      "readingPolicyVersion": "all-moving-lines-v1",
+      "coins": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "history": [],
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "从解卦整体看，当前困境正在缓解，但动爻九四阳居阴位，小象直言“未当位也”，提示继续推进可能并非最佳位置或时机。九四爻辞“解而拇，朋至斯孚”表明已解除初步束缚，但需得到同伴支持才能建立信任。这意味着若继续推进，必须依赖团队协作，而当前你独自面对困境，支持是否足够尚不明确。",
+          "citations": [
+            {
+              "evidenceId": "zy-40-line-4",
+              "quote": "解而拇，朋至斯孚。",
+              "claim": "九四爻辞“解而拇，朋至斯孚”表明已解除初步束缚，但需得到同伴支持才能建立信任。"
+            },
+            {
+              "evidenceId": "zy-40-line_xiang-4",
+              "quote": "“解而拇”，未当位也。",
+              "claim": "动爻九四阳居阴位，小象直言“未当位也”，提示继续推进可能并非最佳位置或时机。"
+            }
+          ]
+        },
+        {
+          "text": "解卦卦辞“利西南，无所往，其来复吉。有攸往，夙吉”提供了两条路径：若无明确前路，返回或停止是吉的；若有所前往，则宜及早行动。你提到“已经够简历书写了”，说明阶段成果已达成，若继续推进缺乏清晰目标或资源，选择停止符合“其来复吉”，彖传释为“乃得中也”，即回到中道，避免勉强。",
+          "citations": [
+            {
+              "evidenceId": "zy-40-judgment",
+              "quote": "利西南。无所往，其来复吉。有攸往，夙吉。",
+              "claim": "解卦卦辞“利西南，无所往，其来复吉。有攸往，夙吉”提供了两条路径：若无明确前路，返回或停止是吉的；若有所前往，则宜及早行动。"
+            },
+            {
+              "evidenceId": "zy-40-tuan",
+              "quote": "“其来复吉”，乃得中也。",
+              "claim": "选择停止符合“其来复吉”，彖传释为“乃得中也”，即回到中道，避免勉强。"
+            }
+          ]
+        },
+        {
+          "text": "变卦地水师强调团队与纪律，卦辞“贞，丈人吉，无咎”要求守正并由有威望者主导方可无过。若你决定继续推进，需确认项目是否有明确方向、能否迅速行动，并需具备领导力或找到合适的牵头人，否则容易陷入勉强。",
+          "citations": [
+            {
+              "evidenceId": "zy-7-judgment",
+              "quote": "贞，丈人吉，无咎。",
+              "claim": "卦辞“贞，丈人吉，无咎”要求守正并由有威望者主导方可无过。"
+            }
+          ]
+        },
+        {
+          "text": "综合来看，当前卦象更倾向于谨慎收手：动爻不当位、团队支持未明、已有成果可写入简历，停止是得中的选择。若你仍想推进，务必评估是否有清晰目标、团队支持和迅速行动的条件，否则宜就此打住。",
+          "citations": []
+        }
+      ],
+      "limitations": []
+    },
+    "evidence": [
+      {
+        "id": "zy-40-judgment",
+        "hexagramId": 40,
+        "name": "解",
+        "section": "judgment",
+        "line": null,
+        "text": "利西南。无所往，其来复吉。有攸往，夙吉。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "解·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:40:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "利西南。无所往，其来复吉。有攸往，夙吉。"
+      },
+      {
+        "id": "zy-40-tuan",
+        "hexagramId": 40,
+        "name": "解",
+        "section": "tuan",
+        "line": null,
+        "text": "解，险以动，动而免乎险，解。“解，利西南”，往得众也；“其来复吉”，乃得中也；“有攸往，夙吉”，往有功也。天地解而雷雨作，雷雨作而百果草木皆甲坼。解之时义大矣哉！",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "解·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:40:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "解，险以动，动而免乎险，解。“解，利西南”，往得众也；“其来复吉”，乃得中也；“有攸往，夙吉”，往有功也。天地解而雷雨作，雷雨作而百果草木皆甲坼。解之时义大矣哉！"
+      },
+      {
+        "id": "zy-40-xiang",
+        "hexagramId": 40,
+        "name": "解",
+        "section": "xiang",
+        "line": null,
+        "text": "雷雨作，解。君子以赦过宥罪。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "解·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:40:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "雷雨作，解。君子以赦过宥罪。"
+      },
+      {
+        "id": "zy-40-line-4",
+        "hexagramId": 40,
+        "name": "解",
+        "section": "line",
+        "line": 4,
+        "text": "解而拇，朋至斯孚。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "解·九四",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:40:line:4"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "解而拇，朋至斯孚。"
+      },
+      {
+        "id": "zy-40-line_xiang-4",
+        "hexagramId": 40,
+        "name": "解",
+        "section": "line_xiang",
+        "line": 4,
+        "text": "“解而拇”，未当位也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "解·九四小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:40:line_xiang:4"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“解而拇”，未当位也。"
+      },
+      {
+        "id": "zy-7-judgment",
+        "hexagramId": 7,
+        "name": "师",
+        "section": "judgment",
+        "line": null,
+        "text": "贞，丈人吉，无咎。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "师·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:07:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "贞，丈人吉，无咎。"
+      },
+      {
+        "id": "zy-7-xiang",
+        "hexagramId": 7,
+        "name": "师",
+        "section": "xiang",
+        "line": null,
+        "text": "地中有水，师。君子以容民畜众。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "师·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:07:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "地中有水，师。君子以容民畜众。"
+      }
+    ],
+    "error": null
+  },
+  {
+    "answerId": "finalists-02",
+    "coreQuestion": "我在考虑换工作，但担心收入不稳定，怎样整理思路？",
+    "question": "纠正一下：刚才算错了，我只有一个月的储蓄，不是三个月，而且还要付房租。",
+    "cast": {
+      "lines": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "original": {
+        "binary": "111111",
+        "name": "乾为天",
+        "number": 1,
+        "judgment": "元，亨，利，贞。"
+      },
+      "changed": {
+        "binary": "111111",
+        "name": "乾为天",
+        "number": 1,
+        "judgment": "元，亨，利，贞。"
+      },
+      "originalBinary": "111111",
+      "changedBinary": "111111",
+      "changingIndices": [],
+      "id": "fixed-life",
+      "method": "three-coins",
+      "algorithmVersion": "development-fixed-coins",
+      "readingPolicyVersion": "all-moving-lines-v1",
+      "coins": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "history": [
+      {
+        "id": "fixed-work-history",
+        "status": "completed",
+        "question": "我有三个月的积蓄，目前没有拿到新公司的录用通知。",
+        "evidence": [],
+        "answer": {
+          "status": "answered",
+          "summary": "先核对储蓄与录用条件。",
+          "paragraphs": [
+            {
+              "kind": "reflection",
+              "text": "这两个条件会影响可承受的空档。",
+              "citations": []
+            }
+          ],
+          "limitations": []
+        }
+      }
+    ],
+    "status": "validation_failed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "你只有一个月储蓄且还要付房租，财务缓冲极短，换工作面临较大风险。乾卦六爻皆阳但无动爻，表示当前局势没有明显变化，不宜轻举妄动。乾卦辞说“元亨利贞”，其中“利贞”二字提醒在开创时也要守正、稳固。当前宜先保住现有收入，确保房租和基本生活无忧。",
+          "citations": [
+            {
+              "evidenceId": "zy-1-judgment",
+              "quote": "元亨利贞。",
+              "claim": "利贞二字提醒在开创时也要守正、稳固"
+            }
+          ]
+        },
+        {
+          "text": "整理思路可分三步：第一，确认新工作是否已有明确录用通知和收入保障，没有则继续寻找并骑驴找马；第二，详细列出每月固定支出，看现有储蓄能覆盖多久，并尽可能缩减非必要开支；第三，评估现有工作的可忍受程度，若还能坚持，最好等到新工作完全确定后再离职。乾卦大象传讲“天行健，君子以自强不息”，鼓励积极行动，但行动必须建立在现实稳固的基础上。彖传更指出“乾道变化，各正性命，保合太和，乃利贞”，在变动中要先安顿好自己的位置，保持收支平衡，才能顺利过渡。",
+          "citations": [
+            {
+              "evidenceId": "zy-1-xiang",
+              "quote": "天行健，君子以自强不息。",
+              "claim": "天行健，君子以自强不息"
+            },
+            {
+              "evidenceId": "zy-1-tuan",
+              "quote": "乾道变化，各正性命，保合太和，乃利贞。",
+              "claim": "乾道变化，各正性命，保合太和，乃利贞"
+            }
+          ]
+        },
+        {
+          "text": "综合来看，一个月储蓄加上房租压力，意味着你几乎没有空档期可以支撑。乾卦虽主刚健进取，但“利贞”强调适宜守正，不宜冒险。建议暂时不要辞职，利用业余时间投递简历、参加面试，同时可以寻找临时兼职或其他收入来源增加缓冲。等新工作的薪资发放节奏和试用期条件都确认无误后，再平稳切换。",
+          "citations": [
+            {
+              "evidenceId": "zy-1-judgment",
+              "quote": "元亨利贞。",
+              "claim": "利贞强调适宜守正，不宜冒险"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "evidence": [
+      {
+        "id": "zy-1-judgment",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "judgment",
+        "line": null,
+        "text": "元亨利贞。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "乾·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:01:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "元亨利贞。"
+      },
+      {
+        "id": "zy-1-tuan",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "tuan",
+        "line": null,
+        "text": "大哉乾元，万物资始，乃统天。云行雨施，品物流形。大明终始，六位时成，时乘六龙以御天。乾道变化，各正性命，保合太和，乃利贞。首出庶物，万国咸宁。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "乾·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:01:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "大哉乾元，万物资始，乃统天。云行雨施，品物流形。大明终始，六位时成，时乘六龙以御天。乾道变化，各正性命，保合太和，乃利贞。首出庶物，万国咸宁。"
+      },
+      {
+        "id": "zy-1-xiang",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "xiang",
+        "line": null,
+        "text": "天行健，君子以自强不息。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "乾·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:01:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "天行健，君子以自强不息。"
+      }
+    ],
+    "error": null
+  },
+  {
+    "answerId": "finalists-03",
+    "coreQuestion": "头发已经长了，今天有空，要不要现在去理发？",
+    "question": "头发已经长了，今天有空，要不要现在去理发？",
+    "cast": {
+      "lines": [
+        8,
+        7,
+        8,
+        8,
+        7,
+        8
+      ],
+      "original": {
+        "binary": "010010",
+        "name": "坎为水",
+        "number": 29,
+        "judgment": "习坎，有孚，维心亨，行有尚。"
+      },
+      "changed": {
+        "binary": "010010",
+        "name": "坎为水",
+        "number": 29,
+        "judgment": "习坎，有孚，维心亨，行有尚。"
+      },
+      "originalBinary": "010010",
+      "changedBinary": "010010",
+      "changingIndices": [],
+      "id": "fixed-haircut-kan",
+      "method": "three-coins",
+      "algorithmVersion": "development-fixed-coins",
+      "readingPolicyVersion": "all-moving-lines-v1",
+      "coins": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "history": [],
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "今天要不要去理发，从卦象看并不是一个“有险要避”的局面。坎为水，重险之象，但你问的是日常琐事，这一卦更像在提示：把该做的事按常规做完，不必把它当成多大的决断。卦辞说“有孚，维心亨。行有尚”——心里笃定，行动就有可取之处。",
+          "citations": [
+            {
+              "evidenceId": "zy-29-judgment",
+              "quote": "有孚，维心亨。行有尚。",
+              "claim": "卦辞说“有孚，维心亨。行有尚”——心里笃定，行动就有可取之处。"
+            }
+          ]
+        },
+        {
+          "text": "从条件上说，你“今天有空”，头发也确实长了，这两条已经足够支持去一趟。彖传解释“行有尚”为“往有功也”，意味着按部就班地去做，事情会办成；理发不是涉大险，是“往有功”的轻量版。所以若没有临时插进来的要紧事，现在去是顺的。",
+          "citations": [
+            {
+              "evidenceId": "zy-29-tuan",
+              "quote": "“行有尚”，往有功也。",
+              "claim": "彖传解释“行有尚”为“往有功也”，意味着按部就班地去做，事情会办成"
+            }
+          ]
+        },
+        {
+          "text": "大象传讲“君子以常德行，习教事”，放在这里可以理解为：像理发这样维持日常仪容的事，属于“常德行”的范畴，定期打理本身就是一种稳定的习惯。你既然已经觉得长了，去把它处理掉，比拖着更符合这一卦“习”的意思——反复、常规地做。",
+          "citations": [
+            {
+              "evidenceId": "zy-29-xiang",
+              "quote": "君子以常德行，习教事。",
+              "claim": "像理发这样维持日常仪容的事，属于“常德行”的范畴，定期打理本身就是一种稳定的习惯"
+            }
+          ]
+        },
+        {
+          "text": "具体建议：如果今天没有别的冲突安排，直接去比较好；选个不用排长队的时间段，避免把一件小事拖成等待中的烦躁。唯一需要说明的是，卦象只能作为一种观察角度，理发店是否开门、你常去的师傅在不在，这些现实信息比卦更直接，出门前确认一下即可。",
+          "citations": []
+        }
+      ],
+      "limitations": []
+    },
+    "evidence": [
+      {
+        "id": "zy-29-judgment",
+        "hexagramId": 29,
+        "name": "习坎",
+        "section": "judgment",
+        "line": null,
+        "text": "有孚，维心亨。行有尚。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "习坎·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:29:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "有孚，维心亨。行有尚。"
+      },
+      {
+        "id": "zy-29-tuan",
+        "hexagramId": 29,
+        "name": "习坎",
+        "section": "tuan",
+        "line": null,
+        "text": "“习坎”，重险也。水流而不盈，行险而不失其信。“维心亨”，乃以刚中也。“行有尚”，往有功也。天险，不可升也。地险，山川丘陵也。王公设险，以守其国。险之时用大矣哉！",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "习坎·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:29:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“习坎”，重险也。水流而不盈，行险而不失其信。“维心亨”，乃以刚中也。“行有尚”，往有功也。天险，不可升也。地险，山川丘陵也。王公设险，以守其国。险之时用大矣哉！"
+      },
+      {
+        "id": "zy-29-xiang",
+        "hexagramId": 29,
+        "name": "习坎",
+        "section": "xiang",
+        "line": null,
+        "text": "水洊至，习坎。君子以常德行，习教事。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "习坎·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:29:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "水洊至，习坎。君子以常德行，习教事。"
+      }
+    ],
+    "error": null
+  },
+  {
+    "answerId": "finalists-04",
+    "coreQuestion": "面对当前项目的困境，我要不要继续推进？毕竟达到现在的地步，也已经够简历书写了",
+    "question": "面对当前项目的困境，我要不要继续推进？毕竟达到现在的地步，也已经够简历书写了",
+    "cast": {
+      "lines": [
+        8,
+        7,
+        8,
+        9,
+        8,
+        8
+      ],
+      "original": {
+        "binary": "010100",
+        "name": "雷水解",
+        "number": 40,
+        "judgment": "利西南，无所往，其来复吉。有攸往，夙吉。"
+      },
+      "changed": {
+        "binary": "010000",
+        "name": "地水师",
+        "number": 7,
+        "judgment": "贞，丈人，吉无咎。"
+      },
+      "originalBinary": "010100",
+      "changedBinary": "010000",
+      "changingIndices": [
+        3
+      ],
+      "id": "fixed-project",
+      "method": "three-coins",
+      "algorithmVersion": "development-fixed-coins",
+      "readingPolicyVersion": "all-moving-lines-v1",
+      "coins": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "history": [],
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "你问的是要不要继续推进——但卦辞给出的第一层提示，恰好是先把“往”和“复”分清。“利西南。无所往，其来复吉。有攸往，夙吉。”如果你现在并没有一个必须去争取的新目标，那么退回来、把已有成果收拢好，反而是吉的；如果确实有值得去做的方向，那就要尽早行动。放在你的处境里，这叫：不是“推不推进”二选一，而是先判断有没有明确的“攸往”。",
+          "citations": [
+            {
+              "evidenceId": "zy-40-judgment",
+              "quote": "利西南。无所往，其来复吉。有攸往，夙吉。",
+              "claim": "如果你现在并没有一个必须去争取的新目标，那么退回来、把已有成果收拢好，反而是吉的；如果确实有值得去做的方向，那就要尽早行动。"
+            }
+          ]
+        },
+        {
+          "text": "彖传把“解”的机制讲得很清楚：“解，险以动，动而免乎险，解。”这个项目之所以让你为难，正因为它在“险”里；而免于险的方式是“动”，不是原地耗着。“其来复吉，乃得中也”——回来之所以吉，是因为回到中道、回到自己能承受的位置；“有攸往，夙吉，往有功也”——若继续，则早决断、早行动才有功。所以关键不在坚持或放弃本身，而在于你选的那条路是否让你脱离当前的险。",
+          "citations": [
+            {
+              "evidenceId": "zy-40-tuan",
+              "quote": "解，险以动，动而免乎险，解。",
+              "claim": "这个项目之所以让你为难，正因为它在“险”里；而免于险的方式是“动”，不是原地耗着。"
+            },
+            {
+              "evidenceId": "zy-40-tuan",
+              "quote": "其来复吉，乃得中也",
+              "claim": "回来之所以吉，是因为回到中道、回到自己能承受的位置"
+            },
+            {
+              "evidenceId": "zy-40-tuan",
+              "quote": "有攸往，夙吉，往有功也",
+              "claim": "若继续，则早决断、早行动才有功"
+            }
+          ]
+        },
+        {
+          "text": "动爻在九四：“解而拇，朋至斯孚。”拇是脚拇指，是行走时最先着地、也最容易被牵绊的部分。小象说“解而拇，未当位也”——这一爻本身位置就不太稳当，意味着你身上有一部分牵绊需要先解除，比如对“沉没成本”“简历已经够看”的执念，或是对团队、对承诺的过度承担。把这些理顺之后，“朋至斯孚”——真正能帮你的力量才会来，信任也才立得住。",
+          "citations": [
+            {
+              "evidenceId": "zy-40-line-4",
+              "quote": "解而拇，朋至斯孚。",
+              "claim": "拇是脚拇指，是行走时最先着地、也最容易被牵绊的部分"
+            },
+            {
+              "evidenceId": "zy-40-line_xiang-4",
+              "quote": "“解而拇”，未当位也。",
+              "claim": "这一爻本身位置就不太稳当，意味着你身上有一部分牵绊需要先解除"
+            }
+          ]
+        },
+        {
+          "text": "大象又说：“雷雨作，解。君子以赦过宥罪。”雷雨交作之后，郁结被打开。这一句落在你身上，是提醒你对项目中的失误、对自己的判断偏差，先赦免、先宽宥，再决定下一步。带着罪责感继续推进，往往不是“有攸往”，而是在重复“险以动”。",
+          "citations": [
+            {
+              "evidenceId": "zy-40-xiang",
+              "quote": "雷雨作，解。君子以赦过宥罪。",
+              "claim": "这一句落在你身上，是提醒你对项目中的失误、对自己的判断偏差，先赦免、先宽宥，再决定下一步。"
+            }
+          ]
+        },
+        {
+          "text": "变卦为师。师卦卦辞说“贞，丈人吉，无咎”——师出要有名、要有德望之人统领，才吉而无咎。大象说“地中有水，师。君子以容民畜众”。这暗示：如果你决定继续，就不能再以“简历够用”这种个人理由驱动，而要有一个更值得投入的“丈人”式理由——清晰的目标、能带队的人，或者项目本身值得被完成的公共价值；否则，继续就容易变成勉强聚众、耗而无功。",
+          "citations": [
+            {
+              "evidenceId": "zy-7-judgment",
+              "quote": "贞，丈人吉，无咎。",
+              "claim": "师出要有名、要有德望之人统领，才吉而无咎"
+            },
+            {
+              "evidenceId": "zy-7-xiang",
+              "quote": "地中有水，师。君子以容民畜众。",
+              "claim": "如果你决定继续，就不能再以“简历够用”这种个人理由驱动，而要有一个更值得投入的“丈人”式理由"
+            }
+          ]
+        },
+        {
+          "text": "所以，你此刻真正要回答的不是“够不够简历”，而是：这个项目里是否还存在一个你愿意为之“夙吉”而去争取的明确目标？如果有，就解掉牵绊、尽早动，且以师卦的“贞”与“丈人”来检验动机；如果没有，那么“其来复吉”是更诚实的选择——把已完成的部分整理成可交付的成果，退回来，同样不亏。",
+          "citations": []
+        }
+      ],
+      "limitations": []
+    },
+    "evidence": [
+      {
+        "id": "zy-40-judgment",
+        "hexagramId": 40,
+        "name": "解",
+        "section": "judgment",
+        "line": null,
+        "text": "利西南。无所往，其来复吉。有攸往，夙吉。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "解·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:40:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "利西南。无所往，其来复吉。有攸往，夙吉。"
+      },
+      {
+        "id": "zy-40-tuan",
+        "hexagramId": 40,
+        "name": "解",
+        "section": "tuan",
+        "line": null,
+        "text": "解，险以动，动而免乎险，解。“解，利西南”，往得众也；“其来复吉”，乃得中也；“有攸往，夙吉”，往有功也。天地解而雷雨作，雷雨作而百果草木皆甲坼。解之时义大矣哉！",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "解·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:40:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "解，险以动，动而免乎险，解。“解，利西南”，往得众也；“其来复吉”，乃得中也；“有攸往，夙吉”，往有功也。天地解而雷雨作，雷雨作而百果草木皆甲坼。解之时义大矣哉！"
+      },
+      {
+        "id": "zy-40-xiang",
+        "hexagramId": 40,
+        "name": "解",
+        "section": "xiang",
+        "line": null,
+        "text": "雷雨作，解。君子以赦过宥罪。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "解·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:40:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "雷雨作，解。君子以赦过宥罪。"
+      },
+      {
+        "id": "zy-40-line-4",
+        "hexagramId": 40,
+        "name": "解",
+        "section": "line",
+        "line": 4,
+        "text": "解而拇，朋至斯孚。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "解·九四",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:40:line:4"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "解而拇，朋至斯孚。"
+      },
+      {
+        "id": "zy-40-line_xiang-4",
+        "hexagramId": 40,
+        "name": "解",
+        "section": "line_xiang",
+        "line": 4,
+        "text": "“解而拇”，未当位也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "解·九四小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:40:line_xiang:4"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“解而拇”，未当位也。"
+      },
+      {
+        "id": "zy-7-judgment",
+        "hexagramId": 7,
+        "name": "师",
+        "section": "judgment",
+        "line": null,
+        "text": "贞，丈人吉，无咎。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "师·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:07:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "贞，丈人吉，无咎。"
+      },
+      {
+        "id": "zy-7-xiang",
+        "hexagramId": 7,
+        "name": "师",
+        "section": "xiang",
+        "line": null,
+        "text": "地中有水，师。君子以容民畜众。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "师·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:07:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "地中有水，师。君子以容民畜众。"
+      }
+    ],
+    "error": null
+  },
+  {
+    "answerId": "finalists-05",
+    "coreQuestion": "头发已经长了，今天有空，要不要现在去理发？",
+    "question": "头发已经长了，今天有空，要不要现在去理发？",
+    "cast": {
+      "lines": [
+        8,
+        7,
+        8,
+        8,
+        7,
+        8
+      ],
+      "original": {
+        "binary": "010010",
+        "name": "坎为水",
+        "number": 29,
+        "judgment": "习坎，有孚，维心亨，行有尚。"
+      },
+      "changed": {
+        "binary": "010010",
+        "name": "坎为水",
+        "number": 29,
+        "judgment": "习坎，有孚，维心亨，行有尚。"
+      },
+      "originalBinary": "010010",
+      "changedBinary": "010010",
+      "changingIndices": [],
+      "id": "fixed-haircut-kan",
+      "method": "three-coins",
+      "algorithmVersion": "development-fixed-coins",
+      "readingPolicyVersion": "all-moving-lines-v1",
+      "coins": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "history": [],
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "根据坎卦卦辞“有孚，维心亨。行有尚。”，只要心中有诚信，内心亨通，行动就会有收获。彖传进一步说“行有尚，往有功也。”，说明前往是有功效的。象传则提示“君子以常德行，习教事。”，保持日常良好习惯。针对理发，头发已长，今天有空，可以根据卦象行动，保持平常心，选择可靠理发师，结果应该不错。",
+          "citations": [
+            {
+              "evidenceId": "zy-29-judgment",
+              "quote": "有孚，维心亨。行有尚。",
+              "claim": "有孚，维心亨。行有尚。"
+            },
+            {
+              "evidenceId": "zy-29-tuan",
+              "quote": "行有尚，往有功也。",
+              "claim": "行有尚，往有功也。"
+            },
+            {
+              "evidenceId": "zy-29-xiang",
+              "quote": "君子以常德行，习教事。",
+              "claim": "君子以常德行，习教事。"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "evidence": [
+      {
+        "id": "zy-29-judgment",
+        "hexagramId": 29,
+        "name": "习坎",
+        "section": "judgment",
+        "line": null,
+        "text": "有孚，维心亨。行有尚。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "习坎·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:29:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "有孚，维心亨。行有尚。"
+      },
+      {
+        "id": "zy-29-tuan",
+        "hexagramId": 29,
+        "name": "习坎",
+        "section": "tuan",
+        "line": null,
+        "text": "“习坎”，重险也。水流而不盈，行险而不失其信。“维心亨”，乃以刚中也。“行有尚”，往有功也。天险，不可升也。地险，山川丘陵也。王公设险，以守其国。险之时用大矣哉！",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "习坎·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:29:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“习坎”，重险也。水流而不盈，行险而不失其信。“维心亨”，乃以刚中也。“行有尚”，往有功也。天险，不可升也。地险，山川丘陵也。王公设险，以守其国。险之时用大矣哉！"
+      },
+      {
+        "id": "zy-29-xiang",
+        "hexagramId": 29,
+        "name": "习坎",
+        "section": "xiang",
+        "line": null,
+        "text": "水洊至，习坎。君子以常德行，习教事。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "习坎·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:29:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "水洊至，习坎。君子以常德行，习教事。"
+      }
+    ],
+    "error": null
+  },
+  {
+    "answerId": "finalists-06",
+    "coreQuestion": "我在考虑换工作，但担心收入不稳定，怎样整理思路？",
+    "question": "纠正一下：刚才算错了，我只有一个月的储蓄，不是三个月，而且还要付房租。",
+    "cast": {
+      "lines": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        7
+      ],
+      "original": {
+        "binary": "111111",
+        "name": "乾为天",
+        "number": 1,
+        "judgment": "元，亨，利，贞。"
+      },
+      "changed": {
+        "binary": "111111",
+        "name": "乾为天",
+        "number": 1,
+        "judgment": "元，亨，利，贞。"
+      },
+      "originalBinary": "111111",
+      "changedBinary": "111111",
+      "changingIndices": [],
+      "id": "fixed-life",
+      "method": "three-coins",
+      "algorithmVersion": "development-fixed-coins",
+      "readingPolicyVersion": "all-moving-lines-v1",
+      "coins": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "history": [
+      {
+        "id": "fixed-work-history",
+        "status": "completed",
+        "question": "我有三个月的积蓄，目前没有拿到新公司的录用通知。",
+        "evidence": [],
+        "answer": {
+          "status": "answered",
+          "summary": "先核对储蓄与录用条件。",
+          "paragraphs": [
+            {
+              "kind": "reflection",
+              "text": "这两个条件会影响可承受的空档。",
+              "citations": []
+            }
+          ],
+          "limitations": []
+        }
+      }
+    ],
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "收到你的更正：现在是只有一个月储蓄，且这笔钱还要付房租。这个条件比“三个月”要紧得多，它直接改变了你换工作时的时间缓冲。乾卦六爻皆少阳、无动爻，变卦仍为乾为天，说明你问的这件事眼下没有明显的转折信号，重点不在于“何时会变”，而在于你怎样主动安排。",
+          "citations": [
+            {
+              "evidenceId": "zy-1-xiang",
+              "quote": "天行健，君子以自强不息。",
+              "claim": "乾卦六爻皆少阳、无动爻，变卦仍为乾为天，说明你问的这件事眼下没有明显的转折信号，重点不在于“何时会变”，而在于你怎样主动安排。"
+            }
+          ]
+        },
+        {
+          "text": "乾卦卦辞讲“元亨利贞”，彖传展开为“云行雨施，品物流形”“大明终始，六位时成”，强调的是一件事要经历起始、展开、成形、守正的过程，各阶段有各自的位次和条件。放到你这里：换工作不是单靠一个念头就能完成，收入稳定与否取决于你在哪个阶段动手、手上有没有可支撑的条件。你现在缺的不是决心，而是阶段判断。",
+          "citations": [
+            {
+              "evidenceId": "zy-1-judgment",
+              "quote": "元亨利贞。",
+              "claim": "乾卦卦辞讲“元亨利贞”，彖传展开为“云行雨施，品物流形”“大明终始，六位时成”，强调的是一件事要经历起始、展开、成形、守正的过程，各阶段有各自的位次和条件。"
+            },
+            {
+              "evidenceId": "zy-1-tuan",
+              "quote": "大明终始，六位时成",
+              "claim": "放到你这里：换工作不是单靠一个念头就能完成，收入稳定与否取决于你在哪个阶段动手、手上有没有可支撑的条件。你现在缺的不是决心，而是阶段判断。"
+            }
+          ]
+        },
+        {
+          "text": "结合你一轮储蓄加房租的现实，可以先做三件事：第一，把房租、吃饭、交通等固定支出算成一个月的“生存底线”，看这笔钱能撑几周，而不是笼统说“一个月”；第二，区分“先拿到录用通知再走”和“先离职再找”两条路，前者风险小但需要你持续投递，后者只有在你有其他可动用支持时才考虑；第三，把新工作的收入下限设成能覆盖生存底线并略有结余，低于这条线的不算稳妥选择。",
+          "citations": []
+        },
+        {
+          "text": "乾卦讲“自强不息”，在这个处境里不是让你硬扛，而是让你把力气用在可控的事上：先稳住现有收入，同时集中投递和面试，把选择权尽量握在自己手里。资料只提供了乾卦的卦辞、彖传和象传，没有针对“换工作”的具体吉凶判断，所以不能据此断言你该不该走；能确定的是，一个月储蓄加房租，容错空间很窄，任何行动都宜先保留退路。",
+          "citations": [
+            {
+              "evidenceId": "zy-1-xiang",
+              "quote": "天行健，君子以自强不息。",
+              "claim": "乾卦讲“自强不息”，在这个处境里不是让你硬扛，而是让你把力气用在可控的事上：先稳住现有收入，同时集中投递和面试，把选择权尽量握在自己手里。"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "evidence": [
+      {
+        "id": "zy-1-judgment",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "judgment",
+        "line": null,
+        "text": "元亨利贞。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "乾·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:01:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "元亨利贞。"
+      },
+      {
+        "id": "zy-1-tuan",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "tuan",
+        "line": null,
+        "text": "大哉乾元，万物资始，乃统天。云行雨施，品物流形。大明终始，六位时成，时乘六龙以御天。乾道变化，各正性命，保合太和，乃利贞。首出庶物，万国咸宁。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "乾·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:01:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "大哉乾元，万物资始，乃统天。云行雨施，品物流形。大明终始，六位时成，时乘六龙以御天。乾道变化，各正性命，保合太和，乃利贞。首出庶物，万国咸宁。"
+      },
+      {
+        "id": "zy-1-xiang",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "xiang",
+        "line": null,
+        "text": "天行健，君子以自强不息。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "乾·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:01:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "天行健，君子以自强不息。"
+      }
+    ],
+    "error": null
+  },
+  {
+    "answerId": "finalists-07",
+    "coreQuestion": "我今天中午吃啥好",
+    "question": "那我具体该吃什么",
+    "cast": {
+      "lines": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        6
+      ],
+      "original": {
+        "binary": "111110",
+        "name": "泽天夬",
+        "number": 43,
+        "judgment": "扬于王庭，孚号，有厉，告自邑，不利即戎，利有攸往。"
+      },
+      "changed": {
+        "binary": "111111",
+        "name": "乾为天",
+        "number": 1,
+        "judgment": "元，亨，利，贞。"
+      },
+      "originalBinary": "111110",
+      "changedBinary": "111111",
+      "changingIndices": [
+        5
+      ],
+      "id": "fixed-lunch",
+      "method": "three-coins",
+      "algorithmVersion": "development-fixed-coins",
+      "readingPolicyVersion": "all-moving-lines-v1",
+      "coins": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "history": [
+      {
+        "id": "fixed-lunch-history",
+        "status": "completed",
+        "question": "我今天中午吃啥好",
+        "evidence": [
+          {
+            "id": "zy-43-tuan",
+            "hexagramId": 43,
+            "name": "夬",
+            "section": "tuan",
+            "line": null,
+            "text": "夬，决也，刚决柔也；健而说，决而和。“扬于王庭”，柔乘五刚也；“孚号有厉”，其危乃光也；“告自邑，不利即戎”，所尚乃穷也；“利有攸往”，刚长乃终也。",
+            "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+            "locator": "夬·彖传",
+            "version": "open-iching-4c5f00f8cb62-v2",
+            "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+            "layer": "classic",
+            "workId": "zhouyi",
+            "workTitle": "周易",
+            "sourceId": "open-iching-4c5f00f8cb62",
+            "editionId": "open-iching-v2",
+            "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+            "authorIds": [],
+            "authorNames": [],
+            "anchorIds": [
+              "zhouyi:43:tuan"
+            ],
+            "commentsOn": [],
+            "reviewStatus": "legacy_unreviewed",
+            "releaseId": "knowledge-v3-20260926-r1",
+            "textOriginal": "夬，决也，刚决柔也；健而说，决而和。“扬于王庭”，柔乘五刚也；“孚号有厉”，其危乃光也；“告自邑，不利即戎”，所尚乃穷也；“利有攸往”，刚长乃终也。"
+          }
+        ],
+        "answer": {
+          "status": "answered",
+          "summary": "可以选一碗热汤面。",
+          "paragraphs": [
+            {
+              "kind": "interpretation",
+              "text": "夬有决断的意思。",
+              "citations": [
+                {
+                  "evidenceId": "zy-43-tuan",
+                  "quote": "夬，决也"
+                }
+              ]
+            },
+            {
+              "kind": "reflection",
+              "text": "借这个意思，午饭不妨简单定下来。",
+              "citations": []
+            }
+          ],
+          "limitations": []
+        }
+      }
+    ],
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "具体可以吃一碗阳春面，清汤细面，撒点葱花，简单利落。夬卦的彖传说“健而说，决而和”，这种吃法不纠结，正合适。",
+          "citations": [
+            {
+              "evidenceId": "zy-43-tuan",
+              "quote": "健而说，决而和",
+              "claim": "夬卦的彖传说“健而说，决而和”"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "evidence": [
+      {
+        "id": "zy-43-judgment",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "judgment",
+        "line": null,
+        "text": "扬于王庭，孚号有厉；告自邑，不利即戎，利有攸往。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "夬·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "扬于王庭，孚号有厉；告自邑，不利即戎，利有攸往。"
+      },
+      {
+        "id": "zy-43-tuan",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "tuan",
+        "line": null,
+        "text": "夬，决也，刚决柔也；健而说，决而和。“扬于王庭”，柔乘五刚也；“孚号有厉”，其危乃光也；“告自邑，不利即戎”，所尚乃穷也；“利有攸往”，刚长乃终也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "夬·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "夬，决也，刚决柔也；健而说，决而和。“扬于王庭”，柔乘五刚也；“孚号有厉”，其危乃光也；“告自邑，不利即戎”，所尚乃穷也；“利有攸往”，刚长乃终也。"
+      },
+      {
+        "id": "zy-43-xiang",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "xiang",
+        "line": null,
+        "text": "泽上于天，夬。君子以施禄及下，居德则忌。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "夬·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "泽上于天，夬。君子以施禄及下，居德则忌。"
+      },
+      {
+        "id": "zy-43-line-6",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "line",
+        "line": 6,
+        "text": "无号，终有凶。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "夬·上六",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:line:6"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "无号，终有凶。"
+      },
+      {
+        "id": "zy-43-line_xiang-6",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "line_xiang",
+        "line": 6,
+        "text": "“无号”之“凶”，终不可长也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "夬·上六小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:line_xiang:6"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“无号”之“凶”，终不可长也。"
+      },
+      {
+        "id": "zy-1-judgment",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "judgment",
+        "line": null,
+        "text": "元亨利贞。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "乾·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:01:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "元亨利贞。"
+      },
+      {
+        "id": "zy-1-xiang",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "xiang",
+        "line": null,
+        "text": "天行健，君子以自强不息。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "乾·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:01:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "天行健，君子以自强不息。"
+      }
+    ],
+    "error": null
+  },
+  {
+    "answerId": "finalists-08",
+    "coreQuestion": "我今天中午吃啥好",
+    "question": "那我具体该吃什么",
+    "cast": {
+      "lines": [
+        7,
+        7,
+        7,
+        7,
+        7,
+        6
+      ],
+      "original": {
+        "binary": "111110",
+        "name": "泽天夬",
+        "number": 43,
+        "judgment": "扬于王庭，孚号，有厉，告自邑，不利即戎，利有攸往。"
+      },
+      "changed": {
+        "binary": "111111",
+        "name": "乾为天",
+        "number": 1,
+        "judgment": "元，亨，利，贞。"
+      },
+      "originalBinary": "111110",
+      "changedBinary": "111111",
+      "changingIndices": [
+        5
+      ],
+      "id": "fixed-lunch",
+      "method": "three-coins",
+      "algorithmVersion": "development-fixed-coins",
+      "readingPolicyVersion": "all-moving-lines-v1",
+      "coins": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "history": [
+      {
+        "id": "fixed-lunch-history",
+        "status": "completed",
+        "question": "我今天中午吃啥好",
+        "evidence": [
+          {
+            "id": "zy-43-tuan",
+            "hexagramId": 43,
+            "name": "夬",
+            "section": "tuan",
+            "line": null,
+            "text": "夬，决也，刚决柔也；健而说，决而和。“扬于王庭”，柔乘五刚也；“孚号有厉”，其危乃光也；“告自邑，不利即戎”，所尚乃穷也；“利有攸往”，刚长乃终也。",
+            "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+            "locator": "夬·彖传",
+            "version": "open-iching-4c5f00f8cb62-v2",
+            "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+            "layer": "classic",
+            "workId": "zhouyi",
+            "workTitle": "周易",
+            "sourceId": "open-iching-4c5f00f8cb62",
+            "editionId": "open-iching-v2",
+            "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+            "authorIds": [],
+            "authorNames": [],
+            "anchorIds": [
+              "zhouyi:43:tuan"
+            ],
+            "commentsOn": [],
+            "reviewStatus": "legacy_unreviewed",
+            "releaseId": "knowledge-v3-20260926-r1",
+            "textOriginal": "夬，决也，刚决柔也；健而说，决而和。“扬于王庭”，柔乘五刚也；“孚号有厉”，其危乃光也；“告自邑，不利即戎”，所尚乃穷也；“利有攸往”，刚长乃终也。"
+          }
+        ],
+        "answer": {
+          "status": "answered",
+          "summary": "可以选一碗热汤面。",
+          "paragraphs": [
+            {
+              "kind": "interpretation",
+              "text": "夬有决断的意思。",
+              "citations": [
+                {
+                  "evidenceId": "zy-43-tuan",
+                  "quote": "夬，决也"
+                }
+              ]
+            },
+            {
+              "kind": "reflection",
+              "text": "借这个意思，午饭不妨简单定下来。",
+              "citations": []
+            }
+          ],
+          "limitations": []
+        }
+      }
+    ],
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "按上一轮的意思，午饭可以选一碗热汤面：汤面本身是“定下来”的选择，不必再为吃什么反复纠结。",
+          "citations": [
+            {
+              "evidenceId": "zy-43-tuan",
+              "quote": "夬，决也",
+              "claim": "午饭可以选一碗热汤面"
+            },
+            {
+              "evidenceId": "zy-43-judgment",
+              "quote": "利有攸往",
+              "claim": "不必再为吃什么反复纠结"
+            }
+          ]
+        },
+        {
+          "text": "如果想让这顿午饭更合“夬”的决断，就直接在面、饭、粉里挑最近最顺路的那家，别把小事拖成消耗。",
+          "citations": [
+            {
+              "evidenceId": "zy-43-tuan",
+              "quote": "刚决柔也",
+              "claim": "就直接在面、饭、粉里挑最近最顺路的那家"
+            },
+            {
+              "evidenceId": "zy-43-judgment",
+              "quote": "不利即戎",
+              "claim": "别把小事拖成消耗"
+            }
+          ]
+        },
+        {
+          "text": "注意卦里也有“有厉”的提醒：如果饿过头或赶时间，更容易随便乱选或吃过量，先喝口热汤、慢慢吃，比再刷菜单更有帮助。",
+          "citations": [
+            {
+              "evidenceId": "zy-43-judgment",
+              "quote": "孚号有厉",
+              "claim": "如果饿过头或赶时间，更容易随便乱选或吃过量"
+            },
+            {
+              "evidenceId": "zy-43-xiang",
+              "quote": "居德则忌",
+              "claim": "先喝口热汤、慢慢吃，比再刷菜单更有帮助"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "evidence": [
+      {
+        "id": "zy-43-judgment",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "judgment",
+        "line": null,
+        "text": "扬于王庭，孚号有厉；告自邑，不利即戎，利有攸往。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "夬·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "扬于王庭，孚号有厉；告自邑，不利即戎，利有攸往。"
+      },
+      {
+        "id": "zy-43-tuan",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "tuan",
+        "line": null,
+        "text": "夬，决也，刚决柔也；健而说，决而和。“扬于王庭”，柔乘五刚也；“孚号有厉”，其危乃光也；“告自邑，不利即戎”，所尚乃穷也；“利有攸往”，刚长乃终也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "夬·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "夬，决也，刚决柔也；健而说，决而和。“扬于王庭”，柔乘五刚也；“孚号有厉”，其危乃光也；“告自邑，不利即戎”，所尚乃穷也；“利有攸往”，刚长乃终也。"
+      },
+      {
+        "id": "zy-43-xiang",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "xiang",
+        "line": null,
+        "text": "泽上于天，夬。君子以施禄及下，居德则忌。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "夬·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "泽上于天，夬。君子以施禄及下，居德则忌。"
+      },
+      {
+        "id": "zy-43-line-6",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "line",
+        "line": 6,
+        "text": "无号，终有凶。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "夬·上六",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:line:6"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "无号，终有凶。"
+      },
+      {
+        "id": "zy-43-line_xiang-6",
+        "hexagramId": 43,
+        "name": "夬",
+        "section": "line_xiang",
+        "line": 6,
+        "text": "“无号”之“凶”，终不可长也。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "夬·上六小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:43:line_xiang:6"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "“无号”之“凶”，终不可长也。"
+      },
+      {
+        "id": "zy-1-judgment",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "judgment",
+        "line": null,
+        "text": "元亨利贞。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "乾·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:01:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "元亨利贞。"
+      },
+      {
+        "id": "zy-1-xiang",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "xiang",
+        "line": null,
+        "text": "天行健，君子以自强不息。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "乾·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:01:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "天行健，君子以自强不息。"
+      }
+    ],
+    "error": null
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "decidedAt": "2026-10-10T08:56:47.048661+00:00",
+  "graphVersion": "python-graph-v12",
+  "promptVersion": "evidence-agent-python-v16",
+  "candidate": {
+    "model": "deepseek-flash",
+    "thinking": "enabled",
+    "reasoning_effort": "low",
+    "max_tokens": 8192
+  },
+  "repair": {
+    "thinking": "disabled",
+    "max_tokens": 8192
+  },
+  "basis": "Screening low: 4/4, AI understanding/helpfulness 2/2; high 1.75/1.75. Final development same3: high1/3 due two reasoning-length failures; low3/3. Lunch remains poor under both. Candidate seeks reliability with reasoning retained; no quality superiority claim.",
+  "confirmationHash": "d422f65224bd4def42fbae9b50f9e88c92659c004b45937477dcd765fed1a954",
+  "budget": {
+    "mainCallCap": 145,
+    "totalTokenCap": 900000
+  },
+  "stop": "Run four fresh cases once per low/high with same v12 and repair profile. No further case-specific tuning; retain all failures.",
+  "limits": "Small AI-authored isolated confirmation set, not expert/official holdout. First6 holdout already disclosed and never relabeled unseen."
+}

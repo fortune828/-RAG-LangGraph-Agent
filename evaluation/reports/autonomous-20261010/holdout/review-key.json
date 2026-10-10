@@ -1,0 +1,74 @@
+[
+  {
+    "answerId": "holdout-01",
+    "caseId": "holdout-lookup",
+    "arm": "baseline-high",
+    "config": "flash-high"
+  },
+  {
+    "answerId": "holdout-02",
+    "caseId": "holdout-lookup",
+    "arm": "candidate",
+    "config": "flash-off"
+  },
+  {
+    "answerId": "holdout-03",
+    "caseId": "holdout-daily-a",
+    "arm": "baseline-high",
+    "config": "flash-high"
+  },
+  {
+    "answerId": "holdout-04",
+    "caseId": "holdout-correction-b",
+    "arm": "candidate",
+    "config": "flash-off"
+  },
+  {
+    "answerId": "holdout-05",
+    "caseId": "holdout-risk",
+    "arm": "candidate",
+    "config": "flash-off"
+  },
+  {
+    "answerId": "holdout-06",
+    "caseId": "holdout-daily-b",
+    "arm": "baseline-high",
+    "config": "flash-high"
+  },
+  {
+    "answerId": "holdout-07",
+    "caseId": "holdout-daily-b",
+    "arm": "candidate",
+    "config": "flash-off"
+  },
+  {
+    "answerId": "holdout-08",
+    "caseId": "holdout-risk",
+    "arm": "baseline-high",
+    "config": "flash-high"
+  },
+  {
+    "answerId": "holdout-09",
+    "caseId": "holdout-complex-a",
+    "arm": "candidate",
+    "config": "flash-off"
+  },
+  {
+    "answerId": "holdout-10",
+    "caseId": "holdout-complex-a",
+    "arm": "baseline-high",
+    "config": "flash-high"
+  },
+  {
+    "answerId": "holdout-11",
+    "caseId": "holdout-daily-a",
+    "arm": "candidate",
+    "config": "flash-off"
+  },
+  {
+    "answerId": "holdout-12",
+    "caseId": "holdout-correction-b",
+    "arm": "baseline-high",
+    "config": "flash-high"
+  }
+]

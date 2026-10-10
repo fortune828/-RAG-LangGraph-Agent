@@ -1,0 +1,130 @@
+[
+  {
+    "caseId": "dev-exact-gap",
+    "session": {
+      "id": "session-dev-exact-gap",
+      "question": "我想了解本次坎卦的具体文义。",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          8,
+          8,
+          7,
+          8
+        ],
+        "original": {
+          "binary": "010010",
+          "name": "坎为水",
+          "number": 29,
+          "judgment": "习坎，有孚，维心亨，行有尚。"
+        },
+        "changed": {
+          "binary": "010010",
+          "name": "坎为水",
+          "number": 29,
+          "judgment": "习坎，有孚，维心亨，行有尚。"
+        },
+        "originalBinary": "010010",
+        "changedBinary": "010010",
+        "changingIndices": [],
+        "id": "cast-dev-exact-gap",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "请查本卦九二的爻辞和小象，“求小得”是什么意思？",
+    "mode": "followup"
+  },
+  {
+    "caseId": "dev-fuzzy-source",
+    "session": {
+      "id": "session-dev-fuzzy-source",
+      "question": "我记得一段关于以诚意沟通的易学解释，想核对出处。",
+      "cast": {
+        "lines": [
+          7,
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "original": {
+          "binary": "111111",
+          "name": "乾为天",
+          "number": 1,
+          "judgment": "元，亨，利，贞。"
+        },
+        "changed": {
+          "binary": "111111",
+          "name": "乾为天",
+          "number": 1,
+          "judgment": "元，亨，利，贞。"
+        },
+        "originalBinary": "111111",
+        "changedBinary": "111111",
+        "changingIndices": [],
+        "id": "cast-dev-fuzzy-source",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "我记得朱熹似乎说过，大意是在险难的时候，礼物虽薄，也可以用诚心沟通。这句出自哪里？我想确认自己记得对不对。",
+    "mode": "followup"
+  },
+  {
+    "caseId": "dev-absent",
+    "session": {
+      "id": "session-dev-absent",
+      "question": "想核对解卦九四的一家注解。",
+      "cast": {
+        "lines": [
+          8,
+          7,
+          8,
+          9,
+          8,
+          8
+        ],
+        "original": {
+          "binary": "010100",
+          "name": "雷水解",
+          "number": 40,
+          "judgment": "利西南，无所往，其来复吉。有攸往，夙吉。"
+        },
+        "changed": {
+          "binary": "010000",
+          "name": "地水师",
+          "number": 7,
+          "judgment": "贞，丈人，吉无咎。"
+        },
+        "originalBinary": "010100",
+        "changedBinary": "010000",
+        "changingIndices": [
+          3
+        ],
+        "id": "cast-dev-absent",
+        "method": "three-coins",
+        "algorithmVersion": "evaluation-fixed-lines",
+        "readingPolicyVersion": "all-moving-lines-v1",
+        "createdAt": "2026-10-10T00:00:00Z"
+      },
+      "releaseId": "knowledge-v3-20260926-r1",
+      "turns": [],
+      "createdAt": "2026-10-10T00:00:00Z"
+    },
+    "question": "请给出焦循对解卦九四的注解原文，并说明他怎样理解“解而拇”。",
+    "mode": "followup"
+  }
+]

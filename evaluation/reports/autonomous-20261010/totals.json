@@ -1,0 +1,116 @@
+{
+  "outputCells": 84,
+  "completed": 74,
+  "failedCells": [
+    {
+      "stage": "finalists",
+      "runDirectory": "finalists",
+      "caseId": "life-correction",
+      "arm": "pro-low",
+      "status": "validation_failed",
+      "errors": [
+        "CLAIM_NOT_IN_PARAGRAPH:zy-1-judgment"
+      ],
+      "error": null
+    },
+    {
+      "stage": "rag",
+      "runDirectory": "rag",
+      "caseId": "dev-project",
+      "arm": "classic",
+      "status": "validation_failed",
+      "errors": [
+        "CLAIM_NOT_IN_PARAGRAPH:zy-13-xiang"
+      ],
+      "error": null
+    },
+    {
+      "stage": "routing",
+      "runDirectory": "routing",
+      "caseId": "dev-absent",
+      "arm": "D-v10",
+      "status": "validation_failed",
+      "errors": [
+        "AUTHOR_ATTRIBUTION_MISMATCH:jiao-xun"
+      ],
+      "error": null
+    },
+    {
+      "stage": "release",
+      "runDirectory": "release-verification",
+      "caseId": "dev-exact-gap",
+      "arm": "released-high",
+      "status": "failed",
+      "errors": null,
+      "error": "ModelError:MODEL_INCOMPLETE_RESPONSE"
+    },
+    {
+      "stage": "repair-check",
+      "runDirectory": "repair-check",
+      "caseId": "dev-exact-gap",
+      "arm": "repair-disabled",
+      "status": "validation_failed",
+      "errors": [
+        "AUTHOR_ATTRIBUTION_MISMATCH:wang-bi",
+        "AUTHOR_ATTRIBUTION_MISMATCH:zhu-xi"
+      ],
+      "error": null
+    },
+    {
+      "stage": "repair-located",
+      "runDirectory": "repair-located",
+      "caseId": "dev-exact-gap",
+      "arm": "repair-disabled",
+      "status": "validation_failed",
+      "errors": [
+        "AUTHOR_ATTRIBUTION_MISMATCH:wang-bi",
+        "AUTHOR_ATTRIBUTION_MISMATCH:zhu-xi"
+      ],
+      "error": null
+    },
+    {
+      "stage": "final",
+      "runDirectory": "final-verification",
+      "caseId": "dev-project-correction",
+      "arm": "final-high",
+      "status": "failed",
+      "errors": null,
+      "error": "ModelError:MODEL_INCOMPLETE_RESPONSE"
+    },
+    {
+      "stage": "final",
+      "runDirectory": "final-verification",
+      "caseId": "dev-exact-gap",
+      "arm": "final-high",
+      "status": "failed",
+      "errors": null,
+      "error": "ModelError:MODEL_INCOMPLETE_RESPONSE"
+    },
+    {
+      "stage": "confirmation",
+      "runDirectory": "confirmation",
+      "caseId": "confirmation-correction",
+      "arm": "flash-low",
+      "status": "validation_failed",
+      "errors": [
+        "QUOTE_MISMATCH:zhu-xi@737053:h32:line4:0f4238b3b2"
+      ],
+      "error": null
+    },
+    {
+      "stage": "confirmation",
+      "runDirectory": "confirmation",
+      "caseId": "confirmation-correction",
+      "arm": "flash-high",
+      "status": "failed",
+      "errors": null,
+      "error": "ModelError:MODEL_INCOMPLETE_RESPONSE"
+    }
+  ],
+  "mainModelCalls": 124,
+  "reportedTokens": 445754,
+  "unknownUsageCalls": 0,
+  "estimatedUSD": 0.15934573299999996,
+  "unknownCostCalls": 0,
+  "aiReviewed": 71
+}

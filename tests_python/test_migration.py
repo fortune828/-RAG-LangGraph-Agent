@@ -149,7 +149,8 @@ async def test_graph_exact_tool_and_one_repair():
         if generation == 1:
             a['paragraphs'][0]['citations'] *= 6
         else:
-            assert 'paragraphs.0.citations' in messages[-1]['content']
+            issues = json.loads(messages[-1]['content'])['errors']
+            assert any(issue['path'] == ['paragraphs', 0, 'citations'] for issue in issues)
         return response(a)
     s = session()
     graph = build_graph(InMemorySaver(), model)

@@ -1,9 +1,11 @@
 # SPEC.md — 基于可验证起卦与文献约束的《周易》情境解读应用
 
-提示词减法修订（2026-10-10）：当前 graph v10 / prompt v16，保留普通段落与 claim 引用契约。清理 SYSTEM、ROUTER、RISK_SYSTEM、动态指令、repair 和工具描述；技术约束继续由程序保障。生成机制、Schema、校验器和前端保持，表达质量以真实回答复核，见[本轮完整提示词、删减与对照](evaluation/prompt-subtraction-20261010.md)。
+自主实验修订（2026-10-10）：当前 graph v13 / prompt v16；主回答采用 Flash enabled / low / 8192，校验修复使用同模型 disabled / 8192 并提供错误位置及原因；非思考候选经盲评后未替换质量默认配置。路由只传所需证据字段，明确授权文献目标取齐后直接生成；完整来源、权限与校验保留。模型筛选、RAG 消融、B/C/D、图版本对照和隔离小留出均单列，见[结果与局限](evaluation/autonomous-optimization-20261010.md)。这些实验不代表人工对话质量验收。
+
+上一轮提示词减法修订（2026-10-10）：当时为 graph v10 / prompt v16，保留普通段落与 claim 引用契约。清理 SYSTEM、ROUTER、RISK_SYSTEM、动态指令、repair 和工具描述；技术约束继续由程序保障。生成机制、Schema、校验器和前端保持，表达质量以真实回答复核，见[本轮完整提示词、删减与对照](evaluation/prompt-subtraction-20261010.md)。
 
 > **项目工作名**：周易情境解读 Agent（名称可调整）  
-> **文档版本**：v1.4 · 自然对话契约修订 · 2026-10-10
+> **文档版本**：v1.5 · 自主实验与运行配置修订 · 2026-10-10
 > **适用对象**：产品设计、开发、Codex 实施、测试与面试展示  
 > **状态声明**：本文定义**目标产品、架构边界与验收标准**，并非对现有仓库全部能力的完成声明。应先审计代码，将事项标记为 `Planned / Implemented / Verified / Measured`。  
 > **关联文档**：[architect.md](./architect.md)

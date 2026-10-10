@@ -1,0 +1,116 @@
+{
+  "stage": "repair-explained",
+  "createdAt": "2026-10-10T08:51:26.674551+00:00",
+  "commit": "b4c73d4b5e429e5df6a7e38ba7163fa29a4054b9",
+  "dirty": true,
+  "graphVersion": "python-graph-v12",
+  "promptVersion": "evidence-agent-python-v16",
+  "releaseId": "knowledge-v3-20260926-r1",
+  "caseHash": "a74e86a23b18d6c6f46a1fcf1697d319ab641e00249be0af780cdc22f43f8401",
+  "arms": [
+    "repair-disabled"
+  ],
+  "modelOptions": {
+    "flash-off": {
+      "model": "deepseek-flash",
+      "messages": [],
+      "max_tokens": 4096,
+      "thinking": {
+        "type": "disabled"
+      },
+      "response_format": {
+        "type": "json_object"
+      }
+    },
+    "flash-low": {
+      "model": "deepseek-flash",
+      "messages": [],
+      "max_tokens": 8192,
+      "thinking": {
+        "type": "enabled"
+      },
+      "reasoning_effort": "low",
+      "response_format": {
+        "type": "json_object"
+      }
+    },
+    "flash-high": {
+      "model": "deepseek-flash",
+      "messages": [],
+      "max_tokens": 8192,
+      "thinking": {
+        "type": "enabled"
+      },
+      "reasoning_effort": "high",
+      "response_format": {
+        "type": "json_object"
+      }
+    },
+    "pro-off": {
+      "model": "deepseek-v4-pro",
+      "messages": [],
+      "max_tokens": 4096,
+      "thinking": {
+        "type": "disabled"
+      },
+      "response_format": {
+        "type": "json_object"
+      }
+    },
+    "pro-low": {
+      "model": "deepseek-v4-pro",
+      "messages": [],
+      "max_tokens": 8192,
+      "thinking": {
+        "type": "enabled"
+      },
+      "reasoning_effort": "low",
+      "response_format": {
+        "type": "json_object"
+      }
+    }
+  },
+  "fileHashes": {
+    "backend/__init__.py": "31035e9fa5d2ce31f46dba6f1b3492edf184befa6b9d447c506d6824c539f8f3",
+    "backend/llm.py": "7f1ba810ca64291859446791230307d41d81c1860a17c03d0baf793769d50fd9",
+    "backend/app.py": "a88684e8202e88c690b64526e8daec32c136ebd719075faf48821722552f4aba",
+    "backend/knowledge.py": "e157a22c1cce8827b8e345b5e2725aeeafa1d7c438b861cc0f37a2fa6cf8a6af",
+    "backend/graph.py": "4470c89feae97596c4b0ca1d68dc35facf7e33d49875a672ed91b0e7fde5e0d0",
+    "backend/__main__.py": "ac31e6560f567ee61fd9c6ff94d9596c0608557293f0c6cd6407f994970d672b",
+    "backend/validation.py": "29c265e32e77c514c492f3807fbc081eab90e1238fd38b744fc9653ea99996f7",
+    "backend/config.py": "398a4efc01c068b73182b16feac5d0b40ea038abc2e09f88d7b99a5ffb45a6e1",
+    "backend/store.py": "8e759718b5721ce4369d1f00c10ecf5a699503df075ca4bbd1920114ae49a465",
+    "backend/prompts.py": "4a4740e548773e8c011cbaee3e21a53196142bf11640669302d16c3478119207",
+    "backend/models.py": "ab0df5f73b2dbcefb79c75837f1efc6f94833a0ed44ebbd471d817414a284064",
+    "backend/evaluate.py": "50d16549eb4fe36076517b0ad09f492bdcfe67ca9522446fc1fe0a07d7b050c1",
+    "backend/domain.py": "01c1dcf5bde48957f5f7025f50f67acf967d9f7f8485fd2dec653bc923b2a265",
+    "evaluation/autonomous.py": "c5c9bbb352404390ab49877cec750bed18f5c665d76a9326d842a2ceed16eb39",
+    "evaluation/paired.py": "28e3dab8a1fa1fec6c51ca2597ffdc63a406e42134f55bc02c9097abe2a73013",
+    "evaluation/workflow.py": "e858339b029b4a1e939fa9a83aeb08278beafe3261ef9ba4d7123263b4ac79ab",
+    "requirements.txt": "04b3585561c260777a04094dfdaa17bbc4369b8471521c1775fcf612c915a322"
+  },
+  "order": "alternate/reverse arms by case index, serial; one sample per cell; no best-of",
+  "budget": {
+    "globalCalls": 98,
+    "globalReportedOrReservedTokens": 900000
+  },
+  "caveats": [
+    "Synthetic inputs only; no reasoning text exported",
+    "Provider alias/cache/time drift remain",
+    "Semantic quality requires review; mechanical validity is not entailment"
+  ],
+  "actualConfig": {
+    "model": "deepseek-flash",
+    "messages": [],
+    "max_tokens": 8192,
+    "thinking": {
+      "type": "disabled"
+    },
+    "response_format": {
+      "type": "json_object"
+    }
+  },
+  "globalCallCap": 98,
+  "note": "One paired repair replay using the failed request's visible input.\n\nThe archived thinking request includes only a reasoning hash; non-thinking repair\nuses the same visible messages/errors without omitted internal reasoning.\n",
+  "metadataCorrection": "Copied actual globalCallCap into nested budget; raw requests and outputs unchanged."
+}

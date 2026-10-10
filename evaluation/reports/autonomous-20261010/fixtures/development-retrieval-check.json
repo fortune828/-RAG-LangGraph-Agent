@@ -1,0 +1,173 @@
+{
+  "kind": "offline_deterministic_retrieval_check_not_model_quality",
+  "policy": "rules-c-v1",
+  "labelOrigin": "AI proposed, not expert or human gold",
+  "records": [
+    {
+      "caseId": "dev-lunch",
+      "expectedGroups": [
+        [
+          "zy-43-tuan"
+        ]
+      ],
+      "initialGroupsPresent": [
+        true
+      ],
+      "finalGroupsPresent": [
+        true
+      ],
+      "events": [
+        {
+          "action": "generation_without_route",
+          "reason": "Initial reading has no required metadata target gaps."
+        }
+      ]
+    },
+    {
+      "caseId": "dev-project",
+      "expectedGroups": [
+        [
+          "zy-1-line-2",
+          "zy-1-tuan",
+          "zy-1-xiang"
+        ]
+      ],
+      "initialGroupsPresent": [
+        true
+      ],
+      "finalGroupsPresent": [
+        true
+      ],
+      "events": [
+        {
+          "action": "generation_without_route",
+          "reason": "Initial reading has no required metadata target gaps."
+        }
+      ]
+    },
+    {
+      "caseId": "dev-project-correction",
+      "expectedGroups": [],
+      "initialGroupsPresent": [],
+      "finalGroupsPresent": [],
+      "events": [
+        {
+          "action": "ready"
+        }
+      ]
+    },
+    {
+      "caseId": "dev-exact-gap",
+      "expectedGroups": [
+        [
+          "zy-29-line-2"
+        ],
+        [
+          "zy-29-line_xiang-2"
+        ]
+      ],
+      "initialGroupsPresent": [
+        false,
+        false
+      ],
+      "finalGroupsPresent": [
+        true,
+        true
+      ],
+      "events": [
+        {
+          "action": "get_passages",
+          "arguments": {
+            "hexagramId": 29,
+            "sections": [
+              "line"
+            ],
+            "layers": [
+              "classic"
+            ],
+            "lineIndices": [
+              2
+            ]
+          },
+          "evidenceIds": [
+            "zy-29-line-2"
+          ],
+          "coverageStatus": "covered"
+        },
+        {
+          "action": "get_passages",
+          "arguments": {
+            "hexagramId": 29,
+            "sections": [
+              "line_xiang"
+            ],
+            "layers": [
+              "classic"
+            ],
+            "lineIndices": [
+              2
+            ]
+          },
+          "evidenceIds": [
+            "zy-29-line_xiang-2"
+          ],
+          "coverageStatus": "covered"
+        },
+        {
+          "action": "ready"
+        }
+      ]
+    },
+    {
+      "caseId": "dev-fuzzy-source",
+      "expectedGroups": [
+        [
+          "zhu-xi@528287:h29:line4:99879a18e8"
+        ]
+      ],
+      "initialGroupsPresent": [
+        false
+      ],
+      "finalGroupsPresent": [
+        true
+      ],
+      "events": [
+        {
+          "action": "search_knowledge",
+          "arguments": {
+            "query": "在险难的时候，礼物虽薄，也可以用诚心沟通。这句？我想确认自己记得对不对",
+            "topK": 4,
+            "layers": [
+              "commentary"
+            ],
+            "authorIds": [
+              "zhu-xi"
+            ]
+          },
+          "evidenceIds": [
+            "zhu-xi@528287:h29:line4:99879a18e8",
+            "zhu-xi@528287:h15:line6:0ed904e4df",
+            "zhu-xi@528287:h29:line2:9d356a7715",
+            "zhu-xi@528287:h2:line5:0c9b3a764c"
+          ],
+          "coverageStatus": "covered"
+        },
+        {
+          "action": "ready"
+        }
+      ]
+    },
+    {
+      "caseId": "dev-absent",
+      "expectedGroups": [],
+      "initialGroupsPresent": [],
+      "finalGroupsPresent": [],
+      "events": [
+        {
+          "action": "generation_without_route",
+          "reason": "All explicit targets are proven absent by corpus metadata."
+        }
+      ]
+    }
+  ]
+}

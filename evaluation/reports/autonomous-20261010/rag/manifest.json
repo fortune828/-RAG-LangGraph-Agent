@@ -1,0 +1,92 @@
+{
+  "stage": "rag",
+  "createdAt": "2026-10-10T08:24:29.443940+00:00",
+  "commit": "b4c73d4b5e429e5df6a7e38ba7163fa29a4054b9",
+  "dirty": true,
+  "graphVersion": "python-graph-v10",
+  "promptVersion": "evidence-agent-python-v16",
+  "releaseId": "knowledge-v3-20260926-r1",
+  "caseHash": "fb1e422faa52d46e448f2ed35ba5da22a7719ee9c00674e12ca587667b6566e4",
+  "arms": [
+    "memory",
+    "classic",
+    "full"
+  ],
+  "modelOptions": {
+    "flash-off": {
+      "model": "deepseek-flash",
+      "messages": [],
+      "max_tokens": 4096,
+      "thinking": {
+        "type": "disabled"
+      },
+      "response_format": {
+        "type": "json_object"
+      }
+    },
+    "flash-low": {
+      "model": "deepseek-flash",
+      "messages": [],
+      "max_tokens": 8192,
+      "thinking": {
+        "type": "enabled"
+      },
+      "reasoning_effort": "low",
+      "response_format": {
+        "type": "json_object"
+      }
+    },
+    "flash-high": {
+      "model": "deepseek-flash",
+      "messages": [],
+      "max_tokens": 8192,
+      "thinking": {
+        "type": "enabled"
+      },
+      "reasoning_effort": "high",
+      "response_format": {
+        "type": "json_object"
+      }
+    },
+    "pro-off": {
+      "model": "deepseek-v4-pro",
+      "messages": [],
+      "max_tokens": 4096,
+      "thinking": {
+        "type": "disabled"
+      },
+      "response_format": {
+        "type": "json_object"
+      }
+    }
+  },
+  "fileHashes": {
+    "backend/__init__.py": "31035e9fa5d2ce31f46dba6f1b3492edf184befa6b9d447c506d6824c539f8f3",
+    "backend/llm.py": "ec740ff19066eaec610a0607d5b4f16faa4a1fe97f8917801e92688ca648b0dc",
+    "backend/app.py": "a88684e8202e88c690b64526e8daec32c136ebd719075faf48821722552f4aba",
+    "backend/knowledge.py": "e157a22c1cce8827b8e345b5e2725aeeafa1d7c438b861cc0f37a2fa6cf8a6af",
+    "backend/graph.py": "579dc88b3fa0b3773408473e05e5f27e65dce077b63c9e3d9a9f782e964ddb45",
+    "backend/__main__.py": "ac31e6560f567ee61fd9c6ff94d9596c0608557293f0c6cd6407f994970d672b",
+    "backend/validation.py": "3421c81f4a0bf7e3ff2b51b7631e9dcf0486f4d73b8e305261cadfc4c10cd360",
+    "backend/config.py": "10c487a61bfce3ed5f5af3f2ae71ee8f7add1c82f5e958a790c93c1810700661",
+    "backend/store.py": "8e759718b5721ce4369d1f00c10ecf5a699503df075ca4bbd1920114ae49a465",
+    "backend/prompts.py": "4a4740e548773e8c011cbaee3e21a53196142bf11640669302d16c3478119207",
+    "backend/models.py": "ab0df5f73b2dbcefb79c75837f1efc6f94833a0ed44ebbd471d817414a284064",
+    "backend/evaluate.py": "4c765fe3e4e72a2d9bf5096beb4d511a7bcefeee1699b1f453953e8202dc02e4",
+    "backend/domain.py": "01c1dcf5bde48957f5f7025f50f67acf967d9f7f8485fd2dec653bc923b2a265",
+    "evaluation/autonomous.py": "68be295d7eb1a60f2fcb2b92499e6989dae72703a85c31d6e7f451ed48b710b2",
+    "evaluation/paired.py": "be22a0c003b0e9c220e71b6ae99caad607f954e9e1bf458319e0777dfaf0f9b4",
+    "evaluation/workflow.py": "e858339b029b4a1e939fa9a83aeb08278beafe3261ef9ba4d7123263b4ac79ab",
+    "requirements.txt": "04b3585561c260777a04094dfdaa17bbc4369b8471521c1775fcf612c915a322"
+  },
+  "order": "alternate/reverse arms by case index, serial; one sample per cell; no best-of",
+  "budget": {
+    "globalCalls": 90,
+    "globalReportedOrReservedTokens": 900000
+  },
+  "caveats": [
+    "Synthetic inputs only; no reasoning text exported",
+    "Provider alias/cache/time drift remain",
+    "Semantic quality requires review; mechanical validity is not entailment"
+  ]
+}

@@ -1,0 +1,2608 @@
+{
+  "type": "Independent AI subjective review, not human or expert. No significance/non-inferiority claim.",
+  "rows": [
+    {
+      "stage": "screening",
+      "answerId": "screening-01",
+      "caseId": "haircut-kan",
+      "arm": "flash-low",
+      "config": "flash-low",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "直接回应“现在去”，沿用头发已长、今天有空的条件，没有漏掉时间抉择。",
+        "conversation": "“倾向可以去”清楚，但把日常理发讲成“诚信常规”“常德行”，对小问题显得说教。",
+        "helpfulness": "“先电话或小程序确认营业与排队”“约好时间再去”能直接帮助行动。",
+        "grounding": "“行险而不失其信”不提供排队或天气预测；又从无动爻推出“事态没有明显变坏或变好的推动”，超出材料。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "理发本身是日常“常德行”",
+          "reason": "把持续的德行直接等同理发的日常性，未解释关联。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "但路上、店里可能有小波折",
+          "reason": "所引“行险而不失其信”不支持具体店铺或交通波折的预测。"
+        },
+        {
+          "category": "静爻推断现实稳定",
+          "quote": "事态没有明显变坏或变好的推动",
+          "reason": "无动爻只能说明本次卦的记录，不能给出现实态势结论。"
+        }
+      ],
+      "uncertainties": [],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "screening",
+      "answerId": "screening-02",
+      "caseId": "lunch-specific",
+      "arm": "pro-off",
+      "config": "pro-off",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 1,
+        "conversation": 0,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "承接上一轮汤面且补了配菜，但把用户要求具体菜品当作需要停止犹豫和求助。",
+        "conversation": "“更不要再反复呼喊求助”“这次不要再纠结”对正常追问带责备，破坏自然交流。",
+        "helpfulness": "清汤、青菜、蛋或瘦肉有一定可执行性；以凶辞催促执行，降低建议帮助。",
+        "grounding": "“施禄及下”推到脾胃舒服、“利有攸往”推到饮食轻快、“无号”推到不要求助，均无随附原文支持。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "落实到午饭上，就是选一种能让脾胃舒服、吃完不胀不累的汤食",
+          "reason": "社会施予之意不能直接推出汤食的身体效果。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "更不要再反复呼喊求助",
+          "reason": "“无号，终有凶”未说明向助手追问菜品是不当行为。"
+        }
+      ],
+      "uncertainties": [
+        "“无号”的完整训诂未提供，未裁定其唯一正确解释；这里只判断原文未支持该午饭训诫。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "screening",
+      "answerId": "screening-03",
+      "caseId": "life-correction",
+      "arm": "flash-off",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "准确更新为一个月储蓄、需付房租，并保留历史中的“没有录用通知”。",
+        "conversation": "“先把数字改成现实版本”衔接明确，但“只能承受”“承受不起”在缺少详细账目时口气过满。",
+        "helpfulness": "在职面试、核对录用及首薪和试用期条件均有帮助，可直接用来整理换工作顺序。",
+        "grounding": "用“自强不息”提醒准备尚可；“无动爻”被外推成现实节奏没有转折，削弱克制。"
+      },
+      "flags": [
+        {
+          "category": "静爻推断现实稳定",
+          "quote": "节奏尚未出现明确转折的状态",
+          "reason": "这项现实状态没有用户事实支持，仅由无动爻带出。"
+        }
+      ],
+      "uncertainties": [
+        "“元亨利贞”四字可否解释成依次决策步骤存在学理歧义；答案说“借”，故未按确定误释另行扣分。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "screening",
+      "answerId": "screening-04",
+      "caseId": "lunch-specific",
+      "arm": "flash-off",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "补出牛肉面、番茄鸡蛋面等，但“你已经接受的那碗热汤面”并非历史事实，用户只问了具体吃什么。",
+        "conversation": "菜品段落自然，“具体钉死”“不必再纠结第三样”略显管束，且引经展开压过简单追问。",
+        "helpfulness": "汤面及米饭替代、荤素搭配、过敏或不耐受时替换，都有现实可用性。",
+        "grounding": "末尾明确菜品不是经文直接断言是优点；仍把“居德则忌”释成使人悬而未决，材料不支持。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "从你已经接受的那碗热汤面出发",
+          "reason": "上一轮是助手建议，没有用户接受或倾向吃面的表态。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "把人困在悬而未决的状态",
+          "reason": "“君子以施禄及下，居德则忌”未提供这层意思。"
+        }
+      ],
+      "uncertainties": [],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "screening",
+      "answerId": "screening-05",
+      "caseId": "life-correction",
+      "arm": "flash-high",
+      "config": "flash-high",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "优先重设一个月储蓄和房租前提，后续规则也围绕现金和录用条件展开。",
+        "conversation": "“列出…每月必须支出”清楚，但每个现金决策都追加一段经典引申，使交流显得讲章化。",
+        "helpfulness": "计算能撑几周、核对发薪日、区分书面录用/意向/必须离开的三种情况，能实际组织决策。",
+        "grounding": "多用“可引申”且提醒按现实判断，保留一定边界；“首出庶物”到抓主要矛盾的桥接仍很牵强。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "“首出庶物，万国咸宁”，可引申为先抓住主要矛盾",
+          "reason": "已标引申而非直译，但原文与现金流问题的对应关系没有说明。"
+        }
+      ],
+      "uncertainties": [
+        "“此前按三个月缓冲做的判断要作废”略夸大历史：历史只要求核对，并未给出具体辞职判断；不视为严重捏造。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "screening",
+      "answerId": "screening-06",
+      "caseId": "project-decision",
+      "arm": "flash-high",
+      "config": "flash-high",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "抓住继续是否还有可验证目标，同时承认“简历够写可以是止损理由”，贴合真实取舍。",
+        "conversation": "“仅凭当前信息，我不能替你断定”保持合作语气，解释为继续或收束两条路，深度与项目决策匹配。",
+        "helpfulness": "给出目标、伙伴资源、角色、成果归档和交接等检查点，继续和停止都有可做的事。",
+        "grounding": "大部分引文可在材料中找到；从“未当位”诊断用户推进方式不恰当，仍超过原文所能确定的现实信息。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "这提示你当前继续推进的位置或方式可能并不恰当",
+          "reason": "虽用“可能”，仍以爻位评语替代对实际项目问题的了解。"
+        }
+      ],
+      "uncertainties": [
+        "“解而拇”具体对象在材料中未有注释；不裁定牵累解释的学术正误。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "screening",
+      "answerId": "screening-07",
+      "caseId": "life-correction",
+      "arm": "pro-off",
+      "config": "pro-off",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 1,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "明确承接更正后的一个月与房租，重心转向现金缓冲。",
+        "conversation": "“持续行动、争取机会，但不等于…冒进”表达平和，解释与在职求职建议连接顺畅。",
+        "helpfulness": "在职面试和控制开支可用；“录用通知或三至六个月储蓄”作为通用门槛，未进一步算房租及首薪衔接。",
+        "grounding": "引文真实，但把“元亨利贞”断定为一个先后过程，把“保合太和”直接等同自身稳定，缺少随附注释支持。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "四德的训释及“保合太和”是否支持上述解释属于领域歧义；评为部分支持，不认定已证实学术错误。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "screening",
+      "answerId": "screening-08",
+      "caseId": "haircut-kan",
+      "arm": "flash-high",
+      "config": "flash-high",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "围绕当前能否理发，并准确指出无动爻不必挑一爻断吉凶。",
+        "conversation": "“不必把小事放大”亲切，但从“天险、地险”绕回营业和价格，让简单交流显得过度论证。",
+        "helpfulness": "确认营业、排队、价格和发型沟通，均是恰当具体的安排。",
+        "grounding": "没有由静爻断现实稳定；“行险而不失其信”被直接转成问价格与发型，出处与建议的区别不够清楚。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "用到这件事上，就是提前问清价格、时间，和理发师把发型沟通清楚",
+          "reason": "建议本身合理，但不是该引文特有或直接支持的含义。"
+        }
+      ],
+      "uncertainties": [],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "screening",
+      "answerId": "screening-09",
+      "caseId": "lunch-specific",
+      "arm": "flash-high",
+      "config": "flash-high",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 1,
+        "conversation": 0,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "给出具体面食并承接上轮，却把一次具体追问说成“反复占问”“越问越细”会耽误饭点。",
+        "conversation": "“你越问越细，反而容易错过饭点”“不要临时再改”带训斥和无根据的催促。",
+        "helpfulness": "菜名及蛋、青菜可用；不让改主意、用凶辞催促，削弱选择帮助。",
+        "grounding": "“无号，终有凶”不能支持追问导致饿过头，“自强不息”也不推出饭前不能改主意。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "午饭不是需要反复占问的大事",
+          "reason": "所给历史只是普通提问和追问，没有反复占问记录。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "你越问越细，反而容易错过饭点",
+          "reason": "爻辞不支持这条针对用户行为的现实因果。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "选好后按点去吃，不要临时再改",
+          "reason": "以“自强不息”担保一顿饭的不可更改，关联薄弱。"
+        }
+      ],
+      "uncertainties": [
+        "未对“无号”的正统训释作专家裁定。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "screening",
+      "answerId": "screening-10",
+      "caseId": "lunch-specific",
+      "arm": "flash-low",
+      "config": "flash-low",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "明确说菜名不能由卦直接得出，并以“如果顺着上一轮”承接汤面，没有假定用户已接受。",
+        "conversation": "具体菜单友好，但“别一直喊‘吃啥好’却不定”把正常追问变成责备，冲淡了交流感。",
+        "helpfulness": "“番茄鸡蛋面，加一份烫青菜”和替代米饭套餐可直接执行，也考虑等待时间。",
+        "grounding": "开头有边界，但中段仍把“无号”确指拖延、饿过头、只剩难吃选择；关键解释无文献支持。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "放到午饭上，就是别一直喊“吃啥好”却不定",
+          "reason": "所附爻辞没有关于点餐追问或饭点风险的含义。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "拖到太晚、饿过头或只剩难吃的选择",
+          "reason": "把凶辞转为菜单后果，虽未断定会发生，仍缺少解释依据。"
+        }
+      ],
+      "uncertainties": [
+        "“无号”训诂存在领域问题；此处仅确认提供文本不足以支持午饭结论。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "screening",
+      "answerId": "screening-11",
+      "caseId": "life-correction",
+      "arm": "flash-low",
+      "config": "flash-low",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "“先按你的更正来”准确更新数字，重点转为收入衔接与基本支出，回应原始“整理思路”。",
+        "conversation": "用“在什么条件下才能安全地走”组织思考，解释有推进而不是反复催促；语气虽略严肃但合乎情境。",
+        "helpfulness": "现金流表、录用和首薪衔接、底薪与浮动收入、在职准备及每周复盘，构成实用决策路径。",
+        "grounding": "引文可核对，现实建议用“在求职语境里”“对应到”标明转化，并明确不是未来保证、需依合同账目判断。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "“当前结构尚未发生爻变”可指卦的结构，也可能被读为现实未变；因明确写“爻变”并有边界，不标为已出现静爻推断现实稳定。",
+        "“现在约一个月”未先确认用户的一个月储蓄是否已含房租；实际预算仍需按其提供的公式算。",
+        "不裁定四德与“各正性命”的学术解释唯一性；这里只评其明确作为借用和是否伪装现实证据。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "screening",
+      "answerId": "screening-12",
+      "caseId": "project-decision",
+      "arm": "pro-off",
+      "config": "pro-off",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "涉及继续和收束，但把“够写简历”解释成“不再强求完美收尾”，用户未表明这种心理。",
+        "conversation": "“当前…确有解救之机”及定位、人事问题连续下判断，容易给人被套用卦象诊断的感受。",
+        "helpfulness": "“有更有价值成果则继续，否则止损”有一定方向；缺少如何验证增量价值，且建议依赖未证实的人际牵连。",
+        "grounding": "引文存在，但从中确认解救时机、亲近者牵连、用户位置不当均越过材料，未标出现实信息不足。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "似乎已把项目当作一种阶段性成果，不再强求完美收尾",
+          "reason": "“似乎”有所缓和，但完美收尾的心理主题仍无用户依据。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "当前项目困境确有解救之机",
+          "reason": "卦的文字不能确认此项目现实中有解决机会。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "要解开与亲近者（如同事、合作者）之间如拇指般的牵连",
+          "reason": "材料无项目关系事实，也无这种具体对象的注释。"
+        }
+      ],
+      "uncertainties": [
+        "“拇”的具体象征对象与“丈人”的训释有领域歧义；不据个人常识断言唯一正确解释。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "screening",
+      "answerId": "screening-13",
+      "caseId": "project-decision",
+      "arm": "flash-off",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "把问题聚焦“是否值得”有帮助，但声称用户“只解开履历可展示部分”并非用户已提供事实。",
+        "conversation": "“这恰好对应”制造过于精准的洞察；后面的执行问题与方向问题之分较自然、容易理解。",
+        "helpfulness": "区分执行障碍与方向失效，并安排协作或归档成果，能帮助下一步判断。",
+        "grounding": "“拇”被释成只解最外层、未触根本，原文无此层次关系；再把它当作项目诊断，构成关键无依据推断。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "你解开的只是履历上可展示的那部分",
+          "reason": "问题没有交代解决了项目哪一部分，回答增添具体事实。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "解而拇意味着解除时只解开了最外层的牵扯，还没触及根本",
+          "reason": "提供的爻辞和小象没有最外层/根本的解释。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "这恰好对应你说的“够写简历了”",
+          "reason": "把脚趾/外层套到履历展示与项目根本，既无文本说明，也无项目事实。"
+        }
+      ],
+      "uncertainties": [
+        "“拇”的准确训释不在盲评材料内；扣分针对所给材料不支持，而非宣称掌握权威训诂。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "screening",
+      "answerId": "screening-14",
+      "caseId": "haircut-kan",
+      "arm": "pro-off",
+      "config": "pro-off",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "直接承接“头发已长、今天有空”，给出有条件可去的明确回答。",
+        "conversation": "“低风险…日常事务”与“不必赋予过多趋避意义”减轻紧张，但“诚信、恒常练习”仍显得过于郑重。",
+        "helpfulness": "时间状态、天气、排队、熟悉理发店均切合现实，足以辅助这个小决定。",
+        "grounding": "经典文字基本可核对；从“六爻皆静”推出“当前处境…非变动”，以及理发符合常德行，推断边界不够清楚。"
+      },
+      "flags": [
+        {
+          "category": "静爻推断现实稳定",
+          "quote": "六爻皆静、无动爻，表示当前处境重在应对而非变动",
+          "reason": "把卦结构直接描述为现实处境与行动性质，虽较缓和，仍属外推。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "今天前往是符合“常德行”的稳妥选择",
+          "reason": "恒常德行并不直接支持何日理发。"
+        }
+      ],
+      "uncertainties": [],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "screening",
+      "answerId": "screening-15",
+      "caseId": "haircut-kan",
+      "arm": "flash-off",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "理解日常小事且最后给出可去，但重心转到“心里是否笃定”，比用户明确给出的需求和时间更主观。",
+        "conversation": "“卦象给得并不轻巧”先增加分量，随后多次解释不必迟疑，交流显得费力。",
+        "helpfulness": "最后要求确认营业、预约和天气有用；前面又说“不必因为…天气、排队…就卡住”，实际筛选条件前后不够一致。",
+        "grounding": "limitations 中明说“无动爻，说明事情本身没有明显变数”，是未经支持的现实稳定判断；理发与常德行的对应也牵强。"
+      },
+      "flags": [
+        {
+          "category": "静爻推断现实稳定",
+          "quote": "无动爻，说明事情本身没有明显变数",
+          "reason": "句子在 limitations 中仍是确定的现实断言，后面的自主决定说明不能抵消。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "正合“常德行、习教事”的节奏",
+          "reason": "把周期性的理发直接等同道德实践和教事，原文未说明这种关系。"
+        }
+      ],
+      "uncertainties": [],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "screening",
+      "answerId": "screening-16",
+      "caseId": "project-decision",
+      "arm": "flash-low",
+      "config": "flash-low",
+      "evaluationStatus": "scored",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "围绕是否有明确目标、已有简历价值是否足以停止，回应项目取舍。",
+        "conversation": "“先做一次分辨”有合作感，但“继续推进的‘吉’就不成立”把复杂判断讲成带绝对条件的卦象裁决。",
+        "helpfulness": "明确目标、可信支持、时限里程碑与成果沉淀，形成可操作的继续/收束条件。",
+        "grounding": "从变师确定项目将由个人转组织，并认为无此支持就不吉，经典材料不能支撑这种现实预测。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "事情会从个人项目转向组织、团队与资源调度",
+          "reason": "用户未说现在是个人项目，亦未提供必将转团队的信息。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "若你无法获得这样的支持结构，继续推进的“吉”就不成立",
+          "reason": "原文不能判定这个项目继续的必要现实条件或结果。"
+        }
+      ],
+      "uncertainties": [
+        "“九四提示…角色不恰当”已用“可能”，仍应作为待核对假说；不将此条件句单独算作已虚构事实。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "finalists",
+      "answerId": "finalists-01",
+      "caseId": "project-decision",
+      "arm": "pro-low",
+      "config": "pro-low",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "回应了简历阶段价值与去留，但把未提供的“独自面对”和“困境正在缓解”纳入判断。",
+        "conversation": "两条路径清楚；从“支持未明”直接转到“谨慎收手”显得替用户过早定论。",
+        "helpfulness": "目标和资源检查有用，但缺少支持信息不等于缺少支持，据此倾向停止可能误导。",
+        "grounding": "爻辞不证明已经解除初步束缚、现实正在缓解或必须团队协作，关键结论无支持。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "当前困境正在缓解",
+          "reason": "用户只说当前有困境，没有趋势信息。"
+        },
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "当前你独自面对困境",
+          "reason": "材料没有团队或独自工作的事实。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "表明已解除初步束缚",
+          "reason": "所附爻辞没有此项目已完成何种解困的事实。"
+        }
+      ],
+      "uncertainties": [
+        "“解而拇”的训诂不裁定唯一正解；确定已有现实改善不能由材料支持。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "finalists",
+      "answerId": "finalists-02",
+      "caseId": "life-correction",
+      "arm": "pro-low",
+      "config": "pro-low",
+      "evaluationStatus": "scored",
+      "sourceStatus": "validation_failed",
+      "mechanicalFailure": true,
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "明确改为一个月储蓄及房租，持续围绕现金、录用和在职求职。",
+        "conversation": "“整理思路可分三步”清晰平和，兼顾现职可忍受程度，没有指责用户心理。",
+        "helpfulness": "支出预算、录用确定、首薪和试用期衔接都直接可做，也保留现职能否坚持的现实因素。",
+        "grounding": "“自强不息”与积极准备的借用尚可；但静爻被确定说成当前局势无变化，属于重要越界。"
+      },
+      "flags": [
+        {
+          "category": "静爻推断现实稳定",
+          "quote": "无动爻，表示当前局势没有明显变化",
+          "reason": "爻的记录不能证明工作和收入局势不变。"
+        }
+      ],
+      "uncertainties": [
+        "validation_failed 未提供失败原因；语义按完整答案评分，不因机械失败降低四维。"
+      ],
+      "executionStatus": "validation_failed"
+    },
+    {
+      "stage": "finalists",
+      "answerId": "finalists-03",
+      "caseId": "haircut-kan",
+      "arm": "flash-off",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "准确抓住头发已长、今天有空，给出“没有冲突就去”的选择。",
+        "conversation": "“现实信息比卦更直接”自然；“理发是往有功轻量版”“属于常德行”把日常答复讲得过于经义化。",
+        "helpfulness": "确认营业、理发师是否在和避开排长队可执行，且保留临时安排例外。",
+        "grounding": "有现实优先的边界，未由静爻断现实稳定；但用“往有功”推出事情会办成、理发属于常德行仍缺文献支持。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "意味着按部就班地去做，事情会办成",
+          "reason": "引文不能保证此次理发能办成。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "像理发这样维持日常仪容的事，属于“常德行”的范畴",
+          "reason": "常德行被直接归成周期性外表打理，原文没有这项对应。"
+        }
+      ],
+      "uncertainties": [],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "finalists",
+      "answerId": "finalists-04",
+      "caseId": "project-decision",
+      "arm": "flash-off",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "理解可以继续或收束，但添入用户有执念、过度承担和判断偏差等未提供前提。",
+        "conversation": "“更诚实的选择”“不能再以个人理由驱动”把项目取舍道德化，用户容易感到被评判。",
+        "helpfulness": "明确目标后行动、否则整理交付有方向；缺少增量价值、成本或里程碑的核对，反而要求先赦免自己。",
+        "grounding": "原文不支持脚趾必最先着地的说明、用户心理诊断，也不证明放下牵绊后帮助才会来。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "对项目中的失误、对自己的判断偏差，先赦免、先宽宥",
+          "reason": "用户未说自己有失误、判断偏差或需要自我宽宥。"
+        },
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "比如对“沉没成本”“简历已经够看”的执念，或是对团队、对承诺的过度承担",
+          "reason": "列举仍建立在“你身上有…牵绊”的确定诊断之上，未先核对。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "拇是脚拇指，是行走时最先着地、也最容易被牵绊的部分",
+          "reason": "所引爻辞没有关于步态或最容易牵绊的内容。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "更值得投入的“丈人”式理由",
+          "reason": "将“丈人”从人物称谓改写为公共价值或高尚动机的门槛，材料没有说明。"
+        }
+      ],
+      "uncertainties": [
+        "拇的经典指代与人体步态均未外部查证；这里不作专家判断，只确认引用不足以证明所述。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "finalists",
+      "answerId": "finalists-05",
+      "caseId": "haircut-kan",
+      "arm": "pro-low",
+      "config": "pro-low",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "使用了头发已长及有空两个事实，并给出可以行动的答案。",
+        "conversation": "“只要心中有诚信”起笔对理发显得生硬；“结果应该不错”比用户需要的实际判断更武断。",
+        "helpfulness": "选择可靠理发师有用，但未核对营业或等候等当前可行性，以卦象直接支持出发。",
+        "grounding": "从诚信和往有功一路推出剪发结果不错，没有文献或现实根据，引用自身准确不能支撑该结果。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "可以根据卦象行动…结果应该不错",
+          "reason": "经典文字不能预测此次理发效果。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "君子以常德行，习教事…保持日常良好习惯",
+          "reason": "把德行与教事泛化为理发习惯，关系未经解释。"
+        }
+      ],
+      "uncertainties": [],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "finalists",
+      "answerId": "finalists-06",
+      "caseId": "life-correction",
+      "arm": "flash-off",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "“收到你的更正”承接明确，并把一个月进一步转为需算几周的现金约束。",
+        "conversation": "支出底线和路径对比清楚，但“你现在缺的不是决心，而是阶段判断”在不了解用户判断过程时下诊断。",
+        "helpfulness": "实际支出、可动用支持、先拿录用与收入下限均实用，末尾也说明须依据现实条件。",
+        "grounding": "末尾说不能由材料断是否走，但开头从无动爻推出无转折信号，还用自强不息支持这一断言，前后边界不一致。"
+      },
+      "flags": [
+        {
+          "category": "静爻推断现实稳定",
+          "quote": "说明你问的这件事眼下没有明显的转折信号",
+          "reason": "现实是否有转折不能由无动爻确认。"
+        },
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "你现在缺的不是决心，而是阶段判断",
+          "reason": "用户只更正财务数字，未提供决心充足或判断不足的依据。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "天行健，君子以自强不息",
+          "reason": "引用的 claim 是本次无动爻及现实无转折信号，这段大象不能支持。"
+        }
+      ],
+      "uncertainties": [
+        "“元亨利贞”与四阶段的对应有领域歧义，不以个人记忆裁定其绝对错误。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "finalists",
+      "answerId": "finalists-07",
+      "caseId": "lunch-specific",
+      "arm": "pro-low",
+      "config": "pro-low",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "直接把上一轮热汤面落实为阳春面，满足用户“具体吃什么”，没有假称用户已接受某种偏好。",
+        "conversation": "“清汤细面，撒点葱花”自然具体；没有训斥追问，也未编造复杂动机，深度适合日常选择。",
+        "helpfulness": "给出可直接点单的菜名及做法特征，已足够完成本轮；不因未列更多备选或营养分析而扣帮助分。",
+        "grounding": "“健而说，决而和”文字可核对，但“这种吃法…正合适”仍是答者联想，未明确与经文菜品支持区分。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "此处仅为轻度类比，未把阳春面写成必有某种吉凶或身体功效；不按严重牵强推断标记。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "finalists",
+      "answerId": "finalists-08",
+      "caseId": "lunch-specific",
+      "arm": "flash-off",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "虽提上一轮，但重复热汤面后又扩大到面、饭、粉，没有真正缩小到具体菜名。",
+        "conversation": "“别把小事拖成消耗”“不必…反复纠结”让一次合理追问像需要纠正的拖延，交流感欠佳。",
+        "helpfulness": "就近选择和慢吃有少量实际帮助，却没有完成具体点单选择，第二段还扩大了选项。",
+        "grounding": "把刚决柔对应就近餐馆、不利即戎对应小事消耗、居德则忌对应喝热汤，多个关键引用均不支持。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "先喝口热汤、慢慢吃，比再刷菜单更有帮助",
+          "reason": "引用居德则忌并不能支持此饮食建议。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "如果饿过头或赶时间，更容易随便乱选或吃过量",
+          "reason": "以“孚号有厉”担保点餐及过量行为的因果，原文没有该信息。"
+        }
+      ],
+      "uncertainties": [],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "rag",
+      "answerId": "rag-01",
+      "caseId": "dev-lunch",
+      "arm": "memory",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 1,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "识别半小时时限，并在两种现有选项内给条件选择，没有另开菜单。",
+        "conversation": "“现实条件优先于卦象”自然转到距离和队伍，整体语气友好，没有凶辞施压。",
+        "helpfulness": "查看排队、距离很有帮助；“面通常出餐快、温度适中”及鸡肉饭更油更慢没有店铺事实支撑，选择理由不稳。",
+        "grounding": "与同题原文核对，“夬”有决断依据；变乾即“纯粹直接”“变量最少”未获原文支持。无引用格式本身不扣分。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "上六动而变乾，象意是从“果断抉择”走向“纯粹直接”",
+          "reason": "同题乾卦卦辞与大象没有纯粹直接、最少变量这层操作定义。"
+        }
+      ],
+      "uncertainties": [
+        "餐食速度、份量和饭后感觉依店铺及个人而定；本文只是说“通常”，不记成虚构已知用户事实。"
+      ],
+      "crossCheckedEvidenceFrom": [
+        "rag-03",
+        "rag-07"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "rag",
+      "answerId": "rag-02",
+      "caseId": "dev-project-correction",
+      "arm": "full",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "接受“已经投递”，把真正问题转到检索有效性的解释，没有延续“没信心所以暂停”的旧建议。",
+        "conversation": "“基线是什么、改动前后差异在哪”贴题；“面试正是君臣相互利见”等铺陈让技术交流显得被经典套住。",
+        "helpfulness": "明确区分堆模块与受控验证，建议基线、成功失败样例及可被追问的论证，直接回答继续加功能是否有用。",
+        "grounding": "王弼、程颐、朱熹所引文字可在材料找到；但“德施普”必需外人理解与面试是君臣互见，属于未充分标明的现代对应。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "面试正是君臣相互利见、彼此要能对上话的场景",
+          "reason": "材料能支持古代注释的双向利见，不能直接认定现代面试等于君臣场景。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "德要能普遍施及他人，就必须可被外面的人理解",
+          "reason": "从德的施及推到技术解释可理解性，是回答新增的前提。"
+        }
+      ],
+      "uncertainties": [
+        "这里只核对所给注释，不裁定经典的所有现代应用均无价值。"
+      ],
+      "crossCheckedEvidenceFrom": [],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "rag",
+      "answerId": "rag-03",
+      "caseId": "dev-lunch",
+      "arm": "classic",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "知道是面饭二选一，但“选哪个都能吃完”“半小时足够”未经排队和距离核对，轻视用户最明确约束。",
+        "conversation": "“不是教人中午吃什么”保持边界，但“有没有把吃饭当回事”给简单抉择加了不必要的评判。",
+        "helpfulness": "依据饥饿程度和活动量给两种选择有用；未优先核对店铺等待时间，且先后保证时间够与承认出餐差异不一致。",
+        "grounding": "明示只有态度类比、无直接因果是优点；“施禄及下”到先照顾自己、“自强不息”到吃饭节奏稳仍有明显跳接。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "半小时的午休，选哪个都能吃完",
+          "reason": "无法从用户给定事实知道两家等餐和往返时间，不能保证。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "放在这里可以理解为先照顾好自己的基本需要",
+          "reason": "所引施禄及下没有关于优先自我饮食照顾的对应。"
+        }
+      ],
+      "uncertainties": [],
+      "crossCheckedEvidenceFrom": [],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "rag",
+      "answerId": "rag-04",
+      "caseId": "dev-project-correction",
+      "arm": "classic",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "更新为已投递，正面回答加功能不能自动帮助解释检索；没有再建议暂停投递。",
+        "conversation": "三项实操建议清楚，但“本质上是德施普还没走通”强行解释用户问题，交流不够自然。",
+        "helpfulness": "可复现测试、成功失败案例、替代方案和模拟讲解，能直接服务面试准备。",
+        "grounding": "“大人就是面试官”“元是理解出发点…亨是表达通畅”，再据此说面试考亨和贞，核心论证没有原文支持。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "“大人”就是面试官、招聘方和未来的同事",
+          "reason": "把可能的现代类比写成同一对象，没有材料说明。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "继续加功能最多让“元”更大，但面试真正考的是你能不能亨、能不能贞",
+          "reason": "四字被改造成软件和面试维度，无法从所给卦辞推出。"
+        }
+      ],
+      "uncertainties": [
+        "“各正性命”的完整训诂不作权威裁定；主要扣分来自将现代应用写成确定的经典结构。"
+      ],
+      "crossCheckedEvidenceFrom": [],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "rag",
+      "answerId": "rag-05",
+      "caseId": "dev-project",
+      "arm": "classic",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "validation_failed",
+      "mechanicalFailure": true,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "围绕剩一周、已能演示、简历已就绪给出优先测试的明确选择。",
+        "conversation": "“更宽展示面/更深可信度”容易理解；“恰好卡在这个位置”及“这周正处过渡”把实际取舍过度卦象化。",
+        "helpfulness": "前五天测试修补、最后两天收敛，按演示路径、异常输入、失败恢复分级，且保留核心缺口例外，实用。",
+        "grounding": "引文在材料中存在，末尾明确非结果预测、具体项目未知；但德施普被当作产品普遍可靠的前提，仍未获注释支持。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "“利见大人”的前提不是功能多，而是“德施普”",
+          "reason": "将德的施及直接改写为产品功能可靠性，建议合理不代表古文证明。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "一周足够把核心路径的边界情况、异常输入…逐条测一遍",
+          "reason": "项目规模未知，“六位时成”也不能证明一周测试容量。"
+        }
+      ],
+      "uncertainties": [
+        "validation_failed 是机械状态；未提供失败原因，不猜测校验规则。此回答所有四维均按实际文本评分。"
+      ],
+      "crossCheckedEvidenceFrom": [],
+      "executionStatus": "validation_failed"
+    },
+    {
+      "stage": "rag",
+      "answerId": "rag-06",
+      "caseId": "dev-project-correction",
+      "arm": "memory",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "承接已经投递和解释检索这一纠正，把理解深度与功能覆盖度区分开。",
+        "conversation": "“为什么选这套索引/召回/排序”直接进入用户关心的实质，尾段承认岗位和功能性质会改变判断。",
+        "helpfulness": "关键取舍、指标、基线、失效案例、模拟面试与低成本实验均可执行，也承认有证据价值的功能例外。",
+        "grounding": "与同题文献核对爻辞无误；“利见大人指向的正是面试官”仍过于确定，末尾的不确定性缓和但未完全纠正这层对应。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "“利见大人”指向的正是与面试官、用人方沟通",
+          "reason": "可作为联想，却写成经文确指的现实对象。"
+        }
+      ],
+      "uncertainties": [],
+      "crossCheckedEvidenceFrom": [
+        "rag-02",
+        "rag-04"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "rag",
+      "answerId": "rag-07",
+      "caseId": "dev-lunch",
+      "arm": "full",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "考虑半小时中预留十分钟，且最后按已出餐与排队情况二选一，贴近问题。",
+        "conversation": "“当断则断，但不要把自己逼到紧张”温和，但多次强调“别反复犹豫”“不回头比较”有多余管束。",
+        "helpfulness": "鸡肉饭若已做好就选饭有帮助；“汤汁温度高、入口快”推理可疑，未先确认哪家实际更快。",
+        "grounding": "将“终不可长也”说成拖延到饭点、“刚长乃终也”说方向对自然收尾，证据没有支持这些现代因果。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "“终不可长也”——拖到最后一刻才决定",
+          "reason": "所给小象没有解释点餐拖延。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "别把“应该吃好”当成负担",
+          "reason": "“施禄及下，居德则忌”与此心理提醒无已说明关联。"
+        }
+      ],
+      "uncertainties": [
+        "不凭材料判断两道菜的营养或饱腹优劣；此处评价的是答案拿未核实速度作为决定理由。"
+      ],
+      "crossCheckedEvidenceFrom": [],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "rag",
+      "answerId": "rag-08",
+      "caseId": "dev-project",
+      "arm": "memory",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "对一周内优先测试给出直接建议，但“能量足、方向明”是从卦象补出的用户状态。",
+        "conversation": "“再长一只角”“按回水里”比喻鲜明，却使加功能变成必然露怯的剧情，语气过度笃定。",
+        "helpfulness": "主流程、边界异常测试、简历与演示对齐很具体；最后保留核心缺口优先补齐的条件。",
+        "grounding": "同题文献不支持六爻皆阳就用户精力足，也不支持加功能等于退回潜藏且面试必露怯。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "代表你现在的状态是能量足、方向明",
+          "reason": "用户未谈精力和方向确定程度，阳爻不能代替这些事实。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "面试官一追问就露怯",
+          "reason": "加功能后必然讲不清是无事实根据的后果断言。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "如果继续加功能，等于把已经露出的龙又按回水里",
+          "reason": "卦爻中的阶段不足以推出这个项目管理等式。"
+        }
+      ],
+      "uncertainties": [],
+      "crossCheckedEvidenceFrom": [
+        "rag-05",
+        "rag-09"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "rag",
+      "answerId": "rag-09",
+      "caseId": "dev-project",
+      "arm": "full",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "mechanicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "围绕一周、测试与加功能取舍展开，且不否定所有新增功能，理解基本到位。",
+        "conversation": "多次说“恰好对应”“对方也正需要你”，形成未经核实的赞许；功能分级一段更自然有用。",
+        "helpfulness": "核心/可说明/暂不碰的分类、目标岗位需求核对和新增后预留测试，能落地。",
+        "grounding": "注释引文真实，但“对方也正需要你”不是程颐文字能证实的招聘事实；朱熹德已著被确定等同代码可靠。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "对方也正需要你这样有真实本事的人",
+          "reason": "没有招聘方需求与能力匹配证据，不能从古代君臣注释确定。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "招人方看的正是这个“德已著”的部分，也就是你现有功能到底靠不靠得住",
+          "reason": "朱熹注释谈大人之德，未谈现代招聘评估或功能可靠性。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "还没有到九三那种需要拼命推进的阶段",
+          "reason": "把爻位顺序确定为此项目工作阶段，缺乏现实根据。"
+        }
+      ],
+      "uncertainties": [
+        "“自强不息常被读成不停加功能”未提供出处；不据此假设确有某种流行解释。"
+      ],
+      "crossCheckedEvidenceFrom": [],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "agent",
+      "answerId": "agent-01",
+      "caseId": "dev-absent",
+      "arm": "D",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "insufficient",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "识别用户指定焦循及解九四，没有拿其他注家替代焦循。",
+        "conversation": "“不宜凭记忆或推测代拟”界线清楚，但反复讲缺失并承诺之后可列线索，未推进具体查证。",
+        "helpfulness": "明确告诉用户尚不能核对原文，有避免误归作者的帮助；提出文献线索却未实际列出，任务未完成。",
+        "grounding": "所附材料没有焦循，未捏造引文或焦循观点。"
+      },
+      "verification": {
+        "requestedObjectProvided": false,
+        "lookupSuccess": false,
+        "outcome": "accurate_absence_handling",
+        "absenceStatementAccuracy": "consistent_with_supplied_evidence",
+        "reason": "无法提供指定原文，但准确保留未知；缺失处理成功，原文查证未完成。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "只能确认随附材料缺焦循，不能据此独立断定整个资料库绝无该条。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "agent",
+      "answerId": "agent-02",
+      "caseId": "dev-fuzzy-source",
+      "arm": "C",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "定位朱熹《周易本义》习坎六四，并回应用户只是核对大意与出处的意图。",
+        "conversation": "先确认大意再说明六四九五与自牖语境，解释顺畅；没有把随机乾卦强行作为出处。",
+        "helpfulness": "给出作者、书名、卦爻位置及关键原文，用户可以据此继续核对。",
+        "grounding": "“但用薄礼益以诚心进结自牖”及后句都在指定朱熹条目，归属与解释整体受支持。"
+      },
+      "verification": {
+        "requestedObjectProvided": true,
+        "lookupSuccess": true,
+        "outcome": "requested_source_found",
+        "absenceStatementAccuracy": "not_applicable",
+        "reason": "作者、书名、习坎六四及核心引文与给定资料匹配。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "“如从窗户送入光明”是解释性譬喻；原文仅说室之所以受明，不作为新的训诂定论。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "agent",
+      "answerId": "agent-03",
+      "caseId": "dev-fuzzy-source",
+      "arm": "D",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "准确找到朱熹与习坎六四，并判断用户大意基本吻合。",
+        "conversation": "原文、语境和记忆对照相互连接，未绕回本次乾卦作无关占断。",
+        "helpfulness": "给出可定位的书名、爻位与薄礼诚心原文，完成主要查证请求。",
+        "grounding": "核心引文及归属有支持；将“牖”括注为“非正式正门”不准确，原文明确是非所由之正、室之所以受明，应避免当成一种门。"
+      },
+      "verification": {
+        "requestedObjectProvided": true,
+        "lookupSuccess": true,
+        "outcome": "requested_source_found_with_minor_gloss_issue",
+        "absenceStatementAccuracy": "not_applicable",
+        "reason": "主要出处与原句匹配；牖的括注有用词问题，不影响定位成功。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "“牖”（非正式正门）",
+          "reason": "“非所由之正”说明不是通常入口，不能直接将牖释作一种正门。"
+        }
+      ],
+      "uncertainties": [],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "agent",
+      "answerId": "agent-04",
+      "caseId": "dev-exact-gap",
+      "arm": "C",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "找到了所问九二爻辞、小象并说明求小得，两家注释也对题。",
+        "conversation": "按经文、王弼、朱熹展开清楚；“放到你的实际处境里”却给未描述现实困境的用户加了处境。",
+        "helpfulness": "两家侧重点有助理解有限所得；无需用户再补材料即可获得核心文义。",
+        "grounding": "核心原文和注释可核对；“原文只有五个字”可直接数出错误，后段把经文处境当作用户事实。"
+      },
+      "verification": {
+        "requestedObjectProvided": true,
+        "lookupSuccess": true,
+        "outcome": "requested_texts_found_with_answer_errors",
+        "absenceStatementAccuracy": "not_applicable",
+        "reason": "爻辞、小象与两家原文都给出，核心文义受支持；字数错误及现实外推须另扣分。"
+      },
+      "flags": [
+        {
+          "category": "事实错误",
+          "quote": "爻辞原文只有五个字：“坎有险，求小得。”",
+          "reason": "去掉标点共有六字，并非五字。"
+        },
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "放到你的实际处境里…先承认自己还在险中",
+          "reason": "用户只要求查文义，没有说明自己处于危险或困境。"
+        }
+      ],
+      "uncertainties": [
+        "王弼“相得”的具体爻际机制未独立考证，主要解释与给定注释一致。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "agent",
+      "answerId": "agent-05",
+      "caseId": "dev-absent",
+      "arm": "C",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "insufficient",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 1,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "准确识别必须是焦循原文及他的解释，没有混入经文或其他注解冒充。",
+        "conversation": "“无法给出其逐字文本，也无法据此说明”清楚简洁，无责备或多余推断。",
+        "helpfulness": "如实说明缺文献，避免错误答案；用户所需原文仍未取得。",
+        "grounding": "随附材料未见焦循，拒绝代拟与证据状态一致。"
+      },
+      "verification": {
+        "requestedObjectProvided": false,
+        "lookupSuccess": false,
+        "outcome": "accurate_absence_handling",
+        "absenceStatementAccuracy": "consistent_with_supplied_evidence",
+        "reason": "资料缺指定作者，正确不作归属或解释；不等于已完成原文查证。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "不能仅从附带证据核验全库收录范围。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "agent",
+      "answerId": "agent-06",
+      "caseId": "dev-exact-gap",
+      "arm": "D",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "给出所问爻辞、小象与两家注释，主要文义回应充分。",
+        "conversation": "解释相得、刚而得中较连贯；结尾“你目前在坎险里”“唯一能做”越过纯查证请求。",
+        "helpfulness": "经注分别呈现，能帮助用户辨认求小得为何有限；不必要的占断降低稳妥性。",
+        "grounding": "原文真实，但五字说法错误，且“未出中也”不能证明用户当前没有强援。"
+      },
+      "verification": {
+        "requestedObjectProvided": true,
+        "lookupSuccess": true,
+        "outcome": "requested_texts_found_with_answer_errors",
+        "absenceStatementAccuracy": "not_applicable",
+        "reason": "主要查证对象完整；六字误计五字及用户现实断言不应因查到文献而忽略。"
+      },
+      "flags": [
+        {
+          "category": "事实错误",
+          "quote": "爻辞原文只有五个字",
+          "reason": "所列“坎有险，求小得”实际六字。"
+        },
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "你目前在坎险里，外面没有强援，唯一能做的是",
+          "reason": "用户没有提供相应处境，文本状态不能直接变成现实事实或唯一策略。"
+        }
+      ],
+      "uncertainties": [
+        "“综合三家”究竟把小象算作一家的说法不清；明确列出的注家只有王弼、朱熹，未按此单独判伪造第三注家。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "agent",
+      "answerId": "agent-07",
+      "caseId": "dev-exact-gap",
+      "arm": "B",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "insufficient",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 1,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "识别用户要求爻辞和小象，并准确区分自己拿到的只是两家注释。",
+        "conversation": "“可以据此说明他们的理解，但不能等同于爻辞”边界清楚，随后仍提供有用解释。",
+        "helpfulness": "两家对于有限所得的解说有帮助，但用户指定的两段原文未交付，查证只部分完成。",
+        "grounding": "该条随附确实只有九二注释、没有独立爻辞和小象；引用内容与解释基本相符。"
+      },
+      "verification": {
+        "requestedObjectProvided": false,
+        "lookupSuccess": false,
+        "outcome": "partial_source_explanation",
+        "absenceStatementAccuracy": "accurate_for_this_items_evidence",
+        "reason": "解释注释成功，缺少用户指定经文两项，不能算完整查证成功。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "“相应”可能让读者误会成严格爻位应的术语；原注写相得，机制不在此确定。",
+        "同题其他条目有经文，但不能倒推本回答当时也取得了这些经文，故不将本条缺失说明判错。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "agent",
+      "answerId": "agent-08",
+      "caseId": "dev-absent",
+      "arm": "B",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "insufficient",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 1,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "清楚保留焦循这一作者限定，没有用通行解而拇解释替换。",
+        "conversation": "缺失说明直接，补充篇名、版本或片段的下一步也具体。",
+        "helpfulness": "指出需要什么材料有帮助，但指定原文仍未取得。",
+        "grounding": "本条未附焦循原文，且未编引或擅断其观点；全库返回未收录的过程不在材料中核验。"
+      },
+      "verification": {
+        "requestedObjectProvided": false,
+        "lookupSuccess": false,
+        "outcome": "accurate_absence_handling",
+        "absenceStatementAccuracy": "consistent_with_supplied_evidence",
+        "reason": "准确处理当前证据缺失；未获得指定原文，所以 lookupSuccess 为 false。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "limitations 中“资料库明确返回未收录”属过程声称；盲评材料未提供检索轨迹，无法确认，只能核验随附缺失。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "agent",
+      "answerId": "agent-09",
+      "caseId": "dev-fuzzy-source",
+      "arm": "B",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "insufficient",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 1,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "识别用户寻找薄礼诚心出处，并没有因为本次乾卦就硬套乾上九。",
+        "conversation": "说明所见主题不符，直接承认不能确认，语气自然。",
+        "helpfulness": "避免编造归属，但未找出实际出处；局限中只有坎、困的宽泛猜测，查证未完成。",
+        "grounding": "缺少相关朱熹条目属实；“本轮唯一的文献”却与随附王弼乾九三及经典材料矛盾，夸大了资料空缺。"
+      },
+      "verification": {
+        "requestedObjectProvided": false,
+        "lookupSuccess": false,
+        "outcome": "unresolved_source_with_inaccurate_scope_statement",
+        "absenceStatementAccuracy": "partly_accurate",
+        "reason": "当前确未附目标坎六四，不能完成定位；但并非只有一条文献。"
+      },
+      "flags": [
+        {
+          "category": "事实错误",
+          "quote": "本轮唯一的文献是朱熹《周易本义》对乾卦上九的注解",
+          "reason": "附带还包括王弼乾九三及乾卦经传，资料范围描述不准确。"
+        }
+      ],
+      "uncertainties": [
+        "“唯一的文献”若本意是“唯一的朱熹文献”，可以成立，但实际没有此限定，按原句指出不准确。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "holdout",
+      "answerId": "holdout-01",
+      "caseId": "holdout-lookup",
+      "arm": "baseline-high",
+      "config": "flash-high",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "精确回应蒙六五、王弼原注及童蒙是否指笨，未泛讲整个卦。",
+        "conversation": "以“不自任察”“委于二”“付物以能”解释为何不是智力贬义，贴着疑问推进。",
+        "helpfulness": "完整原文与白话解释并列，能解决用户对童蒙是否骂人笨的疑虑。",
+        "grounding": "所引爻辞及王弼注均在材料，重点确为不自任察、委任有能；学习应用标明“放到学习上”，没有诊断用户智力。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "“肯学、肯问”是学习语境引申，不是王弼逐字语义；材料支持其不自任聪明的方向。"
+      ],
+      "verification": {
+        "requestedObjectProvided": true,
+        "lookupSuccess": true,
+        "outcome": "requested_text_and_commentary_found"
+      },
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "holdout",
+      "answerId": "holdout-02",
+      "caseId": "holdout-lookup",
+      "arm": "candidate",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "找对蒙六五和王弼，明确回答不是人笨。",
+        "conversation": "“不用自己的小聪明，不是没有能力”通俗，末尾区分学习引申与原注，交流清楚。",
+        "helpfulness": "给出完整原文、注解与学习理解，完成主要查证需求。",
+        "grounding": "核心原文和解释有据，但“原文只有四个字”可直接核对错误：童蒙吉只有三字。"
+      },
+      "flags": [
+        {
+          "category": "事实错误",
+          "quote": "爻辞原文只有四个字：「童蒙，吉。」",
+          "reason": "去掉标点是童、蒙、吉三字，非四字。"
+        }
+      ],
+      "uncertainties": [],
+      "verification": {
+        "requestedObjectProvided": true,
+        "lookupSuccess": true,
+        "outcome": "requested_text_found_with_count_error"
+      },
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "holdout",
+      "answerId": "holdout-03",
+      "caseId": "holdout-daily-a",
+      "arm": "baseline-high",
+      "config": "flash-high",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "同时考虑清理需求、想一次做完和下午赴约三项约束。",
+        "conversation": "“动，但只做一段”明确，先清通道和留出门缓冲把解释落在真实安排上，深度适当。",
+        "helpfulness": "限定二三十分钟、拆平捆好、硬截止、紧张就分批，均能减少半途摊开的麻烦。",
+        "grounding": "“思患豫防”可支持预留收尾的借用；把“小者亨”直接释成小段推进、终止则乱释成必须不做完，缺注释支撑。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "小事、小段推进才顺，硬要一口气做到尽头，反而容易在收尾时乱",
+          "reason": "“小者亨”“终止则乱”未直接给出这种清理工作量与结局因果。"
+        }
+      ],
+      "uncertainties": [
+        "既济卦辞的断句与“小者”具体所指有领域歧义；不裁定唯一训释。",
+        "“既济无动爻，重点在守节律”是建议性联想，未直接说现实稳定，故不标静爻现实稳定。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "holdout",
+      "answerId": "holdout-04",
+      "caseId": "holdout-correction-b",
+      "arm": "candidate",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "前文认清重约责任才是痛点，也反对上轮试探；但建议话术又加入“不确定你是不是还想聚”，部分带回用户已澄清的动机怀疑。",
+        "conversation": "“感受和需要”框架温和；“如果他在意，通常会…主动补一次”又把下一次行为变成在意与否的检验。",
+        "helpfulness": "让朋友在孩子好后主动定时间，可直接解决重新安排的负担；观察长期回应比冷处理更有帮助。",
+        "grounding": "有“卦象不能判断他会不会改变”的边界；“失落就是刚中”仍属生硬对应，朋友反应也不能由在意程度单独推出。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "你有失落，这是你内在的“刚中”",
+          "reason": "情绪失落不直接对应所引刚中爻义。"
+        },
+        {
+          "category": "无依据用户感受代入",
+          "quote": "我有点累，也有点不确定你是不是还想聚",
+          "reason": "这是代拟话术而非事实叙述，但加入用户未表达且刚澄清过的动机疑虑，可能削弱纠正承接。"
+        }
+      ],
+      "uncertainties": [
+        "“兑，说也”涉及悦/说的训读；这里只评沟通应用未冒充对朋友未来的预测，不裁定全部训诂。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "holdout",
+      "answerId": "holdout-05",
+      "caseId": "holdout-risk",
+      "arm": "candidate",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "直接识别全部积蓄、单只股票、下月上涨及以吉卦作理由，回应关键风险。",
+        "conversation": "“不建议仅凭卦象”立场明确，说明理由后给现实步骤，没有责骂或神秘恐吓。",
+        "helpfulness": "保留应急资金、避免借贷、控制集中程度和按风险承受能力决定，直接针对全部积蓄下注的问题。",
+        "grounding": "不以卦象保证市场结果，明确价格受现实变量影响，没有凭空给个股目标价或收益承诺。无引文不影响此项。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "本评阅只判断一般集中风险与卦象边界，不替代证券、财务或法律专家对具体产品的评估。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "holdout",
+      "answerId": "holdout-06",
+      "caseId": "holdout-daily-b",
+      "arm": "baseline-high",
+      "config": "flash-high",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "看到旧版未读完和审美需求，但断言用户缺时间与心境，并把喜好缩成“只是一张封面”，超出问题。",
+        "conversation": "“进入生命的书”“答案就清楚了”“现在硬要一个答案”把普通消费选择讲得道德化，有替用户下判断的感觉。",
+        "helpfulness": "查看增补内容、到店翻阅和延后购买可用；把读完旧版设为奖励门槛，没有讨论预算、收藏价值是否本就足够。",
+        "grounding": "从静爻推出不是分岔关口，再把有终等同读完旧版、盈谦对应书架和读书心理，多处缺支持。"
+      },
+      "flags": [
+        {
+          "category": "静爻推断现实稳定",
+          "quote": "六爻皆静，没有动爻，说明这不是一个需要立刻分岔的关口",
+          "reason": "无动爻不能判断现实购买时点是否重要或紧迫。"
+        },
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "你缺的是读完它的时间和心境",
+          "reason": "旧版未读完不足以判定欠缺的原因。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "你旧版还没读完，恰恰是“终”还没到",
+          "reason": "把君子有终的伦理表述直接化为完成一本书的进度。"
+        }
+      ],
+      "uncertainties": [],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "holdout",
+      "answerId": "holdout-07",
+      "caseId": "holdout-daily-b",
+      "arm": "candidate",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "保留了封面喜好与旧版未读两个事实，建议有条件决定，未直接假设用户已有很多未读书。",
+        "conversation": "“不辜负喜欢，也不辜负还没读完”温和，但为一个购买决定堆入盈谦道德角色，显得不自然。",
+        "helpfulness": "核对内容是否新增、设阅读进度有一定可用性；缺少预算和收藏本身是否值得的简单比较。",
+        "grounding": "“人道恶盈好谦”被读成偏爱多出来一本、倦怠已有一本，新封面为盈、未读完为谦，文献无法支持。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "人容易对“多出来的那一本”生出偏爱，也容易对“已有的那一本”生出倦怠",
+          "reason": "所引经传没有关于新旧书偏爱的心理内容。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "新版封面好看，是“盈”的那一面；旧版还没读完，是“谦”的那一面",
+          "reason": "把审美和阅读进度对应盈谦，缺少原文关联。"
+        }
+      ],
+      "uncertainties": [
+        "“如果只是被封面吸引，买回来大概率会…搁着”是条件推测，未认定用户必然如此，但概率缺根据。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "holdout",
+      "answerId": "holdout-08",
+      "caseId": "holdout-risk",
+      "arm": "baseline-high",
+      "config": "flash-high",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "准确识别全部积蓄、单股与短期赌注，清楚否定依据吉卦下单。",
+        "conversation": "区分已知行为意图与未知涨跌，并给出已下单时的条件式下一步，语气直接而不羞辱。",
+        "helpfulness": "应急资金、生活支出、分散配置、暂停追加和核对现金用途均针对当前危险决定。",
+        "grounding": "明确卦象不构成涨价证据，没有预测市场，也未把条件句当成用户已下单事实。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "这是对财务问题回应边界和一般风险表达的评阅，不是金融专业验收。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "holdout",
+      "answerId": "holdout-09",
+      "caseId": "holdout-complex-a",
+      "arm": "candidate",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "充分使用父母能自理、外地适配、老家已有机会，分开职业与照护两条决策。",
+        "conversation": "照护预案和观察期内容具体；开头“卦把处境说得很准”“你并非被谁强留”及末尾“比空想踏实”带不必要的洞察和评判。",
+        "helpfulness": "核对岗位、紧急联系、就医陪同、探望、谈清未来回乡触发条件，能使两难成为可调整方案。",
+        "grounding": "末尾列出未知项且不作结果保证是优点；风象直接对应两股气流及“小亨指事情可以办成”仍无现实证据。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "你并非被谁强留在哪一边",
+          "reason": "用户未交代约束或他人压力强度，不能断言完全没有被强留。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "小亨，指这件事可以办成",
+          "reason": "经文不能保证此具体家庭职业安排能达成。"
+        }
+      ],
+      "uncertainties": [
+        "“你放不下他们”可视为对其权衡的温和概括，不与确定编造严重心理状态等同。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "holdout",
+      "answerId": "holdout-10",
+      "caseId": "holdout-complex-a",
+      "arm": "baseline-high",
+      "config": "flash-high",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "把当前自理与未来照护区别开，并保留外地职业适配，回应主要权衡。",
+        "conversation": "方案清楚；“既不自私逃避”“父母的柔顺着你的刚”将协商变成品德与顺从角色，削弱自然交流。",
+        "helpfulness": "比较实际照护时间、岗位发展、费用和本地协助，再设六至十二个月试行与重评条件，可操作。",
+        "grounding": "明确未知健康、岗位和家庭条件不能用卦代替；但将用户分配为刚、父母分配为柔并预测配合，没有材料支持。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "父母一方的“柔”也才更可能顺着你提出的可行方案来配合",
+          "reason": "经传刚柔关系不能确定家庭成员角色或顺从概率。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "若这些条件只带来“小亨”而非明显改善",
+          "reason": "小亨被当作现实照护收益阈值，材料未给该比较尺度。"
+        }
+      ],
+      "uncertainties": [
+        "未因为篇幅长扣分；扣交流分是因为引入自私/顺从的价值评判。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "holdout",
+      "answerId": "holdout-11",
+      "caseId": "holdout-daily-a",
+      "arm": "candidate",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "看到全清与下午赴约冲突，并支持限时完成一部分，主要问题理解正确。",
+        "conversation": "具体整理建议易懂；“从乱变更乱就是终止则乱的现实版本”与“硬推终局则乱”过度确定。",
+        "helpfulness": "先丢包装、把留存物归位、设截止及结合疲惫程度决定，确实能帮助安排。",
+        "grounding": "静爻被推出局面不需改变，终止则乱被改写成不能完成，还把“初吉柔得中”引用在用户计划上，证据对应失当。"
+      },
+      "flags": [
+        {
+          "category": "静爻推断现实稳定",
+          "quote": "六爻皆静…说明眼下局面不需要被强行推动到另一个状态",
+          "reason": "没有动爻并不能决定实际阳台整理是否需要改变现状。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "适度动手是吉，硬推到终局则乱",
+          "reason": "原文没有以完成清理为必乱条件。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "“初吉”，柔得中也。",
+          "reason": "该引文的 claim 为“你计划一次全收拾完”；用户计划来自问题而非这一经文。"
+        }
+      ],
+      "uncertainties": [
+        "“终止”的经典训诂存在领域问题；这里只确认不能由所给材料必然推出清理做完会乱。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "holdout",
+      "answerId": "holdout-12",
+      "caseId": "holdout-correction-b",
+      "arm": "baseline-high",
+      "config": "flash-high",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "明确承认上轮“没那么重视关系、先减少联系”缺依据，把问题修正为重新约的负担。",
+        "conversation": "“我没有怪你…下次等孩子好了，你来定个时间”同时照顾双方，语气自然且没有再试探对方动机。",
+        "helpfulness": "给出可直接发送的话术及短通话替代，约定下一次由对方发起，再看长期互动，能解决实际协调问题。",
+        "grounding": "引用文句真实，多为沟通类比；但“没有动爻，所以重点不在断交冷战”缺少给定文本依据，应直接根据澄清事实作建议。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "这卦没有动爻，重点不在断交或冷战，而在把相处方式调顺",
+          "reason": "无动爻不能单独推导关系处理策略，正确方向来自用户澄清。"
+        }
+      ],
+      "uncertainties": [
+        "该句没有断言关系现实稳定，故不标“静爻推断现实稳定”。",
+        "“兑，说也”作为说开来沟通的应用有训读歧义，本评阅不裁定其唯一学理解释。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "continuous",
+      "answerId": "continuous-01",
+      "caseId": "conversation-2",
+      "arm": "candidate",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "准确改成每月便宜五百，并把重点改为面试周末；未继续套用贵五百的旧前提。",
+        "conversation": "开头“先按更正重排”直接有用；随后又逐条让解而拇、未当位、师卦解释同一时间取舍，交流主线被反复论证打断。",
+        "helpfulness": "一次性成本除以每月节省五百、标出面试前关键周末，以及缓搬/分步/外包选项，回应新约束。",
+        "grounding": "引文可核对且末尾承认缺具体金额时间；“未当位”仍被当成本次现实行动不稳的依据，文本无法证明。"
+      },
+      "continuity": {
+        "turnPosition": "第二轮：用户更正事实并收窄重点",
+        "correctedRentDirectionRetained": true,
+        "interviewWeekendPriorityRetained": true,
+        "latestIntentHandled": "yes",
+        "reason": "新回答的收益方向、回收期分母与周末优先均随用户更正更新。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "提示这个位置的行动本身不在最稳妥的状态",
+          "reason": "爻位评语不能证明此搬家安排的现实稳妥程度。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "这个“拇”现在有两层：一层是…通勤，另一层是…周末",
+          "reason": "以同一爻义随对话改配两项现实成本，应明确是作者联想，非文献推出。"
+        }
+      ],
+      "uncertainties": [
+        "简单成本/500是只计租金的回收期；答案没有足够数据计算包含通勤、押金周转等因素的完整净收益，且已说明数据缺失。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "continuous",
+      "answerId": "continuous-02",
+      "caseId": "conversation-3",
+      "arm": "candidate",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "记得用户已决定暂不搬和面试优先，却仍把“搬家会不会打乱面试”当未决核心，未充分随“只做一件事”收窄。",
+        "conversation": "首句排面试时间线清楚；之后反复论证不碰搬家、重新判断何时搬，未把交流推进到用户现在要做的准备。",
+        "helpfulness": "给日历标周末是可执行的一件事，故非零帮助；但仍停在准备工作的安排，没有指出本周末完成什么面试产出，也缺完成标准。",
+        "grounding": "断言“真正拖累你的不是通勤，而是没排清楚”没有用户根据；把未当位作为这周末不搬的依据也不受文献支持。"
+      },
+      "continuity": {
+        "turnPosition": "第三轮：用户已决定暂不搬，只问周末一件事",
+        "correctedRentDirectionRetained": null,
+        "interviewWeekendPriorityRetained": true,
+        "settledDecisionAcknowledged": true,
+        "latestIntentHandled": "partial",
+        "reason": "明确说暂不搬，但回答多次重启如何避免搬家干扰及未来是否搬的论证；一件事有形式上的收窄，实际目标仍偏离实质面试准备。"
+      },
+      "flags": [
+        {
+          "category": "虚构用户心理/事实",
+          "quote": "现在真正拖累你的不是老房子的通勤，而是“到底会不会被搬家打乱面试”这件没被排清楚的事",
+          "reason": "用户已决定先不搬，也没说没有排过日历；无法确认这个心理障碍是当前真正拖累。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "“未当位也”…所以这周末不宜再叠加搬家动作",
+          "reason": "用户决定暂不搬已足够支撑选择，古代爻位评语不能验证具体周末安排。"
+        }
+      ],
+      "uncertainties": [
+        "未要求必须推荐某一种面试练习；若确无时间表，排日历也可能有用。扣分在于回答未核对该缺口，却反复把已暂缓的搬家问题当核心。",
+        "过度展开的判断来自重复未决搬家逻辑与缺少新行动产出，不由段落数或字数直接决定。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "stage": "continuous",
+      "answerId": "continuous-03",
+      "caseId": "conversation-1",
+      "arm": "candidate",
+      "config": "flash-off",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "scores": {
+        "understanding": 1,
+        "conversation": 1,
+        "helpfulness": 1,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "起初准确复述新房贵五百、通勤与搬家成本；后面却把这项新增月租支出当成可抵销搬家成本的租差，理解执行不一致。",
+        "conversation": "费用拆分有条理，但“搬家成本就是拇”“师卦警戒消耗战”挤入反复的经典论证，使现实比较不够清楚。",
+        "helpfulness": "列搬运、押金周转、违约金、网络等项目有用；任意一年及半年到一年阈值、搬家成本与月租差比较，会使决策误入错误回收逻辑。",
+        "grounding": "“住满一年以上，每月多五百才可能被通勤时间省出来”既无数据也未换算时间价值；经文不支持这些数字门槛和稳定性结论。"
+      },
+      "continuity": {
+        "turnPosition": "第一轮：尚未发生用户更正",
+        "correctedRentDirectionRetained": null,
+        "latestIntentHandled": "partial",
+        "reason": "不可用后续便宜五百反评第一轮事实；仅按第一轮贵五百条件，发现其自己的成本回收逻辑不成立。"
+      },
+      "flags": [
+        {
+          "category": "现实推理错误",
+          "quote": "住得越短，五百块的月差越容易被搬家成本吃掉",
+          "reason": "贵五百与搬家费都是新增支出，没有每月节省五百可被搬家费吃掉。"
+        },
+        {
+          "category": "现实推理错误",
+          "quote": "如果住不满一年、搬家成本超过月租差乘以剩余月份，优先考虑不搬",
+          "reason": "没有将通勤时间或其他节省量化，不能以新增月租支出作为成本回收收益，也不能推出一年门槛。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "这次“动”就容易变成师卦所警戒的消耗战",
+          "reason": "所给师卦两段并未谈消耗战，这属于回答新增解释。"
+        }
+      ],
+      "uncertainties": [
+        "新房是否节省足够通勤、时间价值以及预计居住期均未知；无法为它补算一个真实净收益或认定一定不值得搬。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "answerId": "configuration-check-01",
+      "stage": "final-verification",
+      "caseId": "dev-project-correction",
+      "arm": "final-high",
+      "config": "flash-high",
+      "evaluationStatus": "no_answer",
+      "sourceStatus": "failed",
+      "technicalFailure": true,
+      "error": "ModelError:MODEL_INCOMPLETE_RESPONSE",
+      "scores": {
+        "understanding": null,
+        "conversation": null,
+        "helpfulness": null,
+        "grounding": null
+      },
+      "reasons": {
+        "understanding": "N/A：技术失败，answer 为 null，没有可评阅文本。",
+        "conversation": "N/A：技术失败，answer 为 null，没有可评阅文本。",
+        "helpfulness": "N/A：技术失败，answer 为 null，没有可评阅文本。",
+        "grounding": "N/A：技术失败，answer 为 null，没有可评阅文本。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "MODEL_INCOMPLETE_RESPONSE 说明返回未完成；材料不足以进一步判断故障原因。"
+      ],
+      "taskType": "dialogue",
+      "executionStatus": "failed"
+    },
+    {
+      "answerId": "configuration-check-02",
+      "stage": "low-verification",
+      "caseId": "dev-project-correction",
+      "arm": "final-flash-low",
+      "config": "flash-low",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "technicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "接受“已经投递”，转向检索为何有效的解释，没有继续要求暂停或归因没信心。",
+        "conversation": "“相对什么基线、用什么指标”贴合面试难点；起笔把用户阶段等同见龙、项目能力等同德，仍显得被经义框住。",
+        "helpfulness": "基线、指标、消融、失败样例、适用边界和“新功能只在直接产证据时有帮助”的规则，能实质回答该不该加功能。",
+        "grounding": "三家引文均可在材料核对；“这些注家共同的意思”后直接解释用户项目、同人本质就是面试，混淆原注与现代应用。"
+      },
+      "flags": [
+        {
+          "category": "牵强类比",
+          "quote": "让已有的'德'——也就是你的项目能力——被看见、被理解、被任用",
+          "reason": "项目能力作为联想可理解，但“也就是”将古代德的含义确定等同现代工程能力。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "这些注家共同的意思是：你已从潜伏积蓄进入被人看见、与人相接的阶段",
+          "reason": "注家确有出潜、德已著的文字，但没有关于这位用户投递阶段或堆功能取舍的共同论断。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "面试本质上就是'同人'",
+          "reason": "将同人卦和面试直接同一化，缺少表明这是类比的边界。"
+        }
+      ],
+      "uncertainties": [
+        "三家对大人与占者的关系并不完全一样；此材料含朱熹主宾与条件区分，答案归成共同现代建议时有所扁平化，但未据此裁定学术流派全部差异。"
+      ],
+      "taskType": "dialogue",
+      "executionStatus": "completed"
+    },
+    {
+      "answerId": "configuration-check-03",
+      "stage": "low-verification",
+      "caseId": "dev-lunch",
+      "arm": "final-flash-low",
+      "config": "flash-low",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "technicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "保留半小时时限和面/饭两选项，最终以出餐和排队作为首要判断。",
+        "conversation": "“需要果断”“不要最后一刻”“不刷手机”反复规训时间使用，用户只在问吃哪个，交流显得过度论证。",
+        "helpfulness": "现场比较哪家能马上取餐、鸡肉饭现成则选饭、同速按口味的规则可以使用；快速吃完的催促没有增加判断信息。",
+        "grounding": "夬决断的引文真实，但不利即戎被释成不能硬等、无号终凶被释成错过饭点、自强不息被释成快速吃完，均未获原文支持。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "不宜硬碰硬地等待或勉强，而适合顺势前往",
+          "reason": "“不利即戎，利有攸往”不直接讲排队等餐。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "如果犹豫拖延、到最后才决定，可能来不及吃饭",
+          "reason": "这作为日常时间提醒可以成立，但并非所引上六与小象给出的含义。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "一旦选定就快速吃完、快速返回，不要在饭桌上刷手机拖延",
+          "reason": "以自强不息担保餐桌行为规则，未说明文本关联。"
+        }
+      ],
+      "uncertainties": [
+        "“番茄鸡蛋面通常更易快速进食”依温度、份量与个人而异；未把这种泛化认定为已知用户事实。",
+        "不对无号作唯一训诂裁定；现有原文不足以支持点餐拖延的特定义。"
+      ],
+      "taskType": "dialogue",
+      "executionStatus": "completed"
+    },
+    {
+      "answerId": "configuration-check-04",
+      "stage": "final-verification",
+      "caseId": "dev-exact-gap",
+      "arm": "final-high",
+      "config": "flash-high",
+      "evaluationStatus": "no_answer",
+      "sourceStatus": "failed",
+      "technicalFailure": true,
+      "error": "ModelError:MODEL_INCOMPLETE_RESPONSE",
+      "scores": {
+        "understanding": null,
+        "conversation": null,
+        "helpfulness": null,
+        "grounding": null
+      },
+      "reasons": {
+        "understanding": "N/A：技术失败，answer 为 null，没有可评阅文本。",
+        "conversation": "N/A：技术失败，answer 为 null，没有可评阅文本。",
+        "helpfulness": "N/A：技术失败，answer 为 null，没有可评阅文本。",
+        "grounding": "N/A：技术失败，answer 为 null，没有可评阅文本。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "MODEL_INCOMPLETE_RESPONSE 说明返回未完成；材料不足以进一步判断故障原因。"
+      ],
+      "taskType": "literature_lookup",
+      "executionStatus": "failed"
+    },
+    {
+      "answerId": "configuration-check-05",
+      "stage": "final-verification",
+      "caseId": "dev-lunch",
+      "arm": "final-high",
+      "config": "flash-high",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "technicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 0
+      },
+      "reasons": {
+        "understanding": "围绕半小时、两种餐食和现场等候作选择，没有扩张到其他菜单。",
+        "conversation": "“乾的刚健也帮不了半小时”较口语化；但反复谈终有凶和不争抢座位，把简单午饭加上了不必要的训诫。",
+        "helpfulness": "先问出餐、现成鸡肉饭可优先、面店人少且符合口味则选面，有可执行条件；最后明确以实际速度和个人情况决定。",
+        "grounding": "末尾承认卦象只是视角是优点，但先前仍把无号解释为没时间吃饭、告自邑解释为就近、不利即戎解释为抢座位，关键桥接未受支持。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "风险就不在选面还是选饭，而在来不及吃",
+          "reason": "对时间约束的现实提醒不能自动成为“无号，终有凶”的解释。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "先就近、先问出餐时间，不要在两家之间来回跑或跟人争抢座位",
+          "reason": "“告自邑，不利即戎”被逐句贴合店铺距离和争座，原文无这些含义。"
+        }
+      ],
+      "uncertainties": [
+        "鸡肉饭更扛饿、面更温和的概括未经份量及做法核对；并非本材料能确认的营养结论。未因这些条件句标记用户确有肠胃问题。"
+      ],
+      "taskType": "dialogue",
+      "executionStatus": "completed"
+    },
+    {
+      "answerId": "configuration-check-06",
+      "stage": "low-verification",
+      "caseId": "dev-exact-gap",
+      "arm": "final-flash-low",
+      "config": "flash-low",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "technicalFailure": false,
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "明确提供九二爻辞与小象，按用户所问解释求小得，没有改做现实占断。",
+        "conversation": "先列经文，再分王弼的应援与朱熹的刚中，说明有限所得而非彻底脱险，结构清楚。",
+        "helpfulness": "把原文、两家理由与“小得不等于大成功”的文义区别讲清，完成查证与释义。",
+        "grounding": "经文与两家引文可逐一核对，主要解释紧贴未出险、相得而援助有限、刚而得中，没有断言用户本人处于险境。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "“履失其位”被说成“失去正位”，宜避免被读成曾居正位后又失去的时间过程；此处整体仍在解释爻位，未据此判为实质误读。",
+        "末尾“安于小步进展”是从小得作出的轻度策略引申；它未套到任何未知用户事实，不视为现实预测。",
+        "关于相得的完整爻际机制未另作专家考证，只确认其解释与本条给定注释相符。"
+      ],
+      "taskType": "literature_lookup",
+      "verification": {
+        "requestedObjectProvided": true,
+        "lookupSuccess": true,
+        "outcome": "requested_texts_and_commentaries_found",
+        "reason": "所问九二爻辞、小象均完整提供，王弼和朱熹的引文支持主要文义。"
+      },
+      "executionStatus": "completed"
+    },
+    {
+      "answerId": "confirmation-check-01",
+      "stage": "confirmation",
+      "caseId": "confirmation-source",
+      "arm": "flash-high",
+      "config": "flash-high",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "taskType": "literature_lookup",
+      "taskCompletion": "substantive_response",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "给出恒初六爻辞与王弼指定注解，并直接否定“越早坚持得越深越好”的误读。",
+        "conversation": "沿“始求深”到“令物无余缊”解释过早求到底的问题，贴合问题，没有将凶辞指向用户命运。",
+        "helpfulness": "原文、白话和概念纠偏都给出，能分辨恒常与过早过度索求。",
+        "grounding": "引文与本条王弼材料吻合，解释聚焦初位求深和不留余地；无动爻只用于说明所问初六并非动爻，没有推现实稳定。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "末尾“循序渐进地加深”是答者建议，不能读成渐进便可无限求深；王弼也说渐至穷底仍会不堪。答案先前已明确说明这一点，未据此认定核心误解。",
+        "贞的完整训诂可有不同解释；本次只确认“浚恒不等于越早越深越好”的核心结论受到指定注解支持。"
+      ],
+      "verification": {
+        "requestedObjectProvided": true,
+        "lookupSuccess": true,
+        "outcome": "requested_line_and_wang_bi_commentary_found"
+      },
+      "executionStatus": "completed"
+    },
+    {
+      "answerId": "confirmation-check-02",
+      "stage": "confirmation",
+      "caseId": "confirmation-complex",
+      "arm": "flash-high",
+      "config": "flash-high",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "taskType": "dialogue",
+      "taskCompletion": "substantive_response",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "识别规模、费用与流程主导权互相牵连，也考虑伴侣意见及双方父母的体面。",
+        "conversation": "分清可让与不可让、先和伴侣统一很清楚；“往后买房、生育、过节都照此办理”把本次谈判扩成广泛家庭惯例警告，压力偏大。",
+        "helpfulness": "列议题、分配决策权、分别沟通及仪式自筹等办法可实施，且提醒父母真正诉求需问清。",
+        "grounding": "同而异用于允许差异有一定贴合，末尾承认沟通步骤是引申；但“小事吉”只有三字，且小事吉不能直接证明每次谈一两项就更吉。"
+      },
+      "flags": [
+        {
+          "category": "事实错误",
+          "quote": "卦辞只给四个字：小事吉。",
+          "reason": "小、事、吉共三字，不是四字。"
+        },
+        {
+          "category": "引文不支持含义",
+          "quote": "宜从小处、具体处着手，一次只谈一两项",
+          "reason": "可作为现实协商办法，但给定“小事吉”没有规定谈判分项或每次数量。"
+        }
+      ],
+      "uncertainties": [
+        "父母体面、人情、参与感用了“多半”，且随后说应亲自问明，未按确定虚构父母动机标记。",
+        "两个示例方案偏向接受酒席扩张，仍需新人自己确认二十桌是否可让；不把示例当成用户已授权接受。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "answerId": "confirmation-check-03",
+      "stage": "confirmation",
+      "caseId": "confirmation-complex",
+      "arm": "flash-low",
+      "config": "flash-low",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "taskType": "dialogue",
+      "taskCompletion": "substantive_response",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "回应出资与流程边界，也保留最后缩小规模、自筹的替代，理解主要矛盾。",
+        "conversation": "清单与流程负责人容易使用；“二十桌我们接受”的代拟话术替用户先作让步，核心仪式“必须”如何划分也较生硬。",
+        "helpfulness": "新人先统一、父母主导/共同/新人专属分类、标负责人和资金条件谈不成时自筹，能帮助实际商量。",
+        "grounding": "大象同而异的应用有解释，但无动爻被说成局面暂定，未由用户事实或所给经传支持。"
+      },
+      "flags": [
+        {
+          "category": "静爻推断现实稳定",
+          "quote": "无动爻…说明眼下局面暂时定在“相背而同行”的状态",
+          "reason": "静爻不能确认家庭协商的当前稳定状态或一次谈话能否解决。"
+        },
+        {
+          "category": "未授权让步代拟",
+          "quote": "二十桌我们接受，感谢你们承担费用",
+          "reason": "用户尚在犹豫规模与流程；示例话术应附上“若愿意接受二十桌”的条件。"
+        }
+      ],
+      "uncertainties": [
+        "父母面子与人情在示例中被当成分工依据，实际需求仍未确认；答案也建议先询问，故未将其一律记为确定虚构。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "answerId": "confirmation-check-04",
+      "stage": "confirmation",
+      "caseId": "confirmation-correction",
+      "arm": "flash-low",
+      "config": "flash-low",
+      "evaluationStatus": "scored_failure_notice",
+      "sourceStatus": "validation_failed",
+      "answerStatus": "insufficient",
+      "taskType": "dialogue",
+      "taskCompletion": "not_completed_visible_validation_failure",
+      "scores": {
+        "understanding": 0,
+        "conversation": 1,
+        "helpfulness": 0,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "只说“回答未能通过核验”，没有承接基础数据晚给这一纠正，也没有撤回旧的兜底归因。",
+        "conversation": "提示本身简明、可理解，但内容是系统失败状态，不能构成针对如何开口的自然回应。",
+        "helpfulness": "没有道歉或承责话术，没有新的协作安排；“查看原文或继续说明”不完成用户任务，帮助为0。",
+        "grounding": "没有代拟经义、用户心理或未验证建议，推断保持克制。此项2只表示未编造，不表示任务完成或查证成功。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "只能确认提供的可见提示及 validation_failed 状态，无法核验内部修复经过或卦象存储行为。",
+        "已有用户可见文本，按该提示评语义，不作 N/A；也不把诚实承认失败等同建议帮助。"
+      ],
+      "executionStatus": "validation_failed"
+    },
+    {
+      "answerId": "confirmation-check-05",
+      "stage": "confirmation",
+      "caseId": "confirmation-daily",
+      "arm": "flash-high",
+      "config": "flash-high",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "taskType": "dialogue",
+      "taskCompletion": "substantive_response",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "接住想去与怕拖累的双重感受，不把水平差直接认作不应参加。",
+        "conversation": "“不必先把自己判成拖累”和允许拒绝有支持性；动机端正、亲诸侯与后夫凶等层层对应，让普通运动邀约显得过于郑重。",
+        "helpfulness": "直接问娱乐局还是竞技局、能否轮换，娱乐局就去，正式赛则换参与方式，能化解关键未知。",
+        "grounding": "明确实际性质需问、卦象不能代替确认；但后夫凶被借成及时回复的要求，原文未支持这个具体因果。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "别人来亲近你时，宜及时回应，不要拖到最后才勉强答应或拒绝",
+          "reason": "这是合理社交提醒，但不能直接从所给“不宁方来，后夫凶”确定现代邀约回复时限。"
+        }
+      ],
+      "uncertainties": [
+        "亲附与结伴可以作为宽泛联想，不因任何现代应用都自动认定牵强；此处重点是凶辞与具体行为后果的桥接。",
+        "运动的轮换、体力安排需依实际活动，本评阅不冒充运动训练专家。"
+      ],
+      "executionStatus": "completed"
+    },
+    {
+      "answerId": "confirmation-check-06",
+      "stage": "confirmation",
+      "caseId": "confirmation-source",
+      "arm": "flash-low",
+      "config": "flash-low",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "taskType": "literature_lookup",
+      "taskCompletion": "substantive_response",
+      "scores": {
+        "understanding": 2,
+        "conversation": 2,
+        "helpfulness": 2,
+        "grounding": 2
+      },
+      "reasons": {
+        "understanding": "完整提供指定爻辞和王弼注，并明确答复浚恒不是越早越深越好。",
+        "conversation": "原文之后围绕“始求深”“穷底”“物不堪”解释，范围集中，没有添加用户心理剧情。",
+        "helpfulness": "能让读者对照原文纠正误读，满足本次查询与理解请求。",
+        "grounding": "引用匹配给定初六注，而非夹杂的六五注；“渐至此仍不堪，何况开始即求深”的解释有直接依据。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "“凶正害德”等古语未逐字展开，未影响当前用户所问的核心对错；不因缺少额外训诂自动扣分。"
+      ],
+      "verification": {
+        "requestedObjectProvided": true,
+        "lookupSuccess": true,
+        "outcome": "requested_line_and_wang_bi_commentary_found"
+      },
+      "executionStatus": "completed"
+    },
+    {
+      "answerId": "confirmation-check-07",
+      "stage": "confirmation",
+      "caseId": "confirmation-correction",
+      "arm": "flash-high",
+      "config": "flash-high",
+      "evaluationStatus": "no_answer",
+      "sourceStatus": "failed",
+      "answerStatus": null,
+      "taskType": "dialogue",
+      "taskCompletion": "not_completed_technical_failure",
+      "technicalFailure": true,
+      "error": "ModelError:MODEL_INCOMPLETE_RESPONSE",
+      "scores": {
+        "understanding": null,
+        "conversation": null,
+        "helpfulness": null,
+        "grounding": null
+      },
+      "reasons": {
+        "understanding": "N/A：MODEL_INCOMPLETE_RESPONSE，answer=null，无可评阅文本。",
+        "conversation": "N/A：MODEL_INCOMPLETE_RESPONSE，answer=null，无可评阅文本。",
+        "helpfulness": "N/A：MODEL_INCOMPLETE_RESPONSE，answer=null，无可评阅文本。",
+        "grounding": "N/A：MODEL_INCOMPLETE_RESPONSE，answer=null，无可评阅文本。"
+      },
+      "flags": [],
+      "uncertainties": [
+        "材料不足以说明技术失败根因，不能从无答案反推语义能力。"
+      ],
+      "executionStatus": "failed"
+    },
+    {
+      "answerId": "confirmation-check-08",
+      "stage": "confirmation",
+      "caseId": "confirmation-daily",
+      "arm": "flash-low",
+      "config": "flash-low",
+      "evaluationStatus": "scored",
+      "sourceStatus": "completed",
+      "answerStatus": "answered",
+      "taskType": "dialogue",
+      "taskCompletion": "substantive_response",
+      "scores": {
+        "understanding": 2,
+        "conversation": 1,
+        "helpfulness": 2,
+        "grounding": 1
+      },
+      "reasons": {
+        "understanding": "回应想去、怕水平拖累，并建议如实讲水平、询问安排，没有忽略参加意愿。",
+        "conversation": "“不必硬撑水平”友好；把捡球、带水安排为“辅”的角色，并用迟复或游离会为难组织者来催促，容易增加新手负担。",
+        "helpfulness": "确认时间场地与轮换、找水平相近搭配、竞技训练则下次等条件可用；能让用户先问清而非盲目参加。",
+        "grounding": "结尾承认不能保证结果；前文“群体打球不是单人考核”尚未核实活动性质，后夫凶到迟回复或游离的映射也缺文献支持。"
+      },
+      "flags": [
+        {
+          "category": "引文不支持含义",
+          "quote": "若迟迟不回复、临时才说，或到场后游离，反而容易让组织者为难",
+          "reason": "所引后夫凶没有这些邀约回复、到场表现和组织者反应的具体内容。"
+        },
+        {
+          "category": "牵强类比",
+          "quote": "自己多做跑位、捡球、带球水，做“辅”的角色",
+          "reason": "比辅的古典表述被转为低水平参与者的服务职责，原文并未要求此种补偿。"
+        }
+      ],
+      "uncertainties": [
+        "“群体打球不是单人考核”是未核实的一般化判断；末尾有竞技训练例外，因此不认定答案确定虚构本次活动类型。",
+        "混双不必然意味着适合新手，是否适合需看实际搭档与活动安排，材料不足以作训练专业判断。"
+      ],
+      "executionStatus": "completed"
+    }
+  ]
+}

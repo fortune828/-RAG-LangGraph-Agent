@@ -1,12 +1,14 @@
 # 见素问微 · Python / LangGraph 周易情境解读 Agent
 
-提示词减法修订（2026-10-10）：当前 graph v10 / prompt v16，保留普通段落与 claim 引用契约。清理 SYSTEM、ROUTER、RISK_SYSTEM、动态指令、repair 和工具描述；技术约束继续由程序保障。生成机制、Schema、校验器和前端保持，表达质量以真实回答复核，见[本轮完整提示词、删减与对照](evaluation/prompt-subtraction-20261010.md)。
+自主实验修订（2026-10-10）：当前 graph v13 / prompt v16；主回答采用 Flash enabled / low / 8192，校验修复使用同模型 disabled / 8192 并提供错误位置及原因；非思考候选经盲评后未替换质量默认配置。路由只传所需证据字段，明确授权文献目标取齐后直接生成；完整来源、权限与校验保留。模型筛选、RAG 消融、B/C/D、图版本对照和隔离小留出均单列，见[结果与局限](evaluation/autonomous-optimization-20261010.md)。这些实验不代表人工对话质量验收。
+
+上一轮提示词减法修订（2026-10-10）：当时为 graph v10 / prompt v16，保留普通段落与 claim 引用契约。清理 SYSTEM、ROUTER、RISK_SYSTEM、动态指令、repair 和工具描述；技术约束继续由程序保障。生成机制、Schema、校验器和前端保持，表达质量以真实回答复核，见[本轮完整提示词、删减与对照](evaluation/prompt-subtraction-20261010.md)。
 
 面向现实困惑的占卜对话应用：程序起卦，以真实材料理解卦象，用隐喻帮助看清处境、取舍与下一步。回答追求沉稳、通透、具体，不以资料汇报代替解卦，也不宣称掌握确定的未来。
 
 **当前状态（2026-10-08）**：核心运行后端已迁移为 Python + FastAPI + LangGraph，现有 React 前端保留。迁移目标是让只掌握 Python 的开发者学习、调试并解释 Agent 核心；前端开发不作为学习前置条件。产品质量完善与冻结留出评测仍在进行，历史 TypeScript 后端保留作对照和回滚。
 
-当前为 graph v10 / prompt v16、Flash 思考模式。新回答仅包含 status、普通 paragraphs（text 与 citations）及可选内部 limitations；不再生成 summary 或段落 kind。引用用 claim 定位本段受支持的文字；前端在该处显示引用标记。旧会话的摘要、正文和限制完整展示为普通正文。质量与验证记录见 [本轮回答体验验证](evaluation/natural-dialogue-20261010.md) 和 [任务状态](tasklist.md)。
+当前为 graph v13 / prompt v16、Flash low 思考模式。新回答仅包含 status、普通 paragraphs（text 与 citations）及可选内部 limitations；不再生成 summary 或段落 kind。引用用 claim 定位本段受支持的文字；前端在该处显示引用标记。旧会话的摘要、正文和限制完整展示为普通正文。质量与验证记录见 [本轮回答体验验证](evaluation/natural-dialogue-20261010.md) 和 [任务状态](tasklist.md)。
 
 ## 启动
 
@@ -27,7 +29,7 @@ npm run dev
 
 每个聊天只服务一个核心问题。同题的补充、纠正、选项比较及出处追问继续使用原卦；新的独立问题必须新建聊天、重新起卦。新建操作不继承旧对话，也不自动删除旧会话；删除仍使用单独入口。危急风险先提供必要安全支持。
 
-默认模型为 `deepseek-flash`，可通过 `.env.local` 的 `DEEPSEEK_MODEL` 覆盖；修改后重启后端生效。当前使用思考模式（`thinking.type=enabled`）、reasoning_effort high、max_tokens 8192；不再发送 temperature。
+默认模型为 `deepseek-flash`，可通过 `.env.local` 的 `DEEPSEEK_MODEL` 覆盖；修改后重启后端生效。默认 `DEEPSEEK_THINKING=enabled`、`DEEPSEEK_REASONING_EFFORT=low`、`DEEPSEEK_MAX_TOKENS=8192`；不发送 temperature。可选 `disabled / 4096` 降低开发调用成本，此时不发送 reasoning_effort。本轮未证明该可选配置保持对话质量，未将其设为生产默认。模型响应中的 completion 含思考与正文，总上限须一起考虑。一次校验修复使用同一模型、disabled / 8192；没有增加额外修复轮次。显式实验配置默认全阶段一致，只有 final profile 单独声明 repair 配置。
 
 密钥只在后端读取；不要使用 VITE_ 前缀。会话和检查点保存在 runtime，不能公开提交。浏览器沿用既有访问令牌。
 
@@ -39,7 +41,7 @@ React → FastAPI → 服务端起卦并保存会话
            LangGraph prepare（固定取证、上下文、意图与范围）
                   ├─ 明确换题／重起卦 → finish（固定操作提示，零模型调用）
                   ├─ 普通首次解读／风险支持／已确认资料缺失 → generate
-                  └─ 追问或首次明确缺失出处 → route → tools → route（有界）
+                  └─ 追问或首次明确缺失出处 → route → tools → route（有界；明确目标齐备则直接 generate）
                                       ├─ 识别独立新问题 → finish（新聊天提示）
                                       ↓
                                   generate
@@ -141,3 +143,5 @@ npm run start:legacy
 ```
 
 四组对话与两组边界输入固定卦象、证据和历史；另比较一次检索路由决策。无改写 Schema、无生成后润色。历史结果保留，新旧版本不混算。
+
+本轮实验复算：`.venv/bin/python -m evaluation.autonomous_review --usage`；付费复跑及完整输入见[实验索引](evaluation/reports/autonomous-20261010/README.md)。旧阶段基线不可与当前结果混算。

@@ -13,11 +13,11 @@ from uuid import uuid4
 
 from langgraph.checkpoint.sqlite.aio import AsyncSqliteSaver
 
-from .config import MODEL, ROOT, MAX_COMPLETION_TOKENS
+from .config import MODEL, ROOT
 from .domain import calculate_hexagram, now, sample_cast
 from .graph import GRAPH_VERSION, build_graph, initial_state
 from .knowledge import CURRENT_RELEASE, retrieve_exact
-from .llm import ModelError, deepseek_chat
+from .llm import ModelError, deepseek_chat, request_payload
 from .prompts import PROMPT_VERSION
 
 
@@ -27,9 +27,27 @@ class BudgetedChat:
         self.parent = parent
         self.calls = self.reported = self.accounted = self.unknown = 0
 
+    def request_payload(self, messages, tools=None):
+        factory = getattr(self.chat, 'request_payload', request_payload)
+        return factory(messages, tools=tools)
+
+    @property
+    def repair_chat(self):
+        override = getattr(self.chat, 'repair_chat', None)
+        if override is None:
+            return self
+        return BudgetedChat(override, max_calls=self.max_calls, max_tokens=self.max_tokens, parent=self)
+
+    def budgets(self):
+        current = self
+        while current is not None:
+            yield current
+            current = current.parent
+
     def reservation(self, messages, tools=None):
-        reservation = len(json.dumps(dict(messages=messages, tools=tools), ensure_ascii=False).encode()) + MAX_COMPLETION_TOKENS + 1024
-        for budget in [self] + ([self.parent] if self.parent else []):
+        completion_limit = self.request_payload(messages, tools)['max_tokens']
+        reservation = len(json.dumps(dict(messages=messages, tools=tools), ensure_ascii=False).encode()) + completion_limit + 1024
+        for budget in self.budgets():
             if budget.calls >= budget.max_calls or budget.accounted + reservation > budget.max_tokens:
                 raise ModelError('EVALUATION_BUDGET_EXHAUSTED')
         return reservation
@@ -44,7 +62,7 @@ class BudgetedChat:
 
     async def __call__(self, messages, tools=None):
         reservation = self.reservation(messages, tools)
-        budgets = [self] + ([self.parent] if self.parent else [])
+        budgets = list(self.budgets())
         for budget in budgets:
             budget.calls += 1
             budget.accounted += reservation
@@ -67,7 +85,12 @@ async def live(args):
     directory = ROOT / 'evaluation/results' / ('python-live-' + time.strftime('%Y%m%d-%H%M%S', time.gmtime()) + '-' + uuid4().hex[:6])
     directory.mkdir(parents=True)
     model = BudgetedChat(max_calls=args.max_calls, max_tokens=args.max_tokens)
-    report = dict(mode='real_model_development_smoke', humanReviewed=False, model=MODEL, thinking="enabled", reasoningEffort="high", maxCompletionTokens=MAX_COMPLETION_TOKENS,
+    options = model.request_payload([])
+    repair_options = model.repair_chat.request_payload([])
+    report = dict(mode='real_model_development_smoke', humanReviewed=False, model=options['model'],
+                  thinking=options['thinking']['type'], reasoningEffort=options.get('reasoning_effort'),
+                  maxCompletionTokens=options['max_tokens'],
+                  repairModelOptions={key: value for key, value in repair_options.items() if key != 'messages'},
                   releaseId=CURRENT_RELEASE, promptVersion=PROMPT_VERSION, graphVersion=GRAPH_VERSION, rows=[])
     s = dict(id=str(uuid4()), question='我在考虑换工作，但担心收入不稳定，怎样整理思路？',
              cast=sample_cast() | calculate_hexagram([7] * 6), releaseId=CURRENT_RELEASE, turns=[], createdAt=now())

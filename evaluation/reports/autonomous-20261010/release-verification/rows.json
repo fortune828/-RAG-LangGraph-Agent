@@ -1,0 +1,531 @@
+[
+  {
+    "caseId": "dev-project-correction",
+    "arm": "released-high",
+    "config": "flash-high",
+    "stage": "release",
+    "initialEvidenceIds": [
+      "zy-1-judgment",
+      "zy-1-tuan",
+      "zy-1-xiang",
+      "zy-1-line-2",
+      "zy-1-line_xiang-2",
+      "zy-13-judgment",
+      "zy-13-xiang",
+      "wang-bi@2676007:h1:line2:156a776063",
+      "cheng-yi@1313743:h1:line2:1ac147277e",
+      "zhu-xi@528287:h1:line2:9c12de10ea"
+    ],
+    "inputHash": "c6331266a92184efcb9f96f9f83f9d3778b2ef766e3668b0e325e1065f895fc9",
+    "graphVersion": "python-graph-v11",
+    "status": "completed",
+    "answer": {
+      "status": "answered",
+      "paragraphs": [
+        {
+          "text": "你已开始投递，这不是“要不要暂停投递”的阶段；乾九二动，正是“见龙在田”：从潜藏走向显露。你担心的不是没有成果，而是成果已经拿得出手，却还没有被解释成别人能理解和检验的理由。卦象把重点放在“德施普也”和“德已著”上：当前一周，优先让已有检索方案的有效性被看见、被说明，而不是用新功能把展示面继续铺大。",
+          "citations": [
+            {
+              "evidenceId": "zy-1-line-2",
+              "quote": "见龙在田，利见大人。",
+              "claim": "乾九二动，正是“见龙在田”：从潜藏走向显露。"
+            },
+            {
+              "evidenceId": "wang-bi@2676007:h1:line2:156a776063",
+              "quote": "出潛離隱，故曰「見龍」",
+              "claim": "当前一周，优先让已有检索方案的有效性被看见、被说明，而不是用新功能把展示面继续铺大。"
+            },
+            {
+              "evidenceId": "zhu-xi@528287:h1:line2:9c12de10ea",
+              "quote": "九二雖未得位而大人之德已著",
+              "claim": "当前一周，优先让已有检索方案的有效性被看见、被说明，而不是用新功能把展示面继续铺大。"
+            }
+          ]
+        },
+        {
+          "text": "直接回答：如果你说的“加功能”是新增一个与检索有效性无关的功能，对“面试时解释清楚检索为什么有效”帮助很有限，反而会挤掉准备时间。若加的是能直接补证据链的东西——基线、消融、负样本、指标拆解、失败案例——那它不是“加功能”，而是“类族辨物”：把检索为什么有效的机制、数据、验证和边界分类讲清。同人卦说“同人于野，亨”“君子以类族辨物”，面试像在更公开的场合与人建立共识，重点在条理和可检验，而不是数量堆叠。",
+          "citations": [
+            {
+              "evidenceId": "zy-13-xiang",
+              "quote": "天与火，同人。君子以类族辨物。",
+              "claim": "那它不是“加功能”，而是“类族辨物”：把检索为什么有效的机制、数据、验证和边界分类讲清。"
+            },
+            {
+              "evidenceId": "zy-13-judgment",
+              "quote": "同人于野，亨。利涉大川，利君子贞。",
+              "claim": "面试像在更公开的场合与人建立共识，重点在条理和可检验，而不是数量堆叠。"
+            }
+          ]
+        },
+        {
+          "text": "这一周更稳的取舍是：不扩大功能版图，把现有检索系统做成一套可讲、可验、可复现的说明。具体可以准备四页：一页说问题和基线，一页说检索流程与关键设计，一页放离线指标、消融或对照，一页放失败案例、边界和下一步。然后做两轮模拟面试，第一轮讲给不懂检索的人，第二轮专门接“为什么有效”的追问。乾卦讲“自强不息”，但九二已到“见龙在田”，努力方向应转向“时成”和展示，而不是回到初爻式埋头开发。",
+          "citations": [
+            {
+              "evidenceId": "zy-1-xiang",
+              "quote": "天行健，君子以自强不息。",
+              "claim": "这一周更稳的取舍是：不扩大功能版图，把现有检索系统做成一套可讲、可验、可复现的说明。"
+            },
+            {
+              "evidenceId": "zy-1-tuan",
+              "quote": "大明终始，六位时成，时乘六龙以御天。",
+              "claim": "乾卦讲“自强不息”，但九二已到“见龙在田”，努力方向应转向“时成”和展示，而不是回到初爻式埋头开发。"
+            },
+            {
+              "evidenceId": "zy-1-line-2",
+              "quote": "见龙在田，利见大人。",
+              "claim": "乾卦讲“自强不息”，但九二已到“见龙在田”，努力方向应转向“时成”和展示，而不是回到初爻式埋头开发。"
+            }
+          ]
+        },
+        {
+          "text": "面试里解释检索有效性，按“机制—实现—证据—边界”四层说，通常比背指标更有说服力：机制是你假设它为什么能召回相关结果，实现是具体算法和工程取舍，证据是对照、消融、样本和误差，边界是哪些查询会失效以及为何。程颐说九二“出见于地上，其德已著”，朱熹说“虽未得位而大人之德已著”：你还没有拿到职位，但项目已经可以显出能力。若被问到不确定处，明确说“这是当前验证到的范围”，比硬解释成因果更稳。",
+          "citations": [
+            {
+              "evidenceId": "cheng-yi@1313743:h1:line2:1ac147277e",
+              "quote": "出見於地上，其德已著。",
+              "claim": "面试里解释检索有效性，按“机制—实现—证据—边界”四层说，通常比背指标更有说服力"
+            },
+            {
+              "evidenceId": "zhu-xi@528287:h1:line2:9c12de10ea",
+              "quote": "九二雖未得位而大人之德已著",
+              "claim": "你还没有拿到职位，但项目已经可以显出能力。"
+            }
+          ]
+        },
+        {
+          "text": "所以，继续加功能不是完全不行，但应设一个硬门槛：它是否能在两天内产出一个能直接回答“检索为什么有效”的证据？能，就做最小版本；不能，就不做。把剩余精力投到模拟面试、指标解释和失败分析上。同人“利君子贞”提示，沟通要守正，不夸大；乾“元亨利贞”也强调开端、通达、合宜、正固，投递后的阶段更要把已有成果讲得正、讲得实。",
+          "citations": [
+            {
+              "evidenceId": "zy-13-judgment",
+              "quote": "利君子贞",
+              "claim": "所以，继续加功能不是完全不行，但应设一个硬门槛：它是否能在两天内产出一个能直接回答“检索为什么有效”的证据？能，就做最小版本；不能，就不做。"
+            },
+            {
+              "evidenceId": "zy-1-judgment",
+              "quote": "元亨利贞。",
+              "claim": "同人“利君子贞”提示，沟通要守正，不夸大；乾“元亨利贞”也强调开端、通达、合宜、正固，投递后的阶段更要把已有成果讲得正、讲得实。"
+            }
+          ]
+        }
+      ],
+      "limitations": []
+    },
+    "errors": [],
+    "evidence": [
+      {
+        "id": "zy-1-judgment",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "judgment",
+        "line": null,
+        "text": "元亨利贞。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "乾·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:01:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "元亨利贞。"
+      },
+      {
+        "id": "zy-1-tuan",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "tuan",
+        "line": null,
+        "text": "大哉乾元，万物资始，乃统天。云行雨施，品物流形。大明终始，六位时成，时乘六龙以御天。乾道变化，各正性命，保合太和，乃利贞。首出庶物，万国咸宁。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+        "locator": "乾·彖传",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:01:tuan"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "大哉乾元，万物资始，乃统天。云行雨施，品物流形。大明终始，六位时成，时乘六龙以御天。乾道变化，各正性命，保合太和，乃利贞。首出庶物，万国咸宁。"
+      },
+      {
+        "id": "zy-1-xiang",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "xiang",
+        "line": null,
+        "text": "天行健，君子以自强不息。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "乾·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:01:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "天行健，君子以自强不息。"
+      },
+      {
+        "id": "zy-1-line-2",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "line",
+        "line": 2,
+        "text": "见龙在田，利见大人。",
+        "source": "https://zh.wikisource.org/w/index.php?title=周易/乾&oldid=2404991",
+        "locator": "乾·九二",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "已对照维基文库固定修订2404991校正“见龙再田”为“见龙在田”；参见data/SOURCES.md",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "legacy-ws-2404991",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:01:line:2"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "见龙在田，利见大人。"
+      },
+      {
+        "id": "zy-1-line_xiang-2",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "line_xiang",
+        "line": 2,
+        "text": "见龙在田，德施普也。",
+        "source": "https://zh.wikisource.org/w/index.php?title=周易/乾&oldid=2404991",
+        "locator": "乾·九二小象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "已对照维基文库固定修订2404991校正“见龙再田”为“见龙在田”；参见data/SOURCES.md",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "legacy-ws-2404991",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:01:line_xiang:2"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "见龙在田，德施普也。"
+      },
+      {
+        "id": "zy-13-judgment",
+        "hexagramId": 13,
+        "name": "同人",
+        "section": "judgment",
+        "line": null,
+        "text": "同人于野，亨。利涉大川，利君子贞。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+        "locator": "同人·卦辞",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:13:judgment"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "同人于野，亨。利涉大川，利君子贞。"
+      },
+      {
+        "id": "zy-13-xiang",
+        "hexagramId": 13,
+        "name": "同人",
+        "section": "xiang",
+        "line": null,
+        "text": "天与火，同人。君子以类族辨物。",
+        "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+        "locator": "同人·大象",
+        "version": "open-iching-4c5f00f8cb62-v2",
+        "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+        "layer": "classic",
+        "workId": "zhouyi",
+        "workTitle": "周易",
+        "sourceId": "open-iching-4c5f00f8cb62",
+        "editionId": "open-iching-v2",
+        "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+        "authorIds": [],
+        "authorNames": [],
+        "anchorIds": [
+          "zhouyi:13:xiang"
+        ],
+        "commentsOn": [],
+        "reviewStatus": "legacy_unreviewed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "textOriginal": "天与火，同人。君子以类族辨物。"
+      },
+      {
+        "id": "wang-bi@2676007:h1:line2:156a776063",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "line",
+        "line": 2,
+        "text": "出潛離隱，故曰「見龍」，處於地上，故曰「在田」。德施周普，居中不偏，雖非君位，君之德也。初則不彰，三則「乾乾」，四則「或躍」，上則過亢。「利見大人」，唯二、五焉。",
+        "textOriginal": "出潛離隱，故曰「見龍」，處於地上，故曰「在田」。德施周普，居中不偏，雖非君位，君之德也。初則不彰，三則「乾乾」，四則「或躍」，上則過亢。「利見大人」，唯二、五焉。",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/01%E4%B9%BE&oldid=2676007",
+        "locator": "《周易正義》·乾·第2爻注",
+        "version": "ws-2676007",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "zhouyi-zhengyi",
+        "workTitle": "周易正義",
+        "sourceId": "ws-2676007",
+        "editionId": "ws-zhouyi-zhengyi",
+        "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+        "authorIds": [
+          "wang-bi"
+        ],
+        "authorNames": [
+          "王弼"
+        ],
+        "anchorIds": [
+          "zhouyi:01:line:2"
+        ],
+        "commentsOn": [
+          "zhouyi:01:line:2"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-2676007.wiki",
+          "startLine": 22,
+          "endLine": 22,
+          "pageLabels": []
+        }
+      },
+      {
+        "id": "cheng-yi@1313743:h1:line2:1ac147277e",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "line",
+        "line": 2,
+        "text": "田，地上也。出見於地上，其德已著。以聖人言之，舜之田漁時也。利見大德之君，以行其道。君亦利見大德之臣，以共成其功。天下利見大德之人，以被其澤。大德之君，九五也。乾坤純體，不分剛柔，而以同德相應。",
+        "textOriginal": "田，地上也。出見於地上，其德已著。以聖人言之，舜之田漁時也。利見大德之君，以行其道。君亦利見大德之臣，以共成其功。天下利見大德之人，以被其澤。大德之君，九五也。乾坤純體，不分剛柔，而以同德相應。",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3&oldid=1313743",
+        "locator": "《伊川易傳》·乾·第2爻注",
+        "version": "ws-1313743",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "yichuan-yizhuan",
+        "workTitle": "伊川易傳",
+        "sourceId": "ws-1313743",
+        "editionId": "ws-yichuan-yizhuan",
+        "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+        "authorIds": [
+          "cheng-yi"
+        ],
+        "authorNames": [
+          "程颐"
+        ],
+        "anchorIds": [
+          "zhouyi:01:line:2"
+        ],
+        "commentsOn": [
+          "zhouyi:01:line:2"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-1313743.wiki",
+          "startLine": 16,
+          "endLine": 16,
+          "pageLabels": []
+        }
+      },
+      {
+        "id": "zhu-xi@528287:h1:line2:9c12de10ea",
+        "hexagramId": 1,
+        "name": "乾",
+        "section": "line",
+        "line": 2,
+        "text": "見龍之見賢遍反卦内見龍並同○二謂自下而上第二爻也後放此九二剛健中正出潛離隱澤及於物物所利見故其象為見龍在田其占為利見大人九二雖未得位而大人之德已著常人不足以當之故値此爻之變者但為利見此人而已蓋亦謂在下之大人也此以爻與占者相為主賔自為一例若有見龍之德則為利見九五在上之大人矣",
+        "textOriginal": "見龍之見賢遍反卦内見龍並同○二謂自下而上第二爻也後放此九二剛健中正出潛離隱澤及於物物所利見故其象為見龍在田其占為利見大人九二雖未得位而大人之德已著常人不足以當之故値此爻之變者但為利見此人而已蓋亦謂在下之大人也此以爻與占者相為主賔自為一例若有見龍之德則為利見九五在上之大人矣",
+        "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+        "locator": "《周易本義》·乾·第2爻注",
+        "version": "ws-528287",
+        "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+        "reviewStatus": "machine_parsed",
+        "layer": "commentary",
+        "workId": "zhouyi-benyi",
+        "workTitle": "周易本義",
+        "sourceId": "ws-528287",
+        "editionId": "ws-benyi-skqs",
+        "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+        "authorIds": [
+          "zhu-xi"
+        ],
+        "authorNames": [
+          "朱熹"
+        ],
+        "anchorIds": [
+          "zhouyi:01:line:2"
+        ],
+        "commentsOn": [
+          "zhouyi:01:line:2"
+        ],
+        "releaseId": "knowledge-v3-20260926-r1",
+        "rawLocator": {
+          "file": "data/knowledge/raw/ws-528287.wiki",
+          "startLine": 11,
+          "endLine": 11,
+          "pageLabels": []
+        }
+      }
+    ],
+    "finalEvidenceIds": [
+      "zy-1-judgment",
+      "zy-1-tuan",
+      "zy-1-xiang",
+      "zy-1-line-2",
+      "zy-1-line_xiang-2",
+      "zy-13-judgment",
+      "zy-13-xiang",
+      "wang-bi@2676007:h1:line2:156a776063",
+      "cheng-yi@1313743:h1:line2:1ac147277e",
+      "zhu-xi@528287:h1:line2:9c12de10ea"
+    ],
+    "trace": [
+      {
+        "step": "retrieve",
+        "status": "ok",
+        "channel": "fixed",
+        "releaseId": "knowledge-v3-20260926-r1",
+        "code": "situation_followup",
+        "evidenceIds": [
+          "zy-1-judgment",
+          "zy-1-tuan",
+          "zy-1-xiang",
+          "zy-1-line-2",
+          "zy-1-line_xiang-2",
+          "zy-13-judgment",
+          "zy-13-xiang",
+          "wang-bi@2676007:h1:line2:156a776063",
+          "cheng-yi@1313743:h1:line2:1ac147277e",
+          "zhu-xi@528287:h1:line2:9c12de10ea"
+        ],
+        "truncated": false,
+        "droppedEvidenceIds": []
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 5901,
+        "promptTokens": 3663,
+        "completionTokens": 1039,
+        "totalTokens": 4702
+      },
+      {
+        "step": "model",
+        "status": "ok",
+        "durationMs": 30177,
+        "promptTokens": 1416,
+        "completionTokens": 7302,
+        "totalTokens": 8718
+      },
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "repairs": 0,
+    "toolAttempts": 0,
+    "sameCast": true,
+    "durationMs": 36117,
+    "toolCounts": {
+      "ok": 0,
+      "empty": 0,
+      "rejected": 0,
+      "budgetCounted": 0
+    },
+    "auto": {
+      "calls": 2,
+      "reportedTokens": 13420,
+      "unknownUsage": 0,
+      "promptTokens": 5079,
+      "completionTokens": 8341,
+      "reasoningTokens": 6935,
+      "toolRequests": 0
+    }
+  },
+  {
+    "caseId": "dev-exact-gap",
+    "arm": "released-high",
+    "config": "flash-high",
+    "stage": "release",
+    "initialEvidenceIds": [
+      "zy-29-judgment",
+      "zy-29-tuan",
+      "zy-29-xiang",
+      "wang-bi@2404949:h29:line2:75b15f7dc9",
+      "zhu-xi@528287:h29:line2:9d356a7715"
+    ],
+    "inputHash": "3f917fa9b112f5e58a905e4b840d32f90c9bace562ba1914f3d289be2244eaa0",
+    "graphVersion": "python-graph-v11",
+    "status": "failed",
+    "error": "ModelError:MODEL_INCOMPLETE_RESPONSE",
+    "durationMs": 60537,
+    "toolCounts": {
+      "ok": 1,
+      "empty": 0,
+      "rejected": 0,
+      "budgetCounted": 1
+    },
+    "auto": {
+      "calls": 3,
+      "reportedTokens": 19930,
+      "unknownUsage": 0,
+      "promptTokens": 5841,
+      "completionTokens": 14089,
+      "reasoningTokens": 12637,
+      "toolRequests": 1
+    }
+  }
+]
