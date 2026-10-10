@@ -1,12 +1,12 @@
 # 见素问微 · Python / LangGraph 周易情境解读 Agent
 
-回答目标修订（2026-10-09）：先回应困惑、给出有分寸的判断，再借卦象隐喻点拨；小事给具体选择，原文按需展开。当前 graph v8 / prompt v11，保留单核心问题、真实引用与安全边界。见 [本轮验收](evaluation/conversation-first-20261009.md)。
+回答目标修订（2026-10-10）：所有普通解卦都从本次卦象出发，现实条件决定建议的分寸；小事轻解、大事深谈。首次解读包含简短有据的卦意，追问可自然承接，不堆原文、不以吉凶保证或否定日常行动。当前 graph v9 / prompt v14，保留单核心问题、真实引用与风险支持边界。见 [本轮验收](evaluation/cast-grounded-20261010.md)。
 
 面向现实困惑的占卜对话应用：程序起卦，以真实材料理解卦象，用隐喻帮助看清处境、取舍与下一步。回答追求沉稳、通透、具体，不以资料汇报代替解卦，也不宣称掌握确定的未来。
 
 **当前状态（2026-10-08）**：核心运行后端已迁移为 Python + FastAPI + LangGraph，现有 React 前端保留。迁移目标是让只掌握 Python 的开发者学习、调试并解释 Agent 核心；前端开发不作为学习前置条件。产品质量完善与冻结留出评测仍在进行，历史 TypeScript 后端保留作对照和回滚。
 
-当前为 graph v8 / prompt v11、Flash 思考模式。单核心问题会话、角色明确的近期对话、引用校验和同轮恢复已实现；96 项 Python 回归通过，真实回答仍有语义验收缺口。最新结果及版本差异见 [本轮回答体验验收](evaluation/conversation-first-20261009.md) 和 [任务状态](tasklist.md)。
+当前为 graph v9 / prompt v14、Flash 思考模式。单核心问题会话、角色明确的近期对话、引用校验和同轮恢复已实现；101 项 Python 回归通过，真实回答仍有语义验收缺口。最新结果及版本差异见 [本轮回答体验验收](evaluation/cast-grounded-20261010.md) 和 [任务状态](tasklist.md)。
 
 ## 启动
 
@@ -85,7 +85,7 @@ npm run knowledge:audit              # 保留的数据来源/修订审计，不�
 # 显式执行才消耗模型额度，固定合成开发样例；不是生产随机起卦或留出评测
 .venv/bin/python -m backend.evaluate --live --max-calls 8 --max-tokens 100000
 
-# 23 个合成开发场景：先离线；--live 才请求真实模型，仍不是正式留出评测
+# 25 个合成开发场景：先离线；--live 才请求真实模型，仍不是正式留出评测
 .venv/bin/python -m evaluation.development_checks
 .venv/bin/python -m evaluation.development_checks --live --max-calls 40 --max-tokens 160000
 ```

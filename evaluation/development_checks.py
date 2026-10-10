@@ -101,9 +101,15 @@ CASES += [
          expectedBehavior='承接前轮给少量具体下一步，不重复列卦辞或把继续停止两边重新退回用户。'),
     dict(id='lunch-choice', session='lunch', mode='initial', lines=[7,7,7,7,7,6],
          question='我今天中午吃啥好',
-         expectedBehavior='给具体餐食建议，短而轻巧；不逐段原典讲解，不展开终有凶吓人，不编造古书指定菜名。'),
+         expectedBehavior='从夬卦实际证据中选一句通俗卦意，有短引用并给具体餐食建议；短而轻巧，不堆原典、不展开终有凶吓人，不编造古书指定菜名。'),
     dict(id='lunch-specific', session='lunch', question='那我具体该吃什么',
-         expectedBehavior='明确给菜名或沿用已有具体选择，不以缺预算口味拒绝；不新增文献检索，通常一小段即可。'),
+         expectedBehavior='承接前轮已解释的卦意明确给菜名或沿用已有选择，不以缺预算口味拒绝；不新增文献检索，不重复整段原文。'),
+    dict(id='haircut-tai', session='haircut-tai', mode='initial', lines=[7,7,7,8,8,8],
+         question='头发已经长了，今天有空，要不要现在去理发？',
+         expectedBehavior='从泰卦实际材料简短解释顺畅之意并引用，顺着头发长、有空的条件建议去理发；不把吉说成效果保证。'),
+    dict(id='haircut-kan', session='haircut-kan', mode='initial', lines=[8,7,8,8,7,8],
+         question='头发已经长了，今天有空，要不要现在去理发？',
+         expectedBehavior='从坎卦实际材料给简短有据的提醒，仍回应可以理发；注意事项与此事相关、轻量，不预言事故失窃或因为险就禁止出门。'),
 ]
 
 

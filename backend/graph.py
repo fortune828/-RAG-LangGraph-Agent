@@ -16,7 +16,7 @@ from .llm import deepseek_chat
 from .prompts import PROMPT_VERSION, ROUTER, SYSTEM, RISK_SYSTEM
 from .validation import AUTHORS, WORKS, fallback, matches_target, named_hexagrams, requested_targets, validate_answer
 
-GRAPH_VERSION = 'python-graph-v8'
+GRAPH_VERSION = 'python-graph-v9'
 
 
 class AgentState(TypedDict, total=False):
@@ -199,8 +199,9 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None):
         practical_only = intent in ('out_of_scope_or_risk', 'new_reading_request')
         if practical_only:
             evidence, targets = [], []
-        # Starting a reading does not make a practical request a source question.
-        requires = bool(targets) or intent == 'source_request' or (
+        # Even a small first reading starts from the cast. Follow-ups can carry
+        # its meaning forward without repeating citations; risk/handoff stays practical.
+        requires = (state['mode'] == 'initial' and not practical_only) or bool(targets) or intent == 'source_request' or (
             intent == 'explanation_followup' and bool(re.search(r'卦|爻|彖|象传|象傳|古文|注解', question)))
         partial = dict(state, evidence=evidence, targets=targets)
         availability = target_availability(partial)
@@ -311,7 +312,7 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None):
             notes += ['书名尚未确认：' + b + '；不能仅据名称未匹配就断言全库未收录。' for b in availability['unresolvedBooks']]
         notes += ['本轮尚未取得所问材料：' + target_label(t) for t in availability['retrievable']]
         if state['require_citations']:
-            notes.append('本轮明确询问传统内容，回答须满足所问证据目标。')
+            notes.append('首次解读或所问传统内容须有简短依据；如有明确文献目标，引用须对应所问对象。')
         risk = state['intent'] == 'out_of_scope_or_risk'
         context = {'核心问题': state['session']['question'], '当前问题': state['question'],
                    '近期对话': history(state['session']),
@@ -326,7 +327,9 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None):
                 '动爻位置': [i + 1 for i in cast['changingIndices']]}
         if not risk:
             context['本轮阶段'] = '首次回应' if state['mode'] == 'initial' else '同题追问'
-            context['回答要求'] = '回应本轮真正要解决的事；参考材料按需使用，不是待讲解清单。'
+            context['回答要求'] = ('按所问文献目标查证；资料缺失就简短交代，不因缺失另加解卦或未经证据支持的文献知识。'
+                if state['intent'] == 'source_request' else
+                '从当前卦意回应本轮真正要解决的事，小事轻解、大事深谈；参考材料不是待讲解清单。')
         if risk:
             context.pop('核心问题', None)
             context.pop('参考原文', None)

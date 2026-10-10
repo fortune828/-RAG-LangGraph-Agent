@@ -1,7 +1,9 @@
+import json
+
 import pytest
 from langgraph.checkpoint.memory import InMemorySaver
 from backend.graph import build_graph, initial_state
-from tests_python.test_migration import response, session
+from tests_python.test_migration import answer, response, session
 from evaluation.development_checks import CASES, session_for
 
 
@@ -10,15 +12,51 @@ def choice():
         paragraphs=[dict(kind='reflection', text='配一份青菜，简单吃好这一顿。', citations=[])], limitations=[])
 
 
-async def test_practical_initial_answer_needs_no_decorative_citation():
+@pytest.mark.parametrize('question', ['我今天中午吃啥好', '头发长了，今天要不要去理发？'])
+async def test_small_first_reading_cannot_skip_cast_evidence(question):
     async def model(messages, tools=None):
         assert tools is None
         return response(choice())
     result = await build_graph(InMemorySaver(), model).ainvoke(
-        initial_state(session(), '我今天中午吃啥好', 'initial'),
+        initial_state(session(), question, 'initial'),
         {'configurable': {'thread_id': 'practical-first'}})
-    assert not result['errors'] and result['answer']['status'] == 'answered'
-    assert not result['require_citations']
+    assert result['require_citations'] and 'MISSING_ANSWER_CITATION' in result['errors']
+    assert result['repairs'] == 1
+
+
+async def test_small_first_reading_accepts_short_meaning_and_practical_advice():
+    async def model(messages, tools=None):
+        assert tools is None
+        context = json.loads(messages[1]['content'])
+        value = choice()
+        value['paragraphs'].insert(0, answer(context['参考原文'][0])['paragraphs'][0])
+        return response(value)
+    result = await build_graph(InMemorySaver(), model).ainvoke(
+        initial_state(session(), '我今天中午吃啥好', 'initial'),
+        {'configurable': {'thread_id': 'short-reading'}})
+    assert result['require_citations'] and not result['errors']
+    assert result['repairs'] == result['attempts'] == 0
+
+
+async def test_same_topic_followup_can_carry_forward_without_repeating_citation():
+    from backend.knowledge import initial_evidence
+    s = session()
+    s['question'] = '我今天中午吃啥好'
+    evidence = initial_evidence(s['cast'], s['question'])
+    s['turns'] = [dict(status='completed', question=s['question'], evidence=evidence, answer=answer(evidence[0]))]
+
+    async def model(messages, tools=None):
+        if tools:
+            return response({'ready': True})
+        context = json.loads(messages[1]['content'])
+        assert context['近期对话'][0]['user'] == s['question']
+        return response(choice())
+    result = await build_graph(InMemorySaver(), model).ainvoke(
+        initial_state(s, '那我具体该吃什么', 'followup'),
+        {'configurable': {'thread_id': 'small-followup'}})
+    assert not result['require_citations'] and not result['errors']
+    assert result['attempts'] == 0
+    # Whether the prose actually carries the meaning forward is a semantic review.
 
 
 async def test_explicit_traditional_request_still_requires_sources():
