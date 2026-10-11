@@ -29,3 +29,22 @@ def test_schema_error_locations_are_safe_and_do_not_repeat_input_values():
     answer,errors=validate_answer({'paragraphs':[{'text':'secret-synthetic-marker'}]},[],issues=issues)
     assert answer is None and errors and issues
     assert 'secret-synthetic-marker' not in str(issues)
+
+
+def test_formal_r03_single_character_quote_failure_is_already_located_for_repair():
+    """Do not misreport a model ignoring repair as a missing schema constraint."""
+    import json
+    from pathlib import Path
+
+    records = [json.loads(line) for line in (Path(__file__).parents[1] /
+        'evaluation/reports/formal-20261010/test/test-07-H.jsonl').read_text().splitlines()]
+    validations = [record for record in records if record['kind'] == 'validation']
+    assert len(validations) == 2
+    for record in validations:
+        issues = []
+        answer, errors = validate_answer(record['candidate'], record['evidence'], issues=issues)
+        assert answer is None and any('at least 2 characters' in error for error in errors)
+        assert any(issue['path'] == ['paragraphs', 0, 'citations', 0, 'quote'] for issue in issues)
+    repair = next(record for record in records if record['kind'] == 'model_request' and record['stage'] == 'repair')
+    instructions = json.loads(repair['payload']['messages'][-1]['content'])
+    assert instructions['errors'][0]['path'] == ['paragraphs', 0, 'citations', 0, 'quote']

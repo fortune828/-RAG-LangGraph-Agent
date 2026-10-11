@@ -1,0 +1,2148 @@
+{
+  "id": "912d375d-5a55-4664-8ed7-273e79d1c52a",
+  "question": "今年清明想带八岁的孩子回老家祭祖，她没参加过，我不想让她害怕。打算扫墓时给她讲一点家里的故事，应该怎么解释这个习俗？",
+  "cast": {
+    "lines": [
+      8,
+      8,
+      7,
+      6,
+      6,
+      9
+    ],
+    "original": {
+      "binary": "001001",
+      "name": "艮为山",
+      "number": 52,
+      "judgment": "艮其背，不获其身，行其庭，不见其人，无咎。"
+    },
+    "changed": {
+      "binary": "001110",
+      "name": "泽山咸",
+      "number": 31,
+      "judgment": "亨，利贞，取女吉。"
+    },
+    "originalBinary": "001001",
+    "changedBinary": "001110",
+    "changingIndices": [
+      3,
+      4,
+      5
+    ],
+    "id": "b36e4f3a-b709-4809-9591-e4f8cb03abd5",
+    "method": "three-coins",
+    "algorithmVersion": "coins-py-v1",
+    "readingPolicyVersion": "all-moving-lines-v1",
+    "coins": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "createdAt": "2026-10-11T07:26:54.173871+00:00"
+  },
+  "turns": [
+    {
+      "id": "0a376fb9-b376-4dbe-a65f-0f072888acae",
+      "question": "今年清明想带八岁的孩子回老家祭祖，她没参加过，我不想让她害怕。打算扫墓时给她讲一点家里的故事，应该怎么解释这个习俗？",
+      "mode": "initial",
+      "createdAt": "2026-10-11T07:26:54.219616+00:00",
+      "evidence": [
+        {
+          "id": "zy-52-judgment",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "judgment",
+          "line": null,
+          "text": "艮其背，不获其身；行其庭，不见其人，无咎。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "艮·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "艮其背，不获其身；行其庭，不见其人，无咎。"
+        },
+        {
+          "id": "zy-52-tuan",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "tuan",
+          "line": null,
+          "text": "艮，止也。时止则止，时行则行；动静不失其时，其道光明。艮其止，止其所也。上下敌应，不相与也。是以“不获其身，行其庭，不见其人，无咎”也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+          "locator": "艮·彖传",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:tuan"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "艮，止也。时止则止，时行则行；动静不失其时，其道光明。艮其止，止其所也。上下敌应，不相与也。是以“不获其身，行其庭，不见其人，无咎”也。"
+        },
+        {
+          "id": "zy-52-xiang",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "xiang",
+          "line": null,
+          "text": "兼山，艮。君子以思不出其位。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "艮·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "兼山，艮。君子以思不出其位。"
+        },
+        {
+          "id": "zy-52-line-4",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "line",
+          "line": 4,
+          "text": "艮其身，无咎。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "艮·六四",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:line:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "艮其身，无咎。"
+        },
+        {
+          "id": "zy-52-line-5",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "line",
+          "line": 5,
+          "text": "艮其辅，言有序，悔亡。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "艮·六五",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:line:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "艮其辅，言有序，悔亡。"
+        },
+        {
+          "id": "zy-52-line-6",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "line",
+          "line": 6,
+          "text": "敦艮，吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "艮·上九",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:line:6"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "敦艮，吉。"
+        },
+        {
+          "id": "zy-52-line_xiang-4",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "line_xiang",
+          "line": 4,
+          "text": "“艮其身”，止诸躬也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "艮·六四小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:line_xiang:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“艮其身”，止诸躬也。"
+        },
+        {
+          "id": "zy-52-line_xiang-5",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "line_xiang",
+          "line": 5,
+          "text": "“艮其辅”，以中正也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "艮·六五小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:line_xiang:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“艮其辅”，以中正也。"
+        },
+        {
+          "id": "zy-52-line_xiang-6",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "line_xiang",
+          "line": 6,
+          "text": "“敦艮”之“吉”，以厚终也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "艮·上九小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:line_xiang:6"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“敦艮”之“吉”，以厚终也。"
+        },
+        {
+          "id": "zy-31-judgment",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "judgment",
+          "line": null,
+          "text": "亨，利贞。取女吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "咸·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "亨，利贞。取女吉。"
+        },
+        {
+          "id": "zy-31-xiang",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "xiang",
+          "line": null,
+          "text": "山上有泽，咸。君子以虚受人。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "咸·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "山上有泽，咸。君子以虚受人。"
+        }
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "explanation_followup",
+          "evidenceIds": [
+            "zy-52-judgment",
+            "zy-52-tuan",
+            "zy-52-xiang",
+            "zy-52-line-4",
+            "zy-52-line-5",
+            "zy-52-line-6",
+            "zy-52-line_xiang-4",
+            "zy-52-line_xiang-5",
+            "zy-52-line_xiang-6",
+            "zy-31-judgment",
+            "zy-31-xiang"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 23758,
+          "promptTokens": 1126,
+          "completionTokens": 5058,
+          "totalTokens": 6184
+        },
+        {
+          "step": "validate",
+          "status": "passed",
+          "code": ""
+        }
+      ],
+      "status": "completed",
+      "model": "deepseek-flash",
+      "releaseId": "knowledge-v3-20260926-r1",
+      "checkpointThreadId": "python-graph-v17:912d375d-5a55-4664-8ed7-273e79d1c52a:0a376fb9-b376-4dbe-a65f-0f072888acae",
+      "promptVersion": "evidence-agent-python-v16",
+      "graphVersion": "python-graph-v17",
+      "answer": {
+        "status": "answered",
+        "paragraphs": [
+          {
+            "text": "从卦象看，本卦是艮为山，变卦是泽山咸。艮卦的核心是“止”，《彖传》说“时止则止，时行则行；动静不失其时”，所以带八岁孩子祭祖，第一原则不是完成仪式，而是看她的节奏：她紧张就停，愿意再走。",
+            "citations": [
+              {
+                "evidenceId": "zy-52-tuan",
+                "quote": "时止则止，时行则行；动静不失其时",
+                "claim": "时止则止，时行则行；动静不失其时"
+              }
+            ]
+          },
+          {
+            "text": "解释习俗时，可以把它说成“春天里全家去看望已经离开的家人”：给墓碑周围打扫一下、摆一束花、鞠个躬、说几句家里近况。艮卦卦辞说“行其庭，不见其人，无咎”，正好对应这种分寸——孩子到了墓地这个“庭”，不必看见或想象可怕的“人”，也不会因此有错。",
+            "citations": [
+              {
+                "evidenceId": "zy-52-judgment",
+                "quote": "行其庭，不见其人，无咎",
+                "claim": "行其庭，不见其人，无咎"
+              }
+            ]
+          },
+          {
+            "text": "具体话术可以简短、诚实、有次序。六五爻说“艮其辅，言有序，悔亡”，咸卦大象说“君子以虚受人”：先问孩子“你知道清明是什么吗？你有点怕吗？”，听完再解释，不急着纠正。可以说：“去世的人身体不能再陪我们了，但我们还记得他们、爱他们。扫墓就像给他们的地方做一次春天的大扫除，也告诉他们我们过得还好。”",
+            "citations": [
+              {
+                "evidenceId": "zy-52-line-5",
+                "quote": "艮其辅，言有序，悔亡",
+                "claim": "艮其辅，言有序，悔亡"
+              },
+              {
+                "evidenceId": "zy-31-xiang",
+                "quote": "君子以虚受人",
+                "claim": "君子以虚受人"
+              }
+            ]
+          },
+          {
+            "text": "让她参与，但参与方式由她选。六四爻说“艮其身，无咎”，先安顿好自己的身体和情绪，再带孩子；可以牵着她的手，先站在外围，让她决定要不要靠近、要不要擦墓碑、摆花或只鞠躬。上九爻说“敦艮，吉”，敦厚地收尾比强迫她完成全套礼数更重要。",
+            "citations": [
+              {
+                "evidenceId": "zy-52-line-4",
+                "quote": "艮其身，无咎",
+                "claim": "艮其身，无咎"
+              },
+              {
+                "evidenceId": "zy-52-line-6",
+                "quote": "敦艮，吉",
+                "claim": "敦艮，吉"
+              }
+            ]
+          },
+          {
+            "text": "讲家族故事时，多讲祖辈具体的生活片段：她/他爱吃什么、怎么照顾家人、经历过什么。大象说“君子以思不出其位”，对孩子而言，就是不要用成人的死亡观压给她；她理解到哪一层，就讲到哪一层。这样扫墓不是“见鬼”，而是认识自己从哪里来。",
+            "citations": [
+              {
+                "evidenceId": "zy-52-xiang",
+                "quote": "君子以思不出其位",
+                "claim": "君子以思不出其位"
+              }
+            ]
+          },
+          {
+            "text": "最后，避免说“鬼”“阴间”“不干净”“不拜会倒霉”之类的话。若她仍然害怕，可以让她在远处或车里等，不勉强靠近；这不是不孝，而是艮卦“艮其止，止其所也”的分寸。等回家后再用照片、食物或故事继续聊，咸卦的“君子以虚受人”会让这次经历慢慢变成家族记忆，而不是恐惧记忆。",
+            "citations": [
+              {
+                "evidenceId": "zy-52-tuan",
+                "quote": "艮其止，止其所也",
+                "claim": "艮其止，止其所也"
+              },
+              {
+                "evidenceId": "zy-31-xiang",
+                "quote": "君子以虚受人",
+                "claim": "君子以虚受人"
+              }
+            ]
+          }
+        ],
+        "limitations": []
+      },
+      "durationMs": 23828
+    },
+    {
+      "id": "f0bdb00f-502f-4db5-8fb4-5a7b767c170f",
+      "question": "回程的票买不到，我们最后不回老家了，外婆也支持在家纪念。家里已经决定不烧纸，摆张外公的照片，再让孩子画幅画。她其实不害怕，只是问外公能不能看到。",
+      "mode": "followup",
+      "createdAt": "2026-10-11T07:27:18.116830+00:00",
+      "evidence": [
+        {
+          "id": "zy-52-judgment",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "judgment",
+          "line": null,
+          "text": "艮其背，不获其身；行其庭，不见其人，无咎。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "艮·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "艮其背，不获其身；行其庭，不见其人，无咎。"
+        },
+        {
+          "id": "zy-52-tuan",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "tuan",
+          "line": null,
+          "text": "艮，止也。时止则止，时行则行；动静不失其时，其道光明。艮其止，止其所也。上下敌应，不相与也。是以“不获其身，行其庭，不见其人，无咎”也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+          "locator": "艮·彖传",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:tuan"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "艮，止也。时止则止，时行则行；动静不失其时，其道光明。艮其止，止其所也。上下敌应，不相与也。是以“不获其身，行其庭，不见其人，无咎”也。"
+        },
+        {
+          "id": "zy-52-xiang",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "xiang",
+          "line": null,
+          "text": "兼山，艮。君子以思不出其位。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "艮·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "兼山，艮。君子以思不出其位。"
+        },
+        {
+          "id": "zy-52-line-4",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "line",
+          "line": 4,
+          "text": "艮其身，无咎。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "艮·六四",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:line:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "艮其身，无咎。"
+        },
+        {
+          "id": "zy-52-line-5",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "line",
+          "line": 5,
+          "text": "艮其辅，言有序，悔亡。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "艮·六五",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:line:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "艮其辅，言有序，悔亡。"
+        },
+        {
+          "id": "zy-52-line-6",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "line",
+          "line": 6,
+          "text": "敦艮，吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "艮·上九",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:line:6"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "敦艮，吉。"
+        },
+        {
+          "id": "zy-52-line_xiang-4",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "line_xiang",
+          "line": 4,
+          "text": "“艮其身”，止诸躬也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "艮·六四小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:line_xiang:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“艮其身”，止诸躬也。"
+        },
+        {
+          "id": "zy-52-line_xiang-5",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "line_xiang",
+          "line": 5,
+          "text": "“艮其辅”，以中正也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "艮·六五小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:line_xiang:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“艮其辅”，以中正也。"
+        },
+        {
+          "id": "zy-52-line_xiang-6",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "line_xiang",
+          "line": 6,
+          "text": "“敦艮”之“吉”，以厚终也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "艮·上九小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:line_xiang:6"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“敦艮”之“吉”，以厚终也。"
+        },
+        {
+          "id": "zy-31-judgment",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "judgment",
+          "line": null,
+          "text": "亨，利贞。取女吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "咸·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "亨，利贞。取女吉。"
+        },
+        {
+          "id": "zy-31-xiang",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "xiang",
+          "line": null,
+          "text": "山上有泽，咸。君子以虚受人。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "咸·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "山上有泽，咸。君子以虚受人。"
+        },
+        {
+          "id": "zy-31-line-1",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line",
+          "line": 1,
+          "text": "咸其拇。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "咸·初六",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line:1"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "咸其拇。"
+        },
+        {
+          "id": "zy-31-line-2",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line",
+          "line": 2,
+          "text": "咸其腓，凶；居吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "咸·六二",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line:2"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "咸其腓，凶；居吉。"
+        },
+        {
+          "id": "zy-31-line-3",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line",
+          "line": 3,
+          "text": "咸其股，执其随，往吝。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "咸·九三",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line:3"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "咸其股，执其随，往吝。"
+        },
+        {
+          "id": "zy-31-line-4",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line",
+          "line": 4,
+          "text": "贞吉，悔亡，憧憧往来，朋从尔思。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "咸·九四",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "贞吉，悔亡，憧憧往来，朋从尔思。"
+        },
+        {
+          "id": "zy-31-line-5",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line",
+          "line": 5,
+          "text": "咸其脢，无悔。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "咸·九五",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "咸其脢，无悔。"
+        },
+        {
+          "id": "zy-31-line-6",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line",
+          "line": 6,
+          "text": "咸其辅颊舌。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "咸·上六",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line:6"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "咸其辅颊舌。"
+        },
+        {
+          "id": "zy-31-tuan",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "tuan",
+          "line": null,
+          "text": "咸，感也。柔上而刚下，二气感应以相与。止而说，男下女，是以“亨，利贞。取女吉”也。天地感而万物化生，圣人感人心而天下和平。观其所感，而天地万物之情可见矣！",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+          "locator": "咸·彖传",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:tuan"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "咸，感也。柔上而刚下，二气感应以相与。止而说，男下女，是以“亨，利贞。取女吉”也。天地感而万物化生，圣人感人心而天下和平。观其所感，而天地万物之情可见矣！"
+        },
+        {
+          "id": "zy-31-line_xiang-1",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line_xiang",
+          "line": 1,
+          "text": "“咸其拇”，志在外也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "咸·初六小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line_xiang:1"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“咸其拇”，志在外也。"
+        },
+        {
+          "id": "zy-31-line_xiang-2",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line_xiang",
+          "line": 2,
+          "text": "虽“凶”“居吉”，顺不害也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "咸·六二小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line_xiang:2"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "虽“凶”“居吉”，顺不害也。"
+        },
+        {
+          "id": "zy-31-line_xiang-3",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line_xiang",
+          "line": 3,
+          "text": "“咸其股”，亦不处也。志在随人，所执下也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "咸·九三小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line_xiang:3"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“咸其股”，亦不处也。志在随人，所执下也。"
+        },
+        {
+          "id": "zy-31-line_xiang-4",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line_xiang",
+          "line": 4,
+          "text": "“贞吉，悔亡”，未感害也；“憧憧往来”，未光大也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "咸·九四小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line_xiang:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“贞吉，悔亡”，未感害也；“憧憧往来”，未光大也。"
+        },
+        {
+          "id": "zy-31-line_xiang-6",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line_xiang",
+          "line": 6,
+          "text": "“咸其辅颊舌”，滕口说也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "咸·上六小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line_xiang:6"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“咸其辅颊舌”，滕口说也。"
+        }
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "situation_followup",
+          "evidenceIds": [
+            "zy-52-judgment",
+            "zy-52-tuan",
+            "zy-52-xiang",
+            "zy-52-line-4",
+            "zy-52-line-5",
+            "zy-52-line-6",
+            "zy-52-line_xiang-4",
+            "zy-52-line_xiang-5",
+            "zy-52-line_xiang-6",
+            "zy-31-judgment",
+            "zy-31-xiang"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 3469,
+          "promptTokens": 3997,
+          "completionTokens": 607,
+          "totalTokens": 4604
+        },
+        {
+          "step": "tool",
+          "tool": "get_passages",
+          "args": {
+            "hexagramId": 31,
+            "sections": [
+              "judgment",
+              "line",
+              "line_xiang",
+              "tuan",
+              "xiang"
+            ]
+          },
+          "status": "ok",
+          "evidenceIds": [
+            "zy-31-judgment",
+            "zy-31-line-1",
+            "zy-31-line-2",
+            "zy-31-line-3",
+            "zy-31-line-4",
+            "zy-31-line-5",
+            "zy-31-line-6",
+            "zy-31-tuan",
+            "zy-31-xiang",
+            "zy-31-line_xiang-1",
+            "zy-31-line_xiang-2",
+            "zy-31-line_xiang-3",
+            "zy-31-line_xiang-4",
+            "zy-31-line_xiang-6"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "hits": [
+            {
+              "passageId": "zy-31-judgment",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zy-31-line-1",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zy-31-line-2",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zy-31-line-3",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zy-31-line-4",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zy-31-line-5",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zy-31-line-6",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zy-31-tuan",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zy-31-xiang",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zy-31-line_xiang-1",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zy-31-line_xiang-2",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zy-31-line_xiang-3",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zy-31-line_xiang-4",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zy-31-line_xiang-5",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zy-31-line_xiang-6",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "coverageStatus": "covered",
+          "truncated": true,
+          "durationMs": 4
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 1177,
+          "promptTokens": 6837,
+          "completionTokens": 31,
+          "totalTokens": 6868
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 27340,
+          "promptTokens": 2327,
+          "completionTokens": 6041,
+          "totalTokens": 8368
+        },
+        {
+          "step": "validate",
+          "status": "passed",
+          "code": ""
+        }
+      ],
+      "status": "completed",
+      "model": "deepseek-flash",
+      "releaseId": "knowledge-v3-20260926-r1",
+      "checkpointThreadId": "python-graph-v17:912d375d-5a55-4664-8ed7-273e79d1c52a:f0bdb00f-502f-4db5-8fb4-5a7b767c170f",
+      "promptVersion": "evidence-agent-python-v16",
+      "graphVersion": "python-graph-v17",
+      "answer": {
+        "status": "answered",
+        "paragraphs": [
+          {
+            "text": "回程票买不到，最后不回老家，这不是对习俗的轻慢。艮卦《彖传》说“时止则止，时行则行”，条件变了，纪念方式就随之调整；在家摆外公照片、让孩子画画，也是“艮其止，止其所也”。孩子没有害怕，你就不必把这次重点放在解释死亡或墓地，而可以放在“我们怎样记得外公”。",
+            "citations": [
+              {
+                "evidenceId": "zy-52-tuan",
+                "quote": "时止则止，时行则行",
+                "claim": "时止则止，时行则行"
+              },
+              {
+                "evidenceId": "zy-52-tuan",
+                "quote": "艮其止，止其所也",
+                "claim": "艮其止，止其所也"
+              }
+            ]
+          },
+          {
+            "text": "她问“外公能不能看到”，最稳妥的回答是诚实：我不能确定他能不能像从前那样看见，但我们可以让他“被记得”。咸卦《彖传》说“咸，感也”，又说“观其所感，而天地万物之情可见矣”；纪念的核心是感念和记得，不是证明另一个世界有没有目光。你可以说：“我们摆他的照片、说他的故事、画一幅画，是因为我们想他；这份想念是真的，他若知道，会高兴。”",
+            "citations": [
+              {
+                "evidenceId": "zy-31-tuan",
+                "quote": "咸，感也",
+                "claim": "咸，感也"
+              },
+              {
+                "evidenceId": "zy-31-tuan",
+                "quote": "观其所感，而天地万物之情可见矣",
+                "claim": "观其所感，而天地万物之情可见矣"
+              }
+            ]
+          },
+          {
+            "text": "在家纪念可以有一个简单次序：先看外公照片，讲一两个具体故事，比如他爱吃什么、怎么照顾家人；再让孩子决定画什么、要不要对照片说话。艮卦六五说“艮其辅，言有序，悔亡”，讲话有次序、不过量，后悔就少；上九说“敦艮，吉”，温和收束比逼她完成仪式更重要。咸卦《大象》说“君子以虚受人”，先听她的问题，不急着纠正。",
+            "citations": [
+              {
+                "evidenceId": "zy-52-line-5",
+                "quote": "艮其辅，言有序，悔亡",
+                "claim": "艮其辅，言有序，悔亡"
+              },
+              {
+                "evidenceId": "zy-52-line-6",
+                "quote": "敦艮，吉",
+                "claim": "敦艮，吉"
+              },
+              {
+                "evidenceId": "zy-31-xiang",
+                "quote": "君子以虚受人",
+                "claim": "君子以虚受人"
+              }
+            ]
+          },
+          {
+            "text": "她其实不害怕，只是反复问，这是孩子在整理理解，不必紧张。咸卦九四说“憧憧往来，朋从尔思”，心里来回想、反复问，是自然的情感活动；六二说“咸其腓，凶；居吉”，越是急着解释或催她进入仪式，越可能让她不安，安处在家里反而好。上六“咸其辅颊舌”提醒，别用一大套玄妙说法盖住她的问题，多听她怎么说。",
+            "citations": [
+              {
+                "evidenceId": "zy-31-line-4",
+                "quote": "憧憧往来，朋从尔思",
+                "claim": "憧憧往来，朋从尔思"
+              },
+              {
+                "evidenceId": "zy-31-line-2",
+                "quote": "咸其腓，凶；居吉",
+                "claim": "咸其腓，凶；居吉"
+              },
+              {
+                "evidenceId": "zy-31-line-6",
+                "quote": "咸其辅颊舌",
+                "claim": "咸其辅颊舌"
+              }
+            ]
+          },
+          {
+            "text": "若要把清明习俗讲给孩子，可以很短：“清明是春天里家人记得先人的日子。以前去墓地，是打扫、摆花、说说话；今年我们回不去，就在家摆外公的照片，你画一幅画，想对他说什么就说。不烧纸也可以，因为纪念不在纸灰，而在记得。外公能不能看到，我不知道；但我们能看见他的照片、讲他的故事，这份记得是真的。” 艮卦卦辞说“行其庭，不见其人，无咎”，在家纪念，看不到外公本人，也不算错。",
+            "citations": [
+              {
+                "evidenceId": "zy-52-judgment",
+                "quote": "行其庭，不见其人，无咎",
+                "claim": "行其庭，不见其人，无咎"
+              }
+            ]
+          }
+        ],
+        "limitations": []
+      },
+      "durationMs": 32124
+    },
+    {
+      "id": "33d43e1f-711c-4c44-ba23-1bb358198a51",
+      "question": "照片和画都摆好了，今晚饭前留十分钟就行。请直接给我一段可以对她说的话，既回答她刚才那个问题，又能自然引到我讲外公生前的小故事，不用重新安排活动。",
+      "mode": "followup",
+      "createdAt": "2026-10-11T07:27:50.362126+00:00",
+      "evidence": [
+        {
+          "id": "zy-52-judgment",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "judgment",
+          "line": null,
+          "text": "艮其背，不获其身；行其庭，不见其人，无咎。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "艮·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "艮其背，不获其身；行其庭，不见其人，无咎。"
+        },
+        {
+          "id": "zy-52-tuan",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "tuan",
+          "line": null,
+          "text": "艮，止也。时止则止，时行则行；动静不失其时，其道光明。艮其止，止其所也。上下敌应，不相与也。是以“不获其身，行其庭，不见其人，无咎”也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+          "locator": "艮·彖传",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:tuan"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "艮，止也。时止则止，时行则行；动静不失其时，其道光明。艮其止，止其所也。上下敌应，不相与也。是以“不获其身，行其庭，不见其人，无咎”也。"
+        },
+        {
+          "id": "zy-52-xiang",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "xiang",
+          "line": null,
+          "text": "兼山，艮。君子以思不出其位。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "艮·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "兼山，艮。君子以思不出其位。"
+        },
+        {
+          "id": "zy-52-line-4",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "line",
+          "line": 4,
+          "text": "艮其身，无咎。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "艮·六四",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:line:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "艮其身，无咎。"
+        },
+        {
+          "id": "zy-52-line-5",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "line",
+          "line": 5,
+          "text": "艮其辅，言有序，悔亡。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "艮·六五",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:line:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "艮其辅，言有序，悔亡。"
+        },
+        {
+          "id": "zy-52-line-6",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "line",
+          "line": 6,
+          "text": "敦艮，吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "艮·上九",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:line:6"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "敦艮，吉。"
+        },
+        {
+          "id": "zy-52-line_xiang-4",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "line_xiang",
+          "line": 4,
+          "text": "“艮其身”，止诸躬也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "艮·六四小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:line_xiang:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“艮其身”，止诸躬也。"
+        },
+        {
+          "id": "zy-52-line_xiang-5",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "line_xiang",
+          "line": 5,
+          "text": "“艮其辅”，以中正也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "艮·六五小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:line_xiang:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“艮其辅”，以中正也。"
+        },
+        {
+          "id": "zy-52-line_xiang-6",
+          "hexagramId": 52,
+          "name": "艮",
+          "section": "line_xiang",
+          "line": 6,
+          "text": "“敦艮”之“吉”，以厚终也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "艮·上九小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:52:line_xiang:6"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“敦艮”之“吉”，以厚终也。"
+        },
+        {
+          "id": "zy-31-judgment",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "judgment",
+          "line": null,
+          "text": "亨，利贞。取女吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "咸·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "亨，利贞。取女吉。"
+        },
+        {
+          "id": "zy-31-xiang",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "xiang",
+          "line": null,
+          "text": "山上有泽，咸。君子以虚受人。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "咸·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "山上有泽，咸。君子以虚受人。"
+        },
+        {
+          "id": "zy-31-line-1",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line",
+          "line": 1,
+          "text": "咸其拇。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "咸·初六",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line:1"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "咸其拇。"
+        },
+        {
+          "id": "zy-31-line-2",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line",
+          "line": 2,
+          "text": "咸其腓，凶；居吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "咸·六二",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line:2"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "咸其腓，凶；居吉。"
+        },
+        {
+          "id": "zy-31-line-3",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line",
+          "line": 3,
+          "text": "咸其股，执其随，往吝。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "咸·九三",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line:3"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "咸其股，执其随，往吝。"
+        },
+        {
+          "id": "zy-31-line-4",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line",
+          "line": 4,
+          "text": "贞吉，悔亡，憧憧往来，朋从尔思。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "咸·九四",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "贞吉，悔亡，憧憧往来，朋从尔思。"
+        },
+        {
+          "id": "zy-31-line-5",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line",
+          "line": 5,
+          "text": "咸其脢，无悔。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "咸·九五",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "咸其脢，无悔。"
+        },
+        {
+          "id": "zy-31-line-6",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line",
+          "line": 6,
+          "text": "咸其辅颊舌。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "咸·上六",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line:6"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "咸其辅颊舌。"
+        },
+        {
+          "id": "zy-31-tuan",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "tuan",
+          "line": null,
+          "text": "咸，感也。柔上而刚下，二气感应以相与。止而说，男下女，是以“亨，利贞。取女吉”也。天地感而万物化生，圣人感人心而天下和平。观其所感，而天地万物之情可见矣！",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+          "locator": "咸·彖传",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:tuan"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "咸，感也。柔上而刚下，二气感应以相与。止而说，男下女，是以“亨，利贞。取女吉”也。天地感而万物化生，圣人感人心而天下和平。观其所感，而天地万物之情可见矣！"
+        },
+        {
+          "id": "zy-31-line_xiang-1",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line_xiang",
+          "line": 1,
+          "text": "“咸其拇”，志在外也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "咸·初六小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line_xiang:1"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“咸其拇”，志在外也。"
+        },
+        {
+          "id": "zy-31-line_xiang-2",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line_xiang",
+          "line": 2,
+          "text": "虽“凶”“居吉”，顺不害也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "咸·六二小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line_xiang:2"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "虽“凶”“居吉”，顺不害也。"
+        },
+        {
+          "id": "zy-31-line_xiang-3",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line_xiang",
+          "line": 3,
+          "text": "“咸其股”，亦不处也。志在随人，所执下也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "咸·九三小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line_xiang:3"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“咸其股”，亦不处也。志在随人，所执下也。"
+        },
+        {
+          "id": "zy-31-line_xiang-4",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line_xiang",
+          "line": 4,
+          "text": "“贞吉，悔亡”，未感害也；“憧憧往来”，未光大也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "咸·九四小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line_xiang:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“贞吉，悔亡”，未感害也；“憧憧往来”，未光大也。"
+        },
+        {
+          "id": "zy-31-line_xiang-6",
+          "hexagramId": 31,
+          "name": "咸",
+          "section": "line_xiang",
+          "line": 6,
+          "text": "“咸其辅颊舌”，滕口说也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "咸·上六小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:31:line_xiang:6"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“咸其辅颊舌”，滕口说也。"
+        }
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "situation_followup",
+          "evidenceIds": [
+            "zy-52-judgment",
+            "zy-52-tuan",
+            "zy-52-xiang",
+            "zy-52-line-4",
+            "zy-52-line-5",
+            "zy-52-line-6",
+            "zy-52-line_xiang-4",
+            "zy-52-line_xiang-5",
+            "zy-52-line_xiang-6",
+            "zy-31-judgment",
+            "zy-31-xiang",
+            "zy-31-line-1",
+            "zy-31-line-2",
+            "zy-31-line-3",
+            "zy-31-line-4",
+            "zy-31-line-5",
+            "zy-31-line-6",
+            "zy-31-tuan",
+            "zy-31-line_xiang-1",
+            "zy-31-line_xiang-2",
+            "zy-31-line_xiang-3",
+            "zy-31-line_xiang-4",
+            "zy-31-line_xiang-6"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 1825,
+          "promptTokens": 6076,
+          "completionTokens": 224,
+          "totalTokens": 6300
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 18969,
+          "promptTokens": 2904,
+          "completionTokens": 4274,
+          "totalTokens": 7178
+        },
+        {
+          "step": "validate",
+          "status": "failed",
+          "code": "paragraphs.0.citations: List should have at most 5 items after validation, not 6"
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 2125,
+          "promptTokens": 3424,
+          "completionTokens": 457,
+          "totalTokens": 3881
+        },
+        {
+          "step": "validate",
+          "status": "passed",
+          "code": ""
+        }
+      ],
+      "status": "completed",
+      "model": "deepseek-flash",
+      "releaseId": "knowledge-v3-20260926-r1",
+      "checkpointThreadId": "python-graph-v17:912d375d-5a55-4664-8ed7-273e79d1c52a:33d43e1f-711c-4c44-ba23-1bb358198a51",
+      "promptVersion": "evidence-agent-python-v16",
+      "graphVersion": "python-graph-v17",
+      "answer": {
+        "status": "answered",
+        "paragraphs": [
+          {
+            "text": "你可以饭前坐在照片和画旁边，用这十分钟直接对她说：\n\n“你刚才问，外公能不能看到。老实说，我不知道他能不能像从前那样看见。但我知道，我们摆他的照片、你画这幅画，是因为我们想他；这份想念是真的。纪念不在纸灰，而在记得。我们记得他，他就还在我们的生活里。你看，这张照片里外公……（这里自然接一个外公生前的小故事：他爱吃什么、怎么照顾家人、说过什么话）。讲完停一下，问她：‘你画里想送外公什么？’这样就好，不用再安排别的。”\n\n这段话的次序是：先回答她的问题，再引到小故事，最后把话头交回给她。艮卦《彖传》说“时止则止，时行则行”，饭前十分钟正好止在饭前；艮卦六五说“艮其辅，言有序，悔亡”，话有次序、不过量，讲完一个小故事就收。咸卦《彖传》说“咸，感也”，又“观其所感，而天地万物之情可见矣”，纪念的核心是感念，不是证明另一个世界有没有目光；咸卦《大象》说“君子以虚受人”，先听她怎么理解。上九说“敦艮，吉”，温和收尾比讲满更好。",
+            "citations": [
+              {
+                "evidenceId": "zy-52-tuan",
+                "quote": "时止则止，时行则行",
+                "claim": "时止则止，时行则行"
+              },
+              {
+                "evidenceId": "zy-52-line-5",
+                "quote": "艮其辅，言有序，悔亡",
+                "claim": "艮其辅，言有序，悔亡"
+              },
+              {
+                "evidenceId": "zy-31-tuan",
+                "quote": "咸，感也",
+                "claim": "咸，感也"
+              },
+              {
+                "evidenceId": "zy-31-xiang",
+                "quote": "君子以虚受人",
+                "claim": "君子以虚受人"
+              },
+              {
+                "evidenceId": "zy-52-line-6",
+                "quote": "敦艮，吉",
+                "claim": "敦艮，吉"
+              }
+            ]
+          }
+        ],
+        "limitations": []
+      },
+      "durationMs": 23035
+    }
+  ],
+  "createdAt": "2026-10-11T07:26:54.173890+00:00",
+  "releaseId": "knowledge-v3-20260926-r1"
+}

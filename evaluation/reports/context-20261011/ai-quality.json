@@ -1,0 +1,1509 @@
+{
+  "note": "Independent-of-implementation AI, non-expert. Replay probes, v17 independent-author scenarios and v18 development smoke are separate groups. Nulls are not zero. Human scores separate.",
+  "groups": [
+    {
+      "variant": "background",
+      "n": 4,
+      "scores": {
+        "理解": {
+          "n": 4,
+          "mean": 1.5
+        },
+        "关联": {
+          "n": 4,
+          "mean": 1
+        },
+        "交流": {
+          "n": 4,
+          "mean": 1
+        },
+        "帮助": {
+          "n": 4,
+          "mean": 1.5
+        }
+      },
+      "contextTags": {
+        "CTX-重复解释": 2,
+        "CTX-未利用用户修正": 1,
+        "CTX-重新解释已有状态": 0
+      }
+    },
+    {
+      "variant": "baseline",
+      "n": 4,
+      "scores": {
+        "理解": {
+          "n": 4,
+          "mean": 1.5
+        },
+        "关联": {
+          "n": 4,
+          "mean": 1.25
+        },
+        "交流": {
+          "n": 4,
+          "mean": 1.25
+        },
+        "帮助": {
+          "n": 4,
+          "mean": 2
+        }
+      },
+      "contextTags": {
+        "CTX-重复解释": 3,
+        "CTX-未利用用户修正": 1,
+        "CTX-重新解释已有状态": 0
+      }
+    },
+    {
+      "variant": "confirmation",
+      "n": 18,
+      "scores": {
+        "理解": {
+          "n": 17,
+          "mean": 1.7058823529411764
+        },
+        "关联": {
+          "n": 17,
+          "mean": 0.8823529411764706
+        },
+        "交流": {
+          "n": 17,
+          "mean": 0.8823529411764706
+        },
+        "帮助": {
+          "n": 17,
+          "mean": 1.6470588235294117
+        }
+      },
+      "contextTags": {
+        "CTX-重复解释": 10,
+        "CTX-未利用用户修正": 1,
+        "CTX-重新解释已有状态": 2
+      }
+    },
+    {
+      "variant": "disabled",
+      "n": 4,
+      "scores": {
+        "理解": {
+          "n": 3,
+          "mean": 1
+        },
+        "关联": {
+          "n": 3,
+          "mean": 1
+        },
+        "交流": {
+          "n": 3,
+          "mean": 1
+        },
+        "帮助": {
+          "n": 3,
+          "mean": 1.6666666666666667
+        }
+      },
+      "contextTags": {
+        "CTX-重复解释": 3,
+        "CTX-未利用用户修正": 0,
+        "CTX-重新解释已有状态": 1
+      }
+    },
+    {
+      "variant": "initial-evidence",
+      "n": 4,
+      "scores": {
+        "理解": {
+          "n": 4,
+          "mean": 1.25
+        },
+        "关联": {
+          "n": 4,
+          "mean": 1.25
+        },
+        "交流": {
+          "n": 4,
+          "mean": 0.5
+        },
+        "帮助": {
+          "n": 4,
+          "mean": 1.5
+        }
+      },
+      "contextTags": {
+        "CTX-重复解释": 4,
+        "CTX-未利用用户修正": 2,
+        "CTX-重新解释已有状态": 2
+      }
+    },
+    {
+      "variant": "postfix",
+      "n": 6,
+      "scores": {
+        "理解": {
+          "n": 6,
+          "mean": 1
+        },
+        "关联": {
+          "n": 6,
+          "mean": 0.6666666666666666
+        },
+        "交流": {
+          "n": 6,
+          "mean": 1
+        },
+        "帮助": {
+          "n": 6,
+          "mean": 1.3333333333333333
+        }
+      },
+      "contextTags": {
+        "CTX-重复解释": 4,
+        "CTX-未利用用户修正": 0,
+        "CTX-重新解释已有状态": 1
+      }
+    },
+    {
+      "variant": "roles",
+      "n": 4,
+      "scores": {
+        "理解": {
+          "n": 4,
+          "mean": 1.5
+        },
+        "关联": {
+          "n": 4,
+          "mean": 0.75
+        },
+        "交流": {
+          "n": 4,
+          "mean": 0.75
+        },
+        "帮助": {
+          "n": 4,
+          "mean": 1.75
+        }
+      },
+      "contextTags": {
+        "CTX-重复解释": 3,
+        "CTX-未利用用户修正": 1,
+        "CTX-重新解释已有状态": 1
+      }
+    },
+    {
+      "variant": "task",
+      "n": 4,
+      "scores": {
+        "理解": {
+          "n": 3,
+          "mean": 1.6666666666666667
+        },
+        "关联": {
+          "n": 3,
+          "mean": 1
+        },
+        "交流": {
+          "n": 3,
+          "mean": 1
+        },
+        "帮助": {
+          "n": 3,
+          "mean": 2
+        }
+      },
+      "contextTags": {
+        "CTX-重复解释": 3,
+        "CTX-未利用用户修正": 0,
+        "CTX-重新解释已有状态": 0
+      }
+    },
+    {
+      "variant": "user-history-only",
+      "n": 4,
+      "scores": {
+        "理解": {
+          "n": 3,
+          "mean": 1.6666666666666667
+        },
+        "关联": {
+          "n": 3,
+          "mean": 1
+        },
+        "交流": {
+          "n": 3,
+          "mean": 1
+        },
+        "帮助": {
+          "n": 3,
+          "mean": 2
+        }
+      },
+      "contextTags": {
+        "CTX-重复解释": 2,
+        "CTX-未利用用户修正": 0,
+        "CTX-重新解释已有状态": 0
+      }
+    }
+  ],
+  "answers": [
+    {
+      "answerId": "R01",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "reason": "理解：实际把结论改为“可以报名”，没有继续按每周上课劝退。“若所谓集中后仍只有两小时”是条件式核验；原话从每周一小时变为集中一个下午，具体时长有歧义，单次确认不算未利用修正。关联：节律安排有意义，但“谨慎一点，就不会败在这一步”把提示说成了结果保证。交流：首段已解释时间条件改变，次段又从“动爻仍在九三”讲到“上次它是说每周一小时硬塞三小时课”，重复旧风险映射，增量很小，记重复解释；不因单纯提到固定卦象而另加状态标签。帮助：“以一期为限试水”及核验补课、连续时间，提供了可执行取舍。",
+      "knowledgeNotes": [
+        "observation：材料中的“敬慎不败也”不能单独证明现实报名必不失败，正文扩大了结果确定性。",
+        "observation：把“烧窑等待”都算入当天下午的个人可用时间，材料没有课程流程依据，宜只询问是否需本人在场。此为实践条件观察，不是经典释义结论。"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "recordId": "pottery-2",
+      "stage": "baseline",
+      "variant": "baseline",
+      "reviewFile": "blind-probe/ai-review.json"
+    },
+    {
+      "answerId": "R02",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [],
+      "reason": "理解：“我的直接判断改为：可以报名，不必再按上次那样暂缓”，且后文改为固定两周一次的安排，修正真正影响了行动。关联：“重点从‘等条件’转到‘定节律’”有用，但“谨慎安排就不会败事”过强，“时机到了还停在门内不动，那才是错”给未出现的拖延加上卦义压力。交流：从报名判断扩展到疲惫、体力、材料费和多条爻义，展开失衡；这些大多有新的落实对象，因此不硬贴重复解释标签。帮助：固定下午、确认补课和长周期绑定条件，支持报名后的落实。预算附加项目尚不清楚，询问是否包含不等于否认预算已解决。",
+      "knowledgeNotes": [
+        "observation：节九二、六三、六四、九五、上六被同时用于支持报名、催促行动及检查预算；材料未说明这些非本次动爻为何各自适用。需独立语义审查，不能只凭引文存在判为充分支持。",
+        "observation：“谨慎安排就不会败事”的现实保证超出所提供资料。"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "recordId": "pottery-2-roles",
+      "stage": "probe",
+      "variant": "roles",
+      "reviewFile": "blind-probe/ai-review.json"
+    },
+    {
+      "answerId": "R03",
+      "scores": {
+        "理解": 1,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 1
+      },
+      "contextTags": [
+        "CTX-未利用用户修正"
+      ],
+      "reason": "理解：开头明确“那个前提不成立了”，结论也转为报名；但末段“你那一小时的周内空闲也可以用来做些轻量练习”，把用户已经“把两周的空闲集中成一个下午”的时间再次当作额外余量，属于局部未利用修正。关联：“这里没有苦，只有甘”仅由排课和预算成立推断体验感受，联系过满。交流：修正结论前重新展开等待、涉川、安节、甘节，论证层次压过当前报名决定，但其中包含改判理由，不一概标记重复。帮助：有补课、工具等确认项；新增周内练习却可能再次超出实际时间预算，削弱方案可用性。",
+      "knowledgeNotes": [
+        "observation：“若前面那道坎其实不存在，继续等下去就不再是需，而是误时”是回答的推演，所给需卦原文未直接建立此排他命题。",
+        "observation：“这里没有苦，只有甘”不应被当作经文对用户未来课程感受的确认。"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "recordId": "pottery-2-background",
+      "stage": "probe",
+      "variant": "background",
+      "reviewFile": "blind-probe/ai-review.json"
+    },
+    {
+      "answerId": "R04",
+      "scores": {
+        "理解": 2,
+        "关联": 2,
+        "交流": 2,
+        "帮助": 2
+      },
+      "contextTags": [],
+      "reason": "理解：直接回答“可以，先上一回体验课再决定”，把新变量识别为“身体和节奏的未知”，没有继续围绕每周一小时劝退。关联：把等待、尺度用于单次试验与长期承诺的区别，提供了合理视角。交流：虽然再次引用九三、节九二，实际用来解释本轮的试课选择，属于必要回接而非无增量重复。帮助：“若只有一小时……测不出连续坐三小时的腰颈和节奏”抓住体验课能否回答真实疑问，给出时长、姿势、单次参加和课后取舍。结尾再确认稳定下午略显保守，但没有推翻已更新的上课频率。",
+      "knowledgeNotes": [
+        "observation：结尾“空出三小时（含往返、收拾）”与已知正课本身三小时不完全相容，应写三小时课时另加交通、收拾；属于局部操作表达问题，未改变本轮试课判断。",
+        "observation：“节以制度，不伤财，不害民”用于询问体验课规则是应用性类比，不能据此认定经文本身规定了这些现代报名条款。"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "recordId": "pottery-3",
+      "stage": "baseline",
+      "variant": "baseline",
+      "reviewFile": "blind-probe/ai-review.json"
+    },
+    {
+      "answerId": "R05",
+      "scores": {
+        "理解": 1,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 1
+      },
+      "contextTags": [],
+      "reason": "理解：识别到“上次尚无法确认的新变量”，支持先体验；但直接写“三小时坐着拉坯”，用户未说明体验课时长和具体内容，补入了关键条件。关联：用节制组织小步尝试有帮助；“体验课是眼下唯一可靠的探针”及“时机”说法过于绝对。交流：最后从主动提出试课转为“体验课是手段，不是拖延的借口”“别把它再排进‘以后再说’”，对不存在的拖延说教，影响自然承接；没有确凿旧事实回流，故不硬贴CTX标签。帮助：给出身体和兴趣的观察项与预约动作，但未核实体验课能否模拟长时间正课，关键验证条件不够完整。",
+      "knowledgeNotes": [
+        "observation：“唯一可靠的探针”是现实方法的排他判断，不由经文或课程资料支持。",
+        "observation：以节九二说明用户若不立即预约就会失时，材料没有截止日期、名额或用户拖延行为，属于适用条件不足的观察。"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "recordId": "pottery-3-background",
+      "stage": "probe",
+      "variant": "background",
+      "reviewFile": "blind-probe/ai-review.json"
+    },
+    {
+      "answerId": "R06",
+      "scores": {
+        "理解": 0,
+        "关联": 0,
+        "交流": 0,
+        "帮助": 1
+      },
+      "contextTags": [
+        "CTX-重复解释",
+        "CTX-未利用用户修正",
+        "CTX-重新解释已有状态"
+      ],
+      "reason": "理解：虽然首段记得“每两周一次”，后文却以“体验课若时长在一两小时内……正合你每周一小时的余量”继续决策，沿用已集中使用的旧余量，且一两小时也未必符合一小时。用户要验证长时间课程，回答反把“三小时”的体验说成“同一个‘泥’提前踩了一次”，转向回避待验证条件。关联：“必须是‘户庭’而非‘门庭’的一步”从字面强设体验时长与报名规则，主要推理牵强。交流：重讲“上次它说的是每周一小时硬塞三小时课”，末尾又要求“再按上次说的核验那个下午”，与旧时间判断回流共同重开已有状态；反复遍历各爻的两极提醒，阻碍试课话题推进。帮助：询问绑定费用、记录课后感受仍有用，但时长选择与用户新问题错位，故仅部分帮助。",
+      "knowledgeNotes": [
+        "observation：“‘户庭’比‘门庭’更近一层，说的是在自家小院里先试，就能知道外面通不通”不由包内“不出户庭，知通塞也”直接推出；此解释还转为“必须”的现实规则，需重点独立核查。",
+        "observation：“把这一点先问清楚，就不会败在第一步”同样把敬慎扩大为保证。",
+        "observation：材料没有足够依据从一次一两小时体验的负面反应直接断定三小时正课“不必报了”；姿势、休息和教学形式尚未知。"
+      ],
+      "onPoint": "否",
+      "delivered": true,
+      "recordId": "pottery-3-roles",
+      "stage": "probe",
+      "variant": "roles",
+      "reviewFile": "blind-probe/ai-review.json"
+    },
+    {
+      "answerId": "R07",
+      "scores": {
+        "理解": 1,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "reason": "理解：正确使用“时间排序更接近创作史和叙事，颜色排序更接近视觉节奏和空间感”，并给出组合方案；但再次说“当你已经在争执中登上城墙、想强攻自己的方案时”，延续助手自己的对抗推测，用户并未确认这种动机。关联：共同标准有用，取消映射为“初吉终乱”较牵强。交流：“你能接受‘无悔但志未得’吗”和整段取消风险清单已在历史中展开，此处没有新增取消事实，重复挤占排序讨论，记重复解释。没有把场地未定或关系不好直接当成现存事实，不另贴未利用修正标签。帮助：时间主线、颜色局部及两张同尺寸草图评比足以推动协商。",
+      "knowledgeNotes": [
+        "observation：“同人于郊”对应分区、“初吉终乱”对应取消后的遗憾，均为现代情境类比，不是材料直接给出的策展结论。",
+        "observation：正文“这样可避免关系破裂和展览流产”的确定性高于材料可支持程度；不以普通体验评审替代专家释义。"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "recordId": "exhibition-2",
+      "stage": "baseline",
+      "variant": "baseline",
+      "reviewFile": "blind-probe/ai-review.json"
+    },
+    {
+      "answerId": "R08",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "reason": "理解：“按创作时间排，是按创作史……按颜色排，是按视觉关系”，以及“实体空间按颜色，图录或展签按创作时间”，真正使用了纠正后的分歧。“你或他可能都想”只是假设，不当作已确认的坏关系来判分。关联：逐件辨别叙事与视觉需求有启发，取消对应“初吉终乱”仍勉强。交流：再次完整讨论“你要先问自己能否接受这种‘无悔但志未得’”，接着要求把取消代价和继续风险写在纸上；这些历史已经讲过，没有随排序细节产生新判断，记重复解释。帮助：模型双方案、第三方反馈及展签承载时间信息都具可操作性。",
+      "knowledgeNotes": [
+        "observation：把“类族辨物”细分为时间和颜色的两种“类族”，可作应用类比；是否构成准确经典词义解释须独立审查。",
+        "observation：“现在取消……这接近‘初吉终乱’”缺少具体过程支持，不能把经文当成取消会产生后果的证据。"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "recordId": "exhibition-2-roles",
+      "stage": "probe",
+      "variant": "roles",
+      "reviewFile": "blind-probe/ai-review.json"
+    },
+    {
+      "answerId": "R09",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "reason": "理解：不仅复述排序分歧，还据此提出“若偏视觉，颜色作主轴，时间作标签或图录；若偏脉络，时间作主轴”，说明修正用于下一步。原始“有点想取消”尚未撤回，短暂讨论取消本身不算未利用修正。关联：主题优先的类比有意义，但把想取消说成“登上城墙准备强攻或撤围”，再说“不是赌气”，加入未获用户确认的心理解释。交流：上九分区、“志未得”和取消后关系成本又整段展开，关键内容历史已有，记重复解释。帮助：主题原则、双维方案、截止点能推进实际选择。",
+      "knowledgeNotes": [
+        "observation：“这直接对应布展分类”“都是‘类族辨物’的合法维度”把应用类比表述得像经典直接裁定，宜区分原意与现代应用。",
+        "observation：关于强攻、撤围和赌气的心理归因来自回答推演，并非用户事实，也不能由爻辞证实。"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "recordId": "exhibition-2-background",
+      "stage": "probe",
+      "variant": "background",
+      "reviewFile": "blind-probe/ai-review.json"
+    },
+    {
+      "answerId": "R10",
+      "scores": {
+        "理解": 1,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释",
+        "CTX-未利用用户修正"
+      ],
+      "reason": "理解：接受纸上方案并区分朋友提供视角与裁决，确有推进；但用户已说“我们都愿意试一个办法”，回答仍断言“你们已经在争执中登上城墙，想强攻自己的方案”，把历史中助手的推测继续当作双方现状，未充分更新合作状态。关联：朋友视角与共同标准的联系有帮助，“这样做吉”语气过实。交流：旧的九四强攻叙事及上九“分区布展……志未得也”再次展开，后者缺少新证据，记重复解释；条件式保留退路本身不是重开取消决定，不另贴状态标签。帮助：提出朋友描述感受、不投票及最终现场微调，能落实当前方法。",
+      "knowledgeNotes": [
+        "observation：“这样做吉”紧接现实操作，容易读作卦象保证办法的效果；其后有现实建议，但未明确区分类比与预测。",
+        "observation：“朋友……可以视为‘同人于野’的延伸”已经标为应用性延伸，比直接声称经文规定第三方评审更清楚。"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "recordId": "exhibition-3",
+      "stage": "baseline",
+      "variant": "baseline",
+      "reviewFile": "blind-probe/ai-review.json"
+    },
+    {
+      "answerId": "R11",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "reason": "理解：认可当前试法，并将任务转成“同一比例、同一墙面尺寸画”“各自独立摆，不互相打断”，没有重新要求证明合作意愿。关联：共同规则支撑公平比较合理；用“濡其首，厉”“何可久也”对应拖到临展前或新争执，适配过宽。交流：预定平局处理属于本轮所需，不扣；但已经交代“若最终仍不能统一，可以退到分区布展”后，末段再次绕回“新战场”“上九的分区方案，或缩小规模，不必直接取消”，重复历史退路，记重复解释，整体展开偏重风险。帮助：比较条件、三个反馈问题和处理平局的约定可以直接执行。",
+      "knowledgeNotes": [
+        "observation：包内“濡其首，厉”“何可久也”未直接指向策展拖延或朋友争执，该映射宜作为类比而非释义事实。",
+        "observation：“终日戒……说明要带着疑问去试”把警戒、有所疑转化为试验要求；原文是否支持该解释留待知识审查。"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "recordId": "exhibition-3-background",
+      "stage": "probe",
+      "variant": "background",
+      "reviewFile": "blind-probe/ai-review.json"
+    },
+    {
+      "answerId": "R12",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "reason": "理解：把纸上比较、朋友反馈和定案串成具体步骤，能区分时间、颜色两条线索，已进入执行。关联：同尺度比较和共同规则有意义；既济上六直接解释成流程拖长消耗信任，依据偏弱。交流：“当你已经在争执中登上城墙、想强攻自己的方案时”沿用旧的假设叙事，未帮新问题；“到点仍不能统一，就启用分区或缩小规模”及“上九方案”多次出现，重复历史退路并在本轮再讲一遍，记重复解释。该句为条件形式，不认定断言用户仍想强攻，因此不另贴未利用修正。帮助：便签模拟、互相标认同与疑问、请朋友指出具体问题，形成可执行流程；截止点合理，不等于重新讨论取消。",
+      "knowledgeNotes": [
+        "observation：“同人上九……提示”分区、“既济上六……如果把这个流程拖得太长”都是情境应用，材料不足以把这些现代规则认作经文直接结论。",
+        "observation：必须各标三个认同和三个疑问、朋友只看一次即必须定案，是回答自行设置的流程参数，并非用户已定条件或经文要求。"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "recordId": "exhibition-3-roles",
+      "stage": "probe",
+      "variant": "roles",
+      "reviewFile": "blind-probe/ai-review.json"
+    },
+    {
+      "answerId": "R01",
+      "scores": {
+        "理解": "NA",
+        "关联": "NA",
+        "交流": "NA",
+        "帮助": "NA"
+      },
+      "contextTags": [],
+      "onPoint": "否",
+      "delivered": false,
+      "reason": "材料中本轮“answer”为null，没有交付回答。不能从历史回答、卦象或可能存在的未交付候选推断本轮表现，四维均NA、回答到点上/任务完成为否。无本轮原句可引用，CTX标签不适用。",
+      "knowledgeNotes": [
+        "observation：未交付本轮回答，不进行知识语义评分，也不评价候选文本。"
+      ],
+      "recordId": "pottery-2-task",
+      "stage": "diagnostic",
+      "variant": "task",
+      "reviewFile": "blind-diagnostic/ai-review.json"
+    },
+    {
+      "answerId": "R02",
+      "scores": {
+        "理解": 1,
+        "关联": 1,
+        "交流": 0,
+        "帮助": 1
+      },
+      "contextTags": [
+        "CTX-重复解释",
+        "CTX-未利用用户修正",
+        "CTX-重新解释已有状态"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "reason": "理解：先说“时间与费用的缺口基本消失”“可以报名”，但随后要求“确认课程是否真的每两周一次”，末段又要求“确认每两周一次的班确实存在”。用户本轮明确更正了课程频率，回答仍把这个已告知事实当作报名门槛，属于局部未利用修正；这与询问下午实际时长或附加费用不同。关联：节律视角合理，但需卦大象没有为班级存在性核验提供特定支持。交流：两次重开同一频率条件，又重讲“云变成雨”“安顿日常”，明显阻碍从更正向报名推进，三个CTX标签均有对应证据。帮助：结论转为可以报名、并有材料费确认项，仍有部分作用，因此独立的回答到点上记是，帮助仅1。",
+      "knowledgeNotes": [
+        "observation：“君子以饮食宴乐”的citation claim被写成“先向课程方确认每两周一次的班确实存在”，包内原文不直接支持此现代核验内容。",
+        "observation：将不报名直接称为“苦节”，需区分现代劝说与经典条件判断。"
+      ],
+      "recordId": "pottery-2-initial-evidence",
+      "stage": "diagnostic",
+      "variant": "initial-evidence",
+      "reviewFile": "blind-diagnostic/ai-review.json"
+    },
+    {
+      "answerId": "R03",
+      "scores": {
+        "理解": 0,
+        "关联": 1,
+        "交流": 0,
+        "帮助": 1
+      },
+      "contextTags": [
+        "CTX-重复解释",
+        "CTX-未利用用户修正",
+        "CTX-重新解释已有状态"
+      ],
+      "onPoint": "否",
+      "delivered": true,
+      "reason": "理解：用户这轮要验证长时间坐着是否适应，回答却把体验课价值定义为核验“腾出来”和“稳定腾出来”，并写“也必须占用你本来就没有的下午”，与已能集中一个下午的修正冲突。关联：单次低承诺可作节制类比，但“风险多半来自排班和承诺方式”未经事实支持，把新身体疑问再塞回旧解释。交流：反复讨论“那个下午能不能连续、稳定地空出三小时以上”，结尾又以同项作为第一标准，重开已更新时间条件；对长时间体验的新疑问没有充分推进。帮助：可单次、问时长等仍有用，但以“轻、短”的体验验证排班，未解决身体是否适应长课的关键问题，回答到点上记否。",
+      "knowledgeNotes": [
+        "observation：“谨慎把边界问清楚，就不会败在这一步”把敬慎扩大为现实保证。",
+        "observation：末段把“等待烧窑”计入用户下午时间，没有需本人等待的课程证据。",
+        "observation：“体验课就是这次渡河前最便宜的一次试水”没有费用比较依据，属于修辞性实务断言。"
+      ],
+      "recordId": "pottery-3-initial-evidence",
+      "stage": "diagnostic",
+      "variant": "initial-evidence",
+      "reviewFile": "blind-diagnostic/ai-review.json"
+    },
+    {
+      "answerId": "R04",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "reason": "理解：实际把体验安排在“你真正能集中出三小时的那个下午”，并明确“体验课要试身体能否连续坐三小时”，能接住新变量。“若随便找个只有一小时的周硬塞”是未发生的假设，未当作现状，不标未利用修正。关联：“若体验课本身不是三小时……不能完全代表正课”有用；但“谨慎一点，就不会败在这一步”以及不去体验即失时，夸大卦象指向。交流：开头重复旧的九三、排班风险和一小时硬塞，用户已转问身体适应，此回顾增量有限；“条件已经允许却连体验都不去”又回应了不存在的消极态度。帮助：单次可报、接近正课时长及课后身体感受形成有用检验。",
+      "knowledgeNotes": [
+        "observation：“就不会败在这一步”不是包内资料能够确认的现实结果。",
+        "observation：“条件已经允许却连体验都不去，也会错失时机”缺少现实期限或机会将消失的证据；不宜把节九二直接用于催促用户。"
+      ],
+      "recordId": "pottery-3-task",
+      "stage": "diagnostic",
+      "variant": "task",
+      "reviewFile": "blind-diagnostic/ai-review.json"
+    },
+    {
+      "answerId": "R05",
+      "scores": {
+        "理解": 1,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "reason": "理解：使用时间与颜色的不同目标，提出“先按时间轴分成几个阶段，每个阶段内部按颜色调序”，更正进入了方案；但“你已经在墙上（争执到高点）”把助手推测当成用户状态，局部理解不足。关联：共同优先级有启发，“这四个字其实就是布展方法”与取消对应初吉终乱都过实。交流：再讲分区的“志未得”、再列取消的关系损失，与历史同义内容重复；仍想不想取消未被明确撤回，不将短暂提及取消本身定为未利用修正。帮助：时间分阶段、颜色调序、双动线和小样能推动实际协商。",
+      "knowledgeNotes": [
+        "observation：“君子以类族辨物”被说成“这四个字其实就是布展方法”，把现代应用等同原意，需独立释义审查。",
+        "observation：“争执到高点”没有用户证据；爻辞不能证实这一现实心理状态。"
+      ],
+      "recordId": "exhibition-2-task",
+      "stage": "diagnostic",
+      "variant": "task",
+      "reviewFile": "blind-diagnostic/ai-review.json"
+    },
+    {
+      "answerId": "R06",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "reason": "理解：“问题不在要不要合作，而在用什么标准排列”，后文按视觉统一或创作历程决定主次，也给图录和主墙面不同职责，真正利用了更正。关联：以分类、共同规则组织方案有效；把取消和勉强继续都套入初吉终乱，支持范围偏泛。交流：上九分区、“原本想达到的深度共同策展没有完全实现”及接受与否，在历史已详细解释，本轮重新展开；取消仍是原始问题的一部分，不因提及它就附加未利用修正或重开状态标签。帮助：两张平面图按共同目标比较及混合方案可实施，条件式“你们若各自坚持”不当作已确认强攻状态。",
+      "knowledgeNotes": [
+        "observation：“颜色和时间都是类族方式”适合作为应用类比，但包内未提供词义范围的独立论证。",
+        "observation：“原本想达到的深度共同策展”是助手推断的期望，不应据此断言分区必然使用户志向落空。"
+      ],
+      "recordId": "exhibition-2-initial-evidence",
+      "stage": "diagnostic",
+      "variant": "initial-evidence",
+      "reviewFile": "blind-diagnostic/ai-review.json"
+    },
+    {
+      "answerId": "R07",
+      "scores": {
+        "理解": 2,
+        "关联": 2,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "reason": "理解：“你们都愿意试”后直接给同比例图、各摆一版及朋友反馈问题，已进入执行。关联：把“困而反则”用于反馈后若再冲突就回到共同标准，条件与当前流程相关，没有直接声称目前仍在强攻；思患用于事先约定决策规则也有实际用途。交流：前文已交代“如果试后仍无法统一……分区布展”，结尾又重复“若朋友反馈仍分裂，就转向复合方案或分区布展；取消仍放在最后”，重复此前及本轮退路，故交流1、记重复解释；预先约定分歧处理本身不扣。帮助：具体观察问题、反馈使用权和截止规则均能直接用。",
+      "knowledgeNotes": [
+        "observation：“共同办展可以走通，但要走得正、不强行”宜读作条件性鼓励，不能作成功保证。",
+        "observation：“志未得”对应深度共同策展仍为应用推演；未将该知识观察自动降低整体关联分，因为本轮主要关联有实际视角。"
+      ],
+      "recordId": "exhibition-3-initial-evidence",
+      "stage": "diagnostic",
+      "variant": "initial-evidence",
+      "reviewFile": "blind-diagnostic/ai-review.json"
+    },
+    {
+      "answerId": "R08",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "reason": "理解：认可纸上试摆并处理朋友意见，未把双方合作意愿当成未知条件。关联：分类和共同标准有帮助；但“若两个朋友都看不出明显高下，或意见也分裂……这说明方案各有成立处”从有限反馈直接推断方案性质，依据不足。交流：第三段已经交代复合、分区和取消最后，第四段又回到“进入复合或分区方案”“比急着取消更稳妥”，重复历史退路而未新增行动，记重复解释。条件式“如果纸上又争起来”是合理预案，不当作当前关系不好。帮助：交换方案、比较主题动线与视觉、记录理由和反馈规则可执行。",
+      "knowledgeNotes": [
+        "observation：朋友无明显偏好还可能来自图纸信息不足或评价标准不明，不能直接证明“两案各有成立处”，这是现实推理观察。",
+        "observation：“分区布展、联合名义，可无悔”容易把同人上九的经文表述变成用户不会后悔的承诺；末段“卦象不保证结果”有所限制，但需核查局部表述。"
+      ],
+      "recordId": "exhibition-3-task",
+      "stage": "diagnostic",
+      "variant": "task",
+      "reviewFile": "blind-diagnostic/ai-review.json"
+    },
+    {
+      "answerId": "R01",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [],
+      "onPoint": "是",
+      "delivered": true,
+      "reason": "理解：明确“不是‘每周只有一小时’硬挤三小时”，结论转为“可以报名”，并以两周一次安排短周期试课，说明更正进入了行动。关联：“最该防的……上次看错课表那种细节疏漏再发生”仅凭一次更正就选出主要风险，联系过强；节度与可持续安排的视角仍有帮助。交流：反复从泥、甘节、苦节、户庭、门庭说明同一个可控报名判断，展开偏重。但关于新时段、额外费用、短周期试课都有增量，不因多次引用就强贴CTX标签。帮助：补课、通勤、短周期及体验后的继续/停止条件可以执行；一次重新核验频率略多余，但没有连续把已知频率当成未知主障碍。",
+      "knowledgeNotes": [
+        "observation：“最该防”的风险排序不由用户或包内资料支持，单次看错课表不等于持续疏漏倾向。",
+        "observation：把节初九、九二作为不同现实行动条件作类比，需说明这是现代应用，不能只凭经文引文判定某报名时机已到。"
+      ],
+      "recordId": "pottery-2-user-history-only",
+      "stage": "history-probe",
+      "variant": "user-history-only",
+      "reviewFile": "blind-history/ai-review.json"
+    },
+    {
+      "answerId": "R02",
+      "scores": {
+        "理解": 1,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "reason": "理解：明确“上一轮‘需于泥’的比喻不再适用于这个新安排”，后文也建议报名和课后记录，真正用了新安排；但“这不是推翻上一轮，而是上一轮的等待等到了更合适的时机”把看错课表后的纠正叙述成实际等待带来条件变化，局部理解有偏差。未来出勤稳定性确实仍可能待核验，不把“计划层面的可行性”单独判成未利用修正。关联：“更合适的爻位是九五”“现在云该下雨了，别再停在原地”对现实时机的解释过实。交流：历史已详讲苦节及从容等待，此处又整段展开“为了上课压缩睡眠”和“等待期里也从容过日子”，后者没有本轮增量，记重复解释。帮助：补课、练手要求与试上后记录可持续性有实际用途，没有把已集中时间再当额外余量。",
+      "knowledgeNotes": [
+        "observation：“更合适的爻位是九五”可能被读成按情境选择取代固定动爻；包内未说明此采用方式，应由独立知识审查核对适用边界。",
+        "observation：“现在云该下雨了”是现实条件的修辞映射，需卦大象不能确认报名时机或未来变化。",
+        "observation：“上满三次课后”是回答自行设定的观察周期，不是用户条件或经文要求。"
+      ],
+      "recordId": "pottery-2-disabled",
+      "stage": "history-probe",
+      "variant": "disabled",
+      "reviewFile": "blind-history/ai-review.json"
+    },
+    {
+      "answerId": "R03",
+      "scores": {
+        "理解": 1,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 1
+      },
+      "contextTags": [
+        "CTX-重复解释",
+        "CTX-重新解释已有状态"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "reason": "理解：能识别“剩下的是‘你适不适应’”，但开头擅自设定“这一小时的体验”，后文又称它能回答“三个小时坐得住吗”，末尾才询问体验课时长，关键验证条件前后不稳。关联：以节度支持小规模试课有意义，但继续说“麻烦多来自排班和承诺”忽视本轮的新适应性疑问。交流：用户已经可集中一个下午，却把“如果体验课也要占掉你那个唯一的下午，就等于提前消耗了资源”重新当作问题展开；没有说明体验与正课须同一周期同时完成，故这是把已安排的资源再制造成障碍，记重新解释已有状态。旧的排班风险及“失时”催促再次出现，记重复解释；并未直接否认有该下午，不追加未利用修正标签。帮助：试后观察手颈、兴趣和询问时长有用，但没有清楚区分一小时体验与三小时正课的验证能力，帮助仅部分。",
+      "knowledgeNotes": [
+        "observation：关于“这一小时的体验”并无用户事实依据；一小时体验不能直接回答三小时耐受，属于实务推理问题。",
+        "observation：“体验课……通常不含后续正课的完整流程”没有课程资料支持；可询问，不宜作为已知。",
+        "observation：“如果体验课后觉得能坐得住，就该正式报”“不是又一次拖延的理由”借节九二制造行动压力，用户没有拖延事实。"
+      ],
+      "recordId": "pottery-3-disabled",
+      "stage": "history-probe",
+      "variant": "disabled",
+      "reviewFile": "blind-history/ai-review.json"
+    },
+    {
+      "answerId": "R04",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "reason": "理解：支持“先试一次，而不是立刻把整期课程定下来”，承认更正后压力降低，并使用集中出的下午，未再按每周一小时拒绝。关联：小代价接触真实情况、体验后衡量身体反应的联系合理；将尚未发生的一直不试套成“错过合适时机”，力度过强。交流：第二段再完整解释“原先只看到每周一小时空闲却想报三小时课”与泥的比喻，随后重新展开苦节、甘节，历史已有，用户当前没有要求重讲，记重复解释。末段又重复单次可行即体验的判断，增加了冗余；不因条件式安排体验时间而标未利用修正。帮助：单次可报、退转、能否算入整期及身体反应的观察能够落实试课，虽仍可更清楚说明体验时长要匹配验证目的。",
+      "knowledgeNotes": [
+        "observation：“如果……一直因为‘没试过’而不去试，也可能错过合适时机”是额外构造的情境，材料不支持用户正在这样做或机会有期限。",
+        "observation：以甘节说明安排可持续属于类比，不构成课程体验或效果保证。"
+      ],
+      "recordId": "pottery-3-user-history-only",
+      "stage": "history-probe",
+      "variant": "user-history-only",
+      "reviewFile": "blind-history/ai-review.json"
+    },
+    {
+      "answerId": "R05",
+      "scores": {
+        "理解": 1,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "reason": "理解：不仅承认关系、场地不是问题，还按主题选择颜色或时间主轴，修正影响了方案；但“你想按颜色排，已经站到‘城墙’上”“继续强攻对方的方案”把普通方法分歧升级成未经确认的强攻动机。关联：共同目标和分类有启发；“既济提示：这件事有办成的可能”及导览、维护、撤展“都可能有乱”扩张到用户没问的风险。交流：上九退路解释后，结尾又说“若最后只能各自办展……无悔但志未得”，重讲历史内容，记重复解释。没有直接把关系不好当成当前事实，故不额外标未利用修正。帮助：主次轴、平面试排及第三方只看主题的规则具体可用。",
+      "knowledgeNotes": [
+        "observation：“若你选择取消或各办各的……谈不上大悔”把现代选择的后悔程度挂到同人上九，需要独立核查，包内不能证实用户不会后悔。",
+        "observation：“既济提示……有办成的可能”用卦象确认现实可行性，即使表述为可能，也需区分文化类比与事实依据。",
+        "observation：“已经站到城墙上”“继续强攻”没有用户证据；不能从爻辞证明个人动机。"
+      ],
+      "recordId": "exhibition-2-user-history-only",
+      "stage": "history-probe",
+      "variant": "user-history-only",
+      "reviewFile": "blind-history/ai-review.json"
+    },
+    {
+      "answerId": "R06",
+      "scores": {
+        "理解": 1,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "reason": "理解：正确区分时间与颜色的目标，给出了主辅结合；但“这几乎是在描摹你现在的处境：你已经登上城墙，准备为自己的方案强攻”仍将历史中助手的推测当作现状。末尾“你真正在意的……你的作品是否被看见”也未经用户确认。关联：共同标准与分类的视角有用，但固定爻辞被用来描摹心理，关联偏强。交流：重新整段询问能否接受“无悔但志未得”，再重讲取消的后果清单，与历史高度同义，没有随新排序细节推进，记重复解释。关系良好不意味着不能有僵持，因此不把所有强攻比喻自动等同已否定的关系问题，也不追加未利用修正标签。帮助：写下展览目标、找重叠、确定主辅轴，能够推动协商。",
+      "knowledgeNotes": [
+        "observation：“如果不能，那说明你真正在意的不是颜色本身，而是……完整的共同表达”不是充分推论；不能接受分区可能有多种原因。",
+        "observation：“这样做可以避免关系破裂和展览流产”将分区作为确定性保护措施，包内资料不支持该保证。",
+        "observation：包内“困而反则也”可启发共同规则，但不支持对用户“准备强攻”的心理定性。"
+      ],
+      "recordId": "exhibition-2-disabled",
+      "stage": "history-probe",
+      "variant": "disabled",
+      "reviewFile": "blind-history/ai-review.json"
+    },
+    {
+      "answerId": "R07",
+      "scores": {
+        "理解": "NA",
+        "关联": "NA",
+        "交流": "NA",
+        "帮助": "NA"
+      },
+      "contextTags": [],
+      "onPoint": "否",
+      "delivered": false,
+      "reason": "本轮answer为null，未交付回答。四维均NA，任务完成/回答到点上为否。没有可评分的本轮原句；CTX标签不适用，不能把此前助手回答或未交付候选当成本轮答案。",
+      "knowledgeNotes": [
+        "observation：没有交付文本，不做知识语义评判。"
+      ],
+      "recordId": "exhibition-3-disabled",
+      "stage": "history-probe",
+      "variant": "disabled",
+      "reviewFile": "blind-history/ai-review.json"
+    },
+    {
+      "answerId": "R08",
+      "scores": {
+        "理解": "NA",
+        "关联": "NA",
+        "交流": "NA",
+        "帮助": "NA"
+      },
+      "contextTags": [],
+      "onPoint": "否",
+      "delivered": false,
+      "reason": "本轮answer为null，未交付回答。四维均NA，任务完成/回答到点上为否。没有可评分的本轮原句；CTX标签不适用，不能根据相同输入下其他回答代填本份评分。",
+      "knowledgeNotes": [
+        "observation：没有交付文本，不做知识语义评判。"
+      ],
+      "recordId": "exhibition-3-user-history-only",
+      "stage": "history-probe",
+      "variant": "user-history-only",
+      "reviewFile": "blind-history/ai-review.json"
+    },
+    {
+      "answerId": "R01",
+      "scene": "场景 01",
+      "turnIndex": 1,
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：抓住“传统礼数”与“不太复杂”，提出先定保留、简化和日期规则。关联：用兑的交流与和悦组织家庭协商合理；“卦象无动爻，说明当前更适合稳定协商、不宜仓促定死”则把固定状态推出行动要求。交流：从先商量什么扩展到完整婚庆、合同及分日安排，略超出轻量起步需求，但首轮没有历史重复。帮助：“必须、可简化、可省略”清单和新人先统一原则可执行。",
+      "knowledgeNotes": [
+        "observation：本包经文没有给出“无动爻所以宜稳定协商”的规则，也不直接支持长辈保留核心礼数后就更容易让步；这些是回答的应用推演。"
+      ],
+      "recordId": "context_wedding_execution-1",
+      "stage": "confirmation",
+      "variant": "confirmation",
+      "reviewFile": "human-random-v17/ai-review.json"
+    },
+    {
+      "answerId": "R02",
+      "scene": "场景 01",
+      "turnIndex": 2,
+      "scores": {
+        "理解": 1,
+        "关联": 1,
+        "交流": 0,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释",
+        "CTX-未利用用户修正",
+        "CTX-重新解释已有状态"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：开头正确说矛盾从“选哪天”转到“周日怎么排才不赶”，也给出周日流程；但末段又要求向父母确认“周日是否接受”，与“两边父母也都说日子我们定就行”冲突。关联：分工与事前沟通有意义，但再次借无动爻解释不宜定死细节，支持不足。交流：再讲“亨，利贞”“说以先民”和分日方案；尤其把父母是否接受周日重新作为确认事项，重开已解决的日期权限，三个CTX标签分别对应重复论证、修正未落实和状态重开。帮助：酒店硬时间、路线与缓冲、集中敬茶仍提供了实用安排。",
+      "knowledgeNotes": [
+        "observation：说“先拿两个方案”却列A、B、C三个，属于局部表达不一致；不是按数量扣分。",
+        "observation：“顺乎天而应乎人”等属于协商类比，不能证明长辈仍要求另选吉时。"
+      ],
+      "recordId": "context_wedding_execution-2",
+      "stage": "confirmation",
+      "variant": "confirmation",
+      "reviewFile": "human-random-v17/ai-review.json"
+    },
+    {
+      "answerId": "R03",
+      "scene": "场景 01",
+      "turnIndex": 3,
+      "scores": {
+        "理解": 1,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 1
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：产出家族群文案，保留周日、酒店敬茶和不另跑接亲；但“改口、受礼、合影……该有的礼数一样保留”“双方父母都会到场”替用户作了未确认承诺，且把“不再另跑”延伸为仍有酒店接亲环节。关联：和悦、说明安排有合理视角，后两段再解释既有兑卦并未改善文案。交流：成品后又重讲“亨，利贞”“顺乎天而应乎人”“两泽相连”，这些历史已解释且本轮只要一段话，记重复解释。帮助：有可编辑文案，但要先删改新增仪式与出席承诺，不能完全直接发送。",
+      "knowledgeNotes": [
+        "observation：未确认的“受礼”、改口红包、家宴等不能因传统礼数而自动加入承诺。有限观察针对事实支持，不裁定各地婚俗。"
+      ],
+      "recordId": "context_wedding_execution-3",
+      "stage": "confirmation",
+      "variant": "confirmation",
+      "reviewFile": "human-random-v17/ai-review.json"
+    },
+    {
+      "answerId": "R04",
+      "scene": "场景 02",
+      "turnIndex": 1,
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：回应首次登门、两盒茶及低调礼数，建议问女友家庭偏好。关联：小过的恭俭用于节制礼物有意义；“大人可理解为女友和长辈的引荐”“当位实也”对应晚辈客人，映射牵强。交流：对门口先后、递给谁、叩指、壶嘴等展开成较细规范，初次拜访显得紧绷，交流1；首轮不标CTX。帮助：称呼、简短递礼物用语和不报价格等能实际使用。此时尚不知父母不喝茶，不用后轮事实扣分。",
+      "knowledgeNotes": [
+        "observation：广东叩指礼、称呼、双数及壶嘴等未由本包易经来源验证；其家庭适用范围需要独立民俗核查，不能把这些引文当支持。"
+      ],
+      "recordId": "context_visit_gift_chosen-1",
+      "stage": "confirmation",
+      "variant": "confirmation",
+      "reviewFile": "human-random-v17/ai-review.json"
+    },
+    {
+      "answerId": "R05",
+      "scene": "场景 02",
+      "turnIndex": 2,
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：“水果篮为主即可，不必再带两盒茶叶”，把父母不喝茶和预算用于新方案；没有继续要求送茶。关联：低调恭俭与礼物分寸相关，但又逐一以蹇的各爻套女友引荐、长辈和客人位置。交流：第三、四段再次讲前半步进门、称呼、递礼物及整套倒茶礼；用户只更新选礼信息，特别是已知父母不喝茶还重讲七分满、壶嘴，增量很少，记重复解释。帮助：给出预算内新鲜水果与相应递礼话术。‘没有忌口’未必涵盖所有谐音偏好，不把提醒民俗差异直接判未利用修正。",
+      "knowledgeNotes": [
+        "observation：把梨一概写成“谐音不吉”宜视为部分民俗而非普遍规定，回答虽补了地方差异，仍缺本家庭证据。"
+      ],
+      "recordId": "context_visit_gift_chosen-2",
+      "stage": "confirmation",
+      "variant": "confirmation",
+      "reviewFile": "human-random-v17/ai-review.json"
+    },
+    {
+      "answerId": "R06",
+      "scene": "场景 02",
+      "turnIndex": 3,
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：明确“不用再补买东西……按原样”，并分别给进门、回应夸奖、离开三句，购买决定保持关闭。关联：恭俭能指导自然分寸；把三种场合逐个挂到“来连”“朋来”“利见大人”重复而牵强。交流：交付前先遍历旧卦，交付各句后再讲已解释的引荐、恭敬、分寸；这些不增加本轮话术质量，记重复解释。帮助：三句基本可用，回应夸奖句同时混入对菜的称赞略生硬，但不影响主要任务完成。",
+      "knowledgeNotes": [
+        "observation：“长辈愿意接纳，是大蹇，朋来”只能是类比，不能由爻辞确认尚未发生的接纳。"
+      ],
+      "recordId": "context_visit_gift_chosen-3",
+      "stage": "confirmation",
+      "variant": "confirmation",
+      "reviewFile": "human-random-v17/ai-review.json"
+    },
+    {
+      "answerId": "R07",
+      "scene": "场景 03",
+      "turnIndex": 1,
+      "scores": {
+        "理解": 1,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 1
+      },
+      "contextTags": [],
+      "onPoint": "否",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": false,
+      "reason": "理解：知道用户要诗词出处，也诚实说明现有材料不是诗词；实际给的是“林宁”“咸宁”的易经取字方向，没有完成关键来源要求。关联：噬嗑、否被用于“顺着共识……避免反复推翻”，与当时仅暂想用宁的取名选择联系较弱。交流：几处“不宁”“未宁”的比较占据主要位置，未转为用户需要的候选；首轮无CTX。帮助：安宁义及文献类别说明有部分作用，但没有得到符合要求的名字方向，任务未完成；不因后轮禁宁倒扣本轮。",
+      "knowledgeNotes": [
+        "observation：“不宁”“未宁”语境不宜直接用于命名，是审慎取名判断，并非只由否定字面就能决定；“林宁”从“万国咸宁”取单字也须区分取义与整名出处。"
+      ],
+      "recordId": "context_name_revision-1",
+      "stage": "confirmation",
+      "variant": "confirmation",
+      "reviewFile": "human-random-v17/ai-review.json"
+    },
+    {
+      "answerId": "R08",
+      "scene": "场景 03",
+      "turnIndex": 2,
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 1
+      },
+      "contextTags": [],
+      "onPoint": "否",
+      "delivered": true,
+      "responseStatus": "insufficient",
+      "taskCompleted": false,
+      "reason": "理解：真正排除了宁和五行，使用姐姐“林知夏”提出避开“知秋”“知春”同系列，这是实质上下文利用。关联：用噬嗑“咬掉”候选、否提醒别僵住有字面牵合，虽明确只作启发。交流：反复说明本轮只有易经、没有诗词，交付变成检索与筛选说明，未给完整候选。帮助：字义、读音、姐妹协调方向有用，但候选任务未完成。此轮虽标insufficient却有实质说明，可评可见体验；不将其计作成功答案，也不因诚实承认资料缺口判记忆错误。",
+      "knowledgeNotes": [
+        "observation：没有编造诗词出处是正确边界；字表里的蘅、晞等与“好写、少生僻”的筛选目标仍需具体检验。未进行外部诗词核查。"
+      ],
+      "recordId": "context_name_revision-2",
+      "stage": "confirmation",
+      "variant": "confirmation",
+      "reviewFile": "human-random-v17/ai-review.json"
+    },
+    {
+      "answerId": "R09",
+      "scene": "场景 03",
+      "turnIndex": 3,
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 0,
+        "帮助": 1
+      },
+      "contextTags": [
+        "CTX-重复解释",
+        "CTX-重新解释已有状态"
+      ],
+      "onPoint": "否",
+      "delivered": true,
+      "responseStatus": "insufficient",
+      "taskCompleted": false,
+      "reason": "理解：准确指出“上一轮我并没有排出一份名字清单”，不存在可解析的第一名；这一澄清是必要的，不能因用户脚本预设候选存在而扣理解。关联：加入朱熹“其徳安靜而堅確”对找回候选无帮助。交流：已知宁被排除，又整段给“林宁”的对照卡，并重复资料不足、解释安静气质，把已排除候选重新展开，记重复解释及重新解释已有状态；它未建议重新选宁，不标未利用修正。帮助：最终请用户给候选字能解除阻塞，但没有完成说明卡，任务否。",
+      "knowledgeNotes": [
+        "observation：正确区分《周易》取字、诗词与注疏语句，未伪造出处。",
+        "observation：本轮依赖上一轮存在完整候选，而实际没有；这是对话脚本与已交付历史的衔接缺口，不能把未选中的“林宁”推定为有效指代。"
+      ],
+      "recordId": "context_name_revision-3",
+      "stage": "confirmation",
+      "variant": "confirmation",
+      "reviewFile": "human-random-v17/ai-review.json"
+    },
+    {
+      "answerId": "R10",
+      "scene": "场景 04",
+      "turnIndex": 1,
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：围绕八岁孩子、家族故事和不过度吓人，给诚实说明与自主参与，符合本轮条件。关联：“言有序”“虚受人”有助于倾听和适量解释；把“行其庭，不见其人”对应墓地和不必想象可怕的人，明显牵强。交流：反复预设害怕并以“不是见鬼”作比较，可能反而把恐怖联想带进来，展开不够平静；当轮用户确实担心害怕，不能用后轮不害怕扣理解。帮助：讲生活片段、允许自主参与和直接话术可用。",
+      "knowledgeNotes": [
+        "observation：包内艮卦原文不直接讨论墓地或亡者；将庭、人解释为这些对象属于现代牵合，不是经文本义核验。"
+      ],
+      "recordId": "context_qingming_remote_execution-1",
+      "stage": "confirmation",
+      "variant": "confirmation",
+      "reviewFile": "human-random-v17/ai-review.json"
+    },
+    {
+      "answerId": "R11",
+      "scene": "场景 04",
+      "turnIndex": 2,
+      "scores": {
+        "理解": 1,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：落实在家、不烧纸、不害怕，并回答“外公能不能看到”；但擅自写“只是反复问，这是孩子在整理理解”，用户只报告一个问题，没有反复。关联：以感念解释纪念有启发；“咸其腓……居吉”对应安处家里、避免孩子不安，“不见其人”对应见不到外公，都偏硬套。交流：再讲讲话有序、不逼仪式、温和收束等旧解释，且扩展到未发生的反复提问，记重复解释；未把孩子仍害怕作为事实，不标未利用修正。帮助：提供诚实承认未知的说法与故事过渡，回应新问题。",
+      "knowledgeNotes": [
+        "observation：“憧憧往来”不能证明孩子反复提问或其心理过程；“居吉”也不能为家庭纪念地点作事实背书。"
+      ],
+      "recordId": "context_qingming_remote_execution-2",
+      "stage": "confirmation",
+      "variant": "confirmation",
+      "reviewFile": "human-random-v17/ai-review.json"
+    },
+    {
+      "answerId": "R12",
+      "scene": "场景 04",
+      "turnIndex": 3,
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：使用已摆好的照片和画、饭前十分钟，给出承认未知、表达想念、转到外公故事的文案，没有重新安排整场活动。关联：言语有序与倾听仍相关，但“饭前十分钟正好止在饭前”只是字面贴合。交流：文案后再次完整讲时止、言有序、咸感、虚受人、敦艮；这些上一轮已有，而本轮明确“直接给一段”，记重复解释。帮助：可据自家故事补入空位使用；括号里的讲述指令要在实际朗读时略去，是小幅编辑而非任务失败。",
+      "knowledgeNotes": [
+        "observation：“他就还在我们的生活里”在上下文是记忆隐喻，不按亡者客观存在的保证评分；没有必要据此追加超自然事实错误。"
+      ],
+      "recordId": "context_qingming_remote_execution-3",
+      "stage": "confirmation",
+      "variant": "confirmation",
+      "reviewFile": "human-random-v17/ai-review.json"
+    },
+    {
+      "answerId": "R13",
+      "scene": "场景 05",
+      "turnIndex": 1,
+      "scores": {
+        "理解": 2,
+        "关联": 0,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：抓住照顾妈妈与高层简化的需要，给进门、食物和可省步骤；周末在此轮仍是有效条件。关联：把“老妇得其士夫”直接映射成妈妈老习惯在新家开花、把“何可久也”解释为仪式应短，再从老阳变阴推出平常心，主要依据是硬套，关联0。交流：大段解释老习惯与卦象，实际做法排在后面，仪式步骤仍偏多。帮助：提供替代烧香、询问母亲最看重环节的可操作方向，整体有用；不使用后轮具体禁火或周三条件倒扣。",
+      "knowledgeNotes": [
+        "observation：“无咎无誉”被扩成“做了不添过，不做也不减分”，包内不支持后半句。",
+        "observation：撒盐米、柚子叶、拜四角等家庭适用范围未在包内验证；文末承认地域差异有帮助。"
+      ],
+      "recordId": "context_movein_resolved-1",
+      "stage": "confirmation",
+      "variant": "confirmation",
+      "reviewFile": "human-random-v17/ai-review.json"
+    },
+    {
+      "answerId": "R14",
+      "scene": "场景 05",
+      "turnIndex": 2,
+      "scores": {
+        "理解": "NA",
+        "关联": "NA",
+        "交流": "NA",
+        "帮助": "NA"
+      },
+      "contextTags": [],
+      "onPoint": "否",
+      "delivered": false,
+      "responseStatus": "not_delivered",
+      "taskCompleted": false,
+      "reason": "本轮answer为null，无实际交付。四维NA，任务完成/回答到点上否；CTX不适用。不得用后轮清单、前轮建议或未交付候选代填本轮体验。",
+      "knowledgeNotes": [
+        "observation：无交付文本，不作知识语义评判。"
+      ],
+      "recordId": "context_movein_resolved-2",
+      "stage": "confirmation",
+      "variant": "confirmation",
+      "reviewFile": "human-random-v17/ai-review.json"
+    },
+    {
+      "answerId": "R15",
+      "scene": "场景 05",
+      "turnIndex": 3,
+      "scores": {
+        "理解": 2,
+        "关联": 0,
+        "交流": 1,
+        "帮助": 1
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：清单全程不用明火，师傅不参加仪式，并给妈妈吉利话；没有继续按周末安排。上一轮虽未交付，首轮已有不用烧香燃纸的替代步骤，加上用户本轮选择，仍可形成可执行清单，不因指代不完整直接判失败。关联：再次用“老妇得其士夫”解释母亲旧习，用“何可久也”规定简短，核心映射牵强。交流：选定方案后仍重新完整解释上述卦意，记重复解释。帮助：有顺序和话术，但要求等大件搬完“约半小时后扫掉”，又保证“全程半小时内”“不耽误搬家”，缺少搬运流程依据，实用性受限。",
+      "knowledgeNotes": [
+        "observation：“不烧香、不燃纸，烟感器不会响”是超出材料可支持的绝对结果。",
+        "observation：未提供特定民俗来源；入宅步骤应理解为可选示意，不是经典必然规定。"
+      ],
+      "recordId": "context_movein_resolved-3",
+      "stage": "confirmation",
+      "variant": "confirmation",
+      "reviewFile": "human-random-v17/ai-review.json"
+    },
+    {
+      "answerId": "R16",
+      "scene": "场景 06",
+      "turnIndex": 1,
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：回应首次进寺、求平安及避免父亲尴尬，提供现场询问和基本行为建议。关联：柔和、量力的视角合理；离九四“焚如，死如，弃如”直接对应插队抢香，“无敢折狱”对应别评判父亲，牵强且增加紧张。交流：开头说无法从材料确认点几支香，下一段又具体教一支或三支及额前动作，边界表达前后不一致。帮助：手机静音、看拍照标识、不穿过礼拜者和不懂就问有用；不按后轮只参观倒扣本轮仪式建议。",
+      "knowledgeNotes": [
+        "observation：进侧门、香支数、摘帽等寺院具体规则未由本包易经资料验证；应独立核实，不能把经典类比当仪轨来源。"
+      ],
+      "recordId": "context_temple_intent_correction-1",
+      "stage": "confirmation",
+      "variant": "confirmation",
+      "reviewFile": "human-random-v17/ai-review.json"
+    },
+    {
+      "answerId": "R17",
+      "scene": "场景 06",
+      "turnIndex": 2,
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：转为建筑壁画参观，给一小时路线与不买香的回应，真实利用了目标更正。核实具体殿堂是否开放和拍照规则，不等于否认已知游客可以参观，不标未利用修正。关联：贲的文饰用于观建筑有启发，但再以离九四对应触摸壁画、以态度柔和保证“这次参观就顺”，用法偏强。交流：重讲不要教育爸爸、柔丽中正、明庶政与别评判父亲，上一轮已说明，对新的观赏目标增量有限，记重复解释。帮助：庭院、碑刻、开放殿堂的路线及壁画保护提醒实际可用。",
+      "knowledgeNotes": [
+        "observation：“离是明、是文”与建筑彩画只是文化联想，不应视为卦象确认具体参观对象。现场范围和保护规则仍是实际依据。"
+      ],
+      "recordId": "context_temple_intent_correction-2",
+      "stage": "confirmation",
+      "variant": "confirmation",
+      "reviewFile": "human-random-v17/ai-review.json"
+    },
+    {
+      "answerId": "R18",
+      "scene": "场景 06",
+      "turnIndex": 3,
+      "scores": {
+        "理解": 1,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 1
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：记住只参观、不上香，写出对父亲说的话；但“别从正中间直穿”“别踩、别跨”“屋里说话小声，别喊我”连续命令，未落实轻松、避免教仪式的语气，局部理解不足。关联：后段又将同一套离贲解释附上，没有为最终提醒增加新视角。交流：本轮只要简短提醒，却再讲“为什么这样说就够”和多条旧卦意，记重复解释。帮助：避开礼拜者、不触碰壁画等内容可用，但要重写语气并删减礼仪训诫才能自然念给父亲听。",
+      "knowledgeNotes": [
+        "observation：正文先规定帽子墨镜何时摘，后面又说该问题没有仪轨资料、应以现场为准，知识边界表达不一致。"
+      ],
+      "recordId": "context_temple_intent_correction-3",
+      "stage": "confirmation",
+      "variant": "confirmation",
+      "reviewFile": "human-random-v17/ai-review.json"
+    },
+    {
+      "answerId": "R01",
+      "scene": "场景 01",
+      "turnIndex": 1,
+      "scores": {
+        "理解": 1,
+        "关联": 0,
+        "交流": 1,
+        "帮助": 1
+      },
+      "contextTags": [],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：回应热食和半小时，但以“重点在肯下厨而不逞强”作为主方向，未确认用户是否在家、有厨房或食材；尾段虽给外购退路，仍局部补入条件。关联：把朱熹论有功而谦解释为肯下厨，把“雷出地奋”取成热气自下升，主要是硬套，关联0。交流：日常省事午饭问题先展开完整卦爻说明，再给食物，重心失衡；首轮不记CTX。帮助：一锅面或外购汤面可用，但食材和场地条件未明，声称三到八分钟出锅也未区分熟肉与冻丸子，实际时间可靠性有限。",
+      "knowledgeNotes": [
+        "observation：包内朱熹“有功勞而能謙”不讨论下厨；“雷出地奋”原文后接作乐崇德，不支持热饭解释。",
+        "observation：冻丸子与熟肉的烹煮要求不同，包内没有支持统一出锅时间的食材依据；这里只记录实务精确性疑点。"
+      ],
+      "recordId": "lunch-execution-1",
+      "stage": "postfix",
+      "variant": "postfix",
+      "reviewFile": "human-random/ai-review.json"
+    },
+    {
+      "answerId": "R02",
+      "scene": "场景 01",
+      "turnIndex": 2,
+      "scores": {
+        "理解": 1,
+        "关联": 0,
+        "交流": 1,
+        "帮助": 1
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：正确把一小时、预算宽裕用于“不想排队”，没有回到半小时限制；但将“提前到十一点出头，或……一点以后再去”作为最省事路径，未经确认就假定排班后的一小时可任意换时段。关联：“不违则也”被说成顺已验证常规别临时起意、“雷出地奋”仍解释为热气，主要联系牵强。交流：再次展开上一轮一锅煮同样配料及“劳谦”“热气自下奋起”，对新的排队约束只需说明自己做无需排队，这些延展没有增量，记重复解释。帮助：预约、自取有用，但扫码点单并不自动把等待删掉，没有明确区分不排点餐队与等出餐，关键约束处理不够稳。",
+      "knowledgeNotes": [
+        "observation：不能仅凭“称物平施”“不违则也”推出错峰与扫码即可不等餐；这些现代流程判断需现实信息。",
+        "observation：“因为贵所以现做慢”不是由价格自然推出的关系。"
+      ],
+      "recordId": "lunch-execution-2",
+      "stage": "postfix",
+      "variant": "postfix",
+      "reviewFile": "human-random/ai-review.json"
+    },
+    {
+      "answerId": "R03",
+      "scene": "场景 01",
+      "turnIndex": 3,
+      "scores": {
+        "理解": 1,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：记住楼下店已选、能马上做，转向点单话术，没有再换店或重议排队；但直接话术加入“汤少盛一点，青菜多烫一份”等未提出的偏好，局部扩展。关联：把清淡拆成少盐、少油、不辣有实际视角；把劳谦对应加蛋、豫对应趁热吃则牵强。交流：从旧的减多补少、常规不改一路重新展开，尤其结尾再讲“雷出地奋”与热乎，无助于本轮一句点单话，记重复解释。帮助：给出能直接表达少油少盐不辣的句子，亦提醒预调汤底可能无法定制，整体能落实任务。",
+      "knowledgeNotes": [
+        "observation：“多数面馆的默认出品偏咸、偏油、带辣或带浓汤底”是未经包内材料支持的泛化。",
+        "observation：“多加青菜或蛋……确实补足营养”未掌握整餐组成，不能以爻辞充当营养判断依据。"
+      ],
+      "recordId": "lunch-execution-3",
+      "stage": "postfix",
+      "variant": "postfix",
+      "reviewFile": "human-random/ai-review.json"
+    },
+    {
+      "answerId": "R04",
+      "scene": "场景 02",
+      "turnIndex": 1,
+      "scores": {
+        "理解": 1,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2
+      },
+      "contextTags": [],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：回应今天去与是否剪很短的取舍，但把“干脆剪很短”直接定为“一把用尽”“偏于过刚”，用户尚未说明是冲动还是长期偏好，局部擅自归因。关联：在不确定偏好时先小幅调整有合理视角；用师卦“容民畜众”对应头发蓄养、不是一次清空，联系牵强。交流：完整展开三动爻及变卦后才给建议，简单生活选择的解释失衡；首轮无CTX。帮助：先保留长度、剪后再调，且承认实际偏好才是依据，提供可逆取舍。",
+      "knowledgeNotes": [
+        "observation：“篱笆不是被撞破，而是自然松开”不是本包“藩决不羸”原句直接说明的发生机制，需要独立释义审查。",
+        "observation：经典的用壮与克制不能据以认定剪短发等于过刚或不合分寸。"
+      ],
+      "recordId": "haircut-execution-1",
+      "stage": "postfix",
+      "variant": "postfix",
+      "reviewFile": "human-random/ai-review.json"
+    },
+    {
+      "answerId": "R05",
+      "scene": "场景 02",
+      "turnIndex": 2,
+      "scores": {
+        "理解": 1,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 1
+      },
+      "contextTags": [
+        "CTX-重复解释",
+        "CTX-重新解释已有状态"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：接受已约店、下午有空和只修发尾，没有要求改日；但建议“分层修”可能引入与只修尾部不同的造型变化，且保留能扎起来的长度是助手新增选项，并非用户既有要求。关联：明确修多少有实际作用；用九四和师卦确认此取舍仍多靠比喻。交流：前两段再次比较原先剪很短对应初九、九三，现在修尾对应九四，重讲篱笆、车轴、地下水与蓄养。用户已经作出选择，这些在历史中都解释过，既重复解释，也把已定选择当作新的卦象发现重新展开。帮助：用手比长度可用，但层次与长度假设需要改正，部分帮助。",
+      "knowledgeNotes": [
+        "observation：“留下还能再长的余地”不是修发尾独有的生长条件，蓄养比喻不宜用作真实头发生长判断。",
+        "observation：“保留能扎起来”必须保持可选建议身份，不能在后轮变成用户已经确认的发型事实。"
+      ],
+      "recordId": "haircut-execution-2",
+      "stage": "postfix",
+      "variant": "postfix",
+      "reviewFile": "human-random/ai-review.json"
+    },
+    {
+      "answerId": "R06",
+      "scene": "场景 02",
+      "turnIndex": 3,
+      "scores": {
+        "理解": 1,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 1
+      },
+      "contextTags": [
+        "CTX-重复解释"
+      ],
+      "onPoint": "是",
+      "delivered": true,
+      "responseStatus": "answered",
+      "taskCompleted": true,
+      "reason": "理解：给出“只修发尾，整体长度、层次和发型都不改”，正确承接不大改造；但把上一轮助手自己提出的“后面保留能扎起来的长度”直接写进代用户说的话，用户从未确认头发可扎或有此需要，属于推测升格。关联：守分寸可指导保留整体，但地下水、蓄养对应留发和篱笆对应以后再调，依然牵强。交流：每句话术后都再次解释已讲过的九四、师卦、尚往，没增加本轮沟通效果，记重复解释。帮助：主体话术有用，但要删改“能扎起来”的未授权要求，并明确实际修剪量，才能更准确避免误解。",
+      "knowledgeNotes": [
+        "observation：本轮问题在于助手建议成为用户属性，不是用户已纠正事实被忽略，因此不强贴CTX-未利用用户修正。",
+        "observation：“容民畜众”对应发型留长仍属现代比喻，不能作为具体理发要求的来源。"
+      ],
+      "recordId": "haircut-execution-3",
+      "stage": "postfix",
+      "variant": "postfix",
+      "reviewFile": "human-random/ai-review.json"
+    }
+  ]
+}

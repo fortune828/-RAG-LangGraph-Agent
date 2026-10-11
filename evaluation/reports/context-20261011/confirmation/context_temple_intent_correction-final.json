@@ -1,0 +1,958 @@
+{
+  "id": "bfc347a0-29da-4238-8863-0810c406cbbd",
+  "question": "周末带爸爸去附近寺院，他第一次去，我也不熟悉进门和上香的礼节。想求个平安，又怕做错让他尴尬，有哪些事提前知道就够了？",
+  "cast": {
+    "lines": [
+      7,
+      8,
+      7,
+      9,
+      8,
+      7
+    ],
+    "original": {
+      "binary": "101101",
+      "name": "离为火",
+      "number": 30,
+      "judgment": "利贞，亨。畜牝牛，吉。"
+    },
+    "changed": {
+      "binary": "101001",
+      "name": "山火贲",
+      "number": 22,
+      "judgment": "亨。小利有攸往。"
+    },
+    "originalBinary": "101101",
+    "changedBinary": "101001",
+    "changingIndices": [
+      3
+    ],
+    "id": "8052511d-0092-4210-af1e-53baaca827b2",
+    "method": "three-coins",
+    "algorithmVersion": "coins-py-v1",
+    "readingPolicyVersion": "all-moving-lines-v1",
+    "coins": [
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "createdAt": "2026-10-11T07:24:07.372497+00:00"
+  },
+  "turns": [
+    {
+      "id": "ef6174f7-1fd5-4821-8566-60674daa9114",
+      "question": "周末带爸爸去附近寺院，他第一次去，我也不熟悉进门和上香的礼节。想求个平安，又怕做错让他尴尬，有哪些事提前知道就够了？",
+      "mode": "initial",
+      "createdAt": "2026-10-11T07:24:07.406797+00:00",
+      "evidence": [
+        {
+          "id": "zy-30-judgment",
+          "hexagramId": 30,
+          "name": "离",
+          "section": "judgment",
+          "line": null,
+          "text": "利贞，亨。畜牝牛，吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "离·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:30:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "利贞，亨。畜牝牛，吉。"
+        },
+        {
+          "id": "zy-30-tuan",
+          "hexagramId": 30,
+          "name": "离",
+          "section": "tuan",
+          "line": null,
+          "text": "离，丽也；日月丽乎天，百谷草木丽乎土。重明以丽乎正，乃化成天下。柔丽乎中正，故“亨”，是以“畜牝牛，吉”也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+          "locator": "离·彖传",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:30:tuan"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "离，丽也；日月丽乎天，百谷草木丽乎土。重明以丽乎正，乃化成天下。柔丽乎中正，故“亨”，是以“畜牝牛，吉”也。"
+        },
+        {
+          "id": "zy-30-xiang",
+          "hexagramId": 30,
+          "name": "离",
+          "section": "xiang",
+          "line": null,
+          "text": "明两作，离。大人以继明照于四方。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "离·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:30:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "明两作，离。大人以继明照于四方。"
+        },
+        {
+          "id": "zy-30-line-4",
+          "hexagramId": 30,
+          "name": "离",
+          "section": "line",
+          "line": 4,
+          "text": "突如其来如，焚如，死如，弃如。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "离·九四",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:30:line:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "突如其来如，焚如，死如，弃如。"
+        },
+        {
+          "id": "zy-30-line_xiang-4",
+          "hexagramId": 30,
+          "name": "离",
+          "section": "line_xiang",
+          "line": 4,
+          "text": "“突如其来如”，无所容也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "离·九四小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:30:line_xiang:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“突如其来如”，无所容也。"
+        },
+        {
+          "id": "zy-22-judgment",
+          "hexagramId": 22,
+          "name": "贲",
+          "section": "judgment",
+          "line": null,
+          "text": "亨，小利有攸往。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "贲·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:22:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "亨，小利有攸往。"
+        },
+        {
+          "id": "zy-22-xiang",
+          "hexagramId": 22,
+          "name": "贲",
+          "section": "xiang",
+          "line": null,
+          "text": "山下有火，贲。君子以明庶政，无敢折狱。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "贲·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:22:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "山下有火，贲。君子以明庶政，无敢折狱。"
+        }
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "explanation_followup",
+          "evidenceIds": [
+            "zy-30-judgment",
+            "zy-30-tuan",
+            "zy-30-xiang",
+            "zy-30-line-4",
+            "zy-30-line_xiang-4",
+            "zy-22-judgment",
+            "zy-22-xiang"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 28975,
+          "promptTokens": 934,
+          "completionTokens": 6318,
+          "totalTokens": 7252
+        },
+        {
+          "step": "validate",
+          "status": "passed",
+          "code": ""
+        }
+      ],
+      "status": "completed",
+      "model": "deepseek-flash",
+      "releaseId": "knowledge-v3-20260926-r1",
+      "checkpointThreadId": "python-graph-v17:bfc347a0-29da-4238-8863-0810c406cbbd:ef6174f7-1fd5-4821-8566-60674daa9114",
+      "promptVersion": "evidence-agent-python-v16",
+      "graphVersion": "python-graph-v17",
+      "answer": {
+        "status": "answered",
+        "paragraphs": [
+          {
+            "text": "本轮参考原文只给你《周易》离、贲两卦，并没有佛教寺院的进门、上香仪轨，所以具体先迈哪只脚、点几支香，不能从这些文字里确认，最稳妥是到现场看标识或问客堂、义工。就这次出行而言，离卦的“利贞，亨。畜牝牛，吉”提示：守正、柔和、不急不躁，比“全懂规矩”更吉祥；彖传说“柔丽乎中正，故‘亨’”，你态度放软、位置放中，爸爸就不容易尴尬。",
+            "citations": [
+              {
+                "evidenceId": "zy-30-judgment",
+                "quote": "利贞，亨。畜牝牛，吉。",
+                "claim": "守正、柔和、不急不躁，比“全懂规矩”更吉祥"
+              },
+              {
+                "evidenceId": "zy-30-tuan",
+                "quote": "柔丽乎中正，故“亨”",
+                "claim": "你态度放软、位置放中，爸爸就不容易尴尬"
+              }
+            ]
+          },
+          {
+            "text": "提前知道这几件事就够：查开放时间、是否预约、有没有免费结缘香；进门走侧门、不踩门槛、不从中门直冲，帽子墨镜可摘，手机静音；殿内不拍照先看标识，不跨拜垫，不从礼拜者前面穿行。上香若允许，取一支或三支即可，点后轻轻扇灭，不用嘴吹，举到额前默念平安，插进指定香炉；若禁止明火或没有香炉，合掌问讯同样可以。不会就站在旁边看一轮，或请义工示范，跟着大众走，不要抢第一。离卦九四说“突如其来如，焚如，死如，弃如”，小象说“无所容也”，正好提醒：突然插队、抢香、大声指挥，最容易让场面难堪；慢半步、问一句，反而从容。",
+            "citations": [
+              {
+                "evidenceId": "zy-30-line-4",
+                "quote": "突如其来如，焚如，死如，弃如。",
+                "claim": "突然插队、抢香、大声指挥，最容易让场面难堪"
+              },
+              {
+                "evidenceId": "zy-30-line_xiang-4",
+                "quote": "无所容也",
+                "claim": "慢半步、问一句，反而从容"
+              }
+            ]
+          },
+          {
+            "text": "带爸爸去，重点不是把他教会，而是让他安心。你可以事先说：‘我们都不熟，跟着做，不确定就问，做错了也没关系。’现场不要当众纠正他，尤其别用‘你这样不对’；要提醒，就小声或走到旁边说。求平安可在大殿合掌默念，也可以随喜写祈福牌、供一盏灯，但先问清是否收费、钱到哪里，遇到高价香、算命、开光推销，微笑拒绝即可。贲卦说“亨，小利有攸往”，礼节是外在文饰，从小处做、量力而行就顺；大象说“君子以明庶政，无敢折狱”，用在今天就是：把该问的问明白，但别拿规矩去审判爸爸或自己。",
+            "citations": [
+              {
+                "evidenceId": "zy-22-judgment",
+                "quote": "亨，小利有攸往。",
+                "claim": "礼节是外在文饰，从小处做、量力而行就顺"
+              },
+              {
+                "evidenceId": "zy-22-xiang",
+                "quote": "君子以明庶政，无敢折狱。",
+                "claim": "把该问的问明白，但别拿规矩去审判爸爸或自己"
+              }
+            ]
+          },
+          {
+            "text": "所以，提前知道‘开放与预约、进门安静不抢、香取少而插指定处、拜垫不跨不站中、拍照先看标识、收费先问清、不纠正爸爸’这几条，基本就够了。离卦大象说“明两作，离。大人以继明照于四方”，你可以做那个先看清、再照亮爸爸的人：你稳，他就稳；心到，平安的意味就到了。",
+            "citations": [
+              {
+                "evidenceId": "zy-30-xiang",
+                "quote": "明两作，离。大人以继明照于四方。",
+                "claim": "你可以做那个先看清、再照亮爸爸的人：你稳，他就稳；心到，平安的意味就到了"
+              }
+            ]
+          }
+        ],
+        "limitations": []
+      },
+      "durationMs": 29048
+    },
+    {
+      "id": "6ce81e22-01c3-4175-bd86-f3d6b281e3e6",
+      "question": "刚才说求平安不太准确，爸爸其实只想看看建筑和壁画，不准备礼拜。我问过了，游客可以正常参观，香也不用买。我们想安静逛一小时。",
+      "mode": "followup",
+      "createdAt": "2026-10-11T07:24:36.539802+00:00",
+      "evidence": [
+        {
+          "id": "zy-30-judgment",
+          "hexagramId": 30,
+          "name": "离",
+          "section": "judgment",
+          "line": null,
+          "text": "利贞，亨。畜牝牛，吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "离·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:30:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "利贞，亨。畜牝牛，吉。"
+        },
+        {
+          "id": "zy-30-tuan",
+          "hexagramId": 30,
+          "name": "离",
+          "section": "tuan",
+          "line": null,
+          "text": "离，丽也；日月丽乎天，百谷草木丽乎土。重明以丽乎正，乃化成天下。柔丽乎中正，故“亨”，是以“畜牝牛，吉”也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+          "locator": "离·彖传",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:30:tuan"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "离，丽也；日月丽乎天，百谷草木丽乎土。重明以丽乎正，乃化成天下。柔丽乎中正，故“亨”，是以“畜牝牛，吉”也。"
+        },
+        {
+          "id": "zy-30-xiang",
+          "hexagramId": 30,
+          "name": "离",
+          "section": "xiang",
+          "line": null,
+          "text": "明两作，离。大人以继明照于四方。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "离·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:30:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "明两作，离。大人以继明照于四方。"
+        },
+        {
+          "id": "zy-30-line-4",
+          "hexagramId": 30,
+          "name": "离",
+          "section": "line",
+          "line": 4,
+          "text": "突如其来如，焚如，死如，弃如。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "离·九四",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:30:line:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "突如其来如，焚如，死如，弃如。"
+        },
+        {
+          "id": "zy-30-line_xiang-4",
+          "hexagramId": 30,
+          "name": "离",
+          "section": "line_xiang",
+          "line": 4,
+          "text": "“突如其来如”，无所容也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "离·九四小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:30:line_xiang:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“突如其来如”，无所容也。"
+        },
+        {
+          "id": "zy-22-judgment",
+          "hexagramId": 22,
+          "name": "贲",
+          "section": "judgment",
+          "line": null,
+          "text": "亨，小利有攸往。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "贲·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:22:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "亨，小利有攸往。"
+        },
+        {
+          "id": "zy-22-xiang",
+          "hexagramId": 22,
+          "name": "贲",
+          "section": "xiang",
+          "line": null,
+          "text": "山下有火，贲。君子以明庶政，无敢折狱。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "贲·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:22:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "山下有火，贲。君子以明庶政，无敢折狱。"
+        }
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "situation_followup",
+          "evidenceIds": [
+            "zy-30-judgment",
+            "zy-30-tuan",
+            "zy-30-xiang",
+            "zy-30-line-4",
+            "zy-30-line_xiang-4",
+            "zy-22-judgment",
+            "zy-22-xiang"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 4170,
+          "promptTokens": 3587,
+          "completionTokens": 620,
+          "totalTokens": 4207
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 20289,
+          "promptTokens": 1562,
+          "completionTokens": 3961,
+          "totalTokens": 5523
+        },
+        {
+          "step": "validate",
+          "status": "passed",
+          "code": ""
+        }
+      ],
+      "status": "completed",
+      "model": "deepseek-flash",
+      "releaseId": "knowledge-v3-20260926-r1",
+      "checkpointThreadId": "python-graph-v17:bfc347a0-29da-4238-8863-0810c406cbbd:6ce81e22-01c3-4175-bd86-f3d6b281e3e6",
+      "promptVersion": "evidence-agent-python-v16",
+      "graphVersion": "python-graph-v17",
+      "answer": {
+        "status": "answered",
+        "paragraphs": [
+          {
+            "text": "你更正后，这次的核心已不是“求平安”或上香，而是带爸爸安静看一小时建筑和壁画。离为火变山火贲：离是明、是文，贲是文饰、花纹，正好对应建筑彩画与壁画这类“可观”的对象；贲卦卦辞说“亨，小利有攸往”，放在这次短时、低调、量力而行的参观里是顺的。",
+            "citations": [
+              {
+                "evidenceId": "zy-22-judgment",
+                "quote": "亨，小利有攸往。",
+                "claim": "放在这次短时、低调、量力而行的参观里是顺的"
+              }
+            ]
+          },
+          {
+            "text": "提前知道这几条就够：先查开放时间、是否预约、壁画所在殿是否维修；到入口或客堂问清“哪些殿能进、壁画能不能拍、有没有讲解”。进门走侧门或随人流，不踩门槛、不从中门直冲，帽子墨镜可摘，手机静音。殿内不跨拜垫、不站正中，不从礼拜者前面穿行；有人礼拜时绕后或稍停。既然不准备礼拜，香就不用买；若有人递香，微笑说“我们参观，不烧香”即可。离九四说“突如其来如，焚如，死如，弃如”，小象说“无所容也”，正是提醒：突然闯入、抢位、大声招呼、伸手摸壁画，最容易让现场和你爸爸都难堪。",
+            "citations": [
+              {
+                "evidenceId": "zy-30-line-4",
+                "quote": "突如其来如，焚如，死如，弃如。",
+                "claim": "突然闯入、抢位、大声招呼、伸手摸壁画，最容易让现场和你爸爸都难堪"
+              },
+              {
+                "evidenceId": "zy-30-line_xiang-4",
+                "quote": "“突如其来如”，无所容也。",
+                "claim": "突然闯入、抢位、大声招呼、伸手摸壁画，最容易让现场和你爸爸都难堪"
+              }
+            ]
+          },
+          {
+            "text": "带爸爸看，重点不是把他教成“懂规矩的人”，而是让他自在。你要事先说清：“我们只是参观，不礼拜，不确定就问，慢慢走。”现场让他决定停留和节奏，不要当众纠正他；他若问壁画年代、建筑结构，你知道多少说多少，不知道就一起看说明牌。离卦说“利贞，亨。畜牝牛，吉”，彖传说“柔丽乎中正，故‘亨’”，用在这里不是求灵验，而是说：你态度柔和、位置放中、不急着教育爸爸，这次参观就顺。",
+            "citations": [
+              {
+                "evidenceId": "zy-30-judgment",
+                "quote": "利贞，亨。畜牝牛，吉。",
+                "claim": "你态度柔和、位置放中、不急着教育爸爸，这次参观就顺"
+              },
+              {
+                "evidenceId": "zy-30-tuan",
+                "quote": "柔丽乎中正，故“亨”",
+                "claim": "你态度柔和、位置放中、不急着教育爸爸，这次参观就顺"
+              }
+            ]
+          },
+          {
+            "text": "一小时路线可这样：先在庭院和廊下看建筑外观、碑刻、匾额，再进开放殿堂看重点；壁画若有围栏、玻璃或提示，保持距离、不触摸，禁拍就收手机。若壁画殿不开放，或正遇法会、共修，不要勉强进去，安静退到后面或外面，不围观、不拍摄。贲卦大象说“山下有火，贲。君子以明庶政，无敢折狱”，用在今天就是：把信息问明白，但别拿“懂不懂规矩”评判爸爸或自己；离卦大象说“明两作，离。大人以继明照于四方”，你可以做那个先看清标识、再带爸爸从容走的人。",
+            "citations": [
+              {
+                "evidenceId": "zy-22-xiang",
+                "quote": "山下有火，贲。君子以明庶政，无敢折狱。",
+                "claim": "把信息问明白，但别拿“懂不懂规矩”评判爸爸或自己"
+              },
+              {
+                "evidenceId": "zy-30-xiang",
+                "quote": "明两作，离。大人以继明照于四方。",
+                "claim": "你可以做那个先看清标识、再带爸爸从容走的人"
+              }
+            ]
+          }
+        ],
+        "limitations": [
+          "未提供具体寺院名称、开放安排和壁画保护规定，现场规则需以客堂、义工或标识为准。"
+        ]
+      },
+      "durationMs": 24564
+    },
+    {
+      "id": "ec4715b7-9af2-4bdc-b583-b9c73df20883",
+      "question": "我已经跟爸爸说好只参观了。帮我写个出门前能念给他听的简短提醒，重点放在怎么看、哪里别打扰别人，语气轻松点，不要像在教他做仪式。",
+      "mode": "followup",
+      "createdAt": "2026-10-11T07:25:01.193065+00:00",
+      "evidence": [
+        {
+          "id": "zy-30-judgment",
+          "hexagramId": 30,
+          "name": "离",
+          "section": "judgment",
+          "line": null,
+          "text": "利贞，亨。畜牝牛，吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "离·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:30:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "利贞，亨。畜牝牛，吉。"
+        },
+        {
+          "id": "zy-30-tuan",
+          "hexagramId": 30,
+          "name": "离",
+          "section": "tuan",
+          "line": null,
+          "text": "离，丽也；日月丽乎天，百谷草木丽乎土。重明以丽乎正，乃化成天下。柔丽乎中正，故“亨”，是以“畜牝牛，吉”也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+          "locator": "离·彖传",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:30:tuan"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "离，丽也；日月丽乎天，百谷草木丽乎土。重明以丽乎正，乃化成天下。柔丽乎中正，故“亨”，是以“畜牝牛，吉”也。"
+        },
+        {
+          "id": "zy-30-xiang",
+          "hexagramId": 30,
+          "name": "离",
+          "section": "xiang",
+          "line": null,
+          "text": "明两作，离。大人以继明照于四方。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "离·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:30:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "明两作，离。大人以继明照于四方。"
+        },
+        {
+          "id": "zy-30-line-4",
+          "hexagramId": 30,
+          "name": "离",
+          "section": "line",
+          "line": 4,
+          "text": "突如其来如，焚如，死如，弃如。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "离·九四",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:30:line:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "突如其来如，焚如，死如，弃如。"
+        },
+        {
+          "id": "zy-30-line_xiang-4",
+          "hexagramId": 30,
+          "name": "离",
+          "section": "line_xiang",
+          "line": 4,
+          "text": "“突如其来如”，无所容也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "离·九四小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:30:line_xiang:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“突如其来如”，无所容也。"
+        },
+        {
+          "id": "zy-22-judgment",
+          "hexagramId": 22,
+          "name": "贲",
+          "section": "judgment",
+          "line": null,
+          "text": "亨，小利有攸往。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "贲·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:22:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "亨，小利有攸往。"
+        },
+        {
+          "id": "zy-22-xiang",
+          "hexagramId": 22,
+          "name": "贲",
+          "section": "xiang",
+          "line": null,
+          "text": "山下有火，贲。君子以明庶政，无敢折狱。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "贲·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:22:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "山下有火，贲。君子以明庶政，无敢折狱。"
+        }
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "situation_followup",
+          "evidenceIds": [
+            "zy-30-judgment",
+            "zy-30-tuan",
+            "zy-30-xiang",
+            "zy-30-line-4",
+            "zy-30-line_xiang-4",
+            "zy-22-judgment",
+            "zy-22-xiang"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 1759,
+          "promptTokens": 4226,
+          "completionTokens": 79,
+          "totalTokens": 4305
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 12633,
+          "promptTokens": 2201,
+          "completionTokens": 2255,
+          "totalTokens": 4456
+        },
+        {
+          "step": "validate",
+          "status": "passed",
+          "code": ""
+        }
+      ],
+      "status": "completed",
+      "model": "deepseek-flash",
+      "releaseId": "knowledge-v3-20260926-r1",
+      "checkpointThreadId": "python-graph-v17:bfc347a0-29da-4238-8863-0810c406cbbd:ec4715b7-9af2-4bdc-b583-b9c73df20883",
+      "promptVersion": "evidence-agent-python-v16",
+      "graphVersion": "python-graph-v17",
+      "answer": {
+        "status": "answered",
+        "paragraphs": [
+          {
+            "text": "爸，咱们今天就是去看看老房子和画儿，不烧香、不拜，走累了就歇。进门跟着人流走两边，别从正中间直穿过去；门槛抬脚过，别踩。帽子墨镜进了屋里再摘，手机调静音。看见别人在拜，咱们绕到后头走，或者站住等一等，别从人家前面过。拜垫是给人跪的，咱不跪就别踩、别跨。壁画有栏杆玻璃的，手别伸，脸别贴太近；不让拍就不拍。屋里说话小声，别喊我。想多看就多站会儿，不想看就慢慢往外走，没人催。不懂的咱俩一起问穿马甲的人，问错了也没事。",
+            "citations": []
+          },
+          {
+            "text": "为什么这样说就够？《周易》离卦讲的是明与文，正对建筑彩画、壁画这类可看的东西。彖传说“柔丽乎中正，故‘亨’”，放在今天就是：你态度放软、位置放中间、不急着纠正爸爸，这一小时就顺。离卦大象说“明两作，离。大人以继明照于四方”，你可以先看清入口、标识、开放范围，再带着爸爸走，他不必自己操心规矩。贲卦卦辞说“亨，小利有攸往”，低调、小范围、量力而行的一次参观是顺的；贲卦大象说“山下有火，贲。君子以明庶政，无敢折狱”，用在今天就是把能不能进、能不能拍问明白，但别拿懂不懂规矩去评判爸爸或自己。至于具体哪只脚先迈、帽子什么时候摘，本轮参考原文没有寺院仪轨，以现场标识和工作人员说法为准。",
+            "citations": [
+              {
+                "evidenceId": "zy-30-tuan",
+                "quote": "柔丽乎中正，故“亨”",
+                "claim": "你态度放软、位置放中间、不急着纠正爸爸，这一小时就顺"
+              },
+              {
+                "evidenceId": "zy-30-xiang",
+                "quote": "明两作，离。大人以继明照于四方。",
+                "claim": "你可以先看清入口、标识、开放范围，再带着爸爸走"
+              },
+              {
+                "evidenceId": "zy-22-judgment",
+                "quote": "亨，小利有攸往。",
+                "claim": "低调、小范围、量力而行的一次参观是顺的"
+              },
+              {
+                "evidenceId": "zy-22-xiang",
+                "quote": "山下有火，贲。君子以明庶政，无敢折狱。",
+                "claim": "把能不能进、能不能拍问明白，但别拿懂不懂规矩去评判爸爸或自己"
+              }
+            ]
+          }
+        ],
+        "limitations": []
+      },
+      "durationMs": 14499
+    }
+  ],
+  "createdAt": "2026-10-11T07:24:07.372516+00:00",
+  "releaseId": "knowledge-v3-20260926-r1"
+}

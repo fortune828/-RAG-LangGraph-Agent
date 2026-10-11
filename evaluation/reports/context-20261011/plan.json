@@ -1,0 +1,36 @@
+{
+  "createdAt": "2026-10-11T07:08:26.795817+00:00",
+  "startingCommit": "ca6a37568c83552d3cb92f653562aedf6128c06d",
+  "purpose": "Random-cast end-to-end conversations plus isolated replay of history organization; not a new formal 40+40 benchmark.",
+  "budget": {
+    "calls": 120,
+    "tokens": 1200000
+  },
+  "development": "Two previously seen three-turn question chains, freshly random production casts; no selection or reroll.",
+  "probe": "Four captured follow-up requests, role-only and background/native-turn variants. Same generation configuration and evidence, no repair; baseline originals retained.",
+  "holdoutScenarioHash": "6f58f250014162f92230be79a8ee4e963a59d1cd72ecfbdfa0f420fe682e894e",
+  "holdout": "Six unseen independent-agent three-turn scenarios; read only after candidate decision. Random cast through API per session. No outcome-based reruns.",
+  "decision": "Read all probe outputs with independent reviewer. Adopt a small context change only when it materially helps progression without sacrificing fact/quote boundaries. Preserve negative outcomes.",
+  "humanDimensions": [
+    "理解",
+    "关联",
+    "交流",
+    "帮助"
+  ],
+  "contextTags": [
+    "CTX-重复解释",
+    "CTX-未利用用户修正",
+    "CTX-重新解释已有状态"
+  ],
+  "price": {
+    "source": "https://api-docs.deepseek.com/quick_start/pricing/",
+    "checked": "2026-10-11",
+    "currency": "USD",
+    "basis": "Weekend off-peak Flash per million tokens",
+    "cacheHit": 0.003,
+    "cacheMiss": 0.15,
+    "output": 0.6,
+    "notAnInvoice": true
+  },
+  "boundaries": "No new writing templates, no polish agent; classical meaning separately reviewed, no expert Gold claim."
+}

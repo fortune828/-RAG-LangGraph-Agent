@@ -1,0 +1,44 @@
+{
+  "createdAt": "2026-10-11T07:29:03.669876+00:00",
+  "graphVersion": "python-graph-v18",
+  "promptVersion": "evidence-agent-python-v16",
+  "change": "Retain failed-turn user inputs in router/generation history; exclude failed assistant candidates and current running turn. Existing six-terminal-turn budget unchanged. No prompt or model changes.",
+  "trigger": "v17 random confirmation context_movein_resolved-2 failed; recorded turn3 payload omitted user correction about Wednesday morning/no fire.",
+  "priorRun": "confirmation/ remains v17, not relabelled; independent scenarios now seen.",
+  "nextRun": "postfix/: two fresh development smoke conversations, random API casts, not independent held-out quality proof.",
+  "scenarios": [
+    {
+      "caseId": "lunch-execution",
+      "questions": [
+        "今天中午想吃点热乎的，我只有半小时，吃什么省事？",
+        "我看错排班了，今天有一小时，预算也不用纠结。我主要是不想排队。",
+        "那我就选楼下那家能马上做的面，想清淡点，点单时怎么说？"
+      ]
+    },
+    {
+      "caseId": "haircut-execution",
+      "questions": [
+        "头发有点长了，我在犹豫今天要不要去理发，还是干脆剪很短。",
+        "我决定不剪短了，只修一下发尾，店也约好了，下午有空。",
+        "我怕理发师理解成大改造，帮我说一句能直接对理发师讲的话。"
+      ]
+    }
+  ],
+  "sourceSha256": {
+    "backend/__init__.py": "31035e9fa5d2ce31f46dba6f1b3492edf184befa6b9d447c506d6824c539f8f3",
+    "backend/citations.py": "8029e28ea4946ca8653be6b91157311fcbdcf0ce5b099c0843b7e5e45b11607a",
+    "backend/llm.py": "7f1ba810ca64291859446791230307d41d81c1860a17c03d0baf793769d50fd9",
+    "backend/app.py": "a88684e8202e88c690b64526e8daec32c136ebd719075faf48821722552f4aba",
+    "backend/knowledge.py": "b2e90b7994a2e394b90563f7585786b576eb7f433c0e6a3bc9c84b5d029f3ceb",
+    "backend/graph.py": "d2363ce3d999a5a20e24033bf3acc4d5352001feff774c88e327af77354a56d3",
+    "backend/__main__.py": "ac31e6560f567ee61fd9c6ff94d9596c0608557293f0c6cd6407f994970d672b",
+    "backend/validation.py": "50dc4245827de755805dec1e3d4eaf012936762069a06f4810a7d030641dc576",
+    "backend/config.py": "35753bef9d7dc5b65c65e846e72b9610427afea8a9ad7011cab2df3c09cd8c5e",
+    "backend/store.py": "8e759718b5721ce4369d1f00c10ecf5a699503df075ca4bbd1920114ae49a465",
+    "backend/prompts.py": "4a4740e548773e8c011cbaee3e21a53196142bf11640669302d16c3478119207",
+    "backend/retrieval.py": "7552ccf60873a0e8d18c14b019e7d5588afb38dd6373674b9870c994d3ea88a7",
+    "backend/models.py": "ab0df5f73b2dbcefb79c75837f1efc6f94833a0ed44ebbd471d817414a284064",
+    "backend/evaluate.py": "50d16549eb4fe36076517b0ad09f492bdcfe67ca9522446fc1fe0a07d7b050c1",
+    "backend/domain.py": "01c1dcf5bde48957f5f7025f50f67acf967d9f7f8485fd2dec653bc923b2a265"
+  }
+}

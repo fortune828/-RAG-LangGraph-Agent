@@ -1,0 +1,141 @@
+{
+  "selection": "Purposeful coverage of eight life inputs and two complete three-turn test conversations; not selected by AI scores or answer quality, not a random representative sample. Production H only; hide this key from raters.",
+  "results": [
+    {
+      "answerId": "R01",
+      "stage": "test",
+      "caseId": "test-01",
+      "arm": "H",
+      "sourceAnswerId": "A123",
+      "sourceMaterial": "human/test/materials.json",
+      "sourceSha256": "55d5bb55fc0a5fee82622be1f145315df1e13548e54285cfa679a5e4d4f57de7"
+    },
+    {
+      "answerId": "R02",
+      "stage": "test",
+      "caseId": "test-03",
+      "arm": "H",
+      "sourceAnswerId": "A134",
+      "sourceMaterial": "human/test/materials.json",
+      "sourceSha256": "55d5bb55fc0a5fee82622be1f145315df1e13548e54285cfa679a5e4d4f57de7"
+    },
+    {
+      "answerId": "R03",
+      "stage": "test",
+      "caseId": "test-07",
+      "arm": "H",
+      "sourceAnswerId": "A087",
+      "sourceMaterial": "human/test/materials.json",
+      "sourceSha256": "55d5bb55fc0a5fee82622be1f145315df1e13548e54285cfa679a5e4d4f57de7"
+    },
+    {
+      "answerId": "R04",
+      "stage": "test",
+      "caseId": "test-09",
+      "arm": "H",
+      "sourceAnswerId": "A140",
+      "sourceMaterial": "human/test/materials.json",
+      "sourceSha256": "55d5bb55fc0a5fee82622be1f145315df1e13548e54285cfa679a5e4d4f57de7"
+    },
+    {
+      "answerId": "R05",
+      "stage": "test",
+      "caseId": "test-10",
+      "arm": "H",
+      "sourceAnswerId": "A102",
+      "sourceMaterial": "human/test/materials.json",
+      "sourceSha256": "55d5bb55fc0a5fee82622be1f145315df1e13548e54285cfa679a5e4d4f57de7"
+    },
+    {
+      "answerId": "R06",
+      "stage": "test",
+      "caseId": "test-11",
+      "arm": "H",
+      "sourceAnswerId": "A094",
+      "sourceMaterial": "human/test/materials.json",
+      "sourceSha256": "55d5bb55fc0a5fee82622be1f145315df1e13548e54285cfa679a5e4d4f57de7"
+    },
+    {
+      "answerId": "R07",
+      "stage": "test",
+      "caseId": "test-13",
+      "arm": "H",
+      "sourceAnswerId": "A106",
+      "sourceMaterial": "human/test/materials.json",
+      "sourceSha256": "55d5bb55fc0a5fee82622be1f145315df1e13548e54285cfa679a5e4d4f57de7"
+    },
+    {
+      "answerId": "R08",
+      "stage": "test",
+      "caseId": "test-16",
+      "arm": "H",
+      "sourceAnswerId": "A103",
+      "sourceMaterial": "human/test/materials.json",
+      "sourceSha256": "55d5bb55fc0a5fee82622be1f145315df1e13548e54285cfa679a5e4d4f57de7"
+    },
+    {
+      "answerId": "R09",
+      "stage": "continuous",
+      "caseId": "test-pottery-pair-turn1",
+      "arm": "H",
+      "sourceAnswerId": "A009",
+      "sourceMaterial": "human/continuous/materials.json",
+      "sourceSha256": "6e1a85301165de2470ecb19656ba08bc865d183129970d04b1b0bd3977d5dc97"
+    },
+    {
+      "answerId": "R10",
+      "stage": "continuous",
+      "caseId": "test-pottery-pair-turn2",
+      "arm": "H",
+      "sourceAnswerId": "A001",
+      "sourceMaterial": "human/continuous/materials.json",
+      "sourceSha256": "6e1a85301165de2470ecb19656ba08bc865d183129970d04b1b0bd3977d5dc97"
+    },
+    {
+      "answerId": "R11",
+      "stage": "continuous",
+      "caseId": "test-pottery-pair-turn3",
+      "arm": "H",
+      "sourceAnswerId": "A006",
+      "sourceMaterial": "human/continuous/materials.json",
+      "sourceSha256": "6e1a85301165de2470ecb19656ba08bc865d183129970d04b1b0bd3977d5dc97"
+    },
+    {
+      "answerId": "R12",
+      "stage": "continuous",
+      "caseId": "test-group-14-turn1",
+      "arm": "H",
+      "sourceAnswerId": "A012",
+      "sourceMaterial": "human/continuous/materials.json",
+      "sourceSha256": "6e1a85301165de2470ecb19656ba08bc865d183129970d04b1b0bd3977d5dc97"
+    },
+    {
+      "answerId": "R13",
+      "stage": "continuous",
+      "caseId": "test-group-14-turn2",
+      "arm": "H",
+      "sourceAnswerId": "A002",
+      "sourceMaterial": "human/continuous/materials.json",
+      "sourceSha256": "6e1a85301165de2470ecb19656ba08bc865d183129970d04b1b0bd3977d5dc97"
+    },
+    {
+      "answerId": "R14",
+      "stage": "continuous",
+      "caseId": "test-group-14-turn3",
+      "arm": "H",
+      "sourceAnswerId": "A010",
+      "sourceMaterial": "human/continuous/materials.json",
+      "sourceSha256": "6e1a85301165de2470ecb19656ba08bc865d183129970d04b1b0bd3977d5dc97"
+    }
+  ],
+  "csvFields": {
+    "理解": "understanding",
+    "知识": "knowledge",
+    "关联": "integration",
+    "交流": "conversation",
+    "帮助": "helpfulness",
+    "是否回答到点上": "taskSuccess",
+    "理由或原句": "notes"
+  },
+  "limitation": "Simplified human trial sheet. Do not pass directly to the formal AI-score importer; retain original human entries and map fields with explicit N/A reasons on later aggregation."
+}

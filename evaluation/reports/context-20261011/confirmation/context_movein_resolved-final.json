@@ -1,0 +1,1504 @@
+{
+  "id": "85a9ba17-64fe-439b-a162-1bdef13774da",
+  "question": "下个月搬新家，妈妈想按老习惯办个入宅仪式，我平时不太讲究，但想让她高兴。我们住高层，打算周末搬，有没有简单一点的做法？",
+  "cast": {
+    "lines": [
+      8,
+      7,
+      7,
+      7,
+      9,
+      8
+    ],
+    "original": {
+      "binary": "011110",
+      "name": "泽风大过",
+      "number": 28,
+      "judgment": "栋挠，利有攸往，亨。"
+    },
+    "changed": {
+      "binary": "011100",
+      "name": "雷风恒",
+      "number": 32,
+      "judgment": "亨，无咎，利贞，利有攸往。"
+    },
+    "originalBinary": "011110",
+    "changedBinary": "011100",
+    "changingIndices": [
+      4
+    ],
+    "id": "49640ef0-68a9-45bb-8b79-cbcc6581600a",
+    "method": "three-coins",
+    "algorithmVersion": "coins-py-v1",
+    "readingPolicyVersion": "all-moving-lines-v1",
+    "coins": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    "createdAt": "2026-10-11T07:22:34.928233+00:00"
+  },
+  "turns": [
+    {
+      "id": "f6cd2610-5a8d-4d24-8785-83d8fb5c1bfc",
+      "question": "下个月搬新家，妈妈想按老习惯办个入宅仪式，我平时不太讲究，但想让她高兴。我们住高层，打算周末搬，有没有简单一点的做法？",
+      "mode": "initial",
+      "createdAt": "2026-10-11T07:22:34.974261+00:00",
+      "evidence": [
+        {
+          "id": "zy-28-judgment",
+          "hexagramId": 28,
+          "name": "大过",
+          "section": "judgment",
+          "line": null,
+          "text": "栋桡；利有攸往，亨。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "大过·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:28:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "栋桡；利有攸往，亨。"
+        },
+        {
+          "id": "zy-28-tuan",
+          "hexagramId": 28,
+          "name": "大过",
+          "section": "tuan",
+          "line": null,
+          "text": "“大过”，大者过也。栋桡，本末弱也。刚过而中，巽而说行，“利有攸往”，乃“亨”。“大过”之时大矣哉！",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+          "locator": "大过·彖传",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:28:tuan"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“大过”，大者过也。栋桡，本末弱也。刚过而中，巽而说行，“利有攸往”，乃“亨”。“大过”之时大矣哉！"
+        },
+        {
+          "id": "zy-28-xiang",
+          "hexagramId": 28,
+          "name": "大过",
+          "section": "xiang",
+          "line": null,
+          "text": "泽灭木，大过；君子以独立不惧，遁世无闷。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "大过·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:28:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "泽灭木，大过；君子以独立不惧，遁世无闷。"
+        },
+        {
+          "id": "zy-28-line-5",
+          "hexagramId": 28,
+          "name": "大过",
+          "section": "line",
+          "line": 5,
+          "text": "枯杨生华，老妇得其士夫，无咎无誉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "大过·九五",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:28:line:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "枯杨生华，老妇得其士夫，无咎无誉。"
+        },
+        {
+          "id": "zy-28-line_xiang-5",
+          "hexagramId": 28,
+          "name": "大过",
+          "section": "line_xiang",
+          "line": 5,
+          "text": "“枯杨生华”，何可久也？“老妇”“士夫”，亦可丑也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "大过·九五小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:28:line_xiang:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“枯杨生华”，何可久也？“老妇”“士夫”，亦可丑也。"
+        },
+        {
+          "id": "zy-32-judgment",
+          "hexagramId": 32,
+          "name": "恒",
+          "section": "judgment",
+          "line": null,
+          "text": "亨，无咎，利贞，利有攸往。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "恒·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:32:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "亨，无咎，利贞，利有攸往。"
+        },
+        {
+          "id": "zy-32-xiang",
+          "hexagramId": 32,
+          "name": "恒",
+          "section": "xiang",
+          "line": null,
+          "text": "雷风，恒。君子以立不易方。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "恒·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:32:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "雷风，恒。君子以立不易方。"
+        }
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "explanation_followup",
+          "evidenceIds": [
+            "zy-28-judgment",
+            "zy-28-tuan",
+            "zy-28-xiang",
+            "zy-28-line-5",
+            "zy-28-line_xiang-5",
+            "zy-32-judgment",
+            "zy-32-xiang"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 18894,
+          "promptTokens": 951,
+          "completionTokens": 3833,
+          "totalTokens": 4784
+        },
+        {
+          "step": "validate",
+          "status": "passed",
+          "code": ""
+        }
+      ],
+      "status": "completed",
+      "model": "deepseek-flash",
+      "releaseId": "knowledge-v3-20260926-r1",
+      "checkpointThreadId": "python-graph-v17:85a9ba17-64fe-439b-a162-1bdef13774da:f6cd2610-5a8d-4d24-8785-83d8fb5c1bfc",
+      "promptVersion": "evidence-agent-python-v16",
+      "graphVersion": "python-graph-v17",
+      "answer": {
+        "status": "answered",
+        "paragraphs": [
+          {
+            "text": "你面对的其实不是'信不信'的问题，而是两代人对'安顿'的不同表达方式。《周易》大过卦辞说'栋桡；利有攸往，亨'——栋梁弯曲，本是承重吃紧之象，但利于有所前往，仍然通达。搬家本身就是一件'大者过也'的事：旧居打包、新居安置、妈妈的心愿、你的实际时间，全压在一根梁上。彖传解释'刚过而中，巽而说行'，意思是力度虽大，但居中不过分，以柔顺和悦的方式推进，就能亨通。这个卦在告诉你：不必把'办不办仪式'当成是非题，把它当成一次家庭磨合，反而顺。",
+            "citations": [
+              {
+                "evidenceId": "zy-28-judgment",
+                "quote": "栋桡；利有攸往，亨。",
+                "claim": "栋桡；利有攸往，亨"
+              },
+              {
+                "evidenceId": "zy-28-tuan",
+                "quote": "刚过而中，巽而说行",
+                "claim": "刚过而中，巽而说行"
+              }
+            ]
+          },
+          {
+            "text": "卦中动爻在九五，爻辞是'枯杨生华，老妇得其士夫，无咎无誉'。枯老的杨树重新开花，老妇配得年轻男子——这像是说：妈妈那一辈的老习惯，放到你的新居里，会重新焕出一点生气，但它本身并非大事，'无咎无誉'，做了不添过，不做也不减分。小象更直接：'何可久也'——花开不能长久，正提示这类仪式宜短、宜简，不必铺陈。九五又是动爻，从老阳变阴，意味着一场'讲究'可以转化平常心，重在心意的交接，不在排场的完整。",
+            "citations": [
+              {
+                "evidenceId": "zy-28-line-5",
+                "quote": "枯杨生华，老妇得其士夫，无咎无誉。",
+                "claim": "枯杨生华，老妇得其士夫，无咎无誉"
+              },
+              {
+                "evidenceId": "zy-28-line_xiang-5",
+                "quote": "何可久也？",
+                "claim": "何可久也"
+              }
+            ]
+          },
+          {
+            "text": "变卦是恒。恒卦辞说'亨，无咎，利贞，利有攸往'——通达、无过、利于守正，也利于有所前往。大象'雷风，恒。君子以立不易方'，雷动风随，看似在变，其实各有其常；君子立身，不轻易改换方向。对你而言，'立不易方'可以理解为：你对仪式的态度不必翻转，妈妈的习惯也不必否定，找到一个两边都站得住的'常法'，比一次隆重的仪式更合恒道。简单到以后每逢年节都愿意重复，那才是'恒'。",
+            "citations": [
+              {
+                "evidenceId": "zy-32-judgment",
+                "quote": "亨，无咎，利贞，利有攸往。",
+                "claim": "亨，无咎，利贞，利有攸往"
+              },
+              {
+                "evidenceId": "zy-32-xiang",
+                "quote": "君子以立不易方",
+                "claim": "君子以立不易方"
+              }
+            ]
+          },
+          {
+            "text": "具体做法，按高层住宅的条件，可以这样：1）进门。选周末上午，让妈妈走最前面，手里拿一小袋米、一瓶油或一包盐（象征衣食落地）。从电梯口走到家门口这几步，就是'进门'，不必放鞭炮。2）开火。当天在新厨房煮一锅汤圆或甜茶，全家一人一碗。这是最容易落实、也最有仪式感的一步，妈妈说几句吉利话即可。3）净宅。用一小碗盐和米撒在客厅四角，过一会儿扫掉；或用清水加几片柚子叶、艾叶擦桌面。不烧香、不燃纸，避开烟感器和消防规定。4）拜四角。在客厅中央摆几样水果糖果，向四方各鞠一躬，或者干脆全家围坐吃汤圆时把心意说一说。5）不必做的事：不必请师傅、不必严格择吉到时辰、不必大摆宴席、不必把所有房间都走一遍。高层楼房，动静越小，邻里越安，妈妈也不会太累。",
+            "citations": []
+          },
+          {
+            "text": "最后一句实在话：这个仪式的目的，是让妈妈感到'这件事被认真对待了'，而不是仪式本身多完整。你可以在搬之前问她一句'您最看重哪个环节'，把那一两个环节做扎实，其余从简。这样既照顾了她的习惯，也没有把你绑进一套你并不相信的讲究里。",
+            "citations": []
+          }
+        ],
+        "limitations": [
+          "入宅仪式的具体环节因地域、方言和家庭传统差异很大，上述做法是一般化建议；建议向母亲确认她最在意的步骤，以免简化掉她真正看重的那一环。",
+          "高层住宅的消防与物业管理规定各地不同，涉及明火、焚香、燃纸的环节应以小区规定为准，本回答已默认避开明火。"
+        ]
+      },
+      "durationMs": 18964
+    },
+    {
+      "id": "ef2e8c99-c425-4d0e-97e6-bbe956f248a5",
+      "question": "物业说室内公共区域和阳台都不能烧香烧纸，妈妈已经同意不点火了。搬家公司也定好周三上午，周末没空。我们想保留一点仪式感，但不影响正常搬东西。",
+      "mode": "followup",
+      "createdAt": "2026-10-11T07:22:54.020154+00:00",
+      "evidence": [
+        {
+          "id": "zy-28-judgment",
+          "hexagramId": 28,
+          "name": "大过",
+          "section": "judgment",
+          "line": null,
+          "text": "栋桡；利有攸往，亨。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "大过·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:28:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "栋桡；利有攸往，亨。"
+        },
+        {
+          "id": "zy-28-tuan",
+          "hexagramId": 28,
+          "name": "大过",
+          "section": "tuan",
+          "line": null,
+          "text": "“大过”，大者过也。栋桡，本末弱也。刚过而中，巽而说行，“利有攸往”，乃“亨”。“大过”之时大矣哉！",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+          "locator": "大过·彖传",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:28:tuan"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“大过”，大者过也。栋桡，本末弱也。刚过而中，巽而说行，“利有攸往”，乃“亨”。“大过”之时大矣哉！"
+        },
+        {
+          "id": "zy-28-xiang",
+          "hexagramId": 28,
+          "name": "大过",
+          "section": "xiang",
+          "line": null,
+          "text": "泽灭木，大过；君子以独立不惧，遁世无闷。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "大过·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:28:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "泽灭木，大过；君子以独立不惧，遁世无闷。"
+        },
+        {
+          "id": "zy-28-line-5",
+          "hexagramId": 28,
+          "name": "大过",
+          "section": "line",
+          "line": 5,
+          "text": "枯杨生华，老妇得其士夫，无咎无誉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "大过·九五",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:28:line:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "枯杨生华，老妇得其士夫，无咎无誉。"
+        },
+        {
+          "id": "zy-28-line_xiang-5",
+          "hexagramId": 28,
+          "name": "大过",
+          "section": "line_xiang",
+          "line": 5,
+          "text": "“枯杨生华”，何可久也？“老妇”“士夫”，亦可丑也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "大过·九五小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:28:line_xiang:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“枯杨生华”，何可久也？“老妇”“士夫”，亦可丑也。"
+        },
+        {
+          "id": "zy-32-judgment",
+          "hexagramId": 32,
+          "name": "恒",
+          "section": "judgment",
+          "line": null,
+          "text": "亨，无咎，利贞，利有攸往。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "恒·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:32:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "亨，无咎，利贞，利有攸往。"
+        },
+        {
+          "id": "zy-32-xiang",
+          "hexagramId": 32,
+          "name": "恒",
+          "section": "xiang",
+          "line": null,
+          "text": "雷风，恒。君子以立不易方。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "恒·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:32:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "雷风，恒。君子以立不易方。"
+        },
+        {
+          "id": "wang-bi@2404960:h32:line1:138a4adbf2",
+          "hexagramId": 32,
+          "name": "恒",
+          "section": "line",
+          "line": 1,
+          "text": "處恒之初，最處卦底，始求深者也。求深窮底，令物無餘縕，漸以至此，物猶不堪，而況始求深者乎？以此為恒，凶正害德，無施而利也。",
+          "textOriginal": "處恒之初，最處卦底，始求深者也。求深窮底，令物無餘縕，漸以至此，物猶不堪，而況始求深者乎？以此為恒，凶正害德，無施而利也。",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E6%81%92&oldid=2404960",
+          "locator": "《周易正義》·恒·第1爻注",
+          "version": "ws-2404960",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "zhouyi-zhengyi",
+          "workTitle": "周易正義",
+          "sourceId": "ws-2404960",
+          "editionId": "ws-zhouyi-zhengyi",
+          "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+          "authorIds": [
+            "wang-bi"
+          ],
+          "authorNames": [
+            "王弼"
+          ],
+          "anchorIds": [
+            "zhouyi:32:line:1"
+          ],
+          "commentsOn": [
+            "zhouyi:32:line:1"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-2404960.wiki",
+            "startLine": 70,
+            "endLine": 70,
+            "pageLabels": []
+          }
+        },
+        {
+          "id": "wang-bi@2404960:h32:line2:5b33f4c7f5",
+          "hexagramId": 32,
+          "name": "恒",
+          "section": "line",
+          "line": 2,
+          "text": "雖失其位，恒位於中，可以消悔也。",
+          "textOriginal": "雖失其位，恒位於中，可以消悔也。",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E6%81%92&oldid=2404960",
+          "locator": "《周易正義》·恒·第2爻注",
+          "version": "ws-2404960",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "zhouyi-zhengyi",
+          "workTitle": "周易正義",
+          "sourceId": "ws-2404960",
+          "editionId": "ws-zhouyi-zhengyi",
+          "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+          "authorIds": [
+            "wang-bi"
+          ],
+          "authorNames": [
+            "王弼"
+          ],
+          "anchorIds": [
+            "zhouyi:32:line:2"
+          ],
+          "commentsOn": [
+            "zhouyi:32:line:2"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-2404960.wiki",
+            "startLine": 76,
+            "endLine": 76,
+            "pageLabels": []
+          }
+        },
+        {
+          "id": "wang-bi@2404960:h32:line3:d1ff92b48b",
+          "hexagramId": 32,
+          "name": "恒",
+          "section": "line",
+          "line": 3,
+          "text": "處三陽之中，居下體之上，處上體之下，上不全尊，下不全卑，中不在體，體在乎恒，而分無所定，無恒者也。德行無恒，自相違錯，不可致詰，故「或承之羞」也。施德於斯，物莫之納，鄙賤甚矣，故曰「貞吝」也。",
+          "textOriginal": "處三陽之中，居下體之上，處上體之下，上不至尊，下不至卑，中不在體，體在乎恒，而分無所定，無恒者也。德行無恒，自相違錯，不可致詰，故「或承之羞」也。施德於斯，物莫之納，鄙賤甚矣，故曰「貞吝」也。",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E6%81%92&oldid=2404960",
+          "locator": "《周易正義》·恒·第3爻注",
+          "version": "ws-2404960",
+          "review": "多源机器辅助核对后修订；采集原文及修改依据已保留，未经人工专家校勘。",
+          "reviewStatus": "machine_corrected",
+          "layer": "commentary",
+          "workId": "zhouyi-zhengyi",
+          "workTitle": "周易正義",
+          "sourceId": "ws-2404960",
+          "editionId": "ws-zhouyi-zhengyi",
+          "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+          "authorIds": [
+            "wang-bi"
+          ],
+          "authorNames": [
+            "王弼"
+          ],
+          "anchorIds": [
+            "zhouyi:32:line:3"
+          ],
+          "commentsOn": [
+            "zhouyi:32:line:3"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-2404960.wiki",
+            "startLine": 84,
+            "endLine": 84,
+            "pageLabels": []
+          },
+          "correctionHistory": [
+            {
+              "auditId": "crosscheck-20260926",
+              "parentReleaseId": "knowledge-v3-20260926",
+              "date": "2026-09-26",
+              "before": "上不至尊，下不至卑",
+              "after": "上不全尊，下不全卑",
+              "reason": "两处全误为至",
+              "sourceUrls": [
+                "https://github.com/kanripo/KR1a0007/blob/0fa05af11e9229b6cc6febe312d541fc6d4ec3bf/KR1a0007_022.txt",
+                "https://www.eee-learning.com/book/eee-jy32",
+                "https://www.eee-learning.com/eeebook/zenyi/389.gif"
+              ],
+              "reviewMethod": "machine_assisted",
+              "humanReviewed": false
+            }
+          ]
+        },
+        {
+          "id": "wang-bi@2404960:h32:line4:082ae569fb",
+          "hexagramId": 32,
+          "name": "恒",
+          "section": "line",
+          "line": 4,
+          "text": "恒於非位，雖勞無獲也。",
+          "textOriginal": "恒於非位，雖勞無獲也。",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E6%81%92&oldid=2404960",
+          "locator": "《周易正義》·恒·第4爻注",
+          "version": "ws-2404960",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "zhouyi-zhengyi",
+          "workTitle": "周易正義",
+          "sourceId": "ws-2404960",
+          "editionId": "ws-zhouyi-zhengyi",
+          "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+          "authorIds": [
+            "wang-bi"
+          ],
+          "authorNames": [
+            "王弼"
+          ],
+          "anchorIds": [
+            "zhouyi:32:line:4"
+          ],
+          "commentsOn": [
+            "zhouyi:32:line:4"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-2404960.wiki",
+            "startLine": 92,
+            "endLine": 92,
+            "pageLabels": []
+          }
+        },
+        {
+          "id": "wang-bi@2404960:h32:line5:5cdd8ebbb7",
+          "hexagramId": 32,
+          "name": "恒",
+          "section": "line",
+          "line": 5,
+          "text": "居得尊位，為恒之主，不能「制義」，而系應在二，用心專貞，從唱而已。婦人之吉，夫子之凶也。",
+          "textOriginal": "居得尊位，為恒之主，不能「制義」，而系應在二，用心專貞，從唱而已。婦人之吉，夫子之凶也。",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E6%81%92&oldid=2404960",
+          "locator": "《周易正義》·恒·第5爻注",
+          "version": "ws-2404960",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "zhouyi-zhengyi",
+          "workTitle": "周易正義",
+          "sourceId": "ws-2404960",
+          "editionId": "ws-zhouyi-zhengyi",
+          "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+          "authorIds": [
+            "wang-bi"
+          ],
+          "authorNames": [
+            "王弼"
+          ],
+          "anchorIds": [
+            "zhouyi:32:line:5"
+          ],
+          "commentsOn": [
+            "zhouyi:32:line:5"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-2404960.wiki",
+            "startLine": 100,
+            "endLine": 100,
+            "pageLabels": []
+          }
+        },
+        {
+          "id": "wang-bi@2404960:h32:line6:ab4d239331",
+          "hexagramId": 32,
+          "name": "恒",
+          "section": "line",
+          "line": 6,
+          "text": "夫靜為躁君，安為動主。故安者上之所處也，靜者可久之道也。處卦之上，居動之極，以此為恒，無施而得也。",
+          "textOriginal": "夫靜為躁君，安為動主。故安者上之所處也，靜者可久之道也。處卦之上，居動之極，以此為恒，無施而得也。",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/04%E6%81%92&oldid=2404960",
+          "locator": "《周易正義》·恒·第6爻注",
+          "version": "ws-2404960",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "zhouyi-zhengyi",
+          "workTitle": "周易正義",
+          "sourceId": "ws-2404960",
+          "editionId": "ws-zhouyi-zhengyi",
+          "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+          "authorIds": [
+            "wang-bi"
+          ],
+          "authorNames": [
+            "王弼"
+          ],
+          "anchorIds": [
+            "zhouyi:32:line:6"
+          ],
+          "commentsOn": [
+            "zhouyi:32:line:6"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-2404960.wiki",
+            "startLine": 108,
+            "endLine": 108,
+            "pageLabels": []
+          }
+        },
+        {
+          "id": "cheng-yi@1313743:h32:line1:0091fef850",
+          "hexagramId": 32,
+          "name": "恒",
+          "section": "line",
+          "line": 1,
+          "text": "初居下而四為正應，柔暗之人，能守常而不能度勢。四震體而陽性，以剛居高，誌上而不下，又為二三所隔，應初之志異乎常矣，而初乃求望之深，是知常而不知變也。浚，深之也。浚恒謂求恒之深也。守常而不度勢，求望於上之深，堅固守此，凶之道也。泥常如此，無所往而利矣。世之責望故素而致悔咎者，皆浚恒者也。誌既上求之深，是不能恒安其處者也。柔微而不恒安其處，亦致凶之道。凡卦之初終，淺與深、微與盛之地也。在下而求深，亦不知時矣。",
+          "textOriginal": "初居下而四為正應，柔暗之人，能守常而不能度勢。四震體而陽性，以剛居高，誌上而不下，又為二三所隔，應初之志異乎常矣，而初乃求望之深，是知常而不知變也。浚，深之也。浚恒謂求恒之深也。守常而不度勢，求望於上之深，堅固守此，凶之道也。泥常如此，無所往而利矣。世之責望故素而致悔咎者，皆浚恒者也。誌既上求之深，是不能恒安其處者也。柔微而不恒安其處，亦致凶之道。凡卦之初終，淺與深、微與盛之地也。在下而求深，亦不知時矣。",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3&oldid=1313743",
+          "locator": "《伊川易傳》·恒·第1爻注",
+          "version": "ws-1313743",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "yichuan-yizhuan",
+          "workTitle": "伊川易傳",
+          "sourceId": "ws-1313743",
+          "editionId": "ws-yichuan-yizhuan",
+          "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "authorNames": [
+            "程颐"
+          ],
+          "anchorIds": [
+            "zhouyi:32:line:1"
+          ],
+          "commentsOn": [
+            "zhouyi:32:line:1"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-1313743.wiki",
+            "startLine": 657,
+            "endLine": 657,
+            "pageLabels": []
+          }
+        },
+        {
+          "id": "zhu-xi@737053:h32:line1:100d54403f",
+          "hexagramId": 32,
+          "name": "恒",
+          "section": "line",
+          "line": 1,
+          "text": "初與四為正應理之常也然初居下而在初未可以深有所求四震體而陽性上而不下又為二三所隔應初之意異乎常矣初之柔暗不能度勢又以隂居巽下為巽之主其性務入故深以常理求之浚恒之象也占者如此則雖貞亦凶而无所利矣",
+          "textOriginal": "初與四為正應理之常也然初居下而在初未可以深有所求四震體而陽性上而不下又為二三所隔應初之意異乎常矣初之柔暗不能度勢又以隂居巽下為巽之主其性務入故深以常理求之浚恒之象也占者如此則雖貞亦凶而无所利矣",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B72&oldid=737053",
+          "locator": "《周易本義》·恒·第1爻注",
+          "version": "ws-737053",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "zhouyi-benyi",
+          "workTitle": "周易本義",
+          "sourceId": "ws-737053",
+          "editionId": "ws-benyi-skqs",
+          "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "authorNames": [
+            "朱熹"
+          ],
+          "anchorIds": [
+            "zhouyi:32:line:1"
+          ],
+          "commentsOn": [
+            "zhouyi:32:line:1"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-737053.wiki",
+            "startLine": 12,
+            "endLine": 12,
+            "pageLabels": []
+          }
+        },
+        {
+          "id": "zhu-xi@737053:h32:line2:5f0a0b4c7f",
+          "hexagramId": 32,
+          "name": "恒",
+          "section": "line",
+          "line": 2,
+          "text": "以陽居隂本當有悔以其久中故得亡也",
+          "textOriginal": "以陽居隂本當有悔以其久中故得亡也",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B72&oldid=737053",
+          "locator": "《周易本義》·恒·第2爻注",
+          "version": "ws-737053",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "zhouyi-benyi",
+          "workTitle": "周易本義",
+          "sourceId": "ws-737053",
+          "editionId": "ws-benyi-skqs",
+          "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "authorNames": [
+            "朱熹"
+          ],
+          "anchorIds": [
+            "zhouyi:32:line:2"
+          ],
+          "commentsOn": [
+            "zhouyi:32:line:2"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-737053.wiki",
+            "startLine": 12,
+            "endLine": 12,
+            "pageLabels": []
+          }
+        },
+        {
+          "id": "zhu-xi@737053:h32:line3:1d32da5da0",
+          "hexagramId": 32,
+          "name": "恒",
+          "section": "line",
+          "line": 3,
+          "text": "位雖得正然過剛不中志從於上不能久於其所故為不恒其徳或承之羞之象或者不知其何人之辭承奉也言人皆得奉而進之不知其所自來也貞吝者正而不恒為可羞吝申戒占者之辭",
+          "textOriginal": "位雖得正然過剛不中志從於上不能久於其所故為不恒其徳或承之羞之象或者不知其何人之辭承奉也言人皆得奉而進之不知其所自來也貞吝者正而不恒為可羞吝申戒占者之辭",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B72&oldid=737053",
+          "locator": "《周易本義》·恒·第3爻注",
+          "version": "ws-737053",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "zhouyi-benyi",
+          "workTitle": "周易本義",
+          "sourceId": "ws-737053",
+          "editionId": "ws-benyi-skqs",
+          "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "authorNames": [
+            "朱熹"
+          ],
+          "anchorIds": [
+            "zhouyi:32:line:3"
+          ],
+          "commentsOn": [
+            "zhouyi:32:line:3"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-737053.wiki",
+            "startLine": 12,
+            "endLine": 12,
+            "pageLabels": []
+          }
+        },
+        {
+          "id": "zhu-xi@737053:h32:line4:0f4238b3b2",
+          "hexagramId": 32,
+          "name": "恒",
+          "section": "line",
+          "line": 4,
+          "text": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也",
+          "textOriginal": "以陽居隂久非其位故為此象占者田无所獲而凡事亦不得其所求也",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B72&oldid=737053",
+          "locator": "《周易本義》·恒·第4爻注",
+          "version": "ws-737053",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "zhouyi-benyi",
+          "workTitle": "周易本義",
+          "sourceId": "ws-737053",
+          "editionId": "ws-benyi-skqs",
+          "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "authorNames": [
+            "朱熹"
+          ],
+          "anchorIds": [
+            "zhouyi:32:line:4"
+          ],
+          "commentsOn": [
+            "zhouyi:32:line:4"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-737053.wiki",
+            "startLine": 12,
+            "endLine": 12,
+            "pageLabels": []
+          }
+        }
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "situation_followup",
+          "evidenceIds": [
+            "zy-28-judgment",
+            "zy-28-tuan",
+            "zy-28-xiang",
+            "zy-28-line-5",
+            "zy-28-line_xiang-5",
+            "zy-32-judgment",
+            "zy-32-xiang"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 8566,
+          "promptTokens": 3856,
+          "completionTokens": 1570,
+          "totalTokens": 5426
+        },
+        {
+          "step": "tool",
+          "tool": "get_passages",
+          "args": {
+            "layers": [
+              "commentary"
+            ],
+            "hexagramId": 32,
+            "sections": [
+              "judgment",
+              "line",
+              "xiang"
+            ]
+          },
+          "status": "ok",
+          "evidenceIds": [
+            "wang-bi@2404960:h32:line1:138a4adbf2",
+            "wang-bi@2404960:h32:line2:5b33f4c7f5",
+            "wang-bi@2404960:h32:line3:d1ff92b48b",
+            "wang-bi@2404960:h32:line4:082ae569fb",
+            "wang-bi@2404960:h32:line5:5cdd8ebbb7",
+            "wang-bi@2404960:h32:line6:ab4d239331",
+            "cheng-yi@1313743:h32:line1:0091fef850",
+            "zhu-xi@737053:h32:line1:100d54403f",
+            "zhu-xi@737053:h32:line2:5f0a0b4c7f",
+            "zhu-xi@737053:h32:line3:1d32da5da0",
+            "zhu-xi@737053:h32:line4:0f4238b3b2"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "hits": [
+            {
+              "passageId": "wang-bi@2404960:h32:line1:138a4adbf2",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "wang-bi@2404960:h32:line2:5b33f4c7f5",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "wang-bi@2404960:h32:line3:d1ff92b48b",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "wang-bi@2404960:h32:line4:082ae569fb",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "wang-bi@2404960:h32:line5:5cdd8ebbb7",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "wang-bi@2404960:h32:line6:ab4d239331",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "cheng-yi@1313743:h32:line1:0091fef850",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zhu-xi@737053:h32:line1:100d54403f",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zhu-xi@737053:h32:line2:5f0a0b4c7f",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zhu-xi@737053:h32:line3:1d32da5da0",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zhu-xi@737053:h32:line4:0f4238b3b2",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zhu-xi@737053:h32:line5:a6628f658b",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zhu-xi@737053:h32:line6:5310233565",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "coverageStatus": "partial",
+          "truncated": true,
+          "durationMs": 4
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 974,
+          "promptTokens": 8248,
+          "completionTokens": 22,
+          "totalTokens": 8270
+        },
+        {
+          "step": "model",
+          "status": "error",
+          "code": "MODEL_INCOMPLETE_RESPONSE",
+          "phase": "generate",
+          "durationMs": 39922,
+          "promptTokens": 3141,
+          "completionTokens": 8192,
+          "totalTokens": 11333,
+          "usage": {
+            "prompt_tokens": 3141,
+            "completion_tokens": 8192,
+            "total_tokens": 11333,
+            "prompt_tokens_details": {
+              "cached_tokens": 256
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 7583
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 2885
+          }
+        },
+        {
+          "step": "validate",
+          "status": "failed",
+          "code": "MODEL_INCOMPLETE_RESPONSE"
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 5686,
+          "promptTokens": 3779,
+          "completionTokens": 1220,
+          "totalTokens": 4999
+        },
+        {
+          "step": "validate",
+          "status": "failed",
+          "code": "CLAIM_NOT_IN_PARAGRAPH:cheng-yi@1313743:h32:line1:0091fef850"
+        },
+        {
+          "step": "execution",
+          "status": "error",
+          "code": "ANSWER_VALIDATION_FAILED"
+        }
+      ],
+      "status": "failed",
+      "model": "deepseek-flash",
+      "releaseId": "knowledge-v3-20260926-r1",
+      "checkpointThreadId": "python-graph-v17:85a9ba17-64fe-439b-a162-1bdef13774da:ef2e8c99-c425-4d0e-97e6-bbe956f248a5",
+      "promptVersion": "evidence-agent-python-v16",
+      "graphVersion": "python-graph-v17",
+      "error": "ANSWER_VALIDATION_FAILED",
+      "durationMs": 55322
+    },
+    {
+      "id": "ef1e4722-03e2-4521-8818-37364779339f",
+      "question": "就采用你提的那个不用明火的简化做法吧。当天只有我、妈妈和搬家师傅在，帮我列一张按先后顺序能照着做的清单，最后加一句我可以对妈妈说的吉利话。",
+      "mode": "followup",
+      "createdAt": "2026-10-11T07:23:49.427406+00:00",
+      "evidence": [
+        {
+          "id": "zy-28-judgment",
+          "hexagramId": 28,
+          "name": "大过",
+          "section": "judgment",
+          "line": null,
+          "text": "栋桡；利有攸往，亨。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "大过·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:28:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "栋桡；利有攸往，亨。"
+        },
+        {
+          "id": "zy-28-tuan",
+          "hexagramId": 28,
+          "name": "大过",
+          "section": "tuan",
+          "line": null,
+          "text": "“大过”，大者过也。栋桡，本末弱也。刚过而中，巽而说行，“利有攸往”，乃“亨”。“大过”之时大矣哉！",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+          "locator": "大过·彖传",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:28:tuan"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“大过”，大者过也。栋桡，本末弱也。刚过而中，巽而说行，“利有攸往”，乃“亨”。“大过”之时大矣哉！"
+        },
+        {
+          "id": "zy-28-xiang",
+          "hexagramId": 28,
+          "name": "大过",
+          "section": "xiang",
+          "line": null,
+          "text": "泽灭木，大过；君子以独立不惧，遁世无闷。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "大过·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:28:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "泽灭木，大过；君子以独立不惧，遁世无闷。"
+        },
+        {
+          "id": "zy-28-line-5",
+          "hexagramId": 28,
+          "name": "大过",
+          "section": "line",
+          "line": 5,
+          "text": "枯杨生华，老妇得其士夫，无咎无誉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "大过·九五",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:28:line:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "枯杨生华，老妇得其士夫，无咎无誉。"
+        },
+        {
+          "id": "zy-28-line_xiang-5",
+          "hexagramId": 28,
+          "name": "大过",
+          "section": "line_xiang",
+          "line": 5,
+          "text": "“枯杨生华”，何可久也？“老妇”“士夫”，亦可丑也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "大过·九五小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:28:line_xiang:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“枯杨生华”，何可久也？“老妇”“士夫”，亦可丑也。"
+        },
+        {
+          "id": "zy-32-judgment",
+          "hexagramId": 32,
+          "name": "恒",
+          "section": "judgment",
+          "line": null,
+          "text": "亨，无咎，利贞，利有攸往。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "恒·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:32:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "亨，无咎，利贞，利有攸往。"
+        },
+        {
+          "id": "zy-32-xiang",
+          "hexagramId": 32,
+          "name": "恒",
+          "section": "xiang",
+          "line": null,
+          "text": "雷风，恒。君子以立不易方。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "恒·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:32:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "雷风，恒。君子以立不易方。"
+        }
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "situation_followup",
+          "evidenceIds": [
+            "zy-28-judgment",
+            "zy-28-tuan",
+            "zy-28-xiang",
+            "zy-28-line-5",
+            "zy-28-line_xiang-5",
+            "zy-32-judgment",
+            "zy-32-xiang"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 3641,
+          "promptTokens": 3854,
+          "completionTokens": 554,
+          "totalTokens": 4408
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 14120,
+          "promptTokens": 1828,
+          "completionTokens": 2722,
+          "totalTokens": 4550
+        },
+        {
+          "step": "validate",
+          "status": "passed",
+          "code": ""
+        }
+      ],
+      "status": "completed",
+      "model": "deepseek-flash",
+      "releaseId": "knowledge-v3-20260926-r1",
+      "checkpointThreadId": "python-graph-v17:85a9ba17-64fe-439b-a162-1bdef13774da:ef1e4722-03e2-4521-8818-37364779339f",
+      "promptVersion": "evidence-agent-python-v16",
+      "graphVersion": "python-graph-v17",
+      "answer": {
+        "status": "answered",
+        "paragraphs": [
+          {
+            "text": "你选的这个方向是对的：大过卦九五爻辞说“枯杨生华，老妇得其士夫，无咎无誉”，妈妈的老习惯在你新居里重新开花，本身不添过、也不减分；小象补一句“何可久也”，正提示这类仪式宜短、宜简。所以下面这张清单只保留与“心意交接”直接相关的几步，全程不用明火，三个人完全够用。",
+            "citations": [
+              {
+                "evidenceId": "zy-28-line-5",
+                "quote": "枯杨生华，老妇得其士夫，无咎无誉。",
+                "claim": "枯杨生华，老妇得其士夫，无咎无誉"
+              },
+              {
+                "evidenceId": "zy-28-line_xiang-5",
+                "quote": "何可久也",
+                "claim": "何可久也"
+              }
+            ]
+          },
+          {
+            "text": "大过卦辞讲“栋桡；利有攸往，亨”，搬家当天承重吃紧，但利于有所前往；恒卦讲“君子以立不易方”，做法固定成一套常法，两边都站得住。清单按先后顺序：\n一、搬前一天：准备一小袋米、一瓶油、一包盐，放在一个手提袋里；另备一小碗盐和米混合、一块干净抹布、一把扫帚、几样水果和糖果。不用买香烛纸钱。\n二、当天到场：你开门先进去，把门敞着，让妈妈第二个进。妈妈手里提着米油盐那袋，从电梯口走到家门口这几步就算“进门”，不用放鞭炮。师傅随后搬大件。\n三、进门后第一件事：妈妈把米、油、盐放到厨房台面或橱柜固定位置，说一句“衣食落地，丰衣足食”。你在旁边应一声“好”。\n四、净宅：你拿那碗盐米，在客厅四个角各撒一小撮，等师傅搬完大件、约半小时后扫掉；同时用清水打湿抹布，擦一遍餐桌和厨房台面。不烧香、不燃纸，烟感器不会响。\n五、拜四角：在客厅中央摆水果糖果，你和妈妈向四方各鞠一躬，或干脆站在一起把“平安顺遂”的心意说一说。师傅不用参加，递瓶水、说声辛苦就行。\n六、收尾：水果糖果留下自己吃。全程半小时内能做完，不耽误搬家。",
+            "citations": [
+              {
+                "evidenceId": "zy-28-judgment",
+                "quote": "栋桡；利有攸往，亨。",
+                "claim": "栋桡；利有攸往，亨"
+              },
+              {
+                "evidenceId": "zy-32-xiang",
+                "quote": "君子以立不易方",
+                "claim": "君子以立不易方"
+              }
+            ]
+          },
+          {
+            "text": "最后一句，你可以当着妈妈的面说，也可以在她放下米油盐时接一句：“妈，新家进门平安，衣食落地，咱们一家人稳稳当当，日子越过越顺。”这句话不讲究、不拗口，她听得懂，你也说得出口。",
+            "citations": []
+          }
+        ],
+        "limitations": [
+          "入宅仪式的具体环节因地域和家庭传统差异较大；本清单以不与高层住宅消防规定冲突为前提，未涉及明火、焚香、燃纸。建议仍向母亲确认她最在意的一环，以免简化掉她真正看重的步骤。"
+        ]
+      },
+      "durationMs": 17869
+    }
+  ],
+  "createdAt": "2026-10-11T07:22:34.928254+00:00",
+  "releaseId": "knowledge-v3-20260926-r1"
+}

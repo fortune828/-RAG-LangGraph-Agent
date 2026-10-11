@@ -1,0 +1,549 @@
+{
+  "id": "83f645e5-eacd-4478-84ce-f66dc1d07fe9",
+  "question": "“见金夫，不有躬”出自哪里？我想先看原文，再看朱熹如何解释“金夫”。",
+  "cast": {
+    "lines": [
+      6,
+      7,
+      7,
+      7,
+      8,
+      7
+    ],
+    "original": {
+      "binary": "011101",
+      "name": "火风鼎",
+      "number": 50,
+      "judgment": "元吉，亨。"
+    },
+    "changed": {
+      "binary": "111101",
+      "name": "火天大有",
+      "number": 14,
+      "judgment": "元亨。"
+    },
+    "originalBinary": "011101",
+    "changedBinary": "111101",
+    "changingIndices": [
+      0
+    ],
+    "id": "aa6913c8-ba5f-49ab-a712-69a7d6989a82",
+    "method": "three-coins",
+    "algorithmVersion": "coins-py-v1",
+    "readingPolicyVersion": "all-moving-lines-v1",
+    "coins": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "createdAt": "2026-10-11T07:18:33.822998+00:00"
+  },
+  "turns": [
+    {
+      "id": "1a6aa985-0ea7-46ac-bcbc-c76f69b97b6b",
+      "question": "“见金夫，不有躬”出自哪里？我想先看原文，再看朱熹如何解释“金夫”。",
+      "mode": "initial",
+      "createdAt": "2026-10-11T07:18:33.836132+00:00",
+      "evidence": [
+        {
+          "id": "zy-50-judgment",
+          "hexagramId": 50,
+          "name": "鼎",
+          "section": "judgment",
+          "line": null,
+          "text": "元吉，亨。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "鼎·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:50:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "元吉，亨。"
+        },
+        {
+          "id": "zy-50-tuan",
+          "hexagramId": 50,
+          "name": "鼎",
+          "section": "tuan",
+          "line": null,
+          "text": "鼎，象也。以木巽火，亨饪也。圣人亨以享上帝，而大亨以养圣贤。巽而耳目聪明，柔进而上行，得中而应乎刚，是以元亨。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+          "locator": "鼎·彖传",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:50:tuan"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "鼎，象也。以木巽火，亨饪也。圣人亨以享上帝，而大亨以养圣贤。巽而耳目聪明，柔进而上行，得中而应乎刚，是以元亨。"
+        },
+        {
+          "id": "zy-50-xiang",
+          "hexagramId": 50,
+          "name": "鼎",
+          "section": "xiang",
+          "line": null,
+          "text": "木上有火，鼎。君子以正位凝命。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "鼎·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:50:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "木上有火，鼎。君子以正位凝命。"
+        },
+        {
+          "id": "zy-50-line-1",
+          "hexagramId": 50,
+          "name": "鼎",
+          "section": "line",
+          "line": 1,
+          "text": "鼎颠趾，利出否；得妾以其子，无咎。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "鼎·初六",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:50:line:1"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "鼎颠趾，利出否；得妾以其子，无咎。"
+        },
+        {
+          "id": "zy-50-line_xiang-1",
+          "hexagramId": 50,
+          "name": "鼎",
+          "section": "line_xiang",
+          "line": 1,
+          "text": "“鼎颠趾”，未悖也；“利出否”，以从贵也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "鼎·初六小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:50:line_xiang:1"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“鼎颠趾”，未悖也；“利出否”，以从贵也。"
+        },
+        {
+          "id": "zy-14-judgment",
+          "hexagramId": 14,
+          "name": "大有",
+          "section": "judgment",
+          "line": null,
+          "text": "元亨。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "大有·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:14:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "元亨。"
+        },
+        {
+          "id": "zy-14-xiang",
+          "hexagramId": 14,
+          "name": "大有",
+          "section": "xiang",
+          "line": null,
+          "text": "火在天上，大有。君子以遏恶扬善，顺天休命。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "大有·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:14:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "火在天上，大有。君子以遏恶扬善，顺天休命。"
+        },
+        {
+          "id": "zhu-xi@528287:h4:line3:5e2050a509",
+          "hexagramId": 4,
+          "name": "蒙",
+          "section": "line",
+          "line": 3,
+          "text": "取七具反○六三隂柔不中不正女之見金夫而不能有其身之象也占者遇之則其取女必得如是之人无所利矣金夫蓋以金賂已而挑之若魯秋胡之為者",
+          "textOriginal": "取七具反○六三隂柔不中不正女之見金夫而不能有其身之象也占者遇之則其取女必得如是之人无所利矣金夫蓋以金賂已而挑之若魯秋胡之為者",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+          "locator": "《周易本義》·蒙·第3爻注",
+          "version": "ws-528287",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "zhouyi-benyi",
+          "workTitle": "周易本義",
+          "sourceId": "ws-528287",
+          "editionId": "ws-benyi-skqs",
+          "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "authorNames": [
+            "朱熹"
+          ],
+          "anchorIds": [
+            "zhouyi:04:line:3"
+          ],
+          "commentsOn": [
+            "zhouyi:04:line:3"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-528287.wiki",
+            "startLine": 16,
+            "endLine": 16,
+            "pageLabels": []
+          }
+        },
+        {
+          "id": "zy-4-line-3",
+          "hexagramId": 4,
+          "name": "蒙",
+          "section": "line",
+          "line": 3,
+          "text": "勿用取女，见金夫，不有躬，无攸利。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "蒙·六三",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:04:line:3"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "勿用取女，见金夫，不有躬，无攸利。"
+        },
+        {
+          "id": "zy-4-line_xiang-3",
+          "hexagramId": 4,
+          "name": "蒙",
+          "section": "line_xiang",
+          "line": 3,
+          "text": "“勿用取女”，行不顺也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "蒙·六三小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:04:line_xiang:3"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“勿用取女”，行不顺也。"
+        }
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "source_request",
+          "evidenceIds": [
+            "zy-50-judgment",
+            "zy-50-tuan",
+            "zy-50-xiang",
+            "zy-50-line-1",
+            "zy-50-line_xiang-1",
+            "zy-14-judgment",
+            "zy-14-xiang"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 1793,
+          "promptTokens": 2985,
+          "completionTokens": 352,
+          "totalTokens": 3337
+        },
+        {
+          "step": "tool",
+          "tool": "get_passages",
+          "args": {
+            "authorIds": [
+              "zhu-xi"
+            ],
+            "layers": [
+              "classic",
+              "commentary"
+            ],
+            "hexagramId": 4,
+            "sections": [
+              "line",
+              "line_xiang"
+            ],
+            "lineIndices": [
+              3
+            ]
+          },
+          "status": "ok",
+          "evidenceIds": [
+            "zhu-xi@528287:h4:line3:5e2050a509"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "hits": [
+            {
+              "passageId": "zhu-xi@528287:h4:line3:5e2050a509",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "coverageStatus": "partial",
+          "truncated": false,
+          "durationMs": 1
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 1374,
+          "promptTokens": 3646,
+          "completionTokens": 169,
+          "totalTokens": 3815
+        },
+        {
+          "step": "tool",
+          "tool": "get_passages",
+          "args": {
+            "layers": [
+              "classic"
+            ],
+            "hexagramId": 4,
+            "sections": [
+              "line",
+              "line_xiang"
+            ],
+            "lineIndices": [
+              3
+            ]
+          },
+          "status": "ok",
+          "evidenceIds": [
+            "zy-4-line-3",
+            "zy-4-line_xiang-3"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "hits": [
+            {
+              "passageId": "zy-4-line-3",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            },
+            {
+              "passageId": "zy-4-line_xiang-3",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "coverageStatus": "covered",
+          "truncated": false,
+          "durationMs": 1
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 1999,
+          "promptTokens": 4179,
+          "completionTokens": 112,
+          "totalTokens": 4291
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 24315,
+          "promptTokens": 752,
+          "completionTokens": 5783,
+          "totalTokens": 6535
+        },
+        {
+          "step": "validate",
+          "status": "passed",
+          "code": ""
+        }
+      ],
+      "status": "completed",
+      "model": "deepseek-flash",
+      "releaseId": "knowledge-v3-20260926-r1",
+      "checkpointThreadId": "python-graph-v17:83f645e5-eacd-4478-84ce-f66dc1d07fe9:1a6aa985-0ea7-46ac-bcbc-c76f69b97b6b",
+      "promptVersion": "evidence-agent-python-v16",
+      "graphVersion": "python-graph-v17",
+      "answer": {
+        "status": "answered",
+        "paragraphs": [
+          {
+            "text": "“见金夫，不有躬”出自《周易》蒙卦六三爻辞。完整原文是：“勿用取女，见金夫，不有躬，无攸利。”同爻小象说：“勿用取女”，行不顺也。",
+            "citations": [
+              {
+                "evidenceId": "zy-4-line-3",
+                "quote": "勿用取女，见金夫，不有躬，无攸利。",
+                "claim": "完整原文是：“勿用取女，见金夫，不有躬，无攸利。”"
+              },
+              {
+                "evidenceId": "zy-4-line_xiang-3",
+                "quote": "“勿用取女”，行不顺也。",
+                "claim": "同爻小象说：“勿用取女”，行不顺也。"
+              }
+            ]
+          },
+          {
+            "text": "朱熹在《周易本义》蒙卦六三注中解释：六三“隂柔不中不正”，是“女之見金夫而不能有其身之象也”；占者遇之，则其取女必得如是之人，无所利矣。他更明确说：“金夫蓋以金賂已而挑之若魯秋胡之為者。”因此，按朱熹，“金夫”不是泛指富有的丈夫，而是用金钱财物贿赂、挑逗女子的人；“不有躬”就是不能保有自身。",
+            "citations": [
+              {
+                "evidenceId": "zhu-xi@528287:h4:line3:5e2050a509",
+                "quote": "六三隂柔不中不正女之見金夫而不能有其身之象也",
+                "claim": "六三“隂柔不中不正”，是“女之見金夫而不能有其身之象也”"
+              },
+              {
+                "evidenceId": "zhu-xi@528287:h4:line3:5e2050a509",
+                "quote": "占者遇之則其取女必得如是之人无所利矣",
+                "claim": "占者遇之，则其取女必得如是之人，无所利矣。"
+              },
+              {
+                "evidenceId": "zhu-xi@528287:h4:line3:5e2050a509",
+                "quote": "金夫蓋以金賂已而挑之若魯秋胡之為者",
+                "claim": "他更明确说：“金夫蓋以金賂已而挑之若魯秋胡之為者。”"
+              },
+              {
+                "evidenceId": "zhu-xi@528287:h4:line3:5e2050a509",
+                "quote": "金夫蓋以金賂已而挑之若魯秋胡之為者",
+                "claim": "因此，按朱熹，“金夫”不是泛指富有的丈夫，而是用金钱财物贿赂、挑逗女子的人；“不有躬”就是不能保有自身。"
+              }
+            ]
+          }
+        ],
+        "limitations": []
+      },
+      "durationMs": 29697
+    }
+  ],
+  "createdAt": "2026-10-11T07:18:33.823018+00:00",
+  "releaseId": "knowledge-v3-20260926-r1"
+}

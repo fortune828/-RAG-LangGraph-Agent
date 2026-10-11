@@ -27,6 +27,21 @@ def named_hexagrams(question):
             ((g['name'].split('为')[0] if '为' in g['name'] else g['name'][2:]) + '卦') in question]
 
 
+def requests_classic_and_commentary(question):
+    """Recognize a separate request for the classic, not an author's own text.
+
+    The source location may still be unknown. In that case retain both layer
+    targets and let retrieval locate them; an empty precise-target list must not
+    silently turn a mixed question into an author-only question.
+    """
+    attribution_names = [name for catalog in (AUTHORS, WORKS) for names in catalog.values() for name in names]
+    clauses = re.split(r'[，,。；;？！?!]|以及|然后|再看|再给|和|与|及', question)
+    return any(re.search(r'原文|经文|經文|爻辞|爻辭|卦辞|卦辭', clause)
+               and not re.search(r'注解|注文|注释|注釋|不要|不用|无需|無需|不必', clause)
+               and not any(name in clause for name in attribution_names)
+               for clause in clauses)
+
+
 def requested_targets(question, cast):
     ids = named_hexagrams(question) or [cast['original']['number']]
     digits = dict(zip('一二三四五六123456', [1, 2, 3, 4, 5, 6] * 2))
@@ -60,7 +75,9 @@ def requested_targets(question, cast):
     annotations = [dict(t, layer='commentary', **({'authorId': a} if a else {}),
                         **({'workId': w} if w else {}))
                    for t in objects for a in authors or [None] for w in works or [None]]
-    return classic + annotations if re.search(r'原文.*(?:及|和|与|以及).*注|(?:原文|经文).*解释', question) else annotations
+    if requests_classic_and_commentary(question):
+        return (classic or [dict(hexagramId=h, layer='classic') for h in ids]) + annotations
+    return annotations
 
 
 def matches_target(e, t):
@@ -100,7 +117,58 @@ def asserted_names(text, catalog):
     return result
 
 
-def validate_answer(value, evidence, targets=(), require_citations=True, *, issues=None, quote_resolutions=None):
+def explicit_cast_errors(text, cast):
+    """Check only standalone affirmative cast facts against deterministic data.
+
+    This does not interpret arbitrary prose or the meaning of a line. Common
+    explicit quotations/questions/conditions are skipped; this is not exhaustive
+    linguistic recognition. Unrecognized statements are not certified as true.
+    """
+    aliases = {}
+    for hexagram in HEXAGRAMS.values():
+        short = hexagram['name'].split('为')[0] if '为' in hexagram['name'] else hexagram['name'][2:]
+        for name in (hexagram['name'], short, short + '卦'):
+            aliases[name] = hexagram['number']
+
+    def line_name(index, value):
+        polarity = '九' if value % 2 else '六'
+        return '初' + polarity if index == 0 else '上' + polarity if index == 5 else polarity + '二三四五'[index - 1]
+
+    moving = [line_name(i, cast['lines'][i]) for i in cast['changingIndices']]
+    line_pattern = r'初[九六]|[九六][二三四五]|上[九六]'
+    errors = []
+    # Removing quoted spans prevents a quoted incorrect assertion from becoming
+    # the assistant's own fact. It does not exempt adjacent unquoted assertions.
+    unquoted = re.sub(r"""“[^”]*”|‘[^’]*’|「[^」]*」|『[^』]*』|"[^"\n]*"|'[^'\n]*'""", '', text)
+    sentences = re.split(r'(?<=[。！？!?；;\n])', unquoted)
+    clauses = [clause for sentence in sentences
+               if not re.search(r'[？?]|如果|假如|假设|假設|倘若|若是', sentence)
+               for clause in re.split(r'[。；;，,\n]', sentence)]
+    for clause in clauses:
+        clause = clause.strip()
+        match = re.fullmatch(r'(本卦|变卦)(?:仍)?(?:是|为|：|:)\s*(.+)', clause)
+        if match and match[2] in aliases:
+            role = 'original' if match[1] == '本卦' else 'changed'
+            if aliases[match[2]] != cast[role]['number']:
+                errors.append(f"CAST_FACT_MISMATCH:{role}:expected={cast[role]['name']}")
+        if re.fullmatch(r'(?:本卦|本次|此卦)?(?:无动爻|没有动爻|为静卦|是静卦)', clause) and moving:
+            errors.append('CAST_FACT_MISMATCH:moving:expected=' + '、'.join(moving))
+        match = re.fullmatch(r'(?:本卦的?|本次的?)?动爻(?:是|为|：|:)\s*(.+)', clause)
+        if match:
+            names = re.split(r'\s*(?:、|和|与)\s*', match[1])
+            if all(re.fullmatch(line_pattern, name) for name in names) and set(names) != set(moving):
+                errors.append('CAST_FACT_MISMATCH:moving:expected=' + ('、'.join(moving) or '无动爻'))
+        match = re.fullmatch(r'(本卦|变卦)的?(初爻|上爻|第[一二三四五六1-6]爻)(?:是|为|：|:)\s*(' + line_pattern + ')', clause)
+        if match:
+            index = 0 if match[2] == '初爻' else 5 if match[2] == '上爻' else '一二三四五六123456'.index(match[2][1]) % 6
+            values = cast['lines'] if match[1] == '本卦' else [1 if v in (6, 7) else 0 for v in cast['lines']]
+            expected = line_name(index, values[index])
+            if match[3] != expected:
+                errors.append('CAST_FACT_MISMATCH:line:expected=' + expected)
+    return list(dict.fromkeys(errors))
+
+
+def validate_answer(value, evidence, targets=(), require_citations=True, *, issues=None, quote_resolutions=None, cast=None):
     try:
         answer = Answer.model_validate(value).model_dump()
     except ValidationError as exc:
@@ -132,6 +200,9 @@ def validate_answer(value, evidence, targets=(), require_citations=True, *, issu
             if not any(e['id'] in cited and matches_target(e, t) for e in evidence):
                 add(f'REQUIRED_TARGET_NOT_CITED:{t}', ('paragraphs',))
     for i, p in enumerate(answer['paragraphs']):
+        if cast is not None:
+            for error in explicit_cast_errors(p['text'], cast):
+                add(error, ('paragraphs', i, 'text'))
         for j, c in enumerate(p['citations']):
             path = ('paragraphs', i, 'citations', j)
             if c['claim'] not in p['text']:

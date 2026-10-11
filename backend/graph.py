@@ -17,7 +17,7 @@ from .llm import ModelError, deepseek_chat
 from .prompts import PROMPT_VERSION, ROUTER, SYSTEM, RISK_SYSTEM
 from .validation import AUTHORS, WORKS, fallback, matches_target, named_hexagrams, requested_targets, validate_answer
 
-GRAPH_VERSION = 'python-graph-v16'
+GRAPH_VERSION = 'python-graph-v18'
 
 
 class AgentState(TypedDict, total=False):
@@ -112,6 +112,16 @@ def evidence_scope(question, cast, intent):
     return sorted(set([cast['original']['number'], cast['changed']['number']] + named_hexagrams(question)))
 
 
+def source_evidence(state):
+    """Global discovery can use actual tool hits, not unrelated initial material."""
+    evidence = state['evidence']
+    if state.get('scope_ids', []) is None:
+        retrieved = {eid for event in state.get('trace', []) if event['step'] == 'tool'
+                     for eid in event.get('evidenceIds', [])}
+        return [e for e in evidence if e['id'] in retrieved]
+    return evidence
+
+
 def target_availability(state):
     """Corpus absence is established by exact metadata, never by a search miss.
 
@@ -123,12 +133,13 @@ def target_availability(state):
     known = {normalize_search(e.get('workTitle', '周易')) for e in corpus}
     known.update(normalize_search(n) for names in WORKS.values() for n in names)
     result = dict(available=[], retrievable=[], unavailable=[], unresolvedBooks=[b for b in books if normalize_search(b) not in known])
+    visible = source_evidence(state) if state.get('intent', 'source_request') == 'source_request' else state['evidence']
     for target in state['targets']:
         found = any(matches_target(e, target) for e in corpus)
         if not found:
             result['unavailable'].append(target)
         elif not result['unresolvedBooks']:
-            key = 'available' if any(matches_target(e, target) for e in state['evidence']) else 'retrievable'
+            key = 'available' if any(matches_target(e, target) for e in visible) else 'retrievable'
             result[key].append(target)
     return result
 
@@ -143,13 +154,10 @@ def generation_evidence(state):
         return state['evidence']
     if target_availability(state)['unresolvedBooks']:
         return []
+    evidence = source_evidence(state)
     if state['targets']:
-        return [e for e in state['evidence'] if any(matches_target(e, t) for t in state['targets'])]
-    if state['scope_ids'] is None:
-        retrieved = {eid for event in state['trace'] if event['step'] == 'tool'
-                     for eid in event.get('evidenceIds', [])}
-        return [e for e in state['evidence'] if e['id'] in retrieved]
-    return state['evidence']
+        return [e for e in evidence if any(matches_target(e, t) for t in state['targets'])]
+    return evidence
 
 
 def target_label(target):
@@ -172,7 +180,8 @@ def history(session):
     """Keep recent user corrections before spending the budget on assistant prose.
 
     Excerpts preserve both ends, including legacy limitations; they are not
-    summaries or user facts. Information outside the six-turn window is unknown.
+    summaries or user facts. User input survives a failed response, while that
+    response is never reused. Information outside the six-turn window is unknown.
     """
     def excerpt(text, limit):
         if len(text) <= limit:
@@ -183,10 +192,10 @@ def history(session):
         tail = room - head
         return text[:head] + marker + (text[-tail:] if tail else '')
 
-    turns = [t for t in session['turns'] if t['status'] == 'completed'][-6:]
+    turns = [t for t in session['turns'] if t['status'] in ('completed', 'failed')][-6:]
     texts, selected = [], []
     for turn in turns:
-        answer = turn.get('answer') or {}
+        answer = (turn.get('answer') or {}) if turn['status'] == 'completed' else {}
         text = '\n'.join([answer.get('summary', '')] +
                          [p['text'] for p in answer.get('paragraphs', [])] + answer.get('limitations', []))
         texts.append(text)
@@ -248,7 +257,7 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None, *, rout
         # its meaning forward without repeating citations; risk/handoff stays practical.
         requires = (state['mode'] == 'initial' and not practical_only) or bool(targets) or intent == 'source_request' or (
             intent == 'explanation_followup' and bool(re.search(r'卦|爻|彖|象传|象傳|古文|注解', question)))
-        partial = dict(state, intent=intent, evidence=evidence, targets=targets)
+        partial = dict(state, intent=intent, evidence=evidence, targets=targets, scope_ids=scope)
         availability = target_availability(partial)
         gaps = availability['retrievable']
         known_missing = bool(targets) and len(availability['unavailable']) == len(targets)
@@ -451,7 +460,8 @@ def build_graph(checkpointer, chat=deepseek_chat, interrupt_before=None, *, rout
             answer, errors = None, [state['generation_error']]
             issues.append(dict(code=state['generation_error'], path=[], reason='响应因长度上限截断，需要完整 JSON。'))
         else:
-            answer, errors = validate_answer(value, generation_evidence(state), state['targets'], state['require_citations'], issues=issues, quote_resolutions=resolutions)
+            answer, errors = validate_answer(value, generation_evidence(state), state['targets'], state['require_citations'], issues=issues, quote_resolutions=resolutions,
+                                             cast=state['session']['cast'])
         emit(dict(kind='validation', candidate=value, errors=errors, answer=answer,
                   issues=issues, quoteResolutions=resolutions, evidence=generation_evidence(state), repairNumber=state['repairs'],
                   **(dict(rawResponse=state['response'], generationError=state['generation_error']) if state.get('generation_error') else {})))

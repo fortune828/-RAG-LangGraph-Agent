@@ -1,0 +1,36 @@
+{
+  "graphVersion": "python-graph-v18",
+  "promptVersion": "evidence-agent-python-v16",
+  "python": {
+    "command": ".venv/bin/python -m pytest -q",
+    "passed": 375,
+    "exitCode": 0,
+    "seconds": 20.06,
+    "log": "verification/python-final.txt"
+  },
+  "typescript": {
+    "command": "npm test",
+    "passed": 41,
+    "exitCode": 0
+  },
+  "lint": {
+    "command": "npm run lint",
+    "exitCode": 0
+  },
+  "build": {
+    "command": "npm run build",
+    "exitCode": 0
+  },
+  "frontendNote": "Commands completed before final Python-only history change; frontend untouched afterward. Logs for these commands were console output, not saved files.",
+  "originalHumanScoresSha256": "02e67f7993c19966b712242b355d4b27075e95461e71ba13a57243d5fd40446f",
+  "originalHumanScoresUnchanged": true,
+  "finalBackendFreezeMatches": true,
+  "blankHumanScoreRows": {
+    "human-random": 6,
+    "human-random-v17": 18,
+    "blind-probe": 12,
+    "blind-diagnostic": 8,
+    "blind-history": 8
+  },
+  "mechanicalMeaning": "Tests validate contracts, not dialogue quality; AI and human judgement remain separate."
+}

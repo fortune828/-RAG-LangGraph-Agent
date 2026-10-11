@@ -1,0 +1,1214 @@
+{
+  "id": "03000d1d-b41d-418f-9ea0-e1db5ae6604b",
+  "question": "第一次去女朋友家吃饭，她家是广东人，我想带两盒茶叶，既体面又不太张扬。传统上有没有需要注意的礼数，到了门口该怎么说？",
+  "cast": {
+    "lines": [
+      8,
+      8,
+      7,
+      6,
+      9,
+      8
+    ],
+    "original": {
+      "binary": "001010",
+      "name": "水山蹇",
+      "number": 39,
+      "judgment": "利西南，不利东北；利见大人，贞吉。"
+    },
+    "changed": {
+      "binary": "001100",
+      "name": "雷山小过",
+      "number": 62,
+      "judgment": "亨，利贞，可小事，不可大事。飞鸟遗之音，不宜上宜下，大吉。"
+    },
+    "originalBinary": "001010",
+    "changedBinary": "001100",
+    "changingIndices": [
+      3,
+      4
+    ],
+    "id": "4a3c214b-0ca0-4799-8df4-3defcbe6093c",
+    "method": "three-coins",
+    "algorithmVersion": "coins-py-v1",
+    "readingPolicyVersion": "all-moving-lines-v1",
+    "coins": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    "createdAt": "2026-10-11T07:25:15.792864+00:00"
+  },
+  "turns": [
+    {
+      "id": "8fe25bd0-ee1d-4d24-b032-e805a505d0a0",
+      "question": "第一次去女朋友家吃饭，她家是广东人，我想带两盒茶叶，既体面又不太张扬。传统上有没有需要注意的礼数，到了门口该怎么说？",
+      "mode": "initial",
+      "createdAt": "2026-10-11T07:25:15.836040+00:00",
+      "evidence": [
+        {
+          "id": "zy-39-judgment",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "judgment",
+          "line": null,
+          "text": "利西南，不利东北；利见大人，贞吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "蹇·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "利西南，不利东北；利见大人，贞吉。"
+        },
+        {
+          "id": "zy-39-tuan",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "tuan",
+          "line": null,
+          "text": "蹇，难也，险在前也；见险而能止，知矣哉！“蹇，利西南”，往得中也；“不利东北”，其道穷也。“利见大人”，往有功也；当位“贞吉”，以正邦也。蹇之时用大矣哉！",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+          "locator": "蹇·彖传",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:tuan"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "蹇，难也，险在前也；见险而能止，知矣哉！“蹇，利西南”，往得中也；“不利东北”，其道穷也。“利见大人”，往有功也；当位“贞吉”，以正邦也。蹇之时用大矣哉！"
+        },
+        {
+          "id": "zy-39-xiang",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "xiang",
+          "line": null,
+          "text": "山上有水，蹇。君子以反身修德。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "蹇·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "山上有水，蹇。君子以反身修德。"
+        },
+        {
+          "id": "zy-39-line-4",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "line",
+          "line": 4,
+          "text": "往蹇，来连。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "蹇·六四",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:line:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "往蹇，来连。"
+        },
+        {
+          "id": "zy-39-line-5",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "line",
+          "line": 5,
+          "text": "大蹇，朋来。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "蹇·九五",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:line:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "大蹇，朋来。"
+        },
+        {
+          "id": "zy-39-line_xiang-4",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "line_xiang",
+          "line": 4,
+          "text": "“往蹇，来连”，当位实也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "蹇·六四小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:line_xiang:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“往蹇，来连”，当位实也。"
+        },
+        {
+          "id": "zy-39-line_xiang-5",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "line_xiang",
+          "line": 5,
+          "text": "“大蹇，朋来”，以中节也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "蹇·九五小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:line_xiang:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“大蹇，朋来”，以中节也。"
+        },
+        {
+          "id": "zy-62-judgment",
+          "hexagramId": 62,
+          "name": "小过",
+          "section": "judgment",
+          "line": null,
+          "text": "亨，利贞；可小事，不可大事；飞鸟遗之音，不宜上，宜下，大吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "小过·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:62:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "亨，利贞；可小事，不可大事；飞鸟遗之音，不宜上，宜下，大吉。"
+        },
+        {
+          "id": "zy-62-xiang",
+          "hexagramId": 62,
+          "name": "小过",
+          "section": "xiang",
+          "line": null,
+          "text": "山上有雷，小过。君子以行过乎恭，丧过乎哀，用过乎俭。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "小过·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:62:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "山上有雷，小过。君子以行过乎恭，丧过乎哀，用过乎俭。"
+        }
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "explanation_followup",
+          "evidenceIds": [
+            "zy-39-judgment",
+            "zy-39-tuan",
+            "zy-39-xiang",
+            "zy-39-line-4",
+            "zy-39-line-5",
+            "zy-39-line_xiang-4",
+            "zy-39-line_xiang-5",
+            "zy-62-judgment",
+            "zy-62-xiang"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "error",
+          "code": "MODEL_INCOMPLETE_RESPONSE",
+          "phase": "generate",
+          "durationMs": 36418,
+          "promptTokens": 1080,
+          "completionTokens": 8184,
+          "totalTokens": 9264,
+          "usage": {
+            "prompt_tokens": 1080,
+            "completion_tokens": 8184,
+            "total_tokens": 9264,
+            "prompt_tokens_details": {
+              "cached_tokens": 128
+            },
+            "completion_tokens_details": {
+              "reasoning_tokens": 6796
+            },
+            "prompt_cache_hit_tokens": 128,
+            "prompt_cache_miss_tokens": 952
+          }
+        },
+        {
+          "step": "validate",
+          "status": "failed",
+          "code": "MODEL_INCOMPLETE_RESPONSE"
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 6025,
+          "promptTokens": 2497,
+          "completionTokens": 1576,
+          "totalTokens": 4073
+        },
+        {
+          "step": "validate",
+          "status": "passed",
+          "code": ""
+        }
+      ],
+      "status": "completed",
+      "model": "deepseek-flash",
+      "releaseId": "knowledge-v3-20260926-r1",
+      "checkpointThreadId": "python-graph-v17:03000d1d-b41d-418f-9ea0-e1db5ae6604b:8fe25bd0-ee1d-4d24-b032-e805a505d0a0",
+      "promptVersion": "evidence-agent-python-v16",
+      "graphVersion": "python-graph-v17",
+      "answer": {
+        "status": "answered",
+        "paragraphs": [
+          {
+            "text": "第一次见家长，像水山蹇：蹇，难也，险在前也；见险而能止，知矣哉！所以别把这次吃饭当成表演或谈判，礼数上宁可先退半步、先问清楚。六四动爻是‘往蹇，来连’，硬往前冲会遇难，退回来借助女友连接、请她带路，才是当位。九五‘大蹇，朋来’，关键时候要靠‘朋’——也就是你女友的引荐和长辈的接纳，但须‘以中节也’，分寸要中正节制。",
+            "citations": [
+              {
+                "evidenceId": "zy-39-tuan",
+                "quote": "蹇，难也，险在前也；见险而能止，知矣哉！",
+                "claim": "第一次见家长，像水山蹇：蹇，难也，险在前也；见险而能止，知矣哉！"
+              },
+              {
+                "evidenceId": "zy-39-line-4",
+                "quote": "往蹇，来连。",
+                "claim": "六四动爻是‘往蹇，来连’，硬往前冲会遇难，退回来借助女友连接、请她带路，才是当位。"
+              },
+              {
+                "evidenceId": "zy-39-line-5",
+                "quote": "大蹇，朋来。",
+                "claim": "九五‘大蹇，朋来’，关键时候要靠‘朋’——也就是你女友的引荐和长辈的接纳，但须‘以中节也’，分寸要中正节制。"
+              },
+              {
+                "evidenceId": "zy-39-line_xiang-5",
+                "quote": "以中节也",
+                "claim": "九五‘大蹇，朋来’，关键时候要靠‘朋’——也就是你女友的引荐和长辈的接纳，但须‘以中节也’，分寸要中正节制。"
+              }
+            ]
+          },
+          {
+            "text": "具体到两盒茶叶，变卦小过说得很贴切：‘可小事，不可大事；飞鸟遗之音，不宜上，宜下，大吉。’第一次登门送礼是小事，不要办成大事；包装、价格、话题都宜下不宜上。小过大象又说‘君子以行过乎恭，丧过乎哀，用过乎俭’，恭敬可以稍过，花费和排场反而要俭。两盒茶本身合适，双数也稳；最好先问女友家里喝什么茶——广东常见普洱、铁观音、凤凰单丛、英德红茶，投其所好。包装选素雅纸盒或铁罐，别选烫金大礼盒，别留价签，发票收好。若对方不喝茶，茶叶仍可作体面伴手，但可配一点水果或点心；不必硬送烟酒。",
+            "citations": [
+              {
+                "evidenceId": "zy-62-judgment",
+                "quote": "可小事，不可大事；飞鸟遗之音，不宜上，宜下，大吉。",
+                "claim": "具体到两盒茶叶，变卦小过说得很贴切：‘可小事，不可大事；飞鸟遗之音，不宜上，宜下，大吉。’第一次登门送礼是小事，不要办成大事；包装、价格、话题都宜下不宜上。"
+              },
+              {
+                "evidenceId": "zy-62-xiang",
+                "quote": "君子以行过乎恭，丧过乎哀，用过乎俭。",
+                "claim": "小过大象又说‘君子以行过乎恭，丧过乎哀，用过乎俭’，恭敬可以稍过，花费和排场反而要俭。"
+              }
+            ]
+          },
+          {
+            "text": "到了门口，让女友走在前面半步，你随后。敲门或按铃后，开门先称呼，通常‘叔叔、阿姨好’最稳妥；若女友家习惯粤语，可跟女友先确认用‘世伯、伯母’还是‘叔叔、阿姨’。进门前的准备，也可以用‘君子以反身修德’来理解：先问清楚女友家里的称呼、饮茶和忌口，比临时硬撑更得体。话术宜短宜诚：‘叔叔、阿姨好，我是XX，第一次来拜访，小小茶叶，一点心意，给你们添麻烦了。’递茶时双手奉上，最好让女友接过去或你放在玄关/茶几上，说‘小小意思，不成敬意’。对方说‘来就来嘛，还带什么东西’，答‘应该的，小小意思’即可，不要争辩，更不要当场拆包装、报价格。蹇卦讲‘利见大人，贞吉’，这里‘大人’可理解为女友和长辈的引荐；你守正、知止，反而吉。",
+            "citations": [
+              {
+                "evidenceId": "zy-39-xiang",
+                "quote": "君子以反身修德。",
+                "claim": "进门前的准备，也可以用‘君子以反身修德’来理解：先问清楚女友家里的称呼、饮茶和忌口，比临时硬撑更得体。"
+              },
+              {
+                "evidenceId": "zy-39-judgment",
+                "quote": "利见大人，贞吉。",
+                "claim": "蹇卦讲‘利见大人，贞吉’，这里‘大人’可理解为女友和长辈的引荐；你守正、知止，反而吉。"
+              }
+            ]
+          },
+          {
+            "text": "入座后等长辈先坐、先动筷。若长辈给你倒茶，可用广东常见的叩指礼致谢：食指和中指轻叩桌面两三下；若你倒茶，先给长辈，茶倒七分满，壶嘴不要对着人。吃饭时少说多听，不翻菜、不吧唧嘴，离席说‘慢慢食’。可以夸阿姨菜好吃，但别夸张；被问工作家庭，如实简洁，不吹嘘也不自贬。要不要帮忙，问一句‘需要我帮忙吗’，被拒就安心坐着。六四小象说‘当位实也’，你把自己放在晚辈、客人的位置，礼数实在，就不容易出错。",
+            "citations": [
+              {
+                "evidenceId": "zy-39-line_xiang-4",
+                "quote": "当位实也",
+                "claim": "六四小象说‘当位实也’，你把自己放在晚辈、客人的位置，礼数实在，就不容易出错。"
+              }
+            ]
+          },
+          {
+            "text": "总体建议：带两盒素雅茶叶，先问女友家里偏好，不必张扬；进门称呼清楚、双手递上、话少而诚；席间恭敬、节制、勤道谢。蹇变小过，难在初次，解在‘宜下’与‘过恭、过俭’，这不是要你卑微，而是把姿态放低、把诚意放实。真正的不确定性在对方家庭的具体习惯：是否饮茶、是否讲究粤式称呼、有无忌口和宗教饮食禁忌，这些建议你出发前向女友逐项确认，不要凭猜测硬套。",
+            "citations": [
+              {
+                "evidenceId": "zy-62-judgment",
+                "quote": "不宜上，宜下",
+                "claim": "蹇变小过，难在初次，解在‘宜下’与‘过恭、过俭’，这不是要你卑微，而是把姿态放低、把诚意放实。"
+              },
+              {
+                "evidenceId": "zy-62-xiang",
+                "quote": "君子以行过乎恭，丧过乎哀，用过乎俭。",
+                "claim": "蹇变小过，难在初次，解在‘宜下’与‘过恭、过俭’，这不是要你卑微，而是把姿态放低、把诚意放实。"
+              }
+            ]
+          }
+        ],
+        "limitations": []
+      },
+      "durationMs": 42556
+    },
+    {
+      "id": "14acb5a8-0172-4946-83b3-4fb03c44151b",
+      "question": "女朋友说我记反了，爱喝茶的是她叔叔，她爸妈都不喝茶。她已经问过，两位喜欢新鲜水果，也没有忌口，我准备改成水果篮，预算三百以内。",
+      "mode": "followup",
+      "createdAt": "2026-10-11T07:25:58.485824+00:00",
+      "evidence": [
+        {
+          "id": "zy-39-judgment",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "judgment",
+          "line": null,
+          "text": "利西南，不利东北；利见大人，贞吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "蹇·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "利西南，不利东北；利见大人，贞吉。"
+        },
+        {
+          "id": "zy-39-tuan",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "tuan",
+          "line": null,
+          "text": "蹇，难也，险在前也；见险而能止，知矣哉！“蹇，利西南”，往得中也；“不利东北”，其道穷也。“利见大人”，往有功也；当位“贞吉”，以正邦也。蹇之时用大矣哉！",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+          "locator": "蹇·彖传",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:tuan"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "蹇，难也，险在前也；见险而能止，知矣哉！“蹇，利西南”，往得中也；“不利东北”，其道穷也。“利见大人”，往有功也；当位“贞吉”，以正邦也。蹇之时用大矣哉！"
+        },
+        {
+          "id": "zy-39-xiang",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "xiang",
+          "line": null,
+          "text": "山上有水，蹇。君子以反身修德。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "蹇·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "山上有水，蹇。君子以反身修德。"
+        },
+        {
+          "id": "zy-39-line-4",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "line",
+          "line": 4,
+          "text": "往蹇，来连。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "蹇·六四",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:line:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "往蹇，来连。"
+        },
+        {
+          "id": "zy-39-line-5",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "line",
+          "line": 5,
+          "text": "大蹇，朋来。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "蹇·九五",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:line:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "大蹇，朋来。"
+        },
+        {
+          "id": "zy-39-line_xiang-4",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "line_xiang",
+          "line": 4,
+          "text": "“往蹇，来连”，当位实也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "蹇·六四小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:line_xiang:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“往蹇，来连”，当位实也。"
+        },
+        {
+          "id": "zy-39-line_xiang-5",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "line_xiang",
+          "line": 5,
+          "text": "“大蹇，朋来”，以中节也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "蹇·九五小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:line_xiang:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“大蹇，朋来”，以中节也。"
+        },
+        {
+          "id": "zy-62-judgment",
+          "hexagramId": 62,
+          "name": "小过",
+          "section": "judgment",
+          "line": null,
+          "text": "亨，利贞；可小事，不可大事；飞鸟遗之音，不宜上，宜下，大吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "小过·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:62:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "亨，利贞；可小事，不可大事；飞鸟遗之音，不宜上，宜下，大吉。"
+        },
+        {
+          "id": "zy-62-xiang",
+          "hexagramId": 62,
+          "name": "小过",
+          "section": "xiang",
+          "line": null,
+          "text": "山上有雷，小过。君子以行过乎恭，丧过乎哀，用过乎俭。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "小过·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:62:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "山上有雷，小过。君子以行过乎恭，丧过乎哀，用过乎俭。"
+        }
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "situation_followup",
+          "evidenceIds": [
+            "zy-39-judgment",
+            "zy-39-tuan",
+            "zy-39-xiang",
+            "zy-39-line-4",
+            "zy-39-line-5",
+            "zy-39-line_xiang-4",
+            "zy-39-line_xiang-5",
+            "zy-62-judgment",
+            "zy-62-xiang"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 2337,
+          "promptTokens": 4116,
+          "completionTokens": 340,
+          "totalTokens": 4456
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 27509,
+          "promptTokens": 1943,
+          "completionTokens": 6055,
+          "totalTokens": 7998
+        },
+        {
+          "step": "validate",
+          "status": "passed",
+          "code": ""
+        }
+      ],
+      "status": "completed",
+      "model": "deepseek-flash",
+      "releaseId": "knowledge-v3-20260926-r1",
+      "checkpointThreadId": "python-graph-v17:03000d1d-b41d-418f-9ea0-e1db5ae6604b:14acb5a8-0172-4946-83b3-4fb03c44151b",
+      "promptVersion": "evidence-agent-python-v16",
+      "graphVersion": "python-graph-v17",
+      "answer": {
+        "status": "answered",
+        "paragraphs": [
+          {
+            "text": "你这次把茶叶改成水果篮，方向是对的：女友已经确认父母不喝茶、喜欢新鲜水果、没有忌口，这比硬送两盒茶更贴人。蹇·彖传说“见险而能止，知矣哉”，先问清楚再行动，正合此意；六四说“往蹇，来连”，意思是硬闯会难，退回来借助女友这条连接更稳；九五“大蹇，朋来”与小象“以中节也”也提示，关键靠女友引荐，分寸要节制。",
+            "citations": [
+              {
+                "evidenceId": "zy-39-tuan",
+                "quote": "见险而能止，知矣哉！",
+                "claim": "见险而能止，知矣哉"
+              },
+              {
+                "evidenceId": "zy-39-line-4",
+                "quote": "往蹇，来连。",
+                "claim": "往蹇，来连"
+              },
+              {
+                "evidenceId": "zy-39-line-5",
+                "quote": "大蹇，朋来。",
+                "claim": "大蹇，朋来"
+              },
+              {
+                "evidenceId": "zy-39-line_xiang-5",
+                "quote": "以中节也",
+                "claim": "以中节也"
+              }
+            ]
+          },
+          {
+            "text": "具体礼物，水果篮为主即可，不必再带两盒茶叶；叔叔爱喝茶是另一条信息，除非他同席或同住，且女友建议，否则不宜临时改回茶礼。三百以内选当季、新鲜、完整的水果，数量成双，可选苹果、橙、火龙果、葡萄、柚子等有平安吉利意头者，避免梨等谐音不吉和破损过熟；包装素雅，不留价签。这些水果寓意、数量成双多属民俗，地方有差异，可先问女友家习惯。小过卦辞说“可小事，不可大事；飞鸟遗之音，不宜上，宜下，大吉”，这次登门送礼就是小事，宜下不宜上；大象又说“君子以行过乎恭，丧过乎哀，用过乎俭”，恭敬可稍过，花费反而要俭。",
+            "citations": [
+              {
+                "evidenceId": "zy-62-judgment",
+                "quote": "可小事，不可大事；飞鸟遗之音，不宜上，宜下，大吉。",
+                "claim": "可小事，不可大事；飞鸟遗之音，不宜上，宜下，大吉"
+              },
+              {
+                "evidenceId": "zy-62-xiang",
+                "quote": "君子以行过乎恭，丧过乎哀，用过乎俭",
+                "claim": "君子以行过乎恭，丧过乎哀，用过乎俭"
+              }
+            ]
+          },
+          {
+            "text": "到了门口，让女友走在前面半步，你随后；开门先称呼“叔叔、阿姨好”，若她家用粤语习惯，先问女友是“世伯、伯母”还是“叔叔、阿姨”。递水果篮时双手奉上，最好请女友接过去，或你放在玄关、茶几上，说：“叔叔、阿姨好，我是XX，第一次来拜访，带了点水果，一点心意，添麻烦了。”对方若说“来就来嘛，还带什么东西”，答“应该的，小小意思”即可，不要争辩、不要当场拆包装、不要报价。蹇卦辞讲“利见大人，贞吉”，在这里可理解为守正、借女友和长辈的引荐，别自己硬撑；六四小象说“当位实也”，就是把自己放在晚辈、客人的位置，礼数实在。",
+            "citations": [
+              {
+                "evidenceId": "zy-39-judgment",
+                "quote": "利见大人，贞吉。",
+                "claim": "利见大人，贞吉"
+              },
+              {
+                "evidenceId": "zy-39-line_xiang-4",
+                "quote": "当位实也",
+                "claim": "当位实也"
+              }
+            ]
+          },
+          {
+            "text": "入座后等长辈先坐、先动筷；若长辈给你倒茶，可礼貌道谢，广东常见叩指礼可轻叩桌面致谢，但父母不喝茶就不必硬套茶礼；你倒茶则先长辈、七分满、壶嘴不对人，叩指礼也属民俗，可跟女友确认。吃饭少说多听，不翻菜、不吧唧嘴，离席说“慢慢食”；可夸阿姨菜好吃，但别夸张。要不要帮忙，问一句“需要我帮忙吗”，被拒就安心坐着。蹇·大象说“君子以反身修德”，放这里就是先向女友核实水果品种偏好、称呼、叔叔是否同席、水果篮由谁接，而不是凭猜测硬套。总体看，改水果篮比两盒茶叶更合适：既照顾父母喜好，又符合预算和“宜下”“用过乎俭”的分寸；唯一要确认的是她家对水果篮包装、品种和称呼的具体习惯。",
+            "citations": [
+              {
+                "evidenceId": "zy-39-xiang",
+                "quote": "君子以反身修德",
+                "claim": "君子以反身修德"
+              }
+            ]
+          }
+        ],
+        "limitations": []
+      },
+      "durationMs": 29950
+    },
+    {
+      "id": "1b919cfd-8a6f-43c9-a59f-0184288de840",
+      "question": "水果篮已经买好了，她也看过说合适。你帮我把进门递礼物、吃饭时回应夸奖、临走道谢各写一句自然的话吧，别再让我补买东西了。",
+      "mode": "followup",
+      "createdAt": "2026-10-11T07:26:28.537518+00:00",
+      "evidence": [
+        {
+          "id": "zy-39-judgment",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "judgment",
+          "line": null,
+          "text": "利西南，不利东北；利见大人，贞吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "蹇·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "利西南，不利东北；利见大人，贞吉。"
+        },
+        {
+          "id": "zy-39-tuan",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "tuan",
+          "line": null,
+          "text": "蹇，难也，险在前也；见险而能止，知矣哉！“蹇，利西南”，往得中也；“不利东北”，其道穷也。“利见大人”，往有功也；当位“贞吉”，以正邦也。蹇之时用大矣哉！",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+          "locator": "蹇·彖传",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:tuan"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "蹇，难也，险在前也；见险而能止，知矣哉！“蹇，利西南”，往得中也；“不利东北”，其道穷也。“利见大人”，往有功也；当位“贞吉”，以正邦也。蹇之时用大矣哉！"
+        },
+        {
+          "id": "zy-39-xiang",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "xiang",
+          "line": null,
+          "text": "山上有水，蹇。君子以反身修德。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "蹇·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "山上有水，蹇。君子以反身修德。"
+        },
+        {
+          "id": "zy-39-line-4",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "line",
+          "line": 4,
+          "text": "往蹇，来连。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "蹇·六四",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:line:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "往蹇，来连。"
+        },
+        {
+          "id": "zy-39-line-5",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "line",
+          "line": 5,
+          "text": "大蹇，朋来。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "蹇·九五",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:line:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "大蹇，朋来。"
+        },
+        {
+          "id": "zy-39-line_xiang-4",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "line_xiang",
+          "line": 4,
+          "text": "“往蹇，来连”，当位实也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "蹇·六四小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:line_xiang:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“往蹇，来连”，当位实也。"
+        },
+        {
+          "id": "zy-39-line_xiang-5",
+          "hexagramId": 39,
+          "name": "蹇",
+          "section": "line_xiang",
+          "line": 5,
+          "text": "“大蹇，朋来”，以中节也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "蹇·九五小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:39:line_xiang:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“大蹇，朋来”，以中节也。"
+        },
+        {
+          "id": "zy-62-judgment",
+          "hexagramId": 62,
+          "name": "小过",
+          "section": "judgment",
+          "line": null,
+          "text": "亨，利贞；可小事，不可大事；飞鸟遗之音，不宜上，宜下，大吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "小过·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:62:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "亨，利贞；可小事，不可大事；飞鸟遗之音，不宜上，宜下，大吉。"
+        },
+        {
+          "id": "zy-62-xiang",
+          "hexagramId": 62,
+          "name": "小过",
+          "section": "xiang",
+          "line": null,
+          "text": "山上有雷，小过。君子以行过乎恭，丧过乎哀，用过乎俭。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "小过·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:62:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "山上有雷，小过。君子以行过乎恭，丧过乎哀，用过乎俭。"
+        }
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "situation_followup",
+          "evidenceIds": [
+            "zy-39-judgment",
+            "zy-39-tuan",
+            "zy-39-xiang",
+            "zy-39-line-4",
+            "zy-39-line-5",
+            "zy-39-line_xiang-4",
+            "zy-39-line_xiang-5",
+            "zy-62-judgment",
+            "zy-62-xiang"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 1614,
+          "promptTokens": 4876,
+          "completionTokens": 166,
+          "totalTokens": 5042
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 23813,
+          "promptTokens": 2703,
+          "completionTokens": 5220,
+          "totalTokens": 7923
+        },
+        {
+          "step": "validate",
+          "status": "passed",
+          "code": ""
+        }
+      ],
+      "status": "completed",
+      "model": "deepseek-flash",
+      "releaseId": "knowledge-v3-20260926-r1",
+      "checkpointThreadId": "python-graph-v17:03000d1d-b41d-418f-9ea0-e1db5ae6604b:1b919cfd-8a6f-43c9-a59f-0184288de840",
+      "promptVersion": "evidence-agent-python-v16",
+      "graphVersion": "python-graph-v17",
+      "answer": {
+        "status": "answered",
+        "paragraphs": [
+          {
+            "text": "不用再补买东西，水果篮她看过合适就按原样。蹇变小过，第一次登门吃饭是小事，宜下不宜上：可小事，不可大事；飞鸟遗之音，不宜上，宜下，大吉。过程里让女友引你进门，是往蹇，来连；长辈愿意接纳，是大蹇，朋来；分寸拿稳，是以中节也。下面三句你直接按场合说，称呼按她家习惯替换即可。",
+            "citations": [
+              {
+                "evidenceId": "zy-62-judgment",
+                "quote": "可小事，不可大事；飞鸟遗之音，不宜上，宜下，大吉。",
+                "claim": "可小事，不可大事；飞鸟遗之音，不宜上，宜下，大吉。"
+              },
+              {
+                "evidenceId": "zy-39-line-4",
+                "quote": "往蹇，来连。",
+                "claim": "往蹇，来连"
+              },
+              {
+                "evidenceId": "zy-39-line-5",
+                "quote": "大蹇，朋来。",
+                "claim": "大蹇，朋来"
+              },
+              {
+                "evidenceId": "zy-39-line_xiang-5",
+                "quote": "以中节也",
+                "claim": "以中节也"
+              }
+            ]
+          },
+          {
+            "text": "进门递礼物，双手递上，或请女友接过去放玄关/茶几，说：‘叔叔、阿姨好，我是XX，第一次来拜访，带了点水果，一点心意，添麻烦了。’对方若说‘来就来嘛，还带什么东西’，只答‘应该的，小小意思’。这合蹇卦利见大人，贞吉——守正、借女友和长辈的引荐，不争辩、不拆包装、不报价。",
+            "citations": [
+              {
+                "evidenceId": "zy-39-judgment",
+                "quote": "利见大人，贞吉",
+                "claim": "利见大人，贞吉"
+              }
+            ]
+          },
+          {
+            "text": "吃饭时回应夸奖，若阿姨夸你懂事、水果选得好，或说菜不好，一句就够：‘阿姨您太客气了，应该的；菜做得真好，我今天有口福了。’小过大象讲君子以行过乎恭，丧过乎哀，用过乎俭，所以恭敬可以稍过，但别把礼物、工作或自己说大；顺势多听、多道谢就好。",
+            "citations": [
+              {
+                "evidenceId": "zy-62-xiang",
+                "quote": "君子以行过乎恭，丧过乎哀，用过乎俭",
+                "claim": "君子以行过乎恭，丧过乎哀，用过乎俭"
+              }
+            ]
+          },
+          {
+            "text": "临走道谢，起身对叔叔阿姨说：‘谢谢叔叔阿姨今天的招待，菜很好吃，你们留步，不用送，我下次再来拜访。’说完再向女友确认是否要等她一起走。收尾以中节也，不拖长、不客套过头，礼数就实在。",
+            "citations": [
+              {
+                "evidenceId": "zy-39-line_xiang-5",
+                "quote": "以中节也",
+                "claim": "以中节也"
+              }
+            ]
+          }
+        ],
+        "limitations": []
+      },
+      "durationMs": 25530
+    }
+  ],
+  "createdAt": "2026-10-11T07:25:15.792884+00:00",
+  "releaseId": "knowledge-v3-20260926-r1"
+}

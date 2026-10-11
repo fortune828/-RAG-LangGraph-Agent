@@ -1,0 +1,1466 @@
+{
+  "id": "e5e32d68-b267-4d71-84ec-49502cc6ef9e",
+  "question": "今天中午想吃点热乎的，我只有半小时，吃什么省事？",
+  "cast": {
+    "lines": [
+      8,
+      8,
+      9,
+      6,
+      8,
+      8
+    ],
+    "original": {
+      "binary": "001000",
+      "name": "地山谦",
+      "number": 15,
+      "judgment": "亨，君子有终。"
+    },
+    "changed": {
+      "binary": "000100",
+      "name": "雷地豫",
+      "number": 16,
+      "judgment": "利建侯行师。"
+    },
+    "originalBinary": "001000",
+    "changedBinary": "000100",
+    "changingIndices": [
+      2,
+      3
+    ],
+    "id": "51f42783-c3af-407f-9bc8-6050a0e0f72b",
+    "method": "three-coins",
+    "algorithmVersion": "coins-py-v1",
+    "readingPolicyVersion": "all-moving-lines-v1",
+    "coins": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    "createdAt": "2026-10-11T07:29:04.732978+00:00"
+  },
+  "turns": [
+    {
+      "id": "53306caf-bdb3-4a7b-a736-bf84c792d1d7",
+      "question": "今天中午想吃点热乎的，我只有半小时，吃什么省事？",
+      "mode": "initial",
+      "createdAt": "2026-10-11T07:29:04.748435+00:00",
+      "evidence": [
+        {
+          "id": "zy-15-judgment",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "judgment",
+          "line": null,
+          "text": "亨，君子有终。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "谦·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "亨，君子有终。"
+        },
+        {
+          "id": "zy-15-tuan",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "tuan",
+          "line": null,
+          "text": "“谦，亨”，天道下济而光明，地道卑而上行。天道亏盈而益谦，地道变盈而流谦，鬼神害盈而福谦，人道恶盈而好谦。谦尊而光，卑而不可逾，君子之终也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+          "locator": "谦·彖传",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:tuan"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“谦，亨”，天道下济而光明，地道卑而上行。天道亏盈而益谦，地道变盈而流谦，鬼神害盈而福谦，人道恶盈而好谦。谦尊而光，卑而不可逾，君子之终也。"
+        },
+        {
+          "id": "zy-15-xiang",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "xiang",
+          "line": null,
+          "text": "地中有山，谦。君子以裒多益寡，称物平施。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "谦·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "地中有山，谦。君子以裒多益寡，称物平施。"
+        },
+        {
+          "id": "zy-15-line-3",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line",
+          "line": 3,
+          "text": "劳谦，君子有终，吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "谦·九三",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:line:3"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "劳谦，君子有终，吉。"
+        },
+        {
+          "id": "zy-15-line-4",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line",
+          "line": 4,
+          "text": "无不利，撝谦。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "谦·六四",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:line:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "无不利，撝谦。"
+        },
+        {
+          "id": "zy-15-line_xiang-3",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line_xiang",
+          "line": 3,
+          "text": "“劳谦君子”，万民服也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "谦·九三小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:line_xiang:3"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“劳谦君子”，万民服也。"
+        },
+        {
+          "id": "zy-15-line_xiang-4",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line_xiang",
+          "line": 4,
+          "text": "“无不利，撝谦”，不违则也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "谦·六四小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:line_xiang:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“无不利，撝谦”，不违则也。"
+        },
+        {
+          "id": "zy-16-judgment",
+          "hexagramId": 16,
+          "name": "豫",
+          "section": "judgment",
+          "line": null,
+          "text": "利建侯，行师。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "豫·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:16:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "利建侯，行师。"
+        },
+        {
+          "id": "zy-16-xiang",
+          "hexagramId": 16,
+          "name": "豫",
+          "section": "xiang",
+          "line": null,
+          "text": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "豫·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:16:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。"
+        },
+        {
+          "id": "wang-bi@2000726:h15:line3:773eb08258",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line",
+          "line": 3,
+          "text": "處下體之極，履得其位，上下無陽以分其民，眾陰所宗，尊莫先焉。居謙之世，何可安尊？上承下接，勞謙匪解，是以吉也。",
+          "textOriginal": "處下體之極，履得其位，上下無陽以分其民，眾陰所宗，尊莫先焉。居謙之世，何可安尊？上承下接，勞謙匪解，是以吉也。",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E8%AC%99&oldid=2000726",
+          "locator": "《周易正義》·谦·第3爻注",
+          "version": "ws-2000726",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "zhouyi-zhengyi",
+          "workTitle": "周易正義",
+          "sourceId": "ws-2000726",
+          "editionId": "ws-zhouyi-zhengyi",
+          "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+          "authorIds": [
+            "wang-bi"
+          ],
+          "authorNames": [
+            "王弼"
+          ],
+          "anchorIds": [
+            "zhouyi:15:line:3"
+          ],
+          "commentsOn": [
+            "zhouyi:15:line:3"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-2000726.wiki",
+            "startLine": 43,
+            "endLine": 43,
+            "pageLabels": []
+          }
+        },
+        {
+          "id": "cheng-yi@1313743:h15:line3:3d9184f339",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line",
+          "line": 3,
+          "text": "三以陽剛之德而居下體，為眾陰所宗，履得其位，為下之上，是上為君所任，下為眾所從，有功勞而持謙德者也，故曰勞謙。古之人有當之者，周公是也。身當天下之大任，上奉幼弱之主，謙恭自牧，夔夔如畏然，可謂有勞而能謙矣。既能勞謙，又須君子行之有終，則吉。夫樂高喜勝，人之常情。平時能謙，固已鮮矣，況有功勞可尊乎？雖使知謙之善，勉而為之，若矜負之心不忘，則不能常久，欲其有終，不可得也。唯君子安履謙順，乃其常行，故久而不變，乃所謂有終，有終則吉也。九三以剛居正，能終者也。此爻之德最盛，故象辭特重。",
+          "textOriginal": "三以陽剛之德而居下體，為眾陰所宗，履得其位，為下之上，是上為君所任，下為眾所從，有功勞而持謙德者也，故曰勞謙。古之人有當之者，周公是也。身當天下之大任，上奉幼弱之主，謙恭自牧，夔夔如畏然，可謂有勞而能謙矣。既能勞謙，又須君子行之有終，則吉。夫樂高喜勝，人之常情。平時能謙，固已鮮矣，況有功勞可尊乎？雖使知謙之善，勉而為之，若矜負之心不忘，則不能常久，欲其有終，不可得也。唯君子安履謙順，乃其常行，故久而不變，乃所謂有終，有終則吉也。九三以剛居正，能終者也。此爻之德最盛，故象辭特重。",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3&oldid=1313743",
+          "locator": "《伊川易傳》·谦·第3爻注",
+          "version": "ws-1313743",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "yichuan-yizhuan",
+          "workTitle": "伊川易傳",
+          "sourceId": "ws-1313743",
+          "editionId": "ws-yichuan-yizhuan",
+          "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "authorNames": [
+            "程颐"
+          ],
+          "anchorIds": [
+            "zhouyi:15:line:3"
+          ],
+          "commentsOn": [
+            "zhouyi:15:line:3"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-1313743.wiki",
+            "startLine": 355,
+            "endLine": 355,
+            "pageLabels": []
+          }
+        },
+        {
+          "id": "zhu-xi@528287:h15:line3:10fb9a839d",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line",
+          "line": 3,
+          "text": "卦唯一陽居下之上剛而得正上下所歸有功勞而能謙尤人所難故有終而吉占者如是則如其應矣",
+          "textOriginal": "卦唯一陽居下之上剛而得正上下所歸有功勞而能謙尤人所難故有終而吉占者如是則如其應矣",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+          "locator": "《周易本義》·谦·第3爻注",
+          "version": "ws-528287",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "zhouyi-benyi",
+          "workTitle": "周易本義",
+          "sourceId": "ws-528287",
+          "editionId": "ws-benyi-skqs",
+          "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "authorNames": [
+            "朱熹"
+          ],
+          "anchorIds": [
+            "zhouyi:15:line:3"
+          ],
+          "commentsOn": [
+            "zhouyi:15:line:3"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-528287.wiki",
+            "startLine": 38,
+            "endLine": 38,
+            "pageLabels": []
+          }
+        }
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "explanation_followup",
+          "evidenceIds": [
+            "zy-15-judgment",
+            "zy-15-tuan",
+            "zy-15-xiang",
+            "zy-15-line-3",
+            "zy-15-line-4",
+            "zy-15-line_xiang-3",
+            "zy-15-line_xiang-4",
+            "zy-16-judgment",
+            "zy-16-xiang",
+            "wang-bi@2000726:h15:line3:773eb08258",
+            "cheng-yi@1313743:h15:line3:3d9184f339",
+            "zhu-xi@528287:h15:line3:10fb9a839d"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 23973,
+          "promptTokens": 1491,
+          "completionTokens": 4945,
+          "totalTokens": 6436
+        },
+        {
+          "step": "validate",
+          "status": "passed",
+          "code": ""
+        }
+      ],
+      "status": "completed",
+      "model": "deepseek-flash",
+      "releaseId": "knowledge-v3-20260926-r1",
+      "checkpointThreadId": "python-graph-v18:e5e32d68-b267-4d71-84ec-49502cc6ef9e:53306caf-bdb3-4a7b-a736-bf84c792d1d7",
+      "promptVersion": "evidence-agent-python-v16",
+      "graphVersion": "python-graph-v18",
+      "answer": {
+        "status": "answered",
+        "paragraphs": [
+          {
+            "text": "这一问虽小，谦卦的指向倒是清楚。得地山谦，三、四两爻动，变为雷地豫。谦是山藏于地之下，九三一阳居下卦之上，爻辞说“劳谦，君子有终，吉”——该动手的地方省不掉，但也不必加码，做完就吉。朱熹注此爻：“有功勞而能謙尤人所難故有終而吉”，重点在肯下厨而不逞强：半小时里能成的，是老实的一件事，不是逞能的一桌菜。",
+            "citations": [
+              {
+                "evidenceId": "zy-15-line-3",
+                "quote": "劳谦，君子有终，吉",
+                "claim": "该动手的地方省不掉，但也不必加码"
+              },
+              {
+                "evidenceId": "zhu-xi@528287:h15:line3:10fb9a839d",
+                "quote": "有功勞而能謙尤人所難故有終而吉",
+                "claim": "重点在肯下厨而不逞强"
+              }
+            ]
+          },
+          {
+            "text": "吃什么，可以按谦卦大象说的“裒多益寡，称物平施”来定：把多余的做法减掉，把该补的补足，按手头现有的东西等量安排。半小时最稳的路线是一口锅——烧水或热高汤，丢青菜、鸡蛋、冻丸子或熟肉，下面条或倒隔夜饭，盐和酱油调味，三到八分钟出锅。反向不划算的是现炖、现和面、多锅并用，那些都属于“益多”，不是“裒多”。前提是冰箱里得有能直接下锅的东西；若连鸡蛋菜叶挂面都没有，这半小时只够出门买一碗热汤面或粥。",
+            "citations": [
+              {
+                "evidenceId": "zy-15-xiang",
+                "quote": "裒多益寡，称物平施",
+                "claim": "把多余的做法减掉，把该补的补足，按手头现有的东西等量安排"
+              }
+            ]
+          },
+          {
+            "text": "六四动而“撝谦”，爻辞作“无不利，撝谦”——顺着上面那条常规路线走，别中途改主意，就无不利。变卦是豫，大象说“雷出地奋”，取的是热气从下奋起、动起来的样子，正合你要的那口热乎。",
+            "citations": [
+              {
+                "evidenceId": "zy-15-line-4",
+                "quote": "无不利，撝谦",
+                "claim": "顺着上面那条常规路线走，别中途改主意"
+              },
+              {
+                "evidenceId": "zy-16-xiang",
+                "quote": "雷出地奋",
+                "claim": "取的是热气从下奋起、动起来的样子"
+              }
+            ]
+          }
+        ],
+        "limitations": []
+      },
+      "durationMs": 24112
+    },
+    {
+      "id": "80e9ebbc-0f28-4eb5-b60b-597f51b3a2ae",
+      "question": "我看错排班了，今天有一小时，预算也不用纠结。我主要是不想排队。",
+      "mode": "followup",
+      "createdAt": "2026-10-11T07:29:28.909655+00:00",
+      "evidence": [
+        {
+          "id": "zy-15-judgment",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "judgment",
+          "line": null,
+          "text": "亨，君子有终。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "谦·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "亨，君子有终。"
+        },
+        {
+          "id": "zy-15-tuan",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "tuan",
+          "line": null,
+          "text": "“谦，亨”，天道下济而光明，地道卑而上行。天道亏盈而益谦，地道变盈而流谦，鬼神害盈而福谦，人道恶盈而好谦。谦尊而光，卑而不可逾，君子之终也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+          "locator": "谦·彖传",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:tuan"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“谦，亨”，天道下济而光明，地道卑而上行。天道亏盈而益谦，地道变盈而流谦，鬼神害盈而福谦，人道恶盈而好谦。谦尊而光，卑而不可逾，君子之终也。"
+        },
+        {
+          "id": "zy-15-xiang",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "xiang",
+          "line": null,
+          "text": "地中有山，谦。君子以裒多益寡，称物平施。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "谦·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "地中有山，谦。君子以裒多益寡，称物平施。"
+        },
+        {
+          "id": "zy-15-line-3",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line",
+          "line": 3,
+          "text": "劳谦，君子有终，吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "谦·九三",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:line:3"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "劳谦，君子有终，吉。"
+        },
+        {
+          "id": "zy-15-line-4",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line",
+          "line": 4,
+          "text": "无不利，撝谦。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "谦·六四",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:line:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "无不利，撝谦。"
+        },
+        {
+          "id": "zy-15-line_xiang-3",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line_xiang",
+          "line": 3,
+          "text": "“劳谦君子”，万民服也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "谦·九三小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:line_xiang:3"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“劳谦君子”，万民服也。"
+        },
+        {
+          "id": "zy-15-line_xiang-4",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line_xiang",
+          "line": 4,
+          "text": "“无不利，撝谦”，不违则也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "谦·六四小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:line_xiang:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“无不利，撝谦”，不违则也。"
+        },
+        {
+          "id": "zy-16-judgment",
+          "hexagramId": 16,
+          "name": "豫",
+          "section": "judgment",
+          "line": null,
+          "text": "利建侯，行师。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "豫·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:16:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "利建侯，行师。"
+        },
+        {
+          "id": "zy-16-xiang",
+          "hexagramId": 16,
+          "name": "豫",
+          "section": "xiang",
+          "line": null,
+          "text": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "豫·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:16:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。"
+        },
+        {
+          "id": "wang-bi@2000726:h15:line3:773eb08258",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line",
+          "line": 3,
+          "text": "處下體之極，履得其位，上下無陽以分其民，眾陰所宗，尊莫先焉。居謙之世，何可安尊？上承下接，勞謙匪解，是以吉也。",
+          "textOriginal": "處下體之極，履得其位，上下無陽以分其民，眾陰所宗，尊莫先焉。居謙之世，何可安尊？上承下接，勞謙匪解，是以吉也。",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E8%AC%99&oldid=2000726",
+          "locator": "《周易正義》·谦·第3爻注",
+          "version": "ws-2000726",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "zhouyi-zhengyi",
+          "workTitle": "周易正義",
+          "sourceId": "ws-2000726",
+          "editionId": "ws-zhouyi-zhengyi",
+          "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+          "authorIds": [
+            "wang-bi"
+          ],
+          "authorNames": [
+            "王弼"
+          ],
+          "anchorIds": [
+            "zhouyi:15:line:3"
+          ],
+          "commentsOn": [
+            "zhouyi:15:line:3"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-2000726.wiki",
+            "startLine": 43,
+            "endLine": 43,
+            "pageLabels": []
+          }
+        },
+        {
+          "id": "cheng-yi@1313743:h15:line3:3d9184f339",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line",
+          "line": 3,
+          "text": "三以陽剛之德而居下體，為眾陰所宗，履得其位，為下之上，是上為君所任，下為眾所從，有功勞而持謙德者也，故曰勞謙。古之人有當之者，周公是也。身當天下之大任，上奉幼弱之主，謙恭自牧，夔夔如畏然，可謂有勞而能謙矣。既能勞謙，又須君子行之有終，則吉。夫樂高喜勝，人之常情。平時能謙，固已鮮矣，況有功勞可尊乎？雖使知謙之善，勉而為之，若矜負之心不忘，則不能常久，欲其有終，不可得也。唯君子安履謙順，乃其常行，故久而不變，乃所謂有終，有終則吉也。九三以剛居正，能終者也。此爻之德最盛，故象辭特重。",
+          "textOriginal": "三以陽剛之德而居下體，為眾陰所宗，履得其位，為下之上，是上為君所任，下為眾所從，有功勞而持謙德者也，故曰勞謙。古之人有當之者，周公是也。身當天下之大任，上奉幼弱之主，謙恭自牧，夔夔如畏然，可謂有勞而能謙矣。既能勞謙，又須君子行之有終，則吉。夫樂高喜勝，人之常情。平時能謙，固已鮮矣，況有功勞可尊乎？雖使知謙之善，勉而為之，若矜負之心不忘，則不能常久，欲其有終，不可得也。唯君子安履謙順，乃其常行，故久而不變，乃所謂有終，有終則吉也。九三以剛居正，能終者也。此爻之德最盛，故象辭特重。",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3&oldid=1313743",
+          "locator": "《伊川易傳》·谦·第3爻注",
+          "version": "ws-1313743",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "yichuan-yizhuan",
+          "workTitle": "伊川易傳",
+          "sourceId": "ws-1313743",
+          "editionId": "ws-yichuan-yizhuan",
+          "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "authorNames": [
+            "程颐"
+          ],
+          "anchorIds": [
+            "zhouyi:15:line:3"
+          ],
+          "commentsOn": [
+            "zhouyi:15:line:3"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-1313743.wiki",
+            "startLine": 355,
+            "endLine": 355,
+            "pageLabels": []
+          }
+        },
+        {
+          "id": "zhu-xi@528287:h15:line3:10fb9a839d",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line",
+          "line": 3,
+          "text": "卦唯一陽居下之上剛而得正上下所歸有功勞而能謙尤人所難故有終而吉占者如是則如其應矣",
+          "textOriginal": "卦唯一陽居下之上剛而得正上下所歸有功勞而能謙尤人所難故有終而吉占者如是則如其應矣",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+          "locator": "《周易本義》·谦·第3爻注",
+          "version": "ws-528287",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "zhouyi-benyi",
+          "workTitle": "周易本義",
+          "sourceId": "ws-528287",
+          "editionId": "ws-benyi-skqs",
+          "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "authorNames": [
+            "朱熹"
+          ],
+          "anchorIds": [
+            "zhouyi:15:line:3"
+          ],
+          "commentsOn": [
+            "zhouyi:15:line:3"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-528287.wiki",
+            "startLine": 38,
+            "endLine": 38,
+            "pageLabels": []
+          }
+        }
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "situation_followup",
+          "evidenceIds": [
+            "zy-15-judgment",
+            "zy-15-tuan",
+            "zy-15-xiang",
+            "zy-15-line-3",
+            "zy-15-line-4",
+            "zy-15-line_xiang-3",
+            "zy-15-line_xiang-4",
+            "zy-16-judgment",
+            "zy-16-xiang",
+            "wang-bi@2000726:h15:line3:773eb08258",
+            "cheng-yi@1313743:h15:line3:3d9184f339",
+            "zhu-xi@528287:h15:line3:10fb9a839d"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 3035,
+          "promptTokens": 4267,
+          "completionTokens": 385,
+          "totalTokens": 4652
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 6215,
+          "promptTokens": 1857,
+          "completionTokens": 1014,
+          "totalTokens": 2871
+        },
+        {
+          "step": "validate",
+          "status": "passed",
+          "code": ""
+        }
+      ],
+      "status": "completed",
+      "model": "deepseek-flash",
+      "releaseId": "knowledge-v3-20260926-r1",
+      "checkpointThreadId": "python-graph-v18:e5e32d68-b267-4d71-84ec-49502cc6ef9e:80e9ebbc-0f28-4eb5-b60b-597f51b3a2ae",
+      "promptVersion": "evidence-agent-python-v16",
+      "graphVersion": "python-graph-v18",
+      "answer": {
+        "status": "answered",
+        "paragraphs": [
+          {
+            "text": "条件改了：从半小时变成一小时，预算也不纠结，唯一硬约束是“不想排队”。这一变，谦卦的重点也跟着移。九三“劳谦，君子有终，吉”，程颐说“有功勞而持謙德者也”——放到吃饭上，就是愿意为这一顿做一点实在安排，但不必把它搞成一场战役。六四小象说“不违则也”，意思是顺着已经验证过的常规走，别临时起意。对今天来说，这个“则”就是：先避开排队这件事，再谈吃什么。",
+            "citations": [
+              {
+                "evidenceId": "zy-15-line-3",
+                "quote": "劳谦，君子有终，吉。",
+                "claim": "九三“劳谦，君子有终，吉”"
+              },
+              {
+                "evidenceId": "cheng-yi@1313743:h15:line3:3d9184f339",
+                "quote": "有功勞而持謙德者也",
+                "claim": "程颐说“有功勞而持謙德者也”"
+              },
+              {
+                "evidenceId": "zy-15-line_xiang-4",
+                "quote": "不违则也",
+                "claim": "六四小象说“不违则也”"
+              }
+            ]
+          },
+          {
+            "text": "谦卦大象讲“裒多益寡，称物平施”，用到这一小时里，就是把多余的环节砍掉，把该留的留足。不想排队，最省事的不是换一家更网红的店，而是换一个时段：提前到十一点出头，或干脆一点以后再去，排队这件事往往就被时间错开了。若还是想在外面吃，优先选能预约、能外带、能扫码点单自取的店，把“等”从流程里删掉；预算不纠结反而更要避免“因为贵所以现做慢”的店。一句话，选的是出餐确定性，不是名气。",
+            "citations": [
+              {
+                "evidenceId": "zy-15-xiang",
+                "quote": "裒多益寡，称物平施",
+                "claim": "谦卦大象讲“裒多益寡，称物平施”"
+              }
+            ]
+          },
+          {
+            "text": "若连出门的队都不想沾，一小时其实足够自己动手：一口锅烧水，下面条或倒米饭，加鸡蛋、青菜、冻丸子或熟肉，几分钟就是热的，全程没有排队这个变量。这就是九三“劳谦”的现实版——花力气在厨房里，换回确定性和热乎气。变卦豫的大象说“雷出地奋”，取的是热气自下奋起的样子；你要的那口热乎，不必靠排队等来。",
+            "citations": [
+              {
+                "evidenceId": "zy-16-xiang",
+                "quote": "雷出地奋",
+                "claim": "变卦豫的大象说“雷出地奋”"
+              }
+            ]
+          }
+        ],
+        "limitations": []
+      },
+      "durationMs": 9360
+    },
+    {
+      "id": "960d6d77-74f5-42ef-ada2-eb32b1a38243",
+      "question": "那我就选楼下那家能马上做的面，想清淡点，点单时怎么说？",
+      "mode": "followup",
+      "createdAt": "2026-10-11T07:29:38.343529+00:00",
+      "evidence": [
+        {
+          "id": "zy-15-judgment",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "judgment",
+          "line": null,
+          "text": "亨，君子有终。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "谦·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "亨，君子有终。"
+        },
+        {
+          "id": "zy-15-tuan",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "tuan",
+          "line": null,
+          "text": "“谦，亨”，天道下济而光明，地道卑而上行。天道亏盈而益谦，地道变盈而流谦，鬼神害盈而福谦，人道恶盈而好谦。谦尊而光，卑而不可逾，君子之终也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+          "locator": "谦·彖传",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:tuan"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“谦，亨”，天道下济而光明，地道卑而上行。天道亏盈而益谦，地道变盈而流谦，鬼神害盈而福谦，人道恶盈而好谦。谦尊而光，卑而不可逾，君子之终也。"
+        },
+        {
+          "id": "zy-15-xiang",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "xiang",
+          "line": null,
+          "text": "地中有山，谦。君子以裒多益寡，称物平施。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "谦·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "地中有山，谦。君子以裒多益寡，称物平施。"
+        },
+        {
+          "id": "zy-15-line-3",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line",
+          "line": 3,
+          "text": "劳谦，君子有终，吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "谦·九三",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:line:3"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "劳谦，君子有终，吉。"
+        },
+        {
+          "id": "zy-15-line-4",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line",
+          "line": 4,
+          "text": "无不利，撝谦。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "谦·六四",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:line:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "无不利，撝谦。"
+        },
+        {
+          "id": "zy-15-line_xiang-3",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line_xiang",
+          "line": 3,
+          "text": "“劳谦君子”，万民服也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "谦·九三小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:line_xiang:3"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“劳谦君子”，万民服也。"
+        },
+        {
+          "id": "zy-15-line_xiang-4",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line_xiang",
+          "line": 4,
+          "text": "“无不利，撝谦”，不违则也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "谦·六四小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:15:line_xiang:4"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“无不利，撝谦”，不违则也。"
+        },
+        {
+          "id": "zy-16-judgment",
+          "hexagramId": 16,
+          "name": "豫",
+          "section": "judgment",
+          "line": null,
+          "text": "利建侯，行师。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "豫·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:16:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "利建侯，行师。"
+        },
+        {
+          "id": "zy-16-xiang",
+          "hexagramId": 16,
+          "name": "豫",
+          "section": "xiang",
+          "line": null,
+          "text": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "豫·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:16:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "雷出地奋，豫；先王以作乐崇德，殷荐之上帝，以配祖考。"
+        },
+        {
+          "id": "wang-bi@2000726:h15:line3:773eb08258",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line",
+          "line": 3,
+          "text": "處下體之極，履得其位，上下無陽以分其民，眾陰所宗，尊莫先焉。居謙之世，何可安尊？上承下接，勞謙匪解，是以吉也。",
+          "textOriginal": "處下體之極，履得其位，上下無陽以分其民，眾陰所宗，尊莫先焉。居謙之世，何可安尊？上承下接，勞謙匪解，是以吉也。",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/02%E8%AC%99&oldid=2000726",
+          "locator": "《周易正義》·谦·第3爻注",
+          "version": "ws-2000726",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "zhouyi-zhengyi",
+          "workTitle": "周易正義",
+          "sourceId": "ws-2000726",
+          "editionId": "ws-zhouyi-zhengyi",
+          "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+          "authorIds": [
+            "wang-bi"
+          ],
+          "authorNames": [
+            "王弼"
+          ],
+          "anchorIds": [
+            "zhouyi:15:line:3"
+          ],
+          "commentsOn": [
+            "zhouyi:15:line:3"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-2000726.wiki",
+            "startLine": 43,
+            "endLine": 43,
+            "pageLabels": []
+          }
+        },
+        {
+          "id": "cheng-yi@1313743:h15:line3:3d9184f339",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line",
+          "line": 3,
+          "text": "三以陽剛之德而居下體，為眾陰所宗，履得其位，為下之上，是上為君所任，下為眾所從，有功勞而持謙德者也，故曰勞謙。古之人有當之者，周公是也。身當天下之大任，上奉幼弱之主，謙恭自牧，夔夔如畏然，可謂有勞而能謙矣。既能勞謙，又須君子行之有終，則吉。夫樂高喜勝，人之常情。平時能謙，固已鮮矣，況有功勞可尊乎？雖使知謙之善，勉而為之，若矜負之心不忘，則不能常久，欲其有終，不可得也。唯君子安履謙順，乃其常行，故久而不變，乃所謂有終，有終則吉也。九三以剛居正，能終者也。此爻之德最盛，故象辭特重。",
+          "textOriginal": "三以陽剛之德而居下體，為眾陰所宗，履得其位，為下之上，是上為君所任，下為眾所從，有功勞而持謙德者也，故曰勞謙。古之人有當之者，周公是也。身當天下之大任，上奉幼弱之主，謙恭自牧，夔夔如畏然，可謂有勞而能謙矣。既能勞謙，又須君子行之有終，則吉。夫樂高喜勝，人之常情。平時能謙，固已鮮矣，況有功勞可尊乎？雖使知謙之善，勉而為之，若矜負之心不忘，則不能常久，欲其有終，不可得也。唯君子安履謙順，乃其常行，故久而不變，乃所謂有終，有終則吉也。九三以剛居正，能終者也。此爻之德最盛，故象辭特重。",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E4%BC%8A%E5%B7%9D%E6%98%93%E5%82%B3&oldid=1313743",
+          "locator": "《伊川易傳》·谦·第3爻注",
+          "version": "ws-1313743",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "yichuan-yizhuan",
+          "workTitle": "伊川易傳",
+          "sourceId": "ws-1313743",
+          "editionId": "ws-yichuan-yizhuan",
+          "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+          "authorIds": [
+            "cheng-yi"
+          ],
+          "authorNames": [
+            "程颐"
+          ],
+          "anchorIds": [
+            "zhouyi:15:line:3"
+          ],
+          "commentsOn": [
+            "zhouyi:15:line:3"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-1313743.wiki",
+            "startLine": 355,
+            "endLine": 355,
+            "pageLabels": []
+          }
+        },
+        {
+          "id": "zhu-xi@528287:h15:line3:10fb9a839d",
+          "hexagramId": 15,
+          "name": "谦",
+          "section": "line",
+          "line": 3,
+          "text": "卦唯一陽居下之上剛而得正上下所歸有功勞而能謙尤人所難故有終而吉占者如是則如其應矣",
+          "textOriginal": "卦唯一陽居下之上剛而得正上下所歸有功勞而能謙尤人所難故有終而吉占者如是則如其應矣",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%9C%AC%E7%BE%A9%20%28%E5%9B%9B%E5%BA%AB%E5%85%A8%E6%9B%B8%E6%9C%AC%29/%E5%8D%B71&oldid=528287",
+          "locator": "《周易本義》·谦·第3爻注",
+          "version": "ws-528287",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "zhouyi-benyi",
+          "workTitle": "周易本義",
+          "sourceId": "ws-528287",
+          "editionId": "ws-benyi-skqs",
+          "editionLabel": "维基文库四库全书本（未逐页对照影像）",
+          "authorIds": [
+            "zhu-xi"
+          ],
+          "authorNames": [
+            "朱熹"
+          ],
+          "anchorIds": [
+            "zhouyi:15:line:3"
+          ],
+          "commentsOn": [
+            "zhouyi:15:line:3"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-528287.wiki",
+            "startLine": 38,
+            "endLine": 38,
+            "pageLabels": []
+          }
+        }
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "situation_followup",
+          "evidenceIds": [
+            "zy-15-judgment",
+            "zy-15-tuan",
+            "zy-15-xiang",
+            "zy-15-line-3",
+            "zy-15-line-4",
+            "zy-15-line_xiang-3",
+            "zy-15-line_xiang-4",
+            "zy-16-judgment",
+            "zy-16-xiang",
+            "wang-bi@2000726:h15:line3:773eb08258",
+            "cheng-yi@1313743:h15:line3:3d9184f339",
+            "zhu-xi@528287:h15:line3:10fb9a839d"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 2899,
+          "promptTokens": 4654,
+          "completionTokens": 470,
+          "totalTokens": 5124
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 12356,
+          "promptTokens": 2244,
+          "completionTokens": 2678,
+          "totalTokens": 4922
+        },
+        {
+          "step": "validate",
+          "status": "passed",
+          "code": ""
+        }
+      ],
+      "status": "completed",
+      "model": "deepseek-flash",
+      "releaseId": "knowledge-v3-20260926-r1",
+      "checkpointThreadId": "python-graph-v18:e5e32d68-b267-4d71-84ec-49502cc6ef9e:960d6d77-74f5-42ef-ada2-eb32b1a38243",
+      "promptVersion": "evidence-agent-python-v16",
+      "graphVersion": "python-graph-v18",
+      "answer": {
+        "status": "answered",
+        "paragraphs": [
+          {
+            "text": "点单这一问，落点其实很具体：你选的是楼下能马上做的那家面，重点就只剩“怎么说”。谦卦大象讲“君子以裒多益寡，称物平施”，用到点单上，就是把多余的先减掉——不是让店家另起炉灶，而是把默认口味里你不需要的部分去掉。多数面馆的默认出品偏咸、偏油、带辣或带浓汤底，所谓“清淡”在对方听来并不自动等于你的清淡。因此别说“随便来点清淡的”或“你看着做”，这类模糊指令多半会按店家习惯走。明确要做减法的是三样：少盐（或汤里少放盐）、少油（不要红油辣油、不要浇头油）、不辣。",
+            "citations": [
+              {
+                "evidenceId": "zy-15-xiang",
+                "quote": "君子以裒多益寡，称物平施",
+                "claim": "君子以裒多益寡，称物平施"
+              }
+            ]
+          },
+          {
+            "text": "接着是选品。谦卦六四爻辞说“无不利，撝谦”，小象讲“不违则也”——顺着店家已有的常规做，别越过规矩去强求菜单上没有的东西。所以优先挑本身汤底就清的品类：清汤面、阳春面、蔬菜面、番茄鸡蛋面（要求不放辣）之类，避开红烧、酸辣、麻辣、浓汤和酱料很重的拌面。九三爻辞“劳谦，君子有终，吉”，放在这里是说该讲清楚的地方不要省：多加一份烫青菜或一个水煮蛋，属于店里常规能办、也确实补足营养的动作，值得提；而要求“换一种高汤”“现熬清汤底”这类，就超出常规，反而不划算。",
+            "citations": [
+              {
+                "evidenceId": "zy-15-line-4",
+                "quote": "无不利，撝谦",
+                "claim": "无不利，撝谦"
+              },
+              {
+                "evidenceId": "zy-15-line_xiang-4",
+                "quote": "不违则也",
+                "claim": "不违则也"
+              },
+              {
+                "evidenceId": "zy-15-line-3",
+                "quote": "劳谦，君子有终，吉",
+                "claim": "劳谦，君子有终，吉"
+              }
+            ]
+          },
+          {
+            "text": "落到嘴边，可以一句话说完：“老板，来一碗清汤面（或阳春面），清汤、少油少盐、不要辣；汤少盛一点，青菜多烫一份，面正常煮，别的不用加。”店里有卤蛋或水煮蛋的话可以加一个，仍属常规。需要留意的是：能不能真做清汤，取决于这家店的菜单——有的面底本就用浓汤或预先调好味，那就退一步，选最接近清汤的那款，要求“汤另装、少放盐”，把控制权拿回自己手里。变卦豫的大象说“雷出地奋”，端上来趁热吃，这口热乎就在眼前。",
+            "citations": [
+              {
+                "evidenceId": "zy-16-xiang",
+                "quote": "雷出地奋",
+                "claim": "雷出地奋"
+              }
+            ]
+          }
+        ],
+        "limitations": []
+      },
+      "durationMs": 15366
+    }
+  ],
+  "createdAt": "2026-10-11T07:29:04.732993+00:00",
+  "releaseId": "knowledge-v3-20260926-r1"
+}

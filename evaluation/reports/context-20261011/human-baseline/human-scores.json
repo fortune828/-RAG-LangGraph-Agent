@@ -1,0 +1,386 @@
+{
+  "source": "evaluation/reports/formal-20261010/human/first-batch-20261011/scores.csv",
+  "sourceSha256": "02e67f7993c19966b712242b355d4b27075e95461e71ba13a57243d5fd40446f",
+  "sourceFormat": "Markdown table",
+  "note": "Original ratings preserved. Null CTX tags mean not collected, not no errors.",
+  "rows": [
+    {
+      "answerId": "R01",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2,
+        "知识": 1
+      },
+      "rawFields": {
+        "编号": "R01",
+        "理解": "2",
+        "知识": "1",
+        "关联": "1",
+        "交流": "1",
+        "帮助": "2",
+        "是否回答到点上": "是",
+        "理由或原句": "整体回答质量较高，明确给出“先修还是换”的判断，也考虑了现实条件。但引用部分略显牵强，古文直接嵌入现实分析中，像是在为了使用卦辞而使用；卦义解释和现实建议之间融合不足。",
+        "评分人": "人工",
+        "日期": "2026-10-11"
+      },
+      "raterType": "human_non_expert",
+      "expertGold": false,
+      "knowledgeScoreNature": "User trial judgement, not expert classical verification",
+      "contextErrorTags": null,
+      "contextErrorTagsState": "not_collected"
+    },
+    {
+      "answerId": "R02",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 1,
+        "知识": 1
+      },
+      "rawFields": {
+        "编号": "R02",
+        "理解": "2",
+        "知识": "1",
+        "关联": "1",
+        "交流": "1",
+        "帮助": "1",
+        "是否回答到点上": "不确定",
+        "理由或原句": "回答有一定分析，但结论偏模糊。用户问的是晾哪里更省心，回答提出室内、室外来回切换方案，反而增加操作成本，与“省心”目标有冲突。引用部分基本合理，但解释偏机械。",
+        "评分人": "人工",
+        "日期": "2026-10-11"
+      },
+      "raterType": "human_non_expert",
+      "expertGold": false,
+      "knowledgeScoreNature": "User trial judgement, not expert classical verification",
+      "contextErrorTags": null,
+      "contextErrorTagsState": "not_collected"
+    },
+    {
+      "answerId": "R03",
+      "scores": {
+        "理解": null,
+        "关联": null,
+        "交流": null,
+        "帮助": null,
+        "知识": null
+      },
+      "rawFields": {
+        "编号": "R03",
+        "理解": "NA",
+        "知识": "NA",
+        "关联": "NA",
+        "交流": "NA",
+        "帮助": "NA",
+        "是否回答到点上": "否",
+        "理由或原句": "未完成可交付回答，没有实际回答用户问题。",
+        "评分人": "人工",
+        "日期": "2026-10-11"
+      },
+      "raterType": "human_non_expert",
+      "expertGold": false,
+      "knowledgeScoreNature": "User trial judgement, not expert classical verification",
+      "contextErrorTags": null,
+      "contextErrorTagsState": "not_collected"
+    },
+    {
+      "answerId": "R04",
+      "scores": {
+        "理解": 2,
+        "关联": 2,
+        "交流": 2,
+        "帮助": 2,
+        "知识": 2
+      },
+      "rawFields": {
+        "编号": "R04",
+        "理解": "2",
+        "知识": "2",
+        "关联": "2",
+        "交流": "2",
+        "帮助": "2",
+        "是否回答到点上": "是",
+        "理由或原句": "整体非常符合预期。能够理解双方需求冲突，将卦义自然融入沟通方案，现实建议具体，没有明显割裂感。是较理想的回答形式。",
+        "评分人": "人工",
+        "日期": "2026-10-11"
+      },
+      "raterType": "human_non_expert",
+      "expertGold": false,
+      "knowledgeScoreNature": "User trial judgement, not expert classical verification",
+      "contextErrorTags": null,
+      "contextErrorTagsState": "not_collected"
+    },
+    {
+      "answerId": "R05",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 0,
+        "帮助": 2,
+        "知识": 1
+      },
+      "rawFields": {
+        "编号": "R05",
+        "理解": "2",
+        "知识": "1",
+        "关联": "1",
+        "交流": "0",
+        "帮助": "2",
+        "是否回答到点上": "是",
+        "理由或原句": "实际建议基本合理，回答了承诺边界问题。但“大象”等引用明显像单独插入，不像自然交流；整体存在“引用后解释”的模板感。知识关联有一定牵强。",
+        "评分人": "人工",
+        "日期": "2026-10-11"
+      },
+      "raterType": "human_non_expert",
+      "expertGold": false,
+      "knowledgeScoreNature": "User trial judgement, not expert classical verification",
+      "contextErrorTags": null,
+      "contextErrorTagsState": "not_collected"
+    },
+    {
+      "answerId": "R06",
+      "scores": {
+        "理解": 2,
+        "关联": 2,
+        "交流": 1,
+        "帮助": 2,
+        "知识": 2
+      },
+      "rawFields": {
+        "编号": "R06",
+        "理解": "2",
+        "知识": "2",
+        "关联": "2",
+        "交流": "1",
+        "帮助": "2",
+        "是否回答到点上": "是",
+        "理由或原句": "前半部分引用和解释较自然，能够结合驻留准备问题分析。最后要求补充信息略显多余，影响交流自然度；整体仍属于较好的回答。",
+        "评分人": "人工",
+        "日期": "2026-10-11"
+      },
+      "raterType": "human_non_expert",
+      "expertGold": false,
+      "knowledgeScoreNature": "User trial judgement, not expert classical verification",
+      "contextErrorTags": null,
+      "contextErrorTagsState": "not_collected"
+    },
+    {
+      "answerId": "R07",
+      "scores": {
+        "理解": 2,
+        "关联": 2,
+        "交流": 2,
+        "帮助": 2,
+        "知识": 2
+      },
+      "rawFields": {
+        "编号": "R07",
+        "理解": "2",
+        "知识": "2",
+        "关联": "2",
+        "交流": "2",
+        "帮助": "2",
+        "是否回答到点上": "是",
+        "理由或原句": "各方面表现较好。能够理解事实已经反转，重点转向道歉和关系修复。引用与现实结合较自然，没有明显硬套。",
+        "评分人": "人工",
+        "日期": "2026-10-11"
+      },
+      "raterType": "human_non_expert",
+      "expertGold": false,
+      "knowledgeScoreNature": "User trial judgement, not expert classical verification",
+      "contextErrorTags": null,
+      "contextErrorTagsState": "not_collected"
+    },
+    {
+      "answerId": "R08",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 0,
+        "帮助": 1,
+        "知识": 1
+      },
+      "rawFields": {
+        "编号": "R08",
+        "理解": "2",
+        "知识": "1",
+        "关联": "1",
+        "交流": "0",
+        "帮助": "1",
+        "是否回答到点上": "是",
+        "理由或原句": "引用和卦义解释很多，但整体过长，多个爻反复展开，用户只是想表达“希望先讲完”。回答绕了较多内容，重点不够突出。",
+        "评分人": "人工",
+        "日期": "2026-10-11"
+      },
+      "raterType": "human_non_expert",
+      "expertGold": false,
+      "knowledgeScoreNature": "User trial judgement, not expert classical verification",
+      "contextErrorTags": null,
+      "contextErrorTagsState": "not_collected"
+    },
+    {
+      "answerId": "R09",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2,
+        "知识": 1
+      },
+      "rawFields": {
+        "编号": "R09",
+        "理解": "2",
+        "知识": "1",
+        "关联": "1",
+        "交流": "1",
+        "帮助": "2",
+        "是否回答到点上": "是",
+        "理由或原句": "回答基本理解问题，也给出了建议。但引用存在“可有可无”的感觉，删除引用后主体建议仍成立，说明知识没有真正参与决策。",
+        "评分人": "人工",
+        "日期": "2026-10-11"
+      },
+      "raterType": "human_non_expert",
+      "expertGold": false,
+      "knowledgeScoreNature": "User trial judgement, not expert classical verification",
+      "contextErrorTags": null,
+      "contextErrorTagsState": "not_collected"
+    },
+    {
+      "answerId": "R10",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2,
+        "知识": 1
+      },
+      "rawFields": {
+        "编号": "R10",
+        "理解": "2",
+        "知识": "1",
+        "关联": "1",
+        "交流": "1",
+        "帮助": "2",
+        "是否回答到点上": "是",
+        "理由或原句": "能够理解用户补充的新条件，并调整建议。但连续对话中重新强调“风山渐、无动爻、变卦仍为渐”不自然。已有上下文知识被重复说明，像重新起卦后的回答。",
+        "评分人": "人工",
+        "日期": "2026-10-11"
+      },
+      "raterType": "human_non_expert",
+      "expertGold": false,
+      "knowledgeScoreNature": "User trial judgement, not expert classical verification",
+      "contextErrorTags": null,
+      "contextErrorTagsState": "not_collected"
+    },
+    {
+      "answerId": "R11",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 1,
+        "帮助": 2,
+        "知识": 1
+      },
+      "rawFields": {
+        "编号": "R11",
+        "理解": "2",
+        "知识": "1",
+        "关联": "1",
+        "交流": "1",
+        "帮助": "2",
+        "是否回答到点上": "是",
+        "理由或原句": "回答方向正确，体验课建议合理。但连续对话仍重复引用同一卦辞和解释，没有体现上下文积累。交流上像重新生成了一次完整解卦。",
+        "评分人": "人工",
+        "日期": "2026-10-11"
+      },
+      "raterType": "human_non_expert",
+      "expertGold": false,
+      "knowledgeScoreNature": "User trial judgement, not expert classical verification",
+      "contextErrorTags": null,
+      "contextErrorTagsState": "not_collected"
+    },
+    {
+      "answerId": "R12",
+      "scores": {
+        "理解": 2,
+        "关联": 2,
+        "交流": 1,
+        "帮助": 2,
+        "知识": 2
+      },
+      "rawFields": {
+        "编号": "R12",
+        "理解": "2",
+        "知识": "2",
+        "关联": "2",
+        "交流": "1",
+        "帮助": "2",
+        "是否回答到点上": "是",
+        "理由或原句": "整体不错，能够分析双方需求并提供解决方案。稍微有些和稀泥，没有明显帮助用户做取舍，但总体质量较高。",
+        "评分人": "人工",
+        "日期": "2026-10-11"
+      },
+      "raterType": "human_non_expert",
+      "expertGold": false,
+      "knowledgeScoreNature": "User trial judgement, not expert classical verification",
+      "contextErrorTags": null,
+      "contextErrorTagsState": "not_collected"
+    },
+    {
+      "answerId": "R13",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 0,
+        "帮助": 1,
+        "知识": 1
+      },
+      "rawFields": {
+        "编号": "R13",
+        "理解": "2",
+        "知识": "1",
+        "关联": "1",
+        "交流": "0",
+        "帮助": "1",
+        "是否回答到点上": "是",
+        "理由或原句": "连续对话问题明显。已经知道背景后，仍反复引用相同卦辞，像为了完成引用指标。卦义与当前具体问题关联不足，模板化严重。",
+        "评分人": "人工",
+        "日期": "2026-10-11"
+      },
+      "raterType": "human_non_expert",
+      "expertGold": false,
+      "knowledgeScoreNature": "User trial judgement, not expert classical verification",
+      "contextErrorTags": null,
+      "contextErrorTagsState": "not_collected"
+    },
+    {
+      "answerId": "R14",
+      "scores": {
+        "理解": 2,
+        "关联": 1,
+        "交流": 0,
+        "帮助": 1,
+        "知识": 1
+      },
+      "rawFields": {
+        "编号": "R14",
+        "理解": "2",
+        "知识": "1",
+        "关联": "1",
+        "交流": "0",
+        "帮助": "1",
+        "是否回答到点上": "是",
+        "理由或原句": "能承接用户新信息，但仍存在连续对话重复引用问题。引用更多像任务要求，而不是自然交流中的必要内容；卦象与现实结合部分仍有牵强。",
+        "评分人": "人工",
+        "日期": "2026-10-11"
+      },
+      "raterType": "human_non_expert",
+      "expertGold": false,
+      "knowledgeScoreNature": "User trial judgement, not expert classical verification",
+      "contextErrorTags": null,
+      "contextErrorTagsState": "not_collected"
+    }
+  ]
+}

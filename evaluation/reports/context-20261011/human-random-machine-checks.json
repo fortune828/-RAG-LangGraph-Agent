@@ -1,0 +1,115 @@
+[
+  {
+    "answerId": "R01",
+    "recordId": "lunch-execution-1",
+    "status": "completed",
+    "errors": [],
+    "error": null,
+    "sameCast": true,
+    "repairs": 0,
+    "checks": null,
+    "validationTrace": [
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "note": "Captured execution metadata, not semantic verification; absent checks are unknown."
+  },
+  {
+    "answerId": "R02",
+    "recordId": "lunch-execution-2",
+    "status": "completed",
+    "errors": [],
+    "error": null,
+    "sameCast": true,
+    "repairs": 0,
+    "checks": null,
+    "validationTrace": [
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "note": "Captured execution metadata, not semantic verification; absent checks are unknown."
+  },
+  {
+    "answerId": "R03",
+    "recordId": "lunch-execution-3",
+    "status": "completed",
+    "errors": [],
+    "error": null,
+    "sameCast": true,
+    "repairs": 0,
+    "checks": null,
+    "validationTrace": [
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "note": "Captured execution metadata, not semantic verification; absent checks are unknown."
+  },
+  {
+    "answerId": "R04",
+    "recordId": "haircut-execution-1",
+    "status": "completed",
+    "errors": [],
+    "error": null,
+    "sameCast": true,
+    "repairs": 1,
+    "checks": null,
+    "validationTrace": [
+      {
+        "step": "validate",
+        "status": "failed",
+        "code": "CLAIM_NOT_IN_PARAGRAPH:zy-34-line-4"
+      },
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "note": "Captured execution metadata, not semantic verification; absent checks are unknown."
+  },
+  {
+    "answerId": "R05",
+    "recordId": "haircut-execution-2",
+    "status": "completed",
+    "errors": [],
+    "error": null,
+    "sameCast": true,
+    "repairs": 0,
+    "checks": null,
+    "validationTrace": [
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "note": "Captured execution metadata, not semantic verification; absent checks are unknown."
+  },
+  {
+    "answerId": "R06",
+    "recordId": "haircut-execution-3",
+    "status": "completed",
+    "errors": [],
+    "error": null,
+    "sameCast": true,
+    "repairs": 0,
+    "checks": null,
+    "validationTrace": [
+      {
+        "step": "validate",
+        "status": "passed",
+        "code": ""
+      }
+    ],
+    "note": "Captured execution metadata, not semantic verification; absent checks are unknown."
+  }
+]

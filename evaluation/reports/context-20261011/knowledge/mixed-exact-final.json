@@ -1,0 +1,567 @@
+{
+  "id": "4b5ab713-cf14-408a-996c-8a06926cb5ae",
+  "question": "请给乾卦九二的爻辞原文和王弼的注解，分别说明原文和注解。",
+  "cast": {
+    "lines": [
+      9,
+      7,
+      7,
+      8,
+      9,
+      7
+    ],
+    "original": {
+      "binary": "111011",
+      "name": "风天小畜",
+      "number": 9,
+      "judgment": "亨。密云不雨，自我西郊。"
+    },
+    "changed": {
+      "binary": "011001",
+      "name": "山风蛊",
+      "number": 18,
+      "judgment": "元亨，利涉大川。先甲三日，后甲三日。"
+    },
+    "originalBinary": "111011",
+    "changedBinary": "011001",
+    "changingIndices": [
+      0,
+      4
+    ],
+    "id": "288de46a-5cca-4b66-9514-00f281220a39",
+    "method": "three-coins",
+    "algorithmVersion": "coins-py-v1",
+    "readingPolicyVersion": "all-moving-lines-v1",
+    "coins": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "createdAt": "2026-10-11T07:19:03.573882+00:00"
+  },
+  "turns": [
+    {
+      "id": "0f3be18d-4ec3-404e-9467-c6ff1f88f5a7",
+      "question": "请给乾卦九二的爻辞原文和王弼的注解，分别说明原文和注解。",
+      "mode": "initial",
+      "createdAt": "2026-10-11T07:19:03.590398+00:00",
+      "evidence": [
+        {
+          "id": "zy-9-judgment",
+          "hexagramId": 9,
+          "name": "小畜",
+          "section": "judgment",
+          "line": null,
+          "text": "亨。密云不雨，自我西郊。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "小畜·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:09:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "亨。密云不雨，自我西郊。"
+        },
+        {
+          "id": "zy-9-tuan",
+          "hexagramId": 9,
+          "name": "小畜",
+          "section": "tuan",
+          "line": null,
+          "text": "“小畜”，柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。“密云不雨”，尚往也；“自我西郊”，施未行也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/tuan.json",
+          "locator": "小畜·彖传",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:09:tuan"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“小畜”，柔得位而上下应之，曰小畜。健而巽，刚中而志行，乃“亨”。“密云不雨”，尚往也；“自我西郊”，施未行也。"
+        },
+        {
+          "id": "zy-9-xiang",
+          "hexagramId": 9,
+          "name": "小畜",
+          "section": "xiang",
+          "line": null,
+          "text": "风行天上，小畜。君子以懿文德。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "小畜·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:09:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "风行天上，小畜。君子以懿文德。"
+        },
+        {
+          "id": "zy-9-line-1",
+          "hexagramId": 9,
+          "name": "小畜",
+          "section": "line",
+          "line": 1,
+          "text": "复自道，何其咎？吉。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "小畜·初九",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:09:line:1"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "复自道，何其咎？吉。"
+        },
+        {
+          "id": "zy-9-line-5",
+          "hexagramId": 9,
+          "name": "小畜",
+          "section": "line",
+          "line": 5,
+          "text": "有孚挛如，富以其邻。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "小畜·九五",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:09:line:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "有孚挛如，富以其邻。"
+        },
+        {
+          "id": "zy-9-line_xiang-1",
+          "hexagramId": 9,
+          "name": "小畜",
+          "section": "line_xiang",
+          "line": 1,
+          "text": "“复自道”，其义“吉”也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "小畜·初九小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:09:line_xiang:1"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“复自道”，其义“吉”也。"
+        },
+        {
+          "id": "zy-9-line_xiang-5",
+          "hexagramId": 9,
+          "name": "小畜",
+          "section": "line_xiang",
+          "line": 5,
+          "text": "“有孚挛如”，不独富也。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "小畜·九五小象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:09:line_xiang:5"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "“有孚挛如”，不独富也。"
+        },
+        {
+          "id": "zy-18-judgment",
+          "hexagramId": 18,
+          "name": "蛊",
+          "section": "judgment",
+          "line": null,
+          "text": "元亨，利涉大川。先甲三日，后甲三日。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/iching/iching.json",
+          "locator": "蛊·卦辞",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:18:judgment"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "元亨，利涉大川。先甲三日，后甲三日。"
+        },
+        {
+          "id": "zy-18-xiang",
+          "hexagramId": 18,
+          "name": "蛊",
+          "section": "xiang",
+          "line": null,
+          "text": "山下有风，蛊。君子以振民育德。",
+          "source": "https://github.com/john-walks-slow/open-iching/blob/4c5f00f8cb62c6e0d2471243d28150b473ef592f/ichuan/xiang.json",
+          "locator": "蛊·大象",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "版本已固定，结构已验证；文字未完成逐条人工校勘",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "open-iching-4c5f00f8cb62",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:18:xiang"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "山下有风，蛊。君子以振民育德。"
+        },
+        {
+          "id": "wang-bi@2676007:h1:line2:156a776063",
+          "hexagramId": 1,
+          "name": "乾",
+          "section": "line",
+          "line": 2,
+          "text": "出潛離隱，故曰「見龍」，處於地上，故曰「在田」。德施周普，居中不偏，雖非君位，君之德也。初則不彰，三則「乾乾」，四則「或躍」，上則過亢。「利見大人」，唯二、五焉。",
+          "textOriginal": "出潛離隱，故曰「見龍」，處於地上，故曰「在田」。德施周普，居中不偏，雖非君位，君之德也。初則不彰，三則「乾乾」，四則「或躍」，上則過亢。「利見大人」，唯二、五焉。",
+          "source": "https://zh.wikisource.org/w/index.php?title=%E5%91%A8%E6%98%93%E6%AD%A3%E7%BE%A9/01%E4%B9%BE&oldid=2676007",
+          "locator": "《周易正義》·乾·第2爻注",
+          "version": "ws-2676007",
+          "review": "机器规则提取，已保留来源与边界；未经人工校勘，异文未擅改",
+          "reviewStatus": "machine_parsed",
+          "layer": "commentary",
+          "workId": "zhouyi-zhengyi",
+          "workTitle": "周易正義",
+          "sourceId": "ws-2676007",
+          "editionId": "ws-zhouyi-zhengyi",
+          "editionLabel": "维基文库通行电子文本（底本未逐页核验）",
+          "authorIds": [
+            "wang-bi"
+          ],
+          "authorNames": [
+            "王弼"
+          ],
+          "anchorIds": [
+            "zhouyi:01:line:2"
+          ],
+          "commentsOn": [
+            "zhouyi:01:line:2"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "rawLocator": {
+            "file": "data/knowledge/raw/ws-2676007.wiki",
+            "startLine": 22,
+            "endLine": 22,
+            "pageLabels": []
+          }
+        },
+        {
+          "id": "zy-1-line-2",
+          "hexagramId": 1,
+          "name": "乾",
+          "section": "line",
+          "line": 2,
+          "text": "见龙在田，利见大人。",
+          "source": "https://zh.wikisource.org/w/index.php?title=周易/乾&oldid=2404991",
+          "locator": "乾·九二",
+          "version": "open-iching-4c5f00f8cb62-v2",
+          "review": "已对照维基文库固定修订2404991校正“见龙再田”为“见龙在田”；参见data/SOURCES.md",
+          "layer": "classic",
+          "workId": "zhouyi",
+          "workTitle": "周易",
+          "sourceId": "legacy-ws-2404991",
+          "editionId": "open-iching-v2",
+          "editionLabel": "Open I Ching 固定快照（未逐条校勘）",
+          "authorIds": [],
+          "authorNames": [],
+          "anchorIds": [
+            "zhouyi:01:line:2"
+          ],
+          "commentsOn": [],
+          "reviewStatus": "legacy_unreviewed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "textOriginal": "见龙在田，利见大人。"
+        }
+      ],
+      "trace": [
+        {
+          "step": "retrieve",
+          "status": "ok",
+          "channel": "fixed",
+          "releaseId": "knowledge-v3-20260926-r1",
+          "code": "source_request",
+          "evidenceIds": [
+            "zy-9-judgment",
+            "zy-9-tuan",
+            "zy-9-xiang",
+            "zy-9-line-1",
+            "zy-9-line-5",
+            "zy-9-line_xiang-1",
+            "zy-9-line_xiang-5",
+            "zy-18-judgment",
+            "zy-18-xiang"
+          ],
+          "truncated": false,
+          "droppedEvidenceIds": []
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 1162,
+          "promptTokens": 3253,
+          "completionTokens": 172,
+          "totalTokens": 3425
+        },
+        {
+          "step": "tool",
+          "tool": "get_passages",
+          "args": {
+            "authorIds": [
+              "wang-bi"
+            ],
+            "layers": [
+              "classic",
+              "commentary"
+            ],
+            "hexagramId": 1,
+            "sections": [
+              "line"
+            ],
+            "lineIndices": [
+              2
+            ]
+          },
+          "status": "ok",
+          "evidenceIds": [
+            "wang-bi@2676007:h1:line2:156a776063"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "hits": [
+            {
+              "passageId": "wang-bi@2676007:h1:line2:156a776063",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "coverageStatus": "covered",
+          "truncated": false,
+          "durationMs": 2
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 1315,
+          "promptTokens": 3729,
+          "completionTokens": 133,
+          "totalTokens": 3862
+        },
+        {
+          "step": "tool",
+          "tool": "get_passages",
+          "args": {
+            "layers": [
+              "classic"
+            ],
+            "hexagramId": 1,
+            "sections": [
+              "line"
+            ],
+            "lineIndices": [
+              2
+            ]
+          },
+          "status": "ok",
+          "evidenceIds": [
+            "zy-1-line-2"
+          ],
+          "releaseId": "knowledge-v3-20260926-r1",
+          "hits": [
+            {
+              "passageId": "zy-1-line-2",
+              "channel": "exact",
+              "score": null,
+              "matchReason": "metadata exact match"
+            }
+          ],
+          "coverageStatus": "covered",
+          "truncated": false,
+          "durationMs": 2
+        },
+        {
+          "step": "route",
+          "status": "ok",
+          "code": "EXPLICIT_TARGETS_SATISFIED"
+        },
+        {
+          "step": "model",
+          "status": "ok",
+          "durationMs": 14412,
+          "promptTokens": 698,
+          "completionTokens": 3136,
+          "totalTokens": 3834
+        },
+        {
+          "step": "validate",
+          "status": "passed",
+          "code": ""
+        }
+      ],
+      "status": "completed",
+      "model": "deepseek-flash",
+      "releaseId": "knowledge-v3-20260926-r1",
+      "checkpointThreadId": "python-graph-v17:4b5ab713-cf14-408a-996c-8a06926cb5ae:0f3be18d-4ec3-404e-9467-c6ff1f88f5a7",
+      "promptVersion": "evidence-agent-python-v16",
+      "graphVersion": "python-graph-v17",
+      "answer": {
+        "status": "answered",
+        "paragraphs": [
+          {
+            "text": "乾卦九二的爻辞原文为：“见龙在田，利见大人。”其中“见龙在田”指龙已从潜隐中出现于地面田野；“利见大人”指此时适宜见到有德有位的大人。",
+            "citations": [
+              {
+                "evidenceId": "zy-1-line-2",
+                "quote": "见龙在田，利见大人。",
+                "claim": "见龙在田，利见大人。"
+              }
+            ]
+          },
+          {
+            "text": "王弼的注解原文为：“出潛離隱，故曰「見龍」，處於地上，故曰「在田」。德施周普，居中不偏，雖非君位，君之德也。初則不彰，三則「乾乾」，四則「或躍」，上則過亢。「利見大人」，唯二、五焉。”",
+            "citations": [
+              {
+                "evidenceId": "wang-bi@2676007:h1:line2:156a776063",
+                "quote": "出潛離隱，故曰「見龍」，處於地上，故曰「在田」。德施周普，居中不偏，雖非君位，君之德也。初則不彰，三則「乾乾」，四則「或躍」，上則過亢。「利見大人」，唯二、五焉。",
+                "claim": "出潛離隱，故曰「見龍」，處於地上，故曰「在田」。德施周普，居中不偏，雖非君位，君之德也。初則不彰，三則「乾乾」，四則「或躍」，上則過亢。「利見大人」，唯二、五焉。"
+              }
+            ]
+          },
+          {
+            "text": "对这则注解的说明：王弼先解释“见龙”“在田”的得名，即“出潛離隱，故曰「見龍」，處於地上，故曰「在田」”；继而说“德施周普，居中不偏，雖非君位，君之德也”，认为九二虽不是君位，却有君德；再以初、三、四、上诸爻作对照，指出「利見大人」，唯二、五焉。",
+            "citations": [
+              {
+                "evidenceId": "wang-bi@2676007:h1:line2:156a776063",
+                "quote": "出潛離隱，故曰「見龍」，處於地上，故曰「在田」",
+                "claim": "出潛離隱，故曰「見龍」，處於地上，故曰「在田」"
+              },
+              {
+                "evidenceId": "wang-bi@2676007:h1:line2:156a776063",
+                "quote": "德施周普，居中不偏，雖非君位，君之德也",
+                "claim": "德施周普，居中不偏，雖非君位，君之德也"
+              },
+              {
+                "evidenceId": "wang-bi@2676007:h1:line2:156a776063",
+                "quote": "「利見大人」，唯二、五焉",
+                "claim": "「利見大人」，唯二、五焉"
+              }
+            ]
+          }
+        ],
+        "limitations": []
+      },
+      "durationMs": 17059
+    }
+  ],
+  "createdAt": "2026-10-11T07:19:03.573895+00:00",
+  "releaseId": "knowledge-v3-20260926-r1"
+}
