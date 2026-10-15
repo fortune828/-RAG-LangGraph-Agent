@@ -69,10 +69,10 @@ npm run build
 
 2026-10-11记录：Python 375项、TypeScript 41项通过，lint/build通过。详见[验证记录](evaluation/reports/context-20261011/verification.json)。这些是历史工程检查结果，不等于用户体验通过。
 
-- [最新修复与随机对话实验](evaluation/context-repair-20261011.md)：真实随机起卦、上下文对照、负面结果、费用和复现入口。
+- [最新修复与随机对话实验](docs/reports/context-repair-20261011.md)：真实随机起卦、上下文对照、负面结果、费用和复现入口。
 - [完整真实回答](evaluation/reports/context-20261011/human-random/materials.md)：午饭、理发连续追问，保留表现不佳的答案。
-- [正式效果评测及覆盖修订](evaluation/final-evaluation-20261010.md)：固定40+40中78题无动爻，不能代表完整随机起卦产品效果。
-- [RAG / Agent / 模型配置实验](evaluation/autonomous-optimization-20261010.md)：比较规则与自主检索，不预设Agent更好。
+- [正式效果评测及覆盖修订](docs/reports/final-evaluation-20261010.md)：固定40+40中78题无动爻，不能代表完整随机起卦产品效果。
+- [RAG / Agent / 模型配置实验](docs/archive/experiments/autonomous-optimization-20261010.md)：比较规则与自主检索，不预设Agent更好。
 
 当前仍存在重复解卦、牵强类比和助手推测进入后续回答的问题。真实引用不能保证正确解释；AI评分、人工评分、机械校验分别报告。真实API复跑会产生费用，使用各实验文档中有预算限制的入口。
 
@@ -84,12 +84,12 @@ npm run build
 | `src/`、`shared/` | 前端与共享数据契约 |
 | `data/` | 固定知识发布、来源、原始快照和审查记录 |
 | `tests_python/`、`tests/` | Python与TypeScript回归测试 |
-| `evaluation/` | 评测脚本、报告、合成输入与可复查原始结果 |
+| `evaluation/` | [评测代码与数据索引](evaluation/README.md)，保留合成输入与可复查原始结果 |
 | `scripts/` | 语料构建、知识审查及历史评测工具 |
 | `server/` | 历史TypeScript后端，当前启动不使用；保留用于迁移记录与相关测试 |
-| `docs/` | 设计和历史说明 |
+| `docs/` | [文档导航](docs/README.md)：当前设计、主要报告和历史归档 |
 
-项目定义：[SPEC](SPEC.md) · [架构](architect.md) · [任务清单](tasklist.md) · [验收规则](evaluation.md) · [评测计划](EVAL_PLAN.md)。此前README开发说明归档至[历史记录](docs/README_HISTORY.md)。
+项目定义：[SPEC](docs/SPEC.md) · [架构](docs/architecture.md) · [任务清单](docs/tasks.md) · [验收规则](docs/acceptance.md) · [评测计划](docs/evaluation-plan.md)。此前README开发说明归档至[历史记录](docs/archive/README_HISTORY.md)。
 
 ## 数据、隐私与使用说明
 

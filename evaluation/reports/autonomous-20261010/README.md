@@ -1,6 +1,6 @@
 # 自主实验索引 · 2026-10-10
 
-先读 [结果报告](../../autonomous-optimization-20261010.md)。全部为真实 API + 合成输入；`fixtures` 的标签是 AI 拟定，不是专家 Gold。旧阶段及本轮失败均保留。
+先读 [结果报告](../../../docs/archive/experiments/autonomous-optimization-20261010.md)。全部为真实 API + 合成输入；`fixtures` 的标签是 AI 拟定，不是专家 Gold。旧阶段及本轮失败均保留。
 
 | 目录 | 内容 | 控制/限制 |
 |---|---|---|

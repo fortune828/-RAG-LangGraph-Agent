@@ -31,7 +31,7 @@
 
 ## v10 首次真实复测（保留失败）
 
-9 个定向场景机械完成，20 次请求、59,889 reported tokens。报告见 [v10 运行](results/development-real-20261009-032842-e1896e/report.json)。其中午饭追问零工具调用，已经给出菜名，项目也给出了倾向；但表达仍明显不合格：
+9 个定向场景机械完成，20 次请求、59,889 reported tokens。报告见 [v10 运行](../../../evaluation/results/development-real-20261009-032842-e1896e/report.json)。其中午饭追问零工具调用，已经给出菜名，项目也给出了倾向；但表达仍明显不合格：
 
 - 午饭回答仍将“终有凶”牵强映射为饿过头，扩展多个备选，还声称“吃完不困”。
 - 项目追问出现“两周／三周”矛盾、重复解卦及过度命令式措辞；部分 interpretation 混入现实类比和未确认的用户心理。
@@ -43,9 +43,9 @@
 
 ## v11 最终验证
 
-[最终真实报告](results/development-real-20261009-033132-c4b332/report.json)：9 场景机械完成，13 次模型请求、41,397 reported tokens，usage 无缺失，零修复，原卦均保持；预算 30 次 / 160,000 tokens。两次真实运行合计 33 次请求、101,286 reported tokens。均为已见开发案例，AI 辅助语义复核，`humanReviewed=false`，不是留出盲评。
+[最终真实报告](../../../evaluation/results/development-real-20261009-033132-c4b332/report.json)：9 场景机械完成，13 次模型请求、41,397 reported tokens，usage 无缺失，零修复，原卦均保持；预算 30 次 / 160,000 tokens。两次真实运行合计 33 次请求、101,286 reported tokens。均为已见开发案例，AI 辅助语义复核，`humanReviewed=false`，不是留出盲评。
 
-[最终离线报告](results/development-mock-20261009-033151-326d9a/report.json)：23 场景通过。最终完整 Python 回归为 96 项通过。本轮未把 9 场景真实复测写成完整 23 场景全部真实通过。
+[最终离线报告](../../../evaluation/results/development-mock-20261009-033151-326d9a/report.json)：23 场景通过。最终完整 Python 回归为 96 项通过。本轮未把 9 场景真实复测写成完整 23 场景全部真实通过。
 
 | 场景 | 实际结果与判断 |
 |---|---|

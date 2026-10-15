@@ -2,9 +2,9 @@
 
 ## 2026-10-11 随机体验与上下文修订验收
 
-本轮实施结果见[修复与对照报告](evaluation/context-repair-20261011.md)：最终 graph v18 / prompt v16，旧分数及原始回答保留。
+本轮实施结果见[修复与对照报告](reports/context-repair-20261011.md)：最终 graph v18 / prompt v16，旧分数及原始回答保留。
 
-旧正式40+40中78/80无动爻，独立测试40/40、生活题40/40均无动爻；首批人工14/14同样无动爻。不能将旧结果当作完整起卦产品的代表性效果。原实验和用户评分不覆盖，人工已完成的14份另存[可重算副本](evaluation/reports/context-20261011/human-baseline/README.md)，知识分为普通人工意见，不是专家Gold。
+旧正式40+40中78/80无动爻，独立测试40/40、生活题40/40均无动爻；首批人工14/14同样无动爻。不能将旧结果当作完整起卦产品的代表性效果。原实验和用户评分不覆盖，人工已完成的14份另存[可重算副本](../evaluation/reports/context-20261011/human-baseline/README.md)，知识分为普通人工意见，不是专家Gold。
 
 | 项目 | 验证方法 | 通过标准 |
 |---|---|---|
@@ -16,16 +16,16 @@
 
 三个可并存标签为 `CTX-重复解释`、`CTX-未利用用户修正`、`CTX-重新解释已有状态`。定义和新四维锚点随匿名包的README冻结；原五维评分保留，不追溯改写旧Rubric或据新标签重打旧分。
 
-正式效果评测（2026-10-10）：生产冻结在 Git `4ae701b`、graph v16 / prompt v16。本轮完成 40 开发 + 40 独立测试的 B/C/D/H 对照，知识消融、检索与连续对话分表报告；生产行为未按结果修改。独立 AI 评阅不等于专家 Gold 或真人验收，原实验结束时人工评分留空，2026-10-11 首批14份已另行收集。见[最终效果报告](evaluation/final-evaluation-20261010.md)、[匿名人工材料](evaluation/reports/formal-20261010/human/README.md)和[项目展示总结](evaluation/project-showcase-20261010.md)。下文旧轮次的“待正式评测”描述为历史状态，以本条与最终报告为准。
+正式效果评测（2026-10-10）：生产冻结在 Git `4ae701b`、graph v16 / prompt v16。本轮完成 40 开发 + 40 独立测试的 B/C/D/H 对照，知识消融、检索与连续对话分表报告；生产行为未按结果修改。独立 AI 评阅不等于专家 Gold 或真人验收，原实验结束时人工评分留空，2026-10-11 首批14份已另行收集。见[最终效果报告](reports/final-evaluation-20261010.md)、[匿名人工材料](../evaluation/reports/formal-20261010/human/README.md)和[项目展示总结](reports/project-showcase-20261010.md)。下文旧轮次的“待正式评测”描述为历史状态，以本条与最终报告为准。
 
 
-语义与可靠性修订（2026-10-10）：当前 **graph v16 / prompt v16**，仍使用 Flash low / 8192 主调用与同模型非思考一次修复。默认爻注限实际动爻或明确所问爻位；纯文献精确请求由程序取证，其他问题保留模型路由；提供真实爻名，唯一原文定位处理繁简差异，主生成截断可进入原有一次修复。四题隔离确认冻结在 v14，v15 另收紧自动取证以保留换题识别，版本不混算；v16 另修正“说法”名词被当作观点动词的误拒，只离线重校验旧候选。结果、负面实验及完整回答见[本轮报告](evaluation/semantic-optimization-20261010.md)。语义质量仍待用户验收。
+语义与可靠性修订（2026-10-10）：当前 **graph v16 / prompt v16**，仍使用 Flash low / 8192 主调用与同模型非思考一次修复。默认爻注限实际动爻或明确所问爻位；纯文献精确请求由程序取证，其他问题保留模型路由；提供真实爻名，唯一原文定位处理繁简差异，主生成截断可进入原有一次修复。四题隔离确认冻结在 v14，v15 另收紧自动取证以保留换题识别，版本不混算；v16 另修正“说法”名词被当作观点动词的误拒，只离线重校验旧候选。结果、负面实验及完整回答见[本轮报告](archive/experiments/semantic-optimization-20261010.md)。语义质量仍待用户验收。
 
-上一轮提示词减法修订（2026-10-10）：当时为 graph v10 / prompt v16，保留普通段落与 claim 引用契约。清理 SYSTEM、ROUTER、RISK_SYSTEM、动态指令、repair 和工具描述；技术约束继续由程序保障。生成机制、Schema、校验器和前端保持，表达质量以真实回答复核，见[本轮完整提示词、删减与对照](evaluation/prompt-subtraction-20261010.md)。
+上一轮提示词减法修订（2026-10-10）：当时为 graph v10 / prompt v16，保留普通段落与 claim 引用契约。清理 SYSTEM、ROUTER、RISK_SYSTEM、动态指令、repair 和工具描述；技术约束继续由程序保障。生成机制、Schema、校验器和前端保持，表达质量以真实回答复核，见[本轮完整提示词、删减与对照](archive/experiments/prompt-subtraction-20261010.md)。
 
-依据：更新后的 [tasklist.md](tasklist.md)，2026-10-08。按 D01～D08、T01～T15 一一对应。
+依据：更新后的 [tasklist.md](tasks.md)，2026-10-08。按 D01～D08、T01～T15 一一对应。
 
-实际执行记录见 [2026-10-08 首批验收](evaluation/acceptance-20261008.md)：T02、T03、T04、T06、T07、T08 已通过；T01、T05 和 T13 的剩余问题及不同验证版本均单独记录。本轮新增约束与复测见 [后续记录](evaluation/acceptance-20261008-followup.md)；未将 AI 辅助复核写成人工盲评。
+实际执行记录见 [2026-10-08 首批验收](archive/experiments/acceptance-20261008.md)：T02、T03、T04、T06、T07、T08 已通过；T01、T05 和 T13 的剩余问题及不同验证版本均单独记录。本轮新增约束与复测见 [后续记录](archive/experiments/acceptance-20261008-followup.md)；未将 AI 辅助复核写成人工盲评。
 
 ## 使用方式
 
@@ -144,7 +144,7 @@ npm run knowledge:audit
 
 ## 第一阶段 C/W1、D/W2 验收（2026-10-10）
 
-历史完成记录见[第一阶段验收](evaluation/phase1-acceptance-20261010.md)。下表只描述 v9/v14 阶段，不能作为当前 v16/v16 行为不变的声明；旧 14 份匿名评分暂停，原结果保留。当前生成对照、连续追问及 AI 独立体验见[自然对话验证](evaluation/natural-dialogue-20261010.md)，不替代后续 T09–T12 完整目标。
+历史完成记录见[第一阶段验收](archive/experiments/phase1-acceptance-20261010.md)。下表只描述 v9/v14 阶段，不能作为当前 v16/v16 行为不变的声明；旧 14 份匿名评分暂停，原结果保留。当前生成对照、连续追问及 AI 独立体验见[自然对话验证](archive/experiments/natural-dialogue-20261010.md)，不替代后续 T09–T12 完整目标。
 
 | 项目 | 验证方法 | 通过标准 |
 |---|---|---|
@@ -210,4 +210,4 @@ npm run knowledge:audit
 | 主生成空正文/partial/完整但 length，以及 repair 再 length | 截断不直接接受；最多一次修复，失败与未知用量完整计入预算 |
 | 分别阅读原典解释、现代类比、用户事实和连续追问 | 四维给具体文字依据，合理现代隐喻不因古文没谈现代事物扣分；引用匹配不冒充语义通过；无答案与可读候选分开 |
 
-当前开发结果及版本边界见[报告](evaluation/semantic-optimization-20261010.md)；不预设 RAG 或 Agent 获胜。
+当前开发结果及版本边界见[报告](archive/experiments/semantic-optimization-20261010.md)；不预设 RAG 或 Agent 获胜。

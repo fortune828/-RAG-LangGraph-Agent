@@ -1,6 +1,6 @@
 # 历史第一阶段：固定开发输入 C/D 配对（v9/v14）
 
-本目录保留旧 v9/v14 协议和案例；原 14 份匿名评分已暂停，不再填写原 scores.csv，也不作为正式评分。当前产品为 v10/v16，不能在新源码上重跑旧 --paired；行为哈希不一致应拒绝，不能覆盖旧基线。新自然对话记录见[本轮验证](../natural-dialogue-20261010.md)。
+本目录保留旧 v9/v14 协议和案例；原 14 份匿名评分已暂停，不再填写原 scores.csv，也不作为正式评分。当前产品为 v10/v16，不能在新源码上重跑旧 --paired；行为哈希不一致应拒绝，不能覆盖旧基线。新自然对话记录见[本轮验证](../../docs/archive/experiments/natural-dialogue-20261010.md)。
 
 旧阶段只比较 14 个固定开发轮次。B（仅初始证据）保留后续正式范围；C/W1 是规则补检索，D/W2 是生产 Agent；W3 仅为以后按需诊断。不加载 gold，不建设 R1/R2/R3 或留出集。
 
@@ -43,4 +43,4 @@
 
 完整运行先留在被忽略的 results/；公开前只导出已核查的合成记录到 reports/。没有真实用户 runtime，也没有推送到外部观测服务。第一阶段验收后再由用户决定是否进入检索标注和 40+40。
 
-首轮交付见[验收](../phase1-acceptance-20261010.md)。完整合成记录在 reports/phase1-20261010/complete，外部中断轮次单列为 interrupted；两者不拼接。完整轮次另附匿名材料的 materials.md 阅读版。
+首轮交付见[验收](../../docs/archive/experiments/phase1-acceptance-20261010.md)。完整合成记录在 reports/phase1-20261010/complete，外部中断轮次单列为 interrupted；两者不拼接。完整轮次另附匿名材料的 materials.md 阅读版。

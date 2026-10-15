@@ -44,7 +44,7 @@ T01、T05、T13 继续待完整验收；本轮不新增框架或功能任务，�
 
 原始记录：
 
-- [Flash：graph v4 / prompt v5](results/development-real-20261008-093426-8bdf48/report.json)
-- [V4 Pro：graph v4 / prompt v5](results/development-real-20261008-102813-8e1a69/report.json)
+- [Flash：graph v4 / prompt v5](../../../evaluation/results/development-real-20261008-093426-8bdf48/report.json)
+- [V4 Pro：graph v4 / prompt v5](../../../evaluation/results/development-real-20261008-102813-8e1a69/report.json)
 
 原始结果位于本地忽略目录，本文保存可复核的摘要；公开证据整理仍按既有任务执行。

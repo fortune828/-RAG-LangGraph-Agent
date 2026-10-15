@@ -13,13 +13,13 @@
 ## 最终工程验证
 
 - `.venv/bin/python -m pytest -q`：**101 项通过**，最终运行 15.91 秒。
-- `.venv/bin/python -m evaluation.development_checks`：**25 条离线场景机械完成**；37 次模拟请求、370 个模拟 tokens，这些不是 API 消费或模型质量成绩。见 [离线报告](results/development-mock-20261010-030156-52f865/report.json)。
+- `.venv/bin/python -m evaluation.development_checks`：**25 条离线场景机械完成**；37 次模拟请求、370 个模拟 tokens，这些不是 API 消费或模型质量成绩。见 [离线报告](../../../evaluation/results/development-mock-20261010-030156-52f865/report.json)。
 - `.venv/bin/python -m backend.evaluate`：64/64 精确卦辞定位契约通过；不是 BM25 召回率。
 - 本轮没有前端和共享 TS 契约变更，未重跑浏览器、前端构建或旧 TS 测试。保留此前历史记录，不冒称新版全部端到端通过。
 
 ## 真实模型开发检查（包含未通过的语义结果）
 
-完整可见输出、证据及机械记录已保存为可随 Git 核对的 [三轮开发快照](reports/cast-grounded-20261010.json)。其中不导出模型内部思考文本；原始报告路径和 SHA-256 一并保留。所有案例为公开问题表达/合成开发输入，不读取 runtime 私人会话；`humanReviewed=false`，以下是 AI 辅助阅读，不是人工盲评。
+完整可见输出、证据及机械记录已保存为可随 Git 核对的 [三轮开发快照](../../../evaluation/reports/cast-grounded-20261010.json)。其中不导出模型内部思考文本；原始报告路径和 SHA-256 一并保留。所有案例为公开问题表达/合成开发输入，不读取 runtime 私人会话；`humanReviewed=false`，以下是 AI 辅助阅读，不是人工盲评。
 
 | 版本 | 样例与调用 | 用量 | 观察与后续 |
 |---|---|---|---|
@@ -29,7 +29,7 @@
 
 真实用量合计 **28 次请求、89,613 reported tokens**，三个运行均未缺失 usage。前两轮各设置 24 次 / 140,000 tokens 上限，最终为 16 次 / 100,000。预算只是上限，不是实际费用；本轮未估算金额。
 
-原始报告：[v12](results/development-real-20261010-025655-e09f97/report.json)、[v13](results/development-real-20261010-025940-6bfc3e/report.json)、[v14](results/development-real-20261010-030138-4f8836/report.json)。最终只复测下列六条，项目与朱熹查询在 v12/v13 运行过，不能冒称 v14 已复测。
+原始报告：[v12](../../../evaluation/results/development-real-20261010-025655-e09f97/report.json)、[v13](../../../evaluation/results/development-real-20261010-025940-6bfc3e/report.json)、[v14](../../../evaluation/results/development-real-20261010-030138-4f8836/report.json)。最终只复测下列六条，项目与朱熹查询在 v12/v13 运行过，不能冒称 v14 已复测。
 
 | 最终 v14 场景 | 可核对的行为与仍存问题 |
 |---|---|

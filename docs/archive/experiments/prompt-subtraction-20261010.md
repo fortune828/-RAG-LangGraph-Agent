@@ -40,7 +40,7 @@
 
 ## 3. 长度与指令数量
 
-字符是 Python `len(str)`；不等于 Token。动态文本按各不同常量计一次（含注解目标标签），不是某次调用全部历史/证据的长度。工具参数 JSON Schema 未变，不计入描述文本。统计脚本及全部分片见 [measure.py](reports/prompt-subtraction-20261010/measure.py) 和 [prompt-metrics.json](reports/prompt-subtraction-20261010/prompt-metrics.json)。
+字符是 Python `len(str)`；不等于 Token。动态文本按各不同常量计一次（含注解目标标签），不是某次调用全部历史/证据的长度。工具参数 JSON Schema 未变，不计入描述文本。统计脚本及全部分片见 [measure.py](../../../evaluation/reports/prompt-subtraction-20261010/measure.py) 和 [prompt-metrics.json](../../../evaluation/reports/prompt-subtraction-20261010/prompt-metrics.json)。
 
 “指令片段”按中文句号、分号、换行切分，JSON 对象示例单算一块；**是可重算的句法口径，不声称精确等于独立语义规则条数**。原文和分片都保存，避免只报一个不可核查数字。
 
@@ -68,7 +68,7 @@
 
 ## 5. 真实 v15 / v16 对照
 
-[完整回答](reports/prompt-subtraction-20261010/real/answers.md)，[逐题结果](reports/prompt-subtraction-20261010/real/rows.json)，[原始输入](reports/prompt-subtraction-20261010/real/inputs.json)，[可重算统计](reports/prompt-subtraction-20261010/real/summary.json)。目录包含每次请求/可见响应、供应商用量、错误、延迟与版本快照。内部思考正文不发布。
+[完整回答](../../../evaluation/reports/prompt-subtraction-20261010/real/answers.md)，[逐题结果](../../../evaluation/reports/prompt-subtraction-20261010/real/rows.json)，[原始输入](../../../evaluation/reports/prompt-subtraction-20261010/real/inputs.json)，[可重算统计](../../../evaluation/reports/prompt-subtraction-20261010/real/summary.json)。目录包含每次请求/可见响应、供应商用量、错误、延迟与版本快照。内部思考正文不发布。
 
 四个核心对话样例：午饭具体追问、坎卦理发、项目取舍、积蓄更正；另加医疗风险和指定爻原文两项边界检查。文献题仍不混入核心自然交流评价。六组都固定问题、卦象、证据、历史；事实输入 hash 相等。因本轮同时清理动态指令，**整个 messages 并不相同**：系统提示词与动态任务说明是实验变量，事实数据相同。
 

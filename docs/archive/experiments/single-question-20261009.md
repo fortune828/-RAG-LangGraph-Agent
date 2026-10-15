@@ -18,14 +18,14 @@
 
 - 最终 Python 89 项通过，含明确／隐含换题、同题选项／纠正、上下文预算、最新大段回答保留和风险优先路径。起卦、引用、权限、恢复等既有回归继续通过。
 - TypeScript 类型检查、前端构建通过。此次未改共享接口，未重复运行旧 TS 后端测试。
-- 19 个离线开发场景通过：[模拟报告](results/development-mock-20261009-023939-79b483/report.json)。该运行是 prompt v7；最终 v8 仅补回分段提示边界，最终真实运行另记。
-- 真实 Python API + 模拟模型浏览器通过：创建、出处补检索、引用展开、刷新、390px、删除，无控制台错误或溢出。[浏览器报告](results/single-question-browser-20261009/report.json)。模型质量另看真实运行，浏览器未请求付费模型。
+- 19 个离线开发场景通过：[模拟报告](../../../evaluation/results/development-mock-20261009-023939-79b483/report.json)。该运行是 prompt v7；最终 v8 仅补回分段提示边界，最终真实运行另记。
+- 真实 Python API + 模拟模型浏览器通过：创建、出处补检索、引用展开、刷新、390px、删除，无控制台错误或溢出。[浏览器报告](../../../evaluation/results/single-question-browser-20261009/report.json)。模型质量另看真实运行，浏览器未请求付费模型。
 
 ## 保留的首次失败
 
 提示词压缩到 v7 时，首轮 life-initial 把岗位、收入等现实建议混入 interpretation，虽有真实引用仍机械通过。因此补回“interpretation 不写现实建议或面向用户的类比”，该次修订为 v8。这不禁止生活追问引用，而是让解释和现实联想分别表达。
 
-[v7 原始运行](results/development-real-20261009-023953-5db052/report.json) 保留；完成生活链五个场景后，在 source-line 请求期间主动中断，后续未执行。原始记录中 source-line 仍标为 not_run，但已计一次请求，不能据此理解为没有费用。中断请求没有取得 usage，报告 reportedTokens 只是已收到用量，accountedTokens 含保守预留；不汇总成“全部真实用量已知”。
+[v7 原始运行](../../../evaluation/results/development-real-20261009-023953-5db052/report.json) 保留；完成生活链五个场景后，在 source-line 请求期间主动中断，后续未执行。原始记录中 source-line 仍标为 not_run，但已计一次请求，不能据此理解为没有费用。中断请求没有取得 usage，报告 reportedTokens 只是已收到用量，accountedTokens 含保守预留；不汇总成“全部真实用量已知”。
 
 ## 验收边界
 
@@ -38,13 +38,13 @@ v8 完整开发运行中，医疗与危机场景的非法 kind／引用结构在
 
 同题生活回答仍频繁以“原文不涉及职业”作限制。v9 补充：现实建议可根据用户条件及一般常识，不需要古文直接讨论职业或收入。未恢复把古文当现实预测的权限。
 
-隐含换题另有真实模型验证：工作为核心问题时改问孩子转学，现有 route 返回 newTopic，程序只提示新建聊天，未检索或作新题解读；1 次请求、4,838 tokens，原卦保持。[原始记录](results/single-question-implicit-20261009.json)。该探针为 v8；v9 未改换题路由逻辑。
+隐含换题另有真实模型验证：工作为核心问题时改问孩子转学，现有 route 返回 newTopic，程序只提示新建聊天，未检索或作新题解读；1 次请求、4,838 tokens，原卦保持。[原始记录](../../../evaluation/results/single-question-implicit-20261009.json)。该探针为 v8；v9 未改换题路由逻辑。
 
 
 ## 最终复测与结果
 
-- v8 完整 19 场景运行：17 项机械完成，医疗和危机两项校验失败；37 次请求、170,075 reported tokens，无 usage 缺失，预算 45 次 / 230,000 tokens。[报告](results/development-real-20261009-024056-3decce/report.json)。失败样例未删除、未计作通过。
-- v9 定向复测：首次解读、三个月积蓄、纠正为一个月、医疗、危机共 5 项机械完成，原卦均保持；10 次请求、64,441 reported tokens，无 usage 缺失，预算 25 次 / 150,000 tokens。其中生活条件追问修复一次后完成。[报告](results/development-real-20261009-024407-ddd788/report.json)。没有把这 5 项重测写成最终全量 19 项均已重跑。
+- v8 完整 19 场景运行：17 项机械完成，医疗和危机两项校验失败；37 次请求、170,075 reported tokens，无 usage 缺失，预算 45 次 / 230,000 tokens。[报告](../../../evaluation/results/development-real-20261009-024056-3decce/report.json)。失败样例未删除、未计作通过。
+- v9 定向复测：首次解读、三个月积蓄、纠正为一个月、医疗、危机共 5 项机械完成，原卦均保持；10 次请求、64,441 reported tokens，无 usage 缺失，预算 25 次 / 150,000 tokens。其中生活条件追问修复一次后完成。[报告](../../../evaluation/results/development-real-20261009-024407-ddd788/report.json)。没有把这 5 项重测写成最终全量 19 项均已重跑。
 - 最终 Python 89 项通过，包括风险格式失败后的专用修复。浏览器运行时为较早 v7 提示词候选，后续仅修改生成／修复要求，UI 和接口未变；最终语义依上述真实运行判断。
 
 最终生活纠正回答自行选择不引用，不再整段重解卦；同题已有条件能够延续。风险两例没有再索要原文或返回非法 kind，未猜具体地区号码。明确换题以及隐含新题均有验证记录。

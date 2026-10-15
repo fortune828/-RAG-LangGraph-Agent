@@ -40,7 +40,7 @@
 
 ## 3. 建议修正的 12 条
 
-这是按本轮所列见证得出的机器辅助修正建议，不宣称排除了所有古籍版本异文。精确 ID、完整改前/改后文本和来源见[修正清单](../data/knowledge/review/crosscheck-20260926/corrections.json)，每条均为 `applied: false`。
+这是按本轮所列见证得出的机器辅助修正建议，不宣称排除了所有古籍版本异文。精确 ID、完整改前/改后文本和来源见[修正清单](../../data/knowledge/review/crosscheck-20260926/corrections.json)，每条均为 `applied: false`。
 
 | 位置 | 当前文字片段 | 建议文字片段 | 依据 |
 |---|---|---|---|
@@ -86,11 +86,11 @@
 
 ## 6. 工程验证与复查入口
 
-- [总索引](../data/knowledge/review/crosscheck-20260926/index.jsonl)：1,076 个唯一 ID，各自链接到分组记录的文件和行号。
-- [经典逐条记录](../data/knowledge/review/crosscheck-20260926/classic/adjudicated.jsonl)：当前文字、两路原文、差异、最终处理意见。
-- [王弼核对说明](../data/knowledge/review/crosscheck-20260926/wang-bi/README.md)及[宋注核对说明](../data/knowledge/review/crosscheck-20260926/song/README.md)：逐条出处、定位、版本限制与扫描说明。
-- [汇总数据](../data/knowledge/review/crosscheck-20260926/summary.json)：覆盖数、快照哈希检查数、修正数、原库 SHA。
-- [修正清单](../data/knowledge/review/crosscheck-20260926/corrections.json)：12 条可逆建议；可以验证原文、最小替换和完整修订文字相互一致。
+- [总索引](../../data/knowledge/review/crosscheck-20260926/index.jsonl)：1,076 个唯一 ID，各自链接到分组记录的文件和行号。
+- [经典逐条记录](../../data/knowledge/review/crosscheck-20260926/classic/adjudicated.jsonl)：当前文字、两路原文、差异、最终处理意见。
+- [王弼核对说明](../../data/knowledge/review/crosscheck-20260926/wang-bi/README.md)及[宋注核对说明](../../data/knowledge/review/crosscheck-20260926/song/README.md)：逐条出处、定位、版本限制与扫描说明。
+- [汇总数据](../../data/knowledge/review/crosscheck-20260926/summary.json)：覆盖数、快照哈希检查数、修正数、原库 SHA。
+- [修正清单](../../data/knowledge/review/crosscheck-20260926/corrections.json)：12 条可逆建议；可以验证原文、最小替换和完整修订文字相互一致。
 
 项目根目录离线复跑，不启动服务、不请求 LLM：
 

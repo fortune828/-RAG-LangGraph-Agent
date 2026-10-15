@@ -6,7 +6,7 @@
 
 **1. 当前实现：已有轻量 RAG 和真实工具调用，主要欠缺知识层次**
 
-本次直接检查了 [知识检索](../server/knowledge.ts)、[Agent 编排](../server/agent.ts)、[引用校验](../server/validation.ts)、[共享类型](../shared/types.ts)、[语料构建](../scripts/build-corpus.ts)及[评测脚本](../scripts/evaluate.ts)。以下是当前代码行为，不只是规划文档中的设想。
+本次直接检查了 [知识检索](../../server/knowledge.ts)、[Agent 编排](../../server/agent.ts)、[引用校验](../../server/validation.ts)、[共享类型](../../shared/types.ts)、[语料构建](../../scripts/build-corpus.ts)及[评测脚本](../../scripts/evaluate.ts)。以下是当前代码行为，不只是规划文档中的设想。
 
 | 环节 | 当前实现 | 升级时需要解决的问题 |
 |---|---|---|
@@ -25,7 +25,7 @@
 
 这已属于“检索后生成”的轻量 RAG；是否使用向量库不决定它是不是 RAG。下一步的关键是从“按卦查到原文”升级到“查到用户指定对象、注家和版本的材料，并让答案准确使用它”。
 
-当前语料的上游版本、已知缺失、乾卦九二修订及用途限制见 [SOURCES.md](../data/SOURCES.md)。现有项目许可证不能自动覆盖上游数据的使用条件。
+当前语料的上游版本、已知缺失、乾卦九二修订及用途限制见 [SOURCES.md](../../data/SOURCES.md)。现有项目许可证不能自动覆盖上游数据的使用条件。
 
 **2. 数据来源调研与选择**
 

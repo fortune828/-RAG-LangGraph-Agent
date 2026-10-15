@@ -38,9 +38,9 @@ baseline仅提供卦辞，并统一JSON响应格式；evidence提供固定取材
 
 **可复查材料**
 
-- [合并的合成场景运行快照](../evaluation/reports/development-smoke-v2.json)：答案、引用、trace、版本及机械指标。
-- [场景集](../evaluation/cases.json)：明确标记生成来源与开发/测试划分。
-- [评测脚本](../scripts/evaluate.ts)：`npm run eval` 与 `npm run eval:live`。
+- [合并的合成场景运行快照](../../evaluation/reports/development-smoke-v2.json)：答案、引用、trace、版本及机械指标。
+- [场景集](../../evaluation/cases.json)：明确标记生成来源与开发/测试划分。
+- [评测脚本](../../scripts/evaluate.ts)：`npm run eval` 与 `npm run eval:live`。
 - 原始所有调试运行仍保留在本地 `evaluation/results/`，不覆盖失败结果。
 
 **人工审查建议表**

@@ -6,10 +6,10 @@
 
 完成 14 条固定开发输入 × C/W1、D/W2，共 28 条真实输出，来自 12 个会话/衍生组。28 条均最终通过机械校验，但实际回答仍有误读用户、牵强解释等问题，不能称任务成功率 100%。
 
-- [逐题对照 CSV](reports/phase1-20261010/complete/comparison.csv)、[可重算指标](reports/phase1-20261010/complete/metrics.json)、[简表](reports/phase1-20261010/complete/report.md)。
-- [固定输入](reports/phase1-20261010/complete/inputs.json)、[最终输出及初始/最终证据](reports/phase1-20261010/complete/rows.json)、[完整可见 Trace](reports/phase1-20261010/complete/traces/)。
-- [14 份匿名试评阅读材料](reports/phase1-20261010/complete/review/materials.md)、[同内容 JSON](reports/phase1-20261010/complete/review/materials.json)、[空白评分表](reports/phase1-20261010/complete/review/scores.csv)、[评分规约](reports/phase1-20261010/complete/review/rubric.md)。评分前不要阅读下文失败分析或打开组别映射文件。已看过分析的人可做有信息复核，应记录知情，不再称盲评。
-- [冻结基线](baselines/phase1-v1.json)、[运行配置](reports/phase1-20261010/complete/manifest.json)、[源码快照](reports/phase1-20261010/complete/source/)、[依赖环境](reports/phase1-20261010/environment.json)、[工程验证](reports/phase1-20261010/verification.json)。
+- [逐题对照 CSV](../../../evaluation/reports/phase1-20261010/complete/comparison.csv)、[可重算指标](../../../evaluation/reports/phase1-20261010/complete/metrics.json)、[简表](../../../evaluation/reports/phase1-20261010/complete/report.md)。
+- [固定输入](../../../evaluation/reports/phase1-20261010/complete/inputs.json)、[最终输出及初始/最终证据](../../../evaluation/reports/phase1-20261010/complete/rows.json)、[完整可见 Trace](../../../evaluation/reports/phase1-20261010/complete/traces)。
+- [14 份匿名试评阅读材料](../../../evaluation/reports/phase1-20261010/complete/review/materials.md)、[同内容 JSON](../../../evaluation/reports/phase1-20261010/complete/review/materials.json)、[空白评分表](../../../evaluation/reports/phase1-20261010/complete/review/scores.csv)、[评分规约](../../../evaluation/reports/phase1-20261010/complete/review/rubric.md)。评分前不要阅读下文失败分析或打开组别映射文件。已看过分析的人可做有信息复核，应记录知情，不再称盲评。
+- [冻结基线](../../../evaluation/baselines/phase1-v1.json)、[运行配置](../../../evaluation/reports/phase1-20261010/complete/manifest.json)、[源码快照](../../../evaluation/reports/phase1-20261010/complete/source)、[依赖环境](../../../evaluation/reports/phase1-20261010/environment.json)、[工程验证](../../../evaluation/reports/phase1-20261010/verification.json)。
 
 这批输入中，C 调用与 Token 更少；D 在模糊出处题找到了 C 没取得的相关注解，也发生了没有新增证据的补检索。质量取舍要待人工评分及更多实验，不能据此宣布任何一组整体胜出。
 
@@ -80,7 +80,7 @@ D 的 27 次调用分为生成 14 次、路由 12 次、修复 1 次，对应 33
 ### 4.1 项目取舍：把“可以收尾”的理由误读成继续纠缠的动机
 
 - 输入：`project-decision`，解九四变师，用户问是否继续，认为已有成果已够写简历。
-- [D Trace](reports/phase1-20261010/complete/traces/project-decision-D.jsonl) event 4 的可见回答说：“它把你拴在一个已经不算划算的项目上，让你既不甘心走，也没劲真推。”又把“够写简历”说成继续硬撑的原因。
+- [D Trace](../../../evaluation/reports/phase1-20261010/complete/traces/project-decision-D.jsonl) event 4 的可见回答说：“它把你拴在一个已经不算划算的项目上，让你既不甘心走，也没劲真推。”又把“够写简历”说成继续硬撑的原因。
 - 用户没说“不划算”“不甘心走”“没劲推”；原句中的简历价值是考虑停止的理由。该输出把自己的心理解释写成用户事实。reflection 还称变卦师有“收拢人手与成果、而不是继续扩张”的意思，本次所给师卦辞/大象不能直接支持这条传统断言。
 - prepare 已提供解的卦辞/彖/大象、九四/小象与师卦材料；C/D 在这题 **生成请求完全相同、均无路由或工具调用**。缺陷定位在生成时的阅读/类比和校验覆盖，不是检索没有执行，也不是 Agent 路由带来的差异。event 6 errors=[] 表明机械校验未覆盖这一层。
 - 下一步建议：人工试评先核对“用户明说 / 回答假设 / 古文断言”的边界，再针对生成做单变量开发实验；先不增加检索节点或心理分类器。
@@ -88,7 +88,7 @@ D 的 27 次调用分为生成 14 次、路由 12 次、修复 1 次，对应 33
 ### 4.2 已有证据题：追加两次搜索却没有新增证据
 
 - 输入：`evidence-present`，“请解释本卦彖传中‘乾道变化’的含义。”
-- [D Trace](reports/phase1-20261010/complete/traces/evidence-present-D.jsonl) event 1 已有 `zy-1-tuan` 和程颐乾初九注；event 7、9 的两次搜索分别用“乾道变化各正性命保合太和”和“乾道”，都只返回已经可见的程颐初九/王弼九四注。
+- [D Trace](../../../evaluation/reports/phase1-20261010/complete/traces/evidence-present-D.jsonl) event 1 已有 `zy-1-tuan` 和程颐乾初九注；event 7、9 的两次搜索分别用“乾道变化各正性命保合太和”和“乾道”，都只返回已经可见的程颐初九/王弼九四注。
 - 初始/最终证据 ID 集合完全相同，C/D 最终生成请求也完全相同。C 为 1 次模型调用、3,790 tokens；D 为 3 次、17,516 tokens。此例可以明确观察到没有取得新证据的路由开销，不能由此推断所有空/重复命中都无价值。
 - 原因：去重拦截的是标准化后完全相同的请求，两种查询字符串不同，合法通过；路由模型未停在已有充分证据上。当前硬权限没有失效。
 - 下一步建议：在开发标注中把实际可见证据和补检索必要性核清，再观察该类冗余是否重复出现；若稳定出现，优先改现有停止决策。不能为了省调用一律关闭生活追问或出处补检索。
@@ -96,15 +96,15 @@ D 的 27 次调用分为生成 14 次、路由 12 次、修复 1 次，对应 33
 ### 4.3 模糊作者题：C 的现代口语查询没有命中古文表达
 
 - 输入：`fuzzy-author`，“朱熹是不是说过，大意是处于困境时不要急着行动？”
-- [C Trace](reports/phase1-20261010/complete/traces/fuzzy-author-C.jsonl) event 6：按朱熹/commentary 过滤，查询“处于困境时不要急着行动”，返回 empty；随后保留 insufficient，没有把无命中冒称全库不存在。
-- [D Trace](reports/phase1-20261010/complete/traces/fuzzy-author-D.jsonl) event 7、9、15：以“勿用”“坎陷险”等词检索，取得乾初九、坎六三、屯六二等朱熹注。`zhu-xi@528287:h29:line3:030c7ed64b` 有“來往皆險……不可用也”，可供核对相近意思。D 没有据此声称找到一条完全相同的总论。
+- [C Trace](../../../evaluation/reports/phase1-20261010/complete/traces/fuzzy-author-C.jsonl) event 6：按朱熹/commentary 过滤，查询“处于困境时不要急着行动”，返回 empty；随后保留 insufficient，没有把无命中冒称全库不存在。
+- [D Trace](../../../evaluation/reports/phase1-20261010/complete/traces/fuzzy-author-D.jsonl) event 7、9、15：以“勿用”“坎陷险”等词检索，取得乾初九、坎六三、屯六二等朱熹注。`zhu-xi@528287:h29:line3:030c7ed64b` 有“來往皆險……不可用也”，可供核对相近意思。D 没有据此声称找到一条完全相同的总论。
 - 原因：C 的规则提取了“大意是”之后的现代短语，当前双字组词面检索缺乏古今表达桥接。C 查询返回 0 条，故本题差异不是 topK 4/6 截断造成。D 找到候选材料，是本次具体的检索差异；其解释是否忠实、是否足够确认“相近意思”，仍需真人评审，不直接记 Agent 语义胜出。
 - D 也提出了第 4 个工具请求，event 17 被 TOOL_BUDGET_EXHAUSTED 拒绝：4 个请求、3 个消耗尝试并执行、1 个未执行。工具预算实际生效，不能把拒绝计作成功调用或权限泄露。
 - 下一步建议：进入第二阶段后标注相关/替代证据组，用检索对照定位古今词面差距；再决定是否需要最小查询改写，不先上向量库。
 
 ### 4.4 输出结构修复与日常解释的语义盲区
 
-`source-global/D` 的[Trace](reports/phase1-20261010/complete/traces/source-global-D.jsonl) event 17 首次校验因 citations 多了 locator 字段失败；event 20 保存修复响应，event 22 通过。故首次 Schema 13/14、最终机械 14/14，不抹掉一次修复和 2,434 tokens。
+`source-global/D` 的[Trace](../../../evaluation/reports/phase1-20261010/complete/traces/source-global-D.jsonl) event 17 首次校验因 citations 多了 locator 字段失败；event 20 保存修复响应，event 22 通过。故首次 Schema 13/14、最终机械 14/14，不抹掉一次修复和 2,434 tokens。
 
 `haircut-kan/C` 将“常德行，习教事”直接解释为日常小事照常做，D 将“行有尚”讲成行动本身可取，两者都把警示意味弱化成“该办就办”。材料中已有“习坎，重险也”等彖文，属于需要复核的选义/类比问题，不缺原典；不能靠引文文字匹配给高分，也不能为了区分泰/坎而要求一卦准去、一卦禁去。C 的 `source-global` 还说“原文只此六字”，实际“履霜坚冰至”为五字；来源正确也不保证解释里每个事实正确。
 
@@ -112,7 +112,7 @@ D 的 27 次调用分为生成 14 次、路由 12 次、修复 1 次，对应 33
 
 ## 5. 中断轮次与用量完整性
 
-上轮对话中断终止了 `paired-real-20261010-034003-841226`，保留[原始记录](reports/phase1-20261010/interrupted/)及[中断说明](reports/phase1-20261010/interrupted/interruption.json)。已有 14 条完成，source-line/D 中途停止，13 条未运行。没有挑出其中更好的回答拼进新一轮。
+上轮对话中断终止了 `paired-real-20261010-034003-841226`，保留[原始记录](../../../evaluation/reports/phase1-20261010/interrupted)及[中断说明](../../../evaluation/reports/phase1-20261010/interrupted/interruption.json)。已有 14 条完成，source-line/D 中途停止，13 条未运行。没有挑出其中更好的回答拼进新一轮。
 
 原 budget.json 是最近完整轮次后的落盘快照：19 次 / 67,911 tokens。继续发生的两次响应已在逐调用 Trace 留下记录，故可核对的下限是 **21 次已返回、78,210 tokens**。最后一条 generate 请求没有响应记录，是否实际发出/计费无法确认，usage 和完整总量保持 unknown/null；不将它补成一次零用量成功。
 
@@ -120,7 +120,7 @@ D 的 27 次调用分为生成 14 次、路由 12 次、修复 1 次，对应 33
 
 ## 6. 验收检查
 
-- Python 全套 **111 passed in 17.56s**，含默认图与冻结源码的 14 输入等价对照、C 实际补检索、同准备证据、成功/空/拒绝工具、全局预算、缺失用量、截断 usage、修复前后候选和硬中断无响应；[测试输出](reports/phase1-20261010/python-tests.txt)。没有用这些模拟测试声称真实模型安全或语义正确。
+- Python 全套 **111 passed in 17.56s**，含默认图与冻结源码的 14 输入等价对照、C 实际补检索、同准备证据、成功/空/拒绝工具、全局预算、缺失用量、截断 usage、修复前后候选和硬中断无响应；[测试输出](../../../evaluation/reports/phase1-20261010/python-tests.txt)。没有用这些模拟测试声称真实模型安全或语义正确。
 - 完整运行 41 个请求均有对应响应；逐响应 total usage 独立求和与 rows 预算、metrics 一致。所有初始证据/输入配对相同，源码快照哈希逐项匹配 manifest。
 - 对完整目录执行 --rescore 后，metrics.json、comparison.csv、report.md 字节不变。人工分数空白，语义质量和费用金额保持 null。
 - 14 份材料来自预先选定的 7 个输入 × 两组，使用固定随机种子匿名打乱；评分者/理由待填，未做双人审查。匿名材料保留必要原文，可能从风格/材料猜到组别，不宣称严格双盲。
@@ -138,7 +138,7 @@ D 的 27 次调用分为生成 14 次、路由 12 次、修复 1 次，对应 33
 .venv/bin/python -m backend.evaluate --paired --live --max-calls 100 --max-tokens 600000
 ```
 
-操作、字段及预算定义见[运行说明](phase1/README.md)。当前 CLI 不支持评测中断自动续跑；为避免重放/重复计费被隐藏，本次保留失败轮并另跑完整轮。生产业务原有 checkpoint 恢复能力不因此改变。
+操作、字段及预算定义见[运行说明](../../../evaluation/phase1/README.md)。当前 CLI 不支持评测中断自动续跑；为避免重放/重复计费被隐藏，本次保留失败轮并另跑完整轮。生产业务原有 checkpoint 恢复能力不因此改变。
 
 ## 7. 局限与第二阶段建议
 

@@ -52,13 +52,13 @@ checkpoint 状态更新采用已安装版本的 `aupdate_state(..., as_node=...)
 
 这些原始报告仍在本地忽略目录，含合成回答和部分文献全文；这里只保存可复核的摘要，不将全文当作可无条件公开分发的资料。T15 另整理公开证据。
 
-- [最终开发运行：graph v3 / prompt v4](results/development-real-20261008-084011-8376a4/report.json)
-- [最终模拟运行](results/development-mock-20261008-083938-9e4aeb/report.json)
-- [第一轮开发与爻名错误](results/development-real-20261008-083118-891cb6/report.json)
-- [第二轮定向复测](results/development-real-20261008-083520-369672/report.json)
-- [UI 与异常操作](results/ui-t06-t08-20261008/report.json)
-- [Python API + 模拟模型浏览器](results/ui-python-api-20261008/report.json)
-- [真实浏览器两组三轮](results/t13-live-browser-20261008/report.json)
-- [真实注入样例](results/python-injection-20261008-v3/report-20261008-083709-97a159.json)
+- [最终开发运行：graph v3 / prompt v4](../../../evaluation/results/development-real-20261008-084011-8376a4/report.json)
+- [最终模拟运行](../../../evaluation/results/development-mock-20261008-083938-9e4aeb/report.json)
+- [第一轮开发与爻名错误](../../../evaluation/results/development-real-20261008-083118-891cb6/report.json)
+- [第二轮定向复测](../../../evaluation/results/development-real-20261008-083520-369672/report.json)
+- [UI 与异常操作](../../../evaluation/results/ui-t06-t08-20261008/report.json)
+- [Python API + 模拟模型浏览器](../../../evaluation/results/ui-python-api-20261008/report.json)
+- [真实浏览器两组三轮](../../../evaluation/results/t13-live-browser-20261008/report.json)
+- [真实注入样例](../../../evaluation/results/python-injection-20261008-v3/report-20261008-083709-97a159.json)
 
 复现入口：`npm run test:python`、`npm run test:browser`、`.venv/bin/python -m evaluation.development_checks`。浏览器默认 API fixture 不等于真实 Python API；真实模型须显式指定相应 live 入口与预算，运行配置见原始记录及 README。

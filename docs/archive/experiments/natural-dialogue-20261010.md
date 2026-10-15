@@ -51,7 +51,7 @@
 
 ## 3. 验证结果
 
-工程结果：`pytest tests_python -q` **131 passed**；`npm run lint`、`npm run build` 通过；`npm test` **41 passed**。浏览器 mock API 验证新旧正文、引用位置、展开与焦点、刷新恢复、390/1360 宽度和八类错误动作，**不代表生成质量**。公开浏览器摘要见 [ui-smoke.json](reports/natural-dialogue-20261010/ui-smoke.json)。
+工程结果：`pytest tests_python -q` **131 passed**；`npm run lint`、`npm run build` 通过；`npm test` **41 passed**。浏览器 mock API 验证新旧正文、引用位置、展开与焦点、刷新恢复、390/1360 宽度和八类错误动作，**不代表生成质量**。公开浏览器摘要见 [ui-smoke.json](../../../evaluation/reports/natural-dialogue-20261010/ui-smoke.json)。
 
 新增回归不是用删除断言换通过：保留虚构引文、错误 ID、作者/作品、明确爻位目标、工具越权、去重、预算、同会话卦象、恢复；另外验证同段卦义与建议合法、旧字段生成拒绝、旧会话可读、claim 定位及跨 claim 借用作者证据失败、误分类的实际图输入、三轮更正和长答不挤掉用户原话。超过旧六段/两千字符可解析只是契约测试，不是鼓励长文的质量标准。
 
@@ -59,7 +59,7 @@
 
 ## 4. 同输入真实模型前后对照
 
-[完整十二份回答](reports/natural-dialogue-20261010/comparison/answers.md)；[逐题结构及用量](reports/natural-dialogue-20261010/comparison/rows.json)；[汇总](reports/natural-dialogue-20261010/comparison/summary.json)。同目录保存输入、每次可见请求/响应、源文件快照和 manifest。
+[完整十二份回答](../../../evaluation/reports/natural-dialogue-20261010/comparison/answers.md)；[逐题结构及用量](../../../evaluation/reports/natural-dialogue-20261010/comparison/rows.json)；[汇总](../../../evaluation/reports/natural-dialogue-20261010/comparison/summary.json)。同目录保存输入、每次可见请求/响应、源文件快照和 manifest。
 
 六组为午饭、泰卦理发、坎卦理发、项目取舍、积蓄更正、午饭具体追问。两组复用**完全相同的 user payload（卦象、原文、历史均相同）**，仅替换系统提示词和对应输出契约；六组 inputSha256 全相等。每组只生成一次，不修复、不挑最佳输出，交错旧/新顺序。旧 SYSTEM 来自历史实际请求，并非凭记忆重写。
 
@@ -82,7 +82,7 @@
 
 ## 5. 实际图连续追问
 
-[完整六答](reports/natural-dialogue-20261010/conversations/answers.md)，[输入、状态、证据和 trace](reports/natural-dialogue-20261010/conversations/rows.json)。两条会话，各三轮；真实当前图执行，上一轮真实回答进入下一轮上下文。累计 10 次模型调用、48,539 reported tokens、unknown=0，六轮均完成且同会话卦象保持。
+[完整六答](../../../evaluation/reports/natural-dialogue-20261010/conversations/answers.md)，[输入、状态、证据和 trace](../../../evaluation/reports/natural-dialogue-20261010/conversations/rows.json)。两条会话，各三轮；真实当前图执行，上一轮真实回答进入下一轮上下文。累计 10 次模型调用、48,539 reported tokens、unknown=0，六轮均完成且同会话卦象保持。
 
 换工作链覆盖泛提《易经》、三个月更正为一个月、明确“不想马上辞职，不要替我规定存款目标”；午饭链覆盖“具体替我选”和“不吃面、不吃辣”。实际分支与角色上下文保存有效，但模型仍会把上一轮助手提出的“十分钟能上桌”等标准称为“你上一轮要的”，以及重述不相关卦义。这说明正确保留角色是必要条件，**不是模型一定正确使用历史的保证**。这两条仍列为后续语义回归，不加关键词封禁来掩盖问题。
 
@@ -90,15 +90,15 @@
 
 独立 agent 使用空上下文启动，未接触项目源码、提示词、既有审计或预期结论；先自行拟定 20 个生活问题与四组追问及 0–2 rubric，再通过隔离本地 HTTP 服务逐题请求真实模型。评审者知道实际产品回应及可展开证据，不知道修改前答案，不做前后胜负判定。不是人类评分，也不是《易经》专家校勘。
 
-问题覆盖工作、学习、关系、家庭、居住、日常取舍与失落。完整可见回答、逐项评分和技术失败见 [独立体验目录](reports/natural-dialogue-20261010/independent/)。其分数只用于发现问题，不并入正式 40+40，也不与暂停的 14 份评分混算。
+问题覆盖工作、学习、关系、家庭、居住、日常取舍与失落。完整可见回答、逐项评分和技术失败见 [独立体验目录](../../../evaluation/reports/natural-dialogue-20261010/independent)。其分数只用于发现问题，不并入正式 40+40，也不与暂停的 14 份评分混算。
 
 最终为 **20 个初始问题 + 4 个追问，23 答有正文、1 答技术失败**。独立 AI 内容均分 **6.13/8**（分母 23，失败未冒充内容 0 分）；四维均分依次为理解 **1.87/2**、连贯自然 **1.65/2**、分析帮助 **1.78/2**、依据与克制 **0.83/2**。这说明建议常有帮助，但无根据推断和强行解释仍是突出问题；并不证明比旧版更好。
 
-[独立报告及逐题完整问答](reports/natural-dialogue-20261010/independent/report.md)，[预设方法](reports/natural-dialogue-20261010/independent/methodology.md)，[逐项分数](reports/natural-dialogue-20261010/independent/scores.jsonl)，[汇总](reports/natural-dialogue-20261010/independent/summary.json)。评审实际调用 HTTP API，并未操作浏览器；布局验证另由 mock API 浏览器测试承担。
+[独立报告及逐题完整问答](../../../evaluation/reports/natural-dialogue-20261010/independent/report.md)，[预设方法](../../../evaluation/reports/natural-dialogue-20261010/independent/methodology.md)，[逐项分数](../../../evaluation/reports/natural-dialogue-20261010/independent/scores.jsonl)，[汇总](../../../evaluation/reports/natural-dialogue-20261010/independent/summary.json)。评审实际调用 HTTP API，并未操作浏览器；布局验证另由 mock API 浏览器测试承担。
 
 该组 **28 次模型调用、171,296 reported tokens、unknown=0、0 次 repair**。一次输出不完整计入调用与 Token；两次 HTTP 429 以同用户原请求等待恢复，未绕过限流，未重跑已完成的回答。第 8 题客户端初始脱敏白名单漏存 status/error，随后只从同一隔离服务补取这两项，报告明确记载取证来源。
 
-主 agent 另用最终代码离线回放全部 24 轮：**可见请求差异 0、回答变化 0、失败变化 0**；内部思考与计时不参与相等比较。23 个完成答案也通过最终校验。见 [回放结果](reports/natural-dialogue-20261010/final-code-replay.json)。这是代码兼容验证，不是第二次真实采样或独立评分。
+主 agent 另用最终代码离线回放全部 24 轮：**可见请求差异 0、回答变化 0、失败变化 0**；内部思考与计时不参与相等比较。23 个完成答案也通过最终校验。见 [回放结果](../../../evaluation/reports/natural-dialogue-20261010/final-code-replay.json)。这是代码兼容验证，不是第二次真实采样或独立评分。
 
 ## 7. 仍存在的问题与下一步
 

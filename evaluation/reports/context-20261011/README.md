@@ -1,6 +1,6 @@
 # 本轮材料索引与复现
 
-结论见[修复报告](../../context-repair-20261011.md)。最终生产graph v18 / prompt v16；原始阶段版本以manifest和实际源码快照为准。
+结论见[修复报告](../../../docs/reports/context-repair-20261011.md)。最终生产graph v18 / prompt v16；原始阶段版本以manifest和实际源码快照为准。
 
 ## 阅读与评分
 

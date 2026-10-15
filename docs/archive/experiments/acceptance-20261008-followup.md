@@ -18,9 +18,9 @@
 
 - Python：`.venv/bin/python -m pytest -q`，69 项通过，包含故障恢复、跨进程、权限、并发、旧答案读取以及本轮新增契约和上下文测试。
 - TypeScript：`npm test` 37 项通过；`npm run lint`、`npm run build` 通过。
-- 浏览器：真实 Python API + 模拟模型完成首次解读、第二爻补检索、引用展开、刷新、390px 和删除；无控制台错误、卦象保持。见 [浏览器报告](results/python-browser-v4-20261008/report.json)。测试 fixture 已适配裁剪后的生成证据，不依赖已移除的内部字段。首次启动因 Playwright 默认浏览器版本未安装失败，指定本机已有 Chromium 后通过；不涉及模型质量评分。
-- 离线开发：13 个合成场景完成；[模拟报告](results/development-mock-20261008-093405-3d9b4d/report.json)。
-- 真实模型：13 个开发场景均完成、原卦均保持、无输出修复；21 次请求，56,098 reported tokens，usage 无缺失。预算为 40 次 / 160,000 tokens；[真实报告](results/development-real-20261008-093426-8bdf48/report.json) 保存代码哈希、回答、工具及成本。
+- 浏览器：真实 Python API + 模拟模型完成首次解读、第二爻补检索、引用展开、刷新、390px 和删除；无控制台错误、卦象保持。见 [浏览器报告](../../../evaluation/results/python-browser-v4-20261008/report.json)。测试 fixture 已适配裁剪后的生成证据，不依赖已移除的内部字段。首次启动因 Playwright 默认浏览器版本未安装失败，指定本机已有 Chromium 后通过；不涉及模型质量评分。
+- 离线开发：13 个合成场景完成；[模拟报告](../../../evaluation/results/development-mock-20261008-093405-3d9b4d/report.json)。
+- 真实模型：13 个开发场景均完成、原卦均保持、无输出修复；21 次请求，56,098 reported tokens，usage 无缺失。预算为 40 次 / 160,000 tokens；[真实报告](../../../evaluation/results/development-real-20261008-093426-8bdf48/report.json) 保存代码哈希、回答、工具及成本。
 - 缺失作者场景不调用工具、不再附带朱熹作替代；指定爻、全库出处与朱熹注解仍命中对应材料。明确重起卦为零模型调用。
 - 真实回答由主 agent 阅读做 AI 辅助复核，`humanReviewed=false`。13 条机械完成不等于 13 条语义全合格，不是冻结留出或真人盲评。
 

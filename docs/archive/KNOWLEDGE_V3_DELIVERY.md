@@ -20,7 +20,7 @@
 
 新注解选用维基文库固定修订快照。王弼材料仅读取明确附在爻辞后的注，排除孔颖达疏；程颐、朱熹各用来源专用解析器，不把任意括号或整页统一归给一名作者。保留来源 URL、修订号、文件 SHA-256、作者、著作、版本、爻位锚点，以及原文件行号和审查记录中的 UTF-16 字符偏移。疑难标记进入排除清单。
 
-没有导入现代第三方解读全文，也没有批量生成现代解释卡。Kanripo 尚未确认的分发条件未被当成已授权来源。新增资料不解除旧 Open I Ching 数据的使用限制；原典、电子整理与 OpenCC 字典的说明分别保留，见 [数据来源](../data/SOURCES.md)及 `data/knowledge/sources.json`。
+没有导入现代第三方解读全文，也没有批量生成现代解释卡。Kanripo 尚未确认的分发条件未被当成已授权来源。新增资料不解除旧 Open I Ching 数据的使用限制；原典、电子整理与 OpenCC 字典的说明分别保留，见 [数据来源](../../data/SOURCES.md)及 `data/knowledge/sources.json`。
 
 **检索与生成实际怎样工作**
 
@@ -131,7 +131,7 @@ npm run knowledge:smoke -- --live \
 
 针对这个开发失败增加有限反馈：当明确目标实际已收录、但未进入上下文时，将缺口反馈给 router 再决策一次；不由后端静默代替模型取工具，也不对未收录材料反复检索。修复后的 Prompt／策略版本为 `evidence-agent-v3.1`；初始上下文增加缺失但可取得的目标元数据，错误 ready 后最多再反馈一次，正文仍须模型真实调用工具取得，不直接注入新证据。该题已参与调试，后续不能冒充独立留出题。
 
-当前目录没有 Git 元数据，因此根代理另保存修复前 v3.0 的 12 个运行时／共享类型／冒烟脚本源码文件与 SHA-256 清单：[源码快照](../evaluation/results/validation-code-before-router-feedback.tar.gz)、[哈希清单](../evaluation/results/validation-code-before-router-feedback.json)。不含 `.env`、密钥或用户会话，便于复查真实失败对应的程序版本。
+当前目录没有 Git 元数据，因此根代理另保存修复前 v3.0 的 12 个运行时／共享类型／冒烟脚本源码文件与 SHA-256 清单：[源码快照](../../evaluation/results/validation-code-before-router-feedback.tar.gz)、[哈希清单](../../evaluation/results/validation-code-before-router-feedback.json)。不含 `.env`、密钥或用户会话，便于复查真实失败对应的程序版本。
 
 v3.1 的实际回归报告为 `evaluation/results/knowledge-followup-2026-09-26T09-03-54-836Z.json`：4 次模型请求、35,815 tokens，经一次 `MISSING_RETRIEVABLE_TARGET` 反馈后，模型真实调用：
 
@@ -143,6 +143,6 @@ v3.1 的实际回归报告为 `evaluation/results/knowledge-followup-2026-09-26T
 
 全部真实开发验证共 **13 次模型请求、103,435 tokens**，包含所有无工具调用场景、过度拒答失败及修复回归，不只计算成功样例成本。共 6 次场景运行，其中上爻问题重复用于失败与回归，不能当 6 个独立问题。各份报告均保留原始输入、答案、证据、trace 和用量。
 
-最终版本已保存为[源码快照](../evaluation/results/validation-code-final-v3.1.tar.gz)及[哈希和验收摘要](../evaluation/results/validation-code-final-v3.1.json)，共 30 个运行时、测试、脚本、前端与 package 文件，与修复前版本分别保存；来源审计与重复构建已确认旧原典文件、新发布包哈希不变。数据版本仍是 `knowledge-v3-20260926`，生成策略变化不伪装成语料更新。
+最终版本已保存为[源码快照](../../evaluation/results/validation-code-final-v3.1.tar.gz)及[哈希和验收摘要](../../evaluation/results/validation-code-final-v3.1.json)，共 30 个运行时、测试、脚本、前端与 package 文件，与修复前版本分别保存；来源审计与重复构建已确认旧原典文件、新发布包哈希不变。数据版本仍是 `knowledge-v3-20260926`，生成策略变化不伪装成语料更新。
 
 不预设提升百分比，也不把新增语料条数或一次工具成功当成算法质量收益。

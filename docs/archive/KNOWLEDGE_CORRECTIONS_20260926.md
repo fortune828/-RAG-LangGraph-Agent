@@ -10,7 +10,7 @@
 - 回答末尾的参考文献继续集中展示；修订条目增加“查看文字修订依据”，列出改动与多方来源。原链接明确标为“采集原文（修订前）”。
 - 提示词更新到 `evidence-agent-v3.2`：只引用 `text`，不把 `textOriginal` 或修订记录当成当前引文。引用校验仍按实际提供的 `text` 进行。
 
-原发布版 `knowledge-v3-20260926` 和原始上游文件未变。原审查目录中的 `applied:false` 是历史提案状态；新发布包单独保存 `applied:true` 的[已应用清单](../data/knowledge/releases/knowledge-v3-20260926-r1/corrections.json)，不覆盖历史审计。
+原发布版 `knowledge-v3-20260926` 和原始上游文件未变。原审查目录中的 `applied:false` 是历史提案状态；新发布包单独保存 `applied:true` 的[已应用清单](../../data/knowledge/releases/knowledge-v3-20260926-r1/corrections.json)，不覆盖历史审计。
 
 ## 使用与会话兼容
 

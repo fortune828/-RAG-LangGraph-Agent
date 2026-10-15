@@ -1,24 +1,24 @@
 # README 历史说明归档
 
-归档日期：2026-10-15。以下保留此前开发记录，当前入口见[项目首页](../README.md)。带日期的配置、测试和结论仅对应当时版本。
+归档日期：2026-10-15。以下保留此前开发记录，当前入口见[项目首页](../../README.md)。带日期的配置、测试和结论仅对应当时版本。
 
 # 见素问微 · Python / LangGraph 周易情境解读 Agent
 
-当前修订（2026-10-11）：**graph v18 / prompt v16**。修复混合原典/注解目标在生成前丢失、全库查出处把无关初始材料当成已取得的问题；增加有限的显式卦爻事实核验，并修复回答失败后丢弃该轮用户更正的问题。历史仍保留最近六轮，失败轮只保留用户输入，不纳入失败助手候选。消息重排、证据缩减等候选未证明稳定改善，未上线；保持 Flash low 配置与 prompt v16。新体验评测每个会话经真实 API 随机起卦，保留硬币结果、不改爻、不挑卦，后续沿用同一会话。机器检查、知识语义审查、四维人工体验分开，新增三个 CTX 标签。见[本轮修复与实验](../evaluation/context-repair-20261011.md)。下文带旧日期的记录保留为历史，不代表当前验收状态。
+当前修订（2026-10-11）：**graph v18 / prompt v16**。修复混合原典/注解目标在生成前丢失、全库查出处把无关初始材料当成已取得的问题；增加有限的显式卦爻事实核验，并修复回答失败后丢弃该轮用户更正的问题。历史仍保留最近六轮，失败轮只保留用户输入，不纳入失败助手候选。消息重排、证据缩减等候选未证明稳定改善，未上线；保持 Flash low 配置与 prompt v16。新体验评测每个会话经真实 API 随机起卦，保留硬币结果、不改爻、不挑卦，后续沿用同一会话。机器检查、知识语义审查、四维人工体验分开，新增三个 CTX 标签。见[本轮修复与实验](../reports/context-repair-20261011.md)。下文带旧日期的记录保留为历史，不代表当前验收状态。
 
 
-正式效果评测（2026-10-10）：生产冻结在 Git `4ae701b`、graph v16 / prompt v16。本轮完成 40 开发 + 40 独立测试的 B/C/D/H 对照，知识消融、检索与连续对话分表报告；生产行为未按结果修改。独立 AI 评阅不等于专家 Gold 或真人验收，该报告当时人工评分留空；2026-10-11首批14份已收集并独立整理。见[最终效果报告](../evaluation/final-evaluation-20261010.md)、[匿名人工材料](../evaluation/reports/formal-20261010/human/README.md)和[项目展示总结](../evaluation/project-showcase-20261010.md)。下文旧轮次的“待正式评测”描述为历史状态，以本条与最终报告为准。
+正式效果评测（2026-10-10）：生产冻结在 Git `4ae701b`、graph v16 / prompt v16。本轮完成 40 开发 + 40 独立测试的 B/C/D/H 对照，知识消融、检索与连续对话分表报告；生产行为未按结果修改。独立 AI 评阅不等于专家 Gold 或真人验收，该报告当时人工评分留空；2026-10-11首批14份已收集并独立整理。见[最终效果报告](../reports/final-evaluation-20261010.md)、[匿名人工材料](../../evaluation/reports/formal-20261010/human/README.md)和[项目展示总结](../reports/project-showcase-20261010.md)。下文旧轮次的“待正式评测”描述为历史状态，以本条与最终报告为准。
 
 
-语义与可靠性修订（2026-10-10）：当时为 **graph v16 / prompt v16**，仍使用 Flash low / 8192 主调用与同模型非思考一次修复。默认爻注限实际动爻或明确所问爻位；纯文献精确请求由程序取证，其他问题保留模型路由；提供真实爻名，唯一原文定位处理繁简差异，主生成截断可进入原有一次修复。四题隔离确认冻结在 v14，v15 另收紧自动取证以保留换题识别，版本不混算；v16 另修正“说法”名词被当作观点动词的误拒，只离线重校验旧候选。结果、负面实验及完整回答见[本轮报告](../evaluation/semantic-optimization-20261010.md)。语义质量仍待用户验收。
+语义与可靠性修订（2026-10-10）：当时为 **graph v16 / prompt v16**，仍使用 Flash low / 8192 主调用与同模型非思考一次修复。默认爻注限实际动爻或明确所问爻位；纯文献精确请求由程序取证，其他问题保留模型路由；提供真实爻名，唯一原文定位处理繁简差异，主生成截断可进入原有一次修复。四题隔离确认冻结在 v14，v15 另收紧自动取证以保留换题识别，版本不混算；v16 另修正“说法”名词被当作观点动词的误拒，只离线重校验旧候选。结果、负面实验及完整回答见[本轮报告](experiments/semantic-optimization-20261010.md)。语义质量仍待用户验收。
 
-上一轮提示词减法修订（2026-10-10）：当时为 graph v10 / prompt v16，保留普通段落与 claim 引用契约。清理 SYSTEM、ROUTER、RISK_SYSTEM、动态指令、repair 和工具描述；技术约束继续由程序保障。生成机制、Schema、校验器和前端保持，表达质量以真实回答复核，见[本轮完整提示词、删减与对照](../evaluation/prompt-subtraction-20261010.md)。
+上一轮提示词减法修订（2026-10-10）：当时为 graph v10 / prompt v16，保留普通段落与 claim 引用契约。清理 SYSTEM、ROUTER、RISK_SYSTEM、动态指令、repair 和工具描述；技术约束继续由程序保障。生成机制、Schema、校验器和前端保持，表达质量以真实回答复核，见[本轮完整提示词、删减与对照](experiments/prompt-subtraction-20261010.md)。
 
 面向现实困惑的占卜对话应用：程序起卦，以真实材料理解卦象，用隐喻帮助看清处境、取舍与下一步。回答追求沉稳、通透、具体，不以资料汇报代替解卦，也不宣称掌握确定的未来。
 
 **当前状态（2026-10-08）**：核心运行后端已迁移为 Python + FastAPI + LangGraph，现有 React 前端保留。迁移目标是让只掌握 Python 的开发者学习、调试并解释 Agent 核心；前端开发不作为学习前置条件。产品质量完善与冻结留出评测仍在进行，历史 TypeScript 后端保留作对照和回滚。
 
-当前为 graph v18 / prompt v16、Flash low 思考模式。新回答仅包含 status、普通 paragraphs（text 与 citations）及可选内部 limitations；不再生成 summary 或段落 kind。引用用 claim 定位本段受支持的文字；前端在该处显示引用标记。旧会话的摘要、正文和限制完整展示为普通正文。质量与验证记录见 [本轮回答体验验证](../evaluation/natural-dialogue-20261010.md) 和 [任务状态](../tasklist.md)。
+当前为 graph v18 / prompt v16、Flash low 思考模式。新回答仅包含 status、普通 paragraphs（text 与 citations）及可选内部 limitations；不再生成 summary 或段落 kind。引用用 claim 定位本段受支持的文字；前端在该处显示引用标记。旧会话的摘要、正文和限制完整展示为普通正文。质量与验证记录见 [本轮回答体验验证](experiments/natural-dialogue-20261010.md) 和 [任务状态](../tasks.md)。
 
 ## 启动
 
@@ -86,7 +86,7 @@ React → FastAPI → 服务端起卦并保存会话
 
 ## 验证与评测
 
-已按批准的[审计提案](../evaluation/evaluation-audit-20261010.md)建设第一阶段 C/W1 与 D/W2 评测：14 条固定开发输入、完整可见调用记录、可重算统计和 14 份匿名人工试评材料。见[第一阶段验收](../evaluation/phase1-acceptance-20261010.md)与[运行说明](../evaluation/phase1/README.md)。这是历史 graph v9 / prompt v14 开发对照。旧 14 份匿名评分已暂停，不再填写原 scores.csv，也不作为正式评分；原回答、Trace 和统计保留。当前重构独立记录生成对照、连续追问与独立 AI 体验，不冒称真人评分。B、检索层对照及 40+40 冻结集尚未实施。
+已按批准的[审计提案](experiments/evaluation-audit-20261010.md)建设第一阶段 C/W1 与 D/W2 评测：14 条固定开发输入、完整可见调用记录、可重算统计和 14 份匿名人工试评材料。见[第一阶段验收](experiments/phase1-acceptance-20261010.md)与[运行说明](../../evaluation/phase1/README.md)。这是历史 graph v9 / prompt v14 开发对照。旧 14 份匿名评分已暂停，不再填写原 scores.csv，也不作为正式评分；原回答、Trace 和统计保留。当前重构独立记录生成对照、连续追问与独立 AI 体验，不冒称真人评分。B、检索层对照及 40+40 冻结集尚未实施。
 
 ```bash
 npm run test:python                   # Python、API、真实 StateGraph 与跨进程恢复；mock 模型
@@ -119,7 +119,7 @@ npm run knowledge:audit              # 保留的数据来源/修订审计，不�
 - 真实浏览器 + Python API + mock 模型通过：首次解读、第二爻工具查询、引用展开、刷新、390px 手机视口、删除；这不是模型质量评分。
 - Python 真实模型三轮开发冒烟完成：6 次请求、28,901 reported tokens；首次解读、零工具的生活追问、一次真实 get_passages 补检索均返回 answered、机械校验通过、卦象保持。不代表正式人工语义评分或泛化成功率。
 
-迁移报告：[真实模型原始记录](../evaluation/results/python-live-20261008-070030-561f7e/report.json)、[浏览器记录](../evaluation/results/python-browser-1791442819647485130/report.json)。results 是本地忽略目录，公开展示时须另整理可分发证据。
+迁移报告：[真实模型原始记录](../../evaluation/results/python-live-20261008-070030-561f7e/report.json)、[浏览器记录](../../evaluation/results/python-browser-1791442819647485130/report.json)。results 是本地忽略目录，公开展示时须另整理可分发证据。
 
 Python evaluator 保留旧冻结 C/D 的离线重算，历史 Schema 由 evaluation/legacy_schema.py 独立校验，不套用 v15 起的普通段落契约；当前源码不能直接重跑旧冻结 --paired。旧 `npm run eval:live` 仍运行 TypeScript 基线，各版本不得混算。新版 40+40、完整 B/C/D 与真人评分仍待后续验收，不填未经测量的质量提升百分比。
 
@@ -127,7 +127,7 @@ Python evaluator 保留旧冻结 C/D 的离线重算，历史 Schema 由 evaluat
 
 默认知识版本仍为 `knowledge-v3-20260926-r1`，1,076 条证据：964 条原典、112 条王弼/程颐/朱熹试点爻注，包含 12 条可追溯修订。没有改动发布包。旧会话继续绑定旧 release；缺 release 的历史会话绑定原 V2。注解覆盖有限，人工专家审核数为 0。
 
-原始快照、解析、构建与校勘脚本暂保留在 scripts/knowledge（TS/Python），不要求迁移这些离线工具才能使用 Python 后端。来源与用途限制见 [data/SOURCES.md](../data/SOURCES.md) 和 [知识修订交付](../docs/KNOWLEDGE_CORRECTIONS_20260926.md)。数据包含学习/非商业限制，不宣称拥有完整商业发布授权。
+原始快照、解析、构建与校勘脚本暂保留在 scripts/knowledge（TS/Python），不要求迁移这些离线工具才能使用 Python 后端。来源与用途限制见 [data/SOURCES.md](../../data/SOURCES.md) 和 [知识修订交付](KNOWLEDGE_CORRECTIONS_20260926.md)。数据包含学习/非商业限制，不宣称拥有完整商业发布授权。
 
 ```bash
 # 先停止 Python 服务，避免两个后端同时写同一 runtime
@@ -144,7 +144,7 @@ npm run start:legacy
 
 引用校验仍是有限机械规则；作者覆盖说明已与正向观点断言作初步区分，但复杂转引、委婉归属与语义支持仍需人工评测。近期版本重点是能演示、能解释、能亲自修改的 Agent 工程闭环，持续投递不必等所有扩展完成。
 
-规划以 [SPEC.md](../SPEC.md) 和 [architect.md](../architect.md) 为准，docs 中 9 月文档保留历史事实。LangGraph checkpoint 设计参考[官方 Python 持久化文档](https://docs.langchain.com/oss/python/langgraph/persistence)。
+规划以 [SPEC.md](../SPEC.md) 和 [architect.md](../architecture.md) 为准，docs 中 9 月文档保留历史事实。LangGraph checkpoint 设计参考[官方 Python 持久化文档](https://docs.langchain.com/oss/python/langgraph/persistence)。
 
 当前 v15/v16 提示词对照（真实 API，使用全新输出目录）：
 
@@ -154,4 +154,4 @@ npm run start:legacy
 
 四组对话与两组边界输入固定卦象、证据和历史；另比较一次检索路由决策。无改写 Schema、无生成后润色。历史结果保留，新旧版本不混算。
 
-本轮实验复算：`.venv/bin/python -m evaluation.autonomous_review --usage`；付费复跑及完整输入见[实验索引](../evaluation/reports/autonomous-20261010/README.md)。旧阶段基线不可与当前结果混算。
+本轮实验复算：`.venv/bin/python -m evaluation.autonomous_review --usage`；付费复跑及完整输入见[实验索引](../../evaluation/reports/autonomous-20261010/README.md)。旧阶段基线不可与当前结果混算。

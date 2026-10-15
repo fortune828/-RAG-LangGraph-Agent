@@ -17,7 +17,7 @@
 | 修复 | 错误码 + 字段位置 + 必要的可读原因 | 一次真实失败中，仅关闭思考、仅加路径都失败；解释本段归属缺少本段引用后机械通过。语义错误仍存在，详见失败分析 |
 | 采集 | 请求级不可变配置、完整祖先预算、实际 payload 和连续请求编号 | 配置、预算预留、Trace 使用同一参数；修复开销也计入总预算，失败 usage 保留，未知细项不填 0 |
 
-账号实测支持 Flash/Pro、Thinking 开关和 low/high/max；四次短探测只证明 API 可用，不代表产品任务质量。[官方能力核实与价格来源](reports/autonomous-20261010/capabilities/report.md)
+账号实测支持 Flash/Pro、Thinking 开关和 low/high/max；四次短探测只证明 API 可用，不代表产品任务质量。[官方能力核实与价格来源](../../../evaluation/reports/autonomous-20261010/capabilities/report.md)
 
 ## 模型选择：速度不是唯一依据
 
@@ -30,11 +30,11 @@
 | Flash high / 8192 | 4/4 | 21,540 | 20.38s | 1.75 / 1.00 / 1.75 / 0.75 |
 | Pro disabled / 4096 | 4/4 | 5,637 | 12.09s | 1.50 / 1.00 / 1.25 / 0.50 |
 
-同四题另外运行 Flash disabled 与 Pro low：前者 4/4，后者 3/4，Pro low 中位 38.06s；失败为 claim 不在正文，并非 API 不支持。Pro 有个别更自然的回答，尚无一致收益足以承担其成本和延迟。[全部初筛回答](reports/autonomous-20261010/screening/answers.md)、[第二轮完整回答和失败](reports/autonomous-20261010/finalists/answers.md)
+同四题另外运行 Flash disabled 与 Pro low：前者 4/4，后者 3/4，Pro low 中位 38.06s；失败为 claim 不在正文，并非 API 不支持。Pro 有个别更自然的回答，尚无一致收益足以承担其成本和延迟。[全部初筛回答](../../../evaluation/reports/autonomous-20261010/screening/answers.md)、[第二轮完整回答和失败](../../../evaluation/reports/autonomous-20261010/finalists/answers.md)
 
-曾冻结 Flash disabled + v11 候选，在主优化者事先未读取的六个输入上比较旧 high + v10：两组都 6/6 机械完成；中位延迟 22.43s→5.03s，总 tokens 44,268→15,141。但四个生活对话的 AI 交流均分为 high 1.50、disabled 1.00，依据/推断克制为 0.75、0.50；理解与帮助同为 1.75。**因此拒绝直接用关闭思考替换质量默认。** 这是小样本的谨慎选择，不是统计显著结论；该对照同时改变图和模型模式，不能将全部差异归因于其中一个变量。[留出完整对照](reports/autonomous-20261010/holdout/answers.md)、[当时决定](reports/autonomous-20261010/release-decision.json)
+曾冻结 Flash disabled + v11 候选，在主优化者事先未读取的六个输入上比较旧 high + v10：两组都 6/6 机械完成；中位延迟 22.43s→5.03s，总 tokens 44,268→15,141。但四个生活对话的 AI 交流均分为 high 1.50、disabled 1.00，依据/推断克制为 0.75、0.50；理解与帮助同为 1.75。**因此拒绝直接用关闭思考替换质量默认。** 这是小样本的谨慎选择，不是统计显著结论；该对照同时改变图和模型模式，不能将全部差异归因于其中一个变量。[留出完整对照](../../../evaluation/reports/autonomous-20261010/holdout/answers.md)、[当时决定](../../../evaluation/reports/autonomous-20261010/release-decision.json)
 
-随后 high 的实际失败改变了选择依据：v12 三条开发复测仅 1/3 完成，项目更正和文献题的生成均耗尽 8,192 completion；更正题其中 8,192 全为 reasoning，正文为空。同输入改为 low，3/3 完成，总 tokens 34,354→29,056，中位 35.86s→27.69s。两组失败均留在分母。low 午饭仍过度铺陈、类比牵强，不能把“能输出”当作“输出得好”。[high 失败](reports/autonomous-20261010/final-verification/answers.md)、[low 完整回答](reports/autonomous-20261010/low-verification/answers.md)
+随后 high 的实际失败改变了选择依据：v12 三条开发复测仅 1/3 完成，项目更正和文献题的生成均耗尽 8,192 completion；更正题其中 8,192 全为 reasoning，正文为空。同输入改为 low，3/3 完成，总 tokens 34,354→29,056，中位 35.86s→27.69s。两组失败均留在分母。low 午饭仍过度铺陈、类比牵强，不能把“能输出”当作“输出得好”。[high 失败](../../../evaluation/reports/autonomous-20261010/final-verification/answers.md)、[low 完整回答](../../../evaluation/reports/autonomous-20261010/low-verification/answers.md)
 
 最后另由未看运行结果的子 agent 编写四个新输入，在读取题干前冻结 low 候选；相同 v12、证据准备、修复配置与预算比较 low/high，每单元一次，失败不补跑：
 
@@ -43,7 +43,7 @@
 | Flash low | 3/4 | 9 | 38,526 | 20.65s | 0.011696 |
 | Flash high | 3/4 | 7 | 42,089 | 27.18s | 0.016531 |
 
-low 在本小批降低延迟和用量，但两组都未完成用户纠正题：high 再次全部思考后空正文；low 首答引用数超限，修复后仍有逐字引文不匹配，被校验挡住。**因此不能声称 low 已经解决生成失败或多轮承接。** 文献题两组都准确否定“浚恒越深越好”；生活题仍有“静卦说明局面暂时固定”等无依据解释。本轮停止按这些新题调优，最终选 low 作为保留思考、减少耗尽风险的现阶段折中，不作质量优势/非劣证明。[完整确认回答](reports/autonomous-20261010/confirmation/answers.md)、[运行前配置冻结](reports/autonomous-20261010/confirmation-decision.json)
+low 在本小批降低延迟和用量，但两组都未完成用户纠正题：high 再次全部思考后空正文；low 首答引用数超限，修复后仍有逐字引文不匹配，被校验挡住。**因此不能声称 low 已经解决生成失败或多轮承接。** 文献题两组都准确否定“浚恒越深越好”；生活题仍有“静卦说明局面暂时固定”等无依据解释。本轮停止按这些新题调优，最终选 low 作为保留思考、减少耗尽风险的现阶段折中，不作质量优势/非劣证明。[完整确认回答](../../../evaluation/reports/autonomous-20261010/confirmation/answers.md)、[运行前配置冻结](../../../evaluation/reports/autonomous-20261010/confirmation-decision.json)
 
 ## RAG：证据可查与解释正确是两回事
 
@@ -57,7 +57,7 @@ low 在本小批降低延迟和用量，但两组都未完成用户纠正题：h
 
 full 能逐字引用三家注解，但仍把“利见大人”直接套成面试、把用户“被看见”说成注家的共同结论；memory 也有从卦象推断用户能力/精力的无依据判断。**本轮不能声称 RAG 提升了生活问题的语义质量。** 也不能反过来据此断言 RAG 无效：样本很少，古文解释尚无专家 Gold，classic 的失败是协议错误；午饭 classic/full 实际证据相同，其输出差异只能说明采样波动。
 
-能证明的较窄收益是：对确实缺文献的题，补检索可以取得并引用此前不可见的真实原文；来源、作者、版本能够核对。不能证明的部分是：这些真引文使类比更准确或建议更有见地。[三组完整回答](reports/autonomous-20261010/rag/answers.md)、[独立 AI 逐条理由](reports/autonomous-20261010/blind/rag/report.md)
+能证明的较窄收益是：对确实缺文献的题，补检索可以取得并引用此前不可见的真实原文；来源、作者、版本能够核对。不能证明的部分是：这些真引文使类比更准确或建议更有见地。[三组完整回答](../../../evaluation/reports/autonomous-20261010/rag/answers.md)、[独立 AI 逐条理由](../../../evaluation/reports/autonomous-20261010/blind/rag/report.md)
 
 ## Tool Calling：找到了材料，但还没有胜过规则基线
 
@@ -69,9 +69,9 @@ full 能逐字引用三家注解，但仍把“利见大人”直接套成面试
 | C/W1 规则补检索 | 3/3 | 2/2 | 3 | 3 | 4,312 |
 | D/W2 模型补检索 | 3/3 | 2/2 | 8 | 3 | 35,041 |
 
-三组都对确实缺失的材料作不足回应。B 的结构合法不足回答不等于完成可回答的文献任务；它有两次修复，所以也不是零代价基线。C/D 获得材料不等于文义全部正确：例如曾把六字爻辞说成“五字”。这组实验**没有显示自主路由优于有效规则**；D 的较大开销主要在路由上下文及确认。知识题独立统计，不挤进核心生活交流评分。[完整 B/C/D](reports/autonomous-20261010/agent/answers.md)
+三组都对确实缺失的材料作不足回应。B 的结构合法不足回答不等于完成可回答的文献任务；它有两次修复，所以也不是零代价基线。C/D 获得材料不等于文义全部正确：例如曾把六字爻辞说成“五字”。这组实验**没有显示自主路由优于有效规则**；D 的较大开销主要在路由上下文及确认。知识题独立统计，不挤进核心生活交流评分。[完整 B/C/D](../../../evaluation/reports/autonomous-20261010/agent/answers.md)
 
-为此保留两项小优化：路由只看决策所需字段；可精确判定的授权目标齐备后直接生成。同三题的 v10/v11 对照中，模型调用 9→6，总 tokens 35,920→13,922；明确查证题首次路由输入 tokens 4,859→2,837。后者直接反映投影缩减；整组成本还受到采样、修复和工具选择变化影响，不能全部算成确定性节省。v11 模糊检索曾多调用并返回空结果，工具质量未普遍改善。[路由对照](reports/autonomous-20261010/routing/answers.md)
+为此保留两项小优化：路由只看决策所需字段；可精确判定的授权目标齐备后直接生成。同三题的 v10/v11 对照中，模型调用 9→6，总 tokens 35,920→13,922；明确查证题首次路由输入 tokens 4,859→2,837。后者直接反映投影缩减；整组成本还受到采样、修复和工具选择变化影响，不能全部算成确定性节省。v11 模糊检索曾多调用并返回空结果，工具质量未普遍改善。[路由对照](../../../evaluation/reports/autonomous-20261010/routing/answers.md)
 
 v13 另经代码复核收紧适用范围：只有明确章节（爻级还须爻位）的目标能快捷结束。作者/作品概括请求不能因为找到任意同作者材料就结束。权限、去重、三次工具尝试、拒绝后恢复和证据截断检查不变。没有根据三题结果将整个生产系统换成 C，也没有据此为 D 宣称优势。
 
@@ -86,9 +86,9 @@ v13 另经代码复核收紧适用范围：只有明确章节（爻级还须爻�
 | 结构错误遮蔽引文错误（本轮后续复核更正） | 新确认集 low 更正题先有6条引用超过5条结构上限；“获／獲”差异首答已存在，被 Schema 短路遮蔽，repair 后才显露 QUOTE_MISMATCH，并非修复新增 | 拒绝输出并保留失败；没有删掉引用校验来追求成功率，最终两组该题都没有可用回答 |
 | 简单追问重复整套解释 | 真连续对话已经纠正租金、决定暂不搬，第三轮仍重新展开解卦 | 同输入去掉助手历史的一次诊断也重复卦意；不足以删除生产历史，用户更正和角色区分保留 |
 
-repair 四份记录均保留：原 high 失败见 [release-verification](reports/autonomous-20261010/release-verification/answers.md)；[只改非思考](reports/autonomous-20261010/repair-check/answers.md)、[再给位置](reports/autonomous-20261010/repair-located/answers.md)、[可读错误原因](reports/autonomous-20261010/repair-explained/answers.md)。它们是对同一已知失败的诊断，不能计作四个独立测试，也不能据最后一次成功推算修复率。
+repair 四份记录均保留：原 high 失败见 [release-verification](../../../evaluation/reports/autonomous-20261010/release-verification/answers.md)；[只改非思考](../../../evaluation/reports/autonomous-20261010/repair-check/answers.md)、[再给位置](../../../evaluation/reports/autonomous-20261010/repair-located/answers.md)、[可读错误原因](../../../evaluation/reports/autonomous-20261010/repair-explained/answers.md)。它们是对同一已知失败的诊断，不能计作四个独立测试，也不能据最后一次成功推算修复率。
 
-连续三轮保留实际上一轮回答和固定卦象：[完整对话](reports/autonomous-20261010/continuous/answers.md)。对应[历史消融](reports/autonomous-20261010/history-diagnostic/answers.md)仅各一次；去历史虽少输入，实际缓存费用未必更低，没有据此改生产历史机制。
+连续三轮保留实际上一轮回答和固定卦象：[完整对话](../../../evaluation/reports/autonomous-20261010/continuous/answers.md)。对应[历史消融](../../../evaluation/reports/autonomous-20261010/history-diagnostic/answers.md)仅各一次；去历史虽少输入，实际缓存费用未必更低，没有据此改生产历史机制。
 
 ## 人工阅读入口与评价边界
 
@@ -111,15 +111,15 @@ repair 四份记录均保留：原 high 失败见 [release-verification](reports
 
 未变更前端、Schema、领域起卦、正式知识发布及用户运行数据。旧会话仍可读取；不同 graph 版本的未完成 checkpoint 按既有规则拒绝混跑，不承诺恢复到另一版图。测试用 injected chat 未获得新的隐式付费调用。自定义评测包装器应使用 `configured_chat` 并公开 `request_payload`；任意裸 partial 无法自动可靠推断其内部模型配置。
 
-工程验证：**Python 172 项通过；TypeScript 41 项通过；`npm run lint` 与 `npm run build` 通过**。配置默认改为 low 后，相应旧 high 默认断言已同步；工具权限、精确目标、宽泛目标、校验强度和旧会话兼容断言保留。最终 `git diff --check` 通过。命令及环境见 [verification.json](reports/autonomous-20261010/verification.json)、[Python 原始输出](reports/autonomous-20261010/verification-python.txt)、[依赖与环境](reports/autonomous-20261010/environment.json)。
+工程验证：**Python 172 项通过；TypeScript 41 项通过；`npm run lint` 与 `npm run build` 通过**。配置默认改为 low 后，相应旧 high 默认断言已同步；工具权限、精确目标、宽泛目标、校验强度和旧会话兼容断言保留。最终 `git diff --check` 通过。命令及环境见 [verification.json](../../../evaluation/reports/autonomous-20261010/verification.json)、[Python 原始输出](../../../evaluation/reports/autonomous-20261010/verification-python.txt)、[依赖与环境](../../../evaluation/reports/autonomous-20261010/environment.json)。
 
 本轮主实验 **84 个输出单元，74 个机械完成、10 个失败**：4 次输出预算耗尽，6 个引文/claim/归属等校验失败（含同一故障的诊断复放）。这是多配置、重复输入和诊断混合计数，**不是84个独立用户、也不是最终生产成功率**。正式配置确认仍只有每组4题、各3题通过。
 
 主实验124次模型请求、445,754 reported tokens；另4次能力探测342 tokens，合计 **128次真实生成请求、446,096 tokens**。按当日官方价目及每次响应的缓存命中/未命中/输出 usage 估算，主实验 $0.159345733，探测 $0.000267150，合计约 **$0.159613**。这是价目估算，不是账户账单核对，也不包含 Codex 子 agent 工作的费用。所有调用均返回 total usage，未知总用量次数0；未提供的非思考 reasoning 明细保留 null，不当作0。失败请求的用量也已计入。
 
-独立 AI 共评阅71份记录（首批57、后续6+8），其中无答案技术失败3份记 N/A；用户可见核验失败提示另有1份，任务未完成、帮助0分，不能把其“未编造”高分解释为成功。最后确认集两组各3份实质回答的理解/交流/帮助/依据均分同为 **2.00 / 1.33 / 2.00 / 1.33**，同时两组各保留1个任务失败。小样本没有显示 low 的语义质量优势。逐条评语与理由见 [最后匿名评阅](reports/autonomous-20261010/blind/confirmation-check/report.md)。
+独立 AI 共评阅71份记录（首批57、后续6+8），其中无答案技术失败3份记 N/A；用户可见核验失败提示另有1份，任务未完成、帮助0分，不能把其“未编造”高分解释为成功。最后确认集两组各3份实质回答的理解/交流/帮助/依据均分同为 **2.00 / 1.33 / 2.00 / 1.33**，同时两组各保留1个任务失败。小样本没有显示 low 的语义质量优势。逐条评语与理由见 [最后匿名评阅](../../../evaluation/reports/autonomous-20261010/blind/confirmation-check/report.md)。
 
-[完整实验索引与复现方式](reports/autonomous-20261010/README.md)；[可重算表](reports/autonomous-20261010/tables.csv)、[逐调用费用/usage](reports/autonomous-20261010/usage.json)、[失败清单](reports/autonomous-20261010/totals.json)、[AI 评语解盲映射](reports/autonomous-20261010/review-revealed.json)。各阶段保存 manifest、输入、源码快照、全部可见请求/响应、证据、校验前后候选及错误。模型内部思考只存长度/哈希，未公开内容；没有生产私聊或密钥。
+[完整实验索引与复现方式](../../../evaluation/reports/autonomous-20261010/README.md)；[可重算表](../../../evaluation/reports/autonomous-20261010/tables.csv)、[逐调用费用/usage](../../../evaluation/reports/autonomous-20261010/usage.json)、[失败清单](../../../evaluation/reports/autonomous-20261010/totals.json)、[AI 评语解盲映射](../../../evaluation/reports/autonomous-20261010/review-revealed.json)。各阶段保存 manifest、输入、源码快照、全部可见请求/响应、证据、校验前后候选及错误。模型内部思考只存长度/哈希，未公开内容；没有生产私聊或密钥。
 
 初始主实验上限 90 次调用；由于真实发布验证暴露新失败，依次追加有界修复诊断、low 复测和最后确认，最终 cap 145、总 token cap 900,000。每次调用前检查并持续累计同一个 ledger，没有清零，也没有丢弃超出初始筛选范围的失败。另四次能力探测独立计入费用汇总。所有后续诊断只用开发输入；最初六例留出已揭示，未再次称为未见数据；最后四例在冻结 low 候选后首次运行，不再用于本轮样例特化修改。
 
@@ -133,4 +133,4 @@ repair 四份记录均保留：原 high 失败见 [release-verification](reports
 
 本轮到此停止优化，不推送远端。最终表达质量由用户阅读真实回答决定。
 
-后续归因更正（2026-10-10）：对 438 条可解析已知证据引用复核后，上述繁简不匹配首答和修复稿均已存在。原始记录及原实验成败计数保留；核对方法见[引文审计](reports/semantic-20261010/validation-audit.md)。
+后续归因更正（2026-10-10）：对 438 条可解析已知证据引用复核后，上述繁简不匹配首答和修复稿均已存在。原始记录及原实验成败计数保留；核对方法见[引文审计](../../../evaluation/reports/semantic-20261010/validation-audit.md)。
